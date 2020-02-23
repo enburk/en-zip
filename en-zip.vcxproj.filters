@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="studio.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="aux">
+      <UniqueIdentifier>{3a89770c-042f-42d3-8b8a-0389fd50acfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ae\library\cpp\aux_abc.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\aux_array.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\aux_string.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\aux_utils.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\pix_color.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\pix_coord.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\pix_image.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\library\cpp\sys.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic.h" />
+    <ClInclude Include="app_dic_card.h" />
+    <ClInclude Include="app_dic_list.h" />
+    <ClInclude Include="app_pix.h" />
+    <ClInclude Include="app_rus.h" />
+    <ClInclude Include="eng.h" />
+    <ClInclude Include="app.h" />
+    <ClInclude Include="studio_dic.h" />
+    <ClInclude Include="studio_pix.h" />
+    <ClInclude Include="studio_rus.h" />
+    <ClInclude Include="dat.h" />
+    <ClInclude Include="dat_dic.h" />
+    <ClInclude Include="studio_dic_update.h" />
+  </ItemGroup>
+</Project>

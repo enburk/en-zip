@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <map>
 #include "../ae/library/cpp/aux_abc.h"
 #include "../ae/library/cpp/aux_array.h"
 #include "../ae/library/cpp/aux_string.h"
@@ -7,26 +8,45 @@ using namespace aux;
 
 namespace eng
 {
-    struct topic { str header, forms; array<str> content; };
-    struct entry { str title; array<topic> topics; };
+    inline array<str> vocabulary;
 
-    inline array<str>   vocabulary;
-    inline array<entry> dictionary;
-
-    inline const std::pair<str,str> diacritics
+    inline const std::map<str,str> ligatures
     {
-        (char*)u8"ÀàÁáÂâÃãÄäÅå",
-        (char*)u8"AaAaAaAaAaAa",
+        { (char*)u8"Æ", "AE" }, { (char*)u8"æ", "ae" },
+        { (char*)u8"Œ", "OE" }, { (char*)u8"œ", "oe" },
+        { (char*)u8"Ĳ", "IJ" }, { (char*)u8"ĳ", "ij" },
     };
-    //u8"Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß"
-    //u8"æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ"
-    //u8"Ā ā Ă ă Ą ą Ć ć Ĉ ĉ Ċ ċ Č č Ď ď Đ đ Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ğ ğ"
-    //u8"Ġ ġ Ģ ģ Ĥ ĥ Ħ ħ Ĩ ĩ Ī ī Ĭ ĭ Į į İ ı Ĳ ĳ Ĵ ĵ Ķ ķ ĸ Ĺ ĺ Ļ ļ Ľ ľ Ŀ"
-    //u8"ŀ Ł ł Ń ń Ņ ņ Ň ň ŉ Ŋ ŋ Ō ō Ŏ ŏ Ő ő Œ œ Ŕ ŕ Ŗ ŗ Ř ř Ś ś Ŝ ŝ Ş ş"
-    //u8"Š š Ţ ţ Ť ť Ŧ ŧ Ũ ũ Ū ū Ŭ ŭ Ů ů Ű ű Ų ų Ŵ ŵ Ŷ ŷ Ÿ Ź ź Ż ż Ž ž ſ"
-    //u8"Ǎ ǎ Ǐ ǐ Ǒ ǒ Ǔ ǔ Ǖ ǖ Ǘ ǘ Ǚ ǚ Ǜ ǜ ǝ Ǟ ǟ"
-    //u8"Ǡ ǡ Ǣ ǣ Ǥ ǥ Ǧ ǧ Ǩ ǩ Ǫ ǫ Ǭ ǭ Ǵ ǵ Ǻ ǻ"
-
+    inline const std::map<str,str> diacritics
+    {
+        { (char*)u8"À", "A" }, { (char*)u8"à", "a" },
+        { (char*)u8"Á", "A" }, { (char*)u8"á", "a" },
+        { (char*)u8"Â", "A" }, { (char*)u8"â", "a" },
+        { (char*)u8"Ã", "A" }, { (char*)u8"ã", "a" },
+        { (char*)u8"Ä", "A" }, { (char*)u8"ä", "a" },
+        { (char*)u8"Å", "A" }, { (char*)u8"å", "a" },
+        { (char*)u8"Ą", "A" }, { (char*)u8"ą", "a" },
+        { (char*)u8"Ç", "C" }, { (char*)u8"ç", "c" },
+        { (char*)u8"È", "E" }, { (char*)u8"è", "e" },
+        { (char*)u8"É", "E" }, { (char*)u8"é", "e" },
+        { (char*)u8"Ê", "E" }, { (char*)u8"ê", "e" },
+        { (char*)u8"Ë", "E" }, { (char*)u8"ë", "e" },
+        { (char*)u8"Ì", "I" }, { (char*)u8"ì", "i" },
+        { (char*)u8"Í", "I" }, { (char*)u8"í", "i" },
+        { (char*)u8"Î", "I" }, { (char*)u8"î", "i" },
+        { (char*)u8"Ï", "I" }, { (char*)u8"ï", "i" },
+        { (char*)u8"Ð", "D" }, { (char*)u8"ð", "d" },
+        { (char*)u8"Ñ", "N" }, { (char*)u8"ñ", "n" },
+        { (char*)u8"Ò", "O" }, { (char*)u8"ò", "o" },
+        { (char*)u8"Ó", "O" }, { (char*)u8"ó", "o" },
+        { (char*)u8"Ô", "O" }, { (char*)u8"ô", "o" },
+        { (char*)u8"Õ", "O" }, { (char*)u8"õ", "o" },
+        { (char*)u8"Ö", "O" }, { (char*)u8"ö", "o" },
+        { (char*)u8"Ù", "U" }, { (char*)u8"ù", "u" },
+        { (char*)u8"Ú", "U" }, { (char*)u8"ú", "u" },
+        { (char*)u8"Û", "U" }, { (char*)u8"û", "u" },
+        { (char*)u8"Ü", "U" }, { (char*)u8"ü", "u" },
+        { (char*)u8"Ý", "Y" }, { (char*)u8"ý", "y" },
+    };
 
     // https://www.niso.org/sites/default/files/2017-08/tr03.pdf
     // Guidelines for Alphabetical Arrangement of Letters
@@ -37,34 +57,61 @@ namespace eng
         int accent = 0;
         auto i1 = s1.begin();
         auto i2 = s2.begin();
+        str ligature_remain[2];
+
         while (true)
         {
             if (i1 == s1.end() && i2 == s2.end()) return accent; 
             if (i1 == s1.end() && i2 != s2.end()) return accent == 0 ? -1 : accent; 
             if (i1 != s1.end() && i2 == s2.end()) return accent == 0 ?  1 : accent; 
 
-            char c1 = *i1++; str cc1;
-            char c2 = *i2++; str cc2;
+            char cc[2]; str ss[2];
 
-            if ((static_cast<uint8_t>(c1) & 0b10000000) == 0b10000000) { cc1 += c1; c1 = *i1++;
-            if ((static_cast<uint8_t>(c1) & 0b11000000) == 0b11000000) { cc1 += c1; c1 = *i1++;
-            if ((static_cast<uint8_t>(c1) & 0b11100000) == 0b11100000) { cc1 += c1; c1 = *i1++;
-            if ((static_cast<uint8_t>(c1) & 0b11110000) == 0b11110000) { cc1 += c1;
-            }}}}
-            if ((static_cast<uint8_t>(c2) & 0b10000000) == 0b10000000) { cc2 += c2; c2 = *i2++;
-            if ((static_cast<uint8_t>(c2) & 0b11000000) == 0b11000000) { cc2 += c2; c2 = *i2++;
-            if ((static_cast<uint8_t>(c2) & 0b11100000) == 0b11100000) { cc2 += c2; c2 = *i2++;
-            if ((static_cast<uint8_t>(c2) & 0b11110000) == 0b11110000) { cc2 += c2;
-            }}}}
+            for (int n=0; n<2; n++)
+            {
+                char & c = cc[n];
+                str  & s = ss[n];
+                auto & i = n == 0 ? i1 : i2;
 
-            //
+                if (ligature_remain[n] != "") { c =
+                    ligature_remain[n][0];
+                    ligature_remain[n].erase(0);
+                }
+                else c = *i++;
 
-            if (cc1 == "" && cc2 == "") { if (c1 < c2) return -1; if (c1 > c2) return 1; continue; }
-            //if (cc1 == "" && cc2 != "")
+                s = c;
+                if ((static_cast<uint8_t>(c) & 0b11000000) == 0b11000000) { s += *i++;
+                if ((static_cast<uint8_t>(c) & 0b11100000) == 0b11100000) { s += *i++;
+                if ((static_cast<uint8_t>(c) & 0b11110000) == 0b11110000) { s += *i++;
+                }}}
 
-            if (cc1 == "" && 'A' <= c1 && c1 <= 'Z') { cc1 = c1; c1 = c1 - 'A' + 'a'; }
-            if (cc2 == "" && 'A' <= c2 && c2 <= 'Z') { cc2 = c2; c2 = c2 - 'A' + 'a'; }
+                if ('a' <= c && c <= 'z') {}
+                else
+                if ('A' <= c && c <= 'Z') { c = c - 'A' + 'a'; }
+                else
+                if (auto it = ligatures.find(s); it != ligatures.end())
+                {
+                    s = it->first;
+                    c = it->second[0];
+                    ligature_remain[n] = it->second.from(1);
+                }
+                else
+                if (auto it = diacritics.find(s); it != diacritics.end())
+                {
+                    s = it->first;
+                    c = it->second[0];
+                }
+            }
 
+            auto c1 = static_cast<uint8_t>(cc[0]);
+            auto c2 = static_cast<uint8_t>(cc[1]);
+
+            if (c1 < c2) return -1;
+            if (c1 > c2) return  1;
+
+            if (accent == 0) accent = 
+                ss[0] < ss[1] ? -1 :
+                ss[0] > ss[1] ?  1 : 0;
         }
     }
 

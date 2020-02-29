@@ -43,8 +43,8 @@
     <ClInclude Include="studio_dic.h" />
     <ClInclude Include="studio_pix.h" />
     <ClInclude Include="studio_rus.h" />
-    <ClInclude Include="dat.h" />
-    <ClInclude Include="dat_dic.h" />
     <ClInclude Include="studio_dic_update.h" />
+    <ClInclude Include="dat_in.h" />
+    <ClInclude Include="dat_out.h" />
   </ItemGroup>
 </Project>

@@ -141,6 +141,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -167,8 +168,8 @@
     <ClInclude Include="app_dic_list.h" />
     <ClInclude Include="app_pix.h" />
     <ClInclude Include="app_rus.h" />
-    <ClInclude Include="dat.h" />
-    <ClInclude Include="dat_dic.h" />
+    <ClInclude Include="dat_in.h" />
+    <ClInclude Include="dat_out.h" />
     <ClInclude Include="eng.h" />
     <ClInclude Include="studio_dic.h" />
     <ClInclude Include="studio_dic_update.h" />

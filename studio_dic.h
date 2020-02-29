@@ -8,8 +8,8 @@ namespace studio::dic
 
     struct studio : gui::widget<studio>
     {
-        gui::area<area> area;
         app::dic::app app;
+        gui::area<area> area;
         gui::splitter splitter;
 
         studio ()
@@ -39,5 +39,9 @@ namespace studio::dic
                 app .coord = XYWH(W-w, 0, w, H);
             }
         }
+
+        void on_focus (bool on) override { app.on_focus(on); }
+        void on_keyboard_input (str symbol) override { app.on_keyboard_input(symbol); }
+        void on_key_pressed (str key, bool down) override { app.on_key_pressed(key,down); }
     };
 }

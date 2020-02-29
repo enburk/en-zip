@@ -12,6 +12,33 @@ namespace app::dic
 
         app()
         {
+            reload();
+        }
+
+        void reload ()
+        {
+            std::filesystem::path dir = "../data";
+            if (!std::filesystem::exists (dir / "vocabulary.dat")) return;
+            std::ifstream ifstream (dir / "vocabulary.dat", std::ios::binary);
+
+            dat::in::pool pool;
+            pool.bytes.resize(3*4);
+            ifstream.read((char*)(pool.bytes.data()), 3*4);
+
+            dat::in::endianness = pool.get_int();
+            int size_unzip = pool.get_int();
+            int size_zip = pool.get_int();
+
+            array<std::byte> zip;
+            zip.resize(size_zip);
+            ifstream.read((char*)(zip.data()), size_zip);
+            pool.bytes = aux::unzip(zip.whole(), size_unzip).value();
+            pool.offset = 0;
+            pool.name = "vocabulary";
+
+            eng::vocabulary.resize(pool.get_int());
+            for (auto & word : eng::vocabulary)
+                word = pool.get_string();
         }
 
         void on_change (void* what) override
@@ -22,20 +49,19 @@ namespace app::dic
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height;
                 int l = gui::metrics::line::width*3;
-                int w = 25*h; // list width
+                int w = 17*h; // list width
                 int d = 2*l;
 
-                splitter.lower =   500 * W / 10'000;
-                splitter.upper = 5'000 * W / 10'000;
+                splitter.lower = W * 5'000 / 10'000;
+                splitter.upper = W * 9'000 / 10'000;
 
                 int p = sys::settings::load("app::dic::splitter.permyriad", 10'000 * (W-w)/W);
-                p = aux::clamp<int>(p, splitter.lower.now, splitter.upper.now);
-                w = W * p / 10'000;
+                int x = aux::clamp<int>(W*p / 10'000, splitter.lower.now, splitter.upper.now);
 
-                splitter.coord = XYWH(W-w-d, 0, 2*d, H);
+                splitter.coord = XYXY(x-d, 0, x+d, H);
 
-                card.coord = XYWH(0, 0, W-w, H);
-                list.coord = XYWH(W-w, 0, w, H);
+                card.coord = XYXY(0, 0, x, H);
+                list.coord = XYXY(x, 0, W, H);
             }
         }
 

@@ -36,6 +36,7 @@ namespace app::dic::card
 
                 card.coord = XYWH(0, 0, W, n*h + 2*l); y += card.coord.now.h;
                 quot.coord = XYWH(0, y, W, H-y - 2*h); y += quot.coord.now.h;
+                tool.coord = XYXY(0, y, W, H);
                 undo.coord = XYXY(0, y, w, H);
                 redo.coord = XYXY(w, y, W, H);
             }

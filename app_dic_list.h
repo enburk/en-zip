@@ -11,8 +11,6 @@ namespace app::dic::list
         gui::widgetarium<gui::button> words;
         gui::property<int> current = 1;
         gui::property<int> origin = -1;
-        gui::schema skin_middle;
-        gui::schema skin_edge;
 
         void on_change (void* what) override
         {
@@ -90,12 +88,6 @@ namespace app::dic::list
             notify(word_changed);
         }
 
-        bool mouse_sensible (XY) override { return true; }
-        void on_mouse_wheel (XY p, int delta) override
-        {
-            origin = origin.now - delta/120;
-        }
-
         void on_notify (gui::base::widget* w, int n) override
         {
             if (w == &words &&
@@ -110,7 +102,7 @@ namespace app::dic::list
     struct area : gui::widget<area>
     {
         gui::area<list> list;
-        gui::area<gui::text::editor> word;
+        gui::area<gui::text::single_line_editor> word;
         gui::canvas tool;
         gui::button up, down, page_up, page_down;
 
@@ -137,7 +129,9 @@ namespace app::dic::list
             if (what == &skin)
             {
                 word.object.background.color = gui::skins[skin.now].white;
-                word.object.view.color = gui::skins[skin.now].black;
+                word.object.selection.color = gui::skins[skin.now].normal.back_color;
+                word.object.caret.canvas.color = gui::skins[skin.now].touched.back_color;
+                word.object.style = sys::glyph_style{ font(), gui::skins[skin.now].black };
                 tool.color = gui::skins[skin.now].light.back_color;
             }
         }
@@ -160,20 +154,52 @@ namespace app::dic::list
             if (key == "page down") l.origin = l.origin.now + page; else
             if (key == "ctrl+home") l.origin = -1; else
             if (key == "ctrl+end" ) l.origin = max<int>(); else
-            if (key == "enter") on_notify(&list, l.word_choosed); else
+            if (key == "enter")
+                on_notify(&list, l.word_choosed); else
 
             word.object.on_key_pressed(key,down);
         }
 
+        bool flag = false;
+
+        void on_notify (gui::base::widget* w) override
+        {
+            if (w == &word)
+            {
+                if (eng::vocabulary.size() == 0) return;
+                auto s = word.object.text.now; s.triml();
+                auto i = eng::vocabulary.lower_bound(s, eng::less);
+                if (i == eng::vocabulary.end()) i--;
+                if (*i != s) i = eng::vocabulary.lower_bound(s, eng::less_case_insentive);
+
+                flag = true;
+                int n = (int)(i - eng::vocabulary.begin());
+                list.object.origin = n - list.object.current.now;
+                flag = false;
+            }
+        }
         void on_notify (gui::base::widget* w, int what) override
         {
-            if (w == &list)
+            if (w == &list) if (!flag)
             {
                 int n = list.object.origin.now + list.object.current.now;
                 bool in = 0 <= n && n < eng::vocabulary.size(); if (!in) return;
-                if (what == list.object.word_changed) word.object.view.text = eng::vocabulary[n];
+                if (what == list.object.word_changed) word.object.text = eng::vocabulary[n];
+                word.object.caret_from = 0;
+                word.object.caret_upto = word.object.line.size()-1;
+                word.object.refresh();
                 if (what == list.object.word_choosed) notify(n);
             }
+        }
+
+        bool mouse_sensible (XY) override { return true; }
+        void on_mouse_wheel (XY p, int delta) override
+        {
+            if (sys::keyboard::shift) delta *= list.object.words.size();
+            if (sys::keyboard::ctrl) delta *= 5;
+            list.object.origin =
+            list.object.origin.now
+                - delta/120;
         }
     };
 }

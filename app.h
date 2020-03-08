@@ -9,6 +9,7 @@
 #include "../ae/library/cpp/proto-studio/gui_widget_button.h"
 #include "../ae/library/cpp/proto-studio/gui_widget_scroller.h"
 #include "../ae/library/cpp/proto-studio/gui_widget_splitter.h"
+#include "../ae/library/cpp/proto-studio/gui_widget_text_lineditor.h"
 #include "../ae/library/cpp/proto-studio/gui_widget_text_editor.h"
 using pix::XY;
 using pix::XYWH;

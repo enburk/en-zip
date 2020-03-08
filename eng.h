@@ -115,4 +115,32 @@ namespace eng
         }
     }
 
+    str asciized (str s)
+    {
+        /**/ auto j = s.begin();
+        for (auto i = s.begin(); i != s.end(); )
+        {
+            char c = *i++; str g = c;
+            uint8_t u = static_cast<uint8_t>(c);
+            if ((u & 0b10000000) == 0b00000000) { *j++ = c; continue; }
+            if ((u & 0b11000000) == 0b11000000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11100000) == 0b11100000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11110000) == 0b11110000) { if (i == s.end()) break; g += *i++;
+            }}}
+            if (auto k = ligatures .find(g); k != ligatures .end()) g = k->second; else
+            if (auto k = diacritics.find(g); k != diacritics.end()) g = k->second; else
+            {}
+            for (char c : g) *j++ = c;
+        }
+        s.erase(j, s.end());
+        return s;
+    }
+
+    auto less = [](auto & a, auto & b) { return compare(a, b) < 0; };
+
+    auto less_case_insentive = [](auto & a, auto & b) {
+        return compare(
+            asciized(a).ascii_lowercased(),
+            asciized(b).ascii_lowercased())
+            < 0; };
 }

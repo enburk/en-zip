@@ -6,10 +6,11 @@
 #include "../ae/library/cpp/aux_utils.h"
 using namespace aux;
 
+#include "dat_in.h"
+#include "dat_out.h"
+
 namespace eng
 {
-    inline array<str> vocabulary;
-
     inline const std::map<str,str> ligatures
     {
         { (char*)u8"Æ", "AE" }, { (char*)u8"æ", "ae" },
@@ -143,4 +144,54 @@ namespace eng
             asciized(a).ascii_lowercased(),
             asciized(b).ascii_lowercased())
             < 0; };
+
+    namespace dictionary
+    {
+        struct topic { str header, forms; array<str> content; };
+        struct entry { str title; array<topic> topics; };
+
+        bool operator < (const entry & a, const entry & b){ return eng::less(a.title, b.title); };
+
+        void operator >> (dat::in::pool & in, entry & entry)
+        {
+            entry.title = in.get_string();
+            entry.topics.resize(in.get_int());
+            for (auto & topic : entry.topics) {
+                topic.header = in.get_string();
+                topic.forms  = in.get_string();
+                topic.content.resize(in.get_int());
+                for (auto & s : topic.content) s = in.get_string();
+            }
+        }
+        void operator << (dat::out::pool & out, const entry & entry)
+        {
+            out << entry.title;
+            out << entry.topics.size();
+            for (auto & topic : entry.topics) {
+                out << topic.header;
+                out << topic.forms;
+                out << topic.content;
+            }
+        }
+    }
+
+    namespace vocabulary
+    {
+        struct entry { str title; int32_t offset = 0, length = 0; };
+
+        bool operator < (const entry & a, const entry & b){ return eng::less(a.title, b.title); };
+
+        void operator >> (dat::in::pool & in, entry & entry)
+        {
+            entry.title = in.get_string();
+            entry.offset = in.get_int();
+            entry.length = in.get_int();
+        }
+        void operator << (dat::out::pool & out, const entry & entry)
+        {
+            out << entry.title;
+            out << entry.offset;
+            out << entry.length;
+        }
+    }
 }

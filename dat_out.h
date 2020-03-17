@@ -41,4 +41,24 @@ namespace dat::out
             return *this;
         }
     };
+
+    struct file
+    {
+        pool pool; std::ofstream fstream; int32_t size = 0;
+
+        file (path path) : fstream (path, std::ios::binary) {}
+       ~file () { fstream.write((char*)pool.bytes.data(), pool.bytes.size()); }
+
+        template <typename entry> 
+        file & operator << (entry && e)
+        {
+            auto nn = pool.bytes.size();  pool << e;
+            size += pool.bytes.size() - nn;
+            if (pool.bytes.size() >= 8*1024*1024) {
+                fstream.write((char*)pool.bytes.data(), pool.bytes.size());
+                pool.bytes.clear();
+            }
+            return *this;
+        }
+    };
 }

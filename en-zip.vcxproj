@@ -164,7 +164,9 @@
     <ClInclude Include="..\ae\library\cpp\sys.h" />
     <ClInclude Include="app.h" />
     <ClInclude Include="app_dic.h" />
+    <ClInclude Include="app_dic_abc.h" />
     <ClInclude Include="app_dic_card.h" />
+    <ClInclude Include="app_dic_html.h" />
     <ClInclude Include="app_dic_list.h" />
     <ClInclude Include="app_pix.h" />
     <ClInclude Include="app_rus.h" />

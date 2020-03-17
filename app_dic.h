@@ -1,4 +1,3 @@
-#include "app.h"
 #include "app_dic_card.h"
 #include "app_dic_list.h"
 namespace app::dic
@@ -21,24 +20,21 @@ namespace app::dic
             if (!std::filesystem::exists (dir / "vocabulary.dat")) return;
             std::ifstream ifstream (dir / "vocabulary.dat", std::ios::binary);
 
+            ifstream.seekg(0, std::ios::end);
+            int size = (int)ifstream.tellg();
+            ifstream.seekg(0, std::ios::beg);
+
             dat::in::pool pool;
-            pool.bytes.resize(3*4);
-            ifstream.read((char*)(pool.bytes.data()), 3*4);
+            pool.bytes.resize(size);
+            ifstream.read((char*)(pool.bytes.data()), size);
 
             dat::in::endianness = pool.get_int();
-            int size_unzip = pool.get_int();
-            int size_zip = pool.get_int();
+            vocabulary.resize(pool.get_int());
+            for (auto & entry : vocabulary)
+                pool >> entry;
 
-            array<std::byte> zip;
-            zip.resize(size_zip);
-            ifstream.read((char*)(zip.data()), size_zip);
-            pool.bytes = aux::unzip(zip.whole(), size_unzip).value();
-            pool.offset = 0;
-            pool.name = "vocabulary";
-
-            eng::vocabulary.resize(pool.get_int());
-            for (auto & word : eng::vocabulary)
-                word = pool.get_string();
+            card.current = eng::vocabulary::entry{};
+            list.reload();
         }
 
         void on_change (void* what) override
@@ -69,18 +65,10 @@ namespace app::dic
         void on_keyboard_input (str symbol) override { list.on_keyboard_input(symbol); }
         void on_key_pressed (str key, bool down) override { list.on_key_pressed(key,down); }
 
-        void on_notify (gui::base::widget* w) override
-        {
-            if (w == &card)
-            {
-            }
-            if (w == &list)
-            {
-            }
-        }
-
         void on_notify (gui::base::widget* w, int n) override
         {
+            if (w == &card) list.select(n);
+            if (w == &list) card.select(n);
             if (w == &splitter) {
                 sys::settings::save("app::dic::splitter.permyriad",
                 10'000 * n / coord.now.w);

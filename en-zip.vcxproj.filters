@@ -46,5 +46,7 @@
     <ClInclude Include="studio_dic_update.h" />
     <ClInclude Include="dat_in.h" />
     <ClInclude Include="dat_out.h" />
+    <ClInclude Include="app_dic_abc.h" />
+    <ClInclude Include="app_dic_html.h" />
   </ItemGroup>
 </Project>

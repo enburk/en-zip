@@ -1,6 +1,5 @@
 #pragma once
 #include "eng.h"
-#include "dat_in.h"
 #include "../ae/library/cpp/proto-studio/gui_effect.h"
 #include "../ae/library/cpp/proto-studio/gui_colors.h"
 #include "../ae/library/cpp/proto-studio/gui_window.h"

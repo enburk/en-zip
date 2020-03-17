@@ -1,4 +1,4 @@
-#include "app.h"
+#include "app_dic_abc.h"
 namespace app::dic::list
 {
     auto font = [](){ return sys::font{"Segoe UI", gui::metrics::text::height*104/100}; };
@@ -45,11 +45,11 @@ namespace app::dic::list
                         auto colors = style.light;
 
                         if (!edge) colors.back_color = style.white;
-
-                        if (word.on           .now) colors = style.active;  else
-                        if (word.mouse_hover  .now) colors = style.light;   else
+                        // order important
                         if (word.mouse_pressed.now) colors = style.touched; else
                         if (word.enter_pressed.now) colors = style.touched; else
+                        if (word.on           .now) colors = style.active;  else
+                        if (word.mouse_hover  .now) colors = style.light;   else
                         {}
                         // '=' instead of 'go' for smooth mouse passage
                         word.text.canvas.color = colors.back_color;
@@ -74,13 +74,13 @@ namespace app::dic::list
             if (l >= 2 && current.now == 0) { origin.now--; current.now = 0+1; }
             if (l >= 2 && current.now == l) { origin.now++; current.now = l-1; }
 
-            origin.now = clamp<int>(origin.now, -1, eng::vocabulary.size() - l);
+            origin.now = clamp<int>(origin.now, -1, vocabulary.size() - l);
 
             for (int i=0; i<words.size(); i++)
             {
                 int n = origin.now + i;
-                bool in = 0 <= n && n < eng::vocabulary.size();
-                words(i).text.text = in ? " " + eng::vocabulary[n] : "";
+                bool in = 0 <= n && n < vocabulary.size();
+                words(i).text.text = in ? " " + vocabulary[n].title : "";
                 words(i).enabled = in;
                 words(i).on = i == current.now;
             }
@@ -109,6 +109,14 @@ namespace app::dic::list
         void reload ()
         {
             list.object.refresh();
+            on_notify(&list, list.object.word_choosed);
+        }
+
+        void select (int n)
+        {
+            if (n >= vocabulary.size()) return;
+            list.object.origin = n - list.object.current.now;
+            on_notify(&list, list.object.word_choosed);
         }
 
         void on_change (void* what) override
@@ -154,8 +162,7 @@ namespace app::dic::list
             if (key == "page down") l.origin = l.origin.now + page; else
             if (key == "ctrl+home") l.origin = -1; else
             if (key == "ctrl+end" ) l.origin = max<int>(); else
-            if (key == "enter")
-                on_notify(&list, l.word_choosed); else
+            if (key == "enter") on_notify(&list, l.word_choosed); else
 
             word.object.on_key_pressed(key,down);
         }
@@ -166,14 +173,15 @@ namespace app::dic::list
         {
             if (w == &word)
             {
-                if (eng::vocabulary.size() == 0) return;
+                if (vocabulary.size() == 0) return;
                 auto s = word.object.text.now; s.triml();
-                auto i = eng::vocabulary.lower_bound(s, eng::less);
-                if (i == eng::vocabulary.end()) i--;
-                if (*i != s) i = eng::vocabulary.lower_bound(s, eng::less_case_insentive);
+                auto i = vocabulary.lower_bound(eng::vocabulary::entry{s}, less);
+                if (i == vocabulary.end()) i--;
+                if (i->title != s) i = vocabulary.lower_bound(
+                    eng::vocabulary::entry{s}, less_case_insentive);
 
                 flag = true;
-                int n = (int)(i - eng::vocabulary.begin());
+                int n = (int)(i - vocabulary.begin());
                 list.object.origin = n - list.object.current.now;
                 flag = false;
             }
@@ -183,11 +191,15 @@ namespace app::dic::list
             if (w == &list) if (!flag)
             {
                 int n = list.object.origin.now + list.object.current.now;
-                bool in = 0 <= n && n < eng::vocabulary.size(); if (!in) return;
-                if (what == list.object.word_changed) word.object.text = eng::vocabulary[n];
+                bool in = 0 <= n && n < vocabulary.size(); if (!in) return;
+
+                if (what == list.object.word_changed)
+                    word.object.text = vocabulary[n].title;
+
                 word.object.caret_from = 0;
                 word.object.caret_upto = word.object.line.size()-1;
                 word.object.refresh();
+                
                 if (what == list.object.word_choosed) notify(n);
             }
         }

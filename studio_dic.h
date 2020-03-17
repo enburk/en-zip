@@ -14,8 +14,9 @@ namespace studio::dic
 
         studio ()
         {
-            if (wiktionary_update())
+            if (dictionary_update())
             {
+                app.reload();
             }
         }
 

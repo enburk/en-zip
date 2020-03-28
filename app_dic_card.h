@@ -36,6 +36,7 @@ namespace app::dic::card
 
         area ()
         {
+            card.object.text.alignment = XY{gui::text::left, gui::text::top};
             undo.text.text = "undo";
             redo.text.text = "redo";
         }
@@ -67,7 +68,7 @@ namespace app::dic::card
 
             if (true) std::ofstream("test.html") << html;
 
-            card.object.text.text = html;
+            card.object.text.html = html;
         }
 
         void on_change (void* what) override

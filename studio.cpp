@@ -5,7 +5,10 @@
 struct Studio : gui::widget<Studio>
 {
     gui::canvas toolbar;
-    gui::button button_test;
+    gui::button button_dic;
+    gui::button button_pix;
+    gui::button button_rus;
+    gui::button button_img;
 
     studio::dic::studio s;
 
@@ -34,7 +37,7 @@ struct Studio : gui::widget<Studio>
 
     void on_notify (gui::base::widget* w) override
     {
-        if (w == &button_test)
+        if (w == &button_dic)
         {
         }
     }

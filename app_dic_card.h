@@ -5,7 +5,7 @@ namespace app::dic::card
 
     struct card : gui::widget<card>
     {
-        gui::text::view text;
+        html_view text;
 
         void on_change (void* what) override
         {
@@ -18,6 +18,11 @@ namespace app::dic::card
                 text.canvas.color = gui::skins[skin.now].white;
                 text.font = font();
             }
+        }
+
+        void on_notify (gui::base::widget* w, int n) override
+        {
+            if (w == &text) notify(n);
         }
     };
 
@@ -93,6 +98,12 @@ namespace app::dic::card
             {
                 tool.color = gui::skins[skin.now].light.back_color;
             }
+        }
+
+        void on_notify (gui::base::widget* w, int n) override
+        {
+            if (w == &card) notify(n);
+            if (w == &quot) notify(n);
         }
     };
 }

@@ -27,6 +27,8 @@ namespace app::dic::list
                     auto & word = i < words.size() ? words(i) : words.emplace_back();
                     word.kind = gui::button::sticky;
                     word.coord = XYWH(0, h*i, W, h);
+                    word.text.word_wrap = false;
+                    word.text.ellipsis = true;
                 }
                 words.truncate(n);
                 on_change(&skin);

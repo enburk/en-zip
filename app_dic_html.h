@@ -1,6 +1,97 @@
 #include "app_dic_abc.h"
 namespace app::dic
 {
+    struct html_view : gui::text::view
+    {
+        bool mouse_sensible (XY p) override { return true; }
+
+        void on_mouse_press (XY p, char button, bool down) override
+        {
+            str link;
+
+            if (!page.coord.now.includes(p)) return;
+            auto pp = p - page.coord.now.origin;
+            for (auto & section : page)
+            {
+                if (!section.coord.now.includes(pp)) continue;
+                auto sp = pp - section.coord.now.origin;
+                for (auto & line : section)
+                {
+                    if (!line.coord.now.includes(sp)) continue;
+                    auto lp = sp - line.coord.now.origin;
+                    for (auto & token : line)
+                    {
+                        if (!token.coord.now.includes(lp)) continue;
+                        if (token.glyphs.size() < 2) continue;
+                        link = token.text;
+                        break;
+                    }
+                }
+            }
+
+            auto s = link; s.triml();
+            auto r = vocabulary.equal_range(eng::vocabulary::entry{s}, less);
+            if (!r) r = vocabulary.equal_range(eng::vocabulary::entry{s}, less_case_insentive);
+            if (!r) return;
+
+            notify(r.offset);
+
+        }
+        void on_mouse_hover (XY p) override
+        {
+            str link;
+
+            if (!page.coord.now.includes(p)) return;
+            auto pp = p - page.coord.now.origin;
+            for (auto & section : page)
+            {
+                if (!section.coord.now.includes(pp)) continue;
+                auto sp = pp - section.coord.now.origin;
+                for (auto & line : section)
+                {
+                    if (!line.coord.now.includes(sp)) continue;
+                    auto lp = sp - line.coord.now.origin;
+                    for (auto & token : line)
+                    {
+                        if (!token.coord.now.includes(lp)) continue;
+                        if (token.glyphs.size() < 2) continue;
+                        link = token.text;
+                        break;
+                    }
+                }
+            }
+
+            auto s = link; s.triml();
+            auto r = vocabulary.equal_range(eng::vocabulary::entry{s}, less);
+            if (!r) r = vocabulary.equal_range(eng::vocabulary::entry{s}, less_case_insentive);
+            if (!r) link = "";
+
+            for (auto & section : page)
+            {
+                for (auto & line : section)
+                {
+                    for (auto & token : line)
+                    {
+                        auto style_index = token.style;
+                        if (token.text == link)
+                        {
+                            auto style = style_index.style();
+                            style.color = RGBA(0,0,255);
+                            style_index = sys::glyph_style_index(style);
+                        }
+
+                        for (auto & glyph : token)
+                        {
+                            auto g = glyph.value.now;
+                            g.style_index = style_index;
+                            glyph.value = g;
+                        }
+                    }
+                }
+            }
+        }
+    };
+
     auto bold_italic = [](str s)
     {
         str html;

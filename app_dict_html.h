@@ -1,17 +1,19 @@
-#include "app_dic_abc.h"
-namespace app::dic
+#include "app_dict_abc.h"
+namespace app::dict
 {
-    struct html_view : gui::text::view
+    struct html_view : gui::text::page
     {
         bool mouse_sensible (XY p) override { return true; }
 
         void on_mouse_press (XY p, char button, bool down) override
         {
-            str link;
+            str link; if (!down) return;
 
-            if (!page.coord.now.includes(p)) return;
-            auto pp = p - page.coord.now.origin;
-            for (auto & section : page)
+            auto & column = view.column;
+
+            if (!column.coord.now.includes(p)) return;
+            auto pp = p - column.coord.now.origin;
+            for (auto & section : column)
             {
                 if (!section.coord.now.includes(pp)) continue;
                 auto sp = pp - section.coord.now.origin;
@@ -23,27 +25,28 @@ namespace app::dic
                     {
                         if (!token.coord.now.includes(lp)) continue;
                         if (token.glyphs.size() < 2) continue;
+                        
                         link = token.text;
-                        break;
+                        if (auto range = vocabulary_range(link); range)
+                            notify(range.offset);
+
+                        return;
                     }
                 }
             }
 
-            auto s = link; s.triml();
-            auto r = vocabulary.equal_range(eng::vocabulary::entry{s}, less);
-            if (!r) r = vocabulary.equal_range(eng::vocabulary::entry{s}, less_case_insentive);
-            if (!r) return;
-
-            notify(r.offset);
-
+            gui::text::page::on_mouse_press(p, button, down);
         }
+
         void on_mouse_hover (XY p) override
         {
             str link;
 
-            if (!page.coord.now.includes(p)) return;
-            auto pp = p - page.coord.now.origin;
-            for (auto & section : page)
+            auto & column = view.column;
+
+            if (!column.coord.now.includes(p)) return;
+            auto pp = p - column.coord.now.origin;
+            for (auto & section : column)
             {
                 if (!section.coord.now.includes(pp)) continue;
                 auto sp = pp - section.coord.now.origin;
@@ -66,7 +69,7 @@ namespace app::dic
             if (!r) r = vocabulary.equal_range(eng::vocabulary::entry{s}, less_case_insentive);
             if (!r) link = "";
 
-            for (auto & section : page)
+            for (auto & section : column)
             {
                 for (auto & line : section)
                 {
@@ -89,6 +92,31 @@ namespace app::dic
                     }
                 }
             }
+
+            gui::text::page::on_mouse_hover(p);
+        }
+
+        void on_mouse_leave () override
+        {
+            auto & column = view.column;
+
+            for (auto & section : column)
+            {
+                for (auto & line : section)
+                {
+                    for (auto & token : line)
+                    {
+                        for (auto & glyph : token)
+                        {
+                            auto g = glyph.value.now;
+                            g.style_index = token.style;
+                            glyph.value = g;
+                        }
+                    }
+                }
+            }
+
+            gui::text::page::on_mouse_leave();
         }
     };
 

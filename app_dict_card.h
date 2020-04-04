@@ -1,5 +1,5 @@
-#include "app_dic_html.h"
-namespace app::dic::card
+#include "app_dict_html.h"
+namespace app::dict::card
 {
     auto font = [](){ return sys::font{"Segoe UI", gui::metrics::text::height}; };
 
@@ -15,7 +15,7 @@ namespace app::dic::card
             }
             if (what == &skin)
             {
-                text.canvas.color = gui::skins[skin.now].white;
+                text.view.canvas.color = gui::skins[skin.now].white;
                 text.font = font();
             }
         }
@@ -35,13 +35,17 @@ namespace app::dic::card
         gui::area<card> card;
         gui::area<quot> quot;
         gui::canvas tool;
-        gui::button undo, redo;
+        gui::button undo;
+        gui::button redo;
+        array<str> undoes;
+        array<str> redoes;
 
         eng::vocabulary::entry current;
 
         area ()
         {
             card.object.text.alignment = XY{gui::text::left, gui::text::top};
+            card.object.text.mouse_wheel_speed = 2.0;
             undo.text.text = "undo";
             redo.text.text = "redo";
         }
@@ -49,9 +53,12 @@ namespace app::dic::card
         void select (int n)
         {
             if (n >= vocabulary.size()) return;
-            if (vocabulary[n].length == 0) { select(eng::dictionary::entry{}); return; }
+            if (vocabulary[n].length == 0) return;
             if (vocabulary[n].length == current.length
             &&  vocabulary[n].offset == current.offset) return;
+
+            if (current.title != "")
+            undoes += current.title;
             current = vocabulary[n];
 
             std::filesystem::path dir = "../data";
@@ -64,16 +71,20 @@ namespace app::dic::card
             ifstream.read((char*)(pool.bytes.data()), current.length);
             eng::dictionary::entry entry;
             pool >> entry;
-            select(entry);
+
+            str html = wiki2html(entry);
+            if (true) std::ofstream("test.html") << html;
+            card.object.text.html = html;
+            card.object.text.scroll.y.top = 0;
+            refresh();
         }
 
-        void select (eng::dictionary::entry entry)
+        void refresh ()
         {
-            str html = wiki2html(entry);
-
-            if (true) std::ofstream("test.html") << html;
-
-            card.object.text.html = html;
+            undo.text.text = undoes.size() > 0 ? undoes.back() : "undo";
+            redo.text.text = redoes.size() > 0 ? redoes.back() : "redo";
+            undo.enabled   = undoes.size() > 0;
+            redo.enabled   = redoes.size() > 0;
         }
 
         void on_change (void* what) override
@@ -88,7 +99,7 @@ namespace app::dic::card
                 int w = W/2;
                 int y = 0;
 
-                card.coord = XYWH(0, 0, W, n*h + 2*l); y += card.coord.now.h;
+                card.coord = XYWH(0, 0, W, n*h + 2*l); y += card.coord.now.h; h -= l*2/3;
                 quot.coord = XYWH(0, y, W, H-y - 2*h); y += quot.coord.now.h;
                 tool.coord = XYXY(0, y, W, H);
                 undo.coord = XYXY(0, y, w, H);
@@ -104,6 +115,25 @@ namespace app::dic::card
         {
             if (w == &card) notify(n);
             if (w == &quot) notify(n);
+        }
+        void on_notify (gui::base::widget* w) override
+        {
+            if (w == &undo && undoes.size() > 0) 
+            {
+                str link = undoes.back();
+                undoes.pop_back(); redoes += current.title;
+                if (auto range = vocabulary_range(link); range) {
+                    notify(range.offset);
+                    undoes.pop_back();
+                    refresh();
+                }
+            }
+            if (w == &redo && redoes.size() > 0) 
+            {
+                str link = redoes.back(); redoes.pop_back();
+                if (auto range = vocabulary_range(link); range)
+                    notify(range.offset);
+            }
         }
     };
 }

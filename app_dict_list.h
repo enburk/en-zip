@@ -1,5 +1,5 @@
-#include "app_dic_abc.h"
-namespace app::dic::list
+#include "app_dict_abc.h"
+namespace app::dict::list
 {
     auto font = [](){ return sys::font{"Segoe UI", gui::metrics::text::height*104/100}; };
 

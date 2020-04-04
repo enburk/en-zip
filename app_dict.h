@@ -1,6 +1,6 @@
-#include "app_dic_card.h"
-#include "app_dic_list.h"
-namespace app::dic
+#include "app_dict_card.h"
+#include "app_dict_list.h"
+namespace app::dict
 {
     struct app : gui::widget<app>
     {

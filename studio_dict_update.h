@@ -1,5 +1,5 @@
 #include "dat_out.h"
-namespace studio::dic
+namespace studio::dict
 {
     bool dictionary_update ()
     {
@@ -40,7 +40,7 @@ namespace studio::dic
             else dictionary += eng::dictionary::entry{line};
         }
 
-        dictionary.sort(app::dic::less);
+        dictionary.sort(app::dict::less);
         vocabulary.resize(dictionary.size());
         array<str> vocabulary_unicode;
         array<str> vocabulary_sorting;
@@ -103,7 +103,7 @@ namespace studio::dic
                 if (redirect == vocabulary[i].title) { ofstream << "REDIRECT: ITSELF: " <<
                     dictionary[i].title << " >>> " << redirect << std::endl; continue; }
 
-                auto it = vocabulary.lower_bound(eng::vocabulary::entry{redirect}, app::dic::less);
+                auto it = vocabulary.lower_bound(eng::vocabulary::entry{redirect}, app::dict::less);
                 if (it == vocabulary.end()) { ofstream << "REDIRECT: NOT FOUND: " <<
                     dictionary[i].title << " >>> " << redirect << std::endl; continue; }
 

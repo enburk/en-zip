@@ -1,6 +1,6 @@
-#include "app_dic.h"
-#include "studio_dic_update.h"
-namespace studio::dic
+#include "app_dict.h"
+#include "studio_dict_update.h"
+namespace studio::dict
 {
     struct area : gui::widget<area>
     {
@@ -8,7 +8,7 @@ namespace studio::dic
 
     struct studio : gui::widget<studio>
     {
-        app::dic::app app;
+        app::dict::app app;
         gui::area<area> area;
         gui::splitter splitter;
 

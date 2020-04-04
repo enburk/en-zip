@@ -1,6 +1,6 @@
 #pragma once
 #include "app.h"
-namespace app::dic
+namespace app::dict
 {
     array<eng::dictionary::entry> dictionary;
     array<eng::vocabulary::entry> vocabulary;
@@ -10,6 +10,14 @@ namespace app::dic
 
     auto less_case_insentive = [](const auto & a, const auto & b)
     { return eng::less_case_insentive(a.title, b.title); };
+
+    auto vocabulary_range (str s)
+    {
+        auto entry = eng::vocabulary::entry{s};
+        auto range = vocabulary.equal_range(entry, less); if (!range)
+             range = vocabulary.equal_range(entry, less_case_insentive);
+        return range;
+    }
 
     array<str> lexical_items
     {

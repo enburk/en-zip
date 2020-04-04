@@ -1,22 +1,28 @@
-#include "studio_dic.h"
-#include "studio_pix.h"
-#include "studio_rus.h"
+#include "studio_dict.h"
+#include "studio_dual.h"
+#include "studio_mono.h"
 
 struct Studio : gui::widget<Studio>
 {
     gui::canvas toolbar;
-    gui::button button_dic;
-    gui::button button_pix;
-    gui::button button_rus;
-    gui::button button_img;
-
-    studio::dic::studio s;
-
+    gui::radio::group select;
+    studio::dict::studio dict;
+    studio::dual::studio mono;
+    studio::mono::studio dual;
 
     Studio()
     {
         gui::window = this;
+
         skin = "gray";
+
+        select(0).text.text = "dictionary";
+        select(1).text.text = "bilingual";
+        select(2).text.text = "monolingual";
+        select(0).on = true;
+        mono.hide();
+        dual.hide();
+
         //image<RGBA> img = pix::read("test.jpg").value();
         //pix::write(img, "test.png");
     }
@@ -27,25 +33,56 @@ struct Studio : gui::widget<Studio>
         {
             int W = coord.now.w; if (W <= 0) return;
             int H = coord.now.h; if (H <= 0) return;
-            int h = gui::metrics::text::height;
-            int l = gui::metrics::line::width*3;
-            int w = W/2;
+            int w = gui::metrics::text::height*10;
+            int h = gui::metrics::text::height*2;
 
-            s.coord = XYWH(0, 0, W, H);
+            toolbar.coord = XYWH(0, 0, W, h);
+
+            select(0).coord = XYWH(w*0, 0, w, h);
+            select(1).coord = XYWH(w*1, 0, w, h);
+            select(2).coord = XYWH(w*2, 0, w, h);
+            select   .coord = XYWH(0, 0, 3*w, h);
+
+            dict.coord = XYXY(0, h, W, H);
+            dual.coord = XYXY(0, h, W, H);
+            mono.coord = XYXY(0, h, W, H);
         }
-    }
-
-    void on_notify (gui::base::widget* w) override
-    {
-        if (w == &button_dic)
+        if (what == &skin)
         {
+            toolbar.color = gui::skins[skin.now].light.back_color;
         }
     }
 
-    void on_focus (bool on) override { s.on_focus(on); }
-    void on_keyboard_input (str symbol) override { s.on_keyboard_input(symbol); }
-    void on_key_pressed (str key, bool down) override { s.on_key_pressed(key,down); }
+    void on_notify (gui::base::widget* w, int n) override
+    {
+        if (w == &select)
+        {
+            dict.show (n == 0);
+            dual.show (n == 1);
+            mono.show (n == 2);
+        }
+    }
+
+    void on_focus (bool on) override
+    {
+        if (dict.alpha.now == 255) dict.on_focus(on); else
+        if (dual.alpha.now == 255) dual.on_focus(on); else
+        if (mono.alpha.now == 255) mono.on_focus(on);
+    }
+    void on_keyboard_input (str symbol) override
+    {
+        if (dict.alpha.now == 255) dict.on_keyboard_input(symbol); else
+        if (dual.alpha.now == 255) dual.on_keyboard_input(symbol); else
+        if (mono.alpha.now == 255) mono.on_keyboard_input(symbol);
+    }
+    void on_key_pressed (str key, bool down) override
+    {
+        if (dict.alpha.now == 255) dict.on_key_pressed(key,down); else
+        if (dual.alpha.now == 255) dual.on_key_pressed(key,down); else
+        if (mono.alpha.now == 255) mono.on_key_pressed(key,down);
+    }
 };
+
 sys::app<Studio> application ("EN studio");
 
 #include "../ae/library/cpp/platforms/microsoft_windows_fonts.h"

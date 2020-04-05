@@ -12,26 +12,21 @@ namespace app::dict
             auto & column = view.column;
 
             if (!column.coord.now.includes(p)) return;
-            auto pp = p - column.coord.now.origin;
-            for (auto & section : column)
+            auto cp = p - column.coord.now.origin;
+            for (auto & line : column)
             {
-                if (!section.coord.now.includes(pp)) continue;
-                auto sp = pp - section.coord.now.origin;
-                for (auto & line : section)
+                if (!line.coord.now.includes(cp)) continue;
+                auto lp = cp - line.coord.now.origin;
+                for (auto & token : line)
                 {
-                    if (!line.coord.now.includes(sp)) continue;
-                    auto lp = sp - line.coord.now.origin;
-                    for (auto & token : line)
-                    {
-                        if (!token.coord.now.includes(lp)) continue;
-                        if (token.glyphs.size() < 2) continue;
+                    if (!token.coord.now.includes(lp)) continue;
+                    if (token.glyphs.size() < 2) continue;
                         
-                        link = token.text;
-                        if (auto range = vocabulary_range(link); range)
-                            notify(range.offset);
+                    link = token.text;
+                    if (auto range = vocabulary_range(link); range)
+                        notify(range.offset);
 
-                        return;
-                    }
+                    return;
                 }
             }
 
@@ -45,22 +40,17 @@ namespace app::dict
             auto & column = view.column;
 
             if (!column.coord.now.includes(p)) return;
-            auto pp = p - column.coord.now.origin;
-            for (auto & section : column)
+            auto cp = p - column.coord.now.origin;
+            for (auto & line : column)
             {
-                if (!section.coord.now.includes(pp)) continue;
-                auto sp = pp - section.coord.now.origin;
-                for (auto & line : section)
+                if (!line.coord.now.includes(cp)) continue;
+                auto lp = cp - line.coord.now.origin;
+                for (auto & token : line)
                 {
-                    if (!line.coord.now.includes(sp)) continue;
-                    auto lp = sp - line.coord.now.origin;
-                    for (auto & token : line)
-                    {
-                        if (!token.coord.now.includes(lp)) continue;
-                        if (token.glyphs.size() < 2) continue;
-                        link = token.text;
-                        break;
-                    }
+                    if (!token.coord.now.includes(lp)) continue;
+                    if (token.glyphs.size() < 2) continue;
+                    link = token.text;
+                    break;
                 }
             }
 
@@ -69,26 +59,23 @@ namespace app::dict
             if (!r) r = vocabulary.equal_range(eng::vocabulary::entry{s}, less_case_insentive);
             if (!r) link = "";
 
-            for (auto & section : column)
+            for (auto & line : column)
             {
-                for (auto & line : section)
+                for (auto & token : line)
                 {
-                    for (auto & token : line)
+                    auto style_index = token.style;
+                    if (token.text == link)
                     {
-                        auto style_index = token.style;
-                        if (token.text == link)
-                        {
-                            auto style = style_index.style();
-                            style.color = RGBA(0,0,255);
-                            style_index = sys::glyph_style_index(style);
-                        }
+                        auto style = style_index.style();
+                        style.color = RGBA(0,0,255);
+                        style_index = sys::glyph_style_index(style);
+                    }
 
-                        for (auto & glyph : token)
-                        {
-                            auto g = glyph.value.now;
-                            g.style_index = style_index;
-                            glyph.value = g;
-                        }
+                    for (auto & glyph : token)
+                    {
+                        auto g = glyph.value.now;
+                        g.style_index = style_index;
+                        glyph.value = g;
                     }
                 }
             }
@@ -100,18 +87,15 @@ namespace app::dict
         {
             auto & column = view.column;
 
-            for (auto & section : column)
+            for (auto & line : column)
             {
-                for (auto & line : section)
+                for (auto & token : line)
                 {
-                    for (auto & token : line)
+                    for (auto & glyph : token)
                     {
-                        for (auto & glyph : token)
-                        {
-                            auto g = glyph.value.now;
-                            g.style_index = token.style;
-                            glyph.value = g;
-                        }
+                        auto g = glyph.value.now;
+                        g.style_index = token.style;
+                        glyph.value = g;
                     }
                 }
             }

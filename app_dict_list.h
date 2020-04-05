@@ -54,7 +54,7 @@ namespace app::dict::list
                         if (word.mouse_hover  .now) colors = style.light;   else
                         {}
                         // '=' instead of 'go' for smooth mouse passage
-                        word.text.canvas.color = colors.back_color;
+                        word.text.ground.color = colors.back_color;
                         word.text.color = colors.fore_color;
 
                         auto r = word.coord.now.local();

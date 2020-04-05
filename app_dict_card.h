@@ -15,7 +15,7 @@ namespace app::dict::card
             }
             if (what == &skin)
             {
-                text.view.canvas.color = gui::skins[skin.now].white;
+                text.view.ground.color = gui::skins[skin.now].white;
                 text.font = font();
             }
         }

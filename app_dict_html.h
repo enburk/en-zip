@@ -3,15 +3,11 @@ namespace app::dict
 {
     struct html_view : gui::text::page
     {
-        bool mouse_sensible (XY p) override { return true; }
-
-        void on_mouse_press (XY p, char button, bool down) override
+        std::pair<bool, str> link (XY p)
         {
-            str link; if (!down) return;
-
             auto & column = view.column;
 
-            if (!column.coord.now.includes(p)) return;
+            if (!column.coord.now.includes(p)) return {false, ""};
             auto cp = p - column.coord.now.origin;
             for (auto & line : column)
             {
@@ -21,85 +17,84 @@ namespace app::dict
                 {
                     if (!token.coord.now.includes(lp)) continue;
                     if (token.glyphs.size() < 2) continue;
-                        
-                    link = token.text;
-                    if (auto range = vocabulary_range(link); range)
-                        notify(range.offset);
-
-                    return;
+                    return {true, token.text};
                 }
             }
+            return {false, ""};
+        }
 
+        bool mouse_sensible (XY p) override { return true; }
+
+        void on_mouse_press (XY p, char button, bool down) override
+        {
+            if (down)
+            {
+                auto [inside_token, token_link] = link(p);
+                if (inside_token) {
+                    if (auto range = vocabulary_range(token_link); range) {
+                        notify(range.offset);
+                        return;
+                    }
+                }
+            }
             gui::text::page::on_mouse_press(p, button, down);
         }
 
         void on_mouse_hover (XY p) override
         {
-            str link;
-
-            auto & column = view.column;
-
-            if (!column.coord.now.includes(p)) return;
-            auto cp = p - column.coord.now.origin;
-            for (auto & line : column)
+            if (!touch)
             {
-                if (!line.coord.now.includes(cp)) continue;
-                auto lp = cp - line.coord.now.origin;
-                for (auto & token : line)
+                auto [inside_token, token_link] = link(p);
+                if (inside_token)
+                    if (auto range = vocabulary_range(token_link); !range)
+                        token_link = "";
+    
+                mouse_image =
+                    //inside_selection ? "editor" :
+                    token_link != "" ? "hand" :
+                    inside_token ? "editor" :
+                    "arrow";
+    
+                for (auto & line : view.column)
                 {
-                    if (!token.coord.now.includes(lp)) continue;
-                    if (token.glyphs.size() < 2) continue;
-                    link = token.text;
-                    break;
-                }
-            }
-
-            auto s = link; s.triml();
-            auto r = vocabulary.equal_range(eng::vocabulary::entry{s}, less);
-            if (!r) r = vocabulary.equal_range(eng::vocabulary::entry{s}, less_case_insentive);
-            if (!r) link = "";
-
-            for (auto & line : column)
-            {
-                for (auto & token : line)
-                {
-                    auto style_index = token.style;
-                    if (token.text == link)
+                    for (auto & token : line)
                     {
-                        auto style = style_index.style();
-                        style.color = RGBA(0,0,255);
-                        style_index = sys::glyph_style_index(style);
-                    }
-
-                    for (auto & glyph : token)
-                    {
-                        auto g = glyph.value.now;
-                        g.style_index = style_index;
-                        glyph.value = g;
+                        auto style_index = token.style;
+                        if (token.text == token_link)
+                        {
+                            auto style = style_index.style();
+                            style.color = RGBA(0,0,255);
+                            style_index = sys::glyph_style_index(style);
+                        }
+                        for (auto & glyph : token)
+                        {
+                            auto g = glyph.value.now;
+                            g.style_index = style_index;
+                            glyph.value = g;
+                        }
                     }
                 }
             }
-
             gui::text::page::on_mouse_hover(p);
         }
 
         void on_mouse_leave () override
         {
-            auto & column = view.column;
-
-            for (auto & line : column)
+            if (!touch)
             {
-                for (auto & token : line)
+                for (auto & line : view.column)
                 {
-                    for (auto & glyph : token)
+                    for (auto & token : line)
                     {
-                        auto g = glyph.value.now;
-                        g.style_index = token.style;
-                        glyph.value = g;
+                        for (auto & glyph : token)
+                        {
+                            auto g = glyph.value.now;
+                            g.style_index = token.style;
+                            glyph.value = g;
+                        }
                     }
                 }
             }
-
             gui::text::page::on_mouse_leave();
         }
     };
@@ -191,6 +186,8 @@ namespace app::dict
                 html += "</div>";
             }
         }
+
+        html.replace_all("&", "&amp;");
 
         return bold_italic(html);
     }

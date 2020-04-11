@@ -139,8 +139,6 @@ namespace app::dict::list
             if (what == &skin)
             {
                 word.object.background.color = gui::skins[skin.now].white;
-                word.object.selection.color = gui::skins[skin.now].normal.back_color;
-                word.object.caret.canvas.color = gui::skins[skin.now].touched.back_color;
                 word.object.style = sys::glyph_style{ font(), gui::skins[skin.now].black };
                 tool.color = gui::skins[skin.now].light.back_color;
             }
@@ -195,9 +193,7 @@ namespace app::dict::list
                 int n = list.object.origin.now + list.object.current.now;
                 bool in = 0 <= n && n < vocabulary.size(); if (!in) return;
 
-                if (what == list.object.word_changed)
-                    word.object.text = vocabulary[n].title;
-
+                word.object.text = vocabulary[n].title;
                 word.object.caret_from = 0;
                 word.object.caret_upto = word.object.line.size()-1;
                 word.object.refresh();

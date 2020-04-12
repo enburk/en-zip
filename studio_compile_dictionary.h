@@ -1,7 +1,9 @@
+#pragma once
 #include "dat_out.h"
-namespace studio::dict
+#include "app_dict.h"
+namespace studio::compile
 {
-    bool dictionary_update ()
+    bool dictionary_update (array<str> & out, array<str> & err)
     {
         using std::filesystem::path;
         path src = "../en-wiktionary/enwiktionary-data.txt";
@@ -13,6 +15,8 @@ namespace studio::dict
             std::filesystem::last_write_time(dir / "vocabulary.dat") >
             std::filesystem::last_write_time(src))
             return false;
+
+        out += "dictionary update...";
 
         std::filesystem::create_directories(dir);
 
@@ -37,14 +41,24 @@ namespace studio::dict
                 line.split_by   ("     # ", s1, s2);
                 dictionary.back().topics.back().content += s2;
             }
-            else dictionary += eng::dictionary::entry{line};
+            else
+            {
+                dictionary += eng::dictionary::entry{line};
+                if (dictionary.size() % 100'000 == 0)
+                    out += "read " + std::to_string(
+                    dictionary.size()) + " entries";
+            }
         }
+
+        out += "dictionary sort...";
 
         dictionary.sort(app::dict::less);
         vocabulary.resize(dictionary.size());
         array<str> vocabulary_unicode;
         array<str> vocabulary_sorting;
         bool sort_out_next_line = false;
+
+        out += "dictionary sort ok";
 
         for (int i=0; i<dictionary.size(); i++)
         {
@@ -80,6 +94,8 @@ namespace studio::dict
 
         for (int i=0; i<dictionary.size(); i++)
         {
+            if ((i+1) % 100'000 == 0) out += "wrote " + std::to_string(i) + " entries";
+
             auto & topics = dictionary[i].topics;
 
             if (topics.size() == 1 && topics[0].header == ">>>") continue;
@@ -120,6 +136,9 @@ namespace studio::dict
         vocabulary_dat << 0x12345678; // endianness
         vocabulary_dat << vocabulary.size(); for (auto & entry : vocabulary)
         vocabulary_dat << entry;
+
+        out += "dictionary update ok";
+        out += "";
 
         return true;
     }

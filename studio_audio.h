@@ -1,5 +1,6 @@
-#include "app_mono.h"
-namespace studio::mono
+#pragma once
+#include "app.h"
+namespace studio::audio
 {
     struct studio : gui::widget<studio>
     {
@@ -7,7 +8,7 @@ namespace studio::mono
 
         studio ()
         {
-            canvas.color = gui::skins[skin.now].normal.back_color;
+            canvas.color = gui::skins[skin.now].light.back_color;
         }
 
         void on_change (void* what) override

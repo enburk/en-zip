@@ -1,6 +1,6 @@
-#include "app_dict.h"
-#include "studio_dict_update.h"
-namespace studio::dict
+#pragma once
+#include "app_dual.h"
+namespace studio::dual
 {
     struct area : gui::widget<area>
     {
@@ -8,18 +8,11 @@ namespace studio::dict
 
     struct studio : gui::widget<studio>
     {
-        app::dict::app app;
+        app::dual::app app;
         gui::area<area> area;
         gui::splitter splitter;
 
-        studio ()
-        {
-            if (dictionary_update())
-            {
-                app.reload();
-            }
-        }
-
+        void reload () { app.reload(); }
 
         void on_change (void* what) override
         {
@@ -46,3 +39,4 @@ namespace studio::dict
         void on_key_pressed (str key, bool down) override { app.on_key_pressed(key,down); }
     };
 }
+

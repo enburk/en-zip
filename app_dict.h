@@ -1,3 +1,4 @@
+#pragma once
 #include "app_dict_card.h"
 #include "app_dict_list.h"
 namespace app::dict
@@ -9,10 +10,7 @@ namespace app::dict
 
         gui::splitter splitter;
 
-        app()
-        {
-            reload();
-        }
+        app() { reload(); }
 
         void reload ()
         {

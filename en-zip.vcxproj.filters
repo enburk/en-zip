@@ -44,9 +44,15 @@
     <ClInclude Include="app_dict_list.h" />
     <ClInclude Include="app_dual.h" />
     <ClInclude Include="app_mono.h" />
-    <ClInclude Include="studio_dict.h" />
-    <ClInclude Include="studio_dict_update.h" />
-    <ClInclude Include="studio_dual.h" />
-    <ClInclude Include="studio_mono.h" />
+    <ClInclude Include="media.h" />
+    <ClInclude Include="media_audio.h" />
+    <ClInclude Include="media_video.h" />
+    <ClInclude Include="studio_app_dict.h" />
+    <ClInclude Include="studio_app_dual.h" />
+    <ClInclude Include="studio_app_mono.h" />
+    <ClInclude Include="studio_audio.h" />
+    <ClInclude Include="studio_video.h" />
+    <ClInclude Include="studio_compile.h" />
+    <ClInclude Include="studio_compile_dictionary.h" />
   </ItemGroup>
 </Project>

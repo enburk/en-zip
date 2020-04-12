@@ -1,5 +1,6 @@
-#include "app_dual.h"
-namespace studio::dual
+#pragma once
+#include "app.h"
+namespace studio::video
 {
     struct studio : gui::widget<studio>
     {
@@ -8,6 +9,9 @@ namespace studio::dual
         studio ()
         {
             canvas.color = gui::skins[skin.now].light.back_color;
+
+        //image<RGBA> img = pix::read("test.jpg").value();
+        //pix::write(img, "test.png");
         }
 
         void on_change (void* what) override

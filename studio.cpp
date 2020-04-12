@@ -1,6 +1,9 @@
-#include "studio_dict.h"
-#include "studio_dual.h"
-#include "studio_mono.h"
+#include "studio_app_dict.h"
+#include "studio_app_dual.h"
+#include "studio_app_mono.h"
+#include "studio_compile.h"
+#include "studio_audio.h"
+#include "studio_video.h"
 
 struct Studio : gui::widget<Studio>
 {
@@ -9,6 +12,10 @@ struct Studio : gui::widget<Studio>
     studio::dict::studio dict;
     studio::dual::studio mono;
     studio::mono::studio dual;
+    studio::audio::studio audio;
+    studio::video::studio video;
+    studio::compile::studio compile;
+    array<gui::base::widget*> studios;
 
     Studio()
     {
@@ -19,12 +26,20 @@ struct Studio : gui::widget<Studio>
         select(0).text.text = "dictionary";
         select(1).text.text = "bilingual";
         select(2).text.text = "monolingual";
+        select(3).text.text = "audio";
+        select(4).text.text = "video";
+        select(5).text.text = "compile!";
         select(0).on = true;
-        mono.hide();
-        dual.hide();
 
-        //image<RGBA> img = pix::read("test.jpg").value();
-        //pix::write(img, "test.png");
+        studios += &dict;
+        studios += &mono;
+        studios += &dual;
+        studios += &audio;
+        studios += &video;
+        studios += &compile;
+
+        for (int i=1; i<studios.size(); i++)
+            studios[i]->hide();
     }
 
     void on_change (void* what) override
@@ -41,11 +56,13 @@ struct Studio : gui::widget<Studio>
             select(0).coord = XYWH(w*0, 0, w, h);
             select(1).coord = XYWH(w*1, 0, w, h);
             select(2).coord = XYWH(w*2, 0, w, h);
-            select   .coord = XYWH(0, 0, 3*w, h);
+            select(3).coord = XYWH(w*4, 0, w, h);
+            select(4).coord = XYWH(w*5, 0, w, h);
+            select(5).coord = XYWH(w*7, 0, w, h);
+            select   .coord = XYWH(0, 0, 8*w, h);
 
-            dict.coord = XYXY(0, h, W, H);
-            dual.coord = XYXY(0, h, W, H);
-            mono.coord = XYXY(0, h, W, H);
+            for (int i=0; i<studios.size(); i++)
+                studios[i]->coord = XYXY(0, h, W, H);
         }
         if (what == &skin)
         {
@@ -57,29 +74,56 @@ struct Studio : gui::widget<Studio>
     {
         if (w == &select)
         {
-            dict.show (n == 0);
-            dual.show (n == 1);
-            mono.show (n == 2);
+            for (int i=0; i<studios.size(); i++)
+                studios[i]->show (i == n);
+
+            if (studios[n] == &compile)
+                for (int i=0; i<studios.size(); i++)
+                    if (i != n) select(i).enabled = false;
+
+            compile.run();
+        }
+    }
+    void on_notify (gui::base::widget* w) override
+    {
+        if (w == &compile)
+        {
+            if (compile.data_updated)
+            {
+                dict.reload();
+            }
+
+            for (int i=0; i<studios.size(); i++)
+                select(i).enabled = true;
         }
     }
 
     void on_focus (bool on) override
     {
-        if (dict.alpha.now == 255) dict.on_focus(on); else
-        if (dual.alpha.now == 255) dual.on_focus(on); else
-        if (mono.alpha.now == 255) mono.on_focus(on);
+        for (auto studio : studios) {
+            if (studio->alpha.now == 255) {
+                studio->on_focus(on);
+                break;
+            }
+        }
     }
     void on_keyboard_input (str symbol) override
     {
-        if (dict.alpha.now == 255) dict.on_keyboard_input(symbol); else
-        if (dual.alpha.now == 255) dual.on_keyboard_input(symbol); else
-        if (mono.alpha.now == 255) mono.on_keyboard_input(symbol);
+        for (auto studio : studios) {
+            if (studio->alpha.now == 255) {
+                studio->on_keyboard_input(symbol);
+                break;
+            }
+        }
     }
     void on_key_pressed (str key, bool down) override
     {
-        if (dict.alpha.now == 255) dict.on_key_pressed(key,down); else
-        if (dual.alpha.now == 255) dual.on_key_pressed(key,down); else
-        if (mono.alpha.now == 255) mono.on_key_pressed(key,down);
+        for (auto studio : studios) {
+            if (studio->alpha.now == 255) {
+                studio->on_key_pressed(key,down);
+                break;
+            }
+        }
     }
 };
 

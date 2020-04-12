@@ -130,6 +130,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,13 +142,14 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -173,10 +175,16 @@
     <ClInclude Include="dat_in.h" />
     <ClInclude Include="dat_out.h" />
     <ClInclude Include="eng.h" />
-    <ClInclude Include="studio_dict.h" />
-    <ClInclude Include="studio_dict_update.h" />
-    <ClInclude Include="studio_dual.h" />
-    <ClInclude Include="studio_mono.h" />
+    <ClInclude Include="media.h" />
+    <ClInclude Include="media_audio.h" />
+    <ClInclude Include="media_video.h" />
+    <ClInclude Include="studio_app_dict.h" />
+    <ClInclude Include="studio_app_dual.h" />
+    <ClInclude Include="studio_app_mono.h" />
+    <ClInclude Include="studio_audio.h" />
+    <ClInclude Include="studio_compile.h" />
+    <ClInclude Include="studio_compile_dictionary.h" />
+    <ClInclude Include="studio_video.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

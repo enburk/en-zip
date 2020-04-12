@@ -3,7 +3,7 @@
 #include "app_dict.h"
 namespace studio::compile
 {
-    bool dictionary_update (array<str> & out, array<str> & err)
+    bool dictionary_update (gui::text::console & out, gui::text::console & err)
     {
         using std::filesystem::path;
         path src = "../en-wiktionary/enwiktionary-data.txt";
@@ -16,7 +16,7 @@ namespace studio::compile
             std::filesystem::last_write_time(src))
             return false;
 
-        out += "dictionary update...";
+        out << "dictionary update...";
 
         std::filesystem::create_directories(dir);
 
@@ -45,12 +45,12 @@ namespace studio::compile
             {
                 dictionary += eng::dictionary::entry{line};
                 if (dictionary.size() % 100'000 == 0)
-                    out += "read " + std::to_string(
+                    out << "read " + std::to_string(
                     dictionary.size()) + " entries";
             }
         }
 
-        out += "dictionary sort...";
+        out << "dictionary sort...";
 
         dictionary.sort(app::dict::less);
         vocabulary.resize(dictionary.size());
@@ -58,7 +58,7 @@ namespace studio::compile
         array<str> vocabulary_sorting;
         bool sort_out_next_line = false;
 
-        out += "dictionary sort ok";
+        out << "dictionary sort ok";
 
         for (int i=0; i<dictionary.size(); i++)
         {
@@ -94,7 +94,7 @@ namespace studio::compile
 
         for (int i=0; i<dictionary.size(); i++)
         {
-            if ((i+1) % 100'000 == 0) out += "wrote " + std::to_string(i) + " entries";
+            if ((i+1) % 100'000 == 0) out << "wrote " + std::to_string(i+1) + " entries";
 
             auto & topics = dictionary[i].topics;
 
@@ -137,8 +137,8 @@ namespace studio::compile
         vocabulary_dat << vocabulary.size(); for (auto & entry : vocabulary)
         vocabulary_dat << entry;
 
-        out += "dictionary update ok";
-        out += "";
+        out << "dictionary update ok";
+        out << "";
 
         return true;
     }

@@ -1,4 +1,6 @@
+#pragma once
 #include "eng.h"
+#include "../ae/library/cpp/proto-studio/gui_widget_text_console.h"
 namespace media
 {
     using std::byte;
@@ -22,9 +24,12 @@ namespace media
         bool used = false;
     };
 
-    array<resource> scan (path dir)
+    array<resource> scan (path dir,
+        gui::text::console & out,
+        gui::text::console & err)
     {
         array<resource> resources;
+        out << "scan " + dir.string();
         for (std::filesystem::directory_iterator
             next(dir), end; next != end; ++next)
         {
@@ -35,10 +40,11 @@ namespace media
             {
                 if (name.starts_with(".")) continue;
 
-                resources += scan(p);
+                resources += scan(p, out, err);
             }
             if (is_regular_file(p))
             {
+                out << "scan " + p.string();
                 //auto ext = p.extension();
                 //if (ext != ".ae!" && ext != ".ae"
                 //&&  ext != ".cpp" && ext != ".hpp"
@@ -64,5 +70,7 @@ namespace media
         //    }
         //}
         //dir.text = root.now.string();
+
+        return resources;
     }
 }

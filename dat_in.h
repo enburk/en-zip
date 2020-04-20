@@ -6,6 +6,7 @@ namespace dat::in
 {
     using std::byte;
     using std::filesystem::path;
+    using aux::expected;
 
     inline int32_t endianness = 0; // 0 is important for the first get int
 
@@ -71,4 +72,22 @@ namespace dat::in
             return data;
         }
     };
+
+    expected<array<byte>> read (path path) try
+    {
+        std::ifstream ifstream (path, std::ios::binary);
+
+        ifstream.seekg(0, std::ios::end);
+        int size = (int)ifstream.tellg();
+        ifstream.seekg(0, std::ios::beg);
+
+        array<byte> pool;
+        pool.resize(size);
+        ifstream.read((char*)(pool.data()), size);
+
+        return pool;
+    }
+    catch (std::exception & e) {
+    return aux::error(e.what());
+    }
 }

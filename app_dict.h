@@ -14,18 +14,10 @@ namespace app::dict
 
         void reload ()
         {
+            dat::in::pool pool;
             std::filesystem::path dir = "../data";
             if (!std::filesystem::exists (dir / "vocabulary.dat")) return;
-            std::ifstream ifstream (dir / "vocabulary.dat", std::ios::binary);
-
-            ifstream.seekg(0, std::ios::end);
-            int size = (int)ifstream.tellg();
-            ifstream.seekg(0, std::ios::beg);
-
-            dat::in::pool pool;
-            pool.bytes.resize(size);
-            ifstream.read((char*)(pool.bytes.data()), size);
-
+            pool.bytes = dat::in::read(dir / "vocabulary.dat").value();
             dat::in::endianness = pool.get_int();
             vocabulary.resize(pool.get_int());
             for (auto & entry : vocabulary)

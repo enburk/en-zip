@@ -28,26 +28,26 @@ namespace studio::compile
             if (what == &timer && compilation.valid())
             {
                 auto status = compilation.wait_for(0ms);
-                if (status == std::future_status::ready)
-                {
-                    try { compilation.get(); }
+                if (status != std::future_status::ready)
+                    return;
 
-                    catch (const std::exception & e) {
-                        out.object << "<b><font color=#B00020>" "exception: " +
-                            str(e.what()) + "</font></b>";
-                    }
-                    catch (...) {
-                        out.object << "<b><font color=#B00020>"
-                            "unidentified exception" "</font></b>";
-                    }
-            
-                    timer.go (gui::time(), gui::time()); /// stop timer
-                 /// this statement will cause recursive on_change()
-                 /// so do it after std::future get ivalid
-                 /// to prevent second get() call
-           
-                    notify();
+                try { compilation.get(); }
+
+                catch (const std::exception & e) {
+                    out.object << "<b><font color=#B00020>" "exception: " +
+                        str(e.what()) + "</font></b>";
                 }
+                catch (...) {
+                    out.object << "<b><font color=#B00020>"
+                        "unidentified exception" "</font></b>";
+                }
+            
+                timer.go (gui::time(), gui::time()); /// stop timer
+                /// this statement will cause recursive on_change()
+                /// so do it after std::future get ivalid
+                /// to prevent second get() call
+           
+                notify();
             }
         }
 
@@ -63,18 +63,50 @@ namespace studio::compile
 
             compilation = std::async([this]() -> void
             {
-                data_updated = false;
+                try
+                {
+                    data_updated = false;
 
-                if (dictionary_update(out.object, err.object))
-                    data_updated = true;
+                    if (dictionary_update(out.object, err.object))
+                        data_updated = true;
 
-                setlocale(LC_ALL,"en_US.utf8");
+                    setlocale(LC_ALL,"en_US.utf8");
 
-                auto resources = media::scan("../datae", out.object, err.object);
+                    media::report::out = &out.object;
+                    media::report::err = &err.object;
+                    media::report::unidentified.clear();
+                    media::report::id2path.clear();
+                    media::report::data_updated = false;
 
-                out.object << (data_updated ?
-                    "<b><font color=#800000>" "data updated" "</font></b>":
-                    "<b><font color=#000080>"  "up to date"  "</font></b>");
+                    auto resources = media::scan("../datae");
+
+                    if (media::report::unidentified.size() > 0) {
+                        err.object << "unidentified files:";
+                        for (auto path : media::report::unidentified)
+                            err.object << path.string();
+                    }
+
+                    for (auto & [id, paths] : media::report::id2path) {
+                        if (paths.size () > 1) {
+                            err.object << "files with same id: " + id;
+                            for (auto path : paths)
+                                err.object << path.string();
+                        }
+                    }
+
+                    media::audio::proceed(resources.audio, app::dict::vocabulary);
+                    media::video::proceed(resources.video, app::dict::vocabulary);
+
+                    data_updated |=
+                    media::report::data_updated;
+                    out.object << (data_updated ?
+                        "<b><font color=#800000>" "data updated" "</font></b>":
+                        "<b><font color=#000080>"  "up to date"  "</font></b>");
+                }
+                catch (std::exception & e) {
+                    out.object << "<b><font color=#B00020>" +
+                        str(e.what()) + "</font></b>";
+                }
             });
         }
     };

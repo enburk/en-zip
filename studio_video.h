@@ -9,9 +9,6 @@ namespace studio::video
         studio ()
         {
             canvas.color = gui::skins[skin.now].light.back_color;
-
-        //image<RGBA> img = pix::read("test.jpg").value();
-        //pix::write(img, "test.png");
         }
 
         void on_change (void* what) override

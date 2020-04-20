@@ -140,6 +140,8 @@ namespace studio::compile
         out << "dictionary update ok";
         out << "";
 
+        app::dict::vocabulary = vocabulary;
+
         return true;
     }
 }

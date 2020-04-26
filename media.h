@@ -1,5 +1,5 @@
 #pragma once
-#include "eng.h"
+#include "eng_dictionary.h"
 #include "../ae/library/cpp/aux_utils.h"
 #include "../ae/library/cpp/pix_process.h"
 #include "../ae/library/cpp/proto-studio/gui_widget_text_console.h"
@@ -12,21 +12,11 @@ namespace media
     struct resource
     {
         path path;
-        str title, comment, license, credit, id;
+        str id, kind;
+        str title, comment, credit;
         array<str> entries;
         array<str> options;
         array<str> keywords;
-        bool used = false;
-    };
-
-    struct resources
-    {
-        array<resource> audio;
-        array<resource> video;
-        void operator += (resources r) {
-            audio += r.audio;
-            video += r.video;
-        }
     };
 
     namespace report
@@ -53,9 +43,9 @@ namespace media
         return s;
     }
 
-    resources scan (path dir, resource common = resource{})
+    array<resource> scan (path dir, resource common = resource{})
     {
-        resources resources;
+        array<resource> resources;
 
         std::map<path, bool> identified;
 
@@ -71,43 +61,44 @@ namespace media
             if (name.starts_with(".")) continue;
             name = un_msdos(name);
 
-            str title, meta, ignore;
-            name.split_by("{{", title, meta); title.strip();
-            meta.split_by("}}", meta, ignore); meta.strip();
-
             resource resource = common;
-            if (is_directory(entry) && meta != "")
-                resource.id = "{{" + to_msdos(meta) + "}}" +
-                resource.id;
 
-            str credit, license;
-            meta.split_by("$", credit,  meta); credit .strip();
-            meta.split_by("#", license, meta); license.strip();
-            if (credit  != "") resource.credit  = credit;
-            if (license != "") resource.license = license;
+            str title, meta, yadda;
+            name.split_by("{{", title, meta); title.strip();
+            meta.split_by("}}", meta, yadda); meta.strip();
+
+            str credit, m = meta;
+            m.split_by("##", credit, m); credit.strip();
+            if (credit != "") resource.credit = credit;
             
-            array<str> options = meta.split_by("#");
-            for (str & option : options) option.strip();
+            array<str> options = m.split_by("##");
+            for (str & option : options) {
+                option.strip(); if (option == "") continue;
+                resource.options += option;
+            }
 
             if (is_directory(entry))
             {
+                if (meta != "")
+                    resource.id +=
+                    " {{" + to_msdos(meta) + "}}";
+
                 resources += scan(entry, resource);
             }
-            if (is_regular_file(entry))
+            else if (is_regular_file(entry))
             {
-                if (title != "") resource.title = title;
+                resource.path = entry;
+                resource.id = entry.stem().string() +
+                resource.id + entry.extension().string();
 
-                resource.id = entry.filename().string();
-                if (common.id != "")
-                    resource.id += " " + common.id;
-                report::id2path[resource.id] += entry;
+                if (title != "") resource.title = title;
 
                 *report::out << "scan " + entry.string();
                 str ext = entry.extension().string();
                 ext = ext.ascii_lowercased();
 
-                if (!audio.contains(ext) &&
-                    !video.contains(ext))
+                if (audio.contains(ext)) resource.kind = "audio"; else
+                if (video.contains(ext)) resource.kind = "video"; else
                 {
                     identified[entry] |= false;
                     continue;
@@ -119,21 +110,16 @@ namespace media
                 {
                     identified[txt] = true;
 
-                    std::ifstream stream(txt); str text = std::string{(
-                    std::istreambuf_iterator<char>(stream)),
-                    std::istreambuf_iterator<char>()};
-
-                    if (text.starts_with("\xEF" "\xBB" "\xBF"))
-                        text.upto(3).erase(); // UTF-8 BOM
-
                     array<str> title_lines;
-                    array<str> lines = text.split_by("\n");
+                    array<str> lines = dat::in::text(txt).value();
                     for (str line : lines)
                     {
                         line.strip();
 
-                        if (line.starts_with("#")) {
-                            resource.options += line.from(1);
+                        if (line.starts_with("##")) {
+                            str option = line.from(2);
+                            option.strip(); if (option == "") continue;
+                            resource.options += option;
                         }
                         else
                         if (line.starts_with("[[")) {
@@ -162,8 +148,8 @@ namespace media
                         resource.title = str(title_lines);
                 }
 
-                if (audio.contains(ext)) resources.audio += resource; else
-                if (video.contains(ext)) resources.video += resource;
+                report::id2path[resource.id] += entry; // check for same id
+                resources += resource;
             }
         }
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "app.h"
 #include <future>
+#include "studio_app_dict.h"
 #include "studio_compile_dictionary.h"
 namespace studio::compile
 {
@@ -94,8 +95,7 @@ namespace studio::compile
                         }
                     }
 
-                    media::audio::proceed(resources.audio, app::dict::vocabulary);
-                    media::video::proceed(resources.video, app::dict::vocabulary);
+                    ::studio::dict::compile(resources);
 
                     data_updated |=
                     media::report::data_updated;
@@ -106,6 +106,10 @@ namespace studio::compile
                 catch (std::exception & e) {
                     out.object << "<b><font color=#B00020>" +
                         str(e.what()) + "</font></b>";
+                }
+                catch (...) {
+                    out.object << "<b><font color=#B00020>"
+                        "unknown exception" "</font></b>";
                 }
             });
         }

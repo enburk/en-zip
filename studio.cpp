@@ -81,7 +81,8 @@ struct Studio : gui::widget<Studio>
                 for (int i=0; i<studios.size(); i++)
                     if (i != n) select(i).enabled = false;
 
-            compile.run();
+            if (studios[n] == &compile)
+                compile.run();
         }
     }
     void on_notify (gui::base::widget* w) override

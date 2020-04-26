@@ -1,4 +1,5 @@
-#include "app_dict_abc.h"
+#pragma once
+#include "app.h"
 namespace app::dict
 {
     struct html_view : gui::text::page
@@ -31,7 +32,7 @@ namespace app::dict
             {
                 auto [inside_token, token_link] = link(p);
                 if (inside_token) {
-                    if (auto range = vocabulary_range(token_link); range) {
+                    if (auto range = eng::vocabulary::find_case_insensitive(token_link); range) {
                         notify(range.offset);
                         return;
                     }
@@ -46,7 +47,7 @@ namespace app::dict
             {
                 auto [inside_token, token_link] = link(p);
                 if (inside_token)
-                    if (auto range = vocabulary_range(token_link); !range)
+                    if (auto range = eng::vocabulary::find_case_insensitive(token_link); !range)
                         token_link = "";
     
                 mouse_image =
@@ -139,7 +140,7 @@ namespace app::dict
 
         for (const auto & topic : entry.topics)
         {
-            if (lexical_items.find(topic.header) != lexical_items.end())
+            if (eng::lexical_items.find(topic.header) != eng::lexical_items.end())
             {
                 html += "<br><b><font color=#008000>"
                         + topic.header + "</font></b> &nbsp; "

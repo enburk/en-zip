@@ -8,7 +8,6 @@ namespace media::video
     using pix::RGBA;
     using pix::image;
     using pix::frame;
-    using namespace std::literals::chrono_literals;
 
     inline void resize (image<RGBA> & img, int maxsizex, int maxsizey, bool sharp = true)
     {
@@ -40,14 +39,16 @@ namespace media::video
         int l = 0; int r = 0;
         int t = 0; int b = 0;
                 
+        auto percent = [](str s){ return std::stod(str(s.from(1))) / 100; };
+
         for (str s : crop_params.split_by(" "))
         {
-            double percent = std::stod(str(s.from(1))) / 100;
+            s.strip();
 
-            if (s.starts_with("l")) l = clamp<int>(img.size.x * percent + 0.5); else
-            if (s.starts_with("r")) r = clamp<int>(img.size.x * percent + 0.5); else
-            if (s.starts_with("t")) t = clamp<int>(img.size.y * percent + 0.5); else
-            if (s.starts_with("b")) b = clamp<int>(img.size.y * percent + 0.5); else
+            if (s.starts_with("l")) l = clamp<int>(img.size.x * percent(s) + 0.5); else
+            if (s.starts_with("r")) r = clamp<int>(img.size.x * percent(s) + 0.5); else
+            if (s.starts_with("t")) t = clamp<int>(img.size.y * percent(s) + 0.5); else
+            if (s.starts_with("b")) b = clamp<int>(img.size.y * percent(s) + 0.5); else
             if (s.starts_with("q"))
             {
                 int x = img.size.x;
@@ -73,6 +74,7 @@ namespace media::video
 
     inline expected<array<byte>> readsample (path original, path cache, str crop_params) try
     {
+        using namespace std::literals::chrono_literals;
         if (std::filesystem::exists(cache) == false ||
             std::filesystem::last_write_time(original) >
             std::filesystem::last_write_time(cache) - 2h)
@@ -90,11 +92,9 @@ namespace media::video
                     img.size.y > 2500 && std::filesystem::file_size(original) > 5*1024*1024)
                 {
                     *report::out << "copy huge " + original.string();
-
                     if (!std::filesystem::copy_file(original, "../datae_huge"/original.filename(),
                          std::filesystem::copy_options::skip_existing))
-
-                    *report::out << "<b>already exists</b>";
+                        *report::out << "<b>already exists</b>";
 
                     resize (img, 2500, 2500, false);
                     pix::write (img, original, 95);
@@ -102,72 +102,37 @@ namespace media::video
 
                 crop (img, crop_params);
                 resize (img, 720, 720);
-                pix::write (img, cache, 95);
+
+                auto result = pix::write (img, cache, 95);
+                if (!result.ok()) return result.error();
             }
         }
 
-        return dat::in::read(cache);
+        return dat::in::bytes(cache);
     }
     catch (std::exception & e) {
-    return aux::error(e.what());
+    return aux::error("media::video::readsample:"
+        "<br>  path: " + original.string() +
+        "<br>  cache: " + cache.string() +
+        "<br>  crop: " + crop_params +
+        "<br>  " + e.what());
     }
 
-    struct link
+    inline expected<array<byte>> data (const resource & r)
     {
-        int32_t kind = 0;
-        int32_t file = 0;
-        int32_t offset = 0;
-        int32_t length = 0;
-    };
+        str crop;
+        for (str option : r.options)
+            if (option.starts_with("crop "))
+                crop = option.from(5);
 
-    void proceed (array<resource> resources)
-    {
-        std::map<int, array<link>> linkmap;
+        str letter = eng::asciized(
+            str(unicode::glyphs(r.id).upto(1))).
+            ascii_lowercased();
 
-        dat::out::file video ("../video.dat");
-        dat::out::file index ("../index.dat");
+        str cache = "../data/.cache/"
+            + r.kind + "/" + letter + "/"
+            + r.id;
 
-        for (auto & r : resources)
-        {
-            if (r.entries.size() == 0)
-                r.entries += r.title;
-
-            link link;
-
-            for (str entry : r.entries)
-            {
-                if (auto range = app::dict::vocabulary_range(entry); range)
-                {
-                    if (link.length == 0)
-                    {
-                        str crop;
-                        for (str option : r.options)
-                            if (option.starts_with("#"))
-                                crop = option.from(1);
-
-                        array<byte> data = readsample(
-                            r.path, "../data/cache/"+ r.id, crop)
-                                .value();
-
-                        link.offset = datafile.size;
-                        link.length = data.size();
-                        link.kind = 0;
-                        link.file = 0;
-
-                        video << r.title;
-                        video << r.comment;
-                        video << r.credit;
-                        video << data;
-                    }
-
-                    linkmap[range.offset] += link;
-                }
-            }
-        }
-
-        for (auto [entry, links] : linkmap) {
-            index << entry;
-            index << links;
-        }
+        return readsample(r.path, std::string(cache), crop);
     }
 }

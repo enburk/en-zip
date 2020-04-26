@@ -2,7 +2,8 @@
 #include "media.h"
 namespace media::audio
 {
-    void proceed (array<resource> resources)
+    inline expected<array<byte>> data (const resource & r)
     {
+        return array<byte>{};
     }
 }

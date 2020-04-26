@@ -38,4 +38,36 @@ namespace studio::dict
         void on_keyboard_input (str symbol) override { app.on_keyboard_input(symbol); }
         void on_key_pressed (str key, bool down) override { app.on_key_pressed(key,down); }
     };
+
+    inline void compile (array<media::resource> & resources)
+    {
+        std::map<int, array<media::data::location>> mediae;
+
+        media::data::out::storage storage ("../data/app_dict");
+        dat::out::file index ("../data/app_dict/index.dat");
+
+        for (auto & r : resources)
+        {
+            if (r.entries.size() == 0)
+                r.entries += r.title;
+
+            media::data::location location;
+
+            for (str entry : r.entries)
+            {
+                if (auto range = eng::vocabulary::find(entry); range)
+                {
+                    if (location == media::data::location{})
+                        location = storage.add(r);
+
+                    mediae[range.offset] += location;
+                }
+            }
+        }
+
+        for (auto [entry, locations] : mediae) {
+            index << entry;
+            index << locations;
+        }
+    }
 }

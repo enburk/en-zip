@@ -1,4 +1,6 @@
-#include "app_dict_html.h"
+#pragma once
+#include "app_dict_media.h"
+#include "app_dict_video.h"
 namespace app::dict::card
 {
     auto font = [](){ return sys::font{"Segoe UI", gui::metrics::text::height}; };
@@ -122,7 +124,7 @@ namespace app::dict::card
             {
                 str link = undoes.back();
                 undoes.pop_back(); redoes += current.title;
-                if (auto range = vocabulary_range(link); range) {
+                if (auto range = eng::vocabulary::find_case_insensitive(link); range) {
                     notify(range.offset);
                     undoes.pop_back();
                     refresh();
@@ -131,7 +133,7 @@ namespace app::dict::card
             if (w == &redo && redoes.size() > 0) 
             {
                 str link = redoes.back(); redoes.pop_back();
-                if (auto range = vocabulary_range(link); range)
+                if (auto range = eng::vocabulary::find_case_insensitive(link); range)
                     notify(range.offset);
             }
         }

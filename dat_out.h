@@ -44,10 +44,16 @@ namespace dat::out
 
     struct file
     {
-        pool pool; std::ofstream fstream; int32_t size = 0;
+        pool pool; std::ofstream fstream; path path; int32_t size = 0;
 
-        file (path path) : fstream (path, std::ios::binary) {}
        ~file () { fstream.write((char*)pool.bytes.data(), pool.bytes.size()); }
+        file (std::filesystem::path p, std::ios_base::openmode mode = std::ios::binary)
+            : fstream (p, mode), path(p)
+        {
+            auto dir = path.parent_path();
+            if (dir != std::filesystem::path())
+                std::filesystem::create_directories(dir);
+        }
 
         template <typename entry> 
         file & operator << (entry && e)

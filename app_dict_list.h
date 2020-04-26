@@ -1,4 +1,5 @@
-#include "app_dict_abc.h"
+#pragma once
+#include "app.h"
 namespace app::dict::list
 {
     auto font = [](){ return sys::font{"Segoe UI", gui::metrics::text::height*104/100}; };
@@ -175,10 +176,14 @@ namespace app::dict::list
             {
                 if (vocabulary.size() == 0) return;
                 auto s = word.object.text.now; s.triml();
-                auto i = vocabulary.lower_bound(eng::vocabulary::entry{s}, less);
+                auto i = vocabulary.lower_bound(
+                    eng::vocabulary::entry{s},
+                    eng::vocabulary::less);
+
                 if (i == vocabulary.end()) i--;
                 if (i->title != s) i = vocabulary.lower_bound(
-                    eng::vocabulary::entry{s}, less_case_insentive);
+                    eng::vocabulary::entry{s},
+                    eng::vocabulary::less_case_insensitive);
 
                 flag = true;
                 int n = (int)(i - vocabulary.begin());

@@ -21,7 +21,6 @@ namespace studio::compile
         std::filesystem::create_directories(dir);
 
         array<eng::dictionary::entry> dictionary;
-        array<eng::vocabulary::entry> vocabulary;
         dictionary.reserve(1024*1024);
 
         str line, s1, s2;
@@ -52,7 +51,7 @@ namespace studio::compile
 
         out << "dictionary sort...";
 
-        dictionary.sort(app::dict::less);
+        dictionary.sort(eng::dictionary::less);
         vocabulary.resize(dictionary.size());
         array<str> vocabulary_unicode;
         array<str> vocabulary_sorting;
@@ -119,7 +118,7 @@ namespace studio::compile
                 if (redirect == vocabulary[i].title) { ofstream << "REDIRECT: ITSELF: " <<
                     dictionary[i].title << " >>> " << redirect << std::endl; continue; }
 
-                auto it = vocabulary.lower_bound(eng::vocabulary::entry{redirect}, app::dict::less);
+                auto it = vocabulary.lower_bound(eng::vocabulary::entry{redirect}, eng::vocabulary::less);
                 if (it == vocabulary.end()) { ofstream << "REDIRECT: NOT FOUND: " <<
                     dictionary[i].title << " >>> " << redirect << std::endl; continue; }
 
@@ -139,8 +138,6 @@ namespace studio::compile
 
         out << "dictionary update ok";
         out << "";
-
-        app::dict::vocabulary = vocabulary;
 
         return true;
     }

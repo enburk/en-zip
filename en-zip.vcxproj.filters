@@ -38,7 +38,6 @@
     <ClInclude Include="dat_in.h" />
     <ClInclude Include="dat_out.h" />
     <ClInclude Include="app_dict.h" />
-    <ClInclude Include="app_dict_abc.h" />
     <ClInclude Include="app_dict_card.h" />
     <ClInclude Include="app_dict_html.h" />
     <ClInclude Include="app_dict_list.h" />
@@ -54,5 +53,9 @@
     <ClInclude Include="studio_video.h" />
     <ClInclude Include="studio_compile.h" />
     <ClInclude Include="studio_compile_dictionary.h" />
+    <ClInclude Include="eng_dictionary.h" />
+    <ClInclude Include="app_dict_media.h" />
+    <ClInclude Include="app_dict_video.h" />
+    <ClInclude Include="media_data.h" />
   </ItemGroup>
 </Project>

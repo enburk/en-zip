@@ -5,7 +5,7 @@
 #include "../ae/library/cpp/proto-studio/gui_widget_text_console.h"
 namespace media
 {
-    using std::byte;
+    using sys::byte;
     using std::filesystem::path;
     using aux::expected;
 
@@ -14,8 +14,8 @@ namespace media
         path path;
         str id, kind;
         str title, comment, credit;
-        array<str> entries;
         array<str> options;
+        array<str> entries;
         array<str> keywords;
     };
 

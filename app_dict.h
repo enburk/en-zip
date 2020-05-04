@@ -18,16 +18,13 @@ namespace app::dict
             std::filesystem::path dir = "../data";
             if (!std::filesystem::exists (dir / "vocabulary.dat")) return;
             pool.bytes = dat::in::bytes(dir / "vocabulary.dat").value();
+            dat::in::endianness = 0; // otherwise it would be reversed
             dat::in::endianness = pool.get_int();
             vocabulary.resize(pool.get_int());
             for (auto & entry : vocabulary)
                 pool >> entry;
 
-            //if (!std::filesystem::exists (dir / "index.dat")) return;
-            //pool.bytes = dat::in::bytes(dir / "index.dat").value();
-            //card.mediaindex.resize(pool.get_int());
-            //for (auto & entry : vocabulary)
-            //    pool >> entry;
+            mediae::reload();
 
             card.current = eng::vocabulary::entry{};
             list.reload();

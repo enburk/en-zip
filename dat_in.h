@@ -4,7 +4,7 @@
 #include <filesystem>
 namespace dat::in
 {
-    using std::byte;
+    using sys::byte;
     using std::filesystem::path;
     using aux::expected;
 

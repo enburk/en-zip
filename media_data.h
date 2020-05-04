@@ -9,21 +9,29 @@ namespace media::data
         int32_t source = 0;
         int32_t offset = 0;
         int32_t length = 0;
+        int32_t size_x = 0;
+        int32_t size_y = 0;
 
         bool operator == (location i) { return
             source == i.source &&
             offset == i.offset &&
-            length == i.length;
+            length == i.length &&
+            size_x == i.size_x &&
+            size_y == i.size_y;
         }
-        void operator >> (dat::in::pool & in) {
-            source = in.get_int();
-            offset = in.get_int();
-            length = in.get_int();
+        friend void operator >> (dat::in::pool & in, location & l) {
+            l.source = in.get_int();
+            l.offset = in.get_int();
+            l.length = in.get_int();
+            l.size_x = in.get_int();
+            l.size_y = in.get_int();
         }
-        void operator << (dat::out::pool & out) {
-            out << source;
-            out << offset;
-            out << length;
+        friend void operator << (dat::out::pool & out, location & l) {
+            out << l.source;
+            out << l.offset;
+            out << l.length;
+            out << l.size_x;
+            out << l.size_y;
         }
     };
 
@@ -46,11 +54,17 @@ namespace media::data
                 {
                     str offset; line.split_by(" # ", offset, line); offset.strip();
                     str length; line.split_by(" # ", length, line); length.strip();
+                    str size_x; line.split_by(" # ", size_x, line); size_x.strip();
+                    str size_y; line.split_by(" # ", size_y, line); size_y.strip();
                     str record = line;
 
                     content [record] = info
                     {
-                        location { std::stoi(offset), std::stoi(length) },
+                        location {number,
+                        std::stoi(offset),
+                        std::stoi(length),
+                        std::stoi(size_x),
+                        std::stoi(size_y)},
                         false
                     };
                 }
@@ -73,9 +87,13 @@ namespace media::data
                         {
                             str offset = std::to_string(info.location.offset);
                             str length = std::to_string(info.location.length);
+                            str size_x = std::to_string(info.location.size_x);
+                            str size_y = std::to_string(info.location.size_y);
                             fstream <<
                             std::string(offset.right_aligned(10)) + " # " +
                             std::string(length.right_aligned(10)) + " # " +
+                            std::string(size_x.right_aligned(10)) + " # " +
+                            std::string(size_y.right_aligned(10)) + " # " +
                             record + "\n";
                         }
                     }
@@ -125,18 +143,20 @@ namespace media::data
                 if (data.size() > max<int32_t>() - dat::out::file::size)
                     return location{};
 
-                info info;
+                info info {};
                 info.used = true;
                 info.location.source = number;
                 info.location.offset = dat::out::file::size;
+                info.location.length = data.size();
 
-                *this << r.title;
-                *this << r.comment;
-                *this << r.credit;
-                *this << data;
+                fstream.write((char*) data.data(), data.size());
+                dat::out::file::size += data.size();
 
-                info.location.length = dat::out::file::size -
-                info.location.offset;
+                if (r.kind == "video") {
+                    auto size = pix::size(data.whole()).value();
+                    info.location.size_x = size.x;
+                    info.location.size_y = size.y;
+                }
 
                 content[record] = info;
 

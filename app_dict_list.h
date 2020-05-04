@@ -119,6 +119,7 @@ namespace app::dict::list
         {
             if (n >= vocabulary.size()) return;
             list.object.origin = n - list.object.current.now;
+            list.object.current = n - list.object.origin.now;
             on_notify(&list, list.object.word_choosed);
         }
 

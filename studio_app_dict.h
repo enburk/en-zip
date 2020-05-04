@@ -41,10 +41,11 @@ namespace studio::dict
 
     inline void compile (array<media::resource> & resources)
     {
-        std::map<int, array<media::data::location>> mediae;
+        std::multimap<int, int> entry_media; int total_media = 0;
 
-        media::data::out::storage storage ("../data/app_dict");
-        dat::out::file index ("../data/app_dict/index.dat");
+        media::data::out::storage storage("../data/app_dict");
+        dat::out::file entry_index("../data/app_dict/entry_index.dat");
+        dat::out::file media_index("../data/app_dict/media_index.dat");
 
         for (auto & r : resources)
         {
@@ -57,17 +58,27 @@ namespace studio::dict
             {
                 if (auto range = eng::vocabulary::find(entry); range)
                 {
-                    if (location == media::data::location{})
+                    if (location == media::data::location{}) {
                         location = storage.add(r);
+                        media_index << r.kind;
+                        media_index << r.title;
+                        media_index << r.comment;
+                        media_index << r.credit;
+                        media_index << r.options;
+                        media_index << location;
+                        total_media++;
+                    }
 
-                    mediae[range.offset] += location;
+                    entry_media.emplace(range.offset, total_media-1);
                 }
             }
         }
 
-        for (auto [entry, locations] : mediae) {
-            index << entry;
-            index << locations;
+        entry_index << total_media;
+        entry_index << (int)(entry_media.size());
+        for (auto [entry, media] : entry_media) {
+            entry_index << entry;
+            entry_index << media;
         }
     }
 }

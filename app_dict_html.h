@@ -32,7 +32,8 @@ namespace app::dict
             {
                 auto [inside_token, token_link] = link(p);
                 if (inside_token) {
-                    if (auto range = eng::vocabulary::find_case_insensitive(token_link); range) {
+                    if (auto range = eng::vocabulary::
+                        find_case_insensitive(token_link); range) {
                         notify(range.offset);
                         return;
                     }
@@ -47,7 +48,8 @@ namespace app::dict
             {
                 auto [inside_token, token_link] = link(p);
                 if (inside_token)
-                    if (auto range = eng::vocabulary::find_case_insensitive(token_link); !range)
+                    if (auto range = eng::vocabulary::
+                        find_case_insensitive(token_link); !range)
                         token_link = "";
     
                 mouse_image =

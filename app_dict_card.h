@@ -7,24 +7,56 @@ namespace app::dict::card
 
     struct card : gui::widget<card>
     {
-        html_view text;
+        html_view text; video::sequencer image;
+
+        void reset_image ()
+        {
+            image.reset();
+
+            XY size;
+            for (auto index : mediae::selected_video)
+                size.x = max (size.x, index.location.size_x);
+            size.y = image.height(size.x);
+
+            refresh_image(size);
+        }
+
+        void refresh_image (XY size)
+        {
+            int maxwidth = coord.now.size.x * 2/3;
+            if (maxwidth < size.x) size = XY (
+                maxwidth, image.height(maxwidth));
+
+            text.margin_right = size;
+            int d = text.scroll.y.alpha.to == 0 ?
+                0 : text.scroll.y.coord.now.w;
+            image.coord = XYWH(
+                coord.now.size.x - size.x - d, 0,
+                size.x, size.y
+            );
+        }
 
         void on_change (void* what) override
         {
             if (what == &coord && coord.was.size != coord.now.size)
             {
                 text.coord = coord.now.local();
+                refresh_image(image.coord.now.size);
             }
             if (what == &skin)
             {
                 text.view.ground.color = gui::skins[skin.now].white;
                 text.font = font();
             }
+            if (what == &image)
+            {
+                text.margin_right = image.coord.now.size;
+            }
         }
 
         void on_notify (gui::base::widget* w, int n) override
         {
-            if (w == &text) notify(n);
+            if (w == &text || w == &image) notify(n);
         }
     };
 
@@ -46,6 +78,7 @@ namespace app::dict::card
 
         area ()
         {
+            card.object.text.scroll.x.mode = gui::scroll::mode::none;
             card.object.text.alignment = XY{gui::text::left, gui::text::top};
             card.object.text.mouse_wheel_speed = 2.0;
             undo.text.text = "undo";
@@ -79,6 +112,9 @@ namespace app::dict::card
             card.object.text.html = html;
             card.object.text.scroll.y.top = 0;
             refresh();
+
+            mediae::select(n);
+            card.object.reset_image();
         }
 
         void refresh ()

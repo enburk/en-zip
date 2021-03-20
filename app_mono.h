@@ -23,7 +23,7 @@ namespace app::mono
             }
             if (what == &skin)
             {
-                canvas.color = gui::skins[skin.now].light.back_color;
+                canvas.color = gui::skins[skin.now].light.first;
             }
         }
     };

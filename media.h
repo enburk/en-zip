@@ -1,13 +1,13 @@
 #pragma once
 #include "eng_dictionary.h"
-#include "../ae/library/cpp/aux_utils.h"
-#include "../ae/library/cpp/pix_process.h"
-#include "../ae/library/cpp/proto-studio/gui_widget_text_console.h"
+#include "../ae/proto-studio/data.h"
+#include "../ae/proto-studio/pix_process.h"
+#include "../ae/proto-studio/gui_widget_console.h"
 namespace media
 {
     using sys::byte;
     using std::filesystem::path;
-    using aux::expected;
+    using data::expected;
 
     struct resource
     {
@@ -21,8 +21,8 @@ namespace media
 
     namespace report
     {
-        gui::text::console * out = nullptr;
-        gui::text::console * err = nullptr;
+        gui::console * out = nullptr;
+        gui::console * err = nullptr;
         std::unordered_map<str, array<path>> id2path;
         array<path> unidentified;
         bool data_updated = false;

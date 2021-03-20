@@ -48,9 +48,9 @@ namespace app::dict::mediae
         auto range = entry_indices.equal_range(entry_index{n, 0},
             [](auto a, auto b){ return a.entry < b.entry; });
 
-        for (auto [ei, i] : range)
+        for (auto [enty, media] : range)
         {
-            auto & index = media_indices[ei.media];
+            auto & index = media_indices[media];
 
             if (index.kind == "audio") selected_audio += index;
             if (index.kind == "video") selected_video += index;

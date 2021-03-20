@@ -20,14 +20,13 @@ namespace studio::dual
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-                int h = gui::metrics::text::height;
                 int l = gui::metrics::line::width*3;
                 int w = W/2;
                 int d = 2*l;
 
                 splitter.coord = XYWH(W-w-d, 0, 2*d, H);
-                splitter.lower = 8'000 * W / 10'000;
-                splitter.upper =   800 * W / 10'000;
+                splitter.lower = 80'00 * W / 100'00;
+                splitter.upper =  8'00 * W / 100'00;
 
                 area.coord = XYWH(0, 0, W-w, H);
                 app .coord = XYWH(W-w, 0, w, H);

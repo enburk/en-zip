@@ -21,7 +21,7 @@ namespace app::dict::video
             auto font = credit.font.now;
             font.size = gui::metrics::text::height*5/6;
             credit.font = font;
-            credit.alignment = XY{gui::text::right, gui::text::top};
+            credit.alignment = XY{pix::right, pix::top};
             prev.text.text = (char*)(u8"\u25B2");//(u8"\u25C0");
             next.text.text = (char*)(u8"\u25BC");//(u8"\u25B6");
             prev.text.font = sys::font{"", gui::metrics::text::height/2};
@@ -108,10 +108,10 @@ namespace app::dict::video
 
             if (what == &skin)
             {
-                frame1.color = gui::skins[skin.now].white;
-                frame2.color = gui::skins[skin.now].normal.back_color;
-                canvas.color = gui::skins[skin.now].light.back_color;
-                credit.color = gui::skins[skin.now].heavy.back_color;
+                frame1.color = gui::skins[skin].ultralight.first;
+                frame2.color = gui::skins[skin].normal.first;
+                canvas.color = gui::skins[skin].light.first;
+                credit.color = gui::skins[skin].heavy.first;
             }
 
             if (what == &timer)
@@ -119,9 +119,12 @@ namespace app::dict::video
             }
         }
 
-        void on_notify (gui::base::widget* w, int n) override
+        int clicked = 0;
+
+        void on_notify (void* what) override
         {
-            if (w == &credit || w == &script) notify(n);
+            if (what == &credit) { clicked = credit.clicked; notify(); }
+            if (what == &script) { clicked = script.clicked; notify(); }
         }
     };
 
@@ -171,9 +174,12 @@ namespace app::dict::video
             }
         }
 
-        void on_notify (gui::base::widget* w, int n) override
+        int clicked = 0;
+
+        void on_notify (void* what) override
         {
-            notify(n);
+            clicked = players.notifier->clicked;
+            notify();
         }
     };
 }

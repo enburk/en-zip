@@ -1,9 +1,10 @@
 #pragma once
+#include <execution>
 #include "dat_out.h"
 #include "app_dict.h"
-namespace studio::compile
+namespace studio::build
 {
-    bool dictionary_update (gui::text::console & out, gui::text::console & err)
+    bool dictionary_update (gui::console & out, gui::console & err)
     {
         using std::filesystem::path;
         path src = "../en-wiktionary/enwiktionary-data.txt";
@@ -51,7 +52,9 @@ namespace studio::compile
 
         out << "dictionary sort...";
 
-        dictionary.sort(eng::dictionary::less);
+        //dictionary.sort(eng::dictionary::less);
+        std::sort(std::execution::par, dictionary.begin(),
+        dictionary.end(), eng::dictionary::less);
         vocabulary.resize(dictionary.size());
         array<str> vocabulary_unicode;
         array<str> vocabulary_sorting;

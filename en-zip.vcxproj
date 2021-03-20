@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>ClangCL</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -187,8 +187,8 @@
     <ClInclude Include="studio_app_dual.h" />
     <ClInclude Include="studio_app_mono.h" />
     <ClInclude Include="studio_audio.h" />
-    <ClInclude Include="studio_compile.h" />
-    <ClInclude Include="studio_compile_dictionary.h" />
+    <ClInclude Include="studio_build.h" />
+    <ClInclude Include="studio_build_dic.h" />
     <ClInclude Include="studio_video.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

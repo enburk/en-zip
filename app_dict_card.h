@@ -3,11 +3,11 @@
 #include "app_dict_video.h"
 namespace app::dict::card
 {
-    auto font = [](){ return sys::font{"Segoe UI", gui::metrics::text::height}; };
-
     struct card : gui::widget<card>
     {
         html_view text; video::sequencer image;
+
+        int selected = 0;
 
         void reset_image ()
         {
@@ -45,8 +45,7 @@ namespace app::dict::card
             }
             if (what == &skin)
             {
-                text.view.ground.color = gui::skins[skin.now].white;
-                text.font = font();
+                text.view.canvas.color = gui::skins[skin].ultralight.first;
             }
             if (what == &image)
             {
@@ -54,14 +53,18 @@ namespace app::dict::card
             }
         }
 
-        void on_notify (gui::base::widget* w, int n) override
+        int clicked = 0;
+
+        void on_notify (void* what) override
         {
-            if (w == &text || w == &image) notify(n);
+            if (what == &text ) { clicked = text .clicked; notify(); }
+            if (what == &image) { clicked = image.clicked; notify(); }
         }
     };
 
     struct quot : gui::widget<quot>
     {
+        int clicked = 0;
     };
 
     struct area : gui::widget<area>
@@ -79,7 +82,7 @@ namespace app::dict::card
         area ()
         {
             card.object.text.scroll.x.mode = gui::scroll::mode::none;
-            card.object.text.alignment = XY{gui::text::left, gui::text::top};
+            card.object.text.alignment = XY{pix::left, pix::top};
             card.object.text.mouse_wheel_speed = 2.0;
             undo.text.text = "undo";
             redo.text.text = "redo";
@@ -87,6 +90,7 @@ namespace app::dict::card
 
         void select (int n)
         {
+            if (n < 0) return;
             if (n >= vocabulary.size()) return;
             if (vocabulary[n].length == 0) return;
             if (vocabulary[n].length == current.length
@@ -132,45 +136,55 @@ namespace app::dict::card
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height;
-                int l = gui::metrics::line::width*3;
-                int n = (H-10*h) / h;
+                int l = gui::metrics::line::width;
                 int w = W/2;
+
+                int htool = h*12/7;
+                int hquot = 5*h + 6*l;
+                int hcard = H - htool - hquot;
                 int y = 0;
 
-                card.coord = XYWH(0, 0, W, n*h + 2*l); y += card.coord.now.h; h -= l*2/3;
-                quot.coord = XYWH(0, y, W, H-y - 2*h); y += quot.coord.now.h;
+                card.coord = XYWH(0, 0, W, hcard); y += card.coord.now.h;
+                quot.coord = XYWH(0, y, W, hquot); y += quot.coord.now.h;
                 tool.coord = XYXY(0, y, W, H);
                 undo.coord = XYXY(0, y, w, H);
                 redo.coord = XYXY(w, y, W, H);
             }
             if (what == &skin)
             {
-                tool.color = gui::skins[skin.now].light.back_color;
+                tool.color = gui::skins[skin].light.first;
             }
         }
 
-        void on_notify (gui::base::widget* w, int n) override
+        int clicked = 0;
+
+        void on_notify (void* what) override
         {
-            if (w == &card) notify(n);
-            if (w == &quot) notify(n);
-        }
-        void on_notify (gui::base::widget* w) override
-        {
-            if (w == &undo && undoes.size() > 0) 
+            if (what == &card.object) { clicked = card.object.clicked; notify(); }
+            if (what == &quot.object) { clicked = quot.object.clicked; notify(); }
+
+            if (what == &undo && undoes.size() > 0) 
             {
                 str link = undoes.back();
                 undoes.pop_back(); redoes += current.title;
-                if (auto range = eng::vocabulary::find_case_insensitive(link); range) {
-                    notify(range.offset);
+                if (auto range = eng::vocabulary::
+                    find_case_insensitive(link);
+                    not range.empty()) {
+                    clicked = range.offset();
+                    notify();
                     undoes.pop_back();
                     refresh();
                 }
             }
-            if (w == &redo && redoes.size() > 0) 
+            if (what == &redo && redoes.size() > 0) 
             {
                 str link = redoes.back(); redoes.pop_back();
-                if (auto range = eng::vocabulary::find_case_insensitive(link); range)
-                    notify(range.offset);
+                if (auto range = eng::vocabulary::
+                    find_case_insensitive(link);
+                    not range.empty()) {
+                    clicked = range.offset();
+                    notify();
+                }
             }
         }
     };

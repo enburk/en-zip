@@ -20,7 +20,6 @@ namespace studio::dict
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-                int h = gui::metrics::text::height;
                 int l = gui::metrics::line::width*3;
                 int w = W/2;
                 int d = 2*l;
@@ -56,7 +55,7 @@ namespace studio::dict
 
             for (str entry : r.entries)
             {
-                if (auto range = eng::vocabulary::find(entry); range)
+                if (auto range = eng::vocabulary::find(entry); not range.empty())
                 {
                     if (location == media::data::location{}) {
                         location = storage.add(r);
@@ -69,7 +68,7 @@ namespace studio::dict
                         total_media++;
                     }
 
-                    entry_media.emplace(range.offset, total_media-1);
+                    entry_media.emplace(range.offset(), total_media-1);
                 }
             }
         }

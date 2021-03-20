@@ -15,7 +15,7 @@ namespace dat::out
         {
             int size = sizeof(n);
             byte* data = (byte*)(&n);
-            bytes.insert(bytes.end(), data, data+size);
+            bytes.container::insert(bytes.end(), data, data+size);
             return *this;
         }
         pool& operator << (const str & s)
@@ -23,7 +23,7 @@ namespace dat::out
             *this << s.size();
             int size = s.size();
             byte* data = (byte*)(s.c_str()); 
-            bytes.insert(bytes.end(), data, data+size);
+            bytes.container::insert(bytes.end(), data, data+size);
             return *this;
         }
         template<class T>

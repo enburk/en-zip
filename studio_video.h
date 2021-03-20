@@ -8,7 +8,7 @@ namespace studio::video
 
         studio ()
         {
-            canvas.color = gui::skins[skin.now].light.back_color;
+            canvas.color = gui::skins[skin.now].light.first;
         }
 
         void on_change (void* what) override

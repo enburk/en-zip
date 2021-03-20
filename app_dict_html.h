@@ -4,6 +4,8 @@ namespace app::dict
 {
     struct html_view : gui::text::page
     {
+        int clicked = 0;
+
         std::pair<bool, str> link (XY p)
         {
             auto & column = view.column;
@@ -33,8 +35,9 @@ namespace app::dict
                 auto [inside_token, token_link] = link(p);
                 if (inside_token) {
                     if (auto range = eng::vocabulary::
-                        find_case_insensitive(token_link); range) {
-                        notify(range.offset);
+                        find_case_insensitive(token_link); not range.empty()) {
+                        clicked = range.offset();
+                        notify();
                         return;
                     }
                 }
@@ -49,11 +52,11 @@ namespace app::dict
                 auto [inside_token, token_link] = link(p);
                 if (inside_token)
                     if (auto range = eng::vocabulary::
-                        find_case_insensitive(token_link); !range)
-                        token_link = "";
+                        find_case_insensitive(token_link);
+                        range.empty()) token_link = "";
     
                 mouse_image =
-                    //inside_selection ? "editor" :
+                  //inside_selection ? "editor" :
                     token_link != "" ? "hand" :
                     inside_token ? "editor" :
                     "arrow";
@@ -67,7 +70,7 @@ namespace app::dict
                         {
                             auto style = style_index.style();
                             style.color = RGBA(0,0,255);
-                            style_index = sys::glyph_style_index(style);
+                            style_index = pix::text::style_index(style);
                         }
                         for (auto & glyph : token)
                         {
@@ -77,6 +80,7 @@ namespace app::dict
                         }
                     }
                 }
+                return;
             }
             gui::text::page::on_mouse_hover(p);
         }
@@ -134,8 +138,19 @@ namespace app::dict
         return html;
     };
 
+        //struct topic { str header, forms; array<str> content; };
+        //struct entry { str title; array<topic> topics; };
+
     str wiki2html (eng::dictionary::entry entry)
     {
+        entry.title.replace_all("&", "&amp;");
+        for (auto & topic : entry.topics) {
+            topic.header.replace_all("&", "&amp;");
+            topic.forms .replace_all("&", "&amp;");
+            for (str & s : topic.content)
+                s.replace_all("&", "&amp;");
+        }
+
         str html = "<h4>" + entry.title + "</h4>";
 
         str gap = "<div style=\"line-height: 50%\"><br></div>";
@@ -181,16 +196,36 @@ namespace app::dict
                 html += "<br><i><font color=#008000>"
                      + header + ":</font></i> ";
 
-                for (str s : topic.content)
+                if (topic.content.size() >= 10)
                 {
-                    html += s + "<br>";
+                    str ss, sss;
+                    for (str s : topic.content)
+                    {
+                        if (ss.size() + s.size() > 80) {
+                            sss += "<br>" + ss;
+                            ss = "";
+                        }
+                        ss += s + ", ";
+                    }
+                    sss += "<br>" + ss;
+
+                    html += sss;
+                    html.truncate();
+                    html.truncate();
+                    html += "<br>";
+                }
+                else
+                {
+                    if (topic.content.size() >= 2)
+                        html += "<br>";
+
+                    for (str s : topic.content)
+                        html += s + "<br>";
                 }
 
                 html += "</div>";
             }
         }
-
-        html.replace_all("&", "&amp;");
 
         return bold_italic(html);
     }

@@ -28,10 +28,11 @@ namespace media::video
         }
         else size = XY (isizex, isizey);
 
-        if (k < 1.0) pix::resize  (img, size); if (sharp)
+        if (k < 1.0) pix::resize  (img, size); if (sharp) {
         if (k < 0.1) pix::sharpen (img, 1.75); else
         if (k < 0.5) pix::sharpen (img, 1.50); else
         if (k < 1.0) pix::sharpen (img, 1.25);
+        }
     }
 
     inline void crop (image<RGBA> & img, str crop_params)
@@ -111,7 +112,7 @@ namespace media::video
         return dat::in::bytes(cache);
     }
     catch (std::exception & e) {
-    return aux::error("media::video::readsample:"
+    return ::data::error("media::video::readsample:"
         "<br>  path: " + original.string() +
         "<br>  cache: " + cache.string() +
         "<br>  crop: " + crop_params +

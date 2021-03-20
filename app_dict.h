@@ -41,11 +41,11 @@ namespace app::dict
                 int w = 17*h; // list width
                 int d = 2*l;
 
-                splitter.lower = W * 5'000 / 10'000;
-                splitter.upper = W * 9'000 / 10'000;
+                splitter.lower = W * 50'00 / 100'00;
+                splitter.upper = W * 90'00 / 100'00;
 
-                int p = sys::settings::load("app::dic::splitter.permyriad", 10'000 * (W-w)/W);
-                int x = aux::clamp<int>(W*p / 10'000, splitter.lower.now, splitter.upper.now);
+                int p = sys::settings::load("app::dic::splitter.permyriad", 100'00 * (W-w)/W);
+                int x = data::clamp<int>(W*p / 100'00, splitter.lower.now, splitter.upper.now);
 
                 splitter.coord = XYXY(x-d, 0, x+d, H);
 
@@ -55,16 +55,26 @@ namespace app::dict
         }
 
         void on_focus (bool on) override { list.on_focus(on); }
-        void on_keyboard_input (str symbol) override { list.on_keyboard_input(symbol); }
-        void on_key_pressed (str key, bool down) override { list.on_key_pressed(key,down); }
-
-        void on_notify (gui::base::widget* w, int n) override
+        void on_keyboard_input (str symbol) override
         {
-            if (w == &card) list.select(n);
-            if (w == &list) card.select(n);
-            if (w == &splitter) {
-                sys::settings::save("app::dic::splitter.permyriad",
-                10'000 * n / coord.now.w);
+            card.card.object.text.view.selections = array<gui::text::range>();
+            list.on_keyboard_input(symbol);
+        }
+        void on_key_pressed (str key, bool down) override
+        {
+            if (card.card.object.text.view.selections.now != array<gui::text::range>{})
+                card.card.object.text.on_key_pressed(key,down);
+            else list.on_key_pressed(key,down);
+        }
+
+        void on_notify (void* what) override
+        {
+            if (what == &card) list.select(card.clicked);
+            if (what == &list) card.select(list.clicked);
+            if (what == &splitter) {
+                sys::settings::save(
+                "app::dic::splitter.permyriad",
+                splitter.middle * 100'00 / coord.now.w);
                 on_change(&coord);
             }
         }

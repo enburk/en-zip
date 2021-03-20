@@ -20,7 +20,6 @@ namespace studio::mono
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-                int h = gui::metrics::text::height;
                 int l = gui::metrics::line::width*3;
                 int w = W/2;
                 int d = 2*l;

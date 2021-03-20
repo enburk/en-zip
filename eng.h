@@ -1,10 +1,8 @@
 ﻿#pragma once
 #include <map>
-#include "../ae/library/cpp/aux_abc.h"
-#include "../ae/library/cpp/aux_array.h"
-#include "../ae/library/cpp/aux_string.h"
-#include "../ae/library/cpp/aux_utils.h"
-using namespace aux;
+#include "../ae/proto-studio/data_struct_array.h"
+#include "../ae/proto-studio/data_struct_string.h"
+using namespace data;
 
 #include "dat_in.h"
 #include "dat_out.h"

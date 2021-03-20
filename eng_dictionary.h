@@ -88,7 +88,7 @@ namespace eng
         auto find_case_insensitive (str s)
         {
             auto e = eng::vocabulary::entry{s};
-            auto range = data.equal_range(e, less); if (!range)
+            auto range = data.equal_range(e, less); if (range.size() == 0)
                  range = data.equal_range(e, less_case_insensitive);
             return range;
         }

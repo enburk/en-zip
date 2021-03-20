@@ -6,7 +6,7 @@ namespace dat::in
 {
     using sys::byte;
     using std::filesystem::path;
-    using aux::expected;
+    using data::expected;
 
     inline int32_t endianness = 0; // 0 is important for the first get int
 
@@ -89,7 +89,7 @@ namespace dat::in
         return pool;
     }
     catch (std::exception & e) {
-    return aux::error(e.what());
+    return data::error(e.what());
     }
 
     expected<array<str>> text (path path) try
@@ -105,6 +105,6 @@ namespace dat::in
 
     }
     catch (std::exception & e) {
-    return aux::error(e.what());
+    return data::error(e.what());
     }
 }

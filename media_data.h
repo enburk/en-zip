@@ -153,7 +153,7 @@ namespace media::data
                 dat::out::file::size += data.size();
 
                 if (r.kind == "video") {
-                    auto size = pix::size(data.whole()).value();
+                    auto size = pix::size(data.from(0)).value();
                     info.location.size_x = size.x;
                     info.location.size_y = size.y;
                 }
@@ -165,7 +165,7 @@ namespace media::data
                 return info.location;
             }
             catch (std::exception & e) {
-            return aux::error("media::data::out::source:"
+            return ::data::error("media::data::out::source:"
                 "<br> path: " + r.path.string() +
                 "<br> " + e.what());
             }

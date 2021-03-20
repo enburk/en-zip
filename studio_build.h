@@ -2,15 +2,15 @@
 #include "app.h"
 #include <future>
 #include "studio_app_dict.h"
-#include "studio_compile_dictionary.h"
-namespace studio::compile
+#include "studio_build_dic.h"
+namespace studio::build
 {
     using namespace std::literals::chrono_literals;
 
     struct studio : gui::widget<studio>
     {
-        gui::area<gui::text::console> out;
-        gui::area<gui::text::console> err;
+        gui::area<gui::console> out;
+        gui::area<gui::console> err;
 
         std::future<void> compilation;
         gui::property<gui::time> timer;
@@ -45,7 +45,7 @@ namespace studio::compile
             
                 timer.go (gui::time(), gui::time()); /// stop timer
                 /// this statement will cause recursive on_change()
-                /// so do it after std::future get ivalid
+                /// so do it after std::future get invalid
                 /// to prevent second get() call
            
                 notify();

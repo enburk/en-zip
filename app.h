@@ -22,5 +22,11 @@ using pix::frame;
 
 inline auto & vocabulary = eng::vocabulary::data;
 
+namespace app::dict { inline gui::console* log = nullptr; }
+namespace app::dual { inline gui::console* log = nullptr; }
+namespace app::mono { inline gui::console* log = nullptr; }
+
+
+
 
 

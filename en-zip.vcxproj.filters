@@ -57,5 +57,7 @@
     <ClInclude Include="media_data.h" />
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="studio_build_dic.h" />
+    <ClInclude Include="app_dict_list_list.h" />
+    <ClInclude Include="app_dict_list_word.h" />
   </ItemGroup>
 </Project>

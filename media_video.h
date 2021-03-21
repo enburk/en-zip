@@ -90,7 +90,8 @@ namespace media::video
                 image<RGBA> img = pix::read(original).value(); 
 
                 if (img.size.x > 2500 &&
-                    img.size.y > 2500 && std::filesystem::file_size(original) > 5*1024*1024)
+                    img.size.y > 2500 &&
+                    std::filesystem::file_size(original) > 5*1024*1024)
                 {
                     *report::out << "copy huge " + original.string();
                     if (!std::filesystem::copy_file(original, "../datae_huge"/original.filename(),

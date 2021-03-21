@@ -1,112 +1,13 @@
 #pragma once
 #include "app.h"
+#include "app_dict_list_list.h"
+#include "app_dict_list_word.h"
 namespace app::dict::list
 {
-    struct list : gui::widget<list>
-    {
-        enum class note { chosen, changed }; note note;
-
-        gui::widgetarium<gui::button> words;
-        gui::property<int> current = 1;
-        gui::property<int> origin = -1;
-
-        void on_change (void* what) override
-        {
-            if (what == &coord && coord.was.size != coord.now.size)
-            {
-                words.coord = coord.now.local();
-
-                int W = coord.now.w; if (W <= 0) return;
-                int H = coord.now.h; if (H <= 0) return;
-                int h = gui::metrics::text::height*99/70;
-                int n = (H + h - 1) / h;
-
-                for (int i=0; i<n; i++) {
-                    auto & word = i < words.size() ? words(i) : words.emplace_back();
-                    word.kind = gui::button::sticky;
-                    word.coord = XYWH(0, h*i, W, h);
-                    word.text.word_wrap = false;
-                    word.text.ellipsis = true;
-                }
-                words.truncate(n);
-                on_change(&skin);
-                refresh();
-            }
-            if (what == &skin)
-            {
-                for (int i=0; i<words.size(); i++)
-                {
-                    auto & word = words(i);
-                    word.text.alignment = XY(pix::left, pix::center);
-                    word.on_change_state = [&word, edge = i == 0 || i == words.size()-1]()
-                    {
-                        auto style = gui::skins[word.skin.now];
-                        auto colors = style.light;
-
-                        if (!edge) colors.first = style.ultralight.first;
-                        // order important
-                        if (word.mouse_pressed.now) colors = style.touched; else
-                        if (word.enter_pressed.now) colors = style.touched; else
-                        if (word.on           .now) colors = style.active;  else
-                        if (word.mouse_hover  .now) colors = style.light;   else
-                        {}
-                        // '=' instead of 'go' for smooth mouse passage
-                        word.text.canvas.color = colors.first;
-                        word.text.color = colors.second;
-
-                        auto r = word.coord.now.local();
-                        word.frame.thickness = 0;
-                        word.frame.coord = XYWH();
-                        word.image.coord = XYWH();
-                        word.text .coord = r;
-                    };
-                    word.on_change_state();
-                }
-            }
-            if (what == &current) refresh();
-            if (what == &origin) refresh();
-        }
-
-        int clicked = 0;
-
-        void refresh ()
-        {
-            int l = words.size()-1;
-            if (l >= 2 && current.now == 0) { origin.now--; current.now = 0+1; }
-            if (l >= 2 && current.now == l) { origin.now++; current.now = l-1; }
-
-            origin.now = clamp<int>(origin.now, -1, vocabulary.size() - l);
-
-            for (int i=0; i<words.size(); i++)
-            {
-                int n = origin.now + i;
-                bool in = 0 <= n && n < vocabulary.size();
-                words(i).text.text = in ? " " + vocabulary[n].title : "";
-                words(i).enabled = in;
-                words(i).on = i == current.now;
-            }
-
-            note = note::changed;
-            notify();
-        }
-
-        void on_notify (void* what) override
-        {
-            if (what == &words &&
-                words.notifier->on.now &&
-                words.notifier->mouse_pressed.now)
-            {
-                current = words.notifier_index;
-                note = note::chosen;
-                notify();
-            }
-        }
-    };
-
     struct area : gui::widget<area>
     {
         gui::area<list> list;
-        gui::area<gui::text::one_line_editor> word;
+        gui::area<word> word;
 
         gui::canvas tool;
         gui::button settings;
@@ -115,32 +16,35 @@ namespace app::dict::list
 
         area ()
         {
-            up.text.text = (char*)(u8"\u2191");
-            down.text.text = (char*)(u8"\u2193");
             up.repeating = true;
             down.repeating = true;
-            page_up.text.text = (char*)(u8"\u21C8");
-            page_down.text.text = (char*)(u8"\u21CA");
             page_up.repeating = true;
             page_down.repeating = true;
+            up.text.text = (char*)(u8"\u2191");
+            down.text.text = (char*)(u8"\u2193");
+            page_up.text.text = (char*)(u8"\u21C8");
+            page_down.text.text = (char*)(u8"\u21CA");
             settings.text.text = (char*)(u8"\u26ED");
         }
 
         void reload ()
         {
+            if (true) if (log) *log <<
+            "app::dict::list::reload";
+
             list.object.refresh();
-            list.object.note = list::note::chosen;
-            on_notify(&list);
         }
 
         void select (int n)
         {
-            if (n < 0) return;
-            if (n >= vocabulary.size()) return;
-            list.object.origin = n - list.object.current.now;
-            list.object.current = n - list.object.origin.now;
-            list.object.note = list::note::chosen;
-            on_notify(&list.object);
+            if (true) if (log) *log <<
+            "app::dict::list::select "
+            + std::to_string(n);
+
+            list.object.select(n);
+            word.object.select(list.object.selected);
+            clicked = list.object.selected;
+            notify();
         }
 
         void on_change (void* what) override
@@ -170,12 +74,6 @@ namespace app::dict::list
             if (what == &skin)
             {
                 tool.color = gui::skins[skin].light.first;
-                word.object.margin_left = XY{gui::metrics::text::height/6, max<int>()};
-                word.object.canvas.color = gui::skins[skin].ultralight.first;
-                word.object.style = pix::text::style{
-                    sys::font{"Segoe UI",
-                    gui::metrics::text::height},
-                    gui::skins[skin].dark.first };
             }
         }
 
@@ -199,59 +97,23 @@ namespace app::dict::list
             if (key == "ctrl+end" ) l.origin = max<int>(); else
             if (key == "enter")
             {
-                l.note = list::note::chosen;
-                on_notify(&l);
+                word.object.select(l.selected);
+                clicked = l.selected;
+                notify();
             }
             else word.object.on_key_pressed(key,down);
         }
-
-        bool flag = false;
 
         int clicked = 0;
 
         void on_notify (void* what) override
         {
-            if (what == &word.object)
+            if (what == &word.object) list.object.select(word.object.typed);
+            if (what == &list.object) word.object.select(list.object.selected);
+            if (what == &list.object) if (list.object.note == list::note::chosen)
             {
-                if (vocabulary.size() == 0) return;
-                auto s = word.object.text.now; s.triml();
-                auto i = vocabulary.lower_bound(
-                    eng::vocabulary::entry{s},
-                    eng::vocabulary::less);
-
-                if (i == vocabulary.end()) i--;
-                if (i->title != s) i = vocabulary.lower_bound(
-                    eng::vocabulary::entry{s},
-                    eng::vocabulary::less_case_insensitive);
-                if (i == vocabulary.end()) i--;
-
-                word.object.style = pix::text::style{
-                    sys::font{"Segoe UI",
-                    gui::metrics::text::height},
-                    eng::less_case_insensitive(i->title, s) or
-                    eng::less_case_insensitive(s, i->title)?
-                    gui::skins[skin].error.first:
-                    gui::skins[skin].dark.first };
-
-                flag = true;
-                int n = (int)(i - vocabulary.begin());
-                list.object.origin = n - list.object.current.now;
-                flag = false;
-            }
-
-            if (what == &list.object) if (!flag)
-            {
-                int n = list.object.origin.now + list.object.current.now;
-                bool in = 0 <= n && n < vocabulary.size(); if (!in) return;
-        
-                word.object.text = vocabulary[n].title;
-                word.object.select();
-                
-                if (list.object.note ==
-                    list::note::chosen) {
-                    clicked = n;
-                    notify();
-                }
+                clicked = list.object.selected;
+                notify();
             }
 
             if (what == &up       ) on_key_pressed("up"  , true);
@@ -273,4 +135,3 @@ namespace app::dict::list
         }
     };
 }
-

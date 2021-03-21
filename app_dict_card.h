@@ -5,17 +5,18 @@ namespace app::dict::card
 {
     struct card : gui::widget<card>
     {
-        html_view text; video::sequencer image;
-
-        int selected = 0;
+        html_view text;
+        video::sequencer image;
 
         void reset_image ()
         {
             image.reset();
 
+            int l = gui::metrics::line::width;
+
             XY size;
-            for (auto index : mediae::selected_video)
-                size.x = max (size.x, index.location.size_x);
+            for (auto video : mediae::selected_video)
+            size.x = max (size.x, video.location.size_x + 6*l);
             size.y = image.height(size.x);
 
             refresh_image(size);
@@ -30,6 +31,7 @@ namespace app::dict::card
             text.margin_right = size;
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;
+
             image.coord = XYWH(
                 coord.now.size.x - size.x - d, 0,
                 size.x, size.y
@@ -90,6 +92,10 @@ namespace app::dict::card
 
         void select (int n)
         {
+            if (true) if (log) *log <<
+            "app::dict::card::select "
+            + std::to_string(n);
+
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
             if (vocabulary[n].length == 0) return;
@@ -111,7 +117,8 @@ namespace app::dict::card
             eng::dictionary::entry entry;
             pool >> entry;
 
-            str html = wiki2html(entry);
+            str debug = "<br> n = " + std::to_string(n);
+            str html = wiki2html(entry) + debug;
             if (true) std::ofstream("test.html") << html;
             card.object.text.html = html;
             card.object.text.scroll.y.top = 0;

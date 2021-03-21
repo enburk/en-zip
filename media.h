@@ -43,7 +43,7 @@ namespace media
         return s;
     }
 
-    array<resource> scan (path dir, resource common = resource{})
+    array<resource> scan (path dir, resource common = {})
     {
         array<resource> resources;
 
@@ -57,7 +57,10 @@ namespace media
             next(dir), end; next != end; ++next)
         {
             path entry = next->path();
-            str name = entry.filename().string();
+            str name = is_directory(entry) ?
+                entry.filename().string():
+                entry.stem().string();
+
             if (name.starts_with(".")) continue;
             name = un_msdos(name);
 
@@ -68,7 +71,7 @@ namespace media
             meta.split_by("}}", meta, yadda); meta.strip();
 
             str credit, m = meta;
-            m.split_by("##", credit, m); credit.strip();
+            m.split_by("$", credit, m); credit.strip();
             if (credit != "") resource.credit = credit;
             
             array<str> options = m.split_by("##");

@@ -22,8 +22,9 @@ namespace app::dict::video
             font.size = gui::metrics::text::height*5/6;
             credit.font = font;
             credit.alignment = XY{pix::right, pix::top};
-            prev.text.text = (char*)(u8"\u25B2");//(u8"\u25C0");
-            next.text.text = (char*)(u8"\u25BC");//(u8"\u25B6");
+            script.alignment = XY{pix::left,  pix::top};
+            prev.text.text = (char*)(u8"\u25C0");
+            next.text.text = (char*)(u8"\u25B6");
             prev.text.font = sys::font{"", gui::metrics::text::height/2};
             next.text.font = sys::font{"", gui::metrics::text::height/2};
             prev.frame.thickness = 0;
@@ -34,21 +35,32 @@ namespace app::dict::video
         int height (int width)
         {
             int l = gui::metrics::line::width;
-            int d = credit.font.now.size;
+            int d = credit.font.now.size; if (d == 0)
+                d = gui::metrics::text::height;
 
-            credit.coord = XYWH(0, 0, width-2*d, max<int>());
-            script.coord = XYWH(0, 0, width, max<int>());
+            XY size {
+                index.location.size_x,
+                index.location.size_y};
 
-            int h1 = credit.view.column.coord.now.size.y;
-            int h2 = script.view.column.coord.now.size.y;
-
-            XY size {index.location.size_x, index.location.size_y};
             int maxwidth = width - 6*l;
             if (maxwidth < size.x) size = XY (
                 maxwidth, maxwidth *
                 size.y / size.x);
 
-            return size.y + 6*l + h1 + h2;
+            script.coord = XYWH(0, 0, size.x, max<int>());
+            credit.coord = XYWH(0, 0, size.x-3*d, max<int>());
+
+            int w1 = script.view.column.coord.now.w;
+            int w2 = credit.view.column.coord.now.w;
+
+            int h1 = script.view.column.coord.now.h;
+            int h2 = credit.view.column.coord.now.h;
+            int hh = h1 + h2;
+
+            if (w1 + w2 + 3*d < size.x*9/10)
+                hh = max(h1, h2);
+
+            return size.y + 6*l + hh;
         }
 
         void reset (mediae::media_index index_)
@@ -59,8 +71,7 @@ namespace app::dict::video
             image.load(dir / storage, index.location.offset, index.location.length);
             credit.html = index.credit;
             str s = index.title;
-            if (index.comment != "")
-                s += "<br><br>"
+            if (index.comment != "") s += "<br><br>"
                 "<font color=#EEEEEE><i>" + index.comment +
                 "</i></font>";
             script.html = s;
@@ -72,12 +83,13 @@ namespace app::dict::video
                 timer.go (gui::time::infinity,
                           gui::time::infinity);
 
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord)
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
                 int l = gui::metrics::line::width;
-                int d = credit.font.now.size;
+                int d = credit.font.now.size; if (d == 0)
+                    d = gui::metrics::text::height;
 
                 XY size {index.location.size_x, index.location.size_y};
                 int maxwidth = coord.now.size.x - 6*l;
@@ -85,14 +97,28 @@ namespace app::dict::video
                     maxwidth, maxwidth *
                     size.y / size.x);
 
-                credit.coord = XYWH(0, 0, size.x-2*d, H);
-                script.coord = XYWH(0, 0, size.x, H);
+                credit.alignment = XY{pix::left, pix::top};
 
-                int h1 = credit.view.column.coord.now.size.y;
-                int h2 = script.view.column.coord.now.size.y;
+                script.coord = XYWH(0, 0, size.x, max<int>());
+                credit.coord = XYWH(0, 0, size.x-3*d, max<int>());
+
+                int w1 = script.view.column.coord.now.w;
+                int w2 = credit.view.column.coord.now.w;
+
+                credit.alignment = XY{pix::right, pix::top};
+
+                int h1 = script.view.column.coord.now.h;
+                int h2 = credit.view.column.coord.now.h;
+                int hh = h1 + h2;
+                int y2 = h1;
+
+                if (w1 + w2 + 3*d < size.x*9/10) {
+                    hh = max(h1, h2);
+                    y2 = 0;
+                }
 
                 int w = size.x + 6*l;
-                int h = size.y + 6*l + h1 + h2;
+                int h = size.y + 6*l + hh;
 
                 XYWH r (W/2 - w/2, H/2 - h/2, w, h);
                 frame1.coord = r; r.deflate(frame1.thickness.now);
@@ -100,10 +126,10 @@ namespace app::dict::video
                 canvas.coord = r; r.deflate(frame2.thickness.now);
 
                 image .coord = XYWH(r.x, r.y,  size.x, size.y);
-                prev  .coord = XYWH(r.x+0*d, r.y + size.y, d, d);
-                next  .coord = XYWH(r.x+1*d, r.y + size.y, d, d);
-                credit.coord = XYWH(r.x+2*d, r.y + size.y, size.x-2*d, h1);
-                script.coord = XYWH(r.x, r.y + size.y + h1, size.x, h2);
+                script.coord = XYWH(r.x, r.y + size.y, size.x, h1);
+                credit.coord = XYWH(r.x, r.y + size.y + y2, size.x-3*d, h2);
+                prev  .coord = XYWH(r.x + r.w - 2*d, r.y + size.y + y2, d, d);
+                next  .coord = XYWH(r.x + r.w - 1*d, r.y + size.y + y2, d, d);
             }
 
             if (what == &skin)

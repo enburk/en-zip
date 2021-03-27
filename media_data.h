@@ -12,13 +12,9 @@ namespace media::data
         int32_t size_x = 0;
         int32_t size_y = 0;
 
-        bool operator == (location i) { return
-            source == i.source &&
-            offset == i.offset &&
-            length == i.length &&
-            size_x == i.size_x &&
-            size_y == i.size_y;
-        }
+        bool operator == (location const&) const = default;
+        bool operator != (location const&) const = default;
+
         friend void operator >> (dat::in::pool & in, location & l) {
             l.source = in.get_int();
             l.offset = in.get_int();
@@ -41,17 +37,20 @@ namespace media::data
         {
             struct info { location location; bool used = false; };
 
-            std::map<str, info> content; int32_t number;
+            std::map<str, info> content; int number;
 
-            source (std::filesystem::path p, int32_t n) :
-                dat::out::file(p, std::ios::binary | std::ios::app),
-                number(n)
+            source (std::filesystem::path path, int number) :
+                dat::out::file(path, std::ios::binary | std::ios::app),
+                number(number)
             {
-                std::filesystem::path txt = p;
+                std::filesystem::path txt = path;
                 txt.replace_extension(".txt");
                 if (!std::filesystem::exists(txt)) return;
-                for (str line : dat::in::text(txt).value())
+                array<str> lines = dat::in::text(txt).value();
+                for (str line : lines)
                 {
+                    if (line == "") continue;
+
                     str offset; line.split_by(" # ", offset, line); offset.strip();
                     str length; line.split_by(" # ", length, line); length.strip();
                     str size_x; line.split_by(" # ", size_x, line); size_x.strip();
@@ -100,12 +99,14 @@ namespace media::data
                     std::filesystem::rename(tmp, txt);
                 }
                 catch (std::exception & e) {
-                    *report::out << "<b><font color=#B00020>" "media::out::source: " +
-                        str(e.what()) + "</font></b>";
+                    *report::out << "<b><font color=#B00020>"
+                        "media::out::source: " + str(e.what()) +
+                        "</font></b>";
                 }
                 catch (...) {
-                    *report::out << "<b><font color=#B00020>" "media::out::source: "
-                        "unknown exception" "</font></b>";
+                    *report::out << "<b><font color=#B00020>"
+                        "media::out::source: unknown exception"
+                        "</font></b>";
                 }
            }
 
@@ -117,6 +118,9 @@ namespace media::data
                         + r.path.string());
 
                 auto time = std::filesystem::last_write_time(r.path);
+                // std::chrono::clock_cast<std::chrono::system_clock>(time);
+                // next code sometimes give one second error
+                // and causes unnecessary duplication:
                 auto sctp = std::chrono::time_point_cast<
                     std::chrono::system_clock::duration>(
                         time - decltype(time)::clock::now()
@@ -125,8 +129,9 @@ namespace media::data
                 std::stringstream stringstream;
                 stringstream << std::put_time(std::gmtime(&ctime), "%Y/%m/%d %T");
                 str stime = stringstream.str();
+                str ssize = std::to_string(size);
 
-                str record = std::to_string(size) + " # " + stime + " # " + r.id;
+                str record = ssize.right_aligned(10) + " # " + stime + " # " + r.id;
 
                 auto it = content.find(record);
                 if (it != content.end()) {
@@ -141,13 +146,20 @@ namespace media::data
 
                 if (data.size() == 0) throw std::runtime_error("no data");
                 if (data.size() > max<int32_t>() - dat::out::file::size)
-                    return location{};
+                    return location{}; // it's enough
 
                 info info {};
                 info.used = true;
                 info.location.source = number;
                 info.location.offset = dat::out::file::size;
                 info.location.length = data.size();
+
+                if (true) {
+                *report::out << r.id;
+                *report::out << "location.source: " + std::to_string(info.location.source);
+                *report::out << "location.offset: " + std::to_string(info.location.offset);
+                *report::out << "location.length: " + std::to_string(info.location.length);
+                }
 
                 fstream.write((char*) data.data(), data.size());
                 dat::out::file::size += data.size();

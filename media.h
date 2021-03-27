@@ -74,11 +74,14 @@ namespace media
             m.split_by("$", credit, m); credit.strip();
             if (credit != "") resource.credit = credit;
             
-            array<str> options = m.split_by("##");
-            for (str & option : options) {
-                option.strip(); if (option == "") continue;
-                resource.options += option;
-            }
+            str links, optio;
+            title.split_by(" ## ", title, optio);
+            title.split_by("[",    title, links);
+            links.strip("[ ]");
+            title.strip();
+
+            resource.entries += links.split_by("][");
+            resource.options += optio.split_by(" ## ");
 
             if (is_directory(entry))
             {
@@ -113,13 +116,14 @@ namespace media
                 {
                     identified[txt] = true;
 
-                    array<str> title_lines;
+                    array<str> title_lines; bool title_stop = false;
                     array<str> lines = dat::in::text(txt).value();
                     for (str line : lines)
                     {
                         line.strip();
 
                         if (line.starts_with("##")) {
+                            title_stop = true;
                             str option = line.from(2);
                             option.strip(); if (option == "") continue;
                             resource.options += option;
@@ -131,6 +135,7 @@ namespace media
                             line.replace_all("]   [", "][");
                             line.strip("[]");
                             resource.keywords += line.split_by("]][[");
+                            title_stop = true;
                         }
                         else
                         if (line.starts_with("[")) {
@@ -139,8 +144,11 @@ namespace media
                             line.replace_all("]   [", "][");
                             line.strip("[]");
                             resource.entries += line.split_by("][");
+                            title_stop = true;
                         }
-                        else title_lines += line;
+                        else
+                        if (not title_stop)
+                            title_lines += line;
                     }
 
                     while (title_lines.size() > 0 &&
@@ -150,6 +158,11 @@ namespace media
                     if (title_lines.size() > 0)
                         resource.title = str(title_lines);
                 }
+
+                if (true) *report::out << 
+                "<font color=#800080>" + resource.title + "</font>" +
+                "<font color=#000080>" + "[" + str(resource.entries, "][") + "]" + "</font>" +
+                "<font color=#008000>" + "{" + str(resource.options, "}{") + "}" + "</font>" ;
 
                 report::id2path[resource.id] += entry; // check for same id
                 resources += resource;

@@ -62,9 +62,23 @@ namespace app::dict
         }
         void on_key_pressed (str key, bool down) override
         {
-            if (card.card.object.text.view.selections.now != array<gui::text::range>{})
+            if (key == "") return;
+            if((key == "ctrl+insert" or
+                key == "shift+left"  or
+                key == "shift+right" or
+                key == "ctrl+left"   or
+                key == "ctrl+right"  or
+                key == "ctrl+shift+left"  or
+                key == "ctrl+shift+right" or
+                key == "shift+up"    or
+                key == "shift+down") and
+                card.card.object.text.view.selected() != "") {
                 card.card.object.text.on_key_pressed(key,down);
-            else list.on_key_pressed(key,down);
+                return;
+            }
+
+            card.card.object.text.view.selections = array<gui::text::range>();
+            list.on_key_pressed(key,down);
         }
 
         void on_notify (void* what) override

@@ -31,7 +31,8 @@ struct Studio : gui::widget<Studio>
         select(2).text.text = "en";
         select(3).text.text = "audio";
         select(4).text.text = "video";
-        select(5).text.text = "build!";
+        select(5).text.text = "build";
+        select(6).text.text = "build!";
         select(0).on = true;
 
         studios += &dict;
@@ -63,7 +64,8 @@ struct Studio : gui::widget<Studio>
             select(3).coord = XYWH(w*4, 0, w, h);
             select(4).coord = XYWH(w*5, 0, w, h);
             select(5).coord = XYWH(w*7, 0, w, h);
-            select   .coord = XYWH(0, 0, 8*w, h);
+            select(6).coord = XYWH(w*8, 0, w, h);
+            select   .coord = XYWH(0, 0, 9*w, h);
 
             for (int i=0; i<studios.size(); i++)
                 studios[i]->coord = XYXY(0, h, W, H);
@@ -75,15 +77,16 @@ struct Studio : gui::widget<Studio>
         if (what == &select)
         {
             int n = select.notifier_index;
+            int s = n == 6 ? 5 : n;
 
             for (int i=0; i<studios.size(); i++)
-                studios[i]->show (i == n);
+                studios[i]->show (i == s);
 
-            if (studios[n] == &build)
-                for (int i=0; i<studios.size(); i++)
-                    if (i != n) select(i).enabled = false;
+            if (n == 6) // build!
+                for (int i=0; i<studios.size()-1; i++)
+                    select(i).enabled = false;
 
-            if (studios[n] == &build)
+            if (n == 6)
                 build.run();
         }
 

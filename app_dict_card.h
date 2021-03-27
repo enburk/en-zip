@@ -174,7 +174,7 @@ namespace app::dict::card
             {
                 str link = undoes.back();
                 undoes.pop_back(); redoes += current.title;
-                if (auto range = eng::vocabulary::
+                if (const auto range = eng::vocabulary::
                     find_case_insensitive(link);
                     not range.empty()) {
                     clicked = range.offset();
@@ -186,7 +186,7 @@ namespace app::dict::card
             if (what == &redo && redoes.size() > 0) 
             {
                 str link = redoes.back(); redoes.pop_back();
-                if (auto range = eng::vocabulary::
+                if (const auto range = eng::vocabulary::
                     find_case_insensitive(link);
                     not range.empty()) {
                     clicked = range.offset();

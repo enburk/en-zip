@@ -9,7 +9,7 @@ namespace media::video
     using pix::image;
     using pix::frame;
 
-    inline void resize (image<RGBA> & img, int maxsizex, int maxsizey, bool sharp = true)
+    void resize (image<RGBA> & img, int maxsizex, int maxsizey, bool sharp = true)
     {
         XY size = img.size;
 
@@ -35,7 +35,7 @@ namespace media::video
         }
     }
 
-    inline void crop (image<RGBA> & img, str crop_params)
+    void crop (image<RGBA> & img, str crop_params)
     {
         int l = 0; int r = 0;
         int t = 0; int b = 0;
@@ -73,7 +73,7 @@ namespace media::video
                 img.size.x-l-r, img.size.y-t-b)));
     }
 
-    inline expected<array<byte>> readsample (path original, path cache, str crop_params) try
+    expected<array<byte>> readsample (path original, path cache, str crop_params) try
     {
         using namespace std::literals::chrono_literals;
         if (std::filesystem::exists(cache) == false ||
@@ -131,9 +131,19 @@ namespace media::video
             str(unicode::glyphs(r.id).upto(1))).
             ascii_lowercased();
 
+        str id = r.id; if (crop != "")
+        {
+            std::filesystem::path fn = std::string(r.id);
+            auto stem = fn.stem().string();
+            auto ext = fn.extension().string();
+            stem += " ## crop " + crop;
+            id = stem + ext;
+        }
+
         str cache = "../data/.cache/"
-            + r.kind + "/" + letter + "/"
-            + r.id;
+            + r.kind + "/"
+            + letter + "/"
+            + id;
 
         return readsample(r.path, std::string(cache), crop);
     }

@@ -30,11 +30,11 @@ namespace app::dict
 
         void on_mouse_press (XY p, char button, bool down) override
         {
-            if (down)
+            if (down and not sys::keyboard::ctrl)
             {
                 auto [inside_token, token_link] = link(p);
                 if (inside_token) {
-                    if (auto range = eng::vocabulary::
+                    if (const auto range = eng::vocabulary::
                         find_case_insensitive(token_link); not range.empty()) {
                         clicked = range.offset();
                         notify();
@@ -47,11 +47,11 @@ namespace app::dict
 
         void on_mouse_hover (XY p) override
         {
-            if (!touch)
+            if (not touch and not sys::keyboard::ctrl)
             {
                 auto [inside_token, token_link] = link(p);
                 if (inside_token)
-                    if (auto range = eng::vocabulary::
+                    if (const auto range = eng::vocabulary::
                         find_case_insensitive(token_link);
                         range.empty()) token_link = "";
     
@@ -81,6 +81,21 @@ namespace app::dict
                     }
                 }
                 return;
+            }
+            else if (sys::keyboard::ctrl)
+            {
+                for (auto & line : view.column)
+                {
+                    for (auto & token : line)
+                    {
+                        for (auto & glyph : token)
+                        {
+                            auto g = glyph.value.now;
+                            g.style_index = token.style;
+                            glyph.value = g;
+                        }
+                    }
+                }
             }
             gui::text::page::on_mouse_hover(p);
         }

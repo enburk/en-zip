@@ -44,16 +44,34 @@ namespace dat::out
 
     struct file
     {
-        pool pool; std::ofstream fstream; path path; int32_t size = 0;
+        pool pool;
+        path path;
+        std::ofstream fstream;
+        int size = 0;
 
-       ~file () { fstream.write((char*)pool.bytes.data(), pool.bytes.size()); }
-        file (std::filesystem::path p, std::ios_base::openmode mode = std::ios::binary)
-            : fstream (p, mode), path(p)
+        file (std::filesystem::path path,
+            std::ios_base::openmode mode = std::ios::binary)
+            : path(path)
         {
             auto dir = path.parent_path();
-            if (dir != std::filesystem::path())
+            if  (dir != std::filesystem::path())
                 std::filesystem::create_directories(dir);
+
+            fstream = std::ofstream(path, mode);
+
+            if ((mode & std::ios::app) != 0 and
+                std::filesystem::exists(path))
+                size = std::filesystem::
+                    directory_entry(path)
+                        .file_size();
         }
+
+       ~file ()
+       {
+           fstream.write((char*)
+               pool.bytes.data(),
+               pool.bytes.size());
+       }
 
         template <typename entry> 
         file & operator << (entry && e)
@@ -61,7 +79,9 @@ namespace dat::out
             auto nn = pool.bytes.size();  pool << e;
             size += pool.bytes.size() - nn;
             if (pool.bytes.size() >= 8*1024*1024) {
-                fstream.write((char*)pool.bytes.data(), pool.bytes.size());
+                fstream.write((char*)
+                pool.bytes.data(),
+                pool.bytes.size());
                 pool.bytes.clear();
             }
             return *this;

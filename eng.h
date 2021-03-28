@@ -142,4 +142,10 @@ namespace eng
             asciized(a).ascii_lowercased(),
             asciized(b).ascii_lowercased())
             < 0; };
+
+    auto equal_case_insensitive = [](const str & a, const str & b) {
+        return compare(
+            asciized(a).ascii_lowercased(),
+            asciized(b).ascii_lowercased())
+            == 0; };
 }

@@ -6,11 +6,102 @@ namespace app::dict
     {
         int clicked = 0;
 
-        std::pair<bool, str> link (XY p)
+        int link (gui::text::token & token, gui::text::line & line)
+        {
+            if (token.info != "")
+                if (auto range =
+                    eng::vocabulary::find_case_insensitive(token.info);
+                    not range.empty()) return range.offset();
+
+            int index = -1;
+            for (int i=0; i<line.size(); i++)
+                if (&line(i) == &token) {
+                    index = i; break; }
+
+            if (index == -1) return eng::vocabulary::find("nonsense").offset();
+
+            auto small = [](str s){ return eng::asciized(s).ascii_lowercased(); };
+
+            str Longest = ""; int L = 0; int I0 = 0; int I1 = 0;
+            str longest = ""; int l = 0; int i0 = 0; int i1 = 0;
+
+            for (int start=0; start<=index; start++)
+            {
+                str Attempt = "";
+                str attempt = "";
+
+                for (int i=start; i<=index; i++) {
+                    Attempt += line(i).text;
+                    attempt += small(line(i).text);
+                }
+
+                auto it = vocabulary.lower_bound(
+                     eng::vocabulary::entry{attempt},
+                     eng::vocabulary::less_case_insensitive);
+
+                if (it == vocabulary.end() or not small(
+                    it->title).starts_with(attempt))
+                    continue;
+
+                str S = it->title;
+                str s = small(S);
+                int d = (int)(it - vocabulary.begin());
+                bool Better = S == Attempt and Longest.size() < S.size();
+                bool better = s == attempt and longest.size() < s.size();
+                if (Better) { Longest = S; L = d; I0 = start; I1 = index; }
+                if (better) { longest = S; l = d; i0 = start; i1 = index; }
+
+                str sentinel = attempt;
+
+                for (int i=index+1; i<line.size(); i++)
+                {
+                    bool valid = false;
+                    str Candidate = Attempt + line(i).text;
+                    str candidate = attempt + small(line(i).text);
+                    for (auto jt=it; it != vocabulary.end(); jt++)
+                    {
+                        S = jt->title;
+                        s = small(S);
+                        int d = (int)(jt - vocabulary.begin());
+                        Better = S == Candidate and Longest.size() < S.size();
+                        better = s == candidate and longest.size() < s.size();
+                        if (Better) { Longest = S; L = d; I0 = start; I1 = i; }
+                        if (better) { longest = S; l = d; i0 = start; i1 = i; }
+
+                        if (s.starts_with(candidate) or
+                            candidate.starts_with(s))
+                            valid = true;
+
+                        if (not s.starts_with(sentinel))
+                            break;
+                    }
+                    if (not valid) break;
+                    Attempt = Candidate;
+                    attempt = candidate;
+                }
+            }
+
+            if (Longest.size() < longest.size()) {
+                Longest = longest; L = l;
+                I0 = i0; I1 = i1;
+            }
+
+            if (Longest != "")
+            {
+                for (int i=I0; i<=I1; i++)
+                    line(i).info = vocabulary[L].title;
+
+                return L;
+            }
+
+            return -1;
+        }
+
+        int link (XY p)
         {
             auto & column = view.column;
 
-            if (!column.coord.now.includes(p)) return {false, ""};
+            if (!column.coord.now.includes(p)) return -2;
             auto cp = p - column.coord.now.origin;
             for (auto & line : column)
             {
@@ -20,10 +111,10 @@ namespace app::dict
                 {
                     if (!token.coord.now.includes(lp)) continue;
                     if (token.glyphs.size() < 2) continue;
-                    return {true, token.text};
+                    return link(token, line);
                 }
             }
-            return {false, ""};
+            return -2;
         }
 
         bool mouse_sensible (XY p) override { return true; }
@@ -32,14 +123,11 @@ namespace app::dict
         {
             if (down and not sys::keyboard::ctrl)
             {
-                auto [inside_token, token_link] = link(p);
-                if (inside_token) {
-                    if (const auto range = eng::vocabulary::
-                        find_case_insensitive(token_link); not range.empty()) {
-                        clicked = range.offset();
-                        notify();
-                        return;
-                    }
+                if (auto n = link(p); n >= 0)
+                {
+                    clicked = n;
+                    notify();
+                    return;
                 }
             }
             gui::text::page::on_mouse_press(p, button, down);
@@ -49,24 +137,21 @@ namespace app::dict
         {
             if (not touch and not sys::keyboard::ctrl)
             {
-                auto [inside_token, token_link] = link(p);
-                if (inside_token)
-                    if (const auto range = eng::vocabulary::
-                        find_case_insensitive(token_link);
-                        range.empty()) token_link = "";
-    
-                mouse_image =
-                  //inside_selection ? "editor" :
-                    token_link != "" ? "hand" :
-                    inside_token ? "editor" :
-                    "arrow";
-    
+                int n = link(p); mouse_image =
+                    n == -1 ? "arrow":
+                    n == -2 ? "arrow":
+                    "hand";
+
+                str link = n >= 0 ?
+                    vocabulary[n].title : "";
+
                 for (auto & line : view.column)
                 {
                     for (auto & token : line)
                     {
                         auto style_index = token.style;
-                        if (token.text == token_link)
+                        if ((link != "" and token.text == link) or
+                            (link != "" and token.info == link))
                         {
                             auto style = style_index.style();
                             style.color = RGBA(0,0,255);
@@ -172,7 +257,8 @@ namespace app::dict
 
         for (const auto & topic : entry.topics)
         {
-            if (eng::lexical_items.find(topic.header) != eng::lexical_items.end())
+            if (eng::lexical_items.find(topic.header) !=
+                eng::lexical_items.end())
             {
                 html += "<br><b><font color=#008000>"
                         + topic.header + "</font></b> &nbsp; "
@@ -202,6 +288,25 @@ namespace app::dict
                 }
             }
             else
+            if (eng::lexical_notes.find(topic.header) !=
+                eng::lexical_notes.end())
+            {
+                str header = topic.header;
+                if (header.size() > 0)
+                    header[0] = header[0] - 'a' + 'A';
+
+                html += "<div style=\"margin-left: 1em\">";
+                html += "<br><i><font color=#008000>"
+                     + header + ":</font></i> ";
+
+                for (str s : topic.content)
+                    html += s + "<br>";
+
+                html += "</div>";
+            }
+            else
+            if (eng::related_items.find(topic.header) !=
+                eng::related_items.end())
             {
                 str header = topic.header;
                 if (header.size() > 0)
@@ -220,7 +325,9 @@ namespace app::dict
                             sss += "<br>" + ss;
                             ss = "";
                         }
-                        ss += s + ", ";
+
+                        ss += "<a href=\"" + s + "\">"
+                            + s + "</a>" + ", ";
                     }
                     sss += "<br>" + ss;
 
@@ -235,7 +342,8 @@ namespace app::dict
                         html += "<br>";
 
                     for (str s : topic.content)
-                        html += s + "<br>";
+                        html += "<a href=\"" + s + "\">"
+                            + s + "</a>" + "<br>";
                 }
 
                 html += "</div>";

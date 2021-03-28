@@ -53,7 +53,8 @@ namespace studio::dict
     {
         std::multimap<int, int> entry_media; int total_media = 0;
 
-        media::data::out::storage storage("../data/app_dict");
+        media::
+        data::out::storage storage("../data/app_dict");
         dat::out::file entry_index("../data/app_dict/entry_index.dat");
         dat::out::file media_index("../data/app_dict/media_index.dat");
 

@@ -134,10 +134,11 @@ namespace media::video
         str id = r.id; if (crop != "")
         {
             std::filesystem::path fn = std::string(r.id);
-            auto stem = fn.stem().string();
-            auto ext = fn.extension().string();
-            stem += " ## crop " + crop;
-            id = stem + ext;
+            str stem = fn.stem().string();
+            str ext = fn.extension().string();
+            str cc = " ## crop " + crop;
+            if (not stem.ends_with(cc))
+                id = stem + cc + ext;
         }
 
         str cache = "../data/.cache/"

@@ -120,6 +120,7 @@ namespace app::dict::card
             str debug = "<br> n = " + std::to_string(n);
             str html = wiki2html(entry) + debug;
             if (true) std::ofstream("test.html") << html;
+            if (true) std::ofstream("test.html.txt") << doc::html::print(html);
             card.object.text.html = html;
             card.object.text.scroll.y.top = 0;
             refresh();

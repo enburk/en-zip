@@ -67,6 +67,7 @@ namespace app::dict::card
     struct quot : gui::widget<quot>
     {
         int clicked = 0;
+        html_view text;
     };
 
     struct area : gui::widget<area>
@@ -92,12 +93,14 @@ namespace app::dict::card
 
         void select (int n)
         {
-            if (true) if (log) *log <<
-            "app::dict::card::select "
-            + std::to_string(n);
+            /// if (log) *log <<
+            /// "app::dict::card::select "
+            /// + std::to_string(n);
 
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
+            if (vocabulary[n].redirect >= 0) n =
+                vocabulary[n].redirect;
             if (vocabulary[n].length == 0) return;
             if (vocabulary[n].length == current.length
             &&  vocabulary[n].offset == current.offset) return;
@@ -117,7 +120,16 @@ namespace app::dict::card
             eng::dictionary::entry entry;
             pool >> entry;
 
-            str debug = "<br> n = " + std::to_string(n);
+            array<str> excluded_links;
+            excluded_links += entry.title;
+            for (auto redirect : entry.redirects)
+                excluded_links += vocabulary[redirect].title;
+
+            card.object.text.excluded_links = 
+            quot.object.text.excluded_links = 
+                excluded_links;
+
+            str debug = "";///"<br> n = " + std::to_string(n);
             str html = wiki2html(entry) + debug;
             if (true) std::ofstream("test.html") << html;
             if (true) std::ofstream("test.html.txt") << doc::html::print(html);

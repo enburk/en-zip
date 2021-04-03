@@ -8,6 +8,9 @@ namespace app::dict::mediae
         str kind, title, comment, credit;
         media::data::location location;
         array<str> options;
+
+        bool operator == (media_index const&) const = default;
+        bool operator != (media_index const&) const = default;
     };
     array<entry_index> entry_indices;
     array<media_index> media_indices;
@@ -55,5 +58,33 @@ namespace app::dict::mediae
             if (index.kind == "audio") selected_audio += index;
             if (index.kind == "video") selected_video += index;
         }
+    }
+
+    str canonical (str s)
+    {
+        if (s.ends_with("}")) {
+            str sense; s.split_by("{",
+                s, sense); s.strip(); }
+
+        auto ss = s.split_by("_"); if (ss.size() > 1)
+        {
+            s = ss.front(); ss.upto(1).erase(); for (str ww : ss)
+            {
+                int n = 0;
+                for (char c : ww)
+                    if((c < '0') || ('9' < c &&
+                        c < 'A') || ('Z' < c &&
+                        c < 'a') || ('z' < c))
+                        break; else n++;
+
+                str w = ww.upto(n);
+                str r = ww.from(n);
+
+                s += "<a href=\"" + w + "\">"
+                    + w + "</a>" + r;
+            }
+        }
+
+        return s;
     }
 }

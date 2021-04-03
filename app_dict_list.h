@@ -25,21 +25,31 @@ namespace app::dict::list
             page_up.text.text = (char*)(u8"\u21C8");
             page_down.text.text = (char*)(u8"\u21CA");
             settings.text.text = (char*)(u8"\u26ED");
+            using namespace std::literals::chrono_literals;
+            auto lapse = 40ms;
+            up.repeat_delay = 0ms;
+            up.repeat_lapse = lapse;
+            down.repeat_delay = 0ms;
+            down.repeat_lapse = lapse;
+            page_up.repeat_delay = 0ms;
+            page_up.repeat_lapse = lapse;
+            page_down.repeat_delay = 0ms;
+            page_down.repeat_lapse = lapse;
         }
 
         void reload ()
         {
-            if (true) if (log) *log <<
-            "app::dict::list::reload";
+            /// if (log) *log <<
+            /// "app::dict::list::reload";
 
             list.object.refresh();
         }
 
         void select (int n)
         {
-            if (true) if (log) *log <<
-            "app::dict::list::select "
-            + std::to_string(n);
+            /// if (log) *log <<
+            /// "app::dict::list::select "
+            /// + std::to_string(n);
 
             list.object.select(n);
             word.object.select(list.object.selected);
@@ -74,6 +84,12 @@ namespace app::dict::list
             if (what == &skin)
             {
                 tool.color = gui::skins[skin].light.first;
+                auto font = sys::font{"", gui::metrics::text::height*12/10};
+                up       .text.font = font;
+                down     .text.font = font;
+                page_up  .text.font = font;
+                page_down.text.font = font;
+                settings .text.font = font;
             }
         }
 
@@ -83,6 +99,8 @@ namespace app::dict::list
         {
             auto & l = list.object;
             int page = l.words.size();
+            if (sys::keyboard::shift) page *= list.object.words.size();
+            if (sys::keyboard::ctrl) page *= 5;
 
             if (!down) return;
             if (key == "up"  ) l.current = l.current.now - 1; else

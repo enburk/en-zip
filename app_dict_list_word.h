@@ -12,16 +12,21 @@ namespace app::dict::list
 
         void select (int n)
         {
-            if (true) if (log) *log <<
-            "app::dict::list::word::select "
-            + std::to_string(n);
+            /// if (log) *log <<
+            /// "app::dict::list::word::select "
+            /// + std::to_string(n);
 
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
             flag = true;
             editor.text = vocabulary[n].title;
-            editor.select();
             flag = false;
+
+            editor.select();
+            editor.style = pix::text::style{
+                sys::font{"Segoe UI",
+                gui::metrics::text::height},
+                gui::skins[skin].dark.first};
         }
 
         void on_change (void* what) override
@@ -78,10 +83,9 @@ namespace app::dict::list
                 editor.style = pix::text::style{
                     sys::font{"Segoe UI",
                     gui::metrics::text::height},
-                    eng::less_case_insensitive(i->title, s) or
-                    eng::less_case_insensitive(s, i->title)?
-                    gui::skins[skin].error.first:
-                    gui::skins[skin].dark.first };
+                    eng::equal_case_insensitive(s, i->title)?
+                    gui::skins[skin].dark.first:
+                    gui::skins[skin].error.first};
 
                 typed = (int)(i - vocabulary.begin());
                 notify();

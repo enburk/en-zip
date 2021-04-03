@@ -38,7 +38,8 @@ namespace dat::in
                     (static_cast<uint8_t>(bytes[offset+2]) & 0xFF) << 16 |
                     (static_cast<uint8_t>(bytes[offset+3]) & 0xFF) << 24;
             }
-            else throw std::logic_error ("dat::in::pool: unsupported endianness:" +
+            else throw std::logic_error (
+                "dat::in::pool: unsupported endianness:" +
                 std::to_string (endianness));
 
             offset += 4;
@@ -50,9 +51,12 @@ namespace dat::in
             int size = get_int();
 
             if (size < 0) throw
-                std::out_of_range("dat::in::pool " + name + ": get_string negative size");
+                std::out_of_range("dat::in::pool " + name +
+                    ": get_string negative size");
+
             if (offset + size > bytes.size()) throw
-                std::out_of_range("dat::in::pool " + name + ": get_string out of range");
+                std::out_of_range("dat::in::pool " + name +
+                    ": get_string out of range");
         
             std::string_view s {(char*)(&bytes[offset]), (size_t)(size)};
             offset += size;
@@ -64,9 +68,12 @@ namespace dat::in
             int size = get_int();
                 
             if (size < 0) throw
-                std::out_of_range("dat::in::pool " + name + ": get_bytes negative size");
+                std::out_of_range("dat::in::pool " + name +
+                ": get_bytes negative size");
+
             if (offset + size > bytes.size()) throw
-                std::out_of_range("dat::in::pool " + name + ": get_bytes out of range");
+                std::out_of_range("dat::in::pool " + name +
+                    ": get_bytes out of range");
         
             std::pair<byte*, int> data {&bytes[offset], size};
             offset += size;
@@ -89,8 +96,7 @@ namespace dat::in
         return pool;
     }
     catch (std::exception & e) {
-    return data::error(e.what());
-    }
+    return data::error(e.what()); }
 
     expected<array<str>> text (path path) try
     {
@@ -105,6 +111,5 @@ namespace dat::in
 
     }
     catch (std::exception & e) {
-    return data::error(e.what());
-    }
+    return data::error(e.what()); }
 }

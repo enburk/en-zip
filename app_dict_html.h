@@ -6,6 +6,8 @@ namespace app::dict
     {
         int clicked = 0;
 
+        array<str> excluded_links; bool it_is_a_title = false;
+
         int link (gui::text::token & token, gui::text::line & line)
         {
             if (token.info != "")
@@ -22,8 +24,8 @@ namespace app::dict
 
             auto small = [](str s){ return eng::asciized(s).ascii_lowercased(); };
 
-            str Longest = ""; int L = 0; int I0 = 0; int I1 = 0;
-            str longest = ""; int l = 0; int i0 = 0; int i1 = 0;
+            str Longest; int L = 0; int I0 = 0; int I1 = 0;
+            str longest; int l = 0; int i0 = 0; int i1 = 0;
 
             for (int start=0; start<=index; start++)
             {
@@ -48,6 +50,8 @@ namespace app::dict
                 int d = (int)(it - vocabulary.begin());
                 bool Better = S == Attempt and Longest.size() < S.size();
                 bool better = s == attempt and longest.size() < s.size();
+                Better = Better and not excluded_links.contains(S);
+                better = better and not excluded_links.contains(S);
                 if (Better) { Longest = S; L = d; I0 = start; I1 = index; }
                 if (better) { longest = S; l = d; i0 = start; i1 = index; }
 
@@ -65,6 +69,8 @@ namespace app::dict
                         int d = (int)(jt - vocabulary.begin());
                         Better = S == Candidate and Longest.size() < S.size();
                         better = s == candidate and longest.size() < s.size();
+                        Better = Better and not excluded_links.contains(S);
+                        better = better and not excluded_links.contains(S);
                         if (Better) { Longest = S; L = d; I0 = start; I1 = i; }
                         if (better) { longest = S; l = d; i0 = start; i1 = i; }
 
@@ -81,10 +87,13 @@ namespace app::dict
                 }
             }
 
-            if (Longest.size() < longest.size()) {
-                Longest = longest; L = l;
-                I0 = i0; I1 = i1;
-            }
+            str c = Longest.upto(1); bool capital =
+                c >= "A" and
+                c <= "Z";
+
+            if (Longest.size() <  longest.size() or
+               (Longest.size() == longest.size() and capital and it_is_a_title)) {
+                Longest = longest; L = l; I0 = i0; I1 = i1; }
 
             if (Longest != "")
             {

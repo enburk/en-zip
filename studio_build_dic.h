@@ -51,23 +51,27 @@ namespace studio::build
         }
 
         out << "dictionary sort...";
-
         //dictionary.sort(eng::dictionary::less);
         std::sort(std::execution::par, dictionary.begin(),
         dictionary.end(), eng::dictionary::less);
+        out << "dictionary sort ok";
+
         vocabulary.resize(dictionary.size());
         array<str> vocabulary_unicode;
         array<str> vocabulary_sorting;
         bool sort_out_next_line = false;
 
-        out << "dictionary sort ok";
-
         for (int i=0; i<dictionary.size(); i++)
         {
-            vocabulary[i].title = dictionary[i].title;
-            bool unicode = false, sorting = false;
-            for (char c : vocabulary[i].title) {
-                if (static_cast<uint8_t>(c) & 0b10000000) unicode = true; else
+            vocabulary[i].title =
+            dictionary[i].title;
+
+            bool unicode = false;
+            bool sorting = false;
+            for (char c : vocabulary[i].title)
+            {
+                auto b = static_cast<uint8_t>(c);
+                if (b & 0b10000000) unicode = true; else
                 if (c >= 'A') if (c < 'a' || 'z' < c) sorting = true;
             }
             if (unicode) sorting = true;
@@ -92,46 +96,79 @@ namespace studio::build
                 ofstream << word << "\n";
         }
 
+        std::ofstream ofstream (dir / "vocabulary_problem.txt");
+
+        for (int i=0; i<dictionary.size(); i++)
+        {
+            auto & topics =
+            dictionary[i].topics;
+            if (topics.size() != 1 or
+                topics.front().header != ">>>")
+                continue; // it's not a redirect
+
+            str redirect = topics[0].forms;
+            if (redirect == vocabulary[i].title) {
+                ofstream << "REDIRECT: ITSELF: " <<
+                dictionary[i].title << " >>> " <<
+                redirect << "\n"; continue; }
+
+            auto range = eng::vocabulary::find(redirect); if (range.empty()) {
+                ofstream << "REDIRECT: NOT FOUND: " <<
+                dictionary[i].title << " >>> " <<
+                redirect << "\n"; continue; }
+
+            auto n = range.offset();
+
+            auto & topics2 =
+            dictionary[i].topics;
+            if (topics2.size() != 1 or
+                topics2.front().header != ">>>") {
+                ofstream << "REDIRECT: TRANSIT: " <<
+                dictionary[i].title << " >>> " <<
+                redirect << "\n"; continue; }
+
+            dictionary[n].redirects += i;
+            vocabulary[i].redirect = n;
+        }
+
         dat::out::file dictionary_dat (dir / "dictionary.dat");
 
         for (int i=0; i<dictionary.size(); i++)
         {
-            if ((i+1) % 100'000 == 0) out << "wrote " + std::to_string(i+1) + " entries";
+            if ((i+1) % 100'000 == 0) out <<
+                "written " + std::to_string
+                    (i+1) + " entries";
 
-            auto & topics = dictionary[i].topics;
-
-            if (topics.size() == 1 && topics[0].header == ">>>") continue;
+            auto & topics =
+            dictionary[i].topics;
+            if (topics.size() == 1 and
+                topics.front().header == ">>>")
+                continue; // it's a redirect
 
             vocabulary[i].offset = dictionary_dat.size;
             
             dictionary_dat << dictionary[i];
             
-            vocabulary[i].length = dictionary_dat.size - vocabulary[i].offset;
+            vocabulary[i].length = dictionary_dat.size -
+            vocabulary[i].offset;
         }
-
-        std::ofstream ofstream (dir / "vocabulary_problem.txt");
 
         for (int i=0; i<dictionary.size(); i++)
         {
-            auto & topics = dictionary[i].topics;
+            auto & topics =
+            dictionary[i].topics;
+            if (topics.size() != 1 or
+                topics.front().header != ">>>")
+                continue; // it's not a redirect
 
-            if (topics.size() == 1 && topics[0].header == ">>>")
-            {
-                str redirect = topics[0].forms;
-                if (redirect == vocabulary[i].title) { ofstream << "REDIRECT: ITSELF: " <<
-                    dictionary[i].title << " >>> " << redirect << std::endl; continue; }
+            int n = 0;
+            str redirect = topics.front().forms;
+            auto range = eng::vocabulary::find(redirect);
+            if (not range.empty()) 
+                n = range.offset();
 
-                auto it = vocabulary.lower_bound(eng::vocabulary::entry{redirect}, eng::vocabulary::less);
-                if (it == vocabulary.end()) { ofstream << "REDIRECT: NOT FOUND: " <<
-                    dictionary[i].title << " >>> " << redirect << std::endl; continue; }
-
-                auto n = (int)(it - vocabulary.begin());
-                if (vocabulary[n].length == 0) { ofstream << "REDIRECT: TRANSIT: " <<
-                    dictionary[i].title << " >>> " << redirect << std::endl; continue; }
-
-                vocabulary[i].offset = vocabulary[n].offset;
-                vocabulary[i].length = vocabulary[n].length;
-            }
+            vocabulary[i].offset = vocabulary[n].offset;
+            vocabulary[i].length = vocabulary[n].length;
         }
 
         dat::out::file vocabulary_dat (dir / "vocabulary.dat");

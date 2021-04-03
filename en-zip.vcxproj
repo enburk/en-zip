@@ -175,6 +175,7 @@
     <ClInclude Include="app_dict_list_word.h" />
     <ClInclude Include="app_dict_media.h" />
     <ClInclude Include="app_dict_video.h" />
+    <ClInclude Include="app_dict_video_player.h" />
     <ClInclude Include="app_dual.h" />
     <ClInclude Include="app_mono.h" />
     <ClInclude Include="dat_in.h" />

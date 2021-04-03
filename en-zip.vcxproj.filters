@@ -59,5 +59,6 @@
     <ClInclude Include="studio_build_dic.h" />
     <ClInclude Include="app_dict_list_list.h" />
     <ClInclude Include="app_dict_list_word.h" />
+    <ClInclude Include="app_dict_video_player.h" />
   </ItemGroup>
 </Project>

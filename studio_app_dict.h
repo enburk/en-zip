@@ -60,28 +60,35 @@ namespace studio::dict
 
         for (auto & r : resources)
         {
-            if (r.entries.size() == 0)
-                r.entries += r.title;
-
             media::data::location location;
 
             for (str entry : r.entries)
             {
-                if (auto range = eng::vocabulary::find(entry); not range.empty())
-                {
-                    if (location == media::data::location{}) {
-                        location = storage.add(r);
-                        media_index << r.kind;
-                        media_index << r.title;
-                        media_index << r.comment;
-                        media_index << r.credit;
-                        media_index << r.options;
-                        media_index << location;
-                        total_media++;
-                    }
+                if (entry.ends_with("}")) {
+                    str sense; entry.split_by("{",
+                        entry, sense); entry.strip(); }
 
-                    entry_media.emplace(range.offset(), total_media-1);
+                entry.replace_all("_", "");
+
+                auto range = eng::vocabulary::find(entry);
+                if (range.empty()) continue;
+                int n = range.offset();
+
+                if (vocabulary[n].redirect >= 0) n =
+                    vocabulary[n].redirect;
+
+                if (location == media::data::location{}) {
+                    location = storage.add(r);
+                    media_index << r.kind;
+                    media_index << r.title;
+                    media_index << r.comment;
+                    media_index << r.credit;
+                    media_index << r.options;
+                    media_index << location;
+                    total_media++;
                 }
+
+                entry_media.emplace(n, total_media-1);
             }
         }
 

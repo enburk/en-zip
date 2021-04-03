@@ -30,7 +30,7 @@ namespace eng
     namespace dictionary
     {
         struct topic { str header, forms; array<str> content; };
-        struct entry { str title; array<topic> topics; };
+        struct entry { str title; array<topic> topics; array<int> redirects; };
 
         auto less = [](const entry & a, const entry & b)
         { return eng::less(a.title, b.title); };
@@ -51,6 +51,8 @@ namespace eng
                 topic.content.resize(in.get_int());
                 for (auto & s : topic.content) s = in.get_string();
             }
+            entry.redirects.resize(in.get_int());
+            for (auto & s : entry.redirects) s = in.get_int();
         }
         void operator << (dat::out::pool & out, const entry & entry)
         {
@@ -61,12 +63,16 @@ namespace eng
                 out << topic.forms;
                 out << topic.content;
             }
+            out << entry.redirects.size();
+            for (auto & redirect : entry.redirects) {
+                out << redirect;
+            }
         }
     }
 
     namespace vocabulary
     {
-        struct entry { str title; int32_t offset = 0, length = 0; };
+        struct entry { str title; int offset = 0, length = 0, redirect = -1; };
         inline array<entry> data;
 
         auto less = [](const entry & a, const entry & b)
@@ -98,12 +104,14 @@ namespace eng
             entry.title = in.get_string();
             entry.offset = in.get_int();
             entry.length = in.get_int();
+            entry.redirect = in.get_int();
         }
         void operator << (dat::out::pool & out, const entry & entry)
         {
             out << entry.title;
             out << entry.offset;
             out << entry.length;
+            out << entry.redirect;
         }
     }
 }

@@ -97,8 +97,6 @@ namespace media
                 resource.id = entry.stem().string() +
                 resource.id + entry.extension().string();
 
-                if (title != "") resource.title = title;
-
                 *report::out << "scan " + entry.string();
                 str ext = entry.extension().string();
                 ext = ext.ascii_lowercased();
@@ -116,16 +114,28 @@ namespace media
                 {
                     identified[txt] = true;
 
-                    array<str> title_lines; bool title_stop = false;
+                    bool title_stop = false;
+                    array<str> title_lines;
+                    array<str> comment_lines;
                     array<str> lines = dat::in::text(txt).value();
                     for (str line : lines)
                     {
                         line.strip();
 
+                        if (line.starts_with("**")) {
+                            title_stop = true;
+                            str comment = line.from(2); comment.strip();
+                            comment_lines += comment;
+                        }
+                        else
                         if (line.starts_with("##")) {
                             title_stop = true;
-                            str option = line.from(2);
-                            option.strip(); if (option == "") continue;
+                            str option = line.from(2); option.strip();
+                            if (option == "") continue;
+                            if (option.starts_with("credit")) {
+                                resource.credit = option.from(7);
+                                continue;
+                            }
                             resource.options += option;
                         }
                         else
@@ -156,8 +166,15 @@ namespace media
                            title_lines.truncate();
 
                     if (title_lines.size() > 0)
-                        resource.title = str(title_lines);
+                        title = str(title_lines);
+
+                    if (comment_lines.size() > 0)
+                        resource.comment = str(
+                        comment_lines, "<br>");
                 }
+
+                if (title != "") resource.title = title;
+                if (title != "") resource.entries += title;
 
                 if (true) *report::out << 
                 "<font color=#800080>" + resource.title + "</font>" +

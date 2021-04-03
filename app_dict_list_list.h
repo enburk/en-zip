@@ -15,9 +15,9 @@ namespace app::dict::list
 
         void select (int n)
         {
-            if (true) if (log) *log <<
-            "app::dict::list::list::select "
-            + std::to_string(n);
+            /// if (log) *log <<
+            /// "app::dict::list::list::select "
+            /// + std::to_string(n);
 
             if (n < 0) return;
             if (n >= vocabulary.size()) return;

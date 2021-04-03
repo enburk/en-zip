@@ -154,7 +154,7 @@ namespace media::data
                 info.location.offset = dat::out::file::size;
                 info.location.length = data.size();
 
-                if (true) {
+                if (false) {
                 *report::out << r.id;
                 *report::out << "location.source: " + std::to_string(info.location.source);
                 *report::out << "location.offset: " + std::to_string(info.location.offset);

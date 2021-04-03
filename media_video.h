@@ -112,8 +112,8 @@ namespace media::video
 
         return dat::in::bytes(cache);
     }
-    catch (std::exception & e) {
-    return ::data::error("media::video::readsample:"
+    catch (std::exception & e) {return
+        ::data::error("media::video::readsample:"
         "<br>  path: " + original.string() +
         "<br>  cache: " + cache.string() +
         "<br>  crop: " + crop_params +

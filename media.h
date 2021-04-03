@@ -49,8 +49,8 @@ namespace media
 
         std::map<path, bool> identified;
 
-        array<str> video = {".jpg", ".jpeg", ".png"};
-        array<str> audio = {".mp3", ".ogg"};
+        array<str> video = {".png", ".jpg", ".jpeg" };
+        array<str> audio = {".mp3", ".ogg", ".wav"};
 
         *report::out << "scan " + dir.string();
         for (std::filesystem::directory_iterator

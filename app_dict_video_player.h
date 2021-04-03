@@ -86,7 +86,7 @@ namespace app::dict::video
         {
             start = gui::time::now;
             state = gui::media::state::playing;
-            stay.ms = stay.ms * 125/100;
+            stay.ms = stay.ms * 120/100;
             video.play();
         }
         void stop ()

@@ -169,6 +169,8 @@
     <ClInclude Include="app.h" />
     <ClInclude Include="app_dict.h" />
     <ClInclude Include="app_dict_card.h" />
+    <ClInclude Include="app_dict_card_card.h" />
+    <ClInclude Include="app_dict_card_quot.h" />
     <ClInclude Include="app_dict_html.h" />
     <ClInclude Include="app_dict_list.h" />
     <ClInclude Include="app_dict_list_list.h" />

@@ -1,6 +1,12 @@
 #pragma once
 #include <vorbis/codec.h>
 #include <vorbis/vorbisfile.h>
+#ifdef _MSC_VER
+#pragma comment ( lib, "vorbis.lib" )
+#pragma comment ( lib, "vorbisenc.lib" )
+#pragma comment ( lib, "vorbisfile.lib" )
+#pragma comment ( lib, "ogg.lib" )
+#endif
 #include "media.h"
 namespace media::audio
 {

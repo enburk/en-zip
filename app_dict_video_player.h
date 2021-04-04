@@ -76,8 +76,6 @@ namespace app::dict::video
                 "</i></font><br>&nbsp;";
 
             script.it_is_a_title = true;
-            script.html = "";
-            credit.html = "";
             script.html = s;
             credit.html = c;
         }

@@ -1,6 +1,6 @@
 #pragma once
 #include "app_dict_media.h"
-#include "app_dict_video.h"
+#include "app_dict_card_card_videos.h"
 namespace app::dict::card
 {
     struct card : gui::widget<card>

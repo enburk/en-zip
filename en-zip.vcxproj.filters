@@ -53,14 +53,16 @@
     <ClInclude Include="studio_video.h" />
     <ClInclude Include="eng_dictionary.h" />
     <ClInclude Include="app_dict_media.h" />
-    <ClInclude Include="app_dict_video.h" />
     <ClInclude Include="media_data.h" />
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="studio_build_dic.h" />
     <ClInclude Include="app_dict_list_list.h" />
     <ClInclude Include="app_dict_list_word.h" />
-    <ClInclude Include="app_dict_video_player.h" />
     <ClInclude Include="app_dict_card_card.h" />
     <ClInclude Include="app_dict_card_quot.h" />
+    <ClInclude Include="app_dict_card_quot_audio.h" />
+    <ClInclude Include="app_dict_card_card_video.h" />
+    <ClInclude Include="app_dict_card_card_videos.h" />
+    <ClInclude Include="eng_parser.h" />
   </ItemGroup>
 </Project>

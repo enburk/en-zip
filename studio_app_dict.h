@@ -62,8 +62,9 @@ namespace studio::dict
         {
             media::data::location location;
 
-            if (r.kind == "audio")
-                r.entries += r.title.split_by(" ");
+            if (r.kind == "audio" and
+                r.entries.size() == 1) // title already there
+                r.entries = eng::parser::entries(r.title);
 
             for (str entry : r.entries)
             {

@@ -59,7 +59,7 @@ namespace app::dict::card
                 excluded_links += vocabulary[redirect].title;
 
             card.object.text.excluded_links = 
-            quot.object.text.excluded_links = 
+            quot.object.excluded_links = 
                 excluded_links;
 
             str debug = "";///"<br> n = " + std::to_string(n);
@@ -94,7 +94,7 @@ namespace app::dict::card
                 int w = W/2;
 
                 int htool = h*12/7;
-                int hquot = 5*h + 6*l;
+                int hquot = 4*h*12/7 + 6*l;
                 int hcard = H - htool - hquot;
                 int y = 0;
 

@@ -40,8 +40,8 @@ namespace app::dict::video
             start = gui::time{};
             stay  = gui::time{4000 +
                 index_.title.size() * 90/1000 +
-                index_.credit.size() * 30/1000 +
-                index_.comment.size() * 10/1000
+                index_.credit.size() * 10/1000 +
+                index_.comment.size() * 30/1000
             };
 
             if (index == index_) return; else

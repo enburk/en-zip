@@ -1,7 +1,7 @@
 #pragma once
 #include "app_dict_html.h"
 #include "app_dict_media.h"
-#include "app_dict_video_player.h"
+#include "app_dict_card_card_video.h"
 namespace app::dict::video
 {
     struct sequencer : gui::widget<sequencer>
@@ -38,6 +38,7 @@ namespace app::dict::video
             for (auto & player : players)
             {
                 player.hide();
+                player.coord = coord.now.local();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
                 player.script.excluded_links =

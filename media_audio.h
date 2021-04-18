@@ -31,7 +31,9 @@ namespace media::audio
             auto size = input.size();
 
             rc = ov_open_callbacks(0, &vf, data, size, OV_CALLBACKS_DEFAULT);
-            if (rc < 0) return; // "Input does not appear to be an Ogg bitstream."
+            if (rc < 0) throw std::runtime_error(
+                "Input does not appear to be "
+                "an Ogg bitstream.");
 
             vorbis_info *vi=ov_info(&vf,-1);
             channels = vi->channels;
@@ -55,9 +57,118 @@ namespace media::audio
         }
     };
 
+    static void combine
+    (
+        array<path> srcoggg, path dstogg,
+        double delay, double pause, double close,
+        bool overwrite = false)
+    {
+        if (srcoggg.empty()) return;
+
+        if (!overwrite && std::filesystem::exists(dstogg)) return;
+
+        path tmpdir = "../data/!cache/!temp";
+        path srcdir = "../data/!cache/!temp/srcdir";
+
+        if (
+        std::filesystem::exists(srcdir))
+        std::filesystem::remove_all(srcdir);
+        std::filesystem::create_directories(srcdir);
+
+        auto qq = [](path path){ return "\"" + path.string() + "\""; };
+
+        auto sox = [qq](str begin, path destination, str end = "")
+        {
+            path exe = "c:\\ogg2mp3\\sox.exe";
+            path log = "../data/!cache/log.txt";
+
+            str
+            command = begin + " " + qq(destination) + " " + end;
+            command.strip();
+
+            sys::process::options opt;
+            opt.hidden = true,
+            opt.ascii = true,
+            opt.out = log;
+
+            sys::process p(exe, command, opt);          
+            p.wait();
+
+            using namespace std::chrono_literals;
+            for (int i=0; i<10; i++)
+                if (std::filesystem::exists(destination))
+                    return; else std::this_thread::sleep_for(100ms);
+
+            throw std::runtime_error("waited for "
+                + command + " in vain");
+        };
+
+        auto format = [](const char * fmt, auto arg)
+        {
+            char buff[32];
+            std::sprintf(buff, fmt, arg);
+            return std::string(buff);
+        };
+
+        ///  std::format("{:3.1f}", delay);
+        auto sec1 = format("%3.1f", delay);
+        auto sec2 = format("%3.1f", pause);
+        auto sec3 = format("%3.1f", close);
+
+        path Delay = tmpdir / (sec1 + ".wav");
+        path Pause = tmpdir / (sec2 + ".wav");
+        path Close = tmpdir / (sec3 + ".wav");
+
+        auto b1 = not std::filesystem::exists(Delay);
+        auto b2 = not std::filesystem::exists(Pause);
+        auto b3 = not std::filesystem::exists(Close);
+
+        if (b1) sox("-n -r 44100 -c 1", Delay, "trim 0.0 " + sec1);
+        if (b2) sox("-n -r 44100 -c 1", Pause, "trim 0.0 " + sec2);
+        if (b3) sox("-n -r 44100 -c 1", Close, "trim 0.0 " + sec3);
+
+        int nn = 0;
+            
+        std::filesystem::copy_file(Delay, srcdir / format("%05d.wav", ++nn),
+        std::filesystem::copy_options::overwrite_existing);
+        
+        for (path srcogg : srcoggg)
+        {
+            path wav = tmpdir / "wav.wav";
+            path src = tmpdir / ("src" + srcogg.extension().string());
+            path num = srcdir / format("%05d.wav", ++nn);
+        
+            std::filesystem::copy_file(srcogg, src,
+            std::filesystem::copy_options::overwrite_existing);
+        
+            sox("--combine concatenate " + qq(src) +
+                " -r 44100 -c 1", wav);
+            sox("--combine concatenate " + qq(wav) + " " + qq(Pause) +
+                " -r 44100 -c 1", num);
+        }
+        
+        std::filesystem::copy_file(Close, srcdir / format("%05d.wav", ++nn),
+        std::filesystem::copy_options::overwrite_existing);
+        
+        path dst = tmpdir / ("dst" + dstogg.extension().string());
+        
+        sox(" --combine concatenate " + qq(srcdir/"*.wav"), dst);
+        
+        std::filesystem::create_directories(dstogg.parent_path());
+        std::filesystem::rename(dst, dstogg);
+    }
+
     expected<array<byte>> readsample (path original, path cache) try
     {
-        return dat::in::bytes(original);
+        using namespace std::literals::chrono_literals;
+        if (std::filesystem::exists(cache) == false ||
+            std::filesystem::last_write_time(original) >
+            std::filesystem::last_write_time(cache) - 2h)
+        {
+            combine (array<path>{original}, cache, 0.1, 0.0, 0.0, false);
+        }
+
+        return dat::in::bytes(cache);
     }
     catch (std::exception & e) { return
         ::data::error("media::audio::readsample:"
@@ -72,10 +183,14 @@ namespace media::audio
             str(unicode::glyphs(r.id).upto(1))).
             ascii_lowercased();
 
-        str cache = "../data/.cache/"
+        std::filesystem::path fn = std::string(r.id);
+        str stem = fn.stem().string();
+        str id = stem + ".ogg";
+
+        str cache = "../data/!cache/"
             + r.kind + "/"
             + letter + "/"
-            + r.id;
+            + id;
 
         return readsample(r.path, std::string(cache));
     }

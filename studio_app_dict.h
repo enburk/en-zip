@@ -57,14 +57,51 @@ namespace studio::dict
         data::out::storage storage("../data/app_dict");
         dat::out::file entry_index("../data/app_dict/entry_index.dat");
         dat::out::file media_index("../data/app_dict/media_index.dat");
+        dat::out::file assets_data("../data/app_dict/assets.dat");
+        array<media::resource> assets;
 
         for (auto & r : resources)
         {
+            if (r.title == "speaker.128x096"
+            or  r.title == "player.black.play.64x64"
+            or  r.title == "player.black.pause.64x64"
+            or  r.title == "player.black.next.64x64"
+            or  r.title == "player.black.stop.64x64"
+            or  r.title == "icon.chevron.up.black.128x128"
+            or  r.title == "icon.chevron.down.black.128x128"
+            or  r.title == "icon.chevron.right.black.128x128"
+            or  r.title == "icon.chevron.left.black.128x128"
+            or  r.title == "icon.chevron.up.double.black.128x128"
+            or  r.title == "icon.chevron.down.double.black.128x128"
+            or  r.title == "icon.chevron.right.double.black.128x128"
+            or  r.title == "icon.chevron.left.double.black.128x128"
+            or  r.title == "icon.settings.black.192x192")
+            {
+                assets += r;
+                continue;
+            }
+
             media::data::location location;
 
-            if (r.kind == "audio" and
+            if (r.kind == "audio" and not
+                r.options.contains("=") and
                 r.entries.size() == 1) // title already there
                 r.entries = eng::parser::entries(r.title);
+
+            if (r.kind == "audio" and
+                r.entries.size() == 1 and
+                r.entries.front() == r.title)
+            {
+                str s = r.entries.front();  s.trimr("!?");
+                if(s.starts_with("a "    )) r.entries += s.from (2); else
+                if(s.starts_with("an "   )) r.entries += s.from (3); else
+                if(s.starts_with("the "  )) r.entries += s.from (4); else
+                if(s.starts_with("to be ")) r.entries += s.from (7); else
+                if(s.starts_with("to "   )) r.entries += s.from (3); else
+                {}
+            }
+
+            r.entries.deduplicate();
 
             for (str entry : r.entries)
             {
@@ -101,6 +138,12 @@ namespace studio::dict
         for (auto [entry, media] : entry_media) {
             entry_index << entry;
             entry_index << media;
+        }
+
+        assets_data << assets.size();
+        for (auto & r : assets) {
+            assets_data << r.title;
+            assets_data << dat::in::bytes(r.path).value();
         }
     }
 }

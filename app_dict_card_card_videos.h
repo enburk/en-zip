@@ -30,7 +30,7 @@ namespace app::dict::video
 
             int n = 0;
             for (auto index : indices)
-                players(n++).reset(index);
+                players(n++).reset(index, excluded_links);
 
             players.truncate(n);
             current = 0;
@@ -41,9 +41,6 @@ namespace app::dict::video
                 player.coord = coord.now.local();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
-                player.script.excluded_links =
-                player.credit.excluded_links =
-                    excluded_links;
             }
 
             using state = gui::media::state;
@@ -85,9 +82,11 @@ namespace app::dict::video
                     using state = gui::media::state;
                     switch(players(current).state) {
                     case state::failure:
-                        if (log) *log <<
-                        "sequencer::failure " +
-                         std::to_string(current);
+                        if (log) *log << "quot::failure " +
+                        std::to_string(current) + ": " +
+                        players(current).error;
+                        players(current).state = gui::media::state::finished;
+                        players(current).show(smoothly);
                         break;
                     case state::ready:
                         players(current).play();

@@ -154,6 +154,11 @@ namespace media::data
                 info.location.offset = dat::out::file::size;
                 info.location.length = data.size();
 
+                if (true) *report::out << 
+                "<font color=#800080>" + r.title + "</font>" +
+                "<font color=#000080>" + "[" + str(r.entries, "][") + "]" + "</font>" +
+                "<font color=#008000>" + "{" + str(r.options, "}{") + "}" + "</font>" ;
+
                 if (false) {
                 *report::out << r.id;
                 *report::out << "location.source: " + std::to_string(info.location.source);

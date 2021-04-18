@@ -18,31 +18,35 @@ namespace app::dict::video
         mediae::media_index index;
         gui::media::state state;
         gui::time start, stay;
+        str error;
 
         player ()
         {
+            state = gui::media::state::finished;
             auto font = credit.font.now;
             font.size = gui::metrics::text::height*5/6;
             credit.font = font;
             credit.alignment = XY{pix::right, pix::top};
             script.alignment = XY{pix::left,  pix::top};
-            prev.text.text = (char*)(u8"\u25C0");
-            next.text.text = (char*)(u8"\u25B6");
-            prev.text.font = sys::font{"", gui::metrics::text::height/2};
-            next.text.font = sys::font{"", gui::metrics::text::height/2};
+            prev.icon.load(assets["icon.chevron.left.double.black.128x128"]);
+            next.icon.load(assets["icon.chevron.right.double.black.128x128"]);
             prev.frame.thickness = 0;
             next.frame.thickness = 0;
             on_change(&skin);
         }
 
-        void reset (mediae::media_index index_)
+        void reset (mediae::media_index index_, array<str> excluded_links)
         {
             start = gui::time{};
             stay  = gui::time{4000 +
-                index_.title.size() * 90/1000 +
-                index_.credit.size() * 10/1000 +
-                index_.comment.size() * 30/1000
+                index_.title.size() * 40 +
+                index_.credit.size() * 10 +
+                index_.comment.size() * 20
             };
+
+            script.excluded_links =
+            credit.excluded_links =
+                excluded_links;
 
             if (index == index_) return; else
                 index =  index_;
@@ -164,6 +168,10 @@ namespace app::dict::video
                 frame2.coord = r; r.deflate(frame2.thickness.now);
                 canvas.coord = r; r.deflate(frame2.thickness.now);
 
+                int l = d/7;
+                prev.icon.padding = XYXY(l,2*l,l,2*l);
+                next.icon.padding = XYXY(l,2*l,l,2*l);
+
                 video .coord = XYWH(r.x, r.y,  size.x, size.y);
                 script.coord = XYWH(r.x, r.y + size.y, size.x, h1);
                 credit.coord = XYWH(r.x + r.w - 3*d - w2, r.y + size.y + y2, w2, h2);
@@ -196,7 +204,7 @@ namespace app::dict::video
                 {
                     switch(video.state.load()) {
                     case st::failure:  state =
-                         st::failure;  break;
+                         st::failure;  error = video.error; break;
                     case st::ready:    state =
                          st::ready;    break;
                     case st::playing:  state =
@@ -211,7 +219,7 @@ namespace app::dict::video
                 {
                     switch(video.state.load()) {
                     case st::failure:  state =
-                         st::failure;  break;
+                         st::failure;  error = video.error;  break;
                     case st::finished: state = start + stay < gui::time::now ?
                          st::finished: st::playing; break;
                     default: break;

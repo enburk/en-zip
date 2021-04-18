@@ -8,6 +8,8 @@ namespace app::dict::card
         html_view text;
         video::sequencer image;
 
+        void reload () {}
+
         void reset_image ()
         {
             image.reset();

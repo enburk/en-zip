@@ -3,6 +3,7 @@
 #include "../ae/proto-studio/gui_colors.h"
 #include "../ae/proto-studio/gui_widget.h"
 #include "../ae/proto-studio/gui_widget_image.h"
+#include "../ae/proto-studio/gui_widget_player.h"
 #include "../ae/proto-studio/gui_widget_canvas.h"
 #include "../ae/proto-studio/gui_widget_button.h"
 #include "../ae/proto-studio/gui_widget_scroller.h"
@@ -21,6 +22,8 @@ using pix::frame;
 #include "media_data.h"
 
 inline auto & vocabulary = eng::vocabulary::data;
+
+inline std::map<str, array<sys::byte>> assets;
 
 namespace app::dict { inline gui::console* log = nullptr; }
 namespace app::dual { inline gui::console* log = nullptr; }

@@ -141,7 +141,7 @@ namespace media::video
                 id = stem + cc + ext;
         }
 
-        str cache = "../data/.cache/"
+        str cache = "../data/!cache/"
             + r.kind + "/"
             + letter + "/"
             + id;

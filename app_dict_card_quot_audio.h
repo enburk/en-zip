@@ -17,6 +17,7 @@ namespace app::dict::card
         audio ()
         {
             on_change(&skin);
+            state = gui::media::state::finished;
         }
         ~audio ()
         {
@@ -24,14 +25,17 @@ namespace app::dict::card
                 thread.join();
         }
 
-        void reset (mediae::media_index index_)
+        void reset (mediae::media_index index_, array<str> excluded_links)
         {
             start = gui::time{};
             stay  = gui::time{1000 +
-                index_.title.size() * 90/1000 +
-                index_.credit.size() * 10/1000 +
-                index_.comment.size() * 30/1000
+                index_.title.size() * 40 +
+                index_.credit.size() * 10 +
+                index_.comment.size() * 20
             };
+
+            text.excluded_links =
+                excluded_links;
 
             if (index == index_) return; else
                 index =  index_;
@@ -52,7 +56,7 @@ namespace app::dict::card
                 std::filesystem::path dir = "../data/app_dict";
                 std::string storage = "storage." +
                     std::to_string(index.location.source)
-                    + ".dat";
+                        + ".dat";
 
                 std::filesystem::path path = dir / storage;
                 int offset = index.location.offset;
@@ -91,10 +95,13 @@ namespace app::dict::card
                 }
             });
 
-            str c = index.credit;
             str s = index.title;
+            str c = index.credit;
+            str i = index.comment;
 
             s = ::app::dict::mediae::canonical(s);
+            c = ::app::dict::mediae::canonical(c);
+            i = ::app::dict::mediae::canonical(i);
 
             while (s.ends_with("<br>"))
                 s.resize(s.size()-4);
@@ -106,17 +113,20 @@ namespace app::dict::card
 
             if (date != "") c += ", <i>" + date + "</i>";
 
-            if (index.comment != "") s += "<br><br>"
-                "<font color=#808080><i>" + 
-                ::app::dict::mediae::canonical(index.comment) +
+            if (i != "") s += "<br><br>"
+                "<font color=#808080><i>" + i +
                 "</i></font>";
 
-            s += "<br><br>"
+            s +="<br><br>"
                 "<div style=\"margin-left: 3em\">"
-                "<font color=#808080 size=80%>" + c +
+                "<font color=#A0A0A0 size=\"90%\">" + c +
                 "</font></div>";
 
-            s = eng::parser::embolden(s, text.excluded_links);
+            //s = eng::parser::embolden(s, text.excluded_links);
+
+            if (true) std::ofstream("test.quot.html") << s;
+            if (true) std::ofstream("test.quot.html.txt")
+                << doc::html::print(s);
 
             text.it_is_a_title = true;
             text.html = s;
@@ -147,7 +157,6 @@ namespace app::dict::card
             switch(state.load()) {
             case gui::media::state::ready:
             case gui::media::state::playing:
-            case gui::media::state::finished:
 
                 player.stop(0.0);
                 state = gui::media::state::finished;

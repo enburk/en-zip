@@ -24,6 +24,12 @@ namespace app::dict::card
             redo.text.text = "redo";
         }
 
+        void reload ()
+        {
+            card.object.reload();
+            quot.object.reload();
+        }
+
         void select (int n)
         {
             /// if (log) *log <<

@@ -20,11 +20,6 @@ namespace app::dict::list
             down.repeating = true;
             page_up.repeating = true;
             page_down.repeating = true;
-            up.text.text = (char*)(u8"\u2191");
-            down.text.text = (char*)(u8"\u2193");
-            page_up.text.text = (char*)(u8"\u21C8");
-            page_down.text.text = (char*)(u8"\u21CA");
-            settings.text.text = (char*)(u8"\u26ED");
             using namespace std::literals::chrono_literals;
             auto lapse = 40ms;
             up.repeat_delay = 0ms;
@@ -39,18 +34,16 @@ namespace app::dict::list
 
         void reload ()
         {
-            /// if (log) *log <<
-            /// "app::dict::list::reload";
-
             list.object.refresh();
+            up       .icon.load(assets["icon.chevron.up.black.128x128"]);
+            down     .icon.load(assets["icon.chevron.down.black.128x128"]);
+            page_up  .icon.load(assets["icon.chevron.up.double.black.128x128"]);
+            page_down.icon.load(assets["icon.chevron.down.double.black.128x128"]);
+            settings .icon.load(assets["icon.settings.black.192x192"]);
         }
 
         void select (int n)
         {
-            /// if (log) *log <<
-            /// "app::dict::list::select "
-            /// + std::to_string(n);
-
             list.object.select(n);
             word.object.select(list.object.selected);
             clicked = list.object.selected;
@@ -65,8 +58,8 @@ namespace app::dict::list
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height;
 
-                int hword = h*13/7;
-                int htool = h*13/7;
+                int hword = h*14/7;
+                int htool = h*12/7;
                 int hlist = H - hword - htool;
                 int w = min (htool, W/5);
                 int y = 0;
@@ -74,6 +67,13 @@ namespace app::dict::list
                 list.coord = XYWH(0, 0, W, hlist); y += list.coord.now.size.y;
                 word.coord = XYWH(0, y, W, hword); y += word.coord.now.size.y;
                 tool.coord = XYXY(0, y, W, H);
+
+                int l = w/5;
+                up       .icon.padding = XYXY(l,l,l,l);
+                down     .icon.padding = XYXY(l,l,l,l);
+                page_up  .icon.padding = XYXY(l,l,l,l);
+                page_down.icon.padding = XYXY(l,l,l,l); l = w/7;
+                settings .icon.padding = XYXY(l,l,l,l);
 
                 up       .coord = XYXY(W-5*w, y, W-4*w, H);
                 down     .coord = XYXY(W-4*w, y, W-3*w, H);

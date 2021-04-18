@@ -32,7 +32,7 @@ namespace dat::out
             *this << a.size();
             int size = a.size()*sizeof(T);
             byte* data = (byte*)(a.data());
-            bytes.insert(bytes.end(), data, data+size);
+            bytes.container::insert(bytes.end(), data, data+size);
             return *this;
         }
         pool& operator << (const array<str> & a)

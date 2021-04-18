@@ -66,13 +66,25 @@ namespace media
 
             resource resource = common;
 
-            str title, meta, yadda;
+            str title, meta, yadda; bool meta_present = 
             name.split_by("{{", title, meta); title.strip();
             meta.split_by("}}", meta, yadda); meta.strip();
 
-            str credit, m = meta;
-            m.split_by("$", credit, m); credit.strip();
-            if (credit != "") resource.credit = credit;
+            str credit, license;
+            meta.split_by("$", credit, license); credit.strip();
+            if (credit.starts_with("NASA") or credit.starts_with("ESA") or
+                credit.starts_with("NOAA") or credit.starts_with("ESO") or
+                credit.starts_with("NNSA") or credit.starts_with("USN") or
+                credit.starts_with("USDA") or credit.starts_with("DOE") or
+                credit.starts_with("USDE") or credit.starts_with("NIH") or
+                credit.starts_with("USGS") or
+                credit.starts_with("USAF"))
+                credit = "Credit: " + credit;
+            if (license.starts_with("dreamstime")) credit += "/Dreamstime";
+            if (license.starts_with("wiki"      )) credit += "/Wikimedia";
+            if (license.starts_with("cc-by-sa"  )) credit += " CC-BY-SA"; else
+            if (license.starts_with("cc-by"     )) credit += " CC-BY";
+            if (meta_present) resource.credit = credit;
             
             str links, optio;
             title.split_by(" ## ", title, optio);
@@ -89,6 +101,13 @@ namespace media
                     resource.id +=
                     " {{" + to_msdos(meta) + "}}";
 
+
+                path credit = entry / "!credit.txt";
+                if (std::filesystem::exists(credit)) {
+                    resource.credit = str(dat::in::text(credit).value(), "<br>");
+                    identified[credit] = true;
+                }
+
                 resources += scan(entry, resource);
             }
             else if (is_regular_file(entry))
@@ -103,6 +122,7 @@ namespace media
 
                 if (audio.contains(ext)) resource.kind = "audio"; else
                 if (video.contains(ext)) resource.kind = "video"; else
+                if (entry.filename() != "!credit.txt")
                 {
                     identified[entry] |= false;
                     continue;
@@ -176,7 +196,7 @@ namespace media
                 if (title != "") resource.title = title;
                 if (title != "") resource.entries += title;
 
-                if (true) *report::out << 
+                if (false) *report::out << 
                 "<font color=#800080>" + resource.title + "</font>" +
                 "<font color=#000080>" + "[" + str(resource.entries, "][") + "]" + "</font>" +
                 "<font color=#008000>" + "{" + str(resource.options, "}{") + "}" + "</font>" ;

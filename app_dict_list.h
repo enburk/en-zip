@@ -44,6 +44,11 @@ namespace app::dict::list
 
         void select (int n)
         {
+            /// if (log) *log <<
+            /// "app::dict::list::select "
+            /// + std::to_string(n) + " "
+            /// + vocabulary[n].title;
+
             list.object.select(n);
             word.object.select(list.object.selected);
             clicked = list.object.selected;

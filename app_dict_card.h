@@ -34,7 +34,9 @@ namespace app::dict::card
         {
             /// if (log) *log <<
             /// "app::dict::card::select "
-            /// + std::to_string(n);
+            /// + std::to_string(n) + " "
+            /// + vocabulary[n].title + " -> "
+            /// + std::to_string(vocabulary[n].redirect);
 
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
@@ -42,7 +44,12 @@ namespace app::dict::card
                 vocabulary[n].redirect;
             if (vocabulary[n].length == 0) return;
             if (vocabulary[n].length == current.length
-            &&  vocabulary[n].offset == current.offset) return;
+            and vocabulary[n].offset == current.offset) return;
+
+            /// if (log) *log <<
+            /// "app::dict::card::select redirected "
+            /// + std::to_string(n) + " "
+            /// + vocabulary[n].title;
 
             if (current.title != "")
             undoes += current.title;

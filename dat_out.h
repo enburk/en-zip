@@ -66,12 +66,15 @@ namespace dat::out
                         .file_size();
         }
 
-       ~file ()
-       {
-           fstream.write((char*)
-               pool.bytes.data(),
-               pool.bytes.size());
-       }
+        ~file () { close(); }
+
+        void close ()
+        {
+            fstream.write((char*)
+                pool.bytes.data(),
+                pool.bytes.size());
+            fstream.close();
+        }
 
         template <typename entry> 
         file & operator << (entry && e)

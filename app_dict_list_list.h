@@ -17,7 +17,8 @@ namespace app::dict::list
         {
             /// if (log) *log <<
             /// "app::dict::list::list::select "
-            /// + std::to_string(n);
+            /// + std::to_string(n) + " "
+            /// + vocabulary[n].title;
 
             if (n < 0) return;
             if (n >= vocabulary.size()) return;

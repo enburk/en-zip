@@ -72,7 +72,17 @@ namespace eng
 
     namespace vocabulary
     {
-        struct entry { str title; int offset = 0, length = 0, redirect = -1; };
+        struct entry
+        { 
+            str title;
+            int offset = 0;
+            int length = 0;
+            int redirect = -1;
+
+            bool operator == (const entry & r) const = default;
+            bool operator != (const entry & r) const = default;
+        };
+
         inline array<entry> data;
 
         auto less = [](const entry & a, const entry & b)

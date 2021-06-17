@@ -12,6 +12,10 @@
 
 *.txt
 *.html
+test.html
+test.html.txt
+test.quot.html
+test.quot.html.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

@@ -49,7 +49,18 @@ namespace app::dict::list
 
         void on_focus (bool on) override { editor.on_focus(on); }
         void on_keyboard_input (str symbol) override { editor.on_keyboard_input(symbol); }
-        void on_key_pressed (str key, bool down) override { editor.on_key_pressed(key,down); }
+        void on_key_pressed (str key, bool down) override
+        {
+            if (down and
+               (key == "ctrl+V" or
+                key == "shift+insert"))
+            {
+                str s =
+                sys::clipboard::get::string(); s.strip();
+                sys::clipboard::set(s);
+            }
+            editor.on_key_pressed(key,down);
+        }
 
         void on_notify (void* what) override
         {

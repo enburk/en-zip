@@ -278,13 +278,37 @@ namespace app::dict
                 for (str s : topic.content)
                 {
                     str kind = "";
-                    str prefix = "# " + str(s.upto(4));
-                    if (prefix.starts_with("# # : ")) { kind = "llc"; s = s.from(4); } else
-                    if (prefix.starts_with("# # "  )) { kind = "ll";  s = s.from(2); } else
-                    if (prefix.starts_with("# : "  )) { kind = "lc";  s = s.from(2); } else
-                    if (prefix.starts_with("# "    )) { kind = "l";   s = s.from(0); } 
+                    str prefix = str(s.upto(4));
+                    if (prefix.starts_with("##: ")) { kind = "llc"; s = s.from(4); } else
+                    if (prefix.starts_with("#:: ")) { kind = "lcc"; s = s.from(4); } else
+                    if (prefix.starts_with("## " )) { kind = "ll";  s = s.from(3); } else
+                    if (prefix.starts_with("#: " )) { kind = "lc";  s = s.from(3); } else
+                    if (prefix.starts_with("# "  )) { kind = "l";   s = s.from(2); }
+
+                    if (kind == "l" and s.starts_with("(")) {
+                        str s1, s2; s.split_by(")", s1, s2, str::delimiter::to_the_left);
+                        if (s1 !="" and s2 != "")// and not s1.from(1).contains("("))
+                            s = "<font color=#505050>" + s1 + "</font>" + s2;
+                    }
+                    if (kind == "l" and s.ends_with("]")) {
+                        str s1, s2; s.split_by("[", s1, s2, str::delimiter::to_the_right);
+                        if (s1 !="" and s2 != "")// and not s2.from(1).contains("["))
+                            s = s1 + "<font color=#505050>" + s2 + "</font>";
+                    }
+
+                    if (s.starts_with("synonyms: "   ) or s.starts_with("synonym: "    ) or
+                        s.starts_with("antonyms: "   ) or s.starts_with("antonym: "    ) or
+                        s.starts_with("hyponyms: "   ) or s.starts_with("hyponym: "    ) or
+                        s.starts_with("hypernyms: "  ) or s.starts_with("hypernym: "   ) or
+                        s.starts_with("hyphenation: ") or s.starts_with("Hyphenation: ") or
+                        s.starts_with("coordinate terms: ") or
+                        s.starts_with("coordinate term: ")) {
+                        str l, r; s.split_by(":", l, r);
+                        s = "<font color=#008000><i>" + l +
+                            ":" + "</i></font>" + r; }
 
                     if (kind == "llc") html += gap + "<div style=\"margin-left: 3em\">"; else
+                    if (kind == "lcc") html += gap + "<div style=\"margin-left: 3em\">"; else
                     if (kind == "ll" ) html += gap + "<div style=\"margin-left: 2em\">"; else
                     if (kind == "lc" ) html += gap + "<div style=\"margin-left: 2em\">"; else
                     if (kind == "l"  ) html += gap + "<div style=\"margin-left: 1em\">"; 
@@ -304,9 +328,11 @@ namespace app::dict
                 if (header.size() > 0)
                     header[0] = header[0] - 'a' + 'A';
 
+                str br = header == "Pronunciation" ? "<br>" : "";
+
                 html += "<div style=\"margin-left: 1em\">";
                 html += "<br><i><font color=#008000>"
-                     + header + ":</font></i> ";
+                     + header+":"+br+"</font></i> ";
 
                 for (str s : topic.content)
                     html += s + "<br>";

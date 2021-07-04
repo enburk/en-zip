@@ -277,6 +277,10 @@ namespace app::dict
 
                 for (str s : topic.content)
                 {
+                    //s.replace_all("CURRENTDAY", );
+                    //s.replace_all("CURRENTMONTHNAME", );
+                    //s.replace_all("CURRENTYEAR", ); 
+                    
                     str kind = "";
                     str prefix = str(s.upto(4));
                     if (prefix.starts_with("##: ")) { kind = "llc"; s = s.from(4); } else
@@ -298,8 +302,12 @@ namespace app::dict
 
                     if (s.starts_with("synonyms: "   ) or s.starts_with("synonym: "    ) or
                         s.starts_with("antonyms: "   ) or s.starts_with("antonym: "    ) or
+                        s.starts_with("holonyms: "   ) or s.starts_with("holonym: "    ) or
                         s.starts_with("hyponyms: "   ) or s.starts_with("hyponym: "    ) or
                         s.starts_with("hypernyms: "  ) or s.starts_with("hypernym: "   ) or
+                        s.starts_with("meronyms: "   ) or s.starts_with("meronym: "    ) or
+                        s.starts_with("troponyms: "  ) or s.starts_with("troponym: "   ) or
+                        s.starts_with("homophones: " ) or s.starts_with("homophone: "  ) or
                         s.starts_with("hyphenation: ") or s.starts_with("Hyphenation: ") or
                         s.starts_with("coordinate terms: ") or
                         s.starts_with("coordinate term: ")) {
@@ -335,7 +343,15 @@ namespace app::dict
                      + header+":"+br+"</font></i> ";
 
                 for (str s : topic.content)
+                {
+                    if (s.starts_with("hyphenation: ") or
+                        s.starts_with("Hyphenation: ")) {
+                        str l, r; s.split_by(":", l, r);
+                        s = "<font color=#008000><i>" + l +
+                            ":" + "</i></font>" + r; }
+
                     html += s + "<br>";
+                }
 
                 html += "</div>";
             }
@@ -353,22 +369,23 @@ namespace app::dict
 
                 if (topic.content.size() >= 10)
                 {
-                    str ss, sss;
+                    str ss;
                     for (str s : topic.content)
                     {
-                        if (ss.size() + s.size() > 80) {
-                            sss += "<br>" + ss;
-                            ss = "";
-                        }
+                        if (ss != "" and not
+                            ss.ends_with(":"))
+                            ss += ",";
+                        
+                        if (ss != "")
+                            ss += " ";
 
+                        if (not s.contains("("))    
                         ss += "<a href=\"" + s + "\">"
-                            + s + "</a>" + ", ";
+                            + s + "</a>";
+                        else ss += s;
                     }
-                    sss += "<br>" + ss;
 
-                    html += sss;
-                    html.truncate();
-                    html.truncate();
+                    html += ss;
                     html += "<br>";
                 }
                 else

@@ -336,15 +336,32 @@ namespace app::dict
                 if (header.size() > 0)
                     header[0] = header[0] - 'a' + 'A';
 
-                str br = header == "Pronunciation" ? "<br>" : "";
+                str br = header == "Pronunciation" and
+                    topic.content.size() > 1 ?
+                    "<br>" : "";
 
                 html += "<div style=\"margin-left: 1em\">";
                 html += "<br><i><font color=#008000>"
-                     + header+":"+br+"</font></i> ";
+                     + header+":"+"</font></i> "+br;
 
                 for (str s : topic.content)
                 {
-                    if (s.starts_with("hyphenation: ") or
+                    str kind = "";
+                    str prefix = str(s.upto(5));
+                    if (prefix.starts_with(":::: ")) { kind = "4"; s = s.from(5); } else
+                    if (prefix.starts_with("::: ")) { kind = "3"; s = s.from(4); } else
+                    if (prefix.starts_with(":: ")) { kind = "2"; s = s.from(3); } else
+                    if (prefix.starts_with(": ")) { kind = "1"; s = s.from(2); } else
+                    {}
+                    if (kind == "4") html += gap + "<div style=\"margin-left: 4em\">"; else
+                    if (kind == "3") html += gap + "<div style=\"margin-left: 3em\">"; else
+                    if (kind == "2") html += gap + "<div style=\"margin-left: 2em\">"; else
+                    if (kind == "1") html += gap + "<div style=\"margin-left: 1em\">"; else
+                    {}
+                    
+                    if (s.starts_with("homophones: " ) or
+                        s.starts_with("homophone: "  ) or
+                        s.starts_with("hyphenation: ") or
                         s.starts_with("Hyphenation: ")) {
                         str l, r; s.split_by(":", l, r);
                         s = "<font color=#008000><i>" + l +

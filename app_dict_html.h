@@ -244,6 +244,8 @@ namespace app::dict
                 html += c;
             }
         }
+        if (ital) html += "</i>";
+        if (bold) html += "</b>";
         return html;
     };
 

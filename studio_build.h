@@ -62,7 +62,7 @@ namespace studio::build
             timer.go (gui::time::infinity,
                       gui::time::infinity);
 
-            compilation = std::async([this]() -> void
+            compilation = std::async(std::launch::async, [this]() -> void
             {
                 try
                 {

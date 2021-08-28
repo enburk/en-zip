@@ -1,13 +1,12 @@
 #pragma once
-#include "eng_parser.h"
-#include "../ae/proto-studio/data.h"
 #include "../ae/proto-studio/pix_process.h"
 #include "../ae/proto-studio/gui_widget_console.h"
+#include "eng_parser.h"
 namespace media
 {
     using sys::byte;
     using std::filesystem::path;
-    using data::expected;
+    using aux::expected;
 
     struct resource
     {

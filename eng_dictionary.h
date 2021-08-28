@@ -104,9 +104,9 @@ namespace eng
         auto find_case_insensitive (str s)
         {
             auto e = eng::vocabulary::entry{s};
-            auto range = data.equal_range(e, less); if (range.size() == 0)
-                 range = data.equal_range(e, less_case_insensitive);
-            return range;
+            auto r1 = data.equal_range(e, less); if (r1) return r1;
+            auto r2 = data.equal_range(e, less_case_insensitive);
+            return r2;
         }
 
         void operator >> (dat::in::pool & in, entry & entry)

@@ -60,7 +60,7 @@ namespace app::dict
                 splitter.upper = W * 90'00 / 100'00;
 
                 int p = sys::settings::load("app::dic::splitter.permyriad", 100'00 * (W-w)/W);
-                int x = data::clamp<int>(W*p / 100'00, splitter.lower.now, splitter.upper.now);
+                int x = clamp<int>(W*p / 100'00, splitter.lower.now, splitter.upper.now);
 
                 splitter.coord = XYXY(x-d, 0, x+d, H);
 

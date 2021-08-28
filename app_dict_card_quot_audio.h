@@ -117,7 +117,7 @@ namespace app::dict::card
                 "<font color=#808080><i>" + i +
                 "</i></font>";
 
-            s +="<br><br>"
+            s +="<br>"
                 "<div style=\"margin-left: 3em\">"
                 "<font color=#A0A0A0 size=\"90%\">" + c +
                 "</font></div>";

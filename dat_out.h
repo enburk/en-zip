@@ -61,7 +61,7 @@ namespace dat::out
 
             if ((mode & std::ios::app) != 0 and
                 std::filesystem::exists(path))
-                size = std::filesystem::
+                size = (int)std::filesystem::
                     directory_entry(path)
                         .file_size();
         }

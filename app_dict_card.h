@@ -107,7 +107,7 @@ namespace app::dict::card
                 int w = W/2;
 
                 int htool = h*12/7;
-                int hquot = 4*h*12/7 + 6*l;
+                int hquot = 6*h*12/7 + 6*l;
                 int hcard = H - htool - hquot;
                 int y = 0;
 

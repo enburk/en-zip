@@ -182,7 +182,7 @@ namespace media::data
                 return info.location;
             }
             catch (std::exception & e) {
-            return ::data::error("media::data::out::source:"
+            return aux::error("media::data::out::source:"
                 "<br> path: " + r.path.string() +
                 "<br> " + e.what());
             }

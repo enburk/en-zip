@@ -18,8 +18,8 @@ namespace app::dict::video
 
             if (players.size() > 0)
             {
-                auto it = indices.find(
-                players(current).index);
+                auto it = std::ranges::find(
+                indices, players(current).index);
                 if (it != indices.end())
                 {
                     players.rotate(0, current, current+1);

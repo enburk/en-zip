@@ -1,9 +1,6 @@
 ﻿#pragma once
 #include <map>
-#include "../ae/proto-studio/data_struct_array.h"
-#include "../ae/proto-studio/data_struct_string.h"
-using namespace data;
-
+#include "../ae/proto-studio/aux_abc.h"
 #include "dat_in.h"
 #include "dat_out.h"
 

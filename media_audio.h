@@ -171,7 +171,7 @@ namespace media::audio
         return dat::in::bytes(cache);
     }
     catch (std::exception & e) { return
-        ::data::error("media::audio::readsample:"
+        aux::error("media::audio::readsample:"
         "<br>  path: " + original.string() +
         "<br>  cache: " + cache.string() +
         "<br>  " + e.what());
@@ -180,7 +180,7 @@ namespace media::audio
     expected<array<byte>> data (const resource & r)
     {
         str letter = eng::asciized(
-            str(unicode::glyphs(r.id).upto(1))).
+            str(aux::unicode::glyphs(r.id).upto(1))).
             ascii_lowercased();
 
         std::filesystem::path fn = std::string(r.id);

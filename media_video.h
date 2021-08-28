@@ -113,7 +113,7 @@ namespace media::video
         return dat::in::bytes(cache);
     }
     catch (std::exception & e) {return
-        ::data::error("media::video::readsample:"
+        aux::error("media::video::readsample:"
         "<br>  path: " + original.string() +
         "<br>  cache: " + cache.string() +
         "<br>  crop: " + crop_params +
@@ -128,7 +128,7 @@ namespace media::video
                 crop = option.from(5);
 
         str letter = eng::asciized(
-            str(unicode::glyphs(r.id).upto(1))).
+            str(aux::unicode::glyphs(r.id).upto(1))).
             ascii_lowercased();
 
         str id = r.id; if (crop != "")

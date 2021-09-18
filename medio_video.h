@@ -1,14 +1,8 @@
 #pragma once
+#include "eng.h"
 #include "media.h"
 namespace media::video
 {
-    using pix::XY;
-    using pix::XYWH;
-    using pix::XYXY;
-    using pix::RGBA;
-    using pix::image;
-    using pix::frame;
-
     void resize (image<RGBA> & img, int maxsizex, int maxsizey, bool sharp = true)
     {
         XY size = img.size;

@@ -1,7 +1,7 @@
 #pragma once
 #include "eng.h"
-#include "dat_in.h"
-#include "dat_out.h"
+#include "data_in.h"
+#include "data_out.h"
 namespace eng
 {
     array<str> lexical_items

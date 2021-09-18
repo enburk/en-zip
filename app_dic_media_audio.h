@@ -41,6 +41,7 @@ namespace app::dic::audio
             str c = index.credit;
             str i = index.comment;
 
+            str title = media::canonical(index.title);
             s = media::canonical(s);
             c = media::canonical(c);
             i = media::canonical(i);

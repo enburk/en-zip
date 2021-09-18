@@ -1,8 +1,6 @@
 ﻿#pragma once
 #include <map>
-#include "../ae/proto-studio/aux_abc.h"
-#include "dat_in.h"
-#include "dat_out.h"
+#include "abc.h"
 
 namespace eng
 {
@@ -132,7 +130,8 @@ namespace eng
         return s;
     }
 
-    auto less = [](const str & a, const str & b) { return compare(a, b) < 0; };
+    auto less = [](const str & a, const str & b) {
+        return compare(a, b) < 0; };
 
     auto less_case_insensitive = [](const str & a, const str & b) {
         return compare(

@@ -6,7 +6,7 @@ namespace app::dic::media
     struct media_index
     {
         str kind, title, comment, credit;
-        ::media::data::location location;
+        ::media::location location;
         array<str> options;
 
         bool operator == (media_index const&) const = default;

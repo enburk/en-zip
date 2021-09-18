@@ -1,9 +1,9 @@
-#include "studio_app_dict.h"
-#include "studio_app_dual.h"
-#include "studio_app_mono.h"
+#include "studio_app_dic.h"
+#include "studio_app_one.h"
+#include "studio_app_two.h"
+#include "studio_aux_audio.h"
+#include "studio_aux_video.h"
 #include "studio_build.h"
-#include "studio_audio.h"
-#include "studio_video.h"
 
 struct Studio : gui::widget<Studio>
 {
@@ -12,8 +12,8 @@ struct Studio : gui::widget<Studio>
     gui::radio::group select;
     array<gui::base::widget*> studios;
     studio::dic::studio dic;
-    studio::dual::studio dual;
-    studio::mono::studio mono;
+    studio::one::studio one;
+    studio::two::studio two;
     studio::audio::studio audio;
     studio::video::studio video;
     studio::build::studio build;
@@ -27,8 +27,8 @@ struct Studio : gui::widget<Studio>
         canvas .color = gui::skins[skin].light.first;
 
         select(0).text.text = "dictionary";
-        select(1).text.text = "en-ru";
-        select(2).text.text = "en";
+        select(1).text.text = "en";
+        select(2).text.text = "en-ru";
         select(3).text.text = "audio";
         select(4).text.text = "video";
         select(5).text.text = "build";
@@ -36,8 +36,8 @@ struct Studio : gui::widget<Studio>
         select(0).on = true;
 
         studios += &dic;
-        studios += &dual;
-        studios += &mono;
+        studios += &one;
+        studios += &two;
         studios += &audio;
         studios += &video;
         studios += &build;

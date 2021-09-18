@@ -7,6 +7,7 @@
 #pragma comment ( lib, "vorbisfile.lib" )
 #pragma comment ( lib, "ogg.lib" )
 #endif
+#include "eng.h"
 #include "media.h"
 namespace media::audio
 {

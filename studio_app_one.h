@@ -1,6 +1,6 @@
 #pragma once
-#include "app_mono.h"
-namespace studio::mono
+#include "app_one.h"
+namespace studio::one
 {
     struct area : gui::widget<area>
     {
@@ -8,7 +8,7 @@ namespace studio::mono
 
     struct studio : gui::widget<studio>
     {
-        app::mono::app app;
+        app::one::app app;
         gui::area<area> area;
         gui::splitter splitter;
 

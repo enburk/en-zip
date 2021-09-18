@@ -1,35 +1,17 @@
 #pragma once
-#include "../ae/proto-studio/gui_effect.h"
-#include "../ae/proto-studio/gui_colors.h"
-#include "../ae/proto-studio/gui_widget.h"
-#include "../ae/proto-studio/gui_widget_image.h"
-#include "../ae/proto-studio/gui_widget_player.h"
-#include "../ae/proto-studio/gui_widget_canvas.h"
-#include "../ae/proto-studio/gui_widget_button.h"
-#include "../ae/proto-studio/gui_widget_scroller.h"
-#include "../ae/proto-studio/gui_widget_text_editor1.h"
-#include "../ae/proto-studio/gui_widget_text_editor.h"
-#include "../ae/proto-studio/gui_widget_console.h"
-#include "../ae/proto-studio/doc_html_syntax.h"
-#include "../ae/proto-studio/doc_html_model.h"
 
-using pix::XY;
-using pix::XYWH;
-using pix::XYXY;
-using pix::RGBA;
-using pix::image;
-using pix::frame;
-using gui::widget;
-
-#include "media_data.h"
+#include "media.h"
+#include "medio_audio.h"
+#include "medio_video.h"
+#include "eng_dictionary.h"
 
 inline auto & vocabulary = eng::vocabulary::data;
 
 inline std::map<str, array<sys::byte>> assets;
 
 namespace app::dic { inline gui::console* log = nullptr; }
-namespace app::dual { inline gui::console* log = nullptr; }
-namespace app::mono { inline gui::console* log = nullptr; }
+namespace app::one { inline gui::console* log = nullptr; }
+namespace app::two { inline gui::console* log = nullptr; }
 
 
 

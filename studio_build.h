@@ -1,7 +1,8 @@
 #pragma once
 #include "app.h"
 #include <future>
-#include "studio_app_dict.h"
+#include "media_scan.h"
+#include "studio_app_dic.h"
 #include "studio_build_dic.h"
 namespace studio::build
 {
@@ -45,7 +46,7 @@ namespace studio::build
             
                 timer.go (gui::time(), gui::time()); /// stop timer
                 /// this statement will cause recursive on_change()
-                /// so do it after std::future get invalid
+                /// so do it after std::future gets invalid
                 /// to prevent second get() call
            
                 notify();
@@ -79,7 +80,7 @@ namespace studio::build
                     media::report::id2path.clear();
                     media::report::data_updated = false;
 
-                    auto resources = media::scan("../datae");
+                    auto resources = media::scan::scan("../datae");
 
                     if (media::report::unidentified.size() > 0) {
                         err.object << "unidentified files:";

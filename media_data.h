@@ -1,36 +1,9 @@
 #pragma once
 #include <sstream>
-#include "media_audio.h"
-#include "media_video.h"
+#include "medio_audio.h"
+#include "medio_video.h"
 namespace media::data
 {
-    struct location
-    {
-        int32_t source = 0;
-        int32_t offset = 0;
-        int32_t length = 0;
-        int32_t size_x = 0;
-        int32_t size_y = 0;
-
-        bool operator == (location const&) const = default;
-        bool operator != (location const&) const = default;
-
-        friend void operator >> (dat::in::pool & in, location & l) {
-            l.source = in.get_int();
-            l.offset = in.get_int();
-            l.length = in.get_int();
-            l.size_x = in.get_int();
-            l.size_y = in.get_int();
-        }
-        friend void operator << (dat::out::pool & out, location & l) {
-            out << l.source;
-            out << l.offset;
-            out << l.length;
-            out << l.size_x;
-            out << l.size_y;
-        }
-    };
-
     namespace out
     {
         struct source : dat::out::file
@@ -177,7 +150,7 @@ namespace media::data
 
                 content[record] = info;
 
-                ::media::report::data_updated = true;
+                report::data_updated = true;
 
                 return info.location;
             }
@@ -190,8 +163,10 @@ namespace media::data
 
         struct storage
         {
-            array<std::unique_ptr<source>> sources; path dir;
+            path dir;
 
+            array<std::unique_ptr<source>> sources;
+            
             storage (path dir) : dir(dir)
             {
                 for (int i=0; i<1000; i++)
@@ -216,9 +191,4 @@ namespace media::data
             }
         };
     }
-
-    struct index
-    {
-        int32_t entry; array<location> links;
-    };
 }

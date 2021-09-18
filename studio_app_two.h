@@ -1,6 +1,6 @@
 #pragma once
-#include "app_dual.h"
-namespace studio::dual
+#include "app_two.h"
+namespace studio::two
 {
     struct area : gui::widget<area>
     {
@@ -8,7 +8,7 @@ namespace studio::dual
 
     struct studio : gui::widget<studio>
     {
-        app::dual::app app;
+        app::two::app app;
         gui::area<area> area;
         gui::splitter splitter;
 

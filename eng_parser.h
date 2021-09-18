@@ -59,7 +59,8 @@ namespace eng::parser
 
     str embolden (str s, array<str> entries)
     {
-        entries.sort([](auto a, auto b){ return a.size() > b.size(); });
+        entries.sort([](auto a, auto b){
+            return a.size() > b.size(); });
 
         for (auto entry : entries)
             s.replace_all(entry, str(

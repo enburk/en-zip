@@ -1,5 +1,7 @@
 #pragma once
 #include "app_dic.h"
+#include "eng_parser.h"
+#include "media_data.h"
 namespace studio::dic
 {
     struct area : gui::widget<area>
@@ -81,7 +83,7 @@ namespace studio::dic
                 continue;
             }
 
-            media::data::location location;
+            media::location location;
 
             if (r.kind == "audio" and not
                 r.options.contains("=") and
@@ -118,7 +120,7 @@ namespace studio::dic
                 if (vocabulary[n].redirect >= 0) n =
                     vocabulary[n].redirect;
 
-                if (location == media::data::location{}) {
+                if (location == media::location{}) {
                     location = storage.add(r);
                     media_index << r.kind;
                     media_index << r.title;

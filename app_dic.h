@@ -1,11 +1,11 @@
 #pragma once
-#include "app_dict_card.h"
-#include "app_dict_list.h"
-namespace app::dict
+#include "app_dic_left.h"
+#include "app_dic_list.h"
+namespace app::dic
 {
     struct app : gui::widget<app>
     {
-        card::area card;
+        left::area left;
         list::area list;
 
         gui::splitter splitter;
@@ -39,9 +39,9 @@ namespace app::dict
                 }
             }
 
-            mediae::reload();
-            card.current = eng::vocabulary::entry{};
-            card.reload();
+            media::reload();
+            left.current = eng::vocabulary::entry{};
+            left.reload();
             list.reload();
         }
 
@@ -64,7 +64,7 @@ namespace app::dict
 
                 splitter.coord = XYXY(x-d, 0, x+d, H);
 
-                card.coord = XYXY(0, 0, x, H);
+                left.coord = XYXY(0, 0, x, H);
                 list.coord = XYXY(x, 0, W, H);
             }
         }
@@ -72,7 +72,7 @@ namespace app::dict
         void on_focus (bool on) override { list.on_focus(on); }
         void on_keyboard_input (str symbol) override
         {
-            card.card.object.text.view.selections = array<gui::text::range>();
+            left.card.object.text.view.selections = array<gui::text::range>();
             list.on_keyboard_input(symbol);
         }
         void on_key_pressed (str key, bool down) override
@@ -87,19 +87,19 @@ namespace app::dict
                 key == "ctrl+shift+right" or
                 key == "shift+up"    or
                 key == "shift+down") and
-                card.card.object.text.view.selected() != "") {
-                card.card.object.text.on_key_pressed(key,down);
+                left.card.object.text.view.selected() != "") {
+                left.card.object.text.on_key_pressed(key,down);
                 return;
             }
 
-            card.card.object.text.view.selections = array<gui::text::range>();
+            left.card.object.text.view.selections = array<gui::text::range>();
             list.on_key_pressed(key,down);
         }
 
         void on_notify (void* what) override
         {
-            if (what == &card) list.select(card.clicked);
-            if (what == &list) card.select(list.clicked);
+            if (what == &left) list.select(left.clicked);
+            if (what == &list) left.select(list.clicked);
             if (what == &splitter) {
                 sys::settings::save(
                 "app::dic::splitter.permyriad",

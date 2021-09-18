@@ -95,7 +95,7 @@ namespace studio::build
                         }
                     }
 
-                    ::studio::dict::compile(resources);
+                    ::studio::dic::compile(resources);
 
                     data_updated |=
                     media::report::data_updated;

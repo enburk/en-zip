@@ -1,10 +1,11 @@
 #pragma once
-#include "app_dict.h"
-#include "app_dict_html.h"
-#include "app_dict_media.h"
-namespace app::dict::video
+#include "app_dic.h"
+#include "app_dic_html.h"
+#include "app_dic_media.h"
+namespace app::dic::video
 {
-    struct player : gui::widget<player>
+    struct player:
+    widget<player>
     {
         gui::canvas canvas;
         gui::frame  frame1;
@@ -15,7 +16,7 @@ namespace app::dict::video
         gui::button prev;
         gui::button next;
         gui::property<gui::time> timer;
-        mediae::media_index index;
+        media::media_index index;
         gui::media::state state;
         gui::time start, stay;
         str error;
@@ -35,7 +36,7 @@ namespace app::dict::video
             on_change(&skin);
         }
 
-        void reset (mediae::media_index index_, array<str> excluded_links)
+        void reset (media::media_index index_, array<str> links)
         {
             start = gui::time{};
             stay  = gui::time{4000 +
@@ -44,9 +45,8 @@ namespace app::dict::video
                 index_.comment.size() * 20
             };
 
-            script.excluded_links =
-            credit.excluded_links =
-                excluded_links;
+            script.excluded_links = links;
+            credit.excluded_links = links;
 
             if (index == index_) return; else
                 index =  index_;
@@ -65,7 +65,7 @@ namespace app::dict::video
             str c = index.credit;
             str s = index.title;
 
-            s = ::app::dict::mediae::canonical(s);
+            s = media::canonical(s);
 
             str date;
             for (str option : index.options)
@@ -76,7 +76,7 @@ namespace app::dict::video
 
             if (index.comment != "") s += "<br><br>"
                 "<font color=#808080><i>" + 
-                ::app::dict::mediae::canonical(index.comment) +
+                media::canonical(index.comment) +
                 "</i></font><br>&nbsp;";
 
             script.it_is_a_title = true;

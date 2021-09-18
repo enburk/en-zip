@@ -1,8 +1,9 @@
 #pragma once
 #include "app.h"
-namespace app::dict::list
+namespace app::dic::list
 {
-    struct word : gui::widget<word>
+    struct word:
+    widget<word>
     {
         gui::text::one_line_editor editor;
         

@@ -12,12 +12,14 @@
 #include "../ae/proto-studio/gui_widget_console.h"
 #include "../ae/proto-studio/doc_html_syntax.h"
 #include "../ae/proto-studio/doc_html_model.h"
+
 using pix::XY;
 using pix::XYWH;
 using pix::XYXY;
 using pix::RGBA;
 using pix::image;
 using pix::frame;
+using gui::widget;
 
 #include "media_data.h"
 
@@ -25,10 +27,9 @@ inline auto & vocabulary = eng::vocabulary::data;
 
 inline std::map<str, array<sys::byte>> assets;
 
-namespace app::dict { inline gui::console* log = nullptr; }
+namespace app::dic { inline gui::console* log = nullptr; }
 namespace app::dual { inline gui::console* log = nullptr; }
 namespace app::mono { inline gui::console* log = nullptr; }
-
 
 
 

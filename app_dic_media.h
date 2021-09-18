@@ -1,12 +1,12 @@
 #pragma once
 #include "app.h"
-namespace app::dict::mediae
+namespace app::dic::media
 {
     struct entry_index { int32_t entry, media; };
     struct media_index
     {
         str kind, title, comment, credit;
-        media::data::location location;
+        ::media::data::location location;
         array<str> options;
 
         bool operator == (media_index const&) const = default;
@@ -14,8 +14,6 @@ namespace app::dict::mediae
     };
     array<entry_index> entry_indices;
     array<media_index> media_indices;
-    array<media_index> selected_audio;
-    array<media_index> selected_video;
 
     void reload ()
     {
@@ -43,10 +41,15 @@ namespace app::dict::mediae
         }
     }
 
-    void select (int n)
+    struct selected
     {
-        selected_audio.clear();
-        selected_video.clear();
+        array<media_index> audio;
+        array<media_index> video;
+    };
+
+    selected select (int n)
+    {
+        selected selected;
 
         auto range = entry_indices.equal_range(entry_index{n, 0},
             [](auto a, auto b){ return a.entry < b.entry; });
@@ -55,9 +58,11 @@ namespace app::dict::mediae
         {
             auto & index = media_indices[media];
 
-            if (index.kind == "audio") selected_audio += index;
-            if (index.kind == "video") selected_video += index;
+            if (index.kind == "audio") selected.audio += index;
+            if (index.kind == "video") selected.video += index;
         }
+
+        return selected;
     }
 
     str canonical (str s)
@@ -68,7 +73,9 @@ namespace app::dict::mediae
 
         auto ss = s.split_by("_"); if (ss.size() > 1)
         {
-            s = ss.front(); ss.upto(1).erase(); for (str ww : ss)
+            s = ss.front(); ss.upto(1).erase();
+            
+            for (str ww : ss)
             {
                 int n = 0;
                 for (char c : ww)

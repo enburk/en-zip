@@ -1,7 +1,7 @@
 #pragma once
 #include <execution>
 #include "dat_out.h"
-#include "app_dict.h"
+#include "app_dic.h"
 namespace studio::build
 {
     bool dictionary_update (gui::console & out, gui::console & err)

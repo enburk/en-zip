@@ -1,37 +1,34 @@
 #pragma once
-#include "app_dict_html.h"
-#include "app_dict_media.h"
-#include "app_dict_card_card_video.h"
-namespace app::dict::video
+#include "app_dic_media_video.h"
+namespace app::dic::video
 {
-    struct sequencer : gui::widget<sequencer>
+    struct sequencer:
+    widget<sequencer>
     {
         gui::widgetarium<player> players;
         gui::property<int> current = 0;
         gui::property<gui::time> timer;
-        array<str> excluded_links;
         gui::time smoothly {1000};
 
-        void reset ()
-        {
-            auto indices = mediae::selected_video;
+        using idx = media::media_index;
 
+        void reset (array<idx> selected,  array<str> const& links)
+        {
             if (players.size() > 0)
             {
-                auto it = std::ranges::find(
-                indices, players(current).index);
-                if (it != indices.end())
+                auto it = std::find(
+                selected.begin(), selected.end(), players(current).index);
+                if (it != selected.end())
                 {
                     players.rotate(0, current, current+1);
-                    std::rotate(indices.begin(),
+                    std::rotate(selected.begin(),
                         it, std::next(it));
                 }
             }
 
             int n = 0;
-            for (auto index : indices)
-                players(n++).reset(index, excluded_links);
-
+            for (auto index : selected)
+            players(n++).reset(index, links);
             players.truncate(n);
             current = 0;
 
@@ -82,7 +79,7 @@ namespace app::dict::video
                     using state = gui::media::state;
                     switch(players(current).state) {
                     case state::failure:
-                        if (log) *log << "quot::failure " +
+                        if (log) *log << "video: " +
                         std::to_string(current) + ": " +
                         players(current).error;
                         players(current).state = gui::media::state::finished;

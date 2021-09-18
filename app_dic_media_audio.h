@@ -1,31 +1,25 @@
 #pragma once
-#include "app_dict_html.h"
-#include "app_dict_media.h"
-namespace app::dict::card
+#include "app_dic_html.h"
+#include "app_dic_media.h"
+namespace app::dic::audio
 {
-    struct audio : gui::widget<audio>
+    struct player:
+    widget<player>
     {
         html_view text;
-        sys::audio::player player;
-        mediae::media_index index;
+        sys::audio::player audio;
+        media::media_index index;
         gui::property<gui::time> timer;
         std::atomic<gui::media::state> state;
         gui::time start, stay;
-        std::thread thread;
-        str error;
 
-        audio ()
+        player ()
         {
             on_change(&skin);
             state = gui::media::state::finished;
         }
-        ~audio ()
-        {
-            if (thread.joinable())
-                thread.join();
-        }
 
-        void reset (mediae::media_index index_, array<str> excluded_links)
+        void reset (media::media_index index_, array<str> links)
         {
             start = gui::time{};
             stay  = gui::time{1000 +
@@ -34,74 +28,22 @@ namespace app::dict::card
                 index_.comment.size() * 20
             };
 
-            text.excluded_links =
-                excluded_links;
+            text.excluded_links = links;
 
             if (index == index_) return; else
                 index =  index_;
 
             stop();
-            
-            state = gui::media::state::failure;
-
-            if (index == mediae::media_index{}) return;
 
             state = gui::media::state::loading;
-
-            if (thread.joinable())
-                thread.join();
-
-            thread = std::thread([this]()
-            {
-                std::filesystem::path dir = "../data/app_dict";
-                std::string storage = "storage." +
-                    std::to_string(index.location.source)
-                        + ".dat";
-
-                std::filesystem::path path = dir / storage;
-                int offset = index.location.offset;
-                int length = index.location.length;
-                array<sys::byte> data;
-
-                try
-                {
-                    std::ifstream ifstream(path, std::ios::binary);
-
-                    int size = length;
-                    if (size == 0)
-                    {
-                        ifstream.seekg(0, std::ios::end);
-                        size = (int)ifstream.tellg();
-                    }
-                    ifstream.seekg(offset, std::ios::beg);
-
-                    data.resize(size);
-                    ifstream.read((char*)(data.data()), size);
-
-                    media::audio::decoder decoder(data);
-
-                    player.load(
-                        decoder.output,
-                        decoder.channels,
-                        decoder.samples,
-                        decoder.bps
-                    );
-
-                    state = gui::media::state::ready;
-                }
-                catch (std::exception & e) {
-                    state = gui::media::state::failure;
-                    error = e.what();
-                }
-            });
 
             str s = index.title;
             str c = index.credit;
             str i = index.comment;
 
-            s = ::app::dict::mediae::canonical(s);
-            c = ::app::dict::mediae::canonical(c);
-            i = ::app::dict::mediae::canonical(i);
+            s = media::canonical(s);
+            c = media::canonical(c);
+            i = media::canonical(i);
 
             while (s.ends_with("<br>"))
                 s.resize(s.size()-4);
@@ -124,26 +66,80 @@ namespace app::dict::card
 
             //s = eng::parser::embolden(s, text.excluded_links);
 
-            if (true) std::ofstream("test.quot.html") << s;
-            if (true) std::ofstream("test.quot.html.txt")
+            if (false) std::ofstream("test.quot.html") << s;
+            if (false) std::ofstream("test.quot.html.txt")
                 << doc::html::print(s);
 
             text.it_is_a_title = true;
             text.html = s;
         }
 
+        void load (std::mutex& mutex, std::atomic<bool>& cancel)
+        {
+            if (cancel) return;
+
+            media::media_index index;
+            {
+                std::lock_guard lock{mutex};
+                if (state != gui::media::state::loading)
+                    return;
+
+                index = this->index;
+            }
+
+            std::filesystem::path dir = "../data/app_dict";
+            std::string storage = "storage." +
+                std::to_string(index.location.source)
+                    + ".dat";
+
+            std::filesystem::path path = dir / storage;
+            int offset = index.location.offset;
+            int length = index.location.length;
+            array<sys::byte> data;
+
+            try
+            {
+                data.resize(length);
+                std::ifstream ifstream(path, std::ios::binary);
+                ifstream.seekg(offset, std::ios::beg);
+                ifstream.read((char*)(data.data()), length);
+
+                if (cancel) return;
+
+                ::media::audio::decoder decoder(data);
+
+                if (cancel) return;
+
+                audio.load(
+                    decoder.output,
+                    decoder.channels,
+                    decoder.samples,
+                    decoder.bps
+                );
+
+                if (cancel) return;
+
+                state = gui::media::state::ready;
+            }
+            catch (std::exception const& e) {
+                state = gui::media::state::failure;
+                if (log) *log << "audio failure: " +
+                    str(e.what());
+            }
+        }
+
         void play ()
         {
-            switch(state.load()) {
+            switch(state) {
             case gui::media::state::ready:
             case gui::media::state::playing:
             case gui::media::state::finished:
             {
                 start = gui::time::now;
                 state = gui::media::state::playing;
-                auto duration = gui::time{(int)(player.duration*1000)};
+                auto duration = gui::time{(int)(audio.duration*1000)};
                 duration = max(duration, stay);
-                player.play(0.0, 0.0);
+                audio.play(0.0, 0.0);
                 timer.go (gui::time{0}, gui::time{0});
                 timer.go (gui::time{1}, duration);
                 break;
@@ -154,11 +150,11 @@ namespace app::dict::card
 
         void stop ()
         {
-            switch(state.load()) {
+            switch(state) {
             case gui::media::state::ready:
             case gui::media::state::playing:
 
-                player.stop(0.0);
+                audio.stop(0.0);
                 state = gui::media::state::finished;
                 timer.go (gui::time{},
                           gui::time{});
@@ -180,7 +176,6 @@ namespace app::dict::card
                 text.alignment = XY{pix::left, pix::center};
                 text.color = gui::skins[skin].touched.first;
             }
-
             if (what == &timer and timer == gui::time{1})
             {
                 state = gui::media::state::finished;
@@ -191,7 +186,7 @@ namespace app::dict::card
 
         void on_notify (void* what) override
         {
-            if (what == &text ) { clicked = text .clicked; notify(); }
+            if (what == &text ) { clicked = text.clicked; notify(); }
         }
     };
 }

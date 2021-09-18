@@ -11,7 +11,7 @@ struct Studio : gui::widget<Studio>
     gui::canvas toolbar;
     gui::radio::group select;
     array<gui::base::widget*> studios;
-    studio::dict::studio dict;
+    studio::dic::studio dic;
     studio::dual::studio dual;
     studio::mono::studio mono;
     studio::audio::studio audio;
@@ -35,7 +35,7 @@ struct Studio : gui::widget<Studio>
         select(6).text.text = "build!";
         select(0).on = true;
 
-        studios += &dict;
+        studios += &dic;
         studios += &dual;
         studios += &mono;
         studios += &audio;
@@ -94,7 +94,7 @@ struct Studio : gui::widget<Studio>
         {
             if (build.data_updated)
             {
-                dict.reload();
+                dic.reload();
             }
 
             for (int i=0; i<studios.size(); i++)

@@ -9,38 +9,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\ae\library\cpp\aux_abc.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\aux_array.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\aux_string.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\aux_utils.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\pix_color.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\pix_coord.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\pix_image.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\library\cpp\sys.h">
-      <Filter>aux</Filter>
-    </ClInclude>
     <ClInclude Include="eng.h" />
     <ClInclude Include="app.h" />
     <ClInclude Include="dat_in.h" />
     <ClInclude Include="dat_out.h" />
-    <ClInclude Include="app_dict.h" />
-    <ClInclude Include="app_dict_card.h" />
-    <ClInclude Include="app_dict_html.h" />
-    <ClInclude Include="app_dict_list.h" />
     <ClInclude Include="app_dual.h" />
     <ClInclude Include="app_mono.h" />
     <ClInclude Include="media.h" />
@@ -52,17 +24,46 @@
     <ClInclude Include="studio_audio.h" />
     <ClInclude Include="studio_video.h" />
     <ClInclude Include="eng_dictionary.h" />
-    <ClInclude Include="app_dict_media.h" />
     <ClInclude Include="media_data.h" />
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="studio_build_dic.h" />
-    <ClInclude Include="app_dict_list_list.h" />
-    <ClInclude Include="app_dict_list_word.h" />
-    <ClInclude Include="app_dict_card_card.h" />
-    <ClInclude Include="app_dict_card_quot.h" />
-    <ClInclude Include="app_dict_card_quot_audio.h" />
-    <ClInclude Include="app_dict_card_card_video.h" />
-    <ClInclude Include="app_dict_card_card_videos.h" />
     <ClInclude Include="eng_parser.h" />
+    <ClInclude Include="..\ae\proto-studio\aux_abc.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_aux.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_coro.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_math.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_registry.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_unicode.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_v1_array.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_v1_string.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic.h" />
+    <ClInclude Include="app_dic_html.h" />
+    <ClInclude Include="app_dic_html_wiki.h" />
+    <ClInclude Include="app_dic_left.h" />
+    <ClInclude Include="app_dic_left_card.h" />
+    <ClInclude Include="app_dic_left_quot.h" />
+    <ClInclude Include="app_dic_list.h" />
+    <ClInclude Include="app_dic_list_list.h" />
+    <ClInclude Include="app_dic_list_word.h" />
+    <ClInclude Include="app_dic_media.h" />
+    <ClInclude Include="app_dic_media_audio.h" />
+    <ClInclude Include="app_dic_media_video.h" />
+    <ClInclude Include="app_dic_media_videos.h" />
   </ItemGroup>
 </Project>

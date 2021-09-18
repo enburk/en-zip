@@ -1,40 +1,44 @@
 #pragma once
-#include "app_dict_media.h"
-#include "app_dict_card_card_videos.h"
-namespace app::dict::card
+#include "app_dic_media.h"
+#include "app_dic_media_videos.h"
+namespace app::dic::left
 {
-    struct card : gui::widget<card>
+    struct card:
+    widget<card>
     {
         html_view text;
-        video::sequencer image;
+        video::sequencer video;
+        using idx = media::media_index;
 
         void reload () {}
 
-        void reset_image ()
+        void reset (
+            array<idx> const& selected_video,
+            array<str> const& links)
         {
-            image.reset();
+            video.reset(selected_video, links);
 
             int l = gui::metrics::line::width;
 
             XY size;
-            for (auto video : mediae::selected_video)
+            for (auto& video : selected_video)
             size.x = max (size.x, video.location.size_x + 6*l);
-            size.y = image.height(size.x);
+            size.y = video.height(size.x);
 
-            refresh_image(size);
+            refresh_video(size);
         }
 
-        void refresh_image (XY size)
+        void refresh_video (XY size)
         {
             int maxwidth = coord.now.size.x * 2/3;
             if (maxwidth < size.x) size = XY (
-                maxwidth, image.height(maxwidth));
+                maxwidth, video.height(maxwidth));
 
             text.margin_right = size;
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;
 
-            image.coord = XYWH(
+            video.coord = XYWH(
                 coord.now.size.x - size.x - d, 0,
                 size.x, size.y
             );
@@ -45,15 +49,15 @@ namespace app::dict::card
             if (what == &coord && coord.was.size != coord.now.size)
             {
                 text.coord = coord.now.local();
-                refresh_image(image.coord.now.size);
+                refresh_video(video.coord.now.size);
             }
             if (what == &skin)
             {
                 text.view.canvas.color = gui::skins[skin].ultralight.first;
             }
-            if (what == &image)
+            if (what == &video)
             {
-                text.margin_right = image.coord.now.size;
+                text.margin_right = video.coord.now.size;
             }
         }
 
@@ -62,7 +66,7 @@ namespace app::dict::card
         void on_notify (void* what) override
         {
             if (what == &text ) { clicked = text .clicked; notify(); }
-            if (what == &image) { clicked = image.clicked; notify(); }
+            if (what == &video) { clicked = video.clicked; notify(); }
         }
     };
 }

@@ -1,9 +1,11 @@
 #pragma once
-#include "app_dict_card_card.h"
-#include "app_dict_card_quot.h"
-namespace app::dict::card
+#include "app_dic_html_wiki.h"
+#include "app_dic_left_card.h"
+#include "app_dic_left_quot.h"
+namespace app::dic::left
 {
-    struct area : gui::widget<area>
+    struct area:
+    widget<area>
     {
         gui::area<card> card;
         gui::area<quot> quot;
@@ -32,12 +34,6 @@ namespace app::dict::card
 
         void select (int n)
         {
-            /// if (log) *log <<
-            /// "app::dict::card::select "
-            /// + std::to_string(n) + " "
-            /// + vocabulary[n].title + " -> "
-            /// + std::to_string(vocabulary[n].redirect);
-
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
             if (vocabulary[n].redirect >= 0) n =
@@ -46,11 +42,7 @@ namespace app::dict::card
             if (vocabulary[n].length == current.length
             and vocabulary[n].offset == current.offset) return;
 
-            /// if (log) *log <<
-            /// "app::dict::card::select redirected "
-            /// + std::to_string(n) + " "
-            /// + vocabulary[n].title;
-
+            sys::timing t0;
             if (current.title != "")
             undoes += current.title;
             current = vocabulary[n];
@@ -66,26 +58,37 @@ namespace app::dict::card
             eng::dictionary::entry entry;
             pool >> entry;
 
-            array<str> excluded_links;
-            excluded_links += entry.title;
+            array<str> links;
+            links += entry.title;
             for (auto redirect : entry.redirects)
-                excluded_links += vocabulary[redirect].title;
+            links += vocabulary[redirect].title;
 
-            card.object.text.excluded_links = 
-            quot.object.excluded_links = 
-                excluded_links;
-
+            sys::timing t1;
             str debug = "";///"<br> n = " + std::to_string(n);
-            str html = wiki2html(entry) + debug;
-            if (true) std::ofstream("test.html") << html;
-            if (true) std::ofstream("test.html.txt") << doc::html::print(html);
+            str html = wiki2html(entry, links) + debug;
+            if (false) std::ofstream("test.html") << html;
+            if (false) std::ofstream("test.html.txt") << doc::html::print(html);
+
+            sys::timing t2;
             card.object.text.html = html;
             card.object.text.scroll.y.top = 0;
             refresh();
 
-            mediae::select(n);
-            card.object.reset_image();
-            quot.object.reset_audio();
+            sys::timing t3; auto selected = media::select(n);
+            sys::timing t4; card.object.reset(selected.video, links);
+            sys::timing t5; quot.object.reset(selected.audio, links);
+            sys::timing t6;
+
+            if (log) *log << entry.title + "<br>" +
+            "<font color=#808080 face=\"monospace\">" +
+            "time file  " + sys::format(t1-t0) + " sec<br>"+
+            "time wiki  " + sys::format(t2-t1) + " sec<br>"+
+            "time html  " + sys::format(t3-t2) + " sec<br>"+
+            "time media " + sys::format(t4-t3) + " sec<br>"+
+            "time video " + sys::format(t5-t4) + " sec<br>"+
+            "time audio " + sys::format(t6-t5) + " sec<br>"+
+            "time total " + sys::format(t6-t0) + " sec<br>"+
+            "</font>";
         }
 
         void refresh ()

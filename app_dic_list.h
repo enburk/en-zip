@@ -1,10 +1,11 @@
 #pragma once
 #include "app.h"
-#include "app_dict_list_list.h"
-#include "app_dict_list_word.h"
-namespace app::dict::list
+#include "app_dic_list_list.h"
+#include "app_dic_list_word.h"
+namespace app::dic::list
 {
-    struct area : gui::widget<area>
+    struct area:
+    widget<area>
     {
         gui::area<list> list;
         gui::area<word> word;

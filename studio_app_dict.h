@@ -1,6 +1,6 @@
 #pragma once
-#include "app_dict.h"
-namespace studio::dict
+#include "app_dic.h"
+namespace studio::dic
 {
     struct area : gui::widget<area>
     {
@@ -17,11 +17,11 @@ namespace studio::dict
 
     struct studio : gui::widget<studio>
     {
-        app::dict::app app;
+        app::dic::app app;
         gui::area<area> area;
         gui::splitter splitter;
 
-        studio () { app::dict::log = &area.object.log; }
+        studio () { app::dic::log = &area.object.log; }
 
         void reload () { app.reload(); }
 

@@ -1,8 +1,9 @@
 #pragma once
 #include "app.h"
-namespace app::dict::list
+namespace app::dic::list
 {
-    struct list : gui::widget<list>
+    struct list:
+    widget<list>
     {
         gui::radio::group words;
         gui::property<int> current = 1;

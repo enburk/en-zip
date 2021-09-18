@@ -1,24 +1,28 @@
 #pragma once
-#include "app_dict_html.h"
-#include "app_dict_media.h"
-#include "app_dict_card_quot_audio.h"
-namespace app::dict::card
+#include "app_dic_html.h"
+#include "app_dic_media.h"
+#include "app_dic_media_audio.h"
+namespace app::dic::left
 {
-    struct quot : gui::widget<quot>
+    struct quot:
+    widget<quot>
     {
-        array<str> excluded_links;
-        array<mediae::media_index> indices;
-        gui::widgetarium<audio> players;
-        gui::property<int> current = 0;
-        gui::property<gui::time> timer;
         gui::button autoplay;
         gui::button play, Play;
         gui::button stop, Stop;
         gui::button prev, next;
         gui::player speaker;
-        gui::time smoothly {500};
         gui::text::view oneof;
+
+        gui::widgetarium<audio::player> players;
+        gui::property<int> current = 0;
+        gui::property<gui::time> timer;
+        gui::time smoothly {500};
         bool playall = false;
+
+        std::thread thread;
+        std::atomic<bool> cancel = false;
+        std::mutex mutex;
 
         quot ()
         {
@@ -34,6 +38,12 @@ namespace app::dict::card
             Stop.hide();
             on_change(&skin);
         }
+        ~quot ()
+        {
+            cancel = true;
+            if (thread.joinable())
+                thread.join();
+        }
 
         void reload ()
         {
@@ -45,30 +55,32 @@ namespace app::dict::card
             Stop.icon.load(assets["player.black.stop.64x64"]);
         }
 
-        void reset_audio ()
-        {
-            indices = mediae::selected_audio;
+        using idx = media::media_index;
 
-            prev.enabled  = indices.size() > 1;
-            next.enabled  = indices.size() > 1;
-            speaker.alpha = indices.size() > 0 ? 128 : 64;
-            oneof.show     (indices.size() > 0);
+        void reset (array<idx> selected, array<str> const& links)
+        {
+            cancel = true;
+
+            prev.enabled  = selected.size() > 1;
+            next.enabled  = selected.size() > 1;
+            speaker.alpha = selected.size() > 0 ? 128 : 64;
+            oneof.show     (selected.size() > 0);
 
             if (players.size() > 0)
             {
                 auto it = std::ranges::find(
-                indices, players(current).index);
-                if (it != indices.end())
+                selected, players(current).index);
+                if (it != selected.end())
                 {
                     players.rotate(0, current, current+1);
-                    std::rotate(indices.begin(),
+                    std::rotate(selected.begin(),
                         it, std::next(it));
                 }
             }
 
             int n = 0;
-            for (auto index : indices) {
-                players(n++).reset(index, excluded_links);
+            for (auto index : selected) {
+                players(n++).reset(index, links);
             }
 
             playall = autoplay.on;
@@ -91,6 +103,19 @@ namespace app::dict::card
             if (speaker.state == gui::media::state::vacant)
                 speaker.load(assets["speaker.128x096"]
                 .from(0));
+
+            if (thread.joinable())
+                thread.join();
+
+            cancel = false;
+
+            thread = std::thread([this]()
+            {
+                for (auto & player : players) {
+                    player.load(mutex, cancel);
+                    if (cancel) break;
+                }
+            });
         }
 
         void on_change (void* what) override
@@ -104,8 +129,6 @@ namespace app::dict::card
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height*12/7;
-                int w = h*5/4;
-                int d = h*1/9;
 
                 int l = h*27/100;
                 int L = h*39/100;
@@ -119,16 +142,20 @@ namespace app::dict::card
                 prev.icon.padding = XYXY(l,l,l,l);
                 next.icon.padding = XYXY(l,l,l,l);
 
-                autoplay.coord = XYWH(0*w, 0*h, 2*w, h);
-                play    .coord = XYWH(0*w, 1*h, 1*w, h);
-                stop    .coord = XYWH(0*w, 1*h, 1*w, h);
-                Play    .coord = XYWH(1*w, 1*h, 1*w, h);
-                Stop    .coord = XYWH(1*w, 1*h, 1*w, h);
-                oneof   .coord = XYWH(0*w, 2*h, 2*w, h);
-                prev    .coord = XYWH(0*w, 3*h, 1*w, h);
-                next    .coord = XYWH(1*w, 3*h, 1*w, h);
-                speaker .coord = XYWH(2*w+d, 0*h, 2*w-2*d, (2*w-2*d)*96/128);
-                players .coord = XYXY(5*w, 0, W, H);
+                int w = h*5/4;
+                int d = h*1/2;
+                int y = 2*w*96/128;
+
+                speaker .coord = XYWH(0*w, 0+0*h, 2*w, y);
+                autoplay.coord = XYWH(0*w, y+0*h, 2*w, h);
+                play    .coord = XYWH(0*w, y+1*h, 1*w, h);
+                stop    .coord = XYWH(0*w, y+1*h, 1*w, h);
+                Play    .coord = XYWH(1*w, y+1*h, 1*w, h);
+                Stop    .coord = XYWH(1*w, y+1*h, 1*w, h);
+                oneof   .coord = XYWH(0*w, y+2*h, 2*w, h);
+                prev    .coord = XYWH(0*w, y+3*h, 1*w, h);
+                next    .coord = XYWH(1*w, y+3*h, 1*w, h);
+                players .coord = XYXY(2*w+d, 0, W-d-d, H);
 
                 for (auto & player : players)
                     player.coord = players.
@@ -142,9 +169,6 @@ namespace app::dict::card
                     using state = gui::media::state;
                     switch(players(current).state) {
                     case state::failure:
-                        if (log) *log << "quot::failure " +
-                        std::to_string(current) + ": " +
-                        players(current).error;
                         players(current).state = gui::media::state::finished;
                         players(current).show(smoothly);
                         break;

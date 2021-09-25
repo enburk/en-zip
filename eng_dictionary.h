@@ -4,7 +4,7 @@
 #include "data_out.h"
 namespace eng
 {
-    array<str> lexical_items
+    const array<str> lexical_items
     {
         "noun", "pronoun", "proper noun",
         "verb", "adjective", "adverb", "numeral", "number", "article", "particle", 
@@ -14,63 +14,67 @@ namespace eng
         "suffix", "prefix", "infix", "affix", "interfix",
         "phrase", "prepositional phrase", "proverb", 
     };
-    array<str> related_items
+    const array<str> related_items
     {
         "abbreviations", "alternative forms", "synonyms", "antonyms",
         "hypernyms", "hyponyms", "meronyms", "holonyms", "troponyms",
         "derived terms", "related terms", "coordinate terms",
         "see also", 
     };
-    array<str> lexical_notes
+    const array<str> lexical_notes
     {
         "pronunciation", "etymology",
         "usage notes", "trivia",
     };
 
-    namespace dictionary
+    struct dictionary
     {
-        struct topic { str header, forms; array<str> content; };
-        struct entry { str title; array<topic> topics; array<int> redirects; };
+        struct topic {
+            str header, forms;
+            array<str> content;
+        };
 
-        auto less = [](const entry & a, const entry & b)
-        { return eng::less(a.title, b.title); };
+        struct entry {
+            str title;
+            array<topic> topics;
+            array<int> redirects;
 
-        auto less_case_insensitive = [](const entry & a, const entry & b)
-        { return eng::less_case_insensitive(a.title, b.title); };
-
-        bool operator < (const entry & a, const entry & b)
-        { return eng::less(a.title, b.title); };
-
-        void operator >> (dat::in::pool & in, entry & entry)
-        {
-            entry.title = in.get_string();
-            entry.topics.resize(in.get_int());
-            for (auto & topic : entry.topics) {
-                topic.header = in.get_string();
-                topic.forms  = in.get_string();
-                topic.content.resize(in.get_int());
-                for (auto & s : topic.content) s = in.get_string();
+            void operator << (dat::in::pool& in)
+            {
+                title = in.get_string();
+                topics.resize(in.get_int());
+                for (auto & topic : topics) {
+                    topic.header = in.get_string();
+                    topic.forms  = in.get_string();
+                    topic.content.resize(in.get_int());
+                    for (auto & s : topic.content)
+                        s = in.get_string();
+                }
+                redirects.resize(in.get_int());
+                for (auto & s : redirects)
+                    s = in.get_int();
             }
-            entry.redirects.resize(in.get_int());
-            for (auto & s : entry.redirects) s = in.get_int();
-        }
-        void operator << (dat::out::pool & out, const entry & entry)
-        {
-            out << entry.title;
-            out << entry.topics.size();
-            for (auto & topic : entry.topics) {
-                out << topic.header;
-                out << topic.forms;
-                out << topic.content;
+            void operator >> (dat::out::file& out) const
+            {
+                out << title;
+                out << topics.size();
+                for (auto & topic : topics) {
+                    out << topic.header;
+                    out << topic.forms;
+                    out << topic.content;
+                }
+                out << redirects.size();
+                for (auto & redirect : redirects)
+                    out << redirect;
             }
-            out << entry.redirects.size();
-            for (auto & redirect : entry.redirects) {
-                out << redirect;
-            }
-        }
-    }
+        };
 
-    namespace vocabulary
+        array<entry> data;
+        entry& operator [] (int i)
+            { return data[i]; }
+    };
+
+    struct vocabulary
     {
         struct entry
         { 
@@ -79,27 +83,91 @@ namespace eng
             int length = 0;
             int redirect = -1;
 
-            bool operator == (const entry & r) const = default;
-            bool operator != (const entry & r) const = default;
+            void operator << (dat::in::pool& in)
+            {
+                title = in.get_string();
+                offset = in.get_int();
+                length = in.get_int();
+                redirect = in.get_int();
+            }
+            void operator >> (dat::out::file& out) const
+            {
+                out << title;
+                out << offset;
+                out << length;
+                out << redirect;
+            }
         };
 
-        inline array<entry> data;
+        array<entry> data;
+        int size () const { return data.size(); }
+        entry& operator [] (int i) { return data[i]; }
+        std::unordered_map<str, int> hashmap;
+        std::array<int, 27*27*27> trie{};
+        vocabulary () = default;
 
-        auto less = [](const entry & a, const entry & b)
-        { return eng::less(a.title, b.title); };
-
-        auto less_case_insensitive = [](const entry & a, const entry & b)
-        { return eng::less_case_insensitive(a.title, b.title); };
-
-        bool operator < (const entry & a, const entry & b)
-        { return eng::less(a.title, b.title); };
-
-        auto find (str s)
+        std::optional<int> index (str const& s)
         {
-            auto e = eng::vocabulary::entry{s};
-            auto range = data.equal_range(e, less);
-            return range;
+            auto it = hashmap.find(s);
+            if (it == hashmap.end()) return {};
+            return it->second;
         }
+
+        int lower_bound (str const& s)
+        {
+            auto it = data.lower_bound(entry{s},
+            [] (entry const& a, entry const& b)
+            { return eng::less(a.title, b.title); });
+            if (it == data.end()) return data.size()-1;
+            return (int)(it - data.begin());
+        }
+        //int lower_bound_ex (str const& s)
+        //{
+        //    int n = lower_bound(s);
+        //    while (n+1 < size() and
+        //        not eng::less(data[n+1]))
+        //}
+
+        explicit vocabulary (dictionary& dic)
+        {
+            data.resize(dic.data.size());
+            hashmap.reserve(dic.data.size());
+            for (int i=0; i<dic.data.size(); i++) {
+                data[i].title = dic.data[i].title;
+                hashmap[data[i].title] = i;
+            }
+            auto t = trie.begin();
+            for (int i=0; i<27; i++)
+            for (int j=0; j<27; j++)
+            for (int k=0; k<27; k++)
+            {
+                str s;
+                s += ' ' + i;
+                s += ' ' + j;
+                s += ' ' + k;
+                *t = lower_bound(s);
+                ++t;
+            }
+        }
+        explicit vocabulary (std::filesystem::path path)
+        {
+            dat::in::pool pool(path);
+            pool.get_endianness();
+            data.resize(pool.get_int());
+            hashmap.reserve(data.size());
+            for (int i=0; i<data.size(); i++) {
+                data[i] << pool;
+                hashmap[data[i].title] = i;
+            }
+        }
+
+
+
+        static auto less (const entry & a, const entry & b)
+        { return eng::less(a.title, b.title); };
+
+        static auto less_case_insensitive (const entry & a, const entry & b)
+        { return eng::less_case_insensitive(a.title, b.title); };
 
         auto find_case_insensitive (str s)
         {
@@ -108,20 +176,5 @@ namespace eng
             auto r2 = data.equal_range(e, less_case_insensitive);
             return r2;
         }
-
-        void operator >> (dat::in::pool & in, entry & entry)
-        {
-            entry.title = in.get_string();
-            entry.offset = in.get_int();
-            entry.length = in.get_int();
-            entry.redirect = in.get_int();
-        }
-        void operator << (dat::out::pool & out, const entry & entry)
-        {
-            out << entry.title;
-            out << entry.offset;
-            out << entry.length;
-            out << entry.redirect;
-        }
-    }
+    };
 }

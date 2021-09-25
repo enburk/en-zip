@@ -13,13 +13,9 @@ namespace app::dic::list
 
         void select (int n)
         {
-            /// if (log) *log <<
-            /// "app::dict::list::word::select "
-            /// + std::to_string(n) + " "
-            /// + vocabulary[n].title;
-
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
+
             flag = true;
             editor.text = vocabulary[n].title;
             flag = false;
@@ -39,6 +35,7 @@ namespace app::dic::list
             }
             if (what == &skin)
             {
+                editor.virtual_space = true;
                 editor.margin_left = XY{gui::metrics::text::height/6, max<int>()};
                 editor.canvas.color = gui::skins[skin].ultralight.first;
                 editor.style = pix::text::style{
@@ -57,7 +54,11 @@ namespace app::dic::list
                 key == "shift+insert"))
             {
                 str s =
-                sys::clipboard::get::string(); s.strip();
+                sys::clipboard::get::string();
+                s.replace_all("\t", " ");
+                s.replace_all("\n", " ");
+                s.replace_all("\r", "");
+                s.strip();
                 sys::clipboard::set(s);
             }
             editor.on_key_pressed(key,down);
@@ -69,38 +70,16 @@ namespace app::dic::list
             {
                 if (vocabulary.size() == 0) return;
                 auto s = editor.text.now; s.triml();
-                auto S = editor.text.now; S.strip();
-                auto i = vocabulary.lower_bound(
-                    eng::vocabulary::entry{s},
-                    eng::vocabulary::less);
-
-                if (i == vocabulary.end())
-                    i =  vocabulary.lower_bound(
-                    eng::vocabulary::entry{S},
-                    eng::vocabulary::less);
-
-                if (i == vocabulary.end()) i--;
-
-                if (i->title != s)
-                    i =  vocabulary.lower_bound(
-                    eng::vocabulary::entry{s},
-                    eng::vocabulary::less_case_insensitive);
-                
-                if (i == vocabulary.end())
-                    i =  vocabulary.lower_bound(
-                    eng::vocabulary::entry{S},
-                    eng::vocabulary::less_case_insensitive);
-
-                if (i == vocabulary.end()) i--;
+                auto i = vocabulary.lower_bound(s);
 
                 editor.style = pix::text::style{
                     sys::font{"Segoe UI",
                     gui::metrics::text::height},
-                    eng::equal_case_insensitive(s, i->title)?
+                    eng::equal_case_insensitive(s, vocabulary[i].title)?
                     gui::skins[skin].dark.first:
                     gui::skins[skin].error.first};
 
-                typed = (int)(i - vocabulary.begin());
+                typed = i;
                 notify();
             }
         }

@@ -81,9 +81,9 @@ namespace media::data
                         "media::out::source: unknown exception"
                         "</font></b>";
                 }
-           }
+            }
 
-            expected<location> add (const resource & r) try
+            expected<Location> add (resource const& r) try
             {
                 auto size = std::filesystem::file_size(r.path);
                 if (size > (std::uintmax_t)(max<int32_t>()))
@@ -109,7 +109,9 @@ namespace media::data
                 auto it = content.find(record);
                 if (it != content.end()) {
                     it->second.used = true;
-                    return it->second.location;
+                    return Location{
+                        it->second.location,
+                        false}; // old one
                 }
 
                 array<byte> data =
@@ -119,25 +121,13 @@ namespace media::data
 
                 if (data.size() == 0) throw std::runtime_error("no data");
                 if (data.size() > max<int32_t>() - dat::out::file::size)
-                    return location{}; // it's enough
+                    return Location{}; // it's enough for this storage
 
                 info info {};
                 info.used = true;
                 info.location.source = number;
                 info.location.offset = dat::out::file::size;
                 info.location.length = data.size();
-
-                if (true) *report::out << 
-                "<font color=#800080>" + r.title + "</font>" +
-                "<font color=#000080>" + "[" + str(r.entries, "][") + "]" + "</font>" +
-                "<font color=#008000>" + "{" + str(r.options, "}{") + "}" + "</font>" ;
-
-                if (false) {
-                *report::out << r.id;
-                *report::out << "location.source: " + std::to_string(info.location.source);
-                *report::out << "location.offset: " + std::to_string(info.location.offset);
-                *report::out << "location.length: " + std::to_string(info.location.length);
-                }
 
                 fstream.write((char*) data.data(), data.size());
                 dat::out::file::size += data.size();
@@ -152,7 +142,7 @@ namespace media::data
 
                 report::data_updated = true;
 
-                return info.location;
+                return Location{info.location, true};
             }
             catch (std::exception & e) {
             return aux::error("media::data::out::source:"
@@ -179,10 +169,10 @@ namespace media::data
                     sources += std::make_unique<source>(dir / "storage.0.dat", 0);
             }
 
-            location add (const resource & r)
+            Location add (const resource & r)
             {
                 auto result = sources.back()->add(r).value();
-                if (result == location{}) { int i = sources.size();
+                if (result.location == location{}) { int i = sources.size();
                     std::string filename = "storage." + std::to_string(i) + ".dat";
                     sources += std::make_unique<source>(dir / filename, i);
                     result = sources.back()->add(r).value();

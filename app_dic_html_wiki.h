@@ -111,8 +111,8 @@ namespace app::dic
                     if (kind == "l"  ) html += gap + std::to_string(n1++) + ". ";
                     if (kind == "l"  ) n2 = 1;
 
-                    for (auto& link : links) s.replace_all(
-                        link, "<b>" + link + "</b>");
+                    // for (auto& link : links) s.replace_all(
+                    //     link, "<b>" + link + "</b>");
                     
                     html += s + "<br></div>";
                 }
@@ -156,8 +156,8 @@ namespace app::dic
                         s = "<font color=#008000><i>" + l +
                             ":" + "</i></font>" + r; }
 
-                    for (auto& link : links) s.replace_all(
-                        link, "<b>" + link + "</b>");
+                    // for (auto& link : links) s.replace_all(
+                    //     link, "<b>" + link + "</b>");
                     
                     html += s + "<br>";
                 }

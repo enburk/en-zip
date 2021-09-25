@@ -2,7 +2,20 @@
 #include "eng_dictionary.h"
 namespace eng::parser
 {
-    array<str> entries (str input)
+    struct context
+    {
+        vocabulary& vocabulary;
+        array<str> terms;
+    };
+
+    struct data
+    {
+        context context;
+        array<doc::text::token> tokens;
+    };
+
+
+    array<str> entries (eng::vocabulary& vocabulary, str input)
     {
         array<str> entries;
 
@@ -30,22 +43,22 @@ namespace eng::parser
                 }
 
                 auto it =
-                    vocabulary::data.lower_bound(
+                    vocabulary.data.lower_bound(
                     vocabulary::entry{S},
                     vocabulary::less);
 
-                if (it != vocabulary::data.end() and
+                if (it != vocabulary.data.end() and
                     it->title == S) {
                     entries += it->title;
                     continue;
                 }
 
                 it =
-                    vocabulary::data.lower_bound(
+                    vocabulary.data.lower_bound(
                     vocabulary::entry{s},
                     vocabulary::less_case_insensitive);
 
-                if (it == vocabulary::data.end() or not
+                if (it == vocabulary.data.end() or not
                     it->title.ascii_lowercased().
                     starts_with(s))
                     break;

@@ -7,6 +7,9 @@
     <Filter Include="aux">
       <UniqueIdentifier>{3a89770c-042f-42d3-8b8a-0389fd50acfa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{deccef0b-0d96-4c8b-b6e3-7924e28ad4c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eng.h" />
@@ -67,5 +70,57 @@
     <ClInclude Include="studio_app_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />
+    <ClInclude Include="..\ae\proto-studio\gui_colors.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_effect.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_button.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_canvas.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_console.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_image.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_player.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_scroller.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_aux.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_column.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor1.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_line.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_page.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_view.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widgetarium.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_unittest.h" />
   </ItemGroup>
 </Project>

@@ -45,8 +45,8 @@ namespace app::dic::video
                 index_.comment.size() * 20
             };
 
-            script.excluded_links = links;
-            credit.excluded_links = links;
+            script.forbidden_links = links;
+            credit.forbidden_links = links;
 
             if (index == index_) return; else
                 index =  index_;
@@ -79,7 +79,6 @@ namespace app::dic::video
                 media::canonical(index.comment) +
                 "</i></font><br>&nbsp;";
 
-            script.it_is_a_title = true;
             script.html = s;
             credit.html = c;
         }

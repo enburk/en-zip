@@ -35,7 +35,7 @@ namespace app::dic::left
         void select (int n)
         {
             if (n < 0) return;
-            if (n >= vocabulary.size()) return;
+            if (n >= vocabulary.data.size()) return;
             if (vocabulary[n].redirect >= 0) n =
                 vocabulary[n].redirect;
             if (vocabulary[n].length == 0) return;
@@ -56,7 +56,7 @@ namespace app::dic::left
             pool.bytes.resize(current.length);
             ifstream.read((char*)(pool.bytes.data()), current.length);
             eng::dictionary::entry entry;
-            pool >> entry;
+            entry << pool;
 
             array<str> links;
             links += entry.title;
@@ -79,7 +79,7 @@ namespace app::dic::left
             sys::timing t5; quot.object.reset(selected.audio, links);
             sys::timing t6;
 
-            if (log) *log << entry.title + "<br>" +
+            log << doc::html::encoded(entry.title) + "<br>" 
             "<font color=#808080 face=\"monospace\">" +
             "time file  " + sys::format(t1-t0) + " sec<br>"+
             "time wiki  " + sys::format(t2-t1) + " sec<br>"+
@@ -137,7 +137,7 @@ namespace app::dic::left
             {
                 str link = undoes.back();
                 undoes.pop_back(); redoes += current.title;
-                if (const auto range = eng::vocabulary::
+                if (const auto range = vocabulary.
                     find_case_insensitive(link);
                     not range.empty()) {
                     clicked = range.offset();
@@ -149,7 +149,7 @@ namespace app::dic::left
             if (what == &redo && redoes.size() > 0) 
             {
                 str link = redoes.back(); redoes.pop_back();
-                if (const auto range = eng::vocabulary::
+                if (const auto range = vocabulary.
                     find_case_insensitive(link);
                     not range.empty()) {
                     clicked = range.offset();

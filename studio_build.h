@@ -36,12 +36,12 @@ namespace studio::build
                 try { compilation.get(); }
 
                 catch (const std::exception & e) {
-                    out.object << "<b><font color=#B00020>" "exception: " +
-                        str(e.what()) + "</font></b>";
+                    out.object << bold(red("exception: " +
+                        str(e.what())));
                 }
                 catch (...) {
-                    out.object << "<b><font color=#B00020>"
-                        "unidentified exception" "</font></b>";
+                    out.object << bold(red(
+                        "unidentified exception"));
                 }
             
                 timer.go (gui::time(), gui::time()); /// stop timer
@@ -59,6 +59,8 @@ namespace studio::build
 
             out.object.clear();
             err.object.clear();
+            out.object.limit = 1024*1024;
+            err.object.limit = 1024*1024;
 
             timer.go (gui::time::infinity,
                       gui::time::infinity);
@@ -96,21 +98,21 @@ namespace studio::build
                         }
                     }
 
-                    ::studio::dic::compile(resources);
+                    ::studio::dic::compile(resources, out.object);
 
                     data_updated |=
                     media::report::data_updated;
-                    out.object << (data_updated ?
-                        "<b><font color=#800000>" "data updated" "</font></b>":
-                        "<b><font color=#000080>"  "up to date"  "</font></b>");
+                    out.object << (data_updated?
+                      bold(yellow("data updated")):
+                        bold(blue("up to date")));
                 }
                 catch (std::exception & e) {
-                    out.object << "<b><font color=#B00020>" +
-                        str(e.what()) + "</font></b>";
+                    out.object << bold(red(
+                        e.what()));
                 }
                 catch (...) {
-                    out.object << "<b><font color=#B00020>"
-                        "unknown exception" "</font></b>";
+                    out.object << bold(red(
+                        "unknown exception"));
                 }
             });
         }

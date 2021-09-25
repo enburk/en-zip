@@ -95,6 +95,8 @@ struct Studio : gui::widget<Studio>
             if (build.data_updated)
             {
                 dic.reload();
+                one.reload();
+                two.reload();
             }
 
             for (int i=0; i<studios.size(); i++)

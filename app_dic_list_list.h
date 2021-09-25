@@ -16,11 +16,6 @@ namespace app::dic::list
 
         void select (int n)
         {
-            /// if (log) *log <<
-            /// "app::dict::list::list::select "
-            /// + std::to_string(n) + " "
-            /// + vocabulary[n].title;
-
             if (n < 0) return;
             if (n >= vocabulary.size()) return;
             origin.now = n - current.now;
@@ -94,10 +89,24 @@ namespace app::dic::list
             if (vocabulary.size() == 0) return;
 
             int l = words.size()-1;
-            if (l >= 2 && current.now == 0) { origin.now--; current.now++; }
-            if (l >= 2 && current.now == l) { origin.now++; current.now--; }
 
-            origin.now = clamp<int>(origin.now, -1, vocabulary.size() - l);
+            if (l >= 2 and current.now == 0) { origin.now--; current.now++; }
+            if (l >= 2 and current.now == l) { origin.now++; current.now--; }
+
+            if (origin.now > vocabulary.size()-l) { current.now +=
+                origin.now -(vocabulary.size()-l);
+                origin.now = vocabulary.size()-l;
+            }
+            if (origin.now < -1) { current.now +=
+                origin.now -(-1);
+                origin.now = -1;
+            }
+            if (current.now > l)
+                current.now = l;
+            if (current.now > vocabulary.size()-1 - origin.now)
+                current.now = vocabulary.size()-1 - origin.now;
+            if (current.now < 0)
+                current.now = 0;
 
             for (int i=0; i<words.size(); i++) words(i).on = false;
             for (int i=0; i<words.size(); i++)

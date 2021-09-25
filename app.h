@@ -5,14 +5,20 @@
 #include "medio_video.h"
 #include "eng_dictionary.h"
 
-inline auto & vocabulary = eng::vocabulary::data;
+struct optional_log
+{
+    optional_log() = default;
+    optional_log(gui::console& log) : log(&log) {}
+    void clear () { if (log) log->clear(); }
+    void operator << (str s) { if (log) *log << std::move(s); }
+    private: gui::console* log = nullptr;
+};
+
+namespace app::dic { optional_log log; }
+namespace app::one { optional_log log; }
+namespace app::two { optional_log log; }
+
+namespace app::dic { eng::vocabulary vocabulary; }
 
 inline std::map<str, array<sys::byte>> assets;
-
-namespace app::dic { inline gui::console* log = nullptr; }
-namespace app::one { inline gui::console* log = nullptr; }
-namespace app::two { inline gui::console* log = nullptr; }
-
-
-
 

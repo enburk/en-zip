@@ -4,6 +4,15 @@ namespace studio::two
 {
     struct area : gui::widget<area>
     {
+        gui::console log;
+
+        void on_change (void* what) override
+        {
+            if (what == &coord)
+            {
+                log.coord = coord.now.local();
+            }
+        }
     };
 
     struct studio : gui::widget<studio>
@@ -11,6 +20,8 @@ namespace studio::two
         app::two::app app;
         gui::area<area> area;
         gui::splitter splitter;
+
+        studio () { app::two::log = area.object.log; }
 
         void reload () { app.reload(); }
 

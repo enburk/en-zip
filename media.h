@@ -45,6 +45,8 @@ namespace media
         }
     };
 
+    struct Location { location location; bool new_one = false; };
+
     namespace report
     {
         gui::console * out = nullptr;

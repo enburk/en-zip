@@ -6,79 +6,85 @@ namespace app::dic
     {
         int clicked = 0;
 
-        array<str> excluded_links; bool it_is_a_title = false;
+        array<str> forbidden_links;
 
-        int link (gui::text::token & token, gui::text::line & line)
+        int link (gui::text::token& token, gui::text::line& line)
         {
             if (token.info != "")
-                if (auto range =
-                    eng::vocabulary::find_case_insensitive(token.info);
-                    not range.empty()) return range.offset();
+            if (auto index = vocabulary.index(token.info); index)
+                return token.info.size() > 1 ?
+                // ignore dots, commas etc.
+                    *index : -1;
 
-            int index = -1;
+            int pointed = -1;
             for (int i=0; i<line.size(); i++)
                 if (&line(i) == &token) {
-                    index = i; break; }
+                    pointed = i;
+                    break; }
 
-            if (index == -1) return eng::vocabulary::find("nonsense").offset();
+            if (pointed == -1) return *vocabulary.index("nonsense");
 
-            auto small = [](str s){ return eng::asciized(s).ascii_lowercased(); };
+            auto lower   = [](str s){ return eng::asciized(s).ascii_lowercased(); };
+            auto capital = [](str s){ str c = eng::asciized(s).upto(1);
+                return c >= "A" and c <= "Z"; };
 
-            str Longest; int L = 0; int I0 = 0; int I1 = 0;
-            str longest; int l = 0; int i0 = 0; int i1 = 0;
+            str Longest; int N = 0; int I0 = 0; int I1 = 0;
+            str longest; int n = 0; int i0 = 0; int i1 = 0;
 
-            for (int start=0; start<=index; start++)
+            for (int start=0; start<=pointed; start++)
             {
                 str Attempt = "";
                 str attempt = "";
 
-                for (int i=start; i<=index; i++) {
+                for (int i=start; i<=pointed; i++) {
+                    attempt += lower(line(i).text);
                     Attempt += line(i).text;
-                    attempt += small(line(i).text);
                 }
 
-                auto it = vocabulary.lower_bound(
-                     eng::vocabulary::entry{attempt},
-                     eng::vocabulary::less_case_insensitive);
+                int i = vocabulary.lower_bound(Attempt);
+                str S = vocabulary[i].title;
+                str s = lower(S);
 
-                if (it == vocabulary.end() or not small(
-                    it->title).starts_with(attempt))
+                if (not s.starts_with(attempt))
                     continue;
 
-                str S = it->title;
-                str s = small(S);
-                int d = (int)(it - vocabulary.begin());
-                bool Better = S == Attempt and Longest.size() < S.size();
-                bool better = s == attempt and longest.size() < s.size();
-                Better = Better and not excluded_links.contains(S);
-                better = better and not excluded_links.contains(S);
-                if (Better) { Longest = S; L = d; I0 = start; I1 = index; }
-                if (better) { longest = S; l = d; i0 = start; i1 = index; }
+                if (S != s) s = vocabulary.lower_bound(attempt);
 
+                bool Better = Attempt == S and Longest.size() < S.size();
+                bool better = attempt == s and longest.size() < s.size();
+                Better = Better and start == pointed or not forbidden_links.contains(S);
+                better = better and start == pointed or not forbidden_links.contains(s);
+                if (Better) { Longest = S; N = i; I0 = start; I1 = pointed; }
+                if (better) { longest = s; n = i; i0 = start; i1 = pointed; }
+
+                str Sentinel = Attempt;
                 str sentinel = attempt;
 
-                for (int i=index+1; i<line.size(); i++)
+                for (int t=pointed+1; t<line.size(); t++)
                 {
                     bool valid = false;
-                    str Candidate = Attempt + line(i).text;
-                    str candidate = attempt + small(line(i).text);
-                    for (auto jt=it; it != vocabulary.end(); jt++)
+                    str Candidate = Attempt + line(t).text;
+                    str candidate = attempt + lower(line(t).text);
+                    for (auto j=i; j < vocabulary.size(); j++)
                     {
-                        S = jt->title;
-                        s = small(S);
-                        int d = (int)(jt - vocabulary.begin());
-                        Better = S == Candidate and Longest.size() < S.size();
-                        better = s == candidate and longest.size() < s.size();
-                        Better = Better and not excluded_links.contains(S);
-                        better = better and not excluded_links.contains(S);
-                        if (Better) { Longest = S; L = d; I0 = start; I1 = i; }
-                        if (better) { longest = S; l = d; i0 = start; i1 = i; }
+                        S = vocabulary[j].title;
+                        s = lower(S);
+
+                        if (not forbidden_links.contains(S)) {
+                            bool Better = Candidate == S and Longest.size() < S.size();
+                            bool better = candidate == s and longest.size() < s.size();
+                            Better = Better and not forbidden_links.contains(S);
+                            better = better and not forbidden_links.contains(s);
+                            if (Better) { Longest = S; N = j; I1 = t; }
+                            if (better) { longest = s; n = j; i1 = t; }
+                        }
 
                         if (s.starts_with(candidate) or
                             candidate.starts_with(s))
                             valid = true;
 
-                        if (not s.starts_with(sentinel))
+                        if (not s.starts_with(Sentinel) and
+                            not s.starts_with(sentinel))
                             break;
                     }
                     if (not valid) break;
@@ -87,21 +93,19 @@ namespace app::dic
                 }
             }
 
-            str c = Longest.upto(1); bool capital =
-                c >= "A" and
-                c <= "Z";
+            if (Longest.size() <= longest.size()) {
+                Longest = longest; N = n;
+                I0 = i0; I1 = i1; }
 
-            if (Longest.size() <  longest.size() or
-               (Longest.size() == longest.size() and capital and it_is_a_title)) {
-                Longest = longest; L = l; I0 = i0; I1 = i1; }
-
-            if (Longest != "")
-            {
+            if (Longest.size() > 0) // remember it
                 for (int i=I0; i<=I1; i++)
-                    line(i).info = vocabulary[L].title;
+                    line(i).info =
+                    vocabulary[N].
+                    title;
 
-                return L;
-            }
+            if (Longest.size() > 1)
+            // ignore dots, commas etc.
+                return N;
 
             return -1;
         }
@@ -119,7 +123,6 @@ namespace app::dic
                 for (auto & token : line)
                 {
                     if (!token.coord.now.includes(lp)) continue;
-                    if (token.glyphs.size() < 2) continue;
                     return link(token, line);
                 }
             }
@@ -132,7 +135,9 @@ namespace app::dic
         {
             if (down and not sys::keyboard::ctrl)
             {
-                if (auto n = link(p); n >= 0)
+                if (auto n = link(p); n >= 0 and
+                    not forbidden_links.contains(
+                        vocabulary[n].title))
                 {
                     clicked = n;
                     notify();
@@ -146,13 +151,14 @@ namespace app::dic
         {
             if (not touch and not sys::keyboard::ctrl)
             {
-                int n = link(p); mouse_image =
-                    n == -1 ? "arrow":
-                    n == -2 ? "arrow":
-                    "hand";
-
+                int n = link(p);
                 str link = n >= 0 ?
                     vocabulary[n].title : "";
+                
+                mouse_image = n < 0 or
+                    forbidden_links.contains(link) ?
+                        "arrow": "hand";
+
 
                 for (auto & line : view.column)
                 {

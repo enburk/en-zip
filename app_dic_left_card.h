@@ -16,6 +16,8 @@ namespace app::dic::left
             array<idx> const& selected_video,
             array<str> const& links)
         {
+            text.forbidden_links = links;
+
             video.reset(selected_video, links);
 
             int l = gui::metrics::line::width;

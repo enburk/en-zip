@@ -28,7 +28,7 @@ namespace app::dic::audio
                 index_.comment.size() * 20
             };
 
-            text.excluded_links = links;
+            text.forbidden_links = links;
 
             if (index == index_) return; else
                 index =  index_;
@@ -71,7 +71,6 @@ namespace app::dic::audio
             if (false) std::ofstream("test.quot.html.txt")
                 << doc::html::print(s);
 
-            text.it_is_a_title = true;
             text.html = s;
         }
 
@@ -124,7 +123,7 @@ namespace app::dic::audio
             }
             catch (std::exception const& e) {
                 state = gui::media::state::failure;
-                if (log) *log << "audio failure: " +
+                log << "audio failure: " +
                     str(e.what());
             }
         }

@@ -3,7 +3,8 @@
 #include "app_dic_list.h"
 namespace app::dic
 {
-    struct app : gui::widget<app>
+    struct app:
+    widget<app>
     {
         left::area left;
         list::area list;
@@ -12,38 +13,33 @@ namespace app::dic
 
         app() { reload(); }
 
-        void reload ()
+        void reload () try
         {
-            dat::in::pool pool;
             std::filesystem::path dir = "../data";
-            if (!std::filesystem::exists(dir / "vocabulary.dat")) return;
-            pool.bytes = dat::in::bytes (dir / "vocabulary.dat").value();
-            dat::in::endianness = 0; // otherwise it would be reversed
-            dat::in::endianness = pool.get_int();
-            vocabulary.resize(pool.get_int());
-            for (auto & entry : vocabulary)
-                pool >> entry;
+
+            vocabulary = std::move(::eng::vocabulary(
+                    dir/"vocabulary.dat"));
 
             assets.clear();
-            if (std::filesystem::exists    (dir / "app_dict" / "assets.dat")) {
-                pool.bytes = dat::in::bytes(dir / "app_dict" / "assets.dat").value();
-                pool.offset = 0;
-                int nn = pool.get_int();
-                for (int i=0; i<nn; i++) {
-                    auto title = pool.get_string();
-                    auto bytes = pool.get_bytes();
-                    assets[title] = std::vector<sys::byte>(
-                        bytes.first,
-                        bytes.first +
-                        bytes.second);
-                }
+            dat::in::pool pool(dir/"app_dict"/"assets.dat");
+            int nn = pool.get_int();
+            for (int i=0; i<nn; i++) {
+                auto title = pool.get_string();
+                auto bytes = pool.get_bytes();
+                assets[title] = std::vector<sys::byte>(
+                    bytes.data,
+                    bytes.data +
+                    bytes.size);
             }
 
             media::reload();
-            left.current = eng::vocabulary::entry{};
+            left.current = ::eng::vocabulary::entry{};
             left.reload();
             list.reload();
         }
+        catch (std::exception & e) {
+            log << bold(red(
+                e.what())); }
 
         void on_change (void* what) override
         {

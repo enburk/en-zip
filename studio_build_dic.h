@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <execution>
 #include "data_out.h"
 #include "app_dic.h"
@@ -61,12 +61,17 @@ namespace studio::build
 
         eng::vocabulary vocabulary(dictionary);
 
+        array<str> apostros;
         array<str> unicodes;
         array<str> sortings;
         bool next_line = false;
 
         for (auto [i, entry] : enumerate(vocabulary.data))
         {
+            if (entry.title.contains("'") or
+                entry.title.contains((char*)(u8"’")))
+                apostros += entry.title;
+
             bool unicode = false;
             bool sorting = false;
             for (char c : entry.title)
@@ -93,15 +98,19 @@ namespace studio::build
         for (auto& e: vocabulary.data)
             ofstream << e.title << "\n";
 
-        ofstream = std::ofstream(dir/"vocabulary_unicode.txt");
+        ofstream = std::ofstream(dir/"vocabulary_apostros.txt");
+        for (auto& s: apostros)
+            ofstream << s << "\n";
+
+        ofstream = std::ofstream(dir/"vocabulary_unicodes.txt");
         for (auto& s: unicodes)
             ofstream << s << "\n";
 
-        ofstream = std::ofstream(dir/"vocabulary_sorting.txt");
+        ofstream = std::ofstream(dir/"vocabulary_sortings.txt");
         for (auto& s : sortings)
             ofstream << s << "\n";
 
-        ofstream = std::ofstream(dir/"vocabulary_problem.txt");
+        ofstream = std::ofstream(dir/"vocabulary_problems.txt");
 
         out << "dictionary analysis...";
 

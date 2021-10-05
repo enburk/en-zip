@@ -10,6 +10,9 @@
     <Filter Include="gui">
       <UniqueIdentifier>{deccef0b-0d96-4c8b-b6e3-7924e28ad4c2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{3b98f65a-90aa-4581-a37b-5424a82515a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eng.h" />
@@ -122,5 +125,24 @@
       <Filter>gui</Filter>
     </ClInclude>
     <ClInclude Include="eng_unittest.h" />
+    <ClInclude Include="studio_build_dic_.h" />
+    <ClInclude Include="..\ae\proto-studio\doc_html.h">
+      <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\doc_html_lexica.h">
+      <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\doc_html_syntax.h">
+      <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\doc_html_utils.h">
+      <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\doc_text_glyph.h">
+      <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\doc_text_text.h">
+      <Filter>doc</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

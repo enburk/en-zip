@@ -90,20 +90,13 @@ namespace media::data
                     throw std::out_of_range("media::out::file too big: "
                         + r.path.string());
 
-                auto time = std::filesystem::last_write_time(r.path);
-                // std::chrono::clock_cast<std::chrono::system_clock>(time);
-                // next code sometimes give one second error
-                // and causes unnecessary duplication:
-                auto sctp = std::chrono::time_point_cast<
-                    std::chrono::system_clock::duration>(
-                        time - decltype(time)::clock::now()
-                        + std::chrono::system_clock::now());
-                std::time_t ctime = std::chrono::system_clock::to_time_t(sctp);
+                auto ftime = std::filesystem::last_write_time(r.path);
+                auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
+                std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
                 std::stringstream stringstream;
                 stringstream << std::put_time(std::gmtime(&ctime), "%Y/%m/%d %T");
                 str stime = stringstream.str();
                 str ssize = std::to_string(size);
-
                 str record = ssize.right_aligned(10) + " # " + stime + " # " + r.id;
 
                 auto it = content.find(record);

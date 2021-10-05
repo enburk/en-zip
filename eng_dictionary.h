@@ -160,21 +160,5 @@ namespace eng
                 hashmap[data[i].title] = i;
             }
         }
-
-
-
-        static auto less (const entry & a, const entry & b)
-        { return eng::less(a.title, b.title); };
-
-        static auto less_case_insensitive (const entry & a, const entry & b)
-        { return eng::less_case_insensitive(a.title, b.title); };
-
-        auto find_case_insensitive (str s)
-        {
-            auto e = eng::vocabulary::entry{s};
-            auto r1 = data.equal_range(e, less); if (r1) return r1;
-            auto r2 = data.equal_range(e, less_case_insensitive);
-            return r2;
-        }
     };
 }

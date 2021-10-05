@@ -91,14 +91,14 @@ namespace media::scan
                 resource.id = entry.stem().string() +
                 resource.id + entry.extension().string();
 
-                *report::out << "scan " + entry.string();
+                if (false) *report::out << "scan " + entry.string();
                 str ext = entry.extension().string();
                 ext = ext.ascii_lowercased();
 
                 if (audio.contains(ext)) resource.kind = "audio"; else
                 if (video.contains(ext)) resource.kind = "video"; else
-                if (entry.filename() != "!credit.txt")
                 {
+                    if (entry.filename() != "!credit.txt")
                     identified[entry] |= false;
                     continue;
                 }
@@ -169,13 +169,6 @@ namespace media::scan
                 }
 
                 if (title != "") resource.title = title;
-                if (title != "") resource.entries += title;
-
-                if (false) *report::out << 
-                "<font color=#800080>" + resource.title + "</font>" +
-                "<font color=#000080>" + "[" + str(resource.entries, "][") + "]" + "</font>" +
-                "<font color=#008000>" + "{" + str(resource.options, "}{") + "}" + "</font>" ;
-
                 report::id2path[resource.id] += entry; // check for same id
                 resources += resource;
             }

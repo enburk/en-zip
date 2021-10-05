@@ -4,13 +4,13 @@
 
 namespace eng
 {
-    inline const std::map<str,str> ligatures
+    const std::vector<std::pair<str,str>> ligatures
     {
         { (char*)u8"Æ", "AE" }, { (char*)u8"æ", "ae" },
         { (char*)u8"Œ", "OE" }, { (char*)u8"œ", "oe" },
         { (char*)u8"Ĳ", "IJ" }, { (char*)u8"ĳ", "ij" },
     };
-    inline const std::map<str,str> diacritics
+    const std::vector<std::pair<str,str>> diacritics
     {
         { (char*)u8"À", "A" }, { (char*)u8"à", "a" },
         { (char*)u8"Á", "A" }, { (char*)u8"á", "a" },
@@ -42,6 +42,18 @@ namespace eng
         { (char*)u8"Ý", "Y" }, { (char*)u8"ý", "y" },
     };
 
+    auto ligature (str const& s) {
+        auto it = std::ranges::find(
+        ligatures, s, &std::pair<str,str>::first);
+        return it != ligatures.end() and it->first == s ?
+        std::optional<decltype(it)>(it) : std::nullopt; };
+
+    auto diacritic (str const& s) {
+        auto it = std::ranges::find(
+        diacritics, s, &std::pair<str,str>::first);
+        return it != diacritics.end() and it->first == s ?
+        std::optional<decltype(it)>(it) : std::nullopt; };
+
     // https://www.niso.org/sites/default/files/2017-08/tr03.pdf
     // Guidelines for Alphabetical Arrangement of Letters
     // and Sorting of Numerals and Other Symbols
@@ -55,16 +67,20 @@ namespace eng
 
         while (true)
         {
-            if (i1 == s1.end() && i2 == s2.end()) return accent; 
-            if (i1 == s1.end() && i2 != s2.end()) return -1; 
-            if (i1 != s1.end() && i2 == s2.end()) return 1; 
+            bool end1 = i1 == s1.end() and ligature_remain[0] == "";
+            bool end2 = i2 == s2.end() and ligature_remain[1] == "";
 
-            char cc[2]; str ss[2];
+            if (end1 and end2) return accent; 
+            if (end1 and not end2) return -1; 
+            if (end2 and not end1) return  1; 
 
-            for (int n=0; n<2; n++)
+            char cc[2]; str ss[2]; char weight[2]; 
+
+            for (int n: {0, 1})
             {
                 char & c = cc[n];
                 str  & s = ss[n];
+                char & w = weight[n];
                 auto & i = n == 0 ? i1 : i2;
 
                 if (ligature_remain[n] != "") { c =
@@ -79,21 +95,37 @@ namespace eng
                 if ((static_cast<uint8_t>(c) & 0b11110000) == 0b11110000) { s += *i++;
                 }}}
 
-                if ('a' <= c && c <= 'z') {}
-                else
-                if ('A' <= c && c <= 'Z') { c = c - 'A' + 'a'; }
-                else
-                if (auto it = ligatures.find(s); it != ligatures.end())
-                {
-                    s = it->first;
-                    c = it->second[0];
-                    ligature_remain[n] = it->second.from(1);
+                // A < Ä < a < ä
+                // AE < Æ < ÄË < ae < æ < äë
+
+                if ('a' <= c && c <= 'z') {
+                    w = 100;
                 }
                 else
-                if (auto it = diacritics.find(s); it != diacritics.end())
+                if ('A' <= c && c <= 'Z') {
+                    c = c - 'A' + 'a';
+                    w = 0;
+                }
+                else
+                if (auto it = ligature(s); it)
                 {
-                    s = it->first;
-                    c = it->second[0];
+                    w = 101;
+                    c = (*it)->second[0];
+                    ligature_remain[n] = (*it)->second.from(1);
+                    if ('A' <= c && c <= 'Z') {
+                        c = c - 'A' + 'a';
+                        w = 1;
+                    }
+                }
+                else
+                if (auto it = diacritic(s); it)
+                {
+                    w = 102;
+                    c = (*it)->second[0];
+                    if ('A' <= c && c <= 'Z') {
+                        c = c - 'A' + 'a';
+                        w = 2;
+                    }
                 }
             }
 
@@ -104,8 +136,8 @@ namespace eng
             if (c1 > c2) return  1;
 
             if (accent == 0) accent = 
-                ss[0] < ss[1] ? -1 :
-                ss[0] > ss[1] ?  1 : 0;
+            weight[0] < weight[1] ? -1 :
+            weight[0] > weight[1] ?  1 : 0;
         }
     }
 
@@ -116,13 +148,12 @@ namespace eng
         {
             char c = *i++; str g = c;
             uint8_t u = static_cast<uint8_t>(c);
-            if ((u & 0b10000000) == 0b00000000) { *j++ = c; continue; }
-            if ((u & 0b11000000) == 0b11000000) { if (i == s.end()) break; g += *i++;
-            if ((u & 0b11100000) == 0b11100000) { if (i == s.end()) break; g += *i++;
-            if ((u & 0b11110000) == 0b11110000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11000000) == 0b11000000) { g += *i++;
+            if ((u & 0b11100000) == 0b11100000) { g += *i++;
+            if ((u & 0b11110000) == 0b11110000) { g += *i++;
             }}}
-            if (auto k = ligatures .find(g); k != ligatures .end()) g = k->second; else
-            if (auto k = diacritics.find(g); k != diacritics.end()) g = k->second; else
+            if (auto k = ligature (g); k) g = (*k)->second; else
+            if (auto k = diacritic(g); k) g = (*k)->second; else
             {}
             for (char c : g) *j++ = c;
         }
@@ -130,18 +161,55 @@ namespace eng
         return s;
     }
 
-    auto less = [](const str & a, const str & b) {
+    str lowercased (str s)
+    {
+        /**/ auto j = s.begin();
+        for (auto i = s.begin(); i != s.end(); )
+        {
+            char c = *i++; str g = c;
+            uint8_t u = static_cast<uint8_t>(c);
+            if ((u & 0b11000000) == 0b11000000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11100000) == 0b11100000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11110000) == 0b11110000) { if (i == s.end()) break; g += *i++;
+            }}}
+            if ('a' <= c && c <= 'z') {} else
+            if ('A' <= c && c <= 'Z') {
+                c = c - 'A' + 'a';
+                g[0] = c;
+            }
+            else
+            if (auto k = ligature(g); k)
+            {
+                auto n = (*k) - ligatures.begin();
+                if ((n % 2) == 0) g = ligatures[n+1].first;
+            }
+            else
+            if (auto k = diacritic(g); k)
+            {
+                auto n = (*k) - diacritics.begin();
+                if ((n % 2) == 0) g = diacritics[n+1].first;
+            }
+            for (char c : g) *j++ = c;
+        }
+        s.erase(j, s.end());
+        return s;
+    }
+
+    auto less = []
+    (str const& a, str const& b) {
         return compare(a, b) < 0; };
 
-    auto less_case_insensitive = [](const str & a, const str & b) {
+    auto less_case_insensitive = []
+    (str const& a, str const& b) {
         return compare(
-            asciized(a).ascii_lowercased(),
-            asciized(b).ascii_lowercased())
+            lowercased(a),
+            lowercased(b))
             < 0; };
 
-    auto equal_case_insensitive = [](const str & a, const str & b) {
+    auto equal_case_insensitive = []
+    (str const& a, str const& b) {
         return compare(
-            asciized(a).ascii_lowercased(),
-            asciized(b).ascii_lowercased())
+            lowercased(a),
+            lowercased(b))
             == 0; };
 }

@@ -2,8 +2,8 @@
 #include "app.h"
 #include <future>
 #include "media_scan.h"
-#include "studio_app_dic.h"
 #include "studio_build_dic.h"
+#include "studio_build_dic_.h"
 namespace studio::build
 {
     using namespace std::literals::chrono_literals;
@@ -74,6 +74,10 @@ namespace studio::build
                     if (dictionary_update(out.object, err.object))
                         data_updated = true;
 
+                    eng::vocabulary vocabulary("../data/vocabulary.dat");
+                    if (not eng::unittest::proceed(vocabulary, out.object))
+                        return;
+
                     setlocale(LC_ALL,"en_US.utf8");
 
                     media::report::out = &out.object;
@@ -98,7 +102,7 @@ namespace studio::build
                         }
                     }
 
-                    ::studio::dic::compile(resources, out.object);
+                    dic::compile(resources, out.object);
 
                     data_updated |=
                     media::report::data_updated;

@@ -67,7 +67,8 @@ namespace app::dic::left
             str debug = "";///"<br> n = " + std::to_string(n);
             str html = wiki2html(entry, links) + debug;
             if (false) std::ofstream("test.html") << html;
-            if (false) std::ofstream("test.html.txt") << doc::html::print(html);
+            if (false) std::ofstream("test.html.txt") <<
+                doc::html::print(html);
 
             sys::timing t2;
             card.object.text.html = html;
@@ -136,25 +137,23 @@ namespace app::dic::left
             if (what == &undo && undoes.size() > 0) 
             {
                 str link = undoes.back();
-                undoes.pop_back(); redoes += current.title;
-                if (const auto range = vocabulary.
-                    find_case_insensitive(link);
-                    not range.empty()) {
-                    clicked = range.offset();
-                    notify();
-                    undoes.pop_back();
-                    refresh();
-                }
+                undoes.pop_back();
+                redoes += current.title;
+                auto index = vocabulary.index(link);
+                if (not index) { log << "undoes: not found: " + link; return; }
+                clicked = *index;
+                notify();
+                undoes.pop_back();
+                refresh();
             }
             if (what == &redo && redoes.size() > 0) 
             {
-                str link = redoes.back(); redoes.pop_back();
-                if (const auto range = vocabulary.
-                    find_case_insensitive(link);
-                    not range.empty()) {
-                    clicked = range.offset();
-                    notify();
-                }
+                str link = redoes.back();
+                redoes.pop_back();
+                auto index = vocabulary.index(link);
+                if (not index) { log << "redoes: not found: " + link; return; }
+                clicked = *index;
+                notify();
             }
         }
     };

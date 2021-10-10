@@ -12,14 +12,17 @@ namespace eng::parser
         str text;
     };
 
-    array<match> matches (vocabulary& voc, array<token>& tokens)
+    generator<match> matches (vocabulary& voc, array<token>& tokens)
     {
-        array<match> matches; matches.reserve(2*tokens.size());
+        auto upper = [](token const& t){ return t.text; };
+        auto lower = [](token const& t){ return
+            t.kind == "Text" or t.text == "I" ?
+            t.text : lowercased(t.text); };
 
         for (int t=0; t<tokens.size(); t++)
         {
-            str S = tokens[t].text;
-            str s = lowercased(S);
+            str S = upper(tokens[t]); if (S == " ") continue;
+            str s = lower(tokens[t]);
             int tt = 1;
 
             int i = voc.lower_bound(S);
@@ -28,25 +31,47 @@ namespace eng::parser
 
             while (true)
             {
-                if (Title == S) matches += {t, tt, i, S}; if (S != s)
-                if (Title == s) matches += {t, tt, i, s};
+                if (Title == s or
+                    Title == S)
+                {
+                    co_yield {t, tt, i, Title};
 
-                if (less(s, title))
+                    if (S != s)
+                    {
+                        do
+                        {
+                            i++;
+                            if (i >= voc.size()) break;
+                            Title = voc[i].title;
+                            title = lowercased(Title);
+                            if (Title == s)
+                                co_yield {t, tt, i, Title};
+                        }
+                        while (less(title, s));
+                    }
+                }
+
+                if ((s == title) or
+                    (s.size() < title.size() and
+                        less(s, title)))
                 {
                     if (t+tt >= tokens.size()) break;
-                    str text = tokens[t+tt].text;
-                    s += lowercased(text);
-                    S += text;
-                    tt++;
-                    if (text == " ")
+                    if (tokens[t+tt].text == " ")
                     {
-                        if (t+tt >= tokens.size()) break;
-                        text = tokens[t+tt].text;
-                        s += lowercased(text);
-                        S += text;
                         tt++;
+                        if (t+tt >= tokens.size()) break;
+                        S += " ";
+                        s += " ";
                     }
+                    S += upper(tokens[t+tt]);
+                    s += lower(tokens[t+tt]);
+                    tt++;
                     continue;
+                }
+                else if (Title.size() <= 4)
+                {
+                    i = voc.lower_bound(S);
+                    Title = voc[i].title;
                 }
                 else do
                 {
@@ -57,12 +82,33 @@ namespace eng::parser
                 while (less(Title, S));
 
                 title = lowercased(Title);
-                if (not title.starts_with(s))
+                if (not title.starts_with(s)
+                    or i >= voc.size())
                     break;
             }
         }
+    }
 
-        return matches;
+    void proceed (vocabulary& voc, array<token>& tokens, array<str>& excludes)
+    {
+        match best {-1, 0};
+
+        for (auto m: matches(voc, tokens))
+        {
+            if (best.token != m.token)
+                for (int t=0; t<best.tokens; t++)
+                    tokens[best.token + t].info =
+                        best.text;
+
+            if (best.token == m.token or
+                best.token + best.tokens <= m.token)
+                if (not excludes.contains(m.text))
+                    best = m;
+        }
+
+        for (int t=0; t<best.tokens; t++)
+            tokens[best.token + t].info =
+                best.text;
     }
 
     array<str> entries (eng::vocabulary& voc, str input)
@@ -128,15 +174,46 @@ namespace eng::parser
         return Entries;
     }
 
-    str embolden (str s, array<str> entries)
+    str embolden (str input, array<str> entries)
     {
-        entries.sort([](auto a, auto b){
-            return a.size() > b.size(); });
+        std::ranges::sort(entries, less);
 
-        for (auto entry : entries)
-            s.replace_all(entry, str(
-                "<b>" + entry + "</b>"));
+        dictionary dic;
+        dic.data.reserve(entries.size()); for (auto& e : entries)
+        dic.data += dictionary::entry{e};
+        vocabulary voc{dic};
 
-        return s;
+        array<token> all;
+        array<token> texts;
+        std::map<int, int> tokenmap;
+        auto text = doc::text::text(input); // save temporary
+        for (auto t: doc::html::lexica::parse(text))
+        {
+            if (t.kind == "text")
+            {
+                if (t.text.starts_with("_")) {
+                    t.text.erase(0);
+                    t.kind = "Text";
+                }
+                tokenmap[texts.size()] = all.size();
+                texts += t;
+            }
+            all += t;
+        }
+
+        for (auto m: matches(voc, texts))
+        {
+            for (int i=0; i<m.tokens; i++)
+            {
+                int j = tokenmap[m.token + i];
+                all[j].text = "<b>" + all[j].text + "</b>";
+            }
+        }
+
+        str output;
+        for (auto t: all)
+            output += t.text;
+
+        return output;
     }
 }

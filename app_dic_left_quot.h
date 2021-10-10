@@ -100,10 +100,6 @@ namespace app::dic::left
                 players(current).state == state::finished) 
                 players(current).show();
 
-            if (speaker.state == gui::media::state::vacant)
-                speaker.load(assets["speaker.128x096"]
-                .from(0));
-
             if (thread.joinable())
                 thread.join();
 
@@ -156,6 +152,10 @@ namespace app::dic::left
                 prev    .coord = XYWH(0*w, y+3*h, 1*w, h);
                 next    .coord = XYWH(1*w, y+3*h, 1*w, h);
                 players .coord = XYXY(2*w+d, 0, W-d-d, H);
+
+                if (speaker.state == gui::media::state::vacant)
+                    speaker.load(assets["speaker.128x096"]
+                    .from(0));
 
                 for (auto & player : players)
                     player.coord = players.

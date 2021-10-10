@@ -28,10 +28,11 @@ using gui::widget;
 str bold   (str s) { return "<b>" + s + "</b>"; }
 str italic (str s) { return "<i>" + s + "</i>"; }
 str blue   (str s) { return "<font color=#000080>" + s + "</font>"; }
+str gray   (str s) { return "<font color=#505050>" + s + "</font>"; }
 str green  (str s) { return "<font color=#008000>" + s + "</font>"; }
-str yellow (str s) { return "<font color=#BF360C>" + s + "</font>"; }
-str red    (str s) { return "<font color=#B00020>" + s + "</font>"; }
 str purple (str s) { return "<font color=#800080>" + s + "</font>"; }
+str red    (str s) { return "<font color=#B00020>" + s + "</font>"; }
+str yellow (str s) { return "<font color=#BF360C>" + s + "</font>"; }
 
 using namespace std::string_view_literals;
 constexpr std::string_view ellipsis = "\xE2" "\x80" "\xA6"sv; // …

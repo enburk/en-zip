@@ -46,18 +46,22 @@ namespace app::dic
                 s.replace_all("&", "&amp;");
         }
 
-        str html = "<h4>" + entry.title + "</h4>";
+        str html;
+        html.reserve(16*1024);
+        html += "<h4>" + entry.title + "</h4>";
 
         str gap = "<div style=\"line-height: 50%\"><br></div>";
 
-        for (const auto & topic : entry.topics)
+        for (auto& topic : entry.topics)
         {
             if (eng::lexical_items.find(topic.header) !=
                 eng::lexical_items.end())
             {
-                html += "<br><b><font color=#008000>"
-                        + topic.header + "</font></b> &nbsp; "
-                        + topic.forms + "<br>";
+                if (topic.forms.size() > 100)
+                    topic.forms.replace_all(";", ";<br>");
+
+                html += "<br>" + green(bold(topic.header)) +
+                    " &nbsp; " + bold_italic(topic.forms) + "<br>";
 
                 int n1 = 1, n2 = 1;
 
@@ -75,15 +79,19 @@ namespace app::dic
                     if (prefix.starts_with("#: " )) { kind = "lc";  s = s.from(3); } else
                     if (prefix.starts_with("# "  )) { kind = "l";   s = s.from(2); }
 
-                    if (kind == "l" and s.starts_with("(")) {
-                        str s1, s2; s.split_by(")", s1, s2, str::delimiter::to_the_left);
-                        if (s1 !="" and s2 != "")// and not s1.from(1).contains("("))
-                            s = "<font color=#505050>" + s1 + "</font>" + s2;
-                    }
-                    if (kind == "l" and s.ends_with("]")) {
-                        str s1, s2; s.split_by("[", s1, s2, str::delimiter::to_the_right);
-                        if (s1 !="" and s2 != "")// and not s2.from(1).contains("["))
-                            s = s1 + "<font color=#505050>" + s2 + "</font>";
+                    if (kind == "l" or
+                        kind == "ll")
+                    {
+                        if (s.starts_with("(")) {
+                            str s1, s2; s.split_by(")", s1, s2, str::delimiter::to_the_left);
+                            if (s1 !="" and s2 != "" and not s1.from(1).contains("("))
+                                s = gray(s1) + s2;
+                        }
+                        if (s.ends_with("]</small>")) {
+                            str s1, s2; s.split_by("<small>[", s1, s2, str::delimiter::to_the_right);
+                            if (s1 !="" and s2 != "" and not s2.from(8).contains("["))
+                                s = s1 + gray(s2);
+                        }
                     }
 
                     if (s.starts_with("synonyms: "   ) or s.starts_with("synonym: "    ) or
@@ -97,9 +105,8 @@ namespace app::dic
                         s.starts_with("hyphenation: ") or s.starts_with("Hyphenation: ") or
                         s.starts_with("coordinate terms: ") or
                         s.starts_with("coordinate term: ")) {
-                        str l, r; s.split_by(":", l, r);
-                        s = "<font color=#008000><i>" + l +
-                            ":" + "</i></font>" + r; }
+                            str l, r; s.split_by(":", l, r);
+                            s = green(italic(l + ":")) + r; }
 
                     if (kind == "llc") html += gap + "<div style=\"margin-left: 3em\">"; else
                     if (kind == "lcc") html += gap + "<div style=\"margin-left: 3em\">"; else
@@ -110,11 +117,8 @@ namespace app::dic
                     if (kind == "ll" ) html += gap + std::to_string(n2++) + ". "; else
                     if (kind == "l"  ) html += gap + std::to_string(n1++) + ". ";
                     if (kind == "l"  ) n2 = 1;
-
-                    // for (auto& link : links) s.replace_all(
-                    //     link, "<b>" + link + "</b>");
                     
-                    html += s + "<br></div>";
+                    html += bold_italic(s) + "<br></div>";
                 }
             }
             else
@@ -129,9 +133,9 @@ namespace app::dic
                     topic.content.size() > 1 ?
                     "<br>" : "";
 
+                html += "<br>";
                 html += "<div style=\"margin-left: 1em\">";
-                html += "<br><i><font color=#008000>"
-                     + header+":"+"</font></i> "+br;
+                html += green(italic(header + ": ")) + br;
 
                 for (str s : topic.content)
                 {
@@ -153,13 +157,9 @@ namespace app::dic
                         s.starts_with("hyphenation: ") or
                         s.starts_with("Hyphenation: ")) {
                         str l, r; s.split_by(":", l, r);
-                        s = "<font color=#008000><i>" + l +
-                            ":" + "</i></font>" + r; }
-
-                    // for (auto& link : links) s.replace_all(
-                    //     link, "<b>" + link + "</b>");
+                        s = green(italic(l + ":")) + r; }
                     
-                    html += s + "<br>";
+                    html += bold_italic(s) + "<br>";
                 }
 
                 html += "</div>";
@@ -172,9 +172,9 @@ namespace app::dic
                 if (header.size() > 0)
                     header[0] = header[0] - 'a' + 'A';
 
+                html += "<br>";
                 html += "<div style=\"margin-left: 1em\">";
-                html += "<br><i><font color=#008000>"
-                     + header + ":</font></i> ";
+                html += green(italic(header + ": "));
 
                 if (topic.content.size() >= 10)
                 {
@@ -188,13 +188,10 @@ namespace app::dic
                         if (ss != "")
                             ss += " ";
 
-                        if (not s.contains("("))    
-                        ss += "<a href=\"" + s + "\">"
-                            + s + "</a>";
-                        else ss += s;
+                        ss += s;
                     }
 
-                    html += ss;
+                    html += bold_italic(ss);
                     html += "<br>";
                 }
                 else
@@ -203,14 +200,14 @@ namespace app::dic
                         html += "<br>";
 
                     for (str s : topic.content)
-                        html += "<a href=\"" + s + "\">"
-                            + s + "</a>" + "<br>";
+                        html += bold_italic(s) +
+                            "<br>";
                 }
 
                 html += "</div>";
             }
         }
 
-        return bold_italic(html);
+        return html;
     }
 }

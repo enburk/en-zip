@@ -4,6 +4,7 @@
 #include "medio_audio.h"
 #include "medio_video.h"
 #include "eng_dictionary.h"
+#include "eng_parser.h"
 
 struct optional_log
 {

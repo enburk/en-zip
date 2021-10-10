@@ -46,8 +46,16 @@ namespace app::dic::audio
             c = media::canonical(c);
             i = media::canonical(i);
 
+            if (c != "") {
+                c.replace_all(", read by", "<br>read by");
+                c.replace_all(", narrated by", "<br>narrated by");
+                c = "<div style=\"line-height: 20%\"><br></div>" + c;
+            }
+
             while (s.ends_with("<br>"))
                 s.resize(s.size()-4);
+
+            s = eng::parser::embolden(s, links);
 
             str date;
             for (str option : index.options)
@@ -64,8 +72,6 @@ namespace app::dic::audio
                 "<div style=\"margin-left: 3em\">"
                 "<font color=#A0A0A0 size=\"90%\">" + c +
                 "</font></div>";
-
-            //s = eng::parser::embolden(s, text.excluded_links);
 
             if (false) std::ofstream("test.quot.html") << s;
             if (false) std::ofstream("test.quot.html.txt")

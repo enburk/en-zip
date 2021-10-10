@@ -10,104 +10,27 @@ namespace app::dic
 
         int link (gui::text::token& token, gui::text::line& line)
         {
-            if (token.info != "")
-            if (auto index = vocabulary.index(token.info); index)
-                return token.info.size() > 1 ?
-                // ignore dots, commas etc.
-                    *index : -1;
+            if (token.info.size() == 1)
+            // ignore dots, commas etc.
+                return -1;
 
-            int pointed = -1;
-            for (int i=0; i<line.size(); i++)
-                if (&line(i) == &token) {
-                    pointed = i;
-                    break; }
+            if (token.info != "") {
+                auto index = vocabulary.index(token.info);
+                return index ? *index : -1; }
 
-            if (pointed == -1) return *vocabulary.index("nonsense");
+            array<doc::text::token> tokens; tokens.reserve(line.size());
+            for (auto& t: line) tokens += {t.text,
+                t.info != "" ? "Text" : ""};
 
-            auto lower   = [](str s){ return eng::asciized(s).ascii_lowercased(); };
-            auto capital = [](str s){ str c = eng::asciized(s).upto(1);
-                return c >= "A" and c <= "Z"; };
+            eng::parser::proceed(vocabulary, tokens, forbidden_links);
 
-            str Longest; int N = 0; int I0 = 0; int I1 = 0;
-            str longest; int n = 0; int i0 = 0; int i1 = 0;
-
-            for (int start=0; start<=pointed; start++)
-            {
-                str Attempt = "";
-                str attempt = "";
-
-                for (int i=start; i<=pointed; i++) {
-                    attempt += lower(line(i).text);
-                    Attempt += line(i).text;
-                }
-
-                int i = vocabulary.lower_bound(Attempt);
-                str S = vocabulary[i].title;
-                str s = lower(S);
-
-                if (not s.starts_with(attempt))
-                    continue;
-
-                if (S != s) s = vocabulary.lower_bound(attempt);
-
-                bool Better = Attempt == S and Longest.size() < S.size();
-                bool better = attempt == s and longest.size() < s.size();
-                Better = Better and start == pointed or not forbidden_links.contains(S);
-                better = better and start == pointed or not forbidden_links.contains(s);
-                if (Better) { Longest = S; N = i; I0 = start; I1 = pointed; }
-                if (better) { longest = s; n = i; i0 = start; i1 = pointed; }
-
-                str Sentinel = Attempt;
-                str sentinel = attempt;
-
-                for (int t=pointed+1; t<line.size(); t++)
-                {
-                    bool valid = false;
-                    str Candidate = Attempt + line(t).text;
-                    str candidate = attempt + lower(line(t).text);
-                    for (auto j=i; j < vocabulary.size(); j++)
-                    {
-                        S = vocabulary[j].title;
-                        s = lower(S);
-
-                        if (not forbidden_links.contains(S)) {
-                            bool Better = Candidate == S and Longest.size() < S.size();
-                            bool better = candidate == s and longest.size() < s.size();
-                            Better = Better and not forbidden_links.contains(S);
-                            better = better and not forbidden_links.contains(s);
-                            if (Better) { Longest = S; N = j; I1 = t; }
-                            if (better) { longest = s; n = j; i1 = t; }
-                        }
-
-                        if (s.starts_with(candidate) or
-                            candidate.starts_with(s))
-                            valid = true;
-
-                        if (not s.starts_with(Sentinel) and
-                            not s.starts_with(sentinel))
-                            break;
-                    }
-                    if (not valid) break;
-                    Attempt = Candidate;
-                    attempt = candidate;
-                }
+            for (int i=0; i<line.size(); i++) {
+                str s = tokens[i].info;
+                if (s == "") s = ".";
+                line(i).info = s;
             }
 
-            if (Longest.size() <= longest.size()) {
-                Longest = longest; N = n;
-                I0 = i0; I1 = i1; }
-
-            if (Longest.size() > 0) // remember it
-                for (int i=I0; i<=I1; i++)
-                    line(i).info =
-                    vocabulary[N].
-                    title;
-
-            if (Longest.size() > 1)
-            // ignore dots, commas etc.
-                return N;
-
-            return -1;
+            return link(token, line);
         }
 
         int link (XY p)

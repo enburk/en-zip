@@ -138,7 +138,9 @@ namespace eng::unittest
             oops(entries((char*)(u8"æsthete"))) {(char*)(u8"æsthete")}; 
             oops(entries((char*)(u8"æsteem"))) {(char*)(u8"æsteem")}; 
             oops(entries((char*)(u8"Æsop"))) {(char*)(u8"Æsop")}; 
-            
+            oops(entries("Cat and cat")) {"and, cat"}; 
+            oops(entries("Cat and Cat")) {"and, cat"}; 
+            oops(entries("Cat and _Cat")) {"and, Cat, cat"}; 
             #pragma warning(pop)
         }
         test("");

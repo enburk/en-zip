@@ -17,6 +17,14 @@ namespace eng::unittest
             oops(out(eng::less("A", "A"))) {"0"};
             oops(out(eng::less("a", "A"))) {"0"};
 
+            oops(out(eng::less("911", "911" ))) {"0"};
+            oops(out(eng::less("911", "911s"))) {"1"};
+            oops(out(eng::less("911", "912" ))) {"1"};
+
+            oops(out(eng::less("?",  "?!" ))) {"1"};
+            oops(out(eng::less("?!", "??" ))) {"1"};
+            oops(out(eng::less("??", "???"))) {"1"};
+
             str _A_ = (char*)(u8"Ä");
             str _a_ = (char*)(u8"ä");
 

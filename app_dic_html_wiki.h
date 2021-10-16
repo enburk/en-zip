@@ -58,7 +58,25 @@ namespace app::dic
                 eng::lexical_items.end())
             {
                 if (topic.forms.size() > 100)
-                    topic.forms.replace_all(";", ";<br>");
+                {
+                    if (auto ff = topic.forms.split_by(";"); ff.size() > 1)
+                    {
+                        bool split = true;
+                        for (str f: ff) if (f.size() < 20) split = false;
+                        if (split)
+                        {
+                            topic.forms = ""; for (str f: ff)
+                            {
+                                if (topic.forms != "")
+                                    topic.forms += ";<br>"
+                                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+                                topic.forms += f;
+                            }
+                        }
+                    }
+                }
 
                 html += "<br>" + green(bold(topic.header)) +
                     " &nbsp; " + bold_italic(topic.forms) + "<br>";
@@ -85,12 +103,12 @@ namespace app::dic
                         if (s.starts_with("(")) {
                             str s1, s2; s.split_by(")", s1, s2, str::delimiter::to_the_left);
                             if (s1 !="" and s2 != "" and not s1.from(1).contains("("))
-                                s = gray(s1) + s2;
+                                s = dark(s1) + s2;
                         }
                         if (s.ends_with("]</small>")) {
                             str s1, s2; s.split_by("<small>[", s1, s2, str::delimiter::to_the_right);
                             if (s1 !="" and s2 != "" and not s2.from(8).contains("["))
-                                s = s1 + gray(s2);
+                                s = s1 + dark(s2);
                         }
                     }
 

@@ -12,6 +12,7 @@ namespace app::dic::audio
         gui::property<gui::time> timer;
         std::atomic<gui::media::state> state;
         gui::time start, stay;
+        bool muted = true;
 
         player ()
         {
@@ -36,62 +37,66 @@ namespace app::dic::audio
             stop();
 
             state = gui::media::state::loading;
-
-            str s = index.title;
-            str c = index.credit;
-            str i = index.comment;
-
-            str title = media::canonical(index.title);
-            s = media::canonical(s);
-            c = media::canonical(c);
-            i = media::canonical(i);
-
-            if (c != "") {
-                c.replace_all(", read by", "<br>read by");
-                c.replace_all(", narrated by", "<br>narrated by");
-                c = "<div style=\"line-height: 20%\"><br></div>" + c;
-            }
-
-            while (s.ends_with("<br>"))
-                s.resize(s.size()-4);
-
-            s = eng::parser::embolden(s, links);
-
-            str date;
-            for (str option : index.options)
-                if (option.starts_with("date "))
-                    date = option.from(5);
-
-            if (date != "") c += ", <i>" + date + "</i>";
-
-            if (i != "") s += "<br><br>"
-                "<font color=#808080><i>" + i +
-                "</i></font>";
-
-            s +="<br>"
-                "<div style=\"margin-left: 3em\">"
-                "<font color=#A0A0A0 size=\"90%\">" + c +
-                "</font></div>";
-
-            if (false) std::ofstream("test.quot.html") << s;
-            if (false) std::ofstream("test.quot.html.txt")
-                << doc::html::print(s);
-
-            text.html = s;
         }
 
         void load (std::mutex& mutex, std::atomic<bool>& cancel)
         {
-            if (cancel) return;
 
             media::media_index index;
+            array<str> forbidden_links;
             {
                 std::lock_guard lock{mutex};
                 if (state != gui::media::state::loading)
                     return;
 
                 index = this->index;
+                forbidden_links = text.forbidden_links;
             }
+
+            if (cancel) return;
+
+            index.title = eng::parser::embolden(
+                index.title, forbidden_links);
+
+            str title = media::canonical(index.title);
+            str credit = media::canonical(index.credit);
+            str comment = media::canonical(index.comment);
+
+            while (
+                title.ends_with("<br>"))
+                title.resize(
+                title.size()-4);
+
+            if (comment != "") title += "<br><br>" +
+                gray(italic(comment));
+
+            str date;
+            for (str option : index.options)
+                if (option.starts_with("date "))
+                    date = option.from(5);
+            if (date != "" and credit != "") credit += ", ";
+            if (date != "") credit += italic(date);
+
+            if (credit != "") {
+                credit.replace_all(", read by", "<br>read by");
+                credit.replace_all(", narrated by", "<br>narrated by");
+                credit = "<div style=\"line-height: 20%\"><br></div>" +
+                credit; }
+
+            if (credit != "") title +="<br>"
+                "<div style=\"margin-left: 1em\">"
+                "<font size=\"90%\">" + light(credit) +
+                "</font></div>";
+
+            if (false) std::ofstream("test.quot.html") << title;
+            if (false) std::ofstream("test.quot.html.txt")
+                << doc::html::print(title);
+
+            if (cancel) return;
+
+            text.html = title;
+
+            if (cancel) return;
 
             std::filesystem::path dir = "../data/app_dict";
             std::string storage = "storage." +
@@ -138,11 +143,16 @@ namespace app::dic::audio
         {
             switch(state) {
             case gui::media::state::ready:
-            case gui::media::state::playing:
             case gui::media::state::finished:
             {
                 start = gui::time::now;
                 state = gui::media::state::playing;
+
+                if (muted) {
+                    timer.go (gui::time{0}, gui::time{0});
+                    timer.go (gui::time{1}, gui::time{3*stay.ms});
+                    break; }
+
                 auto duration = gui::time{(int)(audio.duration*1000)};
                 duration = max(duration, stay);
                 audio.play(0.0, 0.0);
@@ -168,6 +178,26 @@ namespace app::dic::audio
 
             default: break;
             }
+        }
+
+        void mute (bool mute)
+        {
+            if (state == gui::media::state::playing)
+            {
+                if (mute)
+                {
+                    audio.stop(0.0);
+                }
+                else
+                {
+                    auto duration = gui::time{(int)(audio.duration*1000)};
+                    duration = max(duration, stay);
+                    audio.play(0.0, 0.0);
+                    timer.go (gui::time{0}, gui::time{0});
+                    timer.go (gui::time{1}, duration);
+                }
+            }
+            muted = mute;
         }
 
         void on_change (void* what) override

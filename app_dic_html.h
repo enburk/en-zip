@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "app.h"
 namespace app::dic
 {
@@ -18,9 +18,15 @@ namespace app::dic
                 auto index = vocabulary.index(token.info);
                 return index ? *index : -1; }
 
-            array<doc::text::token> tokens; tokens.reserve(line.size());
-            for (auto& t: line) tokens += {t.text,
-                t.info != "" ? "Text" : ""};
+            array<doc::text::token> tokens;
+            tokens.reserve(line.size());
+
+            for (auto& t: line) {
+                tokens += {
+                    t.text == (char*)(u8"’") ? "'" : t.text,
+                    t.info != "" ? "Text" : ""
+                };
+            }
 
             eng::parser::proceed(vocabulary, tokens, forbidden_links);
 

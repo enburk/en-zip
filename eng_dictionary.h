@@ -103,7 +103,7 @@ namespace eng
         int size () const { return data.size(); }
         entry& operator [] (int i) { return data[i]; }
         std::unordered_map<str, int> hashmap;
-        std::array<int, 27*27*27> trie{};
+        //std::array<int, 27*27*27> trie{};
         vocabulary () = default;
 
         std::optional<int> index (str const& s)
@@ -136,18 +136,18 @@ namespace eng
                 data[i].title = dic.data[i].title;
                 hashmap[data[i].title] = i;
             }
-            auto t = trie.begin();
-            for (int i=0; i<27; i++)
-            for (int j=0; j<27; j++)
-            for (int k=0; k<27; k++)
-            {
-                str s;
-                s += ' ' + i;
-                s += ' ' + j;
-                s += ' ' + k;
-                *t = lower_bound(s);
-                ++t;
-            }
+            //auto t = trie.begin();
+            //for (int i=0; i<27; i++)
+            //for (int j=0; j<27; j++)
+            //for (int k=0; k<27; k++)
+            //{
+            //    str s;
+            //    s += ' ' + i;
+            //    s += ' ' + j;
+            //    s += ' ' + k;
+            //    *t = lower_bound(s);
+            //    ++t;
+            //}
         }
         explicit vocabulary (std::filesystem::path path)
         {

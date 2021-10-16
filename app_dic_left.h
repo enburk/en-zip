@@ -66,9 +66,19 @@ namespace app::dic::left
             sys::timing t1;
             str debug = "";///"<br> n = " + std::to_string(n);
             str html = wiki2html(entry, links) + debug;
-            if (false) std::ofstream("test.html") << html;
-            if (false) std::ofstream("test.html.txt") <<
-                doc::html::print(html);
+            if (true) std::ofstream("test.html") << html;
+            if (true) std::ofstream("test.html.txt") << doc::html::print(html);
+            if (true)
+            {
+                array<str> ss;
+                ss += entry.title; ss += "";
+                for (auto topic: entry.topics) {
+                    ss += "  " + topic.header + " == " + topic.forms;
+                    for (auto s: topic.content) ss += "    " + s;
+                    ss += "";
+                }
+                std::ofstream("test.txt") << str(ss);
+            }
 
             sys::timing t2;
             card.object.text.html = html;
@@ -111,7 +121,7 @@ namespace app::dic::left
                 int w = W/2;
 
                 int htool = h*12/7;
-                int hquot = 6*h*12/7 + 6*l;
+                int hquot = 6*h*12/7 + 3*h*12/7/5 + 0*l;
                 int hcard = H - htool - hquot;
                 int y = 0;
 

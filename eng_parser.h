@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "eng_dictionary.h"
 namespace eng::parser
 {
@@ -21,22 +21,23 @@ namespace eng::parser
 
         for (int t=0; t<tokens.size(); t++)
         {
-            str S = upper(tokens[t]); if (S == " ") continue;
-            str s = lower(tokens[t]);
+            str TexT = upper(tokens[t]); if (TexT == " ") continue;
+            str Text = lower(tokens[t]);
+            str text = lowercased(Text);
             int tt = 1;
 
-            int i = voc.lower_bound(S);
+            int i = voc.lower_bound(TexT);
             str Title = voc[i].title;
             str title = lowercased(Title);
 
             while (true)
             {
-                if (Title == s or
-                    Title == S)
+                if (Title == Text or
+                    Title == TexT)
                 {
                     co_yield {t, tt, i, Title};
 
-                    if (S != s)
+                    if (Text != TexT)
                     {
                         do
                         {
@@ -44,33 +45,36 @@ namespace eng::parser
                             if (i >= voc.size()) break;
                             Title = voc[i].title;
                             title = lowercased(Title);
-                            if (Title == s)
+                            if (Title == Text)
                                 co_yield {t, tt, i, Title};
                         }
-                        while (less(title, s));
+                        while (less(Title, text));
                     }
                 }
 
-                if ((s == title) or
-                    (s.size() < title.size() and
-                        less(s, title)))
+                if ((text == title) or
+                    (text.size() < title.size()
+                        and less(text, title)))
                 {
                     if (t+tt >= tokens.size()) break;
                     if (tokens[t+tt].text == " ")
                     {
                         tt++;
                         if (t+tt >= tokens.size()) break;
-                        S += " ";
-                        s += " ";
+                        TexT += " ";
+                        Text += " ";
+                        text += " ";
                     }
-                    S += upper(tokens[t+tt]);
-                    s += lower(tokens[t+tt]);
+                    TexT += upper(tokens[t+tt]);
+                    Text += lower(tokens[t+tt]);
+                    text += lowercased(tokens[t+tt].text);
                     tt++;
                     continue;
                 }
                 else if (Title.size() <= 4)
                 {
-                    i = voc.lower_bound(S);
+                    int j = voc.lower_bound(TexT);
+                    if (j <= i) break; i = j;
                     Title = voc[i].title;
                 }
                 else do
@@ -79,10 +83,10 @@ namespace eng::parser
                     if (i >= voc.size()) break;
                     Title = voc[i].title;
                 }
-                while (less(Title, S));
+                while (less(Title, TexT));
 
                 title = lowercased(Title);
-                if (not title.starts_with(s)
+                if (not title.starts_with(text)
                     or i >= voc.size())
                     break;
             }
@@ -113,7 +117,7 @@ namespace eng::parser
 
     array<str> entries (eng::vocabulary& voc, str input)
     {
-        array<str> Matches, Entries, entries;
+        array<str> entries;
 
         for (auto line: input.split_by("<br>"))
         {
@@ -123,6 +127,7 @@ namespace eng::parser
             {
                 if (t.kind == "text")
                 {
+                    if (t.text == (char*)(u8"’")) t.text = "'"; else
                     if (t.text.starts_with("_")) {
                         t.text.erase(0);
                         t.kind = "Text";
@@ -131,47 +136,45 @@ namespace eng::parser
                 }
             }
 
+            match best {-1, 0};
+
             for (auto m: matches(voc, tokens))
             {
-                str Text = m.text;
-                str text = lowercased(Text);
-                if (text == ""
-                or (text == "."   and input.size() > 3*5)
-                or (text == ","   and input.size() > 3*5)
-                or (text == ":"   and input.size() > 9*5)
-                or (text == ";"   and input.size() > 9*5)
-                or (text == "!"   and input.size() > 5*5)
-                or (text == "?"   and input.size() > 5*5)
-                or (text == "("   and input.size() > 9*5)
-                or (text == ")"   and input.size() > 9*5)
-                or (text == "'"   and input.size() > 9*5)
-                or (text == "\""  and input.size() > 9*5)
-                or (text == lquot and input.size() > 9*5)
-                or (text == rquot and input.size() > 9*5)
-                or (text == "-"   and input.size() > 9*5)
-                or (text == "--"  and input.size() > 9*5)
-                or (text == ndash and input.size() > 9*5)
-                or (text == "..." and input.size() > 9*5)
+                if (m.text == ""
+                or (m.text == "."   and input.size() > 3*5)
+                or (m.text == ","   and input.size() > 3*5)
+                or (m.text == ":"   and input.size() > 9*5)
+                or (m.text == ";"   and input.size() > 9*5)
+                or (m.text == "!"   and input.size() > 5*5)
+                or (m.text == "?"   and input.size() > 5*5)
+                or (m.text == "("   and input.size() > 9*5)
+                or (m.text == ")"   and input.size() > 9*5)
+                or (m.text == "'"   and input.size() > 9*5)
+                or (m.text == "\""  and input.size() > 9*5)
+                or (m.text == lquot and input.size() > 9*5)
+                or (m.text == rquot and input.size() > 9*5)
+                or (m.text == "-"   and input.size() > 9*5)
+                or (m.text == "--"  and input.size() > 9*5)
+                or (m.text == ndash and input.size() > 9*5)
+                or (m.text == "..." and input.size() > 9*5)
+                or (m.text == "a"   and input.size() > 5*5)
+                or (m.text == "an"  and input.size() > 5*5)
+                or (m.text == "the" and input.size() > 5*5)
                 ) continue;
 
-                if((Text != text and tokens[m.token].kind != "Text")
-                or (Text == text and tokens[m.token].kind == "Text"))
-                    Matches += Text; else {
-                    Entries += Text; 
-                    entries += text;
-                }
+                if (best.token  != m.token or
+                    best.tokens != m.tokens)
+                    if (best.text != "")
+                        entries += best.text;
+
+                best = m;
             }
+            if (best.text != "")
+                entries += best.text;
         }
 
-        Entries.deduplicate();
         entries.deduplicate();
-
-        for (auto Text: Matches)
-            if (not entries.contains(lowercased(Text))) {
-                entries += lowercased(Text);
-                Entries += Text; }
-
-        return Entries;
+        return entries;
     }
 
     str embolden (str input, array<str> entries)

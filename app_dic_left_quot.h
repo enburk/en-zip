@@ -7,7 +7,7 @@ namespace app::dic::left
     struct quot:
     widget<quot>
     {
-        gui::button autoplay;
+        gui::button mute;
         gui::button play, Play;
         gui::button stop, Stop;
         gui::button prev, next;
@@ -18,24 +18,24 @@ namespace app::dic::left
         gui::property<int> current = 0;
         gui::property<gui::time> timer;
         gui::time smoothly {500};
+        gui::time instantly{100};
         bool playall = false;
+        int ready_players = 0;
 
         std::thread thread;
         std::atomic<bool> cancel = false;
         std::mutex mutex;
 
+        using state = gui::media::state;
+
         quot ()
         {
-            autoplay.text.text = "auto";
-            autoplay.kind = gui::button::toggle;
-            prev.enabled = false;
-            next.enabled = false;
             speaker.alpha = 64;
-            oneof.hide();
-            play.hide();
-            Play.hide();
-            stop.hide();
-            Stop.hide();
+            mute.text.text = "mute";
+            mute.kind = gui::button::toggle;
+            mute.on = true;
+            prev.repeating = true;
+            next.repeating = true;
             on_change(&skin);
         }
         ~quot ()
@@ -47,6 +47,7 @@ namespace app::dic::left
 
         void reload ()
         {
+            speaker  .load(assets["speaker.128x096"].from(0));
             prev.icon.load(assets["icon.chevron.left.double.black.128x128"]);
             next.icon.load(assets["icon.chevron.right.double.black.128x128"]);
             play.icon.load(assets["player.black.play.64x64"]);
@@ -61,10 +62,7 @@ namespace app::dic::left
         {
             cancel = true;
 
-            prev.enabled  = selected.size() > 1;
-            next.enabled  = selected.size() > 1;
-            speaker.alpha = selected.size() > 0 ? 128 : 64;
-            oneof.show     (selected.size() > 0);
+            ready_players = 0;
 
             if (players.size() > 0)
             {
@@ -72,6 +70,7 @@ namespace app::dic::left
                 selected, players(current).index);
                 if (it != selected.end())
                 {
+                    ready_players++;
                     players.rotate(0, current, current+1);
                     std::rotate(selected.begin(),
                         it, std::next(it));
@@ -83,7 +82,7 @@ namespace app::dic::left
                 players(n++).reset(index, links);
             }
 
-            playall = autoplay.on;
+            playall = true; // autoplay.on;
             players.truncate(n);
             current = 0;
 
@@ -91,9 +90,8 @@ namespace app::dic::left
             {
                 player.hide();
                 player.coord = players.coord.now.local();
+                player.mute(mute.on);
             }
-
-            using state = gui::media::state;
 
             if (players(current).state == state::ready   or
                 players(current).state == state::playing or
@@ -120,6 +118,10 @@ namespace app::dic::left
                 timer.go (gui::time::infinity,
                           gui::time::infinity);
 
+            if (what == &skin)
+            {
+                oneof.color = gui::skins[skin].touched.first;
+            }
             if (what == &coord)
             {
                 int W = coord.now.w; if (W <= 0) return;
@@ -139,23 +141,20 @@ namespace app::dic::left
                 next.icon.padding = XYXY(l,l,l,l);
 
                 int w = h*5/4;
-                int d = h*1/2;
+                int d = h*1/5;
+                int D = h*1/2 + 2*l;
                 int y = 2*w*96/128;
 
-                speaker .coord = XYWH(0*w, 0+0*h, 2*w, y);
-                autoplay.coord = XYWH(0*w, y+0*h, 2*w, h);
-                play    .coord = XYWH(0*w, y+1*h, 1*w, h);
-                stop    .coord = XYWH(0*w, y+1*h, 1*w, h);
-                Play    .coord = XYWH(1*w, y+1*h, 1*w, h);
-                Stop    .coord = XYWH(1*w, y+1*h, 1*w, h);
-                oneof   .coord = XYWH(0*w, y+2*h, 2*w, h);
-                prev    .coord = XYWH(0*w, y+3*h, 1*w, h);
-                next    .coord = XYWH(1*w, y+3*h, 1*w, h);
-                players .coord = XYXY(2*w+d, 0, W-d-d, H);
-
-                if (speaker.state == gui::media::state::vacant)
-                    speaker.load(assets["speaker.128x096"]
-                    .from(0));
+                speaker .coord = XYWH(0*w+d, 0+0*h+1*d, 2*w, y);
+                mute    .coord = XYWH(0*w+d, y+0*h+2*d, 2*w, h);
+                play    .coord = XYWH(0*w+d, y+1*h+3*d, 1*w, h);
+                stop    .coord = XYWH(0*w+d, y+1*h+3*d, 1*w, h);
+                Play    .coord = XYWH(1*w+d, y+1*h+3*d, 1*w, h);
+                Stop    .coord = XYWH(1*w+d, y+1*h+3*d, 1*w, h);
+                oneof   .coord = XYWH(0*w+d, y+2*h+3*d, 2*w, h);
+                prev    .coord = XYWH(0*w+d, y+3*h+3*d, 1*w, h);
+                next    .coord = XYWH(1*w+d, y+3*h+3*d, 1*w, h);
+                players .coord = XYXY(2*w+D, 0, W-D, H);
 
                 for (auto & player : players)
                     player.coord = players.
@@ -164,18 +163,19 @@ namespace app::dic::left
 
             if (what == &timer)
             {
-                if (players.size() > 0)
+                while (ready_players < players.size() and
+                    players(ready_players).state == state::ready)
+                    ready_players++;
+
+                if (ready_players > 0)
                 {
-                    using state = gui::media::state;
                     switch(players(current).state) {
                     case state::failure:
-                        players(current).state = gui::media::state::finished;
+                        players(current).state = state::finished;
                         players(current).show(smoothly);
                         break;
                     case state::ready:
-                        if (autoplay.on)
-                        players(current).play(); else
-                        players(current).state = gui::media::state::finished;
+                        players(current).play();
                         players(current).show(smoothly);
                         break;
                     case state::finished:
@@ -184,7 +184,7 @@ namespace app::dic::left
                             break;
                         players(current).stop();
                         players(current).hide(smoothly);
-                        current = (current+1) % players.size();
+                        current = (current+1) % ready_players;
                         players(current).show(smoothly); if (current != 0)
                         players(current).play(); else playall = false;
                         break;
@@ -197,17 +197,34 @@ namespace app::dic::left
                     Play.hide(playing);
                     stop.show(playing);
                     Stop.show(playing);
+                    play.enabled = true;
+                    Play.enabled = true;
 
+                    prev.enabled  = ready_players > 1;
+                    next.enabled  = ready_players > 1;
+                    oneof.show     (ready_players > 0);
                     oneof.text =
                         std::to_string(current+1) + " of " +
-                        std::to_string(players.size());
+                        std::to_string(ready_players);
+
+                    if (mute.on or not playing)
+                        speaker.alpha = 64; else
+                    if (speaker.alpha.now == 255)
+                        speaker.alpha.go( 64, gui::time(1000)); else
+                        speaker.alpha.go(255, gui::time(1000));
                 }
                 else
                 {
-                    play.hide();
-                    Play.hide();
+                    speaker.alpha = 64;
+                    play.show();
+                    Play.show();
+                    play.enabled = false;
+                    Play.enabled = false;
                     stop.hide();
                     Stop.hide();
+                    oneof.hide();
+                    prev.enabled = false;
+                    next.enabled = false;
                 }
             }
 
@@ -223,40 +240,49 @@ namespace app::dic::left
                 notify();
             }
 
-            if (what == &autoplay)
-            {
-                playall = autoplay.on;
-                if (playall and
-                    players.size() > 0)
-                    players(current).play();
-            }
+            int pp = ready_players;
+
+            if (what == &Stop) playall = false;
+            if (what == &stop) playall = false;
             if (what == &play) playall = false;
             if (what == &Play) playall = true;
-            if (what == &play or what == &stop or
-                what == &Play or what == &Stop)
-            {
-                if (players(current).state == gui::media::state::playing) {
-                    players(current).stop(); playall = false; } else
-                    players(current).play();
-            }
 
-            int pp = players.size();
+            if (what == &play) mute.on = false;
+            if (what == &Play) mute.on = false;
+
+            if (what == &Stop and pp > 0) players(current).stop();
+            if (what == &stop and pp > 0) players(current).stop();
+            if (what == &play and pp > 0) players(current).play();
+            if (what == &Play and pp > 0) players(current).play();
+
+            if (what == &mute)
+            {
+                for (auto& player: players)
+                    player.mute(mute.on);
+            }
 
             if (what == &prev)
             {
                 players(current).stop();
-                players(current).hide(smoothly);
+                players(current).hide(instantly);
                 current = (current-1+pp) % pp;
-                players(current).show(smoothly);
+                players(current).show(instantly); if (playall)
                 players(current).play();
             }
             if (what == &next)
             {
                 players(current).stop();
-                players(current).hide(smoothly);
+                players(current).hide(instantly);
                 current = (current+1) % pp;
-                players(current).show(smoothly);
+                players(current).show(instantly); if (playall)
                 players(current).play();
+            }
+            if (what == &Stop and current != 0)
+            {
+                players(current).stop();
+                players(current).hide(smoothly);
+                current = 0;
+                players(current).show(smoothly);
             }
         }
     };

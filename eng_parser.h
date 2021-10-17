@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "eng_dictionary.h"
+#include "eng_abc_vocabulary.h"
 namespace eng::parser
 {
     using token = doc::text::token;
@@ -12,7 +12,8 @@ namespace eng::parser
         str text;
     };
 
-    generator<match> matches (vocabulary& voc, array<token>& tokens)
+    template<class Vocabulary>
+    generator<match> matches (Vocabulary& voc, array<token>& tokens)
     {
         auto upper = [](token const& t){ return t.text; };
         auto lower = [](token const& t){ return
@@ -184,7 +185,7 @@ namespace eng::parser
         dictionary dic;
         dic.data.reserve(entries.size()); for (auto& e : entries)
         dic.data += dictionary::entry{e};
-        vocabulary voc{dic};
+        vocabulary_basic voc{dic};
 
         array<token> all;
         array<token> texts;

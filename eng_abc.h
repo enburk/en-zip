@@ -1,7 +1,6 @@
 ﻿#pragma once
 #include <map>
 #include "abc.h"
-
 namespace eng
 {
     const std::vector<std::pair<str,str>> ligatures
@@ -74,7 +73,7 @@ namespace eng
             if (end1 and not end2) return -1; 
             if (end2 and not end1) return  1; 
 
-            char cc[2]; str ss[2]; char weight[2]; 
+            char cc[2]; str ss[2]; char weight[2]{}; 
 
             for (int n: {0, 1})
             {

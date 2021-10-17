@@ -13,16 +13,16 @@
     <Filter Include="doc">
       <UniqueIdentifier>{3b98f65a-90aa-4581-a37b-5424a82515a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="eng">
+      <UniqueIdentifier>{f13f1a0f-739b-405c-a800-02bc5baebd0c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="eng.h" />
     <ClInclude Include="app.h" />
     <ClInclude Include="media.h" />
-    <ClInclude Include="eng_dictionary.h" />
     <ClInclude Include="media_data.h" />
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="studio_build_dic.h" />
-    <ClInclude Include="eng_parser.h" />
     <ClInclude Include="..\ae\proto-studio\aux_abc.h">
       <Filter>aux</Filter>
     </ClInclude>
@@ -39,12 +39,6 @@
       <Filter>aux</Filter>
     </ClInclude>
     <ClInclude Include="..\ae\proto-studio\aux_unicode.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\proto-studio\aux_v1_array.h">
-      <Filter>aux</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ae\proto-studio\aux_v1_string.h">
       <Filter>aux</Filter>
     </ClInclude>
     <ClInclude Include="app_dic.h" />
@@ -124,7 +118,6 @@
     <ClInclude Include="..\ae\proto-studio\gui_widgetarium.h">
       <Filter>gui</Filter>
     </ClInclude>
-    <ClInclude Include="eng_unittest.h" />
     <ClInclude Include="studio_build_dic_.h" />
     <ClInclude Include="..\ae\proto-studio\doc_html.h">
       <Filter>doc</Filter>
@@ -143,6 +136,36 @@
     </ClInclude>
     <ClInclude Include="..\ae\proto-studio\doc_text_text.h">
       <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_algo.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_array.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\aux_string.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_parser.h">
+      <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_unittest.h">
+      <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_abc.h">
+      <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_abc_dictionary.h">
+      <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_abc_vocabulary.h">
+      <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_abc_vocabulary_trie.h">
+      <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="eng_abc_vocabulary_triee.h">
+      <Filter>eng</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

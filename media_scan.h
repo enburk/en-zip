@@ -41,6 +41,10 @@ namespace media::scan
 
             resource resource = common;
 
+            str ignored_comment;
+            name.split_by("###", name, ignored_comment);
+            name.strip();
+
             str title, meta, yadda; bool meta_present = 
             name.split_by("{{", title, meta); title.strip();
             meta.split_by("}}", meta, yadda); meta.strip();
@@ -167,6 +171,9 @@ namespace media::scan
                         resource.comment = str(
                         comment_lines, "<br>");
                 }
+
+                std::erase_if(resource.entries,
+                    [](auto s){ return s == "="; });
 
                 if (title != "") resource.title = title;
                 report::id2path[resource.id] += entry; // check for same id

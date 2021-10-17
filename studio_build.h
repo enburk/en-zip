@@ -75,7 +75,7 @@ namespace studio::build
                         data_updated = true;
 
                     eng::vocabulary vocabulary("../data/vocabulary.dat");
-                    if (not eng::unittest::proceed(vocabulary, out.object))
+                    if (not eng::unittest::smoke(vocabulary, out.object))
                         return;
 
                     setlocale(LC_ALL,"en_US.utf8");

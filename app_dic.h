@@ -17,7 +17,8 @@ namespace app::dic
         {
             std::filesystem::path dir = "../data";
 
-            vocabulary = std::move(::eng::vocabulary(
+            vocabulary = std::move(
+                ::eng::vocabulary_hashed(
                     dir/"vocabulary.dat"));
 
             assets.clear();

@@ -8,7 +8,81 @@ namespace eng::unittest
     using aux::unittest::vector;
     using aux::unittest::expect_;
 
-    bool proceed (vocabulary& vocabulary, gui::console& report) try
+    void heavy (gui::console& report) try
+    {
+        std::filesystem::path path = "../data/vocabulary.dat";
+        str font  = "<font color=#808080 face=\"monospace\">";
+        auto N = [](auto n){ return std::to_string(n); };
+        auto T = [](auto t){ return sys::format(t); };
+
+        test("UNITTEST.load1"); 
+        {
+            sys::timing t0; vocabulary_basic  v1(path);
+            sys::timing t1; vocabulary_hashed v2(path);
+            sys::timing t2;
+            report << font +
+            "load1 basic  " + sys::format(t1-t0) + " sec<br>"+
+            "load1 hashed " + sys::format(t2-t1) + " sec<br>"+
+            "</font>";
+        }
+        test("UNITTEST.load2"); 
+        {
+            sys::timing t0; vocabulary_basic  v1(path);
+            sys::timing t1; vocabulary_hashed v2(path);
+            sys::timing t2;
+            report << font +
+            "load2 basic  " + sys::format(t1-t0) + " sec<br>"+
+            "load2 hashed " + sys::format(t2-t1) + " sec<br>"+
+            "</font>";
+        }
+        vocabulary_basic  v1(path);
+        vocabulary_hashed v2(path);
+
+        test("UNITTEST.index"); 
+        {
+            int n = 100'000;
+            array<str> ss; ss.resize(n);
+            for (int i=0; i<n; i++)
+            for (int j=0; j<aux::random(0, 15); j++)
+            ss[i] += (char)(aux::random<int>('a', 'z'));
+            unsigned n1 = 0, u1 = 0;
+            unsigned n2 = 0, u2 = 0;
+            sys::timing t0; for (str s: ss) if (auto r = v1.index(s); r) { n1++; u1 += *r; }
+            sys::timing t1; for (str s: ss) if (auto r = v2.index(s); r) { n2++; u2 += *r; }
+            sys::timing t2;
+            report << font +
+            "index basic  " + T(t1-t0) + " sec " + N(n1) + ": "+ N(u1) + "<br>"+
+            "index hashed " + T(t2-t1) + " sec " + N(n2) + ": "+ N(u2) + "<br>"+
+            "</font>";
+        }
+        test("UNITTEST.lower"); 
+        {
+            int n = 100'000;
+            array<str> ss; ss.resize(n);
+            for (int i=0; i<n; i++)
+            for (int j=0; j<aux::random(0, 15); j++)
+            ss[i] += (char)(aux::random<int>('a', 'z'));
+            unsigned u1 = 0;
+            unsigned u2 = 0;
+            sys::timing t0; for (str s: ss) u1 += v1.lower_bound(s);
+            sys::timing t1; for (str s: ss) u2 += v2.lower_bound(s);
+            sys::timing t2;
+            report << font +
+            "lower basic  " + T(t1-t0) + " sec " + N(u1) + "<br>"+
+            "lower hashed " + T(t2-t1) + " sec " + N(u2) + "<br>"+
+            "</font>";
+        }
+        test("");
+        report << aux::unittest::results;
+        report << bold(green("HEAVY UNITTEST OK"));
+    }
+    catch(aux::unittest::assertion_failed)
+    {
+        report << aux::unittest::results;
+        report << bold(red("HEAVY UNITTEST CRASH"));
+    }
+
+    bool smoke (vocabulary& vocabulary, gui::console& report) try
     {
         test("UNITTEST.sort"); 
         {
@@ -155,6 +229,7 @@ namespace eng::unittest
 
         if (aux::unittest::all_ok) {
         report << bold(green("UNITTEST OK"));
+        if (false) { heavy(report); return false; }
         return true; }
 
         report << aux::unittest::results;

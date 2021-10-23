@@ -73,13 +73,13 @@ namespace eng
             if (end1 and not end2) return -1; 
             if (end2 and not end1) return  1; 
 
-            char cc[2]; str ss[2]; char weight[2]{}; 
+            char cc[2]; str ss[2]; int weight[2]{}; 
 
             for (int n: {0, 1})
             {
                 char & c = cc[n];
                 str  & s = ss[n];
-                char & w = weight[n];
+                int  & w = weight[n];
                 auto & i = n == 0 ? i1 : i2;
 
                 if (ligature_remain[n] != "") { c =
@@ -98,7 +98,7 @@ namespace eng
                 // AE < Æ < ÄË < ae < æ < äë
 
                 if ('a' <= c && c <= 'z') {
-                    w = 100;
+                    w = 100'000;
                 }
                 else
                 if ('A' <= c && c <= 'Z') {
@@ -108,22 +108,24 @@ namespace eng
                 else
                 if (auto it = ligature(s); it)
                 {
-                    w = 101;
+                    int i = (int)(*it - ligatures.begin());
+                    w = 101'000 + i;
                     c = (*it)->second[0];
                     ligature_remain[n] = (*it)->second.from(1);
                     if ('A' <= c && c <= 'Z') {
                         c = c - 'A' + 'a';
-                        w = 1;
+                        w = 1'000 + i;
                     }
                 }
                 else
                 if (auto it = diacritic(s); it)
                 {
-                    w = 102;
+                    int i = (int)(*it - diacritics.begin());
+                    w = 102'000 + i;
                     c = (*it)->second[0];
                     if ('A' <= c && c <= 'Z') {
                         c = c - 'A' + 'a';
-                        w = 2;
+                        w = 2'000 + i;
                     }
                 }
             }
@@ -187,6 +189,40 @@ namespace eng
             {
                 auto n = (*k) - diacritics.begin();
                 if ((n % 2) == 0) g = diacritics[n+1].first;
+            }
+            for (char c : g) *j++ = c;
+        }
+        s.erase(j, s.end());
+        return s;
+    }
+
+    str uppercased (str s)
+    {
+        /**/ auto j = s.begin();
+        for (auto i = s.begin(); i != s.end(); )
+        {
+            char c = *i++; str g = c;
+            uint8_t u = static_cast<uint8_t>(c);
+            if ((u & 0b11000000) == 0b11000000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11100000) == 0b11100000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11110000) == 0b11110000) { if (i == s.end()) break; g += *i++;
+            }}}
+            if ('A' <= c && c <= 'Z') {} else
+            if ('a' <= c && c <= 'z') {
+                c = c - 'a' + 'A';
+                g[0] = c;
+            }
+            else
+            if (auto k = ligature(g); k)
+            {
+                auto n = (*k) - ligatures.begin();
+                if ((n % 2) == 1) g = ligatures[n-1].first;
+            }
+            else
+            if (auto k = diacritic(g); k)
+            {
+                auto n = (*k) - diacritics.begin();
+                if ((n % 2) == 1) g = diacritics[n-1].first;
             }
             for (char c : g) *j++ = c;
         }

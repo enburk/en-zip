@@ -70,7 +70,7 @@ namespace app::dic::list
             {
                 if (vocabulary.size() == 0) return;
                 auto s = editor.text.now; s.triml();
-                auto i = vocabulary.lower_bound(s);
+                auto i = vocabulary.lower_bound_case_insensitive(s);
 
                 editor.style = pix::text::style{
                     sys::font{"Segoe UI",

@@ -189,10 +189,7 @@ namespace studio::build
         }
 
         dat::out::file vocabulary_out(dir/"vocabulary.dat");
-        vocabulary_out << 0x12345678; // endianness
-        vocabulary_out << vocabulary.data.size();
-        for (auto& entry: vocabulary.data)
-            entry >> vocabulary_out;
+        vocabulary.save(vocabulary_out);
 
         dictionary_out.close();
         vocabulary_out.close();
@@ -201,12 +198,12 @@ namespace studio::build
         ofstream = std::ofstream(dir/"vocabulary_check.txt");
         eng::vocabulary Vocabulary(dir/"vocabulary.dat");
 
-        if (Vocabulary.data.size() !=
-            vocabulary.data.size()) ofstream << "SIZE: " <<
-            Vocabulary.data.size() << " != " <<
-            vocabulary.data.size() << "\n";
+        if (Vocabulary.size() !=
+            vocabulary.size()) ofstream << "SIZE: " <<
+            Vocabulary.size() << " != " <<
+            vocabulary.size() << "\n";
 
-        for (int i=0; i<vocabulary.data.size(); i++)
+        for (int i=0; i<vocabulary.size(); i++)
         {
             const auto & a = Vocabulary[i];
             const auto & b = vocabulary[i];

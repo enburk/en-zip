@@ -74,7 +74,8 @@ namespace studio::build::dic
             {
                 if (entry.ends_with("}")) {
                 str sense; entry.split_by("{",
-                    entry, sense); entry.strip(); }
+                    entry, sense); entry.strip();
+                    if (sense == "+") continue; }
 
                 auto index = vocabulary.index(entry);
                 if (!index) continue;

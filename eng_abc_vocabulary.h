@@ -2,7 +2,7 @@
 #include "eng_abc_dictionary.h"
 namespace eng
 {
-    struct vocabulary_
+    struct vocabulary_basic
     {
         struct entry
         { 
@@ -26,10 +26,7 @@ namespace eng
                 out << redirect;
             }
         };
-    };
 
-    struct vocabulary_basic : vocabulary_
-    {
         array<entry> data;
         int size () const { return data.size(); }
         entry& operator [] (int i) { return data[i]; }
@@ -47,6 +44,21 @@ namespace eng
             (data, s, eng::less, &entry::title);
             if (it == data.end()) return data.size()-1;
             return (int)(it - data.begin());
+        }
+
+        int lower_bound_case_insensitive (str const& s)
+        {
+            str lower = lowercased(s);
+            str upper = uppercased(s);
+            int i = lower_bound(upper);
+            while (i < size()-1) {
+                if (data[i].title == s or
+                    less(s, data[i].title) or
+                    less(lower, data[i+1].title))
+                    return i;
+                i++;
+            }
+            return i;
         }
 
         explicit vocabulary_basic () = default;
@@ -105,5 +117,96 @@ namespace eng
         }
     };
 
-    using vocabulary = vocabulary_hashed;
+    struct vocabulary_cached : vocabulary_basic
+    {
+        std::array<int, 27*27*27> trie{};
+
+        std::optional<int> index (str const& s)
+        {
+            int i = lower_bound(s);
+            if (data[i].title != s) return {};
+            return i;
+        }
+
+        int lower_bound_case_insensitive (str const& s)
+        {
+            str lower = lowercased(s);
+            str upper = uppercased(s);
+            int i = lower_bound(upper);
+            while (i < size()-1) {
+                if (data[i].title == s or
+                    less(s, data[i].title) or
+                    less(lower, data[i+1].title))
+                    return i;
+                i++;
+            }
+            return i;
+        }
+
+        int lower_bound (str const& s)
+        {
+            auto b = data.begin();
+            auto e = data.end();
+
+            int n = 0; for (int i=0; i<3; i++)
+            {
+                char c = i >= s.size() ? ' ' : s[i];
+
+                int j = 
+                ' ' == c ? 0 :
+                'A' <= c && c <= 'Z' ? c - 'A' + 1 :
+                'a' <= c && c <= 'z' ? c - 'a' + 1 :
+                    -1;
+
+                if (j == -1) { n = -1; break; }
+
+                n += i == 0 ? j*27*27 :
+                     i == 1 ? j*27 : j;
+            }
+
+            if (n != -1) {
+                b = data.begin() + trie[n]; if (n+1 < trie.size())
+                e = data.begin() + trie[n+1];
+            }
+
+            auto it = std::lower_bound(b, e, entry{s},
+            [] (entry const& e1, entry const& e2)
+            { return eng::less(e1.title, e2.title); });
+            if (it == data.end()) return data.size()-1;
+            return (int)(it - data.begin());
+        }
+
+        explicit vocabulary_cached () = default;
+        explicit vocabulary_cached (dictionary& dic)
+            : vocabulary_basic(dic)
+        {
+            auto t = trie.begin();
+            for (int i=0; i<27; i++)
+            for (int j=0; j<27; j++)
+            for (int k=0; k<27; k++)
+            {
+                str s;
+                s += i == 0 ? ' ' : 'A' + i-1;
+                s += j == 0 ? ' ' : 'A' + j-1;
+                s += k == 0 ? ' ' : 'A' + k-1;
+                s.trimr();
+                *t = vocabulary_basic::lower_bound(s);
+                ++t;
+            }
+        }
+        explicit vocabulary_cached (std::filesystem::path path)
+            : vocabulary_basic(path)
+        {
+            dat::in::pool pool(path);
+            vocabulary_basic::load(pool);
+            for (int i=0; i<trie.size(); i++)
+                trie[i] = pool.get_int();
+        }
+        void save (dat::out::file& file)
+        {
+            vocabulary_basic::save(file);
+            for (int n: trie)
+                file << n;
+        }
+    };
 }

@@ -1,5 +1,6 @@
 ﻿#pragma once
-#include "eng_abc_vocabulary.h"
+#include "eng_abc_vocabulary_trie.h"
+namespace eng { using vocabulary = vocabulary_cached; }
 namespace eng::parser
 {
     using token = doc::text::token;
@@ -142,25 +143,40 @@ namespace eng::parser
             for (auto m: matches(voc, tokens))
             {
                 if (m.text == ""
-                or (m.text == "."   and input.size() > 3*5)
-                or (m.text == ","   and input.size() > 3*5)
-                or (m.text == ":"   and input.size() > 9*5)
-                or (m.text == ";"   and input.size() > 9*5)
-                or (m.text == "!"   and input.size() > 5*5)
-                or (m.text == "?"   and input.size() > 5*5)
-                or (m.text == "("   and input.size() > 9*5)
-                or (m.text == ")"   and input.size() > 9*5)
-                or (m.text == "'"   and input.size() > 9*5)
-                or (m.text == "\""  and input.size() > 9*5)
-                or (m.text == lquot and input.size() > 9*5)
-                or (m.text == rquot and input.size() > 9*5)
-                or (m.text == "-"   and input.size() > 9*5)
-                or (m.text == "--"  and input.size() > 9*5)
-                or (m.text == ndash and input.size() > 9*5)
-                or (m.text == "..." and input.size() > 9*5)
-                or (m.text == "a"   and input.size() > 5*5)
-                or (m.text == "an"  and input.size() > 5*5)
-                or (m.text == "the" and input.size() > 5*5)
+                or (m.text == "."    and input.size() > 3*5)
+                or (m.text == ","    and input.size() > 3*5)
+                or (m.text == ":"    and input.size() > 9*5)
+                or (m.text == ";"    and input.size() > 9*5)
+                or (m.text == "!"    and input.size() > 5*5)
+                or (m.text == "?"    and input.size() > 5*5)
+                or (m.text == "("    and input.size() > 9*5)
+                or (m.text == ")"    and input.size() > 9*5)
+                or (m.text == "'"    and input.size() > 3*5)
+                or (m.text == "\""   and input.size() > 9*5)
+                or (m.text == lquot  and input.size() > 9*5)
+                or (m.text == rquot  and input.size() > 9*5)
+                or (m.text == "-"    and input.size() > 9*5)
+                or (m.text == "--"   and input.size() > 9*5)
+                or (m.text == ndash  and input.size() > 9*5)
+                or (m.text == "..."  and input.size() > 9*5)
+
+                or (m.text == "a"    and input.size() > 5*5)
+                or (m.text == "an"   and input.size() > 5*5)
+                or (m.text == "the"  and input.size() > 5*5)
+                or (m.text == "s"    and input.size() > 5*5)
+                or (m.text == "t"    and input.size() > 5*5)
+                or (m.text == "'s"   and input.size() > 5*5)
+                or (m.text == "'t"   and input.size() > 5*5)
+
+                or (m.text == "and"  and input.size() > 5*5)
+                or (m.text == "I"    and input.size() > 5*5)
+                or (m.text == "in"   and input.size() > 5*5)
+                or (m.text == "is"   and input.size() > 5*5)
+                or (m.text == "it"   and input.size() > 5*5)
+                or (m.text == "of"   and input.size() > 5*5)
+                or (m.text == "that" and input.size() > 5*5)
+                or (m.text == "to"   and input.size() > 5*5)
+                or (m.text == "you"  and input.size() > 5*5)
                 ) continue;
 
                 if (best.token  != m.token or

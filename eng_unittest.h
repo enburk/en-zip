@@ -15,30 +15,27 @@ namespace eng::unittest
         auto N = [](auto n){ return std::to_string(n); };
         auto T = [](auto t){ return sys::format(t); };
 
-        test("UNITTEST.load1"); 
+        test("UNITTEST.HEAVY.load1"); 
         {
             sys::timing t0; vocabulary_basic  v1(path);
             sys::timing t1; vocabulary_hashed v2(path);
-            sys::timing t2;
+            sys::timing t2; vocabulary_cached v3(path);
+            sys::timing t3; vocabulary_trie   v4(path);
+            sys::timing t4;
             report << font +
             "load1 basic  " + sys::format(t1-t0) + " sec<br>"+
             "load1 hashed " + sys::format(t2-t1) + " sec<br>"+
+            "load1 cashed " + sys::format(t3-t2) + " sec<br>"+
+            "load1 trie   " + sys::format(t4-t3) + " sec<br>"+
             "</font>";
-        }
-        test("UNITTEST.load2"); 
-        {
-            sys::timing t0; vocabulary_basic  v1(path);
-            sys::timing t1; vocabulary_hashed v2(path);
-            sys::timing t2;
-            report << font +
-            "load2 basic  " + sys::format(t1-t0) + " sec<br>"+
-            "load2 hashed " + sys::format(t2-t1) + " sec<br>"+
-            "</font>";
+            oops(out("ok")) {"ok"};
         }
         vocabulary_basic  v1(path);
         vocabulary_hashed v2(path);
+        vocabulary_cached v3(path);
+        vocabulary_trie   v4(path);
 
-        test("UNITTEST.index"); 
+        test("UNITTEST.HEAVY.index"); 
         {
             int n = 100'000;
             array<str> ss; ss.resize(n);
@@ -47,15 +44,23 @@ namespace eng::unittest
             ss[i] += (char)(aux::random<int>('a', 'z'));
             unsigned n1 = 0, u1 = 0;
             unsigned n2 = 0, u2 = 0;
+            unsigned n3 = 0, u3 = 0;
+            unsigned n4 = 0, u4 = 0;
             sys::timing t0; for (str s: ss) if (auto r = v1.index(s); r) { n1++; u1 += *r; }
             sys::timing t1; for (str s: ss) if (auto r = v2.index(s); r) { n2++; u2 += *r; }
-            sys::timing t2;
+            sys::timing t2; for (str s: ss) if (auto r = v3.index(s); r) { n3++; u3 += *r; }
+            sys::timing t3; for (str s: ss) if (auto r = v4.index(s); r) { n4++; u4 += *r; }
+            sys::timing t4;
             report << font +
             "index basic  " + T(t1-t0) + " sec " + N(n1) + ": "+ N(u1) + "<br>"+
             "index hashed " + T(t2-t1) + " sec " + N(n2) + ": "+ N(u2) + "<br>"+
+            "index cashed " + T(t3-t2) + " sec " + N(n3) + ": "+ N(u3) + "<br>"+
+            "index trie   " + T(t4-t3) + " sec " + N(n4) + ": "+ N(u4) + "<br>"+
             "</font>";
+            oops(out(n1 == n2 and n2 == n3 and n3 == n4)) {"1"};
+            oops(out(u1 == u2 and u2 == u3 and u3 == u4)) {"1"};
         }
-        test("UNITTEST.lower"); 
+        test("UNITTEST.HEAVY.lower"); 
         {
             int n = 100'000;
             array<str> ss; ss.resize(n);
@@ -64,13 +69,20 @@ namespace eng::unittest
             ss[i] += (char)(aux::random<int>('a', 'z'));
             unsigned u1 = 0;
             unsigned u2 = 0;
+            unsigned u3 = 0;
+            unsigned u4 = 0;
             sys::timing t0; for (str s: ss) u1 += v1.lower_bound(s);
             sys::timing t1; for (str s: ss) u2 += v2.lower_bound(s);
-            sys::timing t2;
+            sys::timing t2; for (str s: ss) u3 += v3.lower_bound(s);
+            sys::timing t3; for (str s: ss) u4 += v4.lower_bound(s);
+            sys::timing t4;
             report << font +
             "lower basic  " + T(t1-t0) + " sec " + N(u1) + "<br>"+
             "lower hashed " + T(t2-t1) + " sec " + N(u2) + "<br>"+
+            "lower cashed " + T(t3-t2) + " sec " + N(u3) + "<br>"+
+            "lower trie   " + T(t4-t3) + " sec " + N(u4) + "<br>"+
             "</font>";
+            oops(out(u1 == u2 and u2 == u3 and u3 == u4)) {"1"};
         }
         test("");
         report << aux::unittest::results;
@@ -150,6 +162,11 @@ namespace eng::unittest
             oops(out(eng::less((char*)(u8"äë"), (char*)(u8"äe")))) {"0"};
             oops(out(eng::less((char*)(u8"af"), (char*)(u8"äë")))) {"0"};
             oops(out(eng::less((char*)(u8"B" ), (char*)(u8"af")))) {"0"};
+
+            oops(out(eng::less((char*)(u8"å" ), (char*)(u8"å")))) {"0"};
+            oops(out(eng::less((char*)(u8"å" ), (char*)(u8"à")))) {"0"};
+            oops(out(eng::less((char*)(u8"à" ), (char*)(u8"å")))) {"1"};
+            oops(out(eng::less((char*)(u8"à" ), (char*)(u8"à")))) {"0"};
             #pragma warning(pop)
         }
         test("UNITTEST.asciized"); 
@@ -177,6 +194,36 @@ namespace eng::unittest
             oops(out(eng::lowercased((char*)(u8"ÄÆËAaeEæäë")))) {(char*)(u8"äæëaaeeæäë")};
             oops(out(eng::lowercased((char*)(u8"ÄËÆaAeæEäë")))) {(char*)(u8"äëæaaeæeäë")};
             oops(out(eng::lowercased((char*)(u8"ÄËaÆeAæäEë")))) {(char*)(u8"äëaæeaæäeë")};
+            #pragma warning(pop)
+        }
+        test("UNITTEST.lower.bound"); 
+        {
+            auto lower = [&vocabulary](str s){ return
+                vocabulary[vocabulary.
+                lower_bound_case_insensitive(s)].title; };
+
+            oops(out(lower("PSYCHE"))) {"Psyche"};
+            oops(out(lower("PSyche"))) {"Psyche"};
+            oops(out(lower("Psyche"))) {"Psyche"};
+            oops(out(lower("psyche"))) {"psyche"};
+            oops(out(lower("psychE"))) {"psyche"};
+            oops(out(lower("Psyche Knot"))) {"Psyche knot"};
+            oops(out(lower("Psyche knot"))) {"Psyche knot"};
+            oops(out(lower("psyche knot"))) {"Psyche knot"};
+            oops(out(lower("PSyched"))) {"psyched"};
+            oops(out(lower("Psyched"))) {"psyched"};
+            oops(out(lower("psyched"))) {"psyched"};
+            oops(out(lower("AN"))) {"AN"};
+            oops(out(lower("An"))) {"An"};
+            oops(out(lower("aN"))) {"aN"};
+            oops(out(lower("an"))) {"an"};
+            oops(out(lower("!"))) {"!"};
+            oops(out(lower(" "))) {"!"};
+            oops(out(lower("zzzzzzzz"))) {"zzzzzzzz"};
+            #pragma warning(push)
+            #pragma warning(disable: 4566)
+            oops(out(lower((char*)(u8"Ⅴ⁷/Ⅴ")))) {(char*)(u8"Ⅴ⁷/Ⅴ")};
+            oops(out(lower((char*)(u8"Ⅴ⁷Ⅴ⁷")))) {(char*)(u8"Ⅴ⁷/Ⅴ")};
             #pragma warning(pop)
         }
 

@@ -17,8 +17,7 @@ namespace app::dic
         {
             std::filesystem::path dir = "../data";
 
-            vocabulary = std::move(
-                ::eng::vocabulary_hashed(
+            vocabulary = std::move(::eng::vocabulary(
                     dir/"vocabulary.dat"));
 
             assets.clear();
@@ -75,7 +74,8 @@ namespace app::dic
         void on_key_pressed (str key, bool down) override
         {
             if (key == "") return;
-            if((key == "ctrl+insert" or
+            if((key == "ctrl+C" or
+                key == "ctrl+insert" or
                 key == "shift+left"  or
                 key == "shift+right" or
                 key == "ctrl+left"   or

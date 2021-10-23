@@ -2,51 +2,60 @@
 #include "eng_abc_vocabulary.h"
 namespace eng
 {
-    struct vocabulary_trie : vocabulary_basic
+    using vocabulary_trie = vocabulary_cached;
+
+    struct vocabulary_triee
     {
-        std::array<int, 27*27*27> trie{};
+        struct node
+        {
+            str letter;
+            array<node> letters;
+            int offset = 0;
+            int length = 0;
+            int redirect = -1;
+            int total = 0;
+        };
+        node root;
+
+        int size () const { return root.total; }
+        node& operator [] (int i) { return root; }
+
+        std::optional<int> index (str const& s)
+        {
+            return 0;
+        }
+
+        int lower_bound_case_insensitive (str const& s)
+        {
+            return 0;
+        }
 
         int lower_bound (str const& s)
         {
-            auto it = data.lower_bound(entry{s},
-            [] (entry const& a, entry const& b)
-            { return eng::less(a.title, b.title); });
-            if (it == data.end()) return data.size()-1;
-            return (int)(it - data.begin());
+            return 0;
         }
-        //int lower_bound_ex (str const& s)
-        //{
-        //    int n = lower_bound(s);
-        //    while (n+1 < size() and
-        //        not eng::less(data[n+1]))
-        //}
 
-        explicit vocabulary_trie () = default;
-        explicit vocabulary_trie (dictionary& dic)
-            : vocabulary_basic(dic)
+        explicit vocabulary_triee () = default;
+        explicit vocabulary_triee (dictionary& dic)
         {
-            auto t = trie.begin();
-            for (int i=0; i<27; i++)
-            for (int j=0; j<27; j++)
-            for (int k=0; k<27; k++)
+            struct heapnode
             {
-                str s;
-                s += ' ' + i;
-                s += ' ' + j;
-                s += ' ' + k;
-                *t = lower_bound(s);
-                ++t;
-            }
+                array<heapnode> letters;
+                int total;
+                bool final = false;
+                bool ligature = false;
+            };
+            heapnode root;
+            //for (auto& e: dictionary)
+            //    root.add(e);
+
+
         }
-        explicit vocabulary_trie (std::filesystem::path path)
-            : vocabulary_basic(path)
+        explicit vocabulary_triee (std::filesystem::path path)
         {
-            dat::in::pool pool(path);
-            vocabulary_basic::load(pool);
         }
         void save (dat::out::file& file)
         {
-            vocabulary_basic::save(file);
         }
     };
 }

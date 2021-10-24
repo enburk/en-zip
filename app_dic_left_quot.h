@@ -62,27 +62,43 @@ namespace app::dic::left
         {
             cancel = true;
 
+            if (thread.joinable())
+                thread.join();
+            
+            cancel = false;
+
             ready_players = 0;
 
             if (players.size() > 0)
             {
-                auto it = std::ranges::find(
-                selected, players(current).index);
-                if (it != selected.end())
+                auto& p = players(current);
+                if (p.state == state::ready
+                or  p.state == state::playing
+                or  p.state == state::finished) 
                 {
-                    ready_players++;
-                    players.rotate(0, current, current+1);
-                    std::rotate(selected.begin(),
-                        it, std::next(it));
+                    auto it = std::ranges::find(selected, p.index);
+                    if (it != selected.end())
+                    {
+                        ready_players++;
+                        players.rotate(0, current, current+1);
+                        std::rotate(selected.begin(),
+                            it, std::next(it));
+                    }
+                    else if (p.click)
+                    {
+                        ready_players++;
+                        players.rotate(0, current, current+1);
+                        selected.insert(0, p.index);
+                    }
                 }
             }
 
             int n = 0;
-            for (auto index : selected) {
-                players(n++).reset(index, links);
-            }
+            for (auto index : selected)
+                players(n++).reset(
+                    index, links);
 
-            playall = true; // autoplay.on;
+            playall = true;
             players.truncate(n);
             current = 0;
 
@@ -93,23 +109,22 @@ namespace app::dic::left
                 player.mute(mute.on);
             }
 
-            if (players(current).state == state::ready   or
-                players(current).state == state::playing or
-                players(current).state == state::finished) 
-                players(current).show();
-
-            if (thread.joinable())
-                thread.join();
-
-            cancel = false;
-
-            thread = std::thread([this]()
+            if (players.size() > 0)
             {
-                for (auto & player : players) {
-                    player.load(mutex, cancel);
-                    if (cancel) break;
-                }
-            });
+                auto& p = players(current);
+                if (p.state == state::ready
+                or  p.state == state::playing
+                or  p.state == state::finished) 
+                    p.show();
+
+                thread = std::thread([this]()
+                {
+                    for (auto& player: players) {
+                        player.load(cancel);
+                        if (cancel) break;
+                    }
+                });
+            }
         }
 
         void on_change (void* what) override

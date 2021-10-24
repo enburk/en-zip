@@ -8,11 +8,14 @@ namespace app::dic::audio
     {
         html_view text;
         sys::audio::player audio;
-        media::media_index index;
-        gui::property<gui::time> timer;
+        array<str> links, load_links;
+        media::media_index index, load_index;
         std::atomic<gui::media::state> state;
+        gui::property<gui::time> timer;
         gui::time start, stay;
+        bool click = false;
         bool muted = true;
+        str  html;
 
         player ()
         {
@@ -20,7 +23,7 @@ namespace app::dic::audio
             state = gui::media::state::finished;
         }
 
-        void reset (media::media_index index_, array<str> links)
+        void reset (media::media_index index_, array<str> links_)
         {
             start = gui::time{};
             stay  = gui::time{1000 +
@@ -29,38 +32,39 @@ namespace app::dic::audio
                 index_.comment.size() * 20
             };
 
-            text.forbidden_links = links;
+            text.forbidden_links = links_;
 
-            if (index == index_) return; else
-                index =  index_;
+            if (index == index_) return;
+
+            index = load_index = index_;
+            links = load_links = links_;
 
             stop();
 
             state = gui::media::state::loading;
         }
 
-        void load (std::mutex& mutex, std::atomic<bool>& cancel)
+        void show (gui::time time = gui::time{})
         {
+            if (html != "") {
+            text.html = html; html = ""; }
+            using base = widget<player>;
+            base::show(time);
+        }
 
-            media::media_index index;
-            array<str> forbidden_links;
-            {
-                std::lock_guard lock{mutex};
-                if (state != gui::media::state::loading)
-                    return;
+        void load (std::atomic<bool>& cancel)
+        {
+            if (state == gui::media::state::ready
+            or  state == gui::media::state::playing
+            or  state == gui::media::state::finished)
+                return;
 
-                index = this->index;
-                forbidden_links = text.forbidden_links;
-            }
+            load_index.title = eng::parser::embolden(
+            load_index.title, load_links);
 
-            if (cancel) return;
-
-            index.title = eng::parser::embolden(
-                index.title, forbidden_links);
-
-            str title = media::canonical(index.title);
-            str credit = media::canonical(index.credit);
-            str comment = media::canonical(index.comment);
+            str title = media::canonical(load_index.title);
+            str credit = media::canonical(load_index.credit);
+            str comment = media::canonical(load_index.comment);
 
             while (
                 title.ends_with("<br>"))
@@ -92,20 +96,18 @@ namespace app::dic::audio
             if (false) std::ofstream("test.quot.html.txt")
                 << doc::html::print(title);
 
-            if (cancel) return;
-
-            text.html = title;
+            html = title;
 
             if (cancel) return;
 
             std::filesystem::path dir = "../data/app_dict";
             std::string storage = "storage." +
-                std::to_string(index.location.source)
+                std::to_string(load_index.location.source)
                     + ".dat";
 
             std::filesystem::path path = dir / storage;
-            int offset = index.location.offset;
-            int length = index.location.length;
+            int offset = load_index.location.offset;
+            int length = load_index.location.length;
             array<sys::byte> data;
 
             try
@@ -216,13 +218,21 @@ namespace app::dic::audio
             {
                 state = gui::media::state::finished;
             }
+
+            if (mouse_hover_child)
+                start = gui::time::now;
         }
 
         int clicked = 0;
 
         void on_notify (void* what) override
         {
-            if (what == &text ) { clicked = text.clicked; notify(); }
+            if (what == &text )
+            {
+                clicked = text.clicked;
+                click = true; notify();
+                click = false;
+            }
         }
     };
 }

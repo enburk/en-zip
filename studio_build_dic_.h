@@ -13,6 +13,13 @@ namespace studio::build::dic
         dat::out::file assets_data("../data/app_dict/assets.dat");
         eng::vocabulary vocabulary("../data/vocabulary.dat");
 
+        array<int> redirects;
+        redirects.resize(vocabulary.size());
+        dat::in::pool pool("../data/dictionary_indices.dat");
+        for (int i=0; i<vocabulary.size(); i++) {
+            eng::dictionary::index index; index << pool;
+            redirects[i] = index.redirect; }
+
         using res = media::resource const*;
         std::unordered_map<int, array<res>> entries2resources;
         std::unordered_map<res, array<str>> resources2entries;
@@ -81,8 +88,8 @@ namespace studio::build::dic
                 if (!index) continue;
                 int n = *index;
 
-                if (vocabulary[n].redirect >= 0) n =
-                    vocabulary[n].redirect;
+                if (redirects[n] >= 0) n =
+                    redirects[n];
 
                 entries2resources[n] += &r;
             }
@@ -160,8 +167,8 @@ namespace studio::build::dic
                         if (!index) continue;
                         int n = *index;
 
-                        if (vocabulary[n].redirect >= 0) n =
-                            vocabulary[n].redirect;
+                        if (redirects[n] >= 0) n =
+                            redirects[n];
 
                         if (n == entry) { weight -= penalty; continue; }
 

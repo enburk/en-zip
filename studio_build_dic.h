@@ -11,8 +11,9 @@ namespace studio::build
         path dir = "../data";
 
         if (true)
-        if (std::filesystem::exists         (dir / "dictionary.dat") &&
-            std::filesystem::exists         (dir / "vocabulary.dat") &&
+        if (std::filesystem::exists         (dir / "dictionary_entries.dat") and
+            std::filesystem::exists         (dir / "dictionary_indices.dat") and
+            std::filesystem::exists         (dir / "vocabulary.dat") and
             std::filesystem::last_write_time(dir / "vocabulary.dat") >
             std::filesystem::last_write_time(src))
             return false;
@@ -22,218 +23,167 @@ namespace studio::build
         std::filesystem::create_directories(dir);
 
         eng::dictionary dictionary;
-        dictionary.data.reserve(1024*1024);
+        auto& entries = dictionary.entries;
+        auto& indices = dictionary.indices;
+        entries.reserve(1024*1024);
+        indices.reserve(1024*1024);
 
         str line, s1, s2;
+        std::ofstream ofstream;
         std::ifstream ifstream (src);
         while (std::getline(ifstream, line))
         {
-            auto& data = dictionary.data;
-
             if (line == "") continue;
             if (line.starts_with("  == ")) {
                 line.split_by   ("  == ", s1, line);
                 line.split_by   ( " == ", s1, s2);
-                data.back().topics += eng::dictionary::topic{};
-                data.back().topics.back().header = s1;
-                data.back().topics.back().forms = s2;
+                entries.back().topics += eng::dictionary::topic{};
+                entries.back().topics.back().header = s1;
+                entries.back().topics.back().forms = s2;
             }
             else
             if (line.starts_with("     # ")) {
                 line.split_by   ("     # ", s1, s2);
-                data.back().topics.back().content += s2;
+                entries.back().topics.back().content += s2;
             }
             else
             {
-                data += eng::dictionary::entry{line};
-                if (data.size() % 100'000 == 0)
+                indices += eng::dictionary::index{};
+                entries += eng::dictionary::entry{line};
+                if (entries.size() % 100'000 == 0)
                     out << "read " + std::to_string(
-                    data.size()) + " entries";
+                    entries.size()) + " entries";
             }
         }
 
         out << "dictionary sort...";
         std::sort(std::execution::par_unseq,
-            dictionary.data.begin(), dictionary.data.end(),
+            entries.begin(), entries.end(),
             [](auto const& a, auto const& b) { return
             eng::less(a.title, b.title); });
         out << "dictionary sort ok";
 
+        out << "vocabulary save...";
+        ofstream = std::ofstream(dir/"vocabulary.txt");
+        for (auto& e: entries) ofstream << e.title << "\n";
+
         eng::vocabulary vocabulary(dictionary);
+        dat::out::file vocabulary_out(dir/"vocabulary.dat");
+        vocabulary.save(vocabulary_out);
+        vocabulary_out.close();
 
-        array<str> apostros;
-        array<str> unicodes;
-        array<str> sortings;
-        bool next_line = false;
+        out << "vocabulary check...";
+        vocabulary = std::move(eng::vocabulary(dir/"vocabulary.dat"));
+        ofstream = std::ofstream(dir/"x_errors_vocabulary.txt");
 
-        for (auto [i, entry] : enumerate(vocabulary.data))
+        if (vocabulary.size() !=
+            entries   .size()) ofstream << "SIZE: " <<
+            vocabulary.size() << " != " <<
+            entries   .size() << "\n";
+
+        for (int i=0; i<vocabulary.size(); i++)
         {
-            if (entry.title.contains("'") or
-                entry.title.contains((char*)(u8"’")))
-                apostros += entry.title;
-
-            bool unicode = false;
-            bool sorting = false;
-            for (char c : entry.title)
-            {
-                auto b = static_cast<uint8_t>(c);
-                if (b & 0b10000000) unicode = true; else
-                if (c >= 'A') if (c < 'a' or 'z' < c)
-                    sorting = true;
-            }
-            if (unicode) sorting = true;
-            if (unicode) unicodes += entry.title;
-
-            if (sorting and not next_line and i > 0)
-                sortings += vocabulary[i-1].title;
-            if (sorting || next_line)
-                sortings += entry.title;
-
-            next_line = sorting;
+            const auto & a = entries[i];
+            const auto & b = vocabulary[i];
+            if (a.title != b.title) ofstream << i << ": " <<
+                a.title << " != " <<
+                b.title << "\n";
         }
 
-        std::ofstream ofstream;
-        
-        ofstream = std::ofstream(dir/"vocabulary.txt");
-        for (auto& e: vocabulary.data)
-            ofstream << e.title << "\n";
+        out << "dictionary check...";
+        ofstream = std::ofstream(dir/"x_errors_dictionary.txt");
 
-        ofstream = std::ofstream(dir/"vocabulary_apostros.txt");
-        for (auto& s: apostros)
-            ofstream << s << "\n";
-
-        ofstream = std::ofstream(dir/"vocabulary_unicodes.txt");
-        for (auto& s: unicodes)
-            ofstream << s << "\n";
-
-        ofstream = std::ofstream(dir/"vocabulary_sortings.txt");
-        for (auto& s : sortings)
-            ofstream << s << "\n";
-
-        ofstream = std::ofstream(dir/"vocabulary_problems.txt");
-
-        out << "dictionary analysis...";
-
-        for (int i=0; i<dictionary.data.size(); i++)
+        for (int i=0; i<entries.size(); i++)
         {
             auto & topics =
-            dictionary[i].topics;
+            entries[i].topics;
             if (topics.size() != 1 or
                 topics.front().header != ">>>")
                 continue; // it's not a redirect
 
             str redirect = topics[0].forms;
-            if (redirect == vocabulary[i].title) {
+            if (redirect == entries[i].title) {
                 ofstream << "REDIRECT: TO ITSELF: " <<
-                dictionary[i].title << " >>> " <<
+                entries[i].title << " >>> " <<
                 redirect << "\n";
                 continue; }
 
             auto index = vocabulary.index(redirect);
             if (not index) {
                 ofstream << "REDIRECT: NOT FOUND: " <<
-                dictionary[i].title << " >>> " <<
+                entries[i].title << " >>> " <<
                 redirect << "\n";
                 continue; }
 
             int n = *index;
-            if (dictionary[n].title != redirect)
+            if (entries[n].title != redirect)
                 ofstream << "REDIRECT: MISMATCH: " <<
-                dictionary[i].title << " >>> " <<
-                dictionary[n].title << " <<< " <<
+                entries[i].title << " >>> " <<
+                entries[n].title << " <<< " <<
                 redirect << "\n";
 
             auto & topics2 =
-            dictionary[n].topics;
+            entries[n].topics;
             if (topics2.size() == 1 and
                 topics2.front().header == ">>>") {
                 ofstream << "REDIRECT: TRANSIT: " <<
-                dictionary[i].title << " >>> " <<
+                entries[i].title << " >>> " <<
                 redirect << "\n";
                 continue; }
 
-            dictionary[n].redirects += i;
-            vocabulary[i].redirect = n;
+            entries[n].redirects += i;
+            indices[i].redirect = n;
         }
 
-        dat::out::file dictionary_out(dir/"dictionary.dat");
+        out << "dictionary entries save...";
+        dat::out::file entries_out(dir/"dictionary_entries.dat");
+        dat::out::file indices_out(dir/"dictionary_indices.dat");
 
-        for (int i=0; i<dictionary.data.size(); i++)
+        for (int i=0; i<entries.size(); i++)
         {
             if ((i+1) % 100'000 == 0) out <<
                 "written " + std::to_string
                     (i+1) + " entries";
 
-            if (
-            vocabulary[i].redirect >= 0) continue;
-            vocabulary[i].offset = dictionary_out.size;
-            dictionary[i] >>       dictionary_out;
-            vocabulary[i].length = dictionary_out.size -
-            vocabulary[i].offset;
+            if ( // skip redirected
+            indices[i].redirect >= 0) continue;
+            indices[i].offset = entries_out.size;
+            entries[i] >>       entries_out;
+            indices[i].length = entries_out.size -
+            indices[i].offset;
         }
 
-        ofstream = std::ofstream(dir/"vocabulary_redirect.txt");
+        out << "dictionary indices save...";
+        ofstream = std::ofstream(dir/"x_redirects.txt");
 
-        for (int i=0; i<dictionary.data.size(); i++)
+        for (int i=0; i<indices.size(); i++)
         {
-            if (vocabulary[i].redirect < 0) continue;
+            int n = indices[i].redirect;
+            if (n < 0) continue; // ony for redirected
 
-            int n = vocabulary[i].redirect;
-
-            vocabulary[i].offset = vocabulary[n].offset;
-            vocabulary[i].length = vocabulary[n].length;
+            indices[i].offset = indices[n].offset;
+            indices[i].length = indices[n].length;
 
             ofstream << 
-            dictionary[i].title << " >>> " <<
-            dictionary[n].title << "\n";
+            entries[i].title << " >>> " <<
+            entries[n].title << "\n";
         }
 
-        dat::out::file vocabulary_out(dir/"vocabulary.dat");
-        vocabulary.save(vocabulary_out);
+        ofstream = std::ofstream(dir/"x_numbers.txt");
 
-        dictionary_out.close();
-        vocabulary_out.close();
-
-        out << "vocabulary check...";
-        ofstream = std::ofstream(dir/"vocabulary_check.txt");
-        eng::vocabulary Vocabulary(dir/"vocabulary.dat");
-
-        if (Vocabulary.size() !=
-            vocabulary.size()) ofstream << "SIZE: " <<
-            Vocabulary.size() << " != " <<
-            vocabulary.size() << "\n";
-
-        for (int i=0; i<vocabulary.size(); i++)
+        for (int i=0; i<indices.size(); i++)
         {
-            const auto & a = Vocabulary[i];
-            const auto & b = vocabulary[i];
-            if (a.title    != b.title
-            or  a.offset   != b.offset   
-            or  a.length   != b.length   
-            or  a.redirect != b.redirect 
-                ) ofstream <<
-                a.title    << " [" <<
-                a.offset   << ", " <<
-                a.length   << ", " <<
-                a.redirect << "] != " <<
-                b.title    << " [" << 
-                b.offset   << ", " << 
-                b.length   << ", " << 
-                b.redirect << "]\n";
-        }
+            indices[i] >> indices_out;
 
-        out << "vocabulary print...";
-        ofstream = std::ofstream(dir/"vocabulary_numbers.txt");
-
-        for (int i=0; i<vocabulary.data.size(); i++)
-        {
-            const auto & a = vocabulary[i];
             ofstream  << i << " "  <<
-                a.title    << " [" <<
-                a.offset   << ", " <<
-                a.length   << ", " <<
-                a.redirect << "]\n";
+                entries[i].title    << " [" <<
+                indices[i].offset   << ", " <<
+                indices[i].length   << ", " <<
+                indices[i].redirect << "]\n";
         }
+
+        entries_out.close();
+        indices_out.close();
 
         out << "dictionary update ok";
         out << "";

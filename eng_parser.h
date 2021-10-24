@@ -199,8 +199,8 @@ namespace eng::parser
         std::ranges::sort(entries, less);
 
         dictionary dic;
-        dic.data.reserve(entries.size()); for (auto& e : entries)
-        dic.data += dictionary::entry{e};
+        dic.entries.reserve(entries.size()); for (auto& e : entries)
+        dic.entries += dictionary::entry{e};
         vocabulary_basic voc{dic};
 
         array<token> all;

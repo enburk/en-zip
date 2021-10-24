@@ -7,23 +7,14 @@ namespace eng
         struct entry
         { 
             str title;
-            int offset = 0;
-            int length = 0;
-            int redirect = -1;
 
             void operator << (dat::in::pool& in)
             {
                 title = in.get_string();
-                offset = in.get_int();
-                length = in.get_int();
-                redirect = in.get_int();
             }
             void operator >> (dat::out::file& out) const
             {
                 out << title;
-                out << offset;
-                out << length;
-                out << redirect;
             }
         };
 
@@ -64,9 +55,9 @@ namespace eng
         explicit vocabulary_basic () = default;
         explicit vocabulary_basic (dictionary& dic)
         {
-            data.resize(dic.data.size());
-            for (int i=0; i<dic.data.size(); i++)
-                data[i].title = dic.data[i].title;
+            data.resize(dic.entries.size());
+            for (int i=0; i<dic.entries.size(); i++)
+                data[i].title = dic.entries[i].title;
         }
         explicit vocabulary_basic (std::filesystem::path path)
         {
@@ -119,7 +110,7 @@ namespace eng
 
     struct vocabulary_cached : vocabulary_basic
     {
-        std::array<int, 27*27*27> trie{};
+        std::vector<int> cache;
 
         std::optional<int> index (str const& s)
         {
@@ -165,8 +156,8 @@ namespace eng
             }
 
             if (n != -1) {
-                b = data.begin() + trie[n]; if (n+1 < trie.size())
-                e = data.begin() + trie[n+1];
+                b = data.begin() + cache[n]; if (n+1 < cache.size())
+                e = data.begin() + cache[n+1];
             }
 
             auto it = std::lower_bound(b, e, entry{s},
@@ -180,7 +171,8 @@ namespace eng
         explicit vocabulary_cached (dictionary& dic)
             : vocabulary_basic(dic)
         {
-            auto t = trie.begin();
+            cache.resize(27*27*27);
+            auto t = cache.begin();
             for (int i=0; i<27; i++)
             for (int j=0; j<27; j++)
             for (int k=0; k<27; k++)
@@ -199,13 +191,14 @@ namespace eng
         {
             dat::in::pool pool(path);
             vocabulary_basic::load(pool);
-            for (int i=0; i<trie.size(); i++)
-                trie[i] = pool.get_int();
+            cache.resize(27*27*27);
+            for (int i=0; i<cache.size(); i++)
+                cache[i] = pool.get_int();
         }
         void save (dat::out::file& file)
         {
             vocabulary_basic::save(file);
-            for (int n: trie)
+            for (int n: cache)
                 file << n;
         }
     };

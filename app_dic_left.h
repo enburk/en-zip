@@ -15,7 +15,8 @@ namespace app::dic::left
         array<str> undoes;
         array<str> redoes;
 
-        eng::vocabulary::entry current;
+        eng::dictionary::entry current_entry;
+        eng::dictionary::index current_index;
 
         area ()
         {
@@ -36,27 +37,40 @@ namespace app::dic::left
         {
             if (n < 0) return;
             if (n >= vocabulary.data.size()) return;
-            if (vocabulary[n].redirect >= 0) n =
-                vocabulary[n].redirect;
-            if (vocabulary[n].length == 0) return;
-            if (vocabulary[n].length == current.length
-            and vocabulary[n].offset == current.offset) return;
 
             sys::timing t0;
-            if (current.title != "")
-            undoes += current.title;
-            current = vocabulary[n];
-
             std::filesystem::path dir = "../data";
-            if (!std::filesystem::exists (dir / "dictionary.dat")) return;
-            std::ifstream ifstream (dir / "dictionary.dat", std::ios::binary);
-            ifstream.seekg(current.offset, std::ios::beg);
+            if (!std::filesystem::exists(dir / "dictionary_indices.dat")) return;
+            if (!std::filesystem::exists(dir / "dictionary_entries.dat")) return;
+            std::ifstream indices_stream(dir / "dictionary_indices.dat", std::ios::binary);
+            std::ifstream entries_stream(dir / "dictionary_entries.dat", std::ios::binary);
+            dat::in::pool indices_pool;
+            dat::in::pool entries_pool;
 
-            dat::in::pool pool;
-            pool.bytes.resize(current.length);
-            ifstream.read((char*)(pool.bytes.data()), current.length);
+            indices_stream.seekg(n*eng::dictionary::index::size, std::ios::beg);
+            indices_pool.bytes.resize(eng::dictionary::index::size);
+            indices_stream.read((char*)(indices_pool.bytes.data()),
+            eng::dictionary::index::size);
+            eng::dictionary::index index;
+            index << indices_pool;
+
+            if (index.redirect >= 0) n =
+                index.redirect;
+            if (index.length == 0) return;
+            if (index.length == current_index.length
+            and index.offset == current_index.offset)
+                return;
+
+            entries_stream.seekg(index.offset, std::ios::beg);
+            entries_pool.bytes.resize(index.length);
+            entries_stream.read((char*)(entries_pool.bytes.data()), index.length);
             eng::dictionary::entry entry;
-            entry << pool;
+            entry << entries_pool;
+
+            if (current_entry.title != "")
+            undoes += current_entry.title;
+            current_entry = entry;
+            current_index = index;
 
             array<str> links;
             links += entry.title;
@@ -148,7 +162,7 @@ namespace app::dic::left
             {
                 str link = undoes.back();
                 undoes.pop_back();
-                redoes += current.title;
+                redoes += current_entry.title;
                 auto index = vocabulary.index(link);
                 if (not index) { log << "undoes: not found: " + link; return; }
                 clicked = *index;

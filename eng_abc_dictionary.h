@@ -69,8 +69,29 @@ namespace eng
             }
         };
 
-        array<entry> data;
-        entry& operator [] (int i)
-            { return data[i]; }
+        struct index
+        { 
+            int offset = 0;
+            int length = 0;
+            int redirect = -1;
+
+            inline static const int size = 3*4;
+
+            void operator << (dat::in::pool& in)
+            {
+                offset   = in.get_int();
+                length   = in.get_int();
+                redirect = in.get_int();
+            }
+            void operator >> (dat::out::file& out) const
+            {
+                out << offset;
+                out << length;
+                out << redirect;
+            }
+        };
+
+        array<entry> entries;
+        array<index> indices;
     };
 }

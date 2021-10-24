@@ -33,7 +33,8 @@ namespace app::dic
             }
 
             media::reload();
-            left.current = ::eng::vocabulary::entry{};
+            left.current_entry = ::eng::dictionary::entry{};
+            left.current_index = ::eng::dictionary::index{};
             left.reload();
             list.reload();
         }

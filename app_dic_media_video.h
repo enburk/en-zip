@@ -74,10 +74,9 @@ namespace app::dic::video
 
             if (date != "") c += ", <i>" + date + "</i>";
 
-            if (index.comment != "") s += "<br><br>"
-                "<font color=#808080><i>" + 
-                media::canonical(index.comment) +
-                "</i></font><br>&nbsp;";
+            if (index.comment != "") s += "<br><br>" +
+                gray(italic(media::canonical(
+                index.comment))) + "<br>&nbsp;";
 
             script.html = s;
             credit.html = c;
@@ -89,6 +88,15 @@ namespace app::dic::video
             state = gui::media::state::playing;
             stay.ms = stay.ms * 120/100;
             video.play();
+
+            str title = doc::html::untagged(script.html);
+            if (title.size() > 100) {
+                title.resize(80);
+                title += "..."; }
+            logs::media << "<div hidden=1>[" +
+            std::to_string(index.location.source) + ":" +
+            std::to_string(index.location.offset) + "]" +
+            "</div>" + purple("[video] ") + dark(title);
         }
         void stop ()
         {

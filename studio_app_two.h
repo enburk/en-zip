@@ -2,7 +2,8 @@
 #include "app_two.h"
 namespace studio::two
 {
-    struct area : gui::widget<area>
+    struct area:
+    widget<area>
     {
         gui::console log;
 
@@ -15,7 +16,8 @@ namespace studio::two
         }
     };
 
-    struct studio : gui::widget<studio>
+    struct studio:
+    widget<studio>
     {
         app::two::app app;
         gui::area<area> area;
@@ -48,43 +50,5 @@ namespace studio::two
         void on_keyboard_input (str symbol) override { app.on_keyboard_input(symbol); }
         void on_key_pressed (str key, bool down) override { app.on_key_pressed(key,down); }
     };
-
-    inline void compile (array<media::resource> & resources)
-    {
-        std::multimap<int, int> entry_media; int total_media = 0;
-
-        media::
-        data::out::storage storage("../data/app_dual");
-        dat::out::file entry_index("../data/app_dual/entry_index.dat");
-        dat::out::file media_index("../data/app_dual/media_index.dat");
-
-        for (auto & r : resources)
-        {
-            if (r.entries.size() == 0)
-                r.entries += r.title;
-
-            str qrop;
-            for (str option : r.options)
-                if (option.starts_with("qrop "))
-                    qrop = option.from(5);
-
-            for (str & option : r.options)
-                if (option.starts_with("crop "))
-                    option = "crop " + qrop;
-
-            //media::data::location location;
-
-            for (str entry : r.entries)
-            {
-            }
-        }
-
-        entry_index << total_media;
-        entry_index << (int)(entry_media.size());
-        for (auto [entry, media] : entry_media) {
-            entry_index << entry;
-            entry_index << media;
-        }
-    }
 }
 

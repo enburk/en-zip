@@ -79,7 +79,7 @@ namespace app::dic::video
                     using state = gui::media::state;
                     switch(players(current).state) {
                     case state::failure:
-                        log << "video: " +
+                        logs::times << "video: " +
                         std::to_string(current) + ": " +
                         players(current).error;
                         players(current).state = gui::media::state::finished;

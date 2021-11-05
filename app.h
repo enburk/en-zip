@@ -14,11 +14,20 @@ struct optional_log
     private: gui::console* log = nullptr;
 };
 
-namespace app::dic { optional_log log; }
-namespace app::one { optional_log log; }
-namespace app::two { optional_log log; }
-
-namespace app::dic { eng::vocabulary vocabulary; }
-
 inline std::map<str, array<sys::byte>> assets;
 
+namespace app::dic
+{
+    eng::vocabulary vocabulary;
+
+    namespace logs
+    {
+        optional_log times;
+        optional_log media;
+        optional_log audio;
+        optional_log video;
+    }
+}
+
+namespace app::one { optional_log log; }
+namespace app::two { optional_log log; }

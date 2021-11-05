@@ -12,7 +12,7 @@ namespace app::dic::audio
         media::media_index index, load_index;
         std::atomic<gui::media::state> state;
         gui::property<gui::time> timer;
-        gui::time start, stay;
+        gui::time start, stay, hover;
         bool click = false;
         bool muted = true;
         str  html;
@@ -50,6 +50,15 @@ namespace app::dic::audio
             text.html = html; html = ""; }
             using base = widget<player>;
             base::show(time);
+
+            str title = doc::html::untagged(text.html);
+            if (title.size() > 100) {
+                title.resize(80);
+                title += "..."; }
+            logs::media << "<a href=\"" +
+            std::to_string(index.location.source) + ":" +
+            std::to_string(index.location.offset) + "\">" +
+            green("[audio] ") + gray(title) + "</a>";
         }
 
         void load (std::atomic<bool>& cancel)
@@ -136,7 +145,7 @@ namespace app::dic::audio
             }
             catch (std::exception const& e) {
                 state = gui::media::state::failure;
-                log << "audio failure: " +
+                logs::times << "audio failure: " +
                     str(e.what());
             }
         }
@@ -192,6 +201,7 @@ namespace app::dic::audio
                 }
                 else
                 {
+                    start = gui::time::now;
                     auto duration = gui::time{(int)(audio.duration*1000)};
                     duration = max(duration, stay);
                     audio.play(0.0, 0.0);
@@ -214,13 +224,20 @@ namespace app::dic::audio
                 text.alignment = XY{pix::left, pix::center};
                 text.color = gui::skins[skin].touched.first;
             }
-            if (what == &timer and timer == gui::time{1})
+            if (what == &timer)
             {
-                state = gui::media::state::finished;
-            }
+                if (timer == gui::time{1})
+                {
+                    if (mouse_hover_child or
+                        gui::time::now - hover < 1s) {
+                        timer.go (gui::time{1}, 1s);
+                        return; }
 
-            if (mouse_hover_child)
-                start = gui::time::now;
+                    state = gui::media::state::finished;
+                }
+                else if (mouse_hover_child)
+                    hover = gui::time::now;
+            }
         }
 
         int clicked = 0;

@@ -24,6 +24,7 @@ using pix::RGBA;
 using pix::image;
 using pix::frame;
 using gui::widget;
+using namespace std::literals::chrono_literals;
 
 str bold   (str s) { return "<b>" + s + "</b>"; }
 str italic (str s) { return "<i>" + s + "</i>"; }
@@ -35,6 +36,7 @@ str light  (str s) { return "<font color=#A0A0A0>" + s + "</font>"; }
 str purple (str s) { return "<font color=#800080>" + s + "</font>"; }
 str red    (str s) { return "<font color=#B00020>" + s + "</font>"; }
 str yellow (str s) { return "<font color=#BF360C>" + s + "</font>"; }
+str monospace (str s) { return "<font face=\"monospace\">" + s + "</font>"; }
 
 using namespace std::string_view_literals;
 constexpr std::string_view ellipsis = "\xE2" "\x80" "\xA6"sv; // …

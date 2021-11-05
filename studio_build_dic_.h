@@ -13,6 +13,10 @@ namespace studio::build::dic
         dat::out::file assets_data("../data/app_dict/assets.dat");
         eng::vocabulary vocabulary("../data/vocabulary.dat");
 
+        std::map<int32_t, std::map<int32_t, str>> locations;
+        dat::out::file locationari("../data/app_dict/locationari.dat");
+        dat::out::file locationary("../data/app_dict/locationary.dat");
+
         array<int> redirects;
         redirects.resize(vocabulary.size());
         dat::in::pool pool("../data/dictionary_indices.dat");
@@ -199,6 +203,11 @@ namespace studio::build::dic
                             new_ones.insert(r);
                             report << r->path.string(); }
 
+                        locations
+                        [location.source]
+                        [location.offset] =
+                            r->path.string();
+
                         resources2entries[r] +=
                         vocabulary[entry].title;
         
@@ -255,6 +264,13 @@ namespace studio::build::dic
             blue ("[" + str(accepted,  "][") + "]") +
             red  ("[" + str(rejected,  "][") + "]") +
             green("{" + str(r.options, "}{") + "}");
+        }
+
+        for (auto& [source, map] : locations)
+        for (auto& [offset, path] : map) {
+            locationary << source;
+            locationary << offset;
+            locationary << path;
         }
     }
 }

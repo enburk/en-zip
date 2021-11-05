@@ -104,16 +104,20 @@ namespace app::dic::left
             sys::timing t5; quot.object.reset(selected.audio, links);
             sys::timing t6;
 
-            log << doc::html::encoded(entry.title) + "<br>" 
-            "<font color=#808080 face=\"monospace\">" +
-            "time file  " + sys::format(t1-t0) + " sec<br>"+
-            "time wiki  " + sys::format(t2-t1) + " sec<br>"+
-            "time html  " + sys::format(t3-t2) + " sec<br>"+
-            "time media " + sys::format(t4-t3) + " sec<br>"+
-            "time video " + sys::format(t5-t4) + " sec<br>"+
-            "time audio " + sys::format(t6-t5) + " sec<br>"+
-            "time total " + sys::format(t6-t0) + " sec<br>"+
-            "</font>";
+            str title = doc::html::encoded(entry.title);
+            logs::times << "<br>" + title;
+            logs::media << "<br>" + title;
+            logs::audio << "<br>" + title;
+            logs::video << "<br>" + title;
+
+            logs::times << gray(monospace(
+            "time file  " + sys::format(t1-t0) + " sec<br>" +
+            "time wiki  " + sys::format(t2-t1) + " sec<br>" +
+            "time html  " + sys::format(t3-t2) + " sec<br>" +
+            "time media " + sys::format(t4-t3) + " sec<br>" +
+            "time video " + sys::format(t5-t4) + " sec<br>" +
+            "time audio " + sys::format(t6-t5) + " sec<br>" +
+            "time total " + sys::format(t6-t0) + " sec"));
         }
 
         void refresh ()
@@ -164,7 +168,8 @@ namespace app::dic::left
                 undoes.pop_back();
                 redoes += current_entry.title;
                 auto index = vocabulary.index(link);
-                if (not index) { log << "undoes: not found: " + link; return; }
+                if (not index) { logs::times <<
+                "undoes: not found: " + link; return; }
                 clicked = *index;
                 notify();
                 undoes.pop_back();
@@ -175,7 +180,8 @@ namespace app::dic::left
                 str link = redoes.back();
                 redoes.pop_back();
                 auto index = vocabulary.index(link);
-                if (not index) { log << "redoes: not found: " + link; return; }
+                if (not index) { logs::times <<
+                "redoes: not found: " + link; return; }
                 clicked = *index;
                 notify();
             }

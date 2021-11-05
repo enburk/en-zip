@@ -276,7 +276,7 @@ namespace eng::unittest
 
         if (aux::unittest::all_ok) {
         report << bold(green("UNITTEST OK"));
-        if (true) { heavy(report); return false; }
+        if (false) { heavy(report); return false; }
         return true; }
 
         report << aux::unittest::results;

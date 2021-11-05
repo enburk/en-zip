@@ -16,11 +16,12 @@
     <Filter Include="eng">
       <UniqueIdentifier>{f13f1a0f-739b-405c-a800-02bc5baebd0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="media">
+      <UniqueIdentifier>{e566e5ff-928c-4855-838a-43bb15d689a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
-    <ClInclude Include="media.h" />
-    <ClInclude Include="media_data.h" />
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="studio_build_dic.h" />
     <ClInclude Include="..\ae\proto-studio\aux_abc.h">
@@ -54,9 +55,6 @@
     <ClInclude Include="app_dic_media_audio.h" />
     <ClInclude Include="app_dic_media_video.h" />
     <ClInclude Include="app_dic_media_videos.h" />
-    <ClInclude Include="media_scan.h" />
-    <ClInclude Include="medio_audio.h" />
-    <ClInclude Include="medio_video.h" />
     <ClInclude Include="data_in.h" />
     <ClInclude Include="data_out.h" />
     <ClInclude Include="abc.h" />
@@ -166,6 +164,26 @@
     </ClInclude>
     <ClInclude Include="eng_abc_vocabulary_triee.h">
       <Filter>eng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\doc_html_model.h">
+      <Filter>doc</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_dic_area.h" />
+    <ClInclude Include="studio_app_dic_detail.h" />
+    <ClInclude Include="media.h">
+      <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="media_data.h">
+      <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="media_scan.h">
+      <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="medio_audio.h">
+      <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="medio_video.h">
+      <Filter>media</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

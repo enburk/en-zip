@@ -1,32 +1,35 @@
 #pragma once
-#include "app_dic.h"
-#include "eng_parser.h"
-#include "eng_unittest.h"
-#include "media_data.h"
+#include "studio_app_dic_area.h"
 namespace studio::dic
 {
-    struct area : gui::widget<area>
+    struct studio:
+    widget<studio>
     {
-        gui::console log;
-
-        void on_change (void* what) override
-        {
-            if (what == &coord)
-            {
-                log.coord = coord.now.local();
-            }
-        }
-    };
-
-    struct studio : gui::widget<studio>
-    {
-        app::dic::app app;
-        gui::area<area> area;
+        gui::area<area> log;
+        app::dic::app app; // after log
         gui::splitter splitter;
+        bool appfocus = true;
+        bool onfocus = false;
 
-        studio () { app::dic::log = area.object.log; }
+        studio () { reload(); }
 
-        void reload () { app.reload(); }
+        void reload ()
+        {
+            sys::timing t0;
+            locations.clear();
+            dat::in::pool pool("../data/app_dict/locationary.dat");
+            while (not pool.done()) {
+                int source = pool.get_int();
+                int offset = pool.get_int();
+                str path = pool.get_string();
+                locations[source][offset] = path;
+            }
+
+            sys::timing t1;
+            app::dic::logs::times << gray(monospace(
+            "studio locationary " + sys::format(t1-t0) + " sec<br>" +
+            "studio load total  " + sys::format(t1-t0) + " sec"));
+        }
 
         void on_change (void* what) override
         {
@@ -38,41 +41,71 @@ namespace studio::dic
                 int w = W/2;
                 int d = 2*l;
 
-                splitter.coord = XYWH(W-w-d, 0, 2*d, H);
-                splitter.lower = 8'000 * W / 10'000;
-                splitter.upper =   800 * W / 10'000;
+                splitter.lower = W * 25'00 / 100'00;
+                splitter.upper = W * 75'00 / 100'00;
 
-                area.coord = XYWH(0, 0, W-w, H);
-                app .coord = XYWH(W-w, 0, w, H);
+                str s = "studio::dic::splitter.permyriad";
+                int p = sys::settings::load(s, 100'00 * (W-w)/W);
+                int x = clamp<int>(W*p / 100'00,
+                splitter.lower.now,
+                splitter.upper.now);
+
+                splitter.coord = XYXY(x-d, 0, x+d, H);
+
+                log.coord = XYXY(0, 0, x, H);
+                app.coord = XYXY(x, 0, W, H);
             }
         }
 
-        void on_focus (bool on) override { app.on_focus(on); }
+        void on_notify (void* what) override
+        {
+            if (what == &splitter) {
+                sys::settings::save(
+                "studio::dic::splitter.permyriad",
+                splitter.middle * 100'00 / coord.now.w);
+                on_change(&coord);
+            }
+        }
+
+        void on_focus (bool on) override
+        {
+            onfocus = on;
+            log.on_focus(on and not appfocus);
+            app.on_focus(on and appfocus);
+        }
         void on_keyboard_input (str symbol) override
         {
-            area.object.log.page.view.selections = array<gui::text::range>();
-            app.on_keyboard_input(symbol);
+            if (appfocus)
+            app.on_keyboard_input(symbol); else
+            log.on_keyboard_input(symbol);
         }
         void on_key_pressed (str key, bool down) override
         {
-            if (key == "") return;
-            if((key == "ctrl+C" or
-                key == "ctrl+insert" or
-                key == "shift+left"  or
-                key == "shift+right" or
-                key == "ctrl+left"   or
-                key == "ctrl+right"  or
-                key == "ctrl+shift+left"  or
-                key == "ctrl+shift+right" or
-                key == "shift+up"    or
-                key == "shift+down") and
-                area.object.log.page.view.selected() != "") {
-                area.object.log.page.on_key_pressed(key,down);
-                return;
-            }
+            if (appfocus)
+            app.on_key_pressed(key, down); else
+            log.on_key_pressed(key, down);
+        }
 
-            area.object.log.page.view.selections = array<gui::text::range>();
-            app.on_key_pressed(key,down);
+        void on_mouse_press_child (XY p, char button, bool down) override
+        {
+            if (button != 'L' or
+                not down or
+                not onfocus)
+                return;
+
+            if (log.coord.now.includes(p) and appfocus)
+            {
+                appfocus = false;
+                log.on_focus(true);
+                app.on_focus(false);
+            }
+            else
+            if (app.coord.now.includes(p) and not appfocus)
+            {
+                appfocus = true;
+                log.on_focus(false);
+                app.on_focus(true);
+            }
         }
     };
 }

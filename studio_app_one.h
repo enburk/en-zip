@@ -2,7 +2,8 @@
 #include "app_one.h"
 namespace studio::one
 {
-    struct area : gui::widget<area>
+    struct area:
+    widget<area>
     {
         gui::console log;
 
@@ -15,7 +16,8 @@ namespace studio::one
         }
     };
 
-    struct studio : gui::widget<studio>
+    struct studio:
+    widget<studio>
     {
         app::one::app app;
         gui::area<area> area;

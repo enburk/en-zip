@@ -26,15 +26,6 @@ struct Studio : gui::widget<Studio>
         toolbar.color = gui::skins[skin].light.first;
         canvas .color = gui::skins[skin].light.first;
 
-        select(0).text.text = "dictionary";
-        select(1).text.text = "en";
-        select(2).text.text = "en-ru";
-        select(3).text.text = "audio";
-        select(4).text.text = "video";
-        select(5).text.text = "build";
-        select(6).text.text = "build!";
-        select(0).on = true;
-
         studios += &dic;
         studios += &one;
         studios += &two;
@@ -44,6 +35,15 @@ struct Studio : gui::widget<Studio>
 
         for (int i=1; i<studios.size(); i++)
             studios[i]->hide();
+
+        select(0).text.text = "dictionary";
+        select(1).text.text = "en";
+        select(2).text.text = "en-ru";
+        select(3).text.text = "audio";
+        select(4).text.text = "video";
+        select(5).text.text = "build";
+        select(6).text.text = "build!";
+        select(0).on = true;
     }
 
     void on_change (void* what) override

@@ -59,6 +59,8 @@ namespace dat::in
             endianness = get_int();
         }
 
+        bool done () { return offset >= bytes.size(); }
+
         int get_int ()
         {
             if (offset + 4 > bytes.size()) throw

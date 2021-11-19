@@ -10,25 +10,30 @@ namespace app::dic::video
         gui::property<gui::time> timer;
         gui::time smoothly {1000};
 
-        using idx = media::media_index;
-
-        void reset (array<idx> selected,  array<str> const& links)
+        void reset (
+            array<media::media_index> videos,
+            array<media::media_index> audios,
+            array<str> const& links)
         {
             if (players.size() > 0)
             {
                 auto it = std::find(
-                selected.begin(), selected.end(), players(current).index);
-                if (it != selected.end())
+                videos.begin(), videos.end(), players(current).index);
+                if (it != videos.end())
                 {
                     players.rotate(0, current, current+1);
-                    std::rotate(selected.begin(),
+                    std::rotate(videos.begin(),
+                        it, std::next(it));
+                    it = audios.begin() + (it -
+                         videos.begin());
+                    std::rotate(audios.begin(),
                         it, std::next(it));
                 }
             }
 
-            int n = 0;
-            for (auto index : selected)
-            players(n++).reset(index, links);
+            int n = videos.size();
+            for (int i=0; i<n; i++)
+            players(i).reset(videos[i], audios[i], links);
             players.truncate(n);
             current = 0;
 

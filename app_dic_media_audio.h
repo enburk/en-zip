@@ -12,7 +12,7 @@ namespace app::dic::audio
         media::media_index index, load_index;
         std::atomic<gui::media::state> state;
         gui::property<gui::time> timer;
-        gui::time start, stay, hover;
+        gui::time start, stay;
         bool click = false;
         bool muted = true;
         str  html;
@@ -51,14 +51,7 @@ namespace app::dic::audio
             using base = widget<player>;
             base::show(time);
 
-            str title = doc::html::untagged(text.html);
-            if (title.size() > 100) {
-                title.resize(80);
-                title += "..."; }
-            logs::media << "<a href=\"" +
-            std::to_string(index.location.source) + ":" +
-            std::to_string(index.location.offset) + "\">" +
-            green("[audio] ") + gray(title) + "</a>";
+            logs::media << media::log(index);
         }
 
         void load (std::atomic<bool>& cancel)
@@ -228,15 +221,13 @@ namespace app::dic::audio
             {
                 if (timer == gui::time{1})
                 {
-                    if (mouse_hover_child or
-                        gui::time::now - hover < 1s) {
+                    if (text.highlighted_link != "") {
+                        timer.go (gui::time{0}, gui::time{0});
                         timer.go (gui::time{1}, 1s);
                         return; }
 
                     state = gui::media::state::finished;
                 }
-                else if (mouse_hover_child)
-                    hover = gui::time::now;
             }
         }
 

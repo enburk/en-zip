@@ -14,11 +14,12 @@ namespace app::dic::left
 
         void reset (
             array<idx> const& selected_video,
+            array<idx> const& selected_audio,
             array<str> const& links)
         {
             text.forbidden_links = links;
 
-            video.reset(selected_video, links);
+            video.reset(selected_video, selected_audio, links);
 
             int l = gui::metrics::line::width;
 

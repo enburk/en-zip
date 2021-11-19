@@ -100,7 +100,7 @@ namespace app::dic::left
             refresh();
 
             sys::timing t3; auto selected = media::select(n);
-            sys::timing t4; card.object.reset(selected.video, links);
+            sys::timing t4; card.object.reset(selected.video, selected.vudio, links);
             sys::timing t5; quot.object.reset(selected.audio, links);
             sys::timing t6;
 

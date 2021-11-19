@@ -205,6 +205,7 @@
     <ClInclude Include="app_dic_list_word.h" />
     <ClInclude Include="app_dic_media.h" />
     <ClInclude Include="app_dic_media_audio.h" />
+    <ClInclude Include="app_dic_media_player.h" />
     <ClInclude Include="app_dic_media_video.h" />
     <ClInclude Include="app_dic_media_videos.h" />
     <ClInclude Include="app_one.h" />

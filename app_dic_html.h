@@ -6,6 +6,8 @@ namespace app::dic
     {
         int clicked = 0;
 
+        str highlighted_link;
+
         array<str> forbidden_links;
 
         int link (gui::text::token& token, gui::text::line& line)
@@ -78,6 +80,8 @@ namespace app::dic
 
         void on_mouse_hover (XY p) override
         {
+            highlighted_link = "";
+
             if (not touch and not sys::keyboard::ctrl)
             {
                 int n = link(p);
@@ -100,6 +104,7 @@ namespace app::dic
                             auto style = style_index.style();
                             style.color = RGBA(0,0,255);
                             style_index = pix::text::style_index(style);
+                            highlighted_link = link;
                         }
                         for (auto & glyph : token)
                         {
@@ -131,6 +136,8 @@ namespace app::dic
 
         void on_mouse_leave () override
         {
+            highlighted_link = "";
+
             if (!touch)
             {
                 for (auto & line : view.column)

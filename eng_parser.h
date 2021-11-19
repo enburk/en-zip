@@ -143,6 +143,7 @@ namespace eng::parser
             for (auto m: matches(voc, tokens))
             {
                 if (m.text == ""
+                or (m.text == "/")
                 or (m.text == "."    and input.size() > 3*5)
                 or (m.text == ","    and input.size() > 3*5)
                 or (m.text == ":"    and input.size() > 9*5)
@@ -196,6 +197,8 @@ namespace eng::parser
 
     str embolden (str input, array<str> entries)
     {
+        if (entries.empty()) return input;
+
         std::ranges::sort(entries, less);
 
         dictionary dic;

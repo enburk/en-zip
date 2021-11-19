@@ -185,5 +185,6 @@
     <ClInclude Include="medio_video.h">
       <Filter>media</Filter>
     </ClInclude>
+    <ClInclude Include="app_dic_media_player.h" />
   </ItemGroup>
 </Project>

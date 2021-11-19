@@ -179,9 +179,8 @@ namespace studio::build::dic
                         auto it = entries2resources.find(n);
                         if (it == entries2resources.end())
                             weight += 2*penalty; else
-                            weight += 100 - min(100,
-                                it->second.size())*
-                                penalty/100;
+                            weight += 1*penalty*
+                            (100 - min(100, it->second.size()))/100;
                     }
 
                     weighted_resources[weight] += r;
@@ -201,7 +200,8 @@ namespace studio::build::dic
 
                         if (new_one) {
                             new_ones.insert(r);
-                            report << r->path.string(); }
+                            report << doc::html::encoded(
+                                r->path.string()); }
 
                         locations
                         [location.source]

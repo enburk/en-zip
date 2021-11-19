@@ -24,7 +24,6 @@ namespace app::dic::left
 
         std::thread thread;
         std::atomic<bool> cancel = false;
-        std::mutex mutex;
 
         using state = gui::media::state;
 
@@ -224,9 +223,12 @@ namespace app::dic::left
 
                     if (mute.on or not playing)
                         speaker.alpha = 64; else
-                    if (speaker.alpha.now == 255)
-                        speaker.alpha.go( 64, gui::time(1000)); else
-                        speaker.alpha.go(255, gui::time(1000));
+                    if (speaker.alpha.to  == 128 and
+                        speaker.alpha.now == 128)
+                        speaker.alpha.go( 64, gui::time(3000)); else
+                    if (speaker.alpha.to  ==  64 and
+                        speaker.alpha.now ==  64)
+                        speaker.alpha.go(128, gui::time(3000));
                 }
                 else
                 {

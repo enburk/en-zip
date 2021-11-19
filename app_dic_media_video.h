@@ -1,7 +1,5 @@
 #pragma once
-#include "app_dic.h"
-#include "app_dic_html.h"
-#include "app_dic_media.h"
+#include "app_dic_media_player.h"
 namespace app::dic::video
 {
     struct player:
@@ -10,7 +8,7 @@ namespace app::dic::video
         gui::canvas canvas;
         gui::frame  frame1;
         gui::frame  frame2;
-        gui::player video;
+        media::player video;
         html_view   script;
         html_view   credit;
         gui::button prev;
@@ -36,31 +34,26 @@ namespace app::dic::video
             on_change(&skin);
         }
 
-        void reset (media::media_index index_, array<str> links)
+        void reset (
+            media::media_index video_index,
+            media::media_index audio_index,
+            array<str> links)
         {
-            start = gui::time{};
-            stay  = gui::time{4000 +
-                index_.title.size() * 40 +
-                index_.credit.size() * 10 +
-                index_.comment.size() * 20
-            };
-
             script.forbidden_links = links;
             credit.forbidden_links = links;
 
-            if (index == index_) return; else
-                index =  index_;
+            if (index == video_index) return; else
+                index =  video_index;
+
+            start = gui::time{};
+            stay  = gui::time{4000 +
+                index.title.size() * 40 +
+                index.credit.size() * 10 +
+                index.comment.size() * 20
+            };
 
             state = gui::media::state::loading;
-
-            std::filesystem::path dir = "../data/app_dict";
-            std::string storage = "storage." +
-                std::to_string(index.location.source)
-                + ".dat";
-
-            video.load(dir / storage,
-                index.location.offset,
-                index.location.length);
+            video.load(video_index, audio_index);
 
             str c = index.credit;
             str s = index.title;
@@ -89,14 +82,7 @@ namespace app::dic::video
             stay.ms = stay.ms * 120/100;
             video.play();
 
-            str title = doc::html::untagged(script.html);
-            if (title.size() > 100) {
-                title.resize(80);
-                title += "..."; }
-            logs::media << "<div hidden=1>[" +
-            std::to_string(index.location.source) + ":" +
-            std::to_string(index.location.offset) + "]" +
-            "</div>" + purple("[video] ") + dark(title);
+            logs::media << media::log(index);
         }
         void stop ()
         {
@@ -209,9 +195,9 @@ namespace app::dic::video
 
                 if (state == st::loading)
                 {
-                    switch(video.state.load()) {
+                    switch(video.state()) {
                     case st::failure:  state =
-                         st::failure;  error = video.error; break;
+                         st::failure;  error = video.error(); break;
                     case st::ready:    state =
                          st::ready;    break;
                     case st::playing:  state =
@@ -224,9 +210,9 @@ namespace app::dic::video
 
                 if (state == st::playing)
                 {
-                    switch(video.state.load()) {
+                    switch(video.state()) {
                     case st::failure:  state =
-                         st::failure;  error = video.error;  break;
+                         st::failure;  error = video.error();  break;
                     case st::finished: state = start + stay < gui::time::now ?
                          st::finished: st::playing; break;
                     default: break;

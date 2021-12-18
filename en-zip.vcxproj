@@ -167,6 +167,7 @@
     <ClInclude Include="..\ae\proto-studio\aux_math.h" />
     <ClInclude Include="..\ae\proto-studio\aux_registry.h" />
     <ClInclude Include="..\ae\proto-studio\aux_string.h" />
+    <ClInclude Include="..\ae\proto-studio\aux_timing.h" />
     <ClInclude Include="..\ae\proto-studio\aux_unicode.h" />
     <ClInclude Include="..\ae\proto-studio\doc_html.h" />
     <ClInclude Include="..\ae\proto-studio\doc_html_lexica.h" />

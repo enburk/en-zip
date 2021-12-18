@@ -186,5 +186,8 @@
       <Filter>media</Filter>
     </ClInclude>
     <ClInclude Include="app_dic_media_player.h" />
+    <ClInclude Include="..\ae\proto-studio\aux_timing.h">
+      <Filter>aux</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

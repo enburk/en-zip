@@ -13,20 +13,20 @@ namespace eng::unittest
         std::filesystem::path path = "../data/vocabulary.dat";
         str font  = "<font color=#808080 face=\"monospace\">";
         auto N = [](auto n){ return std::to_string(n); };
-        auto T = [](auto t){ return sys::format(t); };
+        auto T = [](auto t){ return format(t); };
 
         test("UNITTEST.HEAVY.load1"); 
         {
-            sys::timing t0; vocabulary_basic  v1(path);
-            sys::timing t1; vocabulary_hashed v2(path);
-            sys::timing t2; vocabulary_cached v3(path);
-            sys::timing t3; vocabulary_trie   v4(path);
-            sys::timing t4;
+            timing t0; vocabulary_basic  v1(path);
+            timing t1; vocabulary_hashed v2(path);
+            timing t2; vocabulary_cached v3(path);
+            timing t3; vocabulary_trie   v4(path);
+            timing t4;
             report << font +
-            "load1 basic  " + sys::format(t1-t0) + " sec<br>"+
-            "load1 hashed " + sys::format(t2-t1) + " sec<br>"+
-            "load1 cashed " + sys::format(t3-t2) + " sec<br>"+
-            "load1 trie   " + sys::format(t4-t3) + " sec<br>"+
+            "load1 basic  " + format(t1-t0) + " sec<br>"+
+            "load1 hashed " + format(t2-t1) + " sec<br>"+
+            "load1 cashed " + format(t3-t2) + " sec<br>"+
+            "load1 trie   " + format(t4-t3) + " sec<br>"+
             "</font>";
             oops(out("ok")) {"ok"};
         }
@@ -46,11 +46,11 @@ namespace eng::unittest
             unsigned n2 = 0, u2 = 0;
             unsigned n3 = 0, u3 = 0;
             unsigned n4 = 0, u4 = 0;
-            sys::timing t0; for (str s: ss) if (auto r = v1.index(s); r) { n1++; u1 += *r; }
-            sys::timing t1; for (str s: ss) if (auto r = v2.index(s); r) { n2++; u2 += *r; }
-            sys::timing t2; for (str s: ss) if (auto r = v3.index(s); r) { n3++; u3 += *r; }
-            sys::timing t3; for (str s: ss) if (auto r = v4.index(s); r) { n4++; u4 += *r; }
-            sys::timing t4;
+            timing t0; for (str s: ss) if (auto r = v1.index(s); r) { n1++; u1 += *r; }
+            timing t1; for (str s: ss) if (auto r = v2.index(s); r) { n2++; u2 += *r; }
+            timing t2; for (str s: ss) if (auto r = v3.index(s); r) { n3++; u3 += *r; }
+            timing t3; for (str s: ss) if (auto r = v4.index(s); r) { n4++; u4 += *r; }
+            timing t4;
             report << font +
             "index basic  " + T(t1-t0) + " sec " + N(n1) + ": "+ N(u1) + "<br>"+
             "index hashed " + T(t2-t1) + " sec " + N(n2) + ": "+ N(u2) + "<br>"+
@@ -71,11 +71,11 @@ namespace eng::unittest
             unsigned u2 = 0;
             unsigned u3 = 0;
             unsigned u4 = 0;
-            sys::timing t0; for (str s: ss) u1 += v1.lower_bound(s);
-            sys::timing t1; for (str s: ss) u2 += v2.lower_bound(s);
-            sys::timing t2; for (str s: ss) u3 += v3.lower_bound(s);
-            sys::timing t3; for (str s: ss) u4 += v4.lower_bound(s);
-            sys::timing t4;
+            timing t0; for (str s: ss) u1 += v1.lower_bound(s);
+            timing t1; for (str s: ss) u2 += v2.lower_bound(s);
+            timing t2; for (str s: ss) u3 += v3.lower_bound(s);
+            timing t3; for (str s: ss) u4 += v4.lower_bound(s);
+            timing t4;
             report << font +
             "lower basic  " + T(t1-t0) + " sec " + N(u1) + "<br>"+
             "lower hashed " + T(t2-t1) + " sec " + N(u2) + "<br>"+

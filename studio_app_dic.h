@@ -15,7 +15,7 @@ namespace studio::dic
 
         void reload ()
         {
-            sys::timing t0;
+            timing t0;
             locations.clear();
             dat::in::pool pool("../data/app_dict/locationary.dat");
             while (not pool.done()) {
@@ -25,10 +25,10 @@ namespace studio::dic
                 locations[source][offset] = path;
             }
 
-            sys::timing t1;
+            timing t1;
             app::dic::logs::times << gray(monospace(
-            "studio locationary " + sys::format(t1-t0) + " sec<br>" +
-            "studio load total  " + sys::format(t1-t0) + " sec"));
+            "studio locationary " + format(t1-t0) + " sec<br>" +
+            "studio load total  " + format(t1-t0) + " sec"));
         }
 
         void on_change (void* what) override

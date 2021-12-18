@@ -15,13 +15,13 @@ namespace app::dic
 
         void reload () try
         {
-            sys::timing t0;
+            timing t0;
             std::filesystem::path dir = "../data";
 
             vocabulary = std::move(::eng::vocabulary(
                     dir/"vocabulary.dat"));
 
-            sys::timing t1;
+            timing t1;
             assets.clear();
             dat::in::pool pool(dir/"app_dict"/"assets.dat");
             int nn = pool.get_int();
@@ -34,19 +34,19 @@ namespace app::dic
                     bytes.size);
             }
 
-            sys::timing t2;
+            timing t2;
             media::reload();
             left.current_entry = ::eng::dictionary::entry{};
             left.current_index = ::eng::dictionary::index{};
             left.reload();
             list.reload();
 
-            sys::timing t3;
+            timing t3;
             logs::times << gray(monospace(
-            "app vocabulary  " + sys::format(t1-t0) + " sec<br>" +
-            "app load assets " + sys::format(t2-t1) + " sec<br>" +
-            "app load media  " + sys::format(t3-t2) + " sec<br>" +
-            "app load total  " + sys::format(t3-t0) + " sec<br>"));
+            "app vocabulary  " + format(t1-t0) + " sec<br>" +
+            "app load assets " + format(t2-t1) + " sec<br>" +
+            "app load media  " + format(t3-t2) + " sec<br>" +
+            "app load total  " + format(t3-t0) + " sec<br>"));
         }
         catch (std::exception & e) {
             logs::times << bold(red(

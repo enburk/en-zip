@@ -38,7 +38,7 @@ namespace app::dic::left
             if (n < 0) return;
             if (n >= vocabulary.data.size()) return;
 
-            sys::timing t0;
+            timing t0;
             std::filesystem::path dir = "../data";
             if (!std::filesystem::exists(dir / "dictionary_indices.dat")) return;
             if (!std::filesystem::exists(dir / "dictionary_entries.dat")) return;
@@ -77,7 +77,7 @@ namespace app::dic::left
             for (auto redirect : entry.redirects)
             links += vocabulary[redirect].title;
 
-            sys::timing t1;
+            timing t1;
             str debug = "";///"<br> n = " + std::to_string(n);
             str html = wiki2html(entry, links) + debug;
             if (true) std::ofstream("test.html") << html;
@@ -94,15 +94,15 @@ namespace app::dic::left
                 std::ofstream("test.txt") << str(ss);
             }
 
-            sys::timing t2;
+            timing t2;
             card.object.text.html = html;
             card.object.text.scroll.y.top = 0;
             refresh();
 
-            sys::timing t3; auto selected = media::select(n);
-            sys::timing t4; card.object.reset(selected.video, selected.vudio, links);
-            sys::timing t5; quot.object.reset(selected.audio, links);
-            sys::timing t6;
+            timing t3; auto selected = media::select(n);
+            timing t4; card.object.reset(selected.video, selected.vudio, links);
+            timing t5; quot.object.reset(selected.audio, links);
+            timing t6;
 
             str title = doc::html::encoded(entry.title);
             logs::times << "<br>" + title;
@@ -111,13 +111,13 @@ namespace app::dic::left
             logs::video << "<br>" + title;
 
             logs::times << gray(monospace(
-            "time file  " + sys::format(t1-t0) + " sec<br>" +
-            "time wiki  " + sys::format(t2-t1) + " sec<br>" +
-            "time html  " + sys::format(t3-t2) + " sec<br>" +
-            "time media " + sys::format(t4-t3) + " sec<br>" +
-            "time video " + sys::format(t5-t4) + " sec<br>" +
-            "time audio " + sys::format(t6-t5) + " sec<br>" +
-            "time total " + sys::format(t6-t0) + " sec"));
+            "time file  " + format(t1-t0) + " sec<br>" +
+            "time wiki  " + format(t2-t1) + " sec<br>" +
+            "time html  " + format(t3-t2) + " sec<br>" +
+            "time media " + format(t4-t3) + " sec<br>" +
+            "time video " + format(t5-t4) + " sec<br>" +
+            "time audio " + format(t6-t5) + " sec<br>" +
+            "time total " + format(t6-t0) + " sec"));
         }
 
         void refresh ()

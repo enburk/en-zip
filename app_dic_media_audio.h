@@ -13,6 +13,7 @@ namespace app::dic::audio
         std::atomic<gui::media::state> state;
         gui::property<gui::time> timer;
         gui::time start, stay;
+        int clicked = 0;
         bool click = false;
         bool muted = true;
         str  html;
@@ -229,12 +230,6 @@ namespace app::dic::audio
                     state = gui::media::state::finished;
                 }
             }
-        }
-
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
             if (what == &text )
             {
                 clicked = text.clicked;

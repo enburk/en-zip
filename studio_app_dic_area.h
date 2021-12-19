@@ -60,10 +60,7 @@ namespace studio::dic
 
                 detail.coord = XYXY(W/2, h, W, H);
             }
-        }
 
-        void on_notify (void* what) override
-        {
             if (what == &select)
             {
                 int n = select.notifier_index;

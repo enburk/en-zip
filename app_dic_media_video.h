@@ -17,6 +17,7 @@ namespace app::dic::video
         media::media_index index;
         gui::media::state state;
         gui::time start, stay;
+        int clicked = 0;
         str error;
 
         player ()
@@ -222,12 +223,7 @@ namespace app::dic::video
                 if (mouse_hover_child)
                     start = gui::time::now;
             }
-        }
 
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
             if (what == &credit) { clicked = credit.clicked; notify(); }
             if (what == &script) { clicked = script.clicked; notify(); }
 

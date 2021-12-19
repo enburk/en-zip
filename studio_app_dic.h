@@ -55,10 +55,7 @@ namespace studio::dic
                 log.coord = XYXY(0, 0, x, H);
                 app.coord = XYXY(x, 0, W, H);
             }
-        }
 
-        void on_notify (void* what) override
-        {
             if (what == &splitter) {
                 sys::settings::save(
                 "studio::dic::splitter.permyriad",

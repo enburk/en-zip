@@ -77,6 +77,15 @@ namespace app::dic
                 left.coord = XYXY(0, 0, x, H);
                 list.coord = XYXY(x, 0, W, H);
             }
+
+            if (what == &left) list.select(left.clicked);
+            if (what == &list) left.select(list.clicked);
+            if (what == &splitter) {
+                sys::settings::save(
+                    "app::dic::splitter.permyriad",
+                    splitter.middle * 100'00 / coord.now.w);
+                on_change(&coord);
+            }
         }
 
         void on_focus (bool on) override { list.on_focus(on); }
@@ -105,18 +114,6 @@ namespace app::dic
 
             left.card.object.text.view.selections = array<gui::text::range>();
             list.on_key_pressed(key,down);
-        }
-
-        void on_notify (void* what) override
-        {
-            if (what == &left) list.select(left.clicked);
-            if (what == &list) left.select(list.clicked);
-            if (what == &splitter) {
-                sys::settings::save(
-                "app::dic::splitter.permyriad",
-                splitter.middle * 100'00 / coord.now.w);
-                on_change(&coord);
-            }
         }
     };
 }

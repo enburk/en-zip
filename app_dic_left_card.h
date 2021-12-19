@@ -9,6 +9,7 @@ namespace app::dic::left
         html_view text;
         video::sequencer video;
         using idx = media::media_index;
+        int clicked = 0;
 
         void reload () {}
 
@@ -62,12 +63,6 @@ namespace app::dic::left
             {
                 text.margin_right = video.coord.now.size;
             }
-        }
-
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
             if (what == &text ) { clicked = text .clicked; notify(); }
             if (what == &video) { clicked = video.clicked; notify(); }
         }

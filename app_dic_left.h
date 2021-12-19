@@ -14,6 +14,7 @@ namespace app::dic::left
         gui::button redo;
         array<str> undoes;
         array<str> redoes;
+        int clicked = 0;
 
         eng::dictionary::entry current_entry;
         eng::dictionary::index current_index;
@@ -153,12 +154,7 @@ namespace app::dic::left
             {
                 tool.color = gui::skins[skin].light.first;
             }
-        }
 
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
             if (what == &card.object) { clicked = card.object.clicked; notify(); }
             if (what == &quot.object) { clicked = quot.object.clicked; notify(); }
 

@@ -14,6 +14,7 @@ namespace app::dic::list
         gui::button settings;
         gui::button up, down;
         gui::button page_up, page_down;
+        int clicked = 0;
 
         area ()
         {
@@ -97,6 +98,20 @@ namespace app::dic::list
                 page_down.text.font = font;
                 settings .text.font = font;
             }
+
+            if (what == &word.object) list.object.select(word.object.typed);
+            if (what == &list.object) word.object.select(list.object.selected);
+            if (what == &list.object) if (list.object.note == list::note::chosen)
+            {
+                clicked = list.object.selected;
+                notify();
+            }
+
+            if (what == &up) on_key_pressed("up", true);
+            if (what == &down) on_key_pressed("down", true);
+            if (what == &page_up) on_key_pressed("page up", true);
+            if (what == &page_down) on_key_pressed("page down", true);
+            if (what == &settings) {}
         }
 
         void on_focus (bool on) override { word.object.on_focus(on); }
@@ -126,25 +141,6 @@ namespace app::dic::list
                 notify();
             }
             else word.object.on_key_pressed(key,down);
-        }
-
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
-            if (what == &word.object) list.object.select(word.object.typed);
-            if (what == &list.object) word.object.select(list.object.selected);
-            if (what == &list.object) if (list.object.note == list::note::chosen)
-            {
-                clicked = list.object.selected;
-                notify();
-            }
-
-            if (what == &up       ) on_key_pressed("up"  , true);
-            if (what == &down     ) on_key_pressed("down", true);
-            if (what == &page_up  ) on_key_pressed("page up"  , true);
-            if (what == &page_down) on_key_pressed("page down", true);
-            if (what == &settings ) {}
         }
 
         bool mouse_sensible (XY) override { return true; }

@@ -81,6 +81,14 @@ namespace app::dic::list
             if (what == &current) refresh();
             if (what == &selected) refresh();
             if (what == &selected) refresh();
+            if (what == &words) if (not flag)
+            {
+                flag = true;
+                current = words.notifier_index;
+                flag = false;
+                note = note::chosen;
+                notify();
+            }
         }
 
         void refresh ()
@@ -122,18 +130,6 @@ namespace app::dic::list
             selected = origin.now + current.now;
             note = note::changed;
             if (not flag) notify();
-        }
-
-        void on_notify (void* what) override
-        {
-            if (what == &words) if (not flag)
-            {
-                flag = true;
-                current = words.notifier_index;
-                flag = false;
-                note = note::chosen;
-                notify();
-            }
         }
     };
 }

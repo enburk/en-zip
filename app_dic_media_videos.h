@@ -9,6 +9,7 @@ namespace app::dic::video
         gui::property<int> current = 0;
         gui::property<gui::time> timer;
         gui::time smoothly {1000};
+        int clicked = 0;
 
         void reset (
             array<media::media_index> videos,
@@ -64,16 +65,16 @@ namespace app::dic::video
             return height;
         }
 
-        void on_change (void* what) override
+        void on_change(void* what) override
         {
             if (timer.now == gui::time())
-                timer.go (gui::time::infinity,
-                          gui::time::infinity);
+                timer.go(gui::time::infinity,
+                    gui::time::infinity);
 
             if (what == &coord && coord.was.size != coord.now.size)
             {
                 players.coord = coord.now.local();
-                for (auto & player : players)
+                for (auto& player : players)
                     player.coord = coord.now.local();
             }
 
@@ -82,23 +83,23 @@ namespace app::dic::video
                 if (players.size() > 0)
                 {
                     using state = gui::media::state;
-                    switch(players(current).state) {
+                    switch (players(current).state) {
                     case state::failure:
                         logs::times << "video: " +
-                        std::to_string(current) + ": " +
-                        players(current).error;
+                            std::to_string(current) + ": " +
+                            players(current).error;
                         players(current).state = gui::media::state::finished;
                         players(current).show(smoothly);
                         break;
                     case state::ready:
                         players(current).play();
-                        players(current).show(smoothly.ms/2);
+                        players(current).show(smoothly.ms / 2);
                         break;
                     case state::finished:
                         if (players.size() == 1) break;
                         players(current).stop();
                         players(current).hide(smoothly);
-                        current = (current+1) % players.size();
+                        current = (current + 1) % players.size();
                         players(current).show(smoothly);
                         players(current).play();
                         break;
@@ -107,48 +108,45 @@ namespace app::dic::video
                     }
                 }
             }
-        }
-
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
-            clicked = players.notifier->clicked;
-
-            if (clicked == -2)
+            if (what == &players)
             {
-                XY p =
-                sys::mouse::position() -
-                players(current).prev.coord.now.origin;
+                clicked = players.notifier->clicked;
 
-                players(current).stop();
-                players(current).hide(smoothly.ms/2);
-                current = (current-1+players.size()) % players.size();
-                players(current).show(smoothly.ms/2);
-                players(current).play();
+                if (clicked == -2)
+                {
+                    XY p =
+                        sys::mouse::position() -
+                        players(current).prev.coord.now.origin;
 
-                sys::mouse::position(p +
-                players(current).prev.coord.now.origin);
-                return;
+                    players(current).stop();
+                    players(current).hide(smoothly.ms / 2);
+                    current = (current - 1 + players.size()) % players.size();
+                    players(current).show(smoothly.ms / 2);
+                    players(current).play();
+
+                    sys::mouse::position(p +
+                        players(current).prev.coord.now.origin);
+                    return;
+                }
+                if (clicked == -1)
+                {
+                    XY p =
+                        sys::mouse::position() -
+                        players(current).next.coord.now.origin;
+
+                    players(current).stop();
+                    players(current).hide(smoothly.ms / 2);
+                    current = (current + 1) % players.size();
+                    players(current).show(smoothly.ms / 2);
+                    players(current).play();
+
+                    sys::mouse::position(p +
+                        players(current).next.coord.now.origin);
+                    return;
+                }
+
+                notify();
             }
-            if (clicked == -1)
-            {
-                XY p =
-                sys::mouse::position() -
-                players(current).next.coord.now.origin;
-
-                players(current).stop();
-                players(current).hide(smoothly.ms/2);
-                current = (current+1) % players.size();
-                players(current).show(smoothly.ms/2);
-                players(current).play();
-
-                sys::mouse::position(p +
-                players(current).next.coord.now.origin);
-                return;
-            }
-            
-            notify();
         }
     };
 }

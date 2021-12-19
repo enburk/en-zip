@@ -43,6 +43,22 @@ namespace app::dic::list
                     gui::metrics::text::height},
                     gui::skins[skin].dark.first };
             }
+            if (what == &editor) if (not flag)
+            {
+                if (vocabulary.size() == 0) return;
+                auto s = editor.text.now; s.triml();
+                auto i = vocabulary.lower_bound_case_insensitive(s);
+
+                editor.style = pix::text::style{
+                    sys::font{"Segoe UI",
+                    gui::metrics::text::height},
+                    eng::equal_case_insensitive(s, vocabulary[i].title) ?
+                    gui::skins[skin].dark.first :
+                    gui::skins[skin].error.first };
+
+                typed = i;
+                notify();
+            }
         }
 
         void on_focus (bool on) override { editor.on_focus(on); }
@@ -62,26 +78,6 @@ namespace app::dic::list
                 sys::clipboard::set(s);
             }
             editor.on_key_pressed(key,down);
-        }
-
-        void on_notify (void* what) override
-        {
-            if (what == &editor) if (not flag)
-            {
-                if (vocabulary.size() == 0) return;
-                auto s = editor.text.now; s.triml();
-                auto i = vocabulary.lower_bound_case_insensitive(s);
-
-                editor.style = pix::text::style{
-                    sys::font{"Segoe UI",
-                    gui::metrics::text::height},
-                    eng::equal_case_insensitive(s, vocabulary[i].title)?
-                    gui::skins[skin].dark.first:
-                    gui::skins[skin].error.first};
-
-                typed = i;
-                notify();
-            }
         }
     };
 }

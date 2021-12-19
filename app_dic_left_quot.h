@@ -21,6 +21,7 @@ namespace app::dic::left
         gui::time instantly{100};
         bool playall = false;
         int ready_players = 0;
+        int clicked = 0;
 
         std::thread thread;
         std::atomic<bool> cancel = false;
@@ -245,12 +246,6 @@ namespace app::dic::left
                 }
             }
 
-        }
-
-        int clicked = 0;
-
-        void on_notify (void* what) override
-        {
             if (what == &players)
             {
                 clicked = players.notifier->clicked;

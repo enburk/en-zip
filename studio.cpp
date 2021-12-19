@@ -70,10 +70,7 @@ struct Studio : gui::widget<Studio>
             for (int i=0; i<studios.size(); i++)
                 studios[i]->coord = XYXY(0, h, W, H);
         }
-    }
 
-    void on_notify (void* what) override
-    {
         if (what == &select)
         {
             int n = select.notifier_index;

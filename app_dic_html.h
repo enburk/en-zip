@@ -106,12 +106,9 @@ namespace app::dic
                             style_index = pix::text::style_index(style);
                             highlighted_link = link;
                         }
-                        for (auto & glyph : token)
-                        {
-                            auto g = glyph.value.now;
+                        for (auto& g: token.glyphs)
                             g.style_index = style_index;
-                            glyph.value = g;
-                        }
+                        token.update();
                     }
                 }
                 return;
@@ -122,12 +119,9 @@ namespace app::dic
                 {
                     for (auto & token : line)
                     {
-                        for (auto & glyph : token)
-                        {
-                            auto g = glyph.value.now;
+                        for (auto& g: token.glyphs)
                             g.style_index = token.style;
-                            glyph.value = g;
-                        }
+                        token.update();
                     }
                 }
             }
@@ -144,12 +138,9 @@ namespace app::dic
                 {
                     for (auto & token : line)
                     {
-                        for (auto & glyph : token)
-                        {
-                            auto g = glyph.value.now;
+                        for (auto& g: token.glyphs)
                             g.style_index = token.style;
-                            glyph.value = g;
-                        }
+                        token.update();
                     }
                 }
             }

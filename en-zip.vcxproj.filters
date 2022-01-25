@@ -104,9 +104,6 @@
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor1.h">
       <Filter>gui</Filter>
     </ClInclude>
-    <ClInclude Include="..\ae\proto-studio\gui_widget_text_line.h">
-      <Filter>gui</Filter>
-    </ClInclude>
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_page.h">
       <Filter>gui</Filter>
     </ClInclude>
@@ -187,6 +184,27 @@
     </ClInclude>
     <ClInclude Include="app_dic_media_player.h" />
     <ClInclude Include="..\ae\proto-studio\aux_timing.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_aux_line.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\pix_color.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\pix_coord.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\pix_image.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\pix_process.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\pix_sampling.h">
+      <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\pix_text.h">
       <Filter>aux</Filter>
     </ClInclude>
   </ItemGroup>

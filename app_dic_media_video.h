@@ -15,25 +15,11 @@ namespace app::dic::video
         gui::button next;
         gui::property<gui::time> timer;
         media::media_index index;
-        gui::media::state state;
+        gui::media::state state =
+        gui::media::state::finished;;
         gui::time start, stay;
         int clicked = 0;
         str error;
-
-        player ()
-        {
-            state = gui::media::state::finished;
-            auto font = credit.font.now;
-            font.size = gui::metrics::text::height*5/6;
-            credit.font = font;
-            credit.alignment = XY{pix::right, pix::top};
-            script.alignment = XY{pix::left,  pix::top};
-            prev.icon.load(assets["icon.chevron.left.double.black.128x128"]);
-            next.icon.load(assets["icon.chevron.right.double.black.128x128"]);
-            prev.frame.thickness = 0;
-            next.frame.thickness = 0;
-            on_change(&skin);
-        }
 
         void reset (
             media::media_index video_index,
@@ -180,6 +166,7 @@ namespace app::dic::video
                 canvas.color = gui::skins[skin].light.first;
                 credit.color = gui::skins[skin].hovered.first;
                 script.color = gui::skins[skin].touched.first;
+
                 int h = gui::metrics::text::height*11/10;
                 auto font = sys::font{"", h};
                 prev.text.font = font;
@@ -188,6 +175,16 @@ namespace app::dic::video
                 next.text.shift = XY{0, h/5};
                 prev.text.color = gui::skins[skin].touched.first;
                 next.text.color = gui::skins[skin].touched.first;
+                prev.icon.load(assets["icon.chevron.left.double.black.128x128"]);
+                next.icon.load(assets["icon.chevron.right.double.black.128x128"]);
+                prev.frame.thickness = 0;
+                next.frame.thickness = 0;
+
+                font = credit.font.now;
+                font.size = gui::metrics::text::height*5/6;
+                credit.font = font;
+                credit.alignment = XY{pix::right, pix::top};
+                script.alignment = XY{pix::left,  pix::top};
             }
 
             if (what == &timer)

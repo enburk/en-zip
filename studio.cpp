@@ -21,8 +21,6 @@ struct Studio : gui::widget<Studio>
     Studio()
     {
         skin = "gray";
-        gui::skins[skin].font =
-        sys::font{"Segoe UI", gui::metrics::text::height};
         toolbar.color = gui::skins[skin].light.first;
         canvas .color = gui::skins[skin].light.first;
 
@@ -110,11 +108,11 @@ struct Studio : gui::widget<Studio>
             }
         }
     }
-    void on_keyboard_input (str symbol) override
+    void on_key_input (str symbol) override
     {
         for (auto studio : studios) {
             if (studio->alpha.now == 255) {
-                studio->on_keyboard_input(symbol);
+                studio->on_key_input(symbol);
                 break;
             }
         }

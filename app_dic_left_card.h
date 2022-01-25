@@ -38,7 +38,11 @@ namespace app::dic::left
             if (maxwidth < size.x) size = XY (
                 maxwidth, video.height(maxwidth));
 
-            text.margin_right = size;
+            doc::view::padding padding;
+            padding.bars += XY{};
+            padding.bars += size;
+            text.rpadding = padding;
+
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;
 
@@ -61,7 +65,8 @@ namespace app::dic::left
             }
             if (what == &video)
             {
-                text.margin_right = video.coord.now.size;
+                int a = 0;
+                //text.margin_right = video.coord.now.size;
             }
             if (what == &text ) { clicked = text .clicked; notify(); }
             if (what == &video) { clicked = video.clicked; notify(); }

@@ -77,13 +77,13 @@ namespace studio::dic
                 c->page.view.selections =
                 array<gui::text::range>();
         }
-        void on_keyboard_input (str symbol) override
+        void on_key_input (str symbol) override
         {
             for (auto c: consoles)
                 c->page.view.selections =
                 array<gui::text::range>();
 
-            detail.on_keyboard_input(symbol);
+            detail.on_key_input(symbol);
         }
         void on_key_pressed (str key, bool down) override
         {

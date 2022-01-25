@@ -40,7 +40,9 @@ namespace app::dic::list
                     auto & word = i < words.size() ? words(i) : words.emplace_back();
                     word.kind = gui::button::sticky;
                     word.coord = XYWH(0, h*i, W, h);
-                    word.text.word_wrap = false;
+                    word.text.alignment = XY(pix::left, pix::center);
+                    word.text.rpadding.now = gui::metrics::text::height/6;
+                    word.text.wordwrap = false;
                     word.text.ellipsis = true;
                 }
                 words.truncate(n);
@@ -52,7 +54,6 @@ namespace app::dic::list
                 for (int i=0; i<words.size(); i++)
                 {
                     auto & word = words(i);
-                    word.text.alignment = XY(pix::left, pix::center);
                     word.on_change_state = [&word, edge = i == 0 || i == words.size()-1]()
                     {
                         auto style = gui::skins[word.skin.now];
@@ -121,7 +122,7 @@ namespace app::dic::list
             {
                 int n = origin.now + i;
                 bool in = 0 <= n && n < vocabulary.size();
-                words(i).text.text = in ? " " + vocabulary[n].title : "";
+                words(i).text.text = in ? vocabulary[n].title : "";
                 words(i).enabled = in;
             }
 

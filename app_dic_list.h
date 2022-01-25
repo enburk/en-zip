@@ -115,7 +115,7 @@ namespace app::dic::list
         }
 
         void on_focus (bool on) override { word.object.on_focus(on); }
-        void on_keyboard_input (str symbol) override { word.object.on_keyboard_input(symbol); }
+        void on_key_input (str symbol) override { word.object.on_key_input(symbol); }
         void on_key_pressed (str key, bool down) override
         {
             auto & l = list.object;

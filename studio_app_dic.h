@@ -70,11 +70,11 @@ namespace studio::dic
             log.on_focus(on and not appfocus);
             app.on_focus(on and appfocus);
         }
-        void on_keyboard_input (str symbol) override
+        void on_key_input (str symbol) override
         {
             if (appfocus)
-            app.on_keyboard_input(symbol); else
-            log.on_keyboard_input(symbol);
+            app.on_key_input(symbol); else
+            log.on_key_input(symbol);
         }
         void on_key_pressed (str key, bool down) override
         {

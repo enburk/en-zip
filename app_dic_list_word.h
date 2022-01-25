@@ -36,7 +36,7 @@ namespace app::dic::list
             if (what == &skin)
             {
                 editor.virtual_space = true;
-                editor.margin_left = XY{gui::metrics::text::height/6, max<int>()};
+                editor.rpadding.now = gui::metrics::text::height/6;
                 editor.canvas.color = gui::skins[skin].ultralight.first;
                 editor.style = pix::text::style{
                     sys::font{"Segoe UI",
@@ -62,7 +62,7 @@ namespace app::dic::list
         }
 
         void on_focus (bool on) override { editor.on_focus(on); }
-        void on_keyboard_input (str symbol) override { editor.on_keyboard_input(symbol); }
+        void on_key_input (str symbol) override { editor.on_key_input(symbol); }
         void on_key_pressed (str key, bool down) override
         {
             if (down and

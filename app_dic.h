@@ -89,10 +89,10 @@ namespace app::dic
         }
 
         void on_focus (bool on) override { list.on_focus(on); }
-        void on_keyboard_input (str symbol) override
+        void on_key_input (str symbol) override
         {
             left.card.object.text.view.selections = array<gui::text::range>();
-            list.on_keyboard_input(symbol);
+            list.on_key_input(symbol);
         }
         void on_key_pressed (str key, bool down) override
         {

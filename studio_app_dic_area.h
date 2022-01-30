@@ -122,7 +122,7 @@ namespace studio::dic
                 if (not select(i).on.now) continue;
 
                 auto & console = *consoles[i];
-                auto & column = console.page.view.column;
+                auto & column = console.page.view.lines;
                 p -= console.coord.now.origin;
 
                 if (!column.coord.now.includes(p)) return;

@@ -96,13 +96,13 @@ namespace app::dic::video
             script.coord = XYWH(0, 0, size.x, max<int>());
             credit.coord = XYWH(0, 0, size.x-3*d, max<int>());
 
-            int w1 = script.view.column.coord.now.w;
-            int w2 = credit.view.column.coord.now.w;
+            int w1 = script.view.lines.coord.now.w;
+            int w2 = credit.view.lines.coord.now.w;
 
             credit.alignment = XY{pix::right, pix::top};
 
-            int h1 = script.view.column.coord.now.h;
-            int h2 = credit.view.column.coord.now.h;
+            int h1 = script.view.lines.coord.now.h;
+            int h2 = credit.view.lines.coord.now.h;
             int hh = h1 + h2;
             int y2 = h1;
 

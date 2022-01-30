@@ -66,7 +66,7 @@ namespace app::dic::list
                         if (word.on           .now) colors = style.active;  else
                         if (word.mouse_hover  .now) colors = style.light;   else
                         {}
-                        word.text.canvas.color = colors.first;
+                        word.canvas.color = colors.first;
                         word.text.color = colors.second;
 
                         auto r = word.coord.now.local();

@@ -38,10 +38,7 @@ namespace app::dic::left
             if (maxwidth < size.x) size = XY (
                 maxwidth, video.height(maxwidth));
 
-            doc::view::padding padding;
-            padding.bars += XY{};
-            padding.bars += size;
-            text.rpadding = padding;
+            text.rwrap = array<XY>{XY{}, size};
 
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;

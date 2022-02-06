@@ -7,7 +7,7 @@
 #include "../ae/proto-studio/gui_widget_canvas.h"
 #include "../ae/proto-studio/gui_widget_button.h"
 #include "../ae/proto-studio/gui_widget_scroller.h"
-#include "../ae/proto-studio/gui_widget_text_editor1.h"
+#include "../ae/proto-studio/gui_widget_text_editline.h"
 #include "../ae/proto-studio/gui_widget_text_editor.h"
 #include "../ae/proto-studio/gui_widget_console.h"
 #include "../ae/proto-studio/doc_html_lexica.h"

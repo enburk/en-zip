@@ -130,7 +130,7 @@ struct Studio : gui::widget<Studio>
 
 sys::app<Studio> application ("en studio");
 
-#include "../ae/proto-studio/windows_fonts.h"
-#include "../ae/proto-studio/windows_images.h"
-#include "../ae/proto-studio/windows_system.h"
-#include "../ae/proto-studio/windows_windows.h"
+#include "../auxs/windows_fonts.h"
+#include "../auxs/windows_images.h"
+#include "../auxs/windows_system.h"
+#include "../auxs/windows_windows.h"

@@ -189,8 +189,8 @@
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_aux.h" />
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_aux_line.h" />
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_column.h" />
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_editline.h" />
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor.h" />
-    <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor1.h" />
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_page.h" />
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_view.h" />
     <ClInclude Include="..\ae\proto-studio\pix_color.h" />

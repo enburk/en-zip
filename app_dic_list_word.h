@@ -43,7 +43,7 @@ namespace app::dic::list
                     gui::metrics::text::height},
                     gui::skins[skin].dark.first };
             }
-            if (what == &editor.text) if (not flag)
+            if (what == &editor.update_text) if (not flag)
             {
                 if (vocabulary.size() == 0) return;
                 auto s = str(editor.text); s.triml();

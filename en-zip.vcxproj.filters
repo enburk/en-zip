@@ -101,9 +101,6 @@
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor.h">
       <Filter>gui</Filter>
     </ClInclude>
-    <ClInclude Include="..\ae\proto-studio\gui_widget_text_editor1.h">
-      <Filter>gui</Filter>
-    </ClInclude>
     <ClInclude Include="..\ae\proto-studio\gui_widget_text_page.h">
       <Filter>gui</Filter>
     </ClInclude>
@@ -206,6 +203,9 @@
     </ClInclude>
     <ClInclude Include="..\ae\proto-studio\pix_text.h">
       <Filter>aux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ae\proto-studio\gui_widget_text_editline.h">
+      <Filter>gui</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

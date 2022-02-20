@@ -43,7 +43,7 @@ namespace app::dic
 
         int link (XY p)
         {
-            auto & column = view.lines;
+            auto & column = view.cell.lines;
 
             if (!column.coord.now.includes(p)) return -2;
             auto cp = p - column.coord.now.origin;
@@ -93,7 +93,7 @@ namespace app::dic
                         "arrow": "hand";
 
 
-                for (auto & line : view.lines)
+                for (auto & line : view.cell.lines)
                 {
                     for (auto & token : line)
                     {
@@ -115,7 +115,7 @@ namespace app::dic
             }
             else if (sys::keyboard::ctrl)
             {
-                for (auto & line : view.lines)
+                for (auto & line : view.cell.lines)
                 {
                     for (auto & token : line)
                     {
@@ -134,7 +134,7 @@ namespace app::dic
 
             if (!touch)
             {
-                for (auto & line : view.lines)
+                for (auto & line : view.cell.lines)
                 {
                     for (auto & token : line)
                     {

@@ -61,8 +61,6 @@ namespace app::dic::list
             }
         }
 
-        void on_focus (bool on) override { editor.on_focus(on); }
-
         void on_key (str key, bool down, bool input) override
         {
             if (down and

@@ -114,8 +114,6 @@ namespace app::dic::list
             if (what == &settings) {}
         }
 
-        void on_focus (bool on) override { word.object.on_focus(on); }
-
         void on_key (str key, bool down, bool input) override
         {
             auto & l = list.object;

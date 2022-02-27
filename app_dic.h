@@ -87,6 +87,15 @@ namespace app::dic
                 on_change(&coord);
             }
         }
+
+        void on_key(str key, bool down, bool input) override
+        {
+            if (input)
+                focus = &list;
+
+            if (focus.now)
+                focus.now->on_key(key, down, input);
+        }
     };
 }
 

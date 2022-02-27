@@ -63,46 +63,5 @@ namespace studio::dic
                 on_change(&coord);
             }
         }
-
-        void on_focus (bool on) override
-        {
-            onfocus = on;
-            log.on_focus(on and not appfocus);
-            app.on_focus(on and appfocus);
-        }
-        void on_key_input (str symbol) override
-        {
-            if (appfocus)
-            app.on_key_input(symbol); else
-            log.on_key_input(symbol);
-        }
-        void on_key_pressed (str key, bool down) override
-        {
-            if (appfocus)
-            app.on_key_pressed(key, down); else
-            log.on_key_pressed(key, down);
-        }
-
-        void on_mouse_press_child (XY p, char button, bool down) override
-        {
-            if (button != 'L' or
-                not down or
-                not onfocus)
-                return;
-
-            if (log.coord.now.includes(p) and appfocus)
-            {
-                appfocus = false;
-                log.on_focus(true);
-                app.on_focus(false);
-            }
-            else
-            if (app.coord.now.includes(p) and not appfocus)
-            {
-                appfocus = true;
-                log.on_focus(false);
-                app.on_focus(true);
-            }
-        }
     };
 }

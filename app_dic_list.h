@@ -107,16 +107,16 @@ namespace app::dic::list
                 notify();
             }
 
-            if (what == &up) on_key_pressed("up", true);
-            if (what == &down) on_key_pressed("down", true);
-            if (what == &page_up) on_key_pressed("page up", true);
-            if (what == &page_down) on_key_pressed("page down", true);
+            if (what == &up) on_key("up", true, false);
+            if (what == &down) on_key("down", true, false);
+            if (what == &page_up) on_key("page up", true, false);
+            if (what == &page_down) on_key("page down", true, false);
             if (what == &settings) {}
         }
 
         void on_focus (bool on) override { word.object.on_focus(on); }
-        void on_key_input (str symbol) override { word.object.on_key_input(symbol); }
-        void on_key_pressed (str key, bool down) override
+
+        void on_key (str key, bool down, bool input) override
         {
             auto & l = list.object;
             int page = l.words.size();
@@ -140,7 +140,7 @@ namespace app::dic::list
                 clicked = l.selected;
                 notify();
             }
-            else word.object.on_key_pressed(key,down);
+            else word.object.on_key(key, down, input);
         }
 
         bool mouse_sensible (XY) override { return true; }

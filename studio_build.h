@@ -121,7 +121,7 @@ namespace studio::build
             });
         }
 
-        void on_mouse_press (XY p, char button, bool down) override
+        void on_mouse_press (XY p, str button, bool down) override
         {
             if (down)
             {
@@ -132,28 +132,6 @@ namespace studio::build
                 if (err.coord.now.includes(p))
                     out.object.page.view.selections =
                         array<gui::text::range>();
-            }
-        }
-
-        void on_key_pressed (str key, bool down) override
-        {
-            if (key == "") return;
-            if (key == "ctrl+C" or
-                key == "ctrl+insert" or
-                key == "shift+left"  or
-                key == "shift+right" or
-                key == "ctrl+left"   or
-                key == "ctrl+right"  or
-                key == "ctrl+shift+left"  or
-                key == "ctrl+shift+right" or
-                key == "shift+up"    or
-                key == "shift+down")
-            {
-                if (out.object.page.view.selected() != "")
-                    out.object.page.on_key_pressed(key,down);
-                else
-                if (err.object.page.view.selected() != "")
-                    err.object.page.on_key_pressed(key,down);
             }
         }
     };

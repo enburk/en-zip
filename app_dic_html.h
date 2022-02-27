@@ -62,7 +62,7 @@ namespace app::dic
 
         bool mouse_sensible (XY p) override { return true; }
 
-        void on_mouse_press (XY p, char button, bool down) override
+        void on_mouse_press (XY p, str button, bool down) override
         {
             if (down and not sys::keyboard::ctrl)
             {

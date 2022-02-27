@@ -98,34 +98,6 @@ struct Studio : gui::widget<Studio>
                 select(i).enabled = true;
         }
     }
-
-    void on_focus (bool on) override
-    {
-        for (auto studio : studios) {
-            if (studio->alpha.now == 255) {
-                studio->on_focus(on);
-                break;
-            }
-        }
-    }
-    void on_key_input (str symbol) override
-    {
-        for (auto studio : studios) {
-            if (studio->alpha.now == 255) {
-                studio->on_key_input(symbol);
-                break;
-            }
-        }
-    }
-    void on_key_pressed (str key, bool down) override
-    {
-        for (auto studio : studios) {
-            if (studio->alpha.now == 255) {
-                studio->on_key_pressed(key,down);
-                break;
-            }
-        }
-    }
 };
 
 sys::app<Studio> application ("en studio");

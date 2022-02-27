@@ -87,34 +87,6 @@ namespace app::dic
                 on_change(&coord);
             }
         }
-
-        void on_focus (bool on) override { list.on_focus(on); }
-        void on_key_input (str symbol) override
-        {
-            left.card.object.text.view.selections = array<gui::text::range>();
-            list.on_key_input(symbol);
-        }
-        void on_key_pressed (str key, bool down) override
-        {
-            if (key == "") return;
-            if((key == "ctrl+C" or
-                key == "ctrl+insert" or
-                key == "shift+left"  or
-                key == "shift+right" or
-                key == "ctrl+left"   or
-                key == "ctrl+right"  or
-                key == "ctrl+shift+left"  or
-                key == "ctrl+shift+right" or
-                key == "shift+up"    or
-                key == "shift+down") and
-                left.card.object.text.view.selected() != "") {
-                left.card.object.text.on_key_pressed(key,down);
-                return;
-            }
-
-            left.card.object.text.view.selections = array<gui::text::range>();
-            list.on_key_pressed(key,down);
-        }
     };
 }
 

@@ -62,8 +62,8 @@ namespace app::dic::list
         }
 
         void on_focus (bool on) override { editor.on_focus(on); }
-        void on_key_input (str symbol) override { editor.on_key_input(symbol); }
-        void on_key_pressed (str key, bool down) override
+
+        void on_key (str key, bool down, bool input) override
         {
             if (down and
                (key == "ctrl+V" or
@@ -77,7 +77,7 @@ namespace app::dic::list
                 s.strip();
                 sys::clipboard::set(s);
             }
-            editor.on_key_pressed(key,down);
+            editor.on_key(key, down, input);
         }
     };
 }

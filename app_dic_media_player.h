@@ -7,8 +7,9 @@ namespace app::dic::media
     {
         gui::player video;
         audio::player audio;
-        std::thread thread;
+        gui::property<bool> mute = false;
         std::atomic<bool> cancel = false;
+        std::thread thread;
 
         ~player ()
         {
@@ -89,6 +90,11 @@ namespace app::dic::media
             if (what == &coord)
             {
                 video.coord = coord.now.local();
+            }
+
+            if (what == &mute)
+            {
+                audio.mute(mute.now);
             }
         }
     };

@@ -7,6 +7,7 @@ namespace app::dic::video
     {
         gui::widgetarium<player> players;
         gui::property<int> current = 0;
+        gui::property<bool> mute = false;
         gui::property<gui::time> timer;
         gui::time smoothly {1000};
         int clicked = 0;
@@ -44,6 +45,7 @@ namespace app::dic::video
                 player.coord = coord.now.local();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
+                player.mute = mute.now;
             }
 
             using state = gui::media::state;
@@ -71,11 +73,19 @@ namespace app::dic::video
                 timer.go(gui::time::infinity,
                     gui::time::infinity);
 
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 players.coord = coord.now.local();
                 for (auto& player : players)
                     player.coord = coord.now.local();
+            }
+
+            if (what == &mute)
+            {
+                for (auto& player : players)
+                    player.mute = mute.now;
             }
 
             if (what == &timer)

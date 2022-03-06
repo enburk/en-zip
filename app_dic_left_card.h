@@ -8,6 +8,7 @@ namespace app::dic::left
     {
         html_view text;
         video::sequencer video;
+        gui::property<bool> mute = false;
         using idx = media::media_index;
         int clicked = 0;
 
@@ -38,8 +39,6 @@ namespace app::dic::left
             if (maxwidth < size.x) size = XY (
                 maxwidth, video.height(maxwidth));
 
-            text.rwrap = array<XY>{XY{}, size};
-
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;
 
@@ -51,7 +50,9 @@ namespace app::dic::left
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 text.coord = coord.now.local();
                 refresh_video(video.coord.now.size);
@@ -60,13 +61,20 @@ namespace app::dic::left
             {
                 text.view.canvas.color = gui::skins[skin].ultralight.first;
             }
-            if (what == &video)
+            if (what == &coord
+            or  what == &text.scroll.y
+            or  what == &text.update_text)
             {
-                int a = 0;
-                //text.margin_right = video.coord.now.size;
+                text.rwrap = array<XY>{
+                    XY{0, text.scroll.y.top},
+                    video.coord.now.size};
             }
             if (what == &text ) { clicked = text .clicked; notify(); }
             if (what == &video) { clicked = video.clicked; notify(); }
+            if (what == &mute)
+            {
+                video.mute = mute.now;
+            }
         }
     };
 }

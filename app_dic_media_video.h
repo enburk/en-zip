@@ -13,6 +13,7 @@ namespace app::dic::video
         html_view   credit;
         gui::button prev;
         gui::button next;
+        gui::property<bool> mute = false;
         gui::property<gui::time> timer;
         media::media_index index;
         gui::media::state state =
@@ -226,6 +227,8 @@ namespace app::dic::video
 
             if (what == &next) { clicked = -1; notify(); }
             if (what == &prev) { clicked = -2; notify(); }
+
+            if (what == &mute) video.mute = mute.now;
         }
     };
 }

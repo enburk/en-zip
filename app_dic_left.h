@@ -183,6 +183,11 @@ namespace app::dic::left
                 clicked = *index;
                 notify();
             }
+            if (what == &quot.object.mute)
+            {
+                card.object.mute =
+                quot.object.mute.on.now;
+            }
         }
     };
 }

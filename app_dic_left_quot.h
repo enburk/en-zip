@@ -271,6 +271,8 @@ namespace app::dic::left
             {
                 for (auto& player: players)
                     player.mute(mute.on);
+                
+                notify(what);
             }
 
             if (what == &prev)

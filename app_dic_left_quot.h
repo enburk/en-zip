@@ -145,31 +145,31 @@ namespace app::dic::left
 
                 int l = h*27/100;
                 int L = h*39/100;
-                play.icon.padding = XYXY(L,l,L,l);
-                stop.icon.padding = XYXY(L,l,L,l);
-                Stop.icon.padding = XYXY(L,l,L,l);
+                play.icon.padding = xyxy(L,l,L,l);
+                stop.icon.padding = xyxy(L,l,L,l);
+                Stop.icon.padding = xyxy(L,l,L,l);
                 l = h*10/100;
                 L = h*18/100;
-                Play.icon.padding = XYXY(L,l,L,l);
+                Play.icon.padding = xyxy(L,l,L,l);
                 l = h*30/100;
-                prev.icon.padding = XYXY(l,l,l,l);
-                next.icon.padding = XYXY(l,l,l,l);
+                prev.icon.padding = xyxy(l,l,l,l);
+                next.icon.padding = xyxy(l,l,l,l);
 
                 int w = h*5/4;
                 int d = h*1/5;
                 int D = h*1/2 + 2*l;
                 int y = 2*w*96/128;
 
-                speaker .coord = XYWH(0*w+d, 0+0*h+1*d, 2*w, y);
-                mute    .coord = XYWH(0*w+d, y+0*h+2*d, 2*w, h);
-                play    .coord = XYWH(0*w+d, y+1*h+3*d, 1*w, h);
-                stop    .coord = XYWH(0*w+d, y+1*h+3*d, 1*w, h);
-                Play    .coord = XYWH(1*w+d, y+1*h+3*d, 1*w, h);
-                Stop    .coord = XYWH(1*w+d, y+1*h+3*d, 1*w, h);
-                oneof   .coord = XYWH(0*w+d, y+2*h+3*d, 2*w, h);
-                prev    .coord = XYWH(0*w+d, y+3*h+3*d, 1*w, h);
-                next    .coord = XYWH(1*w+d, y+3*h+3*d, 1*w, h);
-                players .coord = XYXY(2*w+D, 0, W-D, H);
+                speaker .coord = xywh(0*w+d, 0+0*h+1*d, 2*w, y);
+                mute    .coord = xywh(0*w+d, y+0*h+2*d, 2*w, h);
+                play    .coord = xywh(0*w+d, y+1*h+3*d, 1*w, h);
+                stop    .coord = xywh(0*w+d, y+1*h+3*d, 1*w, h);
+                Play    .coord = xywh(1*w+d, y+1*h+3*d, 1*w, h);
+                Stop    .coord = xywh(1*w+d, y+1*h+3*d, 1*w, h);
+                oneof   .coord = xywh(0*w+d, y+2*h+3*d, 2*w, h);
+                prev    .coord = xywh(0*w+d, y+3*h+3*d, 1*w, h);
+                next    .coord = xywh(1*w+d, y+3*h+3*d, 1*w, h);
+                players .coord = xyxy(2*w+D, 0, W-D, H);
 
                 for (auto & player : players)
                     player.coord = players.

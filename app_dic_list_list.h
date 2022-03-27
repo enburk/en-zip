@@ -39,8 +39,8 @@ namespace app::dic::list
                 for (int i=0; i<n; i++) {
                     auto & word = i < words.size() ? words(i) : words.emplace_back();
                     word.kind = gui::button::sticky;
-                    word.coord = XYWH(0, h*i, W, h);
-                    word.text.alignment = XY(pix::left, pix::center);
+                    word.coord = xywh(0, h*i, W, h);
+                    word.text.alignment = xy(pix::left, pix::center);
                     word.text.rpadding.now = gui::metrics::text::height/6;
                     word.text.wordwrap = false;
                     word.text.ellipsis = true;
@@ -71,8 +71,8 @@ namespace app::dic::list
 
                         auto r = word.coord.now.local();
                         word.frame.thickness = 0;
-                        word.frame.coord = XYWH();
-                        word.image.coord = XYWH();
+                        word.frame.coord = xywh();
+                        word.image.coord = xywh();
                         word.text .coord = r;
                     };
                     word.on_change_state();

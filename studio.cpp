@@ -53,20 +53,20 @@ struct Studio : gui::widget<Studio>
             int w = gui::metrics::text::height*10;
             int h = gui::metrics::text::height*12/7;
 
-            canvas .coord = XYWH(0, 0, W, H);
-            toolbar.coord = XYWH(0, 0, W, h);
+            canvas .coord = xywh(0, 0, W, H);
+            toolbar.coord = xywh(0, 0, W, h);
 
-            select(0).coord = XYWH(w*0, 0, w, h);
-            select(1).coord = XYWH(w*1, 0, w, h);
-            select(2).coord = XYWH(w*2, 0, w, h);
-            select(3).coord = XYWH(w*4, 0, w, h);
-            select(4).coord = XYWH(w*5, 0, w, h);
-            select(5).coord = XYWH(w*7, 0, w, h);
-            select(6).coord = XYWH(w*8, 0, w, h);
-            select   .coord = XYWH(0, 0, 9*w, h);
+            select(0).coord = xywh(w*0, 0, w, h);
+            select(1).coord = xywh(w*1, 0, w, h);
+            select(2).coord = xywh(w*2, 0, w, h);
+            select(3).coord = xywh(w*4, 0, w, h);
+            select(4).coord = xywh(w*5, 0, w, h);
+            select(5).coord = xywh(w*7, 0, w, h);
+            select(6).coord = xywh(w*8, 0, w, h);
+            select   .coord = xywh(0, 0, 9*w, h);
 
             for (int i=0; i<studios.size(); i++)
-                studios[i]->coord = XYXY(0, h, W, H);
+                studios[i]->coord = xyxy(0, h, W, H);
         }
 
         if (what == &select)

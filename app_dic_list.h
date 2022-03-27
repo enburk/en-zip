@@ -71,27 +71,27 @@ namespace app::dic::list
                 int w = min (htool, W/5);
                 int y = 0;
 
-                list.coord = XYWH(0, 0, W, hlist); y += list.coord.now.size.y;
-                word.coord = XYWH(0, y, W, hword); y += word.coord.now.size.y;
-                tool.coord = XYXY(0, y, W, H);
+                list.coord = xywh(0, 0, W, hlist); y += list.coord.now.size.y;
+                word.coord = xywh(0, y, W, hword); y += word.coord.now.size.y;
+                tool.coord = xyxy(0, y, W, H);
 
                 int l = w/5;
-                up       .icon.padding = XYXY(l,l,l,l);
-                down     .icon.padding = XYXY(l,l,l,l);
-                page_up  .icon.padding = XYXY(l,l,l,l);
-                page_down.icon.padding = XYXY(l,l,l,l); l = w/7;
-                settings .icon.padding = XYXY(l,l,l,l);
+                up       .icon.padding = xyxy(l,l,l,l);
+                down     .icon.padding = xyxy(l,l,l,l);
+                page_up  .icon.padding = xyxy(l,l,l,l);
+                page_down.icon.padding = xyxy(l,l,l,l); l = w/7;
+                settings .icon.padding = xyxy(l,l,l,l);
 
-                up       .coord = XYXY(W-5*w, y, W-4*w, H);
-                down     .coord = XYXY(W-4*w, y, W-3*w, H);
-                page_up  .coord = XYXY(W-3*w, y, W-2*w, H);
-                page_down.coord = XYXY(W-2*w, y, W-1*w, H);
-                settings .coord = XYXY(W-1*w, y, W-0*w, H);
+                up       .coord = xyxy(W-5*w, y, W-4*w, H);
+                down     .coord = xyxy(W-4*w, y, W-3*w, H);
+                page_up  .coord = xyxy(W-3*w, y, W-2*w, H);
+                page_down.coord = xyxy(W-2*w, y, W-1*w, H);
+                settings .coord = xyxy(W-1*w, y, W-0*w, H);
             }
             if (what == &skin)
             {
                 tool.color = gui::skins[skin].light.first;
-                auto font = sys::font{"", gui::metrics::text::height*12/10};
+                auto font = pix::font{"", gui::metrics::text::height*12/10};
                 up       .text.font = font;
                 down     .text.font = font;
                 page_up  .text.font = font;
@@ -141,8 +141,8 @@ namespace app::dic::list
             else word.object.on_key(key, down, input);
         }
 
-        bool mouse_sensible (XY) override { return true; }
-        bool on_mouse_wheel (XY p, int delta) override
+        bool mouse_sensible (xy) override { return true; }
+        bool on_mouse_wheel (xy p, int delta) override
         {
             if (sys::keyboard::shift) delta *= list.object.words.size();
             if (sys::keyboard::ctrl) delta *= 5;

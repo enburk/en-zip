@@ -18,7 +18,7 @@ namespace studio::audio
                 int W = coord.now.w;
                 int H = coord.now.h;
 
-                canvas.coord = XYWH(0, 0, W, H);
+                canvas.coord = xywh(0, 0, W, H);
             }
         }
     };

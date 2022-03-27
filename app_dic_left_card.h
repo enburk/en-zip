@@ -25,7 +25,7 @@ namespace app::dic::left
 
             int l = gui::metrics::line::width;
 
-            XY size;
+            xy size;
             for (auto& video : selected_video)
             size.x = max (size.x, video.location.size_x + 6*l);
             size.y = video.height(size.x);
@@ -33,16 +33,16 @@ namespace app::dic::left
             refresh_video(size);
         }
 
-        void refresh_video (XY size)
+        void refresh_video (xy size)
         {
             int maxwidth = coord.now.size.x * 2/3;
-            if (maxwidth < size.x) size = XY (
+            if (maxwidth < size.x) size = xy (
                 maxwidth, video.height(maxwidth));
 
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;
 
-            video.coord = XYWH(
+            video.coord = xywh(
                 coord.now.size.x - size.x - d, 0,
                 size.x, size.y
             );
@@ -65,8 +65,8 @@ namespace app::dic::left
             or  what == &text.scroll.y
             or  what == &text.update_text)
             {
-                text.rwrap = array<XY>{
-                    XY{0, text.scroll.y.top},
+                text.rwrap = array<xy>{
+                    xy{0, text.scroll.y.top},
                     video.coord.now.size};
             }
             if (what == &text ) { clicked = text .clicked; notify(); }

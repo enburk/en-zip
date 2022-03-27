@@ -215,7 +215,7 @@ namespace app::dic::audio
             if (what == &skin)
             {
                 text.view.canvas.color = gui::skins[skin].light.first;
-                text.alignment = XY{pix::left, pix::center};
+                text.alignment = xy{pix::left, pix::center};
                 text.color = gui::skins[skin].touched.first;
             }
             if (what == &timer)

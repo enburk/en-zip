@@ -17,10 +17,10 @@
 #include "../auxs/pix_process.h"
 #include "../auxs/sys_aux.h"
 
-using pix::XY;
-using pix::XYWH;
-using pix::XYXY;
-using pix::RGBA;
+using pix::xy;
+using pix::xywh;
+using pix::xyxy;
+using pix::rgba;
 using pix::image;
 using pix::frame;
 using gui::widget;

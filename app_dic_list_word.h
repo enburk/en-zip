@@ -22,7 +22,7 @@ namespace app::dic::list
 
             editor.select();
             editor.style = pix::text::style{
-                sys::font{"Segoe UI",
+                pix::font{"Segoe UI",
                 gui::metrics::text::height},
                 gui::skins[skin].dark.first};
         }
@@ -39,7 +39,7 @@ namespace app::dic::list
                 editor.rpadding.now = gui::metrics::text::height/6;
                 editor.canvas.color = gui::skins[skin].ultralight.first;
                 editor.style = pix::text::style{
-                    sys::font{"Segoe UI",
+                    pix::font{"Segoe UI",
                     gui::metrics::text::height},
                     gui::skins[skin].dark.first };
             }
@@ -50,7 +50,7 @@ namespace app::dic::list
                 auto i = vocabulary.lower_bound_case_insensitive(s);
 
                 editor.style = pix::text::style{
-                    sys::font{"Segoe UI",
+                    pix::font{"Segoe UI",
                     gui::metrics::text::height},
                     eng::equal_case_insensitive(s, vocabulary[i].title) ?
                     gui::skins[skin].dark.first :

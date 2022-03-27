@@ -22,7 +22,7 @@ namespace app::dic::left
         area ()
         {
             card.object.text.scroll.x.mode = gui::scroll::mode::none;
-            card.object.text.alignment = XY{pix::left, pix::top};
+            card.object.text.alignment = xy{pix::left, pix::top};
             card.object.text.mouse_wheel_speed = 2.0;
             undo.text.text = "undo";
             redo.text.text = "redo";
@@ -146,11 +146,11 @@ namespace app::dic::left
                 int hcard = H - htool - hquot;
                 int y = 0;
 
-                card.coord = XYWH(0, 0, W, hcard); y += card.coord.now.h;
-                quot.coord = XYWH(0, y, W, hquot); y += quot.coord.now.h;
-                tool.coord = XYXY(0, y, W, H);
-                undo.coord = XYXY(0, y, w, H);
-                redo.coord = XYXY(w, y, W, H);
+                card.coord = xywh(0, 0, W, hcard); y += card.coord.now.h;
+                quot.coord = xywh(0, y, W, hquot); y += quot.coord.now.h;
+                tool.coord = xyxy(0, y, W, H);
+                undo.coord = xyxy(0, y, w, H);
+                redo.coord = xyxy(w, y, W, H);
             }
             if (what == &skin)
             {

@@ -83,24 +83,24 @@ namespace app::dic::video
             int d = credit.font.now.size*4/3; if (d == 0)
                 d = gui::metrics::text::height;
 
-            XY size {
+            xy size {
                 index.location.size_x,
                 index.location.size_y};
 
             int maxwidth = width - 6*l;
-            if (maxwidth < size.x) size = XY (
+            if (maxwidth < size.x) size = xy (
                 maxwidth, maxwidth *
                 size.y / size.x);
 
-            credit.alignment = XY{pix::left, pix::top};
+            credit.alignment = xy{pix::left, pix::top};
 
-            script.coord = XYWH(0, 0, size.x, max<int>());
-            credit.coord = XYWH(0, 0, size.x-3*d, max<int>());
+            script.coord = xywh(0, 0, size.x, max<int>());
+            credit.coord = xywh(0, 0, size.x-3*d, max<int>());
 
             int w1 = script.view.cell.coord.now.w;
             int w2 = credit.view.cell.coord.now.w;
 
-            credit.alignment = XY{pix::right, pix::top};
+            credit.alignment = xy{pix::right, pix::top};
 
             int h1 = script.view.cell.coord.now.h;
             int h2 = credit.view.cell.coord.now.h;
@@ -120,8 +120,8 @@ namespace app::dic::video
 
         int height (int width)
         {
-            XYWH script_save = script.coord.now;
-            XYWH credit_save = credit.coord.now;
+            xywh script_save = script.coord.now;
+            xywh credit_save = credit.coord.now;
 
             auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(width);
 
@@ -144,20 +144,20 @@ namespace app::dic::video
 
                 auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(coord.now.size.x);
 
-                XYWH r (W/2 - w/2, H/2 - h/2, w, h);
+                xywh r (W/2 - w/2, H/2 - h/2, w, h);
                 frame1.coord = r; r.deflate(frame1.thickness.now);
                 frame2.coord = r; r.deflate(frame2.thickness.now);
                 canvas.coord = r; r.deflate(frame2.thickness.now);
 
                 int l = d/7;
-                prev.icon.padding = XYXY(l,2*l,l,2*l);
-                next.icon.padding = XYXY(l,2*l,l,2*l);
+                prev.icon.padding = xyxy(l,2*l,l,2*l);
+                next.icon.padding = xyxy(l,2*l,l,2*l);
 
-                video .coord = XYWH(r.x, r.y,  size.x, size.y);
-                script.coord = XYWH(r.x, r.y + size.y, size.x, h1);
-                credit.coord = XYWH(r.x + r.w - 3*d - w2, r.y + size.y + y2, w2, h2);
-                prev  .coord = XYWH(r.x + r.w - 2*d, r.y + size.y + y2, d, d);
-                next  .coord = XYWH(r.x + r.w - 1*d, r.y + size.y + y2, d, d);
+                video .coord = xywh(r.x, r.y,  size.x, size.y);
+                script.coord = xywh(r.x, r.y + size.y, size.x, h1);
+                credit.coord = xywh(r.x + r.w - 3*d - w2, r.y + size.y + y2, w2, h2);
+                prev  .coord = xywh(r.x + r.w - 2*d, r.y + size.y + y2, d, d);
+                next  .coord = xywh(r.x + r.w - 1*d, r.y + size.y + y2, d, d);
             }
 
             if (what == &skin)
@@ -169,11 +169,11 @@ namespace app::dic::video
                 script.color = gui::skins[skin].touched.first;
 
                 int h = gui::metrics::text::height*11/10;
-                auto font = sys::font{"", h};
+                auto font = pix::font{"", h};
                 prev.text.font = font;
                 next.text.font = font;
-                prev.text.shift = XY{0, h/5};
-                next.text.shift = XY{0, h/5};
+                prev.text.shift = xy{0, h/5};
+                next.text.shift = xy{0, h/5};
                 prev.text.color = gui::skins[skin].touched.first;
                 next.text.color = gui::skins[skin].touched.first;
                 prev.icon.load(assets["icon.chevron.left.double.black.128x128"]);
@@ -184,8 +184,8 @@ namespace app::dic::video
                 font = credit.font.now;
                 font.size = gui::metrics::text::height*5/6;
                 credit.font = font;
-                credit.alignment = XY{pix::right, pix::top};
-                script.alignment = XY{pix::left,  pix::top};
+                credit.alignment = xy{pix::right, pix::top};
+                script.alignment = xy{pix::left,  pix::top};
             }
 
             if (what == &timer)

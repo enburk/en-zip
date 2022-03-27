@@ -3,9 +3,9 @@
 #include "media.h"
 namespace media::video
 {
-    void resize (image<RGBA> & img, int maxsizex, int maxsizey, bool sharp = true)
+    void resize (image<rgba> & img, int maxsizex, int maxsizey, bool sharp = true)
     {
-        XY size = img.size;
+        xy size = img.size;
 
         double k = sqrt ((double)(maxsizex*maxsizey) / (size.x*size.y));
 
@@ -20,7 +20,7 @@ namespace media::video
             if (kx > ky) { size = maxsizex * size / size.x; k = 1/kx; }
             else         { size = maxsizey * size / size.y; k = 1/ky; }
         }
-        else size = XY (isizex, isizey);
+        else size = xy (isizex, isizey);
 
         if (k < 1.0) pix::resize  (img, size); if (sharp) {
         if (k < 0.1) pix::sharpen (img, 1.75); else
@@ -29,7 +29,7 @@ namespace media::video
         }
     }
 
-    void crop (image<RGBA> & img, str crop_params)
+    void crop (image<rgba> & img, str crop_params)
     {
         int l = 0; int r = 0;
         int t = 0; int b = 0;
@@ -54,16 +54,16 @@ namespace media::video
 
                 auto crop = img.crop();
 
-                if (s == "ql" || s == "qt") crop = crop.crop(XYWH(0,0,a,a)); else
-                if (s == "qr" || s == "qb") crop = crop.crop(XYWH(X,Y,a,a)); else
-                if (s == "q"  || s == "qq") crop = crop.crop(XYWH(x,y,a,a));
+                if (s == "ql" || s == "qt") crop = crop.crop(xywh(0,0,a,a)); else
+                if (s == "qr" || s == "qb") crop = crop.crop(xywh(X,Y,a,a)); else
+                if (s == "q"  || s == "qq") crop = crop.crop(xywh(x,y,a,a));
 
-                img = image<RGBA>(crop);
+                img = image<rgba>(crop);
             }
         }
 
         if (l != 0 || r != 0 || t != 0 || b != 0)
-            img = image<RGBA>(img.crop(XYWH(l, t,
+            img = image<rgba>(img.crop(xywh(l, t,
                 img.size.x-l-r, img.size.y-t-b)));
     }
 
@@ -81,7 +81,7 @@ namespace media::video
             }
             else
             {
-                image<RGBA> img = pix::read(original).value(); 
+                image<rgba> img = pix::read(original).value(); 
 
                 if (img.size.x > 2500 &&
                     img.size.y > 2500 &&

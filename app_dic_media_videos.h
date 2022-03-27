@@ -124,7 +124,7 @@ namespace app::dic::video
 
                 if (clicked == -2)
                 {
-                    XY p =
+                    xy p =
                         sys::mouse::position() -
                         players(current).prev.coord.now.origin;
 
@@ -140,7 +140,7 @@ namespace app::dic::video
                 }
                 if (clicked == -1)
                 {
-                    XY p =
+                    xy p =
                         sys::mouse::position() -
                         players(current).next.coord.now.origin;
 

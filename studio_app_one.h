@@ -37,12 +37,12 @@ namespace studio::one
                 int w = W/2;
                 int d = 2*l;
 
-                splitter.coord = XYWH(W-w-d, 0, 2*d, H);
+                splitter.coord = xywh(W-w-d, 0, 2*d, H);
                 splitter.lower = 8'000 * W / 10'000;
                 splitter.upper =   800 * W / 10'000;
 
-                area.coord = XYWH(0, 0, W-w, H);
-                app .coord = XYWH(W-w, 0, w, H);
+                area.coord = xywh(0, 0, W-w, H);
+                app .coord = xywh(W-w, 0, w, H);
             }
         }
     };

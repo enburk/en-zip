@@ -5,7 +5,6 @@ namespace eng::unittest
     using aux::unittest::out;
     using aux::unittest::test;
     using aux::unittest::string;
-    using aux::unittest::vector;
     using aux::unittest::expect_;
 
     void heavy (gui::console& report) try

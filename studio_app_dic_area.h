@@ -47,18 +47,18 @@ namespace studio::dic
                 int w = gui::metrics::text::height*7;
                 int h = gui::metrics::text::height*12/7;
 
-                toolbar.coord = XYWH(0, 0, W, h);
+                toolbar.coord = xywh(0, 0, W, h);
 
-                select(0).coord = XYWH(w*0, 0, w, h);
-                select(1).coord = XYWH(w*1, 0, w, h);
-                select(2).coord = XYWH(w*2, 0, w, h);
-                select(3).coord = XYWH(w*3, 0, w, h);
-                select   .coord = XYWH(0, 0, W, h);
+                select(0).coord = xywh(w*0, 0, w, h);
+                select(1).coord = xywh(w*1, 0, w, h);
+                select(2).coord = xywh(w*2, 0, w, h);
+                select(3).coord = xywh(w*3, 0, w, h);
+                select   .coord = xywh(0, 0, W, h);
 
                 for (auto c: consoles)
-                    c->coord = XYXY(0, h, W/2, H);
+                    c->coord = xyxy(0, h, W/2, H);
 
-                detail.coord = XYXY(W/2, h, W, H);
+                detail.coord = xyxy(W/2, h, W, H);
             }
 
             if (what == &select)

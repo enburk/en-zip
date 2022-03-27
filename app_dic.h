@@ -72,10 +72,10 @@ namespace app::dic
                 splitter.lower.now,
                 splitter.upper.now);
 
-                splitter.coord = XYXY(x-d, 0, x+d, H);
+                splitter.coord = xyxy(x-d, 0, x+d, H);
 
-                left.coord = XYXY(0, 0, x, H);
-                list.coord = XYXY(x, 0, W, H);
+                left.coord = xyxy(0, 0, x, H);
+                list.coord = xyxy(x, 0, W, H);
             }
 
             if (what == &left) list.select(left.clicked);

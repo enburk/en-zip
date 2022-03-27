@@ -105,7 +105,7 @@ namespace app::dic::media
 
     struct syncronizer
     {
-        array<XY> pairs;
+        array<xy> pairs;
 
     };
 

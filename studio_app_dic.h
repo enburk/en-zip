@@ -50,10 +50,10 @@ namespace studio::dic
                 splitter.lower.now,
                 splitter.upper.now);
 
-                splitter.coord = XYXY(x-d, 0, x+d, H);
+                splitter.coord = xyxy(x-d, 0, x+d, H);
 
-                log.coord = XYXY(0, 0, x, H);
-                app.coord = XYXY(x, 0, W, H);
+                log.coord = xyxy(0, 0, x, H);
+                app.coord = xyxy(x, 0, W, H);
             }
 
             if (what == &splitter) {

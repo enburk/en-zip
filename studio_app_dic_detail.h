@@ -41,8 +41,8 @@ namespace studio::dic
                 int w = gui::metrics::text::height*7;
                 int h = gui::metrics::text::height*12/7;
 
-                path.coord = XYXY(0, 0, W, H/2);
-                text.coord = XYXY(0, H/2, W, H);
+                path.coord = xyxy(0, 0, W, H/2);
+                text.coord = xyxy(0, H/2, W, H);
             }
         }
     };

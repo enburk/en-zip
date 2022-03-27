@@ -41,7 +41,7 @@ namespace app::dic
             return link(token, line);
         }
 
-        int link (XY p)
+        int link (xy p)
         {
             auto & column = view.cell.lines;
 
@@ -60,9 +60,9 @@ namespace app::dic
             return -2;
         }
 
-        bool mouse_sensible (XY p) override { return true; }
+        bool mouse_sensible (xy p) override { return true; }
 
-        void on_mouse_press (XY p, str button, bool down) override
+        void on_mouse_press (xy p, str button, bool down) override
         {
             if (down and not sys::keyboard::ctrl)
             {
@@ -78,7 +78,7 @@ namespace app::dic
             gui::text::page::on_mouse_press(p, button, down);
         }
 
-        void on_mouse_hover (XY p) override
+        void on_mouse_hover (xy p) override
         {
             highlighted_link = "";
 
@@ -102,7 +102,7 @@ namespace app::dic
                             (link != "" and token.info == link))
                         {
                             auto style = style_index.style();
-                            style.color = RGBA(0,0,255);
+                            style.color = rgba(0,0,255);
                             style_index = pix::text::style_index(style);
                             highlighted_link = link;
                         }

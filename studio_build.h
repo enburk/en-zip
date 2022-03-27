@@ -24,8 +24,8 @@ namespace studio::build
                 int W = coord.now.w;
                 int H = coord.now.h;
 
-                out.coord = XYWH(0,   0, W/2, H);
-                err.coord = XYWH(W/2, 0, W/2, H);
+                out.coord = xywh(0,   0, W/2, H);
+                err.coord = xywh(W/2, 0, W/2, H);
             }
             if (what == &timer && compilation.valid())
             {
@@ -121,7 +121,7 @@ namespace studio::build
             });
         }
 
-        void on_mouse_press (XY p, str button, bool down) override
+        void on_mouse_press (xy p, str button, bool down) override
         {
             if (down)
             {

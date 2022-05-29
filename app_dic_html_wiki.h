@@ -201,6 +201,8 @@ namespace app::dic
                     or  kind == "1")
                     html += "</div>";
                 }
+
+                html += "</div>";
             }
             else
             if (eng::related_items.find(topic.header) !=

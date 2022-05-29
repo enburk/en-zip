@@ -126,11 +126,27 @@ namespace app::dic
                             str l, r; s.split_by(":", l, r);
                             s = green(italic(l + ":")) + r; }
 
-                    if (kind == "llc") html += gap + "<div style=\"margin-left: 3em\">"; else
-                    if (kind == "lcc") html += gap + "<div style=\"margin-left: 3em\">"; else
-                    if (kind == "ll" ) html += gap + "<div style=\"margin-left: 2em\">"; else
-                    if (kind == "lc" ) html += gap + "<div style=\"margin-left: 2em\">"; else
-                    if (kind == "l"  ) html += gap + "<div style=\"margin-left: 1em\">"; 
+                    str indent;
+                    if (kind == "ll" )
+                    {
+                        str n = std::to_string(n2);
+                        str m = std::to_string(n.size()+1);
+                        indent += "; margin-left: "+m+"ch";
+                        indent += "; text-indent:-"+m+"ch";
+                    }
+                    if (kind == "l"  )
+                    {
+                        str n = std::to_string(n1);
+                        str m = std::to_string(n.size()+1);
+                        indent += "; margin-left: "+m+"ch";
+                        indent += "; text-indent:-"+m+"ch";
+                    }
+
+                    if (kind == "llc") html += gap + "<div style=\"margin-left: 3em"+indent+"\">"; else
+                    if (kind == "lcc") html += gap + "<div style=\"margin-left: 3em"+indent+"\">"; else
+                    if (kind == "ll" ) html += gap + "<div style=\"margin-left: 2em"+indent+"\">"; else
+                    if (kind == "lc" ) html += gap + "<div style=\"margin-left: 2em"+indent+"\">"; else
+                    if (kind == "l"  ) html += gap + "<div style=\"margin-left: 1em"+indent+"\">"; 
 
                     if (kind == "ll" ) html += gap + std::to_string(n2++) + ". "; else
                     if (kind == "l"  ) html += gap + std::to_string(n1++) + ". ";
@@ -147,13 +163,13 @@ namespace app::dic
                 if (header.size() > 0)
                     header[0] = header[0] - 'a' + 'A';
 
-                str br = header == "Pronunciation" and
-                    topic.content.size() > 1 ?
-                    "<br>" : "";
-
                 html += "<br>";
                 html += "<div style=\"margin-left: 1em\">";
-                html += green(italic(header + ": ")) + br;
+                html += green(italic(header + ": ")) + 
+
+                   (header == "Pronunciation" and
+                    topic.content.size() > 1 ?
+                    "<br>" : "");
 
                 for (str s : topic.content)
                 {
@@ -178,9 +194,13 @@ namespace app::dic
                         s = green(italic(l + ":")) + r; }
                     
                     html += bold_italic(s) + "<br>";
-                }
 
-                html += "</div>";
+                    if (kind == "4"
+                    or  kind == "3"
+                    or  kind == "2"
+                    or  kind == "1")
+                    html += "</div>";
+                }
             }
             else
             if (eng::related_items.find(topic.header) !=

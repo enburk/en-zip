@@ -21,10 +21,7 @@ namespace app::dic::list
             flag = false;
 
             editor.select();
-            editor.style = pix::text::style{
-                pix::font{"Segoe UI",
-                gui::metrics::text::height},
-                gui::skins[skin].dark.first};
+            editor.color = gui::skins[skin].dark.first;
         }
 
         void on_change (void* what) override
@@ -36,12 +33,10 @@ namespace app::dic::list
             if (what == &skin)
             {
                 editor.virtual_space = true;
-                editor.rpadding.now = gui::metrics::text::height/6;
+                editor.padding = xyxy(gui::metrics::text::height/6,0,0,0);
                 editor.canvas.color = gui::skins[skin].ultralight.first;
-                editor.style = pix::text::style{
-                    pix::font{"Segoe UI",
-                    gui::metrics::text::height},
-                    gui::skins[skin].dark.first };
+                editor.font = pix::font{"Segoe UI"};
+                editor.color = gui::skins[skin].dark.first;
             }
             if (what == &editor.update_text) if (not flag)
             {
@@ -49,12 +44,10 @@ namespace app::dic::list
                 auto s = str(editor.text); s.triml();
                 auto i = vocabulary.lower_bound_case_insensitive(s);
 
-                editor.style = pix::text::style{
-                    pix::font{"Segoe UI",
-                    gui::metrics::text::height},
-                    eng::equal_case_insensitive(s, vocabulary[i].title) ?
-                    gui::skins[skin].dark.first :
-                    gui::skins[skin].error.first };
+                editor.color =
+                eng::equal_case_insensitive(s, vocabulary[i].title) ?
+                gui::skins[skin].dark.first :
+                gui::skins[skin].error.first;
 
                 typed = i;
                 notify();

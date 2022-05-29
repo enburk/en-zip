@@ -9,39 +9,11 @@ namespace app::dic::list
     {
         gui::area<list> list;
         gui::area<word> word;
-
-        gui::canvas tool;
-        gui::button settings;
-        gui::button up, down;
-        gui::button page_up, page_down;
         int clicked = 0;
-
-        area ()
-        {
-            up.repeating = true;
-            down.repeating = true;
-            page_up.repeating = true;
-            page_down.repeating = true;
-            using namespace std::literals::chrono_literals;
-            auto lapse = 40ms;
-            up.repeat_delay = 0ms;
-            up.repeat_lapse = lapse;
-            down.repeat_delay = 0ms;
-            down.repeat_lapse = lapse;
-            page_up.repeat_delay = 0ms;
-            page_up.repeat_lapse = lapse;
-            page_down.repeat_delay = 0ms;
-            page_down.repeat_lapse = lapse;
-        }
 
         void reload ()
         {
             list.object.refresh();
-            up       .icon.load(assets["icon.chevron.up.black.128x128"]);
-            down     .icon.load(assets["icon.chevron.down.black.128x128"]);
-            page_up  .icon.load(assets["icon.chevron.up.double.black.128x128"]);
-            page_down.icon.load(assets["icon.chevron.down.double.black.128x128"]);
-            settings .icon.load(assets["icon.settings.black.192x192"]);
         }
 
         void select (int n)
@@ -65,53 +37,21 @@ namespace app::dic::list
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height;
 
-                int hword = h*14/7;
-                int htool = h*12/7;
-                int hlist = H - hword - htool;
-                int w = min (htool, W/5);
+                int hword = h*12/10;
+                int hlist = H - hword;
                 int y = 0;
 
                 list.coord = xywh(0, 0, W, hlist); y += list.coord.now.size.y;
                 word.coord = xywh(0, y, W, hword); y += word.coord.now.size.y;
-                tool.coord = xyxy(0, y, W, H);
-
-                int l = w/5;
-                up       .icon.padding = xyxy(l,l,l,l);
-                down     .icon.padding = xyxy(l,l,l,l);
-                page_up  .icon.padding = xyxy(l,l,l,l);
-                page_down.icon.padding = xyxy(l,l,l,l); l = w/7;
-                settings .icon.padding = xyxy(l,l,l,l);
-
-                up       .coord = xyxy(W-5*w, y, W-4*w, H);
-                down     .coord = xyxy(W-4*w, y, W-3*w, H);
-                page_up  .coord = xyxy(W-3*w, y, W-2*w, H);
-                page_down.coord = xyxy(W-2*w, y, W-1*w, H);
-                settings .coord = xyxy(W-1*w, y, W-0*w, H);
-            }
-            if (what == &skin)
-            {
-                tool.color = gui::skins[skin].light.first;
-                auto font = pix::font{"", gui::metrics::text::height*12/10};
-                up       .text.font = font;
-                down     .text.font = font;
-                page_up  .text.font = font;
-                page_down.text.font = font;
-                settings .text.font = font;
             }
 
             if (what == &word.object) list.object.select(word.object.typed);
             if (what == &list.object) word.object.select(list.object.selected);
-            if (what == &list.object) if (list.object.note == list::note::chosen)
+            if (what == &list.object and list.object.note == list::note::chosen)
             {
                 clicked = list.object.selected;
                 notify();
             }
-
-            if (what == &up) on_key("up", true, false);
-            if (what == &down) on_key("down", true, false);
-            if (what == &page_up) on_key("page up", true, false);
-            if (what == &page_down) on_key("page down", true, false);
-            if (what == &settings) {}
         }
 
         void on_key (str key, bool down, bool input) override
@@ -148,7 +88,7 @@ namespace app::dic::list
             if (sys::keyboard::ctrl) delta *= 5;
             list.object.origin =
             list.object.origin.now
-            - delta/20;//120;
+            - delta/60;//120;
             return true;
         }
     };

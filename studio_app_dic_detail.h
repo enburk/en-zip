@@ -38,8 +38,8 @@ namespace studio::dic
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
-                int w = gui::metrics::text::height*7;
-                int h = gui::metrics::text::height*12/7;
+                int w = gui::metrics::text::height*5;
+                int h = gui::metrics::text::height*12/10;
 
                 path.coord = xyxy(0, 0, W, H/2);
                 text.coord = xyxy(0, H/2, W, H);

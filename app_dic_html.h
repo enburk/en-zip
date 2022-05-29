@@ -6,145 +6,76 @@ namespace app::dic
     {
         int clicked = 0;
 
-        str highlighted_link;
-
         array<str> forbidden_links;
 
-        int link (gui::text::token& token, gui::text::line& line)
+        void prelink (xy p)
         {
-            if (token.info.size() == 1)
-            // ignore dots, commas etc.
-                return -1;
+            auto& block = view.model->block;
+            auto token = block.hovered_token(p
+                - view.coord.now.origin
+                - view.shift);
 
-            if (token.info != "") {
-                auto index = vocabulary.index(token.info);
-                return index ? *index : -1; }
+            if (not token
+            or token->link != ""
+            or token->info != "")
+                return;
 
+            auto [l, o] = view.pointed(p);
+            if (l < 0 or l >= block.lines.size())
+                return;
+
+            auto& line = block.lines[l];
             array<doc::text::token> tokens;
-            tokens.reserve(line.size());
-
-            for (auto& t: line) {
-                tokens += {
-                    t.text == (char*)(u8"’") ? "'" : t.text,
-                    t.info != "" ? "Text" : ""
-                };
-            }
+            tokens.reserve(line.tokens.size());
+            for (auto& t: line.tokens)
+                tokens += {t.text};
 
             eng::parser::proceed(vocabulary, tokens, forbidden_links);
 
-            for (int i=0; i<line.size(); i++) {
+            for (int i=0; i<line.tokens.size(); i++)
+            {
                 str s = tokens[i].info;
-                if (s == "") s = ".";
-                line(i).info = s;
+                if (s.size() < 2) // ignore dots, commas etc.
+                line.tokens[i].info = "."; else
+                line.tokens[i].link = s;
             }
 
-            return link(token, line);
-        }
-
-        int link (xy p)
-        {
-            auto & column = view.cell.lines;
-
-            if (!column.coord.now.includes(p)) return -2;
-            auto cp = p - column.coord.now.origin;
-            for (auto & line : column)
+            int i = 0;
+            for (auto& row: line.rows)
+            for (auto& solid: row.solids)
+            for (auto& token: solid.tokens)
             {
-                if (!line.coord.now.includes(cp)) continue;
-                auto lp = cp - line.coord.now.origin;
-                for (auto & token : line)
-                {
-                    if (!token.coord.now.includes(lp)) continue;
-                    return link(token, line);
-                }
+                str s = tokens[i++].info;
+                if (s.size() < 2) // ignore dots, commas etc.
+                token.info = "."; else
+                token.link = s;
             }
-            return -2;
-        }
-
-        bool mouse_sensible (xy p) override { return true; }
-
-        void on_mouse_press (xy p, str button, bool down) override
-        {
-            if (down and not sys::keyboard::ctrl)
-            {
-                if (auto n = link(p); n >= 0 and
-                    not forbidden_links.contains(
-                        vocabulary[n].title))
-                {
-                    clicked = n;
-                    notify();
-                    return;
-                }
-            }
-            gui::text::page::on_mouse_press(p, button, down);
         }
 
         void on_mouse_hover (xy p) override
         {
-            highlighted_link = "";
+            if (not touch
+            and not sys::keyboard::ctrl)
+                prelink(p);
 
-            if (not touch and not sys::keyboard::ctrl)
-            {
-                int n = link(p);
-                str link = n >= 0 ?
-                    vocabulary[n].title : "";
-                
-                mouse_image = n < 0 or
-                    forbidden_links.contains(link) ?
-                        "arrow": "hand";
-
-
-                for (auto & line : view.cell.lines)
-                {
-                    for (auto & token : line)
-                    {
-                        auto style_index = token.style;
-                        if ((link != "" and token.text == link) or
-                            (link != "" and token.info == link))
-                        {
-                            auto style = style_index.style();
-                            style.color = rgba(0,0,255);
-                            style_index = pix::text::style_index(style);
-                            highlighted_link = link;
-                        }
-                        for (auto& g: token.glyphs)
-                            g.style_index = style_index;
-                        token.update();
-                    }
-                }
-                return;
-            }
-            else if (sys::keyboard::ctrl)
-            {
-                for (auto & line : view.cell.lines)
-                {
-                    for (auto & token : line)
-                    {
-                        for (auto& g: token.glyphs)
-                            g.style_index = token.style;
-                        token.update();
-                    }
-                }
-            }
             gui::text::page::on_mouse_hover(p);
         }
 
-        void on_mouse_leave () override
+        void on_mouse_click (xy p, str button, bool down) override
         {
-            highlighted_link = "";
+            gui::text::page::on_mouse_click(p, button, down);
 
-            if (!touch)
+            if (down
+            and not sys::keyboard::ctrl
+            and link != "")
             {
-                for (auto & line : view.cell.lines)
+                if (auto index =
+                vocabulary.index(link); index)
                 {
-                    for (auto & token : line)
-                    {
-                        for (auto& g: token.glyphs)
-                            g.style_index = token.style;
-                        token.update();
-                    }
+                    clicked = *index;
+                    notify();
                 }
             }
-            gui::text::page::on_mouse_leave();
         }
     };
 }

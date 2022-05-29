@@ -214,7 +214,7 @@ namespace app::dic::audio
             }
             if (what == &skin)
             {
-                text.view.canvas.color = gui::skins[skin].light.first;
+                text.canvas.color = gui::skins[skin].light.first;
                 text.alignment = xy{pix::left, pix::center};
                 text.color = gui::skins[skin].touched.first;
             }
@@ -222,7 +222,7 @@ namespace app::dic::audio
             {
                 if (timer == gui::time{1})
                 {
-                    if (text.highlighted_link != "") {
+                    if (text.link != "") {
                         timer.go (gui::time{0}, gui::time{0});
                         timer.go (gui::time{1}, 1s);
                         return; }

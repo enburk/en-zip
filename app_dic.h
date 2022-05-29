@@ -54,13 +54,15 @@ namespace app::dic
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height;
                 int l = gui::metrics::line::width*3;
-                int w = 17*h; // list width
+                int w = 10*h; // list width
                 int d = 2*l;
 
                 splitter.lower = W * 50'00 / 100'00;
@@ -82,8 +84,8 @@ namespace app::dic
             if (what == &list) left.select(list.clicked);
             if (what == &splitter) {
                 sys::settings::save(
-                    "app::dic::splitter.permyriad",
-                    splitter.middle * 100'00 / coord.now.w);
+                "app::dic::splitter.permyriad",
+                splitter.middle * 100'00 / coord.now.w);
                 on_change(&coord);
             }
         }

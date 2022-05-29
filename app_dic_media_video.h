@@ -134,8 +134,8 @@ namespace app::dic::video
         void on_change (void* what) override
         {
             if (timer.now == gui::time())
-                timer.go (gui::time::infinity,
-                          gui::time::infinity);
+                timer.go(gui::time::infinity,
+                         gui::time::infinity);
 
             if (what == &coord)
             {
@@ -168,7 +168,7 @@ namespace app::dic::video
                 credit.color = gui::skins[skin].hovered.first;
                 script.color = gui::skins[skin].touched.first;
 
-                int h = gui::metrics::text::height*11/10;
+                int h = gui::metrics::text::height*8/10;
                 auto font = pix::font{"", h};
                 prev.text.font = font;
                 next.text.font = font;

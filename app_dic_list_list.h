@@ -5,6 +5,7 @@ namespace app::dic::list
     struct list:
     widget<list>
     {
+        gui::canvas canvas;
         gui::radio::group words;
         gui::property<int> current = 1;
         gui::property<int> origin = -1;
@@ -27,13 +28,16 @@ namespace app::dic::list
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
-                words.coord = coord.now.local();
+                words .coord = coord.now.local();
+                canvas.coord = coord.now.local();
 
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
-                int h = gui::metrics::text::height*99/70;
+                int h = gui::metrics::text::height;
                 int n = (H + h - 1) / h;
 
                 for (int i=0; i<n; i++) {
@@ -41,8 +45,7 @@ namespace app::dic::list
                     word.kind = gui::button::sticky;
                     word.coord = xywh(0, h*i, W, h);
                     word.text.alignment = xy(pix::left, pix::center);
-                    word.text.rpadding.now = gui::metrics::text::height/6;
-                    word.text.wordwrap = false;
+                    word.text.shift = xy(h/6,0);
                     word.text.ellipsis = true;
                 }
                 words.truncate(n);
@@ -51,17 +54,19 @@ namespace app::dic::list
             }
             if (what == &skin)
             {
+                canvas.color = gui::skins[skin].light.first;
+
                 for (int i=0; i<words.size(); i++)
                 {
                     auto & word = words(i);
-                    word.on_change_state = [&word, edge = i == 0 || i == words.size()-1]()
+                    word.on_change_state = [&word, edge = i == 0 or i == words.size()-1]()
                     {
                         auto style = gui::skins[word.skin.now];
                         auto colors = style.light;
 
                         if (!edge) colors.first = style.ultralight.first;
                         // order important
-                        if (word.mouse_pressed.now) colors = style.touched; else
+                        if (word.mouse_clicked.now) colors = style.touched; else
                         if (word.enter_pressed.now) colors = style.touched; else
                         if (word.on           .now) colors = style.active;  else
                         if (word.mouse_hover  .now) colors = style.light;   else
@@ -71,16 +76,16 @@ namespace app::dic::list
 
                         auto r = word.coord.now.local();
                         word.frame.thickness = 0;
-                        word.frame.coord = xywh();
-                        word.image.coord = xywh();
-                        word.text .coord = r;
+                        word.frame.coord = xywh{};
+                        word.image.coord = xywh{};
+                        word.text.coord = r; r.deflate(1);
+                        word.canvas.coord = r;
                     };
                     word.on_change_state();
                 }
             }
             if (what == &origin) refresh();
             if (what == &current) refresh();
-            if (what == &selected) refresh();
             if (what == &selected) refresh();
             if (what == &words) if (not flag)
             {
@@ -126,7 +131,10 @@ namespace app::dic::list
                 words(i).enabled = in;
             }
 
+            bool
+            f = flag; flag = true;
             words(current.now).on = true;
+            flag = f;
 
             selected = origin.now + current.now;
             note = note::changed;

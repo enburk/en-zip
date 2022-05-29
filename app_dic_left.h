@@ -24,6 +24,8 @@ namespace app::dic::left
             card.object.text.scroll.x.mode = gui::scroll::mode::none;
             card.object.text.alignment = xy{pix::left, pix::top};
             card.object.text.mouse_wheel_speed = 2.0;
+            undo.text.ellipsis = true;
+            redo.text.ellipsis = true;
             undo.text.text = "undo";
             redo.text.text = "redo";
         }
@@ -141,8 +143,8 @@ namespace app::dic::left
                 int l = gui::metrics::line::width;
                 int w = W/2;
 
-                int htool = h*12/7;
-                int hquot = 6*h*12/7 + 3*h*12/7/5 + 0*l;
+                int htool = h*12/10;
+                int hquot = 6*htool + 3*htool/5 + 0*l;
                 int hcard = H - htool - hquot;
                 int y = 0;
 
@@ -162,7 +164,8 @@ namespace app::dic::left
 
             if (what == &undo && undoes.size() > 0) 
             {
-                str link = undoes.back();
+                str link =
+                undoes.back();
                 undoes.pop_back();
                 redoes += current_entry.title;
                 auto index = vocabulary.index(link);
@@ -175,7 +178,8 @@ namespace app::dic::left
             }
             if (what == &redo && redoes.size() > 0) 
             {
-                str link = redoes.back();
+                str link =
+                redoes.back();
                 redoes.pop_back();
                 auto index = vocabulary.index(link);
                 if (not index) { logs::times <<

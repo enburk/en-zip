@@ -14,6 +14,7 @@
 #include "../auxs/doc_html_syntax.h"
 #include "../auxs/doc_html_utils.h"
 #include "../auxs/doc_html_model.h"
+#include "../auxs/aux_unittest.h"
 #include "../auxs/pix_process.h"
 #include "../auxs/sys_aux.h"
 
@@ -26,16 +27,16 @@ using pix::frame;
 using gui::widget;
 using namespace std::literals::chrono_literals;
 
-str bold   (str s) { return "<b>" + s + "</b>"; }
-str italic (str s) { return "<i>" + s + "</i>"; }
-str blue   (str s) { return "<font color=#000080>" + s + "</font>"; }
-str dark   (str s) { return "<font color=#505050>" + s + "</font>"; }
-str gray   (str s) { return "<font color=#808080>" + s + "</font>"; }
-str green  (str s) { return "<font color=#008000>" + s + "</font>"; }
-str light  (str s) { return "<font color=#A0A0A0>" + s + "</font>"; }
-str purple (str s) { return "<font color=#800080>" + s + "</font>"; }
-str red    (str s) { return "<font color=#B00020>" + s + "</font>"; }
-str yellow (str s) { return "<font color=#BF360C>" + s + "</font>"; }
+str bold      (str s) { return "<b>" + s + "</b>"; }
+str italic    (str s) { return "<i>" + s + "</i>"; }
+str blue      (str s) { return "<font color=#000080>" + s + "</font>"; }
+str dark      (str s) { return "<font color=#505050>" + s + "</font>"; }
+str gray      (str s) { return "<font color=#808080>" + s + "</font>"; }
+str green     (str s) { return "<font color=#008000>" + s + "</font>"; }
+str light     (str s) { return "<font color=#A0A0A0>" + s + "</font>"; }
+str purple    (str s) { return "<font color=#800080>" + s + "</font>"; }
+str red       (str s) { return "<font color=#B00020>" + s + "</font>"; }
+str yellow    (str s) { return "<font color=#BF360C>" + s + "</font>"; }
 str monospace (str s) { return "<font face=\"monospace\">" + s + "</font>"; }
 
 using namespace std::string_view_literals;

@@ -130,8 +130,8 @@ namespace app::dic::left
         void on_change (void* what) override
         {
             if (timer.now == gui::time())
-                timer.go (gui::time::infinity,
-                          gui::time::infinity);
+                timer.go(gui::time::infinity,
+                         gui::time::infinity);
 
             if (what == &skin)
             {
@@ -141,7 +141,7 @@ namespace app::dic::left
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
-                int h = gui::metrics::text::height*12/7;
+                int h = gui::metrics::text::height*12/10;
 
                 int l = h*27/100;
                 int L = h*39/100;

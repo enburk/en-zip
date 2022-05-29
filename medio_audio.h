@@ -181,7 +181,7 @@ namespace media::audio
     expected<array<byte>> data (const resource & r)
     {
         str letter = eng::asciized(
-            str(aux::unicode::glyphs(r.id).upto(1))).
+            str(aux::unicode::array(r.id).front())).
             ascii_lowercased();
 
         std::filesystem::path fn = std::string(r.id);

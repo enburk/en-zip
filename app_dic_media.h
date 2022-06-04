@@ -74,22 +74,6 @@ namespace app::dic::media
     str log (media_index const& index)
     {
         str title = doc::html::untagged(canonical(index.title));
-        auto text = doc::text::text{title}; // do not brake UTF-8
-
-        int nn = 0;
-        title.clear();
-        for (const auto& line : text.lines)
-        {
-            for (const str& glyph : line)
-            {
-                nn++;
-                if (nn == 72) title += "..."; 
-                if (nn >= 72) break;
-                title += glyph;
-            }
-            title += " ";
-        }
-
         str kind =
             index.kind == "audio" ? green ("[audio]"):
             index.kind == "video" ? purple("[video]"): "";

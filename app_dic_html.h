@@ -8,12 +8,24 @@ namespace app::dic
 
         array<str> forbidden_links;
 
+        void on_change (void* what) override
+        {
+            gui::text::page::on_change(what);
+
+            if (what == &skin)
+            {
+                padding = xyxy(
+                gui::metrics::line::width*3, 0,
+                gui::metrics::line::width*3, 0);
+            }
+        }
+
         void prelink (xy p)
         {
+            p -= view.coord.now.origin;
+            p -= view.cell.coord.now.origin;
             auto& block = view.model->block;
-            auto token = block.hovered_token(p
-                - view.coord.now.origin
-                - view.shift);
+            auto token = block.hovered_token(p);
 
             if (not token
             or token->link != ""

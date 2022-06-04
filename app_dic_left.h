@@ -102,16 +102,17 @@ namespace app::dic::left
             card.object.text.scroll.y.top = 0;
             refresh();
 
-            timing t3; auto selected = media::select(n);
-            timing t4; card.object.reset(selected.video, selected.vudio, links);
-            timing t5; quot.object.reset(selected.audio, links);
-            timing t6;
-
+            timing t3;
             str title = doc::html::encoded(entry.title);
             logs::times << "<br>" + title;
             logs::media << "<br>" + title;
             logs::audio << "<br>" + title;
             logs::video << "<br>" + title;
+            auto selected = media::select(n);
+
+            timing t4; card.object.reset(selected.video, selected.vudio, links);
+            timing t5; quot.object.reset(selected.audio, links);
+            timing t6;
 
             logs::times << gray(monospace(
             "time file  " + format(t1-t0) + " sec<br>" +

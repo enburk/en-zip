@@ -46,6 +46,8 @@ namespace app::dic::left
                 coord.now.size.x - size.x - d, 0,
                 size.x, size.y
             );
+
+            on_change(&text.update_text);
         }
 
         void on_change (void* what) override
@@ -61,8 +63,7 @@ namespace app::dic::left
             {
                 text.view.canvas.color = gui::skins[skin].ultralight.first;
             }
-            if (what == &coord
-            or  what == &text.scroll.y
+            if (what == &text.scroll.y
             or  what == &text.update_text)
             {
                 text.rwrap = array<xy>{

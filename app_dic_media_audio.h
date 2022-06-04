@@ -28,10 +28,9 @@ namespace app::dic::audio
         {
             start = gui::time{};
             stay  = gui::time{1000 +
-                index_.title.size() * 40 +
-                index_.credit.size() * 10 +
-                index_.comment.size() * 20
-            };
+            index_.title.size() * 40 +
+            index_.credit.size() * 10 +
+            index_.comment.size() * 20};
 
             text.forbidden_links = links_;
 

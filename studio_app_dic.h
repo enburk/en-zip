@@ -5,8 +5,8 @@ namespace studio::dic
     struct studio:
     widget<studio>
     {
-        gui::area<area> log;
-        app::dic::app app; // after log
+        area area;
+        app::dic::app app; // after area
         gui::splitter splitter;
 
         studio () { reload(); }
@@ -35,22 +35,17 @@ namespace studio::dic
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-                int l = gui::metrics::line::width*3;
-                int w = W/2;
-                int d = 2*l;
+                int d = gui::metrics::line::width*10;
 
                 splitter.lower = W * 25'00 / 100'00;
                 splitter.upper = W * 75'00 / 100'00;
-
                 str s = "studio::dic::splitter.permyriad";
-                int p = sys::settings::load(s, 100'00 * (W-w)/W);
+                int p = sys::settings::load(s, 55'00);
                 int x = clamp<int>(W*p / 100'00,
-                splitter.lower.now,
-                splitter.upper.now);
-
+                splitter.lower, splitter.upper);
                 splitter.coord = xyxy(x-d, 0, x+d, H);
 
-                log.coord = xyxy(0, 0, x, H);
+                area.coord = xyxy(0, 0, x, H);
                 app.coord = xyxy(x, 0, W, H);
             }
 
@@ -60,6 +55,11 @@ namespace studio::dic
                 splitter.middle * 100'00 / coord.now.w);
                 on_change(&coord);
             }
+
+            if (what == &area)
+                app.list.select(
+                area.details.object.
+                    clicked);
         }
     };
 }

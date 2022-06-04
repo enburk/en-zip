@@ -52,6 +52,7 @@ namespace app::dic
 
         str gap = "<div style=\"line-height: 50%\"><br></div>";
 
+        try {
         for (auto& topic : entry.topics)
         {
             if (eng::lexical_items.find(topic.header) !=
@@ -246,6 +247,12 @@ namespace app::dic
 
                 html += "</div>";
             }
+        }}
+        catch(std::runtime_error const& e)
+        {
+            if (str(e.what()).starts_with("unicode"))
+            html += "<br>" + red(e.what());
+            else throw;
         }
 
         return html;

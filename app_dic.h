@@ -90,7 +90,15 @@ namespace app::dic
 
         void on_key(str key, bool down, bool input) override
         {
-            if (input)
+            if (input
+            or  key == "left"
+            or  key == "right"
+            or  key == "enter"
+            or  key == "escape"
+            or  key == "delete"
+            or  key == "backspace"
+            or  key == "shift+insert"
+            or  key == "ctrl+V")
                 focus = &list;
 
             if (focus.now)

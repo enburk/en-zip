@@ -7,20 +7,12 @@ namespace app::dic::media
     {
         gui::player video;
         audio::player audio;
+        sys::thread thread;
         gui::property<bool> mute = false;
-        std::atomic<bool> cancel = false;
-        std::thread thread;
-
-        ~player ()
-        {
-            cancel = true;
-            if (thread.joinable())
-                thread.join();
-        }
 
         void load (media_index video_index, media_index audio_index)
         {
-            cancel = true;
+            thread.stop = true;
 
             std::filesystem::path dir = "../data/app_dict";
             std::string storage = "storage." + std::to_string(
@@ -30,23 +22,19 @@ namespace app::dic::media
                 video_index.location.offset,
                 video_index.location.length);
 
-            if (thread.joinable())
-                thread.join();
-            
-            cancel = false;
+            thread.join();
 
             audio.reset(audio_index, array<str>{});
             audio.muted = false;
 
             if (audio_index == media_index{}) {
                 audio.state = gui::media::state::vacant;
-                return;
-            }
+                return; }
 
-            thread = std::thread([this]()
+            thread = [this](auto& cancel)
             {
                 audio.load(cancel);
-            });
+            };
         }
 
         void play ()

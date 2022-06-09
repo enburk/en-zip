@@ -10,44 +10,42 @@ namespace studio::build
 
     struct studio : gui::widget<studio>
     {
-        gui::area<gui::console> out;
-        gui::area<gui::console> err;
+        gui::area<gui::console> out_area;
+        gui::area<gui::console> err_area;
+        gui::console& out = out_area.object;
+        gui::console& err = err_area.object;
 
-        std::future<void> compilation;
+        sys::thread compilation;
         gui::property<gui::time> timer;
-        bool data_updated = false;
+        std::atomic<bool> data_updated = false;
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-
-                out.coord = xywh(0,   0, W/2, H);
-                err.coord = xywh(W/2, 0, W/2, H);
+                out_area.coord = xywh(0,   0, W/2, H);
+                err_area.coord = xywh(W/2, 0, W/2, H);
             }
-            if (what == &timer && compilation.valid())
-            {
-                auto status = compilation.wait_for(0ms);
-                if (status != std::future_status::ready)
-                    return;
 
-                try { compilation.get(); }
+            if (what == &timer and compilation.done)
+            {
+                try { compilation.check(); }
 
                 catch (const std::exception & e) {
-                    out.object << bold(red("exception: " +
-                        str(e.what())));
-                }
+                    out << bold(red("exception: " +
+                        str(e.what()))); }
+
                 catch (...) {
-                    out.object << bold(red(
-                        "unidentified exception"));
-                }
-            
-                timer.go (gui::time(), gui::time()); /// stop timer
-                /// this statement will cause recursive on_change()
-                /// so do it after std::future gets invalid
-                /// to prevent second get() call
+                    out << bold(red(
+                        "unknown exception")); }
+
+                timer.go(
+                gui::time{},
+                gui::time{});
            
                 notify();
             }
@@ -55,84 +53,63 @@ namespace studio::build
 
         void run ()
         {
-            if (compilation.valid()) return;
+            if (timer.to != gui::time{}) return;
 
-            out.object.clear();
-            err.object.clear();
-            out.object.limit = 1024*1024;
-            err.object.limit = 1024*1024;
+            out.clear();
+            err.clear();
+            out.limit = 1024*1024;
+            err.limit = 1024*1024;
 
-            timer.go (gui::time::infinity,
-                      gui::time::infinity);
+            timer.go(
+            gui::time::infinity,
+            gui::time::infinity);
 
-            compilation = std::async(std::launch::async, [this]() -> void
+            compilation = [this](auto& stop)
             {
-                try
+                data_updated = false;
+
+                if (dictionary_update(out, err))
+                    data_updated = true;
+
+                eng::vocabulary vocabulary("../data/vocabulary.dat");
+                if (not eng::unittest::smoke(vocabulary, out))
+                    return;
+
+                setlocale(LC_ALL,"en_US.utf8");
+
+                media::report::out = &out;
+                media::report::err = &err;
+                media::report::id2path.clear();
+                media::report::unidentified.clear();
+                media::report::data_updated = false;
+
+                auto resources = media::scan::scan("../datae");
+
+                auto& unidentified = 
+                media::report::unidentified;
+                if (not unidentified.empty()) {
+                    err << "unidentified files:";
+                    for (auto path: unidentified)
+                    err << path.string(); }
+
+                for (auto& [id, paths]:
+                media::report::id2path)
+                if (paths.size() > 1)
                 {
-                    data_updated = false;
-
-                    if (dictionary_update(out.object, err.object))
-                        data_updated = true;
-
-                    eng::vocabulary vocabulary("../data/vocabulary.dat");
-                    if (not eng::unittest::smoke(vocabulary, out.object))
-                        return;
-
-                    setlocale(LC_ALL,"en_US.utf8");
-
-                    media::report::out = &out.object;
-                    media::report::err = &err.object;
-                    media::report::unidentified.clear();
-                    media::report::id2path.clear();
-                    media::report::data_updated = false;
-
-                    auto resources = media::scan::scan("../datae");
-
-                    if (media::report::unidentified.size() > 0) {
-                        err.object << "unidentified files:";
-                        for (auto path : media::report::unidentified)
-                            err.object << path.string();
-                    }
-
-                    for (auto & [id, paths] : media::report::id2path) {
-                        if (paths.size () > 1) {
-                            err.object << "files with same id: " + id;
-                            for (auto path : paths)
-                                err.object << path.string();
-                        }
-                    }
-
-                    dic::compile(resources, out.object);
-
-                    data_updated |=
-                    media::report::data_updated;
-                    out.object << (data_updated?
-                      bold(yellow("data updated")):
-                        bold(blue("up to date")));
+                    err << "files with same id: " + id;
+                    for (auto path: paths)
+                    err << path.string();
                 }
-                catch (std::exception & e) {
-                    out.object << bold(red(
-                        e.what()));
-                }
-                catch (...) {
-                    out.object << bold(red(
-                        "unknown exception"));
-                }
-            });
-        }
 
-        void on_mouse_click (xy p, str button, bool down) override
-        {
-            if (down)
-            {
-                if (out.coord.now.includes(p))
-                    err.object.page.view.selections = 
-                        array<gui::text::range>();
-                else
-                if (err.coord.now.includes(p))
-                    out.object.page.view.selections =
-                        array<gui::text::range>();
-            }
+                dic::compile(resources, out);
+
+                data_updated =
+                data_updated or
+                media::report::data_updated;
+                out << (data_updated?
+                bold(yellow("data updated")):
+                bold(blue("up to date")));
+            };
         }
     };
 }

@@ -45,7 +45,8 @@ namespace app::dic::list
                     word.kind = gui::button::sticky;
                     word.coord = xywh(0, h*i, W, h);
                     word.text.alignment = xy(pix::left, pix::center);
-                    word.text.shift = xy(h/6,0);
+                    word.text.lwrap = array<xy>{{h/6,h}};
+                    word.text.rwrap = array<xy>{{h/6,h}};
                     word.text.ellipsis = true;
                 }
                 words.truncate(n);

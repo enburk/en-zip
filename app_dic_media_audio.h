@@ -54,7 +54,7 @@ namespace app::dic::audio
             logs::media << media::log(index);
         }
 
-        void load (std::atomic<bool>& cancel)
+        void load (str entry_title, std::atomic<bool>& cancel)
         {
             if (state == gui::media::state::ready
             or  state == gui::media::state::playing
@@ -67,6 +67,9 @@ namespace app::dic::audio
             str title = media::canonical(load_index.title);
             str credit = media::canonical(load_index.credit);
             str comment = media::canonical(load_index.comment);
+
+            if (load_index.options.contains("sound"))
+                title = gray("[" + title + "]");
 
             while (
                 title.ends_with("<br>"))

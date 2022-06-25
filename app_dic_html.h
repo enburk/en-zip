@@ -24,7 +24,7 @@ namespace app::dic
         {
             p -= view.coord.now.origin;
             p -= view.cell.coord.now.origin;
-            auto& block = view.model->block;
+            auto& block = model.now->block;
             auto token = block.hovered_token(p);
 
             if (not token

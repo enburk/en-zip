@@ -32,7 +32,6 @@ namespace app::dic::list
             }
             if (what == &skin)
             {
-                editor.virtual_space = true;
                 editor.padding = xyxy(gui::metrics::text::height/6,0,0,0);
                 editor.canvas.color = gui::skins[skin].ultralight.first;
                 editor.font = pix::font{"Segoe UI"};

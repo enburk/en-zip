@@ -78,5 +78,6 @@
       <Filter>media</Filter>
     </ClInclude>
     <ClInclude Include="app_dic_media_player.h" />
+    <ClInclude Include="studio_app_dic_search.h" />
   </ItemGroup>
 </Project>

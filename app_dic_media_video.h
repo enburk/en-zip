@@ -22,7 +22,7 @@ namespace app::dic::video
         int clicked = 0;
         str error;
 
-        void reset (
+        void reset (str title,
             media::media_index video_index,
             media::media_index audio_index,
             array<str> links)
@@ -41,7 +41,7 @@ namespace app::dic::video
             };
 
             state = gui::media::state::loading;
-            video.load(video_index, audio_index);
+            video.load(title, video_index, audio_index);
 
             str c = index.credit;
             str s = index.title;

@@ -58,7 +58,7 @@ namespace app::dic::left
 
         using idx = media::media_index;
 
-        void reset (array<idx> selected, array<str> const& links)
+        void reset (str title, array<idx> selected, array<str> const& links)
         {
             cancel = true;
 
@@ -117,10 +117,10 @@ namespace app::dic::left
                 or  p.state == state::finished) 
                     p.show();
 
-                thread = std::thread([this]()
+                thread = std::thread([this, title]()
                 {
                     for (auto& player: players) {
-                        player.load(cancel);
+                        player.load(title, cancel);
                         if (cancel) break;
                     }
                 });

@@ -10,7 +10,7 @@ namespace app::dic::media
         sys::thread thread;
         gui::property<bool> mute = false;
 
-        void load (media_index video_index, media_index audio_index)
+        void load (str title, media_index video_index, media_index audio_index)
         {
             thread.stop = true;
 
@@ -31,9 +31,9 @@ namespace app::dic::media
                 audio.state = gui::media::state::vacant;
                 return; }
 
-            thread = [this](auto& cancel)
+            thread = [this, title](auto& cancel)
             {
-                audio.load(cancel);
+                audio.load(title, cancel);
             };
         }
 

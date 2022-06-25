@@ -12,7 +12,7 @@ namespace app::dic::video
         gui::time smoothly {1000};
         int clicked = 0;
 
-        void reset (
+        void reset (str title,
             array<media::media_index> videos,
             array<media::media_index> audios,
             array<str> const& links)
@@ -35,7 +35,7 @@ namespace app::dic::video
 
             int n = videos.size();
             for (int i=0; i<n; i++)
-            players(i).reset(videos[i], audios[i], links);
+            players(i).reset(title, videos[i], audios[i], links);
             players.truncate(n);
             current = 0;
 

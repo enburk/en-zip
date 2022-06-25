@@ -36,7 +36,7 @@ namespace app::dic::media
             index.credit  = pool.get_string();
             index.options.resize(pool.get_int());
             for (auto & option : index.options)
-                option = pool.get_string();
+            option = pool.get_string();
             pool >> index.location;
         }
     }

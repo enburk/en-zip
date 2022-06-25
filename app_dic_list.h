@@ -43,6 +43,7 @@ namespace app::dic::list
 
                 list.coord = xywh(0, 0, W, hlist); y += list.coord.now.size.y;
                 word.coord = xywh(0, y, W, hword); y += word.coord.now.size.y;
+                word.show_focus = true;
             }
 
             if (what == &word.object) list.object.select(word.object.typed);

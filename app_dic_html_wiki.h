@@ -55,8 +55,7 @@ namespace app::dic
         try {
         for (auto& topic : entry.topics)
         {
-            if (eng::lexical_items.find(topic.header) !=
-                eng::lexical_items.end())
+            if (eng::lexical_items.contains(topic.header))
             {
                 if (topic.forms.size() > 100)
                 {
@@ -157,8 +156,7 @@ namespace app::dic
                 }
             }
             else
-            if (eng::lexical_notes.find(topic.header) !=
-                eng::lexical_notes.end())
+            if (eng::lexical_notes.contains(topic.header))
             {
                 str header = topic.header;
                 if (header.size() > 0)
@@ -206,8 +204,7 @@ namespace app::dic
                 html += "</div>";
             }
             else
-            if (eng::related_items.find(topic.header) !=
-                eng::related_items.end())
+            if (eng::related_items.contains(topic.header))
             {
                 str header = topic.header;
                 if (header.size() > 0)

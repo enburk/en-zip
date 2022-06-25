@@ -91,6 +91,7 @@ namespace app::dic
         void on_key(str key, bool down, bool input) override
         {
             if (input
+            or  key == "tab"
             or  key == "left"
             or  key == "right"
             or  key == "enter"

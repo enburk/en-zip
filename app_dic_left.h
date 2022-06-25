@@ -43,10 +43,10 @@ namespace app::dic::left
 
             timing t0;
             std::filesystem::path dir = "../data";
-            if (!std::filesystem::exists(dir / "dictionary_indices.dat")) return;
-            if (!std::filesystem::exists(dir / "dictionary_entries.dat")) return;
-            std::ifstream indices_stream(dir / "dictionary_indices.dat", std::ios::binary);
-            std::ifstream entries_stream(dir / "dictionary_entries.dat", std::ios::binary);
+            if (!std::filesystem::exists(dir/"dictionary_indices.dat")) return;
+            if (!std::filesystem::exists(dir/"dictionary_entries.dat")) return;
+            std::ifstream indices_stream(dir/"dictionary_indices.dat", std::ios::binary);
+            std::ifstream entries_stream(dir/"dictionary_entries.dat", std::ios::binary);
             dat::in::pool indices_pool;
             dat::in::pool entries_pool;
 
@@ -110,8 +110,8 @@ namespace app::dic::left
             logs::video << "<br>" + title;
             auto selected = media::select(n);
 
-            timing t4; card.object.reset(selected.video, selected.vudio, links);
-            timing t5; quot.object.reset(selected.audio, links);
+            timing t4; card.object.reset(title, selected.video, selected.vudio, links);
+            timing t5; quot.object.reset(title, selected.audio, links);
             timing t6;
 
             logs::times << gray(monospace(

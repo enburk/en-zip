@@ -246,7 +246,7 @@ namespace studio::build::dic
                 not r.options.contains("=") and
                 not assets.contains(&r)) {
                 report << yellow(r.path.string()) +
-                red(" [" + str(r.entries, "][") + "]");
+                red(" [" + str(r.entries, "] [") + "]");
                 continue;
             }
 
@@ -261,9 +261,9 @@ namespace studio::build::dic
                     rejected += entry;
         
             report <<  purple(r.title) +
-            blue ("[" + str(accepted,  "][") + "]") +
-            red  ("[" + str(rejected,  "][") + "]") +
-            green("{" + str(r.options, "}{") + "}");
+            blue (" [" + str(accepted,  "] [") + "]") +
+            red  (" [" + str(rejected,  "] [") + "]") +
+            green(" {" + str(r.options, "} {") + "}");
         }
 
         for (auto& [source, map] : locations)

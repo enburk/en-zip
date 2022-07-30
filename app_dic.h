@@ -78,6 +78,7 @@ namespace app::dic
                 list.coord = xyxy(x, 0, W, H);
             }
 
+            if (what == &left) focus = &list;
             if (what == &left) list.select(left.clicked);
             if (what == &list) left.select(list.clicked);
             if (what == &splitter) {
@@ -94,6 +95,8 @@ namespace app::dic
             or  key == "tab"
             or  key == "left"
             or  key == "right"
+            or  key == "up"
+            or  key == "down"
             or  key == "enter"
             or  key == "escape"
             or  key == "delete"
@@ -102,8 +105,24 @@ namespace app::dic
             or  key == "ctrl+V")
                 focus = &list;
 
+            if (key == "ctrl+C"
+            or  key == "ctrl+insert")
+            if((left.quot.object.players.size() == 0
+            or  left.quot.object.players(0).text.view.selected() == "")
+            and left.card.object.text.view.selected() == "")
+                focus = &list;
+
             if (focus.now)
                 focus.now->on_key(key, down, input);
+        }
+
+        void on_mouse_click_child (xy p, str button, bool down) override
+        {
+            if (not down)
+            if((left.quot.object.players.size() == 0
+            or  left.quot.object.players(0).text.view.selected() == "")
+            and left.card.object.text.view.selected() == "")
+                focus = &list;
         }
     };
 }

@@ -77,13 +77,15 @@ namespace studio::dic
                 splitter.lower = W * 25'00 / 100'00;
                 splitter.upper = W * 75'00 / 100'00;
                 str s = "studio::dic::area::splitter.permyriad";
-                int p = sys::settings::load(s, 40'00);
+                int p = sys::settings::load(s, 60'00);
                 int x = clamp<int>(W*p / 100'00,
                 splitter.lower, splitter.upper);
                 splitter.coord = xyxy(x-d, 0, x+d, H);
 
                 toolbar.coord = xywh(0, 0, W, h);
-                consbar.coord = xyxy(0, h, x, H);
+                consbar.coord = xyxy(x, h, W, H);
+                detail .coord = xyxy(0, h, x, H);
+                search .coord = xyxy(0, h, x, H);
 
                 select.coord = toolbar.object.coord.now;
                 select(0).coord = xywh(w*0, 0, w, h);
@@ -91,9 +93,6 @@ namespace studio::dic
                 select(2).coord = xywh(w*2, 0, w, h);
                 select(3).coord = xywh(w*3, 0, w, h);
                 select(4).coord = xywh(w*4, 0, w, h);
-
-                detail.coord = xyxy(x, h, W, H);
-                search.coord = xyxy(x, h, W, H);
 
                 for (auto c: consoles) c->coord =
                 consbar.object.coord.now +

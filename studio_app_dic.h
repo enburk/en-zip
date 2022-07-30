@@ -119,12 +119,16 @@ namespace studio::dic
 
             if (what == &area)
             {
+                focus = &app.list;
+
                 app.list.select(area.clicked);
 
                 if (area.search.alpha.to > 0)
                 {
+                    str s = area.search.object.request.now;
+                    if (s == "") return;
+
                     array<gui::text::range> highlights;
-                    str s = area.search.object.request.text;
                     auto& view = app.left.card.object.text;
                     auto& text = view.model.now->block;
                     for (auto& line:  text.lines)

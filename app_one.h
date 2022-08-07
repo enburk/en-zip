@@ -8,9 +8,12 @@ namespace app::one
 
         app() { reload(); }
 
-        void reload ()
+        void reload () try
         {
         }
+        catch (std::exception & e) {
+            log << bold(red(
+                e.what())); }
 
         void on_change (void* what) override
         {

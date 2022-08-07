@@ -23,15 +23,14 @@ namespace app::dic
         void prelink (xy p)
         {
             p -= view.coord.now.origin;
-            p -= view.cell.coord.now.origin;
-            auto& block = model.now->block;
-            auto token = block.hovered_token(p);
+            auto token = view.hovered_token(p);
 
             if (not token
             or token->link != ""
             or token->info != "")
                 return;
 
+            auto& block = model.now->block;
             auto [l, o] = view.pointed(p);
             if (l < 0 or l >= block.lines.size())
                 return;

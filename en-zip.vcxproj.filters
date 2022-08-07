@@ -10,35 +10,22 @@
     <Filter Include="media">
       <UniqueIdentifier>{e566e5ff-928c-4855-838a-43bb15d689a0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="studio-dic">
+      <UniqueIdentifier>{00383da1-988c-4891-abd2-60a6f5a72f9c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
     <ClInclude Include="studio_build.h" />
-    <ClInclude Include="studio_build_dic.h" />
-    <ClInclude Include="app_dic.h" />
-    <ClInclude Include="app_dic_html.h" />
-    <ClInclude Include="app_dic_html_wiki.h" />
-    <ClInclude Include="app_dic_left.h" />
-    <ClInclude Include="app_dic_left_card.h" />
-    <ClInclude Include="app_dic_left_quot.h" />
-    <ClInclude Include="app_dic_list.h" />
-    <ClInclude Include="app_dic_list_list.h" />
-    <ClInclude Include="app_dic_list_word.h" />
-    <ClInclude Include="app_dic_media.h" />
-    <ClInclude Include="app_dic_media_audio.h" />
-    <ClInclude Include="app_dic_media_video.h" />
-    <ClInclude Include="app_dic_media_videos.h" />
     <ClInclude Include="data_in.h" />
     <ClInclude Include="data_out.h" />
     <ClInclude Include="abc.h" />
     <ClInclude Include="app_one.h" />
     <ClInclude Include="app_two.h" />
-    <ClInclude Include="studio_app_dic.h" />
     <ClInclude Include="studio_app_one.h" />
     <ClInclude Include="studio_app_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />
-    <ClInclude Include="studio_build_dic_.h" />
     <ClInclude Include="eng_parser.h">
       <Filter>eng</Filter>
     </ClInclude>
@@ -60,8 +47,6 @@
     <ClInclude Include="eng_abc_vocabulary_triee.h">
       <Filter>eng</Filter>
     </ClInclude>
-    <ClInclude Include="studio_app_dic_area.h" />
-    <ClInclude Include="studio_app_dic_detail.h" />
     <ClInclude Include="media.h">
       <Filter>media</Filter>
     </ClInclude>
@@ -77,7 +62,65 @@
     <ClInclude Include="medio_video.h">
       <Filter>media</Filter>
     </ClInclude>
-    <ClInclude Include="app_dic_media_player.h" />
-    <ClInclude Include="studio_app_dic_search.h" />
+    <ClInclude Include="app_dic.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_html.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_html_wiki.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_left.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_left_card.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_left_quot.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_list.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_list_list.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_list_word.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_audio.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_player.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_video.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_videos.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_dic.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_dic_area.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_dic_detail.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_dic_search.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_build_dic.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_build_dic_.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

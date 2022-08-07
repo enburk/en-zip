@@ -8,7 +8,6 @@ namespace app::dic
     {
         left::area left;
         list::area list;
-
         gui::splitter splitter;
 
         app() { reload(); }

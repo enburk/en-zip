@@ -200,8 +200,10 @@
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />
     <ClInclude Include="studio_build.h" />
+    <ClInclude Include="studio_build_dic+.h" />
     <ClInclude Include="studio_build_dic.h" />
-    <ClInclude Include="studio_build_dic_.h" />
+    <ClInclude Include="studio_build_one+.h" />
+    <ClInclude Include="studio_build_one.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

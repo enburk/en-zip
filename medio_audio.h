@@ -58,6 +58,34 @@ namespace media::audio
         }
     };
 
+    static auto qq (path path){ return "\"" + path.string() + "\""; }
+
+    static void sox (str begin, path destination, str end = "")
+    {
+        path exe = "c:\\ogg2mp3\\sox.exe";
+        path log = "../data/!cache/log.txt";
+
+        str
+        command = begin + " " + qq(destination) + " " + end;
+        command.strip();
+
+        sys::process::options opt;
+        opt.hidden = true,
+        opt.ascii = true,
+        opt.out = log;
+
+        sys::process p(exe, command, opt);          
+        p.wait();
+
+        using namespace std::chrono_literals;
+        for (int i=0; i<10; i++)
+            if (std::filesystem::exists(destination))
+                return; else std::this_thread::sleep_for(100ms);
+
+        throw std::runtime_error("waited for "
+            + command + " in vain");
+    }
+
     static void combine
     (
         array<path> srcoggg, path dstogg,
@@ -75,34 +103,6 @@ namespace media::audio
         std::filesystem::exists(srcdir))
         std::filesystem::remove_all(srcdir);
         std::filesystem::create_directories(srcdir);
-
-        auto qq = [](path path){ return "\"" + path.string() + "\""; };
-
-        auto sox = [qq](str begin, path destination, str end = "")
-        {
-            path exe = "c:\\ogg2mp3\\sox.exe";
-            path log = "../data/!cache/log.txt";
-
-            str
-            command = begin + " " + qq(destination) + " " + end;
-            command.strip();
-
-            sys::process::options opt;
-            opt.hidden = true,
-            opt.ascii = true,
-            opt.out = log;
-
-            sys::process p(exe, command, opt);          
-            p.wait();
-
-            using namespace std::chrono_literals;
-            for (int i=0; i<10; i++)
-                if (std::filesystem::exists(destination))
-                    return; else std::this_thread::sleep_for(100ms);
-
-            throw std::runtime_error("waited for "
-                + command + " in vain");
-        };
 
         auto format = [](const char * fmt, auto arg)
         {
@@ -159,14 +159,34 @@ namespace media::audio
         std::filesystem::rename(dst, dstogg);
     }
 
-    expected<array<byte>> readsample (path original, path cache) try
+    expected<array<byte>> readsample (path original, path cache, str crop, str fade) try
     {
         using namespace std::literals::chrono_literals;
         if (std::filesystem::exists(cache) == false ||
             std::filesystem::last_write_time(original) >
             std::filesystem::last_write_time(cache) - 2h)
         {
-            combine (array<path>{original}, cache, 0.1, 0.0, 0.0, false);
+            combine(array<path>{original}, cache, 0.1, 0.0, 0.0, false);
+
+            path temp = cache; temp.replace_extension(".ogg.ogg");
+
+            if (crop != "")
+            {
+                crop.replace_all("-", " ");
+
+                std::filesystem::rename(cache, temp);
+                sox(qq(temp), cache, " trim " + crop);
+                std::filesystem::remove(temp);
+            }
+            if (fade != "")
+            {
+                str in  = fade == "fade out" ? "0" : "1";
+                str out = fade == "fade in"  ? "0" : "1";
+
+                std::filesystem::rename(cache, temp);
+                sox(qq(temp), cache, " fade t " + in + " 0 " + out);
+                std::filesystem::remove(temp);
+            }
         }
 
         return dat::in::bytes(cache);
@@ -180,12 +200,23 @@ namespace media::audio
 
     expected<array<byte>> data (const resource & r)
     {
+        str crop;
+        for (str option : r.options)
+            if (option.starts_with("crop "))
+                crop = option.from(5);
+
+        str fade;
+        for (str option : r.options)
+            if (option.starts_with("fade "))
+                fade = option.from(0); // 0!
+
         str letter = eng::asciized(
             str(aux::unicode::array(r.id).front())).
             ascii_lowercased();
 
         std::filesystem::path fn = std::string(r.id);
         str stem = fn.stem().string();
+        if (crop != "") stem += " ## " + crop;
         str id = stem + ".ogg";
 
         str cache = "../data/!cache/"
@@ -193,6 +224,8 @@ namespace media::audio
             + letter + "/"
             + id;
 
-        return readsample(r.path, std::string(cache));
+        return readsample(r.path,
+            std::string(cache),
+            crop, fade);
     }
 }

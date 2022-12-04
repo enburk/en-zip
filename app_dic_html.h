@@ -8,6 +8,8 @@ namespace app::dic
 
         array<str> forbidden_links;
 
+        html_view () { tooltip.enabled = false; }
+
         void on_change (void* what) override
         {
             gui::text::page::on_change(what);

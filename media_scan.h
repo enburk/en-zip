@@ -66,13 +66,16 @@ namespace media::scan
             if (meta_present) resource.credit = credit;
             
             str links, optio;
-            title.split_by(" ## ", title, optio);
-            title.split_by("[",    title, links);
+            title.split_by("##", title, optio);
+            title.split_by("[",  title, links);
             links.strip("[ ]");
+            optio.strip();
             title.strip();
 
             resource.entries += links.split_by("][");
-            resource.options += optio.split_by(" ## ");
+            resource.options += optio.split_by("##");
+            for (str& s: resource.entries) s.strip();
+            for (str& s: resource.options) s.strip();
 
             if (is_directory(entry))
             {
@@ -122,17 +125,20 @@ namespace media::scan
                         line.strip();
 
                         if (line.starts_with("**")) {
-                            title_stop = true;
-                            str comment = line.from(2); comment.strip();
-                            comment_lines += comment;
+                            title_stop = true; str
+                            comment = line.from(2);
+                            comment.strip();
+                            comment_lines +=
+                            comment;
                         }
                         else
                         if (line.starts_with("##")) {
                             title_stop = true;
                             str option = line.from(2); option.strip();
                             if (option == "") continue;
-                            if (option.starts_with("credit")) {
-                                resource.credit = option.from(7);
+                            if (option.starts_with("credit ")) {
+                                resource.credit = option.from(8);
+                                resource.credit.strip();
                                 continue;
                             }
                             resource.options += option;
@@ -177,7 +183,21 @@ namespace media::scan
 
                 if (title != "") resource.title = title;
                 report::id2path[resource.id] += entry; // check for same id
+
+                array<str> crops;
+                if (resource.kind == "audio")
+                    for (str s : resource.options)
+                        if (s.contains("-"))
+                            crops += s;
+
+                if (crops.empty())
                 resources += resource;
+                else for (str crop: crops)
+                {
+                    auto r = resource;
+                    r.options += "crop " + crop;
+                    resources += r;
+                }
             }
         }
 

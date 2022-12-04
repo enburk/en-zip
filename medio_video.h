@@ -114,7 +114,7 @@ namespace media::video
         "<br>  " + e.what());
     }
 
-    inline expected<array<byte>> data (const resource & r)
+    expected<array<byte>> data (const resource & r)
     {
         str crop;
         for (str option : r.options)

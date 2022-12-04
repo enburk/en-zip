@@ -72,15 +72,13 @@ namespace media::data
                     std::filesystem::rename(tmp, txt);
                 }
                 catch (std::exception & e) {
-                    *report::out << "<b><font color=#B00020>"
-                        "media::out::source: " + str(e.what()) +
-                        "</font></b>";
-                }
+                    *report::out << bold(red(
+                        "media::out::source: " +
+                            str(e.what()))); }
                 catch (...) {
-                    *report::out << "<b><font color=#B00020>"
-                        "media::out::source: unknown exception"
-                        "</font></b>";
-                }
+                    *report::out << bold(red(
+                        "media::out::source: "
+                        "unknown exception")); }
             }
 
             expected<Location> add (resource const& r) try

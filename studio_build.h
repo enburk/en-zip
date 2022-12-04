@@ -3,7 +3,9 @@
 #include <future>
 #include "media_scan.h"
 #include "studio_build_dic.h"
-#include "studio_build_dic_.h"
+#include "studio_build_dic+.h"
+#include "studio_build_one.h"
+#include "studio_build_one+.h"
 namespace studio::build
 {
     using namespace std::literals::chrono_literals;
@@ -66,10 +68,11 @@ namespace studio::build
 
             compilation = [this](auto& stop)
             {
-                data_updated = false;
-
-                if (dictionary_update(out, err))
-                    data_updated = true;
+                bool
+                updated = false;
+                updated|= dictionary_update(out, err);
+                updated|= scenario_update(out, err);
+                data_updated = updated;
 
                 eng::vocabulary vocabulary("../data/vocabulary.dat");
                 if (not eng::unittest::smoke(vocabulary, out))
@@ -102,6 +105,7 @@ namespace studio::build
                 }
 
                 dic::compile(resources, out);
+                one::compile(resources, out);
 
                 data_updated =
                 data_updated or

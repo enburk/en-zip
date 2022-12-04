@@ -13,6 +13,9 @@
     <Filter Include="studio-dic">
       <UniqueIdentifier>{00383da1-988c-4891-abd2-60a6f5a72f9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="studio-one">
+      <UniqueIdentifier>{a78d9a9d-f0bf-4ee4-a557-fa7658595498}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
@@ -20,9 +23,7 @@
     <ClInclude Include="data_in.h" />
     <ClInclude Include="data_out.h" />
     <ClInclude Include="abc.h" />
-    <ClInclude Include="app_one.h" />
     <ClInclude Include="app_two.h" />
-    <ClInclude Include="studio_app_one.h" />
     <ClInclude Include="studio_app_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />
@@ -119,8 +120,20 @@
     <ClInclude Include="studio_build_dic.h">
       <Filter>studio-dic</Filter>
     </ClInclude>
-    <ClInclude Include="studio_build_dic_.h">
+    <ClInclude Include="app_one.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_one.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_build_dic+.h">
       <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_build_one.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_build_one+.h">
+      <Filter>studio-one</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

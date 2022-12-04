@@ -30,6 +30,8 @@ namespace studio::build::dic
         std::set<res> new_ones;
         std::set<res> assets;
 
+        constexpr auto html = doc::html::encoded;
+
         for (auto& r: resources)
         {
             if (r.title == "speaker.128x096"
@@ -53,13 +55,15 @@ namespace studio::build::dic
 
             array<str> entries = r.entries;
 
-            if (r.kind == "audio" and
-                entries.size() == 0 and
-                not r.options.contains("=") and
-                not r.options.contains("=="))
-                entries = eng::parser::entries(
+            if ((r.kind == "audio"
+            and entries.size() == 0
+            and not r.options.contains("=")
+            and not r.options.contains("=="))
+            or  entries.contains("+"))
+                entries += eng::parser::entries(
                     vocabulary, r.title);
 
+            entries.try_erase("+");
             entries += r.title;
 
             str s = r.title; s.trimr("!?");
@@ -118,7 +122,7 @@ namespace studio::build::dic
             std::ranges::sort(entries);
             str list; int nn = entries.size();
             for (int e: entries) { nn--; list +=
-                "[" + doc::html::encoded(vocabulary[e].title) + "] ";
+                "[" + html(vocabulary[e].title) + "] ";
                 if (list.size() > 2*1024 and nn > 10) {
                     list += "<br>+" +
                     std::to_string(nn) +
@@ -135,7 +139,7 @@ namespace studio::build::dic
             std::ranges::sort(entries);
             str list; int nn = entries.size();
             for (int e: entries) { nn--; list +=
-                "[" + doc::html::encoded(vocabulary[e].title) + "] ";
+                "[" + html(vocabulary[e].title) + "] ";
                 if (list.size() > 2*1024 and nn > 10) {
                     list += "<br>+" +
                     std::to_string(nn) +
@@ -200,8 +204,7 @@ namespace studio::build::dic
 
                         if (new_one) {
                             new_ones.insert(r);
-                            report << doc::html::encoded(
-                                r->path.string()); }
+                            report << html(r->path.string()); }
 
                         locations
                         [location.source]
@@ -245,7 +248,7 @@ namespace studio::build::dic
                 not r.options.contains("==") and
                 not r.options.contains("=") and
                 not assets.contains(&r)) {
-                report << yellow(r.path.string()) +
+                report << yellow(html(r.path.string())) +
                 red(" [" + str(r.entries, "] [") + "]");
                 continue;
             }
@@ -260,10 +263,11 @@ namespace studio::build::dic
                 if (not accepted.contains(entry))
                     rejected += entry;
         
-            report <<  purple(r.title) +
-            blue (" [" + str(accepted,  "] [") + "]") +
-            red  (" [" + str(rejected,  "] [") + "]") +
-            green(" {" + str(r.options, "} {") + "}");
+            report <<
+            purple(html(r.title)) +
+            blue  (html(" [" + str(accepted,  "] [") + "]")) +
+            red   (html(" [" + str(rejected,  "] [") + "]")) +
+            green (html(" {" + str(r.options, "} {") + "}"));
         }
 
         for (auto& [source, map] : locations)

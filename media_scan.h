@@ -1,4 +1,5 @@
 #pragma once
+#include <stack>
 #include "media.h"
 #include "eng_parser.h"
 namespace media::scan
@@ -16,6 +17,35 @@ namespace media::scan
         s.replace_all("/", "~" );
         s.replace_all(":", "..");
         return s;
+    }
+
+    bool parse_links (str& title, str& links)
+    {
+        int pos = 0;  std::stack<int> lefts; 
+
+        while (pos < title.size())
+        {
+            if (title[pos] == '{'){ lefts.push(pos); title.erase(pos); } else
+            if (title[pos] == '}')
+            {
+                if (lefts.size() <= 0) return false;
+                str link = title.substr(lefts.top(), pos-lefts.top());
+                lefts.pop(); title.erase(pos);
+                if (link != "")
+                {
+                    if (links != "")
+                    links += "][";
+                    links += link;
+                    str ss = link.ascii_lowercased();
+                    if (ss!= link) {
+                    links += "][";
+                    links += ss; }
+                }
+            }
+            else pos++;
+        }
+
+        return lefts.size() == 0;
     }
 
     array<resource> scan (path dir, resource common = {})
@@ -72,6 +102,12 @@ namespace media::scan
             optio.strip();
             title.strip();
 
+            if (resource.options.contains("{links}"))
+                if (not parse_links(title, links))
+                    *report::err << red(bold(
+                    "parse links error: " +
+                     entry.string()));
+
             resource.entries += links.split_by("][");
             resource.options += optio.split_by("##");
             for (str& s: resource.entries) s.strip();
@@ -124,6 +160,9 @@ namespace media::scan
                     {
                         line.strip();
 
+                        if (line.starts_with("###"))
+                            break;
+
                         if (line.starts_with("**")) {
                             title_stop = true; str
                             comment = line.from(2);
@@ -171,7 +210,10 @@ namespace media::scan
                            title_lines.truncate();
 
                     if (title_lines.size() > 0)
-                        title = str(title_lines);
+                        title = str(title_lines,
+                        title_lines.front().
+                        starts_with("<") ?
+                        "" : "<br>");
 
                     if (comment_lines.size() > 0)
                         resource.comment = str(
@@ -179,7 +221,7 @@ namespace media::scan
                 }
 
                 std::erase_if(resource.entries,
-                    [](auto s){ return s == "="; });
+                [](auto s){ return s == "="; });
 
                 if (title != "") resource.title = title;
                 report::id2path[resource.id] += entry; // check for same id
@@ -195,6 +237,7 @@ namespace media::scan
                 else for (str crop: crops)
                 {
                     auto r = resource;
+                    r.id  += " ## crop " + crop;
                     r.options += "crop " + crop;
                     resources += r;
                 }

@@ -244,14 +244,13 @@ namespace studio::build::dic
         for (auto& r: resources)
         {
             auto it = resources2entries.find(&r);
-            if (it == resources2entries.end() and
-                not r.options.contains("==") and
-                not r.options.contains("=") and
-                not assets.contains(&r)) {
+            if (it == resources2entries.end()
+            and not r.options.contains("==")
+            and not r.options.contains("=")
+            and not assets.contains(&r)) {
                 report << yellow(html(r.path.string())) +
                 red(" [" + str(r.entries, "] [") + "]");
-                continue;
-            }
+                continue; }
 
             if (not new_ones.contains(&r))
                 continue;
@@ -260,7 +259,7 @@ namespace studio::build::dic
             array<str> rejected;
         
             for (auto& entry : r.entries)
-                if (not accepted.contains(entry))
+            if (not accepted.contains(entry))
                     rejected += entry;
         
             report <<

@@ -172,7 +172,9 @@ namespace media::audio
 
             if (crop != "")
             {
-                crop.replace_all("-", " ");
+                crop.replace_all("-", " =");
+                if (crop.ends_with("="))
+                    crop.truncate();
 
                 std::filesystem::rename(cache, temp);
                 sox(qq(temp), cache, " trim " + crop);
@@ -207,8 +209,8 @@ namespace media::audio
 
         str fade;
         for (str option : r.options)
-            if (option.starts_with("fade "))
-                fade = option.from(0); // 0!
+            if (option.starts_with("fade"))
+                fade = option;
 
         str letter = eng::asciized(
             str(aux::unicode::array(r.id).front())).

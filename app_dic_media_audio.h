@@ -61,15 +61,37 @@ namespace app::dic::audio
             or  state == gui::media::state::finished)
                 return;
 
-            load_index.title = eng::parser::embolden(
-            load_index.title, load_links);
+            str title = load_index.title;
+            str credit = load_index.credit;
+            str comment = load_index.comment;
+            str sense;
 
-            str title = media::canonical(load_index.title);
-            str credit = media::canonical(load_index.credit);
-            str comment = media::canonical(load_index.comment);
+            if (title.ends_with("}")) {
+                title.split_by("{",
+                title, sense);
+                title.strip();
+                sense.strip();
+                sense.truncate(); }
+
+            if (array<str>{
+                "1","2","3","+",
+                "1,2","1,2,3"}.
+                contains(sense))
+                sense = "";
+            
+            title = eng::parser::embolden(
+            title, load_links);
+
+            title = media::canonical(title);
+            credit = media::canonical(credit);
+            comment = media::canonical(comment);
 
             if (load_index.options.contains("sound"))
                 title = gray("[" + title + "]");
+
+            if (sense != "") 
+                title += "<br>""<small>" +
+                gray(sense) + "</small>";
 
             while (
                 title.ends_with("<br>"))
@@ -93,9 +115,11 @@ namespace app::dic::audio
                 credit; }
 
             if (credit != "") title +="<br>"
-                "<div style=\"margin-left: 1em\">"
+            //  "<div style=\"margin-left: 1em\">"
                 "<font size=\"90%\">" + light(credit) +
-                "</font></div>";
+                "</font>"
+            //  "</div>"
+                ;
 
             if (false) std::ofstream("test.quot.html") << title;
             if (false) std::ofstream("test.quot.html.txt")

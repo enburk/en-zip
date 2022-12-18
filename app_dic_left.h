@@ -26,8 +26,7 @@ namespace app::dic::left
             card.object.text.mouse_wheel_speed = 2.0;
             undo.text.ellipsis = true;
             redo.text.ellipsis = true;
-            undo.text.text = "undo";
-            redo.text.text = "redo";
+            refresh();
         }
 
         void reload ()

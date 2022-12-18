@@ -112,7 +112,8 @@ namespace app::dic
                 focus = &list;
 
             if (focus.now)
-                focus.now->on_key(key, down, input);
+                focus.now->on_key(
+                key, down, input);
         }
 
         void on_mouse_click_child (xy p, str button, bool down) override

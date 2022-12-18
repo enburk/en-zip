@@ -75,7 +75,9 @@ struct Studio : gui::widget<Studio>
             int s = n == 6 ? 5 : n;
 
             for (int i=0; i<studios.size(); i++)
-                studios[i]->show (i == s);
+                studios[i]->show(i == s);
+
+            focus = studios[n];
 
             if (n == 6) // build!
                 for (int i=0; i<studios.size()-1; i++)

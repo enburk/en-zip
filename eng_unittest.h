@@ -251,8 +251,13 @@ namespace eng::unittest
         }
 
 
+        auto Entries = [&](str s){ 
+            auto ee = parser::entries(vocabulary, s, true);
+            std::ranges::sort(ee, eng::less);
+            out(ee);
+        };
         auto entries = [&](str s){ 
-            auto ee = parser::entries(vocabulary, s);
+            auto ee = parser::entries(vocabulary, s, false);
             std::ranges::sort(ee, eng::less);
             out(ee);
         };
@@ -261,6 +266,7 @@ namespace eng::unittest
         {
             #pragma warning(push)
             #pragma warning(disable: 4566)
+            oops(Entries("In New York")) {"In, New, New York, York"}; 
             oops(entries("In New York")) {"in, new, New York, york"}; 
             oops(entries("In _New _York")) {"in, New, New York, York"}; 
             oops(entries((char*)(u8"æsthete"))) {(char*)(u8"æsthete")}; 

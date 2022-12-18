@@ -135,5 +135,8 @@
     <ClInclude Include="studio_build_one+.h">
       <Filter>studio-one</Filter>
     </ClInclude>
+    <ClInclude Include="eng_phenomena.h">
+      <Filter>eng</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

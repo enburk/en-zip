@@ -139,6 +139,25 @@ namespace studio::dic
                         highlights;
                 }
             }
+
+            if (what == &focus_on
+                and focus_on.now
+                and not focus)
+                focus = &app;
+        }
+
+        void on_key(str key, bool down, bool input) override
+        {
+            if (key == "tab" and down)
+            {
+                if (focus.now == &area)
+                    focus = &app; else
+                    focus = &area;
+            }
+
+            if (focus.now)
+                focus.now->on_key(
+                key, down, input);
         }
     };
 }

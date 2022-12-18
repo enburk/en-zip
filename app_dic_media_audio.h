@@ -66,6 +66,9 @@ namespace app::dic::audio
             str comment = load_index.comment;
             str sense;
 
+            title.replace_all("---", mdash.data());
+            title.replace_all("--" , ndash.data());
+
             if (title.ends_with("}")) {
                 title.split_by("{",
                 title, sense);
@@ -103,8 +106,7 @@ namespace app::dic::audio
 
             str date;
             for (str option : index.options)
-                if (option.starts_with("date "))
-                    date = option.from(5);
+            if (option.starts_with("date ")) date = option.from(5);
             if (date != "" and credit != "") credit += ", ";
             if (date != "") credit += italic(date);
 

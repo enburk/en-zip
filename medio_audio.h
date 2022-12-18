@@ -166,6 +166,11 @@ namespace media::audio
             std::filesystem::last_write_time(original) >
             std::filesystem::last_write_time(cache) - 2h)
         {
+            std::filesystem::create_directories(cache.parent_path());
+
+            if (original.extension() == ".ogg")
+            std::filesystem::copy(original, cache,
+            std::filesystem::copy_options::overwrite_existing); else
             combine(array<path>{original}, cache, 0.1, 0.0, 0.0, false);
 
             path temp = cache; temp.replace_extension(".ogg.ogg");
@@ -218,7 +223,6 @@ namespace media::audio
 
         std::filesystem::path fn = std::string(r.id);
         str stem = fn.stem().string();
-        if (crop != "") stem += " ## " + crop;
         str id = stem + ".ogg";
 
         str cache = "../data/!cache/"

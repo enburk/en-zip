@@ -61,7 +61,9 @@ namespace studio::build::dic
             and not r.options.contains("=="))
             or  entries.contains("+"))
                 entries += eng::parser::entries(
-                    vocabulary, r.title);
+                    vocabulary, r.title,
+                    r.options.contains
+                    ("Case"));
 
             entries.try_erase("+");
             entries += r.title;
@@ -89,8 +91,7 @@ namespace studio::build::dic
             {
                 if (entry.ends_with("}")) {
                 str sense; entry.split_by("{",
-                    entry, sense); entry.strip();
-                    if (sense == "+") continue; }
+                    entry, sense); entry.strip(); }
 
                 auto index = vocabulary.index(entry);
                 if (!index) continue;

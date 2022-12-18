@@ -185,6 +185,7 @@
     <ClInclude Include="eng_abc_vocabulary_trie.h" />
     <ClInclude Include="eng_abc_vocabulary_triee.h" />
     <ClInclude Include="eng_parser.h" />
+    <ClInclude Include="eng_phenomena.h" />
     <ClInclude Include="eng_unittest.h" />
     <ClInclude Include="media.h" />
     <ClInclude Include="media_data.h" />

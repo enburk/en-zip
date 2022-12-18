@@ -86,7 +86,9 @@ namespace studio::build
                 media::report::unidentified.clear();
                 media::report::data_updated = false;
 
+                media::scan::dataelog = std::ofstream("datae.txt");
                 auto resources = media::scan::scan("../datae");
+                media::scan::dataelog = std::ofstream{};
 
                 auto& unidentified = 
                 media::report::unidentified;

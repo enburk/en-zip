@@ -48,6 +48,8 @@ namespace media::scan
         return lefts.size() == 0;
     }
 
+    std::ofstream dataelog;
+
     array<resource> scan (path dir, resource common = {})
     {
         array<resource> resources;
@@ -69,15 +71,22 @@ namespace media::scan
             if (name.starts_with(".")) continue; else
                 name = un_msdos(name);
 
+            if (true) {
+            if (is_directory(entry))
+            dataelog << ">>> " + dir.string() + "/";
+            dataelog << entry.filename().string();
+            dataelog << "\n"; }
+
             resource resource = common;
 
             str ignored_comment;
             name.split_by("###", name, ignored_comment);
             name.strip();
 
-            str title, meta, yadda; bool meta_present = 
+            str title, meta, yadda;
+            bool meta_present = 
             name.split_by("{{", title, meta); title.strip();
-            meta.split_by("}}", meta, yadda); meta.strip();
+            meta.split_by("}}", meta, yadda); yadda.strip(); meta.strip();
 
             str credit, license;
             meta.split_by("$", credit, license); credit.strip();
@@ -102,16 +111,21 @@ namespace media::scan
             optio.strip();
             title.strip();
 
-            if (resource.options.contains("{links}"))
-                if (not parse_links(title, links))
-                    *report::err << red(bold(
-                    "parse links error: " +
-                     entry.string()));
+            if (yadda.starts_with("## "))
+                optio += yadda;
+
+            if (resource.options.contains("{links}")
+            and not parse_links(title, links))
+                *report::err << red(bold(
+                "parse links error: " +
+                 entry.string()));
 
             resource.entries += links.split_by("][");
             resource.options += optio.split_by("##");
             for (str& s: resource.entries) s.strip();
             for (str& s: resource.options) s.strip();
+            resource.entries.erase_all("");
+            resource.options.erase_all("");
 
             if (is_directory(entry))
             {
@@ -163,6 +177,13 @@ namespace media::scan
                         if (line.starts_with("###"))
                             break;
 
+                        if (line.contains("\x92"))
+                            *report::err << red(
+                            dir.string() + "/" +
+                            resource.title +
+                            " !UTF-8: ["
+                            + line + "]");
+
                         if (line.starts_with("**")) {
                             title_stop = true; str
                             comment = line.from(2);
@@ -210,10 +231,22 @@ namespace media::scan
                            title_lines.truncate();
 
                     if (title_lines.size() > 0)
+                    {
                         title = str(title_lines,
                         title_lines.front().
                         starts_with("<") ?
                         "" : "<br>");
+
+                        str links = "";
+                        if (resource.options.contains("{links}")
+                        and not parse_links(title, links))
+                            *report::err << red(bold(
+                            "parse links error: " +
+                             entry.string()));
+
+                        resource.entries +=
+                        links.split_by("][");
+                    }
 
                     if (comment_lines.size() > 0)
                         resource.comment = str(
@@ -224,22 +257,61 @@ namespace media::scan
                 [](auto s){ return s == "="; });
 
                 if (title != "") resource.title = title;
+
                 report::id2path[resource.id] += entry; // check for same id
 
-                array<str> crops;
-                if (resource.kind == "audio")
-                    for (str s : resource.options)
-                        if (s.contains("-"))
-                            crops += s;
-
-                if (crops.empty())
                 resources += resource;
-                else for (str crop: crops)
+
+                if (true)
+                if (not resource.options.contains("{links}"))
                 {
-                    auto r = resource;
-                    r.id  += " ## crop " + crop;
-                    r.options += "crop " + crop;
-                    resources += r;
+                    str s = resource.title;
+                    static const array<str> ee = {
+                    "{1}","{2}","{1,2}","{noun}","{verb}","{adjective}",
+                    "{angry}","{annoyed}","{anxious}","{bewildered}","{concerned}",
+                    "{defiant}","{dejected}","{depressed}","{disbelieving}","{disappointed}",
+                    "{emphatic}","{enthusiastic}","{excited}","{happy}","{horrified}",
+                    "{impatient}","{incredulous}","{indignant}",
+                    "{realization}","{relieved}",
+                    "{sad}","{upset}"};
+                    if (s.ends_with("}")) for (auto& e: ee)
+                    if (s.ends_with(e)) { s.resize(s.size()-e.size()); break; }
+                    if (s.contains(one_of("{}")))
+                    *report::err << blue(
+                    dir.string() + "/" +
+                    resource.title);
+                }
+                if  (resource.kind == "audio")
+                for (str option: resource.options)
+                {
+                    static const array<str> upto5 = {"crop ", "date "};
+                    static const array<str> exact = {"=", "{links}", "Case",
+                    "us","uk","ca","au","ru", "poem","song","sound","number","pixed",
+                    "fade","fade in","fade out",
+                    "reduced","unclear"};
+                    if (not exact.contains(option)
+                    and not upto5.contains(option.upto(5)))
+                    *report::err << red(
+                    dir.string() + "/" +
+                    resource.title +
+                    " OPTION: ["
+                    + option +
+                    "]");
+                }
+                if  (resource.kind == "video")
+                for (str option: resource.options)
+                {
+                    static const array<str> upto5 = {"crop ", "qrop ", "date "};
+                    static const array<str> exact = {"=", "{links}", "Case",
+                    "6+","8+","10+","12+","14+","16+","18+","21+","99+"};
+                    if (not exact.contains(option)
+                    and not upto5.contains(option.upto(5)))
+                    *report::err << red(
+                    dir.string() + "/" +
+                    resource.title +
+                    " OPTION: ["
+                    + option +
+                    "]");
                 }
             }
         }

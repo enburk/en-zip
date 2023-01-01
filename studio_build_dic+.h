@@ -55,21 +55,39 @@ namespace studio::build::dic
 
             array<str> entries = r.entries;
 
+            str sense;
+            str title = r.title;
+            if (title.ends_with("}")) {
+                title.split_by("{",
+                title, sense);
+                title.strip();
+                sense.strip();
+            }
+
             if ((r.kind == "audio"
             and entries.size() == 0
             and not r.options.contains("=")
             and not r.options.contains("=="))
             or  entries.contains("+"))
                 entries += eng::parser::entries(
-                    vocabulary, r.title,
+                    vocabulary, title,
                     r.options.contains
                     ("Case"));
 
             entries.try_erase("+");
-            entries += r.title;
+            entries += title;
 
-            str s = r.title; s.trimr("!?");
-            if (s != r.title) entries += s;
+            if (sense != ""
+            and sense != "1"
+            and sense != "2"
+            and sense != "1,2"
+            and not eng::lexical_items.contains(sense)
+            and not eng::lexical_notes.contains(sense)
+            and not eng::related_items.contains(sense))
+            entries += sense;
+
+            str s = title; s.trimr("!?");
+            if (s != title) entries += s;
             if (s.starts_with("a "    )) entries += s.from (2); else
             if (s.starts_with("an "   )) entries += s.from (3); else
             if (s.starts_with("the "  )) entries += s.from (4); else
@@ -77,28 +95,20 @@ namespace studio::build::dic
             if (s.starts_with("to "   )) entries += s.from (3); else
             {}
 
-            array<str> apostros;
-            for(auto& entry: entries)
-                if (entry.contains((char*)(u8"’")))
-                    apostros += entry;
-            for(auto& entry: apostros)
-                entry.replace_all((char*)(u8"’"), "'");
-
+            array<str> apostros; auto a = (char*)(u8"’");
+            for(auto& entry: entries) if (entry.contains(a)) apostros += entry;
+            for(auto& entry: apostros) entry.replace_all(a, "'");
             entries += apostros;
             entries.deduplicate();
 
             for(auto& entry: entries)
             {
-                if (entry.ends_with("}")) {
-                str sense; entry.split_by("{",
-                    entry, sense); entry.strip(); }
-
                 auto index = vocabulary.index(entry);
                 if (!index) continue;
                 int n = *index;
 
-                if (redirects[n] >= 0) n =
-                    redirects[n];
+                if (redirects[n] >= 0)
+                n = redirects[n];
 
                 entries2resources[n] += &r;
             }
@@ -246,6 +256,7 @@ namespace studio::build::dic
         {
             auto it = resources2entries.find(&r);
             if (it == resources2entries.end()
+            and not r.options.contains("sic!")
             and not r.options.contains("==")
             and not r.options.contains("=")
             and not assets.contains(&r)) {

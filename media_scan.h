@@ -177,7 +177,7 @@ namespace media::scan
                         if (line.starts_with("###"))
                             break;
 
-                        if (line.contains("\x92"))
+                        if (not aux::unicode::ok(line))
                             *report::err << red(
                             dir.string() + "/" +
                             resource.title +
@@ -265,15 +265,18 @@ namespace media::scan
                 if (true)
                 if (not resource.options.contains("{links}"))
                 {
-                    str s = resource.title;
-                    static const array<str> ee = {
-                    "{1}","{2}","{1,2}","{noun}","{verb}","{adjective}",
+                    static const auto ee =
+                    eng::lexical_items*
+                    eng::lexical_notes*
+                    eng::related_items*
+                    array<str>{"{1}","{2}","{1,2}",
                     "{angry}","{annoyed}","{anxious}","{bewildered}","{concerned}",
                     "{defiant}","{dejected}","{depressed}","{disbelieving}","{disappointed}",
                     "{emphatic}","{enthusiastic}","{excited}","{happy}","{horrified}",
                     "{impatient}","{incredulous}","{indignant}",
                     "{realization}","{relieved}",
                     "{sad}","{upset}"};
+                    str s = resource.title;
                     if (s.ends_with("}")) for (auto& e: ee)
                     if (s.ends_with(e)) { s.resize(s.size()-e.size()); break; }
                     if (s.contains(one_of("{}")))
@@ -285,7 +288,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "date "};
-                    static const array<str> exact = {"=", "{links}", "Case",
+                    static const array<str> exact = {"=", "{links}", "sic!", "Case",
                     "us","uk","ca","au","ru", "poem","song","sound","number","pixed",
                     "fade","fade in","fade out",
                     "reduced","unclear"};
@@ -302,7 +305,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "qrop ", "date "};
-                    static const array<str> exact = {"=", "{links}", "Case",
+                    static const array<str> exact = {"=", "{links}", "sic!", "Case",
                     "6+","8+","10+","12+","14+","16+","18+","21+","99+"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))

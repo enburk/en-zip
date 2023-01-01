@@ -69,8 +69,19 @@ namespace app::dic::left
             eng::dictionary::entry entry;
             entry << entries_pool;
 
+            if (undoes.size() > 1000)
+                undoes.erase(
+                undoes.begin(),
+                undoes.begin()
+                +500);
+
             if (current_entry.title != "")
             undoes += current_entry.title;
+
+            if (not redoes.empty()
+            and current_entry.title != redoes.back())
+            redoes.clear();
+
             current_entry = entry;
             current_index = index;
 
@@ -162,7 +173,7 @@ namespace app::dic::left
             if (what == &card.object) { clicked = card.object.clicked; notify(); }
             if (what == &quot.object) { clicked = quot.object.clicked; notify(); }
 
-            if (what == &undo && undoes.size() > 0) 
+            if (what == &undo and not undoes.empty()) 
             {
                 str link =
                 undoes.back();
@@ -176,7 +187,7 @@ namespace app::dic::left
                 undoes.pop_back();
                 refresh();
             }
-            if (what == &redo && redoes.size() > 0) 
+            if (what == &redo and not redoes.empty()) 
             {
                 str link =
                 redoes.back();

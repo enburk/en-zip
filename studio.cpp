@@ -20,7 +20,7 @@ struct Studio : gui::widget<Studio>
 
     Studio()
     {
-        skin = "gray";
+        skin = "gray+";
         toolbar.color = gui::skins[skin].light.first;
         canvas .color = gui::skins[skin].light.first;
 

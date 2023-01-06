@@ -1,0 +1,35 @@
+Italian           = итальянский                #  8+
+
+concert           = концерт
+bandit            = бандит
+balcony           = балкон
+
+loggia            = лоджия                     # 14+
+regatta           = регата                     # 14+
+stiletto          = стилет                     # 18+
+risk              = риск, рисковать, рискнуть  #  8+
+
+/// # FOOD-- : меньше еды # FOOD++ : больше еды # 14+ /// show buttons
+
+pizza             = пицца
+spaghetti         = спагетти
+vermicelli        = вермишель
+macaroni          = макароны %% паста в виде коротких трубочек
+lasagne\\lasagna  = лазанья                    # 10+ # MEAT
+salami            = салями                     # 10+ # MILK
+tiramisu          = тирамису́                  # 18+ # FOOD- # MILK
+mascarpone        = маскарпоне                 # 18+ # FOOD- # MILK
+parmesan          = пармезан                   # 14+ # FOOD- # MILK
+mozzarella        = моцарелла                  # 14+ # FOOD- # MILK
+risotto           = ризотто                    # 16+ # FOOD+
+carpaccio         = карпаччо                   # 16+ # FOOD+ # MEAT
+ravioli           = равиоли                    # 16+ # FOOD+ # MEAT
+
+/// # FOOD /// hide buttons
+
+maestro           = маэстро                    # 14+
+orchestra         = оркестр
+sonata            = соната                     # 16+
+bravura           = в музыке: бравурный пассаж, ~ бравурность, ~ бравада # 18+
+prima donna       = примадонна                 # 14+ # ART-
+bravo!            = браво!

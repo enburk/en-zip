@@ -17,12 +17,16 @@ struct Studio : gui::widget<Studio>
     studio::audio::studio audio;
     studio::video::studio video;
     studio::build::studio build;
+    gui::button schema;
+    gui::button app;
 
     Studio()
     {
         skin = "gray+";
         toolbar.color = gui::skins[skin].light.first;
         canvas .color = gui::skins[skin].light.first;
+        schema.text.text = "light";
+        app.text.text = "app";
 
         studios += &dic;
         studios += &one;
@@ -67,6 +71,9 @@ struct Studio : gui::widget<Studio>
 
             for (int i=0; i<studios.size(); i++)
                 studios[i]->coord = xyxy(0, h, W, H);
+
+            schema.coord = xywh(W-2*w, 0, w, h);
+            app   .coord = xywh(W-1*w, 0, w, h);
         }
 
         if (what == &select)
@@ -98,6 +105,14 @@ struct Studio : gui::widget<Studio>
 
             for (int i=0; i<studios.size(); i++)
                 select(i).enabled = true;
+        }
+
+        if (what == &schema)
+        {
+            skin =
+            schema.text.text == "light" ? "gray" : "gray+";
+            schema.text.text =
+            schema.text.text == "light" ? "dark" : "light";
         }
     }
 };

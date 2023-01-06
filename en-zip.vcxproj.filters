@@ -138,5 +138,17 @@
     <ClInclude Include="eng_phenomena.h">
       <Filter>eng</Filter>
     </ClInclude>
+    <ClInclude Include="studio_app_one_area.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_one_content.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_one_editor.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_one_random.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

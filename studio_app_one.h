@@ -1,29 +1,15 @@
 #pragma once
-#include "app_one.h"
+#include "studio_app_one_area.h"
 namespace studio::one
 {
-    struct area:
-    widget<area>
-    {
-        gui::console log;
-
-        void on_change (void* what) override
-        {
-            if (what == &coord)
-            {
-                log.coord = coord.now.local();
-            }
-        }
-    };
-
     struct studio:
     widget<studio>
     {
-        app::one::app app;
-        gui::area<area> area;
+        area area;
+        app::dic::app app; // after area
         gui::splitter splitter;
 
-        studio () { app::one::log = area.object.log; }
+        studio () {}// app::one::log = area.object.log; }
 
         void reload () { app.reload(); }
 

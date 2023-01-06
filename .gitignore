@@ -12,7 +12,6 @@
 
 *.dll
 *.exe
-*.txt
 *.html
 test.html
 test.html.txt

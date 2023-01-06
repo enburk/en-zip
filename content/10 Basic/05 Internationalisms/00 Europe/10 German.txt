@@ -1,0 +1,22 @@
+German               = немецкий                    #  8+
+
+Hamburger {citizen}  = гамбуржец                   # 14+
+hamburger {food}     = гамбургер
+schnitzel            = шницель                     # 14+ # MEAT
+strudel              = штрудель                    # 10+
+muesli               = мюсли                       # 10+
+
+poodle               = пудель
+spitz                = шпиц                        # 10+
+rottweiler           = ротвейлер                   # 12+
+
+wunderkind           = вундеркинд                  # 12+
+concertmaster        = концертмейстер              # 18+
+leitmotif|leitmotiv  = лейтмотив                   # 18+
+kitsch               = кич|китч                    # 18+
+
+burgher              = бюргер                      # 18+
+putsch               = путч                        # 18+
+diktat               = диктат %% от лат. dictātum  # 18+ /// в Latin будет dictator /// 14+ really
+ersatz               = эрзац %% неполноценный заменитель чего-либо # 18+
+edelweiss            = эдельвейс                   # 18+

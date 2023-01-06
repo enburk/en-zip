@@ -61,6 +61,7 @@ namespace studio::build::dic
                 title.split_by("{",
                 title, sense);
                 title.strip();
+                sense.truncate();
                 sense.strip();
             }
 

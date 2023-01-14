@@ -23,8 +23,6 @@ struct Studio : gui::widget<Studio>
     Studio()
     {
         skin = "gray+";
-        toolbar.color = gui::skins[skin].light.first;
-        canvas .color = gui::skins[skin].light.first;
         schema.text.text = "light";
         app.text.text = "app";
 
@@ -50,7 +48,9 @@ struct Studio : gui::widget<Studio>
 
     void on_change (void* what) override
     {
-        if (what == &coord && coord.was.size != coord.now.size)
+        if (what == &coord and
+            coord.was.size !=
+            coord.now.size)
         {
             int W = coord.now.w; if (W <= 0) return;
             int H = coord.now.h; if (H <= 0) return;
@@ -74,6 +74,12 @@ struct Studio : gui::widget<Studio>
 
             schema.coord = xywh(W-2*w, 0, w, h);
             app   .coord = xywh(W-1*w, 0, w, h);
+        }
+
+        if (what == &skin)
+        {
+            toolbar.color = gui::skins[skin].light.first;
+            canvas .color = gui::skins[skin].light.first;
         }
 
         if (what == &select)

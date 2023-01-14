@@ -6,29 +6,41 @@ namespace studio::one
     widget<studio>
     {
         area area;
-        app::dic::app app; // after area
+        gui::area<app::one::app> app_; // after area
+        app::one::app& app = app_.object;
         gui::splitter splitter;
 
-        studio () {}// app::one::log = area.object.log; }
+        studio () { reload(); }
 
-        void reload () { app.reload(); }
+        void reload () {}
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-                int l = gui::metrics::line::width*3;
-                int w = W/2;
-                int d = 2*l;
+                int d = gui::metrics::line::width*10;
 
-                splitter.coord = xywh(W-w-d, 0, 2*d, H);
-                splitter.lower = 8'000 * W / 10'000;
-                splitter.upper =   800 * W / 10'000;
+                splitter.lower = W * 25'00 / 100'00;
+                splitter.upper = W * 75'00 / 100'00;
+                str s = "studio::one::splitter.permyriad";
+                int p = sys::settings::load(s, 40'00);
+                int x = clamp<int>(W*p / 100'00,
+                splitter.lower, splitter.upper);
+                splitter.coord = xyxy(x-d, 0, x+d, H);
 
-                area.coord = xywh(0, 0, W-w, H);
-                app .coord = xywh(W-w, 0, w, H);
+                area.coord = xyxy(0, 0, x, H);
+                app_.coord = xyxy(x, 0, W, H);
+            }
+
+            if (what == &splitter) {
+                sys::settings::save(
+                "studio::one::splitter.permyriad",
+                splitter.middle * 100'00 / coord.now.w);
+                on_change(&coord);
             }
         }
     };

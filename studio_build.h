@@ -71,7 +71,7 @@ namespace studio::build
                 bool
                 updated = false;
                 updated|= dictionary_update(out, err);
-                updated|= scenario_update(out, err);
+                updated|=    content_update(out, err);
                 data_updated = updated;
 
                 eng::vocabulary vocabulary("../data/vocabulary.dat");

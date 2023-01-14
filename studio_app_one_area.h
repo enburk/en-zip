@@ -11,15 +11,13 @@ namespace studio::one
         gui::area<gui::canvas> toolbar;
         gui::area<gui::canvas> areabar;
         gui::area<content> content;
-        gui::area<editor> editor;
-        gui::area<random> random;
         gui::radio::group select;
         gui::splitter splitter;
+        editor editor;
+        random random;
 
         area ()
         {
-            toolbar.object.color = gui::skins[skin].light.first;
-
             areas += &editor;
             areas += &random;
 
@@ -43,33 +41,40 @@ namespace studio::one
                 int H = coord.now.h; if (H <= 0) return;
                 int w = gui::metrics::text::height*5;
                 int h = gui::metrics::text::height*13/10;
-                int d = gui::metrics::line::width*10;
+                int l = gui::metrics::line::width;
 
-                splitter.lower = W *  5'00 / 100'00;
-                splitter.upper = W * 15'00 / 100'00;
-                str s = "studio::dic::area::splitter.permyriad";
-                int p = sys::settings::load(s, 10'00);
+                splitter.lower = W * 10'00 / 100'00;
+                splitter.upper = W * 50'00 / 100'00;
+                str s = "studio::one::area::splitter.permyriad";
+                int p = sys::settings::load(s, 25'00);
                 int x = clamp<int>(W*p / 100'00,
                 splitter.lower, splitter.upper);
-                splitter.coord = xyxy(x-d, 0, x+d, H);
+                splitter.coord = xyxy(x-10*l, 0, x+10*l, H);
 
                 toolbar.coord = xywh(0, 0, W, h);
                 areabar.coord = xyxy(x, h, W, H);
                 content.coord = xyxy(0, h, x, H);
 
                 select.coord = toolbar.object.coord.now;
-                select(0).coord = xywh(w*0, 0, w, h);
-                select(1).coord = xywh(w*1, 0, w, h);
+                select(0).coord = xywh(w*0, 0, w, h-6*l);
+                select(1).coord = xywh(w*1, 0, w, h-6*l);
 
                 for (auto x: areas) x->coord =
                 areabar.object.coord.now +
                 areabar.coord.now.origin;
             }
 
+            if (what == &skin)
+            {
+                toolbar.object.color = gui::skins[skin].light.first;
+                areabar.object.color = gui::skins[skin].light.first;
+            }
+
             if (what == &splitter) {
                 sys::settings::save(
                 "studio::one::area::splitter.permyriad",
                 splitter.middle * 100'00 / coord.now.w);
+                coord.was.size = xy{};
                 on_change(&coord);
             }
 
@@ -79,6 +84,11 @@ namespace studio::one
                 for (int i=0; i<
                 areas.size(); i++)
                 areas[i]->show(i == n);
+            }
+
+            if (what == &content)
+            {
+                editor.path = content.object.selected.now;
             }
         }
     };

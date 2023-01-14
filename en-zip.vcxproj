@@ -177,6 +177,11 @@
     <ClInclude Include="app_dic_media_videos.h" />
     <ClInclude Include="app_one.h" />
     <ClInclude Include="app_two.h" />
+    <ClInclude Include="content_chain.h" />
+    <ClInclude Include="content_entry.h" />
+    <ClInclude Include="content_options.h" />
+    <ClInclude Include="content_table.h" />
+    <ClInclude Include="content_topic.h" />
     <ClInclude Include="data_in.h" />
     <ClInclude Include="data_out.h" />
     <ClInclude Include="eng_abc.h" />

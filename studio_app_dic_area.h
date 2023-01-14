@@ -25,8 +25,6 @@ namespace studio::dic
 
         area ()
         {
-            toolbar.object.color = gui::skins[skin].light.first;
-
             consoles += &log_media;
             consoles += &log_audio;
             consoles += &log_video;
@@ -72,7 +70,7 @@ namespace studio::dic
                 int H = coord.now.h; if (H <= 0) return;
                 int w = gui::metrics::text::height*5;
                 int h = gui::metrics::text::height*13/10;
-                int d = gui::metrics::line::width*10;
+                int l = gui::metrics::line::width;
 
                 splitter.lower = W * 25'00 / 100'00;
                 splitter.upper = W * 75'00 / 100'00;
@@ -80,7 +78,7 @@ namespace studio::dic
                 int p = sys::settings::load(s, 60'00);
                 int x = clamp<int>(W*p / 100'00,
                 splitter.lower, splitter.upper);
-                splitter.coord = xyxy(x-d, 0, x+d, H);
+                splitter.coord = xyxy(x-10*l, 0, x+10*l, H);
 
                 toolbar.coord = xywh(0, 0, W, h);
                 consbar.coord = xyxy(x, h, W, H);
@@ -88,21 +86,27 @@ namespace studio::dic
                 search .coord = xyxy(0, h, x, H);
 
                 select.coord = toolbar.object.coord.now;
-                select(0).coord = xywh(w*0, 0, w, h);
-                select(1).coord = xywh(w*1, 0, w, h);
-                select(2).coord = xywh(w*2, 0, w, h);
-                select(3).coord = xywh(w*3, 0, w, h);
-                select(4).coord = xywh(w*4, 0, w, h);
+                select(0).coord = xywh(w*0, 0, w, h-6*l);
+                select(1).coord = xywh(w*1, 0, w, h-6*l);
+                select(2).coord = xywh(w*2, 0, w, h-6*l);
+                select(3).coord = xywh(w*3, 0, w, h-6*l);
+                select(4).coord = xywh(w*4, 0, w, h-6*l);
 
                 for (auto c: consoles) c->coord =
                 consbar.object.coord.now +
                 consbar.coord.now.origin;
             }
 
+            if (what == &skin)
+            {
+                toolbar.object.color = gui::skins[skin].light.first;
+            }
+
             if (what == &splitter) {
                 sys::settings::save(
                 "studio::dic::area::splitter.permyriad",
                 splitter.middle * 100'00 / coord.now.w);
+                coord.was.size = xy{};
                 on_change(&coord);
             }
 

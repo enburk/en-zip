@@ -12,8 +12,7 @@ namespace app::one
         {
         }
         catch (std::exception & e) {
-            log << bold(red(
-                e.what())); }
+        log << bold(red(e.what())); }
 
         void on_change (void* what) override
         {
@@ -26,7 +25,7 @@ namespace app::one
             }
             if (what == &skin)
             {
-                canvas.color = gui::skins[skin.now].light.first;
+                canvas.color = gui::skins[skin.now].ultralight.first;
             }
         }
     };

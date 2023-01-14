@@ -3384,7 +3384,6 @@ What were you looking for~!.ogg
 Who is it~!.ogg
 Why doesn't he want to go~!.ogg
 >>> ../datae\audio\podcasts/{{American English Pronunciation Podcast}} ## us
-I'm practicing the words for and four. I practiced for four hours..ogg
 Let's look at some unexpected non-rhyming words.ogg
 Let's look at some unexpected non-rhyming words.txt
 Listen to the word listen.ogg
@@ -3431,94 +3430,36 @@ The words wine, w-i-n-e, and whine w-h-i-n-e.ogg
 The words wine, w-i-n-e, and whine w-h-i-n-e.txt
 >>> ../datae\audio\podcasts\{{American English Pronunciation Podcast}} ## us/{{}}
 a cat.ogg
-a contest (noun), to contest (verb).ogg
+a contest (noun), to contest (verb) [contest].ogg
 advertise.ogg
 alcoholic.ogg
-an object is a noun, to object is a verb.ogg
-angry.ogg
+an object is a noun, to object is a verb [object].ogg
 anxiety.ogg
 apology.ogg
-archeology [].ogg
-artificial.ogg
-athletic.ogg
 atrophy.ogg
-auxiliary.ogg
-balk.ogg
 balked.ogg
 balks.ogg
 belonging.ogg
-bottom.ogg
-British.. been, American.. been.ogg
 button.ogg
 caught.ogg
 chalk.ogg
 chalked.ogg
 chalks.ogg
-choreography.ogg
-circle.ogg
 clarify.ogg
-climb.ogg
-coming.ogg
 couldja (could you).ogg
-cranky.ogg
-democracy.ogg
 determine.ogg
-different {1,2}.ogg
-dove (noun) and dove (verb).ogg
 durability.ogg
-equality.ogg
-exact.ogg
-examine.ogg
-example.ogg
-except.ogg
-executive.ogg
-exhaust.ogg
-existential.ogg
-exit.ogg
-exotic.ogg
-finger.ogg
-forgotten.ogg
-from.ogg
-gotten.ogg
-gristle.ogg
 heteronyms.ogg
 hospitalize.ogg
-hungry.ogg
-hustle.ogg
-hustled.ogg
-hustles.ogg
-i--dee-ya -- idea [idea].ogg
-idea.ogg
-idealize.ogg
-identify.ogg
-individual.ogg
-it is.ogg
-listen.ogg
-listens.ogg
-longing.ogg
 memorize.ogg
-moisten.ogg
-mother.ogg
-palpable.ogg
-pink.ogg
 project (noun), project (verb).ogg
 quality.ogg
-questions.ogg
-react.ogg
-reality.ogg
 recognize.ogg
 ringing.ogg
-say, saying, says, said.ogg
-science.ogg
 shrink.ogg
 specific.ogg
-stereo.ogg
-talk.ogg
 talks.ogg
 the wine-whine merger.ogg
-walked.ogg
-walks.ogg
-who.ogg
 >>> ../datae\audio\podcasts/{{Martha Barnette and Grant Barrett - A Way with Words}} ## us
 !credit.txt
 Caducity comes from the Latin word cadere.ogg
@@ -3657,6 +3598,9 @@ Thou shalt not kill, but needst not strive; Officiously to keep alive..txt
 Thou shalt not kill, but needst not strive; Officiously to keep alive..wav
 >>> ../datae\audio\quots/{{Auguste Comte}}
 Humanity is composed of the dead and of the living. The dead are much the more numerous..wav
+>>> ../datae\audio\quots/{{David Maurer}}
+Of all the grifters, the confidence man is the aristocrat.txt
+Of all the grifters, the confidence man is the aristocrat.wav
 >>> ../datae\audio\quots/{{George Eliot}}
 Blessed is the man, who having nothing to say, abstains from giving in words evidence of the fact.ogg
 >>> ../datae\audio\quots/{{Søren Kierkegaard}}
@@ -37711,45 +37655,49 @@ Zero! ### Adult-Male-B_Zero_VKT_04064.mp3
 Zero. ### Adult-Fem-C_Zero_VKT_01375.mp3
 zip ### Vocalzip CRT029917.wav
 zonk ### Vocalzonk CRT029915.wav
->>> ../datae/fineart a-z
->>> ../datae\fineart a-z/Brozik {{Wenzel von Brozik $$}}
+>>> ../datae/fineart a-z {{$$}}
+>>> ../datae\fineart a-z {{$$}}/Bazille {{Frédéric Bazille}}
+Monotonous Chant [+] ## date 1870 ## qrop t10 b10 ### Mélopée.jpg.uid-zps
+Monotonous Chant [monotonous] ## date 1870 ## qrop t10 b10 ### Mélopée.jpg
+>>> ../datae\fineart a-z {{$$}}/Brozik {{Wenzel von Brozik}}
 The Prague Defenestration.jpg
 The Prague Defenestration.txt
->>> ../datae\fineart a-z/Béraud {{Jean Béraud $$}}
+>>> ../datae\fineart a-z {{$$}}/Béraud {{Jean Béraud}}
 After the Misdeed.jpg
 After the Misdeed.txt
->>> ../datae\fineart a-z/Cassat {{Mary Cassat $$}}
+>>> ../datae\fineart a-z {{$$}}/Cassat {{Mary Cassat}}
 Nurse Reading to a Little Girl.jpg
 Nurse Reading to a Little Girl.txt
->>> ../datae\fineart a-z/Delaroche {{Paul Delaroche $$}}
+>>> ../datae\fineart a-z {{$$}}/Delaroche {{Paul Delaroche}}
 Napoleon at Fontainebleau.jpg
 Napoleon at Fontainebleau.txt
->>> ../datae\fineart a-z/Ensor {{James Ensor $$}}
+>>> ../datae\fineart a-z {{$$}}/Ensor {{James Ensor}}
 Still Life with Masks.jpg
 Still Life with Masks.txt
 The Dangerous Cooks.jpg
 The Dangerous Cooks.txt
 The Despair of Pierrot.jpg
 The Despair of Pierrot.txt
->>> ../datae\fineart a-z/Leighton {{Edmund Blair Leighton $$}}
+>>> ../datae\fineart a-z {{$$}}/Leighton {{Edmund Blair Leighton}}
 Secret.jpg
 Secret.txt
->>> ../datae\fineart a-z/Munch {{Edvard Munch $$}}
+>>> ../datae\fineart a-z {{$$}}/Millais {{John Everett Millais}}
+>>> ../datae\fineart a-z {{$$}}/Munch {{Edvard Munch}}
 Self-Portrait.jpg
 Self-Portrait.txt
->>> ../datae\fineart a-z/Repin {{Ilya Repin $$}}
+>>> ../datae\fineart a-z {{$$}}/Repin {{Ilya Repin}}
 Portrait of the Composer Alexander Glazunov.jpg
 Portrait of the Composer Alexander Glazunov.txt
->>> ../datae\fineart a-z/Sargent {{John Singer Sargent $$}}
+>>> ../datae\fineart a-z {{$$}}/Sargent {{John Singer Sargent}}
 Edouard and Marie-Louise Pailleron.jpg
 Edouard and Marie-Louise Pailleron.txt
->>> ../datae\fineart a-z/Schindler {{Osmar Schindler $$}}
+>>> ../datae\fineart a-z {{$$}}/Schindler {{Osmar Schindler}}
 Muscles.jpg
 Muscles.txt
->>> ../datae\fineart a-z/Serov {{Valentin Serov $$}}
+>>> ../datae\fineart a-z {{$$}}/Serov {{Valentin Serov}}
 Portrait of A. Kasyanov.jpg
 Portrait of A. Kasyanov.txt
->>> ../datae\fineart a-z/van Gogh {{Vincent van Gogh $$}}
+>>> ../datae\fineart a-z {{$$}}/van Gogh {{Vincent van Gogh}}
 Portrait of Dr. Gachet.jpg
 Portrait of Dr. Gachet.txt
 >>> ../datae/imagery

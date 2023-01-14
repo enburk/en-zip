@@ -31,6 +31,7 @@ using namespace std::literals::chrono_literals;
 str bold      (str s) { return "<b>" + s + "</b>"; }
 str italic    (str s) { return "<i>" + s + "</i>"; }
 str blue      (str s) { return "<font color=#000080>" + s + "</font>"; }
+str lightblue (str s) { return "<font color=#0000FF>" + s + "</font>"; }
 str dark      (str s) { return "<font color=#505050>" + s + "</font>"; }
 str gray      (str s) { return "<font color=#808080>" + s + "</font>"; }
 str green     (str s) { return "<font color=#008000>" + s + "</font>"; }

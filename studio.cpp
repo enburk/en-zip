@@ -104,9 +104,9 @@ struct Studio : gui::widget<Studio>
         {
             if (build.data_updated)
             {
-                dic.app.reload(); dic.reload();
-                one.app.reload(); one.reload();
-                two.app.reload(); two.reload();
+                dic.reload();
+                one.reload();
+                two.reload();
             }
 
             for (int i=0; i<studios.size(); i++)

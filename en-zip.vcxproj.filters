@@ -150,9 +150,6 @@
     <ClInclude Include="studio_app_one_editor.h">
       <Filter>studio-one</Filter>
     </ClInclude>
-    <ClInclude Include="studio_app_one_random.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
     <ClInclude Include="content_entry.h">
       <Filter>conent</Filter>
     </ClInclude>
@@ -167,6 +164,9 @@
     </ClInclude>
     <ClInclude Include="content_topic.h">
       <Filter>conent</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_one_preview.h">
+      <Filter>studio-one</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

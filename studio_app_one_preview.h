@@ -2,8 +2,8 @@
 #include "app_one.h"
 namespace studio::one
 {
-    struct random:
-    widget<random>
+    struct preview:
+    widget<preview>
     {
         void on_change (void* what) override
         {
@@ -23,3 +23,4 @@ namespace studio::one
         }
     };
 }
+

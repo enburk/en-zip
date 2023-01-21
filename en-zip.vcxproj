@@ -205,7 +205,7 @@
     <ClInclude Include="studio_app_one_area.h" />
     <ClInclude Include="studio_app_one_content.h" />
     <ClInclude Include="studio_app_one_editor.h" />
-    <ClInclude Include="studio_app_one_random.h" />
+    <ClInclude Include="studio_app_one_preview.h" />
     <ClInclude Include="studio_app_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />

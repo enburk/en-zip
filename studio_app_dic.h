@@ -74,6 +74,8 @@ namespace studio::dic
 
         void reload ()
         {
+            app.reload();
+
             timing t0;
             locations.clear();
             dat::in::pool pool("../data/media/locationary.dat");

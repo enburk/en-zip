@@ -49,7 +49,17 @@ namespace studio::one
                 reload = true;
             };
             watcher.watch();
+
             root = watcher.dir;
+            fill(root);
+
+            str open = sys::settings::load("studio::one::content::open", "");
+            str path = sys::settings::load("studio::one::content::path", "");
+
+            auto opens = open.split_by(";");
+            for (auto& record: records) if (not record.file)
+            record.open = opens.contains(record.path.string());
+            selected = path.c_str();
         }
 
         void refresh ()
@@ -85,9 +95,13 @@ namespace studio::one
             int n = 0;
             int index =-1;
             int level = 1;
+            str list_of_opens;
             flist.indices.clear();
             for (auto& record: records)
             {
+                if (record.open and not record.file)
+                list_of_opens += record.path.string() + ";";
+
                 index++;
                 if (record.level > level)
                     continue;
@@ -118,6 +132,9 @@ namespace studio::one
                         record.level;
             }
             flist.list.truncate(n);
+            sys::settings::save(
+            "studio::one::content::open",
+            list_of_opens);
         }
 
         void fill(path dir, int level = 1)
@@ -149,7 +166,7 @@ namespace studio::one
                 r.path = path;
                 r.name = name.from(3); str options;
                 r.name.split_by(" # ", r.name, options);
-                r.open = true; // is_regular_file(path);
+                r.open = is_regular_file(path);
                 r.file = is_regular_file(path);
                 r.level = level;
                 records += r;
@@ -219,6 +236,10 @@ namespace studio::one
 
             if (what == &selected)
             {
+                sys::settings::save(
+                "studio::one::content::path",
+                selected.now.string());
+
                 replane();
                 notify();
             }

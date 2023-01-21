@@ -1,20 +1,17 @@
-Italian           = итальянский                #  8+
+Italy           = Италия                #  8+ # pix-
+Italian           = итальянский                #  8+ # pix-
 
-concert           = концерт
-bandit            = бандит
 balcony           = балкон
-
 loggia            = лоджия                     # 14+
 regatta           = регата                     # 14+
 stiletto          = стилет                     # 18+
 risk              = риск, рисковать, рискнуть  #  8+
-
-/// # FOOD-- : меньше еды # FOOD++ : больше еды # 14+ /// show buttons
+bandit            = бандит
 
 pizza             = пицца
 spaghetti         = спагетти
 vermicelli        = вермишель
-macaroni          = макароны %% паста в виде коротких трубочек
+macaroni          = макароны %% паста в виде ~ коротких трубочек
 lasagne\\lasagna  = лазанья                    # 10+ # MEAT
 salami            = салями                     # 10+ # MILK
 tiramisu          = тирамису́                  # 18+ # FOOD- # MILK
@@ -25,8 +22,7 @@ risotto           = ризотто                    # 16+ # FOOD+
 carpaccio         = карпаччо                   # 16+ # FOOD+ # MEAT
 ravioli           = равиоли                    # 16+ # FOOD+ # MEAT
 
-/// # FOOD /// hide buttons
-
+concert           = концерт
 maestro           = маэстро                    # 14+
 orchestra         = оркестр
 sonata            = соната                     # 16+

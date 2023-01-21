@@ -55,9 +55,11 @@ namespace app::dic::video
 
             if (date != "") c += ", <i>" + date + "</i>";
 
-            if (index.comment != "") s += "<br><br>" +
+            if (index.comment != "")
+                s += "<br><br>" +
                 gray(italic(media::canonical(
-                index.comment))) + "<br>&nbsp;";
+                index.comment))) +
+                "<br>&nbsp;";
 
             script.html = s;
             credit.html = c;
@@ -67,7 +69,7 @@ namespace app::dic::video
         {
             start = gui::time::now;
             state = gui::media::state::playing;
-            stay.ms = stay.ms * 120/100;
+            stay.ms = stay.ms * 150/100;
             video.play();
 
             logs::media << media::log(index);

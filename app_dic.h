@@ -22,7 +22,7 @@ namespace app::dic
 
             timing t1;
             assets.clear();
-            dat::in::pool pool(dir/"app_dict"/"assets.dat");
+            dat::in::pool pool(dir/"media"/"assets.dat");
             int nn = pool.get_int();
             for (int i=0; i<nn; i++) {
                 auto title = pool.get_string();

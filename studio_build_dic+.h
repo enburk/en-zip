@@ -7,15 +7,12 @@ namespace studio::build::dic
     void compile (array<media::resource> const& resources, gui::console& report)
     {
         media::
-        data::out::storage storage("../data/app_dict");
-        dat::out::file entry_index("../data/app_dict/entry_index.dat");
-        dat::out::file media_index("../data/app_dict/media_index.dat");
-        dat::out::file assets_data("../data/app_dict/assets.dat");
+        data::out::storage storage("../data/media");
+        dat::out::file entry_index("../data/media/entry_index.dat");
+        dat::out::file media_index("../data/media/media_index.dat");
+        dat::out::file locationary("../data/media/locationary.dat");
+        dat::out::file assets_data("../data/media/assets.dat");
         eng::vocabulary vocabulary("../data/vocabulary.dat");
-
-        std::map<int32_t, std::map<int32_t, str>> locations;
-        dat::out::file locationari("../data/app_dict/locationari.dat");
-        dat::out::file locationary("../data/app_dict/locationary.dat");
 
         array<int> redirects;
         redirects.resize(vocabulary.size());
@@ -27,6 +24,7 @@ namespace studio::build::dic
         using res = media::resource const*;
         std::unordered_map<int, array<res>> entries2resources;
         std::unordered_map<res, array<str>> resources2entries;
+        std::map<int32_t, std::map<int32_t, str>> locations;
         std::set<res> new_ones;
         std::set<res> assets;
 
@@ -55,40 +53,29 @@ namespace studio::build::dic
 
             array<str> entries = r.entries;
 
-            str sense;
-            str title = r.title;
-            if (title.ends_with("}")) {
-                title.split_by("{",
-                title, sense);
-                title.strip();
-                sense.truncate();
-                sense.strip();
-            }
-
             if ((r.kind == "audio"
             and entries.size() == 0
             and not r.options.contains("=")
             and not r.options.contains("=="))
             or  entries.contains("+"))
                 entries += eng::parser::entries(
-                    vocabulary, title,
+                    vocabulary, r.title,
                     r.options.contains
                     ("Case"));
+            else
+            if (r.title.contains("/"))
+            for (str s: r.title.split_by("/"))
+                entries += s;
 
             entries.try_erase("+");
-            entries += title;
+            entries += r.title;
 
-            if (sense != ""
-            and sense != "1"
-            and sense != "2"
-            and sense != "1,2"
-            and not eng::lexical_items.contains(sense)
-            and not eng::lexical_notes.contains(sense)
-            and not eng::related_items.contains(sense))
-            entries += sense;
+            if (r.sense != ""
+            and eng::list::sensitive.contains(r.sense))
+            entries += r.sense;
 
-            str s = title; s.trimr("!?");
-            if (s != title) entries += s;
+            str s  = r.title; s.trimr("!?");
+            if (s != r.title) entries += s;
             if (s.starts_with("a "    )) entries += s.from (2); else
             if (s.starts_with("an "   )) entries += s.from (3); else
             if (s.starts_with("the "  )) entries += s.from (4); else
@@ -104,6 +91,7 @@ namespace studio::build::dic
 
             for(auto& entry: entries)
             {
+                entry.strip();
                 auto index = vocabulary.index(entry);
                 if (!index) continue;
                 int n = *index;
@@ -179,6 +167,7 @@ namespace studio::build::dic
 
                     for (str e: r->entries)
                     {
+                        e.strip();
                         if (e.ends_with("}")) {
                         str sense; e.split_by("{",
                             e, sense); e.strip(); }
@@ -228,6 +217,7 @@ namespace studio::build::dic
         
                         media_index << r->kind;
                         media_index << r->title;
+                        media_index << r->sense;
                         media_index << r->comment;
                         media_index << r->credit;
                         media_index << r->options;

@@ -2,6 +2,7 @@
 #include <stack>
 #include "media.h"
 #include "eng_parser.h"
+#include "eng_phenomena.h"
 namespace media::scan
 {
     str un_msdos (str s)
@@ -120,6 +121,23 @@ namespace media::scan
                 "parse links error: " +
                  entry.string()));
 
+            str comment;
+            title.split_by("%%",
+            title, comment);
+            title.strip();
+            comment.strip();
+
+            str sense;
+            if (title.ends_with("}")) {
+                title.split_by("{",
+                title, sense);
+                title.strip();
+                sense.truncate();
+                sense.strip(); }
+
+            resource.title = title;
+            resource.sense = sense;
+            resource.comment = comment;
             resource.entries += links.split_by("][");
             resource.options += optio.split_by("##");
             for (str& s: resource.entries) s.strip();
@@ -127,18 +145,19 @@ namespace media::scan
             resource.entries.erase_all("");
             resource.options.erase_all("");
 
+            // voice-bunny legacy
+            std::erase_if(resource.entries,
+            [](auto s){ return s == "="; });
+
             if (is_directory(entry))
             {
                 if (meta != "")
-                    resource.id +=
-                    " {{" + to_msdos(meta) + "}}";
-
+                resource.id += " {{" + to_msdos(meta) + "}}";
 
                 path credit = entry / "!credit.txt";
                 if (std::filesystem::exists(credit)) {
-                    resource.credit = str(dat::in::text(credit).value(), "<br>");
-                    identified[credit] = true;
-                }
+                resource.credit = str(dat::in::text(credit).value(), "<br>");
+                identified[credit] = true; }
 
                 resources += scan(entry, resource);
             }
@@ -148,9 +167,9 @@ namespace media::scan
                 resource.id = entry.stem().string() +
                 resource.id + entry.extension().string();
 
+                str ext = str(entry.extension().string()).ascii_lowercased();
+                if (ext == ".uid-zps") continue; // Zone Studio pix edits
                 if (false) *report::out << "scan " + entry.string();
-                str ext = entry.extension().string();
-                ext = ext.ascii_lowercased();
 
                 if (audio.contains(ext)) resource.kind = "audio"; else
                 if (video.contains(ext)) resource.kind = "video"; else
@@ -178,11 +197,8 @@ namespace media::scan
                             break;
 
                         if (not aux::unicode::ok(line))
-                            *report::err << red(
-                            dir.string() + "/" +
-                            resource.title +
-                            " !UTF-8: ["
-                            + line + "]");
+                        *report::err << red(txt.string() +
+                        " !UTF-8: [" + line + "]");
 
                         if (line.starts_with("**")) {
                             title_stop = true; str
@@ -204,20 +220,12 @@ namespace media::scan
                             resource.options += option;
                         }
                         else
-                        if (line.starts_with("[[")) {
-                            line.replace_all("] [",   "][");
-                            line.replace_all("]  [",  "][");
-                            line.replace_all("]   [", "][");
-                            line.strip("[]");
+                        if (line.starts_with("[[")) { line.strip("[]");
                             resource.keywords += line.split_by("]][[");
                             title_stop = true;
                         }
                         else
-                        if (line.starts_with("[")) {
-                            line.replace_all("] [",   "][");
-                            line.replace_all("]  [",  "][");
-                            line.replace_all("]   [", "][");
-                            line.strip("[]");
+                        if (line.starts_with("[")) { line.strip("[]");
                             resource.entries += line.split_by("][");
                             title_stop = true;
                         }
@@ -244,6 +252,7 @@ namespace media::scan
                             "parse links error: " +
                              entry.string()));
 
+                        resource.title = title;
                         resource.entries +=
                         links.split_by("][");
                     }
@@ -253,11 +262,6 @@ namespace media::scan
                         comment_lines, "<br>");
                 }
 
-                std::erase_if(resource.entries,
-                [](auto s){ return s == "="; });
-
-                if (title != "") resource.title = title;
-
                 report::id2path[resource.id] += entry; // check for same id
 
                 resources += resource;
@@ -266,21 +270,20 @@ namespace media::scan
                 if (not resource.options.contains("{links}"))
                 {
                     static const auto ee =
+                    eng::list::sensitive*
                     eng::lexical_items*
                     eng::lexical_notes*
                     eng::related_items*
-                    array<str>{"{1}","{2}","{1,2}",
-                    "{angry}","{annoyed}","{anxious}","{bewildered}","{concerned}",
-                    "{defiant}","{dejected}","{depressed}","{disbelieving}","{disappointed}",
-                    "{emphatic}","{enthusiastic}","{excited}","{happy}","{horrified}",
-                    "{impatient}","{incredulous}","{indignant}",
-                    "{realization}","{relieved}",
-                    "{sad}","{upset}"};
-                    str s = resource.title;
-                    if (s.ends_with("}")) for (auto& e: ee)
-                    if (s.ends_with(e)) { s.resize(s.size()-e.size()); break; }
-                    if (s.contains(one_of("{}")))
+                    str("1, 2, 3").split_by(", ");
+                    if (resource.sense != ""
+                    and not ee.contains(resource.sense))
                     *report::err << blue(
+                    dir.string() + "/" +
+                    resource.title +" {" +
+                    resource.sense + "}");
+
+                    if (resource.title.contains(one_of("{}")))
+                    *report::err << yellow(
                     dir.string() + "/" +
                     resource.title);
                 }

@@ -46,7 +46,8 @@ namespace content
                 static array<str> internals = str("DEL, pix-").split_by(", ");
                 static array<str> externals = str("1, 2, 3, 4, Ru, "
                 "rare, formal, informal, literary, old-fashioned, "
-                "POEM, -1sec, +1sec, +2sec, +3sec, +4sec, +5sec"
+                "-1sec, +1sec, +2sec, +3sec, +4sec, +5sec, "
+                "POEM, RANDOM-"
                 ).split_by(", ");
 
                 s.strip(" \t");

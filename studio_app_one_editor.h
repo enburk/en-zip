@@ -30,7 +30,7 @@ namespace studio::one
                 editor.virtual_space = true;
                 editor.view.wordwrap = false;
                 editor.scroll.x.mode = gui::scroll::mode::none;
-                editor.view.current_line_frame.color = schema.light.first;
+                editor.view.current_line_frame.color = schema.soft.first;
                 editor.padding = xyxy{gui::metrics::line::width*2,0,0,0};
                 editor.font = pix::font{"Consolas"};
             }

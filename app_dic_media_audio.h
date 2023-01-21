@@ -1,4 +1,5 @@
 #pragma once
+#include "eng_phenomena.h"
 #include "app_dic_html.h"
 #include "app_dic_media.h"
 namespace app::dic::audio
@@ -61,48 +62,38 @@ namespace app::dic::audio
             or  state == gui::media::state::finished)
                 return;
 
-            str title = load_index.title;
-            str credit = load_index.credit;
+            str title   = load_index.title;
+            str sense   = load_index.sense;
+            str credit  = load_index.credit;
             str comment = load_index.comment;
-            str sense;
 
             title.replace_all("---", mdash.data());
             title.replace_all("--" , ndash.data());
 
-            if (title.ends_with("}")) {
-                title.split_by("{",
-                title, sense);
-                title.strip();
-                sense.strip();
-                sense.truncate(); }
+            title = eng::parser::embolden(title, load_links);
 
-            if (array<str>{
-                "1","2","3","+",
-                "1,2","1,2,3"}.
-                contains(sense))
-                sense = "";
-            
-            title = eng::parser::embolden(
-            title, load_links);
-
-            title = media::canonical(title);
-            credit = media::canonical(credit);
+            title   = media::canonical(title);
+            credit  = media::canonical(credit);
             comment = media::canonical(comment);
 
             if (load_index.options.contains("sound"))
-                title = gray("[" + title + "]");
-
-            if (sense != "") 
-                title += "<br>""<small>" +
-                gray(sense) + "</small>";
+            title = dark("[" + title + "]");
 
             while (
-                title.ends_with("<br>"))
-                title.resize(
-                title.size()-4);
+            title.ends_with("<br>"))
+            title.resize(
+            title.size()-4);
 
-            if (comment != "") title += "<br><br>" +
-                gray(italic(comment));
+            if (comment == "" and sense != "")
+            if (eng::lexical_items  .contains(sense)
+            or  eng::lexical_notes  .contains(sense)
+            or  eng::related_items  .contains(sense)
+            or  eng::list::sensitive.contains(sense))
+                comment = sense;
+
+            if (comment != "")
+            title += "<br>" +
+            gray(small(comment));
 
             str date;
             for (str option : index.options)
@@ -112,16 +103,11 @@ namespace app::dic::audio
 
             if (credit != "") {
                 credit.replace_all(", read by", "<br>read by");
-                credit.replace_all(", narrated by", "<br>narrated by");
-                credit = "<div style=\"line-height: 20%\"><br></div>" +
-                credit; }
+                credit.replace_all(", narrated by", "<br>narrated by"); }
 
-            if (credit != "") title +="<br>"
-            //  "<div style=\"margin-left: 1em\">"
-                "<font size=\"90%\">" + light(credit) +
-                "</font>"
-            //  "</div>"
-                ;
+            if (credit != "")
+            title += "<br><div style=\"line-height: 20%\"><br></div>" +
+            light(small(credit));
 
             if (false) std::ofstream("test.quot.html") << title;
             if (false) std::ofstream("test.quot.html.txt")
@@ -131,7 +117,7 @@ namespace app::dic::audio
 
             if (cancel) return;
 
-            std::filesystem::path dir = "../data/app_dict";
+            std::filesystem::path dir = "../data/media";
             std::string storage = "storage." +
                 std::to_string(load_index.location.source)
                     + ".dat";

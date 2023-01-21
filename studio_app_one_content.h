@@ -14,8 +14,9 @@ namespace studio::one
             array<int> indices;
             gui::widgetarium<gui::button> list;
             void on_change (void* w) override {
+                if (w == &list) {
                 selected = list.notifier_index;
-                notify(); }
+                notify(); } }
         };
 
         flist flist;
@@ -53,6 +54,7 @@ namespace studio::one
 
         void refresh ()
         {
+            int t = scroller.top;
             int W = coord.now.w; if (W <= 0) return;
             int H = coord.now.h; if (H <= 0) return;
             int h = gui::metrics::text::height*12/10;
@@ -73,6 +75,9 @@ namespace studio::one
 
             scroller.span = hh;
             scroller.step = h;
+            scroller.top  = t; xywh r =
+            flist.list.coord; r.y = -scroller.top;
+            flist.list.coord = r;
         }
 
         void replane ()
@@ -113,7 +118,6 @@ namespace studio::one
                         record.level;
             }
             flist.list.truncate(n);
-            refresh();
         }
 
         void fill(path dir, int level = 1)
@@ -191,6 +195,7 @@ namespace studio::one
                 if (not found) selected = path{};
                 
                 replane();
+                refresh();
             }
 
             if (what == &flist)
@@ -205,7 +210,9 @@ namespace studio::one
                             records[i].path; else {
                             records[i].open = not
                             records[i].open;
-                            replane(); }
+                            replane();
+                            refresh();
+                        }
                     }
                 }
             }
@@ -215,6 +222,25 @@ namespace studio::one
                 replane();
                 notify();
             }
+
+            if (what == &scroller) { xywh r =
+                flist.list.coord; r.y = -scroller.top;
+                flist.list.coord = r;
+            }
+        }
+
+        bool on_mouse_wheel (xy p, int delta) override
+        {
+            int h = scroller.step; if (h <= 0) h = gui::metrics::text::height;
+            delta = delta/20 * h; if (delta == 0) delta = delta < 0 ? -h : h;
+            if (sys::keyboard::shift) delta *= coord.now.h;
+            if (sys::keyboard::ctrl) delta *= 5;
+            int d = flist.coord.now.h - flist.list.coord.now.h; // may be negative
+            int y = flist.list.coord.now.y + delta;
+            if (y < d) y = d;
+            if (y > 0) y = 0;
+            scroller.top =-y;
+            return true;
         }
     };
 }

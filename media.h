@@ -12,7 +12,7 @@ namespace media
     {
         path path;
         str id, kind;
-        str title, comment, credit;
+        str title, sense, comment, credit;
         array<str> options;
         array<str> entries;
         array<str> keywords;

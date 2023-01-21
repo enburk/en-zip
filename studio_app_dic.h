@@ -76,7 +76,7 @@ namespace studio::dic
         {
             timing t0;
             locations.clear();
-            dat::in::pool pool("../data/app_dict/locationary.dat");
+            dat::in::pool pool("../data/media/locationary.dat");
             while (not pool.done()) {
                 int source = pool.get_int();
                 int offset = pool.get_int();

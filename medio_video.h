@@ -15,14 +15,16 @@ namespace media::video
         double fsizex = size.x * k;  int isizex = int (fsizex + 0.5);
         double fsizey = size.y * k;  int isizey = int (fsizey + 0.5);
 
-        if (isizex > maxsizex || isizey > maxsizey)
+        if (isizex > maxsizex or isizey > maxsizey // downscale
+        or  isizex*isizey < maxsizex*maxsizey*90/100) // upscale
         {
             if (kx > ky) { size = maxsizex * size / size.x; k = 1/kx; }
             else         { size = maxsizey * size / size.y; k = 1/ky; }
         }
         else size = xy (isizex, isizey);
 
-        if (k < 1.0) pix::resize  (img, size); if (sharp) {
+        if (k > 1.1) pix::resize  (img, size);
+        if (k < 0.9) pix::resize  (img, size); if (sharp) {
         if (k < 0.1) pix::sharpen (img, 1.75); else
         if (k < 0.5) pix::sharpen (img, 1.50); else
         if (k < 1.0) pix::sharpen (img, 1.25);

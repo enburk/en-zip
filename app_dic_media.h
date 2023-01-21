@@ -5,7 +5,8 @@ namespace app::dic::media
     struct entry_index { int32_t entry, media; };
     struct media_index
     {
-        str kind, title, comment, credit;
+        str kind, title;
+        str sense, comment, credit;
         ::media::location location;
         array<str> options;
 
@@ -18,7 +19,7 @@ namespace app::dic::media
     void reload ()
     {
         dat::in::pool pool;
-        std::filesystem::path dir = "../data/app_dict";
+        std::filesystem::path dir = "../data/media";
         if (!std::filesystem::exists (dir / "entry_index.dat")) return;
         pool.bytes = dat::in::bytes(dir / "entry_index.dat").value();
         media_indices.resize(pool.get_int());
@@ -32,6 +33,7 @@ namespace app::dic::media
         for (auto & index : media_indices) {
             index.kind    = pool.get_string();
             index.title   = pool.get_string();
+            index.sense   = pool.get_string();
             index.comment = pool.get_string();
             index.credit  = pool.get_string();
             index.options.resize(pool.get_int());
@@ -143,8 +145,8 @@ namespace app::dic::media
             }
         };
 
-        uniquify(audios);
-        uniquify(videos);
+    //  uniquify(audios);
+    //  uniquify(videos);
         vudios.resize(videos.size());
 
         for (int i=0; i<videos.size(); i++)

@@ -3967,6 +3967,8 @@ What's wrong~!.ogg
 Yes, I do..ogg
 You are very welcome..ogg
 You're so clever..ogg
+Go on.wav
+I'm on my way..wav
 >>> ../datae\audio/zoo
 >>> ../datae\audio\zoo/{{Cornell Lab of Ornithology}} ## {links}
 !credit.txt
@@ -13465,7 +13467,7 @@ hamal.ogg
 hamartia.ogg
 hamate.ogg
 Hamburg.ogg
-hamburger.ogg
+Hamburger.ogg
 hame.ogg
 hames.ogg
 hamlet.ogg
@@ -33167,7 +33169,6 @@ changelessness.wav
 charge.wav
 cinder.wav
 conspiratorial.wav
-Crowley.wav
 currently.wav
 death.wav
 exasperated.wav
@@ -33177,7 +33178,6 @@ expectantly.wav
 finally.wav
 game.wav
 god.wav
-Hastur.wav
 imperceptibly.wav
 in short.wav
 incalculable.wav
@@ -33186,10 +33186,7 @@ inside.wav
 nouvelle.wav
 now.wav
 odegra.wav
-Oliver Cromwell.wav
 oozing.wav
-Phenomenice.wav
-Pleistocene.wav
 poker.wav
 pollution.wav
 rubbish {+}.wav
@@ -33198,8 +33195,7 @@ strategically.wav
 superb.wav
 suspension.wav
 swear.wav
-the CIA.wav
-The Galaxatrons.wav
+The Galaxatrons ## sic!.wav
 the man.wav
 the master.wav
 the metatron.wav
@@ -33248,6 +33244,13 @@ top fashion model.wav
 underneath it all.wav
 very, very pleased.wav
 wailing in pain.wav
+>>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/2 ## Case
+Crowley.wav
+Hastur ## sic!.wav
+Oliver Cromwell.wav
+Phenomenice ## sic!.wav
+Pleistocene.wav
+the CIA.wav
 >>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/3
 387 coprocessor.wav
 a stage magician.wav
@@ -33255,7 +33258,9 @@ all over the world.wav
 all the way through.wav
 more or less.wav
 nothing much.wav
+Ommm [om].wav
 out of bounds.wav
+Pavlovian reaction.wav
 state of the art.wav
 supernatural beings.wav
 the Apocalyptic Horsemen.wav
@@ -33301,12 +33306,10 @@ No one knows why..wav
 No one quite seemed to know why..wav
 Oh, I’m terribly sorry..wav
 Okay. Two out of three isn’t bad..wav
-Ommm [om].wav
 On the plus side, however....wav
 P'raps, we ought to do it ourselves..wav
 Pah!.wav
-Pavlovian reaction.wav
-Please advise.wav
+Please advise..wav
 Right, then..wav
 Russian spy.wav
 See~!.wav
@@ -33690,13 +33693,13 @@ Twinkle, Twinkle, Little Star ### [Adult-Fem-C_Twinkle-Twinkle-Little-Star_VKT_0
 >>> ../datae\audiohero {{$audiohero.com}}\## sound/!effects
 cymbal.. squib ### MusicCymbal SME02_62.3.wav
 filtered pink noise.. low frequency ## crop 0-10 ## fade out ### NoisePink BMT02_20.wav
-flange  {sound effect} ### AcstcGuitarMinor SDT2057203.wav
-flange  {sound effect} ### LaserPulseFlange SE036801.wav
-flange  {sound effect} ### Sound-Design-Lightning-Thunder-Elec_B08-03148.wav
+flange %% sound effect ### AcstcGuitarMinor SDT2057203.wav
+flange %% sound effect ### LaserPulseFlange SE036801.wav
+flange %% sound effect ### Sound-Design-Lightning-Thunder-Elec_B08-03148.wav
 modulated pink noise wind ## crop 0-11 ## fade out ### Wind-Fantasy-Pink-Noise_FANT356.wav
 noise ### ToneSynthWhiteNoiseWhooshA.wav
-overdrive {sound effect} ### Fx MIX22_53_1.wav
-overdrive {sound effect} ### Licks MIX21_63_1.wav
+overdrive %% sound effect ### Fx MIX22_53_1.wav
+overdrive %% sound effect ### Licks MIX21_63_1.wav
 phaser ### Sci-Fi-Phaser-Blast_GEN-HD2-31609.wav
 pink noise ## crop 0-6 ## fade out ### PinkNoiseLoop PE1080803.wav
 pink noise sweep, reverb ### PinkNoiseSweepRev PE1080806.wav
@@ -36149,7 +36152,7 @@ Honey, it's your father. [father] ### [Adult-Male-B_Honey-Its-Your-Father_VKT_03
 Honey, it's your mother. [mother] ### [Adult-Fem-C_Honey-Its-Your-Mother_VKT_00934].mp3
 How are ya~! ### Teen-Male-A_How-Are-Ya_VKT_15287.wav
 How are you~! ### [Teen-Fem-D_How-Are-You_VKT_14903].wav
-How are you~! {2} {### [Adult-Male-F_How-Are-You_VKT_05972].mp3
+How are you~! {2} ### [Adult-Male-F_How-Are-You_VKT_05972].mp3
 How can I help~! ### [Adult-Male-D_How-Can-I-Help_VKT_04747].mp3
 How could I be mad at you~! ### Adult-Fem-B_How-Could-I-Be-Mad-At-You_VKT_00498.mp3
 How could I be mad at you~! ### Adult-Fem-D_How-Could-I-Be-Mad-At-You_VKT_01546.mp3
@@ -36761,8 +36764,8 @@ one million ### [Adult-Male-B_One-Million_VKT_03855].mp3
 one thousand ### [Adult-Male-B_One-Thousand_VKT_03857].mp3
 oof ### Man1BigOof CRT028507.wav
 oofs ### MenWreactionaryGr CRT028603.wav
-Oohh! ### Child-Male-A_Oohh_VKT_08636.wav
 Oohh! [ooh] ### Adult-Male-A_Oohh_VKT_03346.mp3
+Oohh! [ooh] ### Child-Male-A_Oohh_VKT_08636.wav
 Oohh! {realization} [ooh][realization] ### Crowd-Medium-Realization-Oohh_CROWD257.wav
 Oohh! {realization} [ooh][realization] ### Crowd-Medium-Realization-Oohh_CROWD258.wav
 oohhh [ooh] ### CrowdReaction 1009_49_4.wav
@@ -37493,7 +37496,7 @@ wow! {1} ### [Adult-Male-D_Wow_VKT_05197].mp3
 wow! {2} ### [Adult-Fem-D_Wow_VKT_02012].mp3
 >>> ../datae\audiohero {{$audiohero.com}}/xyz
 Ya piece of shit. ### [Adult-Male-E_Ya-Piece-Of-Shit_VKT_05817].mp3
-yaay! ### [Child-Fem-A_Yaay_VKT_06658].wav
+yaay! [yay] ### [Child-Fem-A_Yaay_VKT_06658].wav
 yadda yadda ### [Adult-Fem-D_Yadda-Yadda_VKT_02015].mp3
 yadda, yadda, yadda! ### [Adult-Fem-F_Yadda-Yadda-Yadda_VKT_02720].mp3
 yay! {happy} ### [Adult-Fem-A_Yay_VKT_00359].mp3
@@ -37668,6 +37671,8 @@ After the Misdeed.txt
 >>> ../datae\fineart a-z {{$$}}/Cassat {{Mary Cassat}}
 Nurse Reading to a Little Girl.jpg
 Nurse Reading to a Little Girl.txt
+>>> ../datae\fineart a-z {{$$}}/Corinth {{Lovis Corinth}}
+On the Balcony in Bordighera [balcony][Bordighera] ## qrop l10 r5 ## date 1912.jpg
 >>> ../datae\fineart a-z {{$$}}/Delaroche {{Paul Delaroche}}
 Napoleon at Fontainebleau.jpg
 Napoleon at Fontainebleau.txt
@@ -37685,6 +37690,8 @@ Secret.txt
 >>> ../datae\fineart a-z {{$$}}/Munch {{Edvard Munch}}
 Self-Portrait.jpg
 Self-Portrait.txt
+>>> ../datae\fineart a-z {{$$}}/Petrov-Vodkin {{Kuzma Petrov-Vodkin}}
+At the Samovar [samovar] ## 12+ ## qrop b10 ## date 1926.jpg
 >>> ../datae\fineart a-z {{$$}}/Repin {{Ilya Repin}}
 Portrait of the Composer Alexander Glazunov.jpg
 Portrait of the Composer Alexander Glazunov.txt
@@ -37700,36 +37707,21 @@ Portrait of A. Kasyanov.txt
 >>> ../datae\fineart a-z {{$$}}/van Gogh {{Vincent van Gogh}}
 Portrait of Dr. Gachet.jpg
 Portrait of Dr. Gachet.txt
+Self-portrait with Bandaged Ear and Pipe [ushanka][ushanka hat][Van Gogh] ## 14+ ## qrop t7 b5 ## date 1889.jpg
+Siesta [siesta][nap] ## qrop l15 r2 ## date 1889-1890.jpg
+>>> ../datae\fineart a-z {{$$}}/Vernet {{Horace Vernet}}
+Italian Brigands Surprised by Papal Troops (detail) [bandit][brigand] ## date 1831.jpg
 >>> ../datae/imagery
->>> ../datae/photo a-n
->>> ../datae\photo a-n/Abadzic {{Photo.. Stanko Abadžić $$$}}
-A day when everything goes wrong.jpg
-A day when everything goes wrong.txt
-All my apples.jpg
-All my apples.txt
-Chimney Sweeps, _Prague [chimney sweeps] ## date 1998 ## crop l9.jpg
-Hand, _Paris [hand] ## date 2010 ## crop l5 r20.jpg
-Man Repairing Bicycle Tire [bicyclist] ## date 2000 ## crop r15.jpg
-Twins, Baska.jpg
-Twins, Baska.txt
->>> ../datae\photo a-n/Nguyen Tan Tuan {{Photo.. Nguyen Tan Tuan $$$}}
-Drying incense sticks, Vietnam [incense sticks][Vietnam].jpg
-Melaleuca Forest In Winter [Melaleuca][melaleuca][Vietnam].jpg
->>> ../datae\photo a-n/Trung Pham Huy {{Photo.. Trung Pham Huy $$$}}
-Passing the sand dunes, Nam Cuong hills, Vietnam.jpg
-Passing the sand dunes, Nam Cuong hills, Vietnam.txt
-The Fishing Net [fishing net][fishing].jpg
-Water-chestnuts harvesting season [water chestnuts] ## crop l10 r10.jpg
-Water-chestnuts harvesting season [water chestnuts][].jpg
->>> ../datae/photo o-z
->>> ../datae/photo {{$$$}}
->>> ../datae\photo {{$$$}}/artifacts
+>>> ../datae/photo
+>>> ../datae\photo/artifacts
+Agateware teapot, Staffordshire, 1745-1750 [agateware] ## crop l7 r7 {{Photo.. Daderot $wiki}}.jpg
 Epichysis, Gnathia style [Gnathia][epichysis][Apulian] ## date c. 4th century BC {{Joseph Gordon Antiques}}.jpg
 Greek askos [askos][vessel][miniature] ## date 4th century BC {{Joseph Gordon Antiques}}.jpg
 Greek Blackware Guttos [blackware][guttos] ## date 5th-3rd century BC {{Joseph Gordon Antiques}}.jpg
 Roman medical knife [medical knife][scalpel][rusty] ## date 1st-3rd century AD {{Joseph Gordon Antiques}}.jpg
->>> ../datae\photo {{$$$}}/birds
->>> ../datae\photo {{$$$}}\birds/[+]
+>>> ../datae\photo/birds
+Snowy Plover [snowy plover][plover] {{Photo.. Joey Collura}}.jpg
+>>> ../datae\photo\birds/[+]
 Allen's Hummingbird.jpg
 Black-and-red broadbill.jpg
 Boreal owl.jpg
@@ -37746,18 +37738,63 @@ Pink Robin.jpg
 Red Headed Tit.jpg
 Resplendent Quetzal.jpg
 Secretarybird.jpg
-Snowy Plover {{Photo.. Joey Collura}}.jpg
 Steller's Jay {{Photo.. Warren Griffin}}.jpg
 Tawny-flanked Prinia.jpg
 Turquoise-browed motmot.jpg
 Eid-ul-Fitr congregation {{Photo.. Azim Khan Ronnie}}.jpg
 Eid-ul-Fitr congregation {{Photo.. Azim Khan Ronnie}}.txt
-sledge ## qrop q {{Photo..Alessandra Meniconzi}} Frozen Land.jpg
->>> ../datae/photo {{$$}}
-Agateware teapot, Staffordshire, 1745-1750 [agateware] ## crop l7 r7 {{Photo.. Daderot $wiki}}.jpg
+matador [torero] ## crop r20 ## qrop l5 r25.jpg
+sledge ## qrop q {{Photo.. Alessandra Meniconzi}} Frozen Land.jpg
+>>> ../datae\photo/{{$$}}
 Buster Brown suit.jpg
+>>> ../datae\photo\{{$$}}/{{USDE}}
+gas stove burner [gas][gas stove][burner].jpg
+>>> ../datae/photo a-n
+>>> ../datae\photo a-n/Abadzic {{Photo.. Stanko Abadžić}}
+A day when everything goes wrong.jpg
+A day when everything goes wrong.txt
+All my apples.jpg
+All my apples.txt
+Chimney Sweeps, _Prague [chimney sweeps] ## date 1998 ## crop l9.jpg
+Hand, _Paris [hand] ## date 2010 ## crop l5 r20.jpg
+Man Repairing Bicycle Tire [bicyclist] ## date 2000 ## crop r15.jpg
+Twins, Baska.jpg
+Twins, Baska.txt
+>>> ../datae\photo a-n/Haas [Haas] {{Photo.. Ernst Haas}}
+A cloudy sky over the _Nevada desert [cloudy] ## date 1960.jpg
+audience aghast [aghast].jpg
+Bird in Flight [flight] ## date 1959.jpg
+Blue Light, _Amazon [blue] ## date 1965.jpg
+Impala Grazing, _Kenya [impalas] ## date 1970.jpg
+matador, tercio de capa [tercio][bullfight][bullfighting] ## date 1956.jpg
+picador, tercio de varas [tercio][bullfight][bullfighting][bullfighter][picador] ## date 1956.jpg
+picador, tercio de varas [tercio][bullfight][bullfighting][bullfighter][picador][torero] ## date 1956.jpg
+Pinwheels [pinwheels] ## date 1960s.jpg
+Regatta, _California, [regatta] ## crop l10 ## qrop qr ## date 1957.jpg.uid-zps
+Regatta, _California, [regatta] ## crop l5 ## qrop qr ## date 1957.jpg
+Snow Lovers [snowy] ## 14+ ## date 1964.jpg
+The Cross, _NY [cross] ## date 1966.jpg
+Where did I put it~! [where] ## date 1951.jpg
+_Egyptian boys [napping] ## date 1954.jpg
+_George _Balanchine, New York City Ballet.jpg
+_George _Balanchine, New York City Ballet.txt
+_Igor _Stravinsky [Stravinsky][Stravinskyan][Stravinskian][bespectacled] ## date New York, 1962.jpg
+_Indian Summer in Stubaital, _Austria [Indian summer] ## qrop q.jpg
+_Tobago Wave, _Caribbean [Caribbean] ## date 1968.jpg
+>>> ../datae\photo a-n/Huy {{Photo.. Trung Pham Huy}}
+Passing the sand dunes, Nam Cuong hills, Vietnam.jpg
+Passing the sand dunes, Nam Cuong hills, Vietnam.txt
+The Fishing Net [fishing net][fishing].jpg
+Water-chestnuts harvesting season [water chestnuts] ## crop l10 r10.jpg
+Water-chestnuts harvesting season [water chestnuts][].jpg
+>>> ../datae/photo o-z
+>>> ../datae\photo o-z/Tuan {{Photo.. Nguyen Tan Tuan}}
+Drying incense sticks, Vietnam [incense sticks][Vietnam].jpg
+Melaleuca Forest In Winter [Melaleuca][melaleuca][Vietnam].jpg
 >>> ../datae/photo_dreamstime
 >>> ../datae\photo_dreamstime/artifacts
+matryoshka doll [matryoshka][matrioshka] ## qrop t25 b7 {{Photo.. Chert61 $dreamstime 14724769}}.jpg
+matryoshka doll [nesting doll][nesting] {{Photo.. Scarf_andrei $dreamstime 146079}}.jpg
 Nobel Prize medal {{Photo.. Johan Mollerberg $dreamstime 24157182}}.jpg
 Nobel Prize medal {{Photo.. Johan Mollerberg $dreamstime 24157182}}.txt
 >>> ../datae\photo_dreamstime\artifacts/signs
@@ -37780,19 +37817,96 @@ No step! [no][step] ## qrop q {{Photo.. aiirablack $dreamstime 103445686}}.jpg
 Radioactive! [radioactive] ## crop l10 r16 ## qrop l12 r18 {{Photo.. Stickasa $dreamstime 58346476}}.jpg
 Toxic! [toxic] ## crop l10 r10 ## qrop q {{Photo.. Chatchai Somwat $dreamstime 31277139}}.jpg
 X-rays on! ## qrop l16 r15 {{Photo.. Nathan Till $dreamstime 4587223}}.jpg
+souvenirs [souvenir] ## crop q {{Photo.. Carlo Trolese $dreamstime 45821251}}.jpg
+>>> ../datae\photo_dreamstime/business
+>>> ../datae\photo_dreamstime\business/money
+20 kopecks [kopeck][kopecks] ## qrop ql {{Photo.. Anton Ishchenko $dreamstime 60821774}}.jpg
+rubles [ruble] ## qrop q {{Photo.. Wrangel $dreamstime 69927247}}.jpg
+rubles [ruble] ## qrop q {{Photo.. Wrangel $dreamstime 70339542}}.jpg
+>>> ../datae\photo_dreamstime/city
+balcony ## qrop l18 r18 {{Photo.. Aleksey Gorbatenkov $dreamstime 15122486}}.jpg
+cosmonaut ## qrop t14 b22 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
 >>> ../datae\photo_dreamstime/fashion
-a suit sleeve with a white cuff [sleeve] ## crop l15 ## qrop qr {{Photo.. Vclements $dreamstime 4740347}}.jpg
+a suit sleeve with a white cuff [sleeve][cuff] ## crop l15 ## qrop qr {{Photo.. Vclements $dreamstime 4740347}}.jpg
 accessories [style] {{Photo.. Porechenskaya $dreamstime 48620933]}.jpg
+>>> ../datae\photo_dreamstime\fashion/cosmetics
+cream {cosmetics} ## crop t20 ## qrop t30 b5 {{Photo.. Kuleczka $dreamstime 7316536}}.jpg
 jacket ## qrop q {{Photo.. Uwe Mayer $dreamstime 32771919}}.jpg
+mannequin ## 14+ ## qrop l5 r20 {{Photo.. Wong Chee Yen $dreamstime 1549097}}.jpg
+mannequins [mannequin] ## 12+ ## qrop l2 r25 {{Photo.. Lisavan $dreamstime 1174001}}.jpg
 polo shirt ## qrop qr {{Photo.. Beat Bieler $dreamstime 9258609}}.jpg
+sombrero ## qrop l7 r20 {{Photo.. Michael Flippo $dreamstime 40104504}}.jpg
+sombreros [sombrero] ## qrop qr {{Photo.. Patryk Kosmider $dreamstime 31978281}}.jpg
+flamenco ## qrop t5 r8 {{Photo.. Jackq $dreamstime 17313287}}.jpg
+>>> ../datae\photo_dreamstime/food
+blini ## qrop q {{Photo.. Dleonis $dreamstime 5089864}}.jpg
+borsch~borscht {{Photo.. Enika $dreamstime 22635804}}.jpg
+carpaccio ## qrop l22 r23 t9 b9 {{Photo.. Maksim Toome $dreamstime 21919152}}.jpg
+>>> ../datae\photo_dreamstime\food/cheese
+mascarpone ## qrop l26 r8 {{Photo.. Hlphoto $dreamstime 19537354}}.jpg
+mozzarella ## qrop l9 r24 {{Photo.. Boris Ryzhkov $dreamstime 40954513}}.jpg
+parmesan [Parmesan] ## qrop l33 r3 {{Photo.. Rostislav Glinsky $dreamstime 35930224}}.jpg
+>>> ../datae\photo_dreamstime\food/dessert
+an apple strudel with ice cream [apple strudel][strudel] ## crop l8 r8 ## qrop l10 r30 {{Photo.. Ruslan Olinchuk $dreamstime 47401590}}.jpg
+crème brûlée [+][creme brulee][cream {cooking}] ## qrop l5 r26 {{Photo.. Carlos Soler Martinez $dreamstime 23983969}} Catalan cream.jpg
+Dutch 'stroopwafels' %% literally ''syrup waffles'' [stroopwafels][waffles] ## qrop l13 r20 {{Photo.. Dimap $dreamstime 35085210}}.jpg
+tiramisu ## crop t7 b7 ## qrop t23 b15 {{Photo.. Margouillat $dreamstime 17385891}}.jpg
+>>> ../datae\photo_dreamstime\food/drinks
+brandy ## qrop l5 r28 {{Photo.. Donfiore $dreamstime 48410604}}.jpg
+vodka ## qrop ql {{Photo.. Vadim Orlov $dreamstime 74359422}}.jpg
+four cheese pizza [pizza] {{Photo.. Nikolay Mikhalchenko $dreamstime 18965153}}.jpg
+gazpacho ## qrop qr {{Photo.. Alexander Mychko $dreamstime 33229720}}.jpg
+hamburger ## qrop l10 r10 t10 b10 {{Photo.. Fiermanmuch $dreamstime 64724383}}.jpg
+lasagne~lasagna ## qrop qr {{Photo.. Zkruger $dreamstime 74782834}}.jpg
+macaroni ## qrop q {{Photo.. Chris Hill $dreamstime 1740787}}.jpg
+muesli ## qrop l14 r21 t10 {{Photo.. Belka10 $dreamstime 46201593}}.jpg
+pelmeni ## qrop q {{Photo.. Alexander Mychko $dreamstime 53909359}}.jpg
+ravioli ## qrop q {{Photo.. Alex Centrella $dreamstime 13751163}}.jpg
+risotto ## qrop l18 r13 {{Photo.. Ivan Mateev $dreamstime 49348733}}.jpg
+salami ## qrop l22 r10 {{Photo.. Nolan777 $dreamstime 57853870}}.jpg
+spaghetti ## qrop l12 r17 {{Photo.. Paul George Bodea $dreamstime 606078}}.jpg
+vanilla ## qrop l23 r9 {{Photo.. Artesiawells $dreamstime 33465987}}.jpg
+vermicelli ## qrop ql {{Photo.. Yuriy Prokopyev $dreamstime 49604309}}.jpg
+Wiener schnitzel [schnitzel] {{Photo.. Legaa $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime/industry
+drydock [dock][dock {drydock}] ## crop b15 ## qrop t7 b23 {{Photo.. Slawomir Pryc $dreamstime 13062091}}.jpg
 >>> ../datae\photo_dreamstime/industry materials
 acetylene dissolved in acetone [acetylene][ethyne][dissolved] ## crop l2 r12 {{Photo.. Paulbroad $dreamstime 13402625}}.jpg
 silica gel [silica][silica gel][desiccant] ## qrop l40 b20 {{Photo.. Atman $dreamstime 36175197}}.jpg
+>>> ../datae\photo_dreamstime/industry tools
+drill {tool} ## crop l10 ## qrop l19 r10 {{Photo.. Phil030 $dreamstime 4492399}}.jpg
+manoeuvre~maneuver ## qrop q {{Photo.. Onefivenine $dreamstime 2866182}}.jpg
+massage {{Photo.. Anna Jurkovska $dreamstime}}.jpg
+>>> ../datae\photo_dreamstime/music
+concert ## qrop q {{Photo.. Maxim Tarasyugin $dreamstime 93365606}}.jpg
+>>> ../datae\photo_dreamstime\music/instruments - string
+guitar ## qrop t1 l1 b33 {{Photo.. Vladimirs Koskins $dreamstime 1998564}}.jpg
+>>> ../datae\photo_dreamstime/nature
+cascade ## crop qr {{Photo.. Kenneth Summers $dreamstime 1312487}}.jpg
+>>> ../datae\photo_dreamstime\nature/fauna - birds
+flamingo ## qrop t5 b23 {{Photo.. Bo Widerberg $dreamstime 1058737}}.jpg
+flamingo [plumage][feathering] ## qrop qr {{Photo.. Pindiyath100 $dreamstime 5876470}}.jpg
+>>> ../datae\photo_dreamstime\nature/fauna - fish
+>>> ../datae\photo_dreamstime\nature/fauna - mammals
+beluga whale [+][Delphinapterus][Delphinapterus leucas][Monodontidae] ## qrop l20 r10 {{Photo.. Jeremy Bruskotter $dreamstime 1178919}}.jpg
+>>> ../datae\photo_dreamstime\nature/fauna - pets - dogs
+poodle ## qrop  t7 b5 {{Photo.. Stanislav Tolubaev $dreamstime 13224955}}.jpg
+poodle ## qrop l10 r25 {{Photo.. Mikhailo Kazaryk $dreamstime 67103067}}.jpg
+poodle ## qrop l8 r20 {{Photo.. Nemow006 $dreamstime 12993175}}.jpg
+Rottweiler [rottweiler] ## qrop ql {{Photo.. Willeecole $dreamstime 28258946}}.jpg
+spitz {{Photo.. Djem82 $dreamstime}}.jpg
+>>> ../datae\photo_dreamstime\nature/flora - flowers
+edelweiss ## qrop l15 r15 {{Photo.. Aravind Natarajan $dreamstime 49643113}}.jpg
+sunflowers [+][bouquet] ## crop t5 b5 ## qrop t10 b25 {{Photo.. Alb3 $dreamstime 19012780}}.jpg
+plateau ## crop l10 ## qrop qr {{Photo.. Serban Enache $dreamstime 90767}} Hintertux Glacier in Zillertal, Austria.jpg
+steppe {{Photo.. Lilkar $dreamstime 45452610}}.jpg
+taiga ## qrop qr {{Photo.. Vladimir Il'yin $dreamstime 16819048}}.jpg
+tundra {{Photo.. Vladimir Melnikov $dreamstime 51820854}}.jpg
 >>> ../datae\photo_dreamstime/people
 baby boy {{Photo.. Katrina Trninich $dreamstime 45580033}} Newborn Baby Boy with Blue Cap.jpg
 baby boy {{Photo.. Katrina Trninich $dreamstime 45580033}} Newborn Baby Boy with Blue Cap.txt
 baby girl ## crop l10 r10 {{Photo.. Vitalinko $dreamstime 51176103}} Black newborn baby sleeping.jpg
+blond~blonde {{Photo.. Subbotina $dreamstime}}.jpg
 childish ## crop t8 ## qrop t16 b12 {{Photo.. Todd Taulman $dreamstime 785994}} Oh my gosh!.jpg
 dialogue {{Photo.. Mengtianhan $dreamstime 49724091}} tango dancers.jpg
 dialogue {{Photo.. Mengtianhan $dreamstime 49724091}} tango dancers.txt
@@ -37806,7 +37920,22 @@ shh! {gesture} [shh] ## qrop l7 r13 {{Photo.. Frantab01 $dreamstime 10929871}}.j
 humanoid ## crop l21 r12 {{Photo.. Luckynick $dreamstime 1319559}} Toy robot magnifier.jpg
 steampunk {{Photo.. Andrey Kiselev $dreamstime 32893203}}.jpg
 steampunk {{Photo.. Andrey Kiselev $dreamstime 32893203}}.txt
+pipette ## crop r30 {{Photo.. Melpomenem $dreamstime 25709591}}.jpg
+Santa Claus ## qrop l11 r18 {{Photo.. Igor Mojzes $dreamstime 35842521}}.jpg
 >>> ../datae\photo_dreamstime/science
 >>> ../datae\photo_dreamstime\science/chemistry
+rulers [+][centimetre][centimeter] ## crop t5 r30 {{Photo.. Diane Miller $dreamstime 14700}}.jpg
+scale ## crop l30 ## qrop qr {{Photo.. Derektenhue $dreamstime 23169251}}.jpg
+unstable equilibrium [+] ## crop r30 ## qrop ql {{Photo.. Ilyssa Tonnessen $dreamstime}}.jpg
+>>> ../datae\photo_dreamstime/sports & games
+>>> ../datae\photo_dreamstime\sports & games/corrida
+matador and bull [corrida] ## qrop l20 r5 {{Photo.. Nathan Dappen $dreamstime 501008}}.jpg
+muleta and sword [muleta][corrida] ## qrop l18 r8 {{Photo.. Derwuth $dreamstime 19123617}}.jpg
+rodeo ## qrop l21 r10 {{Photo.. Lorpic99 $dreamstime 1375406}}.jpg
+>>> ../datae\photo_dreamstime/transport
+cruise ship [cruise] ## qrop ql {{Photo.. Aliaksandr Nikitsin $dreamstime 6150324}}.jpg
+>>> ../datae\photo_dreamstime/world
+Europe {{Image.. Antartis $dreamstime 62934709}}.jpg
+Holland ## qrop t14 b13 {{Photo.. Rob Bouwman $dreamstime 14099901}}.jpg
 >>> ../datae/video
 murmuration (starlings) [+].mp4

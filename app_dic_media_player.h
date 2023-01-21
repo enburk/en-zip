@@ -14,7 +14,7 @@ namespace app::dic::media
         {
             thread.stop = true;
 
-            std::filesystem::path dir = "../data/app_dict";
+            std::filesystem::path dir = "../data/media";
             std::string storage = "storage." + std::to_string(
                 video_index.location.source) + ".dat";
 

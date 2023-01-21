@@ -1,4 +1,5 @@
-Spanish    = испанский          #  8+
+Spain   = Испания          #  8+ # pix-
+Spanish    = испанский          #  8+  # pix-
 
 flamingo   = фламинго
 flamenco   = фламенко           # 14+
@@ -9,11 +10,11 @@ gazpacho   = гаспачо            # 14+ # RARE-
 
 corrida    = коррида            # 12+
 torero     = тореро             # 14+
-muleta     = мулета %% кусок красной ткани # 18+ # RARE- # TERM- # WAR-
+muleta     = мулета %% кусок красной ткани # 18+ # RARE-
 rodeo      = родео              # 12+
-siesta     = сиеста             # 16+
 
 macho      = мачо               # 14+
+siesta     = сиеста             # 16+
 fiesta     = фиеста             # 14+
-camarilla  = камарилья          # 18+ /// # DELAY
+camarilla  = камарилья          # 18+ # RARE-
 armada     = армада             # 14+

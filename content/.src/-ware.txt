@@ -1,4 +1,4 @@
--ware {suffix} = Used to form nouns denoting, collectively, items made from a particular substance.
+-ware {suffix}        = Used to form nouns denoting, collectively, items made from a particular substance.
 agateware
 basaltware
 brassware
@@ -26,7 +26,7 @@ pewterware
 plasticware
 redware
 
--ware {suffix} = Used to form nouns denoting, collectively, items of a particular kind or for a particular use.
+-ware {suffix}        = Used to form nouns denoting, collectively, items of a particular kind or for a particular use.
 bakeware
 barware
 bathroomware
@@ -64,7 +64,7 @@ beware
 Delaware
 everyware
 
--ware {suffix} = Used to form mass nouns denoting specific classes of computer software, based on use, function, or method of distribution.
+-ware {suffix}        = Used to form mass nouns denoting specific classes of computer software, based on use, function, or method of distribution.
 adware
 courseware
 abandonware

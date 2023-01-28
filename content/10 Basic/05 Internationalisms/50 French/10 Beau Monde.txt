@@ -1,18 +1,24 @@
-beau monde       = бомонд                                                                                               # 16+ # us-
+beau monde      = бомонд                                               # 16+
 
-baron            = барон                                                                                                # 10+ # -1sec # us-
-baroness         = баронесса                                                                                            # 10+ # -1sec # us-
-viscount         = виконт                                                                                               # 10+ # -1sec # us-
-viscountess      = виконтесса                                                                                           # 10+ # -1sec # us-
+baron           = барон                                                # -1sec # 10+
+baroness        = баронесса                                            # -1sec # 10+
+viscount        = виконт                                               # -1sec # 10+
+viscountess     = виконтесса                                           # -1sec # 10+
 
-prestige         = престиж, авторитет, ~ престижный                                                                     # 10+
-etiquette        = этикет %% Во французском слово «этикетка» обозначало карточки, на которых печатали правила поведения. # 10+ /// ~ Современное значение появилось в Англии в 1750 г.
-politesse        = политес, ~ показная вежливость                                                                       # 18+ # RARE-
-comme il faut    = комильфо %% как следует, подобающим образом, приличный                                               # 14+ # RARE- # RANDOM- # us-
-noblesse oblige  = положение обязывает %% ''изначально:'' ~ благородное происхождение обязывает                         # 18+ # RARE- # RANDOM- # us-
+prestige        = престиж, авторитет, ~ престижный                     # 10+
+etiquette       = этикет %% Во французском слово «этикетка» обозначало карточки, на которых печатали правила поведения. # 10+ /// ~ Современное значение появилось в Англии в 1750 г.
+politesse       = политес, ~ показная вежливость                       # RARE- # 18+
+comme il faut   = комильфо %% как следует, подобающим образом, приличный # RARE- # RANDOM- # 14+
+noblesse oblige = положение обязывает %% ''изначально:'' ~ благородное происхождение обязывает # RARE- # RANDOM- # 18+
 
-Dame {Br.}       = дама %% титул супруги баронета или рыцаря; ~ титул женщины, награждённой орденом Британской Империи  # 16+
-dame {Am.}       = ''устаревшее и'' разговорное: ~ женщина, дамочка                                                     # 16+
-courtesan        = куртизанка                                                                                           # 16+ /// From French courtisane, from Italian cortigiana, feminine of cortigiano ‎(“courtier”)
-misalliance      = мезальянс                                                                                            # 18+ /// From mis- +‎ alliance, partly after French mésalliance
-boudoir          = будуар                                                                                               # 16+ # HISTORY- /// French
+Dame {Br.}      = дама %% титул супруги баронета или рыцаря; ~ титул женщины, награждённой орденом Британской Империи # 16+
+dame {Am.}      = ''устаревшее и'' разговорное: ~ женщина, дамочка     # 16+
+courtesan       = куртизанка                                           # 16+ /// From French courtisane, from Italian cortigiana, feminine of cortigiano ‎(“courtier”)
+misalliance     = мезальянс                                            # 18+ /// From mis- +‎ alliance, partly after French mésalliance
+boudoir         = будуар                                               # HISTORY- # 16+ /// French
+
+
+
+
+
+

@@ -29,6 +29,7 @@ namespace studio::one
             int i = 0;
             selector.object.buttons(i++).text.text = "dictionary";
             selector.object.buttons(i++).text.text = "preview";
+            selector.object.buttons(i++).text.text = "report";
             selector.object.buttons(i++).text.text = "app";
             selector.object.maxwidth = max<int>();
             selector.object.selected = 0;

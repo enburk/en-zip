@@ -1,13 +1,20 @@
-Scotland = Шотландия # pix-
-Scottish (Scots)  = шотландский (скотс)                                                 # 10+ # pix-
+Scotland       = Шотландия                         # pix-
+Scottish/Scots = шотландский/скотс                 # pix- # 10+
 
-collie            = колли %% возможно из скандинавских языков                           # 14+
-pony              = пони                                                                # 10+ /// # 8- really
-bard              = бард %% изначально из кельтских языков                              # 16+
-glamour           = гламур                                                              # 14+ /// https://www.ted.com/talks/virginia_postrel_on_glamour
+collie         = колли %% возможно из скандинавских языков # 14+
+pony           = пони                              # 10+ /// # 8- really
+bard           = бард %% изначально из кельтских языков # 16+
+glamour        = гламур                            # 14+
 
-Gaelic            = гэльский %% язык шотландских кельтов                                # 10+
+======
+Gaelic         = гэльский %% язык шотландских кельтов # 10+
 
-clan              = клан                                                                # 10+ /// %% from Gaelic /// # 8- really
-slogan            = слоган, лозунг                                                      # 14+ /// %% from Gaelic
-whisky|whiskey    = виски %% В гэльском языке ~ дословное значение слова – вода жизни.  # 18+
+clan           = клан                              # 10+ /// %% from Gaelic /// # 8- really
+slogan         = слоган, лозунг                    # 14+ /// %% from Gaelic
+whisky|whiskey = виски                             # 18+ /// %% в гэльском: ~ ''вода жизни''
+
+
+
+
+
+

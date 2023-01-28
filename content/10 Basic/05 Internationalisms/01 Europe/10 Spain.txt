@@ -1,20 +1,26 @@
-Spain   = Испания          #  8+ # pix-
-Spanish    = испанский          #  8+  # pix-
+Spain     = Испания                    # pix- # 8+
+Spanish   = испанский                  # pix- # 8+
 
-flamingo   = фламинго
-flamenco   = фламенко           # 14+
-guitar     = гитара
-sombrero   = сомбреро           # 10+
-vanilla    = ваниль, ванильный
-gazpacho   = гаспачо            # 14+ # RARE-
+flamingo  = фламинго
+flamenco  = фламенко                   # 14+
+guitar    = гитара
+sombrero  = сомбреро                   # 10+
+vanilla   = ваниль, ванильный
+gazpacho  = гаспачо                    # RARE- # 14+
 
-corrida    = коррида            # 12+
-torero     = тореро             # 14+
-muleta     = мулета %% кусок красной ткани # 18+ # RARE-
-rodeo      = родео              # 12+
+corrida   = коррида                    # 12+
+torero    = тореро                     # 14+
+muleta    = мулета %% кусок красной ткани # RARE- # 18+
+rodeo     = родео                      # 12+
 
-macho      = мачо               # 14+
-siesta     = сиеста             # 16+
-fiesta     = фиеста             # 14+
-camarilla  = камарилья          # 18+ # RARE-
-armada     = армада             # 14+
+macho     = мачо                       # 14+
+siesta    = сиеста                     # 16+
+fiesta    = фиеста                     # 14+
+camarilla = камарилья                  # RARE- # 18+
+armada    = армада                     # 14+
+
+
+
+
+
+

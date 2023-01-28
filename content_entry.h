@@ -5,6 +5,52 @@ namespace content
 {
     struct entry
     {
+        str eng,rus;
+        str comment;
+        options opt;
+
+        entry () = default;
+        entry (str s)
+        {
+            s.strip();
+            s.replace_all("\t", " ");
+            s.split_by("///", s, comment);
+            s.split_by( "#" , s, rus); opt = options(rus);
+            s.split_by(" = ", s, rus); eng = s;
+            comment.strip();
+            eng.strip();
+            rus.strip();
+        }
+
+        str formatted (int tab1, int tab2) const
+        {
+            str E = eng;
+            str R = rus;
+            str O = opt.formatted();
+            str C = comment;
+            // eng... = rus... # opt
+            // eng... = rus
+            // eng... # opt
+            // eng
+            // = rus # opt
+            // = rus
+            // # opt
+            // 
+            int e = aux::unicode::length(eng);
+            int r = aux::unicode::length(rus);
+            int o = O == "" and C == "" ? 0 : 1;
+            if (e and (r or  o)) E.align_left(tab1);
+            if (e and (r and o)) R.align_left(tab2 - tab1 - 3);
+            str s;
+            if (E != "" ) s +=          E + " ";
+            if (R != "" ) s +=   "= " + R + " ";
+            if (O != "" ) s +=   "# " + O + " ";
+            if (C != "" ) s += "/// " + C;
+            s.strip();
+            return s;
+        }
+
+
         struct Eng
         {
             /*
@@ -150,5 +196,6 @@ array<str>::as ("past tense", "past participle");
             }
         };
         */
+
     };
 }

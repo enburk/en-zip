@@ -234,7 +234,7 @@
 {{color panel|002266}} => {{color panel|002266}} == midnight blue
 {{color panel|698B69}} => {{color panel|698B69}} == mignonette
 {{color panel|98FF98}} => {{color panel|98FF98}} == mint
-{{color panel|#F5FFFA}} => {{color panel|#F5FFFA}} == mint cream
+{{color panel|
 {{color panel|FFE4E1}} => {{color panel|FFE4E1}} == misty rose
 {{color panel|FFE4B5}} => {{color panel|FFE4B5}} == moccasin
 {{color panel|50473F}} => {{color panel|50473F}} == mocha
@@ -375,3 +375,4 @@
 {{color panel|EFDFA5}} => {{color panel|EFDFA5}} == wheaten
 {{color panel|CC6600}} => {{color panel|CC6600}} == yam
 {{color panel|00416A}} => {{color panel|00416A}} == zaffre
+

@@ -30,15 +30,14 @@ namespace app::dic::video
             script.forbidden_links = links;
             credit.forbidden_links = links;
 
-            if (index == video_index) return; else
-                index =  video_index;
-
             start = gui::time{};
             stay  = gui::time{4000 +
-                index.title.size() * 40 +
-                index.credit.size() * 10 +
-                index.comment.size() * 20
-            };
+            index.title.size() * 40 +
+            index.credit.size() * 10 +
+            index.comment.size() * 20};
+
+            if (index == video_index) return; else
+                index =  video_index;
 
             state = gui::media::state::loading;
             video.load(title, video_index, audio_index);
@@ -46,23 +45,21 @@ namespace app::dic::video
             str c = index.credit;
             str s = index.title;
 
+            c = media::canonical(c);
             s = media::canonical(s);
 
             str date;
             for (str option : index.options)
-                if (option.starts_with("date "))
-                    date = option.from(5);
-
+            if (option.starts_with("date "))
+                date = option.from(5);
             if (date != "") c += ", <i>" + date + "</i>";
 
-            if (index.comment != "")
-                s += "<br><br>" +
-                gray(italic(media::canonical(
-                index.comment))) +
-                "<br>&nbsp;";
+            if (index.comment != "") s += "<br>" +
+                dark(media::canonical(
+                index.comment));
 
             script.html = s;
-            credit.html = c;
+            credit.html = gray(c);
         }
 
         void play ()
@@ -86,8 +83,8 @@ namespace app::dic::video
                 d = gui::metrics::text::height;
 
             xy size {
-                index.location.size_x,
-                index.location.size_y};
+            index.location.size_x,
+            index.location.size_y};
 
             int maxwidth = width - 6*l;
             if (maxwidth < size.x) size = xy (
@@ -96,11 +93,12 @@ namespace app::dic::video
 
             credit.alignment = xy{pix::left, pix::top};
 
-            script.coord = xywh(0, 0, size.x, max<int>());
+            script.coord = xywh(0, 0, size.x,     max<int>());
             credit.coord = xywh(0, 0, size.x-3*d, max<int>());
 
             int w1 = script.view.cell.coord.now.w;
             int w2 = credit.view.cell.coord.now.w;
+                w2 = max(w2, d); // for next/prev
 
             credit.alignment = xy{pix::right, pix::top};
 
@@ -111,8 +109,7 @@ namespace app::dic::video
 
             if (w1 + w2 + 3*d < size.x*9/10) {
                 hh = max(h1, h2);
-                y2 = 0;
-            }
+                y2 = 0; }
 
             int w = size.x + 6*l;
             int h = size.y + 6*l + hh;
@@ -146,7 +143,7 @@ namespace app::dic::video
 
                 auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(coord.now.size.x);
 
-                xywh r (W/2 - w/2, H/2 - h/2, w, h);
+                xywh r (W-w, 0, w, h); // right-up
                 frame1.coord = r; r.deflate(frame1.thickness.now);
                 frame2.coord = r; r.deflate(frame2.thickness.now);
                 canvas.coord = r; r.deflate(frame2.thickness.now);
@@ -160,6 +157,11 @@ namespace app::dic::video
                 credit.coord = xywh(r.x + r.w - 3*d - w2, r.y + size.y + y2, w2, h2);
                 prev  .coord = xywh(r.x + r.w - 2*d, r.y + size.y + y2, d, d);
                 next  .coord = xywh(r.x + r.w - 1*d, r.y + size.y + y2, d, d);
+
+                script.scroll.x.mode = gui::scroll::mode::none;
+                script.scroll.y.mode = gui::scroll::mode::none;
+                credit.scroll.x.mode = gui::scroll::mode::none;
+                credit.scroll.y.mode = gui::scroll::mode::none;
             }
 
             if (what == &skin)

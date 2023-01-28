@@ -50,5 +50,20 @@ constexpr std::string_view ndash    = "\xE2" "\x80" "\x93"sv; // n-dash
 constexpr std::string_view lquot    = "\xE2" "\x80" "\x9C"sv; // “
 constexpr std::string_view rquot    = "\xE2" "\x80" "\x9D"sv; // ”
 
+str un_msdos (str s)
+{
+    s.replace_all("~!",  "?");
+    s.replace_all('~',1, "/");
+    s.replace_all('.',2, ":");
+    return s;
+}
+str to_msdos (str s)
+{
+    s.replace_all("?", "~!");
+    s.replace_all("/", "~" );
+    s.replace_all(":", "..");
+    return s;
+}
+
 
 

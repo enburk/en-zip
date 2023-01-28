@@ -1,7 +1,7 @@
-adverb                        = наречие
+adverb = наречие
 
-good                          = хорошо
-bad                           = плохо
+good   = хорошо
+bad    = плохо
 
 '''''good''' vs. '''bad'''''
 ''Cool!''
@@ -18,3 +18,5 @@ bad                           = плохо
 ''Nasty!''
 ''Rough!''
 ''Great!''
+
+

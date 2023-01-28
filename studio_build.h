@@ -92,10 +92,12 @@ namespace studio::build
 
                 auto& unidentified = 
                 media::report::unidentified;
-                if (not unidentified.empty()) {
+                if (not unidentified.empty())
+                {
                     err << "unidentified files:";
                     for (auto path: unidentified)
-                    err << path.string(); }
+                    err << path.string();
+                }
 
                 for (auto& [id, paths]:
                 media::report::id2path)
@@ -113,8 +115,8 @@ namespace studio::build
                 data_updated or
                 media::report::data_updated;
                 out << (data_updated?
-                bold(yellow("data updated")):
-                bold(blue("up to date")));
+                bold(yellow("UPDATED")):
+                bold(green("UP TO DATE")));
             };
         }
     };

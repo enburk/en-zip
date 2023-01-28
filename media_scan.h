@@ -5,21 +5,6 @@
 #include "eng_phenomena.h"
 namespace media::scan
 {
-    str un_msdos (str s)
-    {
-        s.replace_all("~!",  "?");
-        s.replace_all('~',1, "/");
-        s.replace_all('.',2, ":");
-        return s;
-    }
-    str to_msdos (str s)
-    {
-        s.replace_all("?", "~!");
-        s.replace_all("/", "~" );
-        s.replace_all(":", "..");
-        return s;
-    }
-
     bool parse_links (str& title, str& links)
     {
         int pos = 0;  std::stack<int> lefts; 
@@ -51,7 +36,7 @@ namespace media::scan
 
     std::ofstream dataelog;
 
-    array<resource> scan (path dir, resource common = {})
+    array<resource> scan (path dir, int level = 0, resource common = {})
     {
         array<resource> resources;
 
@@ -60,6 +45,7 @@ namespace media::scan
         array<str> video = {".png", ".jpg", ".jpeg" };
         array<str> audio = {".mp3", ".ogg", ".wav"};
 
+        if (level < 2)
         *report::out << "scan " + dir.string();
         for (std::filesystem::directory_iterator
             next(dir), end; next != end; ++next)
@@ -159,7 +145,7 @@ namespace media::scan
                 resource.credit = str(dat::in::text(credit).value(), "<br>");
                 identified[credit] = true; }
 
-                resources += scan(entry, resource);
+                resources += scan(entry, level+1, resource);
             }
             else if (is_regular_file(entry))
             {
@@ -213,7 +199,7 @@ namespace media::scan
                             str option = line.from(2); option.strip();
                             if (option == "") continue;
                             if (option.starts_with("credit ")) {
-                                resource.credit = option.from(8);
+                                resource.credit = option.from(7);
                                 resource.credit.strip();
                                 continue;
                             }
@@ -323,7 +309,7 @@ namespace media::scan
         }
 
         for (auto [path, ok] : identified)
-            if (!ok) report::unidentified += path;
+        if (!ok) report::unidentified += path;
 
         return resources;
     }

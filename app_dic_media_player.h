@@ -16,11 +16,11 @@ namespace app::dic::media
 
             std::filesystem::path dir = "../data/media";
             std::string storage = "storage." + std::to_string(
-                video_index.location.source) + ".dat";
+            video_index.location.source) + ".dat";
 
             video.load(dir / storage,
-                video_index.location.offset,
-                video_index.location.length);
+            video_index.location.offset,
+            video_index.location.length);
 
             thread.join();
 

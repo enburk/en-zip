@@ -1,31 +1,37 @@
-Italy           = Италия                #  8+ # pix-
-Italian           = итальянский                #  8+ # pix-
+Italy            = Италия                                      # pix- # 8+
+Italian          = итальянский                                 # pix- # 8+
 
-balcony           = балкон
-loggia            = лоджия                     # 14+
-regatta           = регата                     # 14+
-stiletto          = стилет                     # 18+
-risk              = риск, рисковать, рискнуть  #  8+
-bandit            = бандит
+balcony          = балкон
+loggia           = лоджия                                      # 14+
+regatta          = регата                                      # 14+
+stiletto         = стилет                                      # 18+
+risk             = риск, рисковать, рискнуть                   # 8+
+bandit           = бандит
 
-pizza             = пицца
-spaghetti         = спагетти
-vermicelli        = вермишель
-macaroni          = макароны %% паста в виде ~ коротких трубочек
-lasagne\\lasagna  = лазанья                    # 10+ # MEAT
-salami            = салями                     # 10+ # MILK
-tiramisu          = тирамису́                  # 18+ # FOOD- # MILK
-mascarpone        = маскарпоне                 # 18+ # FOOD- # MILK
-parmesan          = пармезан                   # 14+ # FOOD- # MILK
-mozzarella        = моцарелла                  # 14+ # FOOD- # MILK
-risotto           = ризотто                    # 16+ # FOOD+
-carpaccio         = карпаччо                   # 16+ # FOOD+ # MEAT
-ravioli           = равиоли                    # 16+ # FOOD+ # MEAT
+pizza            = пицца
+spaghetti        = спагетти
+vermicelli       = вермишель
+macaroni         = макароны %% паста в виде ~ коротких трубочек
+lasagne\\lasagna = лазанья                                     # MEAT # 10+
+salami           = салями                                      # MILK # 10+
+tiramisu         = тирамису́                                    # FOOD- # MILK # 18+
+mascarpone       = маскарпоне                                  # FOOD- # MILK # 18+
+parmesan         = пармезан                                    # FOOD- # MILK # 14+
+mozzarella       = моцарелла                                   # FOOD- # MILK # 14+
+risotto          = ризотто                                     # FOOD+ # 16+
+carpaccio        = карпаччо                                    # FOOD+ # MEAT # 16+
+ravioli          = равиоли                                     # FOOD+ # MEAT # 16+
 
-concert           = концерт
-maestro           = маэстро                    # 14+
-orchestra         = оркестр
-sonata            = соната                     # 16+
-bravura           = в музыке: бравурный пассаж, ~ бравурность, ~ бравада # 18+
-prima donna       = примадонна                 # 14+ # ART-
-bravo!            = браво!
+concert          = концерт
+maestro          = маэстро                                     # 14+
+orchestra        = оркестр
+sonata           = соната                                      # 16+
+bravura          = в музыке: бравурный пассаж, ~ бравурность, ~ бравада # 18+
+prima donna      = примадонна                                  # ART- # 14+
+bravo!           = браво!
+
+
+
+
+
+

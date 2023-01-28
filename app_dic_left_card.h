@@ -10,6 +10,7 @@ namespace app::dic::left
         video::sequencer video;
         gui::property<bool> mute = false;
         using idx = media::media_index;
+        xy video_max_size;
         int clicked = 0;
 
         void reload () {}
@@ -25,29 +26,41 @@ namespace app::dic::left
 
             int l = gui::metrics::line::width;
 
-            xy size;
-            for (auto& video : selected_video)
-            size.x = max (size.x, video.location.size_x + 6*l);
-            size.y = video.height(size.x);
+            for (auto& v: selected_video)
+            video_max_size.x = max(
+            video_max_size.x, v.location.size_x + 6*l);
+            video_max_size.y = video.height(
+            video_max_size.x);
 
-            refresh_video(size);
+            video_resize(video_max_size);
         }
 
-        void refresh_video (xy size)
+        void video_resize (xy size)
         {
             int maxwidth = coord.now.size.x * 2/3;
             if (maxwidth < size.x) size = xy (
-                maxwidth, video.height(maxwidth));
+                maxwidth, video.height(
+                maxwidth));
+
+            video.resize(size);
+            video_position();
+        }
+
+        void video_position ()
+        {
+            text.rwrap = array<xy>{
+            xy{0, text.scroll.y.top},
+            video.coord.now.size + xy{
+            gui::metrics::line::width*3,
+            gui::metrics::line::width*3}};
 
             int d = text.scroll.y.alpha.to == 0 ?
                 0 : text.scroll.y.coord.now.w;
 
-            video.coord = xywh(
-                coord.now.size.x - size.x - d, 0,
-                size.x, size.y
-            );
-
-            on_change(&text.update_text);
+            video.move_to(xy(
+            coord.now.size.x -
+            video.coord.now.size.x -
+            d, 0));
         }
 
         void on_change (void* what) override
@@ -57,7 +70,7 @@ namespace app::dic::left
                 coord.now.size)
             {
                 text.coord = coord.now.local();
-                refresh_video(video.coord.now.size);
+                video_resize(video.coord.now.size);
             }
             if (what == &skin)
             {
@@ -66,9 +79,7 @@ namespace app::dic::left
             if (what == &text.scroll.y
             or  what == &text.update_text)
             {
-                text.rwrap = array<xy>{
-                    xy{0, text.scroll.y.top},
-                    video.coord.now.size};
+                video_position();
             }
             if (what == &text ) { clicked = text .clicked; notify(); }
             if (what == &video) { clicked = video.clicked; notify(); }

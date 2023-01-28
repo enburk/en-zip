@@ -1,35 +1,39 @@
 baby boy
 baby girl
 
-death                             = смерть                          # 18+
-life                              = жизнь                           # 18+
+death    = смерть # 18+
+life     = жизнь # 18+
 
-body                              = тело
-head                              = голова
-shoulder                          = плечо
-arm                               = рука
-hand                              = рука ~ (кисть)
-leg                               = нога
-knee                              = колено
+body     = тело
+head     = голова
+shoulder = плечо
+arm      = рука
+hand     = рука ~ (кисть)
+leg      = нога
+knee     = колено
 
-finger                            = палец (на руке)
-thumb                             = большой палец
-toe                               = палец (на ноге)
+finger   = палец (на руке)
+thumb    = большой палец
+toe      = палец (на ноге)
 
-eye                               = глаз
-ear                               = ухо                             #     # polysemic
-mouth                             = рот
-lips                              = губы
-cheek                             = щека                            #     # polysemic
+eye      = глаз
+ear      = ухо
+mouth    = рот
+lips     = губы
+cheek    = щека
 
-happy                             = счастливый, довольный
+happy    = счастливый, довольный
 <small>''What has four legs and an arm? A very happy pitbull terrier.''</small> = %% ''British toilet graffiti'' ~ HOTMAG
-sad                               = грустный
+sad      = грустный
 <small>''You look sad.''</small>
-shy                               = застенчивый, стеснительный, робкий #     # polysemic
-odd                               = странный                        #     # polysemic
-crazy                             = сумашедший, безумный, чокнутый  #     # polysemic
-funny                             = смешной
-funny                             = странный
-<small>''I feel funny. Fa, la! lirra, skirra!''</small> = %% Herman Melville, ''Moby Dick'' ~ NAXOS HOOTKINS #     # uk- # uk-
+shy      = застенчивый, стеснительный, робкий
+odd      = странный
+crazy    = сумашедший, безумный, чокнутый
+funny    = смешной
+funny    = странный
+<small>''I feel funny. Fa, la! lirra, skirra!''</small> = %% Herman Melville, ''Moby Dick'' ~ NAXOS HOOTKINS
 <small>''Two cannibals are eating a clown. ~ One says to the other.. Does this taste funny to you?''</small> = %% HOTMAG
+
+
+
+

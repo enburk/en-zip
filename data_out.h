@@ -7,6 +7,23 @@ namespace dat::out
     using std::byte;
     using std::filesystem::path;
 
+    void write (path path, array<byte> const& data)
+    {
+        std::filesystem::create_directories(path.parent_path());
+        std::ofstream ofstream(path, std::ios::binary);
+        ofstream.write((char*)(data.data()), data.size());
+    }
+
+    void write (path path, array<str> const& text)
+    {
+        std::filesystem::create_directories(path.parent_path());
+        std::ofstream ofstream(path);
+        for (str line: text) {
+            ofstream << line;
+            ofstream << "\n";
+        }
+    }
+
     struct pool
     {
         array<byte> bytes;

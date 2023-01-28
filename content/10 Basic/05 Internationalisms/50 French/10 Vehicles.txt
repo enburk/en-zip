@@ -1,20 +1,26 @@
-limousine %% informal: limo         = лимузин                                    #     # en+ext
-cabriolet                           = кабриолет %% другое название: convertible  #     # TECH- # RANDOM-
-coupé\\coupe                        = купе ~ (тип кузова)                        # 10+ # TECH- # RANDOM- /// , автомобиль с таким кузовом, ~~двухместная карета
-garage                              = гараж, автосервис %% в брит. также: бензоколонка
-chauffeur                           = шофёр
+limousine %% informal: limo = лимузин
+cabriolet                   = кабриолет %% другое название: convertible # TECH- # RANDOM-
+coupé\\coupe                = купе ~ (тип кузова)      # TECH- # RANDOM- # 10+ /// , автомобиль с таким кузовом, ~~двухместная карета
+garage                      = гараж, автосервис %% в брит. также: бензоколонка
+chauffeur                   = шофёр
 
-aviation                            = авиация                                    /// , проектирование самолётов
-aviator %% old-fashioned            = авиатор, лётчик                            # 10+
-aeroplane\\airplane %% also: plane  = самолёт, аэроплан                          #     # RANDOM- /// aeroplane/plane\\airplane/plane
-dirigible                           = дирижабль                                  /// , также: управляемый
-parachute                           = парашют                                    /// , спускать(ся) с парашютом
-fuselage                            = фюзеляж                                    # 10+ # TECH-
-aileron                             = элерон                                     # 14+ # TECH+
-longeron                            = лонжерон                                   # 14+ # TECH+
-chassis %% plural: chassis          = шасси                                      # 10+ # TECH-
+aviation                    = авиация                  /// , проектирование самолётов
+aviator %% old-fashioned    = авиатор, лётчик          # 10+
+aeroplane\\airplane %% also: plane = самолёт, аэроплан        # RANDOM- /// aeroplane/plane\\airplane/plane
+dirigible                   = дирижабль                /// , также: управляемый
+parachute                   = парашют                  /// , спускать(ся) с парашютом
+fuselage                    = фюзеляж                  # TECH- # 10+
+aileron                     = элерон                   # TECH+ # 14+
+longeron                    = лонжерон                 # TECH+ # 14+
+chassis %% plural: chassis  = шасси                    # TECH- # 10+
 
-turbine                             = турбина
-locomotive                          = локомотив, паровоз                         # 10+ /// двигатель поезда, движущая сила (в спорте и др.), ~~локомотив, паровоз, локомотивный
-pontoon                             = понтонный мост, понтон                     # 10+ # polysemic: поплавок гидросамолёта
-maquette                            = макет                                      # 10+
+turbine                     = турбина
+locomotive                  = локомотив, паровоз       # 10+ /// двигатель поезда, движущая сила (в спорте и др.), ~~локомотив, паровоз, локомотивный
+pontoon                     = понтонный мост, понтон   # 10+
+maquette                    = макет                    # 10+
+
+
+
+
+
+

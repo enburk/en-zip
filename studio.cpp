@@ -7,8 +7,8 @@
 
 struct Studio : gui::widget<Studio>
 {
-    gui::canvas canvas;
-    gui::canvas toolbar;
+    gui::toolbar canvas;
+    gui::toolbar toolbar;
     gui::radio::group select;
     array<gui::base::widget*> studios;
     studio::dic::studio dic;
@@ -37,11 +37,11 @@ struct Studio : gui::widget<Studio>
             studios[i]->hide();
 
         select(0).text.text = "dictionary";
-        select(1).text.text = "en";
-        select(2).text.text = "en-ru";
+        select(1).text.text = "content";
+        select(2).text.text = "catalogs";
         select(3).text.text = "audio";
         select(4).text.text = "video";
-        select(5).text.text = "build";
+        select(5).text.text = "logs";
         select(6).text.text = "build!";
         select(0).on = true;
     }
@@ -74,12 +74,6 @@ struct Studio : gui::widget<Studio>
 
             schema.coord = xywh(W-2*w, 0, w, h);
             app   .coord = xywh(W-1*w, 0, w, h);
-        }
-
-        if (what == &skin)
-        {
-            toolbar.color = gui::skins[skin].light.first;
-            canvas .color = gui::skins[skin].light.first;
         }
 
         if (what == &select)

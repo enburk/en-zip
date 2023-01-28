@@ -37709,8 +37709,11 @@ Portrait of Dr. Gachet.jpg
 Portrait of Dr. Gachet.txt
 Self-portrait with Bandaged Ear and Pipe [ushanka][ushanka hat][Van Gogh] ## 14+ ## qrop t7 b5 ## date 1889.jpg
 Siesta [siesta][nap] ## qrop l15 r2 ## date 1889-1890.jpg
+Siesta [siesta][nap] ## qrop l15 r2 ## date 1889-1890.jpg.uid-zps
 >>> ../datae\fineart a-z {{$$}}/Vernet {{Horace Vernet}}
 Italian Brigands Surprised by Papal Troops (detail) [bandit][brigand] ## date 1831.jpg
+>>> ../datae\fineart a-z {{$$}}/Woodville {{Richard Caton Woodville}}
+hussar ## qrop t6 b11 ## date 1912.jpg
 >>> ../datae/imagery
 >>> ../datae/photo
 >>> ../datae\photo/artifacts
@@ -37741,12 +37744,20 @@ Secretarybird.jpg
 Steller's Jay {{Photo.. Warren Griffin}}.jpg
 Tawny-flanked Prinia.jpg
 Turquoise-browed motmot.jpg
+Boy casts a woeful glance at doctors.jpg
+Boy casts a woeful glance at doctors.txt
 Eid-ul-Fitr congregation {{Photo.. Azim Khan Ronnie}}.jpg
 Eid-ul-Fitr congregation {{Photo.. Azim Khan Ronnie}}.txt
 matador [torero] ## crop r20 ## qrop l5 r25.jpg
 sledge ## qrop q {{Photo.. Alessandra Meniconzi}} Frozen Land.jpg
 >>> ../datae\photo/{{$$}}
+acedia %% Detail from a fresco in the Hall of Vices and Virtues, Castiglioni Mantegazza castle, 15th century [].jpg.uid-zps
+acedia.jpg
+acedia.txt
 Buster Brown suit.jpg
+sloth.jpg
+sloth.txt
+_Winston _Churchill at 19 [+][hussar] ## 14+ ## qrop t6 b9.jpg
 >>> ../datae\photo\{{$$}}/{{USDE}}
 gas stove burner [gas][gas stove][burner].jpg
 >>> ../datae/photo a-n
@@ -37765,11 +37776,13 @@ A cloudy sky over the _Nevada desert [cloudy] ## date 1960.jpg
 audience aghast [aghast].jpg
 Bird in Flight [flight] ## date 1959.jpg
 Blue Light, _Amazon [blue] ## date 1965.jpg
+diving in ## date 1984.jpg
 Impala Grazing, _Kenya [impalas] ## date 1970.jpg
 matador, tercio de capa [tercio][bullfight][bullfighting] ## date 1956.jpg
 picador, tercio de varas [tercio][bullfight][bullfighting][bullfighter][picador] ## date 1956.jpg
 picador, tercio de varas [tercio][bullfight][bullfighting][bullfighter][picador][torero] ## date 1956.jpg
 Pinwheels [pinwheels] ## date 1960s.jpg
+red rose bud [bud].jpg
 Regatta, _California, [regatta] ## crop l10 ## qrop qr ## date 1957.jpg.uid-zps
 Regatta, _California, [regatta] ## crop l5 ## qrop qr ## date 1957.jpg
 Snow Lovers [snowy] ## 14+ ## date 1964.jpg
@@ -37850,16 +37863,20 @@ parmesan [Parmesan] ## qrop l33 r3 {{Photo.. Rostislav Glinsky $dreamstime 35930
 an apple strudel with ice cream [apple strudel][strudel] ## crop l8 r8 ## qrop l10 r30 {{Photo.. Ruslan Olinchuk $dreamstime 47401590}}.jpg
 crème brûlée [+][creme brulee][cream {cooking}] ## qrop l5 r26 {{Photo.. Carlos Soler Martinez $dreamstime 23983969}} Catalan cream.jpg
 Dutch 'stroopwafels' %% literally ''syrup waffles'' [stroopwafels][waffles] ## qrop l13 r20 {{Photo.. Dimap $dreamstime 35085210}}.jpg
+marmalade ## qrop q {{Photo.. Yuryn76 $dreamstime 55140667}}.jpg
 tiramisu ## crop t7 b7 ## qrop t23 b15 {{Photo.. Margouillat $dreamstime 17385891}}.jpg
 >>> ../datae\photo_dreamstime\food/drinks
 brandy ## qrop l5 r28 {{Photo.. Donfiore $dreamstime 48410604}}.jpg
 vodka ## qrop ql {{Photo.. Vadim Orlov $dreamstime 74359422}}.jpg
+whisky~whiskey [+] ## qrop t22 b5 {{Photo.. Peto Zvonar $dreamstime 6954194}}.jpg
 four cheese pizza [pizza] {{Photo.. Nikolay Mikhalchenko $dreamstime 18965153}}.jpg
 gazpacho ## qrop qr {{Photo.. Alexander Mychko $dreamstime 33229720}}.jpg
+goulash soup [goulash] ## qrop l10 r25 {{Photo.. Ingrid Heczko $dreamstime 12866176}}.jpg
 hamburger ## qrop l10 r10 t10 b10 {{Photo.. Fiermanmuch $dreamstime 64724383}}.jpg
 lasagne~lasagna ## qrop qr {{Photo.. Zkruger $dreamstime 74782834}}.jpg
 macaroni ## qrop q {{Photo.. Chris Hill $dreamstime 1740787}}.jpg
 muesli ## qrop l14 r21 t10 {{Photo.. Belka10 $dreamstime 46201593}}.jpg
+paprika ## qrop l22 r8 {{Photo.. Maramorosz $dreamstime 20830205}}.jpg
 pelmeni ## qrop q {{Photo.. Alexander Mychko $dreamstime 53909359}}.jpg
 ravioli ## qrop q {{Photo.. Alex Centrella $dreamstime 13751163}}.jpg
 risotto ## qrop l18 r13 {{Photo.. Ivan Mateev $dreamstime 49348733}}.jpg
@@ -37869,12 +37886,12 @@ vanilla ## qrop l23 r9 {{Photo.. Artesiawells $dreamstime 33465987}}.jpg
 vermicelli ## qrop ql {{Photo.. Yuriy Prokopyev $dreamstime 49604309}}.jpg
 Wiener schnitzel [schnitzel] {{Photo.. Legaa $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime/industry
-drydock [dock][dock {drydock}] ## crop b15 ## qrop t7 b23 {{Photo.. Slawomir Pryc $dreamstime 13062091}}.jpg
+drydock [dock][dock@drydock] ## crop b15 ## qrop t7 b23 {{Photo.. Slawomir Pryc $dreamstime 13062091}}.jpg
 >>> ../datae\photo_dreamstime/industry materials
 acetylene dissolved in acetone [acetylene][ethyne][dissolved] ## crop l2 r12 {{Photo.. Paulbroad $dreamstime 13402625}}.jpg
 silica gel [silica][silica gel][desiccant] ## qrop l40 b20 {{Photo.. Atman $dreamstime 36175197}}.jpg
 >>> ../datae\photo_dreamstime/industry tools
-drill {tool} ## crop l10 ## qrop l19 r10 {{Photo.. Phil030 $dreamstime 4492399}}.jpg
+drill @ tool ## crop l10 ## qrop l19 r10 {{Photo.. Phil030 $dreamstime 4492399}}.jpg
 manoeuvre~maneuver ## qrop q {{Photo.. Onefivenine $dreamstime 2866182}}.jpg
 massage {{Photo.. Anna Jurkovska $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime/music
@@ -37883,21 +37900,30 @@ concert ## qrop q {{Photo.. Maxim Tarasyugin $dreamstime 93365606}}.jpg
 guitar ## qrop t1 l1 b33 {{Photo.. Vladimirs Koskins $dreamstime 1998564}}.jpg
 >>> ../datae\photo_dreamstime/nature
 cascade ## crop qr {{Photo.. Kenneth Summers $dreamstime 1312487}}.jpg
+>>> ../datae\photo_dreamstime\nature/fauna
+krill ## crop r30 ## qrop ql {{Photo.. Tenedos $dreamstime 36908202}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - birds
 flamingo ## qrop t5 b23 {{Photo.. Bo Widerberg $dreamstime 1058737}}.jpg
 flamingo [plumage][feathering] ## qrop qr {{Photo.. Pindiyath100 $dreamstime 5876470}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - fish
 >>> ../datae\photo_dreamstime\nature/fauna - mammals
+jackal ## qrop l14 r22 {{Photo.. Chris Fourie $dreamstime 1113466}}.jpg
+>>> ../datae\photo_dreamstime\nature/fauna - mammals - marine
 beluga whale [+][Delphinapterus][Delphinapterus leucas][Monodontidae] ## qrop l20 r10 {{Photo.. Jeremy Bruskotter $dreamstime 1178919}}.jpg
+sperm whale [+][cachalot] ## qrop l25 r7 {{Photo.. Isselee $dreamstime 2257221}} [Sperm whale].jpg
 >>> ../datae\photo_dreamstime\nature/fauna - pets - dogs
+collies [collie] ## qrop q {{Photo.. Emily Jindra $dreamstime 633854}}.jpg
 poodle ## qrop  t7 b5 {{Photo.. Stanislav Tolubaev $dreamstime 13224955}}.jpg
 poodle ## qrop l10 r25 {{Photo.. Mikhailo Kazaryk $dreamstime 67103067}}.jpg
 poodle ## qrop l8 r20 {{Photo.. Nemow006 $dreamstime 12993175}}.jpg
 Rottweiler [rottweiler] ## qrop ql {{Photo.. Willeecole $dreamstime 28258946}}.jpg
 spitz {{Photo.. Djem82 $dreamstime}}.jpg
+fjord ## qrop q {{Photo.. Tupungato $dreamstime 9822601}}.jpg
 >>> ../datae\photo_dreamstime\nature/flora - flowers
 edelweiss ## qrop l15 r15 {{Photo.. Aravind Natarajan $dreamstime 49643113}}.jpg
+jasmine ## qrop ql {{Photo.. Sikth $dreamstime 41959399}}.jpg
 sunflowers [+][bouquet] ## crop t5 b5 ## qrop t10 b25 {{Photo.. Alb3 $dreamstime 19012780}}.jpg
+tulips ## qrop q {{Photo.. Stewis2012 $dreamstime 46128478}}.jpg
 plateau ## crop l10 ## qrop qr {{Photo.. Serban Enache $dreamstime 90767}} Hintertux Glacier in Zillertal, Austria.jpg
 steppe {{Photo.. Lilkar $dreamstime 45452610}}.jpg
 taiga ## qrop qr {{Photo.. Vladimir Il'yin $dreamstime 16819048}}.jpg
@@ -37932,10 +37958,14 @@ unstable equilibrium [+] ## crop r30 ## qrop ql {{Photo.. Ilyssa Tonnessen $drea
 matador and bull [corrida] ## qrop l20 r5 {{Photo.. Nathan Dappen $dreamstime 501008}}.jpg
 muleta and sword [muleta][corrida] ## qrop l18 r8 {{Photo.. Derwuth $dreamstime 19123617}}.jpg
 rodeo ## qrop l21 r10 {{Photo.. Lorpic99 $dreamstime 1375406}}.jpg
+slalom skier [+] ## qrop l14 r19 {{Photo.. Mitchell Gunn $dreamstime 8522999}}.jpg
 >>> ../datae\photo_dreamstime/transport
+caravan ## qrop l14 r9 {{Photo.. Dmitry Rukhlenko $dreamstime 30389002}}.jpg
+caravel ## qrop l35 {{Photo.. Fabrizio Troiani $dreamstime 5514890}} Azulejos.jpg
 cruise ship [cruise] ## qrop ql {{Photo.. Aliaksandr Nikitsin $dreamstime 6150324}}.jpg
 >>> ../datae\photo_dreamstime/world
 Europe {{Image.. Antartis $dreamstime 62934709}}.jpg
+Far East [Asia] {{Photo.. Antartis $dreamstime 63322204}}.jpg
 Holland ## qrop t14 b13 {{Photo.. Rob Bouwman $dreamstime 14099901}}.jpg
 >>> ../datae/video
 murmuration (starlings) [+].mp4

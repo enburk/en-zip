@@ -13,6 +13,8 @@ namespace content
 
             void operator |= (maskered m){ mask |= m.mask; }
             void operator &= (maskered m){ mask &= m.mask; }
+            bool operator == (maskered m) const { return mask == m.mask; }
+            bool operator != (maskered m) const { return mask != m.mask; }
 
             bool ok () const
             {
@@ -74,7 +76,6 @@ namespace content
                 }
                 else unknown += s;
             }
-
             std::ranges::sort(Maskered);
             std::ranges::sort(external);
             std::ranges::sort(internal);
@@ -89,6 +90,9 @@ namespace content
             external += opt.external;
         }
 
+        bool operator == (options const& opt) const = default;
+        bool operator != (options const& opt) const = default;
+
         str formatted () const
         {
             str s;
@@ -96,6 +100,7 @@ namespace content
             for (auto& o: external) s += " # " + o;
             for (auto& o: internal) s += " # " + o;
             if (age > 0) s += " # " + std::to_string(age) + "+";
+            s = s.from(3);
             return s;
         }
     };

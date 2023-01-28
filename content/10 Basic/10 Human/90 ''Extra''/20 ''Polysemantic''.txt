@@ -1,63 +1,75 @@
-character                =    характер, природа ~ (какого-либо явления), ~ репутация
-character                 =   персонаж, действующее лицо
-character                  =  символ, знак, буква, иероглиф
+# +1sec
 
-miss {Miss}                                      = мисс
-miss                                             = промах, осечка, ~ промахнуться, промазать
-miss {verb} {1}                                  = пропустить, опоздать, ~ не попасть
+---------
+character               = характер, природа ~ (какого-либо явления), ~ репутация
+character               = персонаж, действующее лицо
+character               = символ, знак, буква, иероглиф
+
+miss {Miss}             = мисс
+miss                    = промах, осечка, ~ промахнуться, промазать
+miss {verb} {1}         = пропустить, опоздать, ~ не попасть
 <small>''What did I miss?''</small>
-miss {verb} {2}                                  = скучать, ~ ощущать отсутствие                            #     # polysemic
+miss {verb} {2}         = скучать, ~ ощущать отсутствие
 <small>''I miss you.''</small>
 <small>''Did you miss me?''</small> {sarcastic}
 
-miss @ Miss                                      = мисс
-miss @ target                                            = промах, осечка, ~ промахнуться, промазать
-miss @                                   = пропустить, опоздать, ~ не попасть
+-----------
+miss @ Miss             = мисс
+miss @ target           = промах, осечка, ~ промахнуться, промазать
+miss @                  = пропустить, опоздать, ~ не попасть
 : What did I miss?
-miss {verb} {2}                                  = скучать, ~ ощущать отсутствие                            #     # polysemic
+miss {verb} {2}         = скучать, ~ ощущать отсутствие
 : I miss you.
 : Did you miss me? {sarcastic}
 
-popular                                          = популярный, известный
-popular {pop}                                    = массовый, народный
-''popular culture''                              = ''поп-культура, ~ массовая культура''                    # 14+
-popular {sex}                                    = пользующийся успехом
-<small>''Are clever women popular?''</small>
+-------
+popular                 = популярный, известный
+popular {pop}           = массовый, народный
+: popular culture       = поп-культура, ~ массовая культура             # 14+
+popular {sex}           = пользующийся успехом
+: Are clever women popular?
 
-sympathetic                                      = симпатичный, приятный
-sympathetic                                      = сочувствующий, сочувственный, ~ благосклонный
-sympathetic                                      = симпатический                                            # 10+
+-----------
+sympathetic             = симпатичный, приятный
+sympathetic             = сочувствующий, сочувственный, ~ благосклонный
+sympathetic             = симпатический                                 # 10+
 
-coordination                                     = координация ~ [усилий]                                   # 10+
-coordination {sense}                             = координация ~ [движений]                                 # 10+
+coordination            = координация ~ [усилий]                        # 10+
+coordination {sense}    = координация ~ [движений]                      # 10+
 
-brunet|brunette                                  = брюнет/брюнетка                                          # 10+ /// # DELAY
-brunet|brunette {brown}                          = шатен/шатенка                                            # 10+ /// # DELAY
+brunet|brunette         = брюнет/брюнетка                               # 10+ /// # DELAY
+brunet|brunette {brown} = шатен/шатенка                                 # 10+ /// # DELAY
 
-sanguine {temperament}                           = сангвинический, ~ оптимистичный                          # 14+ # TERM-
-sanguine {face}                                  = румяный ~ (о лице)                                       # 14+ # TERM-
-sanguine {art}                                   = сангина, ~ рисунок сангиной                              # 14+ # TERM-
+sanguine {temperament}  = сангвинический, ~ оптимистичный               # TERM- # 14+
+sanguine {face}         = румяный ~ (о лице)                            # TERM- # 14+
+sanguine {art}          = сангина, ~ рисунок сангиной                   # TERM- # 14+
 
-mummy                                            = мумия                                                    # 10+ /// 2 /// , ~ иногда: мумифицировать
-mummy {mother}\\mommy                            = мамочка %% детское                                       # 10+ /// 1
+mummy                   = мумия                                         # 10+ /// 2 /// , ~ иногда: мумифицировать
+mummy {mother}\\mommy   = мамочка %% детское                            # 10+ /// 1
 {mummy}
 
-talent                                           = талант, ~ талантливый человек
-talent                                           = творческий работник
-talent                                           = талант %% денежная и весовая единица ~ в Древней Греции  # 16+
+talent                  = талант, ~ талантливый человек
+talent                  = творческий работник
+talent                  = талант %% денежная и весовая единица ~ в Древней Греции # 16+
 
-extravagant                                      = экстравагантный                                          # 16+
-extravagant                                      = расточительный                                           # 16+
+extravagant             = экстравагантный                               # 16+
+extravagant             = расточительный                                # 16+
 
-pomp                                             = помпа, ~ великолепие, пышность                           # 10+
-pompous                                          = напыщенный, высокопарный, надутый, ~ редко: помпезный    # 16+ # +2sec /// NEW
+pomp                    = помпа, ~ великолепие, пышность                # 10+
+pompous                 = напыщенный, высокопарный, надутый, ~ редко: помпезный # +2sec # 16+ /// NEW
 
-pump(1)                                          = помпа, насос, ~ выкачивать, накачивать                   # 10+ /// , ~ накачивание
-pump(1) {2} %% informal                          = выведывать                                               # 10+
-pump(1) {cardio}                                 = сердце, ~ колотиться, пульсировать     # DEL                  # 10+ # +1sec /// obsolete
+pump(1)                 = помпа, насос, ~ выкачивать, накачивать        # 10+ /// , ~ накачивание
+pump(1) {2} %% informal = выведывать                                    # 10+
+pump(1) {cardio}        = сердце, ~ колотиться, пульсировать            # +1sec # DEL # 10+ /// obsolete
 
-pump(1) @ device                                         = помпа, насос, ~ выкачивать, накачивать                   # 10+ /// , ~ накачивание
-pump(1) @ gain info %% informal                          = выведывать                                               # 10+
+pump(1) @ device        = помпа, насос, ~ выкачивать, накачивать        # 10+ /// , ~ накачивание
+pump(1) @ gain info %% informal = выведывать                                    # 10+
 
-pumps(2) @ dancing shoes {Br.} %% Br. & Am. also: flats          = балетки                                                  # 10+
-pumps(2) @ high heels {Am.} %% Br. usually: court shoes       = туфли-лодочки                                            # 10+ # +2sec
+pumps(2) @ dancing shoes {Br.} %% Br. & Am. also: flats = балетки                                       # 10+
+pumps(2) @ high heels {Am.} %% Br. usually: court shoes = туфли-лодочки                                 # +2sec # 10+
+
+
+
+
+
+

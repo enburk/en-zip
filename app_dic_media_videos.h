@@ -24,12 +24,9 @@ namespace app::dic::video
                 if (it != videos.end())
                 {
                     players.rotate(0, current, current+1);
-                    std::rotate(videos.begin(),
-                        it, std::next(it));
-                    it = audios.begin() + (it -
-                         videos.begin());
-                    std::rotate(audios.begin(),
-                        it, std::next(it));
+                    std::rotate(videos.begin(), it, std::next(it));
+                    it = audios.begin() + (it - videos.begin());
+                    std::rotate(audios.begin(), it, std::next(it));
                 }
             }
 
@@ -63,7 +60,7 @@ namespace app::dic::video
         {
             int height = 0;
             for (auto & player : players)
-                height = max (height, player.height(width));
+            height = max (height, player.height(width));
             return height;
         }
 
@@ -77,15 +74,15 @@ namespace app::dic::video
                 coord.was.size !=
                 coord.now.size)
             {
+                for (auto& player: players)
+                player .coord = coord.now.local();
                 players.coord = coord.now.local();
-                for (auto& player : players)
-                    player.coord = coord.now.local();
             }
 
             if (what == &mute)
             {
                 for (auto& player : players)
-                    player.mute = mute.now;
+                player.mute = mute.now;
             }
 
             if (what == &timer)
@@ -96,8 +93,8 @@ namespace app::dic::video
                     switch (players(current).state) {
                     case state::failure:
                         logs::times << "video: " +
-                            std::to_string(current) + ": " +
-                            players(current).error;
+                        std::to_string(current) + ": " +
+                        players(current).error;
                         players(current).state = gui::media::state::finished;
                         players(current).show(smoothly);
                         break;

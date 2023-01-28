@@ -14,4 +14,8 @@ namespace content
             //std::shuffle(v.begin(), v.end(), g);
         }
     };
+
+    struct content
+    {
+    };
 }

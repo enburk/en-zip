@@ -30,6 +30,8 @@ namespace studio::build::dic
 
         constexpr auto html = doc::html::encoded;
 
+        report << dark(bold("SCAN RESOURCES..."));
+
         for (auto& r: resources)
         {
             if (r.title == "speaker.128x096"
@@ -103,6 +105,8 @@ namespace studio::build::dic
             }
         }
 
+        report << dark(bold("CALCULATE FREQUENCIES..."));
+
         std::map<int, array<int>> frequency;
         std::map<int, array<int>> frequency_a;
         std::map<int, array<int>> frequency_v;
@@ -152,6 +156,8 @@ namespace studio::build::dic
             blue(list);
         }
 
+        report << dark(bold("LINK RESOURCES..."));
+
         std::multimap<int, int> entry_media; int total_media = 0;
 
         for (auto [_, entries]: std::ranges::reverse_view(frequency))
@@ -168,10 +174,6 @@ namespace studio::build::dic
                     for (str e: r->entries)
                     {
                         e.strip();
-                        if (e.ends_with("}")) {
-                        str sense; e.split_by("{",
-                            e, sense); e.strip(); }
-
                         auto index = vocabulary.index(entry);
                         if (!index) continue;
                         int n = *index;
@@ -230,6 +232,8 @@ namespace studio::build::dic
             }
         }
         
+        report << dark(bold("DUMP RESULTS..."));
+
         entry_index << total_media;
         entry_index << (int)(entry_media.size());
         for (auto [entry, media] : entry_media) {
@@ -242,6 +246,15 @@ namespace studio::build::dic
             assets_data << r->title;
             assets_data << dat::in::bytes(r->path).value();
         }
+
+        for (auto& [source, map] : locations)
+        for (auto& [offset, path] : map) {
+            locationary << source;
+            locationary << offset;
+            locationary << path;
+        }
+
+        report << dark(bold("CHECK USAGE..."));
 
         for (auto& r: resources)
         {
@@ -272,11 +285,6 @@ namespace studio::build::dic
             green (html(" {" + str(r.options, "} {") + "}"));
         }
 
-        for (auto& [source, map] : locations)
-        for (auto& [offset, path] : map) {
-            locationary << source;
-            locationary << offset;
-            locationary << path;
-        }
+        report << dark(bold("DONE"));
     }
 }

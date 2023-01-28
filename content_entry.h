@@ -8,9 +8,10 @@ namespace content
         str eng,rus;
         str comment;
         options opt;
+        int line = 0;
 
         entry () = default;
-        entry (str s)
+        entry (str s, int line) : line{line}
         {
             s.strip();
             s.replace_all("\t", " ");

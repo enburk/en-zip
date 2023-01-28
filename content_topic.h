@@ -12,8 +12,9 @@ namespace content
         topic () = default;
         topic (array<str> const& lines)
         {
+            int n = 0;
             for (str line: lines)
-            entries += entry{line};
+            entries += entry{line, n++};
         }
 
         array<str> formatted () const

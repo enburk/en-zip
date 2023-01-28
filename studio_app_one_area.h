@@ -44,6 +44,12 @@ namespace studio::one
             if (what == &content)
             {
                 editor.object.path = content.object.selected.now;
+                
+                if (editor.object.path.now ==
+                    editor.object.path.was) {
+                    doc::text::repo::reload();
+                    editor.object.editor.
+                    update_text = true; }
             }
         }
     };

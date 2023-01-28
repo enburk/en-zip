@@ -210,9 +210,10 @@ namespace studio::one
                 if (opens.contains(record.path)) record.open = true;
                 if (record.file and record.path == selected) found = true; }
                 if (not found) selected = path{};
-                
+
                 replane();
                 refresh();
+                notify();
             }
 
             if (what == &flist)

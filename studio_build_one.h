@@ -47,10 +47,23 @@ namespace studio::build
             {
                 if (false)
                 out << "scan " + path.string();
-                array<str> lines = dat::in::text(path).value();
+                
+                array<str> lines =
+                dat::in::text(path).value();
+
                 topics += content::topic{lines};
-                array<str> Lines = topics.back().formatted();
-                if (Lines != lines) dat::out::write(path, Lines);
+                
+                array<str> Lines =
+                topics.back().formatted();
+
+                if (Lines != lines)
+                dat::out::write(path, Lines);
+
+                for (auto& entry: topics.back().entries)
+                for (str option: entry.opt.unknown)
+                err << red(bold(path.string() + " (" +
+                std::to_string(entry.line) + "): " +
+                "UNKNOWN OPTION: " + option));
             }
         }
     }

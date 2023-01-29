@@ -50,18 +50,19 @@ namespace media::scan
         for (std::filesystem::directory_iterator
             next(dir), end; next != end; ++next)
         {
-            path entry = next->path();
-            str name = is_directory(entry) ?
-                entry.filename().string():
-                entry.stem().string();
+            path path;
+            path = next->path();
+            str name = is_directory(path) ?
+                path.filename().string():
+                path.stem().string();
 
             if (name.starts_with(".")) continue; else
                 name = un_msdos(name);
 
             if (true) {
-            if (is_directory(entry))
+            if (is_directory(path))
             dataelog << ">>> " + dir.string() + "/";
-            dataelog << entry.filename().string();
+            dataelog << path.filename().string();
             dataelog << "\n"; }
 
             resource resource = common;
@@ -91,39 +92,24 @@ namespace media::scan
             if (license.starts_with("cc-by"     )) credit += " CC-BY";
             if (meta_present) resource.credit = credit;
             
-            str links, optio;
-            title.split_by("##", title, optio);
-            title.split_by("[",  title, links);
-            links.strip("[ ]");
-            optio.strip();
+            str sense, commt, links, optio;
+            title.split_by("##", title, optio); optio.strip();
+            title.split_by("[" , title, links); links.strip("[ ]");
+            title.split_by("%%", title, commt); commt.strip();
+            title.split_by("%" , title, sense); sense.strip();
             title.strip();
 
             if (yadda.starts_with("## "))
                 optio += yadda;
 
-            if (resource.options.contains("{links}")
-            and not parse_links(title, links))
+            if (not parse_links(title, links))
                 *report::err << red(bold(
                 "parse links error: " +
-                 entry.string()));
-
-            str comment;
-            title.split_by("%%",
-            title, comment);
-            title.strip();
-            comment.strip();
-
-            str sense;
-            if (title.ends_with("}")) {
-                title.split_by("{",
-                title, sense);
-                title.strip();
-                sense.truncate();
-                sense.strip(); }
+                 path.string()));
 
             resource.title = title;
             resource.sense = sense;
-            resource.comment = comment;
+            resource.comment = commt;
             resource.entries += links.split_by("][");
             resource.options += optio.split_by("##");
             for (str& s: resource.entries) s.strip();
@@ -135,37 +121,37 @@ namespace media::scan
             std::erase_if(resource.entries,
             [](auto s){ return s == "="; });
 
-            if (is_directory(entry))
+            if (is_directory(path))
             {
                 if (meta != "")
                 resource.id += " {{" + to_msdos(meta) + "}}";
 
-                path credit = entry / "!credit.txt";
+                auto credit = path / "!credit.txt";
                 if (std::filesystem::exists(credit)) {
                 resource.credit = str(dat::in::text(credit).value(), "<br>");
                 identified[credit] = true; }
 
-                resources += scan(entry, level+1, resource);
+                resources += scan(path, level+1, resource);
             }
-            else if (is_regular_file(entry))
+            else if (is_regular_file(path))
             {
-                resource.path = entry;
-                resource.id = entry.stem().string() +
-                resource.id + entry.extension().string();
+                resource.path = path;
+                resource.id = path.stem().string() +
+                resource.id + path.extension().string();
 
-                str ext = str(entry.extension().string()).ascii_lowercased();
+                str ext = str(path.extension().string()).ascii_lowercased();
                 if (ext == ".uid-zps") continue; // Zone Studio pix edits
-                if (false) *report::out << "scan " + entry.string();
+                if (false) *report::out << "scan " + path.string();
 
                 if (audio.contains(ext)) resource.kind = "audio"; else
                 if (video.contains(ext)) resource.kind = "video"; else
                 {
-                    if (entry.filename() != "!credit.txt")
-                    identified[entry] |= false;
+                    if (path.filename() != "!credit.txt")
+                    identified[path] |= false;
                     continue;
                 }
 
-                path txt = entry;
+                auto txt = path;
                 txt.replace_extension(".txt");
                 if (std::filesystem::exists(txt))
                 {
@@ -232,11 +218,10 @@ namespace media::scan
                         "" : "<br>");
 
                         str links = "";
-                        if (resource.options.contains("{links}")
-                        and not parse_links(title, links))
+                        if (not parse_links(title, links))
                             *report::err << red(bold(
                             "parse links error: " +
-                             entry.string()));
+                             path.string()));
 
                         resource.title = title;
                         resource.entries +=
@@ -248,7 +233,7 @@ namespace media::scan
                         comment_lines, "<br>");
                 }
 
-                report::id2path[resource.id] += entry; // check for same id
+                report::id2path[resource.id] += path; // check for same id
 
                 resources += resource;
 
@@ -277,7 +262,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "date "};
-                    static const array<str> exact = {"=", "{links}", "sic!", "Case",
+                    static const array<str> exact = {"=", "sic!", "Case", "{links}",
                     "us","uk","ca","au","ru", "poem","song","sound","number","pixed",
                     "fade","fade in","fade out",
                     "reduced","unclear"};
@@ -294,7 +279,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "qrop ", "date "};
-                    static const array<str> exact = {"=", "{links}", "sic!", "Case",
+                    static const array<str> exact = {"=", "sic!", "Case", "{links}",
                     "6+","8+","10+","12+","14+","16+","18+","21+","99+"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))

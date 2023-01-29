@@ -26,6 +26,7 @@ namespace app::dic::left
 
             int l = gui::metrics::line::width;
 
+            video_max_size = xy{};
             for (auto& v: selected_video)
             video_max_size.x = max(
             video_max_size.x, v.location.size_x + 6*l);

@@ -77,9 +77,6 @@ namespace app::dic::left
 
             if (current_entry.title != "")
             undoes += current_entry.title;
-
-            if (not redoes.empty()
-            and current_entry.title != redoes.back())
             redoes.clear();
 
             current_entry = entry;
@@ -179,12 +176,18 @@ namespace app::dic::left
                 undoes.back();
                 undoes.pop_back();
                 redoes += current_entry.title;
+                auto saving = std::move(redoes);
                 auto index = vocabulary.index(link);
-                if (not index) { logs::times <<
-                "undoes: not found: " + link; return; }
+                if (not index) { str s = "undoes: not found: " + link;
+                logs::times << s;
+                logs::media << s;
+                logs::audio << s;
+                logs::video << s;
+                return; }
                 clicked = *index;
                 notify();
                 undoes.pop_back();
+                redoes = std::move(saving);
                 refresh();
             }
             if (what == &redo and not redoes.empty()) 
@@ -192,11 +195,18 @@ namespace app::dic::left
                 str link =
                 redoes.back();
                 redoes.pop_back();
+                auto saving = std::move(redoes);
                 auto index = vocabulary.index(link);
-                if (not index) { logs::times <<
-                "redoes: not found: " + link; return; }
+                if (not index) { str s = "redoes: not found: " + link;
+                logs::times << s;
+                logs::media << s;
+                logs::audio << s;
+                logs::video << s;
+                return; }
                 clicked = *index;
                 notify();
+                redoes = std::move(saving);
+                refresh();
             }
             if (what == &quot.object.mute)
             {

@@ -2,10 +2,13 @@
 #include <execution>
 #include "data_out.h"
 #include "app_dic.h"
-namespace studio::build
+namespace studio::build::dic
 {
-    bool dictionary_update (gui::console & out, gui::console & err)
+    bool update ()
     {
+        auto& out = app::logs::report;
+        auto& err = app::logs::errors;
+
         using std::filesystem::path;
         path src = "../en-wiktionary/enwiktionary-data.txt";
         path dir = "../data";

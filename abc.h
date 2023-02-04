@@ -65,5 +65,14 @@ str to_msdos (str s)
     return s;
 }
 
+struct optional_log
+{
+    optional_log() = default;
+    optional_log(gui::console& log) : log(&log) {}
+    void operator << (str s) { if (log) *log << std::move(s); }
+    void clear () { if (log) log->clear(); }
+    private: gui::console* log = nullptr;
+};
+
 
 

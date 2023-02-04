@@ -1,18 +1,19 @@
 ﻿#pragma once
 #include <execution>
 #include "content_table.h"
-namespace studio::build
+namespace studio::build::one
 {
     using std::filesystem::path;
 
     array<content::topic> topics;
 
     void scan (path dir,
-        gui::console & out,
-        gui::console & err,
         int level = 0,
         str name = "")
     {
+        auto& out = app::logs::report;
+        auto& err = app::logs::errors;
+
         if (level < 3)
         out << "scan " + dir.string();
         for (std::filesystem::directory_iterator
@@ -41,7 +42,7 @@ namespace studio::build
 
             if (is_directory(path))
             {
-                scan(path, out, err, level+1, name);
+                scan(path, level+1, name);
             }
             else if (is_regular_file(path))
             {
@@ -68,10 +69,9 @@ namespace studio::build
         }
     }
 
-    bool content_update (gui::console & out, gui::console & err)
+    bool update ()
     {
-        scan("content", out, err);
-
+        scan("content");
         return false;
     }
 }

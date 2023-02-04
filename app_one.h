@@ -17,7 +17,9 @@ namespace app::one
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w;
                 int H = coord.now.h;

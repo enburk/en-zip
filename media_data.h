@@ -22,7 +22,7 @@ namespace media::out
         std::map<int32_t, std::map<int32_t, str>> locations;
         int total_media = 0;
 
-        data (gui::console& out, gui::console& err):
+        data () :
 
             storage    ("../data/media"),
             entries_dic("../data/media/entries_dic.dat"),
@@ -34,8 +34,9 @@ namespace media::out
         {
             setlocale(LC_ALL,"en_US.utf8");
 
-            report::out = &out;
-            report::err = &err;
+            using logs::out;
+            using logs::err;
+
             report::id2path.clear();
             report::unidentified.clear();
             report::updated = false;
@@ -64,8 +65,7 @@ namespace media::out
 
             if (new_one) {
                 new_ones.insert(r);
-                *report::out <<
-                doc::html::encoded(
+                logs::out << doc::html::encoded(
                 r->path.string()); }
 
             locations
@@ -85,7 +85,7 @@ namespace media::out
         ~data ()
         { try {
 
-            *report::out << dark(bold("SAVE..."));
+            logs::out << dark(bold("SAVE..."));
 
             entries_dic << total_media;
             entries_dic << (int)(entrymap_dic.size());
@@ -115,10 +115,10 @@ namespace media::out
             locationary << offset;
             locationary << path; }
 
-            *report::out << dark(bold("SAVE OK"));
+            logs::out << dark(bold("SAVE OK"));
         }
         catch(std:: exception const& e) {
-        *report::err << red(bold(
+        logs::err << red(bold(
             e.what())); }}
     };
 }

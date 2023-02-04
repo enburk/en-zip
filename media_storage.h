@@ -70,11 +70,11 @@ namespace media::out
                 std::filesystem::rename(tmp, txt);
             }
             catch (std::exception & e) {
-                *report::out << bold(red(
+                logs::out << bold(red(
                     "media::out::source: " +
                         str(e.what()))); }
             catch (...) {
-                *report::out << bold(red(
+                logs::out << bold(red(
                     "media::out::source: "
                     "unknown exception")); }
         }

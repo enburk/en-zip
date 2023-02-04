@@ -43,8 +43,11 @@ namespace media::scan
         array<str> video = {".png", ".jpg", ".jpeg" };
         array<str> audio = {".mp3", ".ogg", ".wav"};
 
+        using logs::out;
+        using logs::err;
+
         if (level < 2)
-        *report::out << "scan " + dir.string();
+        out << "scan " + dir.string();
         for (std::filesystem::directory_iterator
             next(dir), end; next != end; ++next)
         {
@@ -101,7 +104,7 @@ namespace media::scan
                 optio += yadda;
 
             if (not parse_links(title, links))
-                *report::err << red(bold(
+                err << red(bold(
                 "parse links error: " +
                  path.string()));
 
@@ -139,7 +142,7 @@ namespace media::scan
 
                 str ext = str(path.extension().string()).ascii_lowercased();
                 if (ext == ".uid-zps") continue; // Zone Studio pix edits
-                if (false) *report::out << "scan " + path.string();
+                if (false) out << "scan " + path.string();
 
                 if (audio.contains(ext)) resource.kind = "audio"; else
                 if (video.contains(ext)) resource.kind = "video"; else
@@ -167,7 +170,7 @@ namespace media::scan
                             break;
 
                         if (not aux::unicode::ok(line))
-                        *report::err << red(txt.string() +
+                        err << red(txt.string() +
                         " !UTF-8: [" + line + "]");
 
                         if (line.starts_with("**")) {
@@ -217,7 +220,7 @@ namespace media::scan
 
                         str links = "";
                         if (not parse_links(title, links))
-                            *report::err << red(bold(
+                            err << red(bold(
                             "parse links error: " +
                              path.string()));
 
@@ -246,13 +249,13 @@ namespace media::scan
                     str("1, 2, 3").split_by(", ");
                     if (resource.sense != ""
                     and not ee.contains(resource.sense))
-                    *report::err << blue(
+                    err << blue(
                     dir.string() + "/" +
                     resource.title +" {" +
                     resource.sense + "}");
 
                     if (resource.title.contains(one_of("{}")))
-                    *report::err << yellow(
+                    err << yellow(
                     dir.string() + "/" +
                     resource.title);
                 }
@@ -266,7 +269,7 @@ namespace media::scan
                     "reduced","unclear"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))
-                    *report::err << red(
+                    err << red(
                     dir.string() + "/" +
                     resource.title +
                     " OPTION: ["
@@ -281,7 +284,7 @@ namespace media::scan
                     "6+","8+","10+","12+","14+","16+","18+","21+","99+"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))
-                    *report::err << red(
+                    err << red(
                     dir.string() + "/" +
                     resource.title +
                     " OPTION: ["

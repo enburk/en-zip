@@ -49,11 +49,13 @@ namespace media
 
     namespace report
     {
-        gui::console * out = nullptr;
-        gui::console * err = nullptr;
         std::unordered_map<str, array<path>> id2path;
         array<path> unidentified;
         bool updated = false;
     }
-
+    namespace logs
+    {
+        optional_log out;
+        optional_log err;
+    }
 }

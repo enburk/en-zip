@@ -67,10 +67,14 @@ namespace studio::build
 
             compilation = [this](auto& stop)
             {
+                app::logs::report = out;
+                app::logs::errors = err;
+
                 bool
                 updated = false;
-                updated|= dictionary_update(out, err);
-                updated|=    content_update(out, err);
+                updated|= dic::update();
+                updated|= one::update();
+            //  updated|= two::update();
                 data_updated = updated;
 
                 eng::
@@ -86,10 +90,13 @@ namespace studio::build
                     eng::dictionary::index index; index << pool;
                     redirects[i] = index.redirect; }
 
-                media::out::data data(out, err);
+                media::logs::out = app::logs::report;
+                media::logs::err = app::logs::errors;
+                media::out::data data;
 
-                dic::compile(vocabulary, redirects, data, out, err);
-                one::compile(vocabulary, redirects, data, out, err);
+                dic::compile(vocabulary, redirects, data);
+                one::compile(vocabulary, redirects, data);
+            //  two::compile(vocabulary, redirects, data);
 
                 data_updated =
                 data_updated or

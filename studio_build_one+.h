@@ -8,10 +8,11 @@ namespace studio::build::one
     (
         eng::vocabulary& vocabulary,
         array<int>& redirects,
-        media::out::data& data,
-        gui::console& report,
-        gui::console& errors
+        media::out::data& data
     )
     {
+        auto& out = app::logs::report;
+        auto& err = app::logs::errors;
+
     }
 }

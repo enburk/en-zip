@@ -89,10 +89,10 @@ namespace media::video
                     img.size.y > 2500 &&
                     std::filesystem::file_size(original) > 5*1024*1024)
                 {
-                    *report::out << "copy huge " + original.string();
+                    logs::out << "copy huge " + original.string();
                     if (!std::filesystem::copy_file(original, "../datae_huge"/original.filename(),
                          std::filesystem::copy_options::skip_existing))
-                        *report::out << "<b>already exists</b>";
+                        logs::out << "<b>already exists</b>";
 
                     resize (img, 2500, 2500, false);
                     pix::write (img, original, 95);

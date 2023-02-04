@@ -8,18 +8,19 @@ namespace studio::build::dic
     (
         eng::vocabulary& vocabulary,
         array<int>& redirects,
-        media::out::data& data,
-        gui::console& report,
-        gui::console& errors
+        media::out::data& data
     )
     {
+        auto& out = app::logs::report;
+        auto& err = app::logs::errors;
+
         using res = media::resource const*;
         std::unordered_map<int, array<res>> entries2resources;
         std::unordered_map<res, array<str>> resources2entries;
 
         constexpr auto html = doc::html::encoded;
 
-        report << dark(bold("DIC: SCAN RESOURCES..."));
+        out << dark(bold("DIC: SCAN RESOURCES..."));
 
         for (auto& r: data.resources)
         {
@@ -94,7 +95,7 @@ namespace studio::build::dic
             }
         }
 
-        report << dark(bold("DIC: CALCULATE FREQUENCIES..."));
+        out << dark(bold("DIC: CALCULATE FREQUENCIES..."));
 
         std::map<int, array<int>> frequency;
         std::map<int, array<int>> frequency_a;
@@ -110,7 +111,7 @@ namespace studio::build::dic
             if (v > 0) frequency_v[v] += entry;
             if (a+v>0) frequency[a+v] += entry;
         }
-        report << purple(bold("AUDIO STATISTICS"));
+        out << purple(bold("AUDIO STATISTICS"));
         for (auto [n, entries]: std::ranges::reverse_view(frequency_a)) {
             std::ranges::sort(entries);
             str list; int nn = entries.size();
@@ -123,11 +124,11 @@ namespace studio::build::dic
                     break;
                 }
             }
-            report <<
+            out <<
             purple(bold(std::to_string(n))) + ": " +
             blue(list);
         }
-        report << purple(bold("VIDEO STATISTICS"));
+        out << purple(bold("VIDEO STATISTICS"));
         for (auto [n, entries]: std::ranges::reverse_view(frequency_v)) {
             std::ranges::sort(entries);
             str list; int nn = entries.size();
@@ -140,12 +141,12 @@ namespace studio::build::dic
                     break;
                 }
             }
-            report <<
+            out <<
             purple(bold(std::to_string(n))) + ": " +
             blue(list);
         }
 
-        report << dark(bold("DIC: LINK RESOURCES..."));
+        out << dark(bold("DIC: LINK RESOURCES..."));
 
         int total_media = 0;
 
@@ -203,7 +204,7 @@ namespace studio::build::dic
             }
         }
 
-        report << dark(bold("DIC: CHECK USAGE..."));
+        out << dark(bold("DIC: CHECK USAGE..."));
 
         for (auto& r: data.resources)
         {
@@ -213,7 +214,7 @@ namespace studio::build::dic
             and not r.options.contains("==")
             and not r.options.contains("=")
             and not data.assets.contains(&r)) {
-                errors << yellow(html(r.path.string())) +
+                err << yellow(html(r.path.string())) +
                 red(" [" + str(r.entries, "] [") + "]");
                 continue; }
 
@@ -227,7 +228,7 @@ namespace studio::build::dic
             if (not accepted.contains(entry))
                     rejected += entry;
         
-            report <<
+            out <<
             purple(html(r.title)) +
             blue  (html(" [" + str(accepted,  "] [") + "]")) +
             red   (html(" [" + str(rejected,  "] [") + "]")) +

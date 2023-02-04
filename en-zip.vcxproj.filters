@@ -168,5 +168,8 @@
     <ClInclude Include="studio_app_one_preview.h">
       <Filter>studio-one</Filter>
     </ClInclude>
+    <ClInclude Include="media_storage.h">
+      <Filter>media</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

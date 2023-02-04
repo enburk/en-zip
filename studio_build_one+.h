@@ -4,7 +4,14 @@
 #include "media_data.h"
 namespace studio::build::one
 {
-    void compile (array<media::resource> const& resources, gui::console& report)
+    void compile
+    (
+        eng::vocabulary& vocabulary,
+        array<int>& redirects,
+        media::out::data& data,
+        gui::console& report,
+        gui::console& errors
+    )
     {
     }
 }

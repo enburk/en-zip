@@ -90,9 +90,9 @@ namespace app::dic::left
             timing t1;
             str debug = "";///"<br> n = " + std::to_string(n);
             str html = wiki2html(entry, links) + debug;
-            if (true) std::ofstream("test.html") << html;
-            if (true) std::ofstream("test.html.txt") << doc::html::print(html);
-            if (true)
+            if (false) std::ofstream("test.html") << html;
+            if (false) std::ofstream("test.html.txt") << doc::html::print(html);
+            if (false)
             {
                 array<str> ss;
                 ss += entry.title; ss += "";

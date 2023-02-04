@@ -1,175 +1,211 @@
 #pragma once
-#include <sstream>
-#include "medio_audio.h"
-#include "medio_video.h"
-namespace media::data
+#include "media_scan.h"
+#include "media_storage.h"
+namespace media::out
 {
-    namespace out
+    struct data
     {
-        struct source : dat::out::file
+        storage storage;
+        dat::out::file entries_dic;
+        dat::out::file entries_one;
+        dat::out::file entries_two;
+        dat::out::file media_index;
+        dat::out::file locationary;
+        dat::out::file assets_data;
+        
+        array<resource> resources;
+        std::set<resource const*> new_ones;
+        std::set<resource const*> assets;
+        std::multimap<int, int> entrymap_dic;
+        std::multimap<int, int> entrymap_one;
+        std::multimap<int, int> entrymap_two;
+        std::map<int32_t, std::map<int32_t, str>> locations;
+        int total_media = 0;
+
+        data (gui::console& out, gui::console& err):
+
+            storage    ("../data/media"),
+            entries_dic("../data/media/entries_dic.dat"),
+            entries_one("../data/media/entries_one.dat"),
+            entries_two("../data/media/entries_two.dat"),
+            media_index("../data/media/media_index.dat"),
+            locationary("../data/media/locationary.dat"),
+            assets_data("../data/media/assets.dat")
         {
-            struct info { location location; bool used = false; };
+            setlocale(LC_ALL,"en_US.utf8");
 
-            std::map<str, info> content; int number;
+            report::out = &out;
+            report::err = &err;
+            report::id2path.clear();
+            report::unidentified.clear();
+            report::updated = false;
 
-            source (std::filesystem::path path, int number) :
-                dat::out::file(path, std::ios::binary | std::ios::app),
-                number(number)
-            {
-                std::filesystem::path txt = path;
-                txt.replace_extension(".txt");
-                if (!std::filesystem::exists(txt)) return;
-                array<str> lines = dat::in::text(txt).value();
-                for (str line : lines)
-                {
-                    if (line == "") continue;
+            resources.reserve(128*1024);
+            scan::dataelog = std::ofstream("datae.txt");
+            scan::scan("../datae", resources);
+            scan::dataelog = std::ofstream{};
 
-                    str offset; line.split_by(" # ", offset, line); offset.strip();
-                    str length; line.split_by(" # ", length, line); length.strip();
-                    str size_x; line.split_by(" # ", size_x, line); size_x.strip();
-                    str size_y; line.split_by(" # ", size_y, line); size_y.strip();
-                    str record = line;
+            auto&   unidentified = 
+            report::unidentified;
+            if (not unidentified.empty()) {
+            err << "unidentified files:";
+            for (auto path: unidentified)
+            err << path.string(); }
 
-                    content [record] = info
-                    {
-                        location {number,
-                        std::stoi(offset),
-                        std::stoi(length),
-                        std::stoi(size_x),
-                        std::stoi(size_y)},
-                        false
-                    };
-                }
-            }
-
-            ~source ()
-            {
-                try
-                {
-                    if (content.size() == 0) return;
-                    std::filesystem::path txt = path; txt.replace_extension(".txt");
-                    std::filesystem::path tmp = path; tmp.replace_extension(".tmp");
-                    {
-                        auto dir = tmp.parent_path();
-                        if (dir != std::filesystem::path())
-                            std::filesystem::create_directories(dir);
-
-                        std::ofstream fstream(tmp);
-                        for (auto [record, info] : content)
-                        {
-                            str offset = std::to_string(info.location.offset);
-                            str length = std::to_string(info.location.length);
-                            str size_x = std::to_string(info.location.size_x);
-                            str size_y = std::to_string(info.location.size_y);
-                            fstream <<
-                            std::string(offset.right_aligned(10)) + " # " +
-                            std::string(length.right_aligned(10)) + " # " +
-                            std::string(size_x.right_aligned(10)) + " # " +
-                            std::string(size_y.right_aligned(10)) + " # " +
-                            record + "\n";
-                        }
-                    }
-                    std::filesystem::rename(tmp, txt);
-                }
-                catch (std::exception & e) {
-                    *report::out << bold(red(
-                        "media::out::source: " +
-                            str(e.what()))); }
-                catch (...) {
-                    *report::out << bold(red(
-                        "media::out::source: "
-                        "unknown exception")); }
-            }
-
-            expected<Location> add (resource const& r) try
-            {
-                auto size = std::filesystem::file_size(r.path);
-                if (size > (std::uintmax_t)(max<int32_t>()))
-                    throw std::out_of_range("media::out::file too big: "
-                        + r.path.string());
-
-                auto ftime = std::filesystem::last_write_time(r.path);
-                auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
-                std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
-                std::stringstream stringstream;
-                stringstream << std::put_time(std::gmtime(&ctime), "%Y/%m/%d %T");
-                str stime = stringstream.str();
-                str ssize = std::to_string(size);
-                str record = ssize.right_aligned(10) + " # " + stime + " # " + r.id;
-
-                auto it = content.find(record);
-                if (it != content.end()) {
-                    it->second.used = true;
-                    return Location{
-                        it->second.location,
-                        false}; // old one
-                }
-
-                array<byte> data =
-                    r.kind == "audio" ? audio::data(r).value():
-                    r.kind == "video" ? video::data(r).value():
-                    array<byte>{};
-
-                if (data.size() == 0) throw std::runtime_error("no data");
-                if (data.size() > max<int32_t>() - dat::out::file::size)
-                    return Location{}; // it's enough for this storage
-
-                info info {};
-                info.used = true;
-                info.location.source = number;
-                info.location.offset = dat::out::file::size;
-                info.location.length = data.size();
-
-                fstream.write((char*) data.data(), data.size());
-                dat::out::file::size += data.size();
-
-                if (r.kind == "video") {
-                    auto size = pix::size(data.from(0)).value();
-                    info.location.size_x = size.x;
-                    info.location.size_y = size.y;
-                }
-
-                content[record] = info;
-
-                report::data_updated = true;
-
-                return Location{info.location, true};
-            }
-            catch (std::exception & e) {
-            return aux::error("media::data::out::source:"
-                "<br> path: " + r.path.string() +
-                "<br> " + e.what());
-            }
-        };
-
-        struct storage
+            for (auto& [id, paths]: report::id2path)
+            if  (paths.size() > 1) {
+            err << "files with same id: " + id;
+            for (auto path: paths)
+            err << path.string(); }
+        }
+        void add (resource const* r)
         {
-            path dir;
+            auto[location, new_one] = storage.add(*r);
 
-            array<std::unique_ptr<source>> sources;
-            
-            storage (path dir) : dir(dir)
-            {
-                for (int i=0; i<1000; i++)
-                {
-                    std::string filename = "storage." + std::to_string(i) + ".dat";
-                    if (!std::filesystem::exists(dir / filename)) break;
-                    sources += std::make_unique<source>(dir / filename, i);
-                }
-                if (sources.size() == 0)
-                    sources += std::make_unique<source>(dir / "storage.0.dat", 0);
-            }
+            if (new_one) {
+                new_ones.insert(r);
+                *report::out <<
+                doc::html::encoded(
+                r->path.string()); }
 
-            Location add (const resource & r)
-            {
-                auto result = sources.back()->add(r).value();
-                if (result.location == location{}) { int i = sources.size();
-                    std::string filename = "storage." + std::to_string(i) + ".dat";
-                    sources += std::make_unique<source>(dir / filename, i);
-                    result = sources.back()->add(r).value();
-                }
-                return result;
-            }
-        };
-    }
+            locations
+            [location.source]
+            [location.offset] =
+                r->path.string();
+
+            media_index << r->kind;
+            media_index << r->title;
+            media_index << r->sense;
+            media_index << r->comment;
+            media_index << r->credit;
+            media_index << r->options;
+            media_index << location;
+            total_media++;
+        }
+        ~data ()
+        { try {
+
+            *report::out << dark(bold("SAVE..."));
+
+            entries_dic << total_media;
+            entries_dic << (int)(entrymap_dic.size());
+            for (auto [entry, media] : entrymap_dic) {
+            entries_dic << entry;
+            entries_dic << media; }
+        
+            entries_one << (int)(entrymap_one.size());
+            for (auto [entry, media] : entrymap_one) {
+            entries_one << entry;
+            entries_one << media; }
+        
+            entries_two << (int)(entrymap_two.size());
+            for (auto [entry, media] : entrymap_two) {
+            entries_two << entry;
+            entries_two << media; }
+        
+            assets_data << (int)(assets.size());
+            for (auto& resource: assets) {
+            assets_data << resource->title;
+            assets_data << dat::in::bytes
+            (resource->path).value(); }
+
+            for (auto& [source, map] : locations)
+            for (auto& [offset, path] : map) {
+            locationary << source;
+            locationary << offset;
+            locationary << path; }
+
+            *report::out << dark(bold("SAVE OK"));
+        }
+        catch(std:: exception const& e) {
+        *report::err << red(bold(
+            e.what())); }}
+    };
+}
+namespace media::in
+{
+    struct entry_index { int32_t entry, media; };
+    struct media_index
+    {
+        str kind;
+        str title, sense;
+        str comment, credit;
+        location location;
+        array<str> options;
+
+        bool operator == (media_index const&) const = default;
+        bool operator != (media_index const&) const = default;
+    };
+
+    struct data
+    {
+        array<entry_index> entries_dic;
+        array<entry_index> entries_one;
+        array<entry_index> entries_two;
+        array<media_index> media_index;
+        std::map<str, array<sys::byte>> assets;
+
+        void reload ()
+        {
+            entries_dic.clear();
+            entries_one.clear();
+            entries_two.clear();
+            media_index.clear();
+            assets.clear();
+
+            std::filesystem::path dir = "../data/media";
+
+            dat::in::pool pool;
+            if (std::filesystem::exists(dir/"entries_dic.dat")) {
+            pool.bytes = dat::in::bytes(dir/"entries_dic.dat").value();
+            media_index.resize(pool.get_int());
+            entries_dic.resize(pool.get_int());
+            for (auto & index : entries_dic) {
+                index.entry = pool.get_int();
+                index.media = pool.get_int();
+            }}
+            pool.offset = 0; // reuse
+            if (std::filesystem::exists(dir/"entries_one.dat")) {
+            pool.bytes = dat::in::bytes(dir/"entries_one.dat").value();
+            entries_one.resize(pool.get_int());
+            for (auto & index : entries_one) {
+                index.entry = pool.get_int();
+                index.media = pool.get_int();
+            }}
+            pool.offset = 0; // reuse
+            if (std::filesystem::exists(dir/"entries_two.dat")) {
+            pool.bytes = dat::in::bytes(dir/"entries_two.dat").value();
+            entries_two.resize(pool.get_int());
+            for (auto & index : entries_two) {
+                index.entry = pool.get_int();
+                index.media = pool.get_int();
+            }}
+            pool.offset = 0; // reuse
+            if (std::filesystem::exists(dir/"media_index.dat")) {
+            pool.bytes = dat::in::bytes(dir/"media_index.dat").value();
+            for (auto & index : media_index) {
+                index.kind    = pool.get_string();
+                index.title   = pool.get_string();
+                index.sense   = pool.get_string();
+                index.comment = pool.get_string();
+                index.credit  = pool.get_string();
+                index.options.resize(pool.get_int());
+                for (auto & option : index.options)
+                option = pool.get_string();
+                pool >> index.location;
+            }}
+            pool.offset = 0; // reuse
+            if (std::filesystem::exists(dir/"assets.dat")) {
+            pool.bytes = dat::in::bytes(dir/"assets.dat").value();
+            int nn = pool.get_int();
+            for (int i=0; i<nn; i++) {
+                auto title = pool.get_string();
+                auto bytes = pool.get_bytes();
+                assets[title] = std::vector<sys::byte>(
+                    bytes.data,
+                    bytes.data +
+                    bytes.size);
+            }}
+        }
+    };
 }

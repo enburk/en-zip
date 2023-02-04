@@ -3,11 +3,48 @@
 #include "content_options.h"
 namespace content
 {
+    auto Eng_markers = str(
+    "{Am.}, {Br.}, {also}, {esp.}, {mainly}, {usually}, {informal}, {informal:}"
+    ).split_by(", ");
+
+    auto eng_markers = str("Am., Br., "
+    "also, especially, mainly, usually, rarely, "
+    "colloquial, formal, informal, idiom, idiomatic, "
+    "literary, literally, old-fashioned, slang, vulgar, "
+    "singular, plural, countable, uncountable, comparative, superlative, "
+    "transitive, intransitive, past tense, past participle"
+    ).split_by(", ");
+
+    auto Rus_markers = str(
+    u8"дословно:, иногда:, книжное:, разговорное:, "
+    u8"редко:, реже:, сленг:, также:, устаревшее:, не только, " 
+    u8"в математике:, в геометрии:, в физике:, в астрономии:, в биологии:, в зоологии:, в ботанике:, "
+    u8"в философии:, в психологии:, в экономике:, в истории:, в лингвистике:, в фонетике:, в грамматике:, "
+    u8"в спорте:, в футболе:, в хоккее:, в теннисе:, в гимнастике:, в гонках:, в плавании:, в шахматах:, в картах:, "
+    u8"в искусстве:, в литературе:, в музыке:, в театре:, в архитектуре:, в Древнем Риме:, "
+    u8"в политике:, в обиходе:, в медицине:, в хирургии:, в физиологии:, "
+    u8"в авиации:, в морском деле:, в цифр. технологиях:"
+    ).split_by(", ");
+
+    auto rus_markers = eng_markers * str(
+    u8"англ., исп., итал., лат., нем., порт., фр., "
+    u8"в брит., в амер., в знач., и проч., истор., "
+    u8"буквально:, дословно:, дословно c , например:, "
+    u8"обычно:, сравните:, редко:, также:, формальное:"
+    ).split_by(", ");
+
     struct entry
     {
-        str eng,rus;
+        str eng;
+        str rus;
+        str sense;
         str comment;
         options opt;
+        array<str> audios_en;
+        array<str> audios_uk;
+        array<str> audios_us;
+        array<str> videos;
+        array<str> errors;
         int line = 0;
 
         entry () = default;
@@ -21,34 +58,51 @@ namespace content
             comment.strip();
             eng.strip();
             rus.strip();
-        }
 
-        str formatted (int tab1, int tab2) const
-        {
-            str E = eng;
-            str R = rus;
-            str O = opt.formatted();
-            str C = comment;
-            // eng... = rus... # opt
-            // eng... = rus
-            // eng... # opt
-            // eng
-            // = rus # opt
-            // = rus
-            // # opt
-            // 
-            int e = aux::unicode::length(eng);
-            int r = aux::unicode::length(rus);
-            int o = O == "" and C == "" ? 0 : 1;
-            if (e and (r or  o)) E.align_left(tab1);
-            if (e and (r and o)) R.align_left(tab2 - tab1 - 3);
-            str s;
-            if (E != "" ) s +=          E + " ";
-            if (R != "" ) s +=   "= " + R + " ";
-            if (O != "" ) s +=   "# " + O + " ";
-            if (C != "" ) s += "/// " + C;
-            s.strip();
-            return s;
+            s = eng;
+            if (s == ""
+            or  s.starts_with("---")
+            or  s.starts_with("==="))
+                return;
+
+            if (s.starts_with(": ")) {
+                audios_en += s.from(2);
+                videos    += s.from(2);
+                return; }
+
+            s.split_by("@", s, sense);
+            s.strip(); sense.strip();
+
+            if (s.contains("\\\\"))
+            {
+                for (str marker: Eng_markers)
+                s.replace_all(marker.c_str(), "");
+                s.replace_all ("~" , "");
+
+                str uk, us;
+                s.split_by("\\\\", uk, us);
+                uk.strip (); audios_uk += uk; videos += uk;
+                us.strip (); audios_us += us; videos += us;
+            }
+            else
+            {
+                bool uk = s.contains("{Br.}");
+                bool us = s.contains("{Am.}");
+
+                for (str marker: Eng_markers)
+                s.replace_all(marker.c_str(), "");
+                s.replace_all ("~" , "");
+
+                s.debracket("{","}");
+                s.debracket("(",")");
+                s.debracket("[","]");
+
+                if (uk and us) errors += "Br. & Am."; else
+                if (uk) audios_uk += s.split_by("/"); else
+                if (us) audios_us += s.split_by("/"); else
+                        audios_en += s.split_by("/");
+                        videos    += s.split_by("/");
+            }
         }
 
 
@@ -60,18 +114,6 @@ namespace content
             Eng (const str & s = "")
             {
                 en = s; en.parse ("%%", en, ext); en.strip (); ext.strip ();
-
-array<str> eng_txt_markers =
-array<str>::as ("{Am.}", "{Br.}", "{also}", "{esp.}", "{mainly}", "{usually}", "{informal}", "informal:");
-
-array<str> eng_ext_markers = 
-array<str>::as ("Am.", "Br.", "also", "especially", "mainly", "usually", "rarely") +
-array<str>::as ("colloquial", "formal", "informal", "idiom", "idiomatic", "literary", "literally", "old-fashioned", "slang", "vulgar") +
-array<str>::as ("noun", "verb", "adjective", "adverb", "pronoun", "conjunction", "interjection", "preposition", "prepositional", "determiner", "intensifier") +
-array<str>::as ("singular", "plural", "countable", "uncountable", "transitive", "intransitive", "comparative", "superlative") +
-array<str>::as ("past tense", "past participle");
-
-
 
                 res = en;
 
@@ -198,5 +240,33 @@ array<str>::as ("past tense", "past participle");
         };
         */
 
+
+        str formatted (int tab1, int tab2) const
+        {
+            str E = eng;
+            str R = rus;
+            str O = opt.formatted();
+            str C = comment;
+            // eng... = rus... # opt
+            // eng... = rus
+            // eng... # opt
+            // eng
+            // = rus # opt
+            // = rus
+            // # opt
+            // 
+            int e = aux::unicode::length(eng);
+            int r = aux::unicode::length(rus);
+            int o = O == "" and C == "" ? 0 : 1;
+            if (e and (r or  o)) E.align_left(tab1);
+            if (e and (r and o)) R.align_left(tab2 - tab1 - 3);
+            str s;
+            if (E != "" ) s +=          E + " ";
+            if (R != "" ) s +=   "= " + R + " ";
+            if (O != "" ) s +=   "# " + O + " ";
+            if (C != "" ) s += "/// " + C;
+            s.strip();
+            return s;
+        }
     };
 }

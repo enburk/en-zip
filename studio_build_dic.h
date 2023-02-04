@@ -58,9 +58,9 @@ namespace studio::build
 
         out << "dictionary sort...";
         std::sort(std::execution::par_unseq,
-            entries.begin(), entries.end(),
-            [](auto const& a, auto const& b) { return
-            eng::less(a.title, b.title); });
+        entries.begin(), entries.end(),
+        [](auto const& a, auto const& b) {
+        return eng::less(a.title, b.title); });
         out << "dictionary sort ok";
 
         out << "vocabulary save...";

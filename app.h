@@ -1,8 +1,6 @@
 #pragma once
 
-#include "media.h"
-#include "medio_audio.h"
-#include "medio_video.h"
+#include "media_data.h"
 #include "eng_parser.h"
 
 struct optional_log
@@ -14,7 +12,9 @@ struct optional_log
     private: gui::console* log = nullptr;
 };
 
-inline std::map<str, array<sys::byte>> assets;
+::media::in::data mediadata;
+
+auto& assets = mediadata.assets;
 
 namespace app::dic
 {

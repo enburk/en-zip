@@ -13,6 +13,7 @@
 *.dll
 *.exe
 *.html
+test.txt
 test.html
 test.html.txt
 test.quot.html

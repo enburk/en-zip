@@ -1,7 +1,6 @@
 #pragma once
 #include "app.h"
 #include <future>
-#include "media_scan.h"
 #include "studio_build_dic.h"
 #include "studio_build_dic+.h"
 #include "studio_build_one.h"
@@ -48,7 +47,7 @@ namespace studio::build
                 timer.go(
                 gui::time{},
                 gui::time{});
-           
+
                 notify();
             }
         }
@@ -74,46 +73,27 @@ namespace studio::build
                 updated|=    content_update(out, err);
                 data_updated = updated;
 
-                eng::vocabulary vocabulary("../data/vocabulary.dat");
+                eng::
+                vocabulary
+                vocabulary("../data/vocabulary.dat");
                 if (not eng::unittest::smoke(vocabulary, out))
                     return;
 
-                setlocale(LC_ALL,"en_US.utf8");
+                array<int> redirects;
+                redirects.resize(vocabulary.size());
+                dat::in::pool pool("../data/dictionary_indices.dat");
+                for (int i=0; i<vocabulary.size(); i++) {
+                    eng::dictionary::index index; index << pool;
+                    redirects[i] = index.redirect; }
 
-                media::report::out = &out;
-                media::report::err = &err;
-                media::report::id2path.clear();
-                media::report::unidentified.clear();
-                media::report::data_updated = false;
+                media::out::data data(out, err);
 
-                media::scan::dataelog = std::ofstream("datae.txt");
-                auto resources = media::scan::scan("../datae");
-                media::scan::dataelog = std::ofstream{};
-
-                auto& unidentified = 
-                media::report::unidentified;
-                if (not unidentified.empty())
-                {
-                    err << "unidentified files:";
-                    for (auto path: unidentified)
-                    err << path.string();
-                }
-
-                for (auto& [id, paths]:
-                media::report::id2path)
-                if (paths.size() > 1)
-                {
-                    err << "files with same id: " + id;
-                    for (auto path: paths)
-                    err << path.string();
-                }
-
-                dic::compile(resources, out);
-                one::compile(resources, out);
+                dic::compile(vocabulary, redirects, data, out, err);
+                one::compile(vocabulary, redirects, data, out, err);
 
                 data_updated =
                 data_updated or
-                media::report::data_updated;
+                media::report::updated;
                 out << (data_updated?
                 bold(yellow("UPDATED")):
                 bold(green("UP TO DATE")));

@@ -53,7 +53,7 @@ namespace media
         gui::console * err = nullptr;
         std::unordered_map<str, array<path>> id2path;
         array<path> unidentified;
-        bool data_updated = false;
+        bool updated = false;
     }
 
 }

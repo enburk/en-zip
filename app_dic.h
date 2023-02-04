@@ -10,7 +10,7 @@ namespace app::dic
         list::area list;
         gui::splitter splitter;
 
-        app() { reload(); }
+        app () { reload(); }
 
         void reload () try
         {
@@ -21,20 +21,9 @@ namespace app::dic
                     dir/"vocabulary.dat"));
 
             timing t1;
-            assets.clear();
-            dat::in::pool pool(dir/"media"/"assets.dat");
-            int nn = pool.get_int();
-            for (int i=0; i<nn; i++) {
-                auto title = pool.get_string();
-                auto bytes = pool.get_bytes();
-                assets[title] = std::vector<sys::byte>(
-                    bytes.data,
-                    bytes.data +
-                    bytes.size);
-            }
 
             timing t2;
-            media::reload();
+            mediadata.reload();
             left.current_entry = ::eng::dictionary::entry{};
             left.current_index = ::eng::dictionary::index{};
             left.reload();

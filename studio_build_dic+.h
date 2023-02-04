@@ -4,35 +4,24 @@
 #include "media_data.h"
 namespace studio::build::dic
 {
-    void compile (array<media::resource> const& resources, gui::console& report)
+    void compile
+    (
+        eng::vocabulary& vocabulary,
+        array<int>& redirects,
+        media::out::data& data,
+        gui::console& report,
+        gui::console& errors
+    )
     {
-        media::
-        data::out::storage storage("../data/media");
-        dat::out::file entry_index("../data/media/entry_index.dat");
-        dat::out::file media_index("../data/media/media_index.dat");
-        dat::out::file locationary("../data/media/locationary.dat");
-        dat::out::file assets_data("../data/media/assets.dat");
-        eng::vocabulary vocabulary("../data/vocabulary.dat");
-
-        array<int> redirects;
-        redirects.resize(vocabulary.size());
-        dat::in::pool pool("../data/dictionary_indices.dat");
-        for (int i=0; i<vocabulary.size(); i++) {
-            eng::dictionary::index index; index << pool;
-            redirects[i] = index.redirect; }
-
         using res = media::resource const*;
         std::unordered_map<int, array<res>> entries2resources;
         std::unordered_map<res, array<str>> resources2entries;
-        std::map<int32_t, std::map<int32_t, str>> locations;
-        std::set<res> new_ones;
-        std::set<res> assets;
 
         constexpr auto html = doc::html::encoded;
 
-        report << dark(bold("SCAN RESOURCES..."));
+        report << dark(bold("DIC: SCAN RESOURCES..."));
 
-        for (auto& r: resources)
+        for (auto& r: data.resources)
         {
             if (r.title == "speaker.128x096"
             or  r.title == "player.black.play.64x64"
@@ -49,7 +38,7 @@ namespace studio::build::dic
             or  r.title == "icon.chevron.left.double.black.128x128"
             or  r.title == "icon.settings.black.192x192")
             {
-                assets.insert(&r);
+                data.assets.insert(&r);
                 continue;
             }
 
@@ -105,7 +94,7 @@ namespace studio::build::dic
             }
         }
 
-        report << dark(bold("CALCULATE FREQUENCIES..."));
+        report << dark(bold("DIC: CALCULATE FREQUENCIES..."));
 
         std::map<int, array<int>> frequency;
         std::map<int, array<int>> frequency_a;
@@ -156,9 +145,9 @@ namespace studio::build::dic
             blue(list);
         }
 
-        report << dark(bold("LINK RESOURCES..."));
+        report << dark(bold("DIC: LINK RESOURCES..."));
 
-        std::multimap<int, int> entry_media; int total_media = 0;
+        int total_media = 0;
 
         for (auto [_, entries]: std::ranges::reverse_view(frequency))
         {
@@ -203,72 +192,32 @@ namespace studio::build::dic
                     {
                         if (++total_for_entry > 99) break;
         
-                        auto[location, new_one] = storage.add(*r);
-
-                        if (new_one) {
-                            new_ones.insert(r);
-                            report << html(r->path.string()); }
-
-                        locations
-                        [location.source]
-                        [location.offset] =
-                            r->path.string();
-
                         resources2entries[r] +=
                         vocabulary[entry].title;
-        
-                        media_index << r->kind;
-                        media_index << r->title;
-                        media_index << r->sense;
-                        media_index << r->comment;
-                        media_index << r->credit;
-                        media_index << r->options;
-                        media_index << location;
-                        total_media++;
 
-                        entry_media.emplace(entry, total_media-1);
+                        data.add(r);
+                        data.entrymap_dic.emplace
+                        (entry, total_media++);
                     }
                 }
             }
         }
-        
-        report << dark(bold("DUMP RESULTS..."));
 
-        entry_index << total_media;
-        entry_index << (int)(entry_media.size());
-        for (auto [entry, media] : entry_media) {
-            entry_index << entry;
-            entry_index << media;
-        }
-        
-        assets_data << (int)(assets.size());
-        for (auto & r : assets) {
-            assets_data << r->title;
-            assets_data << dat::in::bytes(r->path).value();
-        }
+        report << dark(bold("DIC: CHECK USAGE..."));
 
-        for (auto& [source, map] : locations)
-        for (auto& [offset, path] : map) {
-            locationary << source;
-            locationary << offset;
-            locationary << path;
-        }
-
-        report << dark(bold("CHECK USAGE..."));
-
-        for (auto& r: resources)
+        for (auto& r: data.resources)
         {
             auto it = resources2entries.find(&r);
             if (it == resources2entries.end()
             and not r.options.contains("sic!")
             and not r.options.contains("==")
             and not r.options.contains("=")
-            and not assets.contains(&r)) {
-                report << yellow(html(r.path.string())) +
+            and not data.assets.contains(&r)) {
+                errors << yellow(html(r.path.string())) +
                 red(" [" + str(r.entries, "] [") + "]");
                 continue; }
 
-            if (not new_ones.contains(&r))
+            if (not data.new_ones.contains(&r))
                 continue;
         
             array<str> accepted = it->second;
@@ -284,7 +233,5 @@ namespace studio::build::dic
             red   (html(" [" + str(rejected,  "] [") + "]")) +
             green (html(" {" + str(r.options, "} {") + "}"));
         }
-
-        report << dark(bold("DONE"));
     }
 }

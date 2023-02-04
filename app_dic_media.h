@@ -2,46 +2,8 @@
 #include "app.h"
 namespace app::dic::media
 {
-    struct entry_index { int32_t entry, media; };
-    struct media_index
-    {
-        str kind, title;
-        str sense, comment, credit;
-        ::media::location location;
-        array<str> options;
-
-        bool operator == (media_index const&) const = default;
-        bool operator != (media_index const&) const = default;
-    };
-    array<entry_index> entry_indices;
-    array<media_index> media_indices;
-
-    void reload ()
-    {
-        dat::in::pool pool;
-        std::filesystem::path dir = "../data/media";
-        if (!std::filesystem::exists (dir / "entry_index.dat")) return;
-        pool.bytes = dat::in::bytes(dir / "entry_index.dat").value();
-        media_indices.resize(pool.get_int());
-        entry_indices.resize(pool.get_int());
-        for (auto & index : entry_indices) {
-            index.entry = pool.get_int();
-            index.media = pool.get_int();
-        }
-        pool.offset = 0; // reuse
-        pool.bytes = dat::in::bytes(dir / "media_index.dat").value();
-        for (auto & index : media_indices) {
-            index.kind    = pool.get_string();
-            index.title   = pool.get_string();
-            index.sense   = pool.get_string();
-            index.comment = pool.get_string();
-            index.credit  = pool.get_string();
-            index.options.resize(pool.get_int());
-            for (auto & option : index.options)
-            option = pool.get_string();
-            pool >> index.location;
-        }
-    }
+    using ::media::in::entry_index;
+    using ::media::in::media_index;
 
     str canonical (str s)
     {
@@ -110,15 +72,14 @@ namespace app::dic::media
         auto& videos = selected.video;
         auto& vudios = selected.vudio;
 
-        auto range = entry_indices.equal_range(
+        auto range = mediadata.entries_dic.equal_range(
             entry_index{n, 0}, [](auto a, auto b)
                 { return a.entry < b.entry; });
 
         for (auto [enty, media]: range) {
-            auto& index = media_indices[media];
-            if (index.kind == "audio") audios += index;
-            if (index.kind == "video") videos += index;
-        }
+        auto& index = mediadata.media_index[media];
+        if (index.kind == "audio") audios += index;
+        if (index.kind == "video") videos += index; }
 
         for (int j=0; j<audios.size(); j++)
             logs::audio << log(audios[j]);

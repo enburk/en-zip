@@ -36,10 +36,8 @@ namespace media::scan
 
     std::ofstream dataelog;
 
-    array<resource> scan (path dir, int level = 0, resource common = {})
+    void scan (path dir, array<resource>& resources, int level = 0, resource common = {})
     {
-        array<resource> resources;
-
         std::map<path, bool> identified;
 
         array<str> video = {".png", ".jpg", ".jpeg" };
@@ -96,7 +94,7 @@ namespace media::scan
             title.split_by("##", title, optio); optio.strip();
             title.split_by("[" , title, links); links.strip("[ ]");
             title.split_by("%%", title, commt); commt.strip();
-            title.split_by("%" , title, sense); sense.strip();
+            title.split_by("@" , title, sense); sense.strip();
             title.strip();
 
             if (yadda.starts_with("## "))
@@ -131,7 +129,7 @@ namespace media::scan
                 resource.credit = str(dat::in::text(credit).value(), "<br>");
                 identified[credit] = true; }
 
-                resources += scan(path, level+1, resource);
+                scan(path, resources, level+1, resource);
             }
             else if (is_regular_file(path))
             {
@@ -295,7 +293,5 @@ namespace media::scan
 
         for (auto [path, ok] : identified)
         if (!ok) report::unidentified += path;
-
-        return resources;
     }
 }

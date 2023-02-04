@@ -36,10 +36,10 @@ namespace studio::dic
 
             search.object.result = &log_search;
 
-            app::dic::logs::times = log_timing;
-            app::dic::logs::media = log_media;
-            app::dic::logs::audio = log_audio;
-            app::dic::logs::video = log_video;
+            app::logs::times = log_timing;
+            app::logs::media = log_media;
+            app::logs::audio = log_audio;
+            app::logs::video = log_video;
 
             int i = 0;
             select(i++).text.text = "media";
@@ -140,7 +140,7 @@ namespace studio::dic
             if (what ==  &log_search.link)
             {
                 if (auto index =
-                app::dic::vocabulary.index
+                app::vocabulary.index
                 (log_search.link); index)
                 {
                     clicked = *index;

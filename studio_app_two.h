@@ -23,7 +23,7 @@ namespace studio::two
         gui::area<area> area;
         gui::splitter splitter;
 
-        studio () { app::two::log = area.object.log; }
+        studio () { reload(); }
 
         void reload () { app.reload(); }
 

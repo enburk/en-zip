@@ -98,6 +98,8 @@ struct Studio : gui::widget<Studio>
         {
             if (build.data_updated)
             {
+                app::logs::errors = build.err;
+                app::appdata.reload();
                 dic.reload();
                 one.reload();
                 two.reload();

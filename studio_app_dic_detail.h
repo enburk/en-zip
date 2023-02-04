@@ -2,8 +2,6 @@
 #include "app_dic.h"
 namespace studio::dic
 {
-    std::map<int, std::map<int, str>> locations;
-
     struct detail:
     widget<detail>
     {
@@ -39,8 +37,8 @@ namespace studio::dic
             keywords.text = "";
             preview .text = "";
 
-            auto i = locations.find(source);
-            if (i == locations.end()) {
+            auto i = app::mediadata.locations.find(source);
+            if (i == app::mediadata.locations.end()) {
             filepath.html = red("locations: "
             "not found source " + source_);
             return; }

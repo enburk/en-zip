@@ -179,7 +179,7 @@ namespace studio::dic
                 int n = 0;
                 str s = voc_contains.object.text;
                 if (s != "")
-                for(auto& entry: app::dic::vocabulary.data)
+                for(auto& entry: app::vocabulary.data)
                 if (entry.title.contains(s))
                 out(entry.title, ++n);
             }
@@ -192,7 +192,7 @@ namespace studio::dic
                 int n = 0;
                 str s = voc_endswith.object.text;
                 if (s != "")
-                for(auto& entry: app::dic::vocabulary.data)
+                for(auto& entry: app::vocabulary.data)
                 if (entry.title.ends_with(s))
                 out(entry.title, ++n);
             }
@@ -238,7 +238,7 @@ namespace studio::dic
                         bool lexical_notes = this->lexical_notes.on.now;
                         bool related_items = this->related_items.on.now;
 
-                        int n = app::dic::vocabulary.size();
+                        int n = app::vocabulary.size();
                         int i = 0;
                         int m = 0;
 
@@ -314,7 +314,7 @@ namespace studio::dic
 
                         std::map<str, array<str>> matchmap;
 
-                        int n = app::dic::vocabulary.size();
+                        int n = app::vocabulary.size();
                         int i = 0;
                         int m = 0;
 
@@ -419,7 +419,7 @@ namespace studio::dic
                             {
                                 bool first = true;
 
-                                auto index = app::dic::vocabulary.index(word);
+                                auto index = app::vocabulary.index(word);
                                 if (!index) { out("NOT FOUND: " + word);
                                     continue; }
 
@@ -440,7 +440,7 @@ namespace studio::dic
                                         {
                                             s.strip();
                                             if (not wordlist.words.contains(s)
-                                            and app::dic::vocabulary.index(s))
+                                            and app::vocabulary.index(s))
                                             {
                                                 if (all.contains(s)) continue; all.insert(s);
                                                 if (first) out("FOUND FOR: ", word);

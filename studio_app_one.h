@@ -35,7 +35,11 @@ namespace studio::one
             selector.object.selected = 0;
         }
 
-        void reload () { app.reload(); }
+        void reload ()
+        {
+            dic.reload();
+            app.reload();
+        }
 
         void on_change (void* what) override
         {

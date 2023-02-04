@@ -7,27 +7,47 @@ struct optional_log
 {
     optional_log() = default;
     optional_log(gui::console& log) : log(&log) {}
-    void clear () { if (log) log->clear(); }
     void operator << (str s) { if (log) *log << std::move(s); }
+    void clear () { if (log) log->clear(); }
     private: gui::console* log = nullptr;
 };
 
-::media::in::data mediadata;
-
-auto& assets = mediadata.assets;
-
-namespace app::dic
+namespace app::logs
 {
+    optional_log times;
+    optional_log media;
+    optional_log audio;
+    optional_log video;
+    optional_log errors;
+}
+namespace app
+{
+    media::in::data mediadata;
+    auto & assets = mediadata.assets;
     eng::vocabulary vocabulary;
 
-    namespace logs
+    struct appdatatype
     {
-        optional_log times;
-        optional_log media;
-        optional_log audio;
-        optional_log video;
-    }
-}
+        appdatatype () { reload(); }
+        void reload () try
+        {
+            timing t0;
+            vocabulary =
+            eng::vocabulary("../data/"
+                "vocabulary.dat");
 
-namespace app::one { optional_log log; }
-namespace app::two { optional_log log; }
+            timing t1;
+            mediadata.reload();
+
+            timing t2;
+            logs::times << gray(monospace(
+            "app vocabulary  " + format(t1-t0) + " sec<br>" +
+            "app load media  " + format(t2-t1) + " sec<br>" +
+            "app load total  " + format(t2-t0) + " sec<br>"));
+        }
+        catch (std::exception const& e) {
+            logs::errors << bold(red(
+                e.what())); }
+    };
+    appdatatype appdata;
+}

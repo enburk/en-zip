@@ -14,30 +14,13 @@ namespace app::dic
 
         void reload () try
         {
-            timing t0;
-            std::filesystem::path dir = "../data";
-
-            vocabulary = std::move(::eng::vocabulary(
-                    dir/"vocabulary.dat"));
-
-            timing t1;
-
-            timing t2;
-            mediadata.reload();
             left.current_entry = ::eng::dictionary::entry{};
             left.current_index = ::eng::dictionary::index{};
             left.reload();
             list.reload();
-
-            timing t3;
-            logs::times << gray(monospace(
-            "app vocabulary  " + format(t1-t0) + " sec<br>" +
-            "app load assets " + format(t2-t1) + " sec<br>" +
-            "app load media  " + format(t3-t2) + " sec<br>" +
-            "app load total  " + format(t3-t0) + " sec<br>"));
         }
-        catch (std::exception & e) {
-            logs::times << bold(red(
+        catch (std::exception const& e) {
+            logs::errors << bold(red(
                 e.what())); }
 
         void on_change (void* what) override

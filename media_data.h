@@ -144,6 +144,7 @@ namespace media::in
         array<entry_index> entries_two;
         array<media_index> media_index;
         std::map<str, array<sys::byte>> assets;
+        std::map<int, std::map<int, str>> locations;
 
         void reload ()
         {
@@ -205,6 +206,15 @@ namespace media::in
                     bytes.data,
                     bytes.data +
                     bytes.size);
+            }}
+            pool.offset = 0; // reuse
+            if (std::filesystem::exists(dir/"locationary.dat")) {
+            pool.bytes = dat::in::bytes(dir/"locationary.dat").value();
+            while (not pool.done()) {
+                int source = pool.get_int();
+                int offset = pool.get_int();
+                str path = pool.get_string();
+                locations[source][offset] = path;
             }}
         }
     };

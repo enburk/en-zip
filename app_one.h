@@ -11,8 +11,9 @@ namespace app::one
         void reload () try
         {
         }
-        catch (std::exception & e) {
-        log << bold(red(e.what())); }
+        catch (std::exception const& e) {
+            logs::errors << bold(red(
+                e.what())); }
 
         void on_change (void* what) override
         {

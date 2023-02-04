@@ -21,7 +21,7 @@ namespace studio::dic
         dat::in::pool entries_pool;
 
         int m = 0;
-        int n = app::dic::vocabulary.size();
+        int n = app::vocabulary.size();
         dictionary.entries.resize(n);
         dictionary.indices.resize(n);
 
@@ -37,7 +37,7 @@ namespace studio::dic
             index << indices_pool;
 
             dictionary.entries[i].title =
-            app::dic::vocabulary[i].title;
+               app::vocabulary[i].title;
 
             int j = i+1;
             if (i == n-1
@@ -70,27 +70,7 @@ namespace studio::dic
         app::dic::app app; // after area
         gui::splitter splitter;
 
-        studio () { reload(); }
-
-        void reload ()
-        {
-            app.reload();
-
-            timing t0;
-            locations.clear();
-            dat::in::pool pool("../data/media/locationary.dat");
-            while (not pool.done()) {
-                int source = pool.get_int();
-                int offset = pool.get_int();
-                str path = pool.get_string();
-                locations[source][offset] = path;
-            }
-
-            timing t1;
-            app::dic::logs::times << gray(monospace(
-            "studio locationary " + format(t1-t0) + " sec<br>" +
-            "studio load total  " + format(t1-t0) + " sec"));
-        }
+        void reload () { app.reload(); }
 
         void on_change (void* what) override
         {

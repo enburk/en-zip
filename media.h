@@ -49,9 +49,9 @@ namespace media
 
     namespace report
     {
-        std::unordered_map<str, array<path>> id2path;
-        array<path> unidentified;
         bool updated = false;
+        array<path> unidentified;
+        std::unordered_map<str, array<path>> id2path;
     }
     namespace logs
     {

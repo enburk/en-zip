@@ -16,7 +16,7 @@
     <Filter Include="studio-one">
       <UniqueIdentifier>{a78d9a9d-f0bf-4ee4-a557-fa7658595498}</UniqueIdentifier>
     </Filter>
-    <Filter Include="conent">
+    <Filter Include="content">
       <UniqueIdentifier>{5e30262d-7f07-42ce-9df1-22372659928d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -135,9 +135,6 @@
     <ClInclude Include="studio_build_one.h">
       <Filter>studio-one</Filter>
     </ClInclude>
-    <ClInclude Include="studio_build_one+.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
     <ClInclude Include="eng_phenomena.h">
       <Filter>eng</Filter>
     </ClInclude>
@@ -151,25 +148,28 @@
       <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="content_entry.h">
-      <Filter>conent</Filter>
+      <Filter>content</Filter>
     </ClInclude>
     <ClInclude Include="content_options.h">
-      <Filter>conent</Filter>
-    </ClInclude>
-    <ClInclude Include="content_table.h">
-      <Filter>conent</Filter>
-    </ClInclude>
-    <ClInclude Include="content_chain.h">
-      <Filter>conent</Filter>
+      <Filter>content</Filter>
     </ClInclude>
     <ClInclude Include="content_topic.h">
-      <Filter>conent</Filter>
+      <Filter>content</Filter>
     </ClInclude>
     <ClInclude Include="studio_app_one_preview.h">
       <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="media_storage.h">
       <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="content_scan.h">
+      <Filter>content</Filter>
+    </ClInclude>
+    <ClInclude Include="content.h">
+      <Filter>content</Filter>
+    </ClInclude>
+    <ClInclude Include="content_course.h">
+      <Filter>content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

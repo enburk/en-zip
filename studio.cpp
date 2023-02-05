@@ -37,8 +37,8 @@ struct Studio : gui::widget<Studio>
             studios[i]->hide();
 
         select(0).text.text = "dictionary";
-        select(1).text.text = "content";
-        select(2).text.text = "catalogs";
+        select(1).text.text = "course";
+        select(2).text.text = "catalog";
         select(3).text.text = "audio";
         select(4).text.text = "video";
         select(5).text.text = "logs";

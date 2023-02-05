@@ -59,6 +59,9 @@ namespace content
             eng.strip();
             rus.strip();
 
+            for (str o: opt.unknown)
+            errors += "UNKNOWN OPTION: " + o;
+
             s = eng;
             if (s == ""
             or  s.starts_with("---")
@@ -77,7 +80,7 @@ namespace content
             {
                 for (str marker: Eng_markers)
                 s.replace_all(marker.c_str(), "");
-                s.replace_all ("~" , "");
+                s.replace_all("~" , "");
 
                 str uk, us;
                 s.split_by("\\\\", uk, us);
@@ -91,7 +94,7 @@ namespace content
 
                 for (str marker: Eng_markers)
                 s.replace_all(marker.c_str(), "");
-                s.replace_all ("~" , "");
+                s.replace_all("~" , "");
 
                 s.debracket("{","}");
                 s.debracket("(",")");

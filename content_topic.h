@@ -1,6 +1,6 @@
 #pragma once
 #include <filesystem>
-#include "content_chain.h"
+#include "content_entry.h"
 namespace content
 {
     struct topic
@@ -15,6 +15,66 @@ namespace content
             int n = 0;
             for (str line: lines)
             entries += entry{line, n++};
+        }
+
+        generator<unit> chains (array<entry>& accumulator)
+        {
+            unit chain;
+            options opt;
+            bool chain_ordered = true;
+            bool entry_ordered = true;
+            int  entry_order = 0;
+
+            for (auto entry: entries)
+            {
+                if (entry.eng == ""
+                and entry.rus == ""
+                or  entry.eng.starts_with("===")
+                or  entry.eng.starts_with("---"))
+                {
+                    if (not
+                    chain.units.empty()) co_yield chain;
+                    chain.units.clear();
+                    if (chain_ordered)
+                        chain.order++;
+                    opt |= entry.opt;
+                    entry_order = 0;
+                }
+                if (entry.eng == ""
+                and entry.rus == "")
+                {
+                    chain_ordered = false;
+                    entry_ordered = false;
+                    continue;
+                }
+                if (entry.eng.starts_with("==="))
+                {
+                    chain_ordered = true;
+                    entry_ordered = true;
+                    continue;
+                }
+                if (entry.eng.starts_with("---"))
+                {
+                    chain_ordered = false;
+                    entry_ordered = true;
+                    continue;
+                }
+
+                entry.opt |= opt;
+
+                unit unit;
+                unit.order = entry_order;
+                if (entry_ordered)
+                    entry_order++;
+
+                unit.entry =
+                accumulator.size();
+                accumulator += entry;
+                chain.units += unit;
+            }
+            if (not
+            chain.units.empty())
+            co_yield chain;
         }
 
         array<str> formatted () const

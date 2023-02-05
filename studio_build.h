@@ -4,7 +4,6 @@
 #include "studio_build_dic.h"
 #include "studio_build_dic+.h"
 #include "studio_build_one.h"
-#include "studio_build_one+.h"
 namespace studio::build
 {
     using namespace std::literals::chrono_literals;
@@ -36,13 +35,9 @@ namespace studio::build
             {
                 try { compilation.check(); }
 
-                catch (const std::exception & e) {
-                    out << bold(red("exception: " +
-                        str(e.what()))); }
-
-                catch (...) {
-                    out << bold(red(
-                        "unknown exception")); }
+                catch (std::exception const& e) {
+                err << bold(red("exception: " +
+                str(e.what()))); }
 
                 timer.go(
                 gui::time{},
@@ -70,12 +65,7 @@ namespace studio::build
                 app::logs::report = out;
                 app::logs::errors = err;
 
-                bool
-                updated = false;
-                updated|= dic::update();
-                updated|= one::update();
-            //  updated|= two::update();
-                data_updated = updated;
+                data_updated = dic::update();
 
                 eng::
                 vocabulary
@@ -90,13 +80,13 @@ namespace studio::build
                     eng::dictionary::index index; index << pool;
                     redirects[i] = index.redirect; }
 
-                media::logs::out = app::logs::report;
-                media::logs::err = app::logs::errors;
-                media::out::data data;
+                media::logs::out = out;
+                media::logs::err = err;
+                media::out::data mediadata;
 
-                dic::compile(vocabulary, redirects, data);
-                one::compile(vocabulary, redirects, data);
-            //  two::compile(vocabulary, redirects, data);
+                dic::compile(vocabulary, redirects, mediadata);
+                one::compile(vocabulary, redirects, mediadata);
+            //  two::compile(vocabulary, redirects, mediadata);
 
                 data_updated =
                 data_updated or

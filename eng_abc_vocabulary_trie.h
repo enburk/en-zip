@@ -54,7 +54,7 @@ namespace eng
         explicit vocabulary_triee (std::filesystem::path path)
         {
         }
-        void save (dat::out::file& file)
+        void save (sys::out::file& file)
         {
         }
     };

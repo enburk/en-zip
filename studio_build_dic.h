@@ -1,6 +1,5 @@
 ﻿#pragma once
 #include <execution>
-#include "data_out.h"
 #include "app_dic.h"
 namespace studio::build::dic
 {
@@ -54,8 +53,8 @@ namespace studio::build::dic
                 indices += eng::dictionary::index{};
                 entries += eng::dictionary::entry{line};
                 if (entries.size() % 100'000 == 0)
-                    out << "read " + std::to_string(
-                    entries.size()) + " entries";
+                out << "read " + std::to_string(
+                entries.size()) + " entries";
             }
         }
 
@@ -71,7 +70,7 @@ namespace studio::build::dic
         for (auto& e: entries) ofstream << e.title << "\n";
 
         eng::vocabulary vocabulary(dictionary);
-        dat::out::file vocabulary_out(dir/"vocabulary.dat");
+        sys::out::file vocabulary_out(dir/"vocabulary.dat");
         vocabulary.save(vocabulary_out);
         vocabulary_out.close();
 
@@ -139,8 +138,8 @@ namespace studio::build::dic
         }
 
         out << "dictionary entries save...";
-        dat::out::file entries_out(dir/"dictionary_entries.dat");
-        dat::out::file indices_out(dir/"dictionary_indices.dat");
+        sys::out::file entries_out(dir/"dictionary_entries.dat");
+        sys::out::file indices_out(dir/"dictionary_indices.dat");
 
         for (int i=0; i<entries.size(); i++)
         {
@@ -179,10 +178,10 @@ namespace studio::build::dic
             indices[i] >> indices_out;
 
             ofstream  << i << " "  <<
-                entries[i].title    << " [" <<
-                indices[i].offset   << ", " <<
-                indices[i].length   << ", " <<
-                indices[i].redirect << "]\n";
+            entries[i].title    << " [" <<
+            indices[i].offset   << ", " <<
+            indices[i].length   << ", " <<
+            indices[i].redirect << "]\n";
         }
 
         entries_out.close();

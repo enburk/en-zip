@@ -14,7 +14,7 @@ namespace studio::dic
             {
                 words.clear();
                 if (not std::filesystem::exists(filename.c_str())) return;
-                array<str> lines = dat::in::text(filename.c_str()).value();
+                array<str> lines = sys::in::text(filename.c_str()).value();
                 for (str line: lines)
                 {
                     line.strip(); if (line == "") continue;
@@ -87,22 +87,19 @@ namespace studio::dic
             number = gray(monospace(
             number));
 
-            title = doc::html::encoded(title);
+            title = html(title);
 
-            *result << "<a href=\""
-            + title + "\">"
-            + number + ". "
-            + title + "</a>";
+            *result << linked(
+            number + ". " + title,
+            title);
         }
 
         void out (str text, str title = "")
         {
-            title = doc::html::encoded(title);
+            title = html(title);
 
-            *result << gray(text)
-            + "<a href=\""
-            + title + "\">"
-            + title + "</a>";
+            *result << gray(text) +
+            linked(title, title);
         }
 
         void on_change (void* what) override

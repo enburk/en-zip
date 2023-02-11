@@ -6,31 +6,16 @@ namespace media::out
     struct data
     {
         storage storage;
-        dat::out::file entries_dic;
-        dat::out::file entries_one;
-        dat::out::file entries_two;
-        dat::out::file media_index;
-        dat::out::file locationary;
-        dat::out::file assets_data;
-        
         array<resource> resources;
-        std::set<resource const*> new_ones;
-        std::set<resource const*> assets;
-        std::multimap<int, int> entrymap_dic;
-        std::multimap<int, int> entrymap_one;
-        std::multimap<int, int> entrymap_two;
-        std::map<int32_t, std::map<int32_t, str>> locations;
-        int total_media = 0;
+        std::set<resource*> new_ones;
+        std::set<resource*> assets;
+        array<entry_index> entries_dic;
+        array<entry_index> entries_one;
+        array<entry_index> entries_two;
+        array<media_index> media_index;
+        array<str>         media_paths;
 
-        data () :
-
-            storage    ("../data/media"),
-            entries_dic("../data/media/entries_dic.dat"),
-            entries_one("../data/media/entries_one.dat"),
-            entries_two("../data/media/entries_two.dat"),
-            media_index("../data/media/media_index.dat"),
-            locationary("../data/media/locationary.dat"),
-            assets_data("../data/media/assets.dat")
+        data () : storage("../data/media")
         {
             setlocale(LC_ALL,"en_US.utf8");
 
@@ -59,61 +44,59 @@ namespace media::out
             for (auto path: paths)
             err << path.string(); }
         }
-        void add (resource const* r)
+        int add (resource* r)
         {
+            if (r->index != -1) return
+                r->index; else
+                r->index = media_index.size();
+
             auto[location, new_one] = storage.add(*r);
 
             if (new_one) {
                 new_ones.insert(r);
-                logs::out << doc::html::encoded(
+                logs::out << html(
                 r->path.string()); }
 
-            locations
-            [location.source]
-            [location.offset] =
-                r->path.string();
-
-            media_index << r->kind;
-            media_index << r->title;
-            media_index << r->sense;
-            media_index << r->comment;
-            media_index << r->credit;
-            media_index << r->options;
-            media_index << location;
-            total_media++;
+            ::media
+            ::media_index m;
+            m.kind     = r->kind;
+            m.title    = r->title;
+            m.sense    = r->sense;
+            m.comment  = r->comment;
+            m.credit   = r->credit;
+            m.options  = r->options;
+            m.location = location;
+            media_index += m;
+            media_paths +=
+            r->path.string();
+            return r->index;
         }
+        void dic_add(int entry, resource* r) { entries_dic.emplace_back(entry, add(r)); }
+        void one_add(int entry, resource* r) { entries_one.emplace_back(entry, add(r)); }
+        void two_add(int entry, resource* r) { entries_two.emplace_back(entry, add(r)); }
         ~data ()
         { try {
 
             logs::out << dark(bold("SAVE..."));
 
-            entries_dic << total_media;
-            entries_dic << (int)(entrymap_dic.size());
-            for (auto [entry, media] : entrymap_dic) {
-            entries_dic << entry;
-            entries_dic << media; }
-        
-            entries_one << (int)(entrymap_one.size());
-            for (auto [entry, media] : entrymap_one) {
-            entries_one << entry;
-            entries_one << media; }
-        
-            entries_two << (int)(entrymap_two.size());
-            for (auto [entry, media] : entrymap_two) {
-            entries_two << entry;
-            entries_two << media; }
-        
-            assets_data << (int)(assets.size());
-            for (auto& resource: assets) {
-            assets_data << resource->title;
-            assets_data << dat::in::bytes
-            (resource->path).value(); }
+            std::ranges::stable_sort(entries_dic, {}, &::media::entry_index::entry);
+            std::ranges::stable_sort(entries_one, {}, &::media::entry_index::entry);
+            std::ranges::stable_sort(entries_two, {}, &::media::entry_index::entry);
 
-            for (auto& [source, map] : locations)
-            for (auto& [offset, path] : map) {
-            locationary << source;
-            locationary << offset;
-            locationary << path; }
+            path dir = "../data/media";
+            auto
+            f = sys::out::file(dir/"entries_dic.dat"); f << entries_dic;
+            f = sys::out::file(dir/"entries_one.dat"); f << entries_one;
+            f = sys::out::file(dir/"entries_two.dat"); f << entries_two;
+            f = sys::out::file(dir/"media_index.dat"); f << media_index;
+            f = sys::out::file(dir/"media_paths.dat"); f << media_paths;
+            f = sys::out::file(dir/"assets.dat");
+            f << (int)(assets.size());
+            for (auto& asset: assets) {
+            f << asset->title;
+            f << sys::in::bytes
+                (asset->path)
+                .value(); }
 
             logs::out << dark(bold("SAVE OK"));
         }
@@ -124,98 +107,51 @@ namespace media::out
 }
 namespace media::in
 {
-    struct entry_index { int32_t entry, media; };
-    struct media_index
-    {
-        str kind;
-        str title, sense;
-        str comment, credit;
-        location location;
-        array<str> options;
-
-        bool operator == (media_index const&) const = default;
-        bool operator != (media_index const&) const = default;
-    };
-
     struct data
     {
+        std::map<str, array<sys::byte>> assets;
         array<entry_index> entries_dic;
         array<entry_index> entries_one;
         array<entry_index> entries_two;
         array<media_index> media_index;
-        std::map<str, array<sys::byte>> assets;
-        std::map<int, std::map<int, str>> locations;
+        array<str>         media_paths;
 
-        void reload ()
+        void reload () try
         {
+            logs::out << dark(bold("LOAD..."));
+
             entries_dic.clear();
             entries_one.clear();
             entries_two.clear();
             media_index.clear();
             assets.clear();
 
-            std::filesystem::path dir = "../data/media";
-
-            dat::in::pool pool;
-            if (std::filesystem::exists(dir/"entries_dic.dat")) {
-            pool.bytes = dat::in::bytes(dir/"entries_dic.dat").value();
-            media_index.resize(pool.get_int());
-            entries_dic.resize(pool.get_int());
-            for (auto & index : entries_dic) {
-                index.entry = pool.get_int();
-                index.media = pool.get_int();
-            }}
-            pool.offset = 0; // reuse
-            if (std::filesystem::exists(dir/"entries_one.dat")) {
-            pool.bytes = dat::in::bytes(dir/"entries_one.dat").value();
-            entries_one.resize(pool.get_int());
-            for (auto & index : entries_one) {
-                index.entry = pool.get_int();
-                index.media = pool.get_int();
-            }}
-            pool.offset = 0; // reuse
-            if (std::filesystem::exists(dir/"entries_two.dat")) {
-            pool.bytes = dat::in::bytes(dir/"entries_two.dat").value();
-            entries_two.resize(pool.get_int());
-            for (auto & index : entries_two) {
-                index.entry = pool.get_int();
-                index.media = pool.get_int();
-            }}
-            pool.offset = 0; // reuse
-            if (std::filesystem::exists(dir/"media_index.dat")) {
-            pool.bytes = dat::in::bytes(dir/"media_index.dat").value();
-            for (auto & index : media_index) {
-                index.kind    = pool.get_string();
-                index.title   = pool.get_string();
-                index.sense   = pool.get_string();
-                index.comment = pool.get_string();
-                index.credit  = pool.get_string();
-                index.options.resize(pool.get_int());
-                for (auto & option : index.options)
-                option = pool.get_string();
-                pool >> index.location;
-            }}
-            pool.offset = 0; // reuse
-            if (std::filesystem::exists(dir/"assets.dat")) {
-            pool.bytes = dat::in::bytes(dir/"assets.dat").value();
-            int nn = pool.get_int();
+            path dir = "../data/media";
+            auto
+            f = sys::in::file(dir/"entries_dic.dat"); f >> entries_dic;
+            f = sys::in::file(dir/"entries_one.dat"); f >> entries_one;
+            f = sys::in::file(dir/"entries_two.dat"); f >> entries_two;
+            f = sys::in::file(dir/"media_index.dat"); f >> media_index;
+            f = sys::in::file(dir/"media_paths.dat"); f >> media_paths;
+            f = sys::in::file(dir/"assets.dat");
+            int nn = f.pool.get_int();
             for (int i=0; i<nn; i++) {
-                auto title = pool.get_string();
-                auto bytes = pool.get_bytes();
+                auto title = f.pool.get_string();
+                auto bytes = f.pool.get_bytes();
                 assets[title] = std::vector<sys::byte>(
                     bytes.data,
                     bytes.data +
                     bytes.size);
-            }}
-            pool.offset = 0; // reuse
-            if (std::filesystem::exists(dir/"locationary.dat")) {
-            pool.bytes = dat::in::bytes(dir/"locationary.dat").value();
-            while (not pool.done()) {
-                int source = pool.get_int();
-                int offset = pool.get_int();
-                str path = pool.get_string();
-                locations[source][offset] = path;
-            }}
+            }
+            nn = media_paths.size();
+            for (int i=0; i<nn; i++)
+                media_index[i].path =
+                media_paths[i];
+
+            logs::out << dark(bold("LOAD OK"));
         }
+        catch(std:: exception const& e) {
+        logs::err << red(bold(
+            e.what())); }
     };
 }

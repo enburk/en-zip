@@ -1,7 +1,5 @@
 #pragma once
 #include "eng_abc.h"
-#include "data_in.h"
-#include "data_out.h"
 namespace eng
 {
     const array<str> lexical_items
@@ -39,7 +37,7 @@ namespace eng
             array<topic> topics;
             array<int> redirects;
 
-            void operator << (dat::in::pool& in)
+            void operator << (sys::in::pool& in)
             {
                 title = in.get_string();
                 topics.resize(in.get_int());
@@ -54,7 +52,7 @@ namespace eng
                 for (auto & s : redirects)
                     s = in.get_int();
             }
-            void operator >> (dat::out::file& out) const
+            void operator >> (sys::out::file& out) const
             {
                 out << title;
                 out << topics.size();
@@ -77,17 +75,17 @@ namespace eng
 
             inline static const int size = 3*4;
 
-            void operator << (dat::in::pool& in)
+            void operator << (sys::in::pool& pool)
             {
-                offset   = in.get_int();
-                length   = in.get_int();
-                redirect = in.get_int();
+                pool >> offset;
+                pool >> length;
+                pool >> redirect;
             }
-            void operator >> (dat::out::file& out) const
+            void operator >> (sys::out::file& pool) const
             {
-                out << offset;
-                out << length;
-                out << redirect;
+                pool << offset;
+                pool << length;
+                pool << redirect;
             }
         };
 

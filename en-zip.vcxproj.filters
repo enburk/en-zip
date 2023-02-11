@@ -23,8 +23,6 @@
   <ItemGroup>
     <ClInclude Include="app.h" />
     <ClInclude Include="studio_build.h" />
-    <ClInclude Include="data_in.h" />
-    <ClInclude Include="data_out.h" />
     <ClInclude Include="abc.h" />
     <ClInclude Include="app_two.h" />
     <ClInclude Include="studio_app_two.h" />
@@ -162,14 +160,14 @@
     <ClInclude Include="media_storage.h">
       <Filter>media</Filter>
     </ClInclude>
-    <ClInclude Include="content_scan.h">
-      <Filter>content</Filter>
-    </ClInclude>
     <ClInclude Include="content.h">
       <Filter>content</Filter>
     </ClInclude>
     <ClInclude Include="content_course.h">
       <Filter>content</Filter>
+    </ClInclude>
+    <ClInclude Include="studio_app_one_reports.h">
+      <Filter>studio-one</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

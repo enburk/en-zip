@@ -181,10 +181,7 @@
     <ClInclude Include="content_course.h" />
     <ClInclude Include="content_entry.h" />
     <ClInclude Include="content_options.h" />
-    <ClInclude Include="content_scan.h" />
     <ClInclude Include="content_topic.h" />
-    <ClInclude Include="data_in.h" />
-    <ClInclude Include="data_out.h" />
     <ClInclude Include="eng_abc.h" />
     <ClInclude Include="eng_abc_dictionary.h" />
     <ClInclude Include="eng_abc_vocabulary.h" />
@@ -208,6 +205,7 @@
     <ClInclude Include="studio_app_one_content.h" />
     <ClInclude Include="studio_app_one_editor.h" />
     <ClInclude Include="studio_app_one_preview.h" />
+    <ClInclude Include="studio_app_one_reports.h" />
     <ClInclude Include="studio_app_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />

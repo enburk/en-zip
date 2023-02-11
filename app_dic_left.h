@@ -46,8 +46,8 @@ namespace app::dic::left
             if (!std::filesystem::exists(dir/"dictionary_entries.dat")) return;
             std::ifstream indices_stream(dir/"dictionary_indices.dat", std::ios::binary);
             std::ifstream entries_stream(dir/"dictionary_entries.dat", std::ios::binary);
-            dat::in::pool indices_pool;
-            dat::in::pool entries_pool;
+            sys::in::pool indices_pool;
+            sys::in::pool entries_pool;
 
             indices_stream.seekg(n*eng::dictionary::index::size, std::ios::beg);
             indices_pool.bytes.resize(eng::dictionary::index::size);
@@ -110,7 +110,7 @@ namespace app::dic::left
             refresh();
 
             timing t3;
-            str title = doc::html::encoded(entry.title);
+            str title = ::html(entry.title);
             logs::times << "<br>" + title;
             logs::media << "<br>" + title;
             logs::audio << "<br>" + title;

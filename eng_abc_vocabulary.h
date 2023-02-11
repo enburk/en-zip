@@ -8,11 +8,11 @@ namespace eng
         { 
             str title;
 
-            void operator << (dat::in::pool& in)
+            void operator << (sys::in::pool& in)
             {
-                title = in.get_string();
+                in >> title;
             }
-            void operator >> (dat::out::file& out) const
+            void operator >> (sys::out::file& out) const
             {
                 out << title;
             }
@@ -61,17 +61,17 @@ namespace eng
         }
         explicit vocabulary_basic (std::filesystem::path path)
         {
-            dat::in::pool pool(path);
+            sys::in::pool pool(path);
             load(pool);
         }
-        void load (dat::in::pool& pool)
+        void load (sys::in::pool& pool)
         {
             pool.get_endianness();
             data.resize(pool.get_int());
             for (int i=0; i<data.size(); i++)
                 data[i] << pool;
         }
-        void save (dat::out::file& file)
+        void save (sys::out::file& file)
         {
             file << 0x12345678; // endianness
             file << data.size();
@@ -189,13 +189,13 @@ namespace eng
         explicit vocabulary_cached (std::filesystem::path path)
             : vocabulary_basic(path)
         {
-            dat::in::pool pool(path);
+            sys::in::pool pool(path);
             vocabulary_basic::load(pool);
             cache.resize(27*27*27);
             for (int i=0; i<cache.size(); i++)
                 cache[i] = pool.get_int();
         }
-        void save (dat::out::file& file)
+        void save (sys::out::file& file)
         {
             vocabulary_basic::save(file);
             for (int n: cache)

@@ -22,9 +22,12 @@ namespace app
 
     struct appdatatype
     {
+        str error;
         appdatatype () { reload(); }
         void reload () try
         {
+            error = "";
+
             timing t0;
             vocabulary =
             eng::vocabulary("../data/"
@@ -45,8 +48,7 @@ namespace app
             "app load total  " + format(t3-t0) + " sec<br>"));
         }
         catch (std::exception const& e) {
-            logs::errors << bold(red(
-                e.what())); }
+        error = bold(red(e.what())); }
     };
     appdatatype
     appdata;

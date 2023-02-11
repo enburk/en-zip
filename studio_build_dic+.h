@@ -14,11 +14,9 @@ namespace studio::build::dic
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
 
-        using res = media::resource const*;
+        using res = media::resource*;
         std::unordered_map<int, array<res>> entries2resources;
         std::unordered_map<res, array<str>> resources2entries;
-
-        constexpr auto html = doc::html::encoded;
 
         out << dark(bold("DIC: SCAN RESOURCES..."));
 
@@ -59,12 +57,8 @@ namespace studio::build::dic
             for (str s: r.title.split_by("/"))
                 entries += s;
 
-            entries.try_erase("+");
             entries += r.title;
-
-            if (r.sense != ""
-            and eng::list::sensitive.contains(r.sense))
-            entries += r.sense;
+            entries.try_erase("+");
 
             str s  = r.title; s.trimr("!?");
             if (s != r.title) entries += s;
@@ -75,9 +69,13 @@ namespace studio::build::dic
             if (s.starts_with("to "   )) entries += s.from (3); else
             {}
 
+            if (r.sense != ""
+            and eng::list::sensitive.contains(r.sense))
+            entries += r.sense;
+
             array<str> apostros; auto a = (char*)(u8"’");
-            for(auto& entry: entries) if (entry.contains(a)) apostros += entry;
-            for(auto& entry: apostros) entry.replace_all(a, "'");
+            for(auto& e: entries) if (e.contains(a)) apostros += e;
+            for(auto& e: apostros) e.replace_all(a, "'");
             entries += apostros;
             entries.deduplicate();
 
@@ -196,9 +194,7 @@ namespace studio::build::dic
                         resources2entries[r] +=
                         vocabulary[entry].title;
 
-                        data.add(r);
-                        data.entrymap_dic.emplace
-                        (entry, total_media++);
+                        data.dic_add(entry, r);
                     }
                 }
             }
@@ -214,8 +210,10 @@ namespace studio::build::dic
             and not r.options.contains("==")
             and not r.options.contains("=")
             and not data.assets.contains(&r)) {
-                err << yellow(html(r.path.string())) +
-                red(" [" + str(r.entries, "] [") + "]");
+                str ee = str(r.entries, "] [");
+                str fn = r.path.string();
+                err << yellow(html(fn)) +
+                red(" [" + ee + "]");
                 continue; }
 
             if (not data.new_ones.contains(&r))

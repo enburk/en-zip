@@ -75,7 +75,7 @@ namespace studio::build
 
                 array<int> redirects;
                 redirects.resize(vocabulary.size());
-                dat::in::pool pool("../data/dictionary_indices.dat");
+                sys::in::pool pool("../data/dictionary_indices.dat");
                 for (int i=0; i<vocabulary.size(); i++) {
                     eng::dictionary::index index; index << pool;
                     redirects[i] = index.redirect; }

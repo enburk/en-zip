@@ -2,11 +2,13 @@
 #include "app_dic.h"
 namespace studio::dic
 {
+    using namespace std::filesystem;
+
     struct detail:
     widget<detail>
     {
-        std::filesystem::path datpath;
-        std::filesystem::path txtpath;
+        path datpath;
+        path txtpath;
 
         app::dic::html_view filepath;
         gui::text::editor   filename;
@@ -24,51 +26,33 @@ namespace studio::dic
 
         void select (str info)
         {
-            str source_;
-            str offset_;
-            info.split_by(":", source_, offset_);
-            int source = std::stoi(source_);
-            int offset = std::stoi(offset_);
-
             filename.text = "";
             textfile.text = "";
-            filename.read_only = true;
-            textfile.read_only = true;
             keywords.text = "";
             preview .text = "";
 
-            auto i = app::mediadata.locations.find(source);
-            if (i == app::mediadata.locations.end()) {
-            filepath.html = red("locations: "
-            "not found source " + source_);
-            return; }
-
-            auto j = i->second.find(offset);
-            if (j == i->second.end()) {
-            filepath.html = red("locations: "
-            "not found offset " + offset_);
-            return; }
-
-            datpath = j->second.c_str();
-            txtpath = j->second.c_str();
+            datpath = info.c_str();
+            txtpath = info.c_str();
             txtpath.replace_extension(".txt");
-            if (not std::filesystem::exists(datpath)) {
-            filepath.html = red(j->second);
+
+            if (not exists(datpath)) {
+            filepath.html = red(info);
             return; }
 
-            str s = j->second;
+            str s = info;
             s.replace_all("\\", "/");
+            if (s.starts_with("../"   )) s = s.from(3);
+            if (s.starts_with("datae/")) s = s.from(6);
             auto ss = s.split_by("/");
-            if (ss.size() > 0 and ss[0] == "..") ss.erase(0);
-            if (ss.size() > 0 and ss[0] == "datae") ss.erase(0);
+
             s = ""; for (str x: ss)
             s += light("> ") + dark(x) + "<br>";
+
             filepath.html = s;
             filename.text = datpath.filename().string();
 
-            if (std::filesystem::exists(txtpath)) {
-            textfile.text = red(j->second);
-            }
+            //if (exists(txtpath))
+            //textfile.text = dat::in::file(txtpath).pool.red(j->second);
         }
 
         void on_change (void* what) override

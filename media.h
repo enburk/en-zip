@@ -1,7 +1,5 @@
 #pragma once
 #include "abc.h"
-#include "data_in.h"
-#include "data_out.h"
 namespace media
 {
     using std::filesystem::path;
@@ -16,6 +14,7 @@ namespace media
         array<str> options;
         array<str> entries;
         array<str> keywords;
+        int index = -1;
     };
 
     struct location
@@ -29,23 +28,72 @@ namespace media
         bool operator == (location const&) const = default;
         bool operator != (location const&) const = default;
 
-        friend void operator >> (dat::in::pool & in, location & l) {
-            l.source = in.get_int();
-            l.offset = in.get_int();
-            l.length = in.get_int();
-            l.size_x = in.get_int();
-            l.size_y = in.get_int();
+        friend void operator >> (sys::in::pool& pool, location& l) {
+            pool >> l.source;
+            pool >> l.offset;
+            pool >> l.length;
+            pool >> l.size_x;
+            pool >> l.size_y;
         }
-        friend void operator << (dat::out::pool & out, location & l) {
-            out << l.source;
-            out << l.offset;
-            out << l.length;
-            out << l.size_x;
-            out << l.size_y;
+        friend void operator << (sys::out::pool& pool, location const& l) {
+            pool << l.source;
+            pool << l.offset;
+            pool << l.length;
+            pool << l.size_x;
+            pool << l.size_y;
         }
     };
 
-    struct Location { location location; bool new_one = false; };
+    struct Location
+    {
+        location location;
+        bool new_one = false;
+    };
+
+    struct entry_index
+    {
+        int32_t entry, media;
+
+        friend void operator >> (sys::in::pool& pool, entry_index& i) {
+            pool >> i.entry;
+            pool >> i.media;
+        }
+        friend void operator << (sys::out::pool& pool, entry_index const& i) {
+            pool << i.entry;
+            pool << i.media;
+        }
+    };
+    struct media_index
+    {
+        str kind;
+        str title, sense;
+        str comment, credit;
+        location location;
+        array<str> options;
+        str path; // studio only
+
+        bool operator == (media_index const&) const = default;
+        bool operator != (media_index const&) const = default;
+
+        friend void operator >> (sys::in::pool& pool, media_index& m) {
+            pool >> m.kind;
+            pool >> m.title;
+            pool >> m.sense;
+            pool >> m.comment;
+            pool >> m.credit;
+            pool >> m.options;
+            pool >> m.location;
+        }
+        friend void operator << (sys::out::pool& pool, media_index const& m) {
+            pool << m.kind;
+            pool << m.title;
+            pool << m.sense;
+            pool << m.comment;
+            pool << m.credit;
+            pool << m.options;
+            pool << m.location;
+        }
+    };
 
     namespace report
     {

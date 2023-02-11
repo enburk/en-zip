@@ -57,7 +57,12 @@ namespace studio::dic
             log_audio .view.ellipsis = true;
             log_video .view.ellipsis = true;
             log_search.view.ellipsis = true;
-            log_search.view.current_line_frame.color = rgba(150,150,150,64);
+            log_search.view.current_line_frame.color =
+                rgba(150,150,150,64);
+
+            if (app::appdata.error != "")
+                log_media << red(bold(
+                app::appdata.error));
         }
 
         void on_change (void* what) override

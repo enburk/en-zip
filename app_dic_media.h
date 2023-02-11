@@ -2,8 +2,8 @@
 #include "app.h"
 namespace app::dic::media
 {
-    using ::media::in::entry_index;
-    using ::media::in::media_index;
+    using ::media::entry_index;
+    using ::media::media_index;
 
     str canonical (str s)
     {
@@ -27,8 +27,7 @@ namespace app::dic::media
                 str w = ww.upto(n);
                 str r = ww.from(n);
 
-                s += "<a href=\"" + w + "\">"
-                    + w + "</a>" + r;
+                s += linked(w,w) + r;
             }
         }
 
@@ -37,18 +36,20 @@ namespace app::dic::media
 
     str log (media_index const& index)
     {
-        str title = doc::html::untagged(canonical(index.title));
+        str s = doc::html::untagged(
+            canonical(index.title));
+
         str kind =
             index.kind == "audio" ? green ("[audio]"):
-            index.kind == "video" ? purple("[video]"): "";
-        title =
-            index.kind == "audio" ? gray(title):
-            index.kind == "video" ? dark(title): "";
+            index.kind == "video" ? purple("[video]"):
+            "";
+        str title =
+            index.kind == "audio" ? gray(s):
+            index.kind == "video" ? dark(s):
+            "";
 
-        return "<a href=\"" +
-        std::to_string(index.location.source) + ":" +
-        std::to_string(index.location.offset) + "\">" +
-        kind + " " + title + "</a>";
+        return linked(kind + " " + title,
+            index.path);
     }
 
     struct syncronizer
@@ -76,7 +77,7 @@ namespace app::dic::media
             entry_index{n, 0}, [](auto a, auto b)
                 { return a.entry < b.entry; });
 
-        for (auto [enty, media]: range) {
+        for (auto [entry, media]: range) {
         auto& index = mediadata.media_index[media];
         if (index.kind == "audio") audios += index;
         if (index.kind == "video") videos += index; }

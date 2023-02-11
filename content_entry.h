@@ -39,11 +39,11 @@ namespace content
         str rus;
         str sense;
         str comment;
+        str anomaly;
         options opt;
-        array<str> audios_en;
-        array<str> audios_uk;
-        array<str> audios_us;
-        array<str> videos;
+        array<str> en;
+        array<str> uk;
+        array<str> us;
         array<str> errors;
         int line = 0;
 
@@ -69,28 +69,34 @@ namespace content
                 return;
 
             if (s.starts_with(": ")) {
-                audios_en += s.from(2);
-                videos    += s.from(2);
+                en += s.from(2);
                 return; }
 
-            s.split_by("@", s, sense);
+            str commt;
+            s.split_by("%%", s, commt);
+            s.split_by("@" , s, sense);
             s.strip(); sense.strip();
+
+            if (s.contains(
+            one_of ("/|{}()[]")))
+            anomaly = "{}()[]";
 
             if (s.contains("\\\\"))
             {
+                anomaly = "Br/Am";
                 for (str marker: Eng_markers)
                 s.replace_all(marker.c_str(), "");
                 s.replace_all("~" , "");
 
                 str uk, us;
                 s.split_by("\\\\", uk, us);
-                uk.strip (); audios_uk += uk; videos += uk;
-                us.strip (); audios_us += us; videos += us;
+                uk.strip (); uk += uk;
+                us.strip (); us += us;
             }
             else
             {
-                bool uk = s.contains("{Br.}");
-                bool us = s.contains("{Am.}");
+                bool br = s.contains("{Br.}");
+                bool am = s.contains("{Am.}");
 
                 for (str marker: Eng_markers)
                 s.replace_all(marker.c_str(), "");
@@ -99,13 +105,18 @@ namespace content
                 s.debracket("{","}");
                 s.debracket("(",")");
                 s.debracket("[","]");
+                s.canonicalize();
 
-                if (uk and us) errors += "Br. & Am."; else
-                if (uk) audios_uk += s.split_by("/"); else
-                if (us) audios_us += s.split_by("/"); else
-                        audios_en += s.split_by("/");
-                        videos    += s.split_by("/");
+                if (br or  am) anomaly = "Br/Am";
+                if (br and am) errors += "Br. & Am."; else
+                if (br) uk += s.split_by("/"); else
+                if (am) us += s.split_by("/"); else
+                        en += s.split_by("/");
             }
+
+            if (s.contains(
+            one_of   ("/{}()[]")))
+            errors += "/{}()[]";
         }
 
 

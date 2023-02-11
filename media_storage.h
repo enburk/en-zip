@@ -4,20 +4,20 @@
 #include "medio_video.h"
 namespace media::out
 {
-    struct source : dat::out::file
+    struct source : sys::out::file
     {
         struct info { location location; bool used = false; };
 
         std::map<str, info> content; int number;
 
         source (std::filesystem::path path, int number) :
-            dat::out::file(path, std::ios::binary | std::ios::app),
+            sys::out::file(path, std::ios::binary | std::ios::app),
             number(number)
         {
             std::filesystem::path txt = path;
             txt.replace_extension(".txt");
             if (!std::filesystem::exists(txt)) return;
-            array<str> lines = dat::in::text(txt).value();
+            auto lines = sys::in::text(txt).value();
             for (str line : lines)
             {
                 if (line == "") continue;
@@ -109,17 +109,17 @@ namespace media::out
                 array<byte>{};
 
             if (data.size() == 0) throw std::runtime_error("no data");
-            if (data.size() > max<int32_t>() - dat::out::file::size)
+            if (data.size() > max<int32_t>() - sys::out::file::size)
                 return Location{}; // it's enough for this storage
 
             info info {};
             info.used = true;
             info.location.source = number;
-            info.location.offset = dat::out::file::size;
+            info.location.offset = sys::out::file::size;
             info.location.length = data.size();
 
             fstream.write((char*) data.data(), data.size());
-            dat::out::file::size += data.size();
+            sys::out::file::size += data.size();
 
             if (r.kind == "video") {
                 auto size = pix::size(data.from(0)).value();

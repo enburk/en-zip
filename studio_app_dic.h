@@ -17,8 +17,8 @@ namespace studio::dic
         if (!std::filesystem::exists(dir/"dictionary_entries.dat")) return;
         std::ifstream indices_stream(dir/"dictionary_indices.dat", std::ios::binary);
         std::ifstream entries_stream(dir/"dictionary_entries.dat", std::ios::binary);
-        dat::in::pool indices_pool;
-        dat::in::pool entries_pool;
+        sys::in::pool indices_pool;
+        sys::in::pool entries_pool;
 
         int m = 0;
         int n = app::vocabulary.size();

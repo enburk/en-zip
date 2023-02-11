@@ -1,7 +1,5 @@
 #pragma once
 #include "abc.h"
-#include "data_in.h"
-#include "data_out.h"
 namespace content
 {
     using std::filesystem::path;
@@ -21,6 +19,7 @@ namespace content
     struct unit
     {
         str title;
+        str fullname;
         int order = 0;
         int entry = 0;
         array<unit> units;

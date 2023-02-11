@@ -5,16 +5,33 @@ namespace content
 {
     struct topic
     {
-        str name;
-        std::filesystem::path path;
         array<entry> entries;
+        array<str> anomal1;
+        array<str> anomal2;
+        array<str> errors;
 
-        topic () = default;
         topic (array<str> const& lines)
         {
             int n = 0;
-            for (str line: lines)
-            entries += entry{line, n++};
+            for (auto& line: lines)
+            {
+                entry entry{line, n++};
+                
+                if (entry.anomaly == "Br/Am") anomal1 +=
+                    blue(monospace(std::format("{:2}: ",
+                    entry.line))) + entry.eng;
+                else
+                if (entry.anomaly != "") anomal2 +=
+                    blue(monospace(std::format("{:2}: ",
+                    entry.line))) + entry.eng;
+
+                for (str error: entry.errors) errors +=
+                    blue(monospace(std::format("{:2}: ",
+                    entry.line))) + entry.eng + " " +
+                    red(error);
+
+                entries += std::move(entry);
+            }
         }
 
         generator<unit> chains (array<entry>& accumulator)

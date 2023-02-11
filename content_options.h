@@ -1,6 +1,4 @@
 #pragma once
-#include "data_in.h"
-#include "data_out.h"
 #include "content.h"
 namespace content
 {

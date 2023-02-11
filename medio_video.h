@@ -89,10 +89,10 @@ namespace media::video
                     img.size.y > 2500 &&
                     std::filesystem::file_size(original) > 5*1024*1024)
                 {
-                    logs::out << "copy huge " + original.string();
-                    if (!std::filesystem::copy_file(original, "../datae_huge"/original.filename(),
-                         std::filesystem::copy_options::skip_existing))
-                        logs::out << "<b>already exists</b>";
+                    logs::out << "copy huge " + original.string(); if (not
+                    std::filesystem::copy_file(original, "../datae_huge"/original.filename(),
+                    std::filesystem::copy_options::skip_existing))
+                    logs::out << "<b>already exists</b>";
 
                     resize (img, 2500, 2500, false);
                     pix::write (img, original, 95);
@@ -106,7 +106,7 @@ namespace media::video
             }
         }
 
-        return dat::in::bytes(cache);
+        return sys::in::bytes(cache);
     }
     catch (std::exception & e) {return
         aux::error("media::video::readsample:"

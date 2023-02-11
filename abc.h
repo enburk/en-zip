@@ -17,7 +17,8 @@
 #include "../auxs/doc_text_repo.h"
 #include "../auxs/aux_unittest.h"
 #include "../auxs/pix_process.h"
-#include "../auxs/sys_aux.h"
+#include "../auxs/sys_out.h"
+#include "../auxs/sys_in.h"
 
 using pix::xy;
 using pix::xywh;
@@ -42,6 +43,10 @@ str purple    (str s) { return "<font color=#800080>" + s + "</font>"; }
 str red       (str s) { return "<font color=#B00020>" + s + "</font>"; }
 str yellow    (str s) { return "<font color=#BF360C>" + s + "</font>"; }
 str monospace (str s) { return "<font face=\"monospace\">" + s + "</font>"; }
+str html      (str s) { return doc::html::encoded(s); }
+str linked    (str s, str link) {
+    return "<a href=\"" + link +
+        "\">" + s + "</a>"; }
 
 using namespace std::string_view_literals;
 constexpr std::string_view ellipsis = "\xE2" "\x80" "\xA6"sv; // …
@@ -70,6 +75,7 @@ struct optional_log
     optional_log() = default;
     optional_log(gui::console& log) : log(&log) {}
     void operator << (str s) { if (log) *log << std::move(s); }
+    void operator << (array<str> ss) { if (log) *log << std::move(ss); }
     void clear () { if (log) log->clear(); }
     private: gui::console* log = nullptr;
 };

@@ -1,6 +1,7 @@
 #pragma once
 #include "studio_app_one_area.h"
 #include "studio_app_one_preview.h"
+#include "studio_app_one_reports.h"
 namespace studio::one
 {
     struct studio:
@@ -10,6 +11,7 @@ namespace studio::one
         app::dic::app dic;
         app::one::app app;
         gui::area<preview> preview;
+        gui::area<reports> reports;
         array<gui::base::widget*> right;
         gui::area<gui::selector> selector;
         gui::splitter splitter;
@@ -20,6 +22,7 @@ namespace studio::one
 
             right += &dic;
             right += &preview;
+            right += &reports;
             right += &app;
 
             for (int i=1; i<
@@ -29,7 +32,7 @@ namespace studio::one
             int i = 0;
             selector.object.buttons(i++).text.text = "dictionary";
             selector.object.buttons(i++).text.text = "preview";
-            selector.object.buttons(i++).text.text = "report";
+            selector.object.buttons(i++).text.text = "reports";
             selector.object.buttons(i++).text.text = "app";
             selector.object.maxwidth = max<int>();
             selector.object.selected = 0;
@@ -66,6 +69,7 @@ namespace studio::one
                 dic     .coord = xyxy(x, 0, W, H);
                 app     .coord = xyxy(x, 0, W, H);
                 preview .coord = xyxy(x, 0, W, H);
+                reports .coord = xyxy(x, 0, W, H);
             }
 
             if (what == &splitter) {

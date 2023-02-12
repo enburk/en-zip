@@ -4,8 +4,8 @@ namespace studio::one
 {
     namespace report
     {
-        optional_log anomal1;
-        optional_log anomal2;
+        optional_log errors;
+        optional_log anomal;
         optional_log audiom, audiop, audioq;
         optional_log videom, videop, videoq;
     }
@@ -15,23 +15,24 @@ namespace studio::one
         struct consobar:
         widget<consobar>
         {
-            gui::console anomal1;
-            gui::console anomal2;
+            str link;
+            gui::console errors;
+            gui::console anomal;
             gui::console audiom, audiop, audioq;
             gui::console videom, videop, videoq;
             array<gui::console*> consoles;
             consobar ()
             {
-                report::anomal1 = anomal1;
-                report::anomal2 = anomal2;
+                report::errors = errors;
+                report::anomal = anomal;
                 report::audiom = audiom;
                 report::videom = videom;
                 report::audiop = audiop;
                 report::videop = videop;
                 report::audioq = audioq;
                 report::videoq = videoq;
-                consoles += &anomal1;
-                consoles += &anomal2;
+                consoles += &errors;
+                consoles += &anomal;
                 consoles += &audiom;
                 consoles += &videom;
                 consoles += &audiop;
@@ -46,17 +47,27 @@ namespace studio::one
                 if (what == &coord)
                 for (auto& c: consoles)
                 c->coord = coord.now.local();
+
+                if (what == &errors.link) { link = errors.link; notify(); }
+                if (what == &anomal.link) { link = anomal.link; notify(); }
+                if (what == &audiom.link) { link = audiom.link; notify(); }
+                if (what == &videom.link) { link = videom.link; notify(); }
+                if (what == &audiop.link) { link = audiop.link; notify(); }
+                if (what == &videop.link) { link = videop.link; notify(); }
+                if (what == &audioq.link) { link = audioq.link; notify(); }
+                if (what == &videoq.link) { link = videoq.link; notify(); }
             }
         };
 
+        str link;
         gui::area<gui::selector> selector;
         gui::area<consobar> consobar;
 
         reports ()
         {
             int i = 0;
-            selector.object.buttons(i++).text.text = "Br/Am";
-            selector.object.buttons(i++).text.text = "{}()[]";
+            selector.object.buttons(i++).text.text = "errors";
+            selector.object.buttons(i++).text.text = "anomal";
             selector.object.buttons(i++).text.text = "audio-";
             selector.object.buttons(i++).text.text = "video-";
             selector.object.buttons(i++).text.text = "audio+";
@@ -88,6 +99,11 @@ namespace studio::one
                 int n = selector.object.selected.now;
                 for (int i=0; i<consoles.size(); i++)
                 consoles[i]->show(i == n);
+            }
+            if (what == &consobar)
+            {
+                link = consobar.object.link;
+                notify();
             }
         }
     };

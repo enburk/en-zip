@@ -14,38 +14,87 @@ namespace studio::build::one
     {
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
+        out << dark(bold("ONE: SCAN COURSE..."));
 
         content::logs::out = out;
         content::logs::err = err;
         content::out::course course("content");
 
-        using ::studio::one::report::anomal1; anomal1.clear();
-        using ::studio::one::report::anomal2; anomal2.clear();
-        using ::studio::one::report::audiom ; audiom .clear();
-        using ::studio::one::report::videom ; videom .clear();
-        using ::studio::one::report::audiop ; audiop .clear();
-        using ::studio::one::report::videop ; videop .clear();
-        using ::studio::one::report::audioq ; audioq .clear();
-        using ::studio::one::report::videoq ; videoq .clear();
+        using ::studio::one::report::errors; errors.clear();
+        using ::studio::one::report::anomal; anomal.clear();
+        using ::studio::one::report::audiom; audiom.clear();
+        using ::studio::one::report::videom; videom.clear();
+        using ::studio::one::report::audiop; audiop.clear();
+        using ::studio::one::report::videop; videop.clear();
+        using ::studio::one::report::audioq; audioq.clear();
+        using ::studio::one::report::videoq; videoq.clear();
 
-        anomal1 << course.anomal1;
-        anomal2 << course.anomal2;
-
+        errors << course.errors;
+        anomal << course.anomal;
 
         using res = media::resource*;
-        std::unordered_map<int, array<res>> en;
-        std::unordered_map<int, array<res>> uk;
-        std::unordered_map<int, array<res>> us;
-        std::unordered_map<int, array<res>> videos;
 
+        out << dark(bold("ONE: SCAN ENTRIES..."));
+
+        std::unordered_map
+        <str, array<res>> vocab;
         for (auto& entry: course.entries)
+        for (str s: entry.vocabulary)
+        vocab.emplace(s,array<res>{});
+
+        out << dark(bold("ONE: SCAN RESOURCES..."));
+
+        array<res> unused_resources;
+        for (auto& r: data.resources)
         {
+            array<str> sss;
+            sss += r.title;
+            sss += r.keywords;
+            for (str ss: sss)
+            for (str s: ss.split_by("/"))
+            {
+                auto it = vocab.find(s);
+                if (it != vocab.end())
+                    it->second += &r;
+                else unused_resources += &r;
+            }
+        }
+
+        out << dark(bold("ONE: CHECK FULFILMENT..."));
+
+        for (auto [i, entry]: enumerate(course.entries))
+        {
+            bool en = entry.en.empty();
+            bool uk = entry.uk.empty();
+            bool us = entry.us.empty();
+            bool vi = entry.opt.internal.contains("pix-");
+            for (str& s: entry.vocabulary)
+            for (res& r: vocab[s])
+            {
+                data.one_add(i, r);
+                if (r->kind == "audio") {
+                if (r->options.contains("uk")) uk = true;
+                if (r->options.contains("us")) us = true; en = true; }
+                if (r->kind == "video") vi = true;
+            }
+            str link = entry.topic.string()
+            + "|" + std::to_string(entry.line);
+            if (not en) audiom << linked(entry.eng, link);
+            if (not uk) audiom << linked(entry.eng + red(bold(" uk")), link);
+            if (not us) audiom << linked(entry.eng + red(bold(" us")), link);
+            if (not vi) videom << linked(entry.eng, link);
+        }
+
+
+        out << dark(bold("ONE: MAKE SUGGESTIONS..."));
+
+        for (res r: unused_resources)
+        {
+            // r.keywords;
         }
 
         /*
         std::unordered_map<res, array<str>> resources2entries;
-
-        constexpr auto html = doc::html::encoded;
 
         out << dark(bold("DIC: SCAN RESOURCES..."));
 
@@ -178,5 +227,7 @@ namespace studio::build::one
             green (html(" {" + str(r.options, "} {") + "}"));
         }
         */
+
+        // str ee = errors.page.html;
     }
 }

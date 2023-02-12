@@ -6,8 +6,8 @@ namespace content::out
     {
         unit root;
         array<entry> entries;
-        array<str> anomal1;
-        array<str> anomal2;
+        array<str> errors;
+        array<str> anomal;
 
         course (path dir)
         {
@@ -58,7 +58,7 @@ namespace content::out
                 array<str> lines =
                 sys::in::text(path).value();
 
-                content::topic topic{lines};
+                content::topic topic{path, lines};
                 
                 array<str> Lines =
                 topic.formatted();
@@ -67,20 +67,18 @@ namespace content::out
                 sys::out::write(path,
                     Lines);
 
-                if (not topic.anomal1.empty()) {
-                anomal1 += dark(bold(unit.fullname));
-                anomal1 += topic.anomal1;
-                anomal1 += ""; }
-
-                if (not topic.anomal2.empty()) {
-                anomal2 += dark(bold(unit.fullname));
-                anomal2 += topic.anomal2;
-                anomal2 += ""; }
+                str header = unit.fullname;
+                header.replace_all("/", gray("/"));
 
                 if (not topic.errors.empty()) {
-                err << red(bold(path.string()));
-                for (auto& error: topic.errors)
-                err << error; }
+                errors += dark(bold(header));
+                errors += topic.errors;
+                errors += ""; }
+
+                if (not topic.anomal.empty()) {
+                anomal += dark(bold(header));
+                anomal += topic.anomal;
+                anomal += ""; }
 
                 for (auto chain:
                 topic.chains(entries))

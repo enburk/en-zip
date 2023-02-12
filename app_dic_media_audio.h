@@ -67,8 +67,8 @@ namespace app::dic::audio
             str credit  = load_index.credit;
             str comment = load_index.comment;
 
-            title.replace_all("---", mdash.data());
-            title.replace_all("--" , ndash.data());
+            title.replace_all("---", mdash);
+            title.replace_all("--" , ndash);
 
             title = eng::parser::embolden(title, load_links);
 

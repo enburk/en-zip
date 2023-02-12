@@ -6,8 +6,8 @@ namespace studio::one
     struct area:
     widget<area>
     {
-        gui::area<editor> editor;
         gui::area<content> content;
+        gui::area<editor> editor;
         gui::splitter splitter;
 
         void on_change (void* what) override

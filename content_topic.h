@@ -5,23 +5,19 @@ namespace content
 {
     struct topic
     {
+        std::filesystem::path path;
         array<entry> entries;
-        array<str> anomal1;
-        array<str> anomal2;
         array<str> errors;
+        array<str> anomal;
 
-        topic (array<str> const& lines)
+        topic (std::filesystem::path path, array<str> const& lines) : path(path)
         {
             int n = 0;
             for (auto& line: lines)
             {
-                entry entry{line, n++};
+                entry entry{line, path, n++};
                 
-                if (entry.anomaly == "Br/Am") anomal1 +=
-                    blue(monospace(std::format("{:2}: ",
-                    entry.line))) + entry.eng;
-                else
-                if (entry.anomaly != "") anomal2 +=
+                if (entry.anomaly != "") anomal +=
                     blue(monospace(std::format("{:2}: ",
                     entry.line))) + entry.eng;
 

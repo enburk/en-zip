@@ -44,11 +44,13 @@ namespace content
         array<str> en;
         array<str> uk;
         array<str> us;
+        array<str> vocabulary;
         array<str> errors;
         int line = 0;
+        path topic;
 
         entry () = default;
-        entry (str s, int line) : line{line}
+        entry (str s, path topic, int line) : topic(topic), line{line}
         {
             s.strip();
             s.replace_all("\t", " ");
@@ -85,7 +87,7 @@ namespace content
             {
                 anomaly = "Br/Am";
                 for (str marker: Eng_markers)
-                s.replace_all(marker.c_str(), "");
+                s.replace_all(marker, "");
                 s.replace_all("~" , "");
 
                 str uk, us;
@@ -99,7 +101,7 @@ namespace content
                 bool am = s.contains("{Am.}");
 
                 for (str marker: Eng_markers)
-                s.replace_all(marker.c_str(), "");
+                s.replace_all(marker, "");
                 s.replace_all("~" , "");
 
                 s.debracket("{","}");
@@ -115,8 +117,13 @@ namespace content
             }
 
             if (s.contains(
-            one_of   ("/{}()[]")))
-            errors += "/{}()[]";
+            one_of   ("{}()[]")))
+            errors += "{}()[]";
+
+            for (str ss: en*uk*us)
+            for (str s: ss.split_by("|"))
+            vocabulary += s;
+            vocabulary.deduplicate();
         }
 
 

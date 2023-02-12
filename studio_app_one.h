@@ -85,6 +85,16 @@ namespace studio::one
                 for (int i=0; i<right.size(); i++)
                 right[i]->show(i == n);
             }
+
+            if (what == &reports)
+            {
+                str path, line;
+                reports.object.link.split_by("|", path, line);
+                left.content.object.selected = path.c_str(); 
+                left.editor.object.editor.go(doc::place{
+                std::stoi(line), 0});
+                focus = &left;
+            }
         }
 
         void on_key(str key, bool down, bool input) override

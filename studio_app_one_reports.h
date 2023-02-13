@@ -1,14 +1,7 @@
 #pragma once
-#include "app_one.h"
+#include "studio.h"
 namespace studio::one
 {
-    namespace report
-    {
-        optional_log errors;
-        optional_log anomal;
-        optional_log audiom, audiop, audioq;
-        optional_log videom, videop, videoq;
-    }
     struct reports:
     widget<reports>
     {
@@ -23,14 +16,6 @@ namespace studio::one
             array<gui::console*> consoles;
             consobar ()
             {
-                report::errors = errors;
-                report::anomal = anomal;
-                report::audiom = audiom;
-                report::videom = videom;
-                report::audiop = audiop;
-                report::videop = videop;
-                report::audioq = audioq;
-                report::videoq = videoq;
                 consoles += &errors;
                 consoles += &anomal;
                 consoles += &audiom;
@@ -54,8 +39,19 @@ namespace studio::one
                 if (what == &videom.link) { link = videom.link; notify(); }
                 if (what == &audiop.link) { link = audiop.link; notify(); }
                 if (what == &videop.link) { link = videop.link; notify(); }
-                if (what == &audioq.link) { link = audioq.link; notify(); }
-                if (what == &videoq.link) { link = videoq.link; notify(); }
+            //  if (what == &audioq.link) { link = audioq.link; notify(); }
+            //  if (what == &videoq.link) { link = videoq.link; notify(); }
+            }
+            void reload ()
+            {
+                 errors.clear(); errors << report::errors;
+                 anomal.clear(); anomal << report::anomal;
+                 audiom.clear(); audiom << report::audiom;
+                 videom.clear(); videom << report::videom;
+                 audiop.clear(); audiop << report::audiop;
+                 videop.clear(); videop << report::videop;
+                 audioq.clear(); audioq << report::audioq;
+                 videoq.clear(); videoq << report::videoq;
             }
         };
 
@@ -77,6 +73,8 @@ namespace studio::one
             selector.object.maxwidth = max<int>();
             selector.object.selected = 0;
         }
+
+        void reload () { consobar.object.reload(); }
 
         void on_change (void* what) override
         {

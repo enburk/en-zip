@@ -17,14 +17,16 @@ namespace content
             {
                 entry entry{line, path, n++};
                 
-                if (entry.anomaly != "") anomal +=
+                if (entry.anomaly != "") anomal += linked(
                     blue(monospace(std::format("{:2}: ",
-                    entry.line))) + entry.eng;
+                    entry.line))) + entry.eng,
+                    entry.link);
 
-                for (str error: entry.errors) errors +=
+                for (str error: entry.errors) errors += linked(
                     blue(monospace(std::format("{:2}: ",
                     entry.line))) + entry.eng + " " +
-                    red(error);
+                    red(error),
+                    entry.link);
 
                 entries += std::move(entry);
             }

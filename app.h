@@ -6,8 +6,6 @@
 namespace app
 {
     eng::vocabulary vocabulary;
-    media::in::data mediadata;
-    auto & assets = mediadata.assets;
     namespace one { content::in::course course; }
     namespace two { content::in::course course; }
     namespace logs

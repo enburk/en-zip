@@ -14,6 +14,7 @@ namespace media
         array<str> options;
         array<str> entries;
         array<str> keywords;
+        int usage =  0;
         int index = -1;
     };
 
@@ -53,6 +54,9 @@ namespace media
     struct entry_index
     {
         int32_t entry, media;
+
+        bool operator == (entry_index const&) const = default;
+        bool operator != (entry_index const&) const = default;
 
         friend void operator >> (sys::in::pool& pool, entry_index& i) {
             pool >> i.entry;

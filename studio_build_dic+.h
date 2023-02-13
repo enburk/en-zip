@@ -102,8 +102,8 @@ namespace studio::build::dic
         {
             int a = 0, v = 0;
             for (auto& r: rr)
-                if (r->kind == "audio") a++; else
-                if (r->kind == "video") v++;
+            if (r->kind == "audio") a++; else
+            if (r->kind == "video") v++;
 
             if (a > 0) frequency_a[a] += entry;
             if (v > 0) frequency_v[v] += entry;
@@ -205,6 +205,9 @@ namespace studio::build::dic
         for (auto& r: data.resources)
         {
             auto it = resources2entries.find(&r);
+            if (it != resources2entries.end())
+                r.usage = it->second.size();
+
             if (it == resources2entries.end()
             and not r.options.contains("sic!")
             and not r.options.contains("==")

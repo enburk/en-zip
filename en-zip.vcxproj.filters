@@ -169,5 +169,6 @@
     <ClInclude Include="studio_app_one_reports.h">
       <Filter>studio-one</Filter>
     </ClInclude>
+    <ClInclude Include="studio.h" />
   </ItemGroup>
 </Project>

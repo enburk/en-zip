@@ -42,6 +42,9 @@ namespace studio::one
         {
             dic.reload();
             app.reload();
+
+            report::load();
+            reports.object.reload();
         }
 
         void on_change (void* what) override

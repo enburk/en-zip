@@ -1,8 +1,5 @@
 ﻿#pragma once
-#include "eng_parser.h"
-#include "media_data.h"
-#include "content_course.h"
-#include "studio_app_one_reports.h"
+#include "studio.h"
 namespace studio::build::one
 {
     void compile
@@ -29,8 +26,12 @@ namespace studio::build::one
         using ::studio::one::report::audioq; audioq.clear();
         using ::studio::one::report::videoq; videoq.clear();
 
-        errors << course.errors;
-        anomal << course.anomal;
+        errors = course.errors;
+        anomal = course.anomal;
+        
+        if (not errors.empty()) {
+        err << red(bold("ONE ERRORS:"));
+        err << errors; }
 
         using res = media::resource*;
 
@@ -48,15 +49,18 @@ namespace studio::build::one
         for (auto& r: data.resources)
         {
             array<str> sss;
-            sss += r.title;
-            sss += r.keywords;
+            sss += r.title; if (r.kind == "video")
+            sss += r.entries;
             for (str ss: sss)
             for (str s: ss.split_by("/"))
             {
                 auto it = vocab.find(s);
                 if (it != vocab.end())
                     it->second += &r;
-                else unused_resources += &r;
+                else
+                if (r.usage > 5
+                or  r.kind == "video")
+                unused_resources += &r;
             }
         }
 
@@ -77,20 +81,20 @@ namespace studio::build::one
                 if (r->options.contains("us")) us = true; en = true; }
                 if (r->kind == "video") vi = true;
             }
-            str link = entry.topic.string()
-            + "|" + std::to_string(entry.line);
-            if (not en) audiom << linked(entry.eng, link);
-            if (not uk) audiom << linked(entry.eng + red(bold(" uk")), link);
-            if (not us) audiom << linked(entry.eng + red(bold(" us")), link);
-            if (not vi) videom << linked(entry.eng, link);
+            if (not en) audiom += linked(entry.eng, entry.link);
+            if (not uk) audiom += linked(entry.eng + red(bold(" uk")), entry.link);
+            if (not us) audiom += linked(entry.eng + red(bold(" us")), entry.link);
+            if (not vi) videom += linked(entry.eng, entry.link);
         }
-
 
         out << dark(bold("ONE: MAKE SUGGESTIONS..."));
 
         for (res r: unused_resources)
         {
             // r.keywords;
+
+            if (r->kind == "audio") audioq += r->title;
+            if (r->kind == "video") videoq += r->title;
         }
 
         /*
@@ -228,6 +232,6 @@ namespace studio::build::one
         }
         */
 
-        // str ee = errors.page.html;
+        ::studio::one::report::save();
     }
 }

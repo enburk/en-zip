@@ -196,6 +196,7 @@
     <ClInclude Include="media_storage.h" />
     <ClInclude Include="medio_audio.h" />
     <ClInclude Include="medio_video.h" />
+    <ClInclude Include="studio.h" />
     <ClInclude Include="studio_app_dic.h" />
     <ClInclude Include="studio_app_dic_area.h" />
     <ClInclude Include="studio_app_dic_detail.h" />

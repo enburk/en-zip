@@ -88,6 +88,8 @@ namespace studio::build
                 one::compile(vocabulary, redirects, mediadata);
             //  two::compile(vocabulary, redirects, mediadata);
 
+                mediadata.save();
+
                 data_updated =
                 data_updated or
                 media::report::updated;

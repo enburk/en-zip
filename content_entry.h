@@ -47,11 +47,14 @@ namespace content
         array<str> vocabulary;
         array<str> errors;
         int line = 0;
-        path topic;
+        str link;
 
         entry () = default;
-        entry (str s, path topic, int line) : topic(topic), line{line}
+        entry (str s, path path, int line) :  line{line}
         {
+            link = path.string() + "|" +
+                std::to_string(line);
+
             s.strip();
             s.replace_all("\t", " ");
             s.split_by("///", s, comment);

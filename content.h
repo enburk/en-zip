@@ -18,8 +18,8 @@ namespace content
 
     struct unit
     {
-        str title;
-        str fullname;
+        str name;
+        str path;
         int order = 0;
         int entry = 0;
         array<unit> units;
@@ -38,6 +38,21 @@ namespace content
             //std::shuffle(v.begin(), v.end(), g);
             for (auto& unit: units)
                 unit.shuffle();
+        }
+
+        friend void operator >> (sys::in::pool& pool, unit& x) {
+            pool >> x.name;
+            pool >> x.path;
+            pool >> x.order;
+            pool >> x.entry;
+            pool >> x.units;
+        }
+        friend void operator << (sys::out::pool& pool, unit const& x) {
+            pool << x.name;
+            pool << x.path;
+            pool << x.order;
+            pool << x.entry;
+            pool << x.units;
         }
     };
 }

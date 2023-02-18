@@ -26,9 +26,9 @@ struct Studio : gui::widget<Studio>
         schema.text.text = "light";
         app.text.text = "app";
 
-        studios += &dic;
         studios += &one;
         studios += &two;
+        studios += &dic;
         studios += &audio;
         studios += &video;
         studios += &build;
@@ -36,9 +36,9 @@ struct Studio : gui::widget<Studio>
         for (int i=1; i<studios.size(); i++)
             studios[i]->hide();
 
-        select(0).text.text = "dictionary";
         select(1).text.text = "course";
         select(2).text.text = "catalog";
+        select(0).text.text = "dictionary";
         select(3).text.text = "audio";
         select(4).text.text = "video";
         select(5).text.text = "logs";
@@ -84,11 +84,11 @@ struct Studio : gui::widget<Studio>
             for (int i=0; i<studios.size(); i++)
                 studios[i]->show(i == s);
 
-            focus = studios[n];
+            focus = studios[s];
 
             if (n == 6) // build!
                 for (int i=0; i<studios.size()-1; i++)
-                    select(i).enabled = false;
+                select(i).enabled = false;
 
             if (n == 6)
                 build.run();
@@ -114,6 +114,13 @@ struct Studio : gui::widget<Studio>
             schema.text.text == "light" ? "gray" : "gray+";
             schema.text.text =
             schema.text.text == "light" ? "dark" : "light";
+        }
+
+        if (what == &app)
+        {
+            auto path = ".vstudioapp/x64/Release/en-app.exe";
+            sys::process run(path, "",
+            sys::process::options{});
         }
     }
 };

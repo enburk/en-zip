@@ -12,6 +12,7 @@ namespace content::out
         course (path dir)
         {
             root.units = scan(dir);
+            root.sort();
         }
         array<unit> scan (path dir, int level = 0, str parent = "")
         {
@@ -42,15 +43,15 @@ namespace content::out
                     continue; }
 
                 unit unit;
-                unit.title = un_msdos(fn.from(3));
+                unit.name = un_msdos(fn.from(3));
                 unit.order = std::stoi(str(fn.upto(2)));
-                unit.fullname = parent == "" ?
-                unit.title : parent + "/" +
-                unit.title;
+                unit.path = parent == "" ?
+                unit.name : parent + "/" +
+                unit.name;
 
                 if (is_directory(path))
                 {
-                    unit.units = scan(path, level+1, unit.fullname);
+                    unit.units = scan(path, level+1, unit.path);
                     units += std::move(unit);
                     continue;
                 }
@@ -67,7 +68,7 @@ namespace content::out
                 sys::out::write(path,
                     Lines);
 
-                str header = unit.fullname;
+                str header = unit.path;
                 header.replace_all("/", gray("/"));
 
                 if (not topic.errors.empty()) {

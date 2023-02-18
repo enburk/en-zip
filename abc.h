@@ -7,6 +7,7 @@
 #include "../auxs/gui_widget_player.h"
 #include "../auxs/gui_widget_button.h"
 #include "../auxs/gui_widget_scroller.h"
+#include "../auxs/gui_widget_splitter.h"
 #include "../auxs/gui_widget_text_editline.h"
 #include "../auxs/gui_widget_text_editor.h"
 #include "../auxs/gui_widget_console.h"
@@ -49,11 +50,12 @@ str linked    (str s, str link) {
         "\">" + s + "</a>"; }
 
 using namespace std::string_view_literals;
-constexpr std::string_view ellipsis = "\xE2" "\x80" "\xA6"sv; // …
-constexpr std::string_view mdash    = "\xE2" "\x80" "\x94"sv; // m-dash
-constexpr std::string_view ndash    = "\xE2" "\x80" "\x93"sv; // n-dash
-constexpr std::string_view lquot    = "\xE2" "\x80" "\x9C"sv; // “
-constexpr std::string_view rquot    = "\xE2" "\x80" "\x9D"sv; // ”
+constexpr std::string_view ellipsis = "\xE2""\x80""\xA6"sv; // …
+constexpr std::string_view mspace   = "\xE2""\x80""\x83"sv; // m-space
+constexpr std::string_view mdash    = "\xE2""\x80""\x94"sv; // m-dash
+constexpr std::string_view ndash    = "\xE2""\x80""\x93"sv; // n-dash
+constexpr std::string_view lquot    = "\xE2""\x80""\x9C"sv; // “
+constexpr std::string_view rquot    = "\xE2""\x80""\x9D"sv; // ”
 
 str un_msdos (str s)
 {

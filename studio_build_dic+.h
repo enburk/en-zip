@@ -16,7 +16,8 @@ namespace studio::build::dic
 
         using res = media::resource*;
         std::unordered_map<int, array<res>> entries2resources;
-        std::unordered_map<res, array<str>> resources2entries;
+        std::unordered_map<res, array<int>> resources2entries;
+        std::unordered_map<res, array<str>> resources2titles;
 
         out << dark(bold("DIC: SCAN RESOURCES..."));
 
@@ -95,6 +96,7 @@ namespace studio::build::dic
 
         out << dark(bold("DIC: CALCULATE FREQUENCIES..."));
 
+        std::map<int, int>  entry2frequency;
         std::map<int, array<int>> frequency;
         std::map<int, array<int>> frequency_a;
         std::map<int, array<int>> frequency_v;
@@ -108,6 +110,8 @@ namespace studio::build::dic
             if (a > 0) frequency_a[a] += entry;
             if (v > 0) frequency_v[v] += entry;
             if (a+v>0) frequency[a+v] += entry;
+
+            entry2frequency[entry] = a + 2*v;
         }
         out << purple(bold("AUDIO STATISTICS"));
         for (auto [n, entries]: std::ranges::reverse_view(frequency_a)) {
@@ -148,9 +152,9 @@ namespace studio::build::dic
 
         int total_media = 0;
 
-        for (auto [_, entries]: std::ranges::reverse_view(frequency))
+        for (auto [_, entries]: reverse(frequency))
         {
-            for (int entry: entries)
+            for (int entry: entries) // more frequent first
             {
                 std::map<int, array<res>> weighted_resources;
 
@@ -175,7 +179,9 @@ namespace studio::build::dic
                         if (it == entries2resources.end())
                             weight += 2*penalty; else
                             weight += 1*penalty*
-                            (100 - min(100, it->second.size()))/100;
+                            (100 - min(100,
+                            it->second.size()))
+                            /100;
                     }
 
                     weighted_resources[weight] += r;
@@ -191,7 +197,8 @@ namespace studio::build::dic
                     {
                         if (++total_for_entry > 99) break;
         
-                        resources2entries[r] +=
+                        resources2entries[r] += entry;
+                        resources2titles [r] +=
                         vocabulary[entry].title;
 
                         data.dic_add(entry, r);
@@ -200,15 +207,35 @@ namespace studio::build::dic
             }
         }
 
+        out << dark(bold("DIC: CALCULATE WEIGHTS..."));
+
+        for (auto& [r, entries] : resources2entries)
+        {
+            int weight = r->title.size();
+            int penalty = 100;
+
+            for (int entry: entries)
+            {
+                int divider = 1;
+                auto it = entry2frequency.find(entry);
+                if (it != entry2frequency.end())
+                    divider += it->second;
+
+                weight += penalty/divider;
+            }
+
+            r->weight = weight;
+        }
+
         out << dark(bold("DIC: CHECK USAGE..."));
 
         for (auto& r: data.resources)
         {
-            auto it = resources2entries.find(&r);
-            if (it != resources2entries.end())
+            auto it = resources2titles.find(&r);
+            if (it != resources2titles.end())
                 r.usage = it->second.size();
 
-            if (it == resources2entries.end()
+            if (it == resources2titles.end()
             and not r.options.contains("sic!")
             and not r.options.contains("==")
             and not r.options.contains("=")

@@ -10,12 +10,14 @@ namespace media
     {
         path path;
         str id, kind;
-        str title, sense, comment, credit;
+        str title, abstract;
+        str sense, comment, credit;
         array<str> options;
         array<str> entries;
         array<str> keywords;
-        int usage =  0;
-        int index = -1;
+        int weight = max<int>();
+        int usage  =  0;
+        int index  = -1;
     };
 
     struct location

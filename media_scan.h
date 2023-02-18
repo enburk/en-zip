@@ -111,6 +111,7 @@ namespace media::scan
             resource.title = title;
             resource.sense = sense;
             resource.comment = commt;
+            resource.abstract = title;
             resource.entries += links.split_by("][");
             resource.options += optio.split_by("##");
             for (str& s: resource.entries) s.strip();

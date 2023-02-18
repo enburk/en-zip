@@ -2,7 +2,7 @@
 #include "app_one.h"
 namespace studio::one
 {
-    using path = std::filesystem::path;
+    using std::filesystem::path;
 
     struct content:
     widget<content>
@@ -114,10 +114,9 @@ namespace studio::one
                     name = lightblue(name); }
 
                 str html;
-                for (int i=0; i<record.level-1; i++) html += u8"−";
-                html += record.open ? (char*)(u8"− ") : "+ ";
-                html += record.file ? name :
-                    "<b>" + name + "</b>";
+                for (int i=0; i<record.level-1; i++) html += mspace;
+                html += record.file ? mspace : record.open ? (char*)(u8"− ") : "+ ";
+                html += record.file ? name : bold(name);
 
                 flist.indices += index;
                 auto& it = flist.list(n++);

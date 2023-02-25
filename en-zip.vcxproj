@@ -160,22 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abc.h" />
-    <ClInclude Include="app_dic.h" />
-    <ClInclude Include="app_dic_html.h" />
-    <ClInclude Include="app_dic_html_wiki.h" />
-    <ClInclude Include="app_dic_left.h" />
-    <ClInclude Include="app_dic_left_card.h" />
-    <ClInclude Include="app_dic_left_quot.h" />
-    <ClInclude Include="app_dic_list.h" />
-    <ClInclude Include="app_dic_list_list.h" />
-    <ClInclude Include="app_dic_list_word.h" />
-    <ClInclude Include="app_dic_media.h" />
-    <ClInclude Include="app_dic_media_audio.h" />
-    <ClInclude Include="app_dic_media_player.h" />
-    <ClInclude Include="app_dic_media_video.h" />
-    <ClInclude Include="app_dic_media_videos.h" />
-    <ClInclude Include="app_one.h" />
-    <ClInclude Include="app_two.h" />
     <ClInclude Include="content.h" />
     <ClInclude Include="content_course.h" />
     <ClInclude Include="content_entry.h" />

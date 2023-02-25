@@ -2,10 +2,9 @@
 #include "app.h"
 namespace app::one
 {
-    struct app : gui::widget<app>
+    struct app:
+    widget<app>
     {
-        gui::canvas canvas;
-
         app() { reload(); }
 
         void reload () try
@@ -23,12 +22,6 @@ namespace app::one
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
-
-                canvas.coord = xywh(0, 0, W, H);
-            }
-            if (what == &skin)
-            {
-                canvas.color = gui::skins[skin.now].ultralight.first;
             }
         }
     };

@@ -32,8 +32,8 @@ namespace app
                 "vocabulary.dat");
 
             timing t1;
-            one::course.load("../data");
-            two::course.load("../data");
+            one::course.load("../data/course.dat");
+            two::course.load("../data/catalogs.dat");
 
             timing t2;
             mediadata.reload();

@@ -1,10 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="app.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="app.h" />
     <ClInclude Include="app_contents.h" />
+    <ClInclude Include="app_dic.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_html.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_html_wiki.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_left.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_left_card.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_left_quot.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_list.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_list_list.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_list_word.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_audio.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_player.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_video.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_media_videos.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="app_one.h">
+      <Filter>app-one</Filter>
+    </ClInclude>
+    <ClInclude Include="app_one_entry.h">
+      <Filter>app-one</Filter>
+    </ClInclude>
+    <ClInclude Include="app_one_slide.h">
+      <Filter>app-one</Filter>
+    </ClInclude>
+    <ClInclude Include="app_two.h">
+      <Filter>app-two</Filter>
+    </ClInclude>
+    <ClInclude Include="app_contents+.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="en-app.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="app-dic">
+      <UniqueIdentifier>{01a24342-642c-49e0-8bcb-5bdb4bbde6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app-two">
+      <UniqueIdentifier>{51675e83-5b48-4a74-adcf-9bd44cc5193c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app-one">
+      <UniqueIdentifier>{eeec0587-20a5-4ab1-827e-f180ab0873c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

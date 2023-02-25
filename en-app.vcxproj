@@ -153,11 +153,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="app.cpp" />
+    <ClInclude Include="app.h" />
+    <ClInclude Include="app_contents+.h" />
+    <ClInclude Include="app_contents.h" />
+    <ClInclude Include="app_dic.h" />
+    <ClInclude Include="app_dic_html.h" />
+    <ClInclude Include="app_dic_html_wiki.h" />
+    <ClInclude Include="app_dic_left.h" />
+    <ClInclude Include="app_dic_left_card.h" />
+    <ClInclude Include="app_dic_left_quot.h" />
+    <ClInclude Include="app_dic_list.h" />
+    <ClInclude Include="app_dic_list_list.h" />
+    <ClInclude Include="app_dic_list_word.h" />
+    <ClInclude Include="app_dic_media.h" />
+    <ClInclude Include="app_dic_media_audio.h" />
+    <ClInclude Include="app_dic_media_player.h" />
+    <ClInclude Include="app_dic_media_video.h" />
+    <ClInclude Include="app_dic_media_videos.h" />
+    <ClInclude Include="app_one.h" />
+    <ClInclude Include="app_one_entry.h" />
+    <ClInclude Include="app_one_slide.h" />
+    <ClInclude Include="app_two.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="app.h" />
-    <ClInclude Include="app_contents.h" />
+    <ClCompile Include="en-app.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

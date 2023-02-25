@@ -104,8 +104,10 @@ namespace content::in
         array<entry> entries;
         where where;
 
-        void load (path dir)
+        void load (path path)
         {
+            sys::in::file file(path);
+            file >> root;
         }
     };
 }

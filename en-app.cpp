@@ -1,7 +1,9 @@
-#include "app_contents.h"
 #include "app_dic.h"
 #include "app_one.h"
 #include "app_two.h"
+#include "app_contents.h"
+#include "app_contents+.h"
+#include "../auxs/sfx_playback.h"
 
 struct App:
 widget<App>
@@ -12,19 +14,21 @@ widget<App>
     app::dic::app dic;
     app::contents ones;
     app::contents twos;
+    app::Contents Ones;
+    app::Contents Twos;
     gui::splitter splitter1;
     gui::splitter splitter2;
     gui::selector onetwo;
     gui::button dicon;
     gui::button conon;
 
-    gui::button mute;
-    gui::button play;
-    gui::button pause;
-    gui::button prev, Prev;
-    gui::button next, Next;
+    sfx::playback play;
     gui::button slower;
     gui::button faster;
+    gui::button mute;
+
+    gui::console report;
+    gui::console errors;
 
     App ()
     {
@@ -36,9 +40,28 @@ widget<App>
         conon.text.text = "\xE2""\x98""\xB7";
         dicon.text.text = "dictionary";
         onetwo.buttons(0).text.text = "course";
-        onetwo.buttons(1).text.text = "catalog";
+        onetwo.buttons(1).text.text = "catalogs";
         onetwo.maxwidth = max<int>();
         onetwo.selected = 0;
+        reload();
+    }
+
+    void reload () try
+    {
+        app::appdata.reload();
+        ones.reload("app::ones", app::one::course.root);
+        twos.reload("app::twos", app::two::course.root);
+        Ones.reload("app::Ones", app::one::course.root);
+        Twos.reload("app::Twos", app::two::course.root);
+        dic.reload();
+        one.reload();
+        two.reload();
+    }
+    catch (std::exception const& e)
+    {
+        app::logs::errors <<
+        bold(red(e.what()));
+        errors.show();
     }
 
     void refresh ()
@@ -51,6 +74,8 @@ widget<App>
         int d = gui::metrics::line::width*2;
         int l = splitter1.set("app::splitter1",  7,  9, 11);
         int r = splitter2.set("app::splitter2", 50, 60, 70);
+
+        play  .coord = xywh(l+0*w+0*v, H-h+d, 2*w, h-d-d);
 
         conon .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
         onetwo.coord = xywh(r-3*w-0*v, H-h+d, 2*w, h-d-d);

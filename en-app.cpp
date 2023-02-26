@@ -21,6 +21,7 @@ widget<App>
     gui::selector onetwo;
     gui::button dicon;
     gui::button conon;
+    gui::button Conon;
 
     sfx::playback play;
     gui::button slower;
@@ -37,7 +38,9 @@ widget<App>
         gui::skins[skin].ultralight.first;
         dicon.kind = gui::button::toggle;
         conon.kind = gui::button::toggle;
-        conon.text.text = "\xE2""\x98""\xB7";
+        Conon.kind = gui::button::toggle;
+        conon.text.text = "\xE2""\x98""\xB0"; // Trigram For Heaven
+        Conon.text.text = "\xE2""\x98""\xB7"; // Trigram For Earth
         dicon.text.text = "dictionary";
         onetwo.buttons(0).text.text = "course";
         onetwo.buttons(1).text.text = "catalogs";
@@ -75,9 +78,11 @@ widget<App>
         int l = splitter1.set("app::splitter1",  7,  9, 11);
         int r = splitter2.set("app::splitter2", 50, 60, 70);
 
+        play.enabled = onetwo.selected.now == 0 and not Conon.on.now;
         play  .coord = xywh(l+0*w+0*v, H-h+d, 2*w, h-d-d);
 
-        conon .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
+        conon .coord = xywh(r-3*w-2*v, H-h+d, 1*v, h-d-d);
+        Conon .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
         onetwo.coord = xywh(r-3*w-0*v, H-h+d, 2*w, h-d-d);
         dicon .coord = xywh(r-1*w-0*v, H-h+d, 1*w, h-d-d);
 
@@ -88,6 +93,8 @@ widget<App>
         two .show(onetwo.selected.now == 1);
         ones.show(onetwo.selected.now == 0 and conon.on.now);
         twos.show(onetwo.selected.now == 1 and conon.on.now);
+        Ones.show(onetwo.selected.now == 0 and Conon.on.now);
+        Twos.show(onetwo.selected.now == 1 and Conon.on.now);
         dic .show(dicon.on.now);
 
         splitter1.show(conon.on.now);
@@ -96,6 +103,8 @@ widget<App>
         canvas.coord = xyxy(0, 0, W, H);
         ones  .coord = xyxy(0, 0, l, H);
         twos  .coord = xyxy(0, 0, l, H);
+        Ones  .coord = xyxy(l, 0, r, H-h);
+        Twos  .coord = xyxy(l, 0, r, H-h);
         one   .coord = xyxy(l, 0, r, H-h);
         two   .coord = xyxy(l, 0, r, H-h);
         dic   .coord = xyxy(r, 0, W, H);
@@ -113,6 +122,7 @@ widget<App>
 
         if (what == &dicon 
         or  what == &conon
+        or  what == &Conon
         or  what == &onetwo)
             refresh();
     }

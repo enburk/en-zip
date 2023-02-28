@@ -26,13 +26,15 @@ namespace content
     u8"в авиации:, в морском деле:, в цифр. технологиях:"
     ).split_by(", ");
 
-    auto rus_markers = eng_markers * str(
+    auto rus_markers = str(
     u8"англ., исп., итал., лат., нем., порт., фр., "
     u8"в брит., в амер., в знач., и проч., истор., "
     u8"буквально:, дословно:, дословно c , например:, "
     u8"обычно:, сравните:, редко:, также:, формальное:"
     ).split_by(", ");
-
+}
+namespace content::out
+{
     struct entry
     {
         str eng;
@@ -93,10 +95,10 @@ namespace content
                 s.replace_all(marker, "");
                 s.replace_all("~" , "");
 
-                str uk, us;
-                s.split_by("\\\\", uk, us);
-                uk.strip (); uk += uk;
-                us.strip (); us += us;
+                str s1, s2;
+                s.split_by("\\\\", s1, s2);
+                s1.strip (); uk += s1;
+                s2.strip (); us += s2;
             }
             else
             {
@@ -107,8 +109,7 @@ namespace content
                 s.replace_all(marker, "");
                 s.replace_all("~" , "");
 
-                s.debracket("{","}");
-                s.debracket("(",")");
+                s.debracket("(",")"); str ss = s;
                 s.debracket("[","]");
                 s.canonicalize();
 
@@ -117,6 +118,15 @@ namespace content
                 if (br) uk += s.split_by("/"); else
                 if (am) us += s.split_by("/"); else
                         en += s.split_by("/");
+
+                // beluga [whale]
+                ss.replace_all("[" , "");
+                ss.replace_all("]" , "");
+                ss.canonicalize();
+                if (ss != s) {
+                if (br) uk += ss; else
+                if (am) us += ss; else
+                        en += ss; }
             }
 
             if (s.contains(
@@ -128,142 +138,6 @@ namespace content
             vocabulary += s;
             vocabulary.deduplicate();
         }
-
-
-        struct Eng
-        {
-            /*
-            str en, uk, us, ext, res;
-            
-            Eng (const str & s = "")
-            {
-                en = s; en.parse ("%%", en, ext); en.strip (); ext.strip ();
-
-                res = en;
-
-                res.replace_all ("{also}"    , ""); res.replace_all ( "<small>" , ""); res.replace_all (u8" → " , ", ");
-                res.replace_all ("{esp.}"    , ""); res.replace_all ("</small>" , ""); res.replace_all (u8" ← " , ", ");
-                res.replace_all ("{mainly}"  , "");
-                res.replace_all ("{usually}" , "");
-                res.replace_all ("{informal}", "");
-                res.replace_all ( "informal:", "");
-
-                if (en.found ("\\\\"))
-                {
-                    en.parse ("\\\\", uk, us); uk.strip (); us.strip ();
-                    en  = uk.found ("{Br.}") ? uk : uk + " {Br.}"; en += " ~ ";
-                    en += us.found ("{Am.}") ? us : us + " {Am.}";
-
-                    uk.replace_all ("{also}"    , ""); us.replace_all ("{also}"    , "");
-                    uk.replace_all ("{esp.}"    , ""); us.replace_all ("{esp.}"    , "");
-                    uk.replace_all ("{mainly}"  , ""); us.replace_all ("{mainly}"  , "");
-                    uk.replace_all ("{usually}" , ""); us.replace_all ("{usually}" , "");
-                    uk.replace_all ("{informal}", ""); us.replace_all ("{informal}", "");
-                    uk.replace_all ( "informal:", ""); us.replace_all ( "informal:", "");
-                }
-                else
-                {
-                    if (res.found ("{Br.}") && res.found ("{Am.}")) throw str ("ENG: %s [BAD UK/US]", *en);
-                    if (res.found ("{Br.}")) uk = res; else
-                    if (res.found ("{Am.}")) us = res; else uk = us = res;
-                }
-
-                res.replace_all ("{Br.}", ""); uk.replace_all ("{Br.}", ""); uk.strip ();
-                res.replace_all ("{Am.}", ""); us.replace_all ("{Am.}", ""); us.strip ();
-
-                res = AUX::simple_str (res);
-            }
-
-            str show () const
-            {
-                str s = en; str ss = ext; s.replace_all ( "{EQ}" , "="); ss.replace_all ( "{EQ}" , "=");
-
-                AUX::italize (s,  AUX::eng_txt_markers); // , "<blue>", "</blue>");
-                AUX::italize (ss, AUX::eng_ext_markers);
-
-                s.replace_all ("{Br.}"     , "Br.");
-                s.replace_all ("{Am.}"     , "Am.");
-                s.replace_all ("{also}"    , "also");
-                s.replace_all ("{esp.}"    , "especially");
-                s.replace_all ("{mainly}"  , "mainly");
-                s.replace_all ("{usually}" , "usually");
-                s.replace_all ("{informal}", "informal");
-
-                s = AUX::debrace (s);
-
-                s.replace_all ("`", "");
-
-                s = s + "#" + ss;
-
-                s.replace_all ("<noun>"   , "<green>''noun''</green>");
-                s.replace_all ("<verb>"   , "<green>''verb''</green>");
-                s.replace_all ("<adj.>"   , "<green>''adjective''</green>");
-                s.replace_all ("<adv.>"   , "<green>''adverb''</green>");
-                s.replace_all ("<int.>"   , "<green>''interjection''</green>");
-                s.replace_all ("<conj.>"  , "<green>''conjunction''</green>");
-                s.replace_all ("<pronoun>", "<green>''pronoun''</green>");
-
-                s.replace_all ("---", "\xE2" "\x80" "\x94"); // m-dash
-                s.replace_all ("--" , "\xE2" "\x80" "\x93"); // n-dash
-
-                s.replace_all ("  ~" , "~"); s.replace_all (" ~" , "~");
-                s.replace_all ("~  " , "~"); s.replace_all ("~ " , "~");
-        
-                int i=0; while (i < s.size () - 1) if (s [i] != '~' || s [i+1] != '~') i++; else { s.erase (i); while (i < s.size () && s [i] == '~') i++; }
-        
-                s.replace_all ("~", "\n"); s.replace_all ("<br>", "\n");
-
-                s.replace_all ("|", "/");
-                s.replace_all ("//","/");
-
-                return s;
-            }
-            */
-        };
-
-        /*
-        struct RUS
-        {
-            str ru, ext; RUS (const str & s = "")
-            {
-                ru = s; ru.parse ("%%", ru, ext); ru.strip (); ext.strip (); // ::parseback (ru, '(', ext, ')');
-            }
-
-            str show () const
-            {
-                str s = AUX::debrace (ru); str ss = ext;
-
-                AUX::italize (s,  AUX::rus_txt_markers);
-                AUX::italize (ss, AUX::rus_ext_markers);
-
-                int b = 0, e = 0; while (true)
-                {
-                    b = s.findf (b, "("); if (b == -1) break;
-                    e = s.findf (b, ")"); if (e == -1) break;
-
-                    s.replace (b, e-b+1, "<gray>" + s.sub (b, e-b+1) + "</gray>"); b += e-b+1 + str ("<gray></gray>").size ();
-                }
-
-                s = s + "#" + ss;
-
-                s.replace_all ("---", "\xE2" "\x80" "\x94"); // m-dash
-                s.replace_all ("--" , "\xE2" "\x80" "\x93"); // n-dash
-
-                s.replace_all ("  ~" , "~"); s.replace_all (" ~" , "~");
-                s.replace_all ("~  " , "~"); s.replace_all ("~ " , "~");
-
-                int i=0; while (i < s.size () - 1) if (s [i] != '~' || s [i+1] != '~') i++; else { s.erase (i); while (i < s.size () && s [i] == '~') i++; }
-        
-                s.replace_all ("~", "\n"); s.replace_all ("<br>", "\n");
-
-                s.replace_all ("|", "/");
-                s.replace_all ("//","/");
-
-                return s;
-            }
-        };
-        */
-
 
         str formatted (int tab1, int tab2) const
         {
@@ -291,6 +165,92 @@ namespace content
             if (C != "" ) s += "/// " + C;
             s.strip();
             return s;
+        }
+
+        friend void operator << (sys::out::pool& pool, entry const& x) {
+            pool << x.eng;
+            pool << x.rus;
+            pool << x.opt;
+        }
+    };
+}
+namespace content::in
+{
+    struct entry
+    {
+        str eng;
+        str rus;
+        options opt;
+
+        friend void operator >> (sys::in::pool& pool, entry& x) {
+            pool >> x.eng;
+            pool >> x.rus;
+            pool >> x.opt;
+        }
+
+        str html (bool trans)
+        {
+            str html;
+
+            str s = eng;
+            str comment, sense;
+            s.split_by("%%", s, comment);
+            s.split_by("@" , s, sense);
+            s.strip(); comment.strip();
+
+            s.replace_all("(1)", small(blue("<sub>1</sub>")));
+            s.replace_all("(2)", small(blue("<sub>2</sub>")));
+            s.replace_all("(3)", small(blue("<sub>3</sub>")));
+            s.replace_all("(4)", small(blue("<sub>4</sub>")));
+
+            if (s.contains("\\\\"))
+            {
+                str uk, us;
+                s.split_by("\\\\", uk, us);
+                uk.strip (); uk += small(blue("Br"));
+                us.strip (); us += small(blue("Am"));
+                s = uk + "<br>" + us;
+            }
+
+            s.rebracket("{","}",[](str s){ return small(blue(s)); });
+
+            if (comment != "")
+            {
+                for (str marker: eng_markers)
+                comment.replace_all(marker, italic(marker));
+                s += "<br>" + small(dark(comment));
+            }
+
+            html = big(s);
+
+            if (trans and rus != "")
+            {
+                s = rus;
+                s.split_by("%%", s, comment);
+                s.strip(); comment.strip();
+
+                for (str marker: Rus_markers)
+                s.replace_all(marker, italic(marker));
+
+                if (comment != "")
+                {
+                    for (str marker: rus_markers)
+                    comment.replace_all(marker, italic(marker));
+                    s += "<br>" + small(gray(comment));
+                }
+
+                html += "<br>" + small(dark(s));
+            }
+
+            html.rebracket("(",")",[](str s){ return gray("("+s+")"); });
+            html.replace_all("/",blue("/"));
+            html.replace_all("|",blue("/"));
+            html.replace_all("---", mdash);
+            html.replace_all("--" , ndash);
+            html.replace_all("  ~", "~");
+            html.replace_all("~  ", "~");
+            html.replace_all("~","<br>");
+            return html;
         }
     };
 }

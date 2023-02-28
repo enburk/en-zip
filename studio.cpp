@@ -36,13 +36,14 @@ struct Studio : gui::widget<Studio>
         for (int i=1; i<studios.size(); i++)
             studios[i]->hide();
 
-        select(1).text.text = "course";
-        select(2).text.text = "catalog";
-        select(0).text.text = "dictionary";
-        select(3).text.text = "audio";
-        select(4).text.text = "video";
-        select(5).text.text = "logs";
-        select(6).text.text = "build!";
+        int i = 0;
+        select(i++).text.text = "course";
+        select(i++).text.text = "catalogs";
+        select(i++).text.text = "dictionary";
+        select(i++).text.text = "audio";
+        select(i++).text.text = "video";
+        select(i++).text.text = "logs";
+        select(i++).text.text = "build!";
         select(0).on = true;
     }
 

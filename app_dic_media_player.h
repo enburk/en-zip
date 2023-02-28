@@ -28,7 +28,7 @@ namespace app::dic::media
             audio.muted = false;
 
             if (audio_index == media_index{}) {
-                audio.state = gui::media::state::vacant;
+                audio.status = gui::media::state::vacant;
                 return; }
 
             thread = [this, title](auto& cancel)
@@ -52,7 +52,7 @@ namespace app::dic::media
         gui::media::state state ()
         {
             auto v = video.state.load();
-            auto a = audio.state.load();
+            auto a = audio.status.load();
             using s = gui::media::state;
 
             if (v == s::ready) return

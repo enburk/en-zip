@@ -7,14 +7,17 @@ namespace app::dic::audio
     struct player:
     widget<player>
     {
+        typedef gui::time time;
+        typedef gui::media::state state;
+
         html_view text;
         sys::audio::player audio;
         array<str> links, load_links;
         media::media_index index, load_index;
-        std::atomic<gui::media::state> state;
-        gui::property<gui::time> timer;
-        gui::time start, stay;
-        int clicked = 0;
+        std::atomic<state> status;
+        gui::property<time> timer;
+        time start, stay;
+        int  clicked = 0;
         bool click = false;
         bool muted = true;
         str  html;
@@ -22,13 +25,13 @@ namespace app::dic::audio
         player ()
         {
             on_change(&skin);
-            state = gui::media::state::finished;
+            status = state::finished;
         }
 
         void reset (media::media_index index_, array<str> links_)
         {
-            start = gui::time{};
-            stay  = gui::time{1000 +
+            start = time{};
+            stay  = time{1000 +
             index_.title.size() * 40 +
             index_.credit.size() * 10 +
             index_.comment.size() * 20};
@@ -42,10 +45,10 @@ namespace app::dic::audio
 
             stop();
 
-            state = gui::media::state::loading;
+            status = state::loading;
         }
 
-        void show (gui::time time = gui::time{})
+        void show (time time = time{})
         {
             if (html != "") {
             text.html = html; html = ""; }
@@ -57,9 +60,9 @@ namespace app::dic::audio
 
         void load (str entry_title, std::atomic<bool>& cancel)
         {
-            if (state == gui::media::state::ready
-            or  state == gui::media::state::playing
-            or  state == gui::media::state::finished)
+            if (status == state::ready
+            or  status == state::playing
+            or  status == state::finished)
                 return;
 
             str title   = load_index.title;
@@ -141,18 +144,17 @@ namespace app::dic::audio
                 if (cancel) return;
 
                 audio.load(
-                    decoder.output,
-                    decoder.channels,
-                    decoder.samples,
-                    decoder.bps
-                );
+                decoder.output,
+                decoder.channels,
+                decoder.samples,
+                decoder.bps);
 
                 if (cancel) return;
 
-                state = gui::media::state::ready;
+                status = state::ready;
             }
             catch (std::exception const& e) {
-                state = gui::media::state::failure;
+                status = state::failure;
                 logs::times << "audio failure: " +
                     str(e.what());
             }
@@ -160,23 +162,23 @@ namespace app::dic::audio
 
         void play ()
         {
-            switch(state) {
-            case gui::media::state::ready:
-            case gui::media::state::finished:
+            switch(status) {
+            case state::ready:
+            case state::finished:
             {
-                start = gui::time::now;
-                state = gui::media::state::playing;
+                start = time::now;
+                status = state::playing;
 
                 if (muted) {
-                    timer.go (gui::time{0}, gui::time{0});
-                    timer.go (gui::time{1}, gui::time{3*stay.ms});
+                    timer.go (time{0}, time{0});
+                    timer.go (time{1}, time{3*stay.ms});
                     break; }
 
-                auto duration = gui::time{(int)(audio.duration*1000)};
+                auto duration = time{(int)(audio.duration*1000)};
                 duration = max(duration, stay);
                 audio.play(0.0, 0.0);
-                timer.go (gui::time{0}, gui::time{0});
-                timer.go (gui::time{1}, duration);
+                timer.go (time{0}, time{0});
+                timer.go (time{1}, duration);
                 break;
             }
             default: break;
@@ -185,14 +187,14 @@ namespace app::dic::audio
 
         void stop ()
         {
-            switch(state) {
-            case gui::media::state::ready:
-            case gui::media::state::playing:
+            switch(status) {
+            case state::ready:
+            case state::playing:
 
                 audio.stop(0.0);
-                state = gui::media::state::finished;
-                timer.go (gui::time{},
-                          gui::time{});
+                status = state::finished;
+                timer.go (time{},
+                          time{});
                 break;
 
             default: break;
@@ -201,7 +203,7 @@ namespace app::dic::audio
 
         void mute (bool mute)
         {
-            if (state == gui::media::state::playing)
+            if (status == state::playing)
             {
                 if (mute)
                 {
@@ -209,12 +211,12 @@ namespace app::dic::audio
                 }
                 else
                 {
-                    start = gui::time::now;
-                    auto duration = gui::time{(int)(audio.duration*1000)};
+                    start = time::now;
+                    auto duration = time{(int)(audio.duration*1000)};
                     duration = max(duration, stay);
                     audio.play(0.0, 0.0);
-                    timer.go (gui::time{0}, gui::time{0});
-                    timer.go (gui::time{1}, duration);
+                    timer.go (time{0}, time{0});
+                    timer.go (time{1}, duration);
                 }
             }
             muted = mute;
@@ -228,21 +230,15 @@ namespace app::dic::audio
             }
             if (what == &skin)
             {
-                text.canvas.color = gui::skins[skin].light.first;
                 text.alignment = xy{pix::left, pix::center};
                 text.color = gui::skins[skin].touched.first;
             }
-            if (what == &timer)
+            if (what == &timer and timer == time{1})
             {
-                if (timer == gui::time{1})
-                {
-                    if (text.link != "") {
-                        timer.go (gui::time{0}, gui::time{0});
-                        timer.go (gui::time{1}, 1s);
-                        return; }
-
-                    state = gui::media::state::finished;
-                }
+                if (text.link != "") {
+                timer.go(time{0}, 0s);
+                timer.go(time{1}, 1s); }
+                else status = state::finished;
             }
             if (what == &text )
             {

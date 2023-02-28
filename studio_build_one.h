@@ -18,6 +18,7 @@ namespace studio::build::one
         content::logs::err = err;
         content::out::course course("content");
         if (true) sys::out::file("../data/course.dat") << course.root;
+        if (true) sys::out::file("../data/course_entries.dat") << course.entries;
 
         using ::studio::one::report::errors; errors.clear();
         using ::studio::one::report::anomal; anomal.clear();

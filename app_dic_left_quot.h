@@ -72,9 +72,9 @@ namespace app::dic::left
             if (players.size() > 0)
             {
                 auto& p = players(current);
-                if (p.state == state::ready
-                or  p.state == state::playing
-                or  p.state == state::finished) 
+                if (p.status == state::ready
+                or  p.status == state::playing
+                or  p.status == state::finished) 
                 {
                     auto it = std::ranges::find(selected, p.index);
                     if (it != selected.end())
@@ -112,9 +112,9 @@ namespace app::dic::left
             if (players.size() > 0)
             {
                 auto& p = players(current);
-                if (p.state == state::ready
-                or  p.state == state::playing
-                or  p.state == state::finished) 
+                if (p.status == state::ready
+                or  p.status == state::playing
+                or  p.status == state::finished) 
                     p.show();
 
                 thread = std::thread([this, title]()
@@ -179,14 +179,14 @@ namespace app::dic::left
             if (what == &timer)
             {
                 while (ready_players < players.size() and
-                    players(ready_players).state == state::ready)
+                    players(ready_players).status == state::ready)
                     ready_players++;
 
                 if (ready_players > 0)
                 {
-                    switch(players(current).state) {
+                    switch(players(current).status) {
                     case state::failure:
-                        players(current).state = state::finished;
+                        players(current).status = state::finished;
                         players(current).show(smoothly);
                         break;
                     case state::ready:
@@ -207,7 +207,7 @@ namespace app::dic::left
                         break;
                     }
 
-                    bool playing = players(current).state == state::playing;
+                    bool playing = players(current).status == state::playing;
                     play.hide(playing);
                     Play.hide(playing);
                     stop.show(playing);

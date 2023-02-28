@@ -1,6 +1,6 @@
 ﻿#pragma once
-#include "../auxs/sys_in.h"
-#include "../auxs/sys_out.h"
+#include "../auxs/sys_io_in.h"
+#include "../auxs/sys_io_out.h"
 #include "../auxs/gui_effect.h"
 #include "../auxs/gui_colors.h"
 #include "../auxs/gui_widget.h"

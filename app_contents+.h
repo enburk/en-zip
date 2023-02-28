@@ -43,7 +43,7 @@ namespace app
             int H = coord.now.h; if (H <= 0) return;
             int h = gui::metrics::text::height*12/10;
             int l = gui::metrics::line::width;
-            int n = W/(10*h);
+            int n = W/(9*h);
             int w = W/n;
             int x = 0;
             int y = 0;
@@ -67,13 +67,12 @@ namespace app
                 
                 for (str s: block.path)
                 {
-                    spaces += " ";
                     // flist.paths += 
                     auto& line = flist.list.emplace_back();
                     line.coord = xywh(x, yy, w, h);
                     line.text.alignment = xy(pix::left, pix::center);
-                    line.text.html = spaces + bold(title(s));
-                    yy += h;
+                    line.text.html = spaces + yellow(bold(title(s)));
+                    yy += h; spaces += " ";
                 }
 
                 for (str s: block.topics)

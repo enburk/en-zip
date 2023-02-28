@@ -59,7 +59,7 @@ namespace content::out
                 array<str> lines =
                 sys::in::text(path).value();
 
-                content::topic topic{path, lines};
+                topic topic{path, lines};
                 
                 array<str> Lines =
                 topic.formatted();
@@ -104,10 +104,10 @@ namespace content::in
         array<entry> entries;
         where where;
 
-        void load (path path)
+        void load (path p1, path p2)
         {
-            sys::in::file file(path);
-            file >> root;
+            if (true) sys::in::file(p1) >> root;
+            if (true) sys::in::file(p2) >> entries;
         }
     };
 }

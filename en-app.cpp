@@ -22,6 +22,7 @@ widget<App>
     gui::button dicon;
     gui::button conon;
     gui::button Conon;
+    gui::button trans;
 
     sfx::playback play;
     gui::button slower;
@@ -39,9 +40,11 @@ widget<App>
         dicon.kind = gui::button::toggle;
         conon.kind = gui::button::toggle;
         Conon.kind = gui::button::toggle;
+        trans.kind = gui::button::toggle;
         conon.text.text = "\xE2""\x98""\xB0"; // Trigram For Heaven
         Conon.text.text = "\xE2""\x98""\xB7"; // Trigram For Earth
         dicon.text.text = "dictionary";
+        trans.text.text = "rus";
         onetwo.buttons(0).text.text = "course";
         onetwo.buttons(1).text.text = "catalogs";
         onetwo.maxwidth = max<int>();
@@ -81,8 +84,9 @@ widget<App>
         play.enabled = onetwo.selected.now == 0 and not Conon.on.now;
         play  .coord = xywh(l+0*w+0*v, H-h+d, 2*w, h-d-d);
 
-        conon .coord = xywh(r-3*w-2*v, H-h+d, 1*v, h-d-d);
-        Conon .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
+        conon .coord = xywh(r-3*w-3*v, H-h+d, 1*v, h-d-d);
+        Conon .coord = xywh(r-3*w-2*v, H-h+d, 1*v, h-d-d);
+        trans .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
         onetwo.coord = xywh(r-3*w-0*v, H-h+d, 2*w, h-d-d);
         dicon .coord = xywh(r-1*w-0*v, H-h+d, 1*w, h-d-d);
 

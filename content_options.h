@@ -32,6 +32,17 @@ namespace content
         array<str> internal;
         array<str> external;
         array<str> unknown;
+
+        friend void operator >> (sys::in::pool& pool, options& x) {
+            pool >> x.age;
+            pool >> x.maskered.mask;
+            pool >> x.external;
+        }
+        friend void operator << (sys::out::pool& pool, options const& x) {
+            pool << x.age;
+            pool << x.maskered.mask;
+            pool << x.external;
+        }
         
         static inline array<str> maskereds = str(
         "RARE-, TERM-, IT-, TECH-, ART-, SPORT-, MATH-, POLIT-, WAR-, HISTORY-, FOOD-, MILK, O13-, O14-, O15-, O16-, "

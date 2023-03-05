@@ -130,7 +130,7 @@ namespace media::scan
 
                 auto credit = path / "!credit.txt";
                 if (std::filesystem::exists(credit)) {
-                resource.credit = str(sys::in::text(credit).value(), "<br>");
+                resource.credit = str(sys::in::text(credit).lines(), "<br>");
                 identified[credit] = true; }
 
                 scan(path, resources, level+1, resource);
@@ -162,7 +162,7 @@ namespace media::scan
                     bool title_stop = false;
                     array<str> title_lines;
                     array<str> comment_lines;
-                    array<str> lines = sys::in::text(txt).value();
+                    array<str> lines = sys::in::text(txt).lines();
                     for (str line : lines)
                     {
                         line.strip();

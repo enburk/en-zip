@@ -11,7 +11,7 @@ namespace app::dic::left
         gui::button play, Play;
         gui::button stop, Stop;
         gui::button prev, next;
-        gui::player speaker;
+        sfx::media::image::player speaker;
         gui::text::view oneof;
 
         gui::widgetarium<audio::player> players;
@@ -26,7 +26,7 @@ namespace app::dic::left
         std::thread thread;
         std::atomic<bool> cancel = false;
 
-        using state = gui::media::state;
+        using state = sfx::media::state;
 
         quot ()
         {
@@ -185,7 +185,7 @@ namespace app::dic::left
                 if (ready_players > 0)
                 {
                     switch(players(current).status) {
-                    case state::failure:
+                    case state::failed:
                         players(current).status = state::finished;
                         players(current).show(smoothly);
                         break;

@@ -3,7 +3,6 @@
 #include "app_two.h"
 #include "app_contents.h"
 #include "app_contents+.h"
-#include "../auxs/sfx_playback.h"
 
 struct App:
 widget<App>
@@ -24,7 +23,7 @@ widget<App>
     gui::button Conon;
     gui::button trans;
 
-    sfx::playback play;
+    sfx::media::playback play;
     gui::button slower;
     gui::button faster;
     gui::button mute;

@@ -154,8 +154,7 @@ namespace media::out
             for (auto& asset: assets) {
             f << asset->title;
             f << sys::in::bytes
-                (asset->path)
-                .value(); }
+            (asset->path); }
 
             if (up1) logs::out << yellow(bold("entries_dic updated"));
             if (up2) logs::out << yellow(bold("entries_one updated"));

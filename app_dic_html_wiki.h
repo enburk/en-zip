@@ -59,7 +59,7 @@ namespace app::dic
             {
                 if (topic.forms.size() > 100)
                 {
-                    if (auto ff = topic.forms.split_by(";"); ff.size() > 1)
+                    if (array<str> ff = topic.forms.split_by(";"); ff.size() > 1)
                     {
                         bool split = true;
                         for (str f: ff) if (f.size() < 20) split = false;

@@ -56,7 +56,7 @@ namespace studio::one
             str open = sys::settings::load("studio::one::content::open", "");
             str path = sys::settings::load("studio::one::content::path", "");
 
-            auto opens = open.split_by(";");
+            array<str> opens = open.split_by(";");
             for (auto& record: records) if (not record.file)
             record.open = opens.contains(record.path.string());
             selected = path.c_str();

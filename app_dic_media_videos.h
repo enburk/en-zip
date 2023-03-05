@@ -45,7 +45,7 @@ namespace app::dic::video
                 player.mute = mute.now;
             }
 
-            using state = gui::media::state;
+            using state = sfx::media::state;
 
             if (players.size() > 0)
             if (players(0).state == state::ready   or
@@ -89,13 +89,13 @@ namespace app::dic::video
             {
                 if (players.size() > 0)
                 {
-                    using state = gui::media::state;
+                    using state = sfx::media::state;
                     switch (players(current).state) {
-                    case state::failure:
+                    case state::failed:
                         logs::times << "video: " +
                         std::to_string(current) + ": " +
                         players(current).error;
-                        players(current).state = gui::media::state::finished;
+                        players(current).state = sfx::media::state::finished;
                         players(current).show(smoothly);
                         break;
                     case state::ready:

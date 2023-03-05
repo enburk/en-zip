@@ -14,7 +14,7 @@ namespace studio::dic
             {
                 words.clear();
                 if (not std::filesystem::exists(filename.c_str())) return;
-                array<str> lines = sys::in::text(filename.c_str()).value();
+                array<str> lines = sys::in::text(filename.c_str()).lines();
                 for (str line: lines)
                 {
                     line.strip(); if (line == "") continue;
@@ -341,7 +341,7 @@ namespace studio::dic
                                     c = ' ';
                                 s.canonicalize();
                                 s = s.ascii_lowercased();
-                                auto ss = s.split_by(' ');
+                                array<str> ss = s.split_by(' ');
                                 ss.deduplicate();
                                 std::ranges::sort(ss);
                                 array<str> matches;

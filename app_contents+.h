@@ -63,7 +63,8 @@ namespace app
 
             for (auto& block: blocks)
             {
-                str spaces; int yy = y;
+                int yy = y;
+                str spaces = " ";
                 
                 for (str s: block.path)
                 {

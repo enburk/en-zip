@@ -11,14 +11,14 @@ namespace studio::one
         void load ()
         {
             path dir = "../data/media";
-            errors = sys::in::optional_text(dir/"x_one_errors.dat");
-            anomal = sys::in::optional_text(dir/"x_one_anomal.dat");
-            audiom = sys::in::optional_text(dir/"x_one_audiom.dat");
-            videom = sys::in::optional_text(dir/"x_one_videom.dat");
-            audiop = sys::in::optional_text(dir/"x_one_audiop.dat");
-            videop = sys::in::optional_text(dir/"x_one_videop.dat");
-            audioq = sys::in::optional_text(dir/"x_one_audioq.dat");
-            videoq = sys::in::optional_text(dir/"x_one_videoq.dat");
+            errors = sys::in::optional_text(dir/"x_one_errors.dat").lines();
+            anomal = sys::in::optional_text(dir/"x_one_anomal.dat").lines();
+            audiom = sys::in::optional_text(dir/"x_one_audiom.dat").lines();
+            videom = sys::in::optional_text(dir/"x_one_videom.dat").lines();
+            audiop = sys::in::optional_text(dir/"x_one_audiop.dat").lines();
+            videop = sys::in::optional_text(dir/"x_one_videop.dat").lines();
+            audioq = sys::in::optional_text(dir/"x_one_audioq.dat").lines();
+            videoq = sys::in::optional_text(dir/"x_one_videoq.dat").lines();
         }
         void save ()
         {

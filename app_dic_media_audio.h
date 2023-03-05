@@ -8,10 +8,10 @@ namespace app::dic::audio
     widget<player>
     {
         typedef gui::time time;
-        typedef gui::media::state state;
+        typedef sfx::media::state state;
 
         html_view text;
-        sys::audio::player audio;
+        sfx::media::audio::player audio;
         array<str> links, load_links;
         media::media_index index, load_index;
         std::atomic<state> status;
@@ -64,6 +64,16 @@ namespace app::dic::audio
             or  status == state::playing
             or  status == state::finished)
                 return;
+
+            std::filesystem::path dir = "../data/media";
+            std::string storage = "storage." +
+                std::to_string(load_index.location.source)
+                    + ".dat";
+
+            audio.load(
+            sys::in::bytes(dir/storage,
+            load_index.location.offset,
+            load_index.location.length));
 
             str title   = load_index.title;
             str sense   = load_index.sense;
@@ -118,46 +128,7 @@ namespace app::dic::audio
 
             html = title;
 
-            if (cancel) return;
-
-            std::filesystem::path dir = "../data/media";
-            std::string storage = "storage." +
-                std::to_string(load_index.location.source)
-                    + ".dat";
-
-            std::filesystem::path path = dir / storage;
-            int offset = load_index.location.offset;
-            int length = load_index.location.length;
-            array<sys::byte> data;
-
-            try
-            {
-                data.resize(length);
-                std::ifstream ifstream(path, std::ios::binary);
-                ifstream.seekg(offset, std::ios::beg);
-                ifstream.read((char*)(data.data()), length);
-
-                if (cancel) return;
-
-                ::media::audio::decoder decoder(data);
-
-                if (cancel) return;
-
-                audio.load(
-                decoder.output,
-                decoder.channels,
-                decoder.samples,
-                decoder.bps);
-
-                if (cancel) return;
-
-                status = state::ready;
-            }
-            catch (std::exception const& e) {
-                status = state::failure;
-                logs::times << "audio failure: " +
-                    str(e.what());
-            }
+            status = state::ready;
         }
 
         void play ()
@@ -174,9 +145,9 @@ namespace app::dic::audio
                     timer.go (time{1}, time{3*stay.ms});
                     break; }
 
-                auto duration = time{(int)(audio.duration*1000)};
+                auto duration = audio.duration;
                 duration = max(duration, stay);
-                audio.play(0.0, 0.0);
+                audio.play();
                 timer.go (time{0}, time{0});
                 timer.go (time{1}, duration);
                 break;
@@ -191,7 +162,7 @@ namespace app::dic::audio
             case state::ready:
             case state::playing:
 
-                audio.stop(0.0);
+                audio.stop();
                 status = state::finished;
                 timer.go (time{},
                           time{});
@@ -207,14 +178,14 @@ namespace app::dic::audio
             {
                 if (mute)
                 {
-                    audio.stop(0.0);
+                    audio.stop();
                 }
                 else
                 {
                     start = time::now;
-                    auto duration = time{(int)(audio.duration*1000)};
+                    auto duration = audio.duration;
                     duration = max(duration, stay);
-                    audio.play(0.0, 0.0);
+                    audio.play();
                     timer.go (time{0}, time{0});
                     timer.go (time{1}, duration);
                 }

@@ -11,7 +11,7 @@ namespace app::dic::media
             str sense; s.split_by("{",
                 s, sense); s.strip(); }
 
-        auto ss = s.split_by("_"); if (ss.size() > 1)
+        array<str> ss = s.split_by("_"); if (ss.size() > 1)
         {
             s = ss.front(); ss.upto(1).erase();
             

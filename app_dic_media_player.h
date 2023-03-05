@@ -5,7 +5,7 @@ namespace app::dic::media
     struct player:
     widget<player>
     {
-        gui::player video;
+        sfx::media::image::player video;
         audio::player audio;
         sys::thread thread;
         gui::property<bool> mute = false;
@@ -18,9 +18,9 @@ namespace app::dic::media
             std::string storage = "storage." + std::to_string(
             video_index.location.source) + ".dat";
 
-            video.load(dir / storage,
+            video.load(sys::in::bytes(dir/storage,
             video_index.location.offset,
-            video_index.location.length);
+            video_index.location.length));
 
             thread.join();
 
@@ -28,7 +28,7 @@ namespace app::dic::media
             audio.muted = false;
 
             if (audio_index == media_index{}) {
-                audio.status = gui::media::state::vacant;
+                audio.status = sfx::media::state::finished;
                 return; }
 
             thread = [this, title](auto& cancel)
@@ -49,11 +49,11 @@ namespace app::dic::media
             audio.stop();
         }
 
-        gui::media::state state ()
+        auto state ()
         {
-            auto v = video.state.load();
+            auto v = video.status.load();
             auto a = audio.status.load();
-            using s = gui::media::state;
+            using s = sfx::media::state;
 
             if (v == s::ready) return
                 a == s::loading ?

@@ -16,8 +16,8 @@ namespace app::dic::video
         gui::property<bool> mute = false;
         gui::property<gui::time> timer;
         media::media_index index;
-        gui::media::state state =
-        gui::media::state::finished;;
+        sfx::media::state state =
+        sfx::media::state::finished;;
         gui::time start, stay;
         int clicked = 0;
         str error;
@@ -39,7 +39,7 @@ namespace app::dic::video
             if (index == video_index) return; else
                 index =  video_index;
 
-            state = gui::media::state::loading;
+            state = sfx::media::state::loading;
             video.load(title, video_index, audio_index);
 
             str c = index.credit;
@@ -65,7 +65,7 @@ namespace app::dic::video
         void play ()
         {
             start = gui::time::now;
-            state = gui::media::state::playing;
+            state = sfx::media::state::playing;
             stay.ms = stay.ms * 150/100;
             video.play();
 
@@ -194,13 +194,13 @@ namespace app::dic::video
 
             if (what == &timer)
             {
-                using st = gui::media::state;
+                using st = sfx::media::state;
 
                 if (state == st::loading)
                 {
                     switch(video.state()) {
-                    case st::failure:  state =
-                         st::failure;  error = video.error(); break;
+                    case st::failed:   state =
+                         st::failed;   error = video.error(); break;
                     case st::ready:    state =
                          st::ready;    break;
                     case st::playing:  state =
@@ -214,8 +214,8 @@ namespace app::dic::video
                 if (state == st::playing)
                 {
                     switch(video.state()) {
-                    case st::failure:  state =
-                         st::failure;  error = video.error();  break;
+                    case st::failed:   state =
+                         st::failed;   error = video.error();  break;
                     case st::finished: state = start + stay < gui::time::now ?
                          st::finished: st::playing; break;
                     default: break;

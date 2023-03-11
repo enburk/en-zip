@@ -11,9 +11,9 @@ namespace app::dic::audio
         typedef sfx::media::state state;
 
         html_view text;
-        sfx::media::audio::player audio;
+        sfx::audio::player audio;
         array<str> links, load_links;
-        media::media_index index, load_index;
+        media::index index, load_index;
         std::atomic<state> status;
         gui::property<time> timer;
         time start, stay;
@@ -28,7 +28,7 @@ namespace app::dic::audio
             status = state::finished;
         }
 
-        void reset (media::media_index index_, array<str> links_)
+        void reset (media::index index_, array<str> links_)
         {
             start = time{};
             stay  = time{1000 +

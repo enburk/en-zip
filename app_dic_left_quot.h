@@ -11,7 +11,7 @@ namespace app::dic::left
         gui::button play, Play;
         gui::button stop, Stop;
         gui::button prev, next;
-        sfx::media::image::player speaker;
+        sfx::image::player speaker;
         gui::text::view oneof;
 
         gui::widgetarium<audio::player> players;
@@ -54,9 +54,10 @@ namespace app::dic::left
             Play.icon.load(assets["player.black.next.64x64"]);
             stop.icon.load(assets["player.black.pause.64x64"]);
             Stop.icon.load(assets["player.black.stop.64x64"]);
+            speaker.play();
         }
 
-        using idx = media::media_index;
+        using idx = media::index;
 
         void reset (str title, array<idx> selected, array<str> const& links)
         {
@@ -126,6 +127,9 @@ namespace app::dic::left
                 });
             }
         }
+
+        void currprev () { int n = ready_players; current = (current-1+n) % n; }
+        void currnext () { int n = ready_players; current = (current+1  ) % n; }
 
         void on_change (void* what) override
         {
@@ -198,8 +202,7 @@ namespace app::dic::left
                             or not playall)
                             break;
                         players(current).stop();
-                        players(current).hide(smoothly);
-                        current = (current+1) % ready_players;
+                        players(current).hide(smoothly); currnext();
                         players(current).show(smoothly); if (current != 0)
                         players(current).play(); else playall = false;
                         break;

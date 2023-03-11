@@ -2,8 +2,7 @@
 #include "app.h"
 namespace app::dic::media
 {
-    using ::media::entry_index;
-    using ::media::media_index;
+    using index = ::media::media_index;
 
     str canonical (str s)
     {
@@ -34,7 +33,7 @@ namespace app::dic::media
         return s;
     }
 
-    str log (media_index const& index)
+    str log (index const& index)
     {
         str s = doc::html::untagged(
             canonical(index.title));
@@ -60,9 +59,9 @@ namespace app::dic::media
 
     struct selected
     {
-        array<media_index> audio;
-        array<media_index> video;
-        array<media_index> vudio;
+        array<index> audio;
+        array<index> video;
+        array<index> vudio;
         syncronizer syncronizer;
     };
 
@@ -74,8 +73,8 @@ namespace app::dic::media
         auto& vudios = selected.vudio;
 
         auto range = mediadata.entries_dic.equal_range(
-            entry_index{n, 0}, [](auto a, auto b)
-                { return a.entry < b.entry; });
+        ::media::entry_index{n, 0}, [](auto a, auto b)
+        { return a.entry < b.entry; });
 
         for (auto [entry, media]: range) {
         auto& index = mediadata.media_index[media];
@@ -85,7 +84,7 @@ namespace app::dic::media
         for (int j=0; j<audios.size(); j++)
             logs::audio << log(audios[j]);
 
-        auto uniquify = [](array<media_index>& a)
+        auto uniquify = [](array<index>& a)
         {
             auto i = a.begin();
             auto j = a.begin() + 1;
@@ -124,7 +123,7 @@ namespace app::dic::media
 
         for (int i=0; i<videos.size(); i++) {
             logs::video << log(videos[i]);
-            if (vudios[i] != media_index{})
+            if (vudios[i] != index{})
             logs::video << log(vudios[i]);
         }
 

@@ -42,9 +42,6 @@
     <ClInclude Include="app_dic_media_video.h">
       <Filter>app-dic</Filter>
     </ClInclude>
-    <ClInclude Include="app_dic_media_videos.h">
-      <Filter>app-dic</Filter>
-    </ClInclude>
     <ClInclude Include="app_one.h">
       <Filter>app-one</Filter>
     </ClInclude>
@@ -58,6 +55,9 @@
       <Filter>app-two</Filter>
     </ClInclude>
     <ClInclude Include="app_contents+.h" />
+    <ClInclude Include="app_dic_media_videos.h">
+      <Filter>app-dic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

@@ -1,7 +1,19 @@
 #pragma once
-#include "eng_parser.h"
+#include "../auxs/gui_widget_button.h"
+#include "../auxs/gui_widget_console.h"
+#include "../auxs/gui_widget_splitter.h"
+#include "../auxs/sfx_medio_sequencer.h"
+#include "../auxs/sfx_media_vudio.h"
 #include "content_course.h"
+#include "eng_parser.h"
 #include "media_data.h"
+
+using gui::time;
+using gui::widget;
+using gui::widgetarium;
+using gui::unary_property;
+using gui::binary_property;
+using gui::property;
 
 namespace app
 {

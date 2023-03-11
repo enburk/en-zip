@@ -2,23 +2,17 @@
 #define AUXS_USE_OGG
 #include "../auxs/sys_io_in.h"
 #include "../auxs/sys_io_out.h"
-#include "../auxs/sfx_media_audio.h"
-#include "../auxs/sfx_media_image.h"
-#include "../auxs/gui_widget_button.h"
-#include "../auxs/gui_widget_scroller.h"
-#include "../auxs/gui_widget_splitter.h"
-#include "../auxs/gui_widget_console.h"
 #include "../auxs/doc_html_model.h"
 #include "../auxs/doc_text_repo.h"
 #include "../auxs/aux_unittest.h"
 
+using sys::byte;
 using pix::xy;
 using pix::xywh;
 using pix::xyxy;
 using pix::rgba;
 using pix::image;
 using pix::frame;
-using gui::widget;
 using namespace std::literals::chrono_literals;
 
 str bold      (str s) { return "<b>" + s + "</b>"; }

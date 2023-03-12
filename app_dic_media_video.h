@@ -16,9 +16,12 @@ namespace app::dic::video
         gui::button prev;
         gui::button next;
 
-        gui::time start, stay;
+        gui::time stay;
+        gui::time start;
         sys::thread thread;
         media::index index;
+        array<byte> video_bytes;
+        array<byte> audio_bytes;
         int clicked = 0;
 
 #define using(x) decltype(medio.x)& x = medio.x;
@@ -51,7 +54,7 @@ namespace app::dic::video
             index =  video_index;
 
             start = gui::time::now;
-            stay  = gui::time{4000 +
+            stay  = gui::time{3000 +
             index.title.size() * 40 +
             index.credit.size() * 10 +
             index.comment.size() * 20};
@@ -62,13 +65,32 @@ namespace app::dic::video
             if (same) return;
 
             reset();
+
+            str c = index.credit;
+            str s = index.title;
+
+            c = media::canonical(c);
+            s = media::canonical(s);
+
+            str date;
+            for (str option: index.options)
+            if (option.starts_with("date "))
+                c += ", " + italic(
+                option.from(5));
+
+            if (index.comment != "")
+                s += "<br>" + dark(
+                media::canonical(
+                index.comment));
+
+            script.html = s;
+            credit.html = gray(small(c));
+
             medio.load();
-            //thread = [this,
-            //video_index, audio_index]
-            //(std::atomic<bool>& cancel)
+            thread = [this,
+            video_index, audio_index]
+            (std::atomic<bool>& cancel)
             {
-                array<byte> video_bytes;
-                array<byte> audio_bytes;
                 auto source = [](int source){
                     return "../data/media/storage." +
                     std::to_string(source) + ".dat"; };
@@ -84,32 +106,6 @@ namespace app::dic::video
                     audio_index.location.source),
                     audio_index.location.offset,
                     audio_index.location.length);
-
-                video.load(
-                std::move(video_bytes),    
-                std::move(audio_bytes));    
-
-                auto& index = video_index;
-
-                str c = index.credit;
-                str s = index.title;
-
-                c = media::canonical(c);
-                s = media::canonical(s);
-
-                str date;
-                for (str option: index.options)
-                if (option.starts_with("date "))
-                    c += ", " + italic(
-                    option.from(5));
-
-                if (index.comment != "")
-                    s += "<br>" + dark(
-                    media::canonical(
-                    index.comment));
-
-                script.html = dark(s);
-                credit.html = gray(small(c));
             };
         }
 
@@ -121,6 +117,8 @@ namespace app::dic::video
             thread.check(); }
             catch (...) {}
             video.reset();
+            script.html = "";
+            credit.html = "";
             medio.done();
         }
 
@@ -128,8 +126,9 @@ namespace app::dic::video
         {
             if (medio.play()) {
                 video.play();
-                stay.ms = stay.ms * 150/100;
                 start = gui::time::now;
+                stay.ms = stay.ms
+                *150/100;
             }
         }
         void stop ()
@@ -157,13 +156,13 @@ namespace app::dic::video
             script.coord = xywh(0, 0, size.x,     max<int>());
             credit.coord = xywh(0, 0, size.x-4*d, max<int>());
 
-            int w1 = script.view.cell.coord.now.w;
-            int w2 = credit.view.cell.coord.now.w;
+            int w1 = script.model.now->block.size.x;
+            int w2 = credit.model.now->block.size.x;
+            int h1 = script.model.now->block.size.y;
+            int h2 = credit.model.now->block.size.y;
 
             credit.alignment = xy{pix::right, pix::center};
 
-            int h1 = script.view.cell.coord.now.h;
-            int h2 = credit.view.cell.coord.now.h;
             int hh = h1 + h2;
             int y2 = h1;
 
@@ -212,8 +211,8 @@ namespace app::dic::video
                 video .coord = xywh(r.x, r.y, size.x, size.y);
                 script.coord = xywh(r.x, r_y, size.x, h1);
                 credit.coord = xywh(r_x - d*7/2 - w2,  r_y + y2, w2, h2);
-                prev  .coord = xywh(r_x - d*6/2, d/7 + r_y + y2, d*3/2, d - d/9*2);
-                next  .coord = xywh(r_x - d*3/2, d/7 + r_y + y2, d*3/2, d - d/9*2);
+                prev  .coord = xywh(r_x - d*6/2, d/7 + r_y + y2, d*3/2, d - d/7);
+                next  .coord = xywh(r_x - d*3/2, d/7 + r_y + y2, d*3/2, d - d/7);
 
                 prev.text.shift = xy{0, -d/3};
                 next.text.shift = xy{0, -d/3};
@@ -246,15 +245,34 @@ namespace app::dic::video
             using sfx::media::state;
 
             if (what == &loading
+            and video.status == state::finished
+            and thread.done)
+            {
+                try
+                {
+                    thread.join();
+                    thread.check();
+
+                    video.load(
+                    std::move(video_bytes),    
+                    std::move(audio_bytes));    
+                }
+                catch (std::exception const& e) {
+                medio.fail(e.what()); }
+            }
+
+            if (what == &loading
             and video.status == state::ready
             and thread.done)
             {
-                try {
-                thread.join();
-                thread.check();
-                medio.stay(); }
-                catch (std::exception const& e) {
-                medio.fail(e.what()); }
+                medio.stay();
+            }
+
+            if (what == &playing)
+            {
+                if (script.link != ""
+                or  credit.link != "")
+                start = gui::time::now;
             }
 
             if (what == &playing
@@ -268,10 +286,14 @@ namespace app::dic::video
             or  what == &loading)
             {
                 if (video.status == state::failed)
-                    medio.fail(video.error);
+                medio.fail(video.error);
             }
+        }
 
-            if (mouse_hover_child)
+        void on_mouse_hover (xy) override
+        {
+            if (mouse_hover_child == &script
+            or  mouse_hover_child == &credit)
             start = gui::time::now;
         }
     };

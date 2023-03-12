@@ -83,7 +83,7 @@ namespace app::dic::left
             video_max_size.x);
 
             video_resize(video_max_size);
-            video.play();
+            video.Play();
         }
 
         int video_height (int width)

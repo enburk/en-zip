@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "eng_parser.h"
 #include "app_dic_html.h"
 #include "app_dic_media.h"
 namespace app::dic::video
@@ -38,6 +39,17 @@ namespace app::dic::video
 
         ~player () { reset(); }
 
+        void reset ()
+        {
+            try {
+            thread.stop = true;
+            thread.join();
+            thread.check(); }
+            catch (...) {}
+            video.reset();
+            medio.done();
+        }
+
         void load (
             media::index video_index,
             media::index audio_index,
@@ -62,12 +74,13 @@ namespace app::dic::video
             script.forbidden_links = links;
             credit.forbidden_links = links;
 
-            if (same) return;
-
-            reset();
-
-            str c = index.credit;
             str s = index.title;
+            str c = index.credit;
+
+            s.replace_all("---", mdash);
+            s.replace_all("--" , ndash);
+
+            s = eng::parser::embolden(s, links);
 
             c = media::canonical(c);
             s = media::canonical(s);
@@ -86,6 +99,9 @@ namespace app::dic::video
             script.html = s;
             credit.html = gray(small(c));
 
+            if (same) return;
+
+            reset();
             medio.load();
             thread = [this,
             video_index, audio_index]
@@ -109,23 +125,11 @@ namespace app::dic::video
             };
         }
 
-        void reset ()
-        {
-            try {
-            thread.stop = true;
-            thread.join();
-            thread.check(); }
-            catch (...) {}
-            video.reset();
-            script.html = "";
-            credit.html = "";
-            medio.done();
-        }
-
         void play ()
         {
             if (medio.play()) {
                 video.play();
+                logs::media << media::log(index);
                 start = gui::time::now;
                 stay.ms = stay.ms
                 *150/100;
@@ -288,13 +292,14 @@ namespace app::dic::video
                 if (video.status == state::failed)
                 medio.fail(video.error);
             }
-        }
+ 
+            if (what == &volume)
+                video.volume =
+                volume;
 
-        void on_mouse_hover (xy) override
-        {
-            if (mouse_hover_child == &script
-            or  mouse_hover_child == &credit)
-            start = gui::time::now;
-        }
+            if (what == &mute)
+                video.mute =
+                mute;
+       }
     };
 }

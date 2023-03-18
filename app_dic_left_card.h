@@ -7,7 +7,9 @@ namespace app::dic::left
     widget<card>
     {
         html_view text;
-        sfx::media::sequencer<video::player> video;
+        
+        sfx::media::
+        sequencer<video::player> video;
         gui::property<byte> volume = 255;
         gui::property<bool> mute = false;
         using idx = media::index;
@@ -16,7 +18,7 @@ namespace app::dic::left
 
         void reload () {}
 
-        void reset (str title,
+        void reset (
             array<idx> videos,
             array<idx> audios,
             array<str> links)
@@ -34,9 +36,8 @@ namespace app::dic::left
 
             if (players.size() > 0)
             {
-                auto it = std::find(
-                videos.begin(), videos.end(),
-                players[current].index);
+                auto it = std::ranges::find(
+                videos, players[current].index);
                 if (it != videos.end())
                 {
                     players.rotate(0, current, current+1);
@@ -52,15 +53,14 @@ namespace app::dic::left
             players.truncate(n);
             current = 0;
 
-            for (auto& player : players)
+            for (auto& player: players)
             {
                 player.hide();
                 player.coord = coord.now.local();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
+                player.volume = volume.now;
                 player.mute = mute.now;
-                player.volume =
-                    volume.now;
             }
 
             using state = sfx::media::state;
@@ -68,10 +68,8 @@ namespace app::dic::left
             if (players.size() > 0)
             if (players[0].status == state::ready   or
                 players[0].status == state::playing or
-                players[0].status == state::finished) {
+                players[0].status == state::finished)
                 players[0].show();
-                players[0].play();
-            }
 
             int l = gui::metrics::line::width;
 
@@ -83,6 +81,7 @@ namespace app::dic::left
             video_max_size.x);
 
             video_resize(video_max_size);
+            video.repeat = true;
             video.Play();
         }
 
@@ -122,6 +121,8 @@ namespace app::dic::left
             d, 0));
         }
 
+        bool text_selected () { return text.view.selected() != ""; }
+
         void on_change (void* what) override
         {
             if (what == &coord and
@@ -130,10 +131,6 @@ namespace app::dic::left
             {
                 text.coord = coord.now.local();
                 video_resize(video.coord.now.size);
-            }
-            if (what == &skin)
-            {
-                text.view.canvas.color = gui::skins[skin].ultralight.first;
             }
             if (what == &text.scroll.y
             or  what == &text.update_text)
@@ -176,11 +173,11 @@ namespace app::dic::left
 
             if (what == &volume)
                 video.volume =
-                volume.now;
+                volume;
 
             if (what == &mute)
                 video.mute =
-                mute.now;
+                mute;
         }
     };
 }

@@ -1,5 +1,5 @@
 #pragma once
-#include "eng_phenomena.h"
+#include "eng_parser.h"
 #include "app_dic_html.h"
 #include "app_dic_media.h"
 namespace app::dic::audio
@@ -7,89 +7,61 @@ namespace app::dic::audio
     struct player:
     widget<player>
     {
-        typedef gui::time time;
-        typedef sfx::media::state state;
-
         html_view text;
         sfx::audio::player audio;
-        array<str> links, load_links;
-        media::index index, load_index;
-        std::atomic<state> status;
-        gui::property<time> timer;
-        time start, stay;
-        int  clicked = 0;
+        sfx::media::medio medio;
+
+        gui::time stay;
+        gui::time start;
+        sys::thread thread;
+        media::index index;
+        array<byte> audio_bytes;
         bool click = false;
-        bool muted = true;
+        int  clicked = 0;
         str  html;
 
-        player ()
+#define using(x) decltype(medio.x)& x = medio.x;
+        using(mute)
+        using(volume)
+        using(loading)
+        using(playing)
+        using(resolution)
+        using(duration)
+        using(elapsed)
+        using(status)
+        using(error)
+        #undef using
+
+        ~player () { reset(); }
+
+        void reset ()
         {
-            on_change(&skin);
-            status = state::finished;
+            try {
+            thread.stop = true;
+            thread.join();
+            thread.check(); }
+            catch (...) {}
+            audio.reset();
+            medio.done();
         }
 
-        void reset (media::index index_, array<str> links_)
+        void prepare_html (array<str> links)
         {
-            start = time{};
-            stay  = time{1000 +
-            index_.title.size() * 40 +
-            index_.credit.size() * 10 +
-            index_.comment.size() * 20};
-
-            text.forbidden_links = links_;
-
-            if (index == index_) return;
-
-            index = load_index = index_;
-            links = load_links = links_;
-
-            stop();
-
-            status = state::loading;
-        }
-
-        void show (time time = time{})
-        {
-            if (html != "") {
-            text.html = html; html = ""; }
-            using base = widget<player>;
-            base::show(time);
-
-            logs::media << media::log(index);
-        }
-
-        void load (str entry_title, std::atomic<bool>& cancel)
-        {
-            if (status == state::ready
-            or  status == state::playing
-            or  status == state::finished)
-                return;
-
-            std::filesystem::path dir = "../data/media";
-            std::string storage = "storage." +
-                std::to_string(load_index.location.source)
-                    + ".dat";
-
-            audio.load(
-            sys::in::bytes(dir/storage,
-            load_index.location.offset,
-            load_index.location.length));
-
-            str title   = load_index.title;
-            str sense   = load_index.sense;
-            str credit  = load_index.credit;
-            str comment = load_index.comment;
+            str title   = index.title;
+            str sense   = index.sense;
+            str credit  = index.credit;
+            str comment = index.comment;
 
             title.replace_all("---", mdash);
             title.replace_all("--" , ndash);
 
-            title = eng::parser::embolden(title, load_links);
+            title = eng::parser::embolden(title, links);
 
             title   = media::canonical(title);
             credit  = media::canonical(credit);
             comment = media::canonical(comment);
 
-            if (load_index.options.contains("sound"))
+            if (index.options.contains("sound"))
             title = dark("[" + title + "]");
 
             while (
@@ -124,73 +96,71 @@ namespace app::dic::audio
 
             if (false) std::ofstream("test.quot.html") << title;
             if (false) std::ofstream("test.quot.html.txt")
-                << doc::html::print(title);
+            << doc::html::print(title);
 
             html = title;
+        }
 
-            status = state::ready;
+        void load (media::index index_, array<str> links)
+        {
+            // if that same audio
+            // is used for another word then do next:
+            // actualize emboldened links,
+            // and return
+
+            using sfx::media::state;
+
+            if (index == index_
+            and status != state::loading
+            and status != state::failed)
+            {
+                prepare_html(links);
+                text.forbidden_links = links;
+                text.html = html;
+                return;
+            }
+
+            index = index_;
+
+            reset();
+            medio.load();
+            thread = [this, links](std::atomic<bool>& cancel)
+            {
+                start = gui::time{};
+                stay  = gui::time{1000 +
+                index.title.size() * 40 +
+                index.credit.size() * 10 +
+                index.comment.size() * 20};
+
+                prepare_html(links);
+                text.forbidden_links = links;
+
+                auto source = [](int source){
+                    return "../data/media/storage." +
+                    std::to_string(source) + ".dat"; };
+
+                if (index != media::index{})
+                    audio_bytes = sys::in::bytes(source(
+                    index.location.source),
+                    index.location.offset,
+                    index.location.length);
+            };
         }
 
         void play ()
         {
-            switch(status) {
-            case state::ready:
-            case state::finished:
-            {
-                start = time::now;
-                status = state::playing;
-
-                if (muted) {
-                    timer.go (time{0}, time{0});
-                    timer.go (time{1}, time{3*stay.ms});
-                    break; }
-
-                auto duration = audio.duration;
-                duration = max(duration, stay);
+            if (medio.play()) {
                 audio.play();
-                timer.go (time{0}, time{0});
-                timer.go (time{1}, duration);
-                break;
-            }
-            default: break;
+                logs::media << media::log(index);
+                start = gui::time::now;
+                stay.ms = stay.ms
+                *150/100;
             }
         }
-
         void stop ()
         {
-            switch(status) {
-            case state::ready:
-            case state::playing:
-
+            if (medio.stop())
                 audio.stop();
-                status = state::finished;
-                timer.go (time{},
-                          time{});
-                break;
-
-            default: break;
-            }
-        }
-
-        void mute (bool mute)
-        {
-            if (status == state::playing)
-            {
-                if (mute)
-                {
-                    audio.stop();
-                }
-                else
-                {
-                    start = time::now;
-                    auto duration = audio.duration;
-                    duration = max(duration, stay);
-                    audio.play();
-                    timer.go (time{0}, time{0});
-                    timer.go (time{1}, duration);
-                }
-            }
-            muted = mute;
         }
 
         void on_change (void* what) override
@@ -204,19 +174,69 @@ namespace app::dic::audio
                 text.alignment = xy{pix::left, pix::center};
                 text.color = gui::skins[skin].touched.first;
             }
-            if (what == &timer and timer == time{1})
-            {
-                if (text.link != "") {
-                timer.go(time{0}, 0s);
-                timer.go(time{1}, 1s); }
-                else status = state::finished;
-            }
             if (what == &text )
             {
                 clicked = text.clicked;
                 click = true; notify();
                 click = false;
             }
+
+            using sfx::media::state;
+
+            if (what == &loading
+            and audio.status == state::finished
+            and thread.done)
+            {
+                try
+                {
+                    thread.join();
+                    thread.check();
+
+                    text.html = std::move(html);
+
+                    audio.load(std::move(
+                    audio_bytes));    
+                }
+                catch (std::exception const& e) {
+                medio.fail(e.what()); }
+            }
+
+            if (what == &loading
+            and audio.status == state::ready
+            and thread.done)
+            {
+                medio.stay();
+            }
+
+            if (what == &playing)
+            {
+                if (text.link != "")
+                start = gui::time::now;
+            }
+
+            if (what == &playing
+            and audio.status == state::finished
+            and start + stay < gui::time::now)
+            {
+                medio.done();
+            }
+
+            if (what == &playing
+            or  what == &loading)
+            {
+                if (audio.status ==
+                state::failed)
+                medio.fail(
+                audio.error);
+            }
+ 
+            if (what == &volume)
+                audio.volume =
+                volume;
+
+            if (what == &mute)
+                audio.mute =
+                mute;
         }
     };
 }

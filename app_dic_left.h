@@ -7,6 +7,7 @@ namespace app::dic::left
     struct area:
     widget<area>
     {
+        gui::ground back;
         gui::area<card> card;
         gui::area<quot> quot;
         gui::canvas tool;
@@ -117,8 +118,8 @@ namespace app::dic::left
             logs::video << "<br>" + title;
             auto selected = media::select(n);
 
-            timing t4; card.object.reset(title, selected.video, selected.vudio, links);
-            timing t5; quot.object.reset(title, selected.audio, links);
+            timing t4; card.object.reset(selected.video, selected.vudio, links);
+            timing t5; quot.object.reset(selected.audio, links);
             timing t6;
 
             logs::times << gray(monospace(
@@ -156,6 +157,7 @@ namespace app::dic::left
                 int hcard = H - htool - hquot;
                 int y = 0;
 
+                back.coord = xyxy(0, 0, W, H);
                 card.coord = xywh(0, 0, W, hcard); y += card.coord.now.h;
                 quot.coord = xywh(0, y, W, hquot); y += quot.coord.now.h;
                 tool.coord = xyxy(0, y, W, H);
@@ -211,7 +213,7 @@ namespace app::dic::left
             if (what == &quot.object.mute)
             {
                 card.object.mute =
-                quot.object.mute.on.now;
+                quot.object.mute.on;
             }
         }
     };

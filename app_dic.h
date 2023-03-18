@@ -78,9 +78,8 @@ namespace app::dic
 
             if (key == "ctrl+C"
             or  key == "ctrl+insert")
-            if((left.quot.object.players.size() == 0
-            or  left.quot.object.players(0).text.view.selected() == "")
-            and left.card.object.text.view.selected() == "")
+            if (not left.quot.object.text_selected()
+            and not left.card.object.text_selected())
                 focus = &list;
 
             if (focus.now)
@@ -90,10 +89,9 @@ namespace app::dic
 
         void on_mouse_click_child (xy p, str button, bool down) override
         {
-            if (not down)
-            if((left.quot.object.players.size() == 0
-            or  left.quot.object.players(0).text.view.selected() == "")
-            and left.card.object.text.view.selected() == "")
+            if (not down
+            and not left.quot.object.text_selected()
+            and not left.card.object.text_selected())
                 focus = &list;
         }
     };

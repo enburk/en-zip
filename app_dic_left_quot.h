@@ -129,47 +129,7 @@ namespace app::dic::left
                          time::infinity);
 
             if (what == &timer)
-            {
-                int nn = audio.players.size();
-                if (nn > 0)
-                {
-                    play.hide(audio.playing);
-                    Play.hide(audio.playing);
-                    stop.show(audio.playing);
-                    Stop.show(audio.playing);
-                    play.enabled = true;
-                    Play.enabled = true;
-
-                    prev.enabled  = nn > 1;
-                    next.enabled  = nn > 1;
-                    oneof.show     (nn > 0);
-                    oneof.text =
-                    std::to_string(audio.current+1) + " of " +
-                    std::to_string(nn);
-
-                    if (not audio.playing
-                    or  speaker.alpha.to  == 128
-                    and speaker.alpha.now == 128)
-                        speaker.alpha.go( 64, 3s);
-                    else
-                    if (speaker.alpha.to  ==  64
-                    and speaker.alpha.now ==  64)
-                        speaker.alpha.go(128, 3s);
-                }
-                else
-                {
-                    play.show();
-                    Play.show();
-                    stop.hide();
-                    Stop.hide();
-                    oneof.hide();
-                    play.enabled = false;
-                    Play.enabled = false;
-                    prev.enabled = false;
-                    next.enabled = false;
-                    speaker.alpha = 64;
-                }
-            }
+                refresh();
 
             if (what == &audio)
                 clicked = audio.clicked,
@@ -182,12 +142,55 @@ namespace app::dic::left
             if (what == &play) mute.on = false;
             if (what == &Play) mute.on = false;
 
-            if (what == &Stop) audio.Stop();
-            if (what == &stop) audio.stop();
-            if (what == &play) audio.play();
-            if (what == &Play) audio.Play();
-            if (what == &prev) audio.prev();
-            if (what == &next) audio.next();
+            if (what == &Stop) audio.Stop(), refresh();
+            if (what == &stop) audio.stop(), refresh();
+            if (what == &play) audio.play(), refresh();
+            if (what == &Play) audio.Play(), refresh();
+            if (what == &prev) audio.prev(), refresh();
+            if (what == &next) audio.next(), refresh();
+        }
+
+        void refresh ()
+        {
+            int nn = audio.players.size();
+            if (nn > 0)
+            {
+                play.hide(audio.playing);
+                Play.hide(audio.playing);
+                stop.show(audio.playing);
+                Stop.show(audio.playing);
+                play.enabled = true;
+                Play.enabled = true;
+
+                prev.enabled  = nn > 1;
+                next.enabled  = nn > 1;
+                oneof.show     (nn > 0);
+                oneof.text =
+                std::to_string(audio.current+1) + " of " +
+                std::to_string(nn);
+
+                if (not audio.playing
+                or  speaker.alpha.to  == 128
+                and speaker.alpha.now == 128)
+                    speaker.alpha.go( 64, 3s);
+                else
+                if (speaker.alpha.to  ==  64
+                and speaker.alpha.now ==  64)
+                    speaker.alpha.go(128, 3s);
+            }
+            else
+            {
+                play.show();
+                Play.show();
+                stop.hide();
+                Stop.hide();
+                oneof.hide();
+                play.enabled = false;
+                Play.enabled = false;
+                prev.enabled = false;
+                next.enabled = false;
+                speaker.alpha = 64;
+            }
         }
     };
 }

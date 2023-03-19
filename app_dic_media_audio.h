@@ -152,10 +152,7 @@ namespace app::dic::audio
             if (medio.play()) {
                 audio.play();
                 logs::media << media::log(index);
-                start = gui::time::now;
-                stay.ms = stay.ms
-                *150/100;
-            }
+                start = gui::time::now; }
         }
         void stop ()
         {

@@ -94,14 +94,10 @@
     <ClInclude Include="content_course.h">
       <Filter>content</Filter>
     </ClInclude>
-    <ClInclude Include="studio.h" />
     <ClInclude Include="studia_one.h">
       <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="studia_one_area.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_one_content.h">
       <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="studia_one_editor.h">
@@ -127,6 +123,9 @@
     </ClInclude>
     <ClInclude Include="studia_two.h">
       <Filter>studio-two</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_one_contents.h">
+      <Filter>studio-one</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -93,7 +93,7 @@ namespace studio::one
             {
                 str path, line;
                 reports.object.link.split_by("|", path, line);
-                left.content.object.selected = path.c_str(); 
+                left.contents.object.selected = path.c_str(); 
                 left.editor.object.editor.go(doc::place{
                 std::stoi(line), 0});
                 focus = &left;

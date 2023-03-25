@@ -1,12 +1,12 @@
 #pragma once
-#include "studia_one_content.h"
+#include "studia_one_contents.h"
 #include "studia_one_editor.h"
 namespace studio::one
 {
     struct area:
     widget<area>
     {
-        gui::area<content> content;
+        gui::area<contents> contents;
         gui::area<editor> editor;
         gui::splitter splitter;
 
@@ -28,9 +28,9 @@ namespace studio::one
                 splitter.lower, splitter.upper);
                 splitter.coord = xyxy(x-10*l, 0, x+10*l, H);
 
-                content.coord = xyxy(0, 0, x, H);
-                editor .coord = xyxy(x, 0, W, H);
-                editor.show_focus = true;
+                contents.coord = xyxy(0, 0, x, H);
+                editor  .coord = xyxy(x, 0, W, H);
+                editor  .show_focus = true;
             }
 
             if (what == &splitter) {
@@ -41,9 +41,9 @@ namespace studio::one
                 on_change(&coord);
             }
 
-            if (what == &content)
+            if (what == &contents)
             {
-                editor.object.path = content.object.selected.now;
+                editor.object.path = contents.object.selected.now;
                 
                 if (editor.object.path.now ==
                     editor.object.path.was) {

@@ -1,5 +1,5 @@
 #pragma once
-#include "studio.h"
+#include "studio_build_one.h"
 namespace studio::one
 {
     struct reports:

@@ -4,8 +4,8 @@ namespace studio::one
 {
     using std::filesystem::path;
 
-    struct content:
-    widget<content>
+    struct contents:
+    widget<contents>
     {
         struct flist:
         widget<flist>
@@ -38,7 +38,7 @@ namespace studio::one
         };
         array<record> records;
 
-        content ()
+        contents ()
         {
             watcher.dir = std::filesystem::current_path() / "content";
             watcher.action = [this](std::filesystem::path path, str what)

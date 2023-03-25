@@ -186,12 +186,11 @@
     <ClInclude Include="studia_dic_search.h" />
     <ClInclude Include="studia_one.h" />
     <ClInclude Include="studia_one_area.h" />
-    <ClInclude Include="studia_one_content.h" />
+    <ClInclude Include="studia_one_contents.h" />
     <ClInclude Include="studia_one_editor.h" />
     <ClInclude Include="studia_one_preview.h" />
     <ClInclude Include="studia_one_reports.h" />
     <ClInclude Include="studia_two.h" />
-    <ClInclude Include="studio.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />
     <ClInclude Include="studio_build.h" />

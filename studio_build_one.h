@@ -1,8 +1,51 @@
 ﻿#pragma once
+#include "app.h"
 #include <unordered_set>
-#include "studio.h"
-namespace studio::build::one
+namespace studio::one
 {
+    namespace report
+    {
+        array<str> errors;
+        array<str> anomal;
+        array<str> audiom, audiop, audioq;
+        array<str> videom, videop, videoq;
+        void load ()
+        {
+            std::filesystem::path dir = "../data/report";
+            errors = sys::in::optional_text(dir/"one_errors.dat").lines();
+            anomal = sys::in::optional_text(dir/"one_anomal.dat").lines();
+            audiom = sys::in::optional_text(dir/"one_audiom.dat").lines();
+            videom = sys::in::optional_text(dir/"one_videom.dat").lines();
+            audiop = sys::in::optional_text(dir/"one_audiop.dat").lines();
+            videop = sys::in::optional_text(dir/"one_videop.dat").lines();
+            audioq = sys::in::optional_text(dir/"one_audioq.dat").lines();
+            videoq = sys::in::optional_text(dir/"one_videoq.dat").lines();
+        }
+        void save ()
+        {
+            std::filesystem::path dir = "../data/report";
+            sys::out::write(dir/"one_errors.dat", errors);
+            sys::out::write(dir/"one_anomal.dat", anomal);
+            sys::out::write(dir/"one_audiom.dat", audiom);
+            sys::out::write(dir/"one_videom.dat", videom);
+            sys::out::write(dir/"one_audiop.dat", audiop);
+            sys::out::write(dir/"one_videop.dat", videop);
+            sys::out::write(dir/"one_audioq.dat", audioq);
+            sys::out::write(dir/"one_videoq.dat", videoq);
+        }
+        void clear()
+        {
+            errors.clear();
+            anomal.clear();
+            audiom.clear();
+            videom.clear();
+            audiop.clear();
+            videop.clear();
+            audioq.clear();
+            videoq.clear();
+        }
+    }
+
     void compile
     (
         eng::vocabulary& vocabulary,
@@ -20,21 +63,13 @@ namespace studio::build::one
         if (true) sys::out::file("../data/course.dat") << course.root;
         if (true) sys::out::file("../data/course_entries.dat") << course.entries;
 
-        using ::studio::one::report::errors; errors.clear();
-        using ::studio::one::report::anomal; anomal.clear();
-        using ::studio::one::report::audiom; audiom.clear();
-        using ::studio::one::report::videom; videom.clear();
-        using ::studio::one::report::audiop; audiop.clear();
-        using ::studio::one::report::videop; videop.clear();
-        using ::studio::one::report::audioq; audioq.clear();
-        using ::studio::one::report::videoq; videoq.clear();
-
-        errors = course.errors;
-        anomal = course.anomal;
+        report::clear();
+        report::errors = course.errors;
+        report::anomal = course.anomal;
         
-        if (not errors.empty()) {
+        if (not report::errors.empty()) {
         err << red(bold("ONE ERRORS:"));
-        err << errors; }
+        err << report::errors; }
 
         using res = media::resource*;
 
@@ -89,10 +124,10 @@ namespace studio::build::one
             str ens = red(bold(" en: " + html(str(en, ", "))));
             str uks = red(bold(" uk: " + html(str(uk, ", "))));
             str uss = red(bold(" us: " + html(str(us, ", "))));
-            if (not en.empty()) audiom += linked(html(entry.eng) + ens, entry.link);
-            if (not uk.empty()) audiom += linked(html(entry.eng) + uks, entry.link);
-            if (not us.empty()) audiom += linked(html(entry.eng) + uss, entry.link);
-            if (not vi        ) videom += linked(html(entry.eng), entry.link);
+            if (not en.empty()) report::audiom += linked(html(entry.eng) + ens, entry.link);
+            if (not uk.empty()) report::audiom += linked(html(entry.eng) + uks, entry.link);
+            if (not us.empty()) report::audiom += linked(html(entry.eng) + uss, entry.link);
+            if (not vi        ) report::videom += linked(html(entry.eng), entry.link);
         }
 
         out << dark(bold("ONE: MAKE SUGGESTIONS..."));
@@ -156,21 +191,23 @@ namespace studio::build::one
 
             if (not audios.empty())
             {
-                audiop +=
+                report::audiop +=
                 linked(html(entry.eng) + " " +
                 light(small(entry.link)), entry.link);
 
                 for (res r: audios)
-                audiop += dark(html(r->title));
+                report::audiop += 
+                dark(html(r->title));
             }
             if (not videos.empty())
             {
-                videop +=
+                report::videop +=
                 linked(html(entry.eng) + " " +
                 light(small(entry.link)), entry.link);
 
                 for (res r: videos)
-                videop += dark(html(r->title));
+                report::videop +=
+                dark(html(r->title));
             }
         }
 
@@ -182,8 +219,8 @@ namespace studio::build::one
 
         for (auto[weight, r]: weighted_unused_resources)
         {
-            if (r->kind == "audio") audioq += r->title;
-            if (r->kind == "video") videoq += r->title;
+            if (r->kind == "audio") report::audioq += r->title;
+            if (r->kind == "video") report::videoq += r->title;
         }
 
         out << dark(bold("ONE: PREVENT REPEATING..."));
@@ -200,6 +237,6 @@ namespace studio::build::one
             // if entry has multiple resources
         }
 
-        ::studio::one::report::save();
+        report::save();
     }
 }

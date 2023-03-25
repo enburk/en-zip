@@ -1,7 +1,7 @@
 #pragma once
-#include "studio_app_one_area.h"
-#include "studio_app_one_preview.h"
-#include "studio_app_one_reports.h"
+#include "studia_one_area.h"
+#include "studia_one_preview.h"
+#include "studia_one_reports.h"
 namespace studio::one
 {
     struct studio:

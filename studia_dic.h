@@ -1,5 +1,5 @@
 #pragma once
-#include "studio_app_dic_area.h"
+#include "studia_dic_area.h"
 namespace studio::dic
 {
     eng::dictionary dictionary;

@@ -1,6 +1,6 @@
 #pragma once
-#include "studio_app_one_content.h"
-#include "studio_app_one_editor.h"
+#include "studia_one_content.h"
+#include "studia_one_editor.h"
 namespace studio::one
 {
     struct area:

@@ -77,9 +77,6 @@ namespace app::dic::video
             str s = index.title;
             str c = index.credit;
 
-            s.replace_all("---", mdash);
-            s.replace_all("--" , ndash);
-
             s = eng::parser::embolden(s, links);
 
             c = media::canonical(c);

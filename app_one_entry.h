@@ -9,16 +9,21 @@ namespace app::one
         sfx::media::medio medio;
         sfx::media::player video;
         sfx::audio::player audio;
-        app::dic::html_view credit;
         app::dic::html_view script;
+        app::dic::html_view credit;
+        app::dic::html_view Script;
         app::dic::html_view Credit;
 
         gui::time stay;
         gui::time start;
         sys::thread thread;
-        media::index index;
         array<byte> video_bytes;
         array<byte> audio_bytes;
+        bool pixed = false;
+        str script_html;
+        str credit_html;
+        str Script_html;
+        str Credit_html;
         int clicked = 0;
 
 #define using(x) decltype(medio.x)& x = medio.x;
@@ -33,7 +38,7 @@ namespace app::one
         using(error)
         #undef using
 
-        ~player () { reset(); }
+        ~entry () { reset(); }
 
         void reset ()
         {
@@ -43,38 +48,52 @@ namespace app::one
             thread.check(); }
             catch (...) {}
             video.reset();
+            audio.reset();
             medio.done();
         }
 
-        void load (
-            media::index video_index,
-            media::index audio_index,
-            array<str> links)
+        void load (int number)
         {
-            // if that same image
-            // is used for another word then do next:
-            // reset maybe increased stay time,
-            // actualize emboldened links,
-            // and return
+            array<media::index> audios;
+            array<media::index> videos;
 
-            bool same =
-            index == video_index;
-            index =  video_index;
+            auto range = mediadata.entries_one.equal_range(
+            media::entry_index{number, 0}, [](auto a, auto b)
+            { return a.entry < b.entry; });
+
+            for (auto [entry, media]: range) {
+            auto& index = mediadata.media_index[media];
+            if (index.kind == "audio") audios += index;
+            if (index.kind == "video") videos += index; }
+
+            for (auto& x: videos) logs::video << media::log(x);
+            for (auto& x: audios) logs::audio << media::log(x);
+
+            media::index video_index; int vv = videos.size();
+            media::index audio_index; int aa = audios.size();
+
+            if (vv>0) video_index = videos[aux::random(0, vv-1)];
+            if (aa>0) audio_index = audios[aux::random(0, aa-1)];
+
+            auto const& entry = app::one::course.entries[number];
+
+            pixed = video_index != media::index{};
 
             start = gui::time::now;
-            stay  = gui::time{3000 +
-            index.title.size() * 40 +
-            index.credit.size() * 10 +
-            index.comment.size() * 20};
+            stay  = gui::time{(int)((1000 +
+            video_index.title.size() * 00 +
+            audio_index.title.size() * 30 +
+            video_index.credit.size() * 10 +
+            audio_index.credit.size() * 10 +
+            video_index.comment.size() * 0 +
+            audio_index.comment.size() * 0)
+                /speed)};
 
-            script.forbidden_links = links;
-            credit.forbidden_links = links;
+
+
 
             str s = index.title;
             str c = index.credit;
-
-            s.replace_all("---", mdash);
-            s.replace_all("--" , ndash);
 
             s = eng::parser::embolden(s, links);
 

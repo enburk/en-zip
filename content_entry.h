@@ -3,11 +3,11 @@
 #include "content_options.h"
 namespace content
 {
-    auto Eng_markers = str(
+    array<str> Eng_markers = str(
     "{Am.}, {Br.}, {also}, {esp.}, {mainly}, {usually}, {informal}, {informal:}"
     ).split_by(", ");
 
-    auto eng_markers = str("Am., Br., "
+    array<str> eng_markers = str("Am., Br., "
     "also, especially, mainly, usually, rarely, "
     "colloquial, formal, informal, idiom, idiomatic, "
     "literary, literally, old-fashioned, slang, vulgar, "
@@ -15,7 +15,7 @@ namespace content
     "transitive, intransitive, past tense, past participle"
     ).split_by(", ");
 
-    auto Rus_markers = str(
+    array<str> Rus_markers = str(
     u8"дословно:, иногда:, книжное:, разговорное:, "
     u8"редко:, реже:, сленг:, также:, устаревшее:, не только, " 
     u8"в математике:, в геометрии:, в физике:, в астрономии:, в биологии:, в зоологии:, в ботанике:, "
@@ -26,7 +26,7 @@ namespace content
     u8"в авиации:, в морском деле:, в цифр. технологиях:"
     ).split_by(", ");
 
-    auto rus_markers = str(
+    array<str> rus_markers = str(
     u8"англ., исп., итал., лат., нем., порт., фр., "
     u8"в брит., в амер., в знач., и проч., истор., "
     u8"буквально:, дословно:, дословно c , например:, "
@@ -188,7 +188,7 @@ namespace content::in
             pool >> x.opt;
         }
 
-        str html (bool trans)
+        str html (bool translated)
         {
             str html;
 
@@ -223,7 +223,7 @@ namespace content::in
 
             html = big(s);
 
-            if (trans and rus != "")
+            if (translated and rus != "")
             {
                 s = rus;
                 s.split_by("%%", s, comment);

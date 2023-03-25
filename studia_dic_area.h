@@ -1,6 +1,6 @@
 #pragma once
-#include "studio_app_dic_detail.h"
-#include "studio_app_dic_search.h"
+#include "studia_dic_detail.h"
+#include "studia_dic_search.h"
 namespace studio::dic
 {
     struct area:

@@ -129,6 +129,9 @@ namespace media
             }
         }
 
+        s.replace_all("---", mdash);
+        s.replace_all("--" , ndash);
+
         return s;
     }
 

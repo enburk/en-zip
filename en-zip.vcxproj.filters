@@ -19,11 +19,13 @@
     <Filter Include="content">
       <UniqueIdentifier>{5e30262d-7f07-42ce-9df1-22372659928d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="studio-two">
+      <UniqueIdentifier>{e28773d5-d681-4f5a-8cfd-bfe1be2c3833}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="abc.h" />
-    <ClInclude Include="studio_app_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />
     <ClInclude Include="eng_parser.h">
@@ -62,23 +64,8 @@
     <ClInclude Include="medio_video.h">
       <Filter>media</Filter>
     </ClInclude>
-    <ClInclude Include="studio_app_dic.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_dic_area.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_dic_detail.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_dic_search.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
     <ClInclude Include="studio_build_dic.h">
       <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_one.h">
-      <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="studio_build_dic+.h">
       <Filter>studio-dic</Filter>
@@ -89,15 +76,6 @@
     <ClInclude Include="eng_phenomena.h">
       <Filter>eng</Filter>
     </ClInclude>
-    <ClInclude Include="studio_app_one_area.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_one_content.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_one_editor.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
     <ClInclude Include="content_entry.h">
       <Filter>content</Filter>
     </ClInclude>
@@ -106,9 +84,6 @@
     </ClInclude>
     <ClInclude Include="content_topic.h">
       <Filter>content</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_app_one_preview.h">
-      <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="media_storage.h">
       <Filter>media</Filter>
@@ -119,9 +94,39 @@
     <ClInclude Include="content_course.h">
       <Filter>content</Filter>
     </ClInclude>
-    <ClInclude Include="studio_app_one_reports.h">
+    <ClInclude Include="studio.h" />
+    <ClInclude Include="studia_one.h">
       <Filter>studio-one</Filter>
     </ClInclude>
-    <ClInclude Include="studio.h" />
+    <ClInclude Include="studia_one_area.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_one_content.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_one_editor.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_one_preview.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_one_reports.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_dic.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_dic_area.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_dic_detail.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_dic_search.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="studia_two.h">
+      <Filter>studio-two</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

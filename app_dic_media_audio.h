@@ -52,9 +52,6 @@ namespace app::dic::audio
             str credit  = index.credit;
             str comment = index.comment;
 
-            title.replace_all("---", mdash);
-            title.replace_all("--" , ndash);
-
             title = eng::parser::embolden(title, links);
 
             title   = media::canonical(title);
@@ -122,16 +119,16 @@ namespace app::dic::audio
 
             index = index_;
 
+            start = gui::time{};
+            stay  = gui::time{1000 +
+            index.title.size() * 30 +
+            index.credit.size() * 10 +
+            index.comment.size() * 20};
+
             reset();
             medio.load();
             thread = [this, links](std::atomic<bool>& cancel)
             {
-                start = gui::time{};
-                stay  = gui::time{1000 +
-                index.title.size() * 40 +
-                index.credit.size() * 10 +
-                index.comment.size() * 20};
-
                 prepare_html(links);
                 text.forbidden_links = links;
 

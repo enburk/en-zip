@@ -12,26 +12,26 @@ namespace studio::one
         void load ()
         {
             std::filesystem::path dir = "../data/report";
-            errors = sys::in::optional_text(dir/"one_errors.dat").lines();
-            anomal = sys::in::optional_text(dir/"one_anomal.dat").lines();
-            audiom = sys::in::optional_text(dir/"one_audiom.dat").lines();
-            videom = sys::in::optional_text(dir/"one_videom.dat").lines();
-            audiop = sys::in::optional_text(dir/"one_audiop.dat").lines();
-            videop = sys::in::optional_text(dir/"one_videop.dat").lines();
-            audioq = sys::in::optional_text(dir/"one_audioq.dat").lines();
-            videoq = sys::in::optional_text(dir/"one_videoq.dat").lines();
+            errors = sys::in::optional_text_lines(dir/"one_errors.txt");
+            anomal = sys::in::optional_text_lines(dir/"one_anomal.txt");
+            audiom = sys::in::optional_text_lines(dir/"one_audiom.txt");
+            videom = sys::in::optional_text_lines(dir/"one_videom.txt");
+            audiop = sys::in::optional_text_lines(dir/"one_audiop.txt");
+            videop = sys::in::optional_text_lines(dir/"one_videop.txt");
+            audioq = sys::in::optional_text_lines(dir/"one_audioq.txt");
+            videoq = sys::in::optional_text_lines(dir/"one_videoq.txt");
         }
         void save ()
         {
             std::filesystem::path dir = "../data/report";
-            sys::out::write(dir/"one_errors.dat", errors);
-            sys::out::write(dir/"one_anomal.dat", anomal);
-            sys::out::write(dir/"one_audiom.dat", audiom);
-            sys::out::write(dir/"one_videom.dat", videom);
-            sys::out::write(dir/"one_audiop.dat", audiop);
-            sys::out::write(dir/"one_videop.dat", videop);
-            sys::out::write(dir/"one_audioq.dat", audioq);
-            sys::out::write(dir/"one_videoq.dat", videoq);
+            sys::out::write(dir/"one_errors.txt", errors);
+            sys::out::write(dir/"one_anomal.txt", anomal);
+            sys::out::write(dir/"one_audiom.txt", audiom);
+            sys::out::write(dir/"one_videom.txt", videom);
+            sys::out::write(dir/"one_audiop.txt", audiop);
+            sys::out::write(dir/"one_videop.txt", videop);
+            sys::out::write(dir/"one_audioq.txt", audioq);
+            sys::out::write(dir/"one_videoq.txt", videoq);
         }
         void clear()
         {

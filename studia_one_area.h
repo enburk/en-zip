@@ -12,33 +12,19 @@ namespace studio::one
 
         void on_change (void* what) override
         {
-            if (what == &coord and
+            if (what == &splitter
+            or  what == &coord and
                 coord.was.size !=
                 coord.now.size)
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
                 int l = gui::metrics::line::width;
-
-                splitter.lower = W * 10'00 / 100'00;
-                splitter.upper = W * 50'00 / 100'00;
-                str s = "studio::one::area::splitter.permyriad";
-                int p = sys::settings::load(s, 25'00);
-                int x = clamp<int>(W*p / 100'00,
-                splitter.lower, splitter.upper);
-                splitter.coord = xyxy(x-10*l, 0, x+10*l, H);
+                int x = splitter.set("studio::one::area::splitter", 10, 25, 50);
 
                 contents.coord = xyxy(0, 0, x, H);
                 editor  .coord = xyxy(x, 0, W, H);
                 editor  .show_focus = true;
-            }
-
-            if (what == &splitter) {
-                sys::settings::save(
-                "studio::one::area::splitter.permyriad",
-                splitter.middle * 100'00 / coord.now.w);
-                coord.was.size = xy{};
-                on_change(&coord);
             }
 
             if (what == &contents)

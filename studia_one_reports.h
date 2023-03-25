@@ -44,6 +44,7 @@ namespace studio::one
             }
             void reload ()
             {
+                 report::load();
                  errors.clear(); errors << report::errors;
                  anomal.clear(); anomal << report::anomal;
                  audiom.clear(); audiom << report::audiom;

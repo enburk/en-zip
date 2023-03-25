@@ -2,8 +2,35 @@
 #include "eng_parser.h"
 #include "eng_unittest.h"
 #include "media_data.h"
-namespace studio::build::dic
+namespace studio::dic
 {
+    namespace report
+    {
+        array<str> errors;
+        array<str> usages;
+        array<str> statts;
+        void load ()
+        {
+            std::filesystem::path dir = "../data/report";
+            errors = sys::in::optional_text_lines(dir/"dic_errors.txt");
+            usages = sys::in::optional_text_lines(dir/"dic_usages.txt");
+            statts = sys::in::optional_text_lines(dir/"dic_statts.txt");
+        }
+        void save ()
+        {
+            std::filesystem::path dir = "../data/report";
+            sys::out::write(dir/"dic_errors.txt", errors);
+            sys::out::write(dir/"dic_usages.txt", usages);
+            sys::out::write(dir/"dic_statts.txt", statts);
+        }
+        void clear()
+        {
+            errors.clear();
+            usages.clear();
+            statts.clear();
+        }
+    }
+
     void compile
     (
         eng::vocabulary& vocabulary,
@@ -11,6 +38,7 @@ namespace studio::build::dic
         media::out::data& data
     )
     {
+        report::clear();
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
 
@@ -113,12 +141,13 @@ namespace studio::build::dic
 
             entry2frequency[entry] = a + 2*v;
         }
-        out << purple(bold("AUDIO STATISTICS"));
+        report::statts += purple(bold("AUDIO STATISTICS"));
         for (auto [n, entries]: std::ranges::reverse_view(frequency_a)) {
             std::ranges::sort(entries);
             str list; int nn = entries.size();
-            for (int e: entries) { nn--; list +=
-                "[" + html(vocabulary[e].title) + "] ";
+            for (int e: entries) { nn--;
+                str s = vocabulary[e].title;
+                list += "[" + linked(html(s), s) + "] ";
                 if (list.size() > 2*1024 and nn > 10) {
                     list += "<br>+" +
                     std::to_string(nn) +
@@ -126,16 +155,17 @@ namespace studio::build::dic
                     break;
                 }
             }
-            out <<
+            report::statts +=
             purple(bold(std::to_string(n))) + ": " +
             blue(list);
         }
-        out << purple(bold("VIDEO STATISTICS"));
+        report::statts += purple(bold("VIDEO STATISTICS"));
         for (auto [n, entries]: std::ranges::reverse_view(frequency_v)) {
             std::ranges::sort(entries);
             str list; int nn = entries.size();
-            for (int e: entries) { nn--; list +=
-                "[" + html(vocabulary[e].title) + "] ";
+            for (int e: entries) { nn--;
+                str s = vocabulary[e].title;
+                list += "[" + linked(html(s), s) + "] ";
                 if (list.size() > 2*1024 and nn > 10) {
                     list += "<br>+" +
                     std::to_string(nn) +
@@ -143,10 +173,11 @@ namespace studio::build::dic
                     break;
                 }
             }
-            out <<
+            report::statts +=
             purple(bold(std::to_string(n))) + ": " +
             blue(list);
         }
+        out << report::statts;
 
         out << dark(bold("DIC: LINK RESOURCES..."));
 
@@ -241,26 +272,38 @@ namespace studio::build::dic
             and not r.options.contains("=")
             and not data.assets.contains(&r)) {
                 str ee = str(r.entries, "] [");
-                str fn = r.path.string();
-                err << yellow(html(fn)) +
+                str path = r.path.string();
+                report::errors += yellow(
+                linked(html(path), "file://" + path)) +
                 red(" [" + ee + "]");
                 continue; }
 
             if (not data.new_ones.contains(&r))
                 continue;
         
+            array<str> options = r.options;
             array<str> accepted = it->second;
             array<str> rejected;
         
             for (auto& entry : r.entries)
             if (not accepted.contains(entry))
                     rejected += entry;
+
+            for (str& s: accepted) s = linked(html(s), s);
+            for (str& s: rejected) s = html(s);
+
+            str title = linked(html(r.title),
+            html("file://" + r.path.string()));
         
-            out <<
-            purple(html(r.title)) +
-            blue  (html(" [" + str(accepted,  "] [") + "]")) +
-            red   (html(" [" + str(rejected,  "] [") + "]")) +
-            green (html(" {" + str(r.options, "} {") + "}"));
+            report::usages += purple(title) +
+            blue  (" [" + str(accepted,  "] [") + "]") +
+            red   (" [" + str(rejected,  "] [") + "]") +
+            green (" {" + str(r.options, "} {") + "}");
         }
+
+        out << report::usages;
+        err << report::errors;
+
+        report::save();
     }
 }

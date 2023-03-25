@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <execution>
 #include "app_dic.h"
-namespace studio::build::dic
+namespace studio::dic
 {
     bool update ()
     {

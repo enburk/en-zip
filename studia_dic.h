@@ -1,5 +1,6 @@
 #pragma once
 #include "studia_dic_area.h"
+#include "studio_build_dic.h"
 namespace studio::dic
 {
     eng::dictionary dictionary;
@@ -70,33 +71,22 @@ namespace studio::dic
         app::dic::app app; // after area
         gui::splitter splitter;
 
-        void reload () { app.reload(); }
+        void reload () { app.reload(); area.reload(); }
 
         void on_change (void* what) override
         {
-            if (what == &coord)
+            if (what == &splitter
+            or  what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w;
                 int H = coord.now.h;
                 int d = gui::metrics::line::width*10;
-
-                splitter.lower = W * 25'00 / 100'00;
-                splitter.upper = W * 75'00 / 100'00;
-                str s = "studio::dic::splitter.permyriad";
-                int p = sys::settings::load(s, 55'00);
-                int x = clamp<int>(W*p / 100'00,
-                splitter.lower, splitter.upper);
-                splitter.coord = xyxy(x-d, 0, x+d, H);
+                int x = splitter.set("studio::dic::splitter", 25, 55, 75);
 
                 area.coord = xyxy(0, 0, x, H);
-                app.coord = xyxy(x, 0, W, H);
-            }
-
-            if (what == &splitter) {
-                sys::settings::save(
-                "studio::dic::splitter.permyriad",
-                splitter.middle * 100'00 / coord.now.w);
-                on_change(&coord);
+                app .coord = xyxy(x, 0, W, H);
             }
 
             if (what == &area)

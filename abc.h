@@ -34,25 +34,6 @@ str linked    (str s, str link) {
     return "<a href=\"" + link +
         "\">" + s + "</a>"; }
 
-using namespace std::string_view_literals;
-constexpr std::string_view ellipsis = "\xE2""\x80""\xA6"sv; // …
-constexpr std::string_view mspace   = "\xE2""\x80""\x83"sv; // m-space
-constexpr std::string_view mdash    = "\xE2""\x80""\x94"sv; // m-dash
-constexpr std::string_view ndash    = "\xE2""\x80""\x93"sv; // n-dash
-constexpr std::string_view lquot    = "\xE2""\x80""\x9C"sv; // “
-constexpr std::string_view rquot    = "\xE2""\x80""\x9D"sv; // ”
-
-static str digit = "0123456789";
-static str LATIN = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-static str latin = "abcdefghijklmnopqrstuvwxyz";
-static str Latin = LATIN + latin;
-static str greek = u8"αβγδεζηθικλμνξοπρστυφχψω";
-static str GREEK = u8"ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ";
-static str Greek = GREEK + greek;
-static str cyril = u8"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-static str CYRIL = u8"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
-static str Cyril = CYRIL + cyril;
-
 str un_msdos (str s)
 {
     s.replace_all("~!",  "?");

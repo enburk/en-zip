@@ -25,25 +25,16 @@ namespace app::dic
 
         void on_change (void* what) override
         {
-            if (what == &coord)
+            if (what == &splitter
+            or  what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
                 int h = gui::metrics::text::height;
                 int l = gui::metrics::line::width*3;
-                int w = 10*h; // list width
-                int d = 2*l;
-
-                splitter.lower = W * 50'00 / 100'00;
-                splitter.upper = W * 90'00 / 100'00;
-
-                str s = "app::dic::splitter.permyriad";
-                int p = sys::settings::load(s, 100'00 * (W-w)/W);
-                int x = clamp<int>(W*p / 100'00,
-                splitter.lower.now,
-                splitter.upper.now);
-
-                splitter.coord = xyxy(x-d, 0, x+d, H);
+                int x = splitter.set("app::dic::splitter", 50, 85, 95);
 
                 left.coord = xyxy(0, 0, x, H);
                 list.coord = xyxy(x, 0, W, H);
@@ -52,12 +43,6 @@ namespace app::dic
             if (what == &left) focus = &list;
             if (what == &left) list.select(left.clicked);
             if (what == &list) left.select(list.clicked);
-            if (what == &splitter) {
-                sys::settings::save(
-                "app::dic::splitter.permyriad",
-                splitter.middle * 100'00 / coord.now.w);
-                on_change(&coord);
-            }
         }
 
         void on_key(str key, bool down, bool input) override

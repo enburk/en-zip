@@ -149,8 +149,9 @@ namespace media
             index.kind == "video" ? dark(s):
             "";
 
-        return linked(kind + " " + title,
-            index.path);
+        return linked(
+        kind + " " + title,
+        "file://" + index.path);
     }
 
     namespace report

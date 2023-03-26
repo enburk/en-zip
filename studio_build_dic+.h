@@ -15,6 +15,7 @@ namespace studio::dic
             errors = sys::in::optional_text_lines(dir/"dic_errors.txt");
             usages = sys::in::optional_text_lines(dir/"dic_usages.txt");
             statts = sys::in::optional_text_lines(dir/"dic_statts.txt");
+            usages.resize(1000);
         }
         void save ()
         {

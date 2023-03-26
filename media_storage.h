@@ -19,15 +19,15 @@ namespace media::out
             if (!std::filesystem::exists(txt)) return;
             for (str text = sys::in::text(txt); str line: text.lines())
             {
-                if (line == "") continue;
+                line.strip(); if (line == "") continue;
 
-                str offset; line.split_by(" # ", offset, line); offset.strip();
-                str length; line.split_by(" # ", length, line); length.strip();
-                str size_x; line.split_by(" # ", size_x, line); size_x.strip();
-                str size_y; line.split_by(" # ", size_y, line); size_y.strip();
+                str offset = line.extract_upto(" # ");
+                str length = line.extract_upto(" # ");
+                str size_x = line.extract_upto(" # ");
+                str size_y = line.extract_upto(" # ");
                 str record = line;
 
-                content [record] = info
+                content[record] = info
                 {
                     location {number,
                     std::stoi(offset),
@@ -59,10 +59,10 @@ namespace media::out
                         str size_x = std::to_string(info.location.size_x);
                         str size_y = std::to_string(info.location.size_y);
                         fstream <<
-                        std::string(offset.right_aligned(10)) + " # " +
-                        std::string(length.right_aligned(10)) + " # " +
-                        std::string(size_x.right_aligned(10)) + " # " +
-                        std::string(size_y.right_aligned(10)) + " # " +
+                        offset.right_aligned(10) + " # " +
+                        length.right_aligned(10) + " # " +
+                        size_x.right_aligned(10) + " # " +
+                        size_y.right_aligned(10) + " # " +
                         record + "\n";
                     }
                 }
@@ -92,7 +92,7 @@ namespace media::out
             stringstream << std::put_time(std::gmtime(&ctime), "%Y/%m/%d %T");
             str stime = stringstream.str();
             str ssize = std::to_string(size);
-            str record = ssize.right_aligned(10) + " # " + stime + " # " + r.id;
+            str record = ssize + " # " + stime + " # " + r.id;
 
             auto it = content.find(record);
             if (it != content.end()) {

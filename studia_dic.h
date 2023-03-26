@@ -71,6 +71,8 @@ namespace studio::dic
         app::dic::app app; // after area
         gui::splitter splitter;
 
+        studio () { reload(); }
+
         void reload () { app.reload(); area.reload(); }
 
         void on_change (void* what) override

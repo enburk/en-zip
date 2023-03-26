@@ -57,7 +57,7 @@ namespace content::out
                 }
 
                 array<str> lines =
-                sys::in::text(path).lines();
+                sys::in::text_lines(path);
 
                 topic topic{path, lines};
                 

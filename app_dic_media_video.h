@@ -152,8 +152,6 @@ namespace app::dic::video
                 maxwidth, maxwidth *
                 size.y / size.x);
 
-            credit.alignment = xy{pix::left, pix::top};
-
             script.coord = xywh(0, 0, size.x,     max<int>());
             credit.coord = xywh(0, 0, size.x-4*d, max<int>());
 
@@ -162,12 +160,10 @@ namespace app::dic::video
             int h1 = script.model.now->block.size.y;
             int h2 = credit.model.now->block.size.y;
 
-            credit.alignment = xy{pix::right, pix::center};
-
             int hh = h1 + h2;
             int y2 = h1;
 
-            if (w1 + w2 + 2*d < size.x) {
+            if (w1 + w2 + 7*d < size.x) {
                 hh = max(h1, h2);
                 y2 = 0; }
 
@@ -211,7 +207,7 @@ namespace app::dic::video
 
                 video .coord = xywh(r.x, r.y, size.x, size.y);
                 script.coord = xywh(r.x, r_y, size.x, h1);
-                credit.coord = xywh(r_x - d*7/2 - w2,  r_y + y2, w2, h2);
+                credit.coord = xywh(r_x - d*7/2 - w2,  r_y + y2, d*7/2 + w2, h2);
                 prev  .coord = xywh(r_x - d*6/2, d/7 + r_y + y2, d*3/2, d - d/7);
                 next  .coord = xywh(r_x - d*3/2, d/7 + r_y + y2, d*3/2, d - d/7);
 
@@ -230,8 +226,8 @@ namespace app::dic::video
                 frame2.color = gui::skins[skin].normal.first;
                 canvas.color = gui::skins[skin].light.first;
 
-                credit.alignment = xy{pix::right, pix::top};
-                script.alignment = xy{pix::left,  pix::top};
+                credit.alignment = xy{pix::left, pix::top};
+                script.alignment = xy{pix::left, pix::top};
 
                 prev.text.html = monospace(bold(u8"←"));
                 next.text.html = monospace(bold(u8"→"));

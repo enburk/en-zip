@@ -19,13 +19,19 @@ namespace media::scan
                 lefts.pop(); title.erase(pos);
                 if (link != "")
                 {
+                    str S, s; bool capital = false;
+                    for (str c: aux::unicode::glyphs(link))
+                    {
+                        if (c == "_") { capital = true; continue; }
+                        S += c; if (not capital) c = eng::lowercased(c);
+                        s += c; capital = false;
+                    }
                     if (links != "")
                     links += "][";
-                    links += link;
-                    str ss = link.ascii_lowercased();
-                    if (ss!= link) {
-                    links += "][";
-                    links += ss; }
+                    links += S;
+                    if (s != S)
+                    links += "][",
+                    links += s;
                 }
             }
             else pos++;
@@ -68,37 +74,49 @@ namespace media::scan
 
             resource resource = common;
 
-            str ignored_comment;
-            name.split_by("###", name, ignored_comment);
+            auto check = [path](str name) {
+                if (name == "") return false;
+                if (not name.contains("}}"))
+                logs::err << red(bold(
+                "no matching }}: " +
+                 path.string()));
+                return true; };
+
             name.strip();
+            str yadda = name.extract_from("###");
+            str title = name.extract_upto("{{"); bool meta_present = check(name);
+            str meta  = name.extract_upto("}}");
+            yadda = name;
 
-            str title, meta, yadda;
-            bool meta_present = 
-            name.split_by("{{", title, meta); title.strip();
-            meta.split_by("}}", meta, yadda); yadda.strip(); meta.strip();
+            if (meta_present) // even if empty
+            {
+                str credit, license;
+                meta.split_by("$", credit, license);
+                license.strip();
+                credit.strip();
+                
+                if (credit.starts_with("NASA") or credit.starts_with("ESA") or
+                    credit.starts_with("NOAA") or credit.starts_with("ESO") or
+                    credit.starts_with("NNSA") or credit.starts_with("USN") or
+                    credit.starts_with("USDA") or credit.starts_with("DOE") or
+                    credit.starts_with("USDE") or credit.starts_with("NIH") or
+                    credit.starts_with("USGS") or
+                    credit.starts_with("USAF"))
+                    credit = "Credit: " +
+                    credit;
 
-            str credit, license;
-            meta.split_by("$", credit, license); credit.strip();
-            if (credit.starts_with("NASA") or credit.starts_with("ESA") or
-                credit.starts_with("NOAA") or credit.starts_with("ESO") or
-                credit.starts_with("NNSA") or credit.starts_with("USN") or
-                credit.starts_with("USDA") or credit.starts_with("DOE") or
-                credit.starts_with("USDE") or credit.starts_with("NIH") or
-                credit.starts_with("USGS") or
-                credit.starts_with("USAF"))
-                credit = "Credit: " + credit;
-            if (license.starts_with("dreamstime")) credit += "/Dreamstime";
-            if (license.starts_with("wiki"      )) credit += "/Wikimedia";
-            if (license.starts_with("cc-by-sa"  )) credit += " CC-BY-SA"; else
-            if (license.starts_with("cc-by"     )) credit += " CC-BY";
-            if (meta_present) resource.credit = credit;
-            
-            str sense, commt, links, optio;
-            title.split_by("##", title, optio); optio.strip();
-            title.split_by("[" , title, links); links.strip("[ ]");
-            title.split_by("%%", title, commt); commt.strip();
-            title.split_by("@" , title, sense); sense.strip();
-            title.strip();
+                if (license.starts_with("dreamstime")) credit += "/Dreamstime";
+                if (license.starts_with("wiki"      )) credit += "/Wikimedia";
+                if (license.starts_with("cc-by-sa"  )) credit += " CC-BY-SA"; else
+                if (license.starts_with("cc-by"     )) credit += " CC-BY";
+
+                resource.credit = credit;
+            }
+
+            str optio = title.extract_from("##");
+            str links = title.extract_from("[" ); links.strip("[]");
+            str commt = title.extract_from("%%");
+            str sense = title.extract_from("@" );
 
             if (yadda.starts_with("## "))
                 optio += yadda;
@@ -112,14 +130,12 @@ namespace media::scan
             resource.sense = sense;
             resource.comment = commt;
             resource.abstract = title;
-            resource.entries += links.split_by("][");
-            resource.options += optio.split_by("##");
-            for (str& s: resource.entries) s.strip();
-            for (str& s: resource.options) s.strip();
+            resource.entries += links.split_strip_by("][");
+            resource.options += optio.split_strip_by("##");
             resource.entries.erase_all("");
             resource.options.erase_all("");
 
-            // voice-bunny legacy
+            // voice-bunny processing legacy
             std::erase_if(resource.entries,
             [](auto s){ return s == "="; });
 
@@ -130,7 +146,7 @@ namespace media::scan
 
                 auto credit = path / "!credit.txt";
                 if (std::filesystem::exists(credit)) {
-                resource.credit = str(sys::in::text(credit).lines(), "<br>");
+                resource.credit = str(sys::in::text_lines(credit), "<br>");
                 identified[credit] = true; }
 
                 scan(path, resources, level+1, resource);
@@ -162,8 +178,7 @@ namespace media::scan
                     bool title_stop = false;
                     array<str> title_lines;
                     array<str> comment_lines;
-                    array<str> lines = sys::in::text(txt).lines();
-                    for (str line : lines)
+                    for (str line: sys::in::text_lines(txt))
                     {
                         line.strip();
 

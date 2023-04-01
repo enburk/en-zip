@@ -6,6 +6,9 @@ namespace media
     using aux::expected;
     using sys::byte;
 
+    array<str> videoexts = {".png", ".jpg", ".jpeg" };
+    array<str> audioexts = {".mp3", ".ogg", ".wav"};
+
     struct resource
     {
         path path;

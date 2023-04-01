@@ -8,21 +8,21 @@ namespace studio::dic
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
 
-        using std::filesystem::path;
+        using namespace std::filesystem;
         path src = "../en-wiktionary/enwiktionary-data.txt";
         path dir = "../data";
 
         if (true)
-        if (std::filesystem::exists         (dir / "dictionary_entries.dat") and
-            std::filesystem::exists         (dir / "dictionary_indices.dat") and
-            std::filesystem::exists         (dir / "vocabulary.dat") and
-            std::filesystem::last_write_time(dir / "vocabulary.dat") >
-            std::filesystem::last_write_time(src))
+        if (exists         (dir / "dictionary_entries.dat")
+        and exists         (dir / "dictionary_indices.dat")
+        and exists         (dir / "vocabulary.dat")
+        and last_write_time(dir / "vocabulary.dat") >
+            last_write_time(src))
             return false;
 
         out << "dictionary update...";
 
-        std::filesystem::create_directories(dir);
+        create_directories(dir);
 
         eng::dictionary dictionary;
         auto& entries = dictionary.entries;

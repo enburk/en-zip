@@ -76,8 +76,8 @@ namespace media::video
             std::filesystem::last_write_time(original) >
             std::filesystem::last_write_time(cache) - 2h)
         {
+            // cannot resize ani-GIFs yet
             if (original.extension() == ".gif") {
-                // cannot resize ani-GIFs yet
                 std::filesystem::copy_file(original, cache,
                 std::filesystem::copy_options::overwrite_existing);
             }

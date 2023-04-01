@@ -46,9 +46,6 @@ namespace media::scan
     {
         std::map<path, bool> identified;
 
-        array<str> video = {".png", ".jpg", ".jpeg" };
-        array<str> audio = {".mp3", ".ogg", ".wav"};
-
         using logs::out;
         using logs::err;
 
@@ -161,8 +158,8 @@ namespace media::scan
                 if (ext == ".uid-zps") continue; // Zone Studio pix edits
                 if (false) out << "scan " + path.string();
 
-                if (audio.contains(ext)) resource.kind = "audio"; else
-                if (video.contains(ext)) resource.kind = "video"; else
+                if (audioexts.contains(ext)) resource.kind = "audio"; else
+                if (videoexts.contains(ext)) resource.kind = "video"; else
                 {
                     if (path.filename() != "!credit.txt")
                     identified[path] |= false;

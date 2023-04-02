@@ -8,5 +8,16 @@ namespace app::one
     {
         widgetarium<slide> slides;
         widgetarium<entry> entries;
+
+        void on_change (void* what) override
+        {
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
+            {
+                int W = coord.now.w;
+                int H = coord.now.h;
+            }
+        }
     };
 }

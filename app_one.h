@@ -1,10 +1,13 @@
 #pragma once
 #include "app.h"
+#include "app_one_stage.h"
 namespace app::one
 {
     struct app:
     widget<app>
     {
+        stage stage;
+
         app() { reload(); }
 
         void reload () try

@@ -205,32 +205,38 @@ namespace app::one
                 vudio.stop();
         }
 
-        auto sizes (int width)
+        int resize (int width)
         {
             int l = gui::metrics::line::width;
             int d = gui::metrics::text::height*7/10;
 
-            xy size {
-            index.location.size_x,
-            index.location.size_y};
+            xy size = pixed ? xy{
+            video_index.location.size_x,
+            video_index.location.size_y}:
+            xy{};
 
-            int maxwidth = width - 6*l;
-            if (maxwidth < size.x) size = xy (
-                maxwidth, maxwidth *
-                size.y / size.x);
+            if (width < size.x) size = xy{
+                width, width *
+                size.y/size.x};
 
-            credit.alignment = xy{pix::left, pix::top};
+            script.alignment = xy{pix::left,   pix::top};
+            credit.alignment = xy{pix::right,  pix::top};
+            Script.alignment = xy{pix::center, pix::top};
+            Credit.alignment = xy{pix::center, pix::top};
 
-            script.coord = xywh(0, 0, size.x,     max<int>());
-            credit.coord = xywh(0, 0, size.x-4*d, max<int>());
+            script.coord = xywh(0, 0, size.x, max<int>());
+            credit.coord = xywh(0, 0, size.x, max<int>());
+            Script.coord = xywh(0, 0, size.x, max<int>());
+            Credit.coord = xywh(0, 0, size.x, max<int>());
 
             int w1 = script.model.now->block.size.x;
             int w2 = credit.model.now->block.size.x;
             int h1 = script.model.now->block.size.y;
             int h2 = credit.model.now->block.size.y;
+            int h3 = Script.model.now->block.size.y;
+            int h4 = Credit.model.now->block.size.y;
 
-            credit.alignment = xy{pix::right, pix::center};
-
+            int y1 = size.y;
             int hh = h1 + h2;
             int y2 = h1;
 
@@ -238,71 +244,20 @@ namespace app::one
                 hh = max(h1, h2);
                 y2 = 0; }
 
-            hh = max(hh, d);
+            vudio .move_to(xy{(width - size.x)/2, 0});
+            credit.move_to(xy{0, y1 + y2});
+            Script.move_to(xy{0, y1 + y2 + hh});
+            Credit.move_to(xy{0, y1 + y2 + hh + h3});
 
-            int w = size.x + 6*l;
-            int h = size.y + 6*l + hh;
-
-            return std::tuple{w1, h1, w2, h2, size, w, h, d, y2};
-        }
-
-        int height (int width)
-        {
-            xywh script_save = script.coord.now;
-            xywh credit_save = credit.coord.now;
-
-            auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(width);
-
-            script.coord = script_save;
-            credit.coord = credit_save;
-
-            return h;
+            return y1 + y2 + hh + h3 + h4;
         }
 
         void on_change (void* what) override
         {
-            if (what == &coord)
-            {
-                int W = coord.now.w; if (W <= 0) return;
-                int H = coord.now.h; if (H <= 0) return;
-
-                auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(coord.now.size.x);
-
-                xywh r (W-w, 0, w, h); // right-up
-                frame1.coord = r; r.deflate(frame1.thickness.now);
-                frame2.coord = r; r.deflate(frame2.thickness.now);
-                canvas.coord = r; r.deflate(frame2.thickness.now);
-
-                int r_x = r.x + r.w;
-                int r_y = r.y + size.y;
-
-                video .coord = xywh(r.x, r.y, size.x, size.y);
-                script.coord = xywh(r.x, r_y, size.x, h1);
-                credit.coord = xywh(r_x - d*7/2 - w2,  r_y + y2, w2, h2);
-                prev  .coord = xywh(r_x - d*6/2, d/7 + r_y + y2, d*3/2, d - d/7);
-                next  .coord = xywh(r_x - d*3/2, d/7 + r_y + y2, d*3/2, d - d/7);
-
-                prev.text.shift = xy{0, -d/3};
-                next.text.shift = xy{0, -d/3};
-
-                script.scroll.x.mode = gui::scroll::mode::none;
-                script.scroll.y.mode = gui::scroll::mode::none;
-                credit.scroll.x.mode = gui::scroll::mode::none;
-                credit.scroll.y.mode = gui::scroll::mode::none;
-            }
-
-            if (what == &skin)
-            {
-                frame1.color = gui::skins[skin].ultralight.first;
-                frame2.color = gui::skins[skin].normal.first;
-                canvas.color = gui::skins[skin].light.first;
-
-                credit.alignment = xy{pix::right, pix::top};
-                script.alignment = xy{pix::left,  pix::top};
-
-                prev.text.html = monospace(bold(u8"←"));
-                next.text.html = monospace(bold(u8"→"));
-            }
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size) resize(
+                coord.now.w);
 
             if (what == &number)
             {
@@ -315,17 +270,15 @@ namespace app::one
                 translate();
             }
 
-
             if (what == &credit) { clicked = credit.clicked; notify(); }
             if (what == &script) { clicked = script.clicked; notify(); }
-
-            if (what == &next) { clicked = -1; notify(); }
-            if (what == &prev) { clicked = -2; notify(); }
+            if (what == &Credit) { clicked = Credit.clicked; notify(); }
+            if (what == &Script) { clicked = Script.clicked; notify(); }
 
             using sfx::media::state;
 
             if (what == &loading
-            and video.status == state::finished
+            and vudio.status == state::finished
             and thread.done)
             {
                 try
@@ -333,7 +286,7 @@ namespace app::one
                     thread.join();
                     thread.check();
 
-                    video.load(
+                    vudio.load(
                     std::move(video_bytes),    
                     std::move(audio_bytes));    
                 }
@@ -342,7 +295,7 @@ namespace app::one
             }
 
             if (what == &loading
-            and video.status == state::ready
+            and vudio.status == state::ready
             and thread.done)
             {
                 medio.stay();
@@ -356,7 +309,7 @@ namespace app::one
             }
 
             if (what == &playing
-            and video.status == state::finished
+            and vudio.status == state::finished
             and start + stay < gui::time::now)
             {
                 medio.done();
@@ -365,18 +318,18 @@ namespace app::one
             if (what == &playing
             or  what == &loading)
             {
-                if (video.status == state::failed)
-                medio.fail(video.error);
+                if (vudio.status == state::failed)
+                medio.fail(vudio.error);
             }
  
             if (what == &volume)
-                video.volume =
+                vudio.volume =
                 volume;
 
             if (what == &mute)
-                video.mute =
+                vudio.mute =
                 mute;
-       }
+        }
     };
 }
 

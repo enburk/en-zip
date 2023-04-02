@@ -288,6 +288,6 @@ namespace app::dic::video
             if (what == &mute)
                 video.mute =
                 mute;
-       }
+        }
     };
 }

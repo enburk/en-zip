@@ -171,6 +171,7 @@
     <ClInclude Include="app_one.h" />
     <ClInclude Include="app_one_entry.h" />
     <ClInclude Include="app_one_slide.h" />
+    <ClInclude Include="app_one_stage.h" />
     <ClInclude Include="app_two.h" />
   </ItemGroup>
   <ItemGroup>

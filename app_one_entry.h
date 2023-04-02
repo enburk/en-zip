@@ -6,20 +6,25 @@ namespace app::one
     struct entry:
     widget<entry>
     {
-        sfx::media::medio medio;
-        sfx::media::player video;
-        sfx::audio::player audio;
+        sfx::media::medio   medio;
+        sfx::media::player  vudio;
         app::dic::html_view script;
         app::dic::html_view credit;
         app::dic::html_view Script;
         app::dic::html_view Credit;
 
+        property<int>  number = -1;
+        property<bool> translated = false;
+
         gui::time stay;
         gui::time start;
         sys::thread thread;
+        media::index video_index;
+        media::index audio_index;
         array<byte> video_bytes;
         array<byte> audio_bytes;
         bool pixed = false;
+        bool vocal = false;
         str script_html;
         str credit_html;
         str Script_html;
@@ -47,80 +52,125 @@ namespace app::one
             thread.join();
             thread.check(); }
             catch (...) {}
-            video.reset();
-            audio.reset();
+            vudio.reset();
             medio.done();
         }
 
-        void load (int number)
+        void init ()
         {
             array<media::index> audios;
             array<media::index> videos;
 
-            auto range = mediadata.entries_one.equal_range(
-            media::entry_index{number, 0}, [](auto a, auto b)
-            { return a.entry < b.entry; });
+            auto range = mediadata.entries_one.
+            equal_range(media::entry_index{number, 0},
+                [](auto a, auto b){ return
+                a.entry < b.entry; });
 
             for (auto [entry, media]: range) {
-            auto& index = mediadata.media_index[media];
-            if (index.kind == "audio") audios += index;
-            if (index.kind == "video") videos += index; }
+                auto& i = mediadata.media_index[media];
+                if (i.kind == "audio") audios += i;
+                if (i.kind == "video") videos += i; }
 
-            for (auto& x: videos) logs::video << media::log(x);
-            for (auto& x: audios) logs::audio << media::log(x);
-
-            media::index video_index; int vv = videos.size();
-            media::index audio_index; int aa = audios.size();
+            video_index = media::index{}; int vv = videos.size();
+            audio_index = media::index{}; int aa = audios.size();
 
             if (vv>0) video_index = videos[aux::random(0, vv-1)];
             if (aa>0) audio_index = audios[aux::random(0, aa-1)];
 
-            auto const& entry = app::one::course.entries[number];
-
             pixed = video_index != media::index{};
+            vocal = audio_index != media::index{};
+        }
+
+        void translate ()
+        {
+            auto const& entry =
+            app::one::course.entries[number];
+
+            str html = entry.html(translated);
+            str text = doc::html::untagged(html);
 
             start = gui::time::now;
             stay  = gui::time{(int)((1000 +
-            video_index.title.size() * 00 +
-            audio_index.title.size() * 30 +
+            video_index.title.size() * 30 +
+            audio_index.title.size() * 00 +
             video_index.credit.size() * 10 +
             audio_index.credit.size() * 10 +
             video_index.comment.size() * 0 +
-            audio_index.comment.size() * 0)
-                /speed)};
+            audio_index.comment.size() * 0 +
+            text.size() * 40) / speed)};
 
+            script.html = "";
+            Script.html = html;
+            credit.html = "";
+            Credit.html = "";
 
+            if (pixed)
+            {
+                str t = video_index.title;
+                str c = media::canonical(t);
+                str s = eng::lowercased(c);
+                str S = eng::lowercased(text);
+                if (not S.contains(s))
+                script.html = c;
+            }
+            if (pixed)
+            {
+                str c = video_index.credit;
+                c = media::canonical(c);
 
+                str date;
+                for (str option: video_index.options)
+                if (option.starts_with("date "))
+                    c += ", " + italic(
+                    option.from(5));
 
-            str s = index.title;
-            str c = index.credit;
+                credit.html = gray(small(c));
+            }
+            if (vocal)
+            {
+                str c = audio_index.credit;
+                c = media::canonical(c);
 
-            s = eng::parser::embolden(s, links);
+                str date;
+                for (str option: audio_index.options)
+                if (option.starts_with("date "))
+                    c += ", " + italic(
+                    option.from(5));
 
-            c = media::canonical(c);
-            s = media::canonical(s);
+                c.replace_all(", read by", "<br>read by");
+                c.replace_all(", narrated by", "<br>narrated by");
 
-            str date;
-            for (str option: index.options)
-            if (option.starts_with("date "))
-                c += ", " + italic(
-                option.from(5));
+                Credit.html = gray(small(c));
+            }
+        }
 
-            if (index.comment != "")
-                s += "<br>" + dark(
-                media::canonical(
-                index.comment));
+        void load ()
+        {
+            array<media::index> audios;
+            array<media::index> videos;
 
-            script.html = s;
-            credit.html = gray(small(c));
+            auto range = mediadata.entries_one.
+            equal_range(media::entry_index{number, 0},
+                [](auto a, auto b){ return
+                a.entry < b.entry; });
 
-            if (same) return;
+            for (auto [entry, media]: range) {
+                auto& i = mediadata.media_index[media];
+                if (i.kind == "audio") audios += i;
+                if (i.kind == "video") videos += i; }
+
+            video_index = media::index{}; int vv = videos.size();
+            audio_index = media::index{}; int aa = audios.size();
+
+            if (vv>0) video_index = videos[aux::random(0, vv-1)];
+            if (aa>0) audio_index = audios[aux::random(0, aa-1)];
+
+            pixed = video_index != media::index{};
+            vocal = audio_index != media::index{};
 
             reset();
             medio.load();
-            thread = [this,
-            video_index, audio_index]
-            (std::atomic<bool>& cancel)
+            thread = [this](std::atomic<bool>& cancel)
             {
                 auto source = [](int source){
                     return "../data/media/storage." +
@@ -143,17 +193,16 @@ namespace app::one
         void play ()
         {
             if (medio.play()) {
-                video.play();
-                logs::media << media::log(index);
+                vudio.play();
+                if (pixed) logs::media << media::log(video_index);
+                if (vocal) logs::media << media::log(audio_index);
                 start = gui::time::now;
-                stay.ms = stay.ms
-                *150/100;
             }
         }
         void stop ()
         {
             if (medio.stop())
-                video.stop();
+                vudio.stop();
         }
 
         auto sizes (int width)
@@ -254,6 +303,18 @@ namespace app::one
                 prev.text.html = monospace(bold(u8"←"));
                 next.text.html = monospace(bold(u8"→"));
             }
+
+            if (what == &number)
+            {
+                init();
+                translate();
+                load();
+            }
+            if (what == &translated)
+            {
+                translate();
+            }
+
 
             if (what == &credit) { clicked = credit.clicked; notify(); }
             if (what == &script) { clicked = script.clicked; notify(); }

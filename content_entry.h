@@ -188,7 +188,7 @@ namespace content::in
             pool >> x.opt;
         }
 
-        str html (bool translated)
+        str html (bool translated) const
         {
             str html;
 

@@ -213,11 +213,6 @@ namespace app::dic::video
 
                 prev.text.shift = xy{0, -d/3};
                 next.text.shift = xy{0, -d/3};
-
-                script.scroll.x.mode = gui::scroll::mode::none;
-                script.scroll.y.mode = gui::scroll::mode::none;
-                credit.scroll.x.mode = gui::scroll::mode::none;
-                credit.scroll.y.mode = gui::scroll::mode::none;
             }
 
             if (what == &skin)

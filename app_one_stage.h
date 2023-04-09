@@ -57,9 +57,13 @@ namespace app::one
             {
                 if (topic.kind != unit::topic) continue;
 
+                bool new_topic = true;
+
                 for (unit& chain: topic.units)
                 {
                     if (chain.kind != unit::chain) continue;
+
+                    bool new_chain = true; int j = i;
 
                     for (unit& leaf: chain.units)
                     {
@@ -71,6 +75,14 @@ namespace app::one
                         e.hide();
                         e.load();
                     }
+
+                    entries.stable_partition(j, i,
+                    [](auto& e){ return e->pixed; });
+
+                    entries[j].new_topic = new_topic;
+                    entries[j].new_chain = new_chain;
+                    new_topic = false;
+                    new_chain = false;
                 }
             }
 
@@ -111,7 +123,8 @@ namespace app::one
                 slides[i-1].entries.back()->pixed;
 
                 int hh = entry.resize(w, h);
-                if (hh + y > h or entry.pixed != was_pixed)
+                if (hh + y > h or entry.new_chain
+                or  entry.pixed != was_pixed)
                     nextslide();
 
                 entry.coord = xywh(p.x-w, p.y+y, w, hh);

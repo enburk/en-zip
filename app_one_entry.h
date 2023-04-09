@@ -24,6 +24,8 @@ namespace app::one
         media::index audio_index;
         array<byte> video_bytes;
         array<byte> audio_bytes;
+        bool new_topic = false;
+        bool new_chain = false;
         bool pixed = false;
         bool vocal = false;
         int clicked = 0;

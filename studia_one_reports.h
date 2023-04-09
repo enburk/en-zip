@@ -73,6 +73,7 @@ namespace studio::one
             selector.object.buttons(i++).text.text = "video?";
             selector.object.maxwidth = max<int>();
             selector.object.selected = 0;
+            reload();
         }
 
         void reload () { consobar.object.reload(); }

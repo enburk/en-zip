@@ -6,12 +6,13 @@ namespace app::one
     struct entry:
     widget<entry>
     {
-        sfx::media::medio   medio;
-        sfx::media::player  vudio;
-        app::dic::html_view script;
-        app::dic::html_view credit;
-        app::dic::html_view Script;
-        app::dic::html_view Credit;
+        gui::frame frame;
+        sfx::media::medio  medio;
+        sfx::media::player vudio;
+        dic::html_view script;
+        dic::html_view credit;
+        dic::html_view Script;
+        dic::html_view Credit;
 
         property<int>  number = -1;
         property<bool> translated = false;
@@ -25,10 +26,6 @@ namespace app::one
         array<byte> audio_bytes;
         bool pixed = false;
         bool vocal = false;
-        str script_html;
-        str credit_html;
-        str Script_html;
-        str Credit_html;
         int clicked = 0;
 
 #define using(x) decltype(medio.x)& x = medio.x;
@@ -58,6 +55,8 @@ namespace app::one
 
         void init ()
         {
+            reset();
+
             array<media::index> audios;
             array<media::index> videos;
 
@@ -83,8 +82,10 @@ namespace app::one
 
         void translate ()
         {
+            if (number == -1) return;
+
             auto const& entry =
-            app::one::course.entries[number];
+            course.entries[number];
 
             str html = entry.html(translated);
             str text = doc::html::untagged(html);
@@ -146,30 +147,8 @@ namespace app::one
 
         void load ()
         {
-            array<media::index> audios;
-            array<media::index> videos;
-
-            auto range = mediadata.entries_one.
-            equal_range(media::entry_index{number, 0},
-                [](auto a, auto b){ return
-                a.entry < b.entry; });
-
-            for (auto [entry, media]: range) {
-                auto& i = mediadata.media_index[media];
-                if (i.kind == "audio") audios += i;
-                if (i.kind == "video") videos += i; }
-
-            video_index = media::index{}; int vv = videos.size();
-            audio_index = media::index{}; int aa = audios.size();
-
-            if (vv>0) video_index = videos[aux::random(0, vv-1)];
-            if (aa>0) audio_index = audios[aux::random(0, aa-1)];
-
-            pixed = video_index != media::index{};
-            vocal = audio_index != media::index{};
-
-            reset();
             medio.load();
+            if (pixed or vocal)
             thread = [this](std::atomic<bool>& cancel)
             {
                 auto source = [](int source){
@@ -205,29 +184,23 @@ namespace app::one
                 vudio.stop();
         }
 
-        int resize (int width)
+        int resize (int w, int h)
         {
             int l = gui::metrics::line::width;
             int d = gui::metrics::text::height*7/10;
 
-            xy size = pixed ? xy{
-            video_index.location.size_x,
-            video_index.location.size_y}:
-            xy{};
-
-            if (width < size.x) size = xy{
-                width, width *
-                size.y/size.x};
+            if (w < l+l) return 0; w -= l+l; 
+            if (h < l+l) return 0; h -= l+l; 
 
             script.alignment = xy{pix::left,   pix::top};
             credit.alignment = xy{pix::right,  pix::top};
             Script.alignment = xy{pix::center, pix::top};
             Credit.alignment = xy{pix::center, pix::top};
 
-            script.coord = xywh(0, 0, size.x, max<int>());
-            credit.coord = xywh(0, 0, size.x, max<int>());
-            Script.coord = xywh(0, 0, size.x, max<int>());
-            Credit.coord = xywh(0, 0, size.x, max<int>());
+            script.coord = xywh(l, l, w, max<int>());
+            credit.coord = xywh(l, l, w, max<int>());
+            Script.coord = xywh(l, l, w, max<int>());
+            Credit.coord = xywh(l, l, w, max<int>());
 
             int w1 = script.model.now->block.size.x;
             int w2 = credit.model.now->block.size.x;
@@ -236,34 +209,57 @@ namespace app::one
             int h3 = Script.model.now->block.size.y;
             int h4 = Credit.model.now->block.size.y;
 
-            int y1 = size.y;
-            int hh = h1 + h2;
             int y2 = h1;
+            int hh = h1 + h2;
 
-            if (w1 + w2 + 2*d < size.x) {
+            if (w1 + w2 + 2*d < w) {
                 hh = max(h1, h2);
                 y2 = 0; }
 
-            vudio .move_to(xy{(width - size.x)/2, 0});
-            credit.move_to(xy{0, y1 + y2});
-            Script.move_to(xy{0, y1 + y2 + hh});
-            Credit.move_to(xy{0, y1 + y2 + hh + h3});
+            h -= hh + h3 + h4;
 
-            return y1 + y2 + hh + h3 + h4;
+            xy size = pixed ? xy{
+            video_index.location.size_x,
+            video_index.location.size_y}:
+            xy{};
+
+            if (w < size.x) size = xy{w, w*size.y/size.x};
+            if (h < size.y) size = xy{h*size.x/size.y, h};
+
+            vudio.coord = xywh(
+            w/2-size.x/2 + l, l,
+            size.x, size.y);
+
+            script.coord = xywh(l, l + size.y,           w, h1);
+            credit.coord = xywh(l, l + size.y + y2,      w, h2);
+            Script.coord = xywh(l, l + size.y + hh,      w, h3);
+            Credit.coord = xywh(l, l + size.y + hh + h3, w, h4);
+
+            return l + size.y + hh + h3 + h4 + l;
         }
 
         void on_change (void* what) override
         {
             if (what == &coord and
                 coord.was.size !=
-                coord.now.size) resize(
-                coord.now.w);
+                coord.now.size)
+            {
+                resize(
+                coord.now.w,
+                coord.now.h);
+                frame.coord =
+                coord.now.local();
+            }
+
+            if (what == &skin)
+                frame.color = 
+                gui::skins[skin].
+                focused.first;
 
             if (what == &number)
             {
                 init();
                 translate();
-                load();
             }
             if (what == &translated)
             {
@@ -318,7 +314,8 @@ namespace app::one
             if (what == &playing
             or  what == &loading)
             {
-                if (vudio.status == state::failed)
+                if (
+                vudio.status == state::failed)
                 medio.fail(vudio.error);
             }
  
@@ -329,6 +326,14 @@ namespace app::one
             if (what == &mute)
                 vudio.mute =
                 mute;
+        }
+
+        void on_mouse_hover (xy) override { frame.show(); }
+        void on_mouse_leave (  ) override { frame.hide(); }
+        void on_mouse_click (xy, str button, bool down) override
+        {
+            if (button == "left" and down)
+                notify();
         }
     };
 }

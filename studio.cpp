@@ -1,3 +1,4 @@
+#include "en-app.h"
 #include "studia_dic.h"
 #include "studia_one.h"
 #include "studia_two.h"
@@ -17,14 +18,19 @@ struct Studio : gui::widget<Studio>
     studio::audio::studio audio;
     studio::video::studio video;
     studio::build::studio build;
-    gui::button schema;
-    gui::button app;
+    gui::button button_sch;
+    gui::button button_app;
+    gui::button button_App;
+    App app;
 
     Studio()
     {
         skin = "gray+";
-        schema.text.text = "light";
-        app.text.text = "app";
+        button_sch.text.text = "light";
+        button_app.text.text = "in-app";
+        button_App.text.text = "app";
+
+        app.hide();
 
         studios += &one;
         studios += &two;
@@ -73,8 +79,11 @@ struct Studio : gui::widget<Studio>
             for (int i=0; i<studios.size(); i++)
                 studios[i]->coord = xyxy(0, h, W, H);
 
-            schema.coord = xywh(W-2*w, 0, w, h);
-            app   .coord = xywh(W-1*w, 0, w, h);
+            button_sch.coord = xywh(W-3*w, 0, w, h);
+            button_App.coord = xywh(W-2*w, 0, w, h);
+            button_app.coord = xywh(W-1*w, 0, w, h);
+
+            app.coord = coord.now.local();
         }
 
         if (what == &select)
@@ -103,26 +112,44 @@ struct Studio : gui::widget<Studio>
                 dic.reload();
                 one.reload();
                 two.reload();
+                app.reload();
             }
 
             for (int i=0; i<studios.size(); i++)
                 select(i).enabled = true;
         }
 
-        if (what == &schema)
+        if (what == &button_sch)
         {
             skin =
-            schema.text.text == "light" ? "gray" : "gray+";
-            schema.text.text =
-            schema.text.text == "light" ? "dark" : "light";
+            button_sch.text.text == "light" ? "gray" : "gray+";
+            button_sch.text.text =
+            button_sch.text.text == "light" ? "dark" : "light";
         }
 
-        if (what == &app)
+        if (what == &button_App)
         {
             auto path = ".vstudioapp/x64/Release/en-app.exe";
             sys::process run(path, "",
             sys::process::options{});
         }
+
+        if (what == &button_app)
+        {
+            app.show();
+        }
+    }
+
+    void on_key(str key, bool down, bool input) override
+    {
+        if (down
+        and key == "escape"
+        and app.alpha.to != 0)
+            app.hide();
+        else
+        if (focus.now)
+            focus.now->on_key(
+            key, down, input);
     }
 };
 

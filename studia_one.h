@@ -18,8 +18,6 @@ namespace studio::one
 
         studio ()
         {
-            reload();
-
             right += &dic;
             right += &preview;
             right += &reports;

@@ -38,8 +38,8 @@ namespace studio::dic
         gui::button button_delete;
         gui::button button_revert;
 
-        property<gui::time> loading;
-        property<gui::time> editing;
+        gui::timer loading;
+        gui::timer editing;
 
         int zoom = 100;
         str ZOOM = "studio::dic::detail::zoom";
@@ -81,9 +81,12 @@ namespace studio::dic
                 select(datpath_.string());
             }
         }
-        catch (std::exception const& e) {
-        filepath.html = str(filepath.html) +
-        "<br>" + red(bold(e.what()));
+        catch (std::exception const& e)
+        {
+            filepath.html = str(
+            filepath.html) + "<br>" +
+            red(bold(aux::unicode::
+            what(e.what())));
         }
 
         void select (str info)
@@ -132,8 +135,8 @@ namespace studio::dic
                 filepath.html = red(bold(info));
                 path dir = datpath.parent_path() / ".del";
                 bool del = exists(dir / datpath.filename());
-                button_delete.hide(del);
                 button_revert.show(del);
+                button_delete.hide();
                 return;
             }
 
@@ -201,9 +204,7 @@ namespace studio::dic
             button_qrop.enabled = qropped;
             button_full.on = true;
 
-            loading.go(
-            gui::time::infinity,
-            gui::time::infinity);
+            loading.start();
         }
 
         void refresh ()
@@ -322,18 +323,10 @@ namespace studio::dic
             if (what == &filename.update_text
             or  what == &textfile.update_text)
             {
-                editing.go(
-                gui::time{},
-                gui::time{});
-                editing.go(
-                gui::time(1),
-                5s);
+                editing.setup(5s);
             }
-            if (what == &editing and editing.now == gui::time(1))
+            if (what == &editing)
             {
-                editing.go(
-                gui::time{},
-                gui::time{});
                 save();
             }
 
@@ -342,10 +335,6 @@ namespace studio::dic
             and crop.status != sfx::media::state::loading
             and qrop.status != sfx::media::state::loading)
             {
-                refresh();
-                loading.go(
-                gui::time{},
-                gui::time{});
                 bool video =
                 media::videoexts.contains(
                 datpath.extension().string());
@@ -354,6 +343,8 @@ namespace studio::dic
                 if (video and button_qrop.on) qrop.play();
                 if (video) button_play.hide();
                 if (video) button_stop.show();
+                loading.stop();
+                refresh();
             }
             if (what == &button_Zoom)
             {
@@ -420,9 +411,12 @@ namespace studio::dic
                 rename(txtpath, txtpath_);
                 select(datpath.string());
             }
-            catch (std::exception const& e) {
-            filepath.html = str(filepath.html) +
-            "<br>" + red(bold(e.what()));
+            catch (std::exception const& e)
+            {
+                filepath.html = str(
+                filepath.html) + "<br>" +
+                red(bold(aux::unicode::
+                what(e.what())));
             }
             if (what == &button_revert) try
             {
@@ -433,10 +427,26 @@ namespace studio::dic
                 rename(txtpath_, txtpath);
                 select(datpath.string());
             }
-            catch (std::exception const& e) {
-            filepath.html = str(filepath.html) +
-            "<br>" + red(bold(e.what()));
+            catch (std::exception const& e)
+            {
+                filepath.html = str(
+                filepath.html) + "<br>" +
+                red(bold(aux::unicode::
+                what(e.what())));
             }
+        }
+
+        void on_key(str key, bool down, bool input) override
+        {
+            if (key == "enter" && down)
+            {
+                editing.stop();
+                save();
+            }
+            else
+            if (focus.now)
+                focus.now->on_key(
+                key, down, input);
         }
     };
 }

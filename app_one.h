@@ -8,14 +8,41 @@ namespace app::one
     {
         stage stage;
 
-        app() { reload(); }
+        sfx::media::medio medio;
+
+        using state = sfx::media::state;
+
+#define using(x) decltype(medio.x)& x = medio.x;
+        using(mute)
+        using(volume)
+        using(loading)
+        using(playing)
+        using(resolution)
+        using(duration)
+        using(elapsed)
+        using(status)
+        using(error)
+        #undef using
 
         void reload () try
         {
+            stage.fill();
         }
         catch (std::exception const& e) {
             logs::errors << bold(red(
                 e.what())); }
+
+        void play ()
+        {
+            medio.stay();
+            medio.play();
+            stage.play();
+        }
+        void stop ()
+        {
+            medio.stop();
+            stage.stop();
+        }
 
         void on_change (void* what) override
         {
@@ -23,8 +50,25 @@ namespace app::one
                 coord.was.size !=
                 coord.now.size)
             {
-                int W = coord.now.w;
-                int H = coord.now.h;
+                stage.coord = coord.now.local();
+            }
+
+            if (what == &playing)
+            {
+                switch(stage.status) {
+                case state::ready:
+                case state::paused:
+                    stage.show();
+                    stage.play();
+                    break;
+                case state::finished:
+                    //stage.next();
+                    stage.show();
+                    stage.play();
+                    break;
+                default:
+                    break;
+                }
             }
         }
     };

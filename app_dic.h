@@ -10,8 +10,6 @@ namespace app::dic
         list::area list;
         gui::splitter splitter;
 
-        app () { reload(); }
-
         void reload () try
         {
             left.current_entry = ::eng::dictionary::entry{};

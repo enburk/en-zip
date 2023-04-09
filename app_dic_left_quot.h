@@ -28,6 +28,7 @@ namespace app::dic::left
             mute.on = true;
             prev.repeating = true;
             next.repeating = true;
+            reload();
         }
 
         void reload ()

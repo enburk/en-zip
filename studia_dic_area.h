@@ -76,9 +76,7 @@ namespace studio::dic
             log_search.view.current_line_frame.color =
                 rgba(150,150,150,64);
 
-            if (app::appdata.error != "")
-                log_medias << red(bold(
-                app::appdata.error));
+            reload();
         }
 
         void reload ()
@@ -87,6 +85,10 @@ namespace studio::dic
             log_errors.clear(); log_errors << report::errors;
             log_usages.clear(); log_usages << report::usages;
             log_statts.clear(); log_statts << report::statts;
+            log_medias << app::appdata.report;
+            log_timing << app::appdata.report;
+            log_medias << app::appdata.error;
+            log_timing << app::appdata.error;
         }
 
         void on_change (void* what) override

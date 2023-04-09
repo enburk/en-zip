@@ -194,6 +194,7 @@ namespace content::in
 
             str s = eng;
             str comment, sense;
+            s.replace_all("/","|");
             s.split_by("%%", s, comment);
             s.split_by("@" , s, sense);
             s.strip(); comment.strip();
@@ -226,6 +227,7 @@ namespace content::in
             if (translated and rus != "")
             {
                 s = rus;
+                s.replace_all("/","|");
                 s.split_by("%%", s, comment);
                 s.strip(); comment.strip();
 
@@ -243,7 +245,6 @@ namespace content::in
             }
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });
-            html.replace_all("/",blue("/"));
             html.replace_all("|",blue("/"));
             html.replace_all("---", mdash);
             html.replace_all("--" , ndash);

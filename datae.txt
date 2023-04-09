@@ -4531,9 +4531,9 @@ You're so clever..ogg
 {Surfbird}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## {links}/swallow ## =
 {Cave Swallow}.ogg
+{Cliff Swallow} [cliff].ogg
 {Golden Swallow}.ogg
 {Violet-green Swallow}.ogg
-{{Cliff} Swallow}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## {links}/swan
 {Tundra Swan}.ogg
 {Whooper Swan}.ogg
@@ -32552,7 +32552,7 @@ Repeated song ''whip poor will'' of the {whip-poor-will}..ogg
 ''Trees trees, murmuring trees'' song of the Black-throated Green Warbler.txt
 Buzzier and slower then a Pine Warbler's trill song of the {Palm {Warbler}}.ogg
 Buzzier and slower then a Pine Warbler's trill song of the {Palm {Warbler}}.txt
-Clear whistles ''twee twee twee-teeo'' of the {{hooded} warbler}..ogg
+Clear whistles ''twee twee twee-teeo'' of the {hooded warbler}. [hooded].ogg
 Ending with three lower-pitched {buzzes} song of the {Golden-winged {Warbler}}.ogg
 Ending with three lower-pitched {buzzes} song of the {Golden-winged {Warbler}}.txt
 Explosive burst of staccato notes ''chip chip dippety chipety dip'' of the {Canada {warbler}}..ogg
@@ -32569,7 +32569,7 @@ More musical and slower then a {chipping sparrow}'s the trill of the {pine warbl
 Often confused with Yellow Warbler the song of the Chestnut-sided Warbler.ogg
 Often confused with Yellow Warbler the song of the Chestnut-sided Warbler.txt
 Rattling song ''Bee buzz'' of the {blue-winged {warbler}}..ogg
-Repeated single pitch ''sweet sweet sweet'' of the {{prothonotary} warbler}..ogg
+Repeated single pitch ''sweet sweet sweet'' of the {prothonotary warbler}. [prothonotary].ogg
 Series of whistles ending in a very high pitch ''zee zee zee tititi'' of the {blackburnian {warbler}}..ogg
 Slowed notes dropped in pitch with the rise at the end song of the Yellow-throated Warbler.ogg
 Slowed notes dropped in pitch with the rise at the end song of the Yellow-throated Warbler.txt
@@ -37785,25 +37785,24 @@ A whale swims off the _Valdes peninsula, _Argentina [whale tail][whale's tail].j
 Abandoned city of {_Pripyat}, near the {_Chernobyl} Nuclear Power Plant, _Ukraine.jpg
 Aerial view of camel {caravans}, {_Niger}.jpg
 Aerial view of {_Lulworth {Cove}}, {_Dorset}, _England [inlet].jpg
-Clifftop Fields, {_Ireland} [clifftop].jpg
-Confluence of the {Rio _Uruguay} and a {tributary} [confluence].jpg
+Clifftop Fields, {_Ireland} [clifftop] ## crop l5 r5 ## qrop q.jpg
+Confluence of the {Rio _Uruguay} and a tributary [confluence].jpg
 Diamond {Panning}, Côte d'Ivoire.jpg
-Fishermen on frozen Lake {_Baikal}, _Siberia, _Russia.jpg
-Flooded {fields}, _Bangladesh [flooded].jpg
+Fishermen on frozen Lake {_Baikal}, _Siberia, _Russia ## crop l20.jpg
+Flooded {fields}, _Bangladesh [flooded] ## qrop q.jpg
 General view of {_Venice}, {_Veneto}, _Italy [general view].jpg
 Heart of the mangrove trees in {_New _Caledonia}.jpg
 Helicopter {spraying} crops, _California [agriculture].jpg
-Hippopotami in Lake {_Naivasha}, {_Kenya} [hippopotami].jpg
+Hippopotami in Lake {_Naivasha}, {_Kenya} [hippopotami] ## qrop qr.jpg
 Icebreaker in {Resolute Bay}, _Nunavut Territory, _Canada [icebreaker].jpg
 Islet in the _Sulu Archipelago, _Philippines [islet].jpg
 Meanders in the {_Amazon River} near _Manaus, _Brazil [_Amazonas][meanders].jpg
-Road, leading to _Machu _Picchu, {_Cuzco} region, _Peru [winding][winding road].jpg
-The Athabasca {Oil Sands}, Alberta, Canada.jpg
-The {{irrigation} system} in the desert of {Wadi _Rum}, _Jordan.jpg
+The Athabasca {Oil Sands}, Alberta, Canada ## crop ql.jpg
+The {irrigation system} in the desert of {Wadi _Rum}, _Jordan [irrigation] ## crop l10.jpg
 Tractor in a field near _Bozeman, _Montana [agriculture].jpg
 _California {Aqueduct} and the E-Side Canal.jpg
-_Marrakesh {carpet}, {_Morocco}.jpg
-_Peul village near _Timbuktu, {_Mali}.jpg
+_Marrakesh {carpet}, {_Morocco} ## crop l25 ## qrop qr.jpg
+_Peul village near _Timbuktu, {_Mali} ## crop l7 r10.jpg
 _Phi _Phi _Le island near _Phuket, {_Thailand}.jpg
 {Finistère} Coastline.jpg
 {_Guatemala City}, {_Guatemala}.jpg
@@ -37813,9 +37812,9 @@ _Phi _Phi _Le island near _Phuket, {_Thailand}.jpg
 {Île de Ré}, _France [Charente-Maritime].jpg
 >>> ../datae\photo a-n\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/cats
 A boy holds his blue tabby and white {Norwegian Forest cat}.jpg
-Seal Pointed {{_Persian Longhair} Cat} [Persian cat][seal point][seal-pointed].jpg
-Snow Chocolate Spotted {Tabby} {{_Bengal} Cat}.jpg
-{_American {Shorthair}} Brown Patched {Tabby} Cat [brindled].jpg
+Seal Pointed {_Persian Longhair Cat} [Persian longhair][Persian cat][seal point][seal-pointed].jpg
+Snow Chocolate Spotted {Tabby} {_Bengal Cat} [Bengal].jpg
+{_American {Shorthair}} Brown Patched {Tabby} Cat [brindled] ## crop l5 r5.jpg
 {_European Shorthair} Kittens.jpg
 >>> ../datae\photo a-n\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/cows
 {Blanc Bleu Belge} Bull [Belgian blue][Belgian].jpg
@@ -37831,7 +37830,6 @@ Chesapeake Bay {Retriever}.jpg
 Light Colored {_American {Cocker Spaniel}}.jpg
 Saluki.jpg
 Three {_Yorkshire Terriers}.jpg
-_Australian Shepherds.jpg
 _Bordeaux {Mastiff}.jpg
 _Finnish {Spitz}.jpg
 {Bearded} {Collie}.jpg
@@ -37839,7 +37837,7 @@ _Finnish {Spitz}.jpg
 {Bracco} Italiano [Italian pointer].jpg
 {Bull {Mastiff}} and {Owner}.jpg
 {Deerhound} With Owner.jpg
-{Lhasa Apso}'s Hair Blown Around.jpg
+{Lhasa apso}'s hair blown around.jpg
 {Shar-Pei} Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkled].jpg
 {Shar-Pei} Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkles].jpg
 {Standard Poodle} and Puppy.jpg
@@ -37858,10 +37856,10 @@ _Finnish {Spitz}.jpg
 {_Saint _Bernard} With Owner [pet].jpg
 {_Siberian} {Huskies}.jpg
 {_Spanish {Greyhound}}.jpg
-Girl Holds {{Angora} Rabbit}.jpg
+Girl Holds {Angora Rabbit} [angora].jpg
 Partially {sheared} {_Rambouillet} {merino} sheep.jpg
 _Argentinian {Gauchos}, wearing traditional ponchos.jpg
-_British {Cavalryman} on {{_Clydesdale} Horse}.jpg
+_British {Cavalryman} on {_Clydesdale Horse} [Clydesdale].jpg
 _French {Chef} _Paul _Bocuse.jpg
 _Indian Cavalrymen in {Dress {Uniform}}.jpg
 _Norwegian Fjord Pony ## sic!.jpg
@@ -37982,7 +37980,7 @@ balcony ## qrop l18 r18 {{Photo.. Aleksey Gorbatenkov $dreamstime 15122486}}.jpg
 cosmonaut ## qrop t14 b22 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
 >>> ../datae\photo_dreamstime/fashion
 a suit sleeve with a white cuff [sleeve][cuff] ## crop l15 ## qrop qr {{Photo.. Vclements $dreamstime 4740347}}.jpg
-accessories [style] {{Photo.. Porechenskaya $dreamstime 48620933]}.jpg
+accessories [style] {{Photo.. Porechenskaya $dreamstime 48620933}}.jpg
 >>> ../datae\photo_dreamstime\fashion/cosmetics
 cream {cosmetics} ## crop t20 ## qrop t30 b5 {{Photo.. Kuleczka $dreamstime 7316536}}.jpg
 jacket ## qrop q {{Photo.. Uwe Mayer $dreamstime 32771919}}.jpg

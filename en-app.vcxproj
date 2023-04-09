@@ -173,6 +173,7 @@
     <ClInclude Include="app_one_slide.h" />
     <ClInclude Include="app_one_stage.h" />
     <ClInclude Include="app_two.h" />
+    <ClInclude Include="en-app.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

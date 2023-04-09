@@ -21,8 +21,31 @@ namespace content
         str name;
         str path;
         int order = 0;
-        int entry = 0;
+        int entry = -1;
         array<unit> units;
+        unit* parent = nullptr;
+        enum {theme, topic, chain, leaf} kind = leaf;
+
+        void init (int number_of_entries)
+        {
+            if (entry >= number_of_entries)
+            throw std::runtime_error("content::unit"
+                " entry=" + std::to_string(entry) +
+                " entries=" + std::to_string(number_of_entries) +
+                " \"" + path + "\"");
+
+            for (auto& unit: units)
+            {
+                unit.parent = this;
+                unit.init(number_of_entries);
+
+                switch(unit.kind) {
+                break; case leaf : kind = chain;
+                break; case chain: kind = topic;
+                break; default   : kind = theme;
+                }
+            }
+        }
 
         void sort ()
         {

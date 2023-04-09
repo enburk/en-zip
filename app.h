@@ -34,11 +34,17 @@ namespace app
 
     struct appdatatype
     {
+        int n = 0;
         str error;
+        str report;
         appdatatype () { reload(); }
         void reload () try
         {
             error = "";
+            report = gray(monospace(
+            "app data loading " +
+            std::to_string(++n) +
+                "...<br>"));
 
             timing t0;
             vocabulary =
@@ -46,14 +52,14 @@ namespace app
                 "vocabulary.dat");
 
             timing t1;
-            one::course.load("../data/course.dat", "../data/course_enties.dat");
-            two::course.load("../data/catalogs.dat", "../data/catalogs_entires.dat");
+            one::course.load("../data/course.dat", "../data/course_entries.dat");
+            two::course.load("../data/catalo.dat", "../data/catalo_entries.dat");
 
             timing t2;
             mediadata.reload();
 
             timing t3;
-            logs::report << gray(monospace(
+            report += gray(monospace(
             "app vocabulary  " + format(t1-t0) + " sec<br>" +
             "app load course " + format(t2-t1) + " sec<br>" +
             "app load media  " + format(t3-t2) + " sec<br>" +

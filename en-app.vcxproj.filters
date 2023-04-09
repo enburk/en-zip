@@ -55,6 +55,7 @@
     <ClInclude Include="app_one_stage.h">
       <Filter>app-one</Filter>
     </ClInclude>
+    <ClInclude Include="en-app.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

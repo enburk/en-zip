@@ -18,9 +18,11 @@ namespace media
         array<str> options;
         array<str> entries;
         array<str> keywords;
+        bool qropped = false;
         int weight = max<int>();
         int usage  =  0;
         int index  = -1;
+        int iqrop  = -1;
     };
 
     struct location

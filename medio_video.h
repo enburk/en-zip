@@ -116,11 +116,11 @@ namespace media::video
         "<br>  " + e.what());
     }
 
-    expected<array<byte>> data (const resource & r)
+    expected<array<byte>> data (const resource & r, str cropkind)
     {
         str crop;
-        for (str option : r.options)
-            if (option.starts_with("crop "))
+        for (str option: r.options)
+            if (option.starts_with(cropkind + " "))
                 crop = option.from(5);
 
         str letter = eng::asciized(

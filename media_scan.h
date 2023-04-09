@@ -249,6 +249,11 @@ namespace media::scan
 
                 report::id2path[resource.id] += path; // check for same id
 
+                if (resource.kind == "video")
+                for (str option: resource.options)
+                    if (option.starts_with("qrop "))
+                        resource.qropped = true;
+
                 resources += resource;
 
                 if (true)

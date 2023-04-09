@@ -99,21 +99,27 @@ namespace media::out
             for (auto path: paths)
             err << path.string(); }
         }
-        int add (resource* r)
+        int add (resource* r, str cropkind)
         {
-            if (r->index != -1) return
-                r->index; else
-                r->index = media_index.size();
+            int& index = 
+            cropkind == "qrop"
+            and r->qropped ?
+                r->iqrop:
+                r->index;
 
-            auto[location, new_one] = storage.add(*r);
+            if (index != -1)
+                return index;
 
-            if (new_one) {
-                new_ones.insert(r);
+            index = media_index.size();
+
+            auto[location, new_one] = storage.add(*r, cropkind);
+
+            if (new_one)
+                new_ones.insert(r),
                 logs::out << html(
-                r->path.string()); }
+                r->path.string());
 
-            ::media
-            ::media_index m;
+            media::index m;
             m.kind     = r->kind;
             m.title    = r->title;
             m.sense    = r->sense;
@@ -121,14 +127,15 @@ namespace media::out
             m.credit   = r->credit;
             m.options  = r->options;
             m.location = location;
+
             media_index += m;
-            media_paths +=
-            r->path.string();
-            return r->index;
+            media_paths += r->path.string();
+
+            return index;
         }
-        void dic_add(int entry, resource* r) { entries_dic.emplace_back(entry, add(r)); }
-        void one_add(int entry, resource* r) { entries_one.emplace_back(entry, add(r)); }
-        void two_add(int entry, resource* r) { entries_two.emplace_back(entry, add(r)); }
+        void dic_add(int entry, resource* r) { entries_dic.emplace_back(entry, add(r, "crop")); }
+        void one_add(int entry, resource* r) { entries_one.emplace_back(entry, add(r, "qrop")); }
+        void two_add(int entry, resource* r) { entries_two.emplace_back(entry, add(r, "qrop")); }
         void save () try
         {
             logs::out << dark(bold("SAVE..."));

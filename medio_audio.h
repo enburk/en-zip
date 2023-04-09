@@ -150,7 +150,7 @@ namespace media::audio
         "<br>  " + e.what());
     }
 
-    expected<array<byte>> data (const resource & r)
+    expected<array<byte>> data (const resource & r, str)
     {
         str crop;
         for (str option : r.options)

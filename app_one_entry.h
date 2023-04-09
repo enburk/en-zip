@@ -40,7 +40,7 @@ namespace app::one
         using(error)
         #undef using
 
-        ~entry () { reset(); }
+        ~entry () { reset(); frame.hide(); }
 
         void reset ()
         {
@@ -328,11 +328,13 @@ namespace app::one
                 mute;
         }
 
+        bool mouse_sensible (xy) override { return true; }
         void on_mouse_hover (xy) override { frame.show(); }
         void on_mouse_leave (  ) override { frame.hide(); }
         void on_mouse_click (xy, str button, bool down) override
         {
             if (button == "left" and down)
+                clicked = -1;
                 notify();
         }
     };

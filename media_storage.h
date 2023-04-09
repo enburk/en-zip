@@ -78,21 +78,28 @@ namespace media::out
                     "unknown exception")); }
         }
 
-        expected<Location> add (resource const& r) try
+        expected<Location> add (resource const& r, str cropkind) try
         {
             auto size = std::filesystem::file_size(r.path);
             if (size > (std::uintmax_t)(max<int32_t>()))
-                throw std::out_of_range("media::out::file too big: "
-                    + r.path.string());
+                throw std::out_of_range(
+                "media: file too big: "
+                + r.path.string());
 
             auto ftime = std::filesystem::last_write_time(r.path);
             auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
             std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
+
             std::stringstream stringstream;
-            stringstream << std::put_time(std::gmtime(&ctime), "%Y/%m/%d %T");
+            stringstream << std::put_time(
+            std::gmtime(&ctime), "%Y/%m/%d %T");
+
             str stime = stringstream.str();
             str ssize = std::to_string(size);
             str record = ssize + " # " + stime + " # " + r.id;
+
+            if (cropkind == "qrop" and r.qropped)
+                record += " (qrop)";
 
             auto it = content.find(record);
             if (it != content.end()) {
@@ -103,8 +110,8 @@ namespace media::out
             }
 
             array<byte> data =
-                r.kind == "audio" ? audio::data(r).value():
-                r.kind == "video" ? video::data(r).value():
+                r.kind == "audio" ? audio::data(r, cropkind).value():
+                r.kind == "video" ? video::data(r, cropkind).value():
                 array<byte>{};
 
             if (data.size() == 0) throw std::runtime_error("no data");
@@ -157,13 +164,13 @@ namespace media::out
                 sources += std::make_unique<source>(dir / "storage.0.dat", 0);
         }
 
-        Location add (const resource & r)
+        Location add (const resource & r, str cropkind)
         {
-            auto result = sources.back()->add(r).value();
+            auto result = sources.back()->add(r, cropkind).value();
             if (result.location == location{}) { int i = sources.size();
                 std::string filename = "storage." + std::to_string(i) + ".dat";
                 sources += std::make_unique<source>(dir / filename, i);
-                result = sources.back()->add(r).value();
+                result = sources.back()->add(r, cropkind).value();
             }
             return result;
         }

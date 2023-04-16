@@ -7,8 +7,10 @@ namespace studio::dic
     struct mediadetail:
     widget<mediadetail>
     {
-        path source;
+        media::resource resource;
+        media::Resource Resource;
 
+        gui::canvas canvas;
         gui::radio::group crops;
         gui::button button_play;
         gui::button button_stop;
@@ -20,6 +22,8 @@ namespace studio::dic
         sfx::media::player full;
         sfx::media::player crop;
         sfx::media::player qrop;
+        gui::button button_decrop;
+        gui::button button_deqrop;
 
         gui::frame cropper1;
         gui::frame cropper2;
@@ -31,13 +35,13 @@ namespace studio::dic
         int zoom = 100;
         str ZOOM = "studio::dic::detail::zoom";
 
+        mediadetail () { select(path{}, path{}); }
+       ~mediadetail () { select(path{}, path{}); }
 
-        mediadetail () { select(path{}); }
-       ~mediadetail () { select(path{}); }
-
-        void select (path source)
+        void select (path dat, path txt)
         {
-            this->source = source;
+            resource = media::resource(dat);
+            Resource = media::Resource(txt);
 
             button_play.show();
             button_stop.hide();
@@ -46,12 +50,14 @@ namespace studio::dic
             button_full.enabled = false;
             button_crop.enabled = false;
             button_qrop.enabled = false;
+            button_decrop.hide();
+            button_deqrop.hide();
 
             full.load({},{});
             crop.load({},{});
             qrop.load({},{});
 
-            if (source == path{}) return;
+            if (dat == path{}) return;
 
             auto load = [](sfx::media::player& player, path source, str crop, str fade)
             {
@@ -80,15 +86,9 @@ namespace studio::dic
                 std::move(audio_bytes));
             };
 
-            str text =
-            textfile.text != "" ?
-            textfile.text:
-            filename.text;
-
-            text.replace_all("\n", " ");
-            str yadda= text.extract_from("{{");
-            array<str> options = text.split_strip_by(" ## ");
-            options.upto(1).erase();
+            array<str> options;
+            options += resource.options;
+            options += Resource.options;
 
             str ocrop, oqrop, ofade;
             for (str o: options) {
@@ -100,9 +100,9 @@ namespace studio::dic
             bool cropped = ocrop != "" or ofade != "";
             bool qropped = oqrop != "";
 
-            load(full, datpath, "",    ""   ); if (cropped)
-            load(crop, datpath, ocrop, ofade); if (qropped)
-            load(qrop, datpath, oqrop, ofade);
+            load(full, dat, "",    ""   ); if (cropped)
+            load(crop, dat, ocrop, ofade); if (qropped)
+            load(qrop, dat, oqrop, ofade);
 
             button_play.enabled = true;
             button_stop.enabled = true;
@@ -118,14 +118,12 @@ namespace studio::dic
         {
             auto resize = [this](sfx::media::player& player)
             {
-                int y = 
-                button_play.coord.now.y +
-                button_play.coord.now.h;
+                int y = 0;
                 int x = 0;
 
                 xy size = player.resolution;
                 int maxsizex = coord.now.w;
-                int maxsizey = coord.now.h - y;
+                int maxsizey = coord.now.h;
 
                 int sizex = maxsizex * zoom / 100;
                 int sizey = maxsizey * zoom / 100;
@@ -166,26 +164,16 @@ namespace studio::dic
                 int H = coord.now.h; if (H <= 0) return;
                 int w = gui::metrics::text::height*5;
                 int h = gui::metrics::text::height*12/10;
-                int p = H/100;
-                int y = 0;
 
-                filepath.coord = xywh(0, y, W, 10*p); y += 10*p;
-                Filename.coord = xywh(0, y, W,  6*p); y +=  6*p;
-                Textfile.coord = xywh(0, y, W, 30*p); y += 30*p;
+                button_full.coord = xywh(0*W/6, 0, W/6, h);
+                button_crop.coord = xywh(1*W/6, 0, W/6, h);
+                button_qrop.coord = xywh(2*W/6, 0, W/6, h);
+                button_Zoom.coord = xywh(3*W/6, 0, W/6, h);
+                button_zoom.coord = xywh(4*W/6, 0, W/6, h);
+                button_play.coord = xywh(5*W/6, 0, W/6, h);
+                button_stop.coord = xywh(5*W/6, 0, W/6, h);
 
-                button_full.coord = xywh(0*W/6, y, W/6, h);
-                button_crop.coord = xywh(1*W/6, y, W/6, h);
-                button_qrop.coord = xywh(2*W/6, y, W/6, h);
-                button_Zoom.coord = xywh(3*W/6, y, W/6, h);
-                button_zoom.coord = xywh(4*W/6, y, W/6, h);
-                button_play.coord = xywh(5*W/6, y, W/6, h);
-                button_stop.coord = xywh(5*W/6, y, W/6, h);
-                y += h;
-
-                canvas.coord = xyxy(0, y, W, H);
-
-                button_delete.coord = xywh(0, H-h, W/6, h);
-                button_revert.coord = xywh(0, H-h, W/6, h);
+                canvas.coord = xyxy(0, h, W, H);
 
                 refresh();
             }
@@ -193,15 +181,6 @@ namespace studio::dic
             {
                 auto s = gui::skins[skin];
                 auto l = gui::metrics::line::width;
-
-                filepath.alignment = xy{pix::left, pix::top};
-                filename.canvas.color = s.ultralight.first;
-                textfile.canvas.color = s.ultralight.first;
-                filename.padding = xyxy{2*l, 2*l, 2*l, 2*l};
-                textfile.padding = xyxy{2*l, 2*l, 2*l, 2*l};
-                Filename.show_focus = true;
-                Textfile.show_focus = true;
-                filename.wordwrap   = true;
 
                 canvas.color = s.ultralight.first;
 
@@ -217,24 +196,11 @@ namespace studio::dic
                 button_crop.text.text = "crop";
                 button_qrop.text.text = "qrop";
 
-                button_delete.text.html = red("delete");
-                button_revert.text.html = red("revert");
+                button_decrop.text.html = red("reset");
+                button_deqrop.text.html = red("reset");
 
                 zoom = sys::settings::load(
                 ZOOM, 100);
-            }
-            if (what == &filepath) {
-                clicked = filepath.clicked;
-                notify(); }
-
-            if (what == &filename.update_text
-            or  what == &textfile.update_text)
-            {
-                editing.setup(5s);
-            }
-            if (what == &editing)
-            {
-                save();
             }
 
             if (what == &loading
@@ -244,7 +210,7 @@ namespace studio::dic
             {
                 bool video =
                 media::videoexts.contains(
-                datpath.extension().string());
+                resource.path.extension().string());
                 if (video and button_full.on) full.play();
                 if (video and button_crop.on) crop.play();
                 if (video and button_qrop.on) qrop.play();
@@ -308,52 +274,6 @@ namespace studio::dic
                 qrop.show();
                 qrop.play();
             }
-            if (what == &button_delete) try
-            {
-                path dir = datpath.parent_path()/".del";
-                std::filesystem::create_directories(dir);
-                path datpath_ = dir / datpath.filename();
-                path txtpath_ = dir / txtpath.filename();
-                rename(datpath, datpath_); if (exists(txtpath))
-                rename(txtpath, txtpath_);
-                select(datpath.string());
-            }
-            catch (std::exception const& e)
-            {
-                filepath.html = str(
-                filepath.html) + "<br>" +
-                red(bold(aux::unicode::
-                what(e.what())));
-            }
-            if (what == &button_revert) try
-            {
-                path dir = datpath.parent_path()/".del";
-                path datpath_ = dir / datpath.filename();
-                path txtpath_ = dir / txtpath.filename();
-                rename(datpath_, datpath); if (exists(txtpath_))
-                rename(txtpath_, txtpath);
-                select(datpath.string());
-            }
-            catch (std::exception const& e)
-            {
-                filepath.html = str(
-                filepath.html) + "<br>" +
-                red(bold(aux::unicode::
-                what(e.what())));
-            }
-        }
-
-        void on_key(str key, bool down, bool input) override
-        {
-            if (key == "enter" && down)
-            {
-                editing.stop();
-                save();
-            }
-            else
-            if (focus.now)
-                focus.now->on_key(
-                key, down, input);
         }
 
         bool mouse_sensible (xy  ) override { return true; }

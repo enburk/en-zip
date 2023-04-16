@@ -14,6 +14,8 @@ namespace media
 
         Resource (std::filesystem::path path) : path(path)
         {
+            if (not exists(path)) return;
+
             bool title_stop = false;
             array<str> title_lines;
             array<str> comment_lines;

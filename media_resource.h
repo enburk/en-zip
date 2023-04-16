@@ -19,6 +19,8 @@ namespace media
 
         resource (std::filesystem::path path) : path(path)
         {
+            if (not exists(path)) return;
+
             str fn = is_directory(path) ?
                 path.filename().string():
                 path.stem().string();

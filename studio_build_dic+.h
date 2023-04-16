@@ -265,7 +265,7 @@ namespace studio::dic
         {
             auto it = resources2titles.find(&r);
             if (it != resources2titles.end())
-                r.usage = it->second.size();
+                r.usage[0] = it->second.size();
 
             if (it == resources2titles.end()
             and not r.options.contains("sic!")

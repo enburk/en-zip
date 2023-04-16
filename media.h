@@ -2,28 +2,12 @@
 #include "abc.h"
 namespace media
 {
-    using std::filesystem::path;
-    using aux::expected;
     using sys::byte;
+    using aux::expected;
+    using std::filesystem::path;
 
     array<str> videoexts = {".png", ".jpg", ".jpeg" };
     array<str> audioexts = {".mp3", ".ogg", ".wav"};
-
-    struct resource
-    {
-        path path;
-        str id, kind;
-        str title, abstract;
-        str sense, comment, credit;
-        array<str> options;
-        array<str> entries;
-        array<str> keywords;
-        bool qropped = false;
-        int weight = max<int>();
-        int usage  =  0;
-        int index  = -1;
-        int iqrop  = -1;
-    };
 
     struct location
     {

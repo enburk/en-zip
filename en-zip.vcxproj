@@ -176,12 +176,15 @@
     <ClInclude Include="eng_unittest.h" />
     <ClInclude Include="media.h" />
     <ClInclude Include="media_data.h" />
+    <ClInclude Include="media_resource+.h" />
+    <ClInclude Include="media_resource.h" />
     <ClInclude Include="media_scan.h" />
     <ClInclude Include="media_storage.h" />
     <ClInclude Include="medio_audio.h" />
     <ClInclude Include="medio_video.h" />
     <ClInclude Include="studia_dic.h" />
     <ClInclude Include="studia_dic_area.h" />
+    <ClInclude Include="studia_dic_detail+.h" />
     <ClInclude Include="studia_dic_detail.h" />
     <ClInclude Include="studia_dic_search.h" />
     <ClInclude Include="studia_one.h" />

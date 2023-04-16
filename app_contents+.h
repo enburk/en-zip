@@ -5,6 +5,8 @@ namespace app
     struct Contents:
     widget<Contents>
     {
+        gui::canvas canvas;
+
         struct flist:
         widget<flist>
         {
@@ -154,6 +156,13 @@ namespace app
             {
                 replane();
                 refresh();
+            }
+
+            if (what == &skin)
+            {
+                canvas.color =
+                gui::skins[skin].
+                ultralight.first;
             }
 
             if (what == &flist)

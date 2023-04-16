@@ -127,5 +127,14 @@
     <ClInclude Include="studia_one_contents.h">
       <Filter>studio-one</Filter>
     </ClInclude>
+    <ClInclude Include="studia_dic_detail+.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
+    <ClInclude Include="media_resource.h">
+      <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="media_resource+.h">
+      <Filter>media</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

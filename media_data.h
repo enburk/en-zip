@@ -99,20 +99,15 @@ namespace media::out
             for (auto path: paths)
             err << path.string(); }
         }
-        int add (resource* r, str cropkind)
+        int add (resource* r, int app)
         {
-            int& index = 
-            cropkind == "qrop"
-            and r->qropped ?
-                r->iqrop:
-                r->index;
+            int& index = r->index[app];
 
-            if (index != -1)
-                return index;
+            if (index != -1) return index;
 
             index = media_index.size();
 
-            auto[location, new_one] = storage.add(*r, cropkind);
+            auto[location, new_one] = storage.add(*r, app);
 
             if (new_one)
                 new_ones.insert(r),
@@ -133,9 +128,9 @@ namespace media::out
 
             return index;
         }
-        void dic_add(int entry, resource* r) { entries_dic.emplace_back(entry, add(r, "crop")); }
-        void one_add(int entry, resource* r) { entries_one.emplace_back(entry, add(r, "qrop")); }
-        void two_add(int entry, resource* r) { entries_two.emplace_back(entry, add(r, "qrop")); }
+        void dic_add(int entry, resource* r) { entries_dic.emplace_back(entry, add(r, 0)); }
+        void one_add(int entry, resource* r) { entries_one.emplace_back(entry, add(r, 1)); }
+        void two_add(int entry, resource* r) { entries_two.emplace_back(entry, add(r, 2)); }
         void save () try
         {
             logs::out << dark(bold("SAVE..."));

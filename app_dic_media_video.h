@@ -82,8 +82,7 @@ namespace app::dic::video
             c = media::canonical(c);
             s = media::canonical(s);
 
-            str date;
-            for (str option: index.options)
+            for(str option: index.options)
             if (option.starts_with("date "))
                 c += ", " + italic(
                 option.from(5));

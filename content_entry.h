@@ -208,8 +208,8 @@ namespace content::in
             {
                 str uk, us;
                 s.split_by("\\\\", uk, us);
-                uk.strip (); uk += small(blue("Br"));
-                us.strip (); us += small(blue("Am"));
+                uk.strip (); uk += small(blue(" Br"));
+                us.strip (); us += small(blue(" Am"));
                 s = uk + "<br>" + us;
             }
 
@@ -246,6 +246,8 @@ namespace content::in
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });
             html.replace_all("|",blue("/"));
+            html.replace_all("[",blue("["));
+            html.replace_all("]",blue("]"));
             html.replace_all("---", mdash);
             html.replace_all("--" , ndash);
             html.replace_all("  ~", "~");

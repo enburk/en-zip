@@ -17,7 +17,7 @@ using gui::property;
 
 namespace app
 {
-    double speed = 1.0;
+    double speed = 9.0;//1.0;
 
     eng::vocabulary vocabulary;
     namespace one { content::in::course course; }

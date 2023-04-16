@@ -37841,7 +37841,7 @@ _Finnish {Spitz}.jpg
 {Shar-Pei} Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkled].jpg
 {Shar-Pei} Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkles].jpg
 {Standard Poodle} and Puppy.jpg
-{Standard {Spitz}}.jpg
+{Standard {Spitz}} ## qrop t8 b15.jpg
 {_Afghan} {Hound}.jpg
 {_Ainu} Dogs.jpg
 {_Anatolian} Sheep Dog.jpg
@@ -37999,7 +37999,7 @@ mascarpone ## qrop l26 r8 {{Photo.. Hlphoto $dreamstime 19537354}}.jpg
 mozzarella ## qrop l9 r24 {{Photo.. Boris Ryzhkov $dreamstime 40954513}}.jpg
 parmesan [Parmesan] ## qrop l33 r3 {{Photo.. Rostislav Glinsky $dreamstime 35930224}}.jpg
 >>> ../datae\photo_dreamstime\food/dessert
-an apple strudel with ice cream [apple strudel][strudel] ## crop l8 r8 ## qrop l10 r30 {{Photo.. Ruslan Olinchuk $dreamstime 47401590}}.jpg
+an apple strudel with ice cream [apple strudel][strudel] ## crop l8 r8 ## qrop l10 r23 {{Photo.. Ruslan Olinchuk $dreamstime 47401590}}.jpg
 crème brûlée [+][creme brulee][cream {cooking}] ## qrop l5 r26 {{Photo.. Carlos Soler Martinez $dreamstime 23983969}} Catalan cream.jpg
 Dutch 'stroopwafels' %% literally ''syrup waffles'' [stroopwafels][waffles] ## qrop l13 r20 {{Photo.. Dimap $dreamstime 35085210}}.jpg
 marmalade ## qrop q {{Photo.. Yuryn76 $dreamstime 55140667}}.jpg
@@ -38014,7 +38014,7 @@ goulash soup [goulash] ## qrop l10 r25 {{Photo.. Ingrid Heczko $dreamstime 12866
 hamburger ## qrop l10 r10 t10 b10 {{Photo.. Fiermanmuch $dreamstime 64724383}}.jpg
 lasagne~lasagna ## qrop qr {{Photo.. Zkruger $dreamstime 74782834}}.jpg
 macaroni ## qrop q {{Photo.. Chris Hill $dreamstime 1740787}}.jpg
-muesli ## qrop l14 r21 t10 {{Photo.. Belka10 $dreamstime 46201593}}.jpg
+muesli ## qrop l6 r21 t2 {{Photo.. Belka10 $dreamstime 46201593}}.jpg
 paprika ## qrop l22 r8 {{Photo.. Maramorosz $dreamstime 20830205}}.jpg
 pelmeni ## qrop q {{Photo.. Alexander Mychko $dreamstime 53909359}}.jpg
 ravioli ## qrop q {{Photo.. Alex Centrella $dreamstime 13751163}}.jpg
@@ -38061,7 +38061,7 @@ fjord ## qrop q {{Photo.. Tupungato $dreamstime 9822601}}.jpg
 >>> ../datae\photo_dreamstime\nature/flora - flowers
 edelweiss ## qrop l15 r15 {{Photo.. Aravind Natarajan $dreamstime 49643113}}.jpg
 jasmine ## qrop ql {{Photo.. Sikth $dreamstime 41959399}}.jpg
-sunflowers [+][bouquet] ## crop t5 b5 ## qrop t10 b25 {{Photo.. Alb3 $dreamstime 19012780}}.jpg
+sunflowers [+][bouquet] ## crop t5 b5 ## qrop t10 b33 {{Photo.. Alb3 $dreamstime 19012780}}.jpg
 tulips ## crop l15 ## qrop q {{Photo.. Stewis2012 $dreamstime 46128478}}.jpg
 plateau ## crop l10 ## qrop qr {{Photo.. Serban Enache $dreamstime 90767}} Hintertux Glacier in Zillertal, Austria.jpg
 steppe {{Photo.. Lilkar $dreamstime 45452610}}.jpg

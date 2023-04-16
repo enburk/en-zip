@@ -78,7 +78,7 @@ namespace media::out
                     "unknown exception")); }
         }
 
-        expected<Location> add (resource const& r, str cropkind) try
+        expected<Location> add (resource const& r, int app) try
         {
             auto size = std::filesystem::file_size(r.path);
             if (size > (std::uintmax_t)(max<int32_t>()))
@@ -98,7 +98,8 @@ namespace media::out
             str ssize = std::to_string(size);
             str record = ssize + " # " + stime + " # " + r.id;
 
-            if (cropkind == "qrop" and r.qropped)
+            str cropkind = app == 0 ? "crop" : "qrop";
+            if (cropkind == "qrop" and r.opt("qrop") != "")
                 record += " (qrop)";
 
             auto it = content.find(record);
@@ -164,13 +165,13 @@ namespace media::out
                 sources += std::make_unique<source>(dir / "storage.0.dat", 0);
         }
 
-        Location add (const resource & r, str cropkind)
+        Location add (const resource & r, int app)
         {
-            auto result = sources.back()->add(r, cropkind).value();
+            auto result = sources.back()->add(r, app).value();
             if (result.location == location{}) { int i = sources.size();
                 std::string filename = "storage." + std::to_string(i) + ".dat";
                 sources += std::make_unique<source>(dir / filename, i);
-                result = sources.back()->add(r, cropkind).value();
+                result = sources.back()->add(r, app).value();
             }
             return result;
         }

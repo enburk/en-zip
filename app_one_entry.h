@@ -42,7 +42,7 @@ namespace app::one
         using(error)
         #undef using
 
-        ~entry () { reset(); frame.hide(); }
+        ~entry () { reset(); }
 
         void reset ()
         {
@@ -80,6 +80,8 @@ namespace app::one
 
             pixed = video_index != media::index{};
             vocal = audio_index != media::index{};
+
+            frame.hide();
         }
 
         void translate ()
@@ -113,8 +115,13 @@ namespace app::one
                 str c = media::canonical(t);
                 str s = eng::lowercased(c);
                 str S = eng::lowercased(text);
-                if (not S.contains(s))
-                script.html = c;
+                str E = eng::lowercased(entry.eng);
+                E.replace_all("\\\\", "/");
+                E.replace_all("[", "");
+                E.replace_all("]", "");
+                if (not S.contains(s)
+                and not E.contains(s))
+                script.html = small(c);
             }
             if (pixed)
             {
@@ -127,7 +134,7 @@ namespace app::one
                     c += ", " + italic(
                     option.from(5));
 
-                credit.html = gray(small(c));
+                credit.html = gray(small(small(c)));
             }
             if (vocal)
             {
@@ -143,7 +150,7 @@ namespace app::one
                 c.replace_all(", read by", "<br>read by");
                 c.replace_all(", narrated by", "<br>narrated by");
 
-                Credit.html = gray(small(c));
+                Credit.html = gray(small(small(c)));
             }
         }
 
@@ -189,32 +196,39 @@ namespace app::one
         int resize (int w, int h)
         {
             int l = gui::metrics::line::width;
-            int d = gui::metrics::text::height*7/10;
+            int d = gui::metrics::text::height;
 
             if (w < l+l) return 0; w -= l+l; 
             if (h < l+l) return 0; h -= l+l; 
 
+            script.scroll.y.mode = gui::scroll::mode::none;
+            credit.scroll.y.mode = gui::scroll::mode::none;
+            Script.scroll.y.mode = gui::scroll::mode::none;
+            Credit.scroll.y.mode = gui::scroll::mode::none;
+
             script.alignment = xy{pix::left,   pix::top};
-            credit.alignment = xy{pix::right,  pix::top};
+            credit.alignment = xy{pix::left,   pix::top};
             Script.alignment = xy{pix::center, pix::top};
             Credit.alignment = xy{pix::center, pix::top};
 
-            script.coord = xywh(l, l, w, max<int>());
             credit.coord = xywh(l, l, w, max<int>());
+            script.coord = xywh(l, l, w, max<int>());
             Script.coord = xywh(l, l, w, max<int>());
             Credit.coord = xywh(l, l, w, max<int>());
 
-            int w1 = script.model.now->block.size.x;
-            int w2 = credit.model.now->block.size.x;
-            int h1 = script.model.now->block.size.y;
-            int h2 = credit.model.now->block.size.y;
+            int w1 = credit.model.now->block.size.x;
+            int w2 = script.model.now->block.size.x;
+            int h1 = credit.model.now->block.size.y;
+            int h2 = script.model.now->block.size.y;
             int h3 = Script.model.now->block.size.y;
             int h4 = Credit.model.now->block.size.y;
+
+            credit.alignment = xy{pix::right, pix::top};
 
             int y2 = h1;
             int hh = h1 + h2;
 
-            if (w1 + w2 + 2*d < w) {
+            if (w1 + w2 + d < w) {
                 hh = max(h1, h2);
                 y2 = 0; }
 
@@ -232,8 +246,8 @@ namespace app::one
             w/2-size.x/2 + l, l,
             size.x, size.y);
 
-            script.coord = xywh(l, l + size.y,           w, h1);
-            credit.coord = xywh(l, l + size.y + y2,      w, h2);
+            credit.coord = xywh(l, l + size.y,           w, h1);
+            script.coord = xywh(l, l + size.y + y2,      w, h2);
             Script.coord = xywh(l, l + size.y + hh,      w, h3);
             Credit.coord = xywh(l, l + size.y + hh + h3, w, h4);
 
@@ -299,17 +313,21 @@ namespace app::one
                 medio.stay();
             }
 
-            if (what == &playing)
-            {
-                if (script.link != ""
-                or  credit.link != "")
-                start = gui::time::now;
-            }
-
             if (what == &playing
             and vudio.status == state::finished
             and start + stay < gui::time::now)
             {
+                medio.done();
+            }
+
+            if (what == &playing
+            and vudio.status == state::playing
+            and start + stay < gui::time::now)
+            {
+                int64_t e = vudio.elapsed.ms;
+                int64_t d = vudio.duration.ms;
+                int64_t s = (int)(200*speed);
+                if (d-e < s)
                 medio.done();
             }
 

@@ -77,11 +77,10 @@ namespace app::dic::audio
             title += "<br>" +
             gray(small(comment));
 
-            str date;
-            for (str option : index.options)
-            if (option.starts_with("date ")) date = option.from(5);
-            if (date != "" and credit != "") credit += ", ";
-            if (date != "") credit += italic(date);
+            for(str option: index.options)
+            if (option.starts_with("date "))
+                credit += ", " + italic(
+                option.from(5));
 
             if (credit != "") {
                 credit.replace_all(", read by", "<br>read by");

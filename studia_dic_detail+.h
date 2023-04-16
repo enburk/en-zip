@@ -4,26 +4,11 @@ namespace studio::dic
 {
     using namespace std::filesystem;
 
-    struct detail:
-    widget<detail>
+    struct mediadetail:
+    widget<mediadetail>
     {
-        path datpath;
-        path txtpath;
+        path source;
 
-        using text = app::dic::html_view;
-        using edln = gui::text::one_line_editor;
-        using edit = gui::text::editor;
-        using Edln = gui::area<edln>;
-        using Edit = gui::area<edit>;
-
-        text filepath;
-        Edln Filename; edln& filename = Filename.object;
-        Edit Textfile; edit& textfile = Textfile.object;
-
-        str filename_text;
-        str textfile_text;
-
-        gui::canvas canvas;
         gui::radio::group crops;
         gui::button button_play;
         gui::button button_stop;
@@ -35,8 +20,6 @@ namespace studio::dic
         sfx::media::player full;
         sfx::media::player crop;
         sfx::media::player qrop;
-        gui::button button_delete;
-        gui::button button_revert;
 
         gui::frame cropper1;
         gui::frame cropper2;
@@ -47,58 +30,14 @@ namespace studio::dic
 
         int zoom = 100;
         str ZOOM = "studio::dic::detail::zoom";
-        std::unordered_map<path, path> renames;
-        int clicked = 0;
 
 
-        detail () { select(""); }
-       ~detail () { select(""); }
+        mediadetail () { select(path{}); }
+       ~mediadetail () { select(path{}); }
 
-        void save () try
+        void select (path source)
         {
-            str
-            text = textfile.text;text.trimr();
-            if (textfile_text != text) {
-                textfile_text  = text;
-
-                if (textfile_text == ""
-                and exists(txtpath))
-                    remove(txtpath);
-                else
-                sys::out::write(txtpath,
-                textfile_text.lines());
-                // crop can be changed
-                select(datpath.string());
-            }
-            text = filename.text;text.strip();
-            if (filename_text != text) {
-                filename_text  = text;
-
-                if (filename_text == "")
-                    return;
-
-                path dir = datpath.parent_path();
-                path datpath_ = dir / (filename_text + ".dat");
-                path txtpath_ = dir / (filename_text + ".txt");
-                datpath_.replace_extension(datpath.extension());
-                rename(datpath, datpath_); if (exists(txtpath))
-                rename(txtpath, txtpath_);
-                renames[datpath] = datpath_;
-                // crop can be changed
-                select(datpath_.string());
-            }
-        }
-        catch (std::exception const& e)
-        {
-            filepath.html = str(
-            filepath.html) + "<br>" +
-            red(bold(aux::unicode::
-            what(e.what())));
-        }
-
-        void select (str info)
-        {
-            save();
+            this->source = source;
 
             button_play.show();
             button_stop.hide();
@@ -112,51 +51,7 @@ namespace studio::dic
             crop.load({},{});
             qrop.load({},{});
 
-            datpath = info.c_str();
-            //while (true) if (auto
-            //it =  renamed.find(datpath);
-            //it == renamed.end()) break;
-            //else datpath = it->second;
-
-            txtpath = datpath;
-            txtpath.replace_extension(".txt");
-
-            str s = info;
-            s.replace_all("\\", "/");
-            if (s.starts_with("../"   )) s = s.from(3);
-            if (s.starts_with("datae/")) s = s.from(6);
-            
-            str tree = "";
-            for (str x: s.split_by("/"))
-            tree += gray(">> ") + x + "<br>";
-
-            filepath.html = tree;
-            filename_text = datpath.stem().string();
-            textfile_text = sys::in::optional_text(txtpath);
-            filename.text = filename_text;
-            textfile.text = textfile_text;
-            filename.read_only = true;
-            textfile.read_only = true;
-
-            button_delete.hide();
-            button_revert.hide();
-
-            if (info == "") return;
-            if (not exists(datpath))
-            {
-                filepath.html = red(bold(info));
-                path dir = datpath.parent_path() / ".del";
-                bool del = exists(dir / datpath.filename());
-                button_revert.show(del);
-                button_delete.hide();
-                return;
-            }
-
-            button_delete.show();
-            button_revert.hide();
-
-            filename.read_only = false;
-            textfile.read_only = false;
+            if (source == path{}) return;
 
             auto load = [](sfx::media::player& player, path source, str crop, str fade)
             {

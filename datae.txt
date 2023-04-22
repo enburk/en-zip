@@ -37977,7 +37977,7 @@ rubles [ruble] ## qrop q {{Photo.. Wrangel $dreamstime 69927247}}.jpg
 rubles [ruble] ## qrop ql {{Photo.. Wrangel $dreamstime 70339542}}.jpg
 >>> ../datae\photo_dreamstime/city
 balcony ## qrop l18 r18 b1 ## qropt! {{Photo.. Aleksey Gorbatenkov $dreamstime 15122486}}.jpg
-cosmonaut ## qrop t11 b21 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
+cosmonaut ## qrop t12 b21 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
 >>> ../datae\photo_dreamstime/fashion
 a suit sleeve with a white cuff [sleeve][cuff] ## crop l15 ## qrop qr {{Photo.. Vclements $dreamstime 4740347}}.jpg
 accessories [style] {{Photo.. Porechenskaya $dreamstime 48620933}}.jpg
@@ -38031,7 +38031,7 @@ acetylene dissolved in acetone [acetylene][ethyne][dissolved] ## crop l2 r12 {{P
 silica gel [silica][silica gel][desiccant] ## qrop l40 b20 {{Photo.. Atman $dreamstime 36175197}}.jpg
 >>> ../datae\photo_dreamstime/industry tools
 drill @ tool ## crop l10 ## qrop l19 r10 {{Photo.. Phil030 $dreamstime 4492399}}.jpg
-manoeuvre~maneuver ## qrop q {{Photo.. Onefivenine $dreamstime 2866182}}.jpg
+manoeuvre~maneuver ## qrop l16 r17 {{Photo.. Onefivenine $dreamstime 2866182}}.jpg
 massage {{Photo.. Anna Jurkovska $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime/music
 concert ## crop l20 ## qrop qr {{Photo.. Maxim Tarasyugin $dreamstime 93365606}}.jpg

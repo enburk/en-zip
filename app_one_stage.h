@@ -99,7 +99,7 @@ namespace app::one
         void resize ()
         {
             xy size = coord.now.local().size;
-            int w = gui::metrics::text::height*14;
+            int w = gui::metrics::text::height*15;
             int h = gui::metrics::text::height*18;
             w = size.x / (size.x / w);
             h = size.y / (size.y / h);
@@ -117,17 +117,16 @@ namespace app::one
                 y = 0;
             };
 
-            nextslide();
-
             for (auto& entry: entries)
             {
-                bool was_pixed = not
+                bool was_pixed = i == 0 or not
                 slides[i-1].entries.empty() and
                 slides[i-1].entries.back()->pixed;
 
                 int hh = entry.resize(w, h);
-                if (hh + y > h or entry.new_chain
-                or  entry.pixed != was_pixed)
+                if (hh + y > h or i == 0
+                or  entry.pixed != was_pixed
+                or  entry.new_chain)
                     nextslide();
 
                 entry.coord = xywh(
@@ -142,7 +141,7 @@ namespace app::one
             slides .coord = coord.now.local();
             entries.coord = coord.now.local();
 
-            int H = min(h, w + 3*gui::metrics::text::height);
+            int H = min(h, w);
 
             for (auto& s: slides)
             {
@@ -172,6 +171,7 @@ namespace app::one
                 fill();
 
             medio.play();
+            playslide();
         }
 
         void stop ()

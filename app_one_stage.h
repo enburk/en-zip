@@ -142,6 +142,8 @@ namespace app::one
             slides .coord = coord.now.local();
             entries.coord = coord.now.local();
 
+            int H = min(h, w + 3*gui::metrics::text::height);
+
             for (auto& s: slides)
             {
                 int hh = 0;
@@ -152,10 +154,10 @@ namespace app::one
                 pixed |= e->pixed;
 
                 if (pixed) continue;
+                if (hh>=H) continue;
 
                 for (auto& e: s.entries)
-                e->coord.now.y +=
-                h/2 - hh/2;
+                e->shift(xy(0, H/2-hh/2));
             }
         }
 

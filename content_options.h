@@ -59,7 +59,7 @@ namespace content
                 static array<str> externals = str("1, 2, 3, 4, Ru, "
                 "rare, formal, informal, literary, old-fashioned, "
                 "-1sec, +1sec, +2sec, +3sec, +4sec, +5sec, "
-                "POEM, RANDOM-"
+                "HEAD, POEM, RANDOM-"
                 ).split_by(", ");
 
                 s.strip(" \t");
@@ -71,10 +71,6 @@ namespace content
                 if (s == "POLITECO-") s = "POLIT-"; else
                 if (s == "POLITECO+") s = "POLIT+"; else
                 {}
-
-                // // polysemic[s][: перевод(ы)]
-                // if (s.starts_with("polysemic")) external += s; else
-                // if (s.starts_with("homonym"  )) external += s; else
 
                 if (ages     .contains(s)) age = std::stoi(s); else
                 if (internals.contains(s)) internal += s; else

@@ -136,5 +136,8 @@
     <ClInclude Include="media_resource+.h">
       <Filter>media</Filter>
     </ClInclude>
+    <ClInclude Include="studia_dic_detail++.h">
+      <Filter>studio-dic</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

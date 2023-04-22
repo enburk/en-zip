@@ -224,6 +224,10 @@ namespace content::in
 
             html = big(s);
 
+            if (opt.external.
+            contains("HEAD"))
+            html = big(html);
+
             if (translated and rus != "")
             {
                 s = rus;

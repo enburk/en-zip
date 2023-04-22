@@ -301,6 +301,12 @@ namespace studio::dic
             red   (" [" + str(rejected,  "] [") + "]") +
             green (" {" + str(r.options, "} {") + "}");
         }
+    }
+
+    void reportage ()
+    {
+        auto& out = app::logs::report;
+        auto& err = app::logs::errors;
 
         out << report::usages;
         err << report::errors;

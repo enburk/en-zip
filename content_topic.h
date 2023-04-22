@@ -36,6 +36,7 @@ namespace content::out
         {
             unit chain;
             options opt;
+            bool entry_leading = true;
             bool chain_ordered = true;
             bool entry_ordered = true;
             int  entry_order = 0;
@@ -53,6 +54,7 @@ namespace content::out
                     if (chain_ordered)
                         chain.order++;
                     opt |= entry.opt;
+                    entry_leading = false;
                     entry_order = 0;
                 }
                 if (entry.eng == ""
@@ -76,6 +78,10 @@ namespace content::out
                 }
 
                 entry.opt |= opt;
+
+                if (entry_leading)
+                    entry.opt.external
+                    += "HEAD";
 
                 unit unit;
                 unit.order = entry_order;

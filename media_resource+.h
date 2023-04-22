@@ -46,6 +46,15 @@ namespace media
                         credit.strip();
                         continue;
                     }
+                    if (option.starts_with("crop ")
+                    or  option.starts_with("qrop ")
+                    or  option.starts_with("fade")) {
+                        logs::err << red(bold(
+                        "external only option " +
+                         option + " in .txt: " +
+                         path.string()));
+                        continue;
+                    }
                     options += option;
                 }
                 else
@@ -97,20 +106,6 @@ namespace media
                 comment = str(
                 comment_lines,
                 "<br>");
-        }
-
-        str opt (str kind) const
-        {
-            for (str o: options)
-            if (o.starts_with(kind + " "))
-            return o.from(kind.size()+1);
-            return "";
-        }
-        void opt (str kind, str value)
-        {
-            for (str& o: options)
-            if (o.starts_with(kind + " "))
-            o = kind + " " + value;
         }
     };
 }

@@ -62,6 +62,9 @@ namespace media
                 if (license.starts_with("wiki"      )) credit += "/Wikimedia";
                 if (license.starts_with("cc-by-sa"  )) credit += " CC-BY-SA"; else
                 if (license.starts_with("cc-by"     )) credit += " CC-BY";
+
+                if (credit == "")
+                    credit = "-";
             }
 
             str optio = title.extract_from("##");
@@ -118,11 +121,17 @@ namespace media
             return o.from(kind.size()+1);
             return "";
         }
-        void opt (str kind, str value)
+
+        str text () const
         {
-            for (str& o: options)
-            if (o.starts_with(kind + " "))
-            o = kind + " " + value;
+            str s = title;
+            if (sense != "") s += " @ " + sense;
+            if (comment != "") s += " %% " + comment;
+            if (not entries.empty()) s += " [" + str(entries, "][") + "]";
+            if (not options.empty()) s += " ## " + str(options, " ## ");
+            if (meta != "") s += " {{" + meta + "}}";
+            if (yadda != "") s += " " + yadda;
+            return to_msdos(s);
         }
     };
 }

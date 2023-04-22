@@ -18,7 +18,7 @@ namespace studio::dic
         Edln Filename; edln& filename = Filename.object;
         Edit Textfile; edit& textfile = Textfile.object;
 
-        mediadetail mediadetail;
+        Mediadetail mediadetail;
         gui::button button_delete;
         gui::button button_revert;
         gui::timer  editing;
@@ -76,10 +76,20 @@ namespace studio::dic
             save();
 
             datpath = info.c_str();
-            //while (true) if (auto
-            //it =  renamed.find(datpath);
-            //it == renamed.end()) break;
-            //else datpath = it->second;
+
+            std::unordered_set<path> anticycle;
+            while (not exists(datpath))
+            {
+                anticycle.emplace(datpath);
+
+                if (auto
+                it =  renames.find(datpath);
+                it == renames.end()) break;
+                else datpath = it->second;
+
+                if (anticycle.contains(datpath))
+                break;
+            }
 
             txtpath = datpath;
             txtpath.replace_extension(".txt");
@@ -174,6 +184,13 @@ namespace studio::dic
             }
             if (what == &editing)
             {
+                save();
+            }
+
+            if (what == &mediadetail)
+            {
+                filename.text =
+                mediadetail.resource.text();
                 save();
             }
 

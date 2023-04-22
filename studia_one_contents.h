@@ -252,10 +252,11 @@ namespace studio::one
 
         bool on_mouse_wheel (xy p, int delta) override
         {
-            int h = scroller.step; if (h <= 0) h = gui::metrics::text::height;
-            delta = delta/20 * h; if (delta == 0) delta = delta < 0 ? -h : h;
+            int h = scroller.step;
+            delta /= abs(delta) < 20 ? abs(delta) : 20;
+            delta *= h > 0 ? h : gui::metrics::text::height;
+            if (sys::keyboard::ctrl ) delta *= 5;
             if (sys::keyboard::shift) delta *= coord.now.h;
-            if (sys::keyboard::ctrl) delta *= 5;
             int d = flist.coord.now.h - flist.list.coord.now.h; // may be negative
             int y = flist.list.coord.now.y + delta;
             if (y < d) y = d;

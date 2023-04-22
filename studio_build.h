@@ -88,6 +88,14 @@ namespace studio::build
                 one::compile(vocabulary, redirects, mediadata);
             //  two::compile(vocabulary, redirects, mediadata);
 
+                for (auto r: mediadata.unsquared)
+                    dic::report::errors +=
+                    linked(red("unsquared: ") +
+                    r->path.string(), "file://" +
+                    r->path.string());
+
+                dic::reportage();
+
                 mediadata.save();
 
                 data_updated =

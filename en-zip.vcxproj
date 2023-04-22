@@ -184,6 +184,7 @@
     <ClInclude Include="medio_video.h" />
     <ClInclude Include="studia_dic.h" />
     <ClInclude Include="studia_dic_area.h" />
+    <ClInclude Include="studia_dic_detail++.h" />
     <ClInclude Include="studia_dic_detail+.h" />
     <ClInclude Include="studia_dic_detail.h" />
     <ClInclude Include="studia_dic_search.h" />

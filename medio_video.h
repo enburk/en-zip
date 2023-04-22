@@ -31,42 +31,45 @@ namespace media::video
         }
     }
 
-    void crop (image<rgba> & img, str crop_params)
+    static xywh crop (xy size, str crop_params)
     {
         int l = 0; int r = 0;
         int t = 0; int b = 0;
                 
         auto percent = [](str s){ return std::stod(str(s.from(1))) / 100; };
 
-        for (str s : crop_params.split_by(" "))
+        for (str s: crop_params.split_strip_by(" "))
         {
-            s.strip();
-
-            if (s.starts_with("l")) l = clamp<int>(img.size.x * percent(s) + 0.5); else
-            if (s.starts_with("r")) r = clamp<int>(img.size.x * percent(s) + 0.5); else
-            if (s.starts_with("t")) t = clamp<int>(img.size.y * percent(s) + 0.5); else
-            if (s.starts_with("b")) b = clamp<int>(img.size.y * percent(s) + 0.5); else
+            if (s.starts_with("l")) l = clamp<int>(size.x * percent(s) + 0.5); else
+            if (s.starts_with("r")) r = clamp<int>(size.x * percent(s) + 0.5); else
+            if (s.starts_with("t")) t = clamp<int>(size.y * percent(s) + 0.5); else
+            if (s.starts_with("b")) b = clamp<int>(size.y * percent(s) + 0.5); else
             if (s.starts_with("q"))
             {
-                int x = img.size.x;
-                int y = img.size.y;
+                int x = size.x;
+                int y = size.y;
                 int a = min (x, y);
                 int X = x-a; x=X/2;
                 int Y = y-a; y=Y/2;
 
-                auto crop = img.crop();
+                if (s == "ql" || s == "qt") return xywh(0,0,a,a);
+                if (s == "qr" || s == "qb") return xywh(X,Y,a,a);
+                if (s == "q"  || s == "qq") return xywh(x,y,a,a);
 
-                if (s == "ql" || s == "qt") crop = crop.crop(xywh(0,0,a,a)); else
-                if (s == "qr" || s == "qb") crop = crop.crop(xywh(X,Y,a,a)); else
-                if (s == "q"  || s == "qq") crop = crop.crop(xywh(x,y,a,a));
-
-                img = image<rgba>(crop);
+                return xywh(0,0, size.x,size.y);
             }
         }
 
-        if (l != 0 || r != 0 || t != 0 || b != 0)
-            img = image<rgba>(img.crop(xywh(l, t,
-                img.size.x-l-r, img.size.y-t-b)));
+        return xywh(l, t, size.x-l-r, size.y-t-b);
+    }
+
+    void crop (image<rgba>& img, str crop_params)
+    {
+        xywh R = xywh(img);
+        xywh r = crop(R.size, crop_params);
+        if (r == R) return;
+        img = image<rgba>(
+        img.crop(r));
     }
 
     expected<array<byte>> readsample (path original, path cache, str crop_params) try

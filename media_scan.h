@@ -92,6 +92,19 @@ namespace media::scan
                     identified[txt] = true;
                 }
 
+                array<str> options;
+                for (str o: resource.options) {
+                    o = o.extract_upto(" ");
+                    if (not options.contains(o))
+                        options += o; else
+                        logs::err << red(bold(
+                        "duplicate option " + o +
+                        ": " + path.string()));
+                }
+
+                if (resource.credit == "-")
+                    resource.credit = "";
+
                 resources += resource;
 
                 if (true)
@@ -136,7 +149,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "qrop ", "date "};
-                    static const array<str> exact = {"=", "sic!", "Case", "{links}",
+                    static const array<str> exact = {"=", "sic!", "qropt!", "Case", "{links}",
                     "6+","8+","10+","12+","14+","16+","18+","21+","99+"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))

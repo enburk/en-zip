@@ -72,14 +72,17 @@ namespace app::one
                 if (i.kind == "audio") audios += i;
                 if (i.kind == "video") videos += i; }
 
+            for (auto& audio: audios) logs::audio << log(audio);
+            for (auto& video: videos) logs::video << log(video);
+
             video_index = media::index{}; int vv = videos.size();
             audio_index = media::index{}; int aa = audios.size();
 
             if (vv>0) video_index = videos[aux::random(0, vv-1)];
             if (aa>0) audio_index = audios[aux::random(0, aa-1)];
 
-            pixed = video_index != media::index{};
-            vocal = audio_index != media::index{};
+            pixed = vv > 0;
+            vocal = aa > 0;
 
             frame.hide();
         }

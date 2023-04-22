@@ -62,8 +62,9 @@ namespace media::out
     {
         storage storage;
         array<resource> resources;
-        std::set<resource*> new_ones;
         std::set<resource*> assets;
+        std::set<resource*> new_ones;
+        std::set<resource*> unsquared;
         array<entry_index> entries_dic;
         array<entry_index> entries_one;
         array<entry_index> entries_two;
@@ -111,8 +112,20 @@ namespace media::out
 
             if (new_one)
                 new_ones.insert(r),
-                logs::out << html(
-                r->path.string());
+                logs::out << blue("new: ") +
+                html(r->path.string());
+
+            if (app > 0
+            and not r->options.contains("qropt!"))
+            {
+                int w = location.size_x;
+                int h = location.size_y;
+                int a = min(w,h);
+                if (a > 0)
+                if (w - a > w/100
+                or  h - a > h/100)
+                unsquared.emplace(r);
+            }
 
             media::index m;
             m.kind     = r->kind;

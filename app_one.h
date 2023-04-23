@@ -10,6 +10,8 @@ namespace app::one
         stage& stage = stages[1];
         str    where;
 
+        property<bool> translated = false;
+
         sfx::media::medio medio;
 
         using state = sfx::media::state;
@@ -94,21 +96,29 @@ namespace app::one
                     break;
                 case state::finished:
                     //stage.next();
-                    stage.show();
-                    stage.play();
+                    //stage.show();
+                    //stage.play();
+                    medio.done();
                     break;
                 default:
                     break;
                 }
             }
 
+            if (what == &translated)
+                for (auto& s: stages)
+                    s.translated =
+                      translated;
+
             if (what == &volume)
                 for (auto& s: stages)
-                    s.volume = volume;
+                    s.volume =
+                      volume;
 
             if (what == &mute)
                 for (auto& s: stages)
-                    s.mute = mute;
+                    s.mute =
+                      mute;
         }
     };
 }

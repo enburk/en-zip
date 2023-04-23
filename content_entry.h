@@ -245,7 +245,7 @@ namespace content::in
                     s += "<br>" + small(gray(comment));
                 }
 
-                html += "<br>" + small(dark(s));
+                html += "<br>" + dark(s);
             }
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });

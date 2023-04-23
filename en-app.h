@@ -44,6 +44,7 @@ widget<App>
         conon.kind = gui::button::toggle;
         Conon.kind = gui::button::toggle;
         trans.kind = gui::button::toggle;
+        trans.on = sys::settings::load("app::rus", 0);
         conon.text.text = "\xE2""\x98""\xB0"; // Trigram For Heaven
         Conon.text.text = "\xE2""\x98""\xB7"; // Trigram For Earth
         dicon.text.text = "dictionary";
@@ -170,6 +171,14 @@ widget<App>
         or  what == &one)
             where.html =
             one.where;
+
+        if (what == &trans)
+        {
+            sys::settings::save("app::rus",
+                trans.on? 1:0);
+            one.translated =
+                trans.on;
+        }
 
         if (what == &slow)
         {

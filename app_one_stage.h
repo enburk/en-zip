@@ -243,6 +243,9 @@ namespace app::one
                 }
             }
 
+            if (what == &translated)
+                fill();
+
             if (what == &volume)
                 for (slide& s: slides)
                     s.volume = volume;

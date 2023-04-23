@@ -24,7 +24,7 @@ namespace content
         int entry = -1;
         array<unit> units;
         unit* parent = nullptr;
-        enum {theme, topic, chain, leaf} kind = leaf;
+        enum Kind {theme, topic, chain, leaf} kind = leaf;
 
         void init (int number_of_entries)
         {
@@ -38,27 +38,73 @@ namespace content
             {
                 unit.parent = this;
                 unit.init(number_of_entries);
-
-                switch(unit.kind) {
-                break; case leaf : kind = chain;
-                break; case chain: kind = topic;
-                break; default   : kind = theme;
-                }
+                kind = min(kind, upper(
+                unit.kind));
             }
         }
 
+        Kind upper (Kind k) {
+            return k == leaf?
+            chain: k == chain?
+            topic:
+            theme;
+        }
+
+        //unit* first (Kind k)
+        //{
+        //}
+        //
+        //unit* last (Kind k)
+        //{
+        //}
+        //
+        //unit* prev (Kind k)
+        //{
+        //}
+        //
+        //unit* next (Kind k)
+        //{
+        //}
+
         void sort ()
         {
-            std::ranges::sort(units, {}, &unit::order);
+            std::ranges::sort(units, [](auto& a, auto& b)
+            {
+                if (a.order < b.order) return true;
+                if (b.order < a.order) return false;
+                return a.name < b.name;
+            });
+
             for (auto& unit: units)
                 unit.sort();
         }
 
         void shuffle()
         {
-            std::random_device rd;
-            std::mt19937 g(rd());
-            //std::shuffle(v.begin(), v.end(), g);
+            auto i = units.begin();
+            auto j = units.begin();
+            auto e = units.end();
+
+            while (i != e)
+            {
+                while (j != e and
+                    i->order ==
+                    j->order)
+                    j++;
+
+                int n = (int)(j - i);
+                for (int nn=n; --nn;)
+                {
+                    int m;
+                    m = aux::random(0, n-1);
+                    std::rotate(i, i+m, j);
+                    m = aux::random(0, n-1);
+                    std::rotate(i, i+m, j);
+                }
+
+                i = j;
+            }
+
             for (auto& unit: units)
                 unit.shuffle();
         }

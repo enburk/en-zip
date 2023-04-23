@@ -9,6 +9,7 @@ struct App:
 widget<App>
 {
     gui::canvas canvas;
+    gui::text::view where;
     app::one::app one;
     app::two::app two;
     app::dic::app dic;
@@ -37,6 +38,7 @@ widget<App>
         skin = "gray+";
         canvas.color =
         gui::skins[skin].ultralight.first;
+        where.alignment = xy{pix::left, pix::center};
         dicon.kind = gui::button::toggle;
         conon.kind = gui::button::toggle;
         Conon.kind = gui::button::toggle;
@@ -91,6 +93,7 @@ widget<App>
         trans .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
         onetwo.coord = xywh(r-3*w-0*v, H-h+d, 2*w, h-d-d);
         dicon .coord = xywh(r-1*w-0*v, H-h+d, 1*w, h-d-d);
+        where .coord = xywh(r+1*w-0*v, H-h+d,99*w, h-d-d);
 
         if (not conon.on.now) l = 0;
         if (not dicon.on.now) r = W;
@@ -134,6 +137,19 @@ widget<App>
 
         if (what == &play.play) one.play();
         if (what == &play.stop) one.stop();
+        if (what == &play.next) one.next();
+        if (what == &play.prev) one.prev();
+        if (what == &play.Next) one.Next();
+        if (what == &play.Prev) one.Prev();
+
+        if (what == &ones) one.go(ones.selected);
+        if (what == &Ones) one.go(Ones.selected);
+
+        if (what == &ones
+        or  what == &Ones
+        or  what == &one)
+            where.text =
+            one.where;
     }
 
     bool mouse_sensible (xy) override { return true; }

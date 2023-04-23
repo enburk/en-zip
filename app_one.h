@@ -6,7 +6,9 @@ namespace app::one
     struct app:
     widget<app>
     {
-        stage stage;
+        stage  stages[3];
+        stage& stage = stages[1];
+        str    where;
 
         sfx::media::medio medio;
 
@@ -24,9 +26,12 @@ namespace app::one
         using(error)
         #undef using
 
+        using unit = content::unit;
+
         void reload () try
         {
-            stage.fill();
+            go(sys::settings::load(
+              "app:one::path", ""));
         }
         catch (std::exception const& e) {
             logs::errors << bold(red(
@@ -42,6 +47,30 @@ namespace app::one
         {
             medio.stop();
             stage.stop();
+        }
+
+        void next ()
+        {
+        }
+        void prev ()
+        {
+        }
+
+        void Next ()
+        {
+        }
+        void Prev ()
+        {
+        }
+
+        void go (str path)
+        {
+            stage.where = course.find(path);
+            stage.fill();
+            where =
+            stage.theme ?
+            stage.theme->path:
+            red(bold(path));
         }
 
         void on_change (void* what) override

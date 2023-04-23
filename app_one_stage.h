@@ -31,16 +31,11 @@ namespace app::one
         using unit = content::unit;
 
         unit* where = nullptr;
+        unit* theme = nullptr;
 
         void fill ()
         {
-            where = course.find(
-            sys::settings::load(
-            "app:one::path", ""));
-
-            where = &course.root.units[0].units[1];
-
-            content::unit* theme = where;
+            theme = where;
 
             while ( theme
                 and theme->kind != unit::theme) theme =
@@ -101,6 +96,8 @@ namespace app::one
             xy size = coord.now.local().size;
             int w = gui::metrics::text::height*15;
             int h = gui::metrics::text::height*18;
+            if (w <= 0 or size.x <= 0) return;
+            if (h <= 0 or size.y <= 0) return;
             w = size.x / (size.x / w);
             h = size.y / (size.y / h);
             

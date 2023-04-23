@@ -71,6 +71,8 @@ namespace app::one
             stage.theme ?
             stage.theme->path:
             red(bold(path));
+            where.replace_all(
+            "/", blue("/"));
         }
 
         void on_change (void* what) override
@@ -99,6 +101,14 @@ namespace app::one
                     break;
                 }
             }
+
+            if (what == &volume)
+                for (auto& s: stages)
+                    s.volume = volume;
+
+            if (what == &mute)
+                for (auto& s: stages)
+                    s.mute = mute;
         }
     };
 }

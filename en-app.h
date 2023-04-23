@@ -26,8 +26,9 @@ widget<App>
     gui::button trans;
 
     sfx::media::playback play;
-    gui::button slower;
-    gui::button faster;
+    gui::button slow;
+    gui::button fast;
+    gui::button speed;
     gui::button mute;
 
     gui::console report;
@@ -47,6 +48,19 @@ widget<App>
         Conon.text.text = "\xE2""\x98""\xB7"; // Trigram For Earth
         dicon.text.text = "dictionary";
         trans.text.text = "rus";
+        slow .text.text = "slower";
+        fast .text.text = "faster";
+        speed.text.text = sys::settings::load("app::speed", "1.0");
+        app::speed = std::stof(speed.text.text);
+        mute .text.text = "mute";
+        mute .kind = gui::button::toggle;
+        slow.repeat_delay = 0ms;
+        fast.repeat_delay = 0ms;
+        slow.repeat_lapse = 16ms;
+        fast.repeat_lapse = 16ms;
+        slow.repeating = true;
+        fast.repeating = true;
+        speed.enabled = false;
         onetwo.buttons(0).text.text = "course";
         onetwo.buttons(1).text.text = "catalogs";
         onetwo.maxwidth = max<int>();
@@ -85,15 +99,21 @@ widget<App>
         int l = splitter1.set("app::splitter1",  7,  9, 11);
         int r = splitter2.set("app::splitter2", 50, 60, 70);
 
-        play.enabled = onetwo.selected.now == 0 and not Conon.on.now;
-        play  .coord = xywh(l+0*w+0*v, H-h+d, 2*w, h-d-d);
+        slow  .coord = xywh(l+0*w+0*v, H-h+d, 2*v, h-d-d);
+        speed .coord = xywh(l+0*w+2*v, H-h+d, 1*v, h-d-d);
+        fast  .coord = xywh(l+0*w+3*v, H-h+d, 2*v, h-d-d);
+        mute  .coord = xywh(l+0*w+5*v, H-h+d, 2*v, h-d-d);
+
+        play  .coord = xywh(l+0*w+8*v, H-h+d, 2*w, h-d-d);
+        play.enabled = onetwo.selected.now == 0
+        and not Conon.on.now;
 
         conon .coord = xywh(r-3*w-3*v, H-h+d, 1*v, h-d-d);
         Conon .coord = xywh(r-3*w-2*v, H-h+d, 1*v, h-d-d);
         trans .coord = xywh(r-3*w-1*v, H-h+d, 1*v, h-d-d);
         onetwo.coord = xywh(r-3*w-0*v, H-h+d, 2*w, h-d-d);
         dicon .coord = xywh(r-1*w-0*v, H-h+d, 1*w, h-d-d);
-        where .coord = xywh(r+1*w-0*v, H-h+d,99*w, h-d-d);
+        where .coord = xywh(r+0*w+1*v, H-h+d, 9*w, h-d-d);
 
         if (not conon.on.now) l = 0;
         if (not dicon.on.now) r = W;
@@ -148,8 +168,38 @@ widget<App>
         if (what == &ones
         or  what == &Ones
         or  what == &one)
-            where.text =
+            where.html =
             one.where;
+
+        if (what == &slow)
+        {
+            str s = speed.text.text;
+            double k = std::stof(s);
+            if (k > 0.19) k -= 0.1,
+            app::speed = k,
+            speed.text.text =
+            std::format("{:1.1f}",k);
+            sys::settings::save("app::speed",
+            speed.text.text);
+        }
+        if (what == &fast)
+        {
+            str s = speed.text.text;
+            double k = std::stof(s);
+            if (k < 9.81) k += 0.1,
+            app::speed = k,
+            speed.text.text =
+            std::format("{:1.1f}",k);
+            sys::settings::save("app::speed",
+            speed.text.text);
+        }
+
+        if (what == &mute)
+        {
+            one.mute = mute.on;
+            dic.left.quot.object.mute.on =
+            mute.on;
+        }
     }
 
     bool mouse_sensible (xy) override { return true; }

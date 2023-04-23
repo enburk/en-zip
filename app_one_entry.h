@@ -17,6 +17,7 @@ namespace app::one
         property<int>  number = -1;
         property<bool> translated = false;
 
+        gui::time Stay;
         gui::time stay;
         gui::time start;
         sys::thread thread;
@@ -98,14 +99,14 @@ namespace app::one
             str text = doc::html::untagged(html);
 
             start = gui::time::now;
-            stay  = gui::time{(int)((1000 +
+            stay  = gui::time{1000 +
             video_index.title.size() * 30 +
             audio_index.title.size() * 00 +
             video_index.credit.size() * 10 +
             audio_index.credit.size() * 10 +
             video_index.comment.size() * 0 +
             audio_index.comment.size() * 0 +
-            text.size() * 40) / speed)};
+            text.size() * 40};
 
             script.html = "";
             Script.html = html;
@@ -187,6 +188,7 @@ namespace app::one
                 vudio.play();
                 if (pixed) logs::media << media::log(video_index);
                 if (vocal) logs::media << media::log(audio_index);
+                stay  = gui::time{(int)(Stay.ms/speed)};
                 start = gui::time::now;
             }
         }

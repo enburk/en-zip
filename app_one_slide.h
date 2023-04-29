@@ -36,6 +36,19 @@ namespace app::one
             current = 0;
         }
 
+        void show ()
+        {
+            for (auto& e: entries)
+            e->show();
+        }
+
+        void hide ()
+        {
+            for (auto& e: entries)
+            e->stop(),
+            e->hide();
+        }
+
         void play ()
         {
             medio.stay();

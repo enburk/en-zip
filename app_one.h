@@ -10,6 +10,7 @@ namespace app::one
         stage& stage = stages[1];
         str    where;
 
+        property<bool> playmode = false;
         property<bool> translated = false;
 
         sfx::media::medio medio;
@@ -33,7 +34,7 @@ namespace app::one
         void reload () try
         {
             go(sys::settings::load(
-              "app:one::path", ""));
+              "app::one::path", ""));
         }
         catch (std::exception const& e) {
             logs::errors << bold(red(
@@ -44,18 +45,26 @@ namespace app::one
             medio.stay();
             medio.play();
             stage.play();
+            notify();
         }
         void stop ()
         {
             medio.stop();
             stage.stop();
+            notify();
         }
 
         void next ()
         {
+            stage.next();
+            notify();
         }
         void prev ()
         {
+            medio.stop();
+            stage.stop();
+            stage.prev();
+            notify();
         }
 
         void Next ()
@@ -69,12 +78,19 @@ namespace app::one
         {
             stage.where = course.find(path);
             stage.fill();
+
             where =
             stage.theme ?
+            stage.theme->path:red(bold(path));
+            where.replace_all("/", blue("/"));
+            where.replace_all("''Extra''",
+                extracolor("Extra"));
+
+            sys::settings::save(
+            "app::one::path",
+            stage.theme ?
             stage.theme->path:
-            red(bold(path));
-            where.replace_all(
-            "/", blue("/"));
+                "");
         }
 
         void on_change (void* what) override
@@ -93,17 +109,24 @@ namespace app::one
                 case state::paused:
                     stage.show();
                     stage.play();
+                    notify();
                     break;
                 case state::finished:
                     //stage.next();
                     //stage.show();
                     //stage.play();
                     medio.done();
+                    notify();
                     break;
                 default:
                     break;
                 }
             }
+
+            if (what == &playmode)
+                for (auto& s: stages)
+                    s.playmode =
+                      playmode;
 
             if (what == &translated)
                 for (auto& s: stages)

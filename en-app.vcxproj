@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="abc.h" />
     <ClInclude Include="app.h" />
     <ClInclude Include="app_contents+.h" />
     <ClInclude Include="app_contents.h" />

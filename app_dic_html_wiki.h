@@ -2,40 +2,6 @@
 #include "app.h"
 namespace app::dic
 {
-    auto bold_italic = [](str s)
-    {
-        str html;
-        int apostrophes = 0;
-        bool bold = false;
-        bool ital = false;
-        s += ' '; // proceed ending apostrophe
-        for(char c : s)
-        {
-            if (c == '\'' ) apostrophes++; else
-            {
-                if (apostrophes >= 5 ) {
-                    apostrophes -= 5;
-                    html += bold ? "</b>" : "<b>"; bold = !bold;
-                    html += ital ? "</i>" : "<i>"; ital = !ital;
-                }
-                if( apostrophes >= 3 ) {
-                    apostrophes -= 3;
-                    html += bold ? "</b>" : "<b>"; bold = !bold;
-                }
-                if( apostrophes >= 2 ) {
-                    apostrophes -= 2;
-                    html += ital ? "</i>" : "<i>"; ital = !ital;
-                }
-                html += str('\'', apostrophes);
-                apostrophes = 0;
-                html += c;
-            }
-        }
-        if (ital) html += "</i>";
-        if (bold) html += "</b>";
-        return html;
-    };
-
     str wiki2html (eng::dictionary::entry entry, array<str> const& links)
     {
         entry.title.replace_all("&", "&amp;");

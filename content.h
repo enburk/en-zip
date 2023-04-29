@@ -75,6 +75,11 @@ namespace content
                 return a.name < b.name;
             });
 
+            for (auto& Unit: units)
+            for (auto& unit: Unit.units)
+                unit.parent =
+                &Unit;
+
             for (auto& unit: units)
                 unit.sort();
         }
@@ -104,6 +109,11 @@ namespace content
 
                 i = j;
             }
+
+            for (auto& Unit: units)
+            for (auto& unit: Unit.units)
+                unit.parent =
+                &Unit;
 
             for (auto& unit: units)
                 unit.shuffle();

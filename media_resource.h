@@ -28,9 +28,9 @@ namespace media
             fn = un_msdos(fn);
             fn.strip();
 
-            auto check = [path](str name) {
-                if (name == "") return false;
-                if (not name.contains("}}"))
+            auto check = [path](str s) {
+                if (s == "") return false;
+                if (not s.contains("}}"))
                 logs::err << red(bold(
                 "no matching }}: " +
                  path.string()));
@@ -39,7 +39,15 @@ namespace media
             yadda = fn.extract_from("###");
             title = fn.extract_upto("{{"); bool meta_present = check(fn);
             meta  = fn.extract_upto("}}");
-            yadda = fn;
+
+            str optio = title.extract_from("##");
+            str links = title.extract_from("[" ); links.strip("[]");
+            comment   = title.extract_from("%%");
+            sense     = title.extract_from("@" );
+
+            if (fn.starts_with("## "))
+                optio += fn; else
+                yadda += fn;
 
             if (meta_present) // even if empty
             {
@@ -66,14 +74,6 @@ namespace media
                 if (credit == "")
                     credit = "-";
             }
-
-            str optio = title.extract_from("##");
-            str links = title.extract_from("[" ); links.strip("[]");
-            comment   = title.extract_from("%%");
-            sense     = title.extract_from("@" );
-
-            if (yadda.starts_with("## "))
-                optio += yadda;
 
             bool ok = title.rebracket("{","}", [&](str link)
             {
@@ -130,7 +130,7 @@ namespace media
             if (not entries.empty()) s += " [" + str(entries, "][") + "]";
             if (not options.empty()) s += " ## " + str(options, " ## ");
             if (meta != "") s += " {{" + meta + "}}";
-            if (yadda != "") s += " " + yadda;
+            if (yadda != "") s += " ### " + yadda;
             return to_msdos(s);
         }
     };

@@ -27,7 +27,8 @@ namespace app
                 and name.  ends_with("''")) {
                     name.truncate(); name.erase(0);
                     name.truncate(); name.erase(0);
-                    name = lightblue(name); }
+                    name = extracolor(
+                    name); }
 
                 auto subunits = fill(unit, level+1);
 

@@ -57,7 +57,8 @@ namespace app
                 and s.  ends_with("''")) {
                     s.truncate(); s.erase(0);
                     s.truncate(); s.erase(0);
-                    s = lightblue(s); }
+                    s = extracolor(
+                    s); }
                 return s;
             };
 
@@ -154,6 +155,8 @@ namespace app
                 coord.was.size !=
                 coord.now.size)
             {
+                canvas.coord =
+                coord.now.local();
                 replane();
                 refresh();
             }

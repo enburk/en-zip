@@ -111,7 +111,8 @@ namespace studio::one
                 and name.  ends_with("''")) {
                     name.truncate(); name.erase(0);
                     name.truncate(); name.erase(0);
-                    name = lightblue(name); }
+                    name = extracolor(
+                    name); }
 
                 str html;
                 for (int i=0; i<record.level-1; i++) html += mspace;

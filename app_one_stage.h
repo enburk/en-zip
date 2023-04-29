@@ -9,6 +9,7 @@ namespace app::one
         sfx::media::medio medio;
         widgetarium<slide> slides;
         widgetarium<entry> entries;
+        property<bool> playmode = false;
         property<bool> translated = false;
         int current = 0;
         int Height = 0;
@@ -69,6 +70,8 @@ namespace app::one
                         auto& e = entries[i++];
                         e.translated = translated;
                         e.number = leaf.entry;
+                        e.new_topic = false;
+                        e.new_chain = false;
                         e.hide();
                         e.load();
                     }
@@ -85,7 +88,6 @@ namespace app::one
 
             entries.truncate(i);
 
-            height = 0;
             current = 0;
             resize();
             load();
@@ -93,6 +95,8 @@ namespace app::one
 
         void resize ()
         {
+            height = 0;
+            Height = 0;
             xy size = coord.now.local().size;
             int w = gui::metrics::text::height*15;
             int h = gui::metrics::text::height*18;
@@ -100,6 +104,7 @@ namespace app::one
             if (h <= 0 or size.y <= 0) return;
             w = size.x / (size.x / w);
             h = size.y / (size.y / h);
+            height = h;
             
             int i = 0; xy p; int y = 0;
 
@@ -142,6 +147,9 @@ namespace app::one
 
             for (auto& s: slides)
             {
+                s.mute = mute;
+                s.volume = volume;
+
                 int hh = 0;
                 bool pixed = false;
 
@@ -167,8 +175,18 @@ namespace app::one
             if (entries.empty())
                 fill();
 
-            medio.play();
-            playslide();
+            if (playmode.now)
+            {
+                medio.play();
+                playslide();
+            }
+            else
+            {
+                medio.stay();
+                current = slides.size()-1;
+                for (slide& s: slides)
+                s.show();
+            }
         }
 
         void stop ()
@@ -178,41 +196,45 @@ namespace app::one
             slides[current].stop();
         }
 
-        void scroll (int delta)
-        {
-            int top =
-            slides.empty() ? 0 :
-            slides.front().coord.to.y;
-
-            int
-            newtop = top + delta;
-            newtop = min(0, max(newtop, -(height - coord.to.h)));
-
-            delta = newtop - top;
-
-            for (auto& e: entries) e.shift(xy{0,delta}, 500ms);
-            for (auto& s: slides ) s.shift(xy{0,delta}, 500ms);
-        }
-
-        bool on_mouse_wheel (xy, int delta) override
-        {
-            int h =
-            slides.empty() ? 0 :
-            slides.front().coord.now.h;
-            scroll(delta < 0 ? -h : h);
-            return true;
-        }
-
         void playslide ()
         {
-            if (slides.empty()) return;
-            slides[current].show();
+            if (
+            slides.empty()) return;
             slides[current].play();
-            xywh r0 = slides[0].coord.to;
-            xywh r1 = slides[current].coord.to;
-            height = max(height, r1.y - r0.y + r0.h);
-            int d = r1.y + r1.h - coord.to.h;
-            if (d > 0) scroll(-d);
+            scroll(-height);
+        }
+
+        void showslide ()
+        {
+            if (
+            slides.empty()) return;
+            slides[current].show();
+            scroll(-height);
+        }
+
+        void hideslide ()
+        {
+            if (
+            slides.empty()) return;
+            slides[current].hide();
+            scroll(0);
+        }
+
+        void prev ()
+        {
+            hideslide();
+            if (current == 0) return;
+            current--;
+            scroll(0);
+        }
+
+        void next ()
+        {
+            showslide();
+            if (current >= slides.size()-1) return;
+            current++;
+            if (status != state::playing)
+            showslide();
         }
 
         void on_change (void* what) override
@@ -253,6 +275,36 @@ namespace app::one
             if (what == &mute)
                 for (slide& s: slides)
                     s.mute = mute;
+        }
+
+        void scroll (int delta)
+        {
+            int top =
+            slides.empty() ? 0 :
+            slides.front().coord.to.y;
+
+            int bottom =
+            slides.empty() ? 0 :
+            slides[current].coord.to.y +
+            slides[current].coord.to.h;
+
+            int h = bottom - top;
+
+            int
+            newtop = top + delta;
+            newtop = min(0, max(newtop,
+            coord.to.h - h));
+
+            delta = newtop - top;
+
+            for (auto& e: entries) e.shift(xy{0,delta}, 500ms);
+            for (auto& s: slides ) s.shift(xy{0,delta}, 500ms);
+        }
+
+        bool on_mouse_wheel (xy, int delta) override
+        {
+            scroll(delta < 0 ? -height : height);
+            return true;
         }
     };
 }

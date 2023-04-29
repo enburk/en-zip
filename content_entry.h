@@ -222,6 +222,8 @@ namespace content::in
                 s += "<br>" + small(dark(comment));
             }
 
+            s = bold_italic(s);
+
             html = big(s);
 
             if (opt.external.
@@ -244,6 +246,7 @@ namespace content::in
                     comment.replace_all(marker, italic(marker));
                     s += "<br>" + small(gray(comment));
                 }
+                s = bold_italic(s);
 
                 html += "<br>" + dark(s);
             }

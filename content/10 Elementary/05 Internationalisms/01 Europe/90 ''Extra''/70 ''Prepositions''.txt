@@ -1,7 +1,8 @@
-preposition = предлог, ~ препозиция # 10+
+prepositions = предлоги # 10+ /// , ~ препозиция
 
-on          = на                    /// # polysemic
-in          = в
+on           = на       /// # polysemic
+in           = в
+
 
 
 

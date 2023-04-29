@@ -26,6 +26,7 @@ widget<App>
     gui::button trans;
 
     sfx::media::playback play;
+    gui::button mode;
     gui::button slow;
     gui::button fast;
     gui::button speed;
@@ -33,6 +34,8 @@ widget<App>
 
     gui::console report;
     gui::console errors;
+
+    bool first_time = true;
 
     App ()
     {
@@ -44,23 +47,26 @@ widget<App>
         conon.kind = gui::button::toggle;
         Conon.kind = gui::button::toggle;
         trans.kind = gui::button::toggle;
-        trans.on = sys::settings::load("app::rus", 0);
+        mode .kind = gui::button::toggle;
+        mute .kind = gui::button::toggle;
+
+        trans.on = sys::settings::load("app::rus",  0);
+        mute .on = sys::settings::load("app::mute", 0);
+        mode .on = sys::settings::load("app::mode", 1);
+        speed.text.text = sys::settings::load("app::speed", "1.0");
+
         conon.text.text = "\xE2""\x98""\xB0"; // Trigram For Heaven
         Conon.text.text = "\xE2""\x98""\xB7"; // Trigram For Earth
         dicon.text.text = "dictionary";
         trans.text.text = "rus";
         slow .text.text = "slower";
         fast .text.text = "faster";
-        speed.text.text = sys::settings::load("app::speed", "1.0");
-        app::speed = std::stof(speed.text.text);
+        mode .text.text = "playing";
         mute .text.text = "mute";
-        mute .kind = gui::button::toggle;
         slow.repeat_delay = 0ms;
         fast.repeat_delay = 0ms;
         slow.repeat_lapse = 16ms;
         fast.repeat_lapse = 16ms;
-        slow.repeating = true;
-        fast.repeating = true;
         speed.enabled = false;
         onetwo.buttons(0).text.text = "course";
         onetwo.buttons(1).text.text = "catalogs";
@@ -93,19 +99,20 @@ widget<App>
     {
         int W = coord.now.w; if (W <= 0) return;
         int H = coord.now.h; if (H <= 0) return;
-        int w = gui::metrics::text::height*5;
-        int v = gui::metrics::text::height*2;
+        int w = gui::metrics::text::height*4;
+        int v = gui::metrics::text::height*5/3;
         int h = gui::metrics::text::height*13/10;
         int d = gui::metrics::line::width*2;
         int l = splitter1.set("app::splitter1",  7,  9, 11);
         int r = splitter2.set("app::splitter2", 50, 60, 70);
 
-        slow  .coord = xywh(l+0*w+0*v, H-h+d, 2*v, h-d-d);
-        speed .coord = xywh(l+0*w+2*v, H-h+d, 1*v, h-d-d);
-        fast  .coord = xywh(l+0*w+3*v, H-h+d, 2*v, h-d-d);
-        mute  .coord = xywh(l+0*w+5*v, H-h+d, 2*v, h-d-d);
+        mode  .coord = xywh(l+0*w+0*v, H-h+d, 2*v, h-d-d);
+        slow  .coord = xywh(l+0*w+2*v, H-h+d, 2*v, h-d-d);
+        speed .coord = xywh(l+0*w+4*v, H-h+d, 1*v, h-d-d);
+        fast  .coord = xywh(l+0*w+5*v, H-h+d, 2*v, h-d-d);
+        mute  .coord = xywh(l+0*w+7*v, H-h+d, 2*v, h-d-d);
 
-        play  .coord = xywh(l+0*w+8*v, H-h+d, 2*w, h-d-d);
+        play  .coord = xywh(r-5*w-4*v, H-h+d, 2*w, h-d-d);
         play.enabled = onetwo.selected.now == 0
         and not Conon.on.now;
 
@@ -147,6 +154,12 @@ widget<App>
             coord.now.size)
             refresh();
 
+        if (what == &alpha
+        and alpha.to == 255
+        and first_time)
+            first_time = false,
+            one.play();
+
         if (what == &splitter1) refresh();
         if (what == &splitter2) refresh();
 
@@ -165,12 +178,22 @@ widget<App>
 
         if (what == &ones) one.go(ones.selected);
         if (what == &Ones) one.go(Ones.selected);
+        if (alpha.to == 255)
+        if (what == &ones
+        or  what == &Ones)
+            one.play();
 
         if (what == &ones
         or  what == &Ones
         or  what == &one)
             where.html =
             one.where;
+
+        if (what == &one)
+        {
+            play.play.show(one.status != sfx::media::state::playing);
+            play.stop.show(one.status == sfx::media::state::playing);
+        }
 
         if (what == &trans)
         {
@@ -183,33 +206,58 @@ widget<App>
         if (what == &slow)
         {
             str s = speed.text.text;
-            double k = std::stof(s);
-            if (k > 0.19) k -= 0.1,
-            app::speed = k,
+            double k = std::stof(s) - 0.1;
+            if (k < 0.1) k = 0.1;
             speed.text.text =
-            std::format("{:1.1f}",k);
-            sys::settings::save("app::speed",
-            speed.text.text);
+            std::format("{:1.1f}", k);
         }
         if (what == &fast)
         {
             str s = speed.text.text;
-            double k = std::stof(s);
-            if (k < 9.81) k += 0.1,
-            app::speed = k,
+            double k = std::stof(s) + 0.1;
+            if (k > 9.9) k = 9.9;
             speed.text.text =
-            std::format("{:1.1f}",k);
+            std::format("{:1.1f}", k);
+        }
+        if (what == &speed.text.update_text)
+        {
+            app::speed = std::stof(speed.text.text);
             sys::settings::save("app::speed",
             speed.text.text);
+        }
+
+        if (what == &mode)
+        {
+            one.playmode = mode.on;
+            sys::settings::save("app::mode",
+            mode.on? 1:0);
         }
 
         if (what == &mute)
         {
             one.mute = mute.on;
-            dic.left.quot.object.mute.on =
-            mute.on;
+            dic.left.quot.object.mute.on = mute.on;
+            sys::settings::save("app::mute",
+            mute.on? 1:0);
         }
     }
 
     bool mouse_sensible (xy) override { return true; }
+    bool on_mouse_wheel (xy p, int delta) override
+    {
+        if (slow .coord.now.includes(p)
+        or  fast .coord.now.includes(p)
+        or  speed.coord.now.includes(p))
+        {
+            str s = speed.text.text;
+            double k = std::stof(s);
+            k += 0.1 * delta/120;
+            if (k < 0.1) k = 0.1;
+            if (k > 9.9) k = 9.9;
+            speed.text.text =
+            std::format("{:1.1f}", k);
+            return true;
+        }
+        return false;
+    }
 };

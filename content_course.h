@@ -120,7 +120,9 @@ namespace content::in
             if (it == unit->units.end())
                 return unit;
 
-            return find(path, &*it);
+            unit = &*it;
+            return path == "" ? unit :
+                find(path, unit);
         }
     };
 }

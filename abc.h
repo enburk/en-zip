@@ -21,6 +21,7 @@ str big       (str s) { return "<big>" + s + "</big>"; }
 str small     (str s) { return "<small>" + s + "</small>"; }
 str blue      (str s) { return "<font color=#000080>" + s + "</font>"; }
 str lightblue (str s) { return "<font color=#0000FF>" + s + "</font>"; }
+str extracolor(str s) { return "<font color=#FF8F00>" + s + "</font>"; }
 str dark      (str s) { return "<font color=#505050>" + s + "</font>"; }
 str gray      (str s) { return "<font color=#808080>" + s + "</font>"; }
 str green     (str s) { return "<font color=#008000>" + s + "</font>"; }
@@ -48,6 +49,40 @@ str to_msdos (str s)
     s.replace_all(":", "..");
     return s;
 }
+
+str bold_italic (str s)
+{
+    str html;
+    int apostrophes = 0;
+    bool bold = false;
+    bool ital = false;
+    s += ' '; // proceed ending apostrophe
+    for(char c : s)
+    {
+        if (c == '\'' ) apostrophes++; else
+        {
+            if (apostrophes >= 5 ) {
+                apostrophes -= 5;
+                html += bold ? "</b>" : "<b>"; bold = !bold;
+                html += ital ? "</i>" : "<i>"; ital = !ital;
+            }
+            if( apostrophes >= 3 ) {
+                apostrophes -= 3;
+                html += bold ? "</b>" : "<b>"; bold = !bold;
+            }
+            if( apostrophes >= 2 ) {
+                apostrophes -= 2;
+                html += ital ? "</i>" : "<i>"; ital = !ital;
+            }
+            html += str('\'', apostrophes);
+            apostrophes = 0;
+            html += c;
+        }
+    }
+    if (ital) html += "</i>";
+    if (bold) html += "</b>";
+    return html;
+};
 
 struct optional_log
 {

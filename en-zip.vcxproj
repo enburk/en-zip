@@ -160,7 +160,6 @@
     <ClCompile Include="studio.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="abc.h" />
     <ClInclude Include="content.h" />
     <ClInclude Include="content_course.h" />
     <ClInclude Include="content_entry.h" />

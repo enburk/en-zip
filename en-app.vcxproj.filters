@@ -56,6 +56,7 @@
       <Filter>app-one</Filter>
     </ClInclude>
     <ClInclude Include="en-app.h" />
+    <ClInclude Include="abc.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

@@ -26,8 +26,8 @@ namespace app::dic::left
             mute.text.text = "mute";
             mute.kind = gui::button::toggle;
             mute.on = true;
-            prev.repeating = true;
-            next.repeating = true;
+            prev.repeat_lapse = 500ms;
+            next.repeat_lapse = 500ms;
             reload();
         }
 

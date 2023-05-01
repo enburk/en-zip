@@ -21,14 +21,14 @@ namespace content::out
             using logs::err;
 
             if (level < 3)
-            out << "scan " + dir.string();
+            out << "scan " + str(dir);
             for (std::filesystem::directory_iterator
                 next(dir), end; next != end; ++next)
             {
                 path path = next->path();
                 str fn = is_directory(path) ?
-                path.filename().string():
-                path.stem().string();
+                str(path.filename()):
+                str(path.stem());
 
                 if (fn.starts_with("."))
                     continue;
@@ -39,7 +39,7 @@ namespace content::out
                 or  not str(fn[1]).digital()
                 or  is_regular_file(path)
                 and path.extension() != ".txt") {
-                    err << red(path.string());
+                    err << red(str(path));
                     continue; }
 
                 unit unit;

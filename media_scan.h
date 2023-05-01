@@ -16,13 +16,13 @@ namespace media::scan
         using logs::err;
 
         if (level < 2)
-        out << "scan " + dir.string();
+        out << "scan " + str(dir);
         for (std::filesystem::directory_iterator
             next(dir), end; next != end; ++next)
         {
             path path;
             path = next->path();
-            if (path.filename().string().
+            if (str(path.filename()).
                 starts_with("."))
                 continue;
 
@@ -36,8 +36,8 @@ namespace media::scan
             if (not resource.options.contains("xlam"))
             {
                 if (is_directory(path))
-                dataelog << ">>> " + dir.string() + "/";
-                dataelog << path.filename().string();
+                dataelog << ">>> " + str(dir) + "/";
+                dataelog << str(path.filename());
                 dataelog << "\n";
             }
 
@@ -61,7 +61,7 @@ namespace media::scan
             else if (is_regular_file(path))
             {
                 resource.id = common.id;
-                resource.id = path.stem().string() +
+                resource.id = str(path.stem()) +
                 resource.id + path.extension().string();
 
                 str ext = str(path.extension().string()).ascii_lowercased();
@@ -99,7 +99,7 @@ namespace media::scan
                         options += o; else
                         logs::err << red(bold(
                         "duplicate option " + o +
-                        ": " + path.string()));
+                        ": " + str(path)));
                 }
 
                 if (resource.credit == "-")
@@ -119,13 +119,13 @@ namespace media::scan
                     if (resource.sense != ""
                     and not ee.contains(resource.sense))
                     err << blue(
-                    dir.string() + "/" +
+                    str(dir) + "/" +
                     resource.title +" {" +
                     resource.sense + "}");
 
                     if (resource.title.contains(one_of("{}")))
                     err << yellow(
-                    dir.string() + "/" +
+                    str(dir) + "/" +
                     resource.title);
                 }
                 if  (resource.kind == "audio")
@@ -139,7 +139,7 @@ namespace media::scan
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))
                     err << red(
-                    dir.string() + "/" +
+                    str(dir) + "/" +
                     resource.title +
                     " OPTION: ["
                     + option +
@@ -154,7 +154,7 @@ namespace media::scan
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))
                     err << red(
-                    dir.string() + "/" +
+                    str(dir) + "/" +
                     resource.title +
                     " OPTION: ["
                     + option +

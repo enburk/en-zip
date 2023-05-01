@@ -13,8 +13,8 @@ namespace studio::dic
             wordlisttype(str filename)
             {
                 words.clear();
-                if (not std::filesystem::exists(filename.c_str())) return;
-                array<str> lines = sys::in::text(filename.c_str()).lines();
+                if (not std::filesystem::exists(str2path(filename))) return;
+                array<str> lines = sys::in::text(str2path(filename)).lines();
                 for (str line: lines)
                 {
                     line.strip(); if (line == "") continue;

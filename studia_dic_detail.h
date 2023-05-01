@@ -44,7 +44,7 @@ namespace studio::dic
                 else
                 sys::out::write(txtpath, s.lines());
                 // crop can be changed
-                select(datpath.string());
+                select(str(datpath));
             }
 
             s = filename.text; s.strip();
@@ -60,7 +60,7 @@ namespace studio::dic
                 rename(txtpath, txtpath_);
                 renames[datpath] = datpath_;
                 // crop can be changed
-                select(datpath_.string());
+                select(str(datpath_));
             }
         }
         catch (std::exception const& e)
@@ -75,7 +75,7 @@ namespace studio::dic
         {
             save();
 
-            datpath = info.c_str();
+            datpath = str2path(info);
 
             std::unordered_set<path> anticycle;
             while (not exists(datpath))
@@ -106,7 +106,7 @@ namespace studio::dic
             tree += gray(">> ") + x + "<br>";
 
             filepath.html = tree;
-            filename_text = datpath.stem().string();
+            filename_text = str(datpath.stem());
             textfile_text = sys::in::optional_text(txtpath);
             filename.text = filename_text;
             textfile.text = textfile_text;
@@ -202,7 +202,7 @@ namespace studio::dic
                 path txtpath_ = dir / txtpath.filename();
                 rename(datpath, datpath_); if (exists(txtpath))
                 rename(txtpath, txtpath_);
-                select(datpath.string());
+                select(str(datpath));
             }
             catch (std::exception const& e)
             {
@@ -218,7 +218,7 @@ namespace studio::dic
                 path txtpath_ = dir / txtpath.filename();
                 rename(datpath_, datpath); if (exists(txtpath_))
                 rename(txtpath_, txtpath);
-                select(datpath.string());
+                select(str(datpath));
             }
             catch (std::exception const& e)
             {

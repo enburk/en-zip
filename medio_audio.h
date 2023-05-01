@@ -3,7 +3,7 @@
 #include "media.h"
 namespace media::audio
 {
-    static auto qq (path path){ return "\"" + path.string() + "\""; }
+    static auto qq (path path){ return "\"" + str(path) + "\""; }
 
     static void sox (str begin, path destination, str end = "")
     {
@@ -145,8 +145,8 @@ namespace media::audio
     }
     catch (std::exception & e) { return
         aux::error("media::audio::readsample:"
-        "<br>  path: " + original.string() +
-        "<br>  cache: " + cache.string() +
+        "<br>  path: " + str(original) +
+        "<br>  cache: " + str(cache) +
         "<br>  " + e.what());
     }
 
@@ -167,7 +167,7 @@ namespace media::audio
             ascii_lowercased();
 
         std::filesystem::path fn = std::string(r.id);
-        str stem = fn.stem().string();
+        str stem = str(fn.stem());
         str id = stem + ".ogg";
 
         str cache = "../data/!cache/"

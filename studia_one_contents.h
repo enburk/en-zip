@@ -58,8 +58,8 @@ namespace studio::one
 
             array<str> opens = open.split_by(";");
             for (auto& record: records) if (not record.file)
-            record.open = opens.contains(record.path.string());
-            selected = path.c_str();
+            record.open = opens.contains(str(record.path));
+            selected = str2path(path);
         }
 
         void refresh ()
@@ -100,7 +100,7 @@ namespace studio::one
             for (auto& record: records)
             {
                 if (record.open and not record.file)
-                list_of_opens += record.path.string() + ";";
+                list_of_opens += str(record.path) + ";";
 
                 index++;
                 if (record.level > level)
@@ -148,15 +148,15 @@ namespace studio::one
                 path p = next->path();
                 if (is_directory (p))
                 {
-                    str name = p.filename().string();
+                    str name = str(p.filename());
                     if (name.starts_with(".")) continue;
-                    paths[p.filename().string()] = p;
+                    paths[str(p.filename())] = p;
                 }
                 if (is_regular_file (p))
                 {
                     auto ext = p.extension();
                     if (ext != ".txt") continue;
-                    paths[p.stem().string()] = p;
+                    paths[str(p.stem())] = p;
                 }
             }
 
@@ -239,7 +239,7 @@ namespace studio::one
             {
                 sys::settings::save(
                 "studio::one::content::path",
-                selected.now.string());
+                str(selected.now));
 
                 replane();
                 notify();

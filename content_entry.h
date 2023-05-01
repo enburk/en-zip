@@ -54,7 +54,7 @@ namespace content::out
         entry () = default;
         entry (str s, path path, int line) :  line{line}
         {
-            link = path.string() + "|" +
+            link = str(path) + "|" +
                 std::to_string(line);
 
             s.strip();

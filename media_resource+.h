@@ -26,7 +26,7 @@ namespace media
                     break;
 
                 if (not aux::unicode::ok(line))
-                logs::err << red(bold(path.string() +
+                logs::err << red(bold(str(path) +
                 " !UTF-8: [" + line + "]"));
 
                 if (line.starts_with("**")) {
@@ -52,7 +52,7 @@ namespace media
                         logs::err << red(bold(
                         "external only option " +
                          option + " in .txt: " +
-                         path.string()));
+                         str(path)));
                         continue;
                     }
                     options += option;
@@ -100,7 +100,7 @@ namespace media
             if (not ok)
             logs::err << red(bold(
             "parse links error: " +
-                path.string()));
+                str(path)));
 
             if (comment_lines.size() > 0)
                 comment = str(

@@ -92,7 +92,7 @@ namespace media::video
                     img.size.y > 2500 &&
                     std::filesystem::file_size(original) > 5*1024*1024)
                 {
-                    logs::out << "copy huge " + original.string(); if (not
+                    logs::out << "copy huge " + str(original); if (not
                     std::filesystem::copy_file(original, "../datae_huge"/original.filename(),
                     std::filesystem::copy_options::skip_existing))
                     logs::out << "<b>already exists</b>";
@@ -113,8 +113,8 @@ namespace media::video
     }
     catch (std::exception & e) {return
         aux::error("media::video::readsample:"
-        "<br>  path: " + original.string() +
-        "<br>  cache: " + cache.string() +
+        "<br>  path: " + str(original) +
+        "<br>  cache: " + str(cache) +
         "<br>  crop: " + crop_params +
         "<br>  " + e.what());
     }
@@ -133,7 +133,7 @@ namespace media::video
         str id = r.id; if (crop != "")
         {
             std::filesystem::path fn = std::string(r.id);
-            str stem = fn.stem().string();
+            str stem = str(fn.stem());
             str ext = fn.extension().string();
             str cc = " ## crop " + crop;
             if (not stem.ends_with(cc))

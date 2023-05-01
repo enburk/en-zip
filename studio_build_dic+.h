@@ -273,7 +273,7 @@ namespace studio::dic
             and not r.options.contains("=")
             and not data.assets.contains(&r)) {
                 str ee = str(r.entries, "] [");
-                str path = r.path.string();
+                str path = str(r.path);
                 report::errors += yellow(
                 linked(html(path), "file://" + path)) +
                 red(" [" + ee + "]");
@@ -294,7 +294,7 @@ namespace studio::dic
             for (str& s: rejected) s = html(s);
 
             str title = linked(html(r.title),
-            html("file://" + r.path.string()));
+            html("file://" + str(r.path)));
         
             report::usages += purple(title) +
             blue  (" [" + str(accepted,  "] [") + "]") +

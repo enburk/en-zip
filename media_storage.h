@@ -84,7 +84,7 @@ namespace media::out
             if (size > (std::uintmax_t)(max<int32_t>()))
                 throw std::out_of_range(
                 "media: file too big: "
-                + r.path.string());
+                + str(r.path));
 
             auto ftime = std::filesystem::last_write_time(r.path);
             auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
@@ -142,7 +142,7 @@ namespace media::out
         }
         catch (std::exception & e) {
         return aux::error("media::data::out::source:"
-            "<br> path: " + r.path.string() +
+            "<br> path: " + str(r.path) +
             "<br> " + e.what());
         }
     };

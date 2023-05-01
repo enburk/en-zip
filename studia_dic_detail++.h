@@ -36,7 +36,7 @@ namespace studio::dic
 
             if (source == path{}) return {};
 
-            str stem = source.stem().string();
+            str stem = str(source.stem());
             if (crop != "") stem += " == crop " + crop;
             if (fade != "") stem += " == fade " + fade;
 

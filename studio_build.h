@@ -91,8 +91,8 @@ namespace studio::build
                 for (auto r: mediadata.unsquared)
                     dic::report::errors +=
                     linked(red("unsquared: ") +
-                    r->path.string(), "file://" +
-                    r->path.string());
+                    str(r->path), "file://" +
+                    str(r->path));
 
                 dic::reportage();
 

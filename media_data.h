@@ -92,13 +92,13 @@ namespace media::out
             if (not unidentified.empty()) {
             err << "unidentified files:";
             for (auto path: unidentified)
-            err << path.string(); }
+            err << str(path); }
 
             for (auto& [id, paths]: report::id2path)
             if  (paths.size() > 1) {
             err << "files with same id: " + id;
             for (auto path: paths)
-            err << path.string(); }
+            err << str(path); }
         }
         int add (resource* r, int app)
         {
@@ -113,7 +113,7 @@ namespace media::out
             if (new_one)
                 new_ones.insert(r),
                 logs::out << blue("new: ") +
-                html(r->path.string());
+                html(str(r->path));
 
             if (app > 0
             and not r->options.contains("qropt!"))
@@ -137,7 +137,7 @@ namespace media::out
             m.location = location;
 
             media_index += m;
-            media_paths += r->path.string();
+            media_paths += str(r->path);
 
             return index;
         }

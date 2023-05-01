@@ -22,8 +22,8 @@ namespace media
             if (not exists(path)) return;
 
             str fn = is_directory(path) ?
-                path.filename().string():
-                path.stem().string();
+                str(path.filename()):
+                str(path.stem());
 
             fn = un_msdos(fn);
             fn.strip();
@@ -33,7 +33,7 @@ namespace media
                 if (not s.contains("}}"))
                 logs::err << red(bold(
                 "no matching }}: " +
-                 path.string()));
+                str(path)));
                 return true; };
 
             yadda = fn.extract_from("###");
@@ -101,7 +101,7 @@ namespace media
             if (not ok)
             logs::err << red(bold(
             "parse links error: " +
-                path.string()));
+                str(path)));
 
             abstract = title;
             entries += links.split_strip_by("][");

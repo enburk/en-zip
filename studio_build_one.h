@@ -87,8 +87,10 @@ namespace studio::one
         for (auto& r: data.resources)
         {
             array<str> sss;
-            sss += r.abstract; if (r.kind == "video")
+            if (r.kind == "video")
             sss += r.entries;
+            sss += r.abstract;
+
             for (str ss: sss)
             for (str s: ss.split_by("/"))
             {
@@ -114,6 +116,10 @@ namespace studio::one
             for (str& s: entry.vocabulary)
             for (res& r: vocab[s])
             {
+                if (r->kind == "video"
+                and entry.opt.internal.contains("pix-"))
+                    continue;
+
                 data.one_add(i, r);
                 if (r->kind == "audio") {
                 if (r->options.contains("uk")) uk.try_erase(r->abstract);

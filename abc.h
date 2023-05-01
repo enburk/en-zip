@@ -7,6 +7,8 @@
 #include "../auxs/aux_unittest.h"
 
 using sys::byte;
+using sys::str2path;
+using sys::path2str;
 using pix::xy;
 using pix::xywh;
 using pix::xyxy;

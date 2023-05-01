@@ -55,7 +55,7 @@ namespace app::dic::left
 
             for (auto& player: players)
             {
-                player.hide();
+                //player.hide();
                 player.coord = coord.now.local();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;

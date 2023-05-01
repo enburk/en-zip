@@ -59,30 +59,30 @@ namespace content::out
 
             s.strip();
             s.replace_all("\t", " ");
-            s.split_by("///", s, comment);
-            s.split_by( "#" , s, rus); opt = options(rus);
-            s.split_by(" = ", s, rus); eng = s;
-            comment.strip();
-            eng.strip();
-            rus.strip();
 
-            for (str o: opt.unknown)
-            errors += "UNKNOWN OPTION: " + o;
+            eng = s;
 
-            s = eng;
             if (s == ""
             or  s.starts_with("---")
             or  s.starts_with("==="))
                 return;
 
+            comment = s.extract_from("///");
+
+            opt = s.extract_from("#");
+            rus = s.extract_from("=");
+            eng = s;
+
+            for (str o: opt.unknown)
+            errors += "UNKNOWN OPTION: " + o;
+
             if (s.starts_with(": ")) {
                 en += s.from(2);
                 return; }
 
-            str commt;
-            s.split_by("%%", s, commt);
-            s.split_by("@" , s, sense);
-            s.strip(); sense.strip();
+            str
+            commt = s.extract_from("%%");
+            sense = s.extract_from("@");
 
             if (s.contains(
             one_of ("/|{}()[]")))
@@ -107,6 +107,7 @@ namespace content::out
 
                 for (str marker: Eng_markers)
                 s.replace_all(marker, "");
+                s.replace_all("~~" , "/");
                 s.replace_all("~" , "");
 
                 s.debracket("(",")"); str ss = s;
@@ -257,8 +258,9 @@ namespace content::in
             html.replace_all("]",blue("]"));
             html.replace_all("---", mdash);
             html.replace_all("--" , ndash);
-            html.replace_all("  ~", "~");
-            html.replace_all("~  ", "~");
+            html.replace_all("~~", "~");
+            html.replace_all(" ~", "~");
+            html.replace_all("~ ", "~");
             html.replace_all("~","<br>");
             return html;
         }

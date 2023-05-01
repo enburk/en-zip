@@ -67,6 +67,12 @@ namespace app::one
                     {
                         if (leaf.kind != unit::leaf) continue;
 
+                        if (not translated)
+                        if (course.entries[leaf.entry].eng == ""
+                        or  course.entries[leaf.entry].opt.
+                            external.contains("Ru"))
+                            continue;
+
                         auto& e = entries[i++];
                         e.translated = translated;
                         e.number = leaf.entry;

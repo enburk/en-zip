@@ -12,6 +12,8 @@ namespace studio::dic
         gui::Frame cropper;
         gui::timer loading;
 
+        gui::text::view error;
+
         path source;
         str crop, fade;
         int zoom  = 100;
@@ -23,11 +25,12 @@ namespace studio::dic
         mediadetail () { load({},{},{}); }
        ~mediadetail () { load({},{},{}); }
 
-        xy load (path source, str crop, str fade)
+        xy load (path source, str crop, str fade) try
         {
             this->source = source;
             this->crop = crop;
             this->fade = fade;
+            error.hide();
 
             scale = 100;
             ratio = 50;
@@ -69,6 +72,15 @@ namespace studio::dic
 
             return size;
         }
+        catch (std::exception const& e)
+        {
+            error.html =
+            str(source) + "<br>" +
+            red(bold(aux::unicode::
+            what(e.what())));
+            error.show();
+            return xy{};
+        }
 
         void play () { player.play(); }
         void stop () { player.stop(); }
@@ -105,6 +117,9 @@ namespace studio::dic
 
             player.coord = xywh(x, y,
             size.x, size.y);
+
+            error.coord =
+            coord.now.local();
         }
 
         void on_change (void* what) override

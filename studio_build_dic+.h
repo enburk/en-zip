@@ -275,7 +275,8 @@ namespace studio::dic
                 str ee = str(r.entries, "] [");
                 str path = str(r.path);
                 report::errors += yellow(
-                linked(html(path), "file://" + path)) +
+                linked(html(path),
+                "file://" + path)) +
                 red(" [" + ee + "]");
                 continue; }
 
@@ -293,8 +294,10 @@ namespace studio::dic
             for (str& s: accepted) s = linked(html(s), s);
             for (str& s: rejected) s = html(s);
 
-            str title = linked(html(r.title),
-            html("file://" + str(r.path)));
+            str title = linked(
+                html(r.title),
+                "file://" +
+                str(r.path));
         
             report::usages += purple(title) +
             blue  (" [" + str(accepted,  "] [") + "]") +

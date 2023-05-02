@@ -80,8 +80,6 @@ namespace media
 
             bool ok = title.rebracket("{","}", [&](str link)
             {
-                link.erase(0);
-                link.truncate();
                 if (link != "")
                 {
                     str S, s; bool capital = false;

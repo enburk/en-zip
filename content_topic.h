@@ -36,10 +36,9 @@ namespace content::out
         {
             unit chain;
             options opt;
-            bool entry_leading = true;
-            bool chain_ordered = true;
-            bool entry_ordered = true;
-            int  entry_order = 0;
+            bool leading = true;
+            bool ordered = true;
+            int  order = 0;
 
             for (auto entry: entries)
             {
@@ -51,42 +50,38 @@ namespace content::out
                     if (not
                     chain.units.empty()) co_yield chain;
                     chain.units.clear();
-                    if (chain_ordered)
-                        chain.order++;
                     opt |= entry.opt;
-                    entry_leading = false;
-                    entry_order = 0;
+                    leading = false;
+                    order = 0;
                 }
                 if (entry.eng == ""
                 and entry.rus == "")
                 {
-                    chain_ordered = false;
-                    entry_ordered = false;
+                    ordered = false;
                     continue;
                 }
                 if (entry.eng.starts_with("==="))
                 {
-                    chain_ordered = true;
-                    entry_ordered = true;
+                    chain.order++;
+                    ordered = true;
                     continue;
                 }
                 if (entry.eng.starts_with("---"))
                 {
-                    chain_ordered = false;
-                    entry_ordered = true;
+                    ordered = true;
                     continue;
                 }
 
                 entry.opt |= opt;
 
-                if (entry_leading)
+                if (leading)
                     entry.opt.external
                     += "HEAD";
 
                 unit unit;
-                unit.order = entry_order;
-                if (entry_ordered)
-                    entry_order++;
+                unit.order = order;
+                if (ordered)
+                    order++;
 
                 unit.entry =
                 accumulator.size();

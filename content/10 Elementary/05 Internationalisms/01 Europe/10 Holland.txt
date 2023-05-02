@@ -3,14 +3,14 @@ the Netherlands      = Нидерланды        # pix- # 8+
 Dutch                = нидерландский     # pix- # 8+
 
 gas                  = газ, газовый, ~ наполнять газом
-drill {tool}         = дрель, ~ сверло, сверлить # RANDOM- # 10+
+drill @ tool         = дрель, ~ сверло, сверлить # RANDOM- # 10+
 brandy               = бренди            # 18+
 waffles              = вафли
 rucksack {Br.}       = рюкзак
 mannequin            = манекен           /// , манекенщица (устар.)
 Santa Claus          = Санта-Клаус
 cruise               = круиз             # 10+
-dock {drydock} {Br.} = док               # RANDOM- # 12+
+dock {Br.} @ drydock = док               # RANDOM- # 12+
 skipper              = шкипер            # 14+ /// Dutch ???
 harpoon              = гарпун
 Yankee               = янки              # 16+ /// # DELAY

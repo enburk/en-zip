@@ -111,7 +111,6 @@ namespace media::scan
                 if (not resource.options.contains("{links}"))
                 {
                     static const auto ee =
-                    eng::list::sensitive*
                     eng::lexical_items*
                     eng::lexical_notes*
                     eng::related_items*

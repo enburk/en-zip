@@ -81,6 +81,23 @@ namespace studio::one
             vocab.emplace(s,
             array<res>{});
 
+        std::unordered_set<str> sensitive;
+        for (auto [s,rr]: vocab)
+        {
+            str entry = s;
+            str sense = entry.extract_from("@");
+            if (sense != "") sensitive.
+            emplace(entry);
+        }
+
+        for (auto& entry: course.entries)
+        if (entry.sense == "" and
+            sensitive.contains(entry.eng))
+            report::errors += linked(
+                red(bold("sensless: ")) +
+                html(entry.eng),
+                    entry.link);
+
         out << dark(bold("ONE: SCAN RESOURCES..."));
 
         std::unordered_set<res> unused_resources;
@@ -109,31 +126,36 @@ namespace studio::one
 
         for (auto [i, entry]: enumerate(course.entries))
         {
+            bool
+            nopix = entry.opt.internal.contains("pix-");
             auto en = entry.en;
             auto uk = entry.uk;
             auto us = entry.us;
-            bool vi = entry.opt.internal.contains("pix-");
+            bool vi = nopix;
+
             for (str& s: entry.vocabulary)
             for (res& r: vocab[s])
             {
-                if (r->kind == "video"
-                and entry.opt.internal.contains("pix-"))
+                if (r->kind == "video" and nopix)
                     continue;
 
                 data.one_add(i, r);
+
                 if (r->kind == "audio") {
                 if (r->options.contains("uk")) uk.try_erase(r->abstract);
                 if (r->options.contains("us")) us.try_erase(r->abstract);
-                /******** in any case *******/ en.try_erase(r->abstract); }
-                if (r->kind == "video") vi = true;
+                /*        in any case       */ en.try_erase(r->abstract); }
+                if (r->kind == "video")
+                    vi = true;
             }
+            str s = html(entry.eng);
             str ens = red(bold(" en: " + html(str(en, ", "))));
             str uks = red(bold(" uk: " + html(str(uk, ", "))));
             str uss = red(bold(" us: " + html(str(us, ", "))));
-            if (not en.empty()) report::audiom += linked(html(entry.eng) + ens, entry.link);
-            if (not uk.empty()) report::audiom += linked(html(entry.eng) + uks, entry.link);
-            if (not us.empty()) report::audiom += linked(html(entry.eng) + uss, entry.link);
-            if (not vi        ) report::videom += linked(html(entry.eng), entry.link);
+            if (not en.empty()) report::audiom += linked(s + ens, entry.link);
+            if (not uk.empty()) report::audiom += linked(s + uks, entry.link);
+            if (not us.empty()) report::audiom += linked(s + uss, entry.link);
+            if (not vi        ) report::videom += linked(s + " ", entry.link);
         }
 
         out << dark(bold("ONE: MAKE SUGGESTIONS..."));

@@ -38114,7 +38114,7 @@ drydock [dock@drydock] ## crop b15 ## qrop t10 b23 {{Photo.. Slawomir Pryc $drea
 acetylene dissolved in acetone [acetylene][ethyne][dissolved] ## crop l2 r12 {{Photo.. Paulbroad $dreamstime 13402625}}.jpg
 silica gel [silica][silica gel][desiccant] ## qrop l40 b20 {{Photo.. Atman $dreamstime 36175197}}.jpg
 >>> ../datae\photo_dreamstime/industry tools
-drill @ tool ## crop l10 ## qrop l19 r10 {{Photo.. Phil030 $dreamstime 4492399}}.jpg
+drill @ tool ## crop l10 ## qrop l21 r13 {{Photo.. Phil030 $dreamstime 4492399}}.jpg
 manoeuvre~maneuver ## qrop l16 r17 {{Photo.. Onefivenine $dreamstime 2866182}}.jpg
 >>> ../datae\photo_dreamstime/music
 concert ## crop l20 ## qrop qr {{Photo.. Maxim Tarasyugin $dreamstime 93365606}}.jpg
@@ -38233,7 +38233,7 @@ karate ## qrop t28 b5 {{Photo.. Dragonimages $dreamstime 40218572}}.jpg
 sensei ## qrop qr {{Photo.. Studio Dream $dreamstime 4362516}} Wudang Tai Chi master.jpg
 rodeo ## qrop l21 r10 {{Photo.. Lorpic99 $dreamstime 1375406}}.jpg
 slalom skier [+] ## qrop l14 r19 {{Photo.. Mitchell Gunn $dreamstime 8522999}}.jpg
-tango ## qrop l18 r13 {{Photo.. Alexandre Fagundes De Fagundes $dreamstime 2160463}}.jpg
+tango ## qrop l23 r10 {{Photo.. Alexandre Fagundes De Fagundes $dreamstime 2160463}}.jpg
 >>> ../datae\photo_dreamstime/transport
 caravan ## qrop l14 r9 {{Photo.. Dmitry Rukhlenko $dreamstime 30389002}}.jpg
 >>> ../datae\photo_dreamstime\transport/marine

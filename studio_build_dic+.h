@@ -99,10 +99,6 @@ namespace studio::dic
             if (s.starts_with("to "   )) entries += s.from (3); else
             {}
 
-            if (r.sense != ""
-            and eng::list::sensitive.contains(r.sense))
-            entries += r.sense;
-
             array<str> apostros; auto a = (char*)(u8"’");
             for(auto& e: entries) if (e.contains(a)) apostros += e;
             for(auto& e: apostros) e.replace_all(a, "'");
@@ -112,6 +108,7 @@ namespace studio::dic
             for(auto& entry: entries)
             {
                 entry.strip();
+                str sense = entry.extract_from("@");
                 auto index = vocabulary.index(entry);
                 if (!index) continue;
                 int n = *index;

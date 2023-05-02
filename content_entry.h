@@ -84,6 +84,10 @@ namespace content::out
             commt = s.extract_from("%%");
             sense = s.extract_from("@");
 
+            if (sense.contains("{")
+            or  sense.contains("}"))
+            errors += "SENSE: " + sense;
+
             if (s.contains(
             one_of ("/|{}()[]")))
             anomaly = "{}()[]";
@@ -138,6 +142,10 @@ namespace content::out
             for (str s: ss.split_by("|"))
             vocabulary += s;
             vocabulary.deduplicate();
+
+            if (sense != "")
+            for (str& v: vocabulary)
+            v += "@" + sense;
         }
 
         str formatted (int tab1, int tab2) const

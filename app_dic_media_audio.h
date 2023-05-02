@@ -66,13 +66,6 @@ namespace app::dic::audio
             title.resize(
             title.size()-4);
 
-            if (comment == "" and sense != "")
-            if (eng::lexical_items  .contains(sense)
-            or  eng::lexical_notes  .contains(sense)
-            or  eng::related_items  .contains(sense)
-            or  eng::list::sensitive.contains(sense))
-                comment = sense;
-
             if (comment != "")
             title += "<br>" +
             gray(small(comment));

@@ -51,6 +51,8 @@ namespace content::out
                     chain.units.empty()) co_yield chain;
                     chain.units.clear();
                     opt |= entry.opt;
+                    if (leading)
+                    chain.order++;
                     leading = false;
                     order = 0;
                 }

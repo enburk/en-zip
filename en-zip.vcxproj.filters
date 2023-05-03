@@ -138,5 +138,6 @@
     <ClInclude Include="studia_dic_detail++.h">
       <Filter>studio-dic</Filter>
     </ClInclude>
+    <ClInclude Include="studio_pix.h" />
   </ItemGroup>
 </Project>

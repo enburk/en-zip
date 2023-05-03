@@ -200,6 +200,7 @@
     <ClInclude Include="studio_build_dic+.h" />
     <ClInclude Include="studio_build_dic.h" />
     <ClInclude Include="studio_build_one.h" />
+    <ClInclude Include="studio_pix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

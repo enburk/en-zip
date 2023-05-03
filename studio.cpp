@@ -2,11 +2,13 @@
 #include "studia_dic.h"
 #include "studia_one.h"
 #include "studia_two.h"
+#include "studio_pix.h"
 #include "studio_aux_audio.h"
 #include "studio_aux_video.h"
 #include "studio_build.h"
 
-struct Studio : gui::widget<Studio>
+struct Studio:
+widget<Studio>
 {
     gui::toolbar canvas;
     gui::toolbar toolbar;
@@ -15,6 +17,7 @@ struct Studio : gui::widget<Studio>
     studio::dic::studio dic;
     studio::one::studio one;
     studio::two::studio two;
+    studio::pixer::studio pixer;
     studio::audio::studio audio;
     studio::video::studio video;
     studio::build::studio build;
@@ -35,17 +38,20 @@ struct Studio : gui::widget<Studio>
         studios += &one;
         studios += &two;
         studios += &dic;
+        studios += &pixer;
         studios += &audio;
         studios += &video;
         studios += &build;
 
-        for (int i=1; i<studios.size(); i++)
-            studios[i]->hide();
+        for (int i=1; i<
+        studios.size(); i++)
+        studios[i]->hide();
 
         int i = 0;
         select(i++).text.text = "course";
         select(i++).text.text = "catalogs";
         select(i++).text.text = "dictionary";
+        select(i++).text.text = "snapshot";
         select(i++).text.text = "audio";
         select(i++).text.text = "video";
         select(i++).text.text = "logs";
@@ -72,12 +78,13 @@ struct Studio : gui::widget<Studio>
             select(2).coord = xywh(w*2, 0, w, h);
             select(3).coord = xywh(w*4, 0, w, h);
             select(4).coord = xywh(w*5, 0, w, h);
-            select(5).coord = xywh(w*7, 0, w, h);
+            select(5).coord = xywh(w*6, 0, w, h);
             select(6).coord = xywh(w*8, 0, w, h);
-            select   .coord = xywh(0, 0, 9*w, h);
+            select(7).coord = xywh(w*9, 0, w, h);
+            select   .coord = xywh(0,0, 10*w, h);
 
             for (int i=0; i<studios.size(); i++)
-                studios[i]->coord = xyxy(0, h, W, H);
+            studios[i]->coord = xyxy(0, h, W, H);
 
             button_sch.coord = xywh(W-3*w, 0, w, h);
             button_App.coord = xywh(W-2*w, 0, w, h);
@@ -89,19 +96,22 @@ struct Studio : gui::widget<Studio>
         if (what == &select)
         {
             int n = select.notifier_index;
-            int s = n == 6 ? 5 : n;
+            int s = n == 7 ? 6 : n;
 
-            for (int i=0; i<studios.size(); i++)
-                studios[i]->show(i == s);
+            for (int i=0; i<
+            studios.size(); i++)
+            studios[i]->show(i == s);
 
             focus = studios[s];
 
-            if (n == 6) // build!
-                for (int i=0; i<studios.size()-1; i++)
-                select(i).enabled = false;
+            if (n == 7) // build!
+            for (int i=0; i<
+            studios.size()-1; i++)
+            select(i).enabled =
+                false;
 
-            if (n == 6)
-                build.run();
+            if (n == 7)
+            build.run();
         }
 
         if (what == &build)
@@ -115,8 +125,10 @@ struct Studio : gui::widget<Studio>
                 app.reload();
             }
 
-            for (int i=0; i<studios.size(); i++)
-                select(i).enabled = true;
+            for (int i=0; i<
+            studios.size(); i++)
+            select(i).enabled =
+                true;
         }
 
         if (what == &button_sch)

@@ -2,7 +2,8 @@
 #include "app.h"
 namespace studio::video
 {
-    struct studio : gui::widget<studio>
+    struct studio:
+    widget<studio>
     {
         gui::canvas canvas;
 
@@ -13,7 +14,9 @@ namespace studio::video
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
                 int W = coord.now.w;
                 int H = coord.now.h;

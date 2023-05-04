@@ -6,9 +6,8 @@
 #include "studio_build_one.h"
 namespace studio::build
 {
-    using namespace std::literals::chrono_literals;
-
-    struct studio : gui::widget<studio>
+    struct studio:
+    widget<studio>
     {
         gui::area<gui::console> out_area;
         gui::area<gui::console> err_area;

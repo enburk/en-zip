@@ -48,6 +48,10 @@ namespace studio::dic
         std::unordered_map<res, array<int>> resources2entries;
         std::unordered_map<res, array<str>> resources2titles;
 
+        std::unordered_map<str,
+        std::unordered_map<str,
+            res>> abstractmap;
+
         out << dark(bold("DIC: SCAN RESOURCES..."));
 
         for (auto& r: data.resources)
@@ -70,6 +74,8 @@ namespace studio::dic
                 data.assets.insert(&r);
                 continue;
             }
+
+            abstractmap[r.abstract][r.title] = &r;
 
             array<str> entries = r.entries;
 
@@ -300,6 +306,16 @@ namespace studio::dic
             blue  (" [" + str(accepted,  "] [") + "]") +
             red   (" [" + str(rejected,  "] [") + "]") +
             green (" {" + str(r.options, "} {") + "}");
+        }
+
+        for (auto& [s, map]: abstractmap) if (map.size() > 1)
+        {
+            report::errors +=
+            red(bold("conflicting abstracts:"));
+            for (auto& [t, r]: map)
+            report::errors +=
+            linked(html(r->abstract),
+            "file://" + str(r->path));
         }
     }
 

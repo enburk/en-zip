@@ -75,14 +75,15 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
-        std::unordered_map<str, array<res>> vocab;
+        std::unordered_map
+        <str, array<res>> course_vocabulary;
         for (auto& entry: course.entries)
         for (str s: entry.vocabulary)
-            vocab.emplace(s,
-            array<res>{});
+            course_vocabulary.emplace(
+            s, array<res>{});
 
         std::unordered_set<str> sensitive;
-        for (auto [s,rr]: vocab)
+        for (auto [s,rr]: course_vocabulary)
         {
             str entry = s;
             str sense = entry.extract_from("@");
@@ -111,8 +112,8 @@ namespace studio::one
             for (str ss: sss)
             for (str s: ss.split_by("/"))
             {
-                auto it = vocab.find(s);
-                if (it != vocab.end())
+                auto it = course_vocabulary.find(s);
+                if (it != course_vocabulary.end())
                     it->second += &r;
                 else
                 if (r.weight < 20
@@ -122,22 +123,54 @@ namespace studio::one
             }
         }
 
+        std::unordered_set<res> single_videos;
+
+        for (auto& [s, rr]: course_vocabulary)
+        {
+            int n = 0;
+            res v = 0;
+            for (res r: rr)
+            if (r->kind == "video") n++, v = r;
+            if (n == 1) single_videos.emplace(v);
+        }
+
+        for (auto& [s, rr]: course_vocabulary)
+        {
+            int n = 0;
+            for (res r: rr)
+            if (r->kind == "video") n++;
+            if (n <= 1) continue;
+
+            array<res> aa;
+            array<res> vv;
+            for (res r: rr)
+            if (r->kind == "video")
+            vv += r; else
+            aa += r;
+
+            vv.erase_if([&single_videos](res r){
+            return single_videos.contains(r); });
+
+            if (not vv.empty())
+            rr = aa * vv;
+        }
+
         out << dark(bold("ONE: CHECK FULFILMENT..."));
 
         for (auto [i, entry]: enumerate(course.entries))
         {
             bool
-            nopix = entry.opt.internal.contains("pix-");
+            nopixed = entry.opt.internal.contains("pix-");
             auto en = entry.en;
             auto uk = entry.uk;
             auto us = entry.us;
-            bool vi = nopix;
+            bool vi = nopixed;
 
             for (str& s: entry.vocabulary)
-            for (res& r: vocab[s])
+            for (res& r: course_vocabulary[s])
             {
-                if (r->kind == "video" and nopix)
-                    continue;
+                if (r->kind == "video"
+                and nopixed) continue;
 
                 data.one_add(i, r);
 
@@ -145,6 +178,7 @@ namespace studio::one
                 if (r->options.contains("uk")) uk.try_erase(r->abstract);
                 if (r->options.contains("us")) us.try_erase(r->abstract);
                 /*        in any case       */ en.try_erase(r->abstract); }
+
                 if (r->kind == "video")
                     vi = true;
             }
@@ -244,25 +278,10 @@ namespace studio::one
         for (res r:  unused_resources)
             weighted_unused_resources.
             emplace(r->weight, r);
-
-        for (auto[weight, r]: weighted_unused_resources)
-        {
+        for (auto[weight, r]:
+            weighted_unused_resources) {
             if (r->kind == "audio") report::audioq += r->title;
             if (r->kind == "video") report::videoq += r->title;
-        }
-
-        out << dark(bold("ONE: PREVENT REPEATING..."));
-
-        // list of single resources
-
-        for (auto& entry: course.entries)
-        {
-            // if entry has sigle resource
-        }
-
-        for (auto& entry: course.entries)
-        {
-            // if entry has multiple resources
         }
 
         report::save();

@@ -107,22 +107,8 @@ namespace media::scan
 
                 resources += resource;
 
-                if (true)
-                if (not resource.options.contains("{links}"))
+                if (resource.title.contains(one_of("#")))
                 {
-                    static const auto ee =
-                    eng::lexical_items*
-                    eng::lexical_notes*
-                    eng::related_items*
-                    str("1, 2, 3").split_by(", ");
-                    if (resource.sense != ""
-                    and not ee.contains(resource.sense))
-                    err << blue(
-                    str(dir) + "/" +
-                    resource.title +" {" +
-                    resource.sense + "}");
-
-                    if (resource.title.contains(one_of("{}")))
                     err << yellow(
                     str(dir) + "/" +
                     resource.title);
@@ -131,9 +117,10 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "date "};
-                    static const array<str> exact = {"=", "sic!", "Case", "{links}",
+                    static const array<str> exact = {"=", "sic!", "Case",
                     "us","uk","ca","au","ru", "poem","song","sound","number","pixed",
                     "fade","fade in","fade out",
+                    "{1}","{2}","{3}","{1,2}",
                     "reduced","unclear"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))
@@ -148,7 +135,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "qrop ", "date "};
-                    static const array<str> exact = {"=", "sic!", "qropt!", "Case", "{links}",
+                    static const array<str> exact = {"=", "sic!", "qropt!", "Case",
                     "6+","8+","10+","12+","14+","16+","18+","21+","99+"};
                     if (not exact.contains(option)
                     and not upto5.contains(option.upto(5)))

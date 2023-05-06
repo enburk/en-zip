@@ -129,6 +129,8 @@ namespace studio::pixer
 
             if (what == &button_jpg)
             {
+                crop = xyxy(
+                Image.source.now);
                 std::filesystem::
                 path dir = "../datae";
                 str fn = edit.object.text; fn.strip();
@@ -138,6 +140,8 @@ namespace studio::pixer
             }
             if (what == &button_png)
             {
+                crop = xyxy(
+                Image.source.now);
                 std::filesystem::
                 path dir = "../datae";
                 str fn = edit.object.text; fn.strip();

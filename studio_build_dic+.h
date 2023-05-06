@@ -93,6 +93,12 @@ namespace studio::dic
             for (str s: r.title.split_by("/"))
                 entries += s;
 
+            if (r.kind == "audio"
+            and r.sense != ""
+            and eng::list::sensitive.contains(
+                r.sense)) entries +=
+                r.sense;
+
             entries += r.title;
             entries.try_erase("+");
 

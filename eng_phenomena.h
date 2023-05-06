@@ -1,7 +1,16 @@
-#pragma once
+﻿#pragma once
 #include "eng_abc.h"
 namespace eng::list
 {
+    array<str> sensitive = str(
+    "angry, annoyed, anxious, bewildered, concerned, "
+    "defiant, dejected, depressed, disbelieving, disappointed, "
+    "emphatic, enthusiastic, excited, happy, horrified, "
+    "impatient, incredulous, indignant, "
+    "realization, relieved, "
+    "sad, upset"
+    ).split_by(", ");
+
 }
 
 /*
@@ -31,5 +40,7 @@ miss {verb} {1} // be late
 miss {verb} {2}
 ''I miss you.''
 
+(UK): /ˈkɒnkɹiːt/, /kɵnˈkɹiːt/ 
+(US): /ˌkɑnˈkɹiːt/, /ˈkɑnkɹiːt/ 
 
 */

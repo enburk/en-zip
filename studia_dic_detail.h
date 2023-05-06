@@ -53,9 +53,11 @@ namespace studio::dic
 
                 if (s == "") return;
                 path dir = datpath.parent_path();
-                path datpath_ = dir/(s + ".dat");
-                path txtpath_ = dir/(s + ".txt");
+                path datpath_ = dir/str2path(s + ".dat");
+                path txtpath_ = dir/str2path(s + ".txt");
                 datpath_.replace_extension(datpath.extension());
+                if (exists(datpath_)) throw std::runtime_error(
+                "already exists: " + str(datpath_.filename()));
                 rename(datpath, datpath_); if (exists(txtpath))
                 rename(txtpath, txtpath_);
                 renames[datpath] = datpath_;
@@ -231,7 +233,9 @@ namespace studio::dic
 
         void on_key(str key, bool down, bool input) override
         {
-            if (key == "enter" && down)
+            if (down
+            and key == "enter"
+            and focus.now == &Filename)
             {
                 editing.stop();
                 save();

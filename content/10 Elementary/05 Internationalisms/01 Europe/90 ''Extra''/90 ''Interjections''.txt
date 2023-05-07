@@ -1,37 +1,43 @@
-interjections        = междометия, ~ восклицания # 10+
+interjections    = междометия, ~ восклицания # 10+
 
-ha!                  = ха!
-ha-ha! haha!         = ха-ха
-hee-hee, hehe        = хи-хи
+ha!              = ха!
+ha-ha!/haha!     = ха-ха
+hee-hee/hehe     = хи-хи
+hey!             = эй!
 
-hm... hmm...         = хм... гм...
-er... {Br.}          = э...
-blah blah blah       = бла-бла-бла        # 12+ /// blah, blah, blah
-brrr                 = брр                /// холод
+hm.../hmm...     = хм... гм...
+er... {Br.}      = э...
+blah blah blah   = бла-бла-бла            # 12+ /// blah, blah, blah
+brrr             = брр                    /// холод
 
-ah! aah!             = а! ах!
-aha! a-ha! {1,2,3}   = ага!
-huh? eh?             = а?
-huh!                 = а!
+ah!/aah!         = а! ах!
+aha!/a-ha!       = ага!
+huh?             = а?
+eh?              = а?
+huh!             = а!
 
-hurrah! hurray!      = ура!
-hip hip hurrah!      = гип-гип ура!       # 18+
-shh! {body language} = тс-с, ш-ш
+oh!              = о! ox!
+oops!            = ой! упс!
+ouch!/ow!        = ой! ай!                /// боль, досада
+uh-oh!/oh-oh!    = ой-ой! о-оу!
 
-hey!                 = эй!
+uh-huh!          = угу!
+mmm hmm          = ага, угу
+uh-uh            = не-а
 
-oh!                  = о! ox!
-oops!                = ой! упс!
-ouch! ow!            = ой! ай!            /// боль, досада
-uh-oh! oh-oh!        = ой-ой! о-оу!
+wow!             = ух ты! вау!
+phew!            = фух! уф!               /// облегчение, жара, усталость
+ooh la la!       = о-ля-ля!               # 14+
 
-uh-huh!              = угу!
-mmm hmm {4}          = ага, угу
-uh-uh                = не-а
+---
+hurrah!~~hurray! = ура!
+Hip hip hurrah!  = гип-гип ура!           # 18+
 
-wow!                 = ух ты! вау!
-phew!                = фух! уф!           /// облегчение, жара, усталость
-ooh la la!           = о-ля-ля!           # 14+
+===
+shh! @ gesture   = тс-с, ш-ш
+
+
+
 
 
 

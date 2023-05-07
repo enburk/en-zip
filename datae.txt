@@ -8404,8 +8404,8 @@ Sunni.wav
 Sunnite.wav
 super-ego [=].wav
 supercomputer ## {1}.wav
+supercomputer ## {2} ### 2.wav
 supercomputer ## {2}.wav
-supercomputer ### {2}.wav
 superconductor.wav
 superman ## {1}.wav
 superman ## {2}.wav
@@ -35531,7 +35531,7 @@ Ah, shut up! ### [Adult-Male-E_Ah-Shut-Up_VKT_05287].mp3
 Ah, sweetie! ### [Adult-Fem-B_Ah-Sweetie_VKT_00391].mp3
 Ah, that's great! ### [Teen-Fem-B_Ah-Thats-Great_VKT_14106].wav
 Ah, what the hell! ### [Adult-Male-C_Ah-What-The-Hell_VKT_04070].mp3
-aha! ### {1,2,3}.wav
+aha! ### 1,2,3.wav
 aha! @ catch ### [Adult-Male-B_Ah-Ha_VKT_03506].mp3
 aha! @ realization ### [Adult-Male-F_Uh-Huh_VKT_06199].mp3
 aha! @ triumph ### [Senior-Male-A_Ah-Ha_VKT_13206].wav
@@ -36924,7 +36924,6 @@ She said he'd be back around 2. Do you want to leave a message~! ### [Adult-Fem-
 She's gone off the deep end. ### [Senior-Fem-B_Shes-Gone-Off-The-Deep-End_VKT_13043].wav
 shh! ### [Child-Male-C_Shh_VKT_09255].wav
 shh! ### [Senior-Male-A_Shh_VKT_13525].wav
-shh! ### {body language} ### [Child-Fem-A_Quiet-Shh_VKT_06555].wav
 shit ### [Adult-Fem-C_Shit_VKT_01167].mp3
 Shit! ### [Adult-Fem-E_Shit_VKT_02303].mp3
 Shove it! ### [Adult-Fem-D_Shove-It_VKT_01794].mp3
@@ -37676,6 +37675,8 @@ The Dangerous Cooks ## crop l3.jpg
 The Dangerous Cooks ## crop l3.txt
 The Despair of Pierrot ## crop l3.jpg
 The Despair of Pierrot ## crop l3.txt
+>>> ../datae\fineart a-z {{$$}}/Fabriano {{Gentile da Fabriano}}
+grammar ## date 1407 ## qrop r20 ## qropt!.jpg
 >>> ../datae\fineart a-z {{$$}}/Gustafson {{Scott Gustafson}}
 Clowns of the Serengeti [scavengers] ## crop b20 ## qrop qt.jpg
 Eddie ## crop t17 ## qrop t32 ## qropt!.jpg
@@ -37720,8 +37721,10 @@ Italian Brigands Surprised by Papal Troops (detail) [bandit][brigand] ## date 18
 >>> ../datae\fineart a-z {{$$}}/Woodville {{Richard Caton Woodville}}
 hussar ## qrop t6 b11 ## date 1912 ## qropt!.jpg
 >>> ../datae/fineart {{$$}}
+Hip hip hurrah! [hip hip hurrah][hip hip hooray] ## qrop l17 r4 b1 {{P.S. Krøyer, 1888 $$}}.jpg
 rogue wave ## crop r7 {{Katsushika Hokusai, ca. 1829–1833 $$}}.jpg
 >>> ../datae/imagery
+subjective case ## qropt! {{$$}}.png
 Tlaloc ## qrop qt {{Credit.. Noxx_Art}}.jpg
 >>> ../datae/photo
 abandoned house [abandoned] ## qrop qb.jpg
@@ -37989,9 +37992,14 @@ Melaleuca Forest In Winter [Melaleuca][melaleuca][Vietnam].jpg
 >>> ../datae\photo_dreamstime/agro
 lasso ## qrop q {{Photo.. Laurin Rinder $dreamstime 4973943}} [Western Saddle].jpg
 >>> ../datae\photo_dreamstime/art
+Aranjuez, Madrid [support] ## qrop l14 {{Photo.. Kaplan69 $dreamstime 59091098}}.jpg
 batik ## qrop qr {{Photo.. Mohamad Zaki Bin Mokhtar $dreamstime 30085997}}.jpg
+Eixample, Barcelona [bite] ## qrop t7 {{Photo.. Kaplan69 $dreamstime 82986174}}.jpg
+>>> ../datae\photo_dreamstime\art/music
+violin and bow [bow@music] ## qrop l5 r25 ## qropt! {{Photo.. Peter Zijlstra $dreamstime 22278438}}.jpg
 origami ## qrop ql {{Photo.. Boboling $dreamstime 24702120}}.jpg
 >>> ../datae\photo_dreamstime/artifacts
+artificial snowflake [+] ## qrop q {{Photo.. Lubastock $dreamstime 79555713}}.jpg
 gong ## qrop t17 b13 ## qropt! {{Photo.. Jarun011 $dreamstime 20934550}}.jpg
 matryoshka doll [matryoshka][matrioshka] ## qrop t26 b7 {{Photo.. Chert61 $dreamstime 14724769}}.jpg
 matryoshka doll [nesting doll][nesting] ## crop r6 b5 {{Photo.. Scarf_andrei $dreamstime 146079}}.jpg
@@ -38027,40 +38035,49 @@ rubles [ruble] ## qrop ql {{Photo.. Wrangel $dreamstime 70339542}}.jpg
 >>> ../datae\photo_dreamstime/city
 balcony ## qrop l18 r18 b1 ## qropt! {{Photo.. Aleksey Gorbatenkov $dreamstime 15122486}}.jpg
 bungalow ## qrop l23 r12 {{Photo.. Eastimages $dreamstime 6981269}} ### Maldives.jpg
+houses on the cliff [cliff] ## qrop qr {{Photo.. Mikel Martinez De Osaba $dreamstime 43425982}} near the sea. Sopelana, Basque Country.jpg
 igloo ## qrop l20 r13 {{Photo.. Ivan Kmit $dreamstime 50789470}}.jpg
 >>> ../datae\photo_dreamstime\city/interior
 bonsai ## qrop t7 b23 ## qropt! {{Photo.. Luckynick $dreamstime 584487}}.jpg
 ikebana ## qrop t7 b9 ## qropt! {{Photo.. Vlntn $dreamstime 12665482}}.jpg
 sandalwood sticks [sandal][sandalwood][incense stick] ## qrop qt {{Photo.. Raja Rc $dreamstime 8543131}}.jpg
+closed ## qrop q {{Photo.. Poonsap Likitwachalakul $dreamstime 91427913}}.jpg
 cosmonaut ## qrop t12 b21 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
 >>> ../datae\photo_dreamstime/fashion
-a suit sleeve with a white cuff [sleeve][cuff] ## crop l15 ## qrop qr {{Photo.. Vclements $dreamstime 4740347}}.jpg
+a glass jar full of buttons [full] ## qrop q {{Photo.. Richard Van Der Spuy $dreamstime 103998938}}.jpg
 accessories [style] {{Photo.. Porechenskaya $dreamstime 48620933}}.jpg
->>> ../datae\photo_dreamstime\fashion/cosmetics
-cream [cream@cosmetics] ## crop t20 ## qrop t30 b3 {{Photo.. Kuleczka $dreamstime 7316536}}.jpg
-shampoo ## qrop t11 b16 ## qropt! {{Photo.. Vitalina Rybakova $dreamstime 51808145}} ### body care.jpg
->>> ../datae\photo_dreamstime\fashion/historical
-kimono {{Photo.. Carlos Martinez Duncker $dreamstime 54555826}}.jpg
+bow @ fashion ## qrop qr {{Photo.. Brighton $dreamstime 28682715}}.jpg
+>>> ../datae\photo_dreamstime\fashion/clothes
+a suit sleeve with a white cuff [sleeve][cuff] ## crop l15 ## qrop qr {{Photo.. Vclements $dreamstime 4740347}}.jpg
 jacket ## qrop q {{Photo.. Uwe Mayer $dreamstime 32771919}}.jpg
 lapel ## crop ql {{Photo.. Uwe Mayer $dreamstime 32771919}}.jpg
 lapel ## crop qr {{Photo.. Uwe Mayer $dreamstime 32771919}}.jpg
+polo shirt ## qrop qr {{Photo.. Beat Bieler $dreamstime 9258609}}.jpg
+pyjamas~pajamas ## qrop t23 b11 {{Photo.. Anna Yakimova $dreamstime 16791471}}.jpg
+sarong {{Photo.. Denis Moskvinov $dreamstime 98364213}}.jpg
+>>> ../datae\photo_dreamstime\fashion/cosmetics
+cream [cream@cosmetics] ## crop t20 ## qrop t30 b3 {{Photo.. Kuleczka $dreamstime 7316536}}.jpg
+shampoo ## qrop t11 b16 ## qropt! {{Photo.. Vitalina Rybakova $dreamstime 51808145}} ### body care.jpg
+fuzzy textile soft balls [soft] ## qrop ql {{Photo.. Panayot Savov $dreamstime 56477776}}.jpg
+>>> ../datae\photo_dreamstime\fashion/headwear
+sombrero ## qrop l7 r26 {{Photo.. Michael Flippo $dreamstime 40104504}}.jpg
+sombreros [sombrero] ## qrop qr {{Photo.. Patryk Kosmider $dreamstime 31978281}}.jpg
+>>> ../datae\photo_dreamstime\fashion/historical
+kimono {{Photo.. Carlos Martinez Duncker $dreamstime 54555826}}.jpg
 mannequin ## 14+ ## qrop l5 r20 {{Photo.. Wong Chee Yen $dreamstime 1549097}}.jpg
 mannequins [mannequin] ## 12+ ## qrop ql {{Photo.. Lisavan $dreamstime 1174001}}.jpg
 >>> ../datae\photo_dreamstime\fashion/materials
 cashmere ## qrop ql {{John Singer Sargent, 1908 $$}}.jpg
+gauze ## qrop ql {{Photo.. Huawang $dreamstime 30915287}}.jpg
 mohair ## qrop ql {{Photo.. Lunamarina $dreamstime 14562546}}.jpg
 mohair ## qrop qr {{Photo.. Les Palenik $dreamstime 12799391}}.jpg
-polo shirt ## qrop qr {{Photo.. Beat Bieler $dreamstime 9258609}}.jpg
-pyjamas~pajamas ## qrop t23 b11 {{Photo.. Anna Yakimova $dreamstime 16791471}}.jpg
-sarong {{Photo.. Denis Moskvinov $dreamstime 98364213}}.jpg
-sombrero ## qrop l7 r26 {{Photo.. Michael Flippo $dreamstime 40104504}}.jpg
-sombreros [sombrero] ## qrop qr {{Photo.. Patryk Kosmider $dreamstime 31978281}}.jpg
 flamenco ## qrop t8 r8 {{Photo.. Jackq $dreamstime 17313287}}.jpg
 >>> ../datae\photo_dreamstime/food
 >>> ../datae\photo_dreamstime\food/!drinks
 alcohol ## qrop l10 r15 {{Photo.. Romans Klevcovs $dreamstime 75547820}}.jpg
 brandy ## qrop l5 r28 {{Photo.. Donfiore $dreamstime 48410604}}.jpg
 coffee ## qrop qt {{Photo.. Dvalmas $dreamstime 9893051}}.jpg
+drink @ verb ## qrop q {{Photo.. Vadymvdrobot $dreamstime 72389145}}.jpg
 mojito {{Photo.. Nayuco $dreamstime 20982431}}.jpg
 piña colada [pina colada] ## qrop l18 r7 {{Photo.. Karin Prijs $dreamstime 51373103}}.jpg
 tequila ## qrop l10 r20 {{Photo.. Svenschermer $dreamstime 15786320}}.jpg
@@ -38068,6 +38085,8 @@ tequila ## qrop qr {{Photo.. Peto Zvonar $dreamstime 6954203}}.jpg
 vodka ## qrop ql {{Photo.. Vadim Orlov $dreamstime 74359422}}.jpg
 whisky~whiskey [+] ## qrop t24 b9 {{Photo.. Peto Zvonar $dreamstime 6954194}}.jpg
 barbecue ## qrop l9 r24 {{Photo.. Grafner $dreamstime 26251175}} ### Bbq with sausages and steak.jpg
+>>> ../datae\photo_dreamstime\food/berries
+cranberries in water [cranberries] ## qrop ql {{Photo.. Natalia Bravkova $dreamstime 21648683}}.jpg
 blini ## qrop q {{Photo.. Dleonis $dreamstime 5089864}}.jpg
 carpaccio ## qrop l22 t9 r23 b9 {{Photo.. Maksim Toome $dreamstime 21919152}}.jpg
 >>> ../datae\photo_dreamstime\food/cheese
@@ -38085,6 +38104,7 @@ marmalade ## qrop q {{Photo.. Yuryn76 $dreamstime 55140667}}.jpg
 tiramisu ## crop t7 b7 ## qrop l4 t23 r3 b15 {{Photo.. Margouillat $dreamstime 17385891}}.jpg
 four cheese pizza [pizza] {{Photo.. Nikolay Mikhalchenko $dreamstime 18965153}}.jpg
 >>> ../datae\photo_dreamstime\food/fruits
+an apple on plates [apple] ## qrop ql {{Photo.. Og-vision $dreamstime 603105}}.jpg
 avocado ## qrop ql {{Photo.. Sparkia $dreamstime 2495798}} ### [Avocado, garlic, lemon, chips].jpg
 banana ## qrop l14 r19 {{Photo.. Makidotvn $dreamstime 98420723}}.jpg
 kiwi fruit [kiwi@fruit][kiwifruit] ## qrop l10 r24 {{Photo.. Annyea $dreamstime 12245173}}.jpg
@@ -38122,15 +38142,20 @@ red curry paste [curry paste][curry] ## qrop l23 r10 {{Photo.. Elzbieta Sekowska
 saffron ## qrop l16 r18 {{Photo.. Torsten Schon $dreamstime 549584}}.jpg
 vanilla ## qrop l23 r9 {{Photo.. Artesiawells $dreamstime 33465987}}.jpg
 sushi ## qrop l1 t16 b18 {{Photo.. Cogent $dreamstime 60097858}}.jpg
+table manners ## qrop r5 ## qropt! {{Everett Collection Inc. $dreamstime 52017190}}.jpg
 tofu ## qrop q {{Photo.. Hupeng $dreamstime 29707106}}.jpg
 trepang ## qrop q {{Photo.. Wu Jun $dreamstime 7338178}}.jpg
 >>> ../datae\photo_dreamstime\food/vegetables
+leek ## qrop ql {{Photo.. Mariematata $dreamstime 86202384}}.jpg
+onions [onion] ## qrop qr {{Photo.. Jenhuang99 $dreamstime 24401244}}.jpg
 tomatoes [tomato] ## qrop l16 r9 {{Photo.. Monika Adamczyk $dreamstime}}.jpg
 tomatoes [tomato] ## qrop qt {{Photo.. Uschi Hering $dreamstime 1815225}}.jpg
 Wiener schnitzel [schnitzel] {{Photo.. Legaa $dreamstime}}.jpg
 yogurt~yoghurt ## qrop l18 t8 r21 b1 {{Photo.. Al1962 $dreamstime 27912826}}.jpg
+gas ## qrop qr {{Photo.. Dmitry Naumov $dreamstime 16992537}}.jpg
 hammock ## qrop l18 r15 {{Photo.. Goncharov2006 $dreamstime 43799440}}.jpg
 >>> ../datae\photo_dreamstime/health
+gauze bandage [+] ## qrop q {{Photo.. Bert Folsom $dreamstime 41875547}}.jpg
 massage {{Photo.. Anna Jurkovska $dreamstime}}.jpg
 pipette ## crop r30 ## qrop ql {{Photo.. Melpomenem $dreamstime 25709591}}.jpg
 >>> ../datae\photo_dreamstime/history
@@ -38223,11 +38248,14 @@ jasmine ## qrop l6 r7 ## qropt! {{Photo.. Sikth $dreamstime 41959399}}.jpg
 sunflowers [+][bouquet] ## crop t5 b5 ## qropt! ## qrop t10 b34 {{Photo.. Alb3 $dreamstime 19012780}}.jpg
 tulips ## crop l15 ## qrop q {{Photo.. Stewis2012 $dreamstime 46128478}}.jpg
 >>> ../datae\photo_dreamstime\nature/flora - trees
+acorn [an acorn][the acorn] ## qrop qr {{Photo.. Anatol1973 $dreamstime 96991721}}.jpg
 bamboo ## qrop l5 r29 {{Photo.. Juliengrondin $dreamstime 9879279}}.jpg
 mangrove ## qrop qr {{Photo.. Komang Arjana $dreamstime 56414690}}.jpg
 sakura ## qrop b6 ## qropt! {{Kaspargallery $dreamstime}}.jpg
 sakura ## qrop l3 r21 {{Photo.. Kuanchong Ng $dreamstime 3302128}}.jpg
 sequoia ## qrop l10 r24 {{Photo.. Galyna Andrushko $dreamstime 54189587}}.jpg
+>>> ../datae\photo_dreamstime\nature/meteo
+virga [dry storm] ## qrop qr {{Photo.. Daniel Mccauley Iv $dreamstime 1492804}} desert rain in sunset.jpg
 >>> ../datae\photo_dreamstime\nature/terrain
 fjord ## qrop qr {{Photo.. Tupungato $dreamstime 9822601}}.jpg
 plateau ## crop l10 ## qrop qr {{Photo.. Serban Enache $dreamstime 90767}} Hintertux Glacier in Zillertal, Austria.jpg
@@ -38247,14 +38275,24 @@ dialogue ## crop l24 r10 {{Photo.. Mengtianhan $dreamstime 49724091}} tango danc
 sad child ## qrop l17 ## qropt! {{Photo.. Svetlana Kramynina $dreamstime 95610854}}.jpg
 sad child ## qrop l17 ## qropt! {{Photo.. Svetlana Kramynina $dreamstime 95610854}}.txt
 triumphant {{Photo.. Maxim Lupascu $dreamstime 108961620}}.jpg
+uncertainty [uncertain] ## qrop qr {{Photo.. Koldunova Anna $dreamstime 107929916}}.jpg
 >>> ../datae\photo_dreamstime\people/gestures
-OK {gesture} ## crop r25 ## qrop l12 r8 {{Photo.. Soleg1974 $dreamstime 66104638}}.jpg
-shh! {gesture} [shh] ## qrop l7 r13 {{Photo.. Frantab01 $dreamstime 10929871}}.jpg
+bad ## qrop l19 r14 {{Photo.. Khosrork $dreamstime 105420459}}.jpg
+bow @ gesture ## qrop l10 r2 ## qropt! {{Photo.. Bojan Dzodan $dreamstime 11751366}}.jpg
+listen ## qrop qr {{Photo.. Waroot Tangtumsatid $dreamstime 113214068}}.jpg
+OK @ gesture ## crop r25 ## qrop l12 r8 {{Photo.. Soleg1974 $dreamstime 66104638}}.jpg
+shh! @ gesture ## qrop l7 r13 {{Photo.. Frantab01 $dreamstime 10929871}}.jpg
+shh! @ gesture ### [Child-Fem-A_Quiet-Shh_VKT_06555].wav
+wink ## qrop q {{Photo.. Soleg1974 $dreamstime 63734093}}.jpg
 humanoid ## crop l21 r12 {{Photo.. Luckynick $dreamstime 1319559}} Toy robot magnifier.jpg
+look @ noun ## qrop l10 r24 ## qropt! {{Photo.. Tarragona $dreamstime 12378658}}.jpg
+ponder ## qrop l25 r7 {{Photo.. Tommytechno Hammarsten $dreamstime 88494457}}.jpg
+sleep ## qrop ql {{Photo.. Katrina Trninich $dreamstime 37644968}}.jpg
 steampunk ## qrop t5 b24 {{Photo.. Andrey Kiselev $dreamstime 32893203}}.jpg
 steampunk ## qrop t5 b24 {{Photo.. Andrey Kiselev $dreamstime 32893203}}.txt
 >>> ../datae\photo_dreamstime/religion
 >>> ../datae\photo_dreamstime\religion/Buddhism
+prayer beads [beads] {{Photo.. Dmitry Rukhlenko $dreamstime 31540498}} ### Tibetan Buddhism.jpg
 Statue of Buddha of Nirvana, Thailand [nirvana] ## qrop l8 r26 {{Photo.. Svetlana Day $dreamstime 53127174}}.jpg
 >>> ../datae\photo_dreamstime\religion/Islam
 The Blue Mosque, Istanbul, Turkey [minaret] ## qrop ql {{Photo.. Luciano Mortula $dreamstime 37421511}}.jpg
@@ -38264,6 +38302,7 @@ Santa Claus ## qrop l11 r18 ## crop l8 r17 ## qropt! {{Photo.. Igor Mojzes $drea
 >>> ../datae\photo_dreamstime/science
 Arabic numerals [algebra] ## qrop qr {{Agsandrew $dreamstime 52031905}}.jpg
 >>> ../datae\photo_dreamstime\science/chemistry
+fail ## qrop l10 r24 {{Photo.. Igor Mojzes $dreamstime 109051912}}.jpg
 rulers [+][centimetre][centimeter] ## crop t5 r29 {{Photo.. Diane Miller $dreamstime 14700}}.jpg
 scale ## crop l30 ## qrop qr {{Photo.. Derektenhue $dreamstime 23169251}}.jpg
 unstable equilibrium [+] ## crop r30 ## qrop ql {{Photo.. Ilyssa Tonnessen $dreamstime}}.jpg
@@ -38284,16 +38323,22 @@ slalom skier [+] ## qrop l14 r19 {{Photo.. Mitchell Gunn $dreamstime 8522999}}.j
 tango ## qrop l23 r10 {{Photo.. Alexandre Fagundes De Fagundes $dreamstime 2160463}}.jpg
 >>> ../datae\photo_dreamstime/transport
 caravan ## qrop l14 r9 {{Photo.. Dmitry Rukhlenko $dreamstime 30389002}}.jpg
+>>> ../datae\photo_dreamstime\transport/cars
+out of gas [gas@gasoline] ## qrop qr {{Photo.. Brad Calkins $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime\transport/marine
+anchor ## qrop l15 {{Photo.. Ealberola $dreamstime 54616958}}.jpg
 canoe ## qrop qb {{Photo.. Andrey Gudkov $dreamstime 81140176}} ### INDONESIA, IRIAN JAYA, ASMAT PROVINCE, JOW VILLAGE.jpg
 caravel ## qrop qr {{Photo.. Fabrizio Troiani $dreamstime 5514890}} Azulejos.jpg
 catamaran ## qrop l12 r23 {{Photo.. Suateracar $dreamstime 34840428}}.jpg
 cruise ship [cruise] ## qrop ql {{Photo.. Aliaksandr Nikitsin $dreamstime 6150324}}.jpg
+>>> ../datae\photo_dreamstime\transport/railroad
 rickshaw ## qrop l18 r10 {{Photo.. Cenk Unver $dreamstime 14479207}}.jpg
 >>> ../datae\photo_dreamstime/war
->>> ../datae\photo_dreamstime\war/arms
+>>> ../datae\photo_dreamstime\war/arms - historic
+an archer with a bow [bow@weapon] ## qrop qr {{Photo.. 123elis $dreamstime 40808779}}.jpg
 katana ## qrop l13 r21 {{Photo.. Elena  Zidkova $dreamstime 7987917}}.jpg
 katana ## qrop ql {{Photo.. Vladimir Kokorin $dreamstime 96894597}}.jpg
+wet ## qrop ql {{Photo.. Karnsamon Mongkolsawat $dreamstime 83034004}}.jpg
 >>> ../datae\photo_dreamstime/world
 Africa ## qrop l16 r20 {{Photo.. Dmitry Pichugin $dreamstime 16806246}}.jpg
 Australia ## qrop l8 r26 {{Photo.. Gerd Kohlmus $dreamstime 32906972}}.jpg

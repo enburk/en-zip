@@ -233,7 +233,11 @@ namespace content::in
 
             s = bold_italic(s);
 
-            html = big(s);
+            if (s.starts_with(": "))
+            s = s.from(2); else
+            s = big(s);
+
+            html = s;
 
             if (opt.external.
             contains("HEAD"))

@@ -1,23 +1,25 @@
-adverbs = наречия
+adverbs              = наречия
 
-good    = хорошо
-bad     = плохо
+good                 = хорошо
+bad                  = плохо
 
-'''''good''' vs. '''bad'''''
-''Cool!''
-''Fine!''
-''Nice!''
-''Sweet!'' %% informal
-''Naughty, but nice!''
-''Awesome!''
-''Brutal!''
-''Excellent!''
-''Unreal!''
-''Golden!''
-''Wicked!''
-''Nasty!''
-''Rough!''
-''Great!''
+===
+
+: Cool!              # pix-
+: Fine!              # pix-
+: Nice!              # pix-
+: Sweet!             # pix-
+: Naughty, but nice! # pix-
+: Awesome!           # pix-
+: Brutal!            # pix-
+: Excellent!         # pix-
+: Unreal!            # pix-
+: Golden!            # pix-
+: Wicked!            # pix-
+: Nasty!             # pix-
+: Rough!             # pix-
+: Great!             # pix-
+
 
 
 

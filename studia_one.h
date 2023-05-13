@@ -36,12 +36,18 @@ namespace studio::one
             select.maxwidth = max<int>();
             select.selected = 0;
         }
+        ~studio () { save(); }
 
         void reload ()
         {
             dic.reload();
             app.reload();
             reports.object.reload();
+        }
+
+        void save ()
+        {
+            doc::text::repo::save();
         }
 
         void on_change (void* what) override

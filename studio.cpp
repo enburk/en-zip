@@ -111,6 +111,7 @@ widget<Studio>
                 false;
 
             if (n == 7)
+            one.save(),
             build.run();
         }
 

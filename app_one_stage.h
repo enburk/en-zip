@@ -137,6 +137,7 @@ namespace app::one
                 int hh = entry.resize(w, h);
                 if (hh + y > h or i == 0
                 or  entry.pixed != was_pixed
+                or  entry.number == -1
                 or  entry.new_chain)
                     nextslide();
 

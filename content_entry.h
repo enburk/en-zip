@@ -114,8 +114,9 @@ namespace content::out
                 s.replace_all("~~" , "/");
                 s.replace_all("~" , "");
 
-                s.debracket("(",")"); str ss = s;
-                s.debracket("[","]");
+                // beluga [whale]
+                s.replace_all("[", "");
+                s.replace_all("]", "");
                 s.canonicalize();
 
                 if (br or  am) anomaly = "Br/Am";
@@ -123,20 +124,11 @@ namespace content::out
                 if (br) uk += s.split_by("/"); else
                 if (am) us += s.split_by("/"); else
                         en += s.split_by("/");
-
-                // beluga [whale]
-                ss.replace_all("[" , "");
-                ss.replace_all("]" , "");
-                ss.canonicalize();
-                if (ss != s) {
-                if (br) uk += ss; else
-                if (am) us += ss; else
-                        en += ss; }
             }
 
             if (s.contains(
-            one_of   ("{}()[]")))
-            errors += "{}()[]";
+            one_of   ("{}[]")))
+            errors += "{}[]";
 
             for (str ss: en*uk*us)
             for (str s: ss.split_by("|"))
@@ -208,17 +200,17 @@ namespace content::in
             s.split_by("@" , s, sense);
             s.strip(); comment.strip();
 
-            s.replace_all("(1)", small(blue("<sub>1</sub>")));
-            s.replace_all("(2)", small(blue("<sub>2</sub>")));
-            s.replace_all("(3)", small(blue("<sub>3</sub>")));
-            s.replace_all("(4)", small(blue("<sub>4</sub>")));
+            s.replace_all("(1)", small(blue("1")));
+            s.replace_all("(2)", small(blue("2")));
+            s.replace_all("(3)", small(blue("3")));
+            s.replace_all("(4)", small(blue("4")));
 
             if (s.contains("\\\\"))
             {
                 str uk, us;
                 s.split_by("\\\\", uk, us);
-                uk.strip (); uk += small(blue(" Br"));
-                us.strip (); us += small(blue(" Am"));
+                uk.strip (); if (not uk.contains("{Br.}")) uk += small(blue(" Br"));
+                us.strip (); if (not us.contains("{Am.}")) us += small(blue(" Am"));
                 s = uk + "<br>" + us;
             }
 

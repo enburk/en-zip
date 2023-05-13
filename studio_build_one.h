@@ -105,9 +105,24 @@ namespace studio::one
         for (auto& r: data.resources)
         {
             array<str> sss;
-            if (r.kind == "video")
-            sss += r.entries;
             sss += r.abstract;
+
+            if (r.kind == "video")
+            {
+                if (r.options.contains("noqrop"))
+                    continue;
+
+                if (r.abstract.contains("/"))
+                sss += r.abstract.split_by("/");
+
+                if (r.entries.contains("+"))
+                sss += eng::parser::entries(
+                    vocabulary, r.title,
+                    r.options.contains
+                    ("Case"));
+
+                sss += r.entries;
+            }
 
             for (str ss: sss)
             for (str s: ss.split_by("/"))

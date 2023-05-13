@@ -44,6 +44,7 @@ namespace content::out
             {
                 if (entry.eng == ""
                 and entry.rus == ""
+                or  entry.eng.starts_with("~~~")
                 or  entry.eng.starts_with("===")
                 or  entry.eng.starts_with("---"))
                 {
@@ -60,6 +61,12 @@ namespace content::out
                 and entry.rus == "")
                 {
                     ordered = false;
+                    continue;
+                }
+                if (entry.eng.starts_with("~~~"))
+                {
+                    chain.units += unit{};
+                    ordered = true;
                     continue;
                 }
                 if (entry.eng.starts_with("==="))

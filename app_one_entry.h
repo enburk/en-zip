@@ -54,6 +54,11 @@ namespace app::one
             catch (...) {}
             vudio.reset();
             medio.done();
+
+            script.html = "";
+            Script.html = "";
+            credit.html = "";
+            Credit.html = "";
         }
 
         void init ()

@@ -6,6 +6,7 @@ namespace studio::one
     struct area:
     widget<area>
     {
+        gui::area<gui::text::view> where;
         gui::area<contents> contents;
         gui::area<editor> editor;
         gui::splitter splitter;
@@ -19,11 +20,13 @@ namespace studio::one
             {
                 int W = coord.now.w; if (W <= 0) return;
                 int H = coord.now.h; if (H <= 0) return;
+                int h = gui::metrics::text::height*13/10;
                 int l = gui::metrics::line::width;
                 int x = splitter.set("studio::one::area::splitter", 10, 25, 50);
 
                 contents.coord = xyxy(0, 0, x, H);
-                editor  .coord = xyxy(x, 0, W, H);
+                where   .coord = xyxy(x, 0, W, h);
+                editor  .coord = xyxy(x, h, W, H);
                 editor  .show_focus = true;
             }
 
@@ -36,6 +39,28 @@ namespace studio::one
                     doc::text::repo::reload();
                     editor.object.editor.
                     update_text = true; }
+
+                path p =
+                std::filesystem::relative(editor.object.path,
+                std::filesystem::current_path());
+
+                str
+                header(p);
+                header.replace_all("\\", "/");
+                header.resize(header.size()-4); // .txt
+                array<str> ss = header.split_by("/");
+                ss.upto(1).erase(); // content/
+                for (str& s: ss) {
+                s = s.from(3);
+                if (s.starts_with("''")
+                and s.  ends_with("''")) {
+                    s.truncate(); s.erase(0);
+                    s.truncate(); s.erase(0);
+                    s = extracolor(
+                    s); }
+                }
+                header = str(ss, blue("/"));
+                where.object.html = header;
             }
         }
     };

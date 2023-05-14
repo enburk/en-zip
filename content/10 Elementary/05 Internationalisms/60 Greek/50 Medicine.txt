@@ -2,7 +2,7 @@ anatomy   = анатомия                                              # 10+ 
 
 organism  = организм                                              /// , структура
 bronchi   = бронхи                                                # 14+
-phalanx {bone} %% plural: phalanges = фаланга ~ (кость)                                     # 10+
+phalanx @ bone %% plural: phalanges = фаланга ~ (кость)                                     # 10+
 allergy   = аллергия                                              # 10+
 antidote  = антидот %% противоядие                                # 10+
 trauma    = травма

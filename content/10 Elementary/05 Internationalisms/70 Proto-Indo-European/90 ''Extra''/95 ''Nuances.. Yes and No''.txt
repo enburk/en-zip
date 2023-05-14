@@ -3,9 +3,9 @@
 
 ''Yes.''
 ''Yes?''
-''Yes!'' {whispering}          = %% ''whispering''
+''Yes!'' {whispering}         = %% ''whispering''
 ''Yes, Sir!''
-''Yes, Sir!'' {stern}          = %% ''stern''
+''Yes, Sir!'' {stern}         = %% ''stern''
 ''Yes, ma'am!''
 
 ''No, Sir.''
@@ -14,7 +14,7 @@
 ''No?''
 ''Ah, no!''
 ''No idea.''
-''No way!''                    = ''Ни за что!'' %% idiomatic
+''No way!''                   = ''Ни за что!'' %% idiomatic
 ''No, thanks.''
 
 ''Not me!''
@@ -31,7 +31,8 @@
 ''Yeah!''
 ''Yeah?''
 ''Yeah, it's a good idea.''
-''Oh, yeah!'' {sarcastically}  = %% ''sarcastically''
+''Oh, yeah!'' {sarcastically} = %% ''sarcastically''
 ''Oh yeah!''
 ''Yup!''
 ''Yay!'' {yes}
+

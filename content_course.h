@@ -9,10 +9,33 @@ namespace content::out
         array<str> errors;
         array<str> anomal;
 
+        struct search_entry
+        {
+            str word, entry, link;
+
+            friend void operator >> (sys::in::pool& pool, search_entry& x) {
+                pool >> x.word;
+                pool >> x.entry;
+                pool >> x.link;
+            }
+            friend void operator << (sys::out::pool& pool, search_entry const& x) {
+                pool << x.word;
+                pool << x.entry;
+                pool << x.link;
+            }
+        };
+        array<search_entry> searchmap;
+
         course (path dir)
         {
             root.units = scan(dir);
             root.sort();
+
+            std::ranges::
+            stable_sort(
+            searchmap, {}, &
+            search_entry::
+            word);
         }
         array<unit> scan (path dir, int level = 0, str parent = "")
         {
@@ -80,6 +103,14 @@ namespace content::out
                 anomal += dark(bold(header));
                 anomal += topic.anomal;
                 anomal += ""; }
+
+                for (auto& e: topic.entries)
+                for (str w: e.vocabulary)
+                searchmap += search_entry(
+                    eng::asciized(
+                    w.extract_upto("@")).
+                    ascii_lowercased(),
+                    e.eng, e.link);
 
                 for (auto chain:
                 topic.chains(entries))

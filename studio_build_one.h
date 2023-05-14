@@ -62,6 +62,7 @@ namespace studio::one
         content::out::course course("content");
         if (true) sys::out::file("../data/course.dat") << course.root;
         if (true) sys::out::file("../data/course_entries.dat") << course.entries;
+        if (true) sys::out::file("../data/course_searchmap.dat") << course.searchmap;
 
         report::clear();
         report::errors = course.errors;

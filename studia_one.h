@@ -2,6 +2,7 @@
 #include "studia_one_area.h"
 #include "studia_one_preview.h"
 #include "studia_one_reports.h"
+#include "studia_one_search.h"
 namespace studio::one
 {
     struct studio:
@@ -9,9 +10,9 @@ namespace studio::one
     {
         area left;
         app::dic::app dic;
-        app::one::app app;
         gui::area<preview> preview;
         gui::area<reports> reports;
+        gui::area<search>  search;
         array<gui::base::widget*> right;
         gui::area<gui::selector> selector;
         gui::splitter splitter;
@@ -21,7 +22,7 @@ namespace studio::one
             right += &dic;
             right += &preview;
             right += &reports;
-            right += &app;
+            right += &search;
 
             for (int i=1; i<
             right.size(); i++)
@@ -32,7 +33,7 @@ namespace studio::one
             select.buttons(i++).text.text = "dictionary";
             select.buttons(i++).text.text = "preview";
             select.buttons(i++).text.text = "reports";
-            select.buttons(i++).text.text = "app";
+            select.buttons(i++).text.text = "search";
             select.maxwidth = max<int>();
             select.selected = 0;
         }
@@ -41,7 +42,7 @@ namespace studio::one
         void reload ()
         {
             dic.reload();
-            app.reload();
+            search.object.reload();
             reports.object.reload();
         }
 
@@ -67,7 +68,7 @@ namespace studio::one
                 selector.coord = xywh(0, 0, x, h);
                 left    .coord = xyxy(0, h, x, H);
                 dic     .coord = xyxy(x, 0, W, H);
-                app     .coord = xyxy(x, 0, W, H);
+                search  .coord = xyxy(x, 0, W, H);
                 preview .coord = xyxy(x, 0, W, H);
                 reports .coord = xyxy(x, 0, W, H);
             }
@@ -79,10 +80,13 @@ namespace studio::one
                 right[i]->show(i == n);
             }
 
-            if (what == &reports)
+            str link;
+            if (what == &reports) link = reports.object.link;
+            if (what == &search ) link = search .object.link;
+            if (link != "")
             {
                 str path, line;
-                reports.object.link.split_by("|", path, line);
+                link.split_by("|", path, line);
                 left.contents.object.selected = str2path(path); 
                 left.editor.object.editor.go(doc::place{
                 std::stoi(line), 0});

@@ -1,7 +1,7 @@
 ''Nuances''
-excuse                  = извинение, оправдание, ~ просить прощения #     # +1sec
-good excuse             = уважительная причина #     # +1sec
-lame excuse             = надуманный предлог, ~ отмазка #     # +1sec
+excuse      = извинение, оправдание, ~ просить прощения # +1sec
+good excuse = уважительная причина                 # +1sec
+lame excuse = надуманный предлог, ~ отмазка        # +1sec
 
 ''Excuse me...''
 ''Excuse me.''
@@ -16,3 +16,4 @@ lame excuse             = надуманный предлог, ~ отмазка 
 ''I beg your pardon?''
 ''Beg your pardon?''
 ''Pardon me?''
+

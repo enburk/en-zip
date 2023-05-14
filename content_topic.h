@@ -19,12 +19,12 @@ namespace content::out
                 
                 if (entry.anomaly != "") anomal += linked(
                     blue(monospace(std::format("{:2}: ",
-                    entry.line))) + entry.eng,
+                    entry.line+1))) + entry.eng,
                     entry.link);
 
                 for (str error: entry.errors) errors += linked(
                     blue(monospace(std::format("{:2}: ",
-                    entry.line))) + entry.eng + " " +
+                    entry.line+1))) + entry.eng + " " +
                     red(error),
                     entry.link);
 

@@ -123,6 +123,14 @@ namespace media
             return "";
         }
 
+        str verbose () const
+        {
+            str s = title;
+            if (sense != "")
+            s += " @ " + sense;
+            return s;
+        }
+
         str text () const
         {
             str s = title;

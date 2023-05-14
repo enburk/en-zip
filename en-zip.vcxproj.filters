@@ -139,5 +139,8 @@
       <Filter>studio-dic</Filter>
     </ClInclude>
     <ClInclude Include="studio_pix.h" />
+    <ClInclude Include="studia_one_search.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

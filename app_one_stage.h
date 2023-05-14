@@ -109,6 +109,7 @@ namespace app::one
             xy size = coord.now.local().size;
             int w = gui::metrics::text::height*15;
             int h = gui::metrics::text::height*18;
+            int d = gui::metrics::text::height;
             if (w <= 0 or size.x <= 0) return;
             if (h <= 0 or size.y <= 0) return;
             w = size.x / (size.x / w);
@@ -135,7 +136,7 @@ namespace app::one
                 slides[i-1].entries.back()->pixed;
 
                 int hh = entry.resize(w, h);
-                if (hh + y > h or i == 0
+                if (hh + y > h - d or i == 0
                 or  entry.pixed != was_pixed
                 or  entry.number == -1
                 or  entry.new_chain)

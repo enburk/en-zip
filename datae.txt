@@ -38063,7 +38063,7 @@ sloth.txt
 atmosphere.jpg
 >>> ../datae\photo {{$$}}/{{USDE}}
 apples [apple] ## qrop qb {{USDE $$}}.jpg
-gas stove burner [gas][gas stove][burner] ## qrop qb.jpg
+gas stove burner [gas@natural][gas stove][burner] ## qrop qb.jpg
 >>> ../datae/photo_dreamstime
 >>> ../datae\photo_dreamstime/agro
 a braid made of the hair on the horse's tail [braid] ## noqrop {{Photo.. Kasto80 $dreamstime 19660377}}.jpg
@@ -38108,11 +38108,14 @@ artificial snowflake [+] ## qrop q {{Photo.. Lubastock $dreamstime 79555713}}.jp
 Christmas ball [ball@solid][bauble@Christmas] ## qrop q {{Photo.. Elen $dreamstime 308343}}.jpg
 Christmas ball [ball@solid][bauble@Christmas] ## qrop qr {{Photo.. Maxim Evdokimov $dreamstime 47704953}}.jpg
 collection of coins [collection][numismatics] ## qrop qr {{Photo.. Kaare Linderoth $dreamstime 2138948}}.jpg
+eyeglasses frame [+] ## qrop l22 r5 {{Photo.. Kenishirotie $dreamstime 60878250}}.jpg
 gong ## qrop t17 b13 ## qropt! {{Photo.. Jarun011 $dreamstime 20934550}}.jpg
 matryoshka doll [matryoshka][matrioshka] ## qrop t26 b7 {{Photo.. Chert61 $dreamstime 14724769}}.jpg
 matryoshka doll [nesting doll][nesting] ## crop r6 b5 {{Photo.. Scarf_andrei $dreamstime 146079}}.jpg
 Nobel Prize medal ## crop l5 r5 t5 b5 {{Photo.. Johan Mollerberg $dreamstime 24157182}}.jpg
 Nobel Prize medal ## crop l5 r5 t5 b5 {{Photo.. Johan Mollerberg $dreamstime 24157182}}.txt
+present @ gift ## qrop qr {{Photo.. Kenishirotie $dreamstime 26816554}}.jpg
+safety goggles and earplugs [safety goggles][goggles][earplugs] ## qrop l16 r13 {{Photo.. Marietjie Opperman $dreamstime 76107515}}.jpg
 >>> ../datae\photo_dreamstime\artifacts/signs
 Attention! [attention] ## crop r15 ## qrop l10 r20 {{Photo.. Ifeelstock $dreamstime 102707798}}.jpg
 Corrosive! [corrosive] ## qrop l14 r15 {{Photo.. Satakorn $dreamstime 80845272}}.jpg
@@ -38134,12 +38137,16 @@ Radioactive! [radioactive] ## crop l10 r16 ## qrop l12 r18 {{Photo.. Stickasa $d
 Toxic! [toxic] ## crop l10 r10 ## qrop q {{Photo.. Chatchai Somwat $dreamstime 31277139}}.jpg
 X-rays on! ## qrop l16 r15 {{Photo.. Nathan Till $dreamstime 4587223}}.jpg
 souvenirs [souvenir] ## crop q ## qropt! ## qrop qr {{Photo.. Carlo Trolese $dreamstime 45821251}}.jpg
+bucket ## qrop qr {{Photo.. Marietjie Opperman $dreamstime 81704292}}.jpg
 >>> ../datae\photo_dreamstime/business
->>> ../datae\photo_dreamstime\business/money
+>>> ../datae\photo_dreamstime\business/coins
 20 kopecks [kopeck][kopecks] ## qrop ql {{Photo.. Anton Ishchenko $dreamstime 60821774}}.jpg
+>>> ../datae\photo_dreamstime\business/coins - wrangel
 Coins of {New Zealand}.. {Maori} carving of {Pukaki} ## qrop q {{Photo.. Wrangel $dreamstime 71658676}}.jpg
 rubles [ruble] ## qrop q {{Photo.. Wrangel $dreamstime 69927247}}.jpg
 rubles [ruble] ## qrop ql {{Photo.. Wrangel $dreamstime 70339542}}.jpg
+>>> ../datae\photo_dreamstime\business/money
+gold bullions [+][bullion] ## qrop ql {{Photo.. Baloncici $dreamstime 7475276}} gold bars.jpg
 calendar ## qrop ql {{Photo.. Flynt $dreamstime 36594024}}.jpg
 >>> ../datae\photo_dreamstime/city-home
 >>> ../datae\photo_dreamstime\city-home/buildings
@@ -38173,6 +38180,7 @@ alley @ street ## qrop l10 r23 {{Photo.. Robwilson39 $dreamstime 10066027}}.jpg
 vacuum cleaner ## qrop l26 r8 {{Photo.. Costasz $dreamstime 45268703}}.jpg
 closed ## qrop q {{Photo.. Poonsap Likitwachalakul $dreamstime 91427913}}.jpg
 cosmonaut ## qrop t12 b21 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
+date @ day ## qrop q {{Photo.. Maximus117 $dreamstime 6361147}}.jpg
 >>> ../datae\photo_dreamstime/fashion
 a glass jar full of buttons [full] ## qrop q {{Photo.. Richard Van Der Spuy $dreamstime 103998938}}.jpg
 >>> ../datae\photo_dreamstime\fashion/accessories
@@ -38248,6 +38256,7 @@ baguette ## qrop qr {{Photo.. Astormfr $dreamstime 30662635}}.jpg
 barbecue ## qrop l9 r24 {{Photo.. Grafner $dreamstime 26251175}} ### Bbq with sausages and steak.jpg
 >>> ../datae\photo_dreamstime\food/berries
 cranberries in water [cranberries] ## qrop ql {{Photo.. Natalia Bravkova $dreamstime 21648683}}.jpg
+red currant in different scales [scales][scale@size] ## qrop q {{Photo.. Michael Pelin $dreamstime 82726732}}.jpg
 bon appétit! ## qrop qr {{Photo.. Stephanie Connell $dreamstime 3782534}}.jpg
 cafe ## qrop t12 b15 ## qropt! {{Photo.. Elena Elisseeva $dreamstime 4042958}}.jpg
 champignon {{Photo.. Stevanzz $dreamstime 28669202}}.jpg
@@ -38349,7 +38358,6 @@ radish ## qrop l29 r5 {{Photo.. Dkidpix $dreamstime 31608782}}.jpg
 tomatoes [tomato] ## qrop l16 r9 {{Photo.. Monika Adamczyk $dreamstime}}.jpg
 tomatoes [tomato] ## qrop qt {{Photo.. Uschi Hering $dreamstime 1815225}}.jpg
 yogurt~yoghurt ## qrop l18 t8 r21 b1 {{Photo.. Al1962 $dreamstime 27912826}}.jpg
-gas ## qrop qr {{Photo.. Dmitry Naumov $dreamstime 16992537}}.jpg
 hammock ## qrop l18 r15 {{Photo.. Goncharov2006 $dreamstime 43799440}}.jpg
 handcuffs [arrest] ## qrop q {{Photo.. Mariec $dreamstime 248636}}.jpg
 >>> ../datae\photo_dreamstime/health
@@ -38361,6 +38369,7 @@ hygiene ## qrop ql {{Photo.. Anita Patterson Peppers $dreamstime 506997}}.jpg
 massage {{Photo.. Anna Jurkovska $dreamstime}}.jpg
 pipette ## crop r30 ## qrop ql {{Photo.. Melpomenem $dreamstime 25709591}}.jpg
 pulse ## qrop l26 r4 {{Photo.. Peerayot To-im $dreamstime 49060686}}.jpg
+scales [scales@weight] ## qrop l16 r16 {{Photo.. Gvictoria $dreamstime 2526401}}.jpg
 thermometer [temperature] ## qrop l11 r10 ## qropt! {{Photo.. Andriy Rovenko $dreamstime 618087}} ### thermometer.jpg
 trauma ## qrop t14 ## qropt! {{Photo.. Bunnyphoto $dreamstime 39268785}}.jpg
 >>> ../datae\photo_dreamstime/history
@@ -38391,6 +38400,7 @@ guitar ## qrop t1 l1 b33 {{Photo.. Vladimirs Koskins $dreamstime 1998564}}.jpg
 zodiac ## crop l1 r1 t1 ## qropt! {{Photo.. Baloncici $dreamstime 3086268}}.jpg
 zombie ## qrop t15 b19 {{Photo.. Castaldostudio $dreamstime 44919134}} ### [Zombie Experiment].jpg
 naive~naïve ## qrop l13 r20 {{Photo.. Ondrej Hyncica $dreamstime 49067868}}.jpg
+natural gas [+][gas@natural] ## qrop qr {{Photo.. Dmitry Naumov $dreamstime 16992537}}.jpg
 >>> ../datae\photo_dreamstime/nature
 cascade ## crop r23 ## qrop ql {{Photo.. Kenneth Summers $dreamstime 1312487}}.jpg
 Devils Tower, Wyoming [monolith] ## qrop l13 r10 {{Photo.. William Michael Norton $dreamstime 1211780}}.jpg
@@ -38413,6 +38423,7 @@ toucan {{Photo.. Scanrail $dreamstime 31455101}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - fish
 barracuda ## qrop l22 r8 ## qropt! {{Photo.. Jaime Leonardo Gonzalez Salazar $dreamstime 31686836}}.jpg
 piranha ## qrop qr {{Photo.. Gergely Zsolnai $dreamstime 33974219}}.jpg
+scales @ fish ## qrop l14 r10 {{Photo.. Prateep Suwannawong $dreamstime 74339229}}.jpg
 tuna ## qrop l21 r13 {{Photo.. Aquanaut4 $dreamstime 28033770}} ### Dogtooth tuna.jpg
 tuna ## qrop ql {{Photo.. Whitepointer $dreamstime 32193597}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - mammals
@@ -38595,7 +38606,7 @@ right triangle [theorem] ## qrop l4 r12 ## qropt! {{Photo.. Grant Phillips $drea
 Roman numerals ## qrop qr {{Photo.. Konstantin Tavrov $dreamstime 5094232}}.jpg
 >>> ../datae\photo_dreamstime\science/physics
 violin (f-holes) [+][sound box][soundbox][sound hole][acoustics] ## qrop l4 r30 {{Photo.. Adrian Borda $dreamstime 64585952}}.jpg
-scale ## crop l30 ## qrop qr {{Photo.. Derektenhue $dreamstime 23169251}}.jpg
+scale @ size ## crop l30 ## qrop qr {{Photo.. Derektenhue $dreamstime 23169251}}.jpg
 text ## qrop q {{Photo.. Janaka Dharmasena $dreamstime 7195998}}.jpg
 unstable equilibrium [+] ## crop r30 ## qrop ql {{Photo.. Ilyssa Tonnessen $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime/sports & games

@@ -169,9 +169,9 @@ namespace eng
         {
             char c = *i++; str g = c;
             uint8_t u = static_cast<uint8_t>(c);
-            if ((u & 0b11000000) == 0b11000000) { g += *i++;
-            if ((u & 0b11100000) == 0b11100000) { g += *i++;
-            if ((u & 0b11110000) == 0b11110000) { g += *i++;
+            if ((u & 0b11000000) == 0b11000000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11100000) == 0b11100000) { if (i == s.end()) break; g += *i++;
+            if ((u & 0b11110000) == 0b11110000) { if (i == s.end()) break; g += *i++;
             }}}
             if (auto k = ligature (g); k) g = (*k)->second; else
             if (auto k = diacritic(g); k) g = (*k)->second; else

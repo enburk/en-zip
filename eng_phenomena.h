@@ -2,6 +2,22 @@
 #include "eng_abc.h"
 namespace eng::list
 {
+    array<str> contractions = str(
+    "I'm, I'll, "
+    "you're, you'll"
+    "he's, he'll"
+    "she's, she'll"
+    "it's, it'll"
+    "we're, we'll"
+    "that's, that'll"
+    "aren't, doesn't, don't"
+    "can't, couldn't, shouldn't, wouldn't"
+    "ain't"
+    ).split_by(", ");
+
+    array<str> contractionparts = str(
+    "m, s, re, ll, t").split_by(", ");
+
     array<str> sensitive = str(
     "angry, annoyed, anxious, bewildered, concerned, "
     "defiant, dejected, depressed, disbelieving, disappointed, "

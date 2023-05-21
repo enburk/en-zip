@@ -37,6 +37,7 @@ namespace studio::one
 
             if (what == &path)
             {
+                doc::text::repo::save();
                 editor.hide(path == std::filesystem::path{});
                 editor.model = doc::text::repo::load<doc::text::model>(path);
                 editor.update_text = true;

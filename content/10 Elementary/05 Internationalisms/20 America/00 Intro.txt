@@ -8,28 +8,29 @@ American Indians  = индейцы
 
 ===
 
-Apache            = апачи    # 12+
-Cherokee          = чероки   # 12+
-Cheyenne          = шайенны  # 12+
-Comanche          = команчи  # 12+
-Iroquois          = ирокезы  # 12+ /// 10+
-Mahicans/Mohicans = магикане # 12+
+Apache            = апачи                              # 12+
+Cherokee          = чероки                             # 12+
+Cheyenne          = шайенны                            # 12+
+Comanche          = команчи                            # 12+
+Iroquois          = ирокезы                            # 12+ /// 10+
+Mahicans/Mohicans = магикане                           # 12+
 
-Maya/Mayans       = майя     # 12+
-Inca/Incas        = инки     # 12+
-Aztec/Aztecs      = ацтеки   # 12+
+Maya/Mayans       = майя                               # 12+
+Inca/Incas        = инки                               # 12+
+Aztec/Aztecs      = ацтеки                             # 12+
 
 ===
 
 = Происхождение следующих слов ~ точно не установлено # 12+
 
-cannibal  = каннибал                                   # 16+ /// Carib, но это сложный случай  corruption
-curare    = кураре %% яд для стрел                     # RARE- # 18+ /// Carib corruption
-poncho    = пончо                                      # 10+ /// Araucanian
+cannibal          = каннибал                           # 16+ /// Carib, но это сложный случай  corruption
+curare            = кураре %% яд для стрел             # RARE- # 18+ /// Carib corruption
+poncho            = пончо                              # 10+ /// Araucanian
 
-alpaca    = альпака %% вероятно, из языка индейцев аймара # 12+
-Chihuahua = чихуахуа %% вероятно, из языка индейцев, ~ живших на территории Мексики # 12+
-caiman    = кайман %% возможно, из африканского языка  # 12+ /// Carib or Congo African
-maize {Br.} %% Am. usually: corn = маис, кукуруза                             # 14+ /// Arawakan
-mangrove  = мангровое дерево                           # RARE- # 16+ /// Carib or Arawacan
-papaya    = папайя %% вероятно, из аравакских языков   # 12+ /// Arawakan, (неточная этимология)
+alpaca            = альпака %% вероятно, из языка индейцев аймара # 12+
+Chihuahua         = чихуахуа %% вероятно, из языка индейцев, ~ живших на территории Мексики # 12+
+caiman            = кайман %% возможно, из африканского языка # 12+ /// Carib or Congo African
+maize {Br.} %% Am. usually: corn = маис, кукуруза                     # 14+ /// Arawakan
+mangrove          = мангровое дерево                   # RARE- # 16+ /// Carib or Arawacan
+papaya            = папайя %% вероятно, из аравакских языков # 12+ /// Arawakan, (неточная этимология)
+

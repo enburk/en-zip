@@ -136,7 +136,7 @@ namespace app::one
                 slides[i-1].entries.back()->pixed;
 
                 int hh = entry.resize(w, h);
-                if (hh + y > h - d or i == 0
+                if (hh + y > h-d-d or i == 0
                 or  entry.pixed != was_pixed
                 or  entry.number == -1
                 or  entry.new_chain)

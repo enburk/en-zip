@@ -1,0 +1,24 @@
+[outer] space      = космос
+cosmos             = Вселенная, мироздание, космос, ~ упорядоченная система, ~ порядок, гармония
+
+---
+planet             = планета
+orbit              = орбита
+
+asteroid           = астероид
+meteor             = метеор
+meteorite          = метеорит
+bolide %% a very bright meteor = болид                          # TERM- # 10+
+impact crater      = ударный кратер                 /// NEW
+
+---
+galaxy             = галактика
+supernova          = сверхновая звезда %% вспышка сверхновой # +1sec # 10+
+galactic collision = столкновение галактик          # 14+ /// Interacting galaxies (colliding galaxies)
+
+---
+gravitation        = гравитация, ~ тяготение, притяжение
+gravity            = тяжесть, сила тяжести, ~ разговорное: гравитация
+zero gravity       = невесомость
+antigravity        = антигравитация                 # 14+
+

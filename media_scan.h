@@ -8,15 +8,17 @@ namespace media::scan
 {
     std::ofstream dataelog;
 
-    void scan (path dir, array<resource>& resources, int level = 0, resource common = {})
+    auto scan (path dir, int level = 0, resource common = {}) -> array<resource>
     {
+        array<resource> resources;
+
         std::map<path, bool> identified;
 
         using logs::out;
         using logs::err;
 
-        if (level < 2)
-        out << "scan " + str(dir);
+        aux::timing t0;
+
         for (std::filesystem::directory_iterator
             next(dir), end; next != end; ++next)
         {
@@ -54,9 +56,21 @@ namespace media::scan
                     text_lines(credit), "<br>"),
                     identified[credit] = true;
 
-                scan(path,
-                resources, level+1,
-                resource);
+                array<media::resource> rr;
+
+                auto cache = path / "resources.txt";
+                bool scan_once  = str(path.filename()).contains("scan-once!");
+                bool scan_ready = scan_once and std::filesystem::exists(cache);
+                bool scan_write = scan_once and not scan_ready;
+                bool scan_fresh = not scan_ready;
+
+                if (scan_ready) sys::in::file(cache) >> rr;
+
+                if (scan_fresh) rr = scan(path, level+1, resource);
+
+                if (scan_write) sys::out::file(cache) << rr;
+
+                resources += std::move(rr);
             }
             else if (is_regular_file(path))
             {
@@ -151,5 +165,13 @@ namespace media::scan
 
         for (auto [path, ok] : identified)
         if (!ok) report::unidentified += path;
+
+        aux::timing t1;
+
+        if (level < 2)
+        out << "scan " + str(dir) +
+        gray(" " + aux::ms(t1-t0) + " ms");
+
+        return resources;
     }
 }

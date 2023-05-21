@@ -74,6 +74,14 @@ namespace studio::one
 
         using res = media::resource*;
 
+        auto simple = [](str s)
+        {
+            s.replace_all(mdash, "---");
+            s.replace_all(ndash, "--");
+            s.replace_all(u8"’", "'");
+            return s;
+        };
+
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
         std::unordered_map
@@ -93,8 +101,8 @@ namespace studio::one
         }
 
         for (auto& entry: course.entries)
-        if (entry.sense == "" and
-            sensitive.contains(entry.eng))
+        for (str s: entry.vocabulary)
+        if (sensitive.contains(entry.eng))
             report::errors += linked(
                 red(bold("sensless: ")) +
                 html(entry.eng),
@@ -105,38 +113,43 @@ namespace studio::one
         std::unordered_set<res> unused_resources;
         for (auto& r: data.resources)
         {
-            array<str> sss;
-            sss += r.abstract;
+            array<str>
+            resource_vocabulary;
+            resource_vocabulary +=
+            simple(r.abstract);
 
             if (r.kind == "video")
             {
-                if (r.options.contains("noqrop"))
+                if (r.options.
+                    contains("noqrop"))
                     continue;
 
-                if (r.abstract.contains("/"))
-                sss += r.abstract.split_by("/");
-
                 if (r.entries.contains("+"))
-                sss += eng::parser::entries(
+                resource_vocabulary +=
+                    eng::parser::entries(
                     vocabulary, r.title,
                     r.options.contains
                     ("Case"));
 
-                sss += r.entries;
+                resource_vocabulary +=
+                    r.entries;
             }
 
-            for (str ss: sss)
+            bool used = false;
+            for (str ss: resource_vocabulary)
             for (str s: ss.split_by("/"))
             {
                 auto it = course_vocabulary.find(s);
                 if (it != course_vocabulary.end())
-                    it->second += &r;
-                else
-                if (r.weight < 20
-                or  r.kind == "video")
-                unused_resources.
-                    emplace(&r);
+                    it->second += &r,
+                    used = true;
             }
+
+            if (not used)
+            if (r.weight < 20
+            or  r.kind == "video")
+            unused_resources.
+                emplace(&r);
         }
 
         std::unordered_set<res> single_videos;
@@ -173,6 +186,16 @@ namespace studio::one
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));
 
+        auto fullfill = [](array<str>& units, str word)
+        {
+            units.erase_if([word](str& unit)
+            {
+                for (str s: unit.split_by("|"))
+                if (s == word) return true;
+                return false;
+            });
+        };
+
         for (auto [i, entry]: enumerate(course.entries))
         {
             bool
@@ -190,13 +213,13 @@ namespace studio::one
 
                 data.one_add(i, r);
 
-                if (r->kind == "audio") {
-                if (r->options.contains("uk")) uk.try_erase(r->abstract);
-                if (r->options.contains("us")) us.try_erase(r->abstract);
-                /*        in any case       */ en.try_erase(r->abstract); }
+                str w = simple(r->abstract);
 
-                if (r->kind == "video")
-                    vi = true;
+                if (r->kind == "audio") {
+                if (r->options.contains("uk")) fullfill(uk, w);
+                if (r->options.contains("us")) fullfill(us, w);
+                /*        in any case       */ fullfill(en, w); }
+                if (r->kind == "video") vi = true;
             }
             str s = html(entry.eng);
             str ens = red(bold(" en: " + html(str(en, ", "))));
@@ -211,10 +234,10 @@ namespace studio::one
         out << dark(bold("ONE: MAKE SUGGESTIONS..."));
 
         std::unordered_map<str,
-        array<res>> unused_resources_vocab;
+        array<res>> unused_resources_vocabulary;
         for (res r: unused_resources)
         {
-            auto entries = r-> entries;
+            auto entries = r->entries;
 
             if ((r->kind == "audio"
             and entries.size() == 0
@@ -233,10 +256,11 @@ namespace studio::one
             entries.try_erase("+");
 
             for (str s: entries)
-            unused_resources_vocab[s] += r;
+            unused_resources_vocabulary[s] += r;
         }
 
-        std::unordered_set<str> current_vocab;
+        std::unordered_set<str>
+            current_vocabulary;
 
         for (auto& entry: course.entries)
         {
@@ -245,47 +269,64 @@ namespace studio::one
 
             for (str& s: entry.vocabulary)
             {
-                current_vocab.emplace(s);
-                auto it = unused_resources_vocab.find(s);
-                if (it == unused_resources_vocab.end())
+                for (str word: eng::parser::entries(
+                    vocabulary, s.upto_first("@"), true))
+                    current_vocabulary.emplace(word);
+
+                auto it = unused_resources_vocabulary.find(s);
+                if (it == unused_resources_vocabulary.end())
                     continue;
 
                 for (res r: it->second)
                 {
-                    if (not unused_resources.contains(r))
+                    // 's 't 're 'll
+                    if (eng::list::contractionparts.
+                        contains(r->title))
                         continue;
 
+                    // if hasn't been deleted
+                    if (not unused_resources.
+                        contains(r))
+                        continue;
+
+                    // if all words are known
                     bool well_known = true;
                     for (str x: r->entries)
-                    if  (not current_vocab.contains(x))
+                    if  (not current_vocabulary.contains(x))
                         well_known = false;
 
-                    if (well_known) {
+                    if (not well_known)
+                        continue;
+
                     if (r->kind == "audio") audios += r;
                     if (r->kind == "video") videos += r;
-                    unused_resources.erase(r); }
+                    unused_resources.erase(r); // delete it
                 }
             }
 
             if (not audios.empty())
             {
-                report::audiop +=
-                linked(html(entry.eng) + " " +
-                light(small(entry.link)), entry.link);
+                report::audiop += linked(
+                html(entry.eng) + "  " +
+                dark(entry.pretty_link()),
+                     entry.link);
 
                 for (res r: audios)
                 report::audiop += 
-                dark(html(r->title));
+                dark(html(r->
+                     full()));
             }
             if (not videos.empty())
             {
-                report::videop +=
-                linked(html(entry.eng) + " " +
-                light(small(entry.link)), entry.link);
+                report::videop += linked(
+                html(entry.eng) + "  " +
+                dark(entry.pretty_link()),
+                     entry.link);
 
                 for (res r: videos)
                 report::videop +=
-                dark(html(r->title));
+                dark(html(r->
+                     full()));
             }
         }
 
@@ -294,10 +335,21 @@ namespace studio::one
         for (res r:  unused_resources)
             weighted_unused_resources.
             emplace(r->weight, r);
-        for (auto[weight, r]:
-            weighted_unused_resources) {
-            if (r->kind == "audio") report::audioq += r->title;
-            if (r->kind == "video") report::videoq += r->title;
+
+        for (auto[weight, r]: weighted_unused_resources)
+        {
+            // 's 't 're 'll
+            if (eng::list::contractionparts.
+                contains(r->title))
+                continue;
+
+            if (r->kind == "audio")
+                report::audioq +=
+                r->full();
+
+            if (r->kind == "video")
+                report::videoq +=
+                r->full();
         }
 
         report::save();

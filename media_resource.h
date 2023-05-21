@@ -123,7 +123,7 @@ namespace media
             return "";
         }
 
-        str verbose () const
+        str full () const
         {
             str s = title;
             if (sense != "")
@@ -141,6 +141,37 @@ namespace media
             if (meta != "") s += " {{" + meta + "}}";
             if (yadda != "") s += " ### " + yadda;
             return to_msdos(s);
+        }
+
+        friend void operator >> (sys::in::pool& pool, resource& x) {
+            str fn;
+            pool >> fn;
+            pool >> x.id;
+            pool >> x.kind;
+            pool >> x.title;
+            pool >> x.abstract;
+            pool >> x.sense;
+            pool >> x.comment;
+            pool >> x.credit;
+            pool >> x.meta;
+            pool >> x.yadda;
+            pool >> x.options;
+            pool >> x.entries;
+            x.path = str2path(fn);
+        }
+        friend void operator << (sys::out::pool& pool, resource const& x) {
+            pool << str(x.path);
+            pool << x.id;
+            pool << x.kind;
+            pool << x.title;
+            pool << x.abstract;
+            pool << x.sense;
+            pool << x.comment;
+            pool << x.credit;
+            pool << x.meta;
+            pool << x.yadda;
+            pool << x.options;
+            pool << x.entries;
         }
     };
 }

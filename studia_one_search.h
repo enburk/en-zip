@@ -102,20 +102,7 @@ namespace studio::one
                     int line = std::stoi(
                         header.extract_from("|"));
 
-                    header.replace_all("\\", "/");
-                    header.resize(header.size()-4); // .txt
-                    array<str> ss = header.split_by("/");
-                    ss.upto(1).erase(); // content/
-                    for (str& s: ss) {
-                    s = s.from(3);
-                    if (s.starts_with("''")
-                    and s.  ends_with("''")) {
-                        s.truncate(); s.erase(0);
-                        s.truncate(); s.erase(0);
-                        s = extracolor(
-                        s); }
-                    }
-                    header = str(ss, blue("/"));
+                    header = content::out::entry::pretty_link(header);
 
                     if (Header != header)
                     if (Header != "")

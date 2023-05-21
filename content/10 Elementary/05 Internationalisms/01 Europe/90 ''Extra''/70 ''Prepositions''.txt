@@ -1,9 +1,11 @@
-prepositions = предлоги # 10+ /// , ~ препозиция
+prepositions = предлоги # 10+
 
+===
 on           = на       # pix-
 in           = в        # pix-
+===
 
-an apple on plates
+an apple '''on''' plates
 
 
 

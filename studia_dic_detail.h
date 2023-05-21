@@ -40,7 +40,13 @@ namespace studio::dic
 
                 if (s == ""
                 and exists(txtpath))
-                    remove(txtpath);
+                {
+                    path dir = txtpath.
+                    parent_path()/".del";
+                    create_directories(dir);
+                    rename(txtpath, dir/
+                    txtpath.filename());
+                }
                 else
                 sys::out::write(txtpath, s.lines());
                 // crop can be changed
@@ -73,7 +79,7 @@ namespace studio::dic
             what(e.what())));
         }
 
-        void select (str info)
+        void select (str info) try
         {
             save();
 
@@ -134,6 +140,13 @@ namespace studio::dic
 
             filename.read_only = false;
             textfile.read_only = false;
+        }
+        catch (std::exception const& e)
+        {
+            filepath.html = str(
+            filepath.html) + "<br>" +
+            red(bold(aux::unicode::
+            what(e.what())));
         }
 
         void on_change (void* what) override

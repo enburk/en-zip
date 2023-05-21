@@ -1,0 +1,23 @@
+nature                     = природа
+nature                     = натура, природа ~ (человека или явления)
+model/sitter               = натура (модель), ~ натурщик/натурщица # +1sec # 14+
+
+iris                       = и́рис                    # +1sec # 10+
+iris {eye}                 = радужная оболочка глаза ~ (радужка) # 10+
+iris {rainbow}             = иногда: радуга          # +1sec # 10+
+Iris {deity}               = Ирида %% олицетворение радуги, посланница богов в древнегреческой мифологии # +1sec # 12+
+toffee                     = ири́с, ириска            # +1sec # 10+
+
+palm(1)                    = пальма
+palm(2)                    = ладонь                  # +1sec
+
+pride {lions}              = прайд %% стая львов     # 12+
+pride                      = гордость, гордыня       # +1sec # 12+
+
+buffalo %% plural: buffaloes/buffalo = буйвол
+buffalo ~ {esp.} {Am.} {bison} = бизон
+buffalo {verb} %% informal = запугивать ~~ приводить в замешательство, ~ озадачивать
+Buffalo {city}             = Буффало %% город в США  # +1sec
+
+Buffalo buffalo ~ Buffalo buffalo buffalo ~ buffalo Buffalo buffalo. ~ {Am.} = Буффальские бизоны, ~ которых пугают (другие) ~ буффальские бизоны, ~ пугают буффальских бизонов.
+

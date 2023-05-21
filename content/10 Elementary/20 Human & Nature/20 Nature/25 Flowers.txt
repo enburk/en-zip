@@ -1,0 +1,23 @@
+aster               = астра
+chrysanthemum       = хризантема
+crocus              = крокус, шафран                          # 14+
+camellia            = камелия                                 # RARE- # 18+
+geranium            = герань                                  # 10+
+hyacinth            = гиацинт                                 # RARE+
+hydrangea/hortensia = гортензия                               # RARE+ # 10+
+lavender            = лаванда                                 # 10+
+
+lotus               = лотос
+lily                = лилия
+water lily          = кувшинка
+calla [lily]        = калла                                   # 10+ /// (вовсе не лилия) /// ботаники этот вид больше в каллы не включают
+lilac               = сирень, ~ сиреневый, лиловый
+rose                = роза, ~ розовый
+violet              = фиалка, ~ фиолетовый
+
+magnolia            = магнолия                                # 10+
+narcissus %% plural: narcissus/narcissuses/narcissi = нарцисс                                 /// Daffodil – бледно-желтый нарцисс, желтый нарцисс
+nasturtium          = настурция                               # RARE+ # 14+
+oleander            = олеандр                                 # RARE+ # 16+
+peony               = пион                                    # 14+
+

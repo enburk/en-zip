@@ -84,7 +84,7 @@ namespace media::out
 
             resources.reserve(128*1024);
             scan::dataelog = std::ofstream("datae.txt");
-            scan::scan("../datae", resources);
+            resources = scan::scan("../datae");
             scan::dataelog = std::ofstream{};
 
             auto&   unidentified = 

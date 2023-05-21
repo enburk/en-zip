@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "eng_phenomena.h"
 #include "eng_abc_vocabulary_trie.h"
 namespace eng { using vocabulary = vocabulary_cached; }
 namespace eng::parser
@@ -149,15 +150,15 @@ namespace eng::parser
                 or (m.text == ","   and input.size() > 2*5)
                 or (m.text == ":"   and input.size() > 9*5)
                 or (m.text == ";"   and input.size() > 9*5)
-                or (m.text == "!"   and input.size() > 2*5)
-                or (m.text == "?"   and input.size() > 2*5)
+                or (m.text == "!"   and input.size() > 1*4)
+                or (m.text == "?"   and input.size() > 1*5)
                 or (m.text == "("   and input.size() > 8*5)
                 or (m.text == ")"   and input.size() > 8*5)
                 or (m.text == "'"   and input.size() > 2*5)
                 or (m.text == "\""  and input.size() > 9*5)
                 or (m.text == lquot and input.size() > 9*5)
                 or (m.text == rquot and input.size() > 9*5)
-                or (m.text == "-"   and input.size() > 7*5)
+                or (m.text == "-"   and input.size() > 5*5)
                 or (m.text == "--"  and input.size() > 7*5)
                 or (m.text == ndash and input.size() > 9*5)
                 or (m.text == mdash and input.size() > 9*5)
@@ -168,7 +169,7 @@ namespace eng::parser
 
                 or (m.text == "a"   and input.size() > 2*5)
                 or (m.text == "an"  and input.size() > 4*5)
-                or (m.text == "the" and input.size() > 3*5)
+                or (m.text == "the" and input.size() > 2*5)
                 or (m.text == "s"   and input.size() > 3*5)
                 or (m.text == "t"   and input.size() > 4*5)
                 or (m.text == "m"   and input.size() > 4*5)
@@ -180,23 +181,24 @@ namespace eng::parser
                 or (m.text == "I'm"  and input.size() > 9*5)
                 or (m.text == "he"   and input.size() > 9*5)
                 or (m.text == "his"  and input.size() > 9*5)
-                or (m.text == "it"   and input.size() > 3*5)
+                or (m.text == "it"   and input.size() > 2*5)
                 or (m.text == "it's" and input.size() > 9*5)
-                or (m.text == "me"   and input.size() > 8*5)
+                or (m.text == "me"   and input.size() > 6*5)
                 or (m.text == "my"   and input.size() > 9*5)
                 or (m.text == "they" and input.size() > 9*5)
-                or (m.text == "You"  and input.size() > 9*5)
-                or (m.text == "you"  and input.size() > 3*5)
+                or (m.text == "You"  and input.size() > 7*5)
+                or (m.text == "you"  and input.size() > 2*5)
                 or (m.text == "your" and input.size() > 8*5)
                 or (m.text == "we"   and input.size() > 5*5)
 
                 or (m.text == "about"  and input.size() > 9*5)
                 or (m.text == "all"    and input.size() > 5*5)
+                or (m.text == "And"    and input.size() > 4*5)
                 or (m.text == "and"    and input.size() > 4*5)
-                or (m.text == "are"    and input.size() > 8*5)
+                or (m.text == "are"    and input.size() > 7*5)
                 or (m.text == "as"     and input.size() > 9*5)
                 or (m.text == "at"     and input.size() > 9*5)
-                or (m.text == "be"     and input.size() > 8*5)
+                or (m.text == "be"     and input.size() > 6*5)
                 or (m.text == "but"    and input.size() > 5*5)
                 or (m.text == "by"     and input.size() > 9*5)
                 or (m.text == "can"    and input.size() > 9*5)
@@ -219,23 +221,24 @@ namespace eng::parser
                 or (m.text == "like"   and input.size() > 9*5)
                 or (m.text == "man"    and input.size() > 9*5)
                 or (m.text == "of"     and input.size() > 3*5)
-                or (m.text == "oh"     and input.size() > 8*5)
-                or (m.text == "on"     and input.size() > 8*5)
+                or (m.text == "oh"     and input.size() > 7*5)
+                or (m.text == "on"     and input.size() > 6*5)
                 or (m.text == "one"    and input.size() > 9*5)
                 or (m.text == "or"     and input.size() > 9*5)
                 or (m.text == "out"    and input.size() > 9*5)
                 or (m.text == "no"     and input.size() > 3*5)
                 or (m.text == "not"    and input.size() > 8*5)
                 or (m.text == "now"    and input.size() > 9*5)
+                or (m.text == "re"     and input.size() > 9*5)
                 or (m.text == "say"    and input.size() > 9*5)
                 or (m.text == "so"     and input.size() > 5*5)
                 or (m.text == "that"   and input.size() > 3*5)
-                or (m.text == "that's" and input.size() > 8*5)
+                or (m.text == "that's" and input.size() > 5*5)
                 or (m.text == "there"  and input.size() > 9*5)
                 or (m.text == "this"   and input.size() > 9*5)
                 or (m.text == "time"   and input.size() > 9*5)
                 or (m.text == "to"     and input.size() > 3*5)
-                or (m.text == "up"     and input.size() > 8*5)
+                or (m.text == "up"     and input.size() > 5*5)
                 or (m.text == "was"    and input.size() > 9*5)
                 or (m.text == "what"   and input.size() > 3*5)
                 or (m.text == "when"   and input.size() > 9*5)
@@ -247,12 +250,14 @@ namespace eng::parser
                 if (best.token  != m.token or
                     best.tokens != m.tokens)
                     if (best.text != "")
-                        entries += best.text;
+                        entries +=
+                        best.text;
 
                 best = m;
             }
             if (best.text != "")
-                entries += best.text;
+                entries +=
+                best.text;
         }
 
         entries.deduplicate();

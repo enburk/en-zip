@@ -2,6 +2,6 @@ New Zealand           = Новая Зеландия            # pix- # 8+
 Maori                 = Маори %% язык аборигенов ~ Новой Зеландии # pix- # 12+
 
 kiwi @ bird           = киви ~ (птица)
-kiwi fruit~~kiwifruit = киви ~ (фрукт)
+kiwi fruit||kiwifruit = киви ~ (фрукт)
 
 

@@ -111,7 +111,7 @@ namespace studio::dic
             if (s.starts_with("to "   )) entries += s.from (3); else
             {}
 
-            array<str> apostros; auto a = (char*)(u8"’");
+            array<str> apostros; str a = u8"’";
             for(auto& e: entries) if (e.contains(a)) apostros += e;
             for(auto& e: apostros) e.replace_all(a, "'");
             entries += apostros;
@@ -283,9 +283,10 @@ namespace studio::dic
             and not data.assets.contains(&r)) {
                 str ee = str(r.entries, "] [");
                 str path = str(r.path);
-                report::errors += yellow(
+                report::errors +=
+                yellow("dic unused:") +
                 linked(html(path),
-                "file://" + path)) +
+                "file://" + path) +
                 red(" [" + ee + "]");
                 continue; }
 

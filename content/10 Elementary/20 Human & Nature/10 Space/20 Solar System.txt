@@ -1,0 +1,28 @@
+Solar System     = Солнечная система # +2sec /// the solar system
+
+===
+
+Sun              = Солнце        # RANDOM- /// the sun//the Sun
+Mercury @ planet = Меркурий
+Venus @ planet   = Венера
+Earth @ planet   = Земля
+Mars @ planet    = Марс
+Jupiter @ planet = Юпитер
+Saturn @ planet  = Сатурн
+Uranus @ planet  = Уран
+Neptune @ planet = Нептун
+Pluto @ planet   = Плутон
+
+===
+
+---
+Moon             = Луна          # RANDOM- /// the moon//the Moon
+moon             = луна, спутник # RANDOM-
+lunar            = лунный
+
+Martian          = марсианин, марсианский
+Martians         = марсиане
+
+Saturnian        = сатурнианский
+Jovian           = относящийся к планете Юпитер, ~ подобный Юпитеру
+

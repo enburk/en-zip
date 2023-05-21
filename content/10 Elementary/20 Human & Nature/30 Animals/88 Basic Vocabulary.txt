@@ -1,0 +1,37 @@
+bird                   = птица
+duck                   = утка
+sparrow                = воробей
+swan                   = лебедь
+woodpecker             = дятел
+
+wild                   = дикий
+predator               = хищник
+prey                   = добыча
+fox                    = лиса
+bear                   = медведь
+
+bird of prey, ~ raptor = хищная птица
+eagle                  = орёл
+hawk                   = ястреб, сокол
+falcon                 = сокол
+owl                    = сова
+
+fish %% plural: fish   = рыба
+whale                  = кит
+
+snake, serpent         = змея
+venomous               = ядовитый
+caterpillar            = гусеница
+
+ant                    = муравей
+bee                    = пчела
+fly {noun}             = муха
+fly {verb}             = лететь
+spider                 = паук
+
+feather                = перо
+wing                   = крыло
+tail                   = хвост
+paw                    = лапа
+fur                    = мех
+

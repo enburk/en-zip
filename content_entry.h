@@ -63,6 +63,7 @@ namespace content::out
             eng = s;
 
             if (s == ""
+            or  s.starts_with("~~~")
             or  s.starts_with("---")
             or  s.starts_with("==="))
                 return;
@@ -76,7 +77,14 @@ namespace content::out
             for (str o: opt.unknown)
             errors += "UNKNOWN OPTION: " + o;
 
+            s.replace_all("'''", "");
+            s.replace_all("''" , "");
+            s.replace_all(u8"’", "'");
+            s.replace_all(mdash, "---");
+            s.replace_all(ndash, "--");
+
             if (s.starts_with(": ")) {
+                vocabulary += s.from(2);
                 en += s.from(2);
                 return; }
 
@@ -92,33 +100,39 @@ namespace content::out
             one_of ("/|{}()[]")))
             anomaly = "{}()[]";
 
+            s.replace_all("||","|");
+            s.replace_all("//","/");
+
+            if (s.contains("~~"))
+            errors += "~~";
+
+            if (s.contains(","))
+            errors += ",";
+
+            bool br = s.contains("{Br.}");
+            bool am = s.contains("{Am.}");
+
+            for (str marker: Eng_markers)
+            s.replace_all(marker, "");
+            s.replace_all("[", "");
+            s.replace_all("]", "");
+            s.replace_all("~", "");
+            s.canonicalize();
+
+            if (s.contains(
+            one_of   ("{}")))
+            errors += "{}";
+
             if (s.contains("\\\\"))
             {
+                str k =
+                s.extract_upto("\\\\");
+                uk += k.split_by("/");
+                us += s.split_by("/");
                 anomaly = "Br/Am";
-                for (str marker: Eng_markers)
-                s.replace_all(marker, "");
-                s.replace_all("~" , "");
-
-                str s1, s2;
-                s.split_by("\\\\", s1, s2);
-                s1.strip (); uk += s1;
-                s2.strip (); us += s2;
             }
             else
             {
-                bool br = s.contains("{Br.}");
-                bool am = s.contains("{Am.}");
-
-                for (str marker: Eng_markers)
-                s.replace_all(marker, "");
-                s.replace_all("~~" , "/");
-                s.replace_all("~" , "");
-
-                // beluga [whale]
-                s.replace_all("[", "");
-                s.replace_all("]", "");
-                s.canonicalize();
-
                 if (br or  am) anomaly = "Br/Am";
                 if (br and am) errors += "Br. & Am."; else
                 if (br) uk += s.split_by("/"); else
@@ -126,13 +140,8 @@ namespace content::out
                         en += s.split_by("/");
             }
 
-            if (s.contains(
-            one_of   ("{}[]")))
-            errors += "{}[]";
-
-            for (str ss: en*uk*us)
-            for (str s: ss.split_by("|"))
-            vocabulary += s;
+            for (str s: en*uk*us)
+            vocabulary += s.split_by("|");
             vocabulary.deduplicate();
 
             if (sense != "")
@@ -168,6 +177,30 @@ namespace content::out
             return s;
         }
 
+        static
+        str pretty_link (str link)
+        {
+            str line = link.extract_from("|");
+
+            link.replace_all("\\", "/");
+            link.resize(link.size()-4); // .txt
+            array<str> ss = link.split_by("/");
+            ss.upto(1).erase(); // content/
+            for (str& s: ss) {
+            s = s.from(3);
+            if (s.starts_with("''")
+            and s.  ends_with("''")) {
+                s.truncate(); s.erase(0);
+                s.truncate(); s.erase(0);
+                s = extracolor(
+                s); }
+            }
+            link = str(ss, blue("/"));
+            return link;
+        }
+        str pretty_link () { return
+            pretty_link(link); }
+
         friend void operator << (sys::out::pool& pool, entry const& x) {
             pool << x.eng;
             pool << x.rus;
@@ -195,7 +228,9 @@ namespace content::in
 
             str s = eng;
             str comment, sense;
-            s.replace_all("/","|");
+            s.replace_all("||","~");
+            s.replace_all("//","~");
+            s.replace_all("/", "|");
             s.split_by("%%", s, comment);
             s.split_by("@" , s, sense);
             s.strip(); comment.strip();
@@ -238,7 +273,9 @@ namespace content::in
             if (translated and rus != "")
             {
                 s = rus;
-                s.replace_all("/","|");
+                s.replace_all("||","~");
+                s.replace_all("//","~");
+                s.replace_all("/", "|");
                 s.split_by("%%", s, comment);
                 s.strip(); comment.strip();
 
@@ -262,7 +299,7 @@ namespace content::in
             html.replace_all("]",blue("]"));
             html.replace_all("---", mdash);
             html.replace_all("--" , ndash);
-            html.replace_all("~~", "~");
+            html.replace_all("'", u8"’");
             html.replace_all(" ~", "~");
             html.replace_all("~ ", "~");
             html.replace_all("~","<br>");

@@ -126,6 +126,8 @@ namespace app::one
                 str S = eng::lowercased(text);
                 str E = eng::lowercased(entry.eng);
                 E.replace_all("\\\\", "/");
+                E.replace_all("'''", "");
+                E.replace_all("''", "");
                 E.replace_all("[", "");
                 E.replace_all("]", "");
                 if (not S.contains(s)

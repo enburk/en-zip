@@ -11,8 +11,8 @@ argument @ reason         = аргумент, довод                  # 10+
 argument @ quarrel        = спор, ссора                      # 10+
 : An Argument In The Corridors Of The Opera # 10+
 ---
-apparatus                 = оборудование, ~ аппарат, прибор
-apparatus                 = государственный аппарат          # 14+
+apparatus @ device                = оборудование, ~ аппарат, прибор
+apparatus @ bureaucratic                 = государственный аппарат          # 14+
 ---
 comfort @ noun            = комфорт
 comfort @ verb            = утешение, утешать
@@ -26,6 +26,9 @@ pension @ hotel           = пансион                          # 14+ /// /p
 colony @ region           = колония ~ (зависимая территория) # 10+
 colony @ group            = колония, сообщество ~ (организмов) # 10+
 ---
+reflex @ response         = рефлекс, рефлекторный            # 10+
+reflex @ mirror           = отражать, отражение              # 10+
+---
 constitution @ law        = конституция, ~ основной закон    # 14+
 constitution @ body       = конституция, ~ телосложение      # 14+ /// здоровье, ~~строение, состав, устройство
 ---
@@ -33,14 +36,17 @@ project @ noun %% noun    = проект, замысел, план            # 
 project @ cast %% verb    = проецировать                     # 14+ /// pro`ject
 project @ plan %% verb    = прогнозировать, проектировать    # 12+ /// pro`ject
 project @ extend %% verb  = выступать, выдаваться            # 10+ /// pro`ject
----
+===
 sense @ appreciation      = чувство, ощущение, ощущать       # 10+
 sense @ perception        = чувство ~ (обоняния, осязания и т.д.) # 10+
+===
 sixth sense               = шестое чувство                   # +1sec # 10+
 sense of humour\\sense of humor = чувство юмора                    # +1sec # 10+
+===
 sense @ meaning           = смысл, значение                  # 10+
-common sense %% {also} good sense = здравый смысл                    # 10+
+common sense %% also: good sense = здравый смысл                    # 10+
 nonsense                  = нонсенс                          # +1sec # 10+
+
 
 
 

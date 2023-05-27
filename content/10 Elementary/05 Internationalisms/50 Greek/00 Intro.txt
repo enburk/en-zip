@@ -12,7 +12,8 @@ chaos                    = хаос          # 10+
 basis                    = основа, базис # 16+
 zodiac                   = зодиак        # 10+
 comet                    = комета
-atmosphere @ planet      = атмосфера
+
+atmosphere @ planet      = атмосфера ~ (планеты)
 atmosphere @ mood        = атмосфера, обстановка, ~ создавать атмосферу
 
 euphoria                 = эйфория       # 16+
@@ -31,7 +32,8 @@ cosmetics                = косметика     /// , косметически
 aroma                    = аромат        # 10+
 nectar                   = нектар
 diadem                   = диадема, корона # 16+ /// , ~~слава, величие
-sandal                   = сандалия      # 10+ /// #homonyms /// , ремешок (сандалии)
+sandal @ shoe            = сандалия      # 10+ /// #homonyms /// , ремешок (сандалии)
 talisman                 = талисман
 amphora                  = амфора        # 16+
+
 

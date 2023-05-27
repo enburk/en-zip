@@ -1,7 +1,7 @@
 adverbs              = наречия
 
-good                 = хорошо
-bad                  = плохо
+good                 = хорошо # pix-
+bad                  = плохо # pix-
 
 ===
 
@@ -9,16 +9,24 @@ bad                  = плохо
 : Fine!              # pix-
 : Nice!              # pix-
 : Sweet!             # pix-
-: Naughty, but nice! # pix-
+: Great!             # pix-
+
+===
+
 : Awesome!           # pix-
-: Brutal!            # pix-
 : Excellent!         # pix-
 : Unreal!            # pix-
 : Golden!            # pix-
+
+: Brutal!            # pix-
 : Wicked!            # pix-
 : Nasty!             # pix-
 : Rough!             # pix-
-: Great!             # pix-
+
+===
+
+: Naughty, but nice! # pix-
+
 
 
 

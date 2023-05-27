@@ -1,46 +1,48 @@
-~~~
-date(1) @ day             = дата, число, день ~~ срок, период, время, ~ датировать, ~ определять возраст
-date(1) {Am.} @ romance   = встречаться ~ (быть в романтических отношениях) %% ''также'' тот, с кем назначено свидание # +2sec
-date(2) @ fruit           = финик                                   # +1sec
+polysemic
+---
+cardinal @ rank           = кардинал                         # 14+
+cardinal @ color %% color = тёмно-красный ~ (цвет)           # 14+
+cardinal @ bird           = кардинал ~ (птица)               # 14+
+cardinal @ adjective      = кардинальный, основной           # 14+
+cardinal sin %% also: deadly sin = смертный грех                    # 16+
+cardinal number           = количественное числительное      # 14+
+---
+argument @ reason         = аргумент, довод                  # 10+
+argument @ quarrel        = спор, ссора                      # 10+
+: An Argument In The Corridors Of The Opera # 10+
+---
+apparatus                 = оборудование, ~ аппарат, прибор
+apparatus                 = государственный аппарат          # 14+
+---
+comfort @ noun            = комфорт
+comfort @ verb            = утешение, утешать
+---
+vulgar @ obscene          = вульгарный, пошлый, грубый       # 14+
+vulgar @ popular          = простонародный, ~ обыкновенный, банальный # 14+
+---
+pension @ payment         = пенсия, пособие
+pension @ hotel           = пансион                          # 14+ /// /pɑːnsiˈoʊn/
+---
+colony @ region           = колония ~ (зависимая территория) # 10+
+colony @ group            = колония, сообщество ~ (организмов) # 10+
+---
+constitution @ law        = конституция, ~ основной закон    # 14+
+constitution @ body       = конституция, ~ телосложение      # 14+ /// здоровье, ~~строение, состав, устройство
+---
+project @ noun %% noun    = проект, замысел, план            # 10+ /// `project
+project @ cast %% verb    = проецировать                     # 14+ /// pro`ject
+project @ plan %% verb    = прогнозировать, проектировать    # 12+ /// pro`ject
+project @ extend %% verb  = выступать, выдаваться            # 10+ /// pro`ject
+---
+sense @ appreciation      = чувство, ощущение, ощущать       # 10+
+sense @ perception        = чувство ~ (обоняния, осязания и т.д.) # 10+
+sixth sense               = шестое чувство                   # +1sec # 10+
+sense of humour\\sense of humor = чувство юмора                    # +1sec # 10+
+sense @ meaning           = смысл, значение                  # 10+
+common sense %% {also} good sense = здравый смысл                    # 10+
+nonsense                  = нонсенс                          # +1sec # 10+
 
-~~~
-sense @ appreciation      = чувство, ощущение, ощущать              # 10+
-sense @ perception        = чувство ~ (обоняния, осязания и т.д.)   # 10+
-sixth sense               = шестое чувство                          # +1sec # 10+
-sense of humour\\sense of humor = чувство юмора                           # +1sec # 10+
-sense @ meaning           = смысл, значение                         # 10+
-common sense %% {also} good sense = здравый смысл                           # 10+
-nonsense                  = нонсенс                                 # +1sec # 10+
 
-~~~
-muse(1)                   = муза                                    # 10+
-muse(2)                   = размышлять, задумываться                # +1sec # 10+
 
-~~~
-gamma                     = гамма ~ (буква)                         # 12+
-scale(1) @ music          = гамма ~ (в музыке)                      # +1sec # 12+
-scale(1) @ size           = шкала, масштаб                          # +2sec # 12+
-scales(1) @ weight        = весы                                    # +2sec # 12+
-scales(2) @ fish          = чешуя %% scale -- чешуйка               # +2sec # 12+
 
-~~~
-objective @ adjective     = объективный
-objective @ photo %% {also} object lens/glass = объектив
-objective @ target        = цель, задача                            # +2sec
-
-~~~
-spectacle                 = спектакль, представление, зрелище
-spectacles                = очки                                    # +1sec /// NEW
-spectacled cobra          = индийская кобра, ~ очковая змея         # +1sec /// NEW
-glasses/eyeglasses        = очки                                    /// NEW
-glass                     = стекло, стакан, бокал, ~ иногда: зеркало # +1sec /// NEW
-goggles                   = защитные очки                           # +2sec /// NEW
-
-~~~
-present(1) @ gift %% noun = подарок, презент                        # 10+ /// `present
-present(1) @ give %% verb = дарить, преподносить                    # 10+ /// pre`sent
-present(1) @ appear       = представлять, ~ являть собой, ~ преподносить ~ (в каком-либо свете) # 12+ /// pre`sent
-presentation              = презентация, показ, ~ представление ~ (идеи и т.п.) # 12+
-present(2) @ time         = настоящее, ~ настоящее время            # 10+ /// `present
-present(2) @ actual       = присутствующий, наличествующий, ~ современный # 12+ /// `present
 

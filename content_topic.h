@@ -65,7 +65,8 @@ namespace content::out
                 }
                 if (entry.eng.starts_with("~~~"))
                 {
-                    chain.units += unit{};
+                    chain.order++;
+                //  chain.units += unit{};
                     ordered = true;
                     continue;
                 }

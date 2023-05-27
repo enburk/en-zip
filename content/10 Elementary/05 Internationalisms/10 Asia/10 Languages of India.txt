@@ -1,33 +1,34 @@
-India             = Индия                                # pix-
-Sanskrit          = санскрит %% язык древних священных текстов # pix- # 10+
+India               = Индия                              # pix-
+Sanskrit            = санскрит %% язык древних священных текстов # pix- # 10+
 
-avatar            = аватар/аватара                       # 10+
-guru              = гуру                                 # 12+
-karma             = карма                                # 10+
-yoga              = йога
-nirvana           = нирвана                              # 16+
+avatar              = аватар/аватара                     # 10+
+guru                = гуру                               # 12+
+karma               = карма                              # 10+
+yoga                = йога
+nirvana             = нирвана                            # 16+
 
-sandal            = сандал                               # 18+ /// ,~sandalwood
-cashmere          = кашемир                              # 12+
-sari              = сари                                 # 18+
-palanquin         = паланкин                             # RARE- # 18+
-vimana            = вимана %% летающий дворец или колесница # RARE- # 18+
+sandal @ sandalwood = сандал                             # 18+ /// ,~sandalwood
+cashmere            = кашемир                            # 12+
+sari                = сари                               # 18+
+palanquin           = паланкин                           # RARE- # 18+
+vimana              = вимана %% летающий дворец или колесница # RARE- # 18+
 
 
 =====
-Hindi, Tamil etc. = хинди, тамильский ~ и другие (языки) # HEAD # pix- # 10+
+Hindi, Tamil etc.   = хинди, тамильский ~ и другие (языки) # HEAD # pix- # 10+
 =====
 
-bungalow          = бунгало                              # 12+ /// Hindi
-veranda|verandah  = веранда                              /// Hindi
-pyjamas\\pajamas  = пижама                               /// Hindi
-bandana|bandanna  = бандана                              /// bandhnu – метод окрашивания ткани - хинди, от badhnati–binds-санскр.
-shampoo           = шампунь                              /// Hindi - champo  - разминай мускулы
+bungalow            = бунгало                            # 12+ /// Hindi
+veranda|verandah    = веранда                            /// Hindi
+pyjamas\\pajamas    = пижама                             /// Hindi
+bandana|bandanna    = бандана                            /// bandhnu – метод окрашивания ткани - хинди, от badhnati–binds-санскр.
+shampoo             = шампунь                            /// Hindi - champo  - разминай мускулы
 
-jungle            = джунгли                              /// Hindi – jangal - лес, пустыня; Санскр. – jangala-s - безводный
-mongoose          = мангуст                              /// Indic
-catamaran         = катамаран                            # 10+ /// Tamil
-curry             = карри                                # MEAT # 12+ /// Tamil
+jungle              = джунгли                            /// Hindi – jangal - лес, пустыня; Санскр. – jangala-s - безводный
+mongoose            = мангуст                            /// Indic
+catamaran           = катамаран                          # 10+ /// Tamil
+curry               = карри                              # MEAT # 12+ /// Tamil
+
 
 
 

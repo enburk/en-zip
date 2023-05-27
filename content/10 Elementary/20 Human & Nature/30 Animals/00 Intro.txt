@@ -1,34 +1,38 @@
-animalist                   = анималист                           # 16+
-animal                      = животное,  животный
+animal                      = животное, ~  животный
+===
+animalist                   = анималист    # 16+
+===
 
 bestial %% formal, literary = животный, зверский, грубый %% от лат. bestia -- «животное, зверь» # 14+ /// formal disapproving /// Latin
-bestiary                    = бестиарий                           # HISTORY+ # 18+ /// (средневековый сборник зоологических статей) /// Latin
+bestiary                    = бестиарий    # HISTORY+ # 18+ /// (средневековый сборник зоологических статей) /// Latin
 
 lion                        = лев
 lioness                     = львица
+---
 tiger                       = тигр
 tigress                     = тигрица
-Siberian tiger              = уссурийский тигр                    # TERM+ # 16+
+Siberian tiger              = уссурийский тигр # TERM+ # 16+
 
 leopard                     = леопард, барс
 snow leopard                = снежный барс %% снежный леопард, ирбис
 panther                     = пантера
-cougar                      = кугуар %% кугуар и пума  -- это два названия одного вида # 10+
+cougar//mountain lion       = кугуар %% кугуар и пума  -- это два названия одного вида # 10+
 
 panda                       = панда
 grizzly [bear]              = гризли
 hyena|hyaena\\hyena         = гиена
 
 zebra                       = зебра
-mule                        = мул                                 # RARE+ /// (mule II шлепанец)
-dromedary                   = дромадер %% одногорбый верблюд      # RARE+ # 16+
+mule                        = мул          # RARE+ /// (mule II шлепанец)
+dromedary                   = дромадер %% одногорбый верблюд # RARE+ # 16+
 antelope                    = антилопа
 [American] bison            = бизон %% (Bison bison)
 [European] bison            = зубр %% (Bison bonasus)
 yak                         = як
 
-lemur                       = лемур                               # RARE+
-capuchin                    = капуцин                             # RARE+ # 16+
-gibbon                      = гиббон                              # RARE+ # 16+ /// French
+lemur                       = лемур        # RARE+
+capuchin                    = капуцин      # RARE+ # 16+
+gibbon                      = гиббон       # RARE+ # 16+ /// French
 gorilla                     = горилла
+
 

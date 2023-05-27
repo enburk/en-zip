@@ -53,6 +53,13 @@ motive                       = мотив, ~ повод, стимул           
 avant-garde                  = авангард, авангардный ~ (в искусстве)      # 14+
 vanguard                     = авангард ~ (в военном деле)                # 14+ /// # figurative ?
 ~~~
+spectacle                    = спектакль, представление, зрелище
+spectacles                   = очки                                       # +1sec /// NEW
+spectacled cobra             = индийская кобра, ~ очковая змея            # +1sec /// NEW
+glasses @ eyeglasses         = очки                                       /// NEW
+glasses @ vessels            = стекла, стаканы, бокалы                    # +1sec /// NEW
+goggles                      = защитные очки                              # +2sec /// NEW
+~~~
 ace @ pilot                  = ас, знаток                                 # 14+
 ace @ cards                  = туз                                        # 14+ /// очко, эксперт
 ace @ tennis                 = в теннисе: эйс %% подача навылет           # 14+
@@ -63,6 +70,7 @@ pardon [me]                  = простите! %% извинение за не
 I beg your pardon!           = прошу прощения! %% формальное извинение, ~ шутливый способ показать обиду # 14+
 Pardon my French!
 Excuse my French!            = извините за мой французский                # 14+
+
 
 
 

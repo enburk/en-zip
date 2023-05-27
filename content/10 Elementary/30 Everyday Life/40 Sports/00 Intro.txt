@@ -1,0 +1,36 @@
+sport                   = спорт, вид спорта, ~ спортиные игры # -1sec
+sportsman               = спортсмен                   # -1sec
+sportswoman             = спортсменка                 # -1sec
+
+champion                = чемпион
+finalist                = финалист
+record {noun}           = рекорд                      /// `record
+medal                   = медаль                      # -1sec
+trophy                  = трофей                      # -1sec
+
+attack                  = атака, атаковать, ~ нападение /// , припадок
+counterattack           = контратака                  # 10+
+combination             = комбинация
+tactics                 = тактика                     # -1sec
+partner                 = партнёр                     # -1sec
+opponent                = соперник                    # -1sec
+leader                  = лидер                       # -1sec
+outsider                = аутсайдер                   # 14+
+
+arbiter                 = арбитр                      # -1sec # 14+
+referee                 = ре́фери/рефери́ %% судья      # -1sec # 14+
+penalty                 = штраф, наказание %% ''не только'' пенальти /// # polysemic
+fair play               = фейр-плей %% «честная игра» # SPORT- # 16+
+playoff {Am.}           = плей-офф %% игры на выбывание # SPORT- # 16+
+commentator             = комментатор                 # 10+
+training                = тренинг, тренировка
+trainer/coach           = тренер
+junior                  = младший, юниор              # 14+
+league                  = лига
+stadium                 = стадион                     # -1sec
+sports arena            = спортивная арена            # -1sec
+Olympics,~Olympic Games = Олимпиада, Олимпийские игры # -1sec
+Paralympic Games        = паралимпийские игры         # SPORT- # -1sec # 16+
+doping                  = допинг                      # -1sec # 14+
+disqualification        = дисквалификация             # -1sec # 14+
+

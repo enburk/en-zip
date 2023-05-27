@@ -1,0 +1,16 @@
+diving {scuba}         = дайвинг                                # 10+
+diving {swimming}      = прыжки в воду %% спортивная дисциплина
+dive %% <noun>, <verb> = нырок, нырять, ~ в авиации: пикировать /// NEW
+diver                  = ныряльщик, прыгун в воду, ~ не только дайвер, водолаз %%  Также дайверами называют ~ некоторых футболистов и хоккеистов. # 10+
+
+freediving~~free-diving~~free diving = фридайвинг                             # 10+
+apnoea\\apnea          = апноэ                                  # TERM- # 14+
+decompression          = декомпрессия                           # TERM- # 14+
+barotrauma             = баротравма                             # TERM- # 14+
+caisson disease        = кессонная болезнь                      # TERM- # 14+
+
+synchronized swimming  = синхронное плавание
+front crawl            = кроль
+butterfly {swimming}   = в плавании: баттерфляй
+<small>''If swimming is so good for your figure… ~ how do you explain whales?''</small> = %% HOTMAG
+

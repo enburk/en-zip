@@ -120,8 +120,8 @@ namespace studio::one
 
             if (r.kind == "video")
             {
-                if (r.options.
-                    contains("noqrop"))
+                if (r.options.contains("asset")
+                or  r.options.contains("noqrop"))
                     continue;
 
                 if (r.entries.contains("+"))

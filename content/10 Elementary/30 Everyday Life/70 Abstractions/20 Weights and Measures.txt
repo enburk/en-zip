@@ -1,0 +1,41 @@
+measure                      = мерить, мера                             /// измерение (процесс измерения, не ''измерение'' пространства)
+''Measure twice, cut once.'' = ''«Два раза отмерь, один раз отрежь»''
+metrology                    = метрология                               # 16+
+metric system                = метрическая система                      # 12+
+
+mass                         = масса
+tonne\\metric ton            = тонна                                    # 10+
+kilogramme\\kilogram         = килограмм
+gramme\\gram                 = грамм
+
+grain                        = гран %% тройский гран равен 64,8 мг, ~ ювелирный -- ровно 50 мг # TERM- # 18+ /// # polysemic
+grain                        = зерно, крупинка %% гран – это примерный вес одного зерна # TERM- # 18+
+ounce                        = унция %% 28,3 г                          # TERM- # 14+
+troy ounce                   = тройская унция %% 31,1 г                 # TERM- # 14+
+pound                        = фунт %% Слова pound и пуд восходят к латинскому ~ lībra pondō -- «фунт весом». # TERM- # 14+
+
+distance                     = расстояние, ~ в спорте: дистанция        # 10+
+metre\\meter                 = метр                                     # -1sec
+decimetre\\decimeter         = дециметр                                 # MATH- # TERM- # -1sec
+millimetre\\millimeter       = миллиметр                                # MATH- # TERM- # -1sec
+micrometre\\micrometer       = микрометр/микрон                         # MATH+ # TERM- # 14+
+micron                       = микрон/микрометр                         # MATH+ # TERM- # 14+
+
+mile                         = миля                                     # 14+
+foot                         = фут                                      # 14+ /// # polysemic
+yard                         = ярд                                      # 14+
+
+hectare                      = гектар
+acre                         = акр %% около 40 соток                    # 14+
+
+cubic metre\\cubic meter     = кубический метр
+litre\\liter                 = литр
+pint                         = пинта %% примерно пол литра              # 16+
+quart                        = кварта %% около литра                    # 16+
+gallon                       = галлон %% около 4 литров                 # 16+
+bushel                       = бушель %% примерно 35 литров             # 18+
+barrel                       = баррель %% около 160 литров              # 16+ /// # polysemic /// Также: ''бочка, разливать в бочки''.
+
+per cent\\percent            = процент
+per mille~per mil            = промилле                                 # 18+
+

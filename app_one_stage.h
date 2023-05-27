@@ -51,6 +51,8 @@ namespace app::one
 
             int i = 0;
 
+            entries.clear();
+
             for (unit& topic: theme->units)
             {
                 if (topic.kind != unit::topic) continue;
@@ -62,9 +64,21 @@ namespace app::one
                     if (chain.kind != unit::chain) continue;
 
                     bool new_chain = true;
-                    
+
                     int j = i; int order = 0;
 
+                    auto arrange = [&](int from, int upto)
+                    {
+                        if (from == upto) return;
+                        entries.stable_partition(from, upto,
+                        [](auto& e){ return e->pixed; });
+                        auto& e = entries[from];
+                        e.new_topic = new_topic;
+                        e.new_chain = new_chain;
+                        new_topic = false;
+                        new_chain = false;
+                    };
+                    
                     for (unit& leaf: chain.units)
                     {
                         if (leaf.kind != unit::leaf) continue;
@@ -77,21 +91,19 @@ namespace app::one
 
                         if (order < leaf.order) {
                             order = leaf.order;
-                            entries.stable_partition(j, i,
-                            [](auto& e){ return e->pixed; });
+                            arrange(j, i);
                             j = i; }
 
                         auto& e = entries[i++];
                         e.translated = translated;
-                        e.new_topic = new_topic; new_topic = false;
-                        e.new_chain = new_chain; new_chain = false;
                         e.number = leaf.entry;
+                        e.new_topic = false;
+                        e.new_chain = false;
                         e.hide();
                         e.load();
                     }
 
-                    entries.stable_partition(j, i,
-                    [](auto& e){ return e->pixed; });
+                    arrange(j, i);
                 }
             }
 

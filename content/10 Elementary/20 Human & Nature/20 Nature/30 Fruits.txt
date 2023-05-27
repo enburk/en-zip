@@ -1,4 +1,4 @@
-fruit             = плод, фрукт
+fruits            = плоды, фрукты # pix-
 
 apricot           = абрикос
 coconut           = кокос
@@ -19,4 +19,6 @@ nectarine         = нектарин   # RARE-
 physalis          = физалис    # RARE+ # 18+
 pistachios        = фисташки
 pomegranate       = гранат
+
+
 

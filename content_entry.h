@@ -9,10 +9,10 @@ namespace content
 
     array<str> eng_markers = str("Am., Br., "
     "also, especially, mainly, usually, rarely, "
-    "colloquial, formal, informal, idiom, idiomatic, "
+    "colloquial, informal, formal, idiomatic, idiom, "
     "literary, literally, old-fashioned, slang, vulgar, "
-    "singular, plural, countable, uncountable, comparative, superlative, "
-    "transitive, intransitive, past tense, past participle"
+    "singular, plural, uncountable, countable, comparative, superlative, "
+    "intransitive, transitive, past tense, past participle"
     ).split_by(", ");
 
     array<str> Rus_markers = str(
@@ -102,6 +102,7 @@ namespace content::out
 
             s.replace_all("||","|");
             s.replace_all("//","/");
+            s.debracket("(",")");
 
             if (s.contains("~~"))
             errors += "~~";
@@ -235,10 +236,10 @@ namespace content::in
             s.split_by("@" , s, sense);
             s.strip(); comment.strip();
 
-            s.replace_all("(1)", small(blue("1")));
-            s.replace_all("(2)", small(blue("2")));
-            s.replace_all("(3)", small(blue("3")));
-            s.replace_all("(4)", small(blue("4")));
+            s.replace_all("(1)", small(small(blue("<sub>1</sub> "))));
+            s.replace_all("(2)", small(small(blue("<sub>2</sub> "))));
+            s.replace_all("(3)", small(small(blue("<sub>3</sub> "))));
+            s.replace_all("(4)", small(small(blue("<sub>4</sub> "))));
 
             if (s.contains("\\\\"))
             {
@@ -268,7 +269,7 @@ namespace content::in
 
             if (opt.external.
             contains("HEAD"))
-            html = big(html);
+            html = extracolor(big(html));
 
             if (translated and rus != "")
             {

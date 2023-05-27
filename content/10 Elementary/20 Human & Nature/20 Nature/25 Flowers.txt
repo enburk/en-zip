@@ -1,3 +1,5 @@
+flowers             = цветы
+
 aster               = астра
 chrysanthemum       = хризантема
 crocus              = крокус, шафран                          # 14+
@@ -20,4 +22,5 @@ narcissus %% plural: narcissus/narcissuses/narcissi = нарцисс            
 nasturtium          = настурция                               # RARE+ # 14+
 oleander            = олеандр                                 # RARE+ # 16+
 peony               = пион                                    # 14+
+
 

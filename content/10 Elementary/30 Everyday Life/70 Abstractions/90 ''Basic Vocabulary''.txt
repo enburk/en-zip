@@ -1,0 +1,41 @@
+dozen          = дюжина
+hundred        = сто, сотня
+thousand       = тысяча
+
+one hundred %% 100
+one thousand %% 1 000
+one million %% 1 000 000
+one billion %% 1 000 000 000
+
+wheight        = вес, взвешивать
+light          = лёгкий
+heavy          = тяжёлый
+
+size           = размер
+length         = длина
+long           = длинный
+short          = короткий
+
+height         = высота
+high           = высокий
+low            = низкий
+
+thickness      = толщина
+thick          = толстый
+thin           = тонкий
+
+depth          = глубина
+deep           = глубокий
+shallow        = мелкий
+
+wide           = широкий
+narrow         = узкий
+<small>''Open wide and say “ahh”.''</small>
+
+volume {space} = объём
+volume {sound} = громкость
+volume {book}  = том
+
+hour           = час
+hourglass      = песочные часы
+

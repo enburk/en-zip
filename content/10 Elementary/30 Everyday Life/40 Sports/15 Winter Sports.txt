@@ -1,0 +1,14 @@
+hockey             = хоккей
+forward            = нападающий/форвард # 10+
+penalty            = в хоккее: удаление /// # polysemic
+period             = период
+time out           = тайм-аут   # SPORT- # 14+
+neutral zone       = нейтральная зона # SPORT+ # 14+
+
+figure skating     = фигурное катание
+triple toe loop    = тройной тулуп # 18+
+
+curling            = кёрлинг    # 10+
+bobsleigh\\bobsled = бобслей    # 10+
+snowboard          = сноуборд
+

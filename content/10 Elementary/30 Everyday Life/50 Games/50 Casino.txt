@@ -1,0 +1,17 @@
+casino           = казино
+
+card             = карта
+poker            = покер
+bluff            = блеф, обман ~ притворяться, блефовать
+joker            = джокер                     /// (шут, joke -- шутка)
+
+blackjack        = блэкджек|блек-джек
+
+roulette         = рулетка
+Russian roulette = русская рулетка
+croupier         = крупье                     # TERM-
+zero             = зеро %% нулевой сектор рулетки # TERM- # RANDOM-
+
+lottery          = лотерея
+jackpot          = джекпот                    /// (куш, самый крупный выигрыш)
+

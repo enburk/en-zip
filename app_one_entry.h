@@ -101,6 +101,14 @@ namespace app::one
             course.entries[number];
 
             str html = entry.html(translated);
+
+            if (vocal
+            and entry.rus == ""
+            and entry.eng.size() <
+                audio_index.title.size())
+                html = media::canonical(
+                audio_index.title);
+
             str text = doc::html::untagged(html);
 
             start = gui::time::now;
@@ -128,15 +136,18 @@ namespace app::one
                 E.replace_all("\\\\", "/");
                 E.replace_all("'''", "");
                 E.replace_all("''", "");
+                E.replace_all("~", "");
                 E.replace_all("[", "");
                 E.replace_all("]", "");
+                E.canonicalize();
                 if (not S.contains(s)
                 and not E.contains(s))
                 script.html = small(c);
             }
             if (pixed)
             {
-                str c = video_index.credit;
+                str
+                c = video_index.credit;
                 c = media::canonical(c);
 
                 str date;
@@ -149,7 +160,8 @@ namespace app::one
             }
             if (vocal)
             {
-                str c = audio_index.credit;
+                str
+                c = audio_index.credit;
                 c = media::canonical(c);
 
                 str date;

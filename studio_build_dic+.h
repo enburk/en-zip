@@ -71,9 +71,16 @@ namespace studio::dic
             or  r.title == "icon.chevron.left.double.black.128x128"
             or  r.title == "icon.settings.black.192x192")
             {
+                r.options += "asset";
                 data.assets.insert(&r);
                 continue;
             }
+
+            if (r.abstract.contains(one_of ("{}[]")))
+                report::errors += yellow("{}[]:") +
+                linked(html(r.abstract),
+                "file://" + r.path.
+                    string());
 
             abstractmap[r.abstract][r.title] = &r;
 

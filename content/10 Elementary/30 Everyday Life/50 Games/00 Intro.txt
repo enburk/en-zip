@@ -1,0 +1,26 @@
+''Game on! ''
+
+bowling       = боулинг
+darts         = дартс                                     # 10+
+paintball     = пейнтбол
+snooker       = снукер %% разновидность бильярда          # TERM+ # 18+
+pool          = пул %% разновидность бильярда             # TERM+ # 18+
+pinball       = пинбол                                    # HISTORY- # 16+
+
+puzzle        = загадка, головоломка, ~ затруднение, озадачивать # RANDOM-
+jigsaw [puzzle], ~ puzzle {esp.} {Am.} = пазлы                                     # RANDOM-
+Rubik's Cube  = кубик Рубика
+crossword     = кроссворд
+charade       = шарада                                    # 10+
+rebus         = ребус                                     # 10+
+Scrabble      = скрабл                                    # 10+
+sudoku        = судоку                                    # 10+
+go            = го                                        # 16+
+
+dominoes      = домино ~ (игра)                           # 14+ /// |dominos
+domino        = костяшка домино                           # 14+
+domino effect = эффект домино, ~ принцип домино           # 14+
+
+whist         = вист                                      # HISTORY+ # 16+ /// диалектизм (ирл.) тихо!, тихий, тишина и т.п.
+piquet        = пикет %% старинная карточная игра         # HISTORY+ # 16+ /// фр.
+

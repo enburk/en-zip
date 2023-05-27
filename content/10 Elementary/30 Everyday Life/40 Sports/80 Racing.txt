@@ -1,0 +1,20 @@
+sports car~~sportscar         = спорткар %% спортивный автомобиль
+autodrome                     = автодром
+rally                         = ралли    # 10+
+karting                       = картинг  # TERM- # 10+
+kart/go-kart\\go-cart         = карт     # TERM- # 10+
+drift                         = дрифт    # TERM- # 10+
+photo finish                  = фотофиниш
+street racing                 = уличные гонки %% стрит-рейсинг
+tuning                        = тюнинг   # 10+
+spoiler                       = спойлер  # TERM- # 10+
+
+motocross                     = мотокросс # 10+
+aquabike                      = аквабайк
+velodrome                     = велодром, велотрек
+handicap                      = гандикап # TERM- # 18+
+derby                         = дерби    # TERM- # 16+
+jockey                        = жокей    # 10+
+totalisator\\totalizator      = тотализатор # TERM- # 16+
+bookmaker %% informal: bookie = букмекер # TERM- # 16+
+

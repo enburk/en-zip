@@ -1,0 +1,27 @@
+{athletics}
+athletics {Br.}       = легкая атлетика
+athletics {Am.}       = спорт
+track and field {Am.} = легкая атлетика
+
+start                 = начинать, начало, ~ в спорте: старт
+false start           = фальстарт               # 10+
+finish line           = финишная линия
+distance              = в спорте: дистанция     # 10+
+sprinter              = спринтер                # 10+
+spurt                 = рывок, в спорте: спурт  # SPORT+ # 16+
+marathon              = марафон
+biathlon              = биатлон                 # 10+
+decathlon             = десятиборье             # SPORT- # 18+
+discus                = диск %% в легкой атлетике # 10+
+
+
+gymnastics            = гимнастика
+gymnast               = гимнаст/гимнастка
+artistic gymnastics   = спортивная гимнастика   # SPORT-
+rhythmic gymnastics   = художественная гимнастика # SPORT-
+acrobatic gymnastics  = спортивная акробатика   # SPORT-
+
+mat                   = мат                     # SPORT+ # RANDOM-
+magnesia              = магнезия %% увеличивает трение # SPORT+ # 18+
+talc/talcum powder    = тальк %% уменьшает трение ~~~ Спортсмены используют магнезию, а не тальк. # SPORT+ # 18+
+

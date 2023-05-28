@@ -1,0 +1,53 @@
+astronomy              = астрономия
+astronomer             = астроном
+
+Nicolaus Copernicus    = Николай Коперник                                  # HISTORY+ # MATH+ # TERM+ # DEL # 10+
+Galileo Galilei        = Галилео Галилей                                   # HISTORY+ # MATH+ # TERM+ # DEL # 10+
+Tycho Brahe            = Тихо Браге                                        # HISTORY+ # MATH+ # TERM+ # DEL # 18+
+
+observatory            = обсерватория                                      # 10+
+telescope              = телескоп, ~ складывать/складываться, ~ раздвигать/раздвигаться
+radio telescope        = радиотелескоп                                     # TECH+ # TERM+ # DEL # 10+
+planetarium            = планетарий
+
+corona                 = солнечная корона                                  # TERM- # 18+
+halo                   = в астрономии: гало, ~ также: нимб, ореол          # 18+
+moon/lunar phases      = фазы луны                                         /// Другие варианты: phase of the moon
+
+Phobos                 = Фобос ~ (спутник Марса)                           # TERM- # DEL # 14+ /// Nature
+Ganymede               = Ганимед ~ (спутник Юпитера)                       # TERM- # 14+
+Io                     = Ио ~ (спутник Юпитера)                            # TERM- # 14+
+Titan                  = Титан ~ (спутник Сатурна)                         # TERM- # 14+
+Rhea                   = Рея ~ (спутник Сатурна)                           # TERM- # 14+
+Dione                  = Диона ~ (спутник Сатурна)                         # TERM- # DEL # 14+
+
+Halley's Comet         = комета Галлея                                     # HISTORY+ # TERM+
+
+Andromeda              = Андромеда ~ (созвездие)                           # MATH+ # TERM+
+Cassiopeia             = Кассиопея ~ (созвездие)                           # MATH+ # TERM+
+
+Centaurus              = Центавр/Кентавр ~ (созвездие)
+Alpha Centauri         = Альфа Центавра                                    # 10+
+
+Lyra                   = Лира ~ (созвездие)
+Vega                   = Вега %% вторая по яркости звезда в северном полушарии # 10+
+
+Orion                  = Орион ~ (созвездие)
+Betelgeuse             = Бетельгейзе %% красный сверхгигант в созвездии Ориона # TERM- # 18+
+Rigel                  = Ригель %% бело-голубой сверхгигант в созвездии Ориона # TERM- # 18+
+supergiant             = сверхгигант                                       # 10+
+
+Scorpius               = Скорпион ~ (созвездие)
+Antares                = Анта́рес/Антаре́с %% от греч. «против Ареса/Марса» -- красный сверхгигант в созвездии Скорпиона # 18+ /// [рэ]
+
+Pole Star, Polaris     = Полярная звезда
+Sirius                 = Сириус %% самая яркая звезда ночного неба         # 10+
+Altair                 = Альтаир %% 12-я по яркости звезда                 # 10+
+Aldebaran              = Альдебаран %% «Глаз Тельца»                       # 10+
+
+Pleiades~Seven Sisters = Плеяды (рассеянное звездное скопление)            # TERM- # 16+
+globular cluster       = шаровое звёздное скопление                        # 12+
+
+the Andromeda Galaxy   = галактика Андромеды ~ (Туманность Андромеды)      # MATH+ # TERM+ # 10+
+the Sombrero Galaxy    = галактика Сомбреро                                # MATH+ # TERM+ # 10+
+

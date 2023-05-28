@@ -1,0 +1,46 @@
+monarchy                = монархия
+monarch                 = монарх
+
+monarchism              = монархизм                                        # 14+
+monarchist              = монархист                                        # 14+
+royalist                = монархист, роялист                               # 14+
+<small>''You needn't to be better royalist ~ than the king.''</small> = %% Henry James, ''Protrait of a lady'' ~ LIBRIVOX KLETT
+
+coronation              = коронация
+crown                   = корона, короновать
+tiara                   = тиара, диадема                                   # 14+
+
+dynasty                 = династия                                         /// Br. dɪnəsti
+regent                  = регент                                           # 16+
+sceptre\\scepter        = скипетр                                          # 14+
+sovereign               = суверен, суверенный                              # 16+
+usurpation              = узурпация                                        # 16+
+
+absolute monarchy       = абсолютная монархия                              # POLIT- # 16+
+constitutional monarchy = конституционная монархия                         # POLIT- # 16+
+
+title                   = титул, звание
+
+Caesar                  = цезарь                                           # 16+
+Kaiser                  = кайзер %% император Германской империи           # 16+
+tsar|tzar|czar          = царь
+
+prince                  = принц
+princess                = принцесса
+crown prince            = кронпринц %% титул наследника престола в германоязычных монархиях # HISTORY- # 16+
+prince consort          = принц-консорт %% супруг правящей королевы        # HISTORY- # 16+
+dauphin                 = дофин %% титул наследника французского престола  # HISTORY- # 16+
+infante/infanta         = инфант/инфанта %% принц/принцесса в Испании и Португалии # HISTORY- # 16+
+
+emir                    = эмир                                             # 14+ /// Arabic
+emirate                 = эмират                                           # 14+ /// Arabic
+
+sultan                  = султан                                           # 14+
+sultanate               = султанат                                         # 14+
+
+shah                    = шах                                              # TERM- # 14+
+padishah                = падишах                                          # TERM- # 14+ /// Persian
+
+rajah|raja              = раджа                                            # TERM- # 16+
+maharajah|maharaja      = махараджа                                        # TERM- # 16+
+

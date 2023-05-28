@@ -1,0 +1,34 @@
+ideology             = идеология
+ideologue/ideologist = идеолог
+
+conservative         = консервативный, консерватор
+liberal              = либеральный, либерал
+radical              = радикальный, радикал
+reactionary          = реакционный, реакционер
+
+centrist             = центрист                                     # 16+
+extremist            = экстремист                                   # 14+
+
+establishment        = истеблишмент, правящие круги                 /// учреждение, организация
+
+propaganda           = пропаганда
+agitation            = агитация
+agitation            = волнение, возбуждение, смятение, беспокойство
+agitator             = подстрекатель, агитатор
+
+doctrine             = доктрина, учение, догма                      # POLIT-
+manifesto            = манифест                                     # POLIT-
+
+renegade             = ренегат, отступник, отступнический           # RARE+
+revisionism          = ревизионизм                                  # POLIT+
+
+cult of personality  = культ личности
+egalitarian          = эгалитарный, эгалитарист %% поборник равноправия # RARE+
+paternalism          = патернализм                                  # POLIT+
+
+Pan-Slavism          = панславизм                                   /// реже panslavism
+
+terror               = в политике: террор, ~ также: страх, ужас     # 16+
+terrorism            = терроризм
+suicide bomber       = террорист-смертник %% дословно: бомбист-самоубийца # 18+
+

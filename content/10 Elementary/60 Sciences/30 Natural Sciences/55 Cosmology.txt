@@ -1,0 +1,25 @@
+cosmology              = космология                                    # 18+
+
+geocentric             = геоцентрический                               # 18+
+heliocentric           = гелиоцентрический                             # 18+
+
+epicycle               = эпицикл %% С помощью эпициклов геоцентрическая модель объясняет ретроградное движение планет. # MATH+ # 18+
+
+parallax               = параллакс                                     # MATH+ # 18+
+parsec                 = парсек                                        # 10+
+
+spiral galaxy          = спиральная галактика                          # 10+
+elliptical galaxy      = эллиптическая галактика                       # 10+
+irregular galaxy       = неправильная галактика                        # 10+
+interacting galaxies   = взаимодействующие галактики                   # 10+
+
+gravitational lens     = гравитационная линза                          # MATH+ # 18+
+gravitational collapse = гравитационный коллапс                        # MATH+ # 18+
+
+pulsar                 = пульсар                                       # MATH+ # 18+
+quasar                 = квазар                                        # MATH+ # 18+ /// /ˈkweɪzɑː/
+exoplanet ~ (extrasolar planet) = экзопланета ~ (внесолнечная планета)          # 18+
+
+Big Bang               = Большой взрыв                                 # 10+
+singularity            = сингулярность                                 # MATH+ # 18+
+

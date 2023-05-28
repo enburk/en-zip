@@ -1,0 +1,43 @@
+Christianity                 = христианство
+Christian                    = христианин, христианский
+Trinity                      = Троица                           /// trinity троица; что-либо, состоящее из трех частей
+providence|Providence        = провидение
+Madonna                      = Мадонна
+
+Catholicism                  = католицизм/католичество
+Catholic                     = католик, католический
+catholic %% formal           = всеобъемлющий, разносторонний
+
+chapel                       = часовня, молельня, капелла
+seminary                     = семинария ~ (духовная)
+celibacy                     = целибат %% обет безбрачия
+tonsure                      = тонзура                          /// Am. /ˈtɑːnʃər/
+liturgy                      = богослужение, ~ литургия, обедня /// (Божественная Литургия)
+apocrypha                    = апокрифы, ~ неканонические тексты # TERM+
+canonisation\\canonization   = канонизация
+schism                       = схизма, раскол                   # TERM+
+
+Inquisition                  = инквизиция
+inquisition                  = допрос, расследование
+Antichrist                   = Антихрист
+demon                        = демон
+devil                        = дьявол
+diabolical/devilish          = дьявольский
+
+infernal                     = инфернальный, ~ адский, дьявольский # pix-
+inferno                      = большой пожар, ад                # pix-
+inferno {psycho} %% literary = сильные неконтролируемые чувства # pix-
+Gehenna                      = ад, геенна ~ (огненная)
+auto-da-fé                   = аутодафе́                         /// Am. /ˌɔːtoʊ dɑː ˈfeɪ/
+exorcism                     = экзорцизм                        # RARE+ /// (процедура изгнания бесов или духов)
+
+Reformation                  = Реформация                       # HISTORY+ # TERM+
+Protestantism                = протестантство                   # HISTORY- # TERM-
+Baptist                      = баптист                          # HISTORY+ # TERM+
+John the Baptist             = Иоанн Креститель                 # HISTORY+ # TERM+
+Calvinism                    = кальвинизм                       # HISTORY+ # TERM+
+Huguenots                    = гугеноты                         # HISTORY- # TERM-
+Puritans                     = пуритане                         # HISTORY- # TERM-
+Quakers                      = квакеры                          # HISTORY- # TERM-
+Lutherans                    = лютеране                         # HISTORY+ # TERM+
+

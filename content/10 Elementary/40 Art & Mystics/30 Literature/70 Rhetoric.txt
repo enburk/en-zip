@@ -1,0 +1,31 @@
+rhetoric            = риторика
+orator              = оратор
+declamation         = декламация                                      # 16+
+
+figure of speech    = фигура речи                                     # 16+
+oxymoron            = оксю́морон                                       # ART- # TERM- # 16+ /// (сочетание двух противоположных по смыслу слов)
+alliteration        = аллитерация                                     # ART+ # TERM+ # 18+ /// (выразительное повторение согласных)
+assonance           = ассонанс                                        # ART+ # TERM+ # 18+ /// (выразительное повторение гласных)
+antithesis          = антитеза %% противопоставление                  # ART+ # TERM+ # 16+ /// # polysemic антитезис
+tautology           = тавтология
+aphorism            = афоризм
+allusion            = аллюзия                                         # RARE- # 18+
+reminiscence        = реминисценция %% от лат. reminiscentia -- воспоминание # RARE+ # 18+ /// («припоминание», мысленная отсылка, аллюзия и ретроспекция рефлексирующего сознания)
+
+rhetorical question = риторический вопрос
+<small>''Can you believe that?''</small>
+<small>''How could I be mad at you?''</small>
+<small>''Do you speak English?''</small> {emphatic}
+
+laconic             = лаконичный %% «Стараюсь быть кратким — делаюсь непонятным». ~~ ''Гораций''
+lapidary            = сжатый, лапидарный %% стиль и т.п. ~~~ от лат. lapidarius -- каменный, ~ высеченный на камне, ~ каменотес # RARE+ # 16+
+
+trope               = троп %% слово или выражение в переносном значении # ART- # TERM- # 16+
+epithet             = эпитет                                          # ART- # TERM- /// Greek
+allegory            = аллегория                                       # ART- # TERM- /// Greek
+metaphor            = метафора                                        # ART- # TERM-
+synecdoche          = сине́кдоха %% частное вместо общего или наоборот # ART- # TERM- # 16+ /// Пример: Десять голов скота.
+euphemism           = эвфемизм                                        # ART- # TERM- # 18+
+hyperbole           = гипербола %% преувеличение ~~~ математическая гипербола -- hyperbola # ART- # TERM- # pix- # 16+
+parable             = притча, иносказание %% математическая парабола -- parabola # ART- # TERM- # RANDOM- # pix- # 16+
+

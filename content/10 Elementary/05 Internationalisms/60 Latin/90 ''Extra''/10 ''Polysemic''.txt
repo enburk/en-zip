@@ -11,8 +11,8 @@ argument @ reason         = аргумент, довод                  # 10+
 argument @ quarrel        = спор, ссора                      # 10+
 : An Argument In The Corridors Of The Opera # 10+
 ---
-apparatus @ device                = оборудование, ~ аппарат, прибор
-apparatus @ bureaucratic                 = государственный аппарат          # 14+
+apparatus @ device        = оборудование, ~ аппарат, прибор
+apparatus @ bureaucratic  = государственный аппарат          # 14+
 ---
 comfort @ noun            = комфорт
 comfort @ verb            = утешение, утешать
@@ -46,6 +46,7 @@ sense of humour\\sense of humor = чувство юмора                    #
 sense @ meaning           = смысл, значение                  # 10+
 common sense %% also: good sense = здравый смысл                    # 10+
 nonsense                  = нонсенс                          # +1sec # 10+
+
 
 
 

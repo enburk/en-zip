@@ -1,5 +1,6 @@
 #pragma once
 #include "app_dic.h"
+#include "studio_dic.h"
 namespace studio::dic
 {
     struct search:
@@ -50,6 +51,12 @@ namespace studio::dic
         gui::button meronyms;
         gui::button holonyms;
         gui::button troponyms;
+
+        gui::text::view Irrenouns;
+        gui::text::view Irreverbs;
+        gui::widgetarium<gui::button> irrenouns;
+        gui::widgetarium<gui::button> irreverbs;
+
         gui::console loading;
         gui::console counter;
         gui::console* result;
@@ -77,6 +84,12 @@ namespace studio::dic
             button(meronyms,  "meronyms" , true);
             button(holonyms,  "holonyms" , true);
             button(troponyms, "troponyms", true);
+
+            int n = 0;
+            int v = 0;
+            Irrenouns.text = "irregular nouns:";
+            Irreverbs.text = "irregular nouns:";
+
         }
 
         void out (str title, int n)

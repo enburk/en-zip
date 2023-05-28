@@ -1,0 +1,35 @@
+algebra                     = алгебра
+
+Arabic numerals             = арабские цифры                  # 10+
+
+rational numbers,~irrational numbers = рациональные числа, ~ иррациональные числа # 10+
+real numbers                = действительные/вещественные числа # 10+
+transcendental numbers      = трансцендентные числа           # MATH+ # TERM- # 18+
+
+arithmetic progression      = арифметическая прогрессия       # MATH- # TERM- # 10+
+geometric progression       = геометрическая прогрессия       # MATH- # TERM- # 16+
+
+quadratic equation          = квадратное уравнение            # 10+
+discriminant                = дискриминант                    # 10+
+
+function                    = в математике: функция           # 10+
+argument                    = аргумент ~ (функции)            # MATH- # 10+
+parameter                   = параметр                        # MATH- # 10+
+coefficient                 = коэффициент                     # 10+
+
+graph of a function         = график функции                  # 10+
+parabola                    = парабола                        # 10+
+hyperbola                   = гипербола                       # MATH- # 10+
+asymptote                   = асимптота                       # MATH+ # 16+ /// Greek
+
+logarithm                   = логарифм                        # MATH- # 16+
+natural logarithm           = натуральный логарифм            # MATH+ # TERM+ # DEL # 16+
+exponential                 = в математике: ~ экспоненциальный, показательный # MATH- # 18+
+
+polynomial                  = полином/многочлен               # MATH+ # TERM+ # 16+
+monotonic/monotone function = монотонная функция              # MATH+ # TERM+ # 16+ /// http:///wikidiff.com/monotonic/monotone их различает
+
+continuum                   = континуум                       # MATH+ # TERM+ # 18+
+mantissa                    = мантисса                        # MATH+ # TERM+ # 18+
+Fibonacci numbers           = числа Фибоначчи                 # MATH+ # TERM- # 16+
+

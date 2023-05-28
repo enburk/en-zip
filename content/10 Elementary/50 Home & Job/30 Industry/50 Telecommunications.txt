@@ -1,0 +1,35 @@
+telecommunications = телекоммуникации                                  # 10+
+communication      = общение, связь, коммуникация
+
+television (TV)    = телевидение, телевизор
+channel            = канал
+programme\\program = программа %% ''в том числе'' телевизионная        # 10+
+
+telephony          = телефония                                         # TECH+ # 10+
+phone/telephone    = телефон
+mobile phone       = мобильный телефон
+smartphone         = смартфон
+telephone number   = номер телефона
+
+ringtone           = рингтон                                           # 10+
+roaming            = роуминг, ~ странствующий, ~ блуждающий            # 10+
+
+radio              = радио
+radio station      = радиостанция
+radiogram          = радиограмма                                       # 10+
+radio control      = радиоуправление
+
+antenna %% plural: antennas, antennae = антенна %% ''especially'' Am. ~ Br. ''usually'' aerial
+antenna {insect}   = щупальце %% у насекомых
+parabolic antenna  = параболическая антенна                            # TECH+ # 14+
+
+receiver           = ресивер %% принимающее устройство                 # TECH+ # 16+
+receiver           = телефонная трубка, ~ коротковолновый приёмник, ~ получатель # TECH+ # 16+
+
+telemetry          = телеметрия                                        # TECH+ # 18+
+monitoring         = наблюдение, слежение, ~ мониторинг                # TECH- # 16+
+video camera       = видеокамера
+videoconference    = видеоконференция                                  # 10+
+
+[electrical] cable = кабель ~ (электрический)                          # 10+
+

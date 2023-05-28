@@ -1,0 +1,32 @@
+physics,~physicist            = физика, физик
+
+mechanics                     = механика
+
+matter                        = материя                              # 10+
+mass                          = масса
+
+action                        = действие                             # 10+ /// # polysemic
+reaction                      = противодействие                      # 10+ /// # polysemic
+{For every action}            = For every action, there is an equal and opposite reaction. %% Newton's third law
+
+inertia                       = инерция, инертность                  # 10+
+centre of mass\\center of mass = центр масс                           # 10+ /// (центр инерции)
+
+energy                        = энергия, мощность
+kinetic energy                = кинетическая энергия                 # MATH- # TERM- # 16+
+potential energy              = потенциальная энергия                # MATH- # TERM- # 16+
+
+precession                    = прецессия                            # MATH- # TERM- # 18+
+nutation                      = нутация ~ также: кивок               # MATH+ # TERM+ # 18+
+gyroscope                     = гироскоп                             # 10+
+
+aerodynamics                  = аэродинамика (также: аэродинамические характеристики) # 16+
+sound/sonic barrier           = звуковой барьер                      # 10+
+shock wave                    = ударная волна                        # 10+
+Mach number                   = число Маха                           # MATH- # TECH- # TERM- # 18+
+angle of attack               = угол атаки                           # MATH+ # TECH+ # TERM+ # 18+
+
+theoretical physics           = теоретическая физика                 # MATH- # TERM- # 18+
+superposition principle       = принцип суперпозиции                 # MATH+ # TERM+ # 18+
+spherical cow ~ [in a vacuum] = сферический конь в вакууме (в оригинале -- корова) # MATH- # TERM- # 18+
+

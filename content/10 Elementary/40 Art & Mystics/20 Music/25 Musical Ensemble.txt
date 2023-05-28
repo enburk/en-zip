@@ -1,0 +1,12 @@
+ensemble                   = ансамбль %% музыкальный                      # 10+ /// # polysemic
+duet                       = дуэт %% музыкальное сочинение для двух исполнителей, ~ реже: сами исполнители
+trio                       = трио                                         # 10+
+quartet                    = квартет                                      # 10+
+quintet                    = квинтет                                      # ART+ # RANDOM- # 18+
+Brahms, ~ Clarinet Quintet = Брамс, ~ квинтет для кларнета ~ (и струнных) # ART+ # HISTORY+ # RARE+ # RANDOM- # 18+
+symphony orchestra         = симфонический оркестр                        # ART-
+philharmonic orchestra     = филармонический оркестр                      # ART- # 16+
+Kapellmeister              = капельмейстер                                # RARE+ # 16+
+solo                       = соло
+soloist                    = солист
+

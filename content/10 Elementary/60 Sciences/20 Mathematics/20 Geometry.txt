@@ -1,0 +1,47 @@
+geometry                 = геометрия
+
+parallel                 = параллель, параллельный
+perpendicular            = перпендикуляр, перпендикулярный             # 10+
+
+parallelogram            = параллелограмм                              # 10+
+rhombus/diamond          = ромб                                        /// rhomb не дают в словарях (Longman, Ox., Cam)
+trapezium\\trapezoid     = трапеция
+ellipse                  = эллипс                                      # 10+ /// Greek
+pentagon                 = пятиугольник                                # 10+
+
+perimeter                = периметр
+symmetry                 = симме́трия %% математики также используют ударение симметри́я # 10+
+congruent                = в математике: конгруэнтный                  # MATH+ # 10+ /// подходящий, соответствующий (формальная лексика)
+
+cathetus/catheti         = катет/катеты                                # 10+
+hypotenuse               = гипотенуза                                  # 10+
+
+Pythagoras’ theorem\\Pythagorean theorem = теорема Пифагора                            # 10+
+
+circle                   = окружность, круг %% ''не'' циркуль
+compass/compasses        = циркуль %% также: компас/компасы
+
+radius, diameter         = радиус, диаметр                             # 10+ /// radius - Latin
+chord                    = в геометрии: хорда                          # MATH- # TERM- # 10+
+sector                   = в геометрии: сектор                         # MATH- # TERM- # 10+
+segment                  = в геометрии: сегмент                        # MATH- # TERM- # 10+
+secant [line]            = секущая (линия)                             # MATH- # TERM- # 10+
+concentric circles       = концентрические окружности                  # MATH+ # TERM+ # 16+
+quadrature of the circle = квадратура круга                            # HISTORY- # MATH+ # TERM+ # 18+ /// NEW
+
+number π                 = число π                                     # 10+
+radian                   = радиан                                      # 16+
+
+parallelepiped           = параллелепипед                              # 10+
+prism                    = призма                                      # 10+
+torus                    = в геометрии: тор                            # 16+ /// ~ в архитектуре: торус
+
+tetrahedron              = тетраэдр                                    # MATH+ # 14+
+cube                     = куб                                         # MATH+ # 14+
+octahedron               = октаэдр                                     # MATH+ # 14+
+dodecahedron             = додекаэдр                                   # MATH+ # 14+
+icosahedron              = икосаэдр                                    # MATH+ # 14+
+
+Euclidean geometry       = Евклидова геометрия                         # MATH- # TERM- # 16+
+postulate                = постулат, постулировать                     # MATH- # TERM- # 16+
+

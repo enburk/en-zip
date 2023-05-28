@@ -1,0 +1,17 @@
+motorbike/motorcycle = мотоцикл, байк
+bicycle/bike         = велосипед     # RANDOM-
+biker                = байкер, ~ мотоциклист, ~ велосипедист
+
+chopper              = чоппер %% вид мотоциклов # TECH- # RANDOM- /// Также разговорное: ''вертолёт''.
+moped                = мопед         /// NEW
+[motor] scooter      = скутер, мотороллер # RANDOM-
+[kick] scooter       = самокат       # RANDOM-
+tandem               = тандем
+saddle               = седло         /// NEW
+
+
+cycle rickshaw       = велорикша     # TECH+ # RANDOM-
+auto rickshaw        = моторикша     # TECH+ # RANDOM-
+
+chrome               = хромированный, хром # 10+
+

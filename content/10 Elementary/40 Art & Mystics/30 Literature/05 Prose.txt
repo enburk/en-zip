@@ -1,0 +1,15 @@
+prose       = проза                                      # +1sec # 10+
+novel       = роман, ~ редко: новелла                    # +1sec # 10+
+novelist    = писатель-романист                          # +1sec # 10+
+novella     = новелла                                    # 10+ /// повесть это tale, narrative, story
+romance     = рыцарский роман, ~ романс                  # 10+
+story       = история, повесть %% история как наука -- history # RANDOM- # 10+
+short story = рассказ                                    # RANDOM- # 10+
+saga        = сага                                       # 16+
+character   = персонаж                                   # 10+
+epigraph    = эпиграф                                    # 14+
+preamble    = преамбула                                  # 18+
+prologue    = пролог                                     # 14+ /// Greek
+peripeteia  = перипетия                                  # RARE+ # 18+ /// [per-uh-pi-tahy-uh, -tee-uh] /// https://www.ted.com/talks/mike_rowe_celebrates_dirty_jobs
+epilogue    = эпилог                                     # 14+
+

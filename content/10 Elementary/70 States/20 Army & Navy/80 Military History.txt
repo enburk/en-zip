@@ -1,0 +1,38 @@
+military history        = военная история
+
+hoplite                 = гоплит     # 16+
+sarissa                 = сариса     # RARE+ # 16+
+trireme                 = трирема/триера # 16+
+
+legion                  = легион
+cohort                  = когорта
+centuria/century        = центурия
+maniple                 = манипула   # 16+
+
+ballista                = баллиста
+
+paladin                 = паладин    # 14+
+Damascus steel          = дамасская сталь # 16+
+parry                   = парировать, ~ отражать (удар)
+touché                  = туше́       # 16+ /// ???
+
+musket                  = мушкет
+grenadier               = гренадер   /// гренадёр даём ?
+zouave                  = зуав       # HISTORY+ # RARE+
+
+bivouac                 = бивак/бивуак, лагерь /// ~стоять биваком /// French, ultimately from Swiss/Alsatian biwacht "night guard"
+
+bombard                 = бомбардировать, ~ бомбарда %% средневековая осадная пушка
+
+cuirassiers             = кирасиры   # 12+
+dragoons                = драгуны    # 12+
+hussars                 = гусары
+lancers                 = лансьеры   # HISTORY+ # RARE+ # 16+
+uhlans                  = уланы      # HISTORY+ # RARE+ # 16+
+reiters                 = рейтары    # HISTORY+ # RARE+ # 16+ /// Reiters
+carabiniers|carabineers = карабинеры # HISTORY+ # RARE+ # 16+
+cossacks                = казаки́/каза́ки
+
+pike                    = пика, копье /// щука
+sabre\\saber            = сабля, шашка
+

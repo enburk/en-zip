@@ -1,0 +1,35 @@
+dance                       = танец, танцевать
+breakdance                  = брейк-данс
+step dance                  = степ                                      # 18+ /// для чечётки используется tap dance
+belly dance                 = танец живота                              # 18+ /// NEW
+jig                         = джига                                     # 18+
+foxtrot                     = фокстрот                                  # 18+
+contact improvisation       = контактная импровизация %% вид свободного танца # 16+
+ballroom dances             = бальные танцы
+waltz                       = вальс
+
+Latin dance                 = латиноамериканские танцы                  # 10+
+samba                       = самба                                     # 16+ /// Portuguese (Brazil)
+rumba                       = румба                                     # 16+ /// (Cuban Spanish)
+cha-cha-cha                 = ча-ча-ча                                  # 14+
+bossa nova                  = босанова|босса-нова                       # 18+
+paso doble                  = пасодобль                                 # 18+
+salsa                       = сальса                                    # 16+
+lambada                     = ламбада                                   # 16+ /// (Brazil) Portuguese
+
+''It takes two to tango.''
+
+ballet                      = балет
+corps de ballet             = кордебалет %% (фр.)                       # 16+
+ballerina                   = балерина
+pas                         = па                                        # ART- # 18+
+pas de deux                 = па-де-де                                  # ART- # 10+
+entrechat                   = антраша                                   # ART- # 18+
+fouetté                     = фуэте                                     # ART- # 18+
+pirouette                   = пируэт                                    # ART- # 18+
+position                    = позиция %% в танце                        # 14+ /// # polysemic
+arabesque {ballet}          = арабеск %% поза в балете                  # 16+ /// # polysemic
+en pointe                   = на пуантах %% (фр.)                       # 14+
+ballet master               = балетмейстер                              # 16+
+choreography,~choreographer = хореография, хореограф                    # 10+
+

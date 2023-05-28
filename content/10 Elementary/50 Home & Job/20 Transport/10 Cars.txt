@@ -1,0 +1,39 @@
+car\\car/automobile = автомобиль         /// motor, motor car - British English, old-fashioned or humorous
+electric car        = электромобиль
+
+traffic             = движение, транспортный поток /// торговля, транспортирование
+smog                = смог               # 10+
+boom barrier        = шлагбаум           /// /boom gate
+siren               = сирена
+
+parking             = парковка
+parallel parking    = параллельная парковка # TERM- # 16+
+
+auto show           = автосалон  %% в знач. выставка автомобилей
+concept car         = концепт-кар        # TECH- # 10+
+test drive          = тест-драйв         # TERM- # 10+
+
+model               = модель
+saloon [car]\\sedan = седан              # TECH-
+hatchback           = хетчбэк            # TECH-
+crossover           = кроссовер          # TECH-
+minivan (Am.)       = минивэн            # TECH+ /// Br – people carrier
+pickup [truck]      = пикап              # TECH-
+buggy               = багги              # TECH- # 10+
+
+trailer             = трейлер, прицеп, автоприцеп
+monocoque           = монокок            # TECH+ # TERM+ # 18+
+
+Jaguar              = «ягуар»            # TECH- # TERM- # RANDOM-
+Rolls-Royce         = «роллс-ройс»       # TECH- # TERM- # RANDOM-
+
+Cadillac            = «кадиллак»         # TECH- # TERM- # RANDOM-
+Mustang             = «мустанг»          # TECH- # TERM- # RANDOM-
+Buick               = «бьюик»            # TECH+ # TERM+ # RANDOM-
+
+BMW                 = «БМВ»              # TECH- # TERM- # RANDOM-
+Mercedes[-Benz]     = «мерседес»         # TECH- # TERM- # RANDOM-
+
+Alfa Romeo          = «альфа-ромео»      # TECH- # TERM- # RANDOM-
+Ferrari             = «феррари»          # TECH- # TERM- # RANDOM-
+

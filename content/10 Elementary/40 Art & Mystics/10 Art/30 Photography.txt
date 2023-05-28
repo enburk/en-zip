@@ -1,0 +1,28 @@
+photography       = фотография ~ (искусство)
+photograph/photo  = фотография/фото
+photographer      = фотограф
+
+contrast          = контраст, ~ противопоставление, ~ контрастировать # 10+
+macro photography = макрофотография                          # 10+
+photo album       = фотоальбом                               /// NEW
+portfolio         = портфолио                                # 14+
+photogenic        = фотогеничный                             # 10+
+photomontage      = фотомонтаж
+sepia             = сепия                                    # ART- # TERM- # 18+
+bokeh             = боке %% намеренная размытость фона       # ART- # TERM- # 18+
+camera            = фотоаппарат/камера, кинокамера
+lens              = линза, объектив %% реже: objective       # 10+
+megapixel         = мегапиксель                              # 10+
+filter            = фильтр                                   # TECH+ # TERM+ # 16+
+focus             = фокус, фокусировать
+autofocus         = автофокус                                # 10+
+exposure          = экспозиция                               # TECH+ # TERM+ # 16+ /// (количество получаемого света)
+diaphragm         = диафрагма %% перегородка в объективе, ~ регулирующая светопропускание # TECH+ # TERM+ # 16+
+aperture          = апертура %% степень раскрытости диафрагмы ~~~ В разговорной речи ~ апертуру называют диафрагмой. # TECH+ # TERM+ # 18+
+
+studio            = студия
+stroboscope       = стробоскоп                               # TERM+ # 14+
+photojournalism   = фотожурнализм
+paparazzi         = папарацци                                # 14+
+selfie            = селфи
+

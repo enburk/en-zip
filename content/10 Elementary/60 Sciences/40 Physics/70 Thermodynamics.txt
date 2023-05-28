@@ -1,0 +1,35 @@
+thermodynamics            = термодинамика
+
+ideal gas                 = идеальный газ                                # 18+
+thermodynamic equilibrium = термодинамическое равновесие                 # MATH- # TERM- # 18+
+
+pressure                  = давление
+atmosphere                = атмосфера (единица измерения давления)
+bar                       = бар (единица измерения давления)             # MATH+ # TERM+ # RANDOM- # 18+
+pascal,~hectopascal       = паскаль, гектопаскаль (единицы измерения давления) # MATH+ # TERM+ # RANDOM- # 18+
+
+thermal energy            = теплота                                      # MATH- # 18+
+calorie                   = калория (единица количества теплоты)         # 18+ /// внесистемная
+calorimeter               = калориметр                                   # MATH- # 18+
+cryogen                   = криоген (замораживающая смесь)               # RARE+ # TERM+
+
+phase transition          = фазовый переход                              # MATH- # 18+
+condensation              = конденсация, конденсат ~ уплотнение          # 18+ /// , сжижение
+evaporation               = испарение
+sublimation               = сублимация, возгонка (переход вещества из твёрдого состояния в газообразное) # MATH+ # 18+
+plasma                    = плазма                                       # 18+
+
+isobar                    = изобара                                      # MATH- # TERM- # 18+
+isochore/isochor          = изохора                                      # MATH- # TERM- # 18+
+isotherm                  = изотерма                                     # MATH- # TERM- # 18+
+adiabat                   = адиабата                                     # MATH- # TERM- # 18+
+isolated system           = изолированная система                        # MATH- # TERM- # 18+
+
+Brownian motion           = Броуновское движение                         # 18+
+Maxwell's demon           = демон Максвелла                              # MATH- # 18+
+entropy                   = энтропия                                     # MATH- # 18+
+fluctuation               = флуктуация, колебание                        # MATH- # 18+
+dissipation               = диссипация, рассеяние, ~ мотовство, ~ растрачивание (сил, средств и т.п.) () # MATH+ # 18+
+diffusion                 = диффузия ~ рассеивание, распространение      # MATH+ # 18+
+convection                = конвекция                                    # MATH+ # 18+
+

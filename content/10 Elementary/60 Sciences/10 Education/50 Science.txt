@@ -1,0 +1,18 @@
+science         = наука                                          # RANDOM- # 14+
+formal sciences = формальные науки %% математика, логика, кибернетика, информатика и др. # RANDOM- # 14+
+
+abstract        = абстрактный, ~ конспект, реферат, ~ аннотация  # 16+
+annotation      = примечание, комментарий, комментирование, аннотация # MATH+ # TERM+ # 16+
+
+analytic        = аналитический                                  # 16+
+analyst         = аналитик, ~ также: психоаналитик               # 16+
+analysis        = анализ                                         # 18+
+synthesis       = синтез                                         # 18+
+
+statistics      = статистика
+diagram         = схема, чертёж, диаграмма
+histogram       = гистограмма                                    # TERM- # 18+
+
+paradigm        = парадигма                                      # TERM+ # 18+ /// paradigma - chiefly archaic
+synergetics     = синергетика                                    # TERM+ # 18+
+

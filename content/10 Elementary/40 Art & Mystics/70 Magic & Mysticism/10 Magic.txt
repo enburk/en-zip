@@ -1,0 +1,14 @@
+magic             = волшебство, магия, магический
+magician          = маг
+charm             = чары, очарование, ~ очаровывать                       # 10+ /// # polysemic
+charm {amulet}    = амулет, талисман                                      # 10+
+amulet            = амулет
+robe, mantle      = мантия                                                # RANDOM-
+grimoire          = гримуар %% колдовская книга                           # 16+
+abracadabra       = абракадабра                                           # 10+ /// /abra-cadabra
+
+<small>Double, double toil and trouble; ~ Fire burn and caldron bubble.</small>
+
+ceremonial magic  = церемониальная магия %% использует магические предметы # TERM+ # 16+
+sympathetic magic = симпатическая магия %% использует предметы, сходные по внешнему виду или бывшие в непосредственном контакте # TERM+ # 16+
+

@@ -1,0 +1,23 @@
+regular army                = регулярная армия      # 10+
+militia                     = милиция, ополчение    # 14+ /// милиционная армия, народное ополчение
+
+theater of war              = театр военных действий # 16+
+contingent                  = контингент            # 16+
+manoeuvres\\maneuvers       = манёвры %% военные учения
+
+militarism                  = милитаризм            # 16+
+militarist                  = милитарист            # 16+
+
+military academy            = военная академия      # WAR- # 16+
+military police             = военная полиция       # WAR- # 16+
+military tribunal           = военный трибунал, ~ военный суд # WAR- # 16+
+demilitarized zone          = демилитаризованная зона # WAR- # 16+
+
+aggressor                   = агрессор, ~ нападающая сторона
+neutrality                  = нейтралитет, нейтральность
+capitulation                = капитуляция
+reparations                 = репарации             # TERM+ # WAR+ # 16+
+requisition                 = реквизиция            # TERM+ # WAR+ # RANDOM- # 16+
+restitution                 = реституция, возмещение # RARE+ # TERM+ # WAR+ # 16+
+parlimentaire|parlementaire = парламентёр           # 14+
+

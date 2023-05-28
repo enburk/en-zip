@@ -1,0 +1,11 @@
+typography      = типографское дело, типографика, ~ оформление книги # TERM- # 16+
+publication     = публикация, издание                           # 16+
+booklet         = буклет                                        # 16+
+brochure        = брошюра                                       # 16+
+almanac         = альманах, сборник                             # 16+
+
+offset printing = офсетная печать                               # TERM+ # 16+
+cursive/italic  = курсив                                        # TERM+ # 16+
+ligature        = лигатура                                      # RARE+ # TERM+ # 18+
+kerning         = кернинг %% коррекция интервала между буквами  # IT+ # RARE+ # TERM+ # 18+ /// https:///xkcd.com/1015/
+

@@ -1,0 +1,30 @@
+Islam               = мусульманство, ислам
+Muslim              = мусульманин, мусульманка, ~ мусульманский
+Quran|Qur'an,~Koran = Коран
+surah|sura          = сура %% глава в Коране       # TERM-
+Allah               = Аллах
+Muhammad/Mohammed   = Мухаммед
+Shaitan             = Шайтан
+
+Hajj|hajj|haj       = хадж                         # TERM-
+jihad               = джихад                       # TERM-
+madrasa|madrassa    = медресе                      # TERM+
+namaz               = намаз
+Ramadan             = Рамадан                      # TERM-
+sharia|shariah      = шариат
+
+ayatollah           = аятолла                      # TERM-
+imam                = имам                         # TERM-
+mufti               = муфтий                       # TERM-
+mullah              = мулла
+muezzin             = муэдзин
+
+Mecca               = Мекка
+Medina              = Медина
+Kaaba               = Кааба                        # TERM-
+
+Sunni/Sunnite       = суннит                       # TERM+
+Shia/Shiite         = шиит                         # TERM+
+
+giaour              = гяур %% ''досл. с турецкого:'' «неверный» # RARE-
+

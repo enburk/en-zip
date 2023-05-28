@@ -1,0 +1,40 @@
+portraitist                   = портретист
+model                         = модель
+pose                          = поза, позировать
+composition                   = композиция                                      /// , ~ сочинение, произведение
+perspective                   = перспектива                                     # 10+
+
+colour\\color                 = цвет %% сравните: колорит, колер                # RANDOM- # 10+
+aquarelle                     = акварель %% ''в особенности:'' картина, ~ написанная акварелью # +1sec # RANDOM- # rare # 10+ /// French
+watercolour\\watercolor       = акварель, ~ акварельные краски                  # +1sec # RANDOM- # 10+
+tone                          = оттенок, тон                                    /// тонировать - tint
+ochre\\ocher                  = охра                                            # 16+
+indigo                        = индиго                                          # 14+
+tempera                       = темпера                                         # ART+ # 16+
+
+sketch                        = набросок, эскиз, скетч, ~ делать набросок       # 16+
+diptych                       = ди́птих                                          # 18+ /// (ударение ''дипти́х'' считается ненормативным)
+triptych                      = три́птих                                         # 18+ /// (ударение ''трипти́х'' считается ненормативным)
+technique                     = техника                                         # 14+
+fresco/mural                  = фреска                                          # 14+
+sfumato                       = сфумато %% смягчение очертаний ~ фигур и предметов на картине ~~~ Этот приём живописи разработал ~ Леонардо да Винчи. # ART+ # 18+
+Leonardo da Vinci             = Леонардо да Винчи                               # ART+ # 10+
+''Mona Lisa ~ (La Gioconda)'' = ''«Мона Лиза» ~ («Джоконда»)''                  # ART+ # 10+
+Michelangelo Buonarroti       = Микеланджело Буонарроти                         # ART+
+Raphael/Raphaello             = Рафаэль                                         # ART+
+Pre-Raphaelites               = прерафаэлиты                                    # ART+ # 18+
+impressionists                = импрессионисты                                  # ART+ # 14+
+postimpressionist             = постимпрессионист                               # ART+ # 18+
+suprematist                   = супрематист                                     # ART+ # 18+
+surrealist                    = сюрреалист                                      # ART- # 16+
+photorealism                  = фотореализм                                     # ART- # TERM- # 14+
+
+graphics                      = графика                                         # 10+
+illustration,~illustrator     = иллюстрация, иллюстратор
+caricature,~caricaturist      = карикатура, карикатурист                        # 10+
+graffiti                      = граффи́ти                                        # 10+
+pop art                       = поп арт                                         # 14+
+poster                        = постер, плакат, афиша
+lithography                   = литография                                      # TERM+ # 18+
+facsimile                     = факси́миле %% точное воспроизведение ~ рукописи, гравюры, монограммы # RARE+ # TERM+ # +1sec # 16+
+

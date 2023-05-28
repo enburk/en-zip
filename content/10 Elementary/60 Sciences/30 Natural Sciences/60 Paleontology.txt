@@ -1,0 +1,32 @@
+paleontology %% Br. also: palaeontology = палеонтология
+palaeontologist   = палеонтолог
+
+Palaeozoic [era]\\Paleozoic [era] = палеозой, палеозойская эра %% 541--252 млн лет назад       # TERM- # 16+
+Cambrian [period] = кембрий, кембрийский период %% 541--485 млн лет назад      # TERM+ # 16+
+trilobite         = трилобит                                                   # TERM+ # 18+
+
+Jurassic [period] = юра́, юрский период %% 201--145 млн лет назад
+
+dinosaur          = динозавр
+tyrannosaurus     = тираннозавр                                                /// tyrannosaur редко
+diplodocus        = диплодок
+brontosaurus      = бронтозавр                                                 /// brontosaur редко
+triceratops       = трицератопс                                                # TERM+
+iguanodon         = игуанодон/игуанодонт                                       # TERM-
+velociraptor      = велоцираптор                                               /// raptor - a usually small-to-medium-sized predatory dinosaur (such as a velociraptor or deinonychus)
+<small>''What did the explorer call the large, ~ dangerous-looking dinosaur? ~ Ihopehedidntseeus!''</small> = %% HOTMAG
+
+plesiosaur        = плезиозавр                                                 # TERM+ # 18+
+ichthyosaur       = ихтиозавр
+
+pterosaur         = птерозавр                                                  # TERM+
+pterodactyl       = птеродактиль
+
+archaeopteryx     = археоптерикс                                               # TERM-
+
+Cenozoic|Caenozoic|Cainozoic [era] = кайнозой, кайнозойская эра %% текущая эра                  # TERM+ # 18+
+
+mastodon          = мастодонт
+megalodon         = мегалодон %% вид вымерших акул
+mammoth           = мамонт
+

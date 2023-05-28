@@ -1,0 +1,18 @@
+grammatical      = грамматический, грамматически правильный
+
+syntax           = синтаксис
+
+morphology       = морфология      # TERM-
+morpheme         = морфема         # TERM+
+suffix           = суффикс
+prefix           = приставка
+
+infinitive       = инфинитив %% неопределенная форма глагола
+double negative  = двойное отрицание
+
+orthography      = орфография
+punctuation      = пунктуация
+punctuation mark = знак препинания
+
+grammar Nazi     = сленг: граммар-наци # 16+ /// (грамматический нацист)
+

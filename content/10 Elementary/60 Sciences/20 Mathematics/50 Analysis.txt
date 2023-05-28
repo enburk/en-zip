@@ -1,0 +1,15 @@
+mathematical analysis = анализ %% современный                                # RANDOM-
+calculus              = математический анализ %% классический                # RANDOM-
+
+limit                 = в математике: предел
+differential          = дифференциал, дифференциальный, ~ дифференцированный, разница
+
+integral              = интеграл, интегральный
+curvilinear integral  = криволинейный интеграл                               # TERM+
+
+approximation         = аппроксимация                                        # TERM+
+interpolation         = интерполяция                                         # TERM+
+extrapolation         = экстраполяция                                        # TERM+
+
+Fourier series        = ряды Фурье                                           # TERM+
+

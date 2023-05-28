@@ -16,7 +16,7 @@ namespace eng::list
     ).split_by(", ");
 
     array<str> contractionparts = str(
-    "m, s, re, ll, t").split_by(", ");
+    "don, m, s, re, ll, t").split_by(", ");
 
     array<str> sensitive = str(
     "angry, annoyed, anxious, bewildered, concerned, "

@@ -1,0 +1,46 @@
+diplomacy            = дипломатия
+diplomat             = дипломат
+diplomatic mission   = дипломатическая миссия                            # POLIT+ # 14+
+diplomatic immunity  = дипломатический иммунитет                         # POLIT- # 16+
+
+Niccolò Machiavelli  = Никколо Макиавелли                                # HISTORY+ # POLIT+ # DEL # 16+ /// есть картинка в Человеке
+
+attaché              = атташе                                            # 16+ /// French
+emissary             = эмиссар                                           # 16+
+consul               = консул                                            # 16+
+
+note                 = нота ~ (дипломатическая)                          # 16+
+official             = официальный
+protocol             = протокол, протоколировать                         # 16+
+moratorium           = мораторий                                         # 16+
+
+delegation           = делегация, делегирование
+mandate              = полномочие, поручение, мандат                     # POLIT+ # 16+
+consensus            = консенсус, согласие, единодушие                   # POLIT- # 16+
+debate               = дебаты, дискуссия, обсуждение, спор, ~ дискутировать, обсуждать # 14+
+
+convention           = конвенция, соглашение                             # POLIT- # 16+
+memorandum           = меморандум, ~ служебная записка                   # 16+
+communiqué           = коммюнике                                         # POLIT- # 16+
+ratification         = ратификация                                       # 16+
+summit               = саммит                                            # 16+
+
+coalition            = в политике:  коалиция, временный союз
+
+pact                 = пакт, договор                                     # 16+
+ultimatum            = ультиматум
+declaration          = декларация %% документ; заявление                 # 14+
+declaration of war   = объявление войны                                  # 14+
+confrontation        = в политике: конфронтация, противостояние          # 14+
+escalation           = эскалация, расширение                             # 16+
+
+espionage            = шпионаж, разведка
+industrial espionage = промышленный шпионаж                              # 14+
+spy                  = шпион, тайный агент
+
+double agent         = двойной агент
+disinformation       = дезинформация
+legend               = легенда %% вымышленная биография разведчика
+microfilm            = микрофильм                                        # 16+
+secret service       = секретная служба                                  # 16+
+

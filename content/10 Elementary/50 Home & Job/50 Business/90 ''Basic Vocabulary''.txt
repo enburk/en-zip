@@ -1,0 +1,52 @@
+seller                = продавец
+buyer                 = покупатель
+<small>''Buyer beware!''</small>
+<small>''We will not be undersold!''</small> = ''Никто не продаст дешевле!'' %% moto
+
+pay                   = платить
+<small>''How will you be '''paying''' for that?''</small>
+<small>''Will that be cash or credit?''</small>
+
+''How much?''         = ''Сколько?''
+''How much is that?'' = ''Сколько это стоит?''
+
+fee
+<small>''“May I—is there—should I—I mean—” ~ “Whats the matter?” ~ “Your fee for this consultation?”''</small> = %% George Bernard Shaw, ''The Doctor's Dilemma'' ~ <small>Credit: librivox.org, ~ Read by Arielle Lipshaw</small>
+
+account               = счёт ~ (в банке)
+<small>''Will that be cash, or on your account?''</small>
+accountant            = бухгалтер
+<small>''Old accountants never die, ~ they just lose their balance.''</small> = %% ''British toilet graffiti'' ~ HOTMAG
+
+venture               = рискованное предприятие, ~ рисковать, ставить на карту
+<small>''Nothing '''ventured''', ~ nothing gained.''</small> = %% proverb
+
+profit                = польза, выгода
+profit/profits        = прибыль, доход
+<small>''The result is a colossal profit, ~ which comes to me.''</small>
+
+job
+''Nice job!''
+''Nice job!'' {gloomy}
+''Huh, nice job!''
+''Great job!''
+''Great job!'' {sarcastic}
+''Excellent job!''
+
+apply
+<small>''Job offer for telepathic person: ~ you know where to apply.''</small> = %% ''British toilet graffiti'' ~ HOTMAG
+
+hire                  = нанимать
+fire                  = увольнять
+<small>''You're '''fired'''!''</small>
+
+vacation              = отпуск, каникулы
+
+wedge {Br.}
+
+charge
+<small>''How do you stop a charging elephant? ~ Take away its credit cards.''</small> = %% HOTMAG
+
+expense
+<small>''But what an awful '''expense'''!''</small>
+

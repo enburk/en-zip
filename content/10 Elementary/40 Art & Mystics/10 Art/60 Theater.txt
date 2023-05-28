@@ -1,0 +1,43 @@
+theatre\\theater       = театр
+mise-en-scène          = мизансцена %% размещение декораций ~ и актеров на сцене # 16+
+troupe                 = труппа                                         # 10+
+costumer/costumier     = костюмер
+
+scene                  = место действия, ~ сцена %% в знач. часть пьесы, ~ редко: театральная сцена # 10+
+scenography            = сценография                                    # ART- # 16+
+proscenium             = просцениум                                     # ART+ # 18+
+stage                  = в театре: сцена, ~ театральные подмостки, ~ ставить пьесу # 10+
+parterre {Am.}         = партер %% ''в особенности:'' задние ряды партера # 14+
+balcony                = в театре: балкон                               # 14+
+Theatre of the Absurd  = театр абсурда                                  # 18+
+phantasmagoria         = фантасмагория                                  # 18+
+applaud                = аплодировать
+
+protagonist            = протагонист                                    # ART+ # 14+ /// (главный герой)
+antagonist             = антагонист                                     # ART+ # 14+ /// (персонаж, противодействующий главному герою)
+tragic hero            = трагический герой                              # ART+ # 14+
+catharsis              = катарсис                                       # ART+ # 18+
+
+musical {adj.}         = музыкальный                                    # ART- # RANDOM- # 10+
+musical {noun}         = мюзикл                                         # ART- # RANDOM- # 10+
+music hall {Br.}       = мьюзик-холл %% тип представления и театр       # ART+ # HISTORY+ # RANDOM- # 16+
+vaudeville             = водевиль                                       # ART+ # HISTORY+ # RANDOM- # 18+
+cabaret                = кабаре                                         # ART+ # HISTORY+ # RANDOM- # 18+
+burlesque              = бурлеск                                        # ART+ # HISTORY+ # RANDOM- # 18+
+farce                  = фарс                                           # ART+ # HISTORY+ # RANDOM- # 18+
+
+commedia dell'arte     = комедия дель арте                              # ART- # 18+
+Pierrot                = Пьеро                                          # ART- # 18+
+Polichinelle           = Полишинель %% (фр.)                            # ART- # 18+
+secret of Polichinelle = секрет Полишинеля                              # ART- # 18+
+Harlequin              = Арлекин                                        # ART- # 18+
+Columbina              = Коломбина                                      # ART- # 18+
+Scaramouche            = Скарамуш %% (фр.)                              # ART- # 18+
+
+kabuki                 = кабуки %% вид японского театра                 # ART- # 16+
+
+performance art        = перформанс                                     # ART- # 14+
+performance            = представление, выступление                     # ART- # RANDOM- # 14+
+flash mob~~flashmob    = флешмоб                                        # ART- # 16+
+happenning             = хэппенинг                                      # ART- # 18+
+

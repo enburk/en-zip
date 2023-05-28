@@ -1,0 +1,13 @@
+discrete mathematics = дискретная математика
+
+graph theory         = теория графов
+planar graph         = планарный граф                                       # TERM+
+tree                 = дерево                                               # TERM+
+
+Boolean algebra      = булева алгебра %% изучает логические выражения и операции # TERM+
+conjunction          = конъюнкция %% логическое «И»                         # TERM+
+disjunction          = дизъюнкция %% логическое «ИЛИ»                       # TERM+
+predicate            = предикат                                             # TERM+
+
+equivalence          = эквивалентность, ~ отношение эквивалентности         # RANDOM- /// (обычно обозначается: ~)
+

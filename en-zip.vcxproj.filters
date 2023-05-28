@@ -142,5 +142,6 @@
     <ClInclude Include="studia_one_search.h">
       <Filter>studio-one</Filter>
     </ClInclude>
+    <ClInclude Include="studio_dic.h" />
   </ItemGroup>
 </Project>

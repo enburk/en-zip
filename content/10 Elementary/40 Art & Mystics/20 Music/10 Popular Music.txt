@@ -1,0 +1,20 @@
+rock                 = рок
+hard rock            = хард-рок, тяжелый рок
+heavy metal          = хэви-метал              # 10+
+rock opera           = рок-опера               # 18+
+pop                  = поп                     # 10+
+disco                = диско, дискотека
+reggae               = рэгги                   # 16+
+hip hop              = хип-хоп
+rap,~rapper          = рэп, рэпер
+gangsta rap          = гангста-рэп             # 16+
+
+jazz                 = джаз                    # 10+
+blues                = блюз                    # 10+
+boogie-woogie        = буги-вуги               # 16+
+ragtime              = регтайм                 # 18+
+
+instrumental [music] = инструментальная музыка # TERM- # 10+
+folk music           = народная музыка, фолк   # 16+
+serenade             = серенада                # 16+
+

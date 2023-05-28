@@ -22790,6 +22790,8 @@ Monotonous Chant [monotonous] ## date 1870 ## crop r1 ## qrop t10 b10 r1 ## qrop
 >>> ../datae\fineart a-z {{$$}}/Begas {{Reinhold Begas}}
 _Pan comforting _Psyche [+][comfort@verb] ## 14+ ## date 1857 [] ## qrop t5 b6 ## qropt!.jpg
 _Pan comforting _Psyche [+][comfort@verb] ## 14+ ## qrop b1 ## date 1857 ## qropt!.jpg
+>>> ../datae\fineart a-z {{$$}}/Bellows {{George Wesley Bellows}}
+exaltation ## qrop t5 b7 ## date 1915 ### Lucie.jpg
 >>> ../datae\fineart a-z {{$$}}/Bettannier {{Albert Bettannier}}
 The Black Stain ({Alsace-Lorraine}) [revanchism] ## qrop l5 r22 ## date 1887.jpg
 >>> ../datae\fineart a-z {{$$}}/Blake {{William Blake}}
@@ -22799,6 +22801,8 @@ diadem ## qrop r2 t5 b15 ## date Irene, 1897.jpg
 >>> ../datae\fineart a-z {{$$}}/Brozik {{Wenzel von Brozik}}
 The Prague Defenestration ## crop r35.jpg
 The Prague Defenestration ## crop r35.txt
+>>> ../datae\fineart a-z {{$$}}/Brullov {{Karl Brullov}}
+The Last Day of Pompeii (detail) [last][panic][Pompeii] ## qrop l19 r9 t3 b1 ## date 1830-1833.jpg
 >>> ../datae\fineart a-z {{$$}}/Béraud {{Jean Béraud}}
 After the Misdeed ## qrop l3 r9 ## qropt!.jpg
 After the Misdeed ## qrop l3 r9 ## qropt!.txt
@@ -22881,6 +22885,7 @@ Red Square [asymmetric][asymmetrical] ## date 1915.jpg
 >>> ../datae\fineart a-z {{$$}}/Munch {{Edvard Munch}}
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.txt
+The Scream [scream][panic][horror] ## qrop t18 b2 ## date 1895.jpg
 >>> ../datae\fineart a-z {{$$}}/Petrov-Vodkin {{Kuzma Petrov-Vodkin}}
 At the Samovar [samovar] ## 12+ ## qrop qt ## date 1926.jpg
 Earthquake in Crimea [earthquake][panic] ## date 1927-1928 ## qropt!.jpg
@@ -22970,6 +22975,7 @@ dundasite (white) and crocoite (red orange) [minerals][chromate][dundasite][croc
 Eid-ul-Fitr congregation ## qrop q {{Photo.. Azim Khan Ronnie}}.jpg
 Eid-ul-Fitr congregation ## qrop q {{Photo.. Azim Khan Ronnie}}.txt
 folding screen ## qrop t17 b2 ## qropt! {{Photo.. ABM}}.jpg
+ghost.jpg
 hang one's head ### Bobby Knight, coach of the US Olympic basketball team.jpg
 kyanite crystals [kyanite][silicate][neosilicate] ## qrop l4 r21 {{Photo.. Aelwyn $$wiki}}.jpg
 matador [torero] ## crop r20 ## qrop l5 r28.jpg
@@ -23006,7 +23012,8 @@ Flooded {fields}, _Bangladesh [flooded] ## qrop q.jpg
 General view of {_Venice}, {_Veneto}, _Italy [general view].jpg
 Heart of the mangrove trees in {_New _Caledonia}.jpg
 Helicopter {spraying} crops, _California [agriculture].jpg
-Hippopotami in Lake {_Naivasha}, {_Kenya} [hippopotami] ## qrop qr.jpg
+Hippopotami in Lake _Naivasha, _Kenya ## qrop qr.jpg
+Hippopotami in Lake _Naivasha, _Kenya ## qrop qr.txt
 Icebreaker in {Resolute Bay}, _Nunavut Territory, _Canada [icebreaker].jpg
 Islet in the _Sulu Archipelago, _Philippines [islet].jpg
 Meanders in the {_Amazon River} near _Manaus, _Brazil [_Amazonas][meanders].jpg
@@ -23120,6 +23127,8 @@ Abandoned Mental institution in Lombardia [abandoned] ## qrop l12 r22.jpg
 Abandoned Villa in Emilia-Romagna [abandoned][Emilia-Romagna][emilia-romagna] ## qrop l20 r13.jpg
 Abandoned Villa [abandoned] ## qrop l7 t1 r13.jpg
 Basilica of Sacré-Cœur de Montmartre (Sacred Heart of Montmartre) [Montmartre][montmartre] ## crop t4 b11 ## qropt!.jpg
+>>> ../datae\photo a-n/Evans {{Photo.. Frederick H. Evans}}
+A Sea of Steps, Wells Cathedral [steps] ## qrop qb ## date  1903.jpg
 >>> ../datae\photo a-n/Ezra {{Photo.. Michael Ezra}}
 iguana ## date 2000 ## qrop l13 r25 ## qropt!.jpg
 >>> ../datae\photo a-n/Haas [Haas] {{Photo.. Ernst Haas}}
@@ -23179,16 +23188,17 @@ _Patti _Smith with doves [+] ## date 1979.jpg
 _Richard _Gere [Gere] ## date 1982.jpg
 _Ron _Simms [buttocks] ## date 1980.jpg
 >>> ../datae/photo o-z
+>>> ../datae\photo o-z/Parkinson {{Photo.. Norman Parkinson}}
+_Leslie _Caron Posing in Puffy Cocktail Dress [frivolous] ## date 1960s.jpg
 >>> ../datae\photo o-z/Ray-Jones {{Photo.. Tony Ray-Jones}}
 Beatles gig, Shea Stadium, New York, c 1964-1965 [ardor].jpg
 cheerleaders ## date 1960s.jpg
 >>> ../datae\photo o-z/Steichen {{Photo.. Edward Steichen}}
-J.P. Morgan [Morgan][magnate] ## crop t2 b1 l1 r1 ## date 1903 ## qropt! {{$$}}.jpg
+J.P. Morgan [Morgan][magnate] ## crop t2 b1 l1 r1 ## date 1903 ## qropt!.jpg
 >>> ../datae\photo o-z/Tuan {{Photo.. Nguyen Tan Tuan}}
 Drying incense sticks, Vietnam [incense sticks][Vietnam].jpg
 Melaleuca Forest In Winter [Melaleuca][melaleuca][Vietnam].jpg
 >>> ../datae/photo {{$$}}
-A Sea of Steps, Wells Cathedral [steps] ## qrop qb {{Photo.. Frederick H. Evans, 1903 $$}}.jpg
 acedia %% Detail from a fresco in the Hall of Vices and Virtues, Castiglioni Mantegazza castle, 15th century [].jpg.uid-zps
 acedia.jpg
 acedia.txt
@@ -23203,7 +23213,7 @@ Opening of the German Folk Singing Festival in Breslau, Silesia [nationalism] ##
 samurai ## qrop t17 b3 {{Photo.. Felice Beato, 1860 $$}}.jpg
 Train Wreck, Montparnasse Station, Paris, 1895 [wreck][catastrophe] ## qrop t7 b2 ## qropt!.jpg
 _Winston _Churchill at 19 [+][hussar] ## 14+ ## qrop t6 b9 ## qropt!.jpg
-lunar calendar [lunar] {{$$}}.jpg
+lunar calendar [lunar].jpg
 M16, The Eagle Nebula [nebula] {{ESO}}.jpg
 Michail Bulgakov [monocle] ## date 1930s ## qrop t20 b5.jpg
 Sarah Bernhardt, Hamlet [monologue][monolog] ## qrop t7 b24 {{Photo.. Lafayette, 1899 $$}}.jpg
@@ -23910,6 +23920,7 @@ dialogue ## crop l24 r10 {{Photo.. Mengtianhan $dreamstime 49724091}} tango danc
 conflict ## qrop l9 r21 {{Photo.. Endostock $dreamstime 3102047}}.jpg
 sad child ## qrop l17 ## qropt! {{Photo.. Svetlana Kramynina $dreamstime 95610854}}.jpg
 sad child ## qrop l17 ## qropt! {{Photo.. Svetlana Kramynina $dreamstime 95610854}}.txt
+stupor ## qrop q {{Photo.. Koldunova Anna $dreamstime 107906439}}.jpg
 triumphant {{Photo.. Maxim Lupascu $dreamstime 108961620}}.jpg
 uncertainty [uncertain] ## qrop qr {{Photo.. Koldunova Anna $dreamstime 107929916}}.jpg
 >>> ../datae\photo_dreamstime\people/gestures
@@ -23925,9 +23936,17 @@ wink ## qrop q {{Photo.. Soleg1974 $dreamstime 63734093}}.jpg
 girlish [infantile][puellile][trifling] ## crop t8 ## qrop t16 b12 {{Photo.. Todd Taulman $dreamstime 785994}} Oh my gosh!.jpg
 humanoid ## crop l21 r12 {{Photo.. Luckynick $dreamstime 1319559}} Toy robot magnifier.jpg
 humanoid ## qrop l15 r15 {{Photo.. Luckynick $dreamstime 1319566}} Toy robot magnifier.jpg
+intellectual ## qrop t17 {{Everett Collection Inc. $dreamstime 52013328}} Couple playing chess.jpg
 look @ noun ## qrop l10 r24 ## qropt! {{Photo.. Tarragona $dreamstime 12378658}}.jpg
 ponder ## qrop l25 r7 {{Photo.. Tommytechno Hammarsten $dreamstime 88494457}}.jpg
 sleep ## qrop ql {{Photo.. Katrina Trninich $dreamstime 37644968}}.jpg
+>>> ../datae\photo_dreamstime\people/social
+asocial ## qrop l10 r16 {{Photo.. Nuvolanevicata $dreamstime 59717675}} Nobody come in here.jpg
+coquettish ## qrop l8 r20 {{Photo.. Ariwasabi $dreamstime 21473826}} timid.jpg
+intimate ## qrop qr {{Photo.. Sean Nel $dreamstime 115642}}.jpg
+matrimonial ## qrop l6 r25 {{Photo.. Subbotina $dreamstime 12644639}} Wedding Diamond Ring.jpg
+matrimonial ## qrop ql {{Photo.. Robert Milek $dreamstime 6184388}} Wedding rings.jpg
+Valentine [valentine] ## qrop l13 r18 {{Photo.. Olga Oliynik $dreamstime 23129657}}.jpg
 steampunk ## qrop t6 b22 ## qropt! {{Photo.. Andrey Kiselev $dreamstime 32893203}}.jpg
 steampunk ## qrop t6 b22 ## qropt! {{Photo.. Andrey Kiselev $dreamstime 32893203}}.txt
 >>> ../datae\photo_dreamstime/politics

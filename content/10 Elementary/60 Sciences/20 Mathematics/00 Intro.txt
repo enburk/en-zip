@@ -1,0 +1,23 @@
+mathematics             = математика
+mathematician           = математик
+
+maths\\math %% informal = математика ~ (разговорное)
+
+arithmetic operation    = арифметическая операция                        # 10+
+
+plus, minus             = плюс, минус
+
+sum                     = сумма
+summa                   = сумма ~ (средневековое сочинение)              # 18+
+
+maximum                 = максимум, максимальный                         /// Latin
+minimum                 = минимум, минимальный                           # 10+ /// Latin
+extremum                = экстремум                                      # MATH- # 18+
+
+modulus                 = модуль                                         # MATH- # TERM- # 10+
+radical                 = радикал                                        # MATH- # TERM- # 16+
+
+lemma                   = лемма                                          # MATH- # 16+
+
+mathematical induction  = математическая индукция %% метод доказательства # MATH+ # TERM+
+

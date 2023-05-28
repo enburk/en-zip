@@ -1,0 +1,26 @@
+nation                   = нация, народ, ~ государство
+nationality              = гражданство, национальность, нация
+international            = интернациональный, международный
+
+nationalism              = национализм                 # 16+
+nationalist              = националист                 # 16+
+
+patriot                  = патриот
+cosmopolitan/cosmopolite = космополит                  # 16+
+
+emigration               = эмиграция                   # 14+
+emigrant                 = эмигрант                    # 14+
+immigration              = иммиграция                  # 14+
+immigrant                = иммигрант                   # 14+
+illegal immigrant        = нелегальный иммигрант       # POLIT+ # 16+
+migrant                  = переселенец, мигрант, мигрирующий, кочующий # POLIT+ # 16+
+
+assimilation             = ассимиляция                 # 16+
+naturalization %% Br. also: naturalisation = натурализация %% приобретение гражданства # POLIT+ # 16+
+expatriation             = экспатриация                # POLIT+ # 16+
+repatriation             = репатриация                 # POLIT+ # 16+
+diaspora                 = диаспора, миграция          # 16+ /// ист. рассеяние евреев за пределы Палестины
+
+residence                = резиденция, ~ место жительства, пребывание # 16+
+resident                 = резидент, ~ также: жилец, постоялец # 16+ /// (не обязательно разведчик/шпион)
+

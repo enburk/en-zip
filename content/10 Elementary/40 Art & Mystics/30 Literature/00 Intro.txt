@@ -1,0 +1,25 @@
+literature              = литература
+litterateur             = литератор                                     # ART+ # RARE+ # rare # 16+ /// в англ. думаю еще реже употребляется
+author,~co-author       = автор, соавтор
+autograph               = автограф %% рукопись, подпись                 # ART+ # 10+
+opus                    = опус                                          # 18+
+tome                    = том ~ (увесистая книга)                       # RANDOM- # 10+
+volume                  = том ~ (часть большого произведения)           # RANDOM- # 10+
+bestseller              = бестселлер                                    # 10+
+bibliophile             = библиофил                                     # RARE+ # 10+
+graphomania/scribomania = графомания                                    # RANDOM- # 18+
+
+critic                  = критик
+critique                = критический отзыв, ~ критика
+
+discourse               = речь, дискурс                                 # TERM+ # 16+
+excursus                = экскурс %% отступление от темы                # RARE+ # 18+
+context                 = контекст                                      # 14+
+paraphrase              = перефразировать, пересказывать, ~ парафраз, пересказ # TERM+ # 16+
+commentary              = комментарий
+bibliography            = библиография                                  # 16+
+anthology               = антология                                     # TERM+ # 14+
+palimpsest              = палимпсест %% рукопись поверх стертого текста # TERM+ # 16+
+palindrome              = палиндром %% читается одинаково слева направо ~ и наоборот # TERM+ # 18+
+anagram                 = анаграмма                                     # 18+
+

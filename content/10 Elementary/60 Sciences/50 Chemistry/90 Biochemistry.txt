@@ -1,0 +1,22 @@
+biochemistry        = биохимия                    # 16+
+
+protein             = протеин %% белок            # 16+
+
+glucose             = глюкоза
+fructose            = фруктоза
+cellulose           = целлюлоза %% полисахарид    # TERM+ # 16+
+
+lactose             = лактоза %% молочный сахар   # 18+
+lactose intolerance = непереносимость лактозы     # 18+
+casein              = казеин %% один из основных белков молока # TERM+ # 18+
+
+lipids              = липиды %% жиры              # TERM+ # 18+
+
+alkaloids           = алкалоиды %% азотсодержащие органические соединения природного происхождения # RANDOM- # 18+
+caffeine            = кофеин %% алкалоид          # RANDOM- # 18+
+cocaine             = кокаин %% алкалоид          # RANDOM- # 18+
+morphine            = морфин %% алкалоид          # RANDOM- # 18+
+nicotine            = никотин %% алкалоид         # RANDOM- # 18+
+quinine             = хинин %% алкалоид           # RANDOM- # 18+
+strychnine          = стрихнин %% алкалоид        # RANDOM- # 18+
+

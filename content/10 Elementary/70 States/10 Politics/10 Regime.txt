@@ -1,0 +1,43 @@
+regime                = режим, строй                  # 14+
+
+feudalism             = феодализм
+vassal                = вассал
+seignior|seigneur     = сеньор, феодал
+suzerain              = сюзерен                       # 16+
+
+capitalist            = капиталист, капиталистический # 16+
+proletariat           = пролетариат                   # 16+
+class                 = класс ~ (общественный)        # 16+
+communist|Communist   = коммунист, коммунистический   # 16+
+socialist             = социалист, социалистический   # 16+
+
+anarchy               = анархия
+anarchist             = анархист
+
+authoritarian         = авторитарный, сторонник авторитаризма # 16+
+
+commune {noun}        = коммуна                       # 14+
+commune {verb}        = общаться                      # 14+ /// /kəˈmjuːn/
+
+despotism             = деспотизм                     # 16+
+despot                = деспот                        # 16+
+totalitarianism       = тоталитаризм                  # 16+
+tyranny               = тирания                       /// Br. /ˈtɪrəni/
+
+
+democracy             = демократия                    # 14+
+democrat              = демократ                      # 14+
+social democrat       = социал-демократ               # POLIT+ # 16+
+
+candidate             = кандидат, претендент
+candidacy/candidature = кандидатура                   /// (also candidature especially in British English)
+
+electorate            = избиратели, электорат         # POLIT- # 16+
+
+political party       = политическая партия
+party discipline      = партийная дисциплина          # 16+
+political capital     = политический капитал          # POLIT- # 16+
+
+pluralism             = плюрализм                     # POLIT- # 16+
+populism              = популизм                      # 16+
+

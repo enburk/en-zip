@@ -1,0 +1,28 @@
+information technology (IT) = информационные технологии               # 10+ /// 8??
+
+program                     = программа ~ (компьютерная)
+operating system            = операционная система                    # 10+
+file                        = файл
+
+virus,~antivirus            = вирус, антивирус
+Trojan [horse]              = троян, троянская программа %% тип вирусов # IT-
+
+multimedia                  = мультимедиа                             # 10+
+computer graphics           = компьютерная графика
+icon                        = иконка                                  # 10+
+menu                        = меню
+skin                        = скин %% оформление компьютерной программы; ''буквально:'' кожа # IT+ # RARE+ # 14+
+virtual reality             = виртуальная реальность
+
+computer simulation         = компьютерное моделирование              # IT- # TERM- # 10+
+system administrator %% informal: sysadmin = системный администратор, ~ разговорное: сисадмин # IT- # TERM- # 10+
+
+hacker                      = хакер                                   # 10+
+
+demo [version]              = демоверсия                              # IT- # 10+
+bit, byte                   = бит, байт                               # 10+
+
+driver                      = драйвер                                 # IT+ # TECH+ # TERM+ # 14+
+emulator                    = эмулятор                                # IT+ # TECH+ # TERM+ # 14+
+virtual machine             = виртуальная машина                      # IT+ # TECH+ # TERM+ # 16+
+

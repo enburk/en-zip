@@ -1,0 +1,28 @@
+alcoholic     = алкогольный, ~ алкоголик
+
+abstinence    = воздержание, абстиненция                    # TERM-
+idiosyncrasy  = в медицине: идиосинкразия %% непереносимость # TERM-
+
+spirit        = спирт
+spirits {Br.} = крепкие алкогольные напитки
+
+liquor {Am.}  = крепкий алкогольный напиток, ~ выпивка
+liqueur       = ликёр
+
+chartreuse    = шартрёз                                     # TERM+ # RANDOM-
+bénédictine   = бенедиктин                                  # TERM+ # RANDOM-
+amaretto      = амаретто                                    # TERM+ # RANDOM-
+advocaat      = Адвокат %% яичный ликёр                     # RARE+ # TERM+ # RANDOM-
+sambuca       = самбука                                     # RARE+ # TERM+ # RANDOM-
+
+pub           = паб
+bar           = бар
+bar stool     = барный табурет/стул
+shaker        = шейкер
+toast {drink} = тост, ~ провозглашать тост                  /// # polysemic /// NEW
+
+cider         = сидр
+punch         = пунш
+grog          = грог
+ale           = эль
+

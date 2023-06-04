@@ -1,0 +1,29 @@
+kitchen                 = кухня ~ (помещение)
+
+blender                 = блендер
+mixer                   = миксер
+toaster                 = тостер
+microwave               = микроволновка
+refrigerator %% informal: fridge = холодильник
+
+ceramic                 = керамика, керамический              # 10+
+faience|faïence         = фаянс                               # RARE+ # 18+
+china                   = фарфор                              # RANDOM- # 14+
+maiolica                = майолика %% разновидность керамики  # RARE+ # 18+
+
+grill                   = гриль ~ (решётка)                   # 10+
+foil                    = фольга                              # 10+
+bouillon cube {Am.}     = бульонный кубик                     # 14+
+gelatin|gelatine        = желатин, ~ иногда: желе             # 14+
+
+===
+
+conserve @ verb %% verb = консервировать, ~ сохранять, беречь /// con`serve
+conserve @ noun %% noun = консервированные фрукты             /// `conserve
+
+===
+
+culinary                = кулинарный                          # TERM- # pix- # 14+
+culinarian              = кулинар                             # TERM- # pix- # 14+
+
+

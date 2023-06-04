@@ -1,0 +1,34 @@
+snack               = перекус, ~ легкая закуска
+
+crisps\\chips       = чипсы
+popcorn             = попкорн
+
+---
+fast food           = фастфуд          # 10+
+cheeseburger        = чизбургер
+chips\\french fries = картофель фри
+hot dog             = хот-дог
+
+===
+
+sandwich            = сэндвич
+toast               = тост, гренок, ~ подрумяниваться
+bacon               = бекон
+pâté                = паштет           /// нем. Pastete
+hummus|houmous      = хумус            # 16+
+cracker             = крекер
+croutons            = гренки, сухарики, ~ крутоны # RARE+ # 16+
+
+---
+sausage @ thin      = сосиска
+sausage @ middle    = сарделька
+sausage @ thick     = колбаса
+liver sausage       = ливерная колбаса # 14+
+sausage tree        = колбасное дерево # +2sec
+
+===
+
+betel leaves        = листья бетеля    # RARE+ # 18+
+
+
+

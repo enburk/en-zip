@@ -143,5 +143,8 @@
       <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="studio_dic.h" />
+    <ClInclude Include="studio_build_one+.h">
+      <Filter>studio-one</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

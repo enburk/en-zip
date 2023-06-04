@@ -1,0 +1,15 @@
+rum                 = ром
+calvados            = кальвадо́с                  # RARE-
+schnapps            = шнапс
+Armagnac            = арманьяк                   # RARE-
+absinthe/absinth    = абсент
+balsam              = бальзам
+
+= whisky %% канадский и шотландский виски # TERM+ # RANDOM- # pix-
+= whiskey %% американский и ирландский виски # TERM+ # RANDOM- # pix-
+Scotch [whisky]     = шотландский виски, ~ скотч # TERM+ # RANDOM- # pix-
+Bourbon ~ [whiskey] = бурбон %% кукурузный виски # TERM+ # RANDOM- # pix-
+
+gin                 = джин
+gin and tonic       = джин-тоник
+

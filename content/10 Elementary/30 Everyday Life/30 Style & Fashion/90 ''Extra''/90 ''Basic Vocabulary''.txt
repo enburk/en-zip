@@ -1,0 +1,26 @@
+clothes      = одежда, платье
+dress        = одежда, ~ одевать, одеваться
+dress, gown  = платье
+evening gown = вечернее платье # 12+
+suit         = костюм
+bathing suit = купальный костюм
+skirt        = юбка
+shirt        = рубашка, сорочка
+<small>''Keep your shirt on!''</small> {1} %% idiom = ''Держи себя в руках! Уймись уже!''
+
+cotton       = хлопок, хлопковый
+leather      = кожа, кожаный
+
+hat          = шляпа
+umbrella     = зонт, зонтик
+
+embroidery   = вышивание, вышивка
+
+necklace     = ожерелье, колье
+pendant      = подвеска, кулон
+earrings     = серьги
+
+lipstick     = помада
+facial mask  = маска для лица  /// NEW
+
+

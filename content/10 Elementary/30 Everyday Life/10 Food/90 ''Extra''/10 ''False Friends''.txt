@@ -1,0 +1,49 @@
+{FF}
+
+cook                  = повар, ~ не только кок                               /// NEW
+cook {verb} %% <verb> = готовить                                             /// NEW
+
+receipt               # +1sec
+receipt {text}        = квитанция, кассовый чек %% ''значение'' рецепт ''устарело'' # pix- /// чек (товарный) получение (formal)
+recipe                = рецепт ~ (кулинарный, реже: медицинский) %% также в переносном значении # pix-
+prescription          = рецепт ~ (медицинский)                               # +2sec # pix-
+
+provision             = запас, резерв, снабжение, ~ снабжать продуктами      # 14+ /// юр. условие, положение + есть рел. знач.
+provisions            = провизия, ~ съестные припасы                         # +1sec # 14+
+
+baton                 = жезл, ~ дирижёрская палочка, ~ эстафетная палочка %% ''не'' батон
+
+beckon                = кивок, манящий жест, манить, ~ подзывать жестом/кивком %% ''не'' бекон
+beacon                = маяк, сигнальный огонь %% ''не'' бекон
+bacon                 = бекон, ~ копчёная свиная грудинка                    # +1sec
+
+pierogi %% plural: pierogi/pierogies = вареник %% ''не'' пироги                             # +1sec
+
+humus                 = гумус, перегной %% не только хумус                   # 16+ /// # DELAY /// неожиданно в лонгмане и это хумус
+hummus %% Br. also houmous ~ Am. also humus = хумус                                                # 16+ /// # DELAY
+
+vinegar               = уксус %% ''не'' винегрет                             # +2sec # 14+
+balsamic vinegar      = бальзамический уксус                                 # +2sec # 14+
+vinaigrette           = соус винегрет %% французская заправка                # +2sec # 14+
+
+desert                # +1sec
+{desert}
+desert {text}         = пустыня %% ''не'' десерт
+dessert               = десерт, сладкое                                      # +1sec
+desert %% <verb>      = покидать, бросать, ~ дезертировать
+<small>''A cowardly officer '''deserts''' his ship; ~ the helpless passengers '''abandon''' it.''</small> = %% James Champlin Fernald, ''English Synonyms and Antonyms'' ~ LIBRIVOX
+deserter              = дезертир
+---
+biscuit               # audio- # pix-
+biscuit {Br.} @ crisp = печенье %% ''не'' бисквит                            # pix-
+biscuit {Am.} @ bun   = булочка %% ''не'' бисквит                            # pix-
+: In Britain biscuits can be sweet or not sweet
+
+compote               = фруктовый десерт %% пюре или варенье, ~ ''не'' компот
+
+vine                  = лоза %% ''не'' вино                                  # 18+
+wine                  = вино                                                 # +1sec # 18+
+
+idiosyncrasy          = индивидуальная особенность, ~ не только идиосинкразия # TERM- # +1sec # 18+
+
+

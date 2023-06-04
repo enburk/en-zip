@@ -1,51 +1,7 @@
 ﻿#pragma once
-#include "app.h"
-#include <unordered_set>
+#include "studio_build_one+.h"
 namespace studio::one
 {
-    namespace report
-    {
-        array<str> errors;
-        array<str> anomal;
-        array<str> audiom, audiop, audioq;
-        array<str> videom, videop, videoq;
-        void load ()
-        {
-            std::filesystem::path dir = "../data/report";
-            errors = sys::in::optional_text_lines(dir/"one_errors.txt");
-            anomal = sys::in::optional_text_lines(dir/"one_anomal.txt");
-            audiom = sys::in::optional_text_lines(dir/"one_audiom.txt");
-            videom = sys::in::optional_text_lines(dir/"one_videom.txt");
-            audiop = sys::in::optional_text_lines(dir/"one_audiop.txt");
-            videop = sys::in::optional_text_lines(dir/"one_videop.txt");
-            audioq = sys::in::optional_text_lines(dir/"one_audioq.txt");
-            videoq = sys::in::optional_text_lines(dir/"one_videoq.txt");
-        }
-        void save ()
-        {
-            std::filesystem::path dir = "../data/report";
-            sys::out::write(dir/"one_errors.txt", errors);
-            sys::out::write(dir/"one_anomal.txt", anomal);
-            sys::out::write(dir/"one_audiom.txt", audiom);
-            sys::out::write(dir/"one_videom.txt", videom);
-            sys::out::write(dir/"one_audiop.txt", audiop);
-            sys::out::write(dir/"one_videop.txt", videop);
-            sys::out::write(dir/"one_audioq.txt", audioq);
-            sys::out::write(dir/"one_videoq.txt", videoq);
-        }
-        void clear()
-        {
-            errors.clear();
-            anomal.clear();
-            audiom.clear();
-            videom.clear();
-            audiop.clear();
-            videop.clear();
-            audioq.clear();
-            videoq.clear();
-        }
-    }
-
     void compile
     (
         eng::vocabulary& vocabulary,
@@ -72,41 +28,27 @@ namespace studio::one
         err << red(bold("ONE ERRORS:"));
         err << report::errors; }
 
-        using res = media::resource*;
-
-        auto simple = [](str s)
-        {
-            s.replace_all(mdash, "---");
-            s.replace_all(ndash, "--");
-            s.replace_all(u8"’", "'");
-            return s;
-        };
-
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
-        std::unordered_map
-        <str, array<res>> course_vocabulary;
+        hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
         for (str s: entry.vocabulary)
-            course_vocabulary.emplace(
-            s, array<res>{});
+            course_vocabulary[s].
+            entries += &entry;
 
         std::unordered_set<str> sensitive;
-        for (auto [s,rr]: course_vocabulary)
+        for (auto [s,voc]: course_vocabulary)
         {
             str entry = s;
             str sense = entry.extract_from("@");
             if (sense != "") sensitive.
             emplace(entry);
-        }
 
-        for (auto& entry: course.entries)
-        for (str s: entry.vocabulary)
-        if (sensitive.contains(entry.eng))
-            report::errors += linked(
-                red(bold("sensless: ")) +
-                html(entry.eng),
-                    entry.link);
+            if (voc.entries.size() < 2) continue;
+            for (ent entry: voc.entries)
+            report::duples += link(entry);
+            report::duples += "";
+        }
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
 
@@ -117,6 +59,15 @@ namespace studio::one
             resource_vocabulary;
             resource_vocabulary +=
             simple(r.abstract);
+            {
+                auto& a = r.abstract;
+                auto& v = resource_vocabulary;
+                if (a.starts_with("a "    )) v += str(a.from(2)) + "@noun"; else
+                if (a.starts_with("an "   )) v += str(a.from(3)) + "@noun"; else
+                if (a.starts_with("the "  )) v += str(a.from(4)) + "@noun"; else
+                if (a.starts_with("to "   )) v += str(a.from(3)) + "@verb"; else
+                {}
+            }
 
             if (r.kind == "video")
             {
@@ -141,8 +92,12 @@ namespace studio::one
             {
                 auto it = course_vocabulary.find(s);
                 if (it != course_vocabulary.end())
-                    it->second += &r,
+                    it->second.resources += &r,
                     used = true;
+
+                str sense = s.extract_from("@");
+                if (sense != "") sensitive.
+                    emplace(s);
             }
 
             if (not used)
@@ -154,25 +109,25 @@ namespace studio::one
 
         std::unordered_set<res> single_videos;
 
-        for (auto& [s, rr]: course_vocabulary)
+        for (auto& [s,voc]: course_vocabulary)
         {
             int n = 0;
             res v = 0;
-            for (res r: rr)
+            for (res r: voc.resources)
             if (r->kind == "video") n++, v = r;
             if (n == 1) single_videos.emplace(v);
         }
 
-        for (auto& [s, rr]: course_vocabulary)
+        for (auto& [s,voc]: course_vocabulary)
         {
             int n = 0;
-            for (res r: rr)
+            for (res r: voc.resources)
             if (r->kind == "video") n++;
             if (n <= 1) continue;
 
             array<res> aa;
             array<res> vv;
-            for (res r: rr)
+            for (res r: voc.resources)
             if (r->kind == "video")
             vv += r; else
             aa += r;
@@ -181,7 +136,7 @@ namespace studio::one
             return single_videos.contains(r); });
 
             if (not vv.empty())
-            rr = aa * vv;
+            voc.resources = aa * vv;
         }
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));
@@ -198,18 +153,22 @@ namespace studio::one
 
         for (auto [i, entry]: enumerate(course.entries))
         {
-            bool
-            nopixed = entry.opt.internal.contains("pix-");
-            auto en = entry.en;
-            auto uk = entry.uk;
-            auto us = entry.us;
+            bool nopixed = entry.opt.internal.contains("pix-");
+            bool noaudio = entry.opt.internal.contains("audio-");
+
+            auto en = noaudio ? array<str>{} : entry.en;
+            auto uk = noaudio ? array<str>{} : entry.uk;
+            auto us = noaudio ? array<str>{} : entry.us;
             bool vi = nopixed;
 
             for (str& s: entry.vocabulary)
-            for (res& r: course_vocabulary[s])
+            for (res& r: course_vocabulary[s].resources)
             {
                 if (r->kind == "video"
                 and nopixed) continue;
+
+                if (r->kind == "audio"
+                and noaudio) continue;
 
                 data.one_add(i, r);
 
@@ -233,7 +192,7 @@ namespace studio::one
 
         out << dark(bold("ONE: MAKE SUGGESTIONS..."));
 
-        std::unordered_map<str,
+        hashmap<str,
         array<res>> unused_resources_vocabulary;
         for (res r: unused_resources)
         {
@@ -259,8 +218,7 @@ namespace studio::one
             unused_resources_vocabulary[s] += r;
         }
 
-        std::unordered_set<str>
-            current_vocabulary;
+        hashset<str> current_vocabulary;
 
         for (auto& entry: course.entries)
         {
@@ -306,11 +264,7 @@ namespace studio::one
 
             if (not audios.empty())
             {
-                report::audiop += linked(
-                html(entry.eng) + "  " +
-                dark(entry.pretty_link()),
-                     entry.link);
-
+                report::audiop += link(entry);
                 for (res r: audios)
                 report::audiop += 
                 dark(html(r->
@@ -318,11 +272,7 @@ namespace studio::one
             }
             if (not videos.empty())
             {
-                report::videop += linked(
-                html(entry.eng) + "  " +
-                dark(entry.pretty_link()),
-                     entry.link);
-
+                report::videop += link(entry);
                 for (res r: videos)
                 report::videop +=
                 dark(html(r->
@@ -351,6 +301,13 @@ namespace studio::one
                 report::videoq +=
                 r->full();
         }
+
+        for (auto& entry: course.entries)
+        for (str s: entry.vocabulary)
+        if  (sensitive.contains(s))
+            report::errors += bold(
+            red("sensless: ")) +
+            link(entry);
 
         report::save();
     }

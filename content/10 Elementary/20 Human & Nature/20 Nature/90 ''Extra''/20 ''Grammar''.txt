@@ -1,0 +1,35 @@
+grammar
+
+===
+small words # HEAD
+===
+
+all %% determiner, pronoun, noun = все, всё
+
+= =
+
+all of it   = всё это
+all of them = все они
+
+---
+at all      = вообще
+not at all  = ничуть, нисколько, ~ вовсе нет, отнюдь
+: Not at all, not at all.
+
+
+that's all  = на этом всё, ~ вот и всё
+
+===
+
+: Is that all?
+: This is all.
+: That's all.
+: That's it.
+
+
+
+
+
+
+
+

@@ -1,5 +1,7 @@
 ﻿#pragma once
 #define AUXS_USE_OGG
+#include <unordered_map>
+#include <unordered_set>
 #include "../auxs/sys_io_in.h"
 #include "../auxs/sys_io_out.h"
 #include "../auxs/doc_html_model.h"
@@ -16,6 +18,9 @@ using pix::rgba;
 using pix::image;
 using pix::frame;
 using namespace std::literals::chrono_literals;
+
+template <class... xx> using hashmap = std::unordered_map<xx...>;
+template <class... xx> using hashset = std::unordered_set<xx...>;
 
 str bold      (str s) { return "<b>" + s + "</b>"; }
 str italic    (str s) { return "<i>" + s + "</i>"; }

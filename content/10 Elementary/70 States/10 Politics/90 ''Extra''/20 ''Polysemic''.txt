@@ -1,15 +1,15 @@
-corps                        = род войск, ~ корпус ~ (войсковое соединение)     # 16+
-cadet corps/~corps of cadets = кадетский корпус                                 # 16+
-diplomatic corps             = дипломатический корпус                           # POLIT- # 16+
-corps de ballet              = кордебалет                                       # ART- # 16+
+corps                        = род войск, ~ корпус ~ (войсковое соединение) # 16+
+cadet corps/~corps of cadets = кадетский корпус                            # 16+
+diplomatic corps             = дипломатический корпус                      # POLIT- # 16+
+corps de ballet              = кордебалет                                  # ART- # 16+
 corpus                       = собрание сочинений, ~ корпус (текстов и т.п.) ~~ основной капитал # 16+ /// тело, туловище – есть такое, но в лингво указано уст.
 /// = но не корпус ''в значениях:'' ~ туловище, ~ отдельное строение, ~ твёрдая оболочка (чего-либо)  # 16+
 
 order                        = орден ~ (награда)
-order of the Golden Fleece   = орден Золотого руна                              # RARE+ # 16+
+order of the Golden Fleece   = орден Золотого руна                         # RARE+ # 16+
 order                        = порядок, последовательность
 alphabetical order           = алфавитный порядок
-order of magnitude           = порядок величины                                 # TERM+ # 10+ /// (количество цифр в числе)
+order of magnitude           = порядок величины                            # TERM+ # 10+ /// (количество цифр в числе)
 order                        = порядок
 <small>''Order in the court!''</small>
 order                        = приказ, предписание
@@ -19,26 +19,27 @@ military order               = духовно-рыцарский орден
 Teutonic Order               = Тевтонский орден
 order                        = заказ
 <small>''Are you ready to order?''</small>
-order                        = в зоологии: отряд, ~ в ботанике: порядок         # RARE+ # TERM+ # 14+
-order                        = в архитектуре: ордер                             # ART+ # RARE+ # 16+
-warrant                      = ордер (на обыск, арест и т.п.)                   # 14+
-arrest warrant               = ордер на арест                                   # 14+ /// ~warrant of arrest
+order                        = в зоологии: отряд, ~ в ботанике: порядок    # RARE+ # TERM+ # 14+
+order                        = в архитектуре: ордер                        # ART+ # RARE+ # 16+
+warrant                      = ордер (на обыск, арест и т.п.)              # 14+
+arrest warrant               = ордер на арест                              # 14+ /// ~warrant of arrest
 billet                       = ордер на постой %% также: квартиры для постоя, ~ расквартировывать на постой # HISTORY+ # WAR+ # 16+
 
-post(1) %% formal            = пост, должность, положение                       /// 1
-post(1) {army}               = пост, блокпост, позиция                          /// 1
-post(2) %% Br. especially, ~~ Am. usually: mail = почта                                            /// 2
-post(2) {comp}               = в цифр. технологиях: ~ пост, постить             # 10+ /// 2
-post(3)                      = столб, свая                                      /// объявлять и мн. др.  /// 3
+post(1) %% formal            = пост, должность, положение                  /// 1
+post(1) {army}               = пост, блокпост, позиция                     /// 1
+post(2) %% Br. especially, ~~ Am. usually: mail = почта                                       /// 2
+post(2) {comp}               = в цифр. технологиях: ~ пост, постить        # 10+ /// 2
+post(3)                      = столб, свая                                 /// объявлять и мн. др.  /// 3
 goal '''post'''              = в спорте: штанга (ворот)
 barbell                      = в спорте: штанга (вес)
-postscript (PS)              = постскриптум                                     # 10+
-post-apocalyptic             = постапокалиптический                             # 10+
-fast(1)                      = пост, поститься                                  # 10+
+postscript (PS)              = постскриптум                                # 10+
+post-apocalyptic             = постапокалиптический                        # 10+
+fast(1)                      = пост, поститься                             # 10+
 fast(2)                      = быстрый, скорый, спешащий (о часах), ~ скоро, быстро # 10+
 <small>''Why do French people eat snails? ~ Because they don’t like fast food.''<small> = %% HOTMAG
 <small>''Do you know how fast you were going?''</small>
-fast(2) {2}                  = легкомысленный, фривольный                       # 14+
+fast(2) {2}                  = легкомысленный, фривольный                  # 14+
 fast(2) {3}                  = крепкий, прочный, ~ крепко, прочно, ~ запор, задвижка # 10+ /// точно не (3) ?
-fast(3)                      = швартов                                          # 14+
+fast(3)                      = швартов                                     # 14+
+
 

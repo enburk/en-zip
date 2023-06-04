@@ -1,0 +1,39 @@
+grammar
+
+===
+small words               # HEAD
+===
+off
+===
+
+---
+= %% указывает на отдаление, ~ удаление
+: and was off in a moment = и немедленно отправился
+
+---
+= %% указывает на потерю опоры ~ или контакта
+to slip off               = соскользнуть с
+
+---
+= %% указывает на отсутствие ~ чего-либо
+to be off                 = отсутствовать
+off days                  = выходные
+
+===
+
+turn off                  = выключить
+: Do not turn off your computer!
+
+===
+
+: Hands off!              = Руки прочь!
+: Keep off the grass!
+: Keep off the rocks!
+
+
+
+
+
+
+
+

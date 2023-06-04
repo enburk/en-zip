@@ -1,0 +1,17 @@
+spices                     = специи, пряности
+piquant                    = пикантный, острый
+
+anise                      = анис  # 18+
+basil                      = базилик # 10+
+cardamom                   = кардамон # 18+
+pepper                     = перец
+rosemary                   = розмарин # 16+
+thyme                      = тимьян, чабрец # RARE+ # 16+
+
+coriander @ spice          = кориандр # 14+
+coriander\\cilantro @ herb = кинза # 14+
+
+mint                       = мята
+menthol                    = ментол, ментоловый # 10+ /// (ментол выделяют из мятного эфирного масла)
+
+

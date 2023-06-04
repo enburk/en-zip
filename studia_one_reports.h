@@ -11,6 +11,7 @@ namespace studio::one
             str link;
             gui::console errors;
             gui::console anomal;
+            gui::console duples;
             gui::console audiom, audiop, audioq;
             gui::console videom, videop, videoq;
             array<gui::console*> consoles;
@@ -18,6 +19,7 @@ namespace studio::one
             {
                 consoles += &errors;
                 consoles += &anomal;
+                consoles += &duples;
                 consoles += &audiom;
                 consoles += &videom;
                 consoles += &audiop;
@@ -35,6 +37,7 @@ namespace studio::one
 
                 if (what == &errors.link) { link = errors.link; notify(); }
                 if (what == &anomal.link) { link = anomal.link; notify(); }
+                if (what == &duples.link) { link = duples.link; notify(); }
                 if (what == &audiom.link) { link = audiom.link; notify(); }
                 if (what == &videom.link) { link = videom.link; notify(); }
                 if (what == &audiop.link) { link = audiop.link; notify(); }
@@ -47,6 +50,7 @@ namespace studio::one
                  report::load();
                  errors.clear(); errors << report::errors;
                  anomal.clear(); anomal << report::anomal;
+                 duples.clear(); duples << report::duples;
                  audiom.clear(); audiom << report::audiom;
                  videom.clear(); videom << report::videom;
                  audiop.clear(); audiop << report::audiop;
@@ -65,6 +69,7 @@ namespace studio::one
             int i = 0;
             selector.object.buttons(i++).text.text = "errors";
             selector.object.buttons(i++).text.text = "anomal";
+            selector.object.buttons(i++).text.text = "duplicates";
             selector.object.buttons(i++).text.text = "audio-";
             selector.object.buttons(i++).text.text = "video-";
             selector.object.buttons(i++).text.text = "audio+";

@@ -1,0 +1,30 @@
+mineral water                = минеральная вода
+soda [water]                 = газировка, содовая
+[soda] siphon|syphon         = сифон                      # 16+
+bottle                       = бутылка
+cola                         = кола
+milk                         = молоко                     /// из прагерманского
+condensed milk               = сгущенное молоко
+pasteurized %% Br. also: pasteurised = пастеризованный            # TERM+ # 14+
+
+coffee machine               = кофемашина, кофеварка
+espresso                     = эспрессо
+Turkish coffee               = кофе по-турецки            # TERM- # 14+
+cappuccino                   = капучино
+latte                        = латте                      # TERM- # 14+
+café au lait                 = кофе с молоком             # TERM+ # 16+
+Americano                    = американо                  # TERM- # 14+
+Vienna coffee                = венский кофе %% кофе со взбитыми сливками # TERM- # 16+
+Irish coffee                 = кофе по-ирландски          # TERM- # 18+ /// ,~ирландский кофе
+Arabica                      = арабика                    # 10+
+chicory                      = цикорий                    # RARE+ # 14+
+{chicory}                    = Эрзац кофе ~ делают из корня цикория, ~ а листья его едят как салат. # RARE+ # 14+
+
+hot chocolate, ~ [hot] cocoa = горячий шоколад, какао
+cocoa powder                 = какао-порошок
+
+cocktail                     = коктейль
+milkshake                    = молочный коктейль
+smoothie                     = смузи
+kefir                        = кефир
+

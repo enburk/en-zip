@@ -5,9 +5,10 @@ motif        = мотив %% музыкальный, декоративный и
 melody       = мелодия
 tempo        = темп
 rhythm       = ритм
-metronome    = метроном                             # ART- # TERM- # 14+
+metronome    = метроном                          # ART- # TERM- # 14+
 pause        = пауза
 concert hall = концертный зал
 composition  = композиция, ~ сочинение, произведение
 composer     = композитор
+
 

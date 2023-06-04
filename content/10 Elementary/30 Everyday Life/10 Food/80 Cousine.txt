@@ -1,0 +1,18 @@
+cuisine    = кухня ~ (национальная) # 12+
+
+Italian cuisine
+Japanese cuisine
+Frech cuisine
+Mexican cuisine
+
+===
+
+bistro     = бистро              # 10+
+pizzeria   = пиццерия            # 10+
+cafeteria  = кафетерий, столовая
+steakhouse = стейк-хаус          # RARE- # TERM- # 10+
+sushi bar  = суши-бар            # TERM-
+tavern     = таверна             # 10+
+trattoria  = траттория           # RARE- # 18+
+
+

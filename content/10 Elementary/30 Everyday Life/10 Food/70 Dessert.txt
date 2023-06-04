@@ -1,0 +1,18 @@
+confections            = кондитерские изделия, ~ сладости
+
+cheesecake             = чизкейк                                          # 10+
+rum baba//baba au rhum = ромовая баба                                     # RARE+ # 10+
+tartlet                = тарт, тарталетка %% корзиночка вместе с содержимым, ~ не пустая # RARE- # 10+
+nougat                 = нуга                                             # 10+
+baklava                = пахлава                                          # 10+
+praline                = пралине                                          # RARE- # 10+
+
+===
+sugar                  = сахар
+saccharin              = сахарин
+saccharine             = сахарный, приторный %% ''также в переносном смысле''
+syrup                  = сироп
+/// Old French – sirop (Italian siroppo),
+/// в араб. sharab - питье, вино; sirup нестанд.
+
+

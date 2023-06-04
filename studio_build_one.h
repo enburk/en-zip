@@ -288,10 +288,34 @@ namespace studio::one
 
         for (auto[weight, r]: weighted_unused_resources)
         {
+            str s = r->abstract;
+
             // 's 't 're 'll
             if (eng::list::contractionparts.
-                contains(r->title))
+                contains(s))
                 continue;
+
+            bool skip = false;
+            if (s.size() >= 3 and
+            not s.contains(" "))
+            for (str form: {"s", "ing", "ed"})
+            {
+                str f = eng::form(s, form);
+                if (f != s and course_vocabulary.
+                    contains(f)) {
+                    skip = true;
+                    break; }
+
+                if (s.size() - form.size() < 3)
+                    continue;
+
+                str b = eng::backform(s, form);
+                if (b != s and course_vocabulary.
+                    contains(b)) {
+                    skip = true;
+                    break; }
+            }
+            if (skip) continue;
 
             if (r->kind == "audio")
                 report::audioq +=

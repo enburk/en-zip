@@ -28,8 +28,11 @@ cheek    = щека
 
 ===
 
-men
-woman
+man %% plural: men = мужчина, муж
+woman %% plural: women = женщина
+
+adult = взрослый
+child %% plural: children = ребенок
 
 baby boy
 baby girl

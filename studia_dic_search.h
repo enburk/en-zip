@@ -89,7 +89,6 @@ namespace studio::dic
             int v = 0;
             Irrenouns.text = "irregular nouns:";
             Irreverbs.text = "irregular nouns:";
-
         }
 
         void out (str title, int n)

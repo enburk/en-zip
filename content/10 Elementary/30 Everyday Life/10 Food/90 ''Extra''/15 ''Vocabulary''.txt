@@ -20,7 +20,7 @@ caviar/roe                   = икра
 shrimp @ food                = креветка
 : I’m on a seafood diet. ~ What's a seafood diet? ~ When I “see food”, I eat it!
 ---
-sweet                        = сладкий
+sweet                        = сладкий, милый, ~ нежный, приятный
 sweets                       = сладости, конфеты
 : Is that sweet or what?
 ---
@@ -44,9 +44,14 @@ boil                         = кипеть
 teapot                       = чайник
 kettle//teakettle            = электрический чайник
 
-: I'm thirsty.               = Я хочу пить.
-: I'm hungry.                = Я голоден.
-: I'm starving.              = Я умираю от голода.
-: I'm full.                  = Я сыт.
+---
+hungry                       = голодный
+starving                     = голодающий, ~ изголодавшийся
+full @ food                  = сытый
+: I'm hungry.
+: Ah, I’m hungry.
+: I'm starving.
+: I'm full.
+
 
 

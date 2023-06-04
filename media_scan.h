@@ -121,11 +121,12 @@ namespace media::scan
 
                 resources += resource;
 
-                if (resource.title.contains(one_of("#")))
+                if (resource.title.contains(one_of("#@")))
                 {
-                    err << yellow(
+                    err << red(
+                    bold("#@: ")) +
                     str(dir) + "/" +
-                    resource.title);
+                    resource.title;
                 }
                 if  (resource.kind == "audio")
                 for (str option: resource.options)

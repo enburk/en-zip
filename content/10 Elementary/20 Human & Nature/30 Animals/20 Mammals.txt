@@ -1,12 +1,14 @@
 
 panda               = панда
 grizzly [bear]      = гризли
+
 hyena|hyaena\\hyena = гиена
 
 zebra               = зебра
 mule                = мул                  # RARE+ /// (mule II шлепанец)
 dromedary           = дромадер %% одногорбый верблюд # RARE+ # 16+
 antelope            = антилопа
+
 [American] bison    = бизон %% (Bison bison)
 [European] bison    = зубр %% (Bison bonasus)
 yak                 = як

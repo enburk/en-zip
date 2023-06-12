@@ -14,7 +14,7 @@ Doppler effect             = эффект Доплера                        
 
 spectrum,~visible spectrum = спектр, ~ видимая часть спектра             # MATH- # TERM- # 18+
 ultraviolet                = ультрафиолетовый
-infrared                   = инфракрасный                                # RANDOM-
+infrared                   = инфракрасный
 radio waves                = радиоволны                                  # 18+
 spectral line              = спектральная линия                          # MATH+ # TERM+ # 18+
 spontaneous emission       = спонтанное излучение/испускание             # MATH+ # TERM+
@@ -44,4 +44,5 @@ corpuscular                = корпускулярный                       
 
 laser                      = лазер, лазерный
 holography,~hologram       = голография, голограмма
+
 

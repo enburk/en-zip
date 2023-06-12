@@ -1,0 +1,25 @@
+clothes =  одежда
+
+blazer                     = блейзер                                  # RARE+ # 18+
+jeans                      = джинсы
+pair of jeans              = пара джинсов
+
+shorts                     = шорты
+Bermudas//Bermuda shorts = бермуды                                  # RARE- # 10+
+leggings                   = лосины, легинсы                          # 16+
+
+pullover                   = пуловер                                  # 14+
+sweater {Am.}              = свитер
+cardigan                   = кардиган                                 # RARE+ # 16+
+
+===
+
+bikini                     = бикини                                   # 16+
+sarong                     = саронг                                   # RARE- # 18+
+pāreu|pareo                = парео                                    # RARE- # 18+
+tunic                      = туника                                   # 18+
+
+top                        = топ/топик %% также любая другая одежда ~ для верхней части тела # 18+
+topless                    = топлес                                   # 18+
+
+

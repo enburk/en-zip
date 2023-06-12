@@ -17,7 +17,8 @@ aggressor                   = агрессор, ~ нападающая стор�
 neutrality                  = нейтралитет, нейтральность
 capitulation                = капитуляция
 reparations                 = репарации             # TERM+ # WAR+ # 16+
-requisition                 = реквизиция            # TERM+ # WAR+ # RANDOM- # 16+
+requisition                 = реквизиция            # TERM+ # WAR+ # 16+
 restitution                 = реституция, возмещение # RARE+ # TERM+ # WAR+ # 16+
 parlimentaire|parlementaire = парламентёр           # 14+
+
 

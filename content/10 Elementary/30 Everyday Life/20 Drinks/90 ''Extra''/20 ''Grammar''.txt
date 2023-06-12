@@ -1,12 +1,21 @@
 grammar
 
 ===
-small words # HEAD
+small words        # HEAD
 ===
 
 
 
+===
+irregular verbs HEAD
+===
 
+drink → drank, drunk
+drunk %% adjective = пьяный, опьяненный
+
+===
+
+: Drank! My word! Something chronic.
 
 
 

@@ -62,7 +62,6 @@ namespace studio::dic
             select.buttons(i++).text.text = "search";
             select.buttons(i++).text.text = "statistics";
             select.buttons(i++).text.text = "timing";
-            select.maxwidth = max<int>();
             select.selected = 0;
 
             log_medias.view.wordwrap = false;

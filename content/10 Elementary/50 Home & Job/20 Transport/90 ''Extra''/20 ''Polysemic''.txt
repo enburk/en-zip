@@ -28,17 +28,17 @@ guide               = экскурсовод, гид, ~ проводник
 course              = курс, направление, ход                                # 10+
 <small>''Maintain 25,000 feet, course 0-4-0.''</small> # 10+
 course {2}          = курс обучения, ~ курс лекций, ~ курс лечения          # 14+ /// много знач.
-exchange rate       = валютный '''курс'''                                   # +2sec # 14+
+exchange rate       = валютный '''курс'''                                   # 14+
 golf course         = поле для гольфа                                       # 10+
-main course         = главное блюдо                                         # +1sec # 10+
+main course         = главное блюдо                                         # 10+
 
 track               = трак ~ (звено гусеничной ленты)
 track               = трек, ~ велотрек, мототрек, ~ гоночная трасса
 track               = трек, ~ звуковая дорожка
 track               = тропинка, дорожка, ~ след, колея, рельсы, ~ выслеживать, ~ прокладывать путь
 
-dock {Br.}          = док %% в амер. значение другое                        # RANDOM- # 12+
-dock {Am.} {pier}   = пирс, причал                                          # RANDOM- # 12+
+dock {Br.}          = док %% в амер. значение другое                        # 12+
+dock {Am.} {pier}   = пирс, причал                                          # 12+
 
 /// dock    док, пирс, причал, ~~вводить/входить в док, ~~производить стыковку (о космических кораблях) ~~в ам. также: мол, дамба
 /// #homonyms //1 – щавель, 2 – обрубок (хвоста)
@@ -50,4 +50,5 @@ express             = выражать
 expression          = экспрессия
 expression          = выражение
 <small>''Nobody else ever called me a glorious young beast. I like that. ~ Glorious young beast '''expresses''' exactly what I like to be.''</small> = %% ''Misalliance'' by George Bernard Shaw ~ LIBRIVOX LIPSHAW
+
 

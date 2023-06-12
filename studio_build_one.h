@@ -30,11 +30,18 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
+        hashset<str> form_course_vocabulary;
         hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
         for (str s: entry.vocabulary)
+        {
             course_vocabulary[s].
             entries += &entry;
+
+            for (str f: forms(s))
+            form_course_vocabulary.
+                emplace(f);
+        }
 
         std::unordered_set<str> sensitive;
         for (auto [s,voc]: course_vocabulary)
@@ -55,17 +62,17 @@ namespace studio::one
         std::unordered_set<res> unused_resources;
         for (auto& r: data.resources)
         {
+            str w = simple(r.abstract);
+
             array<str>
             resource_vocabulary;
-            resource_vocabulary +=
-            simple(r.abstract);
+            resource_vocabulary += w;
             {
-                auto& a = r.abstract;
                 auto& v = resource_vocabulary;
-                if (a.starts_with("a "    )) v += str(a.from(2)) + "@noun"; else
-                if (a.starts_with("an "   )) v += str(a.from(3)) + "@noun"; else
-                if (a.starts_with("the "  )) v += str(a.from(4)) + "@noun"; else
-                if (a.starts_with("to "   )) v += str(a.from(3)) + "@verb"; else
+                if (w.starts_with("a "    )) v += str(w.from(2)) + "@noun"; else
+                if (w.starts_with("an "   )) v += str(w.from(3)) + "@noun"; else
+                if (w.starts_with("the "  )) v += str(w.from(4)) + "@noun"; else
+                if (w.starts_with("to "   )) v += str(w.from(3)) + "@verb"; else
                 {}
             }
 
@@ -100,8 +107,22 @@ namespace studio::one
                     emplace(s);
             }
 
-            if (not used)
-            if (r.weight < 20
+            if (used or
+                form_course_vocabulary.
+                contains(w))
+                continue;
+
+            int spaces = 0;
+            for (char c: w)
+            if  (c == ' ')
+                spaces++;
+
+            int k =
+            spaces >= 2 ? 10:
+            spaces == 1 ? 15: 19;
+
+            if (r.weight < k
+            or  r.sense != ""
             or  r.kind == "video")
             unused_resources.
                 emplace(&r);
@@ -294,28 +315,6 @@ namespace studio::one
             if (eng::list::contractionparts.
                 contains(s))
                 continue;
-
-            bool skip = false;
-            if (s.size() >= 3 and
-            not s.contains(" "))
-            for (str form: {"s", "ing", "ed"})
-            {
-                str f = eng::form(s, form);
-                if (f != s and course_vocabulary.
-                    contains(f)) {
-                    skip = true;
-                    break; }
-
-                if (s.size() - form.size() < 3)
-                    continue;
-
-                str b = eng::backform(s, form);
-                if (b != s and course_vocabulary.
-                    contains(b)) {
-                    skip = true;
-                    break; }
-            }
-            if (skip) continue;
 
             if (r->kind == "audio")
                 report::audioq +=

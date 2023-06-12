@@ -1,15 +1,15 @@
 '''left''', '''right''' and '''wrong'''
 
-left         = левый, слева, налево     # +1sec
-left {verb}  = оставаться               # +1sec
-left {leave} = покинутый %% ''simple'' past tense ~ ''and'' past participle ~ ''of'' '''leave''' # +1sec
+left         = левый, слева, налево
+left {verb}  = оставаться
+left {leave} = покинутый %% ''simple'' past tense ~ ''and'' past participle ~ ''of'' '''leave'''
 
-right        = правый, справа, направо  # +1sec
-right        = правильно, правильный, ~ правый # +1sec
-right        = точно, как раз           # +1sec
+right        = правый, справа, направо
+right        = правильно, правильный, ~ правый
+right        = точно, как раз
 
-wrong        = неправильно, неправильный # +1sec
-wrong        = вред, зло, обида         # +1sec
+wrong        = неправильно, неправильный
+wrong        = вред, зло, обида
 
 ''In 300 yards turn '''right'''.''
 
@@ -25,4 +25,5 @@ wrong        = вред, зло, обида         # +1sec
 ''Do what I say, '''right''' now!''
 ''Stop that, '''right''' now!''
 ''I'll be '''right''' back.''
+
 

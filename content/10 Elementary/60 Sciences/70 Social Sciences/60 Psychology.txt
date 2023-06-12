@@ -29,7 +29,7 @@ masochism                    = мазохизм
 masochist                    = мазохист
 
 introspection                = интроспекция, самоанализ              # RARE+ # TERM+
-projection                   = в психологии: проекция                # RARE+ # TERM+ # RANDOM-
+projection                   = в психологии: проекция                # RARE+ # TERM+
 cognitive dissonance         = когнитивный диссонанс                 # TERM+
 
 gestalt                      = гештальт %% целостный образ           # RARE+ # TERM+
@@ -39,4 +39,5 @@ egocentrism                  = эгоцентризм                           
 neuro-linguistic programming = нейролингвистическое программирование # TERM-
 hypnosis                     = гипноз
 hallucination                = галлюцинация
+
 

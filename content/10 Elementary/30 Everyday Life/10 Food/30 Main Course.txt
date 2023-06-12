@@ -1,13 +1,13 @@
 main course     = главное блюдо
 
 steak           = стейк
-beefsteak       = бифштекс                            # 10+
-roast beef      = ростбиф                             # 14+
-beef stroganoff = бефстроганов                        # 14+
+beefsteak       = бифштекс                  # 10+
+roast beef      = ростбиф                   # 14+
+beef stroganoff = бефстроганов              # 14+
 
-hake            = хек %% мерлуза                      # FOOD+ # 18+
-mackerel        = макрель                             # FOOD+ # 14+
-calamari        = кальмар %% в виде блюда; животное -- squid # RANDOM-
+hake @ food     = хек %% мерлуза            # FOOD+ # 18+
+mackerel @ food = макрель                   # FOOD+ # 14+
+calamari        = кальмар %% в виде блюда; животное -- squid
 
 ===
 ---
@@ -16,14 +16,17 @@ pudding         = пудинг %% не всегда десерт
 
 ===
 
-garnish         = гарнир, ~ украшение ~ (блюда)       # 10+
+garnish         = гарнир, ~ украшение ~ (блюда) # 10+
 rice            = рис
 broccoli        = брокколи
-zucchini        = цуккини %% разновидность кабачка    # FOOD+ # 10+
+zucchini        = цуккини %% разновидность кабачка # FOOD+ # 10+
 
 soy sauce %% Br. also: soya sauce = соевый соус
-Bolognese sauce = соус болоньезе                      # FOOD+ # 14+
-pesto           = песто                               # FOOD+ # 16+
-guacamole       = гуакамоле %% соус из авокадо        # FOOD+ # 16+
+Bolognese sauce = соус болоньезе            # FOOD+ # 14+
+pesto           = песто                     # FOOD+ # 16+
+guacamole       = гуакамоле %% соус из авокадо # FOOD+ # 16+
+
+
+
 
 

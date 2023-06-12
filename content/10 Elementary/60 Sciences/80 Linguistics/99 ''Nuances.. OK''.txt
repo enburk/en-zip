@@ -1,17 +1,18 @@
 ''Nuances''
 
-okay {agreement} %% the symbol of agreement # +2sec
+okay {agreement} %% the symbol of agreement
 ''Okey, I guess. ''
 
-okay {interjection} %% interjection      # +2sec
+okay {interjection} %% interjection
 
-okay {attention} %% the attention getter # +2sec
+okay {attention} %% the attention getter
 ''Okay, stop it.''
 
-okay {noun} %% noun: ''an OK''           # +2sec
-okay {verb} %% verb: ''to OK''           # +2sec
-okay {adj.} %% adjective: ''an OK movie'' # +2sec
-okay {adv.} %% adverb: ''I did OK''      # +2sec
+okay {noun} %% noun: ''an OK''
+okay {verb} %% verb: ''to OK''
+okay {adj.} %% adjective: ''an OK movie''
+okay {adv.} %% adverb: ''I did OK''
 
 tsk, okay
+
 

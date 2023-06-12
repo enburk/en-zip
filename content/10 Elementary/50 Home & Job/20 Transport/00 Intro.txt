@@ -8,8 +8,8 @@ bus                    = автобус
 minibus                = микроавтобус
 trolley/~trolleybus    = троллейбус
 
-metro                  = метро                                # RANDOM-
-the undeground\\subway = метро                                # RANDOM-
+metro                  = метро
+the undeground\\subway = метро
 
 metro                  = метро
 the Underground, ~ the underground, ~ the tube (Br.) = метро
@@ -42,4 +42,5 @@ lift\\elevator         = лифт
 ''Her elevator does not go ~ all the way to the top.''
 
 snowmobile             = снегоход
+
 

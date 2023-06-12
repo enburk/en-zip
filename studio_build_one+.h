@@ -13,10 +13,10 @@ namespace studio::one
         {
             std::filesystem::path dir = "../data/report";
             errors = sys::in::optional_text_lines(dir/"one_errors.txt");
-            anomal = sys::in::optional_text_lines(dir/"one_anomal.txt");
-            duples = sys::in::optional_text_lines(dir/"one_duples.txt");
-            audiom = sys::in::optional_text_lines(dir/"one_audiom.txt");
-            videom = sys::in::optional_text_lines(dir/"one_videom.txt");
+        //  anomal = sys::in::optional_text_lines(dir/"one_anomal.txt");
+        //  duples = sys::in::optional_text_lines(dir/"one_duples.txt");
+        //  audiom = sys::in::optional_text_lines(dir/"one_audiom.txt");
+        //  videom = sys::in::optional_text_lines(dir/"one_videom.txt");
             audiop = sys::in::optional_text_lines(dir/"one_audiop.txt");
             videop = sys::in::optional_text_lines(dir/"one_videop.txt");
             audioq = sys::in::optional_text_lines(dir/"one_audioq.txt");
@@ -74,4 +74,24 @@ namespace studio::one
     }
     str link (content::out::entry& e) {
         return link(&e); }
+
+
+    generator<str> forms (str s)
+    {
+        if (s.size() < 3
+        or s.contains(" "))
+            co_return;
+
+        for (str form: {"s", "ing", "ed"})
+        {
+            str f = eng::form(s, form);
+            if (f != s) co_yield f;
+
+            if (s.size() - form.size() < 3)
+                continue;
+
+            str b = eng::backform(s, form);
+            if (b != s)  co_yield b;
+        }
+    }
 }

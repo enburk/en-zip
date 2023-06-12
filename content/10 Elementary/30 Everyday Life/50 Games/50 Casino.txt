@@ -10,9 +10,10 @@ blackjack        = блэкджек|блек-джек
 roulette         = рулетка
 Russian roulette = русская рулетка
 croupier         = крупье             # TERM-
-zero             = зеро %% нулевой сектор рулетки # TERM- # RANDOM-
+zero             = зеро %% нулевой сектор рулетки # TERM-
 
 lottery          = лотерея
 jackpot          = джекпот            /// (куш, самый крупный выигрыш)
+
 
 

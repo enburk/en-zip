@@ -1,0 +1,39 @@
+basic ~ vocabulary
+
+dozen          = дюжина
+hundred        = сто, сотня
+thousand       = тысяча
+
+wheight        = вес, взвешивать
+light          = лёгкий
+heavy          = тяжёлый
+
+size           = размер
+length         = длина
+long           = длинный
+short          = короткий
+
+height         = высота
+high           = высокий
+low            = низкий
+
+thickness      = толщина
+thick          = толстый
+thin           = тонкий
+
+depth          = глубина
+deep           = глубокий
+shallow        = мелкий
+---
+wide           = широкий
+narrow         = узкий
+: Open wide and say “ahh”.
+
+hour           = час
+hourglass      = песочные часы
+
+===
+volume @ space = объём
+volume @ sound = громкость
+volume @ book  = том
+

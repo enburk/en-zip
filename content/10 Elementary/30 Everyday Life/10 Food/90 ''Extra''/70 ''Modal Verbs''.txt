@@ -1,7 +1,7 @@
 modal verbs                = модальные глаголы
 
-can                        = мочь, уметь
-may                        = мочь ~ (иметь разрешение)
+can @ verb                 = мочь, уметь
+may @ verb                 = мочь ~ (иметь разрешение)
 
 ''I '''can''' do this!''
 ''You '''may''' go now.''  = ''Теперь вы можете идти. ~ Вы свободны.''
@@ -42,4 +42,5 @@ may → might
 ''How '''could''' you do that to me?'' {2}
 ''What '''could''' I do?''
 ''I '''could''' just kill myself!''
+
 

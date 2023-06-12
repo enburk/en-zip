@@ -25,12 +25,13 @@ opera                      = опера                        # 10+
 opera house                = оперный театр                # 10+
 aria                       = ария                         # 14+
 libretto                   = либретто                     # 16+
-Gioachino Rossini          = Джоаккино Россини            # ART+ # RANDOM- # 18+
-Giuseppe Verdi             = Джузеппе Верди               # ART+ # RANDOM- # 18+
-''La Traviata''            = «Травиата»                   # ART+ # RANDOM- # 18+
-''Aida''                   = «Аида»                       # ART+ # RANDOM- # 18+
+Gioachino Rossini          = Джоаккино Россини            # ART+ # 18+
+Giuseppe Verdi             = Джузеппе Верди               # ART+ # 18+
+''La Traviata''            = «Травиата»                   # ART+ # 18+
+''Aida''                   = «Аида»                       # ART+ # 18+
 
 opera buffa                = опера-буффа %% итальянская комическая опера # 18+
 operetta                   = оперетта                     # 16+
-finale                     = финал                        # RANDOM- # 16+
+finale                     = финал                        # 16+
+
 

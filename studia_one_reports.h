@@ -47,16 +47,16 @@ namespace studio::one
             }
             void reload ()
             {
-                 report::load();
-                 errors.clear(); errors << report::errors;
-                 anomal.clear(); anomal << report::anomal;
-                 duples.clear(); duples << report::duples;
-                 audiom.clear(); audiom << report::audiom;
-                 videom.clear(); videom << report::videom;
-                 audiop.clear(); audiop << report::audiop;
-                 videop.clear(); videop << report::videop;
-                 audioq.clear(); audioq << report::audioq;
-                 videoq.clear(); videoq << report::videoq;
+                report::load();
+                errors.clear(); errors << report::errors;
+                anomal.clear(); anomal << report::anomal;
+                duples.clear(); duples << report::duples;
+                audiom.clear(); audiom << report::audiom;
+                videom.clear(); videom << report::videom;
+                audiop.clear(); audiop << report::audiop;
+                videop.clear(); videop << report::videop;
+                audioq.clear(); audioq << report::audioq;
+                videoq.clear(); videoq << report::videoq;
             }
         };
 
@@ -76,7 +76,6 @@ namespace studio::one
             selector.object.buttons(i++).text.text = "video+";
             selector.object.buttons(i++).text.text = "audio?";
             selector.object.buttons(i++).text.text = "video?";
-            selector.object.maxwidth = max<int>();
             selector.object.selected = 0;
             reload();
         }

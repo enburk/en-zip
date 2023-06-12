@@ -1,8 +1,10 @@
-Turkey         = Турция                           # pix-
-Turkish        = турецкий                         # pix-
+Turkey         = Турция # pix-
+Turkish        = турецкий # pix-
 
-coffee         = кофе %% ''возможно, из арабского языка'' # RANDOM-
-yogurt|yoghurt = йогурт                           # MILK
+coffee         = кофе %% ''возможно, из арабского языка''
+yogurt|yoghurt = йогурт # MILK
+
+
 
 
 

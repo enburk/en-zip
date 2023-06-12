@@ -12,23 +12,24 @@
 ''Do you have any idea ~ what time it is?''
 ''It's about time.''         = ''Самое время. Пора.'' %% idiomatic
 
-''in a short time''          = ''через короткий промежуток времени'' # +1sec
-''just in the nick of time'' = ''в самый последний момент'' # +1sec
-''at that precise moment''   = ''в этот самый момент''      # +1sec
-''in time''                  = ''вовремя''                  # +2sec
+''in a short time''          = ''через короткий промежуток времени''
+''just in the nick of time'' = ''в самый последний момент''
+''at that precise moment''   = ''в этот самый момент''
+''in time''                  = ''вовремя''
 
 ''three times a day''        = ''три раза в день''
 
-''about this time''          = ''в это время''              # +1sec
-''at the same time''         = ''в это же время''           # +1sec
-''at such times''            = ''в такие времена''          # +1sec
-''hard times''               = ''трудные времена, тяжёлое время'' # +1sec
+''about this time''          = ''в это время''
+''at the same time''         = ''в это же время''
+''at such times''            = ''в такие времена''
+''hard times''               = ''трудные времена, тяжёлое время''
 
-''there is time''            = ''времени достаточно''       # +1sec
-''there is plenty of time''  = ''времени полно''            # +2sec
+''there is time''            = ''времени достаточно''
+''there is plenty of time''  = ''времени полно''
 
-''for a long time''          = ''долгое время''             # +1sec
-''for a while''              = ''некоторое время''          # +1sec
-''all the time''             = постоянно, всё время         # +1sec
+''for a long time''          = ''долгое время''
+''for a while''              = ''некоторое время''
+''all the time''             = постоянно, всё время
 ''Look up, speak nicely, ~ and don't twiddle your fingers ~ all the time.'' = %% Lewis Carroll, ''Through the Looking-Glass'' ~ ARDIS
+
 

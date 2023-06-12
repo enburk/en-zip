@@ -1,36 +1,38 @@
-sport                   = спорт, вид спорта, ~ спортиные игры # -1sec
-sportsman               = спортсмен                   # -1sec
-sportswoman             = спортсменка                 # -1sec
+sport                   = спорт, вид спорта, ~ спортиные игры
+sportsman               = спортсмен
+sportswoman             = спортсменка
 
 champion                = чемпион
 finalist                = финалист
-record {noun}           = рекорд                      /// `record
-medal                   = медаль                      # -1sec
-trophy                  = трофей                      # -1sec
+record {noun}           = рекорд                     /// `record
+medal                   = медаль
+trophy                  = трофей
 
 attack                  = атака, атаковать, ~ нападение /// , припадок
-counterattack           = контратака                  # 10+
+counterattack           = контратака                 # 10+
 combination             = комбинация
-tactics                 = тактика                     # -1sec
-partner                 = партнёр                     # -1sec
-opponent                = соперник                    # -1sec
-leader                  = лидер                       # -1sec
-outsider                = аутсайдер                   # 14+
+tactics                 = тактика
+partner                 = партнёр
+opponent                = соперник
+leader                  = лидер
+outsider                = аутсайдер                  # 14+
 
-arbiter                 = арбитр                      # -1sec # 14+
-referee                 = ре́фери/рефери́ %% судья      # -1sec # 14+
+arbiter                 = арбитр                     # 14+
+referee                 = ре́фери/рефери́ %% судья     # 14+
 penalty                 = штраф, наказание %% ''не только'' пенальти /// # polysemic
 fair play               = фейр-плей %% «честная игра» # SPORT- # 16+
 playoff {Am.}           = плей-офф %% игры на выбывание # SPORT- # 16+
-commentator             = комментатор                 # 10+
+commentator             = комментатор                # 10+
 training                = тренинг, тренировка
 trainer/coach           = тренер
-junior                  = младший, юниор              # 14+
+junior                  = младший, юниор             # 14+
 league                  = лига
-stadium                 = стадион                     # -1sec
-sports arena            = спортивная арена            # -1sec
-Olympics,~Olympic Games = Олимпиада, Олимпийские игры # -1sec
-Paralympic Games        = паралимпийские игры         # SPORT- # -1sec # 16+
-doping                  = допинг                      # -1sec # 14+
-disqualification        = дисквалификация             # -1sec # 14+
+stadium                 = стадион
+sports arena            = спортивная арена
+Olympics,~Olympic Games = Олимпиада, Олимпийские игры
+Paralympic Games        = паралимпийские игры        # SPORT- # 16+
+doping                  = допинг                     # 14+
+disqualification        = дисквалификация            # 14+
+
+
 

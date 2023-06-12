@@ -1,0 +1,13 @@
+group                        = группа
+
+hierarchy                    = иерархия # 14+
+dual                         = двойной, дуальный # 16+
+pair                         = пара
+
+scheme//schema               = схема
+terminology                  = терминология # 16+
+nomenclature                 = номенклатура # TERM+ # 16+
+catalogue\\catalogue|catalog = каталог # 12+
+
+
+

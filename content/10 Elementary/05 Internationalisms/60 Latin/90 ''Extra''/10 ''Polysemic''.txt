@@ -9,7 +9,7 @@ cardinal number           = количественное числительно�
 ---
 argument @ reason         = аргумент, довод                  # 10+
 argument @ quarrel        = спор, ссора                      # 10+
-: An Argument In The Corridors Of The Opera # 10+
+: An Argument In The Corridors ~ Of The Opera # 10+
 ---
 apparatus @ device        = оборудование, ~ аппарат, прибор
 apparatus @ bureaucratic  = государственный аппарат          # 14+
@@ -40,12 +40,13 @@ project @ extend %% verb  = выступать, выдаваться            
 sense @ appreciation      = чувство, ощущение, ощущать       # 10+
 sense @ perception        = чувство ~ (обоняния, осязания и т.д.) # 10+
 ===
-sixth sense               = шестое чувство                   # +1sec # 10+
-sense of humour\\sense of humor = чувство юмора                    # +1sec # 10+
+sixth sense               = шестое чувство                   # 10+
+sense of humour\\sense of humor = чувство юмора                    # 10+
 ===
 sense @ meaning           = смысл, значение                  # 10+
 common sense %% also: good sense = здравый смысл                    # 10+
-nonsense                  = нонсенс                          # +1sec # 10+
+nonsense                  = нонсенс                          # 10+
+
 
 
 

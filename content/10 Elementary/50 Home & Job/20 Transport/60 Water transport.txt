@@ -1,7 +1,7 @@
 port                  = порт, гавань                                         # 10+
 pier                  = пирс, дамба, мол                                     # 10+
 
-container             = контейнер                                            # RANDOM- /// , ёмкость, сосуд
+container             = контейнер                                            /// , ёмкость, сосуд
 container terminal    = контейнерный терминал                                # TERM- # 10+
 tanker                = танкер                                               # 10+
 barge                 = баржа, барка                                         # 10+
@@ -14,10 +14,10 @@ marina                = марина %% стоянка яхт                   
 yacht {2}             = яхта
 schooner              = шхуна                                                # 14+
 
-felucca               = фелука                                               # RARE+ # TECH+ # TERM+ # RANDOM- # 18+
-junk                  = джонка                                               # RARE+ # TECH+ # TERM+ # RANDOM- # 18+
+felucca               = фелука                                               # RARE+ # TECH+ # TERM+ # 18+
+junk                  = джонка                                               # RARE+ # TECH+ # TERM+ # 18+
 pirogue               = пирога                                               # 18+
-skiff                 = скиф %% тип лодки                                    # RARE+ # TECH+ # TERM+ # RANDOM- # 18+
+skiff                 = скиф %% тип лодки                                    # RARE+ # TECH+ # TERM+ # 18+
 
 gondola %% Venitian   = гондола                                              # 10+
 gondolier             = гондольер                                            # 10+
@@ -46,4 +46,5 @@ sonar                 = сонар, гидролокатор                    
 hydroacoustics        = гидроаккустика                                       # TECH- # TERM- # 14+
 echolocation          = эхолокация                                           # TECH- # TERM- # 14+ /// у летучих мышей тоже
 compass               = компас  %% ''в жаргоне моряков:'' компа́с
+
 

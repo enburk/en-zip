@@ -2,7 +2,7 @@ detective story/novel = детектив ~ (жанр)
 fantasy               = фэнтези, фантастика
 orc                   = орк
 hobbit                = хоббит                                      # 10+
-science fiction %% informal: sci-fi = научная фантастика                          # RANDOM-
+science fiction %% informal: sci-fi = научная фантастика
 
 realism               = реализм
 romanticism           = романтизм
@@ -32,4 +32,5 @@ epigram               = эпиграмма                                   # 1
 
 epos                  = эпос, эпическая поэма
 epic                  = эпический, ~ эпос, эпическая поэма, ~ эпопея
+
 

@@ -34,7 +34,6 @@ namespace studio::one
             select.buttons(i++).text.text = "preview";
             select.buttons(i++).text.text = "reports";
             select.buttons(i++).text.text = "search";
-            select.maxwidth = max<int>();
             select.selected = 0;
         }
         ~studio () { save(); }

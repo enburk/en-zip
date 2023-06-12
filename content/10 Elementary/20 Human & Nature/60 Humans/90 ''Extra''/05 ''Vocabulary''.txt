@@ -1,37 +1,37 @@
 basic ~ vocabulary
 ===
-life     = жизнь # 18+
-death    = смерть # 18+
-live     = жить, живой, ~ реальный, действующий
-die      = умереть, умирать, ~ затухать
+life                      = жизнь # 18+
+death                     = смерть # 18+
+live                      = жить, живой, ~ реальный, действующий
+die                       = умереть, умирать, ~ затухать
 : Death and Life
 ===
 
-body     = тело
-head     = голова
-face     = лицо
-shoulder = плечо
-arm      = рука
-hand     = рука ~ (кисть)
-leg      = нога
-knee     = колено
+body                      = тело
+head                      = голова
+face                      = лицо
+shoulder                  = плечо
+arm                       = рука
+hand                      = рука ~ (кисть)
+leg                       = нога
+knee                      = колено
 
-finger   = палец (на руке)
-thumb    = большой палец
-toe      = палец (на ноге)
+finger                    = палец (на руке)
+thumb                     = большой палец
+toe                       = палец (на ноге)
 
-eye      = глаз
-ear      = ухо
-mouth    = рот
-lips     = губы
-cheek    = щека
+eye                       = глаз
+ear                       = ухо
+mouth                     = рот
+lips                      = губы
+cheek                     = щека
 
 ===
 
-man %% plural: men = мужчина, муж
-woman %% plural: women = женщина
+man %% plural: men        = мужчина, муж
+woman %% plural: women    = женщина
 
-adult = взрослый
+adult                     = взрослый
 child %% plural: children = ребенок
 
 baby boy
@@ -39,13 +39,14 @@ baby girl
 
 ===
 ---
-happy    = счастливый, довольный
-sad      = грустный
+happy                     = счастливый, довольный
+sad                       = грустный
 : You look sad.
 
-shy      = застенчивый, стеснительный, ~ робкий
-odd      = странный
-crazy    = сумашедший, безумный, ~ чокнутый
+shy                       = застенчивый, стеснительный, ~ робкий
+odd                       = странный
+crazy                     = сумашедший, безумный, ~ чокнутый
+
 
 
 

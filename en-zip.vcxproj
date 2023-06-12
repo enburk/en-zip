@@ -181,12 +181,18 @@
     <ClInclude Include="media_storage.h" />
     <ClInclude Include="medio_audio.h" />
     <ClInclude Include="medio_video.h" />
+    <ClInclude Include="studia.h" />
     <ClInclude Include="studia_dic.h" />
     <ClInclude Include="studia_dic_area.h" />
     <ClInclude Include="studia_dic_detail++.h" />
     <ClInclude Include="studia_dic_detail+.h" />
     <ClInclude Include="studia_dic_detail.h" />
     <ClInclude Include="studia_dic_search.h" />
+    <ClInclude Include="studia_l.h" />
+    <ClInclude Include="studia_l_app.h" />
+    <ClInclude Include="studia_l_app_contents.h" />
+    <ClInclude Include="studia_l_app_editor.h" />
+    <ClInclude Include="studia_l_search.h" />
     <ClInclude Include="studia_one.h" />
     <ClInclude Include="studia_one_area.h" />
     <ClInclude Include="studia_one_contents.h" />
@@ -194,6 +200,7 @@
     <ClInclude Include="studia_one_preview.h" />
     <ClInclude Include="studia_one_reports.h" />
     <ClInclude Include="studia_one_search.h" />
+    <ClInclude Include="studia_r.h" />
     <ClInclude Include="studia_two.h" />
     <ClInclude Include="studio_aux_audio.h" />
     <ClInclude Include="studio_aux_video.h" />

@@ -1,16 +1,17 @@
 
-dolphin    = дельфин
+dolphin         = дельфин
 
-carp       = карп                                                    # 10+
-grouper    = групер                                                  # RARE- # 18+ /// Portugese
-marlin     = марлин                                                  # RARE- # 16+
-mackerel   = макрель                                                 # 10+
-sardine    = сардина                                                 # 10+
+carp @ fish     = карп                                               # 10+
+grouper         = групер                                             # RARE- # 18+ /// Portugese
+marlin          = марлин                                             # RARE- # 16+
+mackerel @ fish = макрель                                            # 10+
+sardine @ fish  = сардина                                            # 10+
 
-crab       = краб
-coral      = коралл
-coral reef = коралловый риф                                          # TERM-
+crab @ animal   = краб
+coral           = коралл
+coral reef      = коралловый риф                                     # TERM-
 
-guppy      = гуппи                                                   # RARE- # 10+
-neon tetra = неон %% голубой неон, ~ обыкновенный неон, ~ неон-тетра # RARE- # 10+
+guppy           = гуппи                                              # RARE- # 10+
+neon tetra      = неон %% голубой неон, ~ обыкновенный неон, ~ неон-тетра # RARE- # 10+
+
 

@@ -14,6 +14,7 @@ using gui::widgetarium;
 using gui::unary_property;
 using gui::binary_property;
 using gui::property;
+using std::filesystem::path;
 
 namespace app
 {

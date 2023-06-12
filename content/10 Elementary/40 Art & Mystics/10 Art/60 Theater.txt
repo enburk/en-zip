@@ -18,13 +18,13 @@ antagonist             = антагонист                                   
 tragic hero            = трагический герой                              # ART+ # 14+
 catharsis              = катарсис                                       # ART+ # 18+
 
-musical {adj.}         = музыкальный                                    # ART- # RANDOM- # 10+
-musical {noun}         = мюзикл                                         # ART- # RANDOM- # 10+
-music hall {Br.}       = мьюзик-холл %% тип представления и театр       # ART+ # HISTORY+ # RANDOM- # 16+
-vaudeville             = водевиль                                       # ART+ # HISTORY+ # RANDOM- # 18+
-cabaret                = кабаре                                         # ART+ # HISTORY+ # RANDOM- # 18+
-burlesque              = бурлеск                                        # ART+ # HISTORY+ # RANDOM- # 18+
-farce                  = фарс                                           # ART+ # HISTORY+ # RANDOM- # 18+
+musical {adj.}         = музыкальный                                    # ART- # 10+
+musical {noun}         = мюзикл                                         # ART- # 10+
+music hall {Br.}       = мьюзик-холл %% тип представления и театр       # ART+ # HISTORY+ # 16+
+vaudeville             = водевиль                                       # ART+ # HISTORY+ # 18+
+cabaret                = кабаре                                         # ART+ # HISTORY+ # 18+
+burlesque              = бурлеск                                        # ART+ # HISTORY+ # 18+
+farce                  = фарс                                           # ART+ # HISTORY+ # 18+
 
 commedia dell'arte     = комедия дель арте                              # ART- # 18+
 Pierrot                = Пьеро                                          # ART- # 18+
@@ -37,7 +37,8 @@ Scaramouche            = Скарамуш %% (фр.)                            
 kabuki                 = кабуки %% вид японского театра                 # ART- # 16+
 
 performance art        = перформанс                                     # ART- # 14+
-performance            = представление, выступление                     # ART- # RANDOM- # 14+
+performance            = представление, выступление                     # ART- # 14+
 flash mob~~flashmob    = флешмоб                                        # ART- # 16+
 happenning             = хэппенинг                                      # ART- # 18+
+
 

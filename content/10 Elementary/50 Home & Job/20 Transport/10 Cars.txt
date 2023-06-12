@@ -24,16 +24,17 @@ buggy               = багги              # TECH- # 10+
 trailer             = трейлер, прицеп, автоприцеп
 monocoque           = монокок            # TECH+ # TERM+ # 18+
 
-Jaguar              = «ягуар»            # TECH- # TERM- # RANDOM-
-Rolls-Royce         = «роллс-ройс»       # TECH- # TERM- # RANDOM-
+Jaguar              = «ягуар»            # TECH- # TERM-
+Rolls-Royce         = «роллс-ройс»       # TECH- # TERM-
 
-Cadillac            = «кадиллак»         # TECH- # TERM- # RANDOM-
-Mustang             = «мустанг»          # TECH- # TERM- # RANDOM-
-Buick               = «бьюик»            # TECH+ # TERM+ # RANDOM-
+Cadillac            = «кадиллак»         # TECH- # TERM-
+Mustang             = «мустанг»          # TECH- # TERM-
+Buick               = «бьюик»            # TECH+ # TERM+
 
-BMW                 = «БМВ»              # TECH- # TERM- # RANDOM-
-Mercedes[-Benz]     = «мерседес»         # TECH- # TERM- # RANDOM-
+BMW                 = «БМВ»              # TECH- # TERM-
+Mercedes[-Benz]     = «мерседес»         # TECH- # TERM-
 
-Alfa Romeo          = «альфа-ромео»      # TECH- # TERM- # RANDOM-
-Ferrari             = «феррари»          # TECH- # TERM- # RANDOM-
+Alfa Romeo          = «альфа-ромео»      # TECH- # TERM-
+Ferrari             = «феррари»          # TECH- # TERM-
+
 

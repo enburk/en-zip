@@ -1,4 +1,4 @@
-martial arts   = боевые искусства    # RANDOM-
+martial arts   = боевые искусства
 kendo          = кендо               # RARE- # 18+
 aikido         = айкидо              # 10+
 taekwondo      = тхэквондо
@@ -9,4 +9,5 @@ tatami         = татами              # 10+
 keikogi/dogi   = кимоно              # 10+
 karateka       = каратист/каратистка /// NEW
 judoka/judoist = дзюдоист/дзюдоистка /// NEW
+
 

@@ -1,4 +1,6 @@
 #include "en-app.h"
+#include "studia.h"
+
 #include "studia_dic.h"
 #include "studia_one.h"
 #include "studia_two.h"
@@ -14,6 +16,7 @@ widget<Studio>
     gui::toolbar toolbar;
     gui::radio::group select;
     array<gui::base::widget*> studios;
+    studias studias;
     studio::dic::studio dic;
     studio::one::studio one;
     studio::two::studio two;
@@ -36,7 +39,7 @@ widget<Studio>
         app.hide();
 
         studios += &one;
-        studios += &two;
+        studios += &studias;
         studios += &dic;
         studios += &pixer;
         studios += &audio;
@@ -49,7 +52,7 @@ widget<Studio>
 
         int i = 0;
         select(i++).text.text = "course";
-        select(i++).text.text = "catalogs";
+        select(i++).text.text = "studio";
         select(i++).text.text = "dictionary";
         select(i++).text.text = "snapshot";
         select(i++).text.text = "audio";

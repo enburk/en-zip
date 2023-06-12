@@ -3,11 +3,12 @@
 
 ''Mayday! Mayday! ~ We have a fire in engine one.''
 ''Fire!'' {call}          = ''Пожар!''
-''Fight fire with fire.'' = ''Клин клином вышибают.'' %% буквально: сражайся с огнем ~ с помощью огня # +2sec
+''Fight fire with fire.'' = ''Клин клином вышибают.'' %% буквально: сражайся с огнем ~ с помощью огня
 
 ''Fire!'' {command}       = ''Огонь!''
 ''Fire at will!''
-''Fire in the hole!''     # +2sec
+''Fire in the hole!''
 
-''You're fired!''         = ''Ты уволен!''                                                            # +2sec
+''You're fired!''         = ''Ты уволен!''
+
 

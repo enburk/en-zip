@@ -3,7 +3,7 @@ aeroplane/plane\\airplane/plane = самолёт, аэроплан
 airport                     = аэропорт
 aerodrome\\airdrome %% old-fashioned = аэродром
 
-air                         = воздух                           # RANDOM-
+air                         = воздух
 airliner                    = авиалайнер
 airline                     = авиакомпания
 air lane~airway             = авиалиния, воздушная трасса
@@ -46,4 +46,5 @@ aerogel                     = аэрогель                         # TECH+ #
 aerography                  = аэрография                       # 10+
 
 on air                      = в эфире ~ (радио или телевидения) # 10+ /// 8
+
 

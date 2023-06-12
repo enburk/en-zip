@@ -1,0 +1,26 @@
+type            = тип
+
+sort            = сорт, сортировать                        # 10+
+category        = категория                                # 10+
+---
+class @ sort    = класс                                    # 10+
+classification  = классификация                            # 10+
+
+===
+
+identical       = идентичный                               # 14+
+analogous       = аналогичный                              # 14+ /// analogical ~= metaphorical
+equivalent      = равнозначный, эквивалентный, ~ эквивалент # 18+ /// Latin
+variant         = вариант
+copy            = копия, копировать
+replica         = реплика ~ (в знач. точная копия)         # 16+
+duplicate       = дубликат, удваивать                      # 10+
+
+===
+
+gradation       = градация                                 # TERM+ # 16+
+concretization %% Br. also: concretisation = конкретизация                            # TERM+ # 16+
+differentiation = дифференциация                           # TERM+ # 16+
+
+
+

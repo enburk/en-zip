@@ -10,10 +10,11 @@ bodybuilding      = бодибилдинг                  # 10+
 bodybuilder       = бодибилдер/культурист        # 10+
 powerlifting      = силовое троеборье, ~ пауэрлифтинг # 16+
 powerlifter       = пауэрлифтер                  # 16+
-biceps            = бицепс                       # -1sec
-triceps           = трицепс                      # -1sec # 10+
+biceps            = бицепс
+triceps           = трицепс                      # 10+
 protein           = протеин                      # SPORT+ # 16+
 anabolic steroids = анаболические стероиды       # SPORT+ # 16+ /// , informal: anabolics  , анаболики
 
 jogging           = бег трусцой %% джогинг/джоггинг # 16+
+
 

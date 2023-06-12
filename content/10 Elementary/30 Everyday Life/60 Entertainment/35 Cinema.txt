@@ -1,0 +1,47 @@
+cinema                     = кинематография, кино ~ (искусство) # 10+
+cinematography             = кинематография, ~ кинематограф      # 10+
+cinema\\movie theater      = кинотеатр
+
+film @ medium                      = фотоплёнка, ~ киноплёнка
+film @ verb                     = снимать фильм
+film\\movie                = фильм
+---
+actor @ movie             = актер
+actress @ movie             = актриса
+character actor            = хара́ктерный актёр                 # TERM- # 16+
+
+hero @ movie           = герой
+heroine @ movie            = героиня
+antihero                   = антигерой                         # TERM- # 10+
+superhero                  = супергерой                        # TERM-
+
+body double                = дублёр                            # 10+
+casting                    = кастинг %% подбор актеров         # TERM- # 10+
+cameraman//camera operator = оператор
+episode                    = эпизод, серия ~ (часть сериала)
+soundtrack                 = саундтрек %% буквально: звуковая дорожка # 10+
+special effect             = спецэффект
+montage                    = монтаж                            # 10+
+
+Hollywood                  = Голливуд
+Oscar                      = Оскар
+ceremony                   = церемония
+nomination                 = номинация                         # 10+
+
+retrospective              = ретроспектива                     # TERM- # 16+
+filmography                = фильмография                      # TERM- # 16+
+
+cameo @ cinema                     = каме́о  %% эпизодическая роль ~ в исполнении знаменитости # 18+ 
+bloopers                   = блуперы %% удаленные из фильма неудавшиеся сцены # 18+
+
+remake                    = ремейк/римейк, ~ переделывать  # 10+
+series                    = сериал                         # 10+
+sequel           = сиквел                # 10+
+prequel           = приквел                # 10+
+trailer                   = трейлер                        # 10+
+
+===
+
+happy ending               = хэппи-энд      # 10+
+
+

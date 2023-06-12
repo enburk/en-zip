@@ -19,6 +19,8 @@ prey                 = добыча
 fox                  = лиса
 bear                 = медведь
 
+elephant             = слон
+
 fish %% plural: fish = рыба
 whale                = кит
 
@@ -38,5 +40,6 @@ wing                 = крыло
 tail                 = хвост
 paw                  = лапа
 fur                  = мех
+
 
 

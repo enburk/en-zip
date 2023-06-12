@@ -107,6 +107,7 @@ namespace content::out
             if (s.contains("~~"))
             errors += "~~";
 
+            if (false)
             if (s.contains(","))
             errors += ",";
 
@@ -227,58 +228,59 @@ namespace content::in
         {
             str html;
 
-            str s = eng;
-            str comment, sense;
-            s.replace_all("||","~");
-            s.replace_all("//","~");
-            s.replace_all("/", "|");
-            s.split_by("%%", s, comment);
-            s.split_by("@" , s, sense);
-            s.strip(); comment.strip();
-
-            s.replace_all("(1)", small(small(blue("<sub>1</sub> "))));
-            s.replace_all("(2)", small(small(blue("<sub>2</sub> "))));
-            s.replace_all("(3)", small(small(blue("<sub>3</sub> "))));
-            s.replace_all("(4)", small(small(blue("<sub>4</sub> "))));
-
-            if (s.contains("\\\\"))
+            if (eng != "")
             {
-                str uk, us;
-                s.split_by("\\\\", uk, us);
-                uk.strip (); if (not uk.contains("{Br.}")) uk += small(blue(" Br"));
-                us.strip (); if (not us.contains("{Am.}")) us += small(blue(" Am"));
-                s = uk + "<br>" + us;
-            }
-
-            s.rebracket("{","}",[](str s){ return small(blue(s)); });
-
-            if (comment != "")
-            {
-                for (str marker: eng_markers)
-                comment.replace_all(marker, italic(marker));
-                s += "<br>" + small(dark(comment));
-            }
-
-            s = bold_italic(s);
-
-            if (s.starts_with(": "))
-            s = s.from(2); else
-            s = big(s);
-
-            html = s;
-
-            if (opt.external.
-            contains("HEAD"))
-            html = extracolor(big(html));
-
-            if (translated and rus != "")
-            {
-                s = rus;
+                str s = eng;
                 s.replace_all("||","~");
                 s.replace_all("//","~");
                 s.replace_all("/", "|");
-                s.split_by("%%", s, comment);
-                s.strip(); comment.strip();
+                str comnt = s.extract_from("%%");
+                str sense = s.extract_from("@");
+
+                s.replace_all("(1)", small(small(blue("<sub>1</sub> "))));
+                s.replace_all("(2)", small(small(blue("<sub>2</sub> "))));
+                s.replace_all("(3)", small(small(blue("<sub>3</sub> "))));
+                s.replace_all("(4)", small(small(blue("<sub>4</sub> "))));
+
+                if (s.contains("\\\\"))
+                {
+                    str uk, us;
+                    s.split_by("\\\\", uk, us);
+                    uk.strip (); if (not uk.contains("{Br.}")) uk += small(blue(" Br"));
+                    us.strip (); if (not us.contains("{Am.}")) us += small(blue(" Am"));
+                    s = uk + "<br>" + us;
+                }
+
+                s.rebracket("{","}",[](str s){ return small(blue(s)); });
+
+                if (comnt != "")
+                {
+                    for (str marker: eng_markers)
+                    comnt.replace_all(marker, italic(marker));
+                    if (s != "") s += "<br>";
+                    s += small(dark(comnt));
+                }
+
+                s = bold_italic(s);
+
+                if (s.starts_with(": "))
+                s = s.from(2); else
+                s = big(s);
+
+                html = s;
+
+                if (opt.external.
+                contains("HEAD"))
+                html = extracolor(big(html));
+            }
+
+            if (translated and rus != "")
+            {
+                str s = rus;
+                s.replace_all("||","~");
+                s.replace_all("//","~");
+                s.replace_all("/", "|");
+                str comment = s.extract_from("%%");
 
                 for (str marker: Rus_markers)
                 s.replace_all(marker, italic(marker));
@@ -287,11 +289,14 @@ namespace content::in
                 {
                     for (str marker: rus_markers)
                     comment.replace_all(marker, italic(marker));
-                    s += "<br>" + small(gray(comment));
+                    if (s != "") s += "<br>";
+                    s += small(gray(comment));
                 }
                 s = bold_italic(s);
 
-                html += "<br>" + dark(s);
+                if (html != "")
+                html += "<br>";
+                html += dark(s);
             }
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });

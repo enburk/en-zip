@@ -13,6 +13,7 @@ impact crater      = ударный кратер                 /// NEW
 
 ---
 galaxy             = галактика
-supernova          = сверхновая звезда %% вспышка сверхновой # +1sec # 10+
+supernova          = сверхновая звезда %% вспышка сверхновой # 10+
 galactic collision = столкновение галактик          # 14+ /// Interacting galaxies (colliding galaxies)
+
 

@@ -16,9 +16,9 @@ nostrils              = ноздри
 respiratory tract     = дыхательные пути              # TERM- # 16+
 
 organ                 = о́рган
-gland                 = железа %% ''не'' гланды       # TERM- # RANDOM- # 16+
-tonsils               = миндалины, гланды             # TERM- # RANDOM- # 16+
-tonsillitis           = острый тонзиллит ~ (ангина)   # TERM- # RANDOM- # 16+
+gland                 = железа %% ''не'' гланды       # TERM- # 16+
+tonsils               = миндалины, гланды             # TERM- # 16+
+tonsillitis           = острый тонзиллит ~ (ангина)   # TERM- # 16+
 
 leukocytes            = лейкоциты                     # TERM- # 16+ /// (белые кровяные клетки)
 erythrocytes          = эритроциты                    # TERM- # 16+ /// (красные кровяные тельца)
@@ -36,4 +36,5 @@ diaphragm             = диафрагма                     # 16+
 appendix              = аппендикс, ~ также: приложение, дополнение # 16+
 
 vivarium,~vivisection = виварий, вивисекция           # TERM- # 18+
+
 

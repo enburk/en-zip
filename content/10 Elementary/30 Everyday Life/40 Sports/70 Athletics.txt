@@ -21,7 +21,8 @@ artistic gymnastics   = спортивная гимнастика   # SPORT-
 rhythmic gymnastics   = художественная гимнастика # SPORT-
 acrobatic gymnastics  = спортивная акробатика   # SPORT-
 
-mat                   = мат                     # SPORT+ # RANDOM-
+mat                   = мат                     # SPORT+
 magnesia              = магнезия %% увеличивает трение # SPORT+ # 18+
 talc/talcum powder    = тальк %% уменьшает трение ~~~ Спортсмены используют магнезию, а не тальк. # SPORT+ # 18+
+
 

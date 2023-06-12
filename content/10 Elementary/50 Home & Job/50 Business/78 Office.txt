@@ -6,10 +6,11 @@ laminated      = ламинированный                                   
 marker         = маркер                                             # 10+ /// marker  указатель, знак
 shredder       = шредер                                             # RARE- # 10+
 stapler        = степлер                                            # 10+
-staple remover = антистеплер                                        # RANDOM- # 10+
+staple remover = антистеплер                                        # 10+
 
 photocopy      = ксерокопия                                         # 10+
 photocopier %% Am. usually: copier = копировальный аппарат, ксерокс                     # 10+
 
 cooler         = кулер                                              # 10+
+
 

@@ -1,0 +1,22 @@
+jewellery\\jewelry = ювелирные украшения                                     # 10+
+
+platinum           = платина, платиновый
+platinum blond\\platinum blonde = платиновая блондинка, ~ платиновый блондин              # 14+
+
+sapphire           = сапфир
+ruby               = рубин
+alexandrite        = александрит                                             # RARE+ # 14+
+
+incrustation/inlay = инкрустация                                             # 14+
+filigree           = филигранный, ~ филигранная работа                       # 14+ /// NEW
+carat              = карат %% 0,2 грамма                                     # TERM- # 14+
+jeweller\\jeweler  = ювелир                                                  # 10+
+---
+pearl              = жемчужина %% ''устаревшее:'' перл                       # 14+
+mother-of-pearl    = перламутр %% Русское слово заимствовано из немецкого: ~ Perlmutter (дословно: мать жемчуга). # 14+
+---
+gem                = драгоценный камень, ~ драгоценность                     # 18+
+engraved gem       = гемма                                                   # 18+
+cameo @ jewelry    = камея                                                   # RARE- # 18+ /// # polysemic
+
+

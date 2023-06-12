@@ -6,7 +6,7 @@ agrarian             = аграрий, ~ крупный землевладеле
 
 farm, farmer         = ферма, фермер
 cowboy               = ковбой
-cow                  = корова                        # RANDOM- /// запугивать
+cow                  = корова                        /// запугивать
 spur                 = шпора, пришпоривать           # 10+
 
 plantation           = плантация                     # 10+
@@ -37,4 +37,5 @@ herbicides           = гербициды                     # TERM- # 18+
 aeration             = аэрация                       # TERM- # 18+
 
 extensive farming    = экстенсивное земледелие       # POLIT- # TERM- # 18+
+
 

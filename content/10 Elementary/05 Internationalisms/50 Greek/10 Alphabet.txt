@@ -1,16 +1,17 @@
 ===
 alphabet                                  = алфавит
 ===
-alpha, beta, ~ gamma, delta %% Αα Ββ Γγ Δδ = альфа, бета, ~ гамма, дельта  # RANDOM- # 10+
-epsilon, zeta, ~ eta, theta %% Εε Ζζ Ηη Θθ = эпсилон, дзета, ~ эта, тета   # MATH+ # RANDOM- # 16+
+alpha, beta, ~ gamma, delta %% Αα Ββ Γγ Δδ = альфа, бета, ~ гамма, дельта  # 10+
+epsilon, zeta, ~ eta, theta %% Εε Ζζ Ηη Θθ = эпсилон, дзета, ~ эта, тета   # MATH+ # 16+
 ===
-iota, kappa, ~ lambda, mu %% Ιι Κκ Λλ Μμ  = йота, каппа, ~лямбда, мю      # MATH+ # RANDOM- # 16+
-nu, xi, ~ omicron, pi %% Νν Ξξ Οο Ππ      = ню, кси, омикрон, пи          # MATH+ # RANDOM- # 16+
+iota, kappa, ~ lambda, mu %% Ιι Κκ Λλ Μμ  = йота, каппа, ~лямбда, мю      # MATH+ # 16+
+nu, xi, ~ omicron, pi %% Νν Ξξ Οο Ππ      = ню, кси, омикрон, пи          # MATH+ # 16+
 ===
-rho, sigma, ~ tau, upsilon %% Ρρ Σσ Ττ Υυ = ро, сигма, ~ тау, ипсилон     # MATH+ # RANDOM- # 16+
-phi, chi, ~ psi, omega %% Φφ Χχ Ψψ Ωω     = фи, хи, пси, омега            # MATH+ # RANDOM- # 16+
+rho, sigma, ~ tau, upsilon %% Ρρ Σσ Ττ Υυ = ро, сигма, ~ тау, ипсилон     # MATH+ # 16+
+phi, chi, ~ psi, omega %% Φφ Χχ Ψψ Ωω     = фи, хи, пси, омега            # MATH+ # 16+
 ===
 the alpha and the omega                   = альфа и омега %% начало и конец чего-либо, ~ самое важное # 16+
+
 
 
 

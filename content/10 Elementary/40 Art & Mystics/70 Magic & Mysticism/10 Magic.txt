@@ -3,7 +3,7 @@ magician          = маг
 charm             = чары, очарование, ~ очаровывать                       # 10+ /// # polysemic
 charm {amulet}    = амулет, талисман                                      # 10+
 amulet            = амулет
-robe, mantle      = мантия                                                # RANDOM-
+robe, mantle      = мантия
 grimoire          = гримуар %% колдовская книга                           # 16+
 abracadabra       = абракадабра                                           # 10+ /// /abra-cadabra
 
@@ -11,4 +11,5 @@ abracadabra       = абракадабра                                      
 
 ceremonial magic  = церемониальная магия %% использует магические предметы # TERM+ # 16+
 sympathetic magic = симпатическая магия %% использует предметы, сходные по внешнему виду или бывшие в непосредственном контакте # TERM+ # 16+
+
 

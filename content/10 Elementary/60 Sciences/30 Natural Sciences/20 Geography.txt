@@ -7,7 +7,7 @@ Greenwich meridian   = Гринвичский меридиан # TERM- # 10+ ///
 
 Tibetan Plateau, the = Тибетское нагорье   # TERM- # 10+
 Grand Canyon, the    = Большой каньон      # TERM- # 10+
-cirque               = ледниковый цирк     # RANDOM- # 16+
+cirque               = ледниковый цирк     # 16+
 saddle               = седловина %% также: седло # 18+
 massif               = массив %% горный, лесной и т.п. # 10+
 
@@ -43,4 +43,5 @@ theodolite           = теодолит            # TECH+ # TERM+ # 18+
 zenith               = зенит               # MATH+ # RARE+ # TERM+ # 18+ /// есть в Азии
 nadir                = надир               # MATH+ # RARE+ # TERM+ # 18+
 azimuth              = азимут              # 16+
+
 

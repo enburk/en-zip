@@ -1,0 +1,17 @@
+mass @ weight        = масса
+
+tonne\\metric ton    = тонна                                            # 10+
+kilogramme\\kilogram = килограмм
+gramme\\gram         = грамм
+
+===
+---
+grain                = гран %% тройский гран равен 64,8 мг, ~ ювелирный -- ровно 50 мг # TERM- # 18+ /// # polysemic
+grain                = зерно, крупинка %% гран – это примерный вес одного зерна # TERM- # 18+
+
+ounce @ avoirdupois               = унция %% 28,3 г                                  # TERM- # 14+
+troy ounce           = тройская унция %% 31,1 г                         # TERM- # 14+
+pound                = фунт %% Слова pound и пуд восходят к латинскому ~ lībra pondō -- «фунт весом». # TERM- # 14+
+
+
+

@@ -22,9 +22,10 @@ commodore       = коммодор                      # 16+
 counter admiral = контр-адмирал
 vice admiral    = вице-адмирал
 
-beam            = бимс %% балка, поддерживающая палубу # TECH+ # RANDOM- # 16+ /// и вообще любая балка
-bowline         = булинь, ~ беседочный узел     # TECH+ # RANDOM- # 16+
-kelson/keelson  = кильсон                       # TECH+ # RANDOM- # 16+
-Kingston valve  = кингстон                      # TECH+ # RANDOM- # 16+
+beam            = бимс %% балка, поддерживающая палубу # TECH+ # 16+ /// и вообще любая балка
+bowline         = булинь, ~ беседочный узел     # TECH+ # 16+
+kelson/keelson  = кильсон                       # TECH+ # 16+
+Kingston valve  = кингстон                      # TECH+ # 16+
+
 
 

@@ -1,32 +1,33 @@
 basic ~ vocabulary
 ---
-clothes      = одежда, платье
-dress @ verb       = одежда, ~ одевать, одеваться
-dress/gown @ noun  = платье
-evening gown = вечернее платье # 12+
+clothes           = одежда, платье
+dress @ verb      = одежда, ~ одевать, одеваться
+dress/gown @ noun = платье
+evening gown      = вечернее платье # 12+
 ---
-suit         = костюм
-bathing suit = купальный костюм
+suit              = костюм
+bathing suit      = купальный костюм
 ---
-skirt        = юбка
-shirt        = рубашка, сорочка
+skirt             = юбка
+shirt             = рубашка, сорочка
 : Keep your shirt on! %% idiomatic = Держи себя в руках! ~ Уймись уже!
 
 ===
 
-cotton       = хлопок, хлопковый
-leather      = кожа, кожаный
+cotton            = хлопок, хлопковый
+leather           = кожа, кожаный
 
-hat          = шляпа
-umbrella     = зонт, зонтик
+hat               = шляпа
+umbrella          = зонт, зонтик
 
-embroidery   = вышивание, вышивка
+embroidery        = вышивание, вышивка
 
-necklace     = ожерелье, колье
-pendant      = подвеска, кулон
-earrings     = серьги
+necklace          = ожерелье, колье
+pendant           = подвеска, кулон
+earrings          = серьги
 
-lipstick     = помада
-facial mask  = маска для лица
+lipstick          = помада
+facial mask       = маска для лица
+
 
 

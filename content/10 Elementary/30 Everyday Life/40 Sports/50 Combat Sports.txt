@@ -1,20 +1,38 @@
-wrestling                = борьба                 # 14+
-[professional] wrestling = реслинг/рестлинг       # 14+
-arm wrestling            = армрестлинг            # 14+
-Greco-Roman wrestling    = греко-римская борьба   # SPORT+ # 16+
-freestyle wrestling      = вольная борьба         # SPORT+ # 16+
+wrestling                 = борьба                         # 14+
 
-boxing                   = бокс
-kickboxing               = кикбоксинг             # 16+
-ring                     = ринг                   # 10+
-gong                     = гонг                   # SPORT+ # TERM- # 10+
-round                    = раунд
-knockdown                = нокдаун                # SPORT- # TERM- # 14+
-knockout                 = нокаут
-uppercut                 = апперкот %% тип удара  # SPORT- # TERM- # 14+
-hook                     = хук %% тип удара, дословно: крюк # SPORT+ # TERM- # 14+
-clinch                   = в спорте: захват, ~ клинч, войти в клинч # SPORT- # TERM- # 16+
-break                    = брейк                  # SPORT- # TERM- # 18+
-sparring partner         = спарринг-партнёр       # SPORT- # TERM- # 14+
-second                   = секундант              # SPORT- # TERM- # 14+ /// # polysemic
+[professional] wrestling  = реслинг/рестлинг               # 14+
+arm wrestling             = армрестлинг                    # 14+
+Greco-Roman wrestling     = греко-римская борьба           # SPORT+ # 16+
+freestyle wrestling       = вольная борьба                 # SPORT+ # 16+
+
+===
+boxing                    = бокс
+===
+
+kickboxing                = кикбоксинг                     # 16+
+ring @ boxing             = ринг                           # 10+
+gong @ boxing             = гонг                           # SPORT+ # TERM- # 10+
+knockdown                 = нокдаун                        # SPORT- # TERM- # 14+
+knockout                  = нокаут
+uppercut                  = апперкот %% тип удара          # SPORT- # TERM- # 14+
+hook @ boxing             = хук %% тип удара, дословно: крюк # SPORT+ # TERM- # 14+
+clinch @ boxing           = в спорте: захват, ~ клинч, войти в клинч # SPORT- # TERM- # 16+
+break @ boxing            = брейк                          # SPORT- # TERM- # 18+
+sparring partner @ boxing = спарринг-партнёр               # SPORT- # TERM- # 14+
+second @ boxing           = секундант                      # SPORT- # TERM- # 14+ /// # polysemic
+
+===
+martial arts              = боевые искусства
+===
+
+kendo                     = кендо                          # RARE- # 18+
+aikido                    = айкидо                         # 10+
+taekwondo                 = тхэквондо
+jiujitsu                  = джиу-джитсу                    # SPORT- # 10+
+block @ martial arts      = блок
+nunchaku                  = нунчаки                        # RARE- # 10+
+tatami @ martial arts     = татами                         # 10+
+keikogi/dogi              = кимоно                         # 10+
+karateka                  = каратист/каратистка
+judoka/judoist            = дзюдоист/дзюдоистка
 

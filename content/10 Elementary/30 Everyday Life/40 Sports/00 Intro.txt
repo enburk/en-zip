@@ -1,38 +1,47 @@
 sport                   = спорт, вид спорта, ~ спортиные игры
+
 sportsman               = спортсмен
 sportswoman             = спортсменка
 
-champion                = чемпион
-finalist                = финалист
-record {noun}           = рекорд                     /// `record
-medal                   = медаль
-trophy                  = трофей
+champion @ sport        = чемпион
+finalist @ sport        = финалист
+record @ sport          = рекорд                             /// `record
+medal @ sport           = медаль
+trophy @ sport          = трофей
 
-attack                  = атака, атаковать, ~ нападение /// , припадок
-counterattack           = контратака                 # 10+
-combination             = комбинация
-tactics                 = тактика
-partner                 = партнёр
-opponent                = соперник
-leader                  = лидер
-outsider                = аутсайдер                  # 14+
+attack @ sport          = атака, атаковать, ~ нападение      /// , припадок
+counterattack @ sport   = контратака                         # 10+
+combination @ sport     = комбинация
+tactics @ sport         = тактика
 
-arbiter                 = арбитр                     # 14+
-referee                 = ре́фери/рефери́ %% судья     # 14+
-penalty                 = штраф, наказание %% ''не только'' пенальти /// # polysemic
-fair play               = фейр-плей %% «честная игра» # SPORT- # 16+
-playoff {Am.}           = плей-офф %% игры на выбывание # SPORT- # 16+
-commentator             = комментатор                # 10+
+partner @ sport         = партнёр
+opponent @ sport        = соперник
+leader @ sport          = лидер
+outsider @ sport        = аутсайдер                          # 14+
+
+arbiter                 = арбитр                             # 14+
+referee                 = ре́фери/рефери́                      # 14+
+
+penalty @ sport         = штраф, наказание %% ''не только'' пенальти /// # polysemic
+fair play               = фейр-плей %% «честная игра»        # SPORT- # 16+
+playoff {Am.}           = плей-офф %% игры на выбывание      # SPORT- # 16+
+commentator @ sport     = комментатор                        # 10+
+
 training                = тренинг, тренировка
 trainer/coach           = тренер
-junior                  = младший, юниор             # 14+
-league                  = лига
+
+junior @ sport          = младший, юниор                     # 14+
+league @ sport          = лига
+
 stadium                 = стадион
 sports arena            = спортивная арена
-Olympics,~Olympic Games = Олимпиада, Олимпийские игры
-Paralympic Games        = паралимпийские игры        # SPORT- # 16+
-doping                  = допинг                     # 14+
-disqualification        = дисквалификация            # 14+
+
+Olympics//Olympic Games = Олимпиада, Олимпийские игры
+Paralympic Games        = паралимпийские игры                # SPORT- # 16+
+
+doping                  = допинг                             # 14+
+disqualification        = дисквалификация                    # 14+
+
 
 
 

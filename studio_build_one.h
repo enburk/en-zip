@@ -288,16 +288,14 @@ namespace studio::one
                 report::audiop += link(entry);
                 for (res r: audios)
                 report::audiop += 
-                dark(html(r->
-                     full()));
+                link(r);
             }
             if (not videos.empty())
             {
                 report::videop += link(entry);
                 for (res r: videos)
                 report::videop +=
-                dark(html(r->
-                     full()));
+                link(r);
             }
         }
 
@@ -318,11 +316,11 @@ namespace studio::one
 
             if (r->kind == "audio")
                 report::audioq +=
-                r->full();
+                link(r);
 
             if (r->kind == "video")
                 report::videoq +=
-                r->full();
+                link(r);
         }
 
         for (auto& entry: course.entries)

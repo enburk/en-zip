@@ -1,26 +1,27 @@
-textile        = текстиль, текстильный     # 10+
+textile           = текстиль, текстильный  # 10+
 
-texture @ textile        = текстура                  # 10+ /// 8??
+texture @ textile = текстура               # 10+ /// 8??
 
-synthetics     = синтетика                 # 10+
-bamboo @ textile         = бамбук                    # 16+
-batiste        = батист                    # 16+
-denim          = деним                     # 16+
-linen          = лён                       # 10+
-silk           = шёлк                      # 10+ /// 8 really
-crêpe de chine//crepe de chine = крепдешин                 # RARE- # 18+
-organza        = органза́                   # RARE- # 18+
-nylon          = нейлон                    # 18+
-polyester      = полиэ́стер                 # 14+
-viscose        = вискоза                   # 18+
-tweed          = твид                      # 18+
-flannel        = фланель                   # 14+
-Lycra          = лайкра                    # 18+
-muslin         = муслин                    # RARE- # 18+ /// French mousseline, from Italian mussolina
-latex          = латекс                    # 18+
+synthetics        = синтетика              # 10+
+bamboo @ textile  = бамбук                 # 16+
+batiste           = батист                 # 16+
+denim             = деним                  # 16+
+linen             = лён                    # 10+
+silk              = шёлк                   # 10+ /// 8 really
+crêpe de chine//crepe de chine = крепдешин              # RARE- # 18+
+organza           = органза́                # RARE- # 18+
+nylon             = нейлон                 # 18+
+polyester         = полиэ́стер              # 14+
+viscose           = вискоза                # 18+
+tweed             = твид                   # 18+
+flannel           = фланель                # 14+
+Lycra             = лайкра                 # 18+
+muslin            = муслин                 # RARE- # 18+ /// French mousseline, from Italian mussolina
+latex             = латекс                 # 18+
 
 ===
-[polar] fleece = флис                      # 16+
-Golden Fleece  = золотое руно              # 16+
+[polar] fleece    = флис                   # 16+
+Golden Fleece     = золотое руно           # 16+
+
 
 

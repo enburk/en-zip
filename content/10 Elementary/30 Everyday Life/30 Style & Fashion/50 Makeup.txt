@@ -1,28 +1,29 @@
-makeup|make-up = макияж, мейкап
+makeup|make-up                = макияж, мейкап
 
-powder         = пудра
-gel            = гель
-deodorant      = дезодорант
+powder                        = пудра
+gel                           = гель
+deodorant                     = дезодорант
 ---
-perfumery      = парфюмерия      # 10+
-perfumer       = парфюмер        # 10+
+perfumery                     = парфюмерия # 10+
+perfumer                      = парфюмер # 10+
 toilet water//Eau de toilette = туалетная вода
-aromatic       = ароматный, ароматический
-patchouli      = пачули          # RARE- # 18+
-musk           = мускус          # RARE- # 18+
+aromatic                      = ароматный, ароматический
+patchouli                     = пачули # RARE- # 18+
+musk                          = мускус # RARE- # 18+
 
-manicure       = маникюр         # 14+
-pedicure       = педикюр         # 14+
-cuticle        = кутикула        # RARE+ # 14+
+manicure                      = маникюр # 14+
+pedicure                      = педикюр # 14+
+cuticle                       = кутикула # RARE+ # 14+
 
-peeling        = пилинг          # 16+
-epilation      = эпиляция        # 16+
-solarium       = солярий         # 16+
+peeling                       = пилинг # 16+
+epilation                     = эпиляция # 16+
+solarium                      = солярий # 16+
 
-piercing       = пирсинг         # 18+
-body art       = боди-арт        # 18+
-tattoo         = татуировка      # 18+
+piercing                      = пирсинг # 18+
+body art                      = боди-арт # 18+
+tattoo                        = татуировка # 18+
 
 ===
 
-hypoallergenic = гипоаллергенный # TERM- # 14+
+hypoallergenic                = гипоаллергенный # TERM- # 14+
+

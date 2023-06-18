@@ -1,12 +1,13 @@
-{athletics}
-athletics {Br.}       = легкая атлетика
-athletics {Am.}       = спорт
+===
+athletics {Br.} @ Br  = легкая атлетика
+athletics {Am.} @ Am  = спорт
 track and field {Am.} = легкая атлетика
+===
 
-start                 = начинать, начало, ~ в спорте: старт
+start @ run           = начинать, начало, ~ в спорте: старт
 false start           = фальстарт               # 10+
 finish line           = финишная линия
-distance              = в спорте: дистанция     # 10+
+distance @ sport      = в спорте: дистанция     # 10+
 sprinter              = спринтер                # 10+
 spurt                 = рывок, в спорте: спурт  # SPORT+ # 16+
 marathon              = марафон
@@ -24,5 +25,6 @@ acrobatic gymnastics  = спортивная акробатика   # SPORT-
 mat                   = мат                     # SPORT+
 magnesia              = магнезия %% увеличивает трение # SPORT+ # 18+
 talc/talcum powder    = тальк %% уменьшает трение ~~~ Спортсмены используют магнезию, а не тальк. # SPORT+ # 18+
+
 
 

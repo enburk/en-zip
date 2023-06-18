@@ -99,17 +99,15 @@ namespace studia::dic
             number));
 
             result << linked(
-            number + ". " +
-            html(title),
-            title);
+            number + ". " + html(title),
+            "dic://" + title);
         }
 
         void out (str text, str title = "")
         {
             result << linked(
-            gray(text) +
-            html(title),
-            title);
+            gray(text) + html(title),
+            "dic://" + title);
         }
 
         void on_change (void* what) override

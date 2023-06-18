@@ -65,12 +65,18 @@ namespace studio::one
         return s;
     };
 
+    str link (res r)
+    {
+        return linked(
+        dark(html(r->full())),
+        "file://" + str(r->path));
+    }
     str link (ent entry)
     {
         return linked(
         html(entry->eng) + "  " +
         dark(entry->pretty_link()),
-             entry->link);
+        "one://" + entry->link);
     }
     str link (content::out::entry& e) {
         return link(&e); }

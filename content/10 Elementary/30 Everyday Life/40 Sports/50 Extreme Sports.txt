@@ -2,6 +2,7 @@ extreme sports = экстремальные виды спорта
 
 surfing        = сёрфинг
 windsurfing    = виндсёрфинг
+
 skysurfing     = скайсёрфинг # SPORT+ # 16+
 skydiving      = скайдайвинг # 16+ /// разобраться, чем это отличается от парашютного спорта
 parachuting    = парашютный спорт
@@ -10,6 +11,7 @@ rafting        = рафтинг # 10+
 kayaking       = каякинг # 10+
 
 mountain bike  = горный велосипед
-mountaineering, ~ mountain climbing, ~ Alpinism = альпинизм
+---
+mountaineering//mountain climbing//Alpinism = альпинизм
 alpenstock     = альпеншток # HISTORY+ # RARE+ # 18+
 

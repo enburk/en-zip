@@ -47,10 +47,10 @@ namespace studio::dic
 
             search.object.result = &log_search;
 
-            app::logs::media = log_medias;
-            app::logs::audio = log_audios;
-            app::logs::video = log_videos;
-            app::logs::times = log_timing;
+            //app::logs::media = log_medias;
+            //app::logs::audio = log_audios;
+            //app::logs::video = log_videos;
+            //app::logs::times = log_timing;
 
             int i = 0;
             auto& select = selector.object;

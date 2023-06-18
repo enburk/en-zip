@@ -63,15 +63,6 @@
     <ClInclude Include="medio_video.h">
       <Filter>media</Filter>
     </ClInclude>
-    <ClInclude Include="studio_build_dic.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_build_dic+.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studio_build_one.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
     <ClInclude Include="eng_phenomena.h">
       <Filter>eng</Filter>
     </ClInclude>
@@ -143,15 +134,24 @@
       <Filter>studio-one</Filter>
     </ClInclude>
     <ClInclude Include="studio_dic.h" />
-    <ClInclude Include="studio_build_one+.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
     <ClInclude Include="studia_l.h" />
     <ClInclude Include="studia_r.h" />
     <ClInclude Include="studia_l_search.h" />
     <ClInclude Include="studia.h" />
-    <ClInclude Include="studia_l_app.h" />
-    <ClInclude Include="studia_l_app_contents.h" />
-    <ClInclude Include="studia_l_app_editor.h" />
+    <ClInclude Include="studia_l_content.h" />
+    <ClInclude Include="studia_l_editor.h" />
+    <ClInclude Include="studia_l_media.h" />
+    <ClInclude Include="studia_l_medio.h" />
+    <ClInclude Include="studia_l_medio+.h" />
+    <ClInclude Include="studia_l_medio++.h" />
+    <ClInclude Include="studia_l_request.h" />
+    <ClInclude Include="studio_build_dic+.h" />
+    <ClInclude Include="studio_build_dic.h" />
+    <ClInclude Include="studio_build_one.h" />
+    <ClInclude Include="studio_build_one+.h" />
+    <ClInclude Include="studia_r_report_dic.h" />
+    <ClInclude Include="studia_r_report_one.h" />
+    <ClInclude Include="studia_r_request.h" />
+    <ClInclude Include="studia_r_search.h" />
   </ItemGroup>
 </Project>

@@ -28,6 +28,11 @@ namespace studio::pixer
             button_r  .text.text = "r";
             button_b  .text.text = "b";
 
+            button_l.repeat_lapse = 40ms;
+            button_t.repeat_lapse = 40ms;
+            button_r.repeat_lapse = 40ms;
+            button_b.repeat_lapse = 40ms;
+
             edit.show_focus = true;
 
             frame.frame1.color = pix::ARGB(0xAA000000);

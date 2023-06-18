@@ -69,7 +69,7 @@ widget<App>
         fast.repeat_lapse = 16ms;
         speed.enabled = false;
         onetwo.buttons(0).text.text = "course";
-        onetwo.buttons(1).text.text = "catalogs";
+        onetwo.buttons(1).text.text = "catalog";
         onetwo.selected = 0;
         ones.reload("app::ones", app::one::course.root);
         twos.reload("app::twos", app::two::course.root);

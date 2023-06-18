@@ -1,6 +1,6 @@
 #pragma once
 #include "app.h"
-namespace studio::dic
+namespace studio
 {
     eng::dictionary dictionary;
     std::mutex dictionary_mutex;

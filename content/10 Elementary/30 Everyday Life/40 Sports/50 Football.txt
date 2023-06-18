@@ -1,0 +1,24 @@
+football\\soccer            = футбол
+
+match @ soccer              = матч
+pass @ soccer               = пас, передача, передать
+dribbling @ soccer          = дриблинг               # SPORT- # 18+
+goal @ soccer               = гол
+goalkeeper @ soccer         = вратарь/голкипер       # 14+
+linesman @ soccer           = лайнсмен, судья на линии # SPORT+ # 16+
+foul @ soccer               = фол, нарушение правил  # SPORT- # 16+
+simulation @ soccer         = симуляция              # 10+
+penalty @ soccer            = в футболе: пенальти    /// # polysemic
+offside @ soccer            = офсайд, вне игры       # SPORT- # 16+
+out @ soccer                = аут                    # SPORT- # 14+
+hat-trick @ soccer          = хет-трик               # SPORT+ # 16+
+half-back @ soccer          = полузащитник/хавбек    # SPORT+ # 16+
+overtime @ soccer           = овертайм, ~ дополнительное время # SPORT- # 14+
+
+===
+rugby                       = регби                  # 10+
+American football\\football = американский футбол
+quarterback                 = квотербек              # SPORT+ # 14+
+touchdown                   = тачдаун                # SPORT- # 14+
+
+

@@ -19,6 +19,8 @@ namespace report = studio::dic::report;
             consobar ()
             {
                 app::logs::times = timing;
+                timing << app::appdata.report;
+                timing << app::appdata.error;
 
                 consoles += &errors;
                 consoles += &usages;

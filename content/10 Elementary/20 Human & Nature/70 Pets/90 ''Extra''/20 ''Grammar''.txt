@@ -1,11 +1,45 @@
 grammar
 
 ===
-small words # HEAD
+small words                # HEAD
+===
+in                         = в
 ===
 
+: made in China
+: Get your ducks '''in''' a row! = Приведи свои дела в порядок! %% idiomatic
+: castles '''in''' the air = воздушные замки
 
+===
+= в, через, в течение %% о времени
+===
 
+'''in''' a year            = через год, за год
+'''in''' the end           = в конце
+'''in''' the evening       = вечером
+'''in''' the afternoon     = в полдень
+'''in''' a twinkling of an eye = в один миг
+early '''in''' the morning = рано утром
+
+===
+= %% указывает на язык, тон
+===
+
+'''in''' a serious voice   = серьёзным тоном
+: Please speak to me '''in''' English ~ I do not understand French.
+
+===
+---
+come in//walk in           = входить /// %% prepositional verb
+: Come in.                 = Входите!
+: Come in!                 = Входите!
+: Come in now!
+
+===
+
+be interested '''in'''     = интересоваться ~ (чем-либо)
+fall '''in''' love (with)  = влюбляться ~ (в кого-либо)
+take part '''in'''         = участвовать в
 
 
 

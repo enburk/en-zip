@@ -1,0 +1,20 @@
+board games   = настольные игры
+
+crossword     = кроссворд
+charade       = шарада                          # 10+
+rebus         = ребус                           # 10+
+Scrabble      = скрабл                          # 10+
+sudoku        = судоку                          # 10+
+go @ game     = го                              # 16+
+---
+puzzle        = загадка, головоломка, ~ затруднение, озадачивать
+jigsaw [puzzle]//puzzle {esp.} {Am.} = пазлы
+Rubik's Cube  = кубик Рубика
+---
+dominoes      = домино ~ (игра)                 # 14+ /// |dominos
+domino        = костяшка домино                 # 14+
+domino effect = эффект домино, ~ принцип домино # 14+
+
+
+
+

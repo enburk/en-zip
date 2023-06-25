@@ -30,7 +30,7 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
-        hashset<str> form_course_vocabulary;
+        hashset<str> course_vocabulary_forms;
         hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
         for (str s: entry.vocabulary)
@@ -39,7 +39,7 @@ namespace studio::one
             entries += &entry;
 
             for (str f: forms(s))
-            form_course_vocabulary.
+            course_vocabulary_forms.
                 emplace(f);
         }
 
@@ -62,12 +62,14 @@ namespace studio::one
         std::unordered_set<res> unused_resources;
         for (auto& r: data.resources)
         {
-            str w = simple(r.abstract);
+            str abstract = simple(r.
+                abstract);
 
             array<str>
             resource_vocabulary;
-            resource_vocabulary += w;
+            resource_vocabulary += abstract;
             {
+                auto& w = abstract;
                 auto& v = resource_vocabulary;
                 if (w.starts_with("a "    )) v += str(w.from(2)) + "@noun"; else
                 if (w.starts_with("an "   )) v += str(w.from(3)) + "@noun"; else
@@ -108,12 +110,12 @@ namespace studio::one
             }
 
             if (used or
-                form_course_vocabulary.
-                contains(w))
+                course_vocabulary_forms.
+                contains(abstract))
                 continue;
 
             int spaces = 0;
-            for (char c: w)
+            for (char c: abstract)
             if  (c == ' ')
                 spaces++;
 
@@ -176,11 +178,14 @@ namespace studio::one
         {
             bool nopixed = entry.opt.internal.contains("pix-");
             bool noaudio = entry.opt.internal.contains("audio-");
+            bool soundio = entry.opt.external.contains("SOUND");
 
-            auto en = noaudio ? array<str>{} : entry.en;
-            auto uk = noaudio ? array<str>{} : entry.uk;
-            auto us = noaudio ? array<str>{} : entry.us;
-            bool vi = nopixed;
+            auto en = noaudio or soundio? array<str>{} : entry.en;
+            auto uk = noaudio or soundio? array<str>{} : entry.uk;
+            auto us = noaudio or soundio? array<str>{} : entry.us;
+
+            bool sound_ok = not soundio;
+            bool video_ok = nopixed;
 
             for (str& s: entry.vocabulary)
             for (res& r: course_vocabulary[s].resources)
@@ -199,105 +204,29 @@ namespace studio::one
                 if (r->options.contains("uk")) fullfill(uk, w);
                 if (r->options.contains("us")) fullfill(us, w);
                 /*        in any case       */ fullfill(en, w); }
-                if (r->kind == "video") vi = true;
+
+                if (r->kind == "audio"
+                and r->options.contains("sound"))
+                    sound_ok = true;
+
+                if (r->kind == "video")
+                    video_ok = true;
             }
             str s = html(entry.eng);
+            str snd = red(bold(" sound "));
             str ens = red(bold(" en: " + html(str(en, ", "))));
             str uks = red(bold(" uk: " + html(str(uk, ", "))));
             str uss = red(bold(" us: " + html(str(us, ", "))));
             if (not en.empty()) report::audiom += linked(s + ens, entry.link);
             if (not uk.empty()) report::audiom += linked(s + uks, entry.link);
             if (not us.empty()) report::audiom += linked(s + uss, entry.link);
-            if (not vi        ) report::videom += linked(s + " ", entry.link);
+            if (not sound_ok  ) report::audiom += linked(s + snd, entry.link);
+            if (not video_ok  ) report::videom += linked(s + " ", entry.link);
         }
 
-        out << dark(bold("ONE: MAKE SUGGESTIONS..."));
+        out << dark(bold("ONE: MAKE REPORTS..."));
 
-        hashmap<str,
-        array<res>> unused_resources_vocabulary;
-        for (res r: unused_resources)
-        {
-            auto entries = r->entries;
-
-            if ((r->kind == "audio"
-            and entries.size() == 0
-            and not r->options.contains("=")
-            and not r->options.contains("=="))
-            or  entries.contains("+"))
-                entries += eng::parser::entries(
-                    vocabulary, r->title,
-                    r->options.contains
-                    ("Case"));
-            else
-            if (r->title.contains("/"))
-            for (str s: r->title.split_by("/"))
-                entries += s;
-
-            entries.try_erase("+");
-
-            for (str s: entries)
-            unused_resources_vocabulary[s] += r;
-        }
-
-        hashset<str> current_vocabulary;
-
-        for (auto& entry: course.entries)
-        {
-            array<res> audios;
-            array<res> videos;
-
-            for (str& s: entry.vocabulary)
-            {
-                for (str word: eng::parser::entries(
-                    vocabulary, s.upto_first("@"), true))
-                    current_vocabulary.emplace(word);
-
-                auto it = unused_resources_vocabulary.find(s);
-                if (it == unused_resources_vocabulary.end())
-                    continue;
-
-                for (res r: it->second)
-                {
-                    // 's 't 're 'll
-                    if (eng::list::contractionparts.
-                        contains(r->title))
-                        continue;
-
-                    // if hasn't been deleted
-                    if (not unused_resources.
-                        contains(r))
-                        continue;
-
-                    // if all words are known
-                    bool well_known = true;
-                    for (str x: r->entries)
-                    if  (not current_vocabulary.contains(x))
-                        well_known = false;
-
-                    if (not well_known)
-                        continue;
-
-                    if (r->kind == "audio") audios += r;
-                    if (r->kind == "video") videos += r;
-                    unused_resources.erase(r); // delete it
-                }
-            }
-
-            if (not audios.empty())
-            {
-                report::audiop += link(entry);
-                for (res r: audios)
-                report::audiop += 
-                link(r);
-            }
-            if (not videos.empty())
-            {
-                report::videop += link(entry);
-                for (res r: videos)
-                report::videop +=
-                link(r);
-            }
-        }
+        suggestions(course, unused_resources, vocabulary);
 
         std::multimap<int, res>
             weighted_unused_resources;

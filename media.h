@@ -129,6 +129,10 @@ namespace media
         str s = doc::html::untagged(
             canonical(index.title));
 
+        if (index.options.
+            contains("sound"))
+            s = "[" + s + "]";
+
         str kind =
             index.kind == "audio" ? green ("[audio]"):
             index.kind == "video" ? purple("[video]"):

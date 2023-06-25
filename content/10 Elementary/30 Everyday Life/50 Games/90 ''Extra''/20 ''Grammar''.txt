@@ -1,8 +1,17 @@
 grammar
 
 ===
-small words # HEAD
+small words     # HEAD
 ===
+
+
+
+===
+irregular verbs # HEAD
+===
+
+bet → bet, betted/bet
+
 
 
 

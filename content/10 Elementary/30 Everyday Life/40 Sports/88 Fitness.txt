@@ -1,20 +1,31 @@
-fitness           = фитнесс
-aerobics          = аэробика                     # 14+
-step aerobics     = степ-аэробика                # 16+
-pilates           = пилатес                      # 16+
-hyperextensions   = гиперэкстензии               # SPORT+ # TERM+ # 16+
-plank             = планка ~ (упражнение)        # SPORT+ # TERM+ # 16+
-expander          = эспандер                     # SPORT- # TERM- # 14+
+===
+fitness                  = фитнесс
+===
 
-bodybuilding      = бодибилдинг                  # 10+
-bodybuilder       = бодибилдер/культурист        # 10+
-powerlifting      = силовое троеборье, ~ пауэрлифтинг # 16+
-powerlifter       = пауэрлифтер                  # 16+
-biceps            = бицепс
-triceps           = трицепс                      # 10+
-protein           = протеин                      # SPORT+ # 16+
-anabolic steroids = анаболические стероиды       # SPORT+ # 16+ /// , informal: anabolics  , анаболики
+aerobics                 = аэробика              # 14+
+step aerobics            = степ-аэробика         # 16+
+aerobic exercise//cardio = аэробное упражнение
 
-jogging           = бег трусцой %% джогинг/джоггинг # 16+
+pilates                  = пилатес               # 16+
+hyperextensions          = гиперэкстензии        # SPORT+ # TERM+ # 16+
+plank @ fitness          = планка ~ (упражнение) # SPORT+ # TERM+ # 16+
+expander                 = эспандер              # SPORT- # TERM- # 14+
+jogging                  = бег трусцой %% джогинг/джоггинг # 16+
+
+===
+bodybuilding             = бодибилдинг           # 10+
+bodybuilder              = бодибилдер/культурист # 10+
+===
+
+powerlifting             = силовое троеборье, ~ пауэрлифтинг # 16+
+powerlifter              = пауэрлифтер           # 16+
+
+biceps                   = бицепс
+triceps                  = трицепс               # 10+
+
+protein @ sport          = протеин               # SPORT+ # 16+
+anabolic steroids        = анаболические стероиды # SPORT+ # 16+ /// , informal: anabolics  , анаболики
+
+
 
 

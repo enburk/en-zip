@@ -1,20 +1,24 @@
-score {noun} %% <noun> = счёт
-score {verb} %% <verb> = забивать
-''Hey, what's the score?''
+basic ~ vocabulary
+---
+score @ sport noun %% noun = счёт
+score @ sport verb %% verb = забивать
+: Hey, what's the score?
 
-whistle                = свисток
-face-off               = вбрасывание
-stick                  = клюшка
-puck                   = шайба
-ice skates             = коньки
-helmet                 = шлем, каска
+whistle @ sport            = свисток, свистеть
+face-off                   = вбрасывание
+stick @ hockey             = клюшка
+puck @ hockey              = шайба
+ice skates                 = коньки
+helmet @ sport             = шлем, каска
+---
+running @ sport            = бег
+stopwatch                  = секундомер
+: Ready, steady, go!       = На старт, внимание, марш!
+: How do you start a teddy bear race? ~ Ready, teddy, go!
 
-runner                 = бугун
-stopwatch              = секундомер
-''Ready, steady, go!'' = ''На старт, внимание, марш!''
-''How do you start a teddy bear race? ~ Ready, teddy, go!'' = %% HOTMAG
+belt @ martial arts        = пояс
 
-belt                   = пояс, ремень
-dumbbells              = гантели
-kettlebell             = гиря
+dumbbells                  = гантели
+kettlebell                 = гиря
+
 

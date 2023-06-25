@@ -66,6 +66,7 @@ namespace app::one
             reset();
 
             array<media::index> audios;
+            array<media::index> sounds;
             array<media::index> videos;
 
             auto range = mediadata.entries_one.
@@ -73,19 +74,40 @@ namespace app::one
                 [](auto a, auto b){ return
                 a.entry < b.entry; });
 
-            for (auto [entry, media]: range) {
-                auto& i = mediadata.media_index[media];
-                if (i.kind == "audio") audios += i;
-                if (i.kind == "video") videos += i; }
+            for (auto [entry, media]: range)
+            {
+                auto& i =
+                mediadata.
+                media_index[media];
+                if (i.kind == "video") videos += i;
+                if (i.kind == "audio")
+                {
+                    if (i.options.
+                    contains("sound"))
+                    sounds += i; else
+                    audios += i;
+                }
+            }
 
             for (auto& audio: audios) logs::audio << log(audio);
+            for (auto& sound: sounds) logs::audio << log(sound);
             for (auto& video: videos) logs::video << log(video);
-
-            video_index = media::index{}; int vv = videos.size();
+            media::index
+            sound_index = media::index{}; int ss = sounds.size();
             audio_index = media::index{}; int aa = audios.size();
+            video_index = media::index{}; int vv = videos.size();
 
-            if (vv>0) video_index = videos[aux::random(0, vv-1)];
             if (aa>0) audio_index = audios[aux::random(0, aa-1)];
+            if (ss>0) sound_index = sounds[aux::random(0, ss-1)];
+            if (vv>0) video_index = videos[aux::random(0, vv-1)];
+
+            auto const& entry =
+            course.entries[number];
+            if (entry.opt.external.
+                contains("SOUND"))
+                audio_index =
+                sound_index,
+                aa = ss;
 
             pixed = vv > 0;
             vocal = aa > 0;

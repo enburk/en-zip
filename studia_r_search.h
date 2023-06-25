@@ -162,7 +162,7 @@ namespace studia::one
 
                 auto range =
                 app::mediadata.entries_dic.equal_range(
-                ::media::entry_index{i, 0}, [](auto a, auto b)
+                media::entry_index{i, 0}, [](auto a, auto b)
                 { return a.entry < b.entry; });
 
                 for (auto [entry, media]: range)
@@ -171,6 +171,10 @@ namespace studia::one
 
                     str s = doc::html::untagged(
                         media::canonical(index.title));
+
+                    if (index.options.
+                    contains("sound"))
+                    s = "[" + s + "]";
 
                     str kind =
                         index.kind == "audio" ? green ("[audio]"):
@@ -195,9 +199,13 @@ namespace studia::one
                     if (sense != "") fn += " @ " +
                         sense;
 
+                    if (index.options.
+                    contains("sound"))
+                    fn += " # SOUND";
+
                     result.object << linked(
                     kind + " " + title,
-                    "clipboard://" + fn);
+                    "clipboard://: " + fn);
                 }
             }
         }

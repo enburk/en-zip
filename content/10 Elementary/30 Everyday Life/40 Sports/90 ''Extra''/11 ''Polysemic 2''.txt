@@ -1,54 +1,59 @@
 ---
-box(1) @ boxing            = боксировать %% бокс (вид спорта) -- boxing
-box(2)                     = коробка, ящик, ~ почтовый ящик
-box(2) {2}                 = будка, ложа
-box {defence} {Br.}        = в спорте: защита паха ~ (ракушка)                 # SPORT+ # 16+
-box {TV} ~ {mainly} {Br.}  = разговорное: телевизор ~ (телек, ящик)
-box(3)                     = самшит %% ''в особенности'' самшит вечнозелёный ~ ''(Buxus sempervirens)''
-
-ring(1) @ boxing           = ринг                                              # 10+
-ring(1) @ sport            = арена                                             # 10+
-ring(1) {round}            = кольцо, круг, ободок                              # 10+
-ring(1) {gas} {Br.}        = конфорка                                          # 10+
-ring(1) {verb}             = окружать, виться ~ (о тропе и т.п.)               # 10+
-ring(1) {crime}            = банда, шайка                                      # 10+ /// продевать кольцо с нос (животному) и др.
-ring(2)                    = звонить, звенеть, ~ звон, звонок в дверь %% в брит. англ: звонить по телефону # 10+
-<small>''Your phone is ringing.''</small>
-ring a gong                = звонить в гонг                                    # 10+
-
-round @ sport              = раунд, ряд, серия
-round {circle}             = круглый, округлый, ~ круг, окружность
-round {adv.} ~ {esp.} {Br.}\\{Am.} {usually} around = вокруг, кругом ~ (со всех сторон; по кругу)       /// # polysemic /// рядом (Br. around); за (углом и т.п.) (Br. around); и мн. др.
-<small>''Stop beating '''around''' the bush.''</small> = ''Хватит ходить вокруг да около.'' %% idiom
-round {arm}                = заряд, патрон                                     # WAR-
-round number               = круглое число
-
-club                       = клуб, ~~ собираться вместе, ~~ скидываться (в «общий котёл») # 10+
-club {2}                   = дубина, дубинка, ~ бить дубинкой %% или прикладом ружья # 10+
-[golf] club                = клюшка для гольфа                                 # 10+
-clubs                      = була́вы %% гимнастический снаряд                   # 10+
-clubs {cards}              = трефы                                             # 10+
-
-court {tennis}             = корт
-court/courtyard            = (внутренний) двор
-court {royal}              = двор ~ (королевский)
-court {legal}              = суд, судебное заседание
-court {verb}               = добиваться расположения, ~ ухаживать (за женщиной) /// тупик, рисковать
-
-barrier                    = барьер, ~ преграда, препятствие
-hurdle                     = препятствие, барьер ~ (в легкой атлетике)         /// NEW
-hurdling                   = бег с барьерами                                   /// NEW
-fence {show jumping}       = барьер ~ (в конкуре)                              /// NEW
-fence                      = забор, изгородь                                   /// NEW
-fence {verb} %% <verb>     = фехтовать                                         /// NEW
-fencing                    = фехтование                                        /// NEW
-
-fan(1)                     = фанат, болельщик, любитель
-fan(2)                     = вентилятор
-fan(2) {2}                 = веер,  ~ обмахивать, раздувать %% ''также в переносном значении'' /// лопасть винта, веять зерно, обыскивать, бить
-
-favourite\\favorite {noun} {sport} = в спорте: фаворит %% ожидаемый победитель
-favourite\\favorite {noun} = фаворит, ~ любимчик, любимец
-favourite\\favorite {adj.} %% <adj.> = любимый, излюбленный
+box(1) @ boxing              = боксировать %% бокс (вид спорта) -- boxing
+box(2) @ cuboid              = коробка, ящик
+post box\\mailbox            = почтовый ящик
+box(2) @ booth               = будка, ложа
+box\\cup @ protector         = в спорте: защита паха ~ (ракушка)           # SPORT+ # 14+
+box @ TV ~ {mainly} {Br.}    = разговорное: телевизор ~ (телек, ящик)
+box(3) @ wood                = самшит %% ''в особенности'' самшит вечнозелёный ~ ''(Buxus sempervirens)''
+---
+ring(1) @ boxing             = ринг                                        # 10+
+ring(1) @ sport              = арена                                       # 10+
+ring(1) @ jewelry            = кольцо                                      # 10+
+ring(1) @ round              = кольцо, круг, ободок                        # 10+
+ring(1) {Br.} @ gas          = конфорка                                    # 10+
+ring(1) @ band               = банда, шайка                                # 10+
+ring(2) @ sound              = звонить, звенеть, ~ звон, звонок в дверь %% в брит. англ: звонить по телефону # 10+
+: Your phone is ringing.
+ring a gong                  = звонить в гонг                              # 10+
+---
+round @ sport                = раунд, ряд, серия
+round @ circle               = круглый, округлый, ~ круг, окружность
+round {esp.} {Br.}\\{Am.} {usually} around = вокруг, кругом ~ (со всех сторон; по кругу)
+: Stop beating '''around''' the bush. = Хватит ходить вокруг да около.
+round @ arm                  = заряд, патрон                               # WAR-
+round number                 = круглое число
+---
+club @ join                  = клуб, ~~ собираться вместе, ~~ скидываться (в «общий котёл») # 10+
+club @ weapon                = дубина, дубинка, ~ бить дубинкой            # 10+ /// %% или прикладом ружья
+[golf] club                  = клюшка для гольфа                           # 10+
+clubs @ gymnastics           = була́вы %% гимнастический снаряд             # 10+
+clubs @ cards                = трефы                                       # 10+
+club [sandwich]
+---
+court @ tennis               = корт
+court/courtyard              = (внутренний) двор
+court @ royal                = двор ~ (королевский)
+court @ legal                = суд, судебное заседание
+court @ love                 = добиваться расположения, ~ ухаживать (за женщиной) /// тупик, рисковать
+---
+barrier                      = барьер, ~ преграда, препятствие
+hurdle                       = препятствие, барьер ~ (в легкой атлетике)   /// NEW
+hurdling                     = бег с барьерами                             /// NEW
+fence @ show jumping         = барьер ~ (в конкуре)                        /// NEW
+fence @ barrier              = забор, изгородь                             /// NEW
+fence @ fencing %% verb      = фехтовать                                   /// NEW
+fencing                      = фехтование                                  /// NEW
+---
+fan(1) @ person              = фанат, болельщик, любитель
+fan(2) @ device              = вентилятор
+fan(2) @ hand-held           = веер,  ~ обмахивать, раздувать %% ''также в переносном значении'' /// лопасть винта, веять зерно, обыскивать, бить
+---
+favourite\\favorite @ sport  = в спорте: фаворит %% ожидаемый победитель
+favourite\\favorite @ favour = фаворит, ~ любимчик, любимец
+favourite\\favorite @ adjective %% adjective = любимый, излюбленный
+: It is my favorite film.
+: What’s your favourite sport?
+: We must never play favorites. ~ We must always treat every man alike.
 
 

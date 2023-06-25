@@ -1,0 +1,29 @@
+city                         = город
+
+City of London               = Лондонский Сити      # 16+
+urbanization %% Br. also urbanisation = урбанизация          # 10+
+
+cottage                      = коттедж, загородный дом ~ хижина
+penthouse                    = пентхаус             # 16+
+kiosk                        = киоск                # 10+
+street                       = улица
+
+===
+---
+lamp @ home                  = лампа
+lamp @ street                = фонарь ~ светить, освещать
+---
+square @ city                = площадь %% редко: сквер # pix-
+square @ city block          = квартал              # pix-
+square @ geom                = квадрат, прямоугольник # pix-
+square @ math                = квадрат, ~ вторая степень
+: Red Square @ Moscow        = Красная площадь
+: red square                 = красный квадрат
+public garden//garden square = парк, сквер
+---
+park @ city                  = парк
+national park                = национальный парк, ~ заповедник
+park @ car                   = парковаться, парковка
+: You are not allowed ~ to park your elephant on Main Street.
+water park                   = аквапарк
+

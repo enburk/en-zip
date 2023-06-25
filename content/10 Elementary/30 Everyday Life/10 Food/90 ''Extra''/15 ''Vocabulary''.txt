@@ -5,6 +5,7 @@ spoon                        = ложка
 knife %% plural: knives      = нож
 tablecloth                   = скатерть
 plate                        = тарелка
+napkin                       = салфетка
 
 egg                          = яйцо
 pie                          = пирог, торт
@@ -52,6 +53,7 @@ full @ food                  = сытый
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
 
 
 

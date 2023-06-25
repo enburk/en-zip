@@ -271,7 +271,13 @@ namespace content::in
 
                 if (opt.external.
                 contains("HEAD"))
-                html = extracolor(big(html));
+                html = extracolor(
+                    big(html));
+
+                if (opt.external.
+                contains("SOUND"))
+                html = dark("[" +
+                    html + "]");
             }
 
             if (translated and rus != "")

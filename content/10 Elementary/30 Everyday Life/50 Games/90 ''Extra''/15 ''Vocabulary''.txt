@@ -1,0 +1,51 @@
+basic ~ vocabulary
+
+chess                        = шахматы
+heads or tails? %% idiomatic = орёл или решка?
+tic-tac-toe                  = крестики-нолики
+---
+dice @ game %% plural: dice  = игра в кости, ~ кости (игральные)
+: dice shake and roll onto table # SOUND
+
+===
+
+luck                         = удача
+win                          = победа, выигрыш, ~ выиграть
+lose                         = проиграть
+
+===
+
+: You are a winner.
+: Ooo, you're a winner!
+: Loser!
+: No fair!
+: You cheated!
+: You win some, you lose some.
+
+===
+deck of cards                = колода карт
+===
+
+harts @ cards
+diamonds @ cards
+spades @ cards
+clubs @ cards
+
+ace @ cards
+king @ cards
+queen @ cards
+jack @ cards
+
+===
+---
+suit @ clothes               = костюм, одеваться
+suit @ verb                  = подходить, устраивать
+suit @ cards                 = масть
+: How can you get four suits for a euro? ~ Buy a deck of cards.
+---
+bet @ stake                  = пари, ставка, ~ делать ставку, ~ биться об заклад
+: Place your bets!
+ante                         = ставка, взнос, ~ делать первую ставку
+: Ante up!                   = Делайте ставки! ~ Деньги на стол!
+
+

@@ -1,17 +1,26 @@
 grammar
 
 ===
-small words # HEAD
+small words                   # HEAD
+===
+to %% preposition             = %% обозначает направление ~ или лицо, к которому ~ обращено действие
 ===
 
+: '''to''' the left           = налево
+: '''to''' the right          = направо
 
+===
 
+: two tickets '''to''' Dublin = два билета до Дублина
+: Go '''to''' hell!           = Иди к черту! %% ''точнее:'' в ад
+: Give it to me!              = Отдай!
 
 ===
 irregular verbs HEAD
 ===
 
 eat → ate, eaten
+
 
 
 

@@ -15,16 +15,19 @@ biathlon              = биатлон                 # 10+
 decathlon             = десятиборье             # SPORT- # 18+
 discus                = диск %% в легкой атлетике # 10+
 
+===
 
-gymnastics            = гимнастика
-gymnast               = гимнаст/гимнастка
 artistic gymnastics   = спортивная гимнастика   # SPORT-
 rhythmic gymnastics   = художественная гимнастика # SPORT-
 acrobatic gymnastics  = спортивная акробатика   # SPORT-
 
-mat                   = мат                     # SPORT+
-magnesia              = магнезия %% увеличивает трение # SPORT+ # 18+
-talc/talcum powder    = тальк %% уменьшает трение ~~~ Спортсмены используют магнезию, а не тальк. # SPORT+ # 18+
+===
+---
+mat @ sport           = мат
+magnesia              = магнезия %% увеличивает трение
+talc//talcum powder   = тальк %% уменьшает трение
+= %% спортсмены используют магнезию, ~ а не тальк
+
 
 
 

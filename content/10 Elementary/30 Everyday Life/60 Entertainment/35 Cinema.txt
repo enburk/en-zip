@@ -1,32 +1,35 @@
-cinema                     = кинематография, кино ~ (искусство)           # 10+
-cinematography             = кинематография, ~ кинематограф               # 10+
+cinema @ art               = кинематография, кино ~ (искусство)           # 10+
+===
 cinema\\movie theater      = кинотеатр
+cinematography             = кинематография, ~ кинематограф               # 10+
+===
 
 film @ medium              = фотоплёнка, ~ киноплёнка
 film @ verb                = снимать фильм
-film\\movie                = фильм
+film\\movie @ cinema       = фильм
 ---
-actor @ movie              = актер
-actress @ movie            = актриса
+actor @ cinema             = актер
+actress @ cinema           = актриса
 character actor            = хара́ктерный актёр                            # TERM- # 16+
 
-hero @ movie               = герой
-heroine @ movie            = героиня
+hero @ cinema              = герой
+heroine @ cinema           = героиня
+
 antihero                   = антигерой                                    # TERM- # 10+
 superhero                  = супергерой                                   # TERM-
 
 body double                = дублёр                                       # 10+
-casting                    = кастинг %% подбор актеров                    # TERM- # 10+
+casting @ cinema           = кастинг %% подбор актеров                    # TERM- # 10+
 cameraman//camera operator = оператор
-episode                    = эпизод, серия ~ (часть сериала)
+episode @ cinema           = эпизод, серия ~ (часть сериала)
 soundtrack                 = саундтрек %% буквально: звуковая дорожка     # 10+
 special effect             = спецэффект
-montage                    = монтаж                                       # 10+
+montage @ cinema           = монтаж                                       # 10+
 
 Hollywood                  = Голливуд
-Oscar                      = Оскар
-ceremony                   = церемония
-nomination                 = номинация                                    # 10+
+Oscar @ award              = Оскар
+ceremony @ cinema          = церемония
+nomination @ cinema        = номинация                                    # 10+
 
 retrospective              = ретроспектива                                # TERM- # 16+
 filmography                = фильмография                                 # TERM- # 16+
@@ -34,15 +37,16 @@ filmography                = фильмография                           
 cameo @ cinema             = каме́о  %% эпизодическая роль ~ в исполнении знаменитости # 18+
 bloopers                   = блуперы %% удаленные из фильма неудавшиеся сцены # 18+
 
-remake                     = ремейк/римейк, ~ переделывать                # 10+
-series                     = сериал                                       # 10+
-sequel                     = сиквел                                       # 10+
-prequel                    = приквел                                      # 10+
-trailer                    = трейлер                                      # 10+
+remake @ cinema            = ремейк/римейк, ~ переделывать                # 10+
+series @ cinema            = сериал                                       # 10+
+sequel @ cinema            = сиквел                                       # 10+
+prequel @ cinema           = приквел                                      # 10+
+trailer @ cinema           = трейлер                                      # 10+
 
 ===
 
 happy ending               = хэппи-энд                                    # 10+
+
 
 
 

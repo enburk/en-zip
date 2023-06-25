@@ -36,7 +36,9 @@ widget<studia_r>
 
     void reload ()
     {
-        dic.reload();
+        dic .reload();
+        dics.reload();
+        ones.reload();
     }
 
     void click (str link)
@@ -106,6 +108,10 @@ widget<studia_r>
             for (int i=0; i<planes.size(); i++)
             planes[i]->show(i == n);
         }
+
+        if (what == &dics)
+            link = dics.link,
+            notify(&link);
 
         if (what == &ones)
             link = ones.link,

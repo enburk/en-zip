@@ -4,10 +4,11 @@ action film\\action movie = боевик
 melodrama                 = мелодрама                      # 10+
 romantic comedy           = романтическая комедия
 thriller                  = триллер                        # 10+
+---
 western                   = вестерн                        # 10+
 spaghetti western         = спагетти-вестерн               # RARE+ # 16+
-bandito {Am.}             = бандит ~ (мексиканский)        # RARE+ # 16+ /// Заметьте, итал. bandito, а не исп. bandido. # RARE+
-
+bandito {Am.}             = бандит ~ (мексиканский)        # RARE+ # 16+ /// итал. bandito, а не исп. bandido # RARE+
+---
 animation                 = анимация, мультипликация, ~ живость, оживление # 10+
 animator                  = аниматор, мультипликатор       # 10+
 anime                     = аниме                          # 10+

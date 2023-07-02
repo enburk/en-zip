@@ -43,7 +43,7 @@ namespace studio::one
                 emplace(f);
         }
 
-        std::unordered_set<str> sensitive;
+        hashset<str> sensitive;
         for (auto [s,voc]: course_vocabulary)
         {
             str entry = s;
@@ -59,7 +59,7 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
 
-        std::unordered_set<res> unused_resources;
+        hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
             str abstract = simple(r.
@@ -252,12 +252,16 @@ namespace studio::one
                 link(r);
         }
 
-        for (auto& entry: course.entries)
-        for (str s: entry.vocabulary)
-        if  (sensitive.contains(s))
-            report::errors += bold(
-            red("sensless: ")) +
-            link(entry);
+//        for (auto& entry: course.entries)
+//        for (str s: entry.vocabulary)
+//        if  (sensitive.contains(s))
+//            report::errors += bold(
+//            red("sensless: ")) +
+//            link(entry);
+
+        sensecontrol(
+        course.entries,
+        data.resources);
 
         report::save();
     }

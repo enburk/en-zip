@@ -1,0 +1,41 @@
+public transport       = общественный транспорт               # 10+
+
+taxi                   = такси
+trolley//trolleybus    = троллейбус
+---
+bus @ auto             = автобус
+minibus                = микроавтобус
+school bus             = школьный автобус
+
+metro                  = метро
+the undeground\\subway = метро
+the tube {Br.}         = метро
+
+===
+
+station @ transport    = станция, вокзал
+bus station            = автовокзал
+bus stop               = автобусная остановка
+
+===
+passenger              = пассажир, пассажирский
+passenger seat         = пассажирское сиденье
+===
+---
+luggage\\baggage       = багаж
+baggage carousel       = багажная карусель, ~ ленточный транспортер # 16+
+: Passengers, please do not ~ leave your baggage unattended!
+
+business class         = бизнес-класс                         # POLIT- # TERM- # 14+
+economy class          = эконом-класс                         # POLIT- # TERM- # 14+
+
+===
+---
+escalator              = эскалатор
+lift\\elevator         = лифт
+: His elevator doesn't go ~ all the way to the top.
+: Her elevator does not go ~ all the way to the top.
+
+
+
+

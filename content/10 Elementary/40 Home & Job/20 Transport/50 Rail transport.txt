@@ -1,18 +1,19 @@
-rails              = рельсы, железная дорога
-monorail           = монорельс %% монорельсовая железная дорога
+rails @ railroad        = рельсы, железная дорога
 
-express            = скорый, экспресс %% поезд, автобус
+monorail                = монорельс %% монорельсовая железная дорога
+funicular               = фуникулёр                               # 10+
+express @ train         = скорый, экспресс %% поезд, автобус
+---
+tramway                 = трамвайные рельсы %% ''не'' трамвай
+tram/tramcar {Br.}      = трамвай
+streetcar/trolley {Am.} = трамвай
+aerial tramway          = канатная дорога                         /// ropeway
+---
+depot @ facility        = депо, склад, ~ автобусный/троллейбусный парк # TERM- # 10+
+depot @ station {Am.}   = станция %% автобусная или железнодорожная # 10+
 
-tramway            = трамвайные рельсы %% ''не'' трамвай
-tram/tramcar (Br.) = трамвай                            /// \\streetcar, trolley
-aerial tramway     = канатная дорога                    /// ropeway
+draisine                = дрезина                                 # TECH- # 10+
+buffer @ train          = буфер                                   # TECH- # 16+
 
-funicular          = фуникулёр                          # 10+ /// Иногда фуникулёр трудно отличить от трамвая. /// Glória Funicular, Lisbon
-
-depot              = депо, склад, ~ автобусный/троллейбусный парк # TERM- # 10+
-depot (Am.)        = станция %% автобусная или железнодорожная # 10+
-
-draisine           = дрезина                            # TECH- # 10+
-buffer             = буфер                              # TECH- # 16+
 
 

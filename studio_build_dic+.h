@@ -109,13 +109,15 @@ namespace studio::dic
             entries += r.title;
             entries.try_erase("+");
 
-            str s  = r.title; s.trimr("!?");
+            str s  = r.title; s.trimr(".!?");
             if (s != r.title) entries += s;
             if (s.starts_with("a "    )) entries += s.from (2); else
             if (s.starts_with("an "   )) entries += s.from (3); else
             if (s.starts_with("the "  )) entries += s.from (4); else
             if (s.starts_with("to be ")) entries += s.from (7); else
             if (s.starts_with("to "   )) entries += s.from (3); else
+            if (s.starts_with("His "  )) entries += "one's" + str(s.from(3)); else
+            if (s.starts_with("Her "  )) entries += "one's" + str(s.from(3)); else
             {}
 
             array<str> apostros; str a = u8"’";

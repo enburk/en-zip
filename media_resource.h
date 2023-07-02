@@ -103,7 +103,8 @@ namespace media
 
             abstract = title;
             if (sense != "")
-            abstract += "@" + sense;
+            abstract += "@" +
+                sense;
 
             entries += links.split_strip_by("][");
             options += optio.split_strip_by("##");

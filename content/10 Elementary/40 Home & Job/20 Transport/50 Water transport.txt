@@ -1,0 +1,60 @@
+port @ marine         = порт, гавань                               # 10+
+
+pier @ jetty          = пирс, дамба, мол                           # 10+
+
+container @ transport = контейнер                                  /// , ёмкость, сосуд
+container terminal    = контейнерный терминал                      # TERM- # 10+
+tanker @ ship         = танкер                                     # 10+
+---
+barge @ boat          = баржа                                      # 10+
+barge @ warship       = барка                                      # 10+
+---
+[sailing] yacht       = яхта
+[motor] yacht         = яхта
+yachtsman             = яхтсмен
+yacht club            = яхт-клуб                                   # TECH- # TERM-
+marina                = марина %% стоянка яхт                      # TECH- # TERM- # 16+
+
+===
+
+schooner              = шхуна                                      # 14+
+felucca               = фелука                                     # RARE+ # TECH+ # TERM+ # 18+
+junk @ boat           = джонка                                     # RARE+ # TECH+ # TERM+ # 18+
+pirogue               = пирога                                     # 18+
+skiff @ boat          = скиф %% тип лодки                          # RARE+ # TECH+ # TERM+ # 18+
+---
+gondola @ boat        = гондола                                    # 10+
+gondolier             = гондольер                                  # 10+
+barcarole|barcarolle  = баркарола %% песня венецианских гондольеров # RARE- # 16+
+gondola @ aero        = гондола %% кабина воздушного шара, дирижабля, канатной дороги
+---
+canal @ waterway      = канал ~ (искусственный)
+channel @ waterway    = канал ~ (естественный)
+channel @ tele        = канал связи, ~ канал (телевизионный), ~ источник (информации)
+the Suez Canal        = Суэцкий канал                              # TERM- # 10+
+the Panama Canal      = Панамский канал                            # TERM- # 10+
+the [English] Channel = Ла-Манш ~ (Английский канал)               # 10+
+---
+pilot @ nautical      = лоцман
+pilotage              = проводка судов, ~ пилотаж                  # TECH+ # TERM+ # 10+
+cabotage              = каботаж                                    # TECH+ # TERM+ # 18+ /// («от мыса к мысу») (плавание судов между портами одного государства)
+
+ballast @ ship        = балласт, грузить балластом, ~ устойчивость, придавать устойчивость # 10+
+buoy                  = буй                                        # 10+
+drift @ ship          = дрейф, дрейфовать                          # TECH- # TERM- # 10+
+keel @ ship           = киль                                       # 10+
+mast @ ship           = мачта
+propeller @ ship      = гребной винт                               # 10+
+
+tonnage               = тоннаж                                     # TECH- # TERM- # 18+
+waterline             = ватерлиния                                 # TECH- # TERM- # 10+
+
+===
+
+sonar                 = сонар, гидролокатор                        # TECH- # TERM- # 14+
+hydroacoustics        = гидроаккустика                             # TECH- # TERM- # 14+
+echolocation          = эхолокация                                 # TECH- # TERM- # 14+ /// у летучих мышей тоже
+compass @ nautical    = компас  %% ''в жаргоне моряков:'' компа́с
+
+
+

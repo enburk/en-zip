@@ -1,0 +1,31 @@
+
+bike//motorbike//motorcycle = мотоцикл, байк
+bicycle//bike               = велосипед
+
+biker @ moto                = байкер, ~ мотоциклист
+biker @ velo                = велосипедист
+
+===
+
+chopper @ bike              = чоппер %% также разговорное: ''вертолёт''
+moped                       = мопед
+
+[motor] scooter             = скутер, мотороллер
+[kick] scooter              = самокат
+
+tandem @ bike               = тандем
+saddle @ bike               = седло
+
+===
+
+cycle rickshaw              = велорикша # TECH+
+auto rickshaw//tuk-tuk      = моторикша # TECH+
+
+snowmobile                  = снегоход
+
+chrome @ bike               = хромированный, хром # 10+
+
+
+
+
+

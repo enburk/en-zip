@@ -1,0 +1,42 @@
+air                    = воздух
+
+airport                = аэропорт
+aerodrome\\airdrome %% old-fashioned = аэродром
+
+airliner               = авиалайнер
+airline                = авиакомпания
+air lane//airway       = авиалиния, воздушная трасса
+air corridor           = воздушный корридор                    # TECH- # TERM- # 10+
+
+===
+
+terminal               = терминал                              # 10+
+hangar                 = ангар                                 # 10+
+
+helicopter             = вертолёт                              # 10+
+rotor @ copter         = ротор ~ (несущий винт)                # TECH+ # 10+
+quadcopter             = квадрокоптер                          # TECH+ # 10+
+biplane                = биплан                                # TECH- # 10+
+propeller @ aero       = пропеллер, воздушный винт             /// винт (корабля)
+---
+pilot @ plane          = пилот, лётчик
+navigator @ plane      = штурман                               # 10+
+navigation             = навигация                             # 10+
+orientation            = ориентация                            # 10+
+disorientation         = дезориентация                         # 10+
+
+radar                  = радар                                 # 10+
+autopilot              = автопилот
+avionics               = авионика ~ (бортовая электроника)     # TECH+ # 18+
+
+vertical stabilizer    = вертикальный стабилизатор             # TECH- # 10+
+turbulence             = турбулентность, ~ беспокойство, волнение
+
+aerostat               = аэростат                              # TECH- # 10+
+aerobatics             = высший пилотаж ~ (аэробатика)         # 12+
+aerodynamics           = аэродинамика, ~ аэродинамические характеристики # MATH- # TECH- # 10+
+air traffic controller = авиадиспетчер                         # TERM- # 10+
+
+
+
+

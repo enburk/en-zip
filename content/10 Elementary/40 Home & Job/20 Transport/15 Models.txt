@@ -1,0 +1,27 @@
+model @ car         = модель, тип, ~ марка конструкции, ~ макет
+
+saloon [car]\\sedan = седан  # TECH-
+hatchback           = хетчбэк # TECH-
+crossover           = кроссовер # TECH-
+minivan {Am.}       = минивэн # TECH+ /// Br – people carrier
+pickup [truck]      = пикап  # TECH-
+buggy               = багги  # TECH- # 10+
+
+===
+
+Jaguar              = «ягуар» # TECH- # TERM-
+Rolls-Royce         = «роллс-ройс» # TECH- # TERM-
+
+Cadillac            = «кадиллак» # TECH- # TERM-
+Mustang             = «мустанг» # TECH- # TERM-
+Buick               = «бьюик» # TECH+ # TERM+
+
+BMW                 = «БМВ»  # TECH- # TERM-
+Mercedes[-Benz]     = «мерседес» # TECH- # TERM-
+
+Alfa Romeo          = «альфа-ромео» # TECH- # TERM-
+Ferrari             = «феррари» # TECH- # TERM-
+
+
+
+

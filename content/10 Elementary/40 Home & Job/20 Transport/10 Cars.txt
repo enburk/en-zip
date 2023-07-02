@@ -1,40 +1,54 @@
-car\\car/automobile = автомобиль         /// motor, motor car - British English, old-fashioned or humorous
-electric car        = электромобиль
+car\\car/automobile          = автомобиль                         /// motor, motor car - British English, old-fashioned or humorous
 
-traffic             = движение, транспортный поток /// торговля, транспортирование
-smog                = смог               # 10+
-boom barrier        = шлагбаум           /// /boom gate
-siren               = сирена
+traffic                      = движение, транспортный поток       /// торговля, транспортирование
+smog                         = смог                               # 10+
+boom barrier                 = шлагбаум                           /// /boom gate
+siren @ car                  = сирена
 
-parking             = парковка
-parallel parking    = параллельная парковка # TERM- # 16+
+parking @ lot                = парковка
+parallel parking             = параллельная парковка              # TERM- # 16+
 
-auto show           = автосалон  %% в знач. выставка автомобилей
-concept car         = концепт-кар        # TECH- # 10+
-test drive          = тест-драйв         # TERM- # 10+
+auto show                    = автосалон  %% в знач. выставка автомобилей
+concept car                  = концепт-кар                        # TECH- # 10+
+test drive                   = тест-драйв                         # TERM- # 10+
 
-model               = модель
-saloon [car]\\sedan = седан              # TECH-
-hatchback           = хетчбэк            # TECH-
-crossover           = кроссовер          # TECH-
-minivan (Am.)       = минивэн            # TECH+ /// Br – people carrier
-pickup [truck]      = пикап              # TECH-
-buggy               = багги              # TECH- # 10+
+bumper @ car                 = бампер
+pedal @ car                  = педаль
+throttle//accelerator//gas pedal {Am.} @ car = педаль газа %% разговорное: газ, акселератор # TECH-
 
-trailer             = трейлер, прицеп, автоприцеп
-monocoque           = монокок            # TECH+ # TERM+ # 18+
+trailer @ car                = трейлер, прицеп, автоприцеп
+monocoque @ car              = монокок                            # TECH+ # TERM+ # 18+
+electric car                 = электромобиль
 
-Jaguar              = «ягуар»            # TECH- # TERM-
-Rolls-Royce         = «роллс-ройс»       # TECH- # TERM-
+clearance @ car              = клиренс, ~ дорожный просвет        # TECH- # 10+
+aquaplaning                  = авквапланирование                  # TECH- # 10+
+crash test                   = краш-тест                          # TECH- # 10+ /// (аварийное испытание)
 
-Cadillac            = «кадиллак»         # TECH- # TERM-
-Mustang             = «мустанг»          # TECH- # TERM-
-Buick               = «бьюик»            # TECH+ # TERM+
+climate control              = климат-контроль                    # TECH+ # TERM+ # 10+
+cruise control               = круиз-контроль                     # TECH+ # TERM+ # 10+
+immobiliser\\immobilizer     = иммобилайзер/иммобилизатор         # TECH+ # TERM+ # 18+
 
-BMW                 = «БМВ»              # TECH- # TERM-
-Mercedes[-Benz]     = «мерседес»         # TECH- # TERM-
+radiator @ car               = радиатор                           # 10+
+grill|grille @ car           = решетка радиатора                  # 10+
 
-Alfa Romeo          = «альфа-ромео»      # TECH- # TERM-
-Ferrari             = «феррари»          # TECH- # TERM-
+moulding\\molding            = молдинг                            # TECH+ # 18+
+aerography                   = аэрография                         # 10+
+
+speedometer %% informal: speedo = спидометр                          # 10+
+tachometer                   = тахометр                           # TECH+ # 10+
+odometer                     = одометр %% разговорное: счётчик    # TECH+ # 10+
+
+diesel                       = дизель, дизельное топливо          # 10+
+turbo-diesel                 = турбодизель                        # TECH- # 10+
+antifreeze                   = антифриз                           # TECH- # 16+
+
+car mechanic\\auto mechanic  = автомеханик, автослесарь           # TECH+
+vulcanisation\\vulcanization = вулканизация                       # TECH+ # 18+
+
+transmission                 = передача, привод, ~ коробка передач, ~ трансмиссия # TECH+ # 14+
+automatic transmission       = автоматическая коробка (переключения) передач %% (АКП/АКПП) # TECH+ # 10+
+
+cylinder block               = блок цилиндров                     # TECH+ # TERM+ # 10+
+shock absorber               = амортизатор                        # TECH+ # TERM+ # 10+
 
 

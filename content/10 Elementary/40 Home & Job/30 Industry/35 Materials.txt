@@ -3,37 +3,39 @@ material        = материальный, ~ материал, материя
 metallic        = металлический
 steel           = сталь, стальной                                /// жестокий, ожесточать, огниво
 duralumin       = дюраль/дюралюминий                             # TECH+ # 16+
-
-asphalt         = асфальт, асфальтобетон
+---
+asphalt         = асфальт, ~ асфальтобетон
 asphalt/bitumen = битум                                          # 16+
 asphalt jungle  = асфальтовые джунгли                            # RARE- # 16+
 
 celluloid       = целлулоид                                      # 18+
 cement          = цемент
-faience|faïence = фаянс                                          # RARE- # 18+
+faience||faïence = фаянс                                          # RARE- # 18+
 
 laminate        = ламинат                                        # 10+
-plank           = планка, доска                                  /// убрать рейку (это lath, batten)
+plank @ tech           = планка, доска                                  /// убрать рейку (это lath, batten)
 
 consistence     = консистенция                                   # 10+
 concentration   = концентрация                                   # 10+
 proportion      = пропорция, соотношение, доля
-fraction        = фракция, доля, часть                           # TECH+ # 18+
+fraction @ tech       = фракция, доля, часть                           # TECH+ # 18+
 
 corrosion       = коррозия                                       # 10+
 deformation     = деформация                                     # 10+
 
 elasticity      = эластичность                                   # 10+
 hygroscopicity  = гигроскопичность %% способность поглощать влагу # TECH+ # 18+
+
 porous          = пористый                                       # 10+
-abrasive        = сдирающий, шлифовальный, абразивный, абразив   # TECH+ # 18+
+abrasive        = сдирающий, шлифовальный, ~ абразивный, абразив   # TECH+ # 18+
 composite       = композит                                       # TECH+ # 18+
 
 spray           = распылитель, разбрызгиватель, спрей            # 10+ /// Другие значения: распылять, разбрызгивать /// ветка, побег
 emulsion        = эмульсия                                       # TECH- # 10+
+
 aerosol         = аэрозоль                                       # 10+
 aerogel         = аэрогель                                       # TECH+ # 16+
-
+---
 resin           = смола, канифоль %% ''не'' резина               # TECH+ # 18+
 epoxy [resin]   = эпоксидная смола                               # TECH+ # 18+
 

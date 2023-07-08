@@ -109,100 +109,104 @@ namespace studio::one
         }
     }
 
-    void sensecontrol
-    (
-        array<Ent>& entries,
-        array<Res>& resources
-    )
+    struct sensecontrol
     {
         hashmap<str, hashmap<ent, bool>> entrification;
         hashmap<str, hashmap<res, bool>> pronunciation;
         hashmap<str, hashmap<res, bool>> visualisation;
 
-        for (auto& entry: entries)
+        sensecontrol
+        (
+            array<Ent>& entries,
+            array<Res>& resources
+        )
         {
-            if (entry.sense != "")
+            for (auto& entry: entries) if (entry.sense != "")
+            for (str s: entry.vocabulary)
             {
-                for (str s: entry.vocabulary)
+                str sense = s.extract_from("@");
+                entrification[s][&entry] = false;
+            }
+
+            for (auto& r: resources)
+            {
+                if (r.sense == "") continue;
+                str abstract = simple(r.
+                    abstract);
+
+                str sense = abstract.
+                    extract_from("@");
+
+                if (r.kind == "video"
+                or  r.kind == "audio"
+                and r.options.contains("sound"))
+                visualisation[abstract][&r] = false; else
+                pronunciation[abstract][&r] = false;
+            }
+
+            for (auto& entry: entries)
+            {
+                if (entry.sense == "")
                 {
-                    str sense = s.extract_from("@");
-                    entrification[s][&entry] = false;
+                    for (str s: entry.vocabulary)
+                    if (pronunciation.contains(s)
+                    or  visualisation.contains(s))
+                    {
+                        report::errors += bold(
+                        red("sensless: ")) +
+                        link(entry);
+
+                        for (auto [e,_]: entrification[s]) if (e != &entry)
+                            report::errors += link(e);
+
+                        for (auto [r,_]: pronunciation[s])
+                            report::errors += link(r);
+
+                        for (auto [r,_]: visualisation[s])
+                            report::errors += link(r);
+                    }
+                }
+                else
+                {
+                    for (str s: entry.vocabulary)
+                    {
+                        str sense = s.extract_from("@");
+
+                        for (auto& [r, ok]: pronunciation[s])
+                            if (r->sense == sense)
+                                ok = true;
+
+                        for (auto& [r, ok]: visualisation[s])
+                            if (r->sense == sense)
+                                ok = true;
+                    }
                 }
             }
         }
 
-        for (auto& r: resources)
+        void report_unused (hashset<res>& unused_resources)
         {
-            if (r.sense == "") continue;
-            str abstract = simple(r.
-                abstract);
-
-            str sense = abstract.
-                extract_from("@");
-
-            if (r.kind == "video"
-            or  r.kind == "audio"
-            and r.options.contains("sound"))
-            visualisation[abstract][&r] = false; else
-            pronunciation[abstract][&r] = false;
-        }
-
-        for (auto& entry: entries)
-        {
-            if (entry.sense == "")
+            for (auto X: {&pronunciation, &visualisation})
+            for (auto& [s, x]: *X) for (auto& [R, ok]: x)
+            if  (not ok and unused_resources.contains(R))
             {
-                for (str s: entry.vocabulary)
-                if (pronunciation.contains(s)
-                or  visualisation.contains(s))
-                {
-                    report::errors += bold(
-                    red("sensless: ")) +
-                    link(entry);
+                unused_resources.erase(R);
 
-                    for (auto [e,_]: entrification[s]) if (e != &entry)
-                        report::errors += link(e);
+                report::errors += bold(
+                red("unused sense: ")) +
+                link(R);
 
-                    for (auto [r,_]: pronunciation[s])
-                        report::errors += link(r);
+                for (auto [e,_]: entrification[s])
+                    report::errors += link(e);
 
-                    for (auto [r,_]: visualisation[s])
-                        report::errors += link(r);
-                }
-            }
-            else
-            {
-                for (str s: entry.vocabulary)
-                {
-                    str sense = s.extract_from("@");
+                for (auto [r,_]: pronunciation[s]) if (r != R)
+                    report::errors += link(r);
 
-                    for (auto& [r, ok]: pronunciation[s])
-                        if (r->sense == sense)
-                            ok = true;
-
-                    for (auto& [r, ok]: visualisation[s])
-                        if (r->sense == sense)
-                            ok = true;
-                }
+                for (auto [r,_]: visualisation[s]) if (r != R)
+                    report::errors += link(r);
             }
         }
-
-        for (auto X: {&pronunciation, &visualisation})
-        for (auto& [s, x]: *X) for (auto& [R, ok]: x) if (not ok)
-        {
-            report::errors += bold(
-            red("unused sense: ")) +
-            link(R);
-
-            for (auto [e,_]: entrification[s])
-                report::errors += link(e);
-
-            for (auto [r,_]: pronunciation[s]) if (r != R)
-                report::errors += link(r);
-
-            for (auto [r,_]: visualisation[s]) if (r != R)
-                report::errors += link(r);
-        }
-    }
+    };
 
     void suggestions
     (

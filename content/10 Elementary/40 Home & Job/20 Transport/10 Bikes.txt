@@ -2,16 +2,12 @@
 bike//motorbike//motorcycle = мотоцикл, байк
 bicycle//bike               = велосипед
 
-biker @ moto                = байкер, ~ мотоциклист
-biker @ velo                = велосипедист
-
 ===
-
-chopper @ bike              = чоппер %% также разговорное: ''вертолёт''
-moped                       = мопед
 
 [motor] scooter             = скутер, мотороллер
 [kick] scooter              = самокат
+
+moped                       = мопед
 
 tandem @ bike               = тандем
 saddle @ bike               = седло

@@ -15,8 +15,8 @@ phobia                       = фобия
 mania                        = мания
 claustrophobia               = клаустрофобия
 kleptomania                  = клептомания
-
-complex                      = комплекс
+---
+complex @ psycho                     = комплекс
 Oedipus complex              = эдипов комплекс
 
 latent                       = латентный, скрытый

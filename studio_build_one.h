@@ -43,21 +43,22 @@ namespace studio::one
                 emplace(f);
         }
 
-        hashset<str> sensitive;
         for (auto [s,voc]: course_vocabulary)
         {
-            str entry = s;
-            str sense = entry.extract_from("@");
-            if (sense != "") sensitive.
-            emplace(entry);
-
-            if (voc.entries.size() < 2) continue;
-            for (ent entry: voc.entries)
-            report::duples += link(entry);
-            report::duples += "";
+            if (voc.entries.size() >= 2)
+            {
+                for (ent entry: voc.entries)
+                report::duples += link(entry);
+                report::duples += "";
+            }
         }
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
+
+        sensecontrol
+        sensecontrol(
+        course.entries,
+        data.resources);
 
         hashset<res> unused_resources;
         for (auto& r: data.resources)
@@ -104,9 +105,9 @@ namespace studio::one
                     it->second.resources += &r,
                     used = true;
 
-                str sense = s.extract_from("@");
-                if (sense != "") sensitive.
-                    emplace(s);
+                //str sense = s.extract_from("@");
+                //if (sense != "") sensitive.
+                //    emplace(s);
             }
 
             if (used or
@@ -129,6 +130,8 @@ namespace studio::one
             unused_resources.
                 emplace(&r);
         }
+
+        sensecontrol.report_unused(unused_resources);
 
         std::unordered_set<res> single_videos;
 
@@ -251,17 +254,6 @@ namespace studio::one
                 report::videoq +=
                 link(r);
         }
-
-//        for (auto& entry: course.entries)
-//        for (str s: entry.vocabulary)
-//        if  (sensitive.contains(s))
-//            report::errors += bold(
-//            red("sensless: ")) +
-//            link(entry);
-
-        sensecontrol(
-        course.entries,
-        data.resources);
 
         report::save();
     }

@@ -1,32 +1,33 @@
-electronics                 = электроника
+electronics                  = электроника
 
-electrical engineering      = электротехника   # TERM+
+electrical engineering       = электротехника  # TERM+
 electric motor//electromotor = электродвигатель, электромотор
 
-electric                    = электрический
-electrician                 = электрик
+electric                     = электрический
+electrician                  = электрик
 
-adapter @ device                    = адаптер          # 10+
-contact @ electro                    = контакт, контактный /// соприкосаться, связываться, знакомый (деловой)
+adapter @ device             = адаптер         # 10+
+contact @ electro            = контакт, контактный /// соприкосаться, связываться, знакомый (деловой)
 ---
-accumulator @ electro                = аккумулятор
-generator @ electro                   = генератор
-dynamo                      = динамо-машина/динамо # HISTORY- # TECH- # 10+
-magneto                     = магнето %% вид генератора # TECH+ # 18+
+accumulator @ electro        = аккумулятор
+generator @ electro          = генератор
+dynamo                       = динамо-машина/динамо # HISTORY- # TECH- # 10+
+magneto                      = магнето %% вид генератора # TECH+ # 18+
 
-rotor @ electro                       = ротор            # TECH+ # TERM+ # 18+
-stator                      = статор           # TECH+ # TERM+ # 18+
+rotor @ electro              = ротор           # TECH+ # TERM+ # 18+
+stator                       = статор          # TECH+ # TERM+ # 18+
 ---
-static electricity          = статическое электричество # 10+
-antistatic agent            = антистатик       # 16+
+static electricity           = статическое электричество # 10+
+antistatic agent             = антистатик      # 16+
 
-diode                       = диод             # TECH- # 18+
-transistor                  = транзистор       # TECH- # 16+
-relay @ electro                       = реле             # TECH- # 16+
+diode                        = диод            # TECH- # 18+
+transistor                   = транзистор      # TECH- # 16+
+relay @ electro              = реле            # TECH- # 16+
 
-microelectronics            = микроэлектроника # 16+
-microcontroller             = микроконтроллер  # IT+ # TERM+ # 16+
-microprocessor              = микропроцессор   # IT+ # TERM+ # 16+
+microelectronics             = микроэлектроника # 16+
+microcontroller              = микроконтроллер # IT+ # TERM+ # 16+
+microprocessor               = микропроцессор  # IT+ # TERM+ # 16+
 
-calculator                  = калькулятор, ~ вычислитель
+calculator                   = калькулятор, ~ вычислитель
+
 

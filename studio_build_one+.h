@@ -156,14 +156,17 @@ namespace studio::one
                         red("sensless: ")) +
                         link(entry);
 
+                        if (entrification.contains(s))
                         for (auto [e,_]: entrification[s]) if (e != &entry)
-                            report::errors += link(e);
+                        report::errors += link(e);
 
+                        if (pronunciation.contains(s))
                         for (auto [r,_]: pronunciation[s])
-                            report::errors += link(r);
+                        report::errors += link(r);
 
+                        if (visualisation.contains(s))
                         for (auto [r,_]: visualisation[s])
-                            report::errors += link(r);
+                        report::errors += link(r);
                     }
                 }
                 else
@@ -172,13 +175,13 @@ namespace studio::one
                     {
                         str sense = s.extract_from("@");
 
+                        if (pronunciation.contains(s))
                         for (auto& [r, ok]: pronunciation[s])
-                            if (r->sense == sense)
-                                ok = true;
+                        if (r->sense == sense) ok = true;
 
+                        if (visualisation.contains(s))
                         for (auto& [r, ok]: visualisation[s])
-                            if (r->sense == sense)
-                                ok = true;
+                        if (r->sense == sense) ok = true;
                     }
                 }
             }
@@ -196,14 +199,17 @@ namespace studio::one
                 red("unused sense: ")) +
                 link(R);
 
+                if (entrification.contains(s))
                 for (auto [e,_]: entrification[s])
-                    report::errors += link(e);
+                report::errors += link(e);
 
+                if (pronunciation.contains(s))
                 for (auto [r,_]: pronunciation[s]) if (r != R)
-                    report::errors += link(r);
+                report::errors += link(r);
 
+                if (visualisation.contains(s))
                 for (auto [r,_]: visualisation[s]) if (r != R)
-                    report::errors += link(r);
+                report::errors += link(r);
             }
         }
     };

@@ -1,7 +1,6 @@
 public transport       = общественный транспорт               # 10+
 
 taxi                   = такси
-trolley//trolleybus    = троллейбус
 ---
 bus @ auto             = автобус
 minibus                = микроавтобус

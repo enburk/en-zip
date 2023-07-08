@@ -12505,7 +12505,7 @@ Thai cat.wav
 the alpha and the omega.wav
 the Andes [=].wav
 the Indian Ocean [=].wav
-the Mesolytic [=].wav
+the Mesolytic ## =.wav
 the Nile River.wav
 the Paleolithic [=].wav
 the Panama Canal [=].wav
@@ -22954,7 +22954,7 @@ The Swan (No. 17) [antipode] ## date 1914-1915 ## qropt! {{Hilma af Klint}}.jpg
 >>> ../datae/imagery
 circles or spiral~! [illusion][optical illusion] {{Mysid $$wiki}}.png
 >>> ../datae\imagery/my {{$$}}
-forms of the verb to be @ simple past ## qropt!.png
+forms of the verb to be @ simple past ## qropt! ## sic!.png
 forms of the verb to be @ simple present ## qropt! ## sic!.png
 negative forms of the verb to be ## sic! ## qropt!.png
 personal pronouns (objective case) ## qropt! ## sic!.png
@@ -23015,7 +23015,7 @@ skysurfing ## qrop t14 b11 {{Photo.. Steve Cadman $cc-by-sa}}.jpg
 sledge ## qrop q {{Photo.. Alessandra Meniconzi}} Frozen Land.jpg
 Tutankhamun's tomb [Tutankhamun].jpg
 Viking village replica, _Iceland [village].jpg
-vodka martini ### james_bond_roger_moore_getty.jpg
+vodka martini [James Bond][Bondesque] ### james_bond_roger_moore_getty.jpg
 Yankees {{}} New York Yankees Manager Billy Martin argues with umpire Durwood Merrill.jpg
 >>> ../datae/photo a-n
 >>> ../datae\photo a-n/Abadzic {{Photo.. Stanko Abadžić}}
@@ -23238,7 +23238,7 @@ globalization.jpg
 nest.jpg
 pot.jpg
 >>> ../datae\photo a-n/Maiquez {{Photo.. Alfredo Maiquez}}
-Cargo Ship on Gaillard Cut, _Panama Canal [the Panama Canal] ## qrop t19 b6.jpg
+Cargo Ship on Gaillard Cut, _Panama Canal [the Panama Canal][canal@waterway] ## qrop t19 b6.jpg
 >>> ../datae\photo a-n/Mapplethorpe [Mapplethorpian] {{Photo.. Robert Mapplethorpe}}
 1980 # _Lisa _Lyon, 1980 [].jpg.uid-zps
 amaryllis ## date 1985.jpg
@@ -24034,6 +24034,9 @@ carbon nanotubes [nanotube][nanotechnology] {{Photo.. Ekaterina Shilova $dreamst
 corn @ maize {{Photo.. Cleo $dreamstime 2494403}}.jpg
 dam @ water {{Photo.. Uhg1234 $dreamstime 50429903}}.jpg
 drydock [dock@drydock] ## crop b15 ## qrop t10 b23 {{Photo.. Slawomir Pryc $dreamstime 13062091}}.jpg
+>>> ../datae\photo_dreamstime\industry/electro
+calculator ## noqrop {{Photo.. Haveseen $dreamstime 1469306}}.jpg
+electric power lines [electric][power line] {{Photo.. Radub85 $dreamstime 26200306}}.jpg
 industrialization [industrialisation] {{Photo.. Eric Gevaert $dreamstime 1920863}}.jpg
 industry {{Photo.. David Smith $dreamstime 3636686}}.jpg
 macaroons [assortment][variety] {{Photo.. Alexandra Thompson $dreamstime 31324178}}.jpg
@@ -24041,7 +24044,15 @@ made in China {{Photo.. Drx $dreamstime 5204063}}.jpg
 made in China {{Photo.. Zagorskid $dreamstime 4968201}}.jpg
 >>> ../datae\photo_dreamstime\industry/materials
 acetylene dissolved in acetone [acetylene][ethyne][dissolved] ## crop l2 r12 {{Photo.. Paulbroad $dreamstime 13402625}}.jpg
-silica gel [silica][silica gel][desiccant] ## qrop l40 b20 {{Photo.. Atman $dreamstime 36175197}}.jpg
+cement {{Photo.. rittaewa $dreamstime 59334767}}.jpg
+chain links [chain@tech][steel] {{Photo.. Sinisa Botas $dreamstime 15016679}}.jpg
+deformation {{Photo.. Mikhail Olykainen $dreamstime 8451533}} Copper scin plate.jpg
+emulsion {{Photo.. Parinya Niranatlumpong $dreamstime 26608356}} Pour of Red Color Printing Ink.jpg
+metallic {{Photo.. Zoran Karapancev $dreamstime 2167916}} side grill.jpg
+silica gel [silica][silica gel][desiccant][hygroscopic] ## qrop l40 b20 {{Photo.. Atman $dreamstime 36175197}}.jpg
+silica gel [silica][silica gel][desiccant][hygroscopic] {{Photo.. Atman $dreamstime 36175197}}.jpg
+sponge [porous] ## qrop qr {{Photo.. Zkruger $dreamstime 42026008}}.jpg
+spray {{Photo.. Vevesoran $dreamstime 16747706}}.jpg
 packages [package] {{Photo.. Rene Van Den Berg $dreamstime 36505527}}.jpg
 postindustrial {{Photo.. Tornado144 $dreamstime 45035925}} Udarnik.jpg
 scheme [specification] {{Photo.. Sergey  Gavrilichev $dreamstime 17585812}}.jpg
@@ -24698,12 +24709,12 @@ brake and throttle [automatic transmission] ## qrop l23 r2 {{Photo.. Gargantiopa
 brake and throttle [pedal@car] ## qrop l6 r21 ## qropt! {{Photo.. Kyoungil Jeon $dreamstime 42970222}}.jpg
 >>> ../datae\photo_dreamstime\transport\cars/brands
 1938 _Buick Special [Buick] ## qrop l24 ## qropt! {{Photo.. Olivier Le Queinec $dreamstime 43058933}} ### retro street rod.jpg
-Alfa Romeo ## qrop l4 r1 b29 {{Photo.. Luis2007 $dreamstime 32089666}}.jpg
+Alfa Romeo ## sic! ## qrop l4 r1 b29 {{Photo.. Luis2007 $dreamstime 32089666}}.jpg
 Cadillac tailfin [+][tail fin] ## qrop l22 r11 {{Photo.. Len Green $dreamstime 6172915}}.jpg
 Ferrari ## qrop l13 r12 ## qropt! {{Photo.. Stelios Kyriakides $dreamstime 51872183}}.jpg
 Jaguar ## qrop ql {{Photo.. Dmytro Surkov $dreamstime 19536256}}.jpg
-Mersedes Benz {{Photo.. Derektenhue $dreamstime 16898533}}.jpg
-Mustang ## qrop ql {{Photo.. St3fano $dreamstime 18141729}}.jpg
+Mercedes-Benz [Mercedes@car brand] ## qropt! ## qrop l26 {{Photo.. Derektenhue $dreamstime 16898533}}.jpg
+Mustang [mustang@car] ## qrop r27 ## qropt! {{Photo.. St3fano $dreamstime 18141729}}.jpg
 Rolls-Royce mascot [+] ## qrop ql {{Photo.. Ericcrama $dreamstime 23576935}}.jpg
 cabriolet ## qrop l36 r4 ## qropt! {{Photo.. Michael Shake $dreamstime 63357}}.jpg
 car repair [repair][car mechanic][auto mechanic] ## qrop l7 r9 ## qropt! {{Photo.. Dezayin $dreamstime 49761757}}.jpg
@@ -24747,7 +24758,7 @@ caravel ## qrop qr {{Photo.. Fabrizio Troiani $dreamstime 5514890}} Azulejos.jpg
 catamaran ## qrop l12 r23 {{Photo.. Suateracar $dreamstime 34840428}}.jpg
 compass @ magnetic ## qrop l20 r14 {{Photo.. Alexandr Makarov $dreamstime 23398745}}.jpg
 compass @ nautical ## qrop l15 r19 {{Photo.. Buruhtan $dreamstime 52240794}} ### компа́с.jpg
-container terminal ## qrop ql {{Photo.. Anekoho $dreamstime 29195915}}.jpg
+container terminal [terminal@container] ## qrop ql ## crop r20 {{Photo.. Anekoho $dreamstime 29195915}}.jpg
 containers [container@transport] ## qrop l15 r27 {{Photo.. Lawrence Wee $dreamstime 6784294}}.jpg
 cruise ship [cruise] ## qrop ql {{Photo.. Aliaksandr Nikitsin $dreamstime 6150324}}.jpg
 drift @ ship ## qrop ql {{Photo.. Maigi $dreamstime 919140}}.jpg
@@ -24771,7 +24782,7 @@ passengers [passenger] ## qrop ql {{Photo.. Dimitry Romanchuck $dreamstime 28028
 pontoon ## qrop t20 b5 {{Photo.. Olegmit $dreamstime 6496867}}.jpg
 public transport ## qrop l5 r5 ## qropt! {{Photo.. Robin Geys $dreamstime 11497873}}.jpg
 >>> ../datae\photo_dreamstime\transport/rail
-aerial tramway ## qrop ql {{Photo.. Ruslan Kudrin $dreamstime 37777207}}.jpg
+aerial tramway [aerial lift][aerial tram][sky tram][aerial cablecar][aerial cableway] ## qrop ql ## crop r14 {{Photo.. Ruslan Kudrin $dreamstime 37777207}}.jpg
 Grand Central Station, New York [station@transport] ## qrop l15 r18 {{Photo.. Philcold $dreamstime 15938004}}.jpg
 locomotive ## qrop qr {{Photo.. Marco Saracco $dreamstime 30673489}}.jpg
 metro ## qrop ql {{Photo.. Kateleigh $dreamstime 1154959}}.jpg
@@ -24782,7 +24793,7 @@ tramway ## qrop q {{Photo.. Marcosborne $dreamstime 33030233}}.jpg
 undeground~subway ## qrop ql {{Photo.. Pixcom $dreamstime 43591141}}.jpg
 viaduct ## qrop ql {{Photo.. Carmentianya $dreamstime 5022282}} ### steam train.jpg
 transcontinental ## qrop l9 r23 {{Photo.. Alexaldo $dreamstime 43366295}}.jpg
-trolleybus [trolley bus] ## qrop qr {{Photo.. Juri Bizgajmer $dreamstime 59689984}}.jpg
+trolleybus [trolley bus][trolley@bus] ## qrop qr {{Photo.. Juri Bizgajmer $dreamstime 59689984}}.jpg
 tunnel ## qrop l15 t2 r23 {{Photo.. Vnlit $dreamstime 16195057}}.jpg
 turbine ## qrop qr {{Photo.. Alain Juteau $dreamstime 2498406}}.jpg
 turbine {{Photo.. Rickwpeters $dreamstime 18739425}}.jpg

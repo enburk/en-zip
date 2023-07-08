@@ -2,7 +2,8 @@ polysemic
 ---
 trolleybus||trolley [bus] = тролейбус
 trolley [car]//streetcar {Am.} = трамвай %% в брит. англ. tram
-trolley\\[shopping] cart  = тележка для покупок
+trolley ~ {Br.} @ cart    = тележка для покупок
+[shopping] cart ~ {Am.}   = тележка для покупок
 ---
 mole @ pier               = мол
 mole @ animal             = крот
@@ -48,6 +49,7 @@ express @ convey          = выражать
 expression @ emotion      = экспрессия
 expression @ idiom        = выражение
 : Nobody else ever called me a glorious young beast. I like that. ~ Glorious young beast '''expresses''' exactly what I like to be.
+
 
 
 

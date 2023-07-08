@@ -38,6 +38,9 @@ namespace studio::one
             course_vocabulary[s].
             entries += &entry;
 
+            str sense =
+            s.extract_from("@");
+
             for (str f: forms(s))
             course_vocabulary_forms.
                 emplace(f);
@@ -65,6 +68,20 @@ namespace studio::one
         {
             str abstract = simple(r.
                 abstract);
+
+            if (r.kind == "audio" and r.sense == ""
+            and sensecontrol.entrification.contains(abstract) and
+            not sensecontrol.pronunciation.contains(abstract))
+            {
+                for (auto [entry,_]: sensecontrol.entrification[abstract])
+                for (str s: entry->vocabulary)
+                {
+                    auto it = course_vocabulary.find(s);
+                    if (it != course_vocabulary.end())
+                        it->second.resources += &r;
+                }
+                continue;
+            }
 
             array<str>
             resource_vocabulary;
@@ -104,10 +121,6 @@ namespace studio::one
                 if (it != course_vocabulary.end())
                     it->second.resources += &r,
                     used = true;
-
-                //str sense = s.extract_from("@");
-                //if (sense != "") sensitive.
-                //    emplace(s);
             }
 
             if (used or

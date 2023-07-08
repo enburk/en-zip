@@ -83,11 +83,6 @@ namespace content::out
             s.replace_all(mdash, "---");
             s.replace_all(ndash, "--");
 
-            if (s.starts_with(": ")) {
-                vocabulary += s.from(2);
-                en += s.from(2);
-                return; }
-
             str
             commt = s.extract_from("%%");
             sense = s.extract_from("@");
@@ -95,6 +90,16 @@ namespace content::out
             if (sense.contains("{")
             or  sense.contains("}"))
             errors += "SENSE: " + sense;
+
+            if (s.starts_with(": "))
+            {
+                s = s.from(2);
+                if (sense != "")
+                s += "@" + sense;
+                vocabulary += s;
+                en += s;
+                return;
+            }
 
             if (s.contains(
             one_of ("/|{}()[]")))

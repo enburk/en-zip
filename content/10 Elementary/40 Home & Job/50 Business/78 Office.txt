@@ -1,16 +1,39 @@
-office         = офис, кабинет ~ должность, пост
+office                     = офис, кабинет ~ должность, пост
 
-badge          = значок, бейдж/бейджик
-laminated      = ламинированный                                     # 10+
+badge                      = значок, бейдж/бейджик
+laminated                  = ламинированный                         # 10+
 
-marker         = маркер                                             # 10+ /// marker  указатель, знак
-shredder       = шредер                                             # RARE- # 10+
-stapler        = степлер                                            # 10+
-staple remover = антистеплер                                        # 10+
+marker                     = маркер                                 # 10+ /// marker  указатель, знак
+shredder                   = шредер                                 # RARE- # 10+
+stapler                    = степлер                                # 10+
+staple remover             = антистеплер                            # 10+
 
-photocopy      = ксерокопия                                         # 10+
-photocopier %% Am. usually: copier = копировальный аппарат, ксерокс                     # 10+
+cooler                     = кулер                                  # 10+
 
-cooler         = кулер                                              # 10+
+===
+photocopy                  = ксерокопия                             # 10+
+photocopier %% Am. usually: copier = копировальный аппарат, ксерокс         # 10+
+Xerox                      = ксерокс, ксерокопия
+===
+= %% Ксерокс – название ~ торговой марки # 10+
+= вот еще примеры ~ торговых марок: # 10+
+===
+
+Jacuzzi                    = джакузи                                # 10+ /// 8
+Frisbee                    = фрисби                                 # 10+ /// (летающий диск)
+Vaseline                   = вазелин                                # 10+
+aqualung %% Am. also: Aqualung = акваланг                               # 10+ /// 8
+Ping-Pong                  = пинг-понг                              # 10+
+
+linoleum                   = линолеум                               # 10+
+cellophane                 = целлофан, ~ целлофановый               # 10+
+thermos                    = термос                                 # 10+
+escalator                  = эскалатор                              # 10+ /// 8
+
+aspirin                    = аспирин                                # 10+
+novocaine                  = новокаин                               # 16+
+heroin                     = героин                                 # 18+
+
+zipper %% Br. usually: zip = молния                                 # 10+ /// 8+
 
 

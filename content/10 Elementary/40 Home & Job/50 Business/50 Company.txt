@@ -1,0 +1,35 @@
+company @ business = компания
+
+corporation        = корпорация                                   # 10+
+consortium         = консорциум                                   # 18+
+cartel             = картель                                      # 18+
+syndicate          = синдикат                                     # 18+
+startup [company]  = стартап                                      # POLIT- # 10+
+
+holding company    = холдинговая компания                         # POLIT+ # TERM+ # 18+
+affiliated         = аффилированный %% являющийся филиалом        # POLIT+ # TERM+ # 18+
+---
+management         = управление, руководство, ~ правление         # 10+
+risk management    = управление рисками                           # POLIT+ # 18+
+manager            = управляющий, менеджер, ~ руководитель
+
+plan @ business    = план, планировать
+plan @ schema      = план, карта, чертеж, схема
+plan B             = план Б                                       # TERM-
+
+effective          = эффективный, действенный, действующий
+logistics          = логистика                                    # POLIT+ # 18+
+---
+budget             = бюджет, составлять бюджет                    # 16+
+balance @ money    = бухгалтерский баланс                         # 18+
+debit @ balance    = де́бет                                        # POLIT+ # 18+
+credit @ balance   = кре́дит                                       # POLIT+ # 18+
+saldo              = сальдо %% разница между поступлениями ~ и расходами # POLIT+ # TERM+ # 18+
+
+audit              = аудит                                        # POLIT+ # TERM+ # 18+
+consulting         = консалтинг, консалтинговый, консультирующий  # POLIT+ # TERM+ # 18+
+offshore           = оффшорный                                    # POLIT+ # TERM+ # 18+
+
+inventory          = инвентаризационная опись, ~ инвентаризация, инвентарь # POLIT+ # TERM+ # 18+
+
+

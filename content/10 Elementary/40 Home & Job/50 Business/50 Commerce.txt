@@ -1,0 +1,28 @@
+commerce                    = торговля, коммерция
+
+client @ business           = клиент
+service @ business          = служба, услуга, сервис
+
+supermarket                 = супермаркет
+hypermarket                 = гипермаркет
+
+shopping centre\\shopping center = торговый центр
+[shopping] mall {Am.}       = торговый центр, молл
+shopping                    = шоппинг, поход по магазинам
+---
+cashier                     = кассир                                          /// увольнять
+cash @ money                = деньги, наличные деньги
+: Will that be cash?
+
+dealer @ business           = дилер, торговец                                 # POLIT- # 18+
+distributor                 = дистрибьютор, ~ агент по продаже, ~ распространитель # POLIT- # TERM- # 18+
+pricelist/~price list       = прейскурант, прайс-лист                         # 18+ /// (список цен)
+coupon                      = купон, талон                                    # 18+
+discount                    = скидка, дисконт
+
+certificate @ business      = сертификат                                      # 14+
+licence\\license @ business = лицензия, разрешение, ~ свидетельство           # 14+
+
+rent @ business             = рента, арендная плата, ~ арендовать жилье, ~ брать напрокат # 18+
+
+

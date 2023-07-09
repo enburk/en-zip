@@ -1,11 +1,12 @@
-computer graphics           = компьютерная графика
+computer graphics = компьютерная графика
 
-icon @ comp                       = иконка                                  # 10+
-menu @ comp                       = меню
-skin @ comp                       = скин %% оформление компьютерной программы ~ ''буквально:'' кожа # IT+ # RARE+ # 14+
+icon @ comp       = иконка                                                    # 10+
+menu @ comp       = меню
+skin @ comp       = скин %% оформление компьютерной программы ~ ''буквально:'' кожа # IT+ # RARE+ # 14+
 
 ===
 
-multimedia                  = мультимедиа                             # 10+
-virtual reality             = виртуальная реальность
+multimedia        = мультимедиа                                               # 10+
+virtual reality   = виртуальная реальность
+
 

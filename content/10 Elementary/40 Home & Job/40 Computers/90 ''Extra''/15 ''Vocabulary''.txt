@@ -1,19 +1,19 @@
 basic ~ vocabulary
 
-network @ comp = сеть
+network @ comp            = сеть
 
 artificial ~ intelligence = искусственный интеллект
-computer vision = компьютерное зрение
+computer vision           = компьютерное зрение
 
 ===
-login = логин, вход, ~ авторизоваться
-password = пароль
+login                     = логин, вход, ~ авторизоваться
+password                  = пароль
 ===
 
-error = ошибка
-enter = вводить, входить
-access = доступ
-denied = запрещать
+error                     = ошибка
+enter                     = вводить, входить
+access                    = доступ
+denied                    = запрещать
 
 ===
 
@@ -29,3 +29,4 @@ denied = запрещать
 : Password incorrect.
 : Incorrect password.
 : unauthorized access
+

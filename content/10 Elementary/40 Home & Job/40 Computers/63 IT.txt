@@ -1,28 +1,28 @@
-information technology (IT) = информационные технологии               # 10+ /// 8??
+information ~ technology ~ (IT) = информационные технологии               # 10+ /// 8??
 
-program                     = программа ~ (компьютерная)
+program @ comp                    = программа ~ (компьютерная)
 operating system            = операционная система                    # 10+
-file                        = файл
+file @ comp                       = файл
 
-virus,~antivirus            = вирус, антивирус
+virus @ comp           = вирус
+antivirus @ comp           = антивирус
 Trojan [horse]              = троян, троянская программа %% тип вирусов # IT-
 
-multimedia                  = мультимедиа                             # 10+
-computer graphics           = компьютерная графика
-icon                        = иконка                                  # 10+
-menu                        = меню
-skin                        = скин %% оформление компьютерной программы; ''буквально:'' кожа # IT+ # RARE+ # 14+
-virtual reality             = виртуальная реальность
-
+demo [version]              = демоверсия                              # IT- # 10+
 computer simulation         = компьютерное моделирование              # IT- # TERM- # 10+
-system administrator %% informal: sysadmin = системный администратор, ~ разговорное: сисадмин # IT- # TERM- # 10+
 
+system administrator %% informal: sysadmin = системный администратор # IT- # TERM- # 10+
 hacker                      = хакер                                   # 10+
 
-demo [version]              = демоверсия                              # IT- # 10+
-bit, byte                   = бит, байт                               # 10+
+bit @ comp                  = бит                               # 10+
+byte                   = байт                               # 10+
 
-driver                      = драйвер                                 # IT+ # TECH+ # TERM+ # 14+
+===
+
+driver @ comp                     = драйвер                                 # IT+ # TECH+ # TERM+ # 14+
 emulator                    = эмулятор                                # IT+ # TECH+ # TERM+ # 14+
 virtual machine             = виртуальная машина                      # IT+ # TECH+ # TERM+ # 16+
+
+interface          = интерфейс, ~ взаимодействие                              # IT+ # 10+
+teraflop           = терафлопс %% триллион операций в секунду                 # IT+ # RARE+ # TERM+ # 18+
 

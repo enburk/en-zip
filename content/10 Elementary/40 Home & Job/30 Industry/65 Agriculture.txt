@@ -1,29 +1,31 @@
 agriculture          = сельское хозяйство            # 10+
 
-agronomy,~agronomist = агрономия, агроном            # 10+
-agrarian             = аграрный, земельный, земледельческий # POLIT+ # 18+
-agrarian             = аграрий, ~ крупный землевладелец # POLIT+ # 18+
+agronomist = агроном            # 10+
+agrarian             = аграрный, аграрий, ~ крупный землевладелец # POLIT+ # 18+
 
-farm, farmer         = ферма, фермер
+farm @ agro        = ферма
+farmer         = фермер
+---
 cowboy               = ковбой
 cow                  = корова                        /// запугивать
 spur                 = шпора, пришпоривать           # 10+
 
 plantation           = плантация                     # 10+
 
-combine              = комбайн
+combine @ agro             = комбайн
 cultivator           = культиватор                   # TERM- # 10+ /// (машина для обработки почвы)
-tractor              = трактор
+tractor @ agro             = трактор
 plough\\plow         = плуг                          # 10+
 secateurs            = секатор                       # TERM- # 10+
 
 broiler              = бройлер                       # TERM- # 14+ /// (скороспелый гибрид домашних животных)
 incubator            = инкубатор                     # 14+
-selection            = селекция, отбор               # 14+
+selection @ agro           = селекция, отбор               # 14+
 
-elevator             = элеватор %% сооружение для хранения зерна # TERM+ # 14+
+elevator @ agro             = элеватор /// %% сооружение для хранения зерна # TERM+ # 14+
 pasture              = пастбище                      # 10+
-separator            = сепаратор                     # TERM- # 18+
+separator @ agro            = сепаратор                     # TERM- # 18+
+
 silo                 = силосная башня                # 10+
 silage               = силос %% корм                 # 10+
 

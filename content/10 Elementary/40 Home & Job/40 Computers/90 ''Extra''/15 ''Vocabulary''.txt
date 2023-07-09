@@ -1,0 +1,31 @@
+basic ~ vocabulary
+
+network @ comp = сеть
+
+artificial ~ intelligence = искусственный интеллект
+computer vision = компьютерное зрение
+
+===
+login = логин, вход, ~ авторизоваться
+password = пароль
+===
+
+error = ошибка
+enter = вводить, входить
+access = доступ
+denied = запрещать
+
+===
+
+: Access denied.
+: Password error. Access denied.
+: Error, access denied.
+: Please, enter your password.
+: Enter search query.
+: Password error. Access denied.
+: Please re-enter password.
+: Enter password now.
+: Password accepted.
+: Password incorrect.
+: Incorrect password.
+: unauthorized access

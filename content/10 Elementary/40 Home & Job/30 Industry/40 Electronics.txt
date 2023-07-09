@@ -8,6 +8,7 @@ electrician                  = электрик
 
 adapter @ device             = адаптер         # 10+
 contact @ electro            = контакт, контактный /// соприкосаться, связываться, знакомый (деловой)
+[electrical] ~ cable = кабель ~ (электрический)                          # 10+
 ---
 accumulator @ electro        = аккумулятор
 generator @ electro          = генератор
@@ -24,7 +25,6 @@ diode                        = диод            # TECH- # 18+
 transistor                   = транзистор      # TECH- # 16+
 relay @ electro              = реле            # TECH- # 16+
 
-microelectronics             = микроэлектроника # 16+
 microcontroller              = микроконтроллер # IT+ # TERM+ # 16+
 microprocessor               = микропроцессор  # IT+ # TERM+ # 16+
 

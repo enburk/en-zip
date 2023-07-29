@@ -1,32 +1,47 @@
 architecture        = архитектура                        # 10+
+===
 architect           = архитектор                         # 10+
-proportions         = пропорции                          # 10+
-column              = колонна
+===
+
+proportions @ art   = пропорции                          # 10+
+
+column @ art        = колонна
 colonnade           = колоннада                          # 14+
+
 portico             = портик                             # 18+
 portal              = портал                             # 14+
+
 pilaster            = пилястра/пилястр                   # RARE- # 18+ /// (вертикальный выступ стены в виде колонны)
 caryatid            = кариатида                          # 18+ /// (статуя женщины, поддерживающая антаблемент)
-arch                = арка
+
+arch @ art          = арка
 arcade              = аркада                             # 14+ /// French arcade, from Italian arcata ‎(“arch of a bridge”), from Latin arcus ‎(“arc”)
+
 balustrade          = балюстрада                         # 14+ /// Borrowing from French balustrade, from Italian balaustrata
 cornice             = карниз                             # 10+
+
 palazzo             = палаццо                            # 18+
 belvedere           = бельведер                          # RARE- # 18+ /// (постройка на возвышенности для любования видами)
 rotunda             = ротонда %% круглое в плане здание с куполом # RARE- # 16+
 grotto              = грот                               # 14+
 
+===
+
 Corinthian order    = коринфский ордер                   # ART+ # HISTORY+ # TERM+ # 18+
 Ionic order         = ионический ордер                   # ART+ # HISTORY+ # TERM+ # 18+
 Doric order         = дорический ордер                   # ART+ # HISTORY+ # TERM+ # 18+
+
 Gothic style        = готический стиль                   # ART- # 10+
 
+===
 interior            = интерьер                           # 10+
+===
+
 atrium              = атриум                             # 14+
 hall                = холл, зал                          # 10+
 foyer               = фойе                               # 10+
 vestibule %% formal = вестибюль, ~ передняя ~ (квартиры) # 10+ /// French
 patio               = патио                              # 18+
-gallery             = галерея                            # 14+
 corridor            = корридор
+
 

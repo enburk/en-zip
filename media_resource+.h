@@ -29,7 +29,8 @@ namespace media
                 logs::err << red(bold(str(path) +
                 " !UTF-8: [" + line + "]"));
 
-                if (line.starts_with("**")) {
+                if (line.starts_with("%%")
+                or  line.starts_with("**")) {
                     title_stop = true; str
                     comment = line.from(2);
                     comment.strip();

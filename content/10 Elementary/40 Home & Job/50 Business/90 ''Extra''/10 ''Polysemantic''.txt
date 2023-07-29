@@ -1,45 +1,56 @@
-bank               = банк, держать деньги в банке                          /// 1
-bank               = в картах: банк, метать банк                           # 16+ /// 1
-bank               = подводная банка, отмель ~ берег (реки)                /// ~~гряда (облаков) и др.  /// 2
-''left bank''      = ''левый берег''
-bank               = ряд (каких-либо предметов)                            /// примеры: сидений, огней, особ. каких-либо машин, ряд клавиш органа, банка (только на галере?) /// 3
+polysemic
+---
+vacancy @ job         = вакансия                                       # 10+ /// Latin
+vacancy @ room        = свободная комната %% в гостинице, мотеле       # 10+
+---
+bank @ money          = банк
+bank @ cards          = в картах: банк, ~ метать банк                  # 16+
+bank @ sandbank       = подводная банка, ~ отмель
+bank @ river          = берег ~ (реки)                                 /// ~~гряда (облаков) и др.
+left bank             = левый берег
+bank @ row            = ряд ~ (каких-либо предметов)                   /// примеры: сидений, огней, особ. каких-либо машин
+bank @ bench          = банка (сиденье для гребцов)                    /// только на галере? thwart?
+[glass] jar           = банка ~ (сосуд)
+tin @ container       = консервная банка
+---
+capital @ money       = капитал, состояние, выгода
+capital @ adjective   = капитальный, основной
+capital @ crime       = тяжкий ~ (о преступлении)
+: It is a capital offense ~ to inadvertently kill someone ~ while attempting suicide.
+capital @ good        = замечательный, отличный
+: Glorious night! Exquisite scenery! Capital dinner!
+capital @ city        = столица
+: London is the capital of Paris, ~ and Paris is the capital of Rome, ~ and Rome -- no, THAT'S all wrong, ~ I'm certain!
+capital @ letter      = заглавный ~ (о букве)
+: What is the capital of Nebraska? ~ That’s easy. It’s ‘N’.
+capital @ column      = капитель %% венчающая часть колонны или пилястры # 16+
+---
+lot @ item            = лот ~ (на бирже, аукционе)                     # 14+
+lot @ fate            = жребий, участь, доля, судьба                   # 14+
+lot @ many            = группа, ~ компания (людей), ~ куча (вещей) ()  # 14+
+a lot [of]            = много, уйма, куча, масса                       # 14+
+lot @ land            = участок земли                                  # 14+
+parking lot {Am.}     = парковка                                       # 14+
+---
+firm @ company        = фирма                                          # 10+
+firm @ hard           = твёрдый, крепкий, стойкий                      # 10+
+---
+tender(1) @ market    = официальное предложение, ~ конкурс, тендер     # POLIT- # 16+ /// глаголы
+tender(2) @ car       = тендер ~ (вагон с топливом и водой), ~ плавучая база # POLIT- # 16+ /// механик, оператор
+tender(3) @ soft      = нежный, ласковый, ~ чувствительный, хрупкий    # POLIT- # 16+
+---
+trust @ group         = трест
+trust @ reliance      = верить, доверять
+: Every drunken skipper trusts to _Providence. ~ But one of the ways of _Providence with drunken skippers ~ is to run them on the rocks.
+---
+service @ assistance  = обслуживание, сервис                           # 10+ /// 1
+service @ state       = служба %% в т. ч. государственная и военная    # 10+ /// 1
+service @ religion    = обряд, служба ~ (религиозная)                  # 10+ /// 1
+serve/service @ sport = в спорте: подача                               # 10+ /// 1
+service @ kitchen     = сервиз                                         # 10+ /// много знач.
+service [tree]        = рябина, ирга                                   # 10+ /// 2 /// %% рябина домашняя, также: рябина глоговина (берека)
 
-capital(2)         = капитал, состояние, выгода
-capital(1)         = капитальный, основной
-capital(1)         = тяжкий ~ (о преступлении)
-<small>''It is a capital offense ~ to inadvertently kill someone ~ while attempting suicide.''</small> %% (South Carolina) = %% ''US Dumb Laws'' ~ HOTMAG
-capital(1)         = замечательный, отличный
-<small>''Glorious night! Exquisite scenery! Capital dinner!''</small> = %% George Bernard Shaw, ''The Doctor's Dilemma'' ~ LIBRIVOX PHIL
-capital(1)         = столица
-<small>''London is the capital of Paris, ~ and Paris is the capital of Rome, ~ and Rome -- no, THAT'S all wrong, I'm certain!''</small> = %% Lewis Carroll, ''Alice's Adventures in Wonderland'' ~ ARDIS
-capital(1)         = заглавный ~ (о букве)
-<small>''What is the capital of Nebraska~! ~ That's easy. It’s ‘N’''</small> = %% HOTMAG
-capital(1)         = капитель %% венчающая часть колонны или пилястры      # 16+
 
-lot                = лот (на бирже, аукционе)                              # 14+
-lot                = жребий, участь, доля, судьба                          # 14+
-a lot [of]         = много, уйма, куча, масса                              # 14+
-lot                = группа, ~ компания (людей), ~ куча (вещей) ()         # 14+
-lot                = участок земли                                         # 14+
-parking lot {Am.}  = парковка                                              # 14+
-
-firm               = фирма                                                 # 10+
-firm               = твёрдый, крепкий, стойкий                             # 10+
-
-tender             = официальное предложение, ~ конкурс, ~ тендер          # POLIT- # 16+ /// глаголы /// 1
-tender             = тендер ~ (вагон с топливом и водой), ~ плавучая база  # POLIT- # 16+ /// механик, оператор /// 2
-tender             = нежный, ласковый, ~ чувствительный, хрупкий           # POLIT- # 16+ /// 3
-
-trust              = трест
-trust              = верить, доверять
-<small>''Every drunken skipper trusts to Providence. ~ But one of the ways of Providence with drunken skippers ~ is to run them on the rocks.''</small> = %% ''Heartbreak House'' by George Bernard Shaw ~ LIBRIVOX PIRIE
-
-service            = обслуживание, сервис                                  # 10+ /// 1
-service {state}    = служба %% в т. ч. государственная и военная           # 10+ /// 1
-service {religion} = обряд, служба (религиозная)                           # 10+ /// 1
-serve/service      = в спорте: подача                                      # 10+ /// 1
-service {kitchen}  = сервиз                                                # 10+ /// много знач.
-service [tree]     = рябина домашняя %% также: рябина глоговина (берека), ирга # 10+ /// 2 /// (Sorbus domestica)
 
 
 

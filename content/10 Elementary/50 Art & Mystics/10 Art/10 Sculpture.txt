@@ -1,0 +1,26 @@
+sculpture          = скульптура
+===
+sculptor           = скульптор
+===
+
+Venus de Milo      = Венера Милосская    # ART- # 18+
+Apollo Belvedere   = Аполлон Бельведерский # ART- # 18+
+
+fig leaf           = фиговый лист        # ART- # 16+
+statuette/figurine = статуэтка
+bas-relief         = барельеф            # 10+
+netsuke            = нэцкэ               # 18+
+bust @ art         = бюст                # 10+
+
+pedestal           = пьедестал           # 10+
+wax sculpture      = восковая скульптура # 10+
+terracotta         = терракота           # RARE+ # 18+
+mask @ art         = маска               # 14+ /// африканская
+installation [art] = инсталляция         # 18+
+
+granite @ art      = гранит              # 10+
+marble @ art       = мрамор
+---
+bronze @ art       = бронза
+patina             = па́тина/пати́на       # 16+
+

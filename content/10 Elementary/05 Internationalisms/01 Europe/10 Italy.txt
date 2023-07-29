@@ -1,7 +1,7 @@
 Italy            = Италия                                      # pix- # 8+
 Italian          = итальянский                                 # pix- # 8+
 
-balcony          = балкон
+balcony @ house  = балкон
 loggia           = лоджия                                      # 14+
 regatta          = регата                                      # 14+
 stiletto         = стилет                                      # 18+
@@ -29,6 +29,7 @@ sonata           = соната                                      # 16+
 bravura          = в музыке: бравурный пассаж, ~ бравурность, ~ бравада # 18+
 prima donna      = примадонна                                  # ART- # 14+
 bravo!           = браво!
+
 
 
 

@@ -11,7 +11,7 @@ lyre                       = лира                               # 10+
 kithara|cithara            = кифара                             # HISTORY+ # RARE+ # 18+
 cacophony                  = какофония                          # 16+
 
-theatre\\theater           = театр
+theatre\\theater @ antique = театр
 amphitheatre\\amphitheater = амфитеатр                          # 10+
 
 drama                      = драма, драматургия                 # 10+
@@ -30,5 +30,6 @@ parody                     = пародия, жалкое подобие, ~ па
 epithet                    = эпитет %% в ам. также: оскорбление, ругательное слово # 10+
 
 architecture               = архитектура                        # 10+ /// , архитектурный стиль ~~структура, строение
+
 
 

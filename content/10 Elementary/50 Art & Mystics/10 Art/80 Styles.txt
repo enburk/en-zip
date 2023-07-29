@@ -1,0 +1,34 @@
+style @ art      = стиль                          # 10+
+
+===
+
+mannerism        = маньеризм                      # 18+
+baroque          = барокко, барочный              # 10+
+rococo           = рококо                         # 10+
+neoclassicism    = неоклассицизм                  # 16+
+Renaissance      = Ренессанс, ~ эпоха Возрождения # 10+ /// French
+decadence        = декаданс, декадентство, ~ упадок, упадничество %% от фр. décadent — упадочный # 16+ /// French
+pastoral         = пастораль, пасторальный        # 18+
+
+===
+
+symbolism        = символизм                      # 14+
+minimalism       = минимализм                     # 14+
+primitivism      = примитивизм                    # 14+
+dadaism          = дадаизм                        # ART+ # 18+
+futurist         = футурист                       # 18+
+avant-garde      = авангард                       # 10+
+art deco         = ар-деко/арт-деко               # 18+
+
+===
+
+modernism        = модернизм                      # 16+
+art nouveau      = модерн %% ар-нуво/арт-нуво     # 16+
+postmodernism    = постмодернизм                  # 16+
+conceptual @ art = концептуальный                 # 16+
+
+===
+
+stylization %% Br. also: stylisation = стилизация                     # 18+
+
+

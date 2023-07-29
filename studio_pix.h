@@ -235,6 +235,7 @@ namespace studio::pixer
         {
             if (button != "left")
             return; clicked = down;
+
             if (down) p0 = p1; else
             if (frame.alpha.to > 0
             and abs(p1.x-p0.x) < 9
@@ -246,6 +247,23 @@ namespace studio::pixer
             }
             else
             {
+                int  w = image.size.x;
+                int  h = image.size.y;
+                xywh R = Image.coord.now;
+                if (not R.includes(p1))
+                    return;
+
+                p0 -= R.origin;
+                p0.x = p0.x * w / R.w;
+                p0.y = p0.y * h / R.h;
+
+                p1 -= R.origin;
+                p1.x = p1.x * w / R.w;
+                p1.y = p1.y * h / R.h;
+
+                Image.source =
+                image.crop(xyxy(p0, p1));
+                resize();
             }
         }
         bool on_mouse_wheel (xy p, int delta) override

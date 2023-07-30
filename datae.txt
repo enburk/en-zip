@@ -22814,6 +22814,9 @@ An Argument In The Corridors Of The Opera [argument] ## date 1889 ## qrop l40 t1
 At the Graffard Meeting Hall ## date 1884.jpg
 At the Graffard Meeting Hall ## date 1884.txt
 Le Cafe de Paris [cancan] ## qrop t23 b15.jpg
+>>> ../datae\fineart a-g {{$$}}/Cabanel {{Alexandre Cabanel}}
+Pandora ## date 1873 ## crop l1 r2 b1 ## qropt!.jpg
+Swedish soprano Christine Nilsson as Pandora [soprano][Nilsson] ## date 1873 ## crop l1 r2 b1 ## qropt!.jpg
 >>> ../datae\fineart a-g {{$$}}/Cassat {{Mary Cassat}}
 Nurse Reading to a Little Girl ## crop l2 r2 t2 b2 ## qropt! ## qrop l3 t2 r5 b2.jpg
 Nurse Reading to a Little Girl ## crop l2 r2 t2 b2 ## qropt! ## qrop l3 t2 r5 b2.txt
@@ -22852,7 +22855,7 @@ A consultation [consultation][pulse][heart rate][family doctor] ## qrop l13 r6.j
 grammar ## date 1407 ## qrop r20 ## qropt!.jpg
 >>> ../datae\fineart a-g {{$$}}/Gause {{Wilhelm Gause}}
 Hofball in Wien [ball@dance] ## date 1900 ## qrop ql.jpg
-Hofball in Wien [waltz][Viennese waltz] ## date 1900 ## qrop t12 r51 b21.jpg
+Hofball in Wien [waltz][Viennese waltz] ## date 1900 ## qrop t12 r52 b21 ## qropt!.jpg
 >>> ../datae\fineart a-g {{$$}}/Gilbert {{Victor Gabriel Gilbert}}
 ball @ dance ## qrop l10 r20.jpg
 >>> ../datae\fineart a-g {{$$}}/Grigoriev {{Boris Grigoriev}}
@@ -22886,6 +22889,8 @@ The Masked Ball at L'Opera [beau monde] ## qrop ql ## date 1880.jpg
 Ursa Major also known as the Great Bear [Ursa Major][Great Bear][constellation] ## date 1687 ## qrop l7 r8.jpg
 >>> ../datae\fineart h-z {{$$}}/Homer {{Winslow Homer}}
 The Fog Warning [peril][dory] ## date 1885.jpg
+>>> ../datae\fineart h-z {{$$}}/Ingres {{Jean Auguste Dominique Ingres}}
+Niccolò Paganini [Paganini][violinist] ## date 1819.jpg
 >>> ../datae\fineart h-z {{$$}}/Johnson {{Frank Tenney Johnson}}
 cowboy ## qrop t3 b23 ### Frank Ellis While visiting the SMS Ranch in Texas.jpg
 >>> ../datae\fineart h-z {{$$}}/Klimt {{Gustav Klimt}}
@@ -22934,6 +22939,8 @@ Muscles ## crop r10 ## qrop l2 r19 ## qropt!.txt
 >>> ../datae\fineart h-z {{$$}}/Serov {{Valentin Serov}}
 Portrait of A. Kasyanov [sceptic] ## qrop t6 b10 ## qropt!.jpg
 >>> ../datae\fineart h-z {{$$}}/Sheludyakov {{Oleg Sheludyakov $$$}}
+alto @ vocal {{Oleg Sheludyakov, 2004 $$$}} Opera, 2004.jpg
+baritone {{Oleg Sheludyakov, 2004 $$$}} Opera singer, 2004.jpg
 The wrestling of the wrestlers [wrestling][wrestlers] ## date 2003 ## qropt!.jpg
 >>> ../datae\fineart h-z {{$$}}/Soltau {{Otto Soltau}}
 Philosopher [philosophy] ## qrop l20 r4 ## date 1911 ## qropt!.jpg
@@ -23023,11 +23030,12 @@ Eid-ul-Fitr congregation ## qrop q {{Photo.. Azim Khan Ronnie}}.txt
 folding screen ## qrop t17 b2 ## qropt! {{Photo.. ABM}}.jpg
 ghost.jpg
 hang one's head ### Bobby Knight, coach of the US Olympic basketball team.jpg
-hurdling [hurdler] ## crop l1 r1 t1 b1 {{ Photo.. Michael Steele}}.jpg
+hurdling [hurdler] ## crop l1 r1 t1 b1 ## qropt! {{Photo.. Michael Steele}}.jpg
 kyanite crystals [kyanite][silicate][neosilicate] ## qrop l4 r21 {{Photo.. Aelwyn $$wiki}}.jpg
 matador [torero] ## crop r20 ## qrop l5 r28.jpg
 melon soup [+] ## noqrop {{Photo.. Pawel Strykowski}}.jpg
 mine clearance [demining][metal detector] ## date 1967 ## qrop l7 r3 ## qropt! {{Photo.. Shunsuke Akatsuka}}.jpg
+record player needle [record player][needle@player][turntable] {{Photo.. Moehre1992 $$cc-by-sa wiki}}.jpg
 red onion [red][onion] {{Photo.. A. Caste}}.jpg
 rock ptarmigan [ptarmigan][Lagopus muta][Lagopus].jpg
 sledge ## qrop q {{Photo.. Alessandra Meniconzi}} Frozen Land.jpg
@@ -23188,6 +23196,8 @@ Tutankhamun sarcophagus [+] ## qrop l22 t5 r7 ## date 1926.jpg
 >>> ../datae\photo a-n/Caldicott {{Photo.. Richard Caldicott}}
 thermos ## qrop t15 b5 ### flask really.jpg
 >>> ../datae\photo a-n/Carjat {{Photo.. Étienne Carjat}}
+Gioachino Rossini [Rossini][Rossinian] {{Photo.. Étienne Carjat, 1862 $$}}.jpg
+Hector Berlioz [Berlioz][composer@music] ## qropt! {{Caricature by Étienne Carjat, 1858}}.jpg
 _Victor _Hugo [Hugo] ## qrop t9 ## date 1876.jpg
 >>> ../datae\photo a-n/Costi {{Pthoto.. Eleonora Costi}}
 Abandoned Mental institution in Lombardia [abandoned] ## qrop l12 r22.jpg
@@ -23214,6 +23224,9 @@ dragonfish.txt
 1958 Ferrari 250 Testa Rossa [Ferrari].jpg
 >>> ../datae\photo a-n/Genthe {{Photo.. Arnold Genthe $$}}
 Greta _Garbo [+][actress@cinema] ## date 1925 ## qrop l3 r14 ## qropt!.jpg
+>>> ../datae\photo a-n/Gottlieb {{Photo.. William P. Gottlieb}}
+clarinettist~clarinetist ## qrop qr {{Photo.. William P. Gottlieb, 1948 $$LOC}} ### Portrait of Fess Williams and Freddie Moore.jpg
+Louis Armstrong [trumpeter@music] {{Photo.. William P. Gottlieb, 1946 $$LOC}}.jpg
 >>> ../datae\photo a-n/Haas [Haas] {{Photo.. Ernst Haas}}
 A cloudy sky over the _Nevada desert [cloudy] ## date 1960.jpg
 audience aghast [aghast].jpg
@@ -23492,7 +23505,7 @@ Aranjuez, Madrid [support] ## qrop l14 {{Photo.. Kaplan69 $dreamstime 59091098}}
 Abu Dhabi Sheikh Zayed White Mosque [arcade] ## qrop qr {{Photo.. Beatrice Preve $dreamstime 50291615}}.jpg
 atrium ## qrop ql {{Photo.. Brett Critchley $dreamstime 20778809}} ### Luxury cruise ship interior.jpg
 columns [column@art] ## qrop t18 r1 b16 {{Photo.. Victor Leopold Russillo $dreamstime 8177130}}.jpg
-corridor ## qrop l12 r14 {{Photo.. Slidepix $dreamstime 138607}} ### shopping passage.jpg
+corridor ## qrop l12 r14 b1 ## qropt! {{Photo.. Slidepix $dreamstime 138607}} ### shopping passage.jpg
 corridor ## qrop l15 r18 {{Photo.. Vania Dobrinova $dreamstime 3595256}}.jpg
 interior ## qrop l4 r21 {{Photo.. Aleksey Kashin $dreamstime 2495091}} ### Interior of cafe.jpg
 Lincoln Memorial, Washington D.C., USA [Lincoln][Ionic order] ## qrop qt {{Photo.. Celso Diniz $dreamstime 23091642}}.jpg
@@ -23538,14 +23551,59 @@ triptych ## qrop l4 r6 ## qropt! {{Photo.. Cristi Lucaci $dreamstime 11620565}} 
 watercolor [watercolour] ## qrop r29 ## qropt! {{Photo.. Invizbk $dreamstime 65634227}}.jpg
 literature [books] ## qrop qr {{Photo.. Solstudio $dreamstime 18924541}}.jpg
 >>> ../datae\photo_dreamstime\art/music
+amplifier [bass@music] ## qrop ql {{Photo.. Ossi Lehtonen $dreamstime 7071951}}.jpg
+cantata ## qrop l14 r19 {{Photo.. Maocheng $dreamstime 49012461}}.jpg
+chord @ music ## qrop l6 r28 {{Photo.. Christian Bertrand $dreamstime 46731629}}.jpg
+chromatic ## qrop l2 r3 ## qropt! {{Photo.. Acousticss $dreamstime 13157551}}.jpg
+compact discs [CD] {{Photo.. Denys Prokofyev $dreamstime 8358182}}.jpg
+disco ## qrop q {{Photo.. Dwphotos $dreamstime 9080206}} Dancing teenagers.jpg
+DJ [disc jockey] ## qrop l22 r11 {{Photo.. Pavel Losevsky $dreamstime 31682560}}.jpg
+DJ [disc jockey][beatmatching][beatmixing] ## qrop l5 r29 {{Photo.. Kolotype $dreamstime 34903587}}.jpg
+earphones ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 82496904}}.jpg
 flute @ music ## qrop ql {{Photo.. David Coleman $dreamstime 6007}}.jpg
-octave ## qrop l10 r9 ## qropt! {{Photo.. Acousticss $dreamstime 13157551}}.jpg
+HI-FI Home Stereo [stereo] ## qrop l6 r6 {{Photo.. Kutt Niinepuu $dreamstime 3995918}}.jpg
+>>> ../datae\photo_dreamstime\art\music/instruments
+accordion ## qrop l3 r14 {{Photo.. Vadim Kozlovsky $dreamstime 9312148}}.jpg
+acoustic guitar ## qrop ql {{Photo.. Vital Sharepchankau $dreamstime 36099364}}.jpg
+banjo {{Photo.. Furtseff $dreamstime 41678862}}.jpg
+bass guitar ## qrop l6 r5 ## qropt! {{Photo.. Diana Carapuço $dreamstime 3800192}}.jpg
+bass guitar ## qrop qr {{Photo.. Brett Blignaut $dreamstime 42528924}}.jpg
+bass guitarist [bassist][guitarist][guitar player] {{Photo.. Regien Paassen $dreamstime 2775218}}.jpg
+castanets ## qrop qr {{Photo.. Alessandro De Leo $dreamstime 21958815}}.jpg
+cello scroll and fiddlestick [cello][violoncello][scroll@cello] {{Photo.. Bortn66 $dreamstime 46901840}}.jpg
+clarinet ## qrop b18 ## qropt! {{Photo.. Manicblue $dreamstime 397926}}.jpg
+contrabassist [contrabass][bassist] ## qropt! {{Photo.. Lachris77 $dreamstime 39492644}}.jpg
+flautist ## qrop l6 r10 ## qropt! {{Photo.. Tomica7 $dreamstime 58676074}}.jpg
+guitar pickup and strings [pickup@music][strings@music][string@music] ## qrop ql {{Photo.. Andreas Argirakis $dreamstime 53044438}}.jpg
+keyboard @ music ## qrop qr {{Photo.. Feng Yu $dreamstime 813084}}.jpg
+Larry Adlers harmonica [harmonica] ## qrop l9 r17 {{Photo.. Lyn Baxter $dreamstime 18317}}.jpg
+lute @ music ## qrop l5 r6 ## qropt! {{Photo.. Axel Bueckert $dreamstime 52554690}}.jpg
+mandolin ## qrop l11 r14 {{Photo.. Carlos Caetano $dreamstime 1780828}}.jpg
+pipe organ [organ@music] ## qrop l10 r10 ## qropt! {{Photo.. Marcin Chodorowski $dreamstime 2807572}}.jpg
+saxophone [saxophonist][sax@saxophone] ## qrop l16 r7 ## qropt! {{Photo.. Vladimir Mucibabic $dreamstime 1700638}}.jpg
+Spanish guitar [classical guitar][guitar] ## qrop l16 r6 ## qropt! {{Photo.. Mac Miller $dreamstime 7527241}}.jpg
+synthesizer ## qrop r25 ## qropt! {{Photo.. Alain Juteau $dreamstime 651985}}.jpg
+toy xylophone [xylophone] ## qrop ql {{Photo.. Sparkia $dreamstime 5727267}}.jpg
+trombone [trombonist] ## qrop ql {{Photo.. Furtseff $dreamstime 64653089}}.jpg
+tuning peg [tuning@music][peg@tuning] ## qrop qr {{Photo.. Andreas Argirakis $dreamstime 53041691}}.jpg
+violin ## qrop ql {{Photo.. Tadija Savic $dreamstime 3352523}}.jpg
 violin and bow [bow@music] ## qrop l5 r25 ## qropt! {{Photo.. Peter Zijlstra $dreamstime 22278438}}.jpg
+violin and saxophone [saxophone][musical instruments] ## qrop q {{Photo.. Lunamarina $dreamstime 28945672}}.jpg
+xylophone ## qrop t13 b21 {{Photo.. Junpinzon $dreamstime 34386700}}.jpg
+metronome ## qrop l4 r14 {{Photo.. Fotowan $dreamstime 7290353}}.jpg
+microphone ## qrop l4 r29 {{Photo.. Viorel Dudau $dreamstime 14335497}} ### mixing.jpg
+mixer @ music ## qrop ql {{Photo.. Michał Gajzner $dreamstime 8345040}} ### DJ panel.jpg
+note @ music ## qrop l31 r3 {{Photo.. Pieter Bollen $dreamstime 9630408}}.jpg
+octave ## qrop l10 r9 ## qropt! {{Photo.. Acousticss $dreamstime 13157551}}.jpg
+octave ## qropt! {{Photo.. Keith Bruce $dreamstime}}.jpg
+pizzicato {{Photo.. Furtseff $dreamstime 39915242}}.jpg
+symphony orchestra ## qrop ql {{Photo.. Frenc $dreamstime 18837126}} The Szegedi Symphonic Orchestra.jpg
+vinyl disc [vinyl@disc] ## qrop q {{Photo.. Sebastianknight $dreamstime 4380802}}.jpg
 oval ## qrop l10 r11 ## qropt! {{Photo.. Robyn Mackenzie $dreamstime 38327828}}.jpg
 >>> ../datae\photo_dreamstime\art/photo
 1.3 megapixels [megapixel] ## qrop r22 ## qropt! {{Photo.. Dleonis $dreamstime 1887122}}.jpg
 bokeh ## qrop t12 b22 ## qropt! {{Photo.. Elenadesigner $dreamstime 17046364}}.jpg
-camera @ photo ## qrop l16 r18 {{Photo.. Jiri Hera $dreamstime 11753624}}.jpg
+camera @ photo ## qrop l16 r18 ## qropt! {{Photo.. Jiri Hera $dreamstime 11753624}}.jpg
 lenses [lens@photo][objective@photo] ## qrop l26 r7 ## qropt! {{Photo.. Maddrew $dreamstime 35992788}}.jpg
 photo album ## qropt! {{Photo.. Russell Du Parcq $dreamstime 4173985}}.jpg
 selfie [selfie stick] ## qrop l9 r24 {{Photo.. Aleksandr Zamuruev $dreamstime 92209965}}.jpg
@@ -23553,13 +23611,13 @@ selfie [selfie stick] ## qrop l9 r24 {{Photo.. Aleksandr Zamuruev $dreamstime 92
 African tribal mask [mask@art] ## qrop t22 ## qropt! {{Photo.. Timothy Nichols $dreamstime 4262710}}.jpg
 Apollo Belvedere [Apollo@myth] ## qropt! {{Photo.. Ruslan Gilmanshin $dreamstime 62165129}}.jpg
 figurines [statuette][figurine] ## noqrop {{Photo.. Dezayin $dreamstime 58997126}}.jpg
-terracotta warriors [terracotta] ## qrop l18 r16 {{Photo.. Richard Van Der Spuy $dreamstime 105308255}}.jpg
+terracotta warriors [terracotta] ## qrop l18 r16 ## qropt! {{Photo.. Richard Van Der Spuy $dreamstime 105308255}}.jpg
 Venus de Milo ## qrop q {{Photo.. Ruslan Gilmanshin $dreamstime 77119337}}.jpg
 silhouette ## qrop r25 {{Photo.. Andrew Doran $dreamstime 201186}}.jpg
 >>> ../datae\photo_dreamstime\art/theater
 balcony @ theater ## qrop ql {{Photo.. Overcrew55 $dreamstime 36241307}} ### hall theater.jpg
 curtain ## qrop ql {{Photo.. Visualalive $dreamstime 22697585}}.jpg
-Kabuki spectacle at the Fountains of Bellagio [Kabuki] {{Photo.. Kobby Dagan $dreamstime 59234749}}.jpg
+Kabuki spectacle at the Fountains of Bellagio [Kabuki][kabuki] ## qrop l22 r11 {{Photo.. Kobby Dagan $dreamstime 59234749}}.jpg
 parterre ## qrop ql {{Photo.. Erik De Graaf $dreamstime 5584176}}.jpg
 Scandalesque [burlesque] {{Photo.. Dimitrii $dreamstime 5942896}}.jpg
 stage @ theater ## qrop l5 r7 ## qropt! {{Photo.. Airi Pung $dreamstime 7416897}} ### Stage with red carpet and curtains.jpg
@@ -23647,6 +23705,7 @@ discount ## qrop t11 b3 {{Photo.. Yakobchuk $dreamstime 17060600}}.jpg
 ergonomics ## qrop l10 r9 ## qropt! {{Photo.. Sergey Soldatov $dreamstime 59147132}} ### Robot typing.jpg
 fire @ job [human resources@personnel] ## qrop l5 r16 ## qropt! {{Photo.. Orlando Florin Rosu $dreamstime 29885566}}.jpg
 >>> ../datae\photo_dreamstime\business/money
+5 euro [euro][banknote][bank note] ## qrop l12 r12 ## qropt! {{Photo.. Franz Pfluegl $dreamstime 928410}}.jpg
 buck @ money {{Photo.. Nikmerkulov $dreamstime 62291258}} Hole in the paper.jpg
 cash @ money ## qrop l10 r15 {{Photo.. Petar Zigich $dreamstime 3188724}}.jpg
 cash drawer [cash@money] ## qropt! ## qrop l16 r7 {{Photo.. Liz Van Steenburgh $dreamstime 2185712}}.jpg
@@ -24313,7 +24372,7 @@ mummy @ mother ## qrop l8 r4 ## qropt! {{Photo.. Masyanya $dreamstime 27835257}}
 >>> ../datae\photo_dreamstime/music
 concert ## crop l20 ## qrop qr {{Photo.. Maxim Tarasyugin $dreamstime 93365606}}.jpg
 >>> ../datae\photo_dreamstime\music/instruments - string
-guitar ## qrop t1 l1 b33 {{Photo.. Vladimirs Koskins $dreamstime 1998564}}.jpg
+electric guitar [+] ## crop l1 t1 ## qrop t1 l1 b33 {{Photo.. Vladimirs Koskins $dreamstime 1998564}}.jpg
 >>> ../datae\photo_dreamstime/mystics
 zodiac ## crop l1 r1 t1 ## qropt! {{Photo.. Baloncici $dreamstime 3086268}}.jpg
 zombie ## qrop t15 b19 {{Photo.. Castaldostudio $dreamstime 44919134}} ### [Zombie Experiment].jpg
@@ -25076,6 +25135,7 @@ Parthenon [Acropolis] ## qrop l28 ## qropt! {{Photo.. Bstefanov $dreamstime 1386
 Pyramid of the Sun, Teotihuacan, Mexico [America][pyramids] ## qrop ql {{Photo.. Dmitry Rukhlenko $dreamstime 13555051}} ### pre Maya & Aztecs.jpg
 Segovia, Spain [aqueduct][Segovia] ## qrop qr {{Photo.. Roberto Atencia Gutierrez $dreamstime 44445748}}.jpg
 stamp @ post ## qrop l12 r13 {{Photo.. Francisco  Caravana $dreamstime 4519124}}.jpg
+Sydney Opera House [Sydney] {{Photo.. Gordon Tipene $dreamstime 7509687}}.jpg
 tent ## qrop l26 r6 {{Photo.. Sander  Van Der Werf $dreamstime 40008137}}.jpg
 the Land of the Rising Sun [Japanese] ## qrop l5 ## qropt! {{Photo.. Shirototoro $dreamstime 16349101}}.jpg
 >>> ../datae/sculpture

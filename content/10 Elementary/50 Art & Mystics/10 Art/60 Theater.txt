@@ -1,53 +1,54 @@
-theatre\\theater @ modern      = театр
+theatre\\theater @ modern = театр
 
-mise-en-scène          = мизансцена %% размещение декораций ~ и актеров на сцене # 16+
-troupe                 = труппа                                             # 10+
-costumer/costumier     = костюмер
+mise-en-scène             = мизансцена %% размещение декораций ~ и актеров на сцене # 16+
+troupe                    = труппа                                          # 10+
+costumer/costumier        = костюмер
 ---
-scene @ theater        = место действия, ~ сцена (в знач. часть пьесы) %% редко: театральная сцена # 10+
-stage @ theater        = в театре: сцена, ~ театральные подмостки, ~ ставить пьесу # 10+
-scenography            = сценография                                        # ART- # 16+
-proscenium             = просцениум                                         # ART+ # 18+
+scene @ theater           = место действия, ~ сцена (в знач. часть пьесы) %% редко: театральная сцена # 10+
+stage @ theater           = в театре: сцена, ~ театральные подмостки, ~ ставить пьесу # 10+
+scenography               = сценография                                     # ART- # 16+
+proscenium                = просцениум                                      # ART+ # 18+
 ---
-parterre ~ {Am.}       = партер %% ''в особенности:'' задние ряды партера   # 14+
-balcony @ theater      = в театре: балкон                                   # 14+
-applaud                = аплодировать
+parterre ~ {Am.}          = партер %% ''в особенности:'' задние ряды партера # 14+
+balcony @ theater         = в театре: балкон                                # 14+
+applaud                   = аплодировать
 
-Theatre of the Absurd  = театр абсурда                                      # 18+
-phantasmagoria         = фантасмагория                                      # 18+
+Theatre of the Absurd     = театр абсурда                                   # 18+
+phantasmagoria            = фантасмагория                                   # 18+
 
-protagonist            = протагонист                                        # ART+ # 14+ /// (главный герой)
-antagonist             = антагонист                                         # ART+ # 14+ /// (персонаж, противодействующий главному герою)
+protagonist               = протагонист                                     # ART+ # 14+ /// (главный герой)
+antagonist                = антагонист                                      # ART+ # 14+ /// (персонаж, противодействующий главному герою)
 
-tragic hero            = трагический герой                                  # ART+ # 14+
-catharsis              = катарсис                                           # ART+ # 18+
+tragic hero               = трагический герой                               # ART+ # 14+
+catharsis                 = катарсис                                        # ART+ # 18+
 
 ===
 ---
-musical @ adjective    = музыкальный                                        # ART- # 10+
-musical @ noun         = мюзикл                                             # ART- # 10+
-music hall {Br.}       = мьюзик-холл %% тип представления и театр           # ART+ # HISTORY+ # 16+
+musical @ adjective       = музыкальный                                     # ART- # 10+
+musical @ noun            = мюзикл                                          # ART- # 10+
+music hall {Br.}          = мьюзик-холл %% тип представления и театр        # ART+ # HISTORY+ # 16+
 
-vaudeville             = водевиль                                           # ART+ # HISTORY+ # 18+
-cabaret                = кабаре                                             # ART+ # HISTORY+ # 18+
-burlesque              = бурлеск                                            # ART+ # HISTORY+ # 18+
-farce                  = фарс                                               # ART+ # HISTORY+ # 18+
+vaudeville                = водевиль                                        # ART+ # HISTORY+ # 18+
+cabaret                   = кабаре                                          # ART+ # HISTORY+ # 18+
+burlesque                 = бурлеск                                         # ART+ # HISTORY+ # 18+
+farce                     = фарс                                            # ART+ # HISTORY+ # 18+
 
-commedia dell'arte     = комедия дель арте                                  # ART- # 18+
-Pierrot                = Пьеро                                              # ART- # 18+
-Polichinelle           = Полишинель %% (фр.)                                # ART- # 18+
-secret of Polichinelle = секрет Полишинеля                                  # ART- # 18+
-Harlequin              = Арлекин                                            # ART- # 18+
-Columbina              = Коломбина                                          # ART- # 18+
-Scaramouche            = Скарамуш %% (фр.)                                  # ART- # 18+
+commedia dell'arte        = комедия дель арте                               # ART- # 18+
+Pierrot                   = Пьеро                                           # ART- # 18+
+Polichinelle              = Полишинель %% (фр.)                             # ART- # 18+
+secret of Polichinelle    = секрет Полишинеля                               # ART- # 18+
+Harlequin                 = Арлекин                                         # ART- # 18+
+Columbina                 = Коломбина                                       # ART- # 18+
+Scaramouche               = Скарамуш %% (фр.)                               # ART- # 18+
 
-kabuki                 = кабуки %% вид японского театра                     # ART- # 16+
+kabuki                    = кабуки %% вид японского театра                  # ART- # 16+
 
-performance art        = перформанс                                         # ART- # 14+
-performance @ theater  = представление, выступление                         # ART- # 14+
+performance art           = перформанс                                      # ART- # 14+
+performance @ theater     = представление, выступление                      # ART- # 14+
 
-flash mob||flashmob    = флешмоб                                            # ART- # 16+
-happenning             = хэппенинг                                          # ART- # 18+
+flash mob||flashmob       = флешмоб                                         # ART- # 16+
+happenning                = хэппенинг                                       # ART- # 18+
+
 
 
 

@@ -1,0 +1,20 @@
+basic ~ vocabulary
+
+band                         = в музыке: группа
+singer                       = певец/певица
+
+headphones                   = наушники
+earphones                    = наушники
+---
+drum @ music                 = барабан
+drumsticks                   = барабанные палочки
+
+keyboard @ music             = клавиатура
+strings @ music              = струны, струнные инструменты оркестра
+
+violin %% informal: fiddle   = скрипка    # 8+
+cello %% formal: violoncello = виолончель # 16+
+
+tuning @ music               = настройка  # TECH- /// строй – это tune, pitch
+
+

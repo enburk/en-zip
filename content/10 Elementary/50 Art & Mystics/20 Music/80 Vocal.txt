@@ -1,37 +1,35 @@
-vocal                      = вокал, вокальный
-vocalist                   = вокалист
-choir/chorus               = хор
+vocal         = вокал, ~ вокальный
 
-alto                       = альт %% инструмент и голос   # 18+
-contralto                  = контральто                   # 18+
-bass                       = бас                          /// # polysemic
-baritone                   = баритон                      # 14+ /// Greek
-tenor                      = тенор                        # 16+
-soprano                    = сопрано                      # 16+
+vocalist      = вокалист
+choir/chorus  = хор
 
-accompaniment,~accompanist = аккомпанемент, аккомпаниатор # 10+
-a cappella                 = акапелла                     # 18+
-recitative                 = речитатив                    # 18+
-bel canto                  = бельканто %% техника виртуозного пения # 18+
-falsetto                   = фальцет                      # 10+
+alto @ vocal  = альт %% инструмент и голос                # 18+
+contralto     = контральто                                # 18+
+baritone      = баритон                                   # 14+ /// Greek
+tenor         = тенор                                     # 16+
+soprano       = сопрано                                   # 16+
 
-rhapsody                   = рапсодия                     # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-oratorio                   = оратория                     # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-chorale                    = хорал                        # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-madrigal                   = мадригал                     # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-cantata                    = кантата                      # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+accompaniment = аккомпанемент                             # 10+
+a cappella    = акапелла                                  # 18+
+recitative    = речитатив                                 # 18+
+bel canto     = бельканто %% техника виртуозного пения    # 18+
+falsetto      = фальцет                                   # 10+
 
-opera                      = опера                        # 10+
-opera house                = оперный театр                # 10+
-aria                       = ария                         # 14+
-libretto                   = либретто                     # 16+
-Gioachino Rossini          = Джоаккино Россини            # ART+ # 18+
-Giuseppe Verdi             = Джузеппе Верди               # ART+ # 18+
-''La Traviata''            = «Травиата»                   # ART+ # 18+
-''Aida''                   = «Аида»                       # ART+ # 18+
+rhapsody      = рапсодия                                  # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+oratorio      = оратория                                  # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+chorale       = хорал                                     # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+madrigal      = мадригал                                  # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+cantata       = кантата                                   # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
 
-opera buffa                = опера-буффа %% итальянская комическая опера # 18+
-operetta                   = оперетта                     # 16+
-finale                     = финал                        # 16+
+opera         = опера                                     # 10+
+aria          = ария                                      # 14+
+libretto      = либретто                                  # 16+
+
+opera buffa   = опера-буффа %% итальянская комическая опера # 18+
+operetta      = оперетта                                  # 16+
+
+===
+finale        = финал                                     # 16+
+===
 
 

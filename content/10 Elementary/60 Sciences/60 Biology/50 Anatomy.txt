@@ -1,0 +1,43 @@
+anatomy              = анатомия                                 # 10+
+---
+skeleton             = скелет
+rib @ anatomy        = ребро
+muscle               = мышца, мускул
+
+spinal               = спинной                                  # 10+
+spine//spinal column = позвоночник
+
+scalp                = кожа головы, скальп                      # 14+
+epidermis            = эпидермис                                # TERM- # 16+
+epithelium           = эпителий                                 # TERM+ # 16+
+pores @ anatomy      = поры                                     /// скважина, рассматривать, обдумывать
+
+nostrils             = ноздри
+respiratory tract    = дыхательные пути                         # TERM- # 16+
+
+===
+
+---
+erythrocytes         = эритроциты %% красные кровяные тельца    # TERM- # 16+
+leukocytes           = лейкоциты %% белые кровяные клетки       # TERM- # 16+
+thrombocytes         = тромбоциты                               # TERM+ # 16+
+lymphocytes          = лимфоциты %% разновидность лейкоцитов    # TERM+ # 16+
+lymph                = лимфа                                    # TERM+ # DEL
+
+artery @ anatomy     = артерия                                  /// , ~ также: магистраль
+vein @ anatomy       = вена                                     # DEL /// Latin
+aorta                = аорта                                    # 16+
+capillary            = капилляр                                 # 16+
+
+trachea              = трахея                                   # 16+
+diaphragm            = диафрагма                                # 16+
+appendix @ anatomy   = аппендикс, ~ также: приложение, дополнение # 16+
+
+===
+---
+laboratory mouse     = лабораторная мышь
+vivarium             = виварий                                  # TERM- # 18+
+vivisection          = вивисекция                               # TERM- # 18+
+
+
+

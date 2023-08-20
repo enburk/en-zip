@@ -1,13 +1,17 @@
-dramaturgy           = драматургия
-playwright/dramatist = драматург %% автор пьес
-play                 = пьеса, играть       /// # polysemic # RANDOM-
-act                  = акт ~ (часть пьесы) /// # polysemic # RANDOM-
-scene                = сцена ~ (часть акта) /// # polysemic # RANDOM-
+dramaturgy            = драматургия
+===
+playwright//dramatist = драматург %% автор пьес
+play @ drama          = пьеса, играть  /// # polysemic # RANDOM-
+act @ drama           = акт ~ (часть пьесы) /// # polysemic # RANDOM-
+scene @ drama         = сцена ~ (часть акта) /// # polysemic # RANDOM-
+===
+William Shakespeare   = Уильям Шекспир
+Romeo and Juliet      = «Ромео и Джульетта» # ART+
+Othello               = «Отелло»       # ART+
+===
+Anton Chekhov         = Антон Павлович Чехов
+= %% Чехову портрет не нравился: ~ «Говорят, что и я, и галстук очень похожи, ~ но выражение… такое, ~ точно я нанюхался хрену».
 
-William Shakespeare  = Уильям Шекспир
-''Romeo and Juliet'' = «Ромео и Джульетта» # ART+
-''Othello''          = «Отелло»            # ART+
-Anton Chekhov        = Антон Павлович Чехов %% ''Чехову портрет не нравился: «Говорят, что и я, и галстук очень похожи, но выражение… такое, точно я нанюхался хрену».'' # ART-
 
 
 

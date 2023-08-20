@@ -1,19 +1,22 @@
-science         = наука                                          # 14+
-formal sciences = формальные науки %% математика, логика, кибернетика, информатика и др. # 14+
+science                 = наука                                             # 14+
+formal sciences         = формальные науки %% математика, логика, информатика и др. # 14+
+---
+abstract @ adjective    = абстрактный                                       # 16+
+abstract @ noun %% noun = конспект, реферат, ~ аннотация                    # 16+
+annotation              = примечание, комментарий, ~ комментирование, аннотация # MATH+ # TERM+ # 16+
+---
+analytic                = аналитический                                     # 16+
+analyst                 = аналитик, ~ также: психоаналитик                  # 16+
+analysis                = анализ                                            # 18+
+synthesis               = синтез                                            # 18+
 
-abstract        = абстрактный, ~ конспект, реферат, ~ аннотация  # 16+
-annotation      = примечание, комментарий, комментирование, аннотация # MATH+ # TERM+ # 16+
+statistics              = статистика
+diagram                 = схема, чертёж, ~ диаграмма
+histogram               = гистограмма                                       # TERM- # 18+
 
-analytic        = аналитический                                  # 16+
-analyst         = аналитик, ~ также: психоаналитик               # 16+
-analysis        = анализ                                         # 18+
-synthesis       = синтез                                         # 18+
+paradigm                = парадигма                                         # TERM+ # 18+ /// paradigma - chiefly archaic
+synergetics             = синергетика                                       # TERM+ # 18+
 
-statistics      = статистика
-diagram         = схема, чертёж, диаграмма
-histogram       = гистограмма                                    # TERM- # 18+
 
-paradigm        = парадигма                                      # TERM+ # 18+ /// paradigma - chiefly archaic
-synergetics     = синергетика                                    # TERM+ # 18+
 
 

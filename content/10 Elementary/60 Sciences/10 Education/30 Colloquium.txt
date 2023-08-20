@@ -1,18 +1,21 @@
-discussion      = обсуждение, дискуссия       # 14+
-`dispute        = спор, разногласия, диспут   # 16+ /// `dispute, dis`pute
-dis`pute        = спорить, оспаривать, обсуждать # 16+
+---
+discussion             = обсуждение, дискуссия            # 14+
+dispute @ noun %% noun = спор, разногласия, ~ диспут      # 16+ /// `dispute\\dis`pute
+dispute @ verb %% verb = спорить, оспаривать, ~ обсуждать # 16+ /// dis`pute
 
-polemic         = спор, полемика, полемический # 18+
-argumentation   = аргументация                # 14+
-counterargument = контраргумент               # 14+
-comment         = комментарий, замечание, ~ критика # 14+
+polemic                = спор, полемика, ~ полемический   # 18+
+argumentation          = аргументация                     # 14+
+counterargument        = контраргумент                    # 14+
+comment                = комментарий, замечание, ~ критика # 14+
 
-conference      = конференция, ~ встреча (деловая) # MATH- # 18+
-symposium       = симпозиум, ~ сборник статей # MATH+ # 18+
-colloquium      = коллоквиум                  # MATH+ # 18+
-seminar         = семинар                     # MATH+ # 18+
+conference @ science   = конференция, ~ встреча (деловая) # MATH- # 18+
+symposium              = симпозиум, ~ сборник статей      # MATH+ # 18+
+colloquium             = коллоквиум                       # MATH+ # 18+
+seminar                = семинар                          # MATH+ # 18+
 
-demonstrate     = демонстрировать, показывать # 14+
-slide           = слайд                       # 14+
-video projector = проектор                    # 14+
+demonstrate            = демонстрировать, ~ показывать    # 14+
+slide @ image          = слайд                            # 14+
+video projector        = проектор                         # 14+
+
+
 

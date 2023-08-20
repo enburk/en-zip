@@ -1,7 +1,10 @@
+astrology          = астрология # 10+
+
 astral             = астральный, звездный # 10+
 astral plane       = астральный план # 10+
-astrology          = астрология # 10+
+
 horoscope          = гороскоп  # 10+
+---
 astrological signs = знаки зодиака
 Aries              = Овен      # TERM-
 Taurus             = Телец     # TERM-

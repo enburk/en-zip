@@ -1,0 +1,21 @@
+optics               = оптика
+
+lens @ physics       = линза, лупа, ~ также: объектив, ~ хрусталик глаза
+dioptre              = диоптрия                # 18+
+
+stereoscopic         = стереоскопический       # 18+
+parallax @ optics    = параллакс               # MATH+ # 18+
+
+chromatic aberration = хроматическая аберрация # MATH+ # TERM+ # 18+
+moiré                = муар, муаровый узор
+
+refraction           = преломление/рефракция   # MATH+ # TERM+ # 18+
+dispersion           = дисперсия               # MATH+ # TERM+ # 18+
+polarization         = поляризация             # MATH+ # TERM+ # 18+
+corpuscular          = корпускулярный          # MATH+ # TERM+ # 18+
+
+laser                = лазер, лазерный
+hologram             = голограмма
+
+
+

@@ -1,21 +1,21 @@
-biology        = биология                                              # 10+
+biology          = биология                                  # 10+
 
-Charles Darwin = Чарльз Дарвин                                         # 10+ /// Чарлз
+organism @ bio   = организм
+adaptation @ bio = адаптация, приспособление
+mimicry          = мимикрия                                  # TERM- # 16+
+migration @ bio  = миграция                                  # 10+
 
-organism       = организм
-adaptation     = адаптация, приспособление
-symbiosis      = симбиоз                                               # TERM- # 14+
-parasite       = паразит                                               # 16+
-mimicry        = мимикрия                                              # TERM- # 16+
-migration      = миграция                                              # 10+
+symbiosis        = симбиоз                                   # TERM- # 14+
+parasite         = паразит                                   # 16+
 
-atavism        = атавизм                                               # 16+
-relict         = реликт, реликтовый                                    # 16+
-rudiment       = в биологии: рудимент, ~ рудиментарный орган ~ также: основы # 16+
+atavism          = атавизм                                   # 16+
+relict @ bio     = реликт, реликтовый                        # 16+
+rudiment @ bio   = в биологии: рудимент, ~ рудиментарный орган # 16+ /// ~ также: основы
 
-ecology        = экология                                              # 10+
-biomass        = биомасса                                              # 14+
+ecology          = экология                                  # 10+
+biomass          = биомасса                                  # 14+
+---
+plankton         = планктон
+phytoplankton    = фитопланктон %% растительная часть планктона # TERM+ # 16+
 
-plankton       = планктон
-phytoplankton  = фитопланктон %% растительная часть планктона          # TERM+ # 16+
 

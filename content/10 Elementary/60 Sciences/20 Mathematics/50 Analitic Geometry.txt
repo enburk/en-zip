@@ -1,0 +1,31 @@
+analytic geometry        = аналитическая геометрия    # MATH+ # TERM+ # DEL # 18+
+---
+coordinate system        = система координат          # 10+
+abscissa                 = абсцисса                   # MATH- # 10+
+ordinate                 = ордината                   # MATH- # 10+
+
+Cartesian coordinates    = декартовы координаты       # 10+
+polar coordinates        = полярные координаты        # MATH+ # TERM+ # 18+
+cylindrical coordinates  = цилиндрические координаты  # MATH+ # TERM+ # 18+
+spherical coordinates    = сферические координаты     # MATH+ # TERM+ # 18+
+
+Archimedean spiral       = Архимедова спираль         # MATH- # 18+
+lemniscate of Bernoulli  = лемниската Бернулли        # MATH- # 18+ /// [lem-nis-kit, lem-nis-keyt]
+cycloid                  = циклоида                   # MATH+ # 18+
+epicycloid               = эпициклоида                # MATH+ # 18+
+cardioid                 = кардиоида                  # MATH+ # 18+
+involute/evolvent        = эвольвента                 # MATH+ # 18+ /// инволюта редкий синоним
+Lissajous figure         = фигуры Лиссажу             # MATH- # 18+ /// [lee-suh-zhoo]
+
+conic section            = коническое сечение         # MATH+ # TERM+ # 18+
+stereographic projection = стереографическая проекция # MATH+ # TERM+ # 18+
+---
+ellipsoid                = эллипсоид                  # MATH- # 18+
+paraboloid               = параболоид                 # MATH- # 18+ /// [puh-rAb-uh-loid]
+hyperboloid              = гиперболоид %% «Гиперболоид» инженера Гарина ~ на самом деле имел зеркало ~ в форме параболоида. # MATH- # 18+
+hyperbolic paraboloid    = гиперболический параболоид # MATH- # 18+
+
+geodesic [line]          = геодезическая линия        # MATH+ # TERM+ # 18+
+hypercube                = гиперкуб                   # MATH+ # TERM+ # 18+
+
+

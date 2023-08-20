@@ -1,34 +1,40 @@
-clergy             = клир
-cleric             = клирик, духовное лицо
-hierarch           = иерарх                                          /// # DELAY
-patriarch          = патриарх, старейшина                            /// (также церк. и библ.)
-Pope|pope          = папа римский
-pontiff            = понтифик %% титул папы римского                 # TERM-
-conclave           = конклав %% собирается после смерти понтифика ~ для избрания нового папы # TERM-
-papal bull         = булла                                           # TERM+
-[papal] legate     = папский легат %% личный представитель папы римского # TERM+
+clergy         = клир
 
-eparchy            = епархия
-episcopal          = епископальный
-cathedra           = кафедра %% почётное кресло епископа в храме
-cathedral          = кафедральный, собор, ~ кафедральный собор
-vicar              = викарий, ~ приходский священник %% в англиканской церкви # TERM+
-metropolitan       = митрополит
-prelate            = прелат                                          # TERM+
-deacon             = диакон/дьякон                                   # TERM+
-pastor             = пастор
-chaplain           = капеллан                                        # TERM-
-curé/curate        = кюре                                            # TERM+ /// # DELAY
+cleric         = клирик, духовное лицо
+hierarch       = иерарх                                          /// # DELAY
+patriarch      = патриарх, старейшина                            /// (также церк. и библ.)
+---
+Pope|pope      = папа римский
+pontiff        = понтифик %% титул папы римского                 # TERM-
+conclave       = конклав                                         /// %% собирается после смерти понтифика ~ для избрания нового папы # TERM-
+papal bull     = булла                                           # TERM+
+[papal] legate = папский легат                                   /// %% личный представитель папы римского # TERM+
 
-abbot              = аббат, ~ настоятель монастыря
-abbess             = аббатиса, ~ настоятельница монастыря
-abbey              = аббатство
+eparchy        = епархия
+episcopal      = епископальный
 
-monastic order     = монашеский орден
-Augustinians       = августинцы                                      # HISTORY+ # TERM+
-Benedictines       = бенедиктинцы
-Dominicans         = доминиканцы                                     # HISTORY+ # TERM+
-Franciscans        = францисканцы                                    # HISTORY+ # TERM+
-Jesuits            = иезуиты
-Ignatius of Loyola = Игнатий Лойола %% основатель ордена иезуитов    # HISTORY+ # TERM+
+cathedra       = кафедра %% почётное кресло епископа в храме
+cathedral      = кафедральный, собор, ~ кафедральный собор
+
+vicar          = викарий, ~ приходский священник %% в англиканской церкви # TERM+
+metropolitan   = митрополит
+prelate        = прелат                                          # TERM+
+deacon         = диакон/дьякон                                   # TERM+
+pastor         = пастор
+chaplain       = капеллан                                        # TERM-
+curé/curate    = кюре                                            # TERM+ /// # DELAY
+---
+abbot          = аббат, ~ настоятель монастыря
+abbess         = аббатиса, ~ настоятельница монастыря
+abbey          = аббатство
+
+===
+monastic order = монашеский орден
+===
+Augustinians   = августинцы                                      # HISTORY+ # TERM+
+Benedictines   = бенедиктинцы
+Dominicans     = доминиканцы                                     # HISTORY+ # TERM+
+Franciscans    = францисканцы                                    # HISTORY+ # TERM+
+Jesuits        = иезуиты
+
 

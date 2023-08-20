@@ -1,13 +1,16 @@
-botany         = ботаника                              # 10+
+botany                   = ботаника                    # 10+
+---
+photosynthesis           = фотосинтез                  # 14+
+chlorophyll//chloroplast = хлорофилл, хлоропласт       # TERM- # 14+
+pigment @ bio            = пигмент, краситель
 
-photosynthesis = фотосинтез                            # 14+
-chloroplasts   = хлоропласт                            # TERM- # 14+
-chlorophyll    = хлорофилл                             # TERM- # 14+
-pigment        = пигмент, краситель
+===
+citrus                   = цитрус                      # 10+
+===
 
-citrus         = цитрус                                # 10+
-bergamot       = бергамот                              # 10+
-citron         = цитрон                                # 10+
-clementine     = клементин %% гибрид мандарина и апельсина # 16+ /// French
-pomelo         = помелло                               # 14+
+bergamot                 = бергамот                    # 10+
+citron                   = цитрон                      # 10+
+clementine               = клементин %% гибрид мандарина и апельсина # 16+ /// French
+pomelo                   = помелло                     # 14+
+
 

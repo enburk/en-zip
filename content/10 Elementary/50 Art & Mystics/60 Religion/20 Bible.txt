@@ -1,40 +1,48 @@
-Bible                       = Библия
-Adam and Eve                = Адам и Ева
-Eden                        = Эдем                      # TERM-
-Abel, Cain                  = Авель, Каин               # TERM-
+Bible              = Библия
+===
+Eden               = Эдем            # TERM-
+Adam and Eve       = Адам и Ева
+Abel and Cain      = Авель и Каин    # TERM-
+===
+Noah's ark         = Ноев ковчег
+Mount Ararat       = гора Арарат
+Tower of Babel     = Вавилонская башня
+Sodom and Gomorrah = Содом и Гоморра
 
-Noah's ark                  = Ноев ковчег
-Mount Ararat                = гора Арарат
-Tower of Babel              = Вавилонская башня
-Sodom and Gomorrah          = Содом и Гоморра
+Exodus             = Исход %% исход евреев из Египта; ~ вторая книга Ветхого Завета
+Moses              = Моисей
+manna              = манна
 
-Exodus                      = Исход %% исход евреев из Египта; ~ вторая книга Ветхого Завета
-Moses                       = Моисей
-manna                       = манна
+David              = Давид
+Goliath            = Голиаф
 
-David                       = Давид
-Goliath                     = Голиаф
-Solomon                     = Соломон                   # TERM-
-Ecclesiastes                = Экклезиаст                # TERM+
+Solomon            = Соломон         # TERM-
+Ecclesiastes       = Экклезиаст      # TERM+
+---
+Satan              = Сатана
+Lucifer            = Люцифер
+= %% в римском переводе Библии -- ~ образ «утренней звезды» (Венеры)
+= %% в христианстве с XVII века — ~ синоним падшего ангела, ~ отождествляемого ~ с Сатаной и дьяволом
 
-Satan                       = Сатана
-Lucifer                     = Люцифер %% В римском переводе Библии -- ~ образ «утренней звезды» (Венеры); ~~~ в христианстве с XVII века — ~ синоним падшего ангела, ~ отождествляемого с Сатаной и дьяволом.
 seraph %% plural: seraphs/seraphim = серафим
-archangel Michael           = архангел Михаил           # TERM-
-archangel Gabriel           = архангел Гавриил          # TERM-
-Behemoth                    = Бегемот
-Leviathan                   = Левиафан
+archangel Michael  = архангел Михаил # TERM-
+archangel Gabriel  = архангел Гавриил # TERM-
 
-evangelist                  = проповедник Евангелия, ~ протестантсткий миссионер
-Evangelist                  = евангелист %% один из четырёх авторов Евангелий
-Matthew, Mark, ~ Luke, John = Матвей, Марк, Лука, Иоанн # TERM+
-Jesus Christ                = Иисус Христос
-apostle %% formal           = приверженец, поборник, ~ апостол
-Judas Iscariot              = Иуда Искариот
-Pontius Pilate              = Понтий Пилат              # TERM+
-crown of thorns             = терновый венец
+Behemoth           = Бегемот
+Leviathan          = Левиафан
 
-Book of Revelation, ~ Apocalypse = Откровение Иоанна Богослова, ~ Апокалипсис %% последняя книга ~ Нового Завета
-apocalypse                  = апокалипсис, ~ конец света
-Armageddon                  = Армагеддон %% место последней битвы добра со злом; ~ сама битва
+===
+Evangelist         = евангелист %% один из четырёх авторов Евангелий
+evangelist         = проповедник Евангелия, ~ протестантсткий миссионер
+===
+
+apostle %% formal  = приверженец, поборник, ~ апостол
+Judas Iscariot     = Иуда Искариот
+Pontius Pilate     = Понтий Пилат    # TERM+
+
+===
+Book of Revelation//Apocalypse = Откровение Иоанна Богослова, ~ Апокалипсис %% последняя книга ~ Нового Завета
+apocalypse         = апокалипсис, ~ конец света
+Armageddon         = Армагеддон %% место последней битвы добра со злом; ~ сама битва
+
 

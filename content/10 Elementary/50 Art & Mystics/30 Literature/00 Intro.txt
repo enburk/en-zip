@@ -1,27 +1,34 @@
-literature              = литература
-litterateur             = литератор                                     # ART+ # RARE+ # 16+ /// в англ. думаю еще реже употребляется
-author,~co-author       = автор, соавтор
-autograph               = автограф %% рукопись, подпись                 # ART+ # 10+
-opus                    = опус                                          # 18+
-tome                    = том ~ (увесистая книга)                       # 10+
-volume                  = том ~ (часть большого произведения)           # 10+
-bestseller              = бестселлер                                    # 10+
-bibliophile             = библиофил                                     # RARE+ # 10+
-graphomania/scribomania = графомания                                    # 18+
+literature     = литература
+---
+litterateur    = литератор                                              # ART+ # RARE+ # 16+
+author @ book  = автор
+co-author      = соавтор
+---
+tome           = том ~ (увесистая книга)                                # 10+
+volume @ book  = том ~ (часть большого произведения)                    # 10+
+opus @ book    = опус                                                   # 18+
 
-critic                  = критик
-critique                = критический отзыв, ~ критика
+bestseller     = бестселлер                                             # 10+
+bibliophile    = библиофил                                              # RARE+ # 10+
+graphomania %% also: scribomania = графомания                                             # 18+
 
-discourse               = речь, дискурс                                 # TERM+ # 16+
-excursus                = экскурс %% отступление от темы                # RARE+ # 18+
-context                 = контекст                                      # 14+
-paraphrase              = перефразировать, пересказывать, ~ парафраз, пересказ # TERM+ # 16+
-commentary              = комментарий
-bibliography            = библиография                                  # 16+
-anthology               = антология                                     # TERM+ # 14+
-palimpsest              = палимпсест %% рукопись поверх стертого текста # TERM+ # 16+
-palindrome              = палиндром %% читается одинаково слева направо ~ и наоборот # TERM+ # 18+
-anagram                 = анаграмма                                     # 18+
+critic         = критик
+critique       = критический отзыв, ~ критика
+
+discourse      = речь, дискурс                                          # TERM+ # 16+
+excursus       = экскурс %% отступление от темы                         # RARE+ # 18+
+context @ book = контекст                                               # 14+
+paraphrase     = перефразировать, пересказывать, ~ парафраз, пересказ   # TERM+ # 16+
+commentary     = комментарий
+
+bibliography   = библиография                                           # 16+
+anthology      = антология                                              # TERM+ # 14+
+
+palimpsest     = палимпсест %% рукопись поверх стертого текста          # TERM+ # 16+
+palindrome     = палиндром %% читается одинаково слева направо ~ и наоборот # TERM+ # 18+
+anagram        = анаграмма                                              # 18+
+autograph      = автограф %% рукопись, подпись                          # ART+ # 10+
+
 
 
 

@@ -1,33 +1,27 @@
-school(1)                    = школа, ~ учебное заведение
-school(2)                    = косяк, стая ~ (рыб и т.п.)               /// school/shoal of fish, dolphins, porpoises and squids, but rather a pod/gam/herd/mob of whales
-school(3)                    = направление ~ (в искусстве, науке и т.п.) # 16+
+school @ institution          = школа, ~ учебное заведение
 
-class                        = класс, группа %% Но: ~ the first grade -- первый класс ~ the second grade -- второй класс ~ и т.п. /// # polysemic /// Томпсон
-student                      = учащийся, студент                        # 10+ /// Latin /// ученик - pupil
+class @ school                = класс, группа %% Но: ~ the first grade -- первый класс ~ the second grade -- второй класс ~ и т.п. /// # polysemic /// Томпсон
+student @ school              = учащийся, студент               # 10+ /// Latin /// ученик - pupil
+---
+elementary                    = простой, базовый, ~ элементарный, ~ первоначальный # 10+
+elementary school {Am.}       = начальная школа                 # 10+
+: Elementary,~ my dear Watson!
+= %% на самом деле, ~ в текстах Конан Дойля ~ эта фраза не встречается # ART- # HISTORY- # 14+
+---
+gymnasium @ gym %% informal: gym = спортзал                        # 10+
+gymnasium @ Greek             = гимнасий %% в Древней Греции    # 10+
+gymnasium @ school            = гимназия %% европейская школа ~ для подготовки к университету # 10+
+lyceum                        = лицей                           # 10+
 
-elementary school (Am.)      = начальная школа                          # 10+
-elementary                   = простой, базовый, ~ элементарный, ~ первоначальный # 10+
-Elementary,~ my dear Watson! = «Элементарно,~ мой дорогой Ватсон!» %% На самом деле, в текстах Конан Дойля эта фраза не встречается. # ART- # HISTORY- # 14+
+dictation                     = диктант, диктовка
+examination %% informal: exam = экзамен
 
-gymnasium ~ informal: gym    = спортзал                                 # 10+
-gymnasium                    = гимнасий %% в Древней Греции             # 10+
-gymnasium                    = гимназия %% европейская школа для подготовки к университету # 10+
-lyceum                       = лицей                                    # 10+
+semester                      = семестр
+term\\trimester               = триместр                        # RARE-
 
-dictation                    = диктант, диктовка
-test                         = контрольная работа, ~ проверочная работа, ~ тест, тестировать /// |проверочная
-test                         = проверка, испытание, ~ aнализ, обследование
+methodics                     = методика                        # 10+
+didactic                      = поучительный, ~ дидактический   # TERM- # 18+
+chrestomathy                  = хрестоматия                     # TERM- # 18+
 
-semester                     = семестр
-term\\trimester              = триместр                                 # RARE-
 
-examination,~informal: exam  = экзамен
-
-discipline                   = дисциплина, дисцилинировать, ~ порядок
-discipline                   = дисциплина ~ (научная или спортивная)    /// (предмет изучения) academic discipline
-interdisciplinary            = междисциплинарный                        # TERM+ # 18+
-
-methodics                    = методика                                 # 10+
-didactic                     = поучительный, ~ дидактический            # TERM- # 18+
-chrestomathy                 = хрестоматия                              # TERM- # 18+
 

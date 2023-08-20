@@ -1,0 +1,44 @@
+anthropology                 = антропология     # pix-
+
+Gigantopithecus              = гигантопитек                     # TERM- # 16+
+troglodyte                   = троглодит, пещерный человек
+
+Australopithecus             = австралопитек                    # TERM-
+Pithecanthropus ~ (Java man) = питекантроп ~ («яванский человек»)
+Neanderthal  [man]           = неандерталец                     /// neanderthal
+Cro-Magnon [man]             = кроманьонец                      # 16+
+
+===
+Homo erectus                 = человек прямоходящий             # 18+
+Homo sapiens                 = человек разумный
+===
+Paleolithic (age/era/period) = палеолит %% древний каменный век # TERM+ # 16+
+Mesolithic period            = мезолит %% средний каменный век  # TERM+ # 16+
+Neolithic period             = неолит %% новый каменный век     # TERM+ # 16+
+Bronze Age                   = бронзовый век
+petroglyph                   = петроглиф %% наскальное изображение # TERM+ # 16+
+===
+
+matriarchy                   = матриархат                       # 16+
+patriarchy                   = патриархат                       # 16+
+
+===
+
+ethnos                       = этнос
+culture @ ethnos             = культура
+
+===
+
+aborigines                   = туземцы, ~ коренные жители, ~ аборигены /// %% ''от'' лат. «первые обитатели»
+Aborigines                   = австралийские аборигены
+
+pygmy                        = пигмей                           # 16+
+
+Nordic                       = нордический, ~ скандинавский, северный # 16+
+Aryan                        = ариец/арийка, арийский           # 16+ /// (самоназвание народов Древнего Ирана и Древней Индии)
+
+===
+demography                   = демография                       # 16+
+depopulation                 = депопуляция                      # 16+
+===
+

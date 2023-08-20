@@ -1,0 +1,19 @@
+central nervous system = центральная нервная система        # TERM-
+
+nerve                  = нерв                               /// самообладание, наглость
+receptor @ bio         = рецептор                           # TERM+
+
+neuron                 = нейрон
+synapse                = си́напс                             # TERM+
+
+sensomotor             = сенсомоторный                      # TERM+
+psychomotor            = психомоторный                      # TERM+
+
+===
+
+serotonin              = серотонин %% «гормон счастья»      # TERM+ /// нейромедиатор
+hypothalamus           = гипоталамус %% область в промежуточном мозге # TERM+ # DEL
+hypophysis             = гипофиз %% нижний мозговой придаток # TERM+ # DEL
+endocrine system       = эндокринная система                # TERM+
+
+

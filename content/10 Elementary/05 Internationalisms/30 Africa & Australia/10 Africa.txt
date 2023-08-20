@@ -1,11 +1,12 @@
-Africa     = Африка                          # pix-
+Africa        = Африка                       # pix-
 
-banana     = банан
-chimpanzee = шимпанзе
-gnu        = гну %% ''другое название:'' wildebeest # 10+
-macaque    = макак/макака
-mamba      = мамба                           # 10+
-okapi      = окапи                           # RARE+ # 16+ /// (жираф с короткой шеей)
-voodoo     = вуду                            # 10+
-zombie     = зомби
+banana        = банан
+chimpanzee    = шимпанзе
+gnu           = гну %% ''другое название:'' wildebeest # 10+
+macaque       = макак/макака
+mamba         = мамба                        # 10+
+okapi         = окапи                        # RARE+ # 16+ /// (жираф с короткой шеей)
+voodoo @ doll = вуду                         # 10+
+zombie        = зомби
+
 

@@ -1,8 +1,8 @@
-Solar System     = Солнечная система /// the solar system
+Solar System     = Солнечная система          /// the solar system
 
 ===
 
-Sun              = Солнце        /// the sun//the Sun
+Sun              = Солнце                     /// the sun//the Sun
 Mercury @ planet = Меркурий
 Venus @ planet   = Венера
 Earth @ planet   = Земля
@@ -14,16 +14,23 @@ Neptune @ planet = Нептун
 Pluto @ planet   = Плутон
 
 ===
-
----
-Moon             = Луна          /// the moon//the Moon
+Moon             = Луна                       /// the moon//the Moon
 moon             = луна, спутник
 lunar            = лунный
+===
+
+Phobos @ moon    = Фобос ~ (спутник Марса)    # TERM- # DEL # 14+ /// Nature
+Ganymede @ moon  = Ганимед ~ (спутник Юпитера) # TERM- # 14+
+Io @ moon        = Ио ~ (спутник Юпитера)     # TERM- # 14+
+Titan @ moon     = Титан ~ (спутник Сатурна)  # TERM- # 14+
+
+===
 
 Martian          = марсианин, марсианский
 Martians         = марсиане
 
 Saturnian        = сатурнианский
 Jovian           = относящийся к планете Юпитер, ~ подобный Юпитеру
+
 
 

@@ -2,19 +2,21 @@ inorganic chemistry = неорганическая химия
 
 oxide               = оксид
 hydroxide           = гидроксид
-salts               = соли
-
-cyanide             = цианид %% соль синильной кислоты                   # MATH+ # TERM+
-sulphate\\sulfate   = сульфат %% соль серной кислоты                     # MATH+ # TERM+
-sulphide\\sulfide   = сульфид %% соль сероводородной кислоты             # MATH+ # TERM+
-phosphate           = фосфат %% соль фосфорной кислоты                   # MATH+ # TERM+
+salts @ chemistry   = соли
 
 valence/valency     = валентность
-allotropes          = аллотропы                                          # TERM+ /// Алмаз и графит — аллотропы углерода. # TERM+
-ozone               = озон                                               /// Озон -- аллотроп кислорода. # TERM+
+allotropes          = аллотропы                            # TERM+ /// Алмаз и графит — аллотропы углерода. # TERM+
+ozone @ chemistry   = озон                                 /// Озон -- аллотроп кислорода. # TERM+
 
 neutralisation\\neutralization = нейтрализация
 catalyst            = катализатор
-mole                = моль %% единица измерения количества вещества ~ обозначается: mol # TERM+
+
+===
+
+cyanide             = цианид %% соль синильной кислоты     # MATH+ # TERM+
+sulphate\\sulfate   = сульфат %% соль серной кислоты       # MATH+ # TERM+
+sulphide\\sulfide   = сульфид %% соль сероводородной кислоты # MATH+ # TERM+
+phosphate           = фосфат %% соль фосфорной кислоты     # MATH+ # TERM+
+
 
 

@@ -1,0 +1,67 @@
+astronomy                 = астрономия                                 # pix-
+
+telescope                 = телескоп, ~ складывать/складываться, ~ раздвигать/раздвигаться
+observatory               = обсерватория                               # 10+
+planetarium               = планетарий
+
+corona                    = солнечная корона                           # TERM- # 18+
+halo                      = в астрономии: гало, ~ также: нимб, ореол   # 18+
+moon phases//lunar phases = фазы луны                                  /// Другие варианты: phase of the moon
+---
+Orion @ stars             = Орион ~ (созвездие)
+Betelgeuse @ star %% a red supergiant star ~ in the constellation Orion = Бетельгейзе
+Rigel @ star %% a blue supergiant star ~ in the constellation Orion = Ригель
+supergiant                = сверхгигант                                # 10+
+
+Centaurus @ constellation = Центавр/Кентавр ~ (созвездие)
+Alpha Centauri            = Альфа Центавра                             # 10+
+
+Pleiades//Seven Sisters   = Плеяды %% рассеянное звездное скопление    # TERM- # 16+
+globular cluster          = шаровое звёздное скопление                 # 12+
+
+zenith                    = зенит                                      # MATH+ # RARE+ # TERM+ # 18+ /// есть в Азии
+nadir                     = надир                                      # MATH+ # RARE+ # TERM+ # 18+
+
+===
+astrophysics              = астрофизика                                # TERM+
+===
+---
+elliptical orbit          = эллиптическая орбита                       # TERM-
+parabolic trajectory      = параболическая траектория                  # TERM-
+perturbation              = в астрономии: пертурбация ~ (возмущение орбиты) # TERM- # 18+
+retrograde                = в астрономии: ретроградный                 # TERM- # 18+
+---
+perigee/apogee            = перигей/апогей                             # TERM+ # 16+
+perihelion/aphelion       = перигелий/афелий                           # TERM+ # 16+
+: Comet ISON pass the perihelion # 16+
+
+plane of the ecliptic     = плоскость эклиптики                        # TERM+
+geostationary orbit       = геостационарная орбита                     /// (GEO) (ГСО)
+gravity assist maneuver   = гравитационный манёвр                      # TERM-
+
+parallax @ method         = параллакс                                  # MATH+ # 18+
+parsec                    = парсек                                     # 10+
+
+===
+cosmology                 = космология                                 # 18+
+===
+
+spiral galaxy             = спиральная галактика                       # 10+
+elliptical galaxy         = эллиптическая галактика                    # 10+
+irregular galaxy          = неправильная галактика                     # 10+
+
+===
+
+gravitational lens        = гравитационная линза                       # MATH+ # 18+
+gravitational collapse    = гравитационный коллапс                     # MATH+ # 18+
+
+pulsar                    = пульсар                                    # MATH+ # 18+
+quasar                    = квазар                                     # MATH+ # 18+ /// /ˈkweɪzɑː/
+exoplanet ~ (extrasolar planet) = экзопланета ~ (внесолнечная планета)       # 18+
+
+= =
+
+Big Bang                  = Большой взрыв                              # 10+
+singularity               = сингулярность                              # MATH+ # 18+
+
+

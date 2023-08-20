@@ -1,0 +1,31 @@
+physiology              = физиология
+
+thermoregulation        = терморегуляция
+hypothermia             = гипотермия %% переохлаждение     # TERM-
+
+biorhythm               = биоритм
+metabolism              = метаболизм %% обмен веществ      # TERM-
+
+hemoglobin              = гемоглобин
+vitamin                 = витамин
+
+hormonal                = гормональный
+insulin                 = инсулин
+adrenaline||adrenalin   = адреналин
+testosterone            = тестостерон
+pheromones              = феромоны                         # TERM+
+
+microflora              = микрофлора
+bifidobacteria          = бифидобактерии
+toxin                   = токсин, яд                       # DEL
+
+===
+reproduction            = размножение, ~ воспроизведение, репродукция # 16+
+vegetative reproduction = вегетативное размножение         # TERM- # 16+
+fertility               = фертильность, ~ плодородие, плодовитость # TERM+ # 18+
+===
+embryology              = эмбриология                      # 16+
+embryo                  = эмбрион, зародыш                 # 16+
+placenta                = плацента                         # TERM+ # 18+
+===
+

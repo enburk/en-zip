@@ -1,0 +1,45 @@
+atomic physics        = атомная физика
+
+proton                = протон
+neutron               = нейтрон
+electron              = электрон
+---
+deuterium             = дейтерий %% тяжёлый водород    # MATH- # 18+
+tritium               = тритий %% сверхтяжёлый водород # MATH- # 18+
+
+Bohr model            = модель атома Бора              # MATH+ # 18+
+
+radioactivity         = радиоактивность
+isotope               = изотоп                         # MATH-
+
+radium                = радий
+uranium               = уран
+plutonium             = плутоний
+
+gamma radiation       = гамма-излучение                # MATH+
+critical mass         = критическая масса
+---
+roentgen              = рентген %% единица дозы радиоактивного облучения
+X-ray                 = ретгеновское излучение, ~ рентгеновский снимок
+dosimeter             = дозиметр
+
+===
+quantum mechanics     = квантовая механика
+===
+
+spin @ physics        = спин                           # MATH+ # 18+
+strangeness @ physics = странность %% квантовое число  # MATH+ # 18+
+charm @ physics       = очарование %% квантовое число  # MATH+ # 18+
+
+antimatter            = антивещество, антиматерия      # 18+
+annihilation          = аннигиляция, ~ истребление, уничтожение # 18+
+
+photon                = фотон                          # 18+
+neutrino              = нейтрино                       # 18+
+
+quark                 = кварк                          # 18+
+antiquark             = антикварк                      # 18+
+
+Schrödinger's cat     = Кот Шрёдингера
+
+

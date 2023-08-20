@@ -1,30 +1,27 @@
 poetry                   = поэзия
+
 poet                     = поэт/поэтесса
 poetess %% old-fashioned = поэтесса
+
 rhyme                    = рифма
-<small>''Roses are red, ~ violets are blue, ~ most poems rhyme, ~ but this one doesn't.''</small> = %% ''British toilet graffiti'' ~ HOTMAG
 
-sonnet                   = сонет           # 16+
-ode                      = ода             # ART+ # 16+
-elegy                    = элегия          # 16+
-stanzas                  = стансы          # ART+ # 16+
+sonnet                   = сонет # 16+
+ode                      = ода  # ART+ # 16+
+elegy                    = элегия # 16+
+stanzas                  = стансы # ART+ # 16+
 
-iamb                     = ямб             # ART+ # RARE+ # TERM+ # 16+
-trochee/choree           = хорей           # ART+ # RARE+ # TERM+ # 16+
-dactyl                   = дактиль         # ART+ # RARE+ # TERM+ # 18+
-amphibrach               = амфибрахий      # ART+ # RARE+ # TERM+ # 18+
-anapaest\\anapest        = ана́пест         # ART+ # RARE+ # TERM+ # 18+
+iamb                     = ямб  # ART+ # RARE+ # TERM+ # 16+
+trochee/choree           = хорей # ART+ # RARE+ # TERM+ # 16+
+dactyl                   = дактиль # ART+ # RARE+ # TERM+ # 18+
+amphibrach               = амфибрахий # ART+ # RARE+ # TERM+ # 18+
+anapaest\\anapest        = ана́пест # ART+ # RARE+ # TERM+ # 18+
 hexameter                = гекзаметр/гексаметр # ART+ # RARE+ # TERM+ # 18+
-limerick                 = лимерик         # 18+
-tanka                    = танка           # 18+ /// (31-слоговой пятистрочный японский стих)
-haiku                    = хайку/хокку     # 18+ /// (17-слоговой трехстрочный японский стих)
-ghazals                  = газели          # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-ruba'i                   = рубаи́           # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-Omar Khayyam             = Омар Хайям      # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
-Horace                   = Гораций         # ART+ # HISTORY+ # 18+
-Virgil|Vergil            = Вергилий        # ART+ # HISTORY+ # 18+
-Dante Alighieri          = Данте Алигьери  # ART+ # HISTORY+ # 18+
-''Divine Comedy''        = «Божественная комедия» # ART+ # HISTORY+ # 18+
-Byronic                  = байронический   # 18+
+
+limerick                 = лимерик # 18+
+tanka                    = танка # 18+ /// (31-слоговой пятистрочный японский стих)
+haiku                    = хайку/хокку # 18+ /// (17-слоговой трехстрочный японский стих)
+ghazals                  = газели # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+ruba'i                   = рубаи́ # ART+ # HISTORY+ # RARE+ # TERM+ # 18+
+
 
 

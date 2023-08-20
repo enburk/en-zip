@@ -1,0 +1,22 @@
+informatics              = информатика
+cybernetics              = кибернетика                                # 10+
+---
+algorithm                = алгоритм                                   # 10+
+heuristic algorithm      = эвристический алгоритм                     # IT+ # MATH+ # TERM+ # 18+
+
+correctness              = корректность, правильность
+optimization %% Br. also: optimisation = оптимизация
+recursion                = рекурсия                                   # IT+ # MATH+ # TERM+ # 18+
+---
+cryptography//cryptology = криптография                               # 18+
+encoding                 = кодирование                                # 10+
+decoding                 = декодирование                              # 10+
+
+Turing test              = тест Тьюринга                              # IT+ # 18+
+Turing machine           = машина Тьюринга %% абстрактная вычислительная машина # IT+ # MATH+ # 18+
+
+===
+Ada Lovelace             = Ада Лавлейс %% дочь Байрона, ~ считается первым в мире программистом # 18+
+Ada ~ (programming language) @ language = %% не пугайтесь, если увидите книгу ~ с таким названием # IT+ # 18+
+
+

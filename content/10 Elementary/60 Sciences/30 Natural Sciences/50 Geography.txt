@@ -1,0 +1,48 @@
+geography             = география          # pix-
+---
+the ~ Arctic          = Арктика
+the ~ Antarctic       = Антарктика         # 10+
+Antarctica            = Антарктида
+polar circle          = полярный круг
+Greenwich meridian    = Гринвичский меридиан # TERM- # 10+ /// Prime Meridian
+---
+the ~ Grand Canyon    = Большой каньон     # TERM- # 10+
+the ~ Tibetan Plateau = Тибетское нагорье  # TERM- # 10+
+cirque                = ледниковый цирк    # 16+
+saddle @ geo          = седловина          # 18+
+---
+Greenland             = Гренландия
+the ~ Nile Delta      = дельта Нила        # 10+
+the ~ Sahara          = Сахара
+
+===
+oceanography          = океанология/океанография # TERM- # 10+
+===
+
+Gulf Stream           = Гольфстрим         # 10+
+Great Barrier Reef    = Большой Барьерный риф # TERM- # 10+
+continental shelf     = континентальный шельф # TERM- # 10+
+
+bathysphere           = батисфера          # 10+
+bathyscaphe           = батискаф           # 10+
+
+===
+cartography           = картография        # 10+
+===
+
+Mercator projection   = проекция Меркатора # MATH+ # 18+
+atlas                 = атлас              # 10+
+
+topography            = топография         # 10+
+toponym               = топоним            # 18+
+
+geodesy               = геодезия           # TECH+ # TERM+ # 18+
+geoid                 = геоид              # MATH+ # TECH+ # TERM+ # 18+
+
+triangulation         = триангуляция       # MATH+ # TECH+ # TERM+ # 18+
+theodolite            = теодолит           # TECH+ # TERM+ # 18+
+azimuth               = азимут             # 16+
+
+
+
+

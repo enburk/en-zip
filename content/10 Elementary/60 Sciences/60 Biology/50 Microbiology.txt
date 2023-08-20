@@ -1,0 +1,21 @@
+microbiology   = микробиология                 # 16+
+
+microscope     = микроскоп
+
+virus @ bio    = вирус
+microbe        = микроб
+bacteria       = бактерия
+
+colony @ bio   = колония                       # 14+
+culture @ bio  = культура                      # 14+
+
+amoeba         = амёба                         # 10+
+infusoria      = инфузории                     # 10+
+
+protoplasm     = протоплазма                   # TERM- # 14+
+membrane @ bio = мембрана, ~ плёнка, перепонка # TERM- # 14+
+
+spore          = спора                         # 10+
+chitin         = хитин                         # 10+
+
+

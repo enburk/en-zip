@@ -1,0 +1,52 @@
+geology            = геология                                   # pix- # 10+
+
+lithosphere        = литосфера                                  # MATH+ # TERM+ # 14+
+plate tectonics    = тектоника плит                             # MATH+ # TERM+ # 14+
+continental drift  = дрейф континентов                          # 14+
+Pangaea|Pangea     = Пангея                                     # TERM- # 14+ /// (древний гипотетический континент)
+
+seismograph        = сейсмограф                                 # TERM+ # 10+
+magnitude          = величина, значение, ~ магнитуда
+Richter scale      = шкала Рихтера                              # 18+
+aftershock         = афтершок                                   # 14+
+
+active volcano     = действующий вулкан
+caldera            = кальдера                                   # 18+
+magma              = магма
+pyroclastic flow   = пирокластический поток                     # 18+
+
+===
+
+basalt             = базальт                                    # 10+
+obsidian           = обсидиан %%  вулканическое стекло          # 10+
+pumice             = пемза                                      # 10+ /// /ˈpʌmɪs/
+andesite           = андезит                                    # TERM+ # 18+
+
+tuff %% also: tufa = вулканический туф                          # 18+
+tufa               = туф                                        # 18+
+
+===
+---
+speleology         = спелеология                                # 10+
+stalagmite         = сталагмит                                  # 10+
+stalactite         = сталактит                                  # 10+
+
+karst              = карст                                      # 14+
+cavern             = пещера, грот, каверна                      # 16+ /// каверна ли ?
+
+erosion            = эрозия, разрушение
+artesian           = артезианский
+glaciology         = гляциология %% наука о природных льдах     # RARE+ # TERM+ # 18+
+geothermal         = геотермальный                              # 10+
+
+conglomerate       = конгломерат %% горная порода из разных элементов # TECH+ # TERM+ # 18+
+bauxite            = боксит %% алюминиевая руда                 # TECH+ # TERM+ # 16+
+
+===
+
+geophysics         = геофизика                                  # MATH+ # 18+
+magnetic pole      = магнитный полюс                            # MATH+ # 10+
+gravity anomaly    = гравитационная аномалия                    # MATH+ # 10+
+
+
+

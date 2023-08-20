@@ -2,13 +2,14 @@ substance        = вещество, субстанция
 
 toxic            = ядовитый, токсичный
 plastic          = пластик, пластмасса
-polyethylene     = полиэтилен                                            /// Многие путают полиэтилен с целофаном – но это разные материалы. # COMMENT
-amalgam          = амальгама %% сплав ртути с другими металлами          # TERM+ # 16+
+polyethylene     = полиэтилен
+amalgam          = амальгама %% сплав ртути с другими металлами # TERM+ # 16+
 
-absorption       = абсорбция                                             # TERM- # 16+
-absorbent        = абсорбент                                             # TERM- # 16+
+absorption       = абсорбция                           # TERM- # 16+
+absorbent        = абсорбент                           # TERM- # 16+
+---
+distillation     = дистилляция, перегонка              # TERM+ # 16+
+distilled water  = дистиллированная вода               # TERM-
+rectified spirit = ректификат                          # TERM+ # 18+ /// %% ректификованный/ректифицированный спирт
 
-distillation     = дистилляция, перегонка                                # TERM+ # 16+
-distilled water  = дистиллированная вода                                 # TERM-
-rectified spirit = ректификат %% ректификованный/ректифицированный спирт # TERM+ # 18+
 

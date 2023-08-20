@@ -19,12 +19,14 @@ bodybuilder              = бодибилдер/культурист # 10+
 
 powerlifting             = силовое троеборье, ~ пауэрлифтинг # 16+
 powerlifter              = пауэрлифтер           # 16+
-
+---
 biceps                   = бицепс
 triceps                  = трицепс               # 10+
+quadriceps               = квадрицепс            # TERM+ # 14+
 
 protein @ sport          = протеин               # SPORT+ # 16+
 anabolic steroids        = анаболические стероиды # SPORT+ # 16+ /// , informal: anabolics  , анаболики
+
 
 
 

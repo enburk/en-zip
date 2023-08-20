@@ -1,0 +1,36 @@
+electromagnetism            = электромагнетизм               # 10+
+
+magnet                      = магнит
+permanent magnet            = постоянный магнит              # MATH+ # 18+
+
+volt                        = вольт                          # MATH- # TECH- # 16+
+ampere                      = ампер                          # MATH- # TECH- # 16+
+watt                        = ватт %% единица измерения ~ мощности # MATH+ # TERM+ # 16+
+ohm                         = ом %% единица измерения ~ сопротивления # MATH+ # TERM+ # 16+
+coulomb                     = кулон %% единица измерения ~ электрического заряда # MATH+ # TERM+ # 16+
+
+insulator                   = изолятор                       # 10+
+dielectric                  = диэлектрик                     # MATH- # TECH- # 16+
+electrolyte                 = электролит                     # MATH- # TECH- # TERM- # 18+
+
+resistor                    = резистор                       # MATH- # TECH- # TERM- # 18+
+potentiometer               = потенциометр                   # MATH- # TECH- # TERM- # 18+
+
+electrode @ physics         = электрод                       # 10+
+photoelectric               = фотоэлектрический              # MATH- # TECH- # TERM- # 18+
+piezoelectric               = пьезоэлектрический             # MATH- # TECH- # TERM- # 18+
+
+===
+
+ion                         = ион                            # 18+
+ionization                  = ионизация                      # 18+
+
+inductance                  = индуктивность                  # MATH+ # 18+
+solenoid                    = солено́ид %% вид катушки индуктивности # MATH+ # TECH+ # TERM+ # 18+
+tesla                       = тесла %% единица индукции ~ магнитного поля
+
+electromagnetic ~ induction = электромагнитная ~ индукция    # MATH+ # TERM+ # 18+
+electromagnetic ~ radiation = электромагнитное ~ излучение   # MATH+ # TERM+ # 18+
+
+
+

@@ -6,5 +6,14 @@ chip @ piece               = стружка, щепка
 chip @ damage              = скол, щербинка /// ничего не стоящая вещь и др.
 chips {Am.} @ crisps       = чипсы
 chips {Br.} @ french fries = картофель фри
+---
+code @ crypto              = код, шифр, ~ система кодирования, ~ кодировать
+code @ program             = текст программы, ~ программировать
+code @ law                 = кодекс, ~ свод законов
+code @ moral               = законы чести, морали, ~ моральные нормы
+Morse code                 = азбука Морзе
+binary code                = двоичный код
+criminal code              = уголовный кодекс
+code duello                = дуэльный кодекс # HISTORY+ # RARE+ # WAR+ # 14+
 
 

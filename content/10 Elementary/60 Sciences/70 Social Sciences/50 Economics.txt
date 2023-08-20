@@ -1,0 +1,64 @@
+economics             = экономика  # pix-
+
+economical            = экономный, ~ экономичный
+economic              = экономический, ~ экономически выгодный
+
+= «Экономикой называется псевдонаука, ~ рассматривающая иллюзорные отношения ~ субъектов первого и второго рода ~ в связи с галлюцинаторным процессом ~ их воображаемого обогащения». %% Виктор Пелевин, Generation «П» # ART+ # MATH+ # RARE+ # 18+
+
+===
+---
+monopoly              = монополия
+antimonopoly          = антимонопольный
+: Why is there only one ~ Monopolies Commission?
+
+barter                = бартер, ~ меновая торговля                            # POLIT- # 16+
+broker                = брокер, маклер, посредник                             # 16+ /// (От англо-франц. brokour «мелкий торговец» < от abrokur «торговец вином»)
+conjuncture           = конъюнктура, ~ стечение обстоятельств                 # POLIT- # 16+
+speculation @ economy = в экономике: спекуляция, ~ также: размышление, ~ предположение
+deficit               = дефицит
+lockout @ economy     = локаут                                                # POLIT+ # 16+ /// %% забастовка работодателя
+
+crisis                = кризис
+recession             = в экономике: рецессия, спад                           # POLIT+ # 16+
+stagnation            = стагнация, застой                                     # POLIT- # 16+
+default @ economy     = в экономике: дефолт %% невыполнение денежных обязательств # 16+
+economic collapse     = экономический крах
+
+privatization         = приватизация                                          # 16+
+expropriation         = экспроприация, ~ лишение собственности                  # POLIT+ # 16+
+shock therapy         = шоковая терапия                                       # POLIT- # 16+
+embargo               = эмбарго                                               # 16+
+protectionism         = протекционизм                                         # POLIT+ # 16+
+
+investor              = инвестор, вкладчик                                    # 18+
+investment portfolio  = инвестиционный портфель                               # POLIT+ # TERM+ # 18+
+dividend @ economy    = в экономике: дивиденд, ~ в математике: делимое        # 18+
+diversification       = диверсификация, ~ многообразие                        # POLIT+ # 18+
+
+special economic zone = особая экономическая зона                             # POLIT- # TERM- # 18+
+concession            = концессия, уступка                                    # POLIT+ # TERM+ # 18+ /// (передача в пользование исключительных прав)
+quota @ economy       = квота                                                 # POLIT- # 18+
+
+===
+finances              = финансы, доходы, бюджет
+financier             = финансист
+===
+
+central bank          = центральный банк
+hyperinflation        = гиперинфляция                                         # POLIT-
+nominal @ economy     = в экономике: ~ номинальный
+
+indexation @ economy  = индексация                                            # POLIT+
+compensation          = компенсация, возмещение, вознаграждение
+subsidy               = субсидия, дотация
+
+obligation            = обязательство, обязанность, ~ иногда: облигация       # POLIT+
+liquidity             = ликвидность                                           # POLIT+
+
+financial instruments = финансовые инструменты                                # POLIT+
+futures               = фьючерс                                               # POLIT+
+
+consolidation         = консолидация, ~ укрепление, объединение                 # POLIT+
+refinancing           = рефинансирование                                      # POLIT+
+fiscal                = фискальный                                            # POLIT+
+

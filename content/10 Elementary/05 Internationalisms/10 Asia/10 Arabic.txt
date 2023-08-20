@@ -1,41 +1,42 @@
-Arabia          = Аравия                         # pix- # 8+
-Arabic          = арабский                       # pix- # 8+
+Arabia           = Аравия                        # pix- # 8+
+Arabic           = арабский                      # pix- # 8+
 
-giraffe         = жираф
-gazelle         = газель                         # 10+
+giraffe          = жираф
+gazelle          = газель                        # 10+
 
-couscous        = кускус                         # 14+
-saffron         = шафран                         # 16+
-halva|halwa     = халва                          # 10+
+couscous         = кускус                        # 14+
+saffron          = шафран                        # 16+
+halva|halwa      = халва                         # 10+
 
-mohair          = мохер %% пряжа из шерсти ангорской козы # 16+
-macramé|macrame = макраме                        # 16+
-mattress        = матрас/матрац                  # 12+
+mohair           = мохер %% пряжа из шерсти ангорской козы # 16+
+macramé|macrame  = макраме                       # 16+
+mattress         = матрас/матрац                 # 12+
 
-bedouin         = бедуин                         # 12+
-sheik|sheikh    = шейх                           # 14+
-admiral         = адмирал                        /// amīr al-baḥr, “commander of the fleet”
-fakir|faquir    = факир                          # 18+
+bedouin          = бедуин                        # 12+
+sheik|sheikh     = шейх                          # 14+
+admiral          = адмирал                       /// amīr al-baḥr, “commander of the fleet”
+fakir|faquir     = факир                         # 18+
 
-hashish         = гашиш                          # 18+
-harem           = гарем                          # 18+
-tariff          = тариф                          # 14+
-minaret         = минарет                        # 18+
+hashish          = гашиш                         # 18+
+harem            = гарем                         # 18+
+tariff           = тариф                         # 14+
+minaret          = минарет                       # 18+
 ---
-genie/jinn      = джинн
-ifrit/afreet    = ифрит %% злой джин             # 18+
+genie/jinn       = джинн
+ifrit/afreet     = ифрит %% злой джин            # 18+
 
-wadi            = ва́ди %% сухое русло реки       # 18+
-zenith          = зенит                          # 10+
+wadi             = ва́ди %% сухое русло реки      # 18+
+zenith           = зенит                         # 10+
 
 ===
 = Следующие слова ~ свое современное значение ~ получили уже в Европе... # 8+
 ===
 
-elixir          = эликсир                        # 8+ /// al-iksir означало «философский камень»
-alcove          = альков                         # 16+ /// (ниша в комнате) al-cobbah – комната со сводчатым потолком
-alcohol         = алкоголь                       # 14+ /// Лат. и арабский означали “металлическую пудру” al-cuhul
-algebra         = алгебра                        # 8+
+elixir           = эликсир                       # 8+ /// al-iksir означало «философский камень»
+alcove           = альков                        # 16+ /// (ниша в комнате) al-cobbah – комната со сводчатым потолком
+alcohol          = алкоголь                      # 14+ /// Лат. и арабский означали “металлическую пудру” al-cuhul
+algebra @ Arabic = алгебра                       # 8+
+
 
 
 

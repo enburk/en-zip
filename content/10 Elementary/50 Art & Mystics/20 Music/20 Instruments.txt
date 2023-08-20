@@ -11,7 +11,6 @@ lute @ music                  = лютня             # HISTORY+ # 16+
 mandolin                      = мандолина         # 10+
 
 piano @ instrument            = фортепиано %% рояль, пианино
-[pipe] organ                  = орга́н
 synthesizer %% Br. also: synthesiser = синтезатор        # 10+
 
 accordion                     = аккордеон, гармоника # 10+

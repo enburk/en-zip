@@ -1,48 +1,58 @@
-periodic table        = периодическая таблица        # 16+
-chemical element      = химический элемент           # 16+
-group, period         = группа, период               # 16+
+periodic table        = периодическая таблица  # 16+
 
-metal                 = металл
+chemical element      = химический элемент     # 16+
 
-magnesium             = магний                       # TERM- # 14+
-calcium               = кальций                      # TERM- # 14+
+group @ chemistry     = группа                 # 16+
+period @ chemistry    = период                 # 16+
 
-aluminium\\aluminum   = алюминий                     # 10+
-bismuth               = висмут                       # TERM+ # 16+
-polonium              = полоний                      # TERM+ # 16+
-zirconium             = цирконий                     # TERM- # 16+
+===
+metals                = металлы
+===
 
-titanium              = титан                        # 10+
-chromium              = хром                         # 10+
-cobalt                = кобальт                      # TERM+ # 16+
-nickel                = никель                       # 10+
-zinc                  = цинк                         # 10+
-molybdenum            = молибден                     # TERM+ # 16+
-iridium               = иридий                       # TERM+ # 16+
+magnesium             = магний                 # TERM- # 14+
+calcium               = кальций                # TERM- # 14+
 
-transuranium elements = трансурановые элементы       # TERM- # 16+
+aluminium\\aluminum   = алюминий               # 10+
+bismuth               = висмут                 # TERM+ # 16+
+polonium              = полоний                # TERM+ # 16+
+zirconium             = цирконий               # TERM- # 16+
 
+titanium              = титан                  # 10+
+chromium              = хром                   # 10+
+cobalt                = кобальт                # TERM+ # 16+
+nickel                = никель                 # 10+
+zinc                  = цинк                   # 10+
+molybdenum            = молибден               # TERM+ # 16+
+iridium               = иридий                 # TERM+ # 16+
 
-nonmetal              = неметалл                     # 14+
+===
+nonmetals             = неметаллы              # 14+
+===
 
-phosphorus            = фосфор                       # 10+
+phosphorus            = фосфор                 # 10+
 
-silicon               = кремний %% ''не'' силикон    # 16+
-silicone              = силикон %% кремнийорганическое соединение # 16+
+halogens              = галогены               # TERM- # 16+
+halogen lamp          = галогенная лампа       # TERM- # 16+
 
-halogens              = галогены                     # TERM- # 16+
-halogen lamp          = галогенная лампа             # TERM- # 16+
-
-chlorine              = хлор                         # 10+
-bromine               = бром                         # TERM- # 16+
+chlorine              = хлор                   # 10+
+bromine               = бром                   # TERM- # 16+
 iodine                = йод
 
-inert/noble gas       = инертный газ                 # 16+
+===
+inert gas//noble gas  = инертный газ           # 16+
+===
 
-helium                = гелий                        # 16+
-neon                  = неон                         # 10+
-argon                 = аргон                        # TERM+ # 16+
-krypton               = криптон                      # TERM+ # 16+
-xenon                 = ксенон                       # 16+
-radon                 = радон                        # TERM+ # 16+
+helium                = гелий                  # 16+
+neon                  = неон                   # 10+
+argon                 = аргон                  # TERM+ # 16+
+krypton               = криптон                # TERM+ # 16+
+radon                 = радон                  # TERM+ # 16+
+
+xenon                 = ксенон                 # 16+
+xenon headlights      = ксеноновые фары
+
+===
+
+transuranium elements = трансурановые элементы # TERM- # 16+
+
 

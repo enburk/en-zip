@@ -1,7 +1,0 @@
-sentence           = в грамматике: предложение
-sentence           = приговор
-''Marriage is not a word but a sentence.''
-
-association        = общество, союз, ~ ассоциация          # 14+
-association {link} = связь, ~ ассоциация (психологическая) # 14+ /// общение
-

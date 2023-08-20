@@ -1,17 +1,17 @@
 mathematical analysis = анализ %% современный
 calculus              = математический анализ %% классический
 
-limit                 = в математике: предел
-differential          = дифференциал, дифференциальный, ~ дифференцированный, разница
+limit @ math          = в математике: предел
+differential @ math   = дифференциал, дифференциальный, ~ дифференцированный, разница
 
-integral              = интеграл, интегральный
-curvilinear integral  = криволинейный интеграл # TERM+
+integral @ math       = интеграл, интегральный
 
-approximation         = аппроксимация         # TERM+
-interpolation         = интерполяция          # TERM+
-extrapolation         = экстраполяция         # TERM+
+approximation         = аппроксимация # TERM+
+interpolation         = интерполяция # TERM+
+extrapolation         = экстраполяция # TERM+
 
-Fourier series        = ряды Фурье            # TERM+
+Fourier series        = ряды Фурье # TERM+
+
 
 
 

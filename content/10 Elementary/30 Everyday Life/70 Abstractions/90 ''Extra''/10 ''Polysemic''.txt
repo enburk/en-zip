@@ -26,7 +26,7 @@ second-hand//secondhand @ clothes = подержанный, ~ из вторых 
 second hand @ clock      = секундная стрелка
 ---
 mass(1) @ quantity       = масса, массовый, ~ множество, большинство # 18+ /// собираться в кучу и др.
-mass|Mass(2) @ sacrament = литургия, месса, обедня               # 18+
+mass|Mass(2) @ church    = литургия, месса, обедня               # 18+
 ---
 barrel @ unit            = баррель                               # 18+
 barrel @ vessel          = бочка                                 # 18+
@@ -41,5 +41,6 @@ globe                    = глобус, земной шар, ~ шар          
 process @ noun           = процесс, ~ течение ~ (времени)
 process @ verb           = обрабатывать
 process @ walk           = идти в составе ~ процессии
+
 
 

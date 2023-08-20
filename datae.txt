@@ -22897,7 +22897,8 @@ The Frog Prince [fairy tale] ## qrop t10 b7.jpeg
 Historia [history] ## qrop l5 r5 t4 b5 ## date 1892 ## qropt!.jpeg
 >>> ../datae/fineart h-z {{$$}}
 >>> ../datae\fineart h-z {{$$}}/Hals {{Frans Hals}}
-The Laughing Cavalier [cavalier] ## qrop t4 b15 ##date 1624.jpg
+René Descartes [Descartes] ## date 1648 ## qropt!.jpg
+The Laughing Cavalier [cavalier] ## qrop t4 b15 ## date 1624.jpg
 >>> ../datae\fineart h-z {{$$}}/Hau {{Eduard Hau}}
 The Boudoir of Empress Maria Alexandrovna [boudoir] ## date 1861 ## qrop ql.jpg
 _Hermitage Museum [Hermitage][museum][gallery@art][art gallery] ## date 1857 ## qrop l1 t1 r23.jpg
@@ -22948,6 +22949,7 @@ Helen of Troy [Helen] ## qropt! {{Gustave Moreau, 1896 $$}}.jpg
 Jupiter and Semele [Jupiter@myth][Semele] ## qropt! {{Gustave Moreau $$}}.jpg
 Saint George and the dragon [Saint George] {{Gustave Moreau, 1890 $$}}.jpg
 >>> ../datae\fineart h-z {{$$}}/Munch {{Edvard Munch}}
+Friedrich Nietzsche [Nietzsche] ## date 1906 ## crop l1 ## qrop l1 t10 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.txt
 The Scream [scream][panic][horror] ## qrop t18 b2 ## date 1895 ## qropt!.jpg
@@ -22955,7 +22957,7 @@ The Scream [scream][panic][horror] ## qrop t18 b2 ## date 1895 ## qropt!.jpg
 At the Samovar [samovar] ## 12+ ## qrop qt ## date 1926.jpg
 Earthquake in Crimea [earthquake][panic] ## date 1927-1928 ## qropt!.jpg
 >>> ../datae\fineart h-z {{$$}}/Raphael {{Raphael}}
-The School of Athens [school@way] ## crop l22 t16 r24 ## qropt! {{Raphael, 1509–1510 $$}}.jpg
+The School of Athens [school@way][ancient philosophy] ## qrop l22 t16 r24 ## qropt! {{Raphael, 1509–1510 $$}}.jpg
 >>> ../datae\fineart h-z {{$$}}/Redon {{Odilon Redon}}
 buddha ## crop l1 t1 b1 ## qropt! {{Odilon Redon $$}}.jpg
 Pegasus and Hydra [Lernaean Hydra][Hydra@myth] ## qrop l10 r6 ## qropt! {{Odilon Redon, c.1907 $$}}.jpg
@@ -23009,7 +23011,7 @@ Pope Innocent X [Pope][pope][Innocent] ## crop t1 ## qropt! {{Diego Velázquez, 
 Italian Brigands Surprised by Papal Troops (detail) [bandit][brigand] ## date 1831 ## qrop qb.jpg
 >>> ../datae\fineart h-z {{$$}}/Veronese {{Paolo Veronese}}
 Vincenzo Scamozzi [architect][Corinthian order] ## date 1500s ## qropt!.jpg
->>> ../datae\fineart h-z {{$$}}/Vinci {Leonardo da Vinci}}
+>>> ../datae\fineart h-z {{$$}}/Vinci {{Leonardo da Vinci}}
 Anatomical Studies [embryology] ## date 1509-14 ## qropt!.png
 Anatomical Studies [neurophysiology] ## date 1508 ## qropt!.png
 Vitruvian Man [anthropology] ## date 1492 ## qropt! ### photo.. Lucian  Milasan $dreamstime 24424123.jpg
@@ -23030,6 +23032,7 @@ Hip hip hurrah! [hip hip hurrah][hip hip hooray] ## qrop l17 r4 b1 {{P.S. Krøye
 Isaac Newton [Isaac][Newton] {{Godfrey Kneller, 1702 $$}}.jpg
 kithara~cithara %% Roman fresco, ca. 40–30 B.C. ## qrop qb.jpg
 Nicaea icon [Nicaea][Orthodox] ## qropt! {{$$}}.jpg
+Noah Webster [Webster] {{Samuel Morse, 1800s $$}}.jpg
 Oceanid [Oceanids][Oceanides] ## qropt! {{Jan Toorop, c.1893 $$}}.jpg
 Pan [Faunus] ## qropt! {{Mikhail Vrubel, 1899 $$}}.jpg
 pince-nez ## qrop qt {{''A Hermit'', Gerard Dou, 1664 $$}}.jpg
@@ -23427,6 +23430,8 @@ boxing ring [ring@boxing] ### _Muhammad _Ali _KOs _Cleveland _Williams, 1966.jpg
 Juan Marichal Pitching to Willie Davis [pitching].jpg
 quarterback ## qrop qr ### Y.A. Tittle.jpg
 “Get up and fight, sucker!” %% Ali vs. Liston [sucker].jpg
+>>> ../datae\photo a-n/Leonard {{Photo.. Herman Leonard}}
+Creole Mass, New Orleans [Creole][Mass@church][mass@church][New Orleans] ## date 2001 ## qrop t8 b7 ## qropt!.jpg
 >>> ../datae\photo a-n/Levey {{Photo.. Patti Levey}}
 globalization.jpg
 nest.jpg
@@ -23705,10 +23710,13 @@ measuring cups [volume@space] ## qrop l15 r10 {{Photo.. Brett Rabideau $dreamsti
 miniature ## qrop l19 r14 {{Photo.. Ironstuff $dreamstime 89660211}} ### Angel in the Easter egg shell.jpg
 one troy ounce of gold [troy ounce][ounce@troy][oz][oz.] {{Photo.. Andre Nantel $dreamstime 4603684}}.jpg
 percent ## qrop qr {{Photo.. Yakobchuk $dreamstime 23191800}}.jpg
+pictogram ## qrop q {{Photo.. Ivan Mikhaylov $dreamstime 8071737}} ### finger cursor.jpg
 pint ## qrop l18 r15 {{Photo.. Mehmet Doruk Taşcı $dreamstime 49416469}} ### Beer pint and faucet tap.jpg
+plop ## qrop l12 r13 ## qropt! {{Photo.. Santoboss $dreamstime 96568739}}.jpg
 pyramids [pyramid][Egypt] ## qrop ql {{Photo.. Andesign101 $dreamstime 11702116}}.jpg
 sphere [spherical] ## qrop l6 r27 {{Photo.. Tihis $dreamstime 454845}}.jpg
 spiral staircase [spiral] ## qrop l13 r19 {{Photo.. Katatonia82 $dreamstime 10831812}}.jpg
+splash ## qrop l4 r18 ## qropt! {{Photo.. Davesfreelancephotos $dreamstime 20671195}}.jpg
 tendency ## qrop ql {{Photo.. Gualtiero Boffi $dreamstime 7466180}}.jpg
 Vatican Museum, Rome, Italy [spiral][staircase][spiral staircase] ## qrop q {{Photo.. Marco Polidoro $dreamstime 49419268}}.jpg
 vinyl disc [disk][disc] ## qrop ql {{Photo.. Sebastianknight $dreamstime 3309974}}.jpg
@@ -24077,9 +24085,12 @@ fashion show ## qrop l24 r9 {{Photo.. Mariematata $dreamstime 84390815}}.jpg
 >>> ../datae\photo_dreamstime\fashion/footwear
 boot {{Photo.. Waldemar Dabrowski $dreamstime 23469645}} [Yorkshire terrier].jpg
 cowboy boots [boots@cowboy] ## qrop l10 t11 r12 b10 {{Photo.. Tatiana Morozova $dreamstime 4249569}}.jpg
+flip-flops {{Photo.. Kenishirotie $dreamstime 53659834}}.jpg
+flips-flops {{Photo.. Juan Moyano $dreamstime 13604433}}.jpg
 football boots [boots@football] ## qrop l14 r11 ## qropt! {{Photo.. Milos Tasic $dreamstime 29855657}}.jpg
 moccasins @ modern ## qrop l11 r7 ## qropt! {{Photo.. Auris $dreamstime 34621118}}.jpg
 sandals [sandal@shoe] ## qrop qr {{Photo.. Chris Curtis $dreamstime 4804953}}.jpg
+slippers @ shoes {{Photo.. Robyn Mackenzie $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime\fashion/headwear
 hat {{Photo.. Loongar $dreamstime 94555165}}.jpg
 sombrero ## qrop l7 r26 {{Photo.. Michael Flippo $dreamstime 40104504}}.jpg
@@ -25100,7 +25111,7 @@ copper, gold, steel and aluminum [metals] ## qrop l8 r17 ## qropt! {{Photo.. 350
 graduated cylinders [graduated][measuring cylinder][mixing cylinder][laboratory glassware] {{Photo.. Mtr $dreamstime 10721572}}.jpg
 laboratory flasks [flask@lab][laboratory glassware] {{Photo.. Mtr $dreamstime 10721585}}.jpg
 laboratory [chemistry][lab work][lab] ## qrop ql {{Photo.. Florea  Paul Daniel $dreamstime 31257415}}.jpg
-molecule ## crop l24 r9 {{Photo.. Aprescindere $dreamstime 13779405}}.jpg
+molecule ## crop l24 r9 ## qropt! {{Photo.. Aprescindere $dreamstime 13779405}}.jpg
 nicotine ## qrop l4 r1 ## qropt! {{Photo.. Greanggrai Hommalai $dreamstime 54756068}}.jpg
 organic chemistry ## crop l1 r1 t1 ## qrop l1 t1 r17 {{Photo.. Vtorous $dreamstime 18643147}}.jpg
 periodic table of elements [periodic table][periodic] ## qrop l15 r25 {{Photo.. Swevil $dreamstime 62296784}}.jpg

@@ -1,0 +1,22 @@
+polysemic
+---
+stress @ psycho          = стресс                                      # 14+
+stress @ force           = нагрузка, давление, гнёт, ~ напряжение (механическое) # 14+
+stress @ emphasis        = в музыке: акцент, ~ в лингвистике: ударение # 14+
+stress @ verb            = акцентировать, подчеркивать, ~ ставить ударение # 14+
+accent @ verb            = подчеркивать, акцентировать, ~ ставить ударение # 14+ /// əkˈsent
+accent @ emphasis        = в лингвистике: ударение, ~ диакритический знак, ~ в музыке: акцент # 14+ /// ˈəksent
+accent @ pronounce       = акцент ~ (произношение)                     # 14+ /// ˈəksent
+---
+sentence                 = в грамматике: ~ предложение
+sentence                 = приговор
+: Marriage is not a word but a sentence.
+---
+reduction @ decrease     = уменьшение, упрощение                       # TERM+ # 16+
+reduction @ speech       = в лингвистике: ~ редукция                   # TERM+ # 16+
+---
+transcription @ process  = запись, переписывание                       # TERM+ # 10+
+transcription @ phonetic = в фонетике: ~ транскрипция                  # TERM+ # 10+
+
+
+

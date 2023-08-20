@@ -1,28 +1,27 @@
 linguistics   = лингвистика
-linguist      = лингвист
 
-philology     = филология                                                # 16+
-Slavicist     = славист                                                  # 16+
+philology     = филология          # 16+
+Slavicist     = славист            # 16+
 
 phonetics     = фонетика
-phoneme       = фонема                                                   # TERM- # 16+
+phoneme       = фонема             # TERM- # 16+
 
-reduction     = в лингвистике: редукция, ~ также: уменьшение, упрощение  # TERM+ # 16+
-transcription = в фонетике: транскрипция, ~ также: запись, переписывание # TERM+ # 10+
+ideogram      = идеограмма         # TERM+ # 16+
+pictogram     = пиктограмма        # TERM+ # 14+
+Cyrillic      = кириллица          /// Cyrillic [alphabet/script]
 
-lingua franca = лингва франка                                            # 16+
-Esperanto     = эсперанто                                                # 16+
-cockney       = кокни                                                    # 16+
+tilde         = тильда             # TERM- # 14+
+ampersand     = амперсанд          # TERM- # 16+
+apostrophe    = апостроф           # TERM- # 14+ /// Greek
 
-pidgin        = пиджин %% упрощенный язык                                # TERM+ # 16+
-creole        = креольский язык                                          # TERM+ # 16+
-Creole        = креол, креольский                                        # TERM+ # 16+ /// # DELAY
+===
 
-ideogram      = идеограмма                                               # TERM+ # 16+
-pictogram     = пиктограмма                                              # TERM+ # 14+
-Cyrillic      = кириллица                                                /// Cyrillic [alphabet/script]
+lingua franca = лингва франка      # 16+
+Esperanto     = эсперанто          # 16+
+cockney       = кокни              # 16+
+---
+pidgin        = пиджин %% упрощенный язык # TERM+ # 16+
+creole        = креольский язык    # TERM+ # 16+
+Creole        = креол, креольский  # TERM+ # 16+ /// # DELAY
 
-tilde         = тильда                                                   # TERM- # 14+
-ampersand     = амперсанд                                                # TERM- # 16+
-apostrophe    = апостроф                                                 # TERM- # 14+ /// Greek
 

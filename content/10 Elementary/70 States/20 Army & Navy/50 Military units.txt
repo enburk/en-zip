@@ -1,12 +1,13 @@
-battalion    = батальон
-division     = дивизия (не дивизион)
-brigade      = бригада, отряд, группа
-corps        = корпус, род войск
-[field] army = армия
-army group   = группа армий
+---
+battalion       = батальон
+division @ army = дивизия %% ''не'' дивизион
+brigade @ army  = бригада, ~ отряд, группа
+[field] army    = армия
+army group      = группа армий
 
-squadron     = эскадрон # 14+
-squadron     = эскадра # 14+
-squadron     = эскадрилья # 14+ /// (Французская escadrille -- это более мелкое формирование.)
+squadron @ army = эскадрон  # 14+
+squadron @ navy = эскадра   # 14+
+squadron @ air  = эскадрилья # 14+ /// (Французская escadrille -- это более мелкое формирование.)
+
 
 

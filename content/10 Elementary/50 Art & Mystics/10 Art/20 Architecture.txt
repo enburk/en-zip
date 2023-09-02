@@ -17,8 +17,11 @@ caryatid            = кариатида                          # 18+ /// (с�
 arch @ art          = арка
 arcade              = аркада                             # 14+ /// French arcade, from Italian arcata ‎(“arch of a bridge”), from Latin arcus ‎(“arc”)
 
-balustrade          = балюстрада                         # 14+ /// Borrowing from French balustrade, from Italian balaustrata
+balustrade @ art    = балюстрада                         # 14+ /// Borrowing from French balustrade, from Italian balaustrata
+baluster            = балясина
+
 cornice             = карниз                             # 10+
+parapet @ art       = парапет, перила
 
 palazzo             = палаццо                            # 18+
 belvedere           = бельведер                          # RARE- # 18+ /// (постройка на возвышенности для любования видами)
@@ -43,6 +46,7 @@ foyer               = фойе                               # 10+
 vestibule %% formal = вестибюль, ~ передняя ~ (квартиры) # 10+ /// French
 patio               = патио                              # 18+
 corridor            = корридор
+
 
 
 

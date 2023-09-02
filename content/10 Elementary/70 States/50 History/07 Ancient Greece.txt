@@ -1,38 +1,42 @@
 Ancient Greece         = Древняя Греция
-Hellene                = эллин                                         # 16+
 
-Peloponnese            = Пелопоннес                                    # HISTORY+ # 16+
+Hellene                = эллин                                           # 16+
+oecumene\\ecumene      = ойкумена                                        # HISTORY- # 16+
 
-Laconia                = Лакония, Лаконика                             # 16+ /// (историческое название области)
-
+Peloponnese            = Пелопоннес                                      # HISTORY+ # 16+
+Laconia                = Лакония, Лаконика                               # 16+ /// (историческое название области)
+---
 Sparta                 = Спарта
 Spartan                = спартанец
 spartan                = спартанский
 
-Corinth                = Коринф                                        # HISTORY+ # 16+
-
+Corinth                = Коринф                                          # HISTORY+ # 16+
+---
 Athens                 = Афины
 acropolis              = акрополь
-Parthenon              = Парфенон
-Areopagus              = ареопаг %% «холм Ареса» и совет старейшин, собрания которого проходили на этом холме # HISTORY+ # 16+
-agora                  = агора %% рыночная площадь и место народных собраний # HISTORY+ # 16+
-ostracism              = остракизм                                     # HISTORY+ # 16+
-hetaera/hetaira        = гетера                                        # 18+
+Areopagus              = ареопаг %% «холм Ареса» и совет старейшин, ~ собрания которого проходили на этом холме # HISTORY+ # 16+
+agora                  = агора %% рыночная площадь ~ и место народных собраний # HISTORY+ # 16+
+ostracism              = остракизм                                       # HISTORY+ # 16+
+hetaera//hetaira       = гетера                                          # 18+
 
-Thebes                 = Фивы ~ (Греция)                               # HISTORY+ # 16+ /// Семивратные
-Hellespont             = Геллеспонт %% древнегреческое название пролива Дарданеллы # HISTORY- # 16+
-oecumene\\ecumene      = ойкумена                                      # HISTORY- # 16+
+Thebes @ Greece        = Фивы ~ (семивратные)                            # HISTORY+ # 16+
+Hellespont             = Геллеспонт %% древнегреческое название ~ пролива Дарданеллы # HISTORY- # 16+
+
+===
+Persian Empire         = Персидская империя                              # HISTORY- # 16+
+===
 
 The Battle of Marathon = Марафонская битва
-Thermopylae            = Фермопилы                                     # HISTORY- # 16+
+Thermopylae            = Фермопилы                                       # HISTORY- # 16+
 
-Persian Empire         = Персидская империя                            # HISTORY- # 16+
-
-Macedonia              = Македония
+===
+Macedonia @ ancient    = Македония
 Alexander the Great    = Александр Македонский
-Diadochi               = диадохи                                       # HISTORY+ # RARE+ # 16+
+Alexandria @ ancient   = Александрия                                     # HISTORY- # 16+
+===
+Diadochi               = диадохи                                         # HISTORY+ # RARE+ # 16+
+Ptolemaic dynasty      = Династия Птолемеев                              # HISTORY- # 16+
+Cleopatra              = Клеопатра                                       # 16+
+===
 
-Alexandria             = Александрия                                   # HISTORY- # 16+
-Ptolemaic dynasty      = Династия Птолемеев                            # HISTORY- # 16+
-Cleopatra              = Клеопатра                                     # 16+
 

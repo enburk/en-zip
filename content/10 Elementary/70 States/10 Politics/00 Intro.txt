@@ -1,36 +1,37 @@
-politics              = политика
+politics                = политика
 
-geopolitical          = геополитический                                  # POLIT- # 16+
-institution           = учреждение, ~ институт (социальный)              # 16+
+geopolitical            = геополитический                                # POLIT- # 16+
+institution             = учреждение, ~ институт (социальный)            # 16+
 ---
-progressive           = прогрессивный, ~ также: постепенный, последовательный # 14+
-regression            = регресс, упадок                                  # 16+
-reform                = реформа, реформировать
+progressive             = прогрессивный, ~ также: постепенный, последовательный # 14+
+regression              = регресс, упадок                                # 16+
+reform                  = реформа, реформировать
 ---
-constructive          = конструктивный, созидательный                    # 14+
-destructive           = разрушительный, деструктивный                    # 14+
-destabilization       = дестабилизация %% в брит. англ. также: destabilisation # 14+
+constructive            = конструктивный, созидательный                  # 14+
+destructive             = разрушительный, деструктивный                  # 14+
+destabilization         = дестабилизация %% в брит. англ. также: destabilisation # 14+
 
 ===
 
-candidate @ politics            = кандидат, претендент
-candidacy//candidature = кандидатура                   /// (also candidature especially in British English)
+candidate @ politics    = кандидат, претендент
+candidacy//candidature  = кандидатура                                    /// (also candidature especially in British English)
 
-electorate            = избиратели, электорат         # POLIT- # 16+
+electorate              = избиратели, электорат                          # POLIT- # 16+
 
-political party       = политическая партия
-party discipline      = партийная дисциплина          # 16+
-political capital     = политический капитал          # POLIT- # 16+
+political party         = политическая партия
+party discipline        = партийная дисциплина                           # 16+
+political capital       = политический капитал                           # POLIT- # 16+
 
-pluralism             = плюрализм                     # POLIT- # 16+
-populism              = популизм                      # 16+
+pluralism               = плюрализм                                      # POLIT- # 16+
+populism                = популизм                                       # 16+
 
 ===
-public relations ~ (PR) = связи с общественностью, ~ пиар                    # 14+
+public relations ~ (PR) = связи с общественностью, ~ пиар                # 14+
 ===
 
-press conference      = пресс-конференция                                # 14+
-press secretary       = пресс-секретарь                                  # POLIT- # 14+
-press release         = пресс-релиз                                      # POLIT- # 16+
+press conference        = пресс-конференция                              # 14+
+press secretary         = пресс-секретарь                                # POLIT- # 14+
+press release           = пресс-релиз                                    # POLIT- # 16+
+
 
 

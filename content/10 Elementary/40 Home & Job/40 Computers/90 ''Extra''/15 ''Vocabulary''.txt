@@ -10,10 +10,10 @@ login                     = логин, вход, ~ авторизоваться
 password                  = пароль
 ===
 
-error                     = ошибка
-enter                     = вводить, входить
-access                    = доступ
-denied                    = запрещать
+error @ comp              = ошибка
+enter @ comp              = вводить, входить
+access @ comp             = доступ
+denied @ comp             = запрещать
 
 ===
 
@@ -29,4 +29,5 @@ denied                    = запрещать
 : Password incorrect.
 : Incorrect password.
 : unauthorized access
+
 

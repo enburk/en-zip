@@ -2,11 +2,16 @@ basic ~ vocabulary
 
 tools              = инструменты, ~ инструментарий
 
+brick              = кирпич
+
+paint @ tech       = краска
+
 ===
 ---
 seed @ grain       = семя, зерно
 corn @ grain       = зерно, зерновые
 corn {Am.} @ maize = кукуруза
+
 
 
 

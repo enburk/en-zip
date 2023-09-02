@@ -1,50 +1,60 @@
-[medical] treatment       = лечение
-medicament                = медикамент, лекарственное средство # 10+
-pharmacology              = фармакология                      # TERM+ # 16+
-pharmacist                = фармацевт                         # TERM+ # 16+
-pill                      = пилюля, таблетка                  # 10+
-<small>''That's a bitter pill to swallow.''</small>
-tablet                    = таблетка
-syrup                     = сироп, микстура
-mixture                   = смесь, реже: микстура
+[medical] ~ treatment     = лечение
+===
+medicament                = медикамент, лекарственное средство           # 10+
+pharmacology              = фармакология                                 # TERM+ # 16+
+pharmacist                = фармацевт                                    # TERM+ # 16+
+===
+tablet @ medicine         = таблетка
+pill @ medicine           = пилюля, таблетка                             # 10+
+: That's a bitter pill to swallow.
+===
+
+syrup @ medicine          = сироп, микстура
 balsam/balm               = бальзам
-camphor                   = камфора                           # 16+
-inhaler/inhalator         = ингалятор                         # 10+
-nasal spray               = спрей для носа                    /// назальный спрей
-injection                 = инъекция, впрыскивание ~ также: денежные вложения # 14+
-ampoule/ampule            = ампула                            # 10+
+camphor                   = камфора                                      # 16+
+inhaler//inhalator        = ингалятор                                    # 10+
+nasal spray               = спрей для носа                               /// назальный спрей
+injection @ medicine      = инъекция, впрыскивание ~ также: денежные вложения # 14+
+ampoule//ampule           = ампула                                       # 10+
+
+===
 
 antibiotic                = антибиотик
-analgesic                 = анальгетик, обезболивающее, ~ болеутоляющий # 10+ /// вариант с t совсем редкий
-placebo                   = плацебо                           # 16+
+analgesic                 = анальгетик, обезболивающее, ~ болеутоляющий  # 10+ /// вариант с t совсем редкий
+placebo                   = плацебо                                      # 16+
 
-scalpel                   = скальпель                         # 10+
-lancet                    = ланцет ~~ стрельчатый, ланцетный  # TERM- # 16+
-laryngoscope              = ларингоскоп                       # TERM+ # 16+
-stethoscope               = стетоскоп                         # TERM- # 16+
-catheter                  = катетер                           # TERM- # 16+
+===
 
-fluorography              = флюорография                      # TERM- # 10+
-encephalogram             = энцефалограмма                    # TERM- # 16+
-endoscope                 = эндоскоп                          # TERM+ # 16+
-palpation                 = пальпация                         # RARE+ # 16+
+scalpel                   = скальпель                                    # 10+
+lancet                    = ланцет ~~ стрельчатый, ланцетный             # TERM- # 16+
+laryngoscope              = ларингоскоп                                  # TERM+ # 16+
+stethoscope               = стетоскоп                                    # TERM- # 16+
+catheter                  = катетер                                      # TERM- # 16+
 
-therapy                   = терапия, психотерапия             # 10+
-compress {verb}           = сжимать, сдавливать, сокращать    # 10+ /// com`press
-compress {noun}           = в медицине: компресс              # 10+
+fluorography              = флюорография                                 # TERM- # 10+
+encephalogram             = энцефалограмма                               # TERM- # 16+
+endoscope                 = эндоскоп                                     # TERM+ # 16+
+palpation                 = пальпация                                    # RARE+ # 16+
 
+therapy @ medicine        = терапия, психотерапия                        # 10+
 medical procedure         = медицинская процедура
-operation                 = в медицине: операция
+---
+donor @ medicine          = донор ~ также: финансирующая организация, ~ даритель # 12+
+recipient @ medicine      = в медицине: реципиент                        # 14+
+recipient @ receiver      = адресат, получатель                          # 14+
+
+===
+operation @ medicine      = в медицине: операция
 [operating] theatre {Br.} = операционная
+===
+
 anaesthesia\\anesthesia   = анестезия, ~ нечувствительность %% к боли, теплу, холоду и проч. # 12+ /// не жесткое разделение на Бр. и Ам.
-chloroform                = хлороформ                         # TERM- # 16+
-antiseptic                = антисептик, антисептический       # 10+
+chloroform                = хлороформ                                    # TERM- # 16+
+antiseptic                = антисептик, ~ антисептический                # 10+
 
 implant                   = имплант, имплантант, ~ имплантировать, пересаживать, ~ прививать, внушать (идею и т.п.) # 14+
-organ transplantation     = пересадка органов                 # 16+
-prosthesis                = протез                            # 14+ /// лингв. протеза
+organ transplantation     = пересадка органов                            # 16+
+prosthesis                = протез                                       # 14+ /// лингв. протеза
 
-donor                     = донор ~ также: финансирующая организация, ~ даритель # 12+
-recipient                 = в медицине: реципиент             # 14+
-recipient %% formal       = адресат, получатель               # 14+
+
 

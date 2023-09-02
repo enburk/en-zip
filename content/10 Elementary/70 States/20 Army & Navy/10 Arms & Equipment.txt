@@ -1,0 +1,38 @@
+arsenal                 = арсенал, ~ склад оружия
+
+pistol @ gun            = пистолет                                          /// , стрелять из пистолета
+revolver                = револьвер
+magnum @ firearm        = магнум %% патрон повышенной мощности ~ и оружие под него # WAR+ # 14+
+
+fougasse                = фугас
+grenade                 = граната
+petard                  = петарда
+
+napalm                  = напалм
+shrapnel                = шрапнель
+
+===
+dynamite                = динамит, ~ взрывать динамитом
+Alfred Nobel            = Альфред Нобель
+nitroglycerin           = нитроглицерин
+trinitrotoluene ~ (TNT) = тринитротолуол %% тротил, тол
+TNT equivalent          = тротиловый эквивалент
+megaton                 = мегатонна                                         /// /megatonne нет в словарях
+atomic bomb             = атомная бомба
+neutron bomb            = нейтронная бомба                                  # 16+
+===
+
+ballistics              = баллистика                                        # WAR-
+trajectory @ army       = траектория
+cannonade               = канонада
+
+metal detector          = металлоискатель
+night vision            = ночное видение
+gas mask                = противогаз
+tracer @ army           = трассирующая пуля, ~ трассирующий снаряд          # WAR-
+
+detonation              = детонация, взрыв
+detonator               = детонатор                                         # WAR-
+
+
+

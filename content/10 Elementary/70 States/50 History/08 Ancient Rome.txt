@@ -1,51 +1,64 @@
-Ancient Rome          = Древний Рим
+Ancient Rome        = Древний Рим
 
-Romulus,~Remus        = Ромул, Рем                                              # 16+
-Capitoline Wolf       = Капитолийская волчица                                   # 16+
+Romulus, Remus      = Ромул, Рем                                            # 16+
+Capitoline Wolf     = Капитолийская волчица                                 # 16+
 
-patricians,~plebeians = патриции, плебеи
-Senate|senate         = Сенат|сенат
-consul                = консул
-Cicero                = Цицерон                                                 # HISTORY- # 16+
+===
 
-Colosseum             = Колизей
-Spartacus             = Спартак
-thermae               = термы                                                   # HISTORY+ # 18+
+patricians          = патриции
+plebeians           = плебеи
 
-Etruscans             = этруски                                                 # HISTORY- # 16+
-Gauls                 = галлы                                                   # HISTORY- # 16+
-Pyrrhic victory       = Пиррова победа %% 279 год до н. э. ~~ «Ещё одна такая победа, и я останусь без войска» # WAR- # 16+
-Carthage              = Карфаген
-Punic Wars            = Пунические войны                                        # HISTORY+ # WAR- # 16+
-Hannibal              = Ганнибал                                                # HISTORY- # WAR-
-Scipio                = Сципион %% Publius Cornelius Scipio Africanus           # HISTORY- # WAR- # 16+ /// (Пу́блий Корне́лий Сципио́н Африканский Старший)
-triumphal arch        = триумфальная арка
+Senate @ Rome       = Сенат
+consul @ Rome       = консул
+Cicero              = Цицерон                                               # HISTORY- # 16+
 
-Gaius Julius Caesar   = Гай Юлий Цезарь %% 100-44 BC
-cross the Rubicon     = перейти Рубикон                                         # 16+
-Brutus                = Брут                                                    # 16+
-triumvirate           = триумвират                                              # HISTORY+ # 16+
-edict                 = эдикт                                                   # 16+
-satrap                = сатрап                                                  # 16+
-hegemon               = гегемон                                                 # 16+
-procurator            = поверенный, ~ доверенное лицо, ~ в Древнем Риме: прокуратор # 16+
-Praetorian Guard      = Преторианская гвардия                                   # HISTORY+ # 16+
-augur                 = авгур, ~ предвещать, предзнаменовывать                  # HISTORY+ # RARE+ # 16+
+Colosseum           = Колизей
+Spartacus           = Спартак
 
-calends|kalends       = календы %% ''в римском календаре:'' первый день месяца  # HISTORY+ # 16+
-ides                  = иды %% ''в римском календаре:'' день в середине месяца  # HISTORY+ # 16+
-ides of March         = мартовские иды %% 15 марта 44 г. до н. э. был убит Юлий Цезарь. # HISTORY+ # 16+
+triumphal arch      = триумфальная арка
+thermae             = термы                                                 # HISTORY+ # 18+
 
-Caligula              = Калигула                                                # HISTORY- # 16+
-Nero                  = Нерон                                                   # HISTORY- # 16+
+===
+Etruscans           = этруски                                               # HISTORY- # 16+
+Gauls               = галлы                                                 # HISTORY- # 16+
+Pyrrhic victory     = Пиррова победа                                        # WAR- # 16+
+===
+Carthage            = Карфаген
+Punic Wars          = Пунические войны                                      # HISTORY+ # WAR- # 16+
+Hannibal            = Ганнибал                                              # HISTORY- # WAR-
+Scipio              = Сципион %% Publius Cornelius Scipio Africanus         # HISTORY- # WAR- # 16+
+===
+Gaius Julius Caesar = Гай Юлий Цезарь %% 100-44 BC
+Gallic Wars         = Галльская война
+cross the Rubicon   = перейти Рубикон                                       # 16+
+Brutus              = Брут                                                  # 16+
+===
 
-Huns                  = гунны                                                   # HISTORY- # 16+
-Attila [the Hun]      = Аттила                                                  # 16+ /// 434 год — 453 год /// (правитель гуннов)
-Goths                 = готы
-Visigoths             = вестготы                                                # HISTORY+
-Vandals               = вандалы                                                 /// (народ)
+triumvirate         = триумвират                                            # HISTORY+ # 16+
+edict               = эдикт                                                 # 16+
+satrap              = сатрап                                                # 16+
+hegemon             = гегемон                                               # 16+
+procurator          = поверенный, ~ доверенное лицо, ~ в Древнем Риме: прокуратор # 16+
+Praetorian Guard    = Преторианская гвардия                                 # HISTORY+ # 16+
+augur               = авгур, ~ предвещать, предзнаменовывать                # HISTORY+ # RARE+ # 16+
+---
+calends||kalends    = календы %% ''в римском календаре:'' ~ первый день месяца # HISTORY+ # 16+
+ides                = иды %% ''в римском календаре:'' ~ день в середине месяца # HISTORY+ # 16+
+ides of March       = мартовские иды %% 15 марта 44 г. до н. э. ~ был убит Юлий Цезарь # HISTORY+ # 16+
 
-Byzantine Empire      = Византийская империя, Византия                          /// 395—1453
-Constantinople        = Константинополь
+===
+Caligula            = Калигула                                              # HISTORY- # 16+
+Nero                = Нерон                                                 # HISTORY- # 16+
+===
+Huns                = гунны                                                 # HISTORY- # 16+
+Attila [the Hun]    = Аттила                                                # 16+ /// 434 год — 453 год /// (правитель гуннов)
+Goths               = готы
+Visigoths           = вестготы                                              # HISTORY+
+Vandals             = вандалы                                               /// (народ)
+===
+
+Byzantine Empire    = Византийская империя, ~ Византия                      /// 395—1453
+Constantinople      = Константинополь
+
 
 

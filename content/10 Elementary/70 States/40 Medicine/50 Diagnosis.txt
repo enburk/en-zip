@@ -1,0 +1,49 @@
+diagnosis @ medicine      = диагноз                                # 10+
+
+prognosis @ medicine      = в медицине: прогноз                    # 14+
+symptom @ medicine        = симптом, признак                       # 10+
+
+amnesia                   = амнезия                                # 14+
+avitaminosis              = авитаминоз                             # 10+
+coma @ medicine           = кома                                   # 18+ /// кома в физике и астрономии, «волосяной пучок» в ботанике
+haematoma\\hematoma       = гематома                               # 14+
+insomnia//sleeplessness   = бессонница
+panic attack              = паническая атака                       # 16+
+immunodeficiency          = иммунодефицит                          # 16+
+migraine                  = мигрень                                # 14+
+
+bronchitis                = бронхит                                # 10+
+pneumonia                 = пневмония %% воспаление лёгких         # 10+
+asthma                    = астма                                  # DEL # 14+
+gastritis                 = гастрит                                # 10+
+appendicitis              = аппендицит                             # 16+
+---
+chronic @ medicine        = хронический, ~ постоянный (о проблеме и т.п.) # 10+
+chronic {Br.} %% informal = ужасный, негодный                      # 10+
+
+===
+---
+dentist                   = дантист, зубной врач
+caries                    = кариес                                 # 10+
+---
+ophthalmologist           = офтальмолог                            # TERM+ # 14+
+contact lens              = контактная линза
+astigmatism               = астигматизм                            # 16+
+glaucoma                  = глаукома                               # TERM+ # 16+
+Daltonism                 = дальтонизм %% чаще говорят: ''color blindness'' # 10+
+---
+cardiology                = кардиология                            # 14+
+cardiogram                = кардиограмма                           # 14+
+arrhythmia                = аритмия                                # 14+
+thrombus                  = тромб                                  # 14+
+cardiac arrest            = остановка сердца                       # 18+
+---
+psychiatrist              = психиатр                               # 16+
+narcolepsy                = нарколе́псия                            # TERM+ # 16+ /// (приступы внезапного засыпания)
+somnambulist              = сомнамбула, лунатик                    # 16+
+neurosis                  = невроз                                 # 16+
+neurasthenia              = неврастения                            # 16+
+schizophrenia             = шизофрения                             # 16+ /// (как и было сказано)
+
+
+

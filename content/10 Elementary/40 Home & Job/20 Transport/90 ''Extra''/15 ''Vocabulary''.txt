@@ -1,11 +1,14 @@
 basic ~ vocabulary
+---
+ticket @ transport = билет
+: : Tickets, please!
 
 
-
-: Why do cows have bells? Because their horns don’t work.
+: Why do cows have bells? ~ Because their horns don’t work.
 
 ===
 ship @ vessel      = корабль, судно, ~ перевозить груз
+boat               = лодка, шлюпка, ~ корабль, судно
 ===
 ---
 sail @ nautical    = парус, ~ идти под парусом
@@ -25,6 +28,7 @@ runway @ airport   = взлетно-посадочная полоса
 ---
 wing @ plane       = крыло (самолета)
 wing\\fender @ car = крыло (автомобиля)
+
 
 
 

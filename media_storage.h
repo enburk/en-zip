@@ -78,30 +78,8 @@ namespace media::out
                     "unknown exception")); }
         }
 
-        expected<Location> add (resource const& r, int app) try
+        Location get (resource const& r, str const& record)
         {
-            auto size = std::filesystem::file_size(r.path);
-            if (size > (std::uintmax_t)(max<int32_t>()))
-                throw std::out_of_range(
-                "media: file too big: "
-                + str(r.path));
-
-            auto ftime = std::filesystem::last_write_time(r.path);
-            auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
-            std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
-
-            std::stringstream stringstream;
-            stringstream << std::put_time(
-            std::gmtime(&ctime), "%Y/%m/%d %T");
-
-            str stime = stringstream.str();
-            str ssize = std::to_string(size);
-            str record = ssize + " # " + stime + " # " + r.id;
-
-            str cropkind = app == 0 ? "crop" : "qrop";
-            if (cropkind == "qrop" and r.opt("qrop") != "")
-                record += " (qrop)";
-
             auto it = content.find(record);
             if (it != content.end()) {
                 it->second.used = true;
@@ -109,7 +87,11 @@ namespace media::out
                     it->second.location,
                     false}; // old one
             }
+            return Location{};
+        }
 
+        expected<Location> add (resource const& r, str const& record, str cropkind) try
+        {
             array<byte> data =
                 r.kind == "audio" ? audio::data(r, cropkind).value():
                 r.kind == "video" ? video::data(r, cropkind).value():
@@ -167,11 +149,40 @@ namespace media::out
 
         Location add (const resource & r, int app)
         {
-            auto result = sources.back()->add(r, app).value();
+            auto size = std::filesystem::file_size(r.path);
+            if (size > (std::uintmax_t)(max<int32_t>()))
+                throw std::out_of_range(
+                "media: file too big: "
+                + str(r.path));
+
+            auto ftime = std::filesystem::last_write_time(r.path);
+            auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
+            std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
+
+            std::stringstream stringstream;
+            stringstream << std::put_time(
+            std::gmtime(&ctime), "%Y/%m/%d %T");
+
+            str stime = stringstream.str();
+            str ssize = std::to_string(size);
+            str record = ssize + " # " + stime + " # " + r.id;
+
+            str cropkind = app == 0 ? "crop" : "qrop";
+            if (cropkind == "qrop" and r.opt("qrop") != "")
+                record += " (qrop)";
+
+            for (auto& source: sources)
+            {
+                auto result = source->get(r, record);
+                if (result.location != location{})
+                    return result;
+            }
+
+            auto result = sources.back()->add(r, record, cropkind).value();
             if (result.location == location{}) { int i = sources.size();
                 std::string filename = "storage." + std::to_string(i) + ".dat";
                 sources += std::make_unique<source>(dir / filename, i);
-                result = sources.back()->add(r, app).value();
+                result = sources.back()->add(r, record, cropkind).value();
             }
             return result;
         }

@@ -1,5 +1,7 @@
 rails @ railroad        = рельсы, железная дорога
 
+semaphore               = семафор
+
 monorail                = монорельс %% монорельсовая железная дорога
 funicular               = фуникулёр                               # 10+
 ---
@@ -13,6 +15,7 @@ depot @ station {Am.}   = станция %% автобусная или желе
 
 draisine                = дрезина                                 # TECH- # 10+
 buffer @ train          = буфер                                   # TECH- # 16+
+
 
 
 

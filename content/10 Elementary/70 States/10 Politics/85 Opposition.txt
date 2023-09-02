@@ -1,29 +1,30 @@
-opposition               = противопоставление, сопротивление, ~ в политике: оппозиция # 16+
+opposition             = противопоставление, сопротивление, ~ в политике: оппозиция # 16+
 
-protest {noun} %% <noun> = протест
-protest {verb} %% <verb> = протестовать
-demonstration            = демонстрация, ~ также: показ
-petition                 = петиция, хода́тайство, обращение              # POLIT+ # 16+
-picket                   = пикет, пикетировать                          # 16+
+protest @ noun %% noun = протест
+protest @ verb %% verb = протестовать
 
-pamphlet                 = брошюра, памфлет                             # POLIT+ # 16+
-proclamation             = провозглашение, ~ прокламация %% агитационная листовка # POLIT+ # 16+
+demonstration          = демонстрация, ~ также: показ
+petition               = петиция, хода́тайство, ~ обращение              # POLIT+ # 16+
+picket                 = пикет, пикетировать                            # 16+
 
-activist                 = активист
-boycott                  = бойкот, бойкотировать
-dissident                = диссидент, диссидентский                     # 16+
-obstruction              = обструкция %% противодействие нормальной работе заседания или митинга # POLIT+ # 16+
-solidarity               = солидарность
+pamphlet               = брошюра, памфлет                               # POLIT+ # 16+
+proclamation           = провозглашение, ~ прокламация                  # POLIT+ # 16+ /// %% агитационная листовка
 
-secret police            = тайная полиция                               # 16+
-draconian measures       = драконовские меры                            # 14+
-loyalty                  = верность, преданность, лояльность            # 14+
+activist               = активист
+boycott                = бойкот, бойкотировать
+dissident              = диссидент, диссидентский                       # 16+
+obstruction            = обструкция                                     # POLIT+ # 16+
+solidarity             = солидарность
 
-revolutionary            = революционер, революционный
-counter-revolutionary    = контрреволюционер, контрреволюционный
-
+secret police          = тайная полиция                                 # 16+
+draconian measures     = драконовские меры                              # 14+
+loyalty                = верность, преданность, ~ лояльность            # 14+
 ---
-terror @ politics              = в политике: террор     # 16+
-terror @ fear              = страх, ужас     # 16+
-terrorism            = терроризм
-suicide bomber       = террорист-смертник # 18+
+revolutionary          = революционер, ~ революционный
+counter-revolutionary  = контрреволюционер, ~ контрреволюционный
+---
+terror @ politics      = в политике: террор                             # 16+
+terror @ fear          = страх, ужас                                    # 16+
+terrorism              = терроризм
+suicide bomber         = террорист-смертник                             # 18+
+

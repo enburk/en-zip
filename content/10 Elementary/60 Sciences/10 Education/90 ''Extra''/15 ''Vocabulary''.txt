@@ -1,6 +1,14 @@
 basic ~ vocabulary
 ---
-homework = домашняя работа
+digits            = цифры
+letters @ symbols = буквы
+letters @ papers  = письма
+---
+pen @ tool        = ручка
+pencil            = карандаш
+---
+homework          = домашняя работа
 : I don't want to do my homework!
+
 
 

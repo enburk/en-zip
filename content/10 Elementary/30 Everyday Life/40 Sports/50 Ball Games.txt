@@ -27,9 +27,10 @@ ping pong           = пинг-понг, ~ настольный теннис # 1
 badminton           = бадминтон
 
 ---
-polo                = поло                     # 10+
+polo @ sport        = поло                     # 10+
 water polo          = водное поло              # 10+
 water poloist//water polo player = ватерполист              # SPORT+ # 10+
 canoe polo          = канополо/кануполо        # SPORT+ # 18+
+
 
 

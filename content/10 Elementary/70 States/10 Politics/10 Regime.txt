@@ -1,25 +1,26 @@
-regime                = режим, строй                  # 14+
+regime          = режим, строй                        # 14+
 
 ===
-feudalism             = феодализм
-seignior||seigneur     = сеньор, феодал
-vassal                = вассал
-suzerain              = сюзерен                       # 16+
+feudalism       = феодализм
+vassal          = вассал
+suzerain        = сюзерен                             # 16+
 ===
-capitalism            = капитализм # 16+
-proletariat           = пролетариат                   # 16+
-class @ social                 = класс ~ (общественный)        # 16+
+capitalism      = капитализм                          # 16+
+proletariat     = пролетариат                         # 16+
+class @ social  = класс ~ (общественный)              # 16+
 ===
 
-despotism             = деспотизм                     # 16+
-despot                = деспот                        # 16+
+despotism       = деспотизм                           # 16+
+despot          = деспот                              # 16+
 
-totalitarianism       = тоталитаризм                  # 16+
-tyranny               = тирания                       /// Br. /ˈtɪrəni/
-authoritarian         = авторитарный, сторонник авторитаризма # 16+
+totalitarianism = тоталитаризм                        # 16+
+tyranny         = тирания                             /// Br. /ˈtɪrəni/
+authoritarian   = авторитарный, сторонник авторитаризма # 16+
 
-democracy             = демократия                    # 14+
-anarchy               = анархия
+democracy       = демократия                          # 14+
+anarchy         = анархия
+
+
 
 
 

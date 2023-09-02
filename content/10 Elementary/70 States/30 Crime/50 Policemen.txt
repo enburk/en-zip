@@ -1,0 +1,24 @@
+police            = полиция, ~ обеспечивать порядок
+---
+[police] officer  = полицейский
+: Freeze! This is the police!
+
+constable         = констебль                                                          # 16+ /// (низший полицейский чин)
+detective         = детектив, сыщик, ~ детективный
+inspector         = инспектор
+coroner           = ко́ронер %% следователь, ведущий дела ~ о насильственной или внезапной смерти # TERM+ # 16+
+
+sheriff           = шериф
+ranger (Am.)      = полицейский %% особенно в Техасе                                   # 10+
+special agent     = специальный агент
+cop %% informal   = полицейский, коп
+
+electroshock      = электрошок
+
+===
+private detective = частный детектив
+Sherlock Holmes   = Шерлок Холмс
+===
+
+
+

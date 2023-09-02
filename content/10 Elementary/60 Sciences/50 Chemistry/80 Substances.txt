@@ -2,8 +2,10 @@ substance        = вещество, субстанция
 
 toxic            = ядовитый, токсичный
 plastic          = пластик, пластмасса
-polyethylene     = полиэтилен
 amalgam          = амальгама %% сплав ртути с другими металлами # TERM+ # 16+
+
+polyethylene     = полиэтилен
+polyurethane     = полиуретан
 
 absorption       = абсорбция                           # TERM- # 16+
 absorbent        = абсорбент                           # TERM- # 16+
@@ -11,5 +13,6 @@ absorbent        = абсорбент                           # TERM- # 16+
 distillation     = дистилляция, перегонка              # TERM+ # 16+
 distilled water  = дистиллированная вода               # TERM-
 rectified spirit = ректификат                          # TERM+ # 18+ /// %% ректификованный/ректифицированный спирт
+
 
 

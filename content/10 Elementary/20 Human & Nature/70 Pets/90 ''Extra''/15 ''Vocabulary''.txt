@@ -1,13 +1,17 @@
 basic ~ vocabulary
 
-hamster       = хомяк
-goldfish      = золотая рыбка
-guinea pig    = морская свинка
+hamster            = хомяк
+goldfish           = золотая рыбка
+guinea pig         = морская свинка
+rabbit @ pet       = кролик
+rat @ pet          = крыса
 
-cage @ animal = клетка
-lead/leash    = поводок
-puppy         = щенок
-breed         = порода
+cage @ animal      = клетка
+lead/leash @ strap = поводок
+
+puppy              = щенок
+breed              = порода
+
 
 
 

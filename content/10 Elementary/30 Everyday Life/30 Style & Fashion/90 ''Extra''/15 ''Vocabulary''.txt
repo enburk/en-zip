@@ -5,12 +5,17 @@ dress @ verb      = одежда, ~ одевать, одеваться
 dress/gown @ noun = платье
 evening gown      = вечернее платье # 12+
 ---
-suit              = костюм
+suit @ clothes    = костюм
 bathing suit      = купальный костюм
 ---
-skirt             = юбка
-shirt             = рубашка, сорочка
+skirt @ clothes   = юбка
+shirt @ clothes   = рубашка, сорочка
+polo [shirt]      = поло, тенниска
 : Keep your shirt on! %% idiomatic = Держи себя в руках! ~ Уймись уже!
+
+===
+
+shoes             = ботинки, туфли, обувь
 
 ===
 
@@ -28,6 +33,7 @@ earrings          = серьги
 
 lipstick          = помада
 facial mask       = маска для лица
+
 
 
 

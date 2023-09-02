@@ -30,10 +30,12 @@ harts @ cards
 diamonds @ cards
 spades @ cards
 clubs @ cards
-
+---
 ace @ cards
 king @ cards
+king @ chess
 queen @ cards
+queen @ chess
 jack @ cards
 
 ===

@@ -1,0 +1,53 @@
+state                      = государство, страна, штат, ~ государственный
+---
+flag @ state               = флаг, флажок                        /// поникнуть, упасть духом
+tricolour\\tricolor        = триколор
+
+social contract            = общественный договор                # 16+
+---
+ministry                   = министерство
+minister                   = министр
+secretary                  = секретарь, министр
+secretariat                = секретариат                         # POLIT- # 16+
+ombudsman                  = омбудсмен                           # POLIT+ # TERM+ # 16+
+
+territorial waters         = территориальные воды                # POLIT-
+enclave @ state            = анклав                              # RARE- # 16+
+
+centralization %% Br. also: centralisation = централизация                       # POLIT- # 16+
+decentralization %% Br. also: decentralisation = децентрализация                     # POLIT- # 16+
+---
+region                     = регион, область                     /// ~~ область (тела) ???
+regional                   = региональный, областной
+municipal                  = муниципальный, городской            # 16+
+---
+periphery @ state          = периферия, окраина                  # 14+ /// Am. /pəˈrɪfəri/
+province                   = провинция, область
+provincial                 = областной, местный, ~ провинциальный, провинциал
+---
+federation                 = федерация, объединение              # 14+
+confederation//confederacy = конфедерация, союз                  # 16+
+unitary state              = унитарное государство               # POLIT+ # 16+
+autonomy @ state           = автономия, независимость
+
+===
+empire                     = империя                             /// Am. /ˈem.paɪr/
+emperor                    = император
+empress                    = империатрица
+imperialism                = империализм                         # 14+
+===
+
+annexation                 = аннексия                            # 16+
+expansion                  = экспансия, ~ также: расширение, рост # 16+
+hegemony                   = гегемония                           # 16+ /// Br. hɪˈɡeməni, ˈhedʒəməni
+
+colonization %% Br. also: colonisation = колонизация
+separatism                 = сепаратизм                          # 16+
+---
+sovereign state            = суверенное государство              # 16+
+satellite state            = государство-сателлит                # POLIT+ # 16+
+protectorate               = протекторат                         # POLIT+ # 16+ /// Am. /prəˈtektərət/
+Dominion|dominion          = доминион %% самоуправляющееся государство ~ в составе Британской Империи # HISTORY+ # POLIT+ # RARE+ # 16+
+dominion                   = власть, господство, владение        # HISTORY+ # POLIT+ # RARE+ # 16+
+
+

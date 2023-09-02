@@ -1,0 +1,40 @@
+strategic @ army           = стратегический
+
+morale                     = моральное состояние, боевой дух
+demoralisation\\demoralization = деморализация                      /// нечеткое разделение на бр. ам.
+disorganisation\\disorganization = дезорганизация                     /// нечеткое разделение на бр. ам.
+
+march                      = марш, маршировать, ~ походное движение, ~ суточный переход
+mobility                   = мобильность, подвижность
+motorized                  = моторизованный
+
+concentrate @ army         = сосредотачивать, концентрировать, ~ концентрироваться
+equip @ army               = оборудовать, снаряжать, ~ вооружать, экипировать
+evacuation @ army          = эвакуация
+materiel @ army            = материальная часть, ~ боевая техника # 16+
+strategic materials        = стратегические материалы           # WAR+ # 16+ /// стратегическое сырье
+
+mobilisation\\mobilization = мобилизация                        /// нечеткое разделение
+demobilisation\\demobilization = демобилизация                      /// нечеткое разделение
+
+===
+tactical @ army            = тактический
+===
+
+frontal attack             = фронтальная атака                  # WAR-
+flanking manoeuvre\\flanking maneuver = фланговый манёвр                   # WAR-
+preventive attack          = превентивный удар %% упреждающий   # WAR- # 16+
+
+front line                 = линия фронта
+blockade @ army            = блокада, блокировать
+storming @ army            = штурм
+raid @ army                = рейд, облава, ~ устраивать облаву, ~ налёт, набег # 10+
+
+echelon                    = эшелон                             # WAR- # 16+
+forage                     = корм, фураж, ~ добывать продовольствие, ~ разыскивать # WAR-
+
+vanguard @ army            = в военном деле: авангард           # WAR- # 16+
+rearguard @ army           = арьергард                          # WAR- # 16+
+
+
+

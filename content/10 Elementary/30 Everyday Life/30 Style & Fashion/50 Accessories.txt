@@ -1,8 +1,11 @@
 accessory = аксессуар             # 14+
 
 scarf     = шарф
+
 gaiters   = гетры                 # 16+
-sock      = носок
+socks     = носки
+
 clutch    = клатч %% сумочка-конверт # RARE- # 14+
+
 
 

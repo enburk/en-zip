@@ -8,7 +8,6 @@ batiste           = батист                 # 16+
 denim             = деним                  # 16+
 linen             = лён                    # 10+
 silk              = шёлк                   # 10+ /// 8 really
-crêpe de chine//crepe de chine = крепдешин              # RARE- # 18+
 organza           = органза́                # RARE- # 18+
 nylon             = нейлон                 # 18+
 polyester         = полиэ́стер              # 14+
@@ -20,8 +19,13 @@ muslin            = муслин                 # RARE- # 18+ /// French mousse
 latex             = латекс                 # 18+
 
 ===
+---
+crêpe             = креп                   # RARE- # 18+
+crêpe de chine//crepe de chine = крепдешин              # RARE- # 18+
+---
 [polar] fleece    = флис                   # 16+
 Golden Fleece     = золотое руно           # 16+
+
 
 
 

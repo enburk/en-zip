@@ -2,7 +2,7 @@ basic ~ vocabulary
 
 chess                        = шахматы
 heads or tails? %% idiomatic = орёл или решка?
-tic-tac-toe                  = крестики-нолики
+noughts and crosses\\tic-tac-toe = крестики-нолики
 ---
 dice @ game %% plural: dice  = игра в кости, ~ кости (игральные)
 : dice shake and roll onto table # SOUND
@@ -49,5 +49,6 @@ bet @ stake                  = пари, ставка, ~ делать ставк
 : Place your bets!
 ante                         = ставка, взнос, ~ делать первую ставку
 : Ante up!                   = Делайте ставки! ~ Деньги на стол!
+
 
 

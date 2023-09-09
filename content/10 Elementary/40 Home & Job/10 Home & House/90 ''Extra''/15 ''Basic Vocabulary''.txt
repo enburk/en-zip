@@ -1,4 +1,19 @@
 basic ~ vocabulary
 
-wallpaper = обои
+town           = город, городок, ~ центр города
+suburb         = пригород
+village        = деревня, поселок
+
+garden         = сад, огород
+bench @ park   = скамейка, скамья
+
+floor @ house  = пол
+roof @ house   = крыша
+window @ house = окно
+---
+bed @ home     = кровать, постель
+bedroom        = спальня, ~ гостиничный номер
+
+wallpaper      = обои
+
 

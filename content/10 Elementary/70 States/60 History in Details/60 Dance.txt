@@ -8,9 +8,10 @@ minuet                    = менуэт %% танец и музыкальная
 galop                     = галоп %% танец и музыка к нему     # 16+ /// , ~ танцевать галоп
 polonaise @ dance         = полонез %% танец и музыкальная форма # 16+ /// разная старинная одежда
 quadrille                 = квадриль %% танец и музыка к нему  # 16+
-
 contredance//contra dance = контрданс %% танец и музыка к нему # 16+ /// ~~contradance
+---
 chaconne                  = чакона %% танец и музыкальная форма # 16+
+: Please, let's just assume to the theme of the Chaconne
 
 ===
 twist @ dance             = твист, танцевать твист             # 16+

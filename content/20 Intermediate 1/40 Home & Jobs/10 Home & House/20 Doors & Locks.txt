@@ -1,0 +1,31 @@
+doors & locks
+
+gate @ doorway
+---
+front door                   # 8+
+door knocker                 # 8+ /// doorknocker, ~ knocker
+handle
+
+door lock
+latch @ door
+latch hook
+crossbar
+hinge @ door                 # 10+
+rivets                       # 10+
+
+keys @ door
+keyhole
+peephole %% Br. also spyhole # 8+
+keycard//card key            /// ~~key card %% also mainly Am. card key #  8+
+key chain                    # 8+
+
+padlock
+paddlocked latch             # 8+
+
+locked @ door
+unlocked @ door
+closed @ door
+
+combination lock             # 8+
+a handwheel ~ of a watertight door # 8+
+

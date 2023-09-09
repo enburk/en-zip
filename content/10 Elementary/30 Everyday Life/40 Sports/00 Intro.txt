@@ -7,7 +7,7 @@ champion @ sport        = чемпион
 finalist @ sport        = финалист
 record @ sport          = рекорд                             /// `record
 medal @ sport           = медаль
-trophy @ sport          = трофей
+trophy @ sport          = трофей, приз
 
 attack @ sport          = атака, атаковать, ~ нападение      /// , припадок
 counterattack @ sport   = контратака                         # 10+

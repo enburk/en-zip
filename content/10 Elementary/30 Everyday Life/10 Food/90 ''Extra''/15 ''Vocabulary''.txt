@@ -1,58 +1,54 @@
 basic ~ vocabulary
 
-fork                         = вилка
-spoon                        = ложка
-knife %% plural: knives      = нож
-tablecloth                   = скатерть
-plate                        = тарелка
-napkin                       = салфетка
+fork @ utensil          = вилка
+spoon @ utensil         = ложка
+knife %% plural: knives = нож
+tablecloth              = скатерть
+plate @ dish            = тарелка
+napkin                  = салфетка
 
-egg                          = яйцо
-pie                          = пирог, торт
-cake                         = торт
-cookie {Am.}                 = домашнее печенье, ~ булочка
+egg @ egg               = яйцо
+pie @ food              = пирог, торт
+cake @ dessert          = торт
+cookie {Am.}            = домашнее печенье, ~ булочка
+bread                   = хлеб
 
-beef                         = говядина
-pork                         = свинина
+beef                    = говядина
+pork                    = свинина
 ---
-seafood                      = морепродукты
-salmon @ food                = лосось
-caviar/roe                   = икра
-shrimp @ food                = креветка
+seafood                 = морепродукты
+salmon @ food           = лосось
+shrimp @ food           = креветка, креветки
 : I’m on a seafood diet. ~ What's a seafood diet? ~ When I “see food”, I eat it!
+
+===
 ---
-sweet                        = сладкий, милый, ~ нежный, приятный
-sweets                       = сладости, конфеты
+sweet                   = сладкий, милый, ~ нежный, приятный
+sweets                  = сладости, конфеты
 : Is that sweet or what?
 ---
-sour                         = кислый
-tough                        = жёсткий
+sour                    = кислый
+bitter                  = горький
+spicy                   = пряный, пикантный, ~ острый
+tough                   = жёсткий
 : The beef was fine--tough, but with body in it.
+===
 
-candy                        = леденцы, конфеты
-lollipop                     = леденец на палочке
-ice cream                    = мороженое
-
-frying pan %% Am. also: frypan, skillet = сковордка
-[cooking] pot//saucepan//pan = кастрюля
-
-pot @ pottery                = горшок
-lid                          = крышка
-jar                          = банка, сосуд
-jug\\pitcher                 = кувшин
-boil                         = кипеть
-
-teapot                       = чайник
-kettle//teakettle            = электрический чайник
+candy                   = леденцы, конфеты
+lollipop                = леденец на палочке
+ice cream               = мороженое
+honey                   = мёд
 
 ---
-hungry                       = голодный
-starving                     = голодающий, ~ изголодавшийся
-full @ food                  = сытый
+hungry                  = голодный
+starving                = голодающий, ~ изголодавшийся
+full @ food             = сытый
 : I'm hungry.
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
+
 
 
 

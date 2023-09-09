@@ -3,7 +3,6 @@ basic ~ vocabulary
 clothes           = одежда, платье
 dress @ verb      = одежда, ~ одевать, одеваться
 dress/gown @ noun = платье
-evening gown      = вечернее платье # 12+
 ---
 suit @ clothes    = костюм
 bathing suit      = купальный костюм
@@ -24,8 +23,6 @@ leather           = кожа, кожаный
 
 hat               = шляпа
 umbrella          = зонт, зонтик
-
-embroidery        = вышивание, вышивка
 
 necklace          = ожерелье, колье
 pendant           = подвеска, кулон

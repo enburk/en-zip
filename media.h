@@ -6,7 +6,7 @@ namespace media
     using aux::expected;
     using std::filesystem::path;
 
-    array<str> videoexts = {".png", ".jpg", ".jpeg" };
+    array<str> videoexts = {".gif", ".png", ".jpg", ".jpeg" };
     array<str> audioexts = {".mp3", ".ogg", ".wav"};
 
     struct location

@@ -23042,6 +23042,7 @@ Anton Chekhov [Chekhov][Chekhovian] ## qrop l1 t3 b20 {{Osip Braz, 1898 $$}}.jpg
 Ariel & Taeping, China Tea Clippers Race [clipper@ship] ## qrop l19 r4 ## qropt! {{Jack Spurling, 1926 $$}}.jpg
 Battle of Waterloo [Waterloo] ## crop l1 ## qrop l1 r28 {{William Holmes Sullivan, 1898 $$}} ### (colour litho).jpg
 centurion ## qrop t7 b3 ## qropt! {{Amédée Forestier, 1927 $$}}.jpg
+Cup tossing [tasseography][tasseomancy][cup-tosser] ## crop l1 r1 ## qrop l11 r11 ## qropt! {{1842 engraving by Nicholas Joseph Crowley}}.jpg
 dragoons ## qrop t19 b3 {{Alphonse Lalauze $$}} ### Dragon et sentinelle.jpg
 evolution ## qropt! {{1871 $$}}.jpg
 Family Doctor [medicinal] ## qrop l4 {{Grant Wood, 1940 $$}}.jpg
@@ -24453,6 +24454,41 @@ shopping basket [basket@shopping] ## qrop ql {{Photo.. Misirliahmet $dreamstime 
 tag @ clothes ## qrop l9 r24 {{Photo.. Thapakorn Tawornnurak $dreamstime 101794083}}.jpg
 firefighter {{Photo.. Arthur Van Diest $dreamstime 19487163}}.jpg
 >>> ../datae\photo_dreamstime/food
+>>> ../datae\photo_dreamstime\food/!!mix
+a cookie dipped in milk [dipped] ## qrop qr {{Photo.. Maria Dryfhout $dreamstime 82599069}}.jpg
+a cup of custard with black cherry topping [custard] ## qrop l9 r24 {{Photo.. Enzodebe $dreamstime 112386351}}.jpg
+almonds coated with chocolate and sugar [coated] ## qrop l14 r23 {{Photo.. Tinasdreamworld $dreamstime 80444823}}.jpg
+an egg baked in a tomato [baked] ## qrop l32 r2 {{Photo.. Sergii Koval $dreamstime 40591822}}.jpg
+artichoke hearts ## qrop q {{Photo.. Andrii Zhezhera $dreamstime 61211952}}.jpg
+Asian rice noodles wok with chicken and vegetables [wok] ## qrop l3 r27 ## qropt! {{Photo.. Viktorija Puke $dreamstime 77471905}}.jpg
+baby carrots ## qrop q {{Photo.. Dmires $dreamstime 586444}}.jpg
+bagel ## qrop ql {{Photo.. Mikeaubry $dreamstime 26317607}}.jpg
+blanched almonds [blanched] ## qrop l13 r15 ## qropt! {{Photo.. Brighton $dreamstime 23451045}}.jpg
+chocolate cupcakes topped with powdered sugar and maraschino cherries [topped][maraschino cherries] ## qrop ql {{Photo.. Mirage3 $dreamstime 26343590}}.jpg
+chocolate with hazelnuts [hazelnuts@chocolate] ## qrop ql {{Photo.. Alnat $dreamstime 9557352}}.jpg
+doughnut with icing sugar [icing sugar][powdered sugar][confectioners' sugar][confectioners sugar] ## qrop q {{Photo.. Tomas Marek $dreamstime 12942150}}.jpg
+eggs in a carton [carton] ## qrop l10 r9 ## qropt! {{Photo.. Johanna Goodyear $dreamstime 12479}}.jpg
+grilled corn on the cob with a curl of butter [corn on the cob] ## qrop qr {{Photo.. Stockcreations $dreamstime 30033614}}.jpg
+grilled snake on a skewer [skewer] {{Photo.. Yardesign $dreamstime 53458022}}.jpg
+hummus decorated with parsley [hummus] ## qrop qr {{Photo.. Gavril Margittai $dreamstime 17316086}}.jpg
+macaroons ## qrop l3 r28 ## qropt! {{Photo.. Mirage3 $dreamstime 33146767}}.jpg
+mango hedgehog [hedgehog@food] ## qrop l2 r30 ## qropt! {{Photo.. Robyn Mackenzie $dreamstime 3649848}}.jpg
+mango hedgehog [hedgehog@food] ## qrop q {{Photo.. Anamariategzes $dreamstime 68268057}}.jpg
+pretzels ## qrop ql {{Photo.. Viktor Pravdica $dreamstime 3096987}}.jpg
+punnets of strawberries [punnet] ## qrop q {{Photo.. Hannah Freeman $dreamstime 93123263}}.jpg
+punnets of tomatoes [punnet] ## qrop q {{Photo.. Jerome Cid $dreamstime 84744507}}.jpg
+quail eggs [quail@egg] ## qrop l6 r20 {{Photo.. Nehru $dreamstime 79197544}} ### Japanese quail eggs.jpg
+roasted coffee beans and dried rowan berries [rowan berries][rowanberry] ## qrop l18 r15 {{Photo.. Denis Shevyakov $dreamstime 59783470}}.jpg
+roasted red pepper marinated in apple cider vinegar and olive oil [red pepper] ## qrop ql {{Photo.. Kutizoltan $dreamstime 75411441}}.jpg
+seared tuna fish [seared] ## qrop ql {{Photo.. Gavril Margittai $dreamstime 17316060}}.jpg
+smoked salmon carpaccio with lemon and greens [salmon@food] ## qrop qt {{Photo.. Boris Ryzhkov $dreamstime 7729020}}.jpg
+strawberry flavored candy sticks [sticks][candy sticks][candysticks] ## qrop q {{Photo.. Danazurki $dreamstime 64239491}}.jpg
+sun-dried tomatoes [sun-dried][sundried] ## qrop l23 r11 {{Photo.. Elena Moiseeva $dreamstime 21731549}} ### with olive oil.jpg
+sun-dried yolks [sun-dried][sundried] ## qrop ql {{Photo.. Chatchai Somwat $dreamstime 37471362}}.jpg
+tomatoes on sale in a grocery store [grocery] ## qrop ql {{Photo.. Fedecandoniphoto $dreamstime 99935654}}.jpg
+Turkish delight [locoum][loukoumi] ## qrop l16 r17 {{Photo.. Tamara Bauer $dreamstime 19297193}}.jpg
+vegetable salad verrines [verrines] ## qrop ql {{Photo.. Nanisimova $dreamstime 23460321}}.jpg
+verrine ## qrop l16 r16 ## qropt! {{Photo.. Jeromaniac $dreamstime 17059959}}.jpg
 >>> ../datae\photo_dreamstime\food/!drinks
 a tea cup, a teaspoon and a saucer [teaspoon][saucer] ## qrop l6 r18 ## qropt! {{Photo.. Welcomia $dreamstime 25956550}}.jpg
 >>> ../datae\photo_dreamstime\food\!drinks/alco
@@ -24543,33 +24579,48 @@ dessert wine ## qrop qr {{Photo.. Chert61 $dreamstime 80886252}}.jpg
 sangria ## qrop t12 b3 ## qropt! {{Photo.. Dennis Sabo $dreamstime 780463}}.jpg
 wine ## qrop ql {{Photo.. Zetaty $dreamstime 75498695}} White wine composition with grapes.jpg
 >>> ../datae\photo_dreamstime\food/!kitchenware
+a cast-iron pot with a lid [lid] ## qrop l23 r5 ## qropt! {{Photo.. Monika Adamczyk $dreamstime 104230581}}.jpg
+a fried egg in a cast-iron pan [fried egg] ## qrop l4 r25 ## qropt! {{Photo.. Lana Langlois $dreamstime 6895440}}.jpg
+a meat tenderizer and a hatchet [hatchet] ## qrop l12 r7 ## qropt! {{Photo.. Владимир Сухачёв $dreamstime 108124509}}.jpg
+a spatula and a pastry brush [spatula][pastry brush] ## qrop l24 r10 {{Photo.. Ratmaner $dreamstime 37611806}}.jpg
+biscuit cutters [cookie cutters] ## qrop l6 r23 ## qropt! {{Photo.. Elena Schweitzer $dreamstime 15602368}}.jpg
 blender ## qrop t14 b19 {{Photo.. Food-micro $dreamstime 23710287}}.jpg
 boil ## qrop l23 r10 {{Photo.. S1001 $dreamstime 2686122}}.jpg
 buckwheat in a clay pot [buckwheat][clay pot][pot@pottery] {{Photo.. Vyacheslav Tarasenko $dreamstime 64212226}}.jpg
-cast-iron pot with a lid [lid] ## qrop l23 r3 ## qropt! {{Photo.. Monika Adamczyk $dreamstime 104230581}}.jpg
 ceramic ## qrop l50 t11 b14 {{Photo.. Anton Eine $dreamstime 60396848}}.jpg
+charcoal barbecue grill [barbecue@grill] [barbecue grill] ## qrop l13 r13 ## qropt! {{Photo.. Alexei Novikov $dreamstime 55396024}}.jpg
 china ## qrop qb {{Photo.. Ioana Grecu $dreamstime 15021739}}.jpg
 chopsticks ## crop l5 r3 ## qrop l9 r7 ## qropt! {{Photo.. Ioana Grecu $dreamstime 122616}}.jpg
 cooking pot [saucepan][pan@cooking][handle] ## qrop ql {{Photo.. Fly $dreamstime 90284094}}.jpg
+cupcake moulds [cupcake molds][moulds][molds] ## qrop l11 r14 ## qropt! {{Photo.. Arnau2098 $dreamstime 39872533}}.jpg
+dough hooks [hooks] ## qrop l27 ## qropt! {{Photo.. Jochenschneider $dreamstime 28478798}}.jpg
 ewer ## qrop ql {{Photo.. Ivan Smirnov $dreamstime 82922192}}.jpg
 faience ## qrop r19 ## qropt! {{Photo.. Giuseppe Famoso $dreamstime 11959013}}.jpg
 flute @ glass ## qrop qr {{Photo.. Suto Norbert $dreamstime 7068247}}.jpg
 forks and spoons [fork@utensil][spoon@utensil] ## qrop ql {{Photo.. Sorayut $dreamstime 98925825}}.jpg
 frying pan ## qrop l13 r20 {{Photo.. Photomailbox $dreamstime 94205872}}.jpg
 gas stove [stove@gas] ## qrop ql {{Photo.. Jacques Kloppers $dreamstime 920109}}.jpg
+grinder ## qrop l7 r13 ## qropt! {{Photo.. Iledic $dreamstime 30337841}}.jpg
+honey dipper ## qrop l9 r20 ## qropt! {{Photo.. Nexus7 $dreamstime 12420665}}.jpg
 jar ## qrop l9 r13 ## qropt! {{Photo.. Ivan Mateev $dreamstime 76721638}}.jpg
 jug~pitcher [jug@pitcher][pitcher@jug] ## qrop l16 r18 {{Photo.. Maryna Kolechyna $dreamstime 105838952}}.jpg
 jug~pitcher [jug@pitcher][pitcher@jug] ## qrop t13 b11 ## qropt! {{Photo.. Sarah2 $dreamstime 14258023}}.jpg
+julienne carrots peeler [julienned][peeler] ## qrop l22 r12 {{Photo.. Kungverylucky $dreamstime 78561402}}.jpg
 kitchen ## qrop ql {{Photo.. Phartisan $dreamstime 1931874}}.jpg
 kitchen knife [knife] ## qrop l20 r9 ## qropt! {{Photo.. Milyavsky $dreamstime 105984225}}.jpg
+meat tenderizer [tenderizer][meat mallet][mallet@meat] ## qrop l15 r19 {{Photo.. Владимир Сухачёв $dreamstime 108124665}}.jpg
 microwave ## qrop l5 r5 ## qropt! {{Photo.. Jaroslav Moravcik $dreamstime 41908031}}.jpg
 mixer ## qrop l14 r7 ## qropt! {{Photo.. Photos1st $dreamstime 13213833}}.jpg
+pizza cutter [pizza wheel] ## qrop l4 r29 {{Photo.. Karpenkov Denis $dreamstime 90452642}}.jpg
+plastic colander [colander] ## qrop l17 r15 ## qropt! {{Photo.. Eleni Seitanidou $dreamstime 39298305}}.jpg
 plastic forks [fork@utensil] ## qrop qr {{Photo.. Alexander Kopelev $dreamstime 17803194}}.jpg
 plates and a soucer [plate@dish] ## qrop l10 r12 ## qropt! {{Photo.. Claudia Fernandes $dreamstime 14699825}}.jpg
+potter's wheel ## qropt! {{Photo.. Martina1802 $dreamstime 85344631}}.jpg
 refrigerator and freezer door handles [refrigerator][freezer] ## qrop l8 r18 {{Photo.. Maxim Tarasyugin $dreamstime 36985791}}.jpg
 refrigerator [fridge] ## crop t3 b4 ## qrop t7 b8 ## qropt! {{Photo.. Vladislav Kochelaevskiy $dreamstime 62041989}}.jpg
 salt shaker [salt] ## qrop l9 r24 {{Photo.. Pamela Mcadams $dreamstime 42387319}}.jpg
 tablecloth ## qrop ql {{Photo.. Drx $dreamstime 4899869}}.jpg
+tea strainer [strainer] ## qrop t11 b14 {{Photo.. Evgeny Kosharsky $dreamstime 67917419}}.jpg
 teakettle ## qrop t5 b5 ## qropt! {{Photo.. Pamela Tekiel $dreamstime 1454736}}.jpg
 teapot ## qrop l25 t2 b2 {{Photo.. 1234 1245 $dreamstime 9009333}}.jpg
 >>> ../datae\photo_dreamstime\food/!tableware
@@ -24599,10 +24650,12 @@ parmesan [Parmesan] ## qrop l29 r5 {{Photo.. Rostislav Glinsky $dreamstime 35930
 cheese balls ## qrop q {{Photo.. Eutoch $dreamstime 19345051}}.jpg
 croissant ## qrop q {{Photo.. Kakca22 $dreamstime 50865164}}.jpg
 >>> ../datae\photo_dreamstime\food/dessert
+a scoop of ice cream [scoop] ## qrop l7 r27 {{Photo.. Philip Dickson $dreamstime 9552599}}.jpg
 an apple strudel with ice cream [apple strudel][strudel] ## crop l8 r8 ## qrop l10 r24 {{Photo.. Ruslan Olinchuk $dreamstime 47401590}}.jpg
 baklava ## qrop l3 r18 ## qropt! {{Photo.. Scaliger $dreamstime 25093742}}.jpg
 biscuit @ crisp ## qrop q {{Photo.. Garsya $dreamstime 53342688}}.jpg
 blancmange ## qrop t13 b12 {{Photo.. Eddie100164 $dreamstime 30427149}}.jpg
+brownies ## qrop t18 b16 ## qropt! {{Photo.. Hdconnelly $dreamstime 7470575}}.jpg
 cacao ## qrop qb {{Photo.. Elena Moiseeva $dreamstime 31253745}}.jpg
 cake @ dessert ## qrop q {{Photo.. Jokerproproduction $dreamstime 7085294}}.jpg
 candy canes [peppermint candy canes] ## qrop l21 r12 {{Photo.. Vitalina Rybakova $dreamstime 60485865}}.jpg
@@ -24613,9 +24666,12 @@ cheesecake ## qrop l4 r23 ## qropt! {{Photo.. Paul Binet $dreamstime 12645975}}.
 chocolate ## qrop qr {{Photo.. Subbotina $dreamstime 52376910}}.jpg
 chocolate bar {{Photo.. Hdconnelly $dreamstime 13425105}}.jpg
 chocolate bars [chocolate bar] ## qrop qb {{Photo.. Duha $dreamstime 15371342}}.jpg
+chocolate chip cookies [chocolate chip][cookies] ## qrop l7 r13 ## qropt! {{Photo.. Msphotographic $dreamstime 17000621}}.jpg
 chocolate mousse and biscuit [dessert] ## qrop q {{Photo.. Margouillat $dreamstime 17320499}}.jpg
+chocolate mousse and biscuits [biscuits] ## qrop l1 r2 {{Photo.. Margouillat $dreamstime 17320499}}.jpg
 chocolate sprinkles [sprinkles] ## qrop ql {{Photo.. Vanessa Gifford $dreamstime 12604424}}.jpg
 chocolate truffles [chocolate truffle][truffle@chocolate] ## qrop l32 r2 {{Photo.. Torsten Schon $dreamstime 754197}}.jpg
+chocolate-covered cherries [chocolate-covered][chocolicious][covered] ## qrop l12 r20 {{Photo.. Ganjawell $dreamstime 9810574}}.jpg
 Christmas {gingerbread cookies} [cookie] ## qrop ql {{Photo.. Photoeuphoria $dreamstime 40486}}.jpg
 cocoa powder ## qrop q {{Photo.. Szefei $dreamstime 14715672}}.jpg
 confections [confectionary] ## qrop l14 r19 ## qropt! {{Photo.. Ganjawell $dreamstime 9810574}} ### Chocolate covered cherries.jpg
@@ -24635,6 +24691,7 @@ ice cream cones [ice cream cone][cone@ice cream] ## qrop l34 t1 ## crop l7 {{Pho
 jelly @ food1 ## qrop q {{Photo.. Nastya22 $dreamstime 15113675}}.jpg
 lollipop [lollypop][lolly pop][lolli-pop] ## qrop qt {{Photo.. Jon Helgason $dreamstime 1590082}}.jpg
 marmalade ## qrop q {{Photo.. Yuryn76 $dreamstime 55140667}}.jpg
+meringues ## qrop q {{Photo.. Brighton $dreamstime 30027546}}.jpg
 mousse ## qrop t32 b2 {{Photo.. Liv Friis-larsen $dreamstime}}.jpg
 nougat ## qrop l36 b3 ## qropt! {{Photo.. Igorr $dreamstime 68726318}}.jpg
 peach jam [jam@food] ## qrop qr {{Photo.. Monika Adamczyk $dreamstime 224386}}.jpg
@@ -24646,6 +24703,7 @@ roulade @ food {{Photo.. Vyacheslav Tarasenko $dreamstime 64212215}}.jpg
 rum baba [baba au rhum][baba] ## qrop t12 b10 ## qropt! {{Photo.. Alexander Mychko $dreamstime 50654478}}.jpg
 saccharin ## qrop l7 r19 {{Photo.. Sarah2 $dreamstime 28316728}}.jpg
 saccharine {{Photo.. Juan Moyano $dreamstime 28814703}} Candy skewers.jpg
+sorbet ## qrop l8 r26 {{Photo.. Catalina Zaharescu Tiensuu $dreamstime 40783560}}.jpg
 souffle ## qrop t14 b20 {{Photo.. Jamie Watson $dreamstime 29583178}}.jpg
 sugar ## qrop qr {{Photo.. Olga Smirnova $dreamstime 9073084}}.jpg
 sweet {{Photo.. Maram $dreamstime}}.jpg
@@ -24661,14 +24719,31 @@ flambe ## qrop b35 {{Photo.. Martin Pettersson $dreamstime 8778476}}.jpg
 grill @ food {{Photo.. Sławomir Fajer $dreamstime 43913589}} barbecue.jpg
 honey ## qrop qr {{Photo.. Eleni Seitanidou $dreamstime 39517985}}.jpg
 >>> ../datae\photo_dreamstime\food/ingridients
+a spoonful of brown sugar [spoonful][brown sugar] ## qrop t26 b8 {{Photo.. Ruben  Paz $dreamstime 3807235}}.jpg
+beef ## qrop q {{Photo.. Mark Eaton $dreamstime 22613858}}.jpg
 bouillon cubes [bouillon cube] ## qrop l32 r5 b5 {{Photo.. Marleenwolters $dreamstime 27990900}}.jpg
+chopped vegetables [chopped] ## qrop q {{Photo.. Kristina Kostova $dreamstime 64411935}}.jpg
+coffee grounds ## qrop q {{Photo.. Chaloemphan $dreamstime 22552158}}.jpg
 conserve @ noun ## qrop l31 t5 {{Photo.. Tatyana Nyshko $dreamstime 10257144}} ### apricot.jpg
+cut strawberries [cut][cut, cut, cut] ## qrop ql {{Photo.. Charlieb34 $dreamstime 19801387}}.jpg
 fillet~filet ## qrop ql {{Photo.. Anna  Omelchenko $dreamstime 25397132}}.jpg
+frozen red currants [frozen][freeze, froze, frozen] ## qrop ql {{Photo.. Baibaz $dreamstime 60489764}}.jpg
+grated beetroot [grated beet][grated][beetroot@grated][beet@grated] ## qrop l19 r15 {{Photo.. Photomailbox $dreamstime 26917437}}.jpg
+ground beef [mince][ground@grind] ## qrop q {{Photo.. Empire331 $dreamstime 9088221}}.jpg
+hard-boiled eggs [hardboiled][hard-boiled][hard boiled] ## qrop l14 r18 ## qropt! {{Photo.. Leszek Stodulski $dreamstime 30407213}}.jpg
 ingredients ## qrop l8 r25 {{Photo.. Tombaky $dreamstime 5796367}} ### Mix salad ingredients and mozarella.jpg
 lasagna pasta [pasta] ## qrop qr {{Photo.. Imelda Kiss $dreamstime 29136070}}.jpg
+making batter [batter] ## qrop l15 r10 ## qropt! {{Photo.. Daleen Loest $dreamstime 19534275}}.jpg
+making candyfloss [candyfloss][cotton candy] ## qrop l26 ## qropt! {{Photo.. Khajornkiat $dreamstime 48155578}}.jpg
 margarine ## qrop ql {{Photo.. Jochenschneider $dreamstime 24228961}}.jpg
 marinade ## qrop qr {{Photo.. Zbigniew Kosmal $dreamstime 1058671}}.jpg
 pasta ## noqrop {{Photo.. Spirita $dreamstime 935492}}.jpg
+peel ## qrop ql {{Photo.. Anna Jurkovska $dreamstime 89381555}}.jpg
+pickled tomatoes [pickled] ## qrop l3 r30 ## qropt! {{Photo.. Serghei Zadvornii $dreamstime 57819454}}.jpg
+preserved apricots [preserved] ## qrop l31 t6 {{Photo.. Tatyana Nyshko $dreamstime 10257144}}.jpg
+raisins ## qrop q {{Photo.. Voyagerix $dreamstime 36594397}}.jpg
+raw chicken drumsticks [raw][chicken drumsticks] ## qrop l15 r6 ## qropt! {{Photo.. Raja Rc $dreamstime 8175243}}.jpg
+raw fish [raw] ## qrop l17 r7 ## qropt! {{Photo.. Stephane Tougard $dreamstime 2279921}}.jpg
 tomato paste [paste] ## qrop l13 r20 {{Photo.. Karpenkov Denis $dreamstime 53350772}}.jpg
 Japanese tableware [tableware][sushi bar] ## qrop ql {{Photo.. Alehnia $dreamstime 5660614}}.jpg
 >>> ../datae\photo_dreamstime\food/meal
@@ -24682,6 +24757,7 @@ grilled steak [steak] {{Photo.. Legaa $dreamstime 15105004}}.jpg
 lasagne~lasagna ## qrop qr {{Photo.. Zkruger $dreamstime 74782834}}.jpg
 mashed potatoes [mash] ## qrop qr {{Photo.. Megalomaniac $dreamstime 24669999}}.jpg
 meat ## qrop qr {{Photo.. Olga Langerova $dreamstime 1576481}}.jpg
+meatballs ## qrop l20 r14 b1 {{Photo.. Ishtygashev $dreamstime 22105508}}.jpg
 medallion @ food ## qrop l22 r11 {{Photo.. Boaz Yunior Wibowo $dreamstime 21583264}}.jpg
 medallion @ food ## qrop l9 r13 ## qropt! {{Photo.. Stockcreations $dreamstime 30970928}}.jpg
 omelette~omelet ## qrop l32 t9 {{Photo.. Loopphoto $dreamstime 54840649}}.jpg
@@ -24698,6 +24774,7 @@ Yorkshire pudding ## qrop l10 r15 ## qropt! {{Photo.. Joseph Gough $dreamstime 1
 macaroni ## qrop q {{Photo.. Chris Hill $dreamstime 1740787}}.jpg
 spaghetti ## qrop qr {{Photo.. Paul George Bodea $dreamstime 606078}}.jpg
 spaghetti ## qrop qr {{Photo.. Paul George Bodea $dreamstime 606079}}.jpg
+uncooked noodles [uncooked] ## qrop l25 r5 ## qropt! {{Photo.. Jochenschneider $dreamstime 18676005}}.jpg
 vermicelli ## qrop ql {{Photo.. Yuriy Prokopyev $dreamstime 49604309}}.jpg
 >>> ../datae\photo_dreamstime\food/meal - soup
 artichoke soup [soup] ## qrop q {{Photo.. Logichecreative $dreamstime 37048498}}.jpg
@@ -24706,9 +24783,11 @@ bouillon ## qrop ql {{Photo.. Lognetic $dreamstime 17019966}}.jpg
 cream of corn salad soup [cream soup] ## sic! ## qrop t6 ## qropt! {{Photo.. Food-micro $dreamstime 23703775}}.jpg
 gazpacho ## qrop qr {{Photo.. Alexander Mychko $dreamstime 33229720}}.jpg
 goulash soup [goulash] ## qrop l10 r25 b3 {{Photo.. Ingrid Heczko $dreamstime 12866176}}.jpg
+tomato soup in a bowl [soup] ## qrop l12 r14 ## qropt! {{Photo.. Natalia Mylova $dreamstime 17540461}}.jpg
 >>> ../datae\photo_dreamstime\food/meal - starter
 anchovies ## qrop l10 r15 ## qropt! {{Photo.. Visionsi $dreamstime 49735587}}.jpg
 artichokes ## qrop r16 ## qropt! {{Photo.. Alexat25 $dreamstime 80196783}}.jpg
+aubergine rolls [eggplant rolls][eggplant@food] ## qrop l19 t1 r15 {{Photo.. Aleksandr Mogilevetc $dreamstime 76533085}}.jpg
 canape @ food ## qrop l23 r10 {{Photo.. Maria Dryfhout $dreamstime 10546382}}.jpg
 carpaccio ## qrop l22 t9 r23 b9 {{Photo.. Maksim Toome $dreamstime 21919152}}.jpg
 Greek salad ## qrop l15 r18 {{Photo.. Photka $dreamstime 6260376}}.jpg
@@ -24718,6 +24797,7 @@ salad ## qrop l15 r18 {{Photo.. Erwin Purnomo Sidi $dreamstime 12915611}}.jpg
 salad ## qrop qr {{Photo.. Chris Dortch $dreamstime 419672}} ### Mexican Food.jpg
 starter~appetizer ## qrop l13 r16 ## qropt! {{Photo.. Aleksandr Mogilevetc $dreamstime 76533085}}.jpg
 starter~appetizer ## qrop l26 r8 {{Photo.. Studiogi $dreamstime 24560537}}.jpg
+stuffed cucumbers [stuffed@food] ## qrop q {{Photo.. Ivan Mateev $dreamstime 48868754}}.jpg
 menu ## qrop ql {{Photo.. Cgsniper $dreamstime 27405323}}.jpg
 muesli ## qrop l6 t2 r23 {{Photo.. Belka10 $dreamstime 46201593}}.jpg
 pancake ## qrop ql {{Photo.. Andrey Armyagov $dreamstime 15017043}}.jpg
@@ -24744,13 +24824,17 @@ wild strawberries and blackberries [wild strawberries] ## qrop q {{Photo.. Alex 
 >>> ../datae\photo_dreamstime\food/plants - corns
 couscous ## qrop l2 r32 {{Photo.. Brighton $dreamstime 40092836}}.jpg
 maize [corn] ## qrop ql {{Photo.. Xingrenlu $dreamstime 36253875}}.jpg
+millet ## qrop q {{Photo.. Buccaneer $dreamstime 58371634}}.jpg
+red lentils [lentils] ## qrop q {{Photo.. Melek Kalyoncu $dreamstime 56396515}}.jpg
 rye ## qrop ql {{Photo.. Stephan Bock $dreamstime 50487658}}.jpg
+soya beans [soybeens] ## qrop l18 r15 {{Photo.. Empire331 $dreamstime 13174173}}.jpg
 >>> ../datae\photo_dreamstime\food/plants - fruits
 a bunch of grapes [grapes][grape@fruit] ## qrop l27 r6 {{Photo.. Artjazz $dreamstime 104934200}}.jpg
 an apple on plates [apple] ## qrop ql {{Photo.. Og-vision $dreamstime 603105}}.jpg
 apricot ## qrop q {{Photo.. Alexander Belokurov $dreamstime 145155}}.jpg
 avocado ## qrop ql {{Photo.. Sparkia $dreamstime 2495798}} ### [Avocado, garlic, lemon, chips].jpg
 banana ## qrop l14 r19 {{Photo.. Makidotvn $dreamstime 98420723}}.jpg
+blood oranges ## qrop q {{Photo.. Baloncici $dreamstime 2233134}}.jpg
 cherries [cherry] ## qrop ql {{Photo.. Roksana Bashyrova $dreamstime 30957455}}.jpg
 cherries [cherry] ## qrop ql {{Photo.. Zhekos $dreamstime 25661265}}.jpg
 cherry tomatoes ## qrop ql {{Photo.. Tatyana Nyshko $dreamstime 5400747}}.jpg
@@ -24758,6 +24842,7 @@ cherry {{Photo.. Petr Malyshev $dreamstime 53623924}}.jpg
 coconut ## qrop ql {{Photo.. Siamimages $dreamstime 1355955}}.jpg
 coconut ## qrop t18 b8 ## qropt! {{Photo.. Siamimages $dreamstime 1355958}}.jpg
 dates [date@fruit] ## qrop l5 r10 ## qropt! {{Photo.. Sarah2 $dreamstime 21903324}}.jpg
+dragon fruit [pitahaya][dragon fruit][dragonfruit] ## qrop l9 r6 ## qropt! {{Photo.. Zuzana Randlova $dreamstime 112289991}}.jpg
 dried apricots [dried] ## qrop l4 r29 {{Photo.. James Lewis $dreamstime 1148018}}.jpg
 dried fruits ## qrop qr {{Photo.. Hein Teh $dreamstime 111372619}}.jpg
 fresh and dried fruits [dried fruit] {{Photo.. Kondou $dreamstime 74382067}}.jpg
@@ -24788,7 +24873,9 @@ plum tomatoes ## qrop ql {{Photo.. Roksana Bashyrova $dreamstime 32615988}}.jpg
 plums [plum@fruit] ## qrop q {{Photo.. Igor Mojzes $dreamstime 102353392}}.jpg
 pomegranate ## qrop qr {{Photo.. Asafta $dreamstime 18767588}}.jpg
 pomegranates ## qrop q {{Photo.. Asafta $dreamstime 18767588}}.jpg
+prickly pear [nopal][cactus fruit][cactus pear] ## qrop qr {{Photo.. Bert Folsom $dreamstime 54456335}}.jpg
 red chili pepper [fruit] ## qrop l22 r7 {{Photo.. Matzphotos $dreamstime 11111618}}.jpg
+tangerine ## qrop qr {{Photo.. Og-vision $dreamstime 316601}}.jpg
 watermelon ## qrop l20 r14 {{Photo.. Pkruger $dreamstime 2827755}}.jpg
 watermelon ## qrop qr {{Photo.. Iryna Momot $dreamstime 99214986}}.jpg
 >>> ../datae\photo_dreamstime\food/plants - nuts
@@ -24810,7 +24897,7 @@ broccoli ## qrop l23 r11 {{Photo.. Kirill  Makarov $dreamstime 29166476}} ### [F
 cauliflowers and Romanesco broccoli [cauliflowers] ## qrop l26 r7 {{Photo.. Raluca Tudor $dreamstime 47613897}}.jpg
 cucumber ## qrop qr {{Photo.. Laine Neimane $dreamstime 107122912}}.jpg
 eggplants [aubergines] ## qrop l16 r18 {{Photo.. Aurinko $dreamstime 16052413}}.jpg
-frozen spinach cubes [spinach] ## qrop qr {{Photo.. Pavalache Stelian $dreamstime 48877681}}.jpg
+frozen spinach cubes [spinach][frozen] ## qrop qr {{Photo.. Pavalache Stelian $dreamstime 48877681}}.jpg
 garlic ## qrop qr {{Photo.. Autthaphol Khoonpijit $dreamstime 85345856}}.jpg
 garlic, two radishes and pepper [radishes] ## noqrop {{Photo.. Dkidpix $dreamstime 31608782}}.jpg
 leek ## qrop ql {{Photo.. Mariematata $dreamstime 86202384}}.jpg
@@ -24887,6 +24974,7 @@ two buns and cottage cheese [buns] ## qrop l10 r23 ## qropt! {{Photo.. Hana Bart
 wheat bread ## qrop l13 r14 {{Photo.. Kondou $dreamstime 105943314}}.jpg
 sour ## qrop b4 ## qropt! {{Photo.. Yuri Arcurs $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime\food/spice
+allspice and a bay leaf [allspice] ## qrop l11 r6 ## qropt! {{Photo.. Sergei Razvodovskij $dreamstime 12158495}}.jpg
 anise ## qrop l12 r22 {{Photo.. Aji Jayachandran $dreamstime 13571109}}.jpg
 basil [herb] ## qrop ql {{Photo.. Sally Scott $dreamstime 10038774}}.jpg
 cardamom ## qrop ql {{Photo.. Raja Rc $dreamstime 3273367}}.jpg
@@ -24897,6 +24985,7 @@ coriander~cilantro @ herb [herb] ## qrop l20 r13 {{Photo.. Kuhar $dreamstime 660
 mint [herb] ## qrop q {{Photo.. Jolijuli $dreamstime 57219146}}.jpg
 paprika ## crop l8 ## qrop l18 r15 {{Photo.. Maramorosz $dreamstime 20830205}}.jpg
 pepper ## qrop q {{Photo.. Edoma $dreamstime 13394423}}.jpg
+peppermint ## qrop q {{Photo.. Martanovak $dreamstime 75119528}}.jpg
 red curry paste [curry paste][curry] ## qrop l23 r10 {{Photo.. Elzbieta Sekowska $dreamstime 14367151}}.jpg
 rosemary {{Photo.. Ivan Kmit $dreamstime 8497469}}.jpg
 saffron ## qrop l16 r18 {{Photo.. Torsten Schon $dreamstime 549584}}.jpg
@@ -26271,17 +26360,17 @@ fig leaf ## qrop t3 b11 ## qropt!.txt
 A ball of ionized gas is hurled from the Sun [hurled][prominence] ## date 4 January 2002 {{ESA}}}.gif
 aerodynamics {{Thierry Dugnolle $$}}.gif
 Apparent retrograde motion of Mars in 2003 [retrograde motion][retrograde] {{Eugene Alvin Villar $cc-by-sa wiki}}.gif
-Comet ISON pass the perihelion {{ESA}}.gif
-conservation of momentum {{Dominique Toussaint $cc-by-sa}}.gif
+Comet ISON pass the perihelion [perihelion] {{ESA}}.gif
+conservation of momentum [momentum] {{Dominique Toussaint $cc-by-sa}}.gif
 diffraction {{Lookangmany $cc-by-sa}}.gif
 diffusion {{Credit.. Simpsons contributor $$ wiki}}.gif
-gravitational lens {{Urbane Legend $cc-by-sa wiki}} black hole.gif
+gravitational lens [black hole] {{Urbane Legend $cc-by-sa wiki}}.gif
 Helmholtz motion for a bowed violin string.gif
 Helmholtz motion for a bowed violin string.txt
 hypercube {{Credit.. Jason Hise $$}}.gif
 hyperdodecahedron [transformation] {{Credit.. Jason Hise $cc-by wiki}}.gif
 hypothalamus {{Life Science Databases $cc-by-sa}}.gif
-lemniscate of Bernoulli {{Zorgit $$wiki}}.gif
+lemniscate of Bernoulli [Bernoullian][lemniscate] {{Zorgit $$wiki}}.gif
 lunar phases [lunar] {{Tom Ruen $$}}.gif
 Mandelbrot set [fractal] ## noqrop {{Credit.. Simpsons contributor $$ wiki}}.gif
 Mandelbrot set [fractal] ## qropt! {{Credit.. Simpsons contributor $$ wiki}}.gif

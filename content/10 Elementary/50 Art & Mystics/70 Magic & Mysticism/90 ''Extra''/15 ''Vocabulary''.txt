@@ -1,16 +1,16 @@
 basic ~ vocabulary
 
-witch      = ведьма
-wizard     = волшебник
-sorcerer   = колдун, чародей, волшебник
-warlock    = колдун
+witch                     = ведьма
+wizard                    = волшебник
+sorcerer                  = колдун, чародей, волшебник
+warlock                   = колдун
 
-magic wand = волшебная палочка
-staff      = посох
+magic wand                = волшебная палочка
+staff                     = посох
 ---
-spell      = заклинание
+spell                     = заклинание
 : Do witches run spell checkers?
 
-ghost      = првидение, призрак
+ghost                     = првидение, призрак
 
 tasseography//tasseomancy = гадание на кофейной гуще %% или на чайном или винном осадке

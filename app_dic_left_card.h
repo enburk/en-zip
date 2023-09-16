@@ -56,7 +56,6 @@ namespace app::dic::left
             for (auto& player: players)
             {
                 player.hide();
-                player.coord = coord.now.local();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
                 player.volume = volume.now;
@@ -74,9 +73,16 @@ namespace app::dic::left
             int l = gui::metrics::line::width;
 
             video_max_size = xy{};
+
             for (auto& v: videos)
             video_max_size.x = max(
-            video_max_size.x, v.location.size_x + 6*l);
+            video_max_size.x, v.location.
+                size_x + 6*l);
+
+            video_max_size.x = max(
+            video_max_size.x, 20*gui::metrics::
+                text::height);
+
             video_max_size.y = video_height(
             video_max_size.x);
 

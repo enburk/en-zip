@@ -150,6 +150,16 @@ namespace app::dic::video
             if (maxwidth < size.x) size = xy (
                 maxwidth, maxwidth *
                 size.y / size.x);
+            else
+            {
+                double kx = (double)(size.x / maxwidth);
+                double ky = (double)(size.y / maxwidth);
+
+                if (kx < 0.7
+                and ky < 0.7)  size = kx > ky ?
+                    maxwidth * size / size.x:
+                    maxwidth * size / size.y;
+            }
 
             script.coord = xywh(0, 0, size.x,     max<int>());
             credit.coord = xywh(0, 0, size.x-4*d, max<int>());

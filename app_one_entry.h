@@ -360,7 +360,7 @@ namespace app::one
             }
 
             if (what == &playing
-            and vudio.status == state::finished
+            and vudio.audio.status == state::finished
             and start + stay < gui::time::now)
             {
                 medio.done();

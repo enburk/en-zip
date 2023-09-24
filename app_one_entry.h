@@ -135,13 +135,14 @@ namespace app::one
 
             start = gui::time::now;
             stay  = gui::time{1000 +
-            video_index.title.size() * 30 +
+            video_index.title.size() * 10 +
             audio_index.title.size() * 00 +
-            video_index.credit.size() * 10 +
-            audio_index.credit.size() * 10 +
+            video_index.credit.size() * 5 +
+            audio_index.credit.size() * 5 +
             video_index.comment.size() * 0 +
             audio_index.comment.size() * 0 +
-            text.size() * 40};
+            text.size() * 10};
+            Stay = stay;
 
             script.html = "";
             Script.html = html;
@@ -287,6 +288,15 @@ namespace app::one
 
             if (w < size.x) size = xy{w, w*size.y/size.x};
             if (h < size.y) size = xy{h*size.x/size.y, h};
+            if (w > size.x * 110/100 and w > 0 and size.x > 0
+            and h > size.y * 110/100 and h > 0 and size.y > 0)
+            {
+                double kx = double(size.x) / w;
+                double ky = double(size.y) / h;
+                size = kx < ky ?
+                h * size / size.y:
+                w * size / size.x;
+            }
 
             vudio.coord = xywh(
             w/2-size.x/2 + l, l,

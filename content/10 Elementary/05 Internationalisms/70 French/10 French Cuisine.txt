@@ -9,7 +9,7 @@ cream soup                = суп-пюре
 bouillon                  = бульон %% или суп на бульоне
 consommé|consomme         = консоме %% осветлённый бульон # RARE+ # 18+
 escalope {Br.}            = эскалоп               # 10+
-fillet\\filet             = филе                  # 10+
+fillet\\filet @ food      = филе                  # 10+
 fricassee                 = фрикасе               # RARE+ # 18+
 
 baguette                  = багет
@@ -47,6 +47,7 @@ banquet                   = банкет                # 16+ /// , давать
 picnic                    = пикник                /// , устраивать пикник
 champagne                 = шампанское            # 18+
 cognac                    = коньяк                # 18+
+
 
 
 

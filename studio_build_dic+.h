@@ -237,15 +237,17 @@ namespace studio::dic
                     weighted_resources[weight] += r;
                 }
 
-                int total_for_entry = 0;
+                array<res> total_for_entry;
 
                 for (auto [weight, rr]: weighted_resources)
                 {
-                    if (total_for_entry > 99) break;
+                    if (total_for_entry.size() > 99) break;
         
                     for (auto r: rr)
                     {
-                        if (++total_for_entry > 99) break;
+                        // doubles are possible because of redirects
+                        if (total_for_entry.contains(r)) continue; total_for_entry += r;
+                        if (total_for_entry.size() > 99) break;
         
                         resources2entries[r] += entry;
                         resources2titles [r] +=

@@ -152,11 +152,13 @@ namespace app::dic::video
                 size.y / size.x);
             else
             {
-                double kx = (double)(size.x / maxwidth);
-                double ky = (double)(size.y / maxwidth);
+                maxwidth = maxwidth * 80/100;
 
-                if (kx < 0.7
-                and ky < 0.7)  size = kx > ky ?
+                double kx = double(size.x) / maxwidth;
+                double ky = double(size.y) / maxwidth;
+
+                if (kx < 0.8
+                and ky < 0.8)  size = kx > ky ?
                     maxwidth * size / size.x:
                     maxwidth * size / size.y;
             }

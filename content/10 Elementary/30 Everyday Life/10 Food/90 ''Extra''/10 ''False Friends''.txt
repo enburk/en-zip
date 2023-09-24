@@ -2,6 +2,7 @@ false ~ friends
 
 probe                 = зонд, зондировать, ~ исследовать %% ''не'' проба/пробовать # 14+
 preservative          = консервант, защитный %% ''не'' презерватив # 16+
+caraway               = тмин %% ''не'' каравай
 ---
 cook                  = повар, готовить, ~ не только кок
 : Cook, cook! You cook!— sail this way, cook!
@@ -37,6 +38,7 @@ de'''ss'''ert         = десерт, сладкое
 biscuit @ crisp       # audio- # pix-
 biscuit {Br.} @ crisp = печенье %% ''не'' бисквит
 biscuit {Am.} @ bun   = булочка %% ''не'' бисквит
+
 
 
 

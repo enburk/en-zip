@@ -1,9 +1,5 @@
 #include "en-app.h"
 #include "studia.h"
-
-#include "studia_dic.h"
-#include "studia_one.h"
-#include "studia_two.h"
 #include "studio_pix.h"
 #include "studio_aux_audio.h"
 #include "studio_aux_video.h"

@@ -10,17 +10,8 @@
     <Filter Include="media">
       <UniqueIdentifier>{e566e5ff-928c-4855-838a-43bb15d689a0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="studio-dic">
-      <UniqueIdentifier>{00383da1-988c-4891-abd2-60a6f5a72f9c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="studio-one">
-      <UniqueIdentifier>{a78d9a9d-f0bf-4ee4-a557-fa7658595498}</UniqueIdentifier>
-    </Filter>
     <Filter Include="content">
       <UniqueIdentifier>{5e30262d-7f07-42ce-9df1-22372659928d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="studio-two">
-      <UniqueIdentifier>{e28773d5-d681-4f5a-8cfd-bfe1be2c3833}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,55 +75,13 @@
     <ClInclude Include="content_course.h">
       <Filter>content</Filter>
     </ClInclude>
-    <ClInclude Include="studia_one.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_one_area.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_one_editor.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_one_preview.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_one_reports.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_dic.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_dic_area.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_dic_detail.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_dic_search.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_two.h">
-      <Filter>studio-two</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_one_contents.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
-    <ClInclude Include="studia_dic_detail+.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
     <ClInclude Include="media_resource.h">
       <Filter>media</Filter>
     </ClInclude>
     <ClInclude Include="media_resource+.h">
       <Filter>media</Filter>
     </ClInclude>
-    <ClInclude Include="studia_dic_detail++.h">
-      <Filter>studio-dic</Filter>
-    </ClInclude>
     <ClInclude Include="studio_pix.h" />
-    <ClInclude Include="studia_one_search.h">
-      <Filter>studio-one</Filter>
-    </ClInclude>
     <ClInclude Include="studio_dic.h" />
     <ClInclude Include="studia_l.h" />
     <ClInclude Include="studia_r.h" />

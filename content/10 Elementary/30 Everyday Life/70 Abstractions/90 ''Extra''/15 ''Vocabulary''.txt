@@ -8,11 +8,13 @@ one and a half = полтора
 wheight        = вес, взвешивать
 light          = лёгкий
 heavy          = тяжёлый
-
+---
 size           = размер
 length         = длина
 long           = длинный
 short          = короткий
+: short pasta
+: long pasta
 
 height         = высота
 high           = высокий

@@ -486,6 +486,29 @@ namespace studia::dic
             if (what == &link)
                 notify (&link),
                 notify (&request);
+
+            if (what == &link)
+            {
+                array<gui::text::range> highlights;
+                auto& view = result.view;
+                auto& text = view.model.now->block;
+                for (auto& line : text.lines)
+                {
+                    str s;
+                    for (auto& token : line.tokens)
+                    s += token.text;
+
+                    if (not s.contains(link))
+                        continue;
+
+                    for (auto& token : line.tokens)
+                    highlights += token.range;
+                    view.highlights =
+                    highlights;
+                    break;
+                }
+            }
+
         }
     };
 }

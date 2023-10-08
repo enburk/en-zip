@@ -13,9 +13,6 @@ widget<Studio>
     gui::radio::group select;
     array<gui::base::widget*> studios;
     studias studias;
-    //studio::dic::studio dic;
-    //studio::one::studio one;
-    //studio::two::studio two;
     studio::pixer::studio pixer;
     studio::audio::studio audio;
     studio::video::studio video;
@@ -34,8 +31,6 @@ widget<Studio>
 
         app.hide();
 
-        //studios += &one;
-        //studios += &dic;
         studios += &studias;
         studios += &pixer;
         studios += &audio;
@@ -47,8 +42,6 @@ widget<Studio>
         studios[i]->hide();
 
         int i = 0;
-        //select(i++).text.text = "course";
-        //select(i++).text.text = "dictionary";
         select(i++).text.text = "studio";
         select(i++).text.text = "snapshot";
         select(i++).text.text = "audio";
@@ -73,8 +66,6 @@ widget<Studio>
             toolbar.coord = xywh(0, 0, W, h);
 
             select(0).coord = xywh(w*0, 0, w, h);
-            //select(1).coord = xywh(w*1, 0, w, h);
-            //select(2).coord = xywh(w*2, 0, w, h);
             select(1).coord = xywh(w*4, 0, w, h);
             select(2).coord = xywh(w*5, 0, w, h);
             select(3).coord = xywh(w*6, 0, w, h);

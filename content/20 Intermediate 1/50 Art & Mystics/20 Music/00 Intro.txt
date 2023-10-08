@@ -1,26 +1,18 @@
-band
-singer
-music, ~ sheet music         # 12+
-rhythm                       # 10+
-headphones
-player {device}
-player {human}
-opera house                  # 10+
-<small>''Sydney Opera House''</small> # 10+
-orchestra pit                # 10+
-<small>''An argument in the corridors of the Opera''</small> # 14+
+music
 
-violin                       # 8+
-cello                        # 16+
-French horn                  # 10+
-cymbal                       # 8+
+[sheet] music
+orchestra pit
 
-keys                         # 8+
-chord                        # 10+
-tuning peg                   # 10+
-tuning fork                  # 12+
-mouthpiece                   # 10+
-piston valves                # 12+
-bow ~~ informal: fiddlestick # 8+
-a scroll and a bow           # 12+
+a scroll and a bow
+French horn
+cymbal
+
+fiddle %% informal      = violin # 8+
+fiddlestick %% informal = bow # 8+
+
+mouthpiece
+tuning peg              # 10+
+tuning fork             # 12+
+piston valves           # 12+
+
 

@@ -216,7 +216,7 @@ namespace studio::dic
                     for (str e: r->entries)
                     {
                         e.strip();
-                        auto index = vocabulary.index(entry);
+                        auto index = vocabulary.index(e);
                         if (!index) continue;
                         int n = *index;
 

@@ -1,4 +1,8 @@
 basic ~ vocabulary
+
+wheel              = колесо
+lorry\\truck @ car = грузовик
+bridge             = мост
 ---
 ticket @ transport = билет
 : : Tickets, please!
@@ -28,6 +32,7 @@ runway @ airport   = взлетно-посадочная полоса
 ---
 wing @ plane       = крыло (самолета)
 wing\\fender @ car = крыло (автомобиля)
+
 
 
 

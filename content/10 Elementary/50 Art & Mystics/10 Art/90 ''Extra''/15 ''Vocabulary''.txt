@@ -7,10 +7,11 @@ frame @ art      = рама, рамка
 exhibition @ art = выставка
 
 paint @ art      = краска
-oil paints       = маслянные краски
+oil [paint]      = масло, маслянная краска
 paintbrush @ art = кисть
 colour\\color    = цвет %% сравните: колорит, колер # 10+
 
 curtain          = в театре: занавес
+
 
 

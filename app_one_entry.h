@@ -23,12 +23,15 @@ namespace app::one
         sys::thread thread;
         media::index video_index;
         media::index audio_index;
+        media::index sound_index;
         array<byte> video_bytes;
         array<byte> audio_bytes;
+        array<byte> sound_bytes;
         bool new_topic = false;
         bool new_chain = false;
         bool pixed = false;
         bool vocal = false;
+        bool sound = false;
         int clicked = 0;
 
 #define using(x) decltype(medio.x)& x = medio.x;
@@ -92,9 +95,9 @@ namespace app::one
             for (auto& audio: audios) logs::audio << log(audio);
             for (auto& sound: sounds) logs::audio << log(sound);
             for (auto& video: videos) logs::video << log(video);
-            media::index
-            sound_index = media::index{}; int ss = sounds.size();
+
             audio_index = media::index{}; int aa = audios.size();
+            sound_index = media::index{}; int ss = sounds.size();
             video_index = media::index{}; int vv = videos.size();
 
             if (aa>0) audio_index = audios[aux::random(0, aa-1)];
@@ -106,11 +109,12 @@ namespace app::one
             if (entry.opt.external.
                 contains("SOUND"))
                 audio_index =
-                sound_index,
-                aa = ss;
+                media::index{},
+                aa = 0;
 
             pixed = vv > 0;
             vocal = aa > 0;
+            sound = ss > 0;
 
             frame.hide();
         }
@@ -137,8 +141,8 @@ namespace app::one
             stay  = gui::time{1000 +
             video_index.title.size() * 10 +
             audio_index.title.size() * 00 +
-            video_index.credit.size() * 5 +
-            audio_index.credit.size() * 5 +
+            video_index.credit.size() * 0 +
+            audio_index.credit.size() * 0 +
             video_index.comment.size() * 0 +
             audio_index.comment.size() * 0 +
             text.size() * 10};
@@ -221,6 +225,12 @@ namespace app::one
                     audio_index.location.source),
                     audio_index.location.offset,
                     audio_index.location.length);
+
+                if (sound_index != media::index{})
+                    sound_bytes = sys::in::bytes(source(
+                    sound_index.location.source),
+                    sound_index.location.offset,
+                    sound_index.location.length);
             };
         }
 
@@ -230,6 +240,7 @@ namespace app::one
                 vudio.play();
                 if (pixed) logs::media << media::log(video_index);
                 if (vocal) logs::media << media::log(audio_index);
+                if (sound) logs::media << media::log(sound_index);
                 stay  = gui::time{(int)(Stay.ms/speed)};
                 start = gui::time::now;
             }
@@ -356,7 +367,8 @@ namespace app::one
 
                     vudio.load(
                     std::move(video_bytes),    
-                    std::move(audio_bytes));    
+                    std::move(audio_bytes),
+                    std::move(sound_bytes));    
                 }
                 catch (std::exception const& e) {
                 medio.fail(e.what()); }

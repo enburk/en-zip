@@ -1,6 +1,10 @@
 basic ~ vocabulary
 
+
 tools              = инструменты, ~ инструментарий
+axe\\ax            = топор
+hammer             = молоток
+nail @ tech        = гвоздь
 
 brick              = кирпич
 
@@ -11,6 +15,7 @@ paint @ tech       = краска
 seed @ grain       = семя, зерно
 corn @ grain       = зерно, зерновые
 corn {Am.} @ maize = кукуруза
+
 
 
 

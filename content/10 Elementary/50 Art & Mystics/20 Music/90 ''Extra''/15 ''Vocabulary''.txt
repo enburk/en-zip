@@ -1,6 +1,6 @@
 basic ~ vocabulary
 
-band                         = в музыке: группа
+band @ music                 = в музыке: группа
 singer                       = певец/певица
 
 headphones                   = наушники
@@ -16,5 +16,6 @@ violin %% informal: fiddle   = скрипка    # 8+
 cello %% formal: violoncello = виолончель # 16+
 
 tuning @ music               = настройка  # TECH- /// строй – это tune, pitch
+
 
 

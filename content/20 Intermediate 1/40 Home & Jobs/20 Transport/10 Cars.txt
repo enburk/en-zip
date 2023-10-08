@@ -2,7 +2,31 @@ cars
 
 rover
 monster truck
+SUV %% sport utility-vehicle
+milk cooling tank
+dodgem [car]\\bumper car
 
+bonnet\\hood @ car
+wing\\fender @ car
+wing mirror\\side-view mirror /// , ~ side mirror
+headlamp
+tail lights||taillights
+---
+car door handle
+suicide door                  # 16+
+
+fuel cap
+dashboard @ car               # 10+
 seat belt
+tail fin
+horn @ car
+---
+tyre\\tire @ car
+flat tyre\\flat tire
+spare tyre\\spare tire
+tyre tracks\\tire tracks
+
+snow chains                   # 12+
+oversize load                 # 10+
 
 car repair

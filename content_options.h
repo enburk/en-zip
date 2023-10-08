@@ -104,6 +104,7 @@ namespace content
             for (auto& o: Maskered) s += " # " + o;
             for (auto& o: external) s += " # " + o;
             for (auto& o: internal) s += " # " + o;
+            for (auto& o: unknown ) s += " # " + o;
             if (age > 0) s += " # " + std::to_string(age) + "+";
             s = s.from(3);
             return s;

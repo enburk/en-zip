@@ -70,15 +70,6 @@ namespace app::dic::audio
             title += "<br>" +
             gray(small(comment));
 
-            for(str option: index.options)
-            if (option.starts_with("date "))
-                credit += ", " + italic(
-                option.from(5));
-
-            if (credit != "") {
-                credit.replace_all(", read by", "<br>read by");
-                credit.replace_all(", narrated by", "<br>narrated by"); }
-
             if (credit != "")
             title += "<br><div style=\"line-height: 20%\"><br></div>" +
             light(small(credit));

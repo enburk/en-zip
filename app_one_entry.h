@@ -8,7 +8,7 @@ namespace app::one
     {
         gui::frame frame;
         sfx::media::medio  medio;
-        sfx::media::player vudio;
+        sfx::vudio::player vudio;
         dic::html_view script;
         dic::html_view credit;
         dic::html_view Script;
@@ -176,13 +176,6 @@ namespace app::one
                 str
                 c = video_index.credit;
                 c = media::canonical(c);
-
-                str date;
-                for (str option: video_index.options)
-                if (option.starts_with("date "))
-                    c += ", " + italic(
-                    option.from(5));
-
                 credit.html = gray(small(small(c)));
             }
             if (vocal)
@@ -190,15 +183,6 @@ namespace app::one
                 str
                 c = audio_index.credit;
                 c = media::canonical(c);
-
-                str date;
-                for (str option: audio_index.options)
-                if (option.starts_with("date "))
-                    c += ", " + italic(
-                    option.from(5));
-
-                c.replace_all(", read by", "<br>read by");
-                c.replace_all(", narrated by", "<br>narrated by");
 
                 Credit.html = gray(small(small(c)));
             }

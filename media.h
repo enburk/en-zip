@@ -94,10 +94,6 @@ namespace media
  
     str canonical (str s)
     {
-        if (s.ends_with("}")) {
-            str sense; s.split_by("{",
-                s, sense); s.strip(); }
-
         array<str> ss = s.split_by("_"); if (ss.size() > 1)
         {
             s = ss.front(); ss.upto(1).erase();

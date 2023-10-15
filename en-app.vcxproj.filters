@@ -57,6 +57,8 @@
     </ClInclude>
     <ClInclude Include="en-app.h" />
     <ClInclude Include="abc.h" />
+    <ClInclude Include="app_view_text.h" />
+    <ClInclude Include="app_view_video.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

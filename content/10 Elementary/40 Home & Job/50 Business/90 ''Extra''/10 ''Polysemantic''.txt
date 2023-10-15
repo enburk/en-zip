@@ -2,6 +2,7 @@ polysemic
 ---
 vacancy @ job         = вакансия                                       # 10+ /// Latin
 vacancy @ room        = свободная комната %% в гостинице, мотеле       # 10+
+vacation              = отпуск, каникулы
 ---
 bank @ money          = банк
 bank @ cards          = в картах: банк, ~ метать банк                  # 16+

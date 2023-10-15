@@ -19,9 +19,6 @@ using pix::image;
 using pix::frame;
 using namespace std::literals::chrono_literals;
 
-template <class... xx> using hashmap = std::unordered_map<xx...>;
-template <class... xx> using hashset = std::unordered_set<xx...>;
-
 str bold      (str s) { return "<b>" + s + "</b>"; }
 str italic    (str s) { return "<i>" + s + "</i>"; }
 str big       (str s) { return "<big>" + s + "</big>"; }

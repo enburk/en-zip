@@ -1,9 +1,12 @@
 clippings
 
-lab @ laboratory       = laboratory
-recap @ recapitulation = recapitulation
+recap @ recapitulation %% (recapitulation) = повторение
 
-specs @ spectacles     = spectacles
-specs @ specifications = specifications
+===
 
-telecom                = telecommunications
+lab @ laboratory       %% (laboratory)
+telecom                %% (telecommunications)
+
+specs @ spectacles     %% (spectacles)
+specs @ specifications %% (specifications)
+

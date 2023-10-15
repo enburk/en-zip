@@ -5,13 +5,15 @@ network @ comp            = сеть
 artificial ~ intelligence = искусственный интеллект
 computer vision           = компьютерное зрение
 
+enter @ comp              = вводить, входить
+type @ comp               = набирать, печатать
+
 ===
 login                     = логин, вход, ~ авторизоваться
 password                  = пароль
 ===
 
 error @ comp              = ошибка
-enter @ comp              = вводить, входить
 access @ comp             = доступ
 denied @ comp             = запрещать
 
@@ -29,5 +31,6 @@ denied @ comp             = запрещать
 : Password incorrect.
 : Incorrect password.
 : unauthorized access
+
 
 

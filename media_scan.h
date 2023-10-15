@@ -119,6 +119,15 @@ namespace media::scan
                 if (resource.credit == "-")
                     resource.credit = "";
 
+                if (resource.credit != "")
+                for(str option: resource.options)
+                if (option.starts_with("date "))
+                    resource.credit += ", " + italic(
+                    option.from(5));
+
+                resource.credit.replace_all(", read by", "<br>read by");
+                resource.credit.replace_all(", narrated by", "<br>narrated by");
+
                 resources += resource;
 
                 if (resource.title.contains(one_of("#@")))

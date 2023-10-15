@@ -1,4 +1,4 @@
-type            = тип
+type @ kind     = тип
 
 sort            = сорт, сортировать                        # 10+
 category        = категория                                # 10+
@@ -21,6 +21,7 @@ duplicate       = дубликат, удваивать                      # 10
 gradation       = градация                                 # TERM+ # 16+
 concretization %% Br. also: concretisation = конкретизация                            # TERM+ # 16+
 differentiation = дифференциация                           # TERM+ # 16+
+
 
 
 

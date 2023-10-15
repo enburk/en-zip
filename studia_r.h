@@ -36,9 +36,10 @@ widget<studia_r>
 
     void reload ()
     {
-        dic .reload();
-        dics.reload();
-        ones.reload();
+        dic   .reload();
+        dics  .reload();
+        ones  .reload();
+        search.reload();
     }
 
     void click (str link)

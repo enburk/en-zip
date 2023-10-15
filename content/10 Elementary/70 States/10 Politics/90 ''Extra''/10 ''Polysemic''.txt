@@ -53,9 +53,10 @@ bill @ law                   = билль, законопроект             
 bill @ bird                  = клюв
 bill @ cap                   = козырек
 bill {Am.} @ money           = банкнота
-bill @ invoice               = счет к оплате
+bill\\check @ invoice        = счет к оплате
 ---
 summit @ politics            = саммит                                    # 16+
 summit @ mountain            = вершина ~ (горы)                          # 16+
+
 
 

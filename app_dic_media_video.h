@@ -10,7 +10,7 @@ namespace app::dic::video
         gui::canvas canvas;
         gui::frame  frame1;
         gui::frame  frame2;
-        sfx::media::player video;
+        sfx::vudio::player video;
         sfx::media::medio medio;
         html_view   script;
         html_view   credit;
@@ -81,11 +81,6 @@ namespace app::dic::video
 
             c = media::canonical(c);
             s = media::canonical(s);
-
-            for(str option: index.options)
-            if (option.starts_with("date "))
-                c += ", " + italic(
-                option.from(5));
 
             if (index.comment != "")
                 s += "<br>" + dark(

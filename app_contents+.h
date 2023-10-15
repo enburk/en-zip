@@ -47,9 +47,6 @@ namespace app
             int l = gui::metrics::line::width;
             int n = W/(9*h);
             int w = W/n;
-            int x = 0;
-            int y = 0;
-            int r = 0;
 
             auto title = [](str s)
             {
@@ -64,16 +61,20 @@ namespace app
 
             flist.list.clear();
 
+            int x = 0;
+            int y = 0;
+            int r = 0; // height of row of blocks
+
             for (auto& block: blocks)
             {
-                int yy = y;
+                int yy = 0;
                 str spaces = " ";
                 
                 for (str s: block.path)
                 {
                     // flist.paths += 
                     auto& line = flist.list.emplace_back();
-                    line.coord = xywh(x, yy, w, h);
+                    line.coord = xywh(x, y + yy, w, h);
                     line.text.alignment = xy(pix::left, pix::center);
                     line.text.html = spaces + yellow(bold(title(s)));
                     yy += h; spaces += " ";
@@ -82,7 +83,7 @@ namespace app
                 for (str s: block.topics)
                 {
                     auto& line = flist.list.emplace_back();
-                    line.coord = xywh(x, yy, w, h);
+                    line.coord = xywh(x, y + yy, w, h);
                     line.text.alignment = xy(pix::left, pix::center);
                     line.text.html = spaces + title(s);
                     yy += h;

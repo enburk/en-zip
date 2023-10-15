@@ -1,0 +1,20 @@
+plants
+
+grass
+bush @ plant
+trail @ forest
+
+trunk @ tree
+stump @ tree
+growth rings # 8+
+tendril
+
+maple leaves
+oak leaves
+acorn
+birch catkins
+
+fir
+needles @ plant
+fern
+

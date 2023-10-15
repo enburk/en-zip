@@ -7,7 +7,7 @@ namespace studia
     struct mediadetail:
     widget<mediadetail>
     {
-        sfx::media::player player;
+        sfx::vudio::player player;
 
         gui::Frame cropper;
         gui::timer loading;

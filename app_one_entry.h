@@ -1,32 +1,27 @@
 ﻿#pragma once
 #include "app.h"
 #include "app_dic_html.h"
+#include "app_view_video.h"
 namespace app::one
 {
     struct entry:
     widget<entry>
     {
         gui::frame frame;
-        sfx::media::medio  medio;
-        sfx::vudio::player vudio;
-        dic::html_view script;
-        dic::html_view credit;
-        dic::html_view Script;
-        dic::html_view Credit;
+        video::player player;
+        text::view script;
+        text::view credia;
+        text::view credib;
+        text::view credic;
+        text::view credid;
+        text::view credit;
 
         property<int>  number = -1;
         property<bool> translated = false;
 
-        gui::time Stay;
-        gui::time stay;
-        gui::time start;
-        sys::thread thread;
-        media::index video_index;
         media::index audio_index;
         media::index sound_index;
-        array<byte> video_bytes;
-        array<byte> audio_bytes;
-        array<byte> sound_bytes;
+        media::index video_index;
         bool new_topic = false;
         bool new_chain = false;
         bool pixed = false;
@@ -34,7 +29,7 @@ namespace app::one
         bool sound = false;
         int clicked = 0;
 
-#define using(x) decltype(medio.x)& x = medio.x;
+#define using(x) decltype(player.x)& x = player.x;
         using(mute)
         using(volume)
         using(loading)
@@ -46,23 +41,10 @@ namespace app::one
         using(error)
         #undef using
 
-        ~entry () { reset(); }
-
-        void reset ()
-        {
-            try {
-            thread.stop = true;
-            thread.join();
-            thread.check(); }
-            catch (...) {}
-            vudio.reset();
-            medio.done();
-
-            script.html = "";
-            Script.html = "";
-            credit.html = "";
-            Credit.html = "";
-        }
+        void load () { player.load (); }
+        void play () { player.play (); }
+        void stop () { player.stop (); }
+        void reset() { player.reset(); }
 
         void init ()
         {
@@ -92,17 +74,17 @@ namespace app::one
                 }
             }
 
-            for (auto& audio: audios) logs::audio << log(audio);
-            for (auto& sound: sounds) logs::audio << log(sound);
-            for (auto& video: videos) logs::video << log(video);
-
-            audio_index = media::index{}; int aa = audios.size();
-            sound_index = media::index{}; int ss = sounds.size();
-            video_index = media::index{}; int vv = videos.size();
+            audio_index = {}; int aa = audios.size();
+            sound_index = {}; int ss = sounds.size();
+            video_index = {}; int vv = videos.size();
 
             if (aa>0) audio_index = audios[aux::random(0, aa-1)];
             if (ss>0) sound_index = sounds[aux::random(0, ss-1)];
             if (vv>0) video_index = videos[aux::random(0, vv-1)];
+
+            for (auto& audio: audios) logs::audio << log(audio);
+            for (auto& sound: sounds) logs::audio << log(sound);
+            for (auto& video: videos) logs::video << log(video);
 
             auto const& entry =
             course.entries[number];
@@ -116,12 +98,23 @@ namespace app::one
             vocal = aa > 0;
             sound = ss > 0;
 
+            player.audio_index.clear();
+            player.audio_index += audio_index;
+            player.audio_index += sound_index;
+            player.video_index  = video_index;
+
+            credia.hide();
+            credib.hide();
+            credic.hide();
+            credid.hide();
+            credit.hide();
             frame.hide();
         }
 
         void translate ()
         {
-            if (number == -1) return;
+            if (number == -1)
+                return;
 
             auto const& entry =
             course.entries[number];
@@ -130,28 +123,22 @@ namespace app::one
 
             if (vocal
             and entry.rus == ""
-            and entry.eng.size() <
-                audio_index.title.size())
-                html = media::canonical(
-                audio_index.title);
+            and entry.eng.size() < audio_index.title.size())
+            {
+                html = media::canonical(audio_index.title);
+                if (audio_index.credit != "") html += "<br>"
+                "<div style=\"line-height: 20%\"><br></div>" +
+                gray(small(audio_index.credit));
+            }
 
             str text = doc::html::untagged(html);
 
-            start = gui::time::now;
-            stay  = gui::time{1000 +
+            player.stay = gui::time{1000 +
             video_index.title.size() * 10 +
-            audio_index.title.size() * 00 +
-            video_index.credit.size() * 0 +
-            audio_index.credit.size() * 0 +
-            video_index.comment.size() * 0 +
-            audio_index.comment.size() * 0 +
-            text.size() * 10};
-            Stay = stay;
+                text.size() * 10};
 
-            script.html = "";
-            Script.html = html;
+            script.html = html;
             credit.html = "";
-            Credit.html = "";
 
             if (pixed)
             {
@@ -169,70 +156,21 @@ namespace app::one
                 E.canonicalize();
                 if (not S.contains(s)
                 and not E.contains(s))
-                script.html = small(c);
+                player.title.html =
+                    small(c);
             }
             if (pixed)
             {
                 str
                 c = video_index.credit;
                 c = media::canonical(c);
-                credit.html = gray(small(small(c)));
+                c = small(small(c));
+                credia.html = white(c);
+                credib.html = white(c);
+                credic.html = white(c);
+                credid.html = white(c);
+                credit.html = black(c);
             }
-            if (vocal)
-            {
-                str
-                c = audio_index.credit;
-                c = media::canonical(c);
-
-                Credit.html = gray(small(small(c)));
-            }
-        }
-
-        void load ()
-        {
-            medio.load();
-            if (pixed or vocal)
-            thread = [this](std::atomic<bool>& cancel)
-            {
-                auto source = [](int source){
-                    return "../data/media/storage." +
-                    std::to_string(source) + ".dat"; };
-
-                if (video_index != media::index{})
-                    video_bytes = sys::in::bytes(source(
-                    video_index.location.source),
-                    video_index.location.offset,
-                    video_index.location.length);
-
-                if (audio_index != media::index{})
-                    audio_bytes = sys::in::bytes(source(
-                    audio_index.location.source),
-                    audio_index.location.offset,
-                    audio_index.location.length);
-
-                if (sound_index != media::index{})
-                    sound_bytes = sys::in::bytes(source(
-                    sound_index.location.source),
-                    sound_index.location.offset,
-                    sound_index.location.length);
-            };
-        }
-
-        void play ()
-        {
-            if (medio.play()) {
-                vudio.play();
-                if (pixed) logs::media << media::log(video_index);
-                if (vocal) logs::media << media::log(audio_index);
-                if (sound) logs::media << media::log(sound_index);
-                stay  = gui::time{(int)(Stay.ms/speed)};
-                start = gui::time::now;
-            }
-        }
-        void stop ()
-        {
-            if (medio.stop())
-                vudio.stop();
         }
 
         int resize (int w, int h)
@@ -245,64 +183,38 @@ namespace app::one
 
             script.scroll.y.mode = gui::scroll::mode::none;
             credit.scroll.y.mode = gui::scroll::mode::none;
-            Script.scroll.y.mode = gui::scroll::mode::none;
-            Credit.scroll.y.mode = gui::scroll::mode::none;
 
-            script.alignment = xy{pix::left,   pix::top};
+            script.alignment = xy{pix::center, pix::top};
             credit.alignment = xy{pix::left,   pix::top};
-            Script.alignment = xy{pix::center, pix::top};
-            Credit.alignment = xy{pix::center, pix::top};
 
-            credit.coord = xywh(l, l, w, max<int>());
-            script.coord = xywh(l, l, w, max<int>());
-            Script.coord = xywh(l, l, w, max<int>());
-            Credit.coord = xywh(l, l, w, max<int>());
+            script.coord = xywh(l, l, w, h);
+            credit.coord = xywh(l, l, w, h);
 
-            int w1 = credit.model.now->block.size.x;
-            int w2 = script.model.now->block.size.x;
-            int h1 = credit.model.now->block.size.y;
-            int h2 = script.model.now->block.size.y;
-            int h3 = Script.model.now->block.size.y;
-            int h4 = Credit.model.now->block.size.y;
+            script.resize(script.textsize());
+            credit.resize(credit.textsize() + xy(10,0));
 
-            credit.alignment = xy{pix::right, pix::top};
+            int hh = script.coord.now.h;
 
-            int y2 = h1;
-            int hh = h1 + h2;
-
-            if (w1 + w2 + d < w) {
-                hh = max(h1, h2);
-                y2 = 0; }
-
-            h -= hh + h3 + h4;
-
-            xy size = pixed ? xy{
+            player.fit(xy{
             video_index.location.size_x,
-            video_index.location.size_y}:
-            xy{};
+            video_index.location.size_y},
+            xy{w, h-hh});
 
-            if (w < size.x) size = xy{w, w*size.y/size.x};
-            if (h < size.y) size = xy{h*size.x/size.y, h};
-            if (w > size.x * 110/100 and w > 0 and size.x > 0
-            and h > size.y * 110/100 and h > 0 and size.y > 0)
-            {
-                double kx = double(size.x) / w;
-                double ky = double(size.y) / h;
-                size = kx < ky ?
-                h * size / size.y:
-                w * size / size.x;
-            }
+            xy psize = player.coord.now.size;
+            xy ssize = script.coord.now.size;
+            xy csize = credit.coord.now.size;
 
-            vudio.coord = xywh(
-            w/2-size.x/2 + l, l,
-            size.x, size.y);
+            player.move_to(xy(l + w/2 - psize.x/2, l));
+            script.move_to(xy(l + w/2 - ssize.x/2, l + psize.y));
+            credit.move_to(xy(l + w   - csize.x  , l + 
+            player.title.coord.now.y  - csize.y));
 
-            credit.coord = xywh(l, l + size.y,           w, h1);
-            script.coord = xywh(l, l + size.y + y2,      w, h2);
-            Script.coord = xywh(l, l + size.y + hh,      w, h3);
-            Credit.coord = xywh(l, l + size.y + hh + h3, w, h4);
+            credia.coord = credit.coord.now + xy(-l,-l);
+            credib.coord = credit.coord.now + xy(-l,+l);
+            credic.coord = credit.coord.now + xy(+l,-l);
+            credid.coord = credit.coord.now + xy(+l,+l);
 
-            return l + size.y + hh + h3 + h4 + l;
+            return l + psize.y + ssize.y + l;
         }
 
         void on_change (void* what) override
@@ -335,79 +247,36 @@ namespace app::one
 
             if (what == &credit) { clicked = credit.clicked; notify(); }
             if (what == &script) { clicked = script.clicked; notify(); }
-            if (what == &Credit) { clicked = Credit.clicked; notify(); }
-            if (what == &Script) { clicked = Script.clicked; notify(); }
-
-            using sfx::media::state;
-
-            if (what == &loading
-            and vudio.status == state::finished
-            and thread.done)
-            {
-                try
-                {
-                    thread.join();
-                    thread.check();
-
-                    vudio.load(
-                    std::move(video_bytes),    
-                    std::move(audio_bytes),
-                    std::move(sound_bytes));    
-                }
-                catch (std::exception const& e) {
-                medio.fail(e.what()); }
-            }
-
-            if (what == &loading
-            and vudio.status == state::ready
-            and thread.done)
-            {
-                medio.stay();
-            }
-
-            if (what == &playing
-            and vudio.audio.status == state::finished
-            and start + stay < gui::time::now)
-            {
-                medio.done();
-            }
-
-            if (what == &playing
-            and vudio.status == state::playing
-            and start + stay < gui::time::now)
-            {
-                int64_t e = vudio.elapsed.ms;
-                int64_t d = vudio.duration.ms;
-                int64_t s = (int)(200*speed);
-                if (d-e < s)
-                medio.done();
-            }
-
-            if (what == &playing
-            or  what == &loading)
-            {
-                if (
-                vudio.status == state::failed)
-                medio.fail(vudio.error);
-            }
- 
-            if (what == &volume)
-                vudio.volume =
-                volume;
-
-            if (what == &mute)
-                vudio.mute =
-                mute;
+            if (what == &player) { clicked = player.clicked; notify(); }
         }
 
         bool mouse_sensible (xy) override { return true; }
-        void on_mouse_hover (xy) override { } // frame.show(); }
-        void on_mouse_leave (  ) override { frame.hide(); }
+        void on_mouse_hover_child (xy p) override { on_mouse_hover(p); }
+        void on_mouse_hover (xy) override
+        {
+            frame .show();
+            credia.show();
+            credib.show();
+            credic.show();
+            credid.show();
+            credit.show();
+        }
+        void on_mouse_leave () override
+        {
+            frame .hide();
+            credia.hide();
+            credib.hide();
+            credic.hide();
+            credid.hide();
+            credit.hide();
+        }
         void on_mouse_click (xy, str button, bool down) override
         {
             if (button == "left" and down)
-                clicked = -1;
-                notify();
+            player.stop(),
+            player.play(),
+            clicked = -1,
+            notify();
         }
     };
 }

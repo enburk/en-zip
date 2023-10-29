@@ -23,6 +23,8 @@ str bold      (str s) { return "<b>" + s + "</b>"; }
 str italic    (str s) { return "<i>" + s + "</i>"; }
 str big       (str s) { return "<big>" + s + "</big>"; }
 str small     (str s) { return "<small>" + s + "</small>"; }
+str white     (str s) { return "<font color=#FFFFFF>" + s + "</font>"; }
+str black     (str s) { return "<font color=#000000>" + s + "</font>"; }
 str blue      (str s) { return "<font color=#000080>" + s + "</font>"; }
 str lightblue (str s) { return "<font color=#0000FF>" + s + "</font>"; }
 str extracolor(str s) { return "<font color=#FF8F00>" + s + "</font>"; }

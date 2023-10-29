@@ -40,11 +40,12 @@ web @ spider         = паутина
 fly @ insect         = муха
 fly @ verb           = лететь
 
-feather              = перо
-wing                 = крыло
-tail                 = хвост
-paw                  = лапа
-fur                  = мех
+feather @ bird       = перо
+wing @ bird          = крыло
+tail @ animal        = хвост
+paw @ animal         = лапа
+fur @ amimal         = мех
+
 
 
 

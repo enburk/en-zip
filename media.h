@@ -91,7 +91,28 @@ namespace media
     };
 
     using index = media_index;
- 
+
+    std::mutex  bytes_mutex;
+    array<byte> bytes (index i)
+    {
+        if (i == index{}) return {};
+
+        //std::lock_guard lock{bytes_mutex};
+
+        location l = i.location;
+
+        path source = "../data/media/storage." +
+            std::to_string(l.source) + ".dat";
+
+        return sys::in::bytes(source,
+            l.offset,
+            l.length);
+    }
+    array<array<byte>> bytes (array<index> ii) {
+    array<array<byte>> bytess; bytess.reserve(ii.size());
+      for (auto i: ii) bytess.emplace_back(bytes(i));
+      return bytess; } 
+
     str canonical (str s)
     {
         array<str> ss = s.split_by("_"); if (ss.size() > 1)
@@ -142,6 +163,10 @@ namespace media
         kind + " " + title,
         "file://" + index.path);
     }
+    array<str> log (array<index> const& index) {
+    array<str> logs; for (auto& i: index)
+        logs += log(i);
+        return logs; }
 
     namespace report
     {

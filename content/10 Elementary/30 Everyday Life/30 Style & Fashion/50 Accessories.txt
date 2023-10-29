@@ -1,11 +1,12 @@
-accessory = аксессуар             # 14+
+accessory    = аксессуар                # 14+
 
-scarf     = шарф
+scarf        = шарф
 
-gaiters   = гетры                 # 16+
-socks     = носки
+gaiters      = гетры                    # 16+
+socks        = носки
 
-clutch    = клатч %% сумочка-конверт # RARE- # 14+
+clutch [bag] = клатч %% сумочка-конверт # RARE- # 14+
+
 
 
 

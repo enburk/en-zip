@@ -15,6 +15,7 @@ cell @ section    = ячейка
 cell @ mobastery  = келья
 cell @ prison     = тюремная камера
 cage @ animal     = клетка для животных
-rib cage          = грудная клетка
+rib cage||ribcage = грудная клетка
+
 
 

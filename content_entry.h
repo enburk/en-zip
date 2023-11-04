@@ -148,6 +148,8 @@ namespace content::out
             }
 
             for (str s: en*uk*us)
+            s.replace_all(u8"\\", "/"),
+            s.replace_all(u8" → ", ", "),
             vocabulary += s.split_by("|");
             vocabulary.deduplicate();
 
@@ -311,9 +313,10 @@ namespace content::in
             }
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });
-            html.replace_all("|",blue("/"));
-            html.replace_all("[",blue("["));
-            html.replace_all("]",blue("]"));
+            html.replace_all("\\",blue("/"));
+            html.replace_all("|" ,blue("/"));
+            html.replace_all("[" ,blue("["));
+            html.replace_all("]" ,blue("]"));
             html.replace_all("---", mdash);
             html.replace_all("--" , ndash);
             html.replace_all("'", u8"’");

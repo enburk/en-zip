@@ -113,9 +113,12 @@ namespace studio::one
                     r.entries;
             }
 
+            for (str s: resource_vocabulary)
+            if (s.contains("/")) resource_vocabulary +=
+                s.split_by("/");
+
             bool used = false;
-            for (str ss: resource_vocabulary)
-            for (str s: ss.split_by("/"))
+            for (str s: resource_vocabulary)
             {
                 auto it = course_vocabulary.find(s);
                 if (it != course_vocabulary.end())

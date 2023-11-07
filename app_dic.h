@@ -3,8 +3,8 @@
 #include "app_dic_list.h"
 namespace app::dic
 {
-    struct app:
-    widget<app>
+    struct view:
+    widget<view>
     {
         left::area left;
         list::area list;

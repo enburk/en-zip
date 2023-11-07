@@ -6,7 +6,7 @@
 struct studia_r:
 widget<studia_r>
 {
-    app::dic::app dic;
+    app::dic::view dic;
     studia::dic::reports dics;
     studia::one::reports ones;
     studia::one::search search;

@@ -3,8 +3,8 @@
 #include "app_one_stage.h"
 namespace app::one
 {
-    struct app:
-    widget<app>
+    struct view:
+    widget<view>
     {
         stage  stages[3];
         stage& stage = stages[1];

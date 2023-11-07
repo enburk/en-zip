@@ -31,7 +31,9 @@ namespace app::video
         using(error)
         #undef using
 
-        ~player () { reset(); }
+        player () { title.alignment = xy{pix::center, pix::top}; }
+
+       ~player () { reset(); }
 
         void reset ()
         {
@@ -70,11 +72,13 @@ namespace app::video
                 video.stop();
         }
 
-        void fit (xy resolution, xy maxsize)
+        void fit (xy maxsize, gui::time time={}) override
         {
-            xy pixsize = maxsize;
-            pixsize = resolution.fit(pixsize);
+            xy resolution {
+            video_index.location.size_x,
+            video_index.location.size_y};
 
+            xy pixsize = resolution.fit(maxsize);
             xy txtsize = maxsize;
             if (pixsize.x > 0)
                 txtsize.x =
@@ -85,7 +89,7 @@ namespace app::video
 
             if (pixsize.y + txtsize.y > maxsize.y)
             {
-                xy pixsize = maxsize;
+                pixsize = maxsize;
                 pixsize.y -= txtsize.y;
                 pixsize = resolution.fit(pixsize);
             }
@@ -95,14 +99,15 @@ namespace app::video
             int m = pixsize.y;
 
             video.coord = xywh(w/2 - pixsize.x/2, 0, pixsize.x, pixsize.y);
-            title.coord = xywh(w/2 - txtsize.x/2, m, txtsize.x, txtsize.y);
-            resize(xy(w,h));
+            title.coord = xywh(0, m, w, txtsize.y);
+            resize(xy(w,h), time);
         }
 
         void on_change (void* what) override
         {
-            if (what == &title)
-                clicked = title.clicked,
+            if (what == & title)
+                clicked = title.
+                clicked,
                 notify();
 
             using sfx::media::state;

@@ -147,7 +147,7 @@ widget<Studio>
     {
         if (down
         and key == "escape"
-        and app.alpha.to != 0)
+        and app.shown())
             app.hide();
         else
         if (focus.now)

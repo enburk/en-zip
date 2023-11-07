@@ -6,7 +6,7 @@ namespace app::dic::left
     struct card:
     widget<card>
     {
-        html_view text;
+        text::view text;
         
         sfx::media::
         sequencer<video::player> video;
@@ -58,8 +58,8 @@ namespace app::dic::left
                 player.hide();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
-                player.volume = volume.now;
-                player.mute = mute.now;
+                player.volume = volume;
+                player.mute = mute;
             }
 
             using state = sfx::media::state;
@@ -70,47 +70,24 @@ namespace app::dic::left
                 players[0].status == state::finished)
                 players[0].show();
 
-            int l = gui::metrics::line::width;
-
-            video_max_size = xy{};
-
-            for (auto& v: videos)
-            video_max_size.x = max(
-            video_max_size.x, v.location.
-                size_x + 6*l);
-
-            video_max_size.x = max(
-            video_max_size.x, 20*gui::metrics::
-                text::height);
-
-            video_max_size.y = video_height(
-            video_max_size.x);
-
-            video_resize(video_max_size);
-            video.repeat = true;
+            video_size();
             video.Play();
         }
 
-        int video_height (int width)
+        void video_size ()
         {
-            int height = 0;
-            for (auto& player: video.players)
-            height = max (height, player.height(width));
-            return height;
+            xy
+            size = coord.now.size;
+            size.x = size.x * 2/3;
+            video.fit(size);
+            video_move();
+
+            for (auto& p: video.players)
+            p.move_to(xy{ video.coord.now.w - 
+            p.coord.now.w, 0}); // right up
         }
 
-        void video_resize (xy size)
-        {
-            int maxwidth = coord.now.size.x * 2/3;
-            if (maxwidth < size.x) size = xy (
-                maxwidth, video_height(
-                maxwidth));
-
-            video.resize(size);
-            video_position();
-        }
-
-        void video_position ()
+        void video_move ()
         {
             text.rwrap = array<xy>{
             xy{0, text.scroll.y.top},
@@ -127,7 +104,7 @@ namespace app::dic::left
             d, 0));
         }
 
-        bool text_selected () { return text.view.selected() != ""; }
+        bool text_selected () { return text.selected() != ""; }
 
         void on_change (void* what) override
         {
@@ -136,12 +113,12 @@ namespace app::dic::left
                 coord.now.size)
             {
                 text.coord = coord.now.local();
-                video_resize(video.coord.now.size);
+                video_size();
             }
             if (what == &text.scroll.y
             or  what == &text.update_text)
             {
-                video_position();
+                video_move();
             }
             if (what == &text ) { clicked = text .clicked; notify(); }
             if (what == &video) { clicked = video.clicked;

@@ -38,10 +38,7 @@ namespace studio::build
                 err << bold(red("exception: " +
                 str(e.what()))); }
 
-                timer.go(
-                gui::time{},
-                gui::time{});
-
+                timer.go({},{});
                 notify();
             }
         }

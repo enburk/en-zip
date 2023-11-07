@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include "app.h"
-#include "app_dic_html.h"
+#include "app_view_text.h"
 #include "app_view_video.h"
 namespace app::one
 {
@@ -181,9 +181,6 @@ namespace app::one
             if (w < l+l) return 0; w -= l+l; 
             if (h < l+l) return 0; h -= l+l; 
 
-            script.scroll.y.mode = gui::scroll::mode::none;
-            credit.scroll.y.mode = gui::scroll::mode::none;
-
             script.alignment = xy{pix::center, pix::top};
             credit.alignment = xy{pix::left,   pix::top};
 
@@ -193,12 +190,7 @@ namespace app::one
             script.resize(script.textsize());
             credit.resize(credit.textsize() + xy(10,0));
 
-            int hh = script.coord.now.h;
-
-            player.fit(xy{
-            video_index.location.size_x,
-            video_index.location.size_y},
-            xy{w, h-hh});
+            player.fit(xy{w, h - script.coord.now.h});
 
             xy psize = player.coord.now.size;
             xy ssize = script.coord.now.size;

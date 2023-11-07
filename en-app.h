@@ -10,9 +10,9 @@ widget<App>
 {
     gui::canvas canvas;
     gui::text::view where;
-    app::one::app one;
-    app::two::app two;
-    app::dic::app dic;
+    app::one::view one;
+    app::two::view two;
+    app::dic::view dic;
     app::contents ones;
     app::contents twos;
     app::Contents Ones;

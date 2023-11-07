@@ -237,7 +237,7 @@ namespace studio::pixer
             return; clicked = down;
 
             if (down) p0 = p1; else
-            if (frame.alpha.to > 0
+            if (frame.shown()
             and abs(p1.x-p0.x) < 9
             and abs(p1.y-p0.y) < 9)
             {

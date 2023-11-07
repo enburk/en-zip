@@ -2,11 +2,10 @@
 #include "app.h"
 namespace app::two
 {
-    struct app : gui::widget<app>
+    struct view:
+    widget<view>
     {
         gui::canvas canvas;
-
-        app() { reload(); }
 
         void reload ()
         {

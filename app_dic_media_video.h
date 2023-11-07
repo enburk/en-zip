@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "eng_parser.h"
-#include "app_dic_html.h"
+#include "app_view_text.h"
+#include "app_view_video.h"
 #include "app_dic_media.h"
 namespace app::dic::video
 {
@@ -10,22 +11,16 @@ namespace app::dic::video
         gui::canvas canvas;
         gui::frame  frame1;
         gui::frame  frame2;
-        sfx::vudio::player video;
-        sfx::media::medio medio;
-        html_view   script;
-        html_view   credit;
+        app::video::player video;
+        text::view& script = video.title;
+        text::view  credit;
         gui::button prev;
         gui::button next;
 
-        gui::time stay;
-        gui::time start;
-        sys::thread thread;
         media::index index;
-        array<byte> video_bytes;
-        array<byte> audio_bytes;
         int clicked = 0;
 
-#define using(x) decltype(medio.x)& x = medio.x;
+#define using(x) decltype(video.x)& x = video.x;
         using(mute)
         using(volume)
         using(loading)
@@ -37,18 +32,9 @@ namespace app::dic::video
         using(error)
         #undef using
 
-        ~player () { reset(); }
-
-        void reset ()
-        {
-            try {
-            thread.stop = true;
-            thread.join();
-            thread.check(); }
-            catch (...) {}
-            video.reset();
-            medio.done();
-        }
+        void play () { video.play (); }
+        void stop () { video.stop (); }
+        void reset() { video.reset(); }
 
         void load (
             media::index video_index,
@@ -57,19 +43,12 @@ namespace app::dic::video
         {
             // if that same image
             // is used for another word then do next:
-            // reset maybe increased stay time,
             // actualize emboldened links,
             // and return
 
             bool same =
             index == video_index;
             index =  video_index;
-
-            start = gui::time::now;
-            stay  = gui::time{3000 +
-            index.title.size() * 40 +
-            index.credit.size() * 10 +
-            index.comment.size() * 20};
 
             script.forbidden_links = links;
             credit.forbidden_links = links;
@@ -90,145 +69,74 @@ namespace app::dic::video
             script.html = s;
             credit.html = gray(small(c));
 
+            video.stay = gui::time{3000 +
+            index.title.size() * 40 +
+            index.credit.size() * 10 +
+            index.comment.size() * 20};
+
             if (same) return;
 
-            reset();
-            medio.load();
-            thread = [this,
-            video_index, audio_index]
-            (std::atomic<bool>& cancel)
-            {
-                auto source = [](int source){
-                    return "../data/media/storage." +
-                    std::to_string(source) + ".dat"; };
-
-                if (video_index != media::index{})
-                    video_bytes = sys::in::bytes(source(
-                    video_index.location.source),
-                    video_index.location.offset,
-                    video_index.location.length);
-
-                if (audio_index != media::index{})
-                    audio_bytes = sys::in::bytes(source(
-                    audio_index.location.source),
-                    audio_index.location.offset,
-                    audio_index.location.length);
-            };
+            video.audio_index = audio_index;
+            video.video_index = video_index;
+            video.load();
         }
 
-        void play ()
-        {
-            if (medio.play()) {
-                video.play();
-                logs::media << media::log(index);
-                start = gui::time::now;
-                stay.ms = stay.ms
-                *150/100;
-            }
-        }
-        void stop ()
-        {
-            if (medio.stop())
-                video.stop();
-        }
-
-        auto sizes (int width)
+        void fit (xy size, gui::time t={}) override
         {
             int l = gui::metrics::line::width;
+            int W = gui::metrics::text::height*20;
             int d = gui::metrics::text::height*7/10;
+            int w = size.x; w -= 6*l;
+            int h = size.y; h -= 6*l;
+            h -= d; // for credit
 
-            xy size {
-            index.location.size_x,
-            index.location.size_y};
+            script.alignment = xy{pix::left, pix::top};
+            credit.alignment = xy{pix::left, pix::top};
 
-            int maxwidth = width - 6*l;
-            if (maxwidth < size.x) size = xy (
-                maxwidth, maxwidth *
-                size.y / size.x);
-            else
-            {
-                maxwidth = maxwidth * 80/100;
+            int maxwidth = index.location.size_x;
+            if (maxwidth < W*80/100)
+                maxwidth = W;
 
-                double kx = double(size.x) / maxwidth;
-                double ky = double(size.y) / maxwidth;
+            w = min(w, maxwidth);
+            video.fit(xy{w,h});
+            w = video.coord.now.w;
+            h = video.coord.now.h;
 
-                if (kx < 0.8
-                and ky < 0.8)  size = kx > ky ?
-                    maxwidth * size / size.x:
-                    maxwidth * size / size.y;
-            }
+            credit.resize(xy{w,h});
 
-            script.coord = xywh(0, 0, size.x,     max<int>());
-            credit.coord = xywh(0, 0, size.x-4*d, max<int>());
+            int w1 = script.textsize().x;
+            int w2 = credit.textsize().x;
 
-            int w1 = script.model.now->block.size.x;
-            int w2 = credit.model.now->block.size.x;
-            int h1 = script.model.now->block.size.y;
-            int h2 = credit.model.now->block.size.y;
+            w += 6*l;
+            h += 6*l;
+            if (w1 + 7*d + w2 > w)
+            h += d;
 
-            int hh = h1 + h2;
-            int y2 = h1;
+            prev.resize(xy{d*3/2, d-d/7});
+            next.resize(xy{d*3/2, d-d/7});
+            prev.text.shift = xy{0, -d/3};
+            next.text.shift = xy{0, -d/3};
 
-            if (w1 + w2 + 7*d < size.x) {
-                hh = max(h1, h2);
-                y2 = 0; }
+            xyxy r (0, 0, w, h);
+            frame1.coord = r; r.deflate(frame1.thickness.now);
+            frame2.coord = r; r.deflate(frame2.thickness.now);
+            canvas.coord = r; r.deflate(frame2.thickness.now);
 
-            hh = max(hh, d);
+            video .move_to(r.lt);
+            credit.move_to(r.rb - xy{d*7/2, d} - xy{w2,0});
+            prev  .move_to(r.rb - xy{d*6/2, d} + xy{0, d/7});
+            next  .move_to(r.rb - xy{d*3/2, d} + xy{0, d/7});
 
-            int w = size.x + 6*l;
-            int h = size.y + 6*l + hh;
-
-            return std::tuple{w1, h1, w2, h2, size, w, h, d, y2};
-        }
-
-        int height (int width)
-        {
-            xywh script_save = script.coord.now;
-            xywh credit_save = credit.coord.now;
-
-            auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(width);
-
-            script.coord = script_save;
-            credit.coord = credit_save;
-
-            return h;
+            resize(xy{w,h});
         }
 
         void on_change (void* what) override
         {
-            if (what == &coord)
-            {
-                int W = coord.now.w; if (W <= 0) return;
-                int H = coord.now.h; if (H <= 0) return;
-
-                auto [w1, h1, w2, h2, size, w, h, d, y2] = sizes(coord.now.size.x);
-
-                xywh r (W-w, 0, w, h); // right-up
-                frame1.coord = r; r.deflate(frame1.thickness.now);
-                frame2.coord = r; r.deflate(frame2.thickness.now);
-                canvas.coord = r; r.deflate(frame2.thickness.now);
-
-                int r_x = r.x + r.w;
-                int r_y = r.y + size.y;
-
-                video .coord = xywh(r.x, r.y, size.x, size.y);
-                script.coord = xywh(r.x, r_y, size.x, h1);
-                credit.coord = xywh(r_x - d*7/2 - w2,  r_y + y2, d*7/2 + w2, h2);
-                prev  .coord = xywh(r_x - d*6/2, d/7 + r_y + y2, d*3/2, d - d/7);
-                next  .coord = xywh(r_x - d*3/2, d/7 + r_y + y2, d*3/2, d - d/7);
-
-                prev.text.shift = xy{0, -d/3};
-                next.text.shift = xy{0, -d/3};
-            }
-
             if (what == &skin)
             {
                 frame1.color = gui::skins[skin].ultralight.first;
                 frame2.color = gui::skins[skin].normal.first;
                 canvas.color = gui::skins[skin].light.first;
-
-                credit.alignment = xy{pix::left, pix::top};
-                script.alignment = xy{pix::left, pix::top};
 
                 prev.text.html = monospace(bold(u8"←"));
                 next.text.html = monospace(bold(u8"→"));
@@ -239,53 +147,6 @@ namespace app::dic::video
 
             if (what == &next) { clicked = -1; notify(); }
             if (what == &prev) { clicked = -2; notify(); }
-
-            using sfx::media::state;
-
-            if (what == &loading
-            and video.status == state::finished
-            and thread.done)
-            {
-                try
-                {
-                    thread.join();
-                    thread.check();
-
-                    video.load(
-                    std::move(video_bytes),    
-                    std::move(audio_bytes));    
-                }
-                catch (std::exception const& e) {
-                medio.fail(e.what()); }
-            }
-
-            if (what == &loading
-            and video.status == state::ready
-            and thread.done)
-            {
-                medio.stay();
-            }
-
-            if (what == &playing)
-            {
-                if (script.link != ""
-                or  credit.link != "")
-                start = gui::time::now;
-            }
-
-            if (what == &playing
-            and video.status == state::finished
-            and start + stay < gui::time::now)
-            {
-                medio.done();
-            }
-
-            if (what == &playing
-            or  what == &loading)
-            {
-                if (video.status == state::failed)
-                medio.fail(video.error);
-            }
  
             if (what == &volume)
                 video.volume =

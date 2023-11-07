@@ -27,6 +27,8 @@ namespace app::dic::left
             card.object.text.mouse_wheel_speed = 2.0;
             undo.text.ellipsis = true;
             redo.text.ellipsis = true;
+            card.object.mute =
+            quot.object.mute.on;
             refresh();
         }
 

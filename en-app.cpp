@@ -1,3 +1,5 @@
+#define STANDALONE_APP
+
 #include "en-app.h"
 
 sys::app<App> application ("en app");

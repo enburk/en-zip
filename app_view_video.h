@@ -64,12 +64,14 @@ namespace app::video
                 logs::media << media::log(video_index);
                 logs::media << media::log(audio_index);
                 start = gui::time::now;
+                notify();
             }
         }
         void stop ()
         {
             if (medio.stop())
-                video.stop();
+                video.stop(),
+                notify();
         }
 
         void fit (xy maxsize, gui::time time={}) override
@@ -127,13 +129,19 @@ namespace app::video
                 }
                 catch (std::exception const& e) {
                 medio.fail(e.what()); }
+                notify();
             }
 
             if (what == &loading
             and video.status == state::ready
             and thread.done)
             {
+                resolution = video.
+                resolution;
+                duration = video.
+                duration;
                 medio.stay();
+                notify();
             }
 
             if (what == &playing)
@@ -147,15 +155,17 @@ namespace app::video
             and start + stay < gui::time::now)
             {
                 medio.done();
-                stay.ms = int(slowdown*
-                stay.ms);
+                stay.ms = int(std::round(
+                stay.ms * slowdown));
+                notify();
             }
 
             if (what == &playing
             or  what == &loading)
             {
                 if (video.status == state::failed)
-                medio.fail(video.error);
+                medio.fail(video.error),
+                notify();
             }
  
             if (what == &volume)

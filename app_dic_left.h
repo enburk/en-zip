@@ -212,11 +212,6 @@ namespace app::dic::left
                 redoes = std::move(saving);
                 refresh();
             }
-            if (what == &quot.object.mute)
-            {
-                card.object.mute =
-                quot.object.mute.on;
-            }
         }
     };
 }

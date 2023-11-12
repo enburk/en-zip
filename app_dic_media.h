@@ -6,17 +6,11 @@ namespace app::dic::media
     using ::media::canonical;
     using ::media::log;
 
-    struct syncronizer
-    {
-        array<xy> pairs;
-    };
-
     struct selected
     {
         array<index> audio;
         array<index> video;
         array<index> vudio;
-        syncronizer syncronizer;
     };
 
     selected select (int n)
@@ -59,9 +53,11 @@ namespace app::dic::media
                 else { i++; j++; }
             }
         };
+        #ifdef STANDALONE_APP
+        uniquify(audios);
+        uniquify(videos);
+        #endif
 
-    //  uniquify(audios);
-    //  uniquify(videos);
         vudios.resize(videos.size());
 
         for (int i=0; i<videos.size(); i++)
@@ -70,7 +66,6 @@ namespace app::dic::media
             if (videos[i].title ==
                 audios[j].title) {
                 vudios[i] = audios[j];
-                audios.erase(j);
                 break;
             }
         }

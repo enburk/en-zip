@@ -1,4 +1,4 @@
-''Animal Youngsters'' # pix-
+animal ~ youngsters   # pix-
 
 calf
 elephant calf
@@ -11,20 +11,23 @@ foal                  = ''a baby horse''
 filly                 = ''a young female horse''
 colt                  = ''a young male horse''
 zebra foal
+
 fawn                  = ''a young deer''
 leveret               = ''a young hare''
 rabbit kit
 joey                  = ''a young kangaroo''
 
 whelp                 = ''any young carnivorous mammal, ~ especially puppy''
+
 lion cub
 panther cub
 leopard cub
 cougar kitten
 bobcat kitten
-cubs/pups/kits        = of a red fox
 /// As a future reference, Genus Panthera; i.e. tigers, lions, jaguars, and leopards roar, chuff and have CUBS.
 /// Genus Felidae, housecats of all breeds, all small wild cats such as, Serval, Asian Leopard Cat, Sand Cat, Cougar, Caracal and the like all purr and all babies are called KITTENS.
+
+cubs/pups/kits @ fox  = of a red fox
 
 chicks                = ''young birds''
 chick                 = ''a young chicken''
@@ -38,7 +41,7 @@ eaglet                = ''a young eagle''
 owlet                 = ''a young owl''
 eyas                  = ''a nestling, especially a young hawk''
 nestlings
-fledgling/fledgeling  = ''a young bird that is learning to fly''
+fledgling//fledgeling = ''a young bird that is learning to fly''
 /// Eyas Originated as a Linguistic Mistake https://www.merriam-webster.com/dictionary/eyas
 /// Eyas is a funny-sounding word that exists because of a mistake.
 /// In the 15th century, Middle English speakers made an incorrect assumption about the word neias, which comes from the Anglo-French niais ("fresh from the nest").
@@ -53,10 +56,12 @@ parr/smolt            = ''a young salmon'' /// parr is younger than smolt (which
 elver                 = ''a young eel''
 
 tadpole               = ''a young frog or toad''
+
 spiderlings           = ''young spiders''
 maggot                = ''a larva of a fly''
 pupa %% plural pupae
 pupation
 mantis nymph
 mosquito larvae
+
 

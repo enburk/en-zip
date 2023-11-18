@@ -59,7 +59,6 @@ namespace app::dic::left
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
                 player.volume = volume;
-                player.mute = mute;
             }
 
             using state = sfx::media::state;
@@ -128,13 +127,13 @@ namespace app::dic::left
                     xy p =
                     sys::mouse::position() -
                     video.players[video.current].
-                    prev.coord.now.origin;
+                    prev_origin();
 
                     video.prev();
 
                     sys::mouse::position(p +
                     video.players[video.current].
-                    prev.coord.now.origin);
+                    prev_origin());
                 }
                 else
                 if (clicked == -1)
@@ -142,13 +141,13 @@ namespace app::dic::left
                     xy p =
                     sys::mouse::position() -
                     video.players[video.current].
-                    next.coord.now.origin;
+                    next_origin();
 
                     video.next();
 
                     sys::mouse::position(p +
                     video.players[video.current].
-                    next.coord.now.origin);
+                    next_origin());
                 }
                 else
                 notify();

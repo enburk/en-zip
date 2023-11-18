@@ -140,6 +140,9 @@ namespace app::dic::video
             resize(xy{w,h});
         }
 
+        auto prev_origin () { return coord.now.origin + prev.coord.now.origin; }
+        auto next_origin () { return coord.now.origin + next.coord.now.origin; }
+
         void on_change (void* what) override
         {
             if (what == &coord)
@@ -165,7 +168,7 @@ namespace app::dic::video
             if (what == &next) { clicked = -1; notify(); }
             if (what == &prev) { clicked = -2; notify(); }
  
-            if (what == &Play) { mute = false; play(); }
+            if (what == &Play) { mute = false; play(); mute = true; }
             if (what == &Stop) { mute = true;  stop(); }
 
             if (what == &video)

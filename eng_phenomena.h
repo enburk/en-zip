@@ -134,35 +134,3 @@ namespace eng
         return s;
     }
 }
-
-/*
-
-## uk
-Moscow ## us ### {Am.}
-netsuke {Jap.}
-
-## Case
-minute {noun}
-minute {adjective}
-Mercedes {car brand}
-Mercedes {female name}
-Shar Pei [Shar Pei][Shar-Pei][shar-pei][shar pei]
-
-Are you serious? {emphatic}
-
-## sound
-triangle {musical instrument}
-mortar {weapon}
-
-
-miss {Miss}
-miss {target} // verb, noun
-miss {verb} {1} // be late
-''What did I miss?''
-miss {verb} {2}
-''I miss you.''
-
-(UK): /ˈkɒnkɹiːt/, /kɵnˈkɹiːt/ 
-(US): /ˌkɑnˈkɹiːt/, /ˈkɑnkɹiːt/ 
-
-*/

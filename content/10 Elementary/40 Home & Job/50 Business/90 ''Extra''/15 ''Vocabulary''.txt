@@ -22,7 +22,7 @@ buyer             = покупатель
 pay               = платить
 : How will you be '''paying''' for that?
 : Will that be cash or credit?
-coin              = монета
+coin @ money      = монета
 ---
 How much?         = Сколько?
 How much is that? = Сколько это стоит?
@@ -41,6 +41,7 @@ venture           = рискованное предприятие, ~ риско�
 profit            = польза, выгода
 profit/profits    = прибыль, доход
 : The result is a colossal profit, ~ which comes to me.
+
 
 
 

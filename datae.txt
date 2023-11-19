@@ -20611,7 +20611,7 @@ addressograph ### CREDIT-CARD_GEN-HDF-08712.wav
 automatic camera.. timer beep and shoot ### Camera-Digital-Automatic-D7-SLR_GEN-HD4-39321.wav
 baseball game, discontent ### Crowds-BaseballGame-Medi-12_B03-01236.wav
 cabasa [cabassa] ## sic! ### MusicFx IMA01_14_4.wav
-car tires on cobblestone ## 0-10 ## fade out ### CarTiresOnCobblest PE856202.wav
+car tires on cobblestone ## crop 0-10 ## fade out ### CarTiresOnCobblest PE856202.wav
 cash register.. print receipt ### CashRegister 6028_28_7.wav
 chainsaw cord pulls ### ChainsawCordPulls PE1060301.wav
 coins drop, spin on the counter ### CoinsDropSpinOnTableCounter PEHD106502.wav
@@ -26803,7 +26803,15 @@ sea urchin test (hard shell) [sea urchin][test@shell] {{Photo.. Noah Browning $d
 seashells [shell][seashell] ## qrop qr {{Photo.. Breakermaximus $dreamstime 74887367}}.jpg
 shells ## qrop l14 r18 ## qropt! {{Photo.. Viovita $dreamstime 51413766}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/youngsters
+bobcat kitten [+] {{Photo.. Chris Lorenz $dreamstime 16510118}}.jpg
+calf @ cow {{Photo.. Leopold Brix $dreamstime 35607708}}.jpg
+cougar kitten [kitten] {{Photo.. Holly Kuchera $dreamstime 68335957}}.jpg
 cubs~pups~kits @ fox {{Photo.. Janusz Pieńkowski $dreamstime 37552551}} red foxes.jpg
+elephant calf [calf@animal] {{Photo.. Puwanai Ponchai $dreamstime 24506535}}.jpg
+kids [kid@goat] {{Photo.. Nigel Baker $dreamstime 118315018}}.jpg
+lamb {{Photo.. Lukas Gojda $dreamstime 116208372}}.jpg
+shoat [pigling] {{Photo.. Volodymyr Byrdyak $dreamstime 57173612}}.jpg
+wild boar shoat [shoat][piglet] {{Photo.. Ondřej Prosický $dreamstime 100109501}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/~mix
 bare-faced curassow [+][Crax fasciolata][Crax] ## qrop l9 r24 {{Photo.. Ondřej Prosický $dreamstime 109258149}}.jpg
 black-cowled oriole [+][Icterus prosthemelas][Icterus] ## crop l45 r12 b34 ## qropt! {{Photo.. Ondřej Prosický $dreamstime 88565145}}.jpg

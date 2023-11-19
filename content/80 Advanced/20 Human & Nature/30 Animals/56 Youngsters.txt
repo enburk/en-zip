@@ -1,23 +1,26 @@
-animal ~ youngsters   # pix-
-
-calf
+animals: ~ youngsters
+---
+calf @ cow            = a young cow or bull %% also: deer, elephant, seal, whale, giraffe
 elephant calf
-lamb                  = ''a young sheep''
-kids                  = ''young goats''
-piglet                = '' a young pig''
-wild boar piglet
 
-foal                  = ''a baby horse''
-filly                 = ''a young female horse''
-colt                  = ''a young male horse''
+lamb                  = a young sheep
+kid @ goat            = a young goat
+---
+piglet                = a young pig
+shoat                 = a young, newly-weaned pig
+wild boar shoat
+
+foal                  = a baby horse
+filly                 = a young female horse
+colt                  = a young male horse
 zebra foal
 
-fawn                  = ''a young deer''
-leveret               = ''a young hare''
+fawn                  = a young deer
+leveret               = a young hare
 rabbit kit
-joey                  = ''a young kangaroo''
+joey                  = a young kangaroo
 
-whelp                 = ''any young carnivorous mammal, ~ especially puppy''
+whelp                 = any young carnivorous mammal, ~ especially puppy
 
 lion cub
 panther cub
@@ -63,5 +66,6 @@ pupa %% plural pupae
 pupation
 mantis nymph
 mosquito larvae
+
 
 

@@ -14,7 +14,7 @@ namespace studio::one
             std::filesystem::path dir = "../data/report";
             errors = sys::in::optional_text_lines(dir/"one_errors.txt");
         //  anomal = sys::in::optional_text_lines(dir/"one_anomal.txt");
-        //  duples = sys::in::optional_text_lines(dir/"one_duples.txt");
+            duples = sys::in::optional_text_lines(dir/"one_duples.txt");
         //  audiom = sys::in::optional_text_lines(dir/"one_audiom.txt");
         //  videom = sys::in::optional_text_lines(dir/"one_videom.txt");
             audiop = sys::in::optional_text_lines(dir/"one_audiop.txt");

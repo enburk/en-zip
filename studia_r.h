@@ -1,6 +1,7 @@
 #pragma once
 #include "studia_r_report_dic.h"
 #include "studia_r_report_one.h"
+#include "studia_r_report_one+.h"
 #include "studia_r_search.h"
 
 struct studia_r:
@@ -9,6 +10,7 @@ widget<studia_r>
     app::dic::view dic;
     studia::dic::reports dics;
     studia::one::reports ones;
+    studia::one::resorts oness;
     studia::one::search search;
     array<gui::base::widget*> planes;
     gui::area<gui::selector> selector;
@@ -19,6 +21,7 @@ widget<studia_r>
         planes += &dic;
         planes += &dics;
         planes += &ones;
+        planes += &oness;
         planes += &search;
 
         for (auto p:
@@ -28,9 +31,10 @@ widget<studia_r>
         int i = 0;
         auto& select = selector.object;
         select.buttons(i++).text.text = "dictionary";
-        select.buttons(i++).text.text = "reports dic";
-        select.buttons(i++).text.text = "reports one";
-        select.buttons(i++).text.text = "search one";
+        select.buttons(i++).text.text = "reports: dic";
+        select.buttons(i++).text.text = "reports: one";
+        select.buttons(i++).text.text = "resources";
+        select.buttons(i++).text.text = "search: one";
         select.selected = 0;
     }
 
@@ -39,6 +43,7 @@ widget<studia_r>
         dic   .reload();
         dics  .reload();
         ones  .reload();
+        oness .reload();
         search.reload();
     }
 

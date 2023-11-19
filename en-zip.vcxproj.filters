@@ -102,5 +102,6 @@
     <ClInclude Include="studia_r_report_one.h" />
     <ClInclude Include="studia_r_request.h" />
     <ClInclude Include="studia_r_search.h" />
+    <ClInclude Include="studia_r_report_one+.h" />
   </ItemGroup>
 </Project>

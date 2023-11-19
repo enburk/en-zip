@@ -36,7 +36,7 @@ widget<studia_l>
         select.buttons(i++).text.text = "course";
         select.buttons(i++).text.text = "catalog";
         select.buttons(i++).text.text = "media";
-        select.buttons(i++).text.text = "search dic";
+        select.buttons(i++).text.text = "search: dic";
         select.selected = 0;
     }
 

@@ -50,6 +50,15 @@ namespace studio::one
         {
             if (voc.entries.size() >= 2)
             {
+                int actual = 0;
+                for (ent entry: voc.entries)
+                if  (not entry->opt.external.contains("HEAD")
+                and  not entry->opt.external.contains("duple"))
+                    actual++;
+
+                if (actual == 0)
+                    continue;
+
                 for (ent entry: voc.entries)
                 report::duples += link(entry);
                 report::duples += "";
@@ -195,7 +204,8 @@ namespace studio::one
 
         for (auto [i, entry]: enumerate(course.entries))
         {
-            bool nopixed = entry.opt.internal.contains("pix-");
+            bool isahead = entry.opt.external.contains("HEAD");
+            bool nopixed = entry.opt.internal.contains("pix-") or isahead;
             bool noaudio = entry.opt.internal.contains("audio-");
             bool soundio = entry.opt.external.contains("SOUND");
 

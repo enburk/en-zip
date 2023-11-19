@@ -55,7 +55,7 @@ namespace content
             for (str s: text.split_by("#"))
             {
                 static array<str> ages = str("8+, 10+, 12+, 14+, 16+, 18+, 21+, 99+").split_by(", ");
-                static array<str> internals = str("DEL, pix-, audio-, sound-").split_by(", ");
+                static array<str> internals = str("DEL, pix-, audio-, sound-, uk-, us-, duple").split_by(", ");
                 static array<str> externals = str("1, 2, 3, 4, Ru, HEAD, POEM, SOUND, "
                 "rare, formal, informal, literary, old-fashioned, "
                 "-1sec, +1sec, +2sec, +3sec, +4sec, +5sec"

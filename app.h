@@ -54,7 +54,7 @@ namespace app
 
             timing t1;
             one::course.load("../data/course.dat", "../data/course_entries.dat");
-            two::course.load("../data/catalo.dat", "../data/catalo_entries.dat");
+            two::course.load("../data/catalog.dat", "../data/catalog_entries.dat");
             one::course.root.shuffle();
 
             timing t2;

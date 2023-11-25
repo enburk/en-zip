@@ -141,7 +141,7 @@ namespace media::audio
             }
         }
 
-        return sys::in::bytes(cache);
+        return sys::bytes(cache);
     }
     catch (std::exception & e) { return
         aux::error("media::audio::readsample:"

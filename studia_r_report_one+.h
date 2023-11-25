@@ -14,14 +14,16 @@ namespace report = studio::one::report;
             gui::console audiom, audiop, audioq;
             gui::console videom, videop, videoq;
             array<gui::console*> consoles;
+            array<report::report*> reports;
+            array<int> readiness;
             consobar ()
             {
-                consoles += &audiom;
-                consoles += &videom;
-                consoles += &audiop;
-                consoles += &videop;
-                consoles += &audioq;
-                consoles += &videoq;
+                consoles += &audiom; reports += &report::audiom; readiness += 0;
+                consoles += &videom; reports += &report::videom; readiness += 0;
+                consoles += &audiop; reports += &report::audiop; readiness += 0;
+                consoles += &videop; reports += &report::videop; readiness += 0;
+                consoles += &audioq; reports += &report::audioq; readiness += 0;
+                consoles += &videoq; reports += &report::videoq; readiness += 0;
                 for (auto& c: consoles)
                 c->hide();
             }
@@ -31,22 +33,24 @@ namespace report = studio::one::report;
                 for (auto& c: consoles)
                 c->coord = coord.now.local();
 
-                if (what == &audiom.link) { link = audiom.link; notify(); }
-                if (what == &videom.link) { link = videom.link; notify(); }
-                if (what == &audiop.link) { link = audiop.link; notify(); }
-                if (what == &videop.link) { link = videop.link; notify(); }
-                if (what == &audioq.link) { link = audioq.link; notify(); }
-                if (what == &videoq.link) { link = videoq.link; notify(); }
+                for (auto& c: consoles)
+                if (what == &c->link)
+                link = c->link,
+                notify();
             }
             void reload ()
             {
-                report::load();
-                audiom.clear(); audiom << report::audiom;
-                videom.clear(); videom << report::videom;
-                audiop.clear(); audiop << report::audiop;
-                videop.clear(); videop << report::videop;
-                audioq.clear(); audioq << report::audioq;
-                videoq.clear(); videoq << report::videoq;
+                for (auto& c: consoles) c->clear();
+                for (auto& r: readiness) r = 0;
+            }
+            void prepare (int n)
+            {
+                if (readiness[n] == 0) {
+                    readiness[n] = 1;
+                    reports[n]->load();
+                   *consoles[n] <<
+                    reports[n]->log;
+                }
             }
         };
 
@@ -91,6 +95,7 @@ namespace report = studio::one::report;
                 int n = selector.object.selected.now;
                 for (int i=0; i<consoles.size(); i++)
                 consoles[i]->show(i == n);
+                consobar.object.prepare(n);
             }
             if (what == &consobar)
             {

@@ -15,7 +15,7 @@ namespace studia::dic
             wordlisttype(str filename)
             {
                 words.clear();
-                str text = sys::in::
+                str text = sys::
                 optional_text(str2path(filename));
                 for (str line: text.lines())
                 {

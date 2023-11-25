@@ -104,7 +104,7 @@ namespace media
         path source = "../data/media/storage." +
             std::to_string(l.source) + ".dat";
 
-        return sys::in::bytes(source,
+        return sys::bytes(source,
             l.offset,
             l.length);
     }

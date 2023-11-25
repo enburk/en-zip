@@ -110,8 +110,6 @@ widget<Studio>
             if (build.data_updated)
             {
                 app::appdata.reload();
-                //dic.reload();
-                //one.reload();
                 studias.reload();
                 app.reload();
             }

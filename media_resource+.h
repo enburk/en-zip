@@ -19,7 +19,7 @@ namespace media
             bool title_stop = false;
             array<str> title_lines;
             array<str> comment_lines;
-            for (str line: sys::in::text_lines(path))
+            for (str line: sys::text_lines(path))
             {
                 line.strip();
                 if (line.starts_with("###"))

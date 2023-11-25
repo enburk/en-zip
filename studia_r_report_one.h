@@ -12,14 +12,20 @@ namespace report = studio::one::report;
         {
             str link;
             gui::console errors;
-            gui::console anomal;
             gui::console duples;
+            gui::console anoma1;
+            gui::console anoma2;
+            gui::console anomal;
             array<gui::console*> consoles;
+            array<report::report*> reports;
+            array<int> readiness;
             consobar ()
             {
-                consoles += &errors;
-                consoles += &anomal;
-                consoles += &duples;
+                consoles += &errors; reports += &report::errors; readiness += 0;
+                consoles += &duples; reports += &report::duples; readiness += 0;
+                consoles += &anoma1; reports += &report::anoma1; readiness += 0;
+                consoles += &anoma2; reports += &report::anoma2; readiness += 0;
+                consoles += &anomal; reports += &report::anomal; readiness += 0;
                 for (auto& c: consoles)
                 c->hide();
             }
@@ -29,16 +35,24 @@ namespace report = studio::one::report;
                 for (auto& c: consoles)
                 c->coord = coord.now.local();
 
-                if (what == &errors.link) { link = errors.link; notify(); }
-                if (what == &anomal.link) { link = anomal.link; notify(); }
-                if (what == &duples.link) { link = duples.link; notify(); }
+                for (auto& c: consoles)
+                if (what == &c->link)
+                link = c->link,
+                notify();
             }
             void reload ()
             {
-                report::load();
-                errors.clear(); errors << report::errors;
-                anomal.clear(); anomal << report::anomal;
-                duples.clear(); duples << report::duples;
+                for (auto& c: consoles) c->clear();
+                for (auto& r: readiness) r = 0;
+            }
+            void prepare (int n)
+            {
+                if (readiness[n] == 0) {
+                    readiness[n] = 1;
+                    reports[n]->load();
+                   *consoles[n] <<
+                    reports[n]->log;
+                }
             }
         };
 
@@ -51,8 +65,10 @@ namespace report = studio::one::report;
             int i = 0;
             auto& sel = selector.object;
             sel.buttons(i++).text.text = "errors";
-            sel.buttons(i++).text.text = "anomal";
             sel.buttons(i++).text.text = "duplicates";
+            sel.buttons(i++).text.text = "anomal: duples";
+            sel.buttons(i++).text.text = "anomal: option";
+            sel.buttons(i++).text.text = "anomal";
             sel.selected = 0;
             reload();
         }
@@ -80,10 +96,14 @@ namespace report = studio::one::report;
                 int n = selector.object.selected.now;
                 for (int i=0; i<consoles.size(); i++)
                 consoles[i]->show(i == n);
+                consobar.object.prepare(n);
             }
             if (what == &consobar)
             {
                 link = consobar.object.link;
+                if (not link.starts_with("one://")
+                and not link.starts_with("file://"))
+                link = "one://" + link;
                 notify();
             }
         }

@@ -168,7 +168,7 @@ namespace media::out
             f << (int)(assets.size());
             for (auto& asset: assets) {
             f << asset->title;
-            f << sys::in::bytes
+            f << sys::bytes
             (asset->path); }
 
             if (up1) logs::out << yellow(bold("entries_dic updated"));

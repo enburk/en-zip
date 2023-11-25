@@ -120,7 +120,7 @@ namespace app::dic::audio
                     std::to_string(source) + ".dat"; };
 
                 if (index != media::index{})
-                    audio_bytes = sys::in::bytes(source(
+                    audio_bytes = sys::bytes(source(
                     index.location.source),
                     index.location.offset,
                     index.location.length);

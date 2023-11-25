@@ -157,7 +157,8 @@ widget<App>
         and alpha.to == 255
         and first_time)
             first_time = false,
-            one.play();
+            one.play(),
+            two.play();
 
         if (what == &splitter1) refresh();
         if (what == &splitter2) refresh();
@@ -168,12 +169,14 @@ widget<App>
         or  what == &onetwo)
             refresh();
 
-        if (what == &play.play) one.play();
-        if (what == &play.stop) one.stop();
-        if (what == &play.next) one.next();
-        if (what == &play.prev) one.prev();
-        if (what == &play.Next) one.Next();
-        if (what == &play.Prev) one.Prev();
+        bool o = one.shown();
+
+        if (what == &play.play) o? one.play() : two.play();
+        if (what == &play.stop) o? one.stop() : two.stop();
+        if (what == &play.next) o? one.next() : two.next();
+        if (what == &play.prev) o? one.prev() : two.prev();
+        if (what == &play.Next) o? one.Next() : two.Next();
+        if (what == &play.Prev) o? one.Prev() : two.Prev();
 
         if (what == &ones) one.go(ones.selected);
         if (what == &Ones) one.go(Ones.selected);
@@ -181,6 +184,13 @@ widget<App>
         if (what == &ones
         or  what == &Ones)
             one.play();
+
+        if (what == &twos) two.go(twos.selected);
+        if (what == &Twos) two.go(Twos.selected);
+        if (alpha.to == 255)
+        if (what == &twos
+        or  what == &Twos)
+            two.play();
 
         if (what == &ones
         or  what == &Ones
@@ -193,13 +203,18 @@ widget<App>
             play.play.show(one.status != sfx::media::state::playing);
             play.stop.show(one.status == sfx::media::state::playing);
         }
+        if (what == &two)
+        {
+            play.play.show(two.status != sfx::media::state::playing);
+            play.stop.show(two.status == sfx::media::state::playing);
+        }
 
         if (what == &trans)
         {
-            sys::settings::save("app::rus",
-                trans.on? 1:0);
-            one.translated =
-                trans.on;
+            sys::settings::save(
+            "app::rus", trans.on? 1:0);
+            one.translated = trans.on;
+            two.translated = trans.on;
         }
 
         if (what == &slow)
@@ -228,6 +243,7 @@ widget<App>
         if (what == &mode)
         {
             one.playmode = mode.on;
+            two.playmode = mode.on;
             sys::settings::save("app::mode",
             mode.on? 1:0);
         }
@@ -235,6 +251,7 @@ widget<App>
         if (what == &mute)
         {
             one.mute = mute.on;
+            two.mute = mute.on;
             dic.left.quot.object.mute.on = mute.on;
             sys::settings::save("app::mute",
             mute.on? 1:0);

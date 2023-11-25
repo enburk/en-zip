@@ -29,6 +29,7 @@ namespace content::out
         course (path dir)
         {
             root.units = scan(dir);
+            root.init(max<int>());
             root.sort();
 
             std::ranges::
@@ -45,10 +46,8 @@ namespace content::out
 
             if (level < 3)
             out << "scan " + str(dir);
-            for (std::filesystem::directory_iterator
-                next(dir), end; next != end; ++next)
+            for (path path: sys::paths(dir))
             {
-                path path = next->path();
                 str fn = is_directory(path) ?
                 str(path.filename()):
                 str(path.stem());
@@ -80,7 +79,7 @@ namespace content::out
                 }
 
                 array<str> lines =
-                sys::in::text_lines(path);
+                sys::text_lines(path);
 
                 topic topic{path, lines};
                 
@@ -88,8 +87,7 @@ namespace content::out
                 topic.formatted();
 
                 if (Lines != lines)
-                sys::out::write(path,
-                    Lines);
+                sys::write(path, Lines);
 
                 str header = unit.path;
                 header.replace_all("/", gray("/"));

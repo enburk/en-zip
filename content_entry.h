@@ -101,9 +101,21 @@ namespace content::out
                 return;
             }
 
-            if (s.contains(
-            one_of ("/|{}()[]")))
-            anomaly = "{}()[]";
+            {
+                str x = s;
+                x.replace_all("|","");
+                x.replace_all("/","");
+                x.replace_all("\\","");
+                x.replace_all("(1)","");
+                x.replace_all("(2)","");
+                x.replace_all("(3)","");
+                x.replace_all("(4)","");
+                x.replace_all("{Br.}","");
+                x.replace_all("{Am.}","");
+                if (x.contains(one_of ("{}()")) or
+                commt.contains(one_of ("{}")))
+                anomaly = "{}()[]";
+            }
 
             s.replace_all("||","|");
             s.replace_all("//","/");
@@ -136,11 +148,9 @@ namespace content::out
                 s.extract_upto("\\\\");
                 uk += k.split_by("/");
                 us += s.split_by("/");
-                anomaly = "Br/Am";
             }
             else
             {
-                if (br or  am) anomaly = "Br/Am";
                 if (br and am) errors += "Br. & Am."; else
                 if (br) uk += s.split_by("/"); else
                 if (am) us += s.split_by("/"); else

@@ -12,17 +12,17 @@ namespace studio::dic
         void load ()
         {
             std::filesystem::path dir = "../data/report";
-            errors = sys::in::optional_text_lines(dir/"dic_errors.txt");
-            usages = sys::in::optional_text_lines(dir/"dic_usages.txt");
-            statts = sys::in::optional_text_lines(dir/"dic_statts.txt");
+            errors = sys::optional_text_lines(dir/"dic_errors.txt");
+            usages = sys::optional_text_lines(dir/"dic_usages.txt");
+            statts = sys::optional_text_lines(dir/"dic_statts.txt");
             usages.resize(1000);
         }
         void save ()
         {
             std::filesystem::path dir = "../data/report";
-            sys::out::write(dir/"dic_errors.txt", errors);
-            sys::out::write(dir/"dic_usages.txt", usages);
-            sys::out::write(dir/"dic_statts.txt", statts);
+            sys::write(dir/"dic_errors.txt", errors);
+            sys::write(dir/"dic_usages.txt", usages);
+            sys::write(dir/"dic_statts.txt", statts);
         }
         void clear()
         {

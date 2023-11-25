@@ -109,7 +109,7 @@ namespace media::video
             }
         }
 
-        return sys::in::bytes(cache);
+        return sys::bytes(cache);
     }
     catch (std::exception & e) {return
         aux::error("media::video::readsample:"

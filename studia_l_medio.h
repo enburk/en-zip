@@ -48,7 +48,7 @@ namespace studia
                     txtpath.filename());
                 }
                 else
-                sys::out::write(txtpath, s.lines());
+                sys::write(txtpath, s.lines());
                 // crop can be changed
                 select(str(datpath));
             }
@@ -115,7 +115,7 @@ namespace studia
 
             filepath.html = tree;
             filename_text = str(datpath.stem());
-            textfile_text = sys::in::optional_text(txtpath);
+            textfile_text = sys::optional_text(txtpath);
             filename.text = filename_text;
             textfile.text = textfile_text;
             filename.read_only = true;

@@ -17,7 +17,7 @@ namespace media::out
             std::filesystem::path txt = path;
             txt.replace_extension(".txt");
             if (!std::filesystem::exists(txt)) return;
-            for (str text = sys::in::text(txt); str line: text.lines())
+            for (str text = sys::text(txt); str line: text.lines())
             {
                 line.strip(); if (line == "") continue;
 

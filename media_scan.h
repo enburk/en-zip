@@ -52,7 +52,7 @@ namespace media::scan
 
                 auto credit = path / "!credit.txt";
                 if (std::filesystem::exists(credit))
-                    resource.credit = str(sys::in::
+                    resource.credit = str(sys::
                     text_lines(credit), "<br>"),
                     identified[credit] = true;
 

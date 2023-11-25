@@ -122,6 +122,10 @@ widget<studia_r>
         if (what == &ones)
             link = ones.link,
             notify(&link);
+        
+        if (what == &oness)
+            link = oness.link,
+            notify(&link);
 
         if (what == &search.link)
             link = "one://" +

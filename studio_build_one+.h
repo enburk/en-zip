@@ -4,49 +4,34 @@ namespace studio::one
 {
     namespace report
     {
-        array<str> errors;
-        array<str> anomal;
-        array<str> duples;
-        array<str> audiom, audiop, audioq;
-        array<str> videom, videop, videoq;
-        void load ()
+        struct report;
+        std::map<str, report*> map;
+        struct report
         {
-            std::filesystem::path dir = "../data/report";
-            errors = sys::in::optional_text_lines(dir/"one_errors.txt");
-        //  anomal = sys::in::optional_text_lines(dir/"one_anomal.txt");
-            duples = sys::in::optional_text_lines(dir/"one_duples.txt");
-        //  audiom = sys::in::optional_text_lines(dir/"one_audiom.txt");
-        //  videom = sys::in::optional_text_lines(dir/"one_videom.txt");
-            audiop = sys::in::optional_text_lines(dir/"one_audiop.txt");
-            videop = sys::in::optional_text_lines(dir/"one_videop.txt");
-            audioq = sys::in::optional_text_lines(dir/"one_audioq.txt");
-            videoq = sys::in::optional_text_lines(dir/"one_videoq.txt");
-        }
-        void save ()
-        {
-            std::filesystem::path dir = "../data/report";
-            sys::out::write(dir/"one_errors.txt", errors);
-            sys::out::write(dir/"one_anomal.txt", anomal);
-            sys::out::write(dir/"one_duples.txt", duples);
-            sys::out::write(dir/"one_audiom.txt", audiom);
-            sys::out::write(dir/"one_videom.txt", videom);
-            sys::out::write(dir/"one_audiop.txt", audiop);
-            sys::out::write(dir/"one_videop.txt", videop);
-            sys::out::write(dir/"one_audioq.txt", audioq);
-            sys::out::write(dir/"one_videoq.txt", videoq);
-        }
-        void clear()
-        {
-            errors.clear();
-            anomal.clear();
-            duples.clear();
-            audiom.clear();
-            videom.clear();
-            audiop.clear();
-            videop.clear();
-            audioq.clear();
-            videoq.clear();
-        }
+            str name;
+            array<str> log;
+            report (str name) : name(name) { map[name] = this; }
+            void operator += (auto&& s) { log += std::forward<decltype(s)>(s); }
+            path file () { return "../data/report/one_"+name+".txt"; }
+            void load () { log = sys::optional_text_lines(file()); }
+            void save () { sys::write(file(), log); }
+        };
+
+        report errors("errors");
+        report anoma1("anoma1");
+        report anoma2("anoma2");
+        report anomal("anomal");
+        report duples("duples");
+        report audiom("audiom");
+        report audiop("audiop");
+        report audioq("audioq");
+        report videom("videom");
+        report videop("videop");
+        report videoq("videoq");
+
+        void load () { for (auto& [name, report]: map) report->load(); }
+        void save () { for (auto& [name, report]: map) report->save(); }
+        void clear() { for (auto& [name, report]: map) report->log.clear(); }
     }
 
     using Res = media::resource;
@@ -106,6 +91,40 @@ namespace studio::one
 
             str b = eng::backform(s, form);
             if (b != s)  co_yield b;
+        }
+    }
+
+    void reporting (
+        content::out::course const& course,
+        hashmap<str, voc> const& course_vocabulary)
+    {
+        for (auto [s,voc]: course_vocabulary)
+        {
+            if (voc.entries.size() < 2)
+                continue;
+
+            int actual = 0;
+            for (ent entry: voc.entries)
+            if  (not entry->opt.external.contains("HEAD")
+            and  not entry->opt.internal.contains("duple"))
+                actual++;
+
+            int duples = 0;
+            for (ent entry: voc.entries)
+            if  (entry->opt.internal.contains("duple"))
+                duples++;
+
+            if (actual == 0 and duples != 0) {
+            for (ent entry: voc.entries)
+            report::anoma1 += link(entry);
+            report::anoma1 += ""; }
+
+            if (actual == 0)
+                continue;
+
+            for (ent entry: voc.entries)
+            report::duples += link(entry);
+            report::duples += "";
         }
     }
 

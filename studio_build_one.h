@@ -16,17 +16,16 @@ namespace studio::one
         content::logs::out = out;
         content::logs::err = err;
         content::out::course course("content");
-        if (true) sys::out::file("../data/course.dat") << course.root;
-        if (true) sys::out::file("../data/course_entries.dat") << course.entries;
-        if (true) sys::out::file("../data/course_searchmap.dat") << course.searchmap;
 
         report::clear();
-        report::errors = course.errors;
-        report::anomal = course.anomal;
+        report::errors += course.errors;
+        report::anomal += course.anomal;
         
-        if (not report::errors.empty()) {
+        if (not report::errors.log.empty()) {
         err << red(bold("ONE ERRORS:"));
-        err << report::errors; }
+        err << report::errors.log; }
+
+        array<std::pair<ent, array<res>>> multivideo;
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
@@ -46,24 +45,8 @@ namespace studio::one
                 emplace(f);
         }
 
-        for (auto [s,voc]: course_vocabulary)
-        {
-            if (voc.entries.size() >= 2)
-            {
-                int actual = 0;
-                for (ent entry: voc.entries)
-                if  (not entry->opt.external.contains("HEAD")
-                and  not entry->opt.external.contains("duple"))
-                    actual++;
-
-                if (actual == 0)
-                    continue;
-
-                for (ent entry: voc.entries)
-                report::duples += link(entry);
-                report::duples += "";
-            }
-        }
+        reporting(course,
+        course_vocabulary);
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
 
@@ -216,6 +199,8 @@ namespace studio::one
             bool sound_ok = not soundio;
             bool video_ok = nopixed;
 
+            array<res> videos;
+
             for (str& s: entry.vocabulary)
             for (res& r: course_vocabulary[s].resources)
             {
@@ -224,6 +209,9 @@ namespace studio::one
 
                 if (r->kind == "audio"
                 and noaudio) continue;
+
+                if (r->kind == "video")
+                    videos += r;
 
                 data.one_add(i, r);
 
@@ -251,6 +239,12 @@ namespace studio::one
             if (not us.empty()) report::audiom += linked(s + uss, entry.link);
             if (not sound_ok  ) report::audiom += linked(s + snd, entry.link);
             if (not video_ok  ) report::videom += linked(s + " ", entry.link);
+
+            videos.deduplicate();
+            if (videos.size() >= 2)
+            multivideo += std::make_pair(
+                &course.entries[i],
+                std::move(videos));
         }
 
         out << dark(bold("ONE: MAKE REPORTS..."));
@@ -282,5 +276,108 @@ namespace studio::one
         }
 
         report::save();
+
+        if (true)
+        {
+            auto& debug = course.root.add_theme(99, "Debug");
+
+            auto& anomal = debug.
+            add_theme(10, "Anomal").
+            add_topic(00, "anomal").
+            add_chain(00);
+
+            for (auto [i,entry]: enumerate(course.entries))
+            if (entry.anomaly != "")
+                anomal.add_leaf(i).
+                entry = i;
+
+            auto& multi = debug.add_theme(20, "Multivideo"); multi.units.reserve(2);
+            auto& oldes = multi.add_theme(10, "Old").add_topic(00, "old").add_chain(00);
+            auto& newes = multi.add_theme(20, "New").add_topic(00, "new").add_chain(00);
+
+            hashmap<str, array<str>> old_ones;
+
+            path dir = "../data/report";
+            path dir_old = dir / "multivideo_old";
+            path dir_new = dir / "multivideo_new";
+            std::filesystem::remove_all(dir_new);
+            for (path path: sys::files (dir_old))
+            {
+                array<str> lines = sys::optional_text_lines(path);
+                while (not lines.empty())
+                {
+                    if (lines.front().empty()) break;
+                    int n = std::stoi(lines.front());
+                    if (n < 0 or n+2 >= lines.size())
+                        throw std::runtime_error(
+                        "multivideo_old: n = "+str(n)+
+                        " size = "+str(lines.size()));
+
+                    auto& ress =
+                    old_ones[lines[1]];
+                    ress.reserve(n);
+                    ress.clear();
+
+                    for (int i=0; i<n; i++)
+                    ress += lines[i+2];
+
+                    lines.upto(n+2).erase();
+                }
+            }
+
+            array<str> list; int listn = 1;
+        //  str date = std::format("{%Y-%m-%d %H.%M.%S} ", std::chrono::system_clock::now());
+            std::time_t ctime =
+            std::chrono::system_clock::to_time_t(
+            std::chrono::system_clock::now());
+            std::stringstream stringstream;
+            stringstream << std::put_time(
+            std::gmtime(&ctime), "%Y-%m-%d %H.%M.%S ");
+            str date = stringstream.str();
+
+            for (auto [entry, ress]: multivideo)
+            {
+                bool old = false;
+                str s = entry->formatted(30,80);
+                auto it = old_ones.find(s);
+                if (it != old_ones.end()
+                and it->second.size() == ress.size())
+                {
+                    old = true;
+                    for (int i=0; i<ress.size(); i++)
+                    if (it->second[i] != ress[i]->id)
+                    old = false;
+                }
+
+                if (not old)
+                list += std::to_string(ress.size()),
+                list += s;
+
+                for (res r: ress)
+                {
+                    int n = course.entries.size(); if (old)
+                    oldes.add_leaf(oldes.units.size()).entry = n; else
+                    newes.add_leaf(newes.units.size()).entry = n;
+                    course.entries += *entry;
+                    data.one_add(n, r);
+
+                    if (not old)
+                    list += r->id;
+                }
+
+                if (list.size() >= 100)
+                sys::write(dir_new / (date +
+                str(listn++).right_aligned(6, '0')), list),
+                list.clear();
+            }
+
+            if (list.size() >= 0)
+            sys::write(dir_new / (date +
+            str(listn++).right_aligned(6, '0')), list),
+            list.clear();
+        }
+        if (true) sys::out::file("../data/course.dat") << course.root;
+        if (true) sys::out::file("../data/course_entries.dat") << course.entries;
+        if (true) sys::out::file("../data/course_searchmap.dat") << course.searchmap;
     }
 }

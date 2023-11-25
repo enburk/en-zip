@@ -22,9 +22,9 @@ namespace content
         str path;
         int order = 0;
         int entry = -1;
-        array<unit> units;
-        unit* parent = nullptr;
         enum Kind {theme, topic, chain, leaf} kind = leaf;
+        unit* parent = nullptr;
+        array<unit> units;
 
         void init (int number_of_entries)
         {
@@ -133,5 +133,22 @@ namespace content
             pool << x.entry;
             pool << x.units;
         }
+
+        unit& add (Kind Kind, int Order, str Name)
+        {
+            unit unit;
+            unit.kind = Kind;
+            unit.name = Name;
+            unit.order = Order;
+            unit.parent = this;
+            unit.path = Name == "" ? "" : path == "" ?
+            unit.name : path + "/" + unit.name;
+            units += unit; return
+            units.back();
+        }
+        unit& add_theme (int Order, str Name) { return add(theme, Order, Name); }
+        unit& add_topic (int Order, str Name) { return add(topic, Order, Name); }
+        unit& add_chain (int Order) { return add(chain, Order, ""); }
+        unit& add_leaf  (int Order) { return add(leaf , Order, ""); }
     };
 }

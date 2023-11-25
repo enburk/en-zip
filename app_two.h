@@ -1,29 +1,147 @@
 #pragma once
 #include "app.h"
+#include "app_two_stage.h"
 namespace app::two
 {
     struct view:
     widget<view>
     {
-        gui::canvas canvas;
+        stage  stages[3];
+        stage& stage = stages[1];
+        str where;
 
-        void reload ()
+        property<bool> playmode = false;
+        property<bool> translated = false;
+
+        sfx::media::medio medio;
+
+        using state = sfx::media::state;
+
+#define using(x) decltype(medio.x)& x = medio.x;
+        using(mute)
+        using(volume)
+        using(loading)
+        using(playing)
+        using(resolution)
+        using(duration)
+        using(elapsed)
+        using(status)
+        using(error)
+        #undef using
+
+        using unit = content::unit;
+
+        void reload () try
         {
+            go(sys::settings::load(
+              "app::two::path", ""));
+        }
+        catch (std::exception const& e) {
+            logs::errors << bold(red(
+                e.what())); }
+
+        void play ()
+        {
+            medio.stay();
+            medio.play();
+            stage.play();
+            notify();
+        }
+        void stop ()
+        {
+            medio.stop();
+            stage.stop();
+            notify();
+        }
+
+        void next ()
+        {
+            stage.next();
+            notify();
+        }
+        void prev ()
+        {
+            medio.stop();
+            stage.stop();
+            stage.prev();
+            notify();
+        }
+
+        void Next ()
+        {
+        }
+        void Prev ()
+        {
+        }
+
+        void go (str path)
+        {
+            stage.where = course.find(path);
+            stage.fill();
+
+            where =
+            stage.theme ?
+            stage.theme->path:red(bold(path));
+            where.replace_all("/", blue("/"));
+            where.replace_all("''Extra''",
+                extracolor("Extra"));
+
+            sys::settings::save(
+            "app::two::path",
+            stage.theme ?
+            stage.theme->path:
+                "");
         }
 
         void on_change (void* what) override
         {
-            if (what == &coord && coord.was.size != coord.now.size)
+            if (what == &coord and
+                coord.was.size !=
+                coord.now.size)
             {
-                int W = coord.now.w;
-                int H = coord.now.h;
+                stage.coord = coord.now.local();
+            }
 
-                canvas.coord = xywh(0, 0, W, H);
-            }
-            if (what == &skin)
+            if (what == &playing)
             {
-                canvas.color = gui::skins[skin.now].light.first;
+                switch(stage.status) {
+                case state::ready:
+                case state::paused:
+                    stage.show();
+                    stage.play();
+                    notify();
+                    break;
+                case state::finished:
+                    //stage.next();
+                    //stage.show();
+                    //stage.play();
+                    medio.done();
+                    notify();
+                    break;
+                default:
+                    break;
+                }
             }
+
+            if (what == &playmode)
+                for (auto& s: stages)
+                    s.playmode =
+                      playmode;
+
+            if (what == &translated)
+                for (auto& s: stages)
+                    s.translated =
+                      translated;
+
+            if (what == &volume)
+                for (auto& s: stages)
+                    s.volume =
+                      volume;
+
+            if (what == &mute)
+                for (auto& s: stages)
+                    s.mute =
+                      mute;
         }
     };
 }

@@ -1,5 +1,5 @@
-pronouns           = местоимения       # 10+
-personal pronouns  = личные местоимения # 10+
+pronouns           = местоимения                    # 10+
+personal pronouns  = личные местоимения             # 10+
 ===
 subjective case    = именительный падеж
 
@@ -13,11 +13,12 @@ you                = ты, вы, Вы
 ===
 he                 = он
 she                = она
-it                 = оно %% о неодушевленных предметах ~ и животных     # duple /// also: objective case
+it                 = оно %% о неодушевленных предметах ~ и животных # duple /// also: objective case
 
 ===
 we                 = мы
 they               = они
+
 
 
 

@@ -158,8 +158,6 @@
     <ClInclude Include="app_contents+.h" />
     <ClInclude Include="app_contents.h" />
     <ClInclude Include="app_dic.h" />
-    <ClInclude Include="app_dic_html.h" />
-    <ClInclude Include="app_dic_html_wiki.h" />
     <ClInclude Include="app_dic_left.h" />
     <ClInclude Include="app_dic_left_card.h" />
     <ClInclude Include="app_dic_left_quot.h" />
@@ -169,6 +167,7 @@
     <ClInclude Include="app_dic_media.h" />
     <ClInclude Include="app_dic_media_audio.h" />
     <ClInclude Include="app_dic_media_video.h" />
+    <ClInclude Include="app_dic_wiki.h" />
     <ClInclude Include="app_one.h" />
     <ClInclude Include="app_one_entry.h" />
     <ClInclude Include="app_one_slide.h" />

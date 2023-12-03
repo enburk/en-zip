@@ -8,7 +8,7 @@ namespace studia
         path datpath;
         path txtpath;
 
-        using text = app::dic::html_view;
+        using text = app::text::view;
         using edln = gui::text::one_line_editor;
         using edit = gui::text::editor;
         using Edln = gui::area<edln>;

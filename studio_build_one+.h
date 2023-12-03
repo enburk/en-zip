@@ -130,9 +130,9 @@ namespace studio::one
 
     struct sensecontrol
     {
-        hashmap<str, hashmap<ent, bool>> entrification;
-        hashmap<str, hashmap<res, bool>> pronunciation;
-        hashmap<str, hashmap<res, bool>> visualisation;
+        hashmap<str, hashmap<ent, bool>> vocabs;
+        hashmap<str, hashmap<res, bool>> audios;
+        hashmap<str, hashmap<res, bool>> videos;
 
         sensecontrol
         (
@@ -140,11 +140,18 @@ namespace studio::one
             array<Res>& resources
         )
         {
-            for (auto& entry: entries) if (entry.sense != "")
-            for (str s: entry.vocabulary)
+            for (auto& entry: entries)
             {
-                str sense = s.extract_from("@");
-                entrification[s][&entry] = false;
+                if (entry.sense == ""
+                or  entry.sense == "@")
+                    continue;
+
+                for (str s: entry.vocabulary)
+                {
+                    str dummy = 
+                    s.extract_from("@");
+                    vocabs[s][&entry] = false;
+                }
             }
 
             for (auto& r: resources)
@@ -153,38 +160,39 @@ namespace studio::one
                 str abstract = simple(r.
                     abstract);
 
-                str sense = abstract.
-                    extract_from("@");
+                str dummy = 
+                abstract.extract_from("@");
 
                 if (r.kind == "video"
                 or  r.kind == "audio"
                 and r.options.contains("sound"))
-                visualisation[abstract][&r] = false; else
-                pronunciation[abstract][&r] = false;
+                videos[abstract][&r] = false; else
+                audios[abstract][&r] = false;
             }
 
             for (auto& entry: entries)
             {
+                if (entry.sense == "@") continue;
                 if (entry.sense == "")
                 {
                     for (str s: entry.vocabulary)
-                    if (pronunciation.contains(s)
-                    or  visualisation.contains(s))
+                    if (audios.contains(s)
+                    or  videos.contains(s))
                     {
                         report::errors += bold(
                         red("sensless: ")) +
                         link(entry);
 
-                        if (entrification.contains(s))
-                        for (auto [e,_]: entrification[s]) if (e != &entry)
+                        if (vocabs.contains(s))
+                        for (auto [e,_]: vocabs[s]) if (e != &entry)
                         report::errors += link(e);
 
-                        if (pronunciation.contains(s))
-                        for (auto [r,_]: pronunciation[s])
+                        if (audios.contains(s))
+                        for (auto [r,_]: audios[s])
                         report::errors += link(r);
 
-                        if (visualisation.contains(s))
-                        for (auto [r,_]: visualisation[s])
+                        if (videos.contains(s))
+                        for (auto [r,_]: videos[s])
                         report::errors += link(r);
                     }
                 }
@@ -194,23 +202,62 @@ namespace studio::one
                     {
                         str sense = s.extract_from("@");
 
-                        if (pronunciation.contains(s))
-                        for (auto& [r, ok]: pronunciation[s])
-                        if (r->sense == sense) ok = true;
+                        if (audios.contains(s))
+                        for (auto& [r, used]: audios[s])
+                        if (r->sense == sense) used = true;
 
-                        if (visualisation.contains(s))
-                        for (auto& [r, ok]: visualisation[s])
-                        if (r->sense == sense) ok = true;
+                        if (videos.contains(s))
+                        for (auto& [r, used]: videos[s])
+                        if (r->sense == sense) used = true;
                     }
+                }
+            }
+
+            for (auto& r: resources)
+            {
+                if (r.sense != "") continue;
+                str abstract = simple(r.
+                    abstract);
+
+                str sense = 
+                abstract.extract_from("@");
+                str s = abstract;
+
+                auto& medios = false
+                or  r.kind == "video"
+                or  r.kind == "audio"
+                and r.options.contains("sound") ?
+                    videos :
+                    audios;
+
+                if (vocabs.contains(s)
+                or  medios.contains(s))
+                {
+                    report::errors += bold(
+                    red("sensless: ")) +
+                    link(&r);
+
+                    if (vocabs.contains(s))
+                    for (auto [e,_]: vocabs[s])
+                    report::errors += link(e);
+
+                    if (medios.contains(s))
+                    for (auto [r,_]: medios[s])
+                    report::errors += link(r);
                 }
             }
         }
 
+        // do not report immediately
+        // all unused senses of resources,
+        // allow some for dictionary sake,
+        // report only if resource wasn't used at all
+
         void report_unused (hashset<res>& unused_resources)
         {
-            for (auto X: {&pronunciation, &visualisation})
-            for (auto& [s, x]: *X) for (auto& [R, ok]: x)
-            if  (not ok and unused_resources.contains(R))
+            for (auto X: {&audios, &videos})
+            for (auto& [s, x]: *X) for (auto& [R, used]: x)
+            if  (not used and unused_resources.contains(R))
             {
                 unused_resources.erase(R);
 
@@ -218,16 +265,16 @@ namespace studio::one
                 red("unused sense: ")) +
                 link(R);
 
-                if (entrification.contains(s))
-                for (auto [e,_]: entrification[s])
+                if (vocabs.contains(s))
+                for (auto [e,_]: vocabs[s])
                 report::errors += link(e);
 
-                if (pronunciation.contains(s))
-                for (auto [r,_]: pronunciation[s]) if (r != R)
+                if (audios.contains(s))
+                for (auto [r,_]: audios[s]) if (r != R)
                 report::errors += link(r);
 
-                if (visualisation.contains(s))
-                for (auto [r,_]: visualisation[s]) if (r != R)
+                if (videos.contains(s))
+                for (auto [r,_]: videos[s]) if (r != R)
                 report::errors += link(r);
             }
         }

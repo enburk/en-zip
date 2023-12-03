@@ -202,6 +202,7 @@
     <ClInclude Include="studio_build.h" />
     <ClInclude Include="studio_build_dic+.h" />
     <ClInclude Include="studio_build_dic.h" />
+    <ClInclude Include="studio_build_one++.h" />
     <ClInclude Include="studio_build_one+.h" />
     <ClInclude Include="studio_build_one.h" />
     <ClInclude Include="studio_dic.h" />

@@ -21,11 +21,11 @@ namespace report = studio::one::report;
             array<int> readiness;
             consobar ()
             {
-                consoles += &errors; reports += &report::errors; readiness += 0;
-                consoles += &duples; reports += &report::duples; readiness += 0;
-                consoles += &anoma1; reports += &report::anoma1; readiness += 0;
-                consoles += &anoma2; reports += &report::anoma2; readiness += 0;
-                consoles += &anomal; reports += &report::anomal; readiness += 0;
+                consoles += &errors; reports += &report::errors; readiness += 1;
+                consoles += &duples; reports += &report::duples; readiness += 1;
+                consoles += &anoma1; reports += &report::anoma1; readiness += 1;
+                consoles += &anoma2; reports += &report::anoma2; readiness += 1;
+                consoles += &anomal; reports += &report::anomal; readiness += 1;
                 for (auto& c: consoles)
                 c->hide();
             }
@@ -105,6 +105,12 @@ namespace report = studio::one::report;
                 and not link.starts_with("file://"))
                 link = "one://" + link;
                 notify();
+            }
+            if (what == &alpha && shown())
+            {
+                int n =
+                selector.object.selected.now;
+                consobar.object.prepare(n);
             }
         }
     };

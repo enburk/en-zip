@@ -1,13 +1,12 @@
 #pragma once
 #include "eng_parser.h"
-#include "app_dic_html.h"
 #include "app_dic_media.h"
 namespace app::dic::audio
 {
     struct player:
     widget<player>
     {
-        html_view text;
+        text::page text;
         sfx::audio::player audio;
         sfx::media::medio medio;
 

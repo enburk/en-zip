@@ -290,7 +290,9 @@ namespace app::one
                 }
             }
 
-            if (what == &translated)
+            if (what == &translated
+            // prevent fill on start
+            and not entries.empty())
                 fill();
 
             if (what == &volume)

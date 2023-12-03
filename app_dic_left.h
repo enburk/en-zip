@@ -1,5 +1,5 @@
 #pragma once
-#include "app_dic_html_wiki.h"
+#include "app_dic_wiki.h"
 #include "app_dic_left_card.h"
 #include "app_dic_left_quot.h"
 namespace app::dic::left

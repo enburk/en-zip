@@ -6,7 +6,7 @@ namespace app::dic::left
     struct card:
     widget<card>
     {
-        text::view text;
+        text::page text;
         
         sfx::media::
         sequencer<video::player> video;

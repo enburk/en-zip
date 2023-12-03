@@ -39,6 +39,10 @@ widget<App>
 
     App ()
     {
+        #ifndef STANDALONE_APP
+        hide();
+        #endif
+
         skin = "gray+";
         canvas.color =
         gui::skins[skin].ultralight.first;
@@ -178,18 +182,18 @@ widget<App>
         if (what == &play.Next) o? one.Next() : two.Next();
         if (what == &play.Prev) o? one.Prev() : two.Prev();
 
-        if (what == &ones) one.go(ones.selected);
-        if (what == &Ones) one.go(Ones.selected);
-        if (alpha.to == 255)
+        if (what == &ones) one.go(ones.selected, shown());
+        if (what == &Ones) one.go(Ones.selected, shown());
         if (what == &ones
         or  what == &Ones)
+        if (shown())
             one.play();
 
-        if (what == &twos) two.go(twos.selected);
-        if (what == &Twos) two.go(Twos.selected);
-        if (alpha.to == 255)
+        if (what == &twos) two.go(twos.selected, shown());
+        if (what == &Twos) two.go(Twos.selected, shown());
         if (what == &twos
         or  what == &Twos)
+        if (shown())
             two.play();
 
         if (what == &ones

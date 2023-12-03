@@ -18,12 +18,12 @@ namespace report = studio::one::report;
             array<int> readiness;
             consobar ()
             {
-                consoles += &audiom; reports += &report::audiom; readiness += 0;
-                consoles += &videom; reports += &report::videom; readiness += 0;
-                consoles += &audiop; reports += &report::audiop; readiness += 0;
-                consoles += &videop; reports += &report::videop; readiness += 0;
-                consoles += &audioq; reports += &report::audioq; readiness += 0;
-                consoles += &videoq; reports += &report::videoq; readiness += 0;
+                consoles += &audiom; reports += &report::audiom; readiness += 1;
+                consoles += &videom; reports += &report::videom; readiness += 1;
+                consoles += &audiop; reports += &report::audiop; readiness += 1;
+                consoles += &videop; reports += &report::videop; readiness += 1;
+                consoles += &audioq; reports += &report::audioq; readiness += 1;
+                consoles += &videoq; reports += &report::videoq; readiness += 1;
                 for (auto& c: consoles)
                 c->hide();
             }
@@ -95,6 +95,12 @@ namespace report = studio::one::report;
                 int n = selector.object.selected.now;
                 for (int i=0; i<consoles.size(); i++)
                 consoles[i]->show(i == n);
+                consobar.object.prepare(n);
+            }
+            if (what == &alpha && shown())
+            {
+                int n =
+                selector.object.selected.now;
                 consobar.object.prepare(n);
             }
             if (what == &consobar)

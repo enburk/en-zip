@@ -74,9 +74,10 @@ namespace app::one
         {
         }
 
-        void go (str path)
+        void go (str path, bool app_shown = true)
         {
             stage.where = course.find(path);
+            if (app_shown)
             stage.fill();
 
             where =

@@ -21756,15 +21756,15 @@ Miranda warning ### Mid-Aged-Fem-B_Miranda-Rights_VKT_10546.txt
 Miranda warning ### Mid-Aged-Fem-B_Miranda-Rights_VKT_10546.wav
 Miranda warning ### Mid-Aged-Male-A_Miranda-Rights_VKT_11341.txt
 Miranda warning ### Mid-Aged-Male-A_Miranda-Rights_VKT_11341.wav
-mm hmm @ filler ### [Adult-Fem-F_Mm-Hmm_VKT_02532].mp3
-mm hmm @ surprised ### [Adult-Fem-B_Mm-Hmm_VKT_00586].mp3
 mm-mmm ### [Adult-Male-C_Mmm-Mmm_VKT_04259].mp3
 mmm @ gratified ### ReactionCrowd AR04_16_1.wav
+mmm hmm @ filler ### [Adult-Fem-F_Mm-Hmm_VKT_02532].mp3
 mmm hmm @ filler ### [Mid-Aged-Fem-A_Mmm-Hmm_VKT_10219].wav
 mmm hmm @ filler ### [Senior-Fem-B_Mmm-Hmm_VKT_12987].wav
 mmm hmm @ filler ### [Senior-Fem-B_Mmm-Hmm_VKT_12990].wav
 mmm hmm @ guiltily ### [Child-Young-Fem-B_Mmm-Hmm_VKT_08280].wav
 mmm hmm @ reflective ### [Adult-Male-C_Mmm-Hmm_VKT_04256].mp3
+mmm hmm @ surprised ### [Adult-Fem-B_Mm-Hmm_VKT_00586].mp3
 mmm! @ gratified ### ReactionCrowd AR04_45_1.wav
 mmm, maybe ### [Adult-Male-C_Mmm-Maybe_VKT_04258].mp3
 mmm, mmm hmm ### [Senior-Male-A_Mmm-Mmm-Hmm_VKT_13456].wav
@@ -24620,7 +24620,7 @@ An external fuel tank is jettisoned from the Space Shuttle Discovery. [external 
 Buzz Aldrin's footprint on the Moon [footprint].jpg
 >>> ../datae\photo {{$$}}\{{NASA}}/earth
 Antarctica.jpg
-atmosphere ## qrop qr.jpg
+atmosphere @ planet ## qrop qr.jpg
 Greenland ## qrop l2 t10 r2 b2.jpg
 Hurricane Isabel, 2003 [hurricane][hurricane eye][eye@hurricane] ## qrop q {{NASA $$}}.jpg
 Santorini @ volcano ## qrop qt.jpg
@@ -26537,6 +26537,7 @@ wigwam ## qrop l1 t1 {{Photo.. Aguirre_mar $dreamstime 3450250}}.jpg
 >>> ../datae\photo_dreamstime/industry
 >>> ../datae\photo_dreamstime\industry/agro
 a braid made of the hair on the horse's tail [braid] ## noqrop {{Photo.. Kasto80 $dreamstime 19660377}}.jpg
+a flock of sheep [flock@sheep]][ovine] ## qrop q {{Photo.. Softdreams $dreamstime 12384093}}.jpg
 agriculture ## qrop r10 ## qropt! {{Photo.. Dengyinchai $dreamstime 4943077}}.jpg
 angora goat [+] ## qrop ql {{Photo.. Mornay Van Vuuren $dreamstime 18598561}}.jpg
 application of insecticide [insecticide] ## qrop l17 t2 r18 {{Photo.. Roksana Bashyrova $dreamstime 67692719}}.jpg
@@ -26550,7 +26551,6 @@ farm @ agro ## qrop l24 r18 {{Photo.. Peerapong Suankaew $dreamstime 63536234}}.
 field @ agro ## qrop l26 r7 {{Photo.. Lane Erickson $dreamstime 91009098}}.jpg
 fishing boat ## qrop ql {{Photo.. Chokmoso $dreamstime 41018041}}.jpg
 fishing net ## qrop ql {{Photo.. Mikel Martinez De Osaba $dreamstime 93108192}}.jpg
-flock of sheep [flock][ovine] ## qrop q {{Photo.. Softdreams $dreamstime 12384093}}.jpg
 Friesian horse [+] ## qrop l5 r28 {{Photo.. Olga Rudneva $dreamstime 17947363}}.jpg
 goat ## qrop l9 r16 {{Photo.. Alen Dobric $dreamstime 2331206}}.jpg
 goat ## qrop q {{Photo.. Pablo255 $dreamstime 106106277}}.jpg
@@ -26801,9 +26801,49 @@ echidna ## qrop l5 r28 {{Photo.. Robert Gubiani $dreamstime 3322417}}.jpg
 Flabellina affinis [mollusc][mollusk][invertebrate][gastropods][nudibranch] {{Photo.. Salva70 $dreamstime 58308718}}.jpg
 ghost crab [crab@animal] ## qrop q {{Photo.. Ron Chapple $dreamstime 3284625}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/groups
+a charm of zebra finches [a charm of finches][charm@finches] {{Photo.. Oleg Sidashin $dreamstime 32834834}}.jpg
+a fever of stingrays [fever@stingrays][stingrays] %% spotted eagle rays {{Photo.. Andamanse $dreamstime 31634506}}.jpg
+a flock of seagulls [a flock of birds][flock@birds] {{Photo.. Pavel Shykuts $dreamstime 58027996}}.jpg
+a flock of sheep [flock@sheep] {{Photo.. Aleksandra Papova $dreamstime 84350097}}.jpg
+a gaggle of geese [gaggle][geese] {{Photo.. Nikhil Gangavane $dreamstime 3289292}}.jpg
+a herd of cows [herd@cows] {{Photo.. Dezzor $dreamstime 111054117}}.jpg
+a herd of horses [herd@horses] {{Photo.. Aleksandr  Frolov $dreamstime 10921123}}.jpg
+a murmuration of starlings [murmuration][starlings] {{Photo.. Menno67 $dreamstime 38901878}}.jpg
+a pack of wolves [pack@wolves][wolves] {{Photo.. Alanjeffery $dreamstime 31348814}}.jpg
+a pod of whales %% humpback whales [pod@whales] {{Photo.. Seadam $dreamstime 78604383}}.jpg
+a school of barracudas [a school of fish][school@fish][barracudas] {{Photo.. Paweł  Borówka $dreamstime 6480423}}.jpg
+a school of silver scad [silver scad][scad][a school of fish] {{Photo.. Jamiegodson $dreamstime 10949107}}.jpg
+a shoal of trevally [trevally][shoal@fish][a shoal of fish] {{Photo.. Iluhanos $dreamstime 76962334}}.jpg
+a skein of geese [skein@birds][geese] {{Photo.. Larry Keller $dreamstime 86844081}}.jpg
+a swarm of bees [swarm] {{Photo.. Pixbox77 $dreamstime 99202384}}.jpg
+a swarm of birds [swarm] {{Photo.. Anne Kitzman $dreamstime 1523916}}.jpg
+a team of pigs [team@pigs][passel@pigs] {{Photo.. Accept001 $dreamstime 101155019}}.jpg
+a wedge of geese [wedge@birds][geese] {{Photo.. Freds $dreamstime 96042}}.jpg
 jellyfish [jelly@fish] ## qrop q {{Photo.. Geanina Bechea $dreamstime 7122839}}.jpg
 krill ## crop r30 ## qrop ql {{Photo.. Tenedos $dreamstime 36908202}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/male-female
+a cow moose with her calves [cow elk][cow moose][cow@moose] {{Photo.. Gloria Anderson $dreamstime 74563958}}.jpg
+a jennet with a foal [jennet@donkey] {{Photo.. Pat Smith $dreamstime 78942357}}.jpg
+a she-wolf with a pup [she-wolf] {{Photo.. Betty4240 $dreamstime 59955309}}.jpg
+a snow leopard and a leopardess [leopardess] {{Photo.. Ondřej Prosický $dreamstime 80547896}}.jpg
+a whale cow with a calf [whale cow][cow@whale] {{Photo.. Melissaf84 $dreamstime 10644614}}.jpg
+billy goat {{Photo.. Jörg Hüttenhölscher $dreamstime 106062123}}.jpg
+buck @ deer {{Photo.. Bruce Macqueen $dreamstime 33920001}}.jpg
+bull moose [bull elk][bull@moose] {{Photo.. Ondřej Prosický $dreamstime 80549457}}.jpg
+doe @ deer [hind@deer] {{Photo.. Robert Franklin $dreamstime 108515190}}.jpg
+drake @ duck {{Photo.. Luboš Chlubný $dreamstime 122020221}}.jpg
+ewe {{Photo.. Laurin Rinder $dreamstime 11058414}}.jpg
+gander {{Photo.. Vasyl Helevachuk $dreamstime 29478243}}.jpg
+hen @ chicken {{Photo.. Vasyl Helevachuk $dreamstime 4779976}}.jpg
+hens and a rooster [rooster] {{Photo.. Oleg07871 $dreamstime 68396458}}.jpg
+mallard drake [mallard][drake@duck] {{Photo.. Miroslav Hlavko $dreamstime 83179165}}.jpg
+nanny goat {{Photo.. Julie Feinstein $dreamstime 21686281}}.jpg
+peacock {{Photo.. Bluraz $dreamstime 94752053}}.jpg
+peahen {{Photo.. Igor Stevanovic $dreamstime 55412239}}.jpg
+ram @ sheep {{Photo.. Topaz777 $dreamstime 80529913}}.jpg
+red fox [fox@animal] {{Photo.. Cenorman $dreamstime 120526854}}.jpg
+rooster [cock] {{Photo.. Njnightsky $dreamstime 14913128}}.jpg
+stag @ deer [hart@deer] {{Photo.. Ondřej Prosický $dreamstime 70945509}}.jpg
 Pigmy seahorse (Hippocampus bargipanti) [Hippocampus][pigmy seahorse][pigmy@small][seahorse] ## qrop ql {{Photo.. Armin Keller $dreamstime 51849974}}.jpg
 sea urchin test (hard shell) [sea urchin][test@shell] {{Photo.. Noah Browning $dreamstime 57497494}}.jpg
 seashells [shell][seashell] ## qrop qr {{Photo.. Breakermaximus $dreamstime 74887367}}.jpg
@@ -26811,13 +26851,40 @@ shells ## qrop l14 r18 ## qropt! {{Photo.. Viovita $dreamstime 51413766}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/youngsters
 bobcat kitten [+] {{Photo.. Chris Lorenz $dreamstime 16510118}}.jpg
 calf @ cow {{Photo.. Leopold Brix $dreamstime 35607708}}.jpg
+chick @ chicken {{Photo.. Deviddo $dreamstime 99713842}}.jpg
+chicken @ fowl {{Photo.. Kingan $dreamstime 72416285}}.jpg
+chicks {{Photo.. Samantha Hileman $dreamstime 93080478}}.jpg
 cougar kitten [kitten] {{Photo.. Holly Kuchera $dreamstime 68335957}}.jpg
-cubs~pups~kits @ fox {{Photo.. Janusz Pieńkowski $dreamstime 37552551}} red foxes.jpg
+cubs~pups~kits of a red fox @ fox [cubs][pups][kits] {{Photo.. Janusz Pieńkowski $dreamstime 37552551}}.jpg
+cygnet {{Photo.. Tom Meaker $dreamstime 89851776}}.jpg
+duckling {{Photo.. Deviddo $dreamstime 112355059}}.jpg
+eaglet {{Photo.. Tatiana Morozova $dreamstime 587167}}.jpg
 elephant calf [calf@animal] {{Photo.. Puwanai Ponchai $dreamstime 24506535}}.jpg
+eyas {{Photo.. Tom Meaker $dreamstime 93242281}}.jpg
+fawn @ deer {{Photo.. Andy-kim Möller $dreamstime 1099743}}.jpg
+filly {{Photo.. Maria Itina $dreamstime 56775115}}.jpg
+fledgling [fledgeling] {{Photo.. Helgaf1 $dreamstime 35706870}}.jpg
+foal @ domestic {{Photo.. Juliasha $dreamstime 17776383}} Foal first step.jpg
+foal @ domestic {{Photo.. Marek Klimek $dreamstime 23018884}}.jpg
+goslings [gosling] {{Photo.. Svetlanaz $dreamstime 113563239}}.jpg
+joey @ kangaroo {{Photo.. Regien Paassen $dreamstime 2494122}}.jpg
 kids [kid@goat] {{Photo.. Nigel Baker $dreamstime 118315018}}.jpg
 lamb {{Photo.. Lukas Gojda $dreamstime 116208372}}.jpg
-shoat [pigling] {{Photo.. Volodymyr Byrdyak $dreamstime 57173612}}.jpg
-wild boar shoat [shoat][piglet] {{Photo.. Ondřej Prosický $dreamstime 100109501}}.jpg
+leopard cub [cub@cat] {{Photo.. Maggymeyer $dreamstime 72996961}}.jpg
+leveret {{Photo.. Mariusje $dreamstime 102507041}}.jpg
+lion cub [cub@cat] {{Photo.. Anagram1 $dreamstime 20257467}}.jpg
+maggot {{Photo.. Andrey Shupilo $dreamstime 105844840}}.jpg
+mantis nymph [nymph@insect] {{Photo.. Leonid Eremeychuk $dreamstime 108741819}}.jpg
+owlet {{Photo.. Ondřej Prosický $dreamstime 100111535}}.jpg
+panther cub [cub@cat] {{Photo.. Isselee $dreamstime 6609752}}.jpg
+pupa [pupation] {{Photo.. Xiaoxia Jia $dreamstime 28656186}}.jpg
+pupa {{Photo.. Saengdao Srisupha $dreamstime 107047445}}.jpg
+rabbit kit [kit@rabbit] {{Photo.. Zelenenka $dreamstime 39774993}}.jpg
+shoat @ domestic [pigling] {{Photo.. Volodymyr Byrdyak $dreamstime 57173612}}.jpg
+tadpole {{Photo.. Mr.jarun Sangkhrim $dreamstime 45330163}}.jpg
+The nest of the {lesser whitethroat} in a gooseberry bush [nestlings][whitethroat] {{Photo.. Vasiliy Vishnevskiy $dreamstime 15175015}}.jpg
+wild boar shoat [shoat@wild] {{Photo.. Ondřej Prosický $dreamstime 100109501}}.jpg
+zebra foal [foal@wild] {{Photo.. Atakhar $dreamstime 16268628}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/~mix
 bare-faced curassow [+][Crax fasciolata][Crax] ## qrop l9 r24 {{Photo.. Ondřej Prosický $dreamstime 109258149}}.jpg
 black-cowled oriole [+][Icterus prosthemelas][Icterus] ## crop l45 r12 b34 ## qropt! {{Photo.. Ondřej Prosický $dreamstime 88565145}}.jpg
@@ -26916,6 +26983,7 @@ toucan {{Photo.. Scanrail $dreamstime 31455101}}.jpg
 violet sabrewing [sabrewing] ## qrop l25 r8 {{Photo.. Ondřej Prosický $dreamstime 67982186}}.jpg
 white peacock [peacock] ## qrop l7 r18 {{Photo.. Marta Mirecka $dreamstime 6470318}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - fish
+a school of sardines [sardine][a school of fish] ## qrop qr {{Photo.. Denis Radovanovic $dreamstime 9397781}}.jpg
 banded sea krait ({Laticauda} colubrina) [sea snake][sea krait][krait] ## qrop ql {{Photo.. Daexto $dreamstime 18476327}}.jpg
 barracuda ## qrop l22 r8 ## qropt! {{Photo.. Jaime Leonardo Gonzalez Salazar $dreamstime 31686836}}.jpg
 blue shark [shark] ## qrop l16 r18 {{Photo.. Vincent Pommeyrol $dreamstime 48547085}}.jpg
@@ -26935,7 +27003,6 @@ Picasso triggerfish [fish][lagoon triggerfish][triggerfish] ## qrop l9 r10 ## qr
 pike @ fish ## qrop l11 r14 {{Photo.. Krzysztof Odziomek $dreamstime 6439565}}.jpg
 pike @ fish ## qrop l6 r18 ## qropt! {{Photo.. Aquanaut4 $dreamstime 48559326}}.jpg
 piranha ## qrop qr {{Photo.. Gergely Zsolnai $dreamstime 33974219}}.jpg
-school of sardines [sardine][a school of fish][school@fish] ## qrop qr {{Photo.. Denis Radovanovic $dreamstime 9397781}}.jpg
 tuna ## qrop l21 r13 {{Photo.. Aquanaut4 $dreamstime 28033770}} ### Dogtooth tuna.jpg
 tuna ## qrop ql {{Photo.. Whitepointer $dreamstime 32193597}}.jpg
 whale shark ## qrop ql {{Photo.. Diverstef $dreamstime 13741282}}.jpg
@@ -27000,7 +27067,7 @@ lioness ## qrop t20 b10 ## qropt! {{Photo.. Leigh Diprose $dreamstime 20815756}}
 lynx ## qrop l22 r12 {{Photo.. Ondřej Prosický $dreamstime 80568161}}.jpg
 lynx with its prey [lynx][prey] ## qrop l40 b5 {{Photo.. Esmeralda Edenberg $dreamstime 112658274}}.jpg
 panther ## qrop l8 r26 {{Photo.. Eric Gevaert $dreamstime}}.jpg
-pride @ lions ## qrop ql {{Photo.. Kjetil Kolbjornsrud $dreamstime 45781609}}.jpg
+pride @ lions [a pride of lions] ## qrop ql {{Photo.. Kjetil Kolbjornsrud $dreamstime 45781609}}.jpg
 puma ## qrop q {{Photo.. Becqisherman $dreamstime 56322029}}.jpg
 roaring lion [roar][roaring] ## qrop l14 r19 {{Photo.. Maggymeyer $dreamstime 49185985}}.jpg
 snow leopard ## qrop t6 b4 ## qropt! {{Photo.. Abeselom Zerit $dreamstime 52679993}}.jpg

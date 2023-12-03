@@ -6,12 +6,6 @@
     <ClInclude Include="app_dic.h">
       <Filter>app-dic</Filter>
     </ClInclude>
-    <ClInclude Include="app_dic_html.h">
-      <Filter>app-dic</Filter>
-    </ClInclude>
-    <ClInclude Include="app_dic_html_wiki.h">
-      <Filter>app-dic</Filter>
-    </ClInclude>
     <ClInclude Include="app_dic_left.h">
       <Filter>app-dic</Filter>
     </ClInclude>
@@ -67,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="app_two_slide.h">
       <Filter>app-two</Filter>
+    </ClInclude>
+    <ClInclude Include="app_dic_wiki.h">
+      <Filter>app-dic</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

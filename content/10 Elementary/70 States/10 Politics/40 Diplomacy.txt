@@ -1,46 +1,47 @@
-diplomacy             = дипломатия
+diplomacy                = дипломатия
 ===
-diplomatic mission    = дипломатическая миссия             # POLIT+ # 14+
-diplomatic immunity   = дипломатический иммунитет          # POLIT- # 16+
-diplomat              = дипломат
+diplomatic mission       = дипломатическая миссия                     # POLIT+ # 14+
+diplomatic immunity      = дипломатический иммунитет                  # POLIT- # 16+
+diplomat                 = дипломат
 ===
 
-attaché               = атташе                             # 16+ /// French
-emissary              = эмиссар                            # 16+
-consul @ diplomat     = консул                             # 16+
+attaché                  = атташе                                     # 16+ /// French
+emissary                 = эмиссар                                    # 16+
+consul @ diplomat        = консул                                     # 16+
 
-official @ politics   = официальный
-protocol @ politics   = протокол, ~ протоколировать        # 16+
+official @ politics      = официальный
+protocol @ politics      = протокол, ~ протоколировать                # 16+
 
-delegation @ politics = делегация, делегирование
-mandate               = полномочие, поручение, ~ мандат    # POLIT+ # 16+
-consensus             = консенсус, согласие, ~ единодушие  # POLIT- # 16+
-debate @ politics     = дебаты, дискуссия, ~ обсуждение, спор # 14+ /// , ~ дискутировать, обсуждать
+delegation @ politics    = делегация, делегирование
+mandate                  = полномочие, поручение, ~ мандат            # POLIT+ # 16+
+consensus                = консенсус, согласие, ~ единодушие          # POLIT- # 16+
+debate @ politics        = дебаты, дискуссия, ~ обсуждение, спор      # 14+ /// , ~ дискутировать, обсуждать
 
-convention            = конвенция, соглашение              # POLIT- # 16+
-memorandum            = меморандум, ~ служебная записка    # 16+
-communiqué            = коммюнике                          # POLIT- # 16+
-ratification          = ратификация                        # 16+
+convention               = конвенция, соглашение                      # POLIT- # 16+
+memorandum               = меморандум, ~ служебная записка            # 16+
+communiqué               = коммюнике                                  # POLIT- # 16+
+ratification             = ратификация                                # 16+
 
-pact                  = пакт, договор                      # 16+
-coalition             = в политике: коалиция, ~ временный союз
-moratorium            = мораторий                          # 16+
+pact                     = пакт, договор                              # 16+
+coalition                = в политике: коалиция, ~ временный союз
+moratorium               = мораторий                                  # 16+
 ---
-escalation            = эскалация, расширение              # 16+
-confrontation         = в политике: конфронтация, ~ противостояние # 14+
-ultimatum             = ультиматум
-declaration           = декларация %% документ; заявление  # 14+
-declaration of war    = объявление войны                   # 14+
+escalation               = эскалация, расширение                      # 16+
+confrontation @ politics = в политике: конфронтация, ~ противостояние # 14+
+ultimatum                = ультиматум
+declaration              = декларация %% документ; заявление          # 14+
+declaration of war       = объявление войны                           # 14+
 
 ===
-espionage             = шпионаж, разведка
-industrial espionage  = промышленный шпионаж               # 14+
-spy                   = шпион, тайный агент
+espionage                = шпионаж, разведка
+industrial espionage     = промышленный шпионаж                       # 14+
+spy                      = шпион, тайный агент
 ===
 
-double agent          = двойной агент
-disinformation        = дезинформация
-secret service        = секретная служба                   # 16+
+double agent             = двойной агент
+disinformation           = дезинформация
+secret service           = секретная служба                           # 16+
+
 
 
 

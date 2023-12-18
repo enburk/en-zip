@@ -108,9 +108,8 @@ namespace app::video
         void on_change (void* what) override
         {
             if (what == & title)
-                clicked = title.
-                clicked,
-                notify();
+                clicked = title.clicked,
+                notify (& title);
 
             using sfx::media::state;
 

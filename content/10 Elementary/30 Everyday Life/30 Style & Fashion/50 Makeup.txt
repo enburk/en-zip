@@ -19,12 +19,13 @@ peeling @ makeup              = пилинг # 16+
 epilation                     = эпиляция # 16+
 solarium                      = солярий # 16+
 
-piercing                      = пирсинг # 18+
+piercing @ body               = пирсинг # 18+
 body art                      = боди-арт # 18+
 tattoo                        = татуировка # 18+
 
 ===
 
 hypoallergenic                = гипоаллергенный # TERM- # 14+
+
 
 

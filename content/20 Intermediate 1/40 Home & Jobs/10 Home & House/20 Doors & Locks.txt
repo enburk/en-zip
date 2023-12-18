@@ -4,7 +4,7 @@ gate @ doorway
 ---
 front door                   # 8+
 door knocker                 # 8+ /// doorknocker, ~ knocker
-handle
+door handle
 
 door lock
 latch @ door

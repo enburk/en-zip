@@ -6,6 +6,7 @@ sheep %% plural sheep
 
 pasture  # 10+
 pen @ enclosure
+stables
 
 silo     # 10+
 silage   # 10+

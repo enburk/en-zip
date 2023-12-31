@@ -27,11 +27,13 @@ compilation               = компиляция                          # 18+
 masterclass||master class = мастер-класс
 diorama                   = диорама                             # ART+ # RARE+ # 18+
 restoration               = реставрация, восстановление, ~ реконструкция # 10+
+model @ maquette          = модель, макет
 
 ===
 
 provenance                = провенанс %% история владения памятником искусства # ART+ # 16+
 authentic                 = аутентичный, подлинный              # ART+ # 16+
 attribution               = приписывание, отнесение, ~ атрибуция # ART+ # 18+
+
 
 

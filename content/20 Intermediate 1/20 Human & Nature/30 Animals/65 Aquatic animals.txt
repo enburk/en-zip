@@ -3,7 +3,9 @@ aquatic animals
 sea lion
 sea snake
 sea horse||seahorse
+
 flying fish
+swordfish
 
 pike @ fish # 8+
 
@@ -13,5 +15,9 @@ humpback whale
 whale shark
 manta ray
 moray [eel] # 8+
+---
+anemone @ flower %% flower
+[sea] anemone
+anemonefish//clownfish
 
-
+clam @ shell

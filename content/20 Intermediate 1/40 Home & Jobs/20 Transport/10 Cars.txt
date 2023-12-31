@@ -1,8 +1,10 @@
 cars
 
 rover
+roadster @ car
 monster truck
 SUV %% sport utility-vehicle
+
 milk cooling tank
 dodgem [car]\\bumper car
 
@@ -11,15 +13,17 @@ wing\\fender @ car
 wing mirror\\side-view mirror /// , ~ side mirror
 headlamp
 tail lights||taillights
+tailfin
 ---
 car door handle
 suicide door                  # 16+
 
 fuel cap
 dashboard @ car               # 10+
-seat belt
-tail fin
 horn @ car
+---
+seat @ car
+seat belt
 ---
 tyre\\tire @ car
 flat tyre\\flat tire

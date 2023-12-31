@@ -17,7 +17,7 @@ chopper @ copter          = разговорное: вертолёт            
 chopper @ knife           = секач, нож (мясника)                  # TECH- # 14+
 ---
 conductor {Br.} @ tickets = кондуктор
-conductor @ orchestra     = дирижёр
+conductor @ music         = дирижёр
 conductor @ physics       = в физике: проводник                   # 10+ /// Br. молниеотвод, громоотвод
 superconductor            = сверхпроводник                        # MATH- /// https://www.ted.com/talks/itay_talgam_lead_like_the_great_conductors
 guard\\conductor @ train  = проводник ~ (в поезде)

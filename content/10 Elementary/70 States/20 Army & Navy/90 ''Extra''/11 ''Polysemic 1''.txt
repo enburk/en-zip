@@ -6,7 +6,7 @@ guard @ sword            = гарда %% защитная часть эфеса
 guardian angel           = ангел-хранитель
 ---
 tank @ armor             = танк
-tank @ container         = бак, цистерна
+tank @ reservoir         = бак, цистерна, ~ резервуар
 tank top {Am.} @ shirt   = майка
 tank top {Br.} @ sweater = вязаный жилет
 ---

@@ -1,5 +1,10 @@
 nature
 
+landscape
+seascape
+skyscape
+icescape
+
 dawn
 alpenglow                      # 10+
 glow @ sky
@@ -46,6 +51,7 @@ pack ice %% also ''known as'' ice pack ''or'' pack # 10+
 island
 cape
 
+stream @ water
 river bend
 river mouth
 waterfall %% {Am.} {also} falls /// plural

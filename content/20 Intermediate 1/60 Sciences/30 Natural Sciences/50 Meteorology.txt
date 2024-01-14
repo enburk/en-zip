@@ -2,7 +2,7 @@ weather                      # pix-
 
 cumulus cloud                # 8+
 lenticular cloud             # 8+
-nacreous clouds              # 12+
+nacreous clouds %% (polar stratospheric clouds) # 12+
 noctilucent clouds           # 12+
 cirrus clouds                # 12+
 iridescent clouds
@@ -36,7 +36,7 @@ mammatus clouds              # 8+
 
 rough sea
 crashing wave
-waterspouts
+waterspout
 
 virga %% “dry rain”
 dust storm
@@ -44,5 +44,6 @@ dust devil
 
 blizzard
 ash cloud                    # 10+
+
 
 

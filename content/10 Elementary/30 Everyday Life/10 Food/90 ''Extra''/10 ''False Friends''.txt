@@ -38,6 +38,8 @@ de'''ss'''ert         = десерт, сладкое
 biscuit @ crisp       # audio- # pix-
 biscuit {Br.} @ crisp = печенье %% ''не'' бисквит
 biscuit {Am.} @ bun   = булочка %% ''не'' бисквит
+biscuit porcelain     = бисквитный, неглазурованный фарфор
+
 
 
 

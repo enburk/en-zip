@@ -9,11 +9,11 @@ Mount Ararat       = гора Арарат
 Tower of Babel     = Вавилонская башня
 Sodom and Gomorrah = Содом и Гоморра
 
-Exodus             = Исход %% исход евреев из Египта; ~ вторая книга Ветхого Завета
+Exodus             = Исход
 Moses              = Моисей
 manna              = манна
 
-David              = Давид
+David @ biblical   = Давид
 Goliath            = Голиаф
 
 Solomon            = Соломон         # TERM-
@@ -44,5 +44,6 @@ Pontius Pilate     = Понтий Пилат    # TERM+
 Book of Revelation//Apocalypse = Откровение Иоанна Богослова, ~ Апокалипсис %% последняя книга ~ Нового Завета
 apocalypse         = апокалипсис, ~ конец света
 Armageddon         = Армагеддон %% место последней битвы добра со злом; ~ сама битва
+
 
 

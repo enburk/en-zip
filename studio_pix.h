@@ -7,6 +7,7 @@ namespace studio::pixer
     {
         gui::canvas canvas;
         gui::area<gui::text::one_line_editor> edit;
+        gui::button button_sec;
         gui::button button_pix;
         gui::button button_png;
         gui::button button_jpg;
@@ -20,6 +21,7 @@ namespace studio::pixer
 
         studio ()
         {
+            button_sec.text.text = "shot in 5 sec";
             button_pix.text.text = "shot!";
             button_png.text.text = "png";
             button_jpg.text.text = "jpg";
@@ -50,6 +52,7 @@ namespace studio::pixer
 
             canvas.coord = xywh(0, 0, W, H);
 
+            button_sec.coord = xywh(3*w + 0*v, 0, w, h);
             button_pix.coord = xywh(4*w + 0*v, 0, w, h);
             button_l  .coord = xywh(5*w + 0*v, 0, v, h);
             button_t  .coord = xywh(5*w + 1*v, 0, v, h);
@@ -108,6 +111,11 @@ namespace studio::pixer
                 ultralight.first;
             }
 
+            if (what == &button_sec)
+            {
+                what =  &button_pix,
+                std::this_thread::sleep_for(5s);
+            }
             if (what == &button_pix)
             {
                 sys::app_instance::app->hide();

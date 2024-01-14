@@ -1,26 +1,27 @@
 ===
 &nbsp;
 ===
-jubilee       = юбилей /// # DELAY
-degradation   = деградация, ~ упадок, вырождение
-degeneration  = вырождение
+jubilee        = юбилей /// # DELAY
+degradation    = деградация, ~ упадок, вырождение
+degeneration   = вырождение
 ===
 ---
 crematorium %% Am. also: crematory = крематорий
-columbarium   = колумбарий
-urn           = урна
+columbarium    = колумбарий
+urn @ cremains = урна
 
-necropolis    = некрополь
-catacombs     = катакомбы
-crypt         = крипта
-mausoleum     = мавзолей
-memorial      = мемориал, памятник
+necropolis     = некрополь
+catacombs      = катакомбы
+crypt          = крипта
+mausoleum      = мавзолей
+memorial       = мемориал, памятник
 
-mummification = мумификация
-sarcophagus   = саркофаг
+mummification  = мумификация
+sarcophagus    = саркофаг
 
 ===
 
-requiem       = реквием
+requiem        = реквием
+
 
 

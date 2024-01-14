@@ -1,13 +1,14 @@
-criminalistics//forensic science = криминалистика    # 16+
+criminalistics//forensic science = криминалистика   # 16+
 
-criminalist                   = криминалист       # 16+
+criminalist                    = криминалист      # 16+
 
-expertise/examination @ crime = экспертиза
-dactyloscopy                  = дактилоскопия     # 16+
-ballistics expert             = эксперт по баллистике # 14+
+expertise//examination @ crime = экспертиза
+dactyloscopy                   = дактилоскопия    # 16+
+ballistics expert              = эксперт по баллистике # 14+
 
 ===
 
-exhumation                    = эксгумация        # 18+
+exhumation                     = эксгумация       # 18+
+
 
 

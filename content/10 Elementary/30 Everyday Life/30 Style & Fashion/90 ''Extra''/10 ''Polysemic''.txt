@@ -35,6 +35,11 @@ medallion @ architecture  = медальон ~ (в архитектуре)      
 crêpe @ fabric            = креп                                         # RARE- # 18+
 crêpe [paper]             = гофрированная бумага                         # RARE- # 18+
 crêpe @ food              = блинчик ~ (тонкий)                           # RARE- # 18+
+---
+scrub @ cosmetics         = скраб
+scrub @ brush             = чистить, скрести, тереть
+scrub @ shrubs            = кустарник, заросли
+scrub @ person            = ничтожный/мелкий человек
 
 ===
 essence @ extract         = эссенция, экстракт                           # 14+
@@ -46,6 +51,7 @@ essential rights          = основные права и свободы
 extract @ substance       = экстракт, вытяжка                            # 14+
 extract @ citation        = выдержка, отрывок %% из книги, музыкального произведения и т.п. # 14+
 extract @ verb %% verb    = извлекать, добывать, ~ выжимать, экстрагировать # 14+
+
 
 
 

@@ -9,7 +9,7 @@ barberry          = барбарис   # 10+
 
 lemon             = лимон
 lime              = лайм
-orange            = апельсин, ~ оранжевый
+orange @ fruit    = апельсин, ~ оранжевый
 mandarin [orange] = мандарин
 grapefruit        = грейпфрут
 
@@ -19,6 +19,7 @@ nectarine         = нектарин   # RARE-
 physalis          = физалис    # RARE+ # 18+
 pistachios        = фисташки
 pomegranate       = гранат
+
 
 
 

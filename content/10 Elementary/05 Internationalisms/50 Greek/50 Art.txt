@@ -14,9 +14,9 @@ cacophony                  = какофония                          # 16+
 theatre\\theater @ antique = театр
 amphitheatre\\amphitheater = амфитеатр                          # 10+
 
-drama                      = драма, драматургия                 # 10+
-comedy                     = комедия, комизм, комичность        # 10+
-tragedy                    = трагедия
+drama @ art                = драма, драматургия                 # 10+
+comedy @ art               = комедия, комизм, комичность        # 10+
+tragedy @ art              = трагедия
 
 dialogue\\{Am.} {also} ~ dialog = диалог                             # 10+
 monologue\\{Am.} {also} ~ monolog = монолог                            # 10+
@@ -30,6 +30,7 @@ parody                     = пародия, жалкое подобие, ~ па
 epithet                    = эпитет %% в ам. также: оскорбление, ругательное слово # 10+
 
 architecture               = архитектура                        # 10+ /// , архитектурный стиль ~~структура, строение
+
 
 
 

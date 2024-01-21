@@ -1,10 +1,5 @@
 nature
 
-landscape
-seascape
-skyscape
-icescape
-
 dawn
 alpenglow                      # 10+
 glow @ sky
@@ -32,6 +27,7 @@ mud
 
 snowflake
 icicle
+sun dog
 
 pebbles
 boulder                        # 8+

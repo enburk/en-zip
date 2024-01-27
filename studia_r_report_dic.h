@@ -2,7 +2,8 @@
 #include "studio_build_dic+.h"
 namespace studia::dic
 {
-namespace report = studio::dic::report;
+    namespace report =
+    studio::dic::report;
 
     struct reports:
     widget<reports>

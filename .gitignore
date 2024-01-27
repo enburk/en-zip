@@ -19,7 +19,7 @@ test.html.txt
 test.quot.html
 test.quot.html.txt
 
-content/.src
+content/.src/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

@@ -8,7 +8,7 @@ namespace studia
         binary_property<path> root;
         sys::directory_watcher watcher;
         std::atomic<bool> reload = true;
-        property<gui::time> timer;
+        gui::timer timer;
         str link;
 
         gui::widgetarium<
@@ -133,7 +133,7 @@ namespace studia
                 reload = true; };
                 watcher.watch();
                 reload = true;
-                what = &timer;
+                timer.start();
             }
 
             if (what == &timer and reload)

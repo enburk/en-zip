@@ -1,23 +1,23 @@
----
-Bordeaux         = бордо                         # pix-
-Burgundy         = бургундское                   # pix-
-burgundy @ color = бордо/бордовый                # pix-
 
-brut             = брют                          # TERM-
-dessert wine     = десертное вино                # TERM-
-Madeira [wine]   = мадера
-Malvasia         = мальвазия %% самый сладкий вид мадеры # RARE+
-sherry           = херес ~ (шерри)
-vermouth         = вермут
-port [wine]      = портвейн
-sangria          = сангрия
+Bordeaux       = бордо                           # pix-
+Burgundy       = бургундское                     # pix-
 
-Cabernet         = каберне                       # TERM+
-Merlot           = мерло                         # TERM+
-Chardonnay       = шардоне                       # TERM+
+brut           = брют                            # TERM-
+dessert wine   = десертное вино                  # TERM-
+Madeira [wine] = мадера
+Malvasia       = мальвазия %% самый сладкий вид мадеры # RARE+
+sherry         = херес ~ (шерри)
+vermouth       = вермут
+port [wine]    = портвейн
+sangria        = сангрия
 
-sommelier        = сомелье                       # TERM+ /// Во фр. слово означало «дворецкий»
-decanter         = декантер                      # TERM+
-bouquet          = букет, аромат
+Cabernet       = каберне                         # TERM+
+Merlot         = мерло                           # TERM+
+Chardonnay     = шардоне                         # TERM+
+
+sommelier      = сомелье                         # TERM+ /// Во фр. слово означало «дворецкий»
+decanter       = декантер                        # TERM+
+bouquet        = букет, аромат
+
 
 

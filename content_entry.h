@@ -142,6 +142,14 @@ namespace content::out
             one_of   ("{}")))
             errors += "{}";
 
+            if (s.contains(one_of("/|\\")))
+            {
+                str ss = s;
+                ss.replace_all("|" , "/");
+                ss.replace_all("\\", "/");
+                ss.replace_all("//", "/");
+                vocabulary += ss;
+            }
             if (s.contains("\\\\"))
             {
                 str k =

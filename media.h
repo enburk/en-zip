@@ -92,12 +92,9 @@ namespace media
 
     using index = media_index;
 
-    std::mutex  bytes_mutex;
     array<byte> bytes (index i)
     {
         if (i == index{}) return {};
-
-        //std::lock_guard lock{bytes_mutex};
 
         location l = i.location;
 

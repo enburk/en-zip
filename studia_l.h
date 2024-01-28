@@ -55,11 +55,16 @@ widget<studia_l>
             selector.object.
                 selected = 0;
 
-            str path, line;
-            link.split_by("|", path, line);
-            one.contents.object.selected = str2path(path); 
+            str spath, line;
+            link.split_by("|", spath, line);
+
+            std::filesystem::path path = 
+            std::filesystem::relative(str2path(spath),
+            std::filesystem::current_path());
+
+            one.contents.object.selected = path; 
             one.editor.object.editor.go(doc::place{
-            std::stoi(line), 0});
+            line != "" ? std::stoi(line) : 0, 0});
         }
         if (link.starts_with("file://"))
         {

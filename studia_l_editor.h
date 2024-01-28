@@ -37,6 +37,10 @@ namespace studia
 
             if (what == &path)
             {
+                int x = 0;
+                if (path == std::filesystem::path{})
+                    x++;
+
                 doc::text::repo::save();
                 editor.hide(path == std::filesystem::path{});
                 editor.model = doc::text::repo::load<doc::text::model>(path);

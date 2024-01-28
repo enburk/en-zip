@@ -283,6 +283,18 @@ namespace studio::one
                 link(r);
         }
 
+        if (int nn = 500, n = 
+        report::audiom.log.size(); n > 2*nn)
+        report::audiom.log.resize(nn),
+        report::audiom.log += bold(blue(
+        "+" + str(n-nn) + " more"));
+
+        if (int nn = 500, n = 
+        report::videom.log.size(); n > 2*nn)
+        report::videom.log.resize(nn),
+        report::videom.log += bold(blue(
+        "+" + str(n-nn) + " more"));
+
         report::save();
 
         if (true)

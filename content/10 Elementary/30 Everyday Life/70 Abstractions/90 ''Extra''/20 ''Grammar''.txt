@@ -3,7 +3,33 @@ grammar
 ===
 small words # HEAD
 ===
+very        = очень
+===
 
+: Very nice.
+: Ah, excellent, excellent, ~ very good endeed!
+: Be very very quiet!
+
+===
+very much   = очень сильно
+===
+
+===
+too @ very  = слишком
+===
+
+===
+too much    = слишком много
+too many    = слишком много
+===
+
+: Oh! this is really too much.
+
+===
+too @ also  = также, тоже, ~ к тому же, более того
+===
+
+: You can't have your cake ~ and eat it too, ~ you know.
 
 
 

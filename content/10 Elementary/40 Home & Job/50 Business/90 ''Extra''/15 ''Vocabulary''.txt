@@ -19,6 +19,10 @@ fire @ job        = увольнять
 
 ===
 ---
+sell              = продавать
+buy               = покупать
+: If Barbie is so popular, ~ why do you have to buy her friends?
+---
 seller            = продавец
 buyer             = покупатель
 : Buyer beware!
@@ -45,6 +49,7 @@ venture           = рискованное предприятие, ~ риско�
 profit            = польза, выгода
 profit/profits    = прибыль, доход
 : The result is a colossal profit, ~ which comes to me.
+
 
 
 

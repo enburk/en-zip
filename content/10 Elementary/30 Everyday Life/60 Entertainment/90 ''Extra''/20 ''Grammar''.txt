@@ -4,6 +4,24 @@ grammar
 small words # HEAD
 ===
 
+many        = много %% об исчисляемом
+much        = много %% о неисчисляемом
+
+===
+
+: You're in so much trouble.
+: You are in so much trouble!
+: I'm in so much trouble.
+
+: God must love stupid people. ~ He made so many.
+
+===
+
+plenty of   = много %% об исчисляемом и неисчисляемом
+a lot of    = много %% об исчисляемом и неисчисляемом
+
+===
+
 
 
 

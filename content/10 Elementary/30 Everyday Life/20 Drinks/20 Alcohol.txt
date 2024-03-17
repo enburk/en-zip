@@ -19,12 +19,13 @@ toast @ drink = тост, ~ провозглашать тост
 : Cheers!
 
 cider         = сидр
-punch         = пунш
+punch @ drink = пунш
 grog          = грог
 ale           = эль
 
 abstinence    = воздержание, ~ абстиненция                    # TERM-
 idiosyncrasy  = в медицине: ~ идиосинкразия %% непереносимость # TERM-
+
 
 
 

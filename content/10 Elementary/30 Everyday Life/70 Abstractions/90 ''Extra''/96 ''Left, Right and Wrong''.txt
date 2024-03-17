@@ -1,29 +1,40 @@
-'''left''', '''right''' and '''wrong'''
+left, right and wrong
+===
+left @ side     = левый, слева, налево
+left @ verb     = оставаться
+left @ leaved   = покинутый %% ''simple'' past tense ~ ''and'' past participle ~ ''of'' '''leave'''
+===
 
-left         = левый, слева, налево
-left {verb}  = оставаться
-left {leave} = покинутый %% ''simple'' past tense ~ ''and'' past participle ~ ''of'' '''leave'''
+: In 100 feet turn left.
 
-right        = правый, справа, направо
-right        = правильно, правильный, ~ правый
-right        = точно, как раз
+===
+right @ side    = правый, справа, направо
+right @ true    = правильно, правильный, ~ правый
+right @ exactly = точно, как раз
+===
 
-wrong        = неправильно, неправильный
-wrong        = вред, зло, обида
+: In 300 yards turn '''right'''.
+: To the left, straight on, ~ to the right, straight on again...
 
-''In 300 yards turn '''right'''.''
+: Do what I say, '''right''' now!
+: Stop that, '''right''' now!
+: I'll be '''right''' back.
 
-''This is not about '''left''' and '''right'''. ~ This is about '''right''' and '''wrong'''.'' %% Lawrence Lessig, ''Free Culture''
-''You're '''wrong''' about that.''
-''What is '''wrong''' with you?''
-''You were '''right''', and I was '''wrong'''.''
-''Am I '''right''', or am I '''right'''?''
-''I may be '''wrong''', no doubt I am, ~ I generally AM '''wrong''' I belive, ~ but that is my oppinion.'' = %% ''Widower's Houses'' by George Bernard Shaw ~ LIBRIVOX
-''Two '''wrongs''' don't make a '''right'''.''
-''Everything will turn out '''right''' ~ in the end.''
+===
+wrong @ untrue  = неправильно, неправильный
+wrong @ bad     = вред, зло, обида
+===
 
-''Do what I say, '''right''' now!''
-''Stop that, '''right''' now!''
-''I'll be '''right''' back.''
+: This is not about '''left''' and '''right'''. ~ This is about '''right''' and '''wrong'''.
+: You're '''wrong''' about that.
+: What is '''wrong''' with you?
+: You were '''right''', and I was '''wrong'''.
+: Am I '''right''', or am I '''right'''?
+: I may be '''wrong''', no doubt I am, ~ I generally AM '''wrong''' I belive, ~ but that is my oppinion.
+: Two '''wrongs''' don't make a '''right'''.
+
+===
+
+: Everything will turn out '''right''' ~ in the end.
 
 

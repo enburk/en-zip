@@ -1,20 +1,37 @@
 grammar
 
 ===
-small words     # HEAD
+small words             # HEAD
+===
+few                     = мало, несколько %% об исчисляемом
+a little// a little bit = немного %% о неисчисляемом
+quite a few             = довольно много, ~ порядочно %% об исчисляемом
 ===
 
-
+: '''a few''' days      = несколько дней
+: '''a little''' joy    = немного радости
+: '''a little''' mad    = немного сумасшедший, ~ слегка сердитый
 
 ===
-irregular verbs # HEAD
+
+: So, tell me a little about youself.
+: You could help a little.
+: But I THINK I can kick a little!
+
+: This might hurt a little.
+: This might hurt a little bit.
+
+===
+irregular verbs         # HEAD
 ===
 
 bet → bet, betted/bet
 win → won, won
 lose → lost, lost
 
+===
 
+: I lost it.
 
 
 

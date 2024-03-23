@@ -3,7 +3,7 @@ grammar
 ===
 small words                   # HEAD
 ===
-to @ preposition             = %% обозначает направление ~ или лицо, к которому ~ обращено действие
+to @ preposition              = %% обозначает направление ~ или лицо, к которому ~ обращено действие
 ===
 
 : '''to''' the left           = налево
@@ -25,6 +25,7 @@ irregular verbs HEAD
 ===
 
 eat → ate, eaten
+
 
 
 

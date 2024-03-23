@@ -1,18 +1,18 @@
 grammar
 
 ===
-small words # HEAD
+small words        # HEAD
 ===
 
 ===
-if = если
+if                 = если
 ===
 
 : If you say so.
 : Uh-oh, what if mom finds out?
 
 ===
-then @ conjunctive  = то, тогда
+then @ conjunctive = то, тогда
 = незримо присутствует ~ почти во всех условных предложениях
 ===
 
@@ -32,11 +32,11 @@ then @ conjunctive  = то, тогда
 
 
 ===
-else                                  = ещё, кроме, иначе
+else               = ещё, кроме, иначе
 ===
 
-something else              = что-нибудь ещё
-anyone else                 = кто-нибудь ещё
+something else     = что-нибудь ещё
+anyone else        = кто-нибудь ещё
 
 : What else?
 : Will there be anything else?
@@ -45,3 +45,4 @@ anyone else                 = кто-нибудь ещё
 ===
 
 : When all else fails, ~ read the instuctions.
+

@@ -223,15 +223,16 @@ namespace studio::one
                 abstract.extract_from("@");
                 str s = abstract;
 
-                auto& medios = false
+                bool videolike = false
                 or  r.kind == "video"
                 or  r.kind == "audio"
-                and r.options.contains("sound") ?
-                    videos :
-                    audios;
+                and r.options.contains("sound");
 
-                if (vocabs.contains(s)
-                or  medios.contains(s))
+                auto& medios = videolike ?
+                    videos : audios;
+
+                if (medios.contains(s)
+                or  vocabs.contains(s) and videolike)
                 {
                     report::errors += bold(
                     red("sensless: ")) +

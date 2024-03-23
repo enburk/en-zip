@@ -1,11 +1,11 @@
 grammar
 
 ===
-small words # HEAD
+small words               # HEAD
 ===
 
 ===
-from                          = из, с
+from                      = из, с
 ===
 
 from here                 = отсюда
@@ -26,6 +26,7 @@ from where?               = откуда?
 ===
 
 a bite '''from''' a snake = укус змеи
+
 
 
 

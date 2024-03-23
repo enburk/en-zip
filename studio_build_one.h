@@ -33,17 +33,49 @@ namespace studio::one
         hashset<str> course_vocabulary_forms;
         hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
-        for (str s: entry.vocabulary)
         {
-            course_vocabulary[s].
-            entries += &entry;
+            for (str s: entry.vocabulary)
+            {
+                course_vocabulary[s].
+                entries += &entry;
 
-            str sense =
-            s.extract_from("@");
+                str sense =
+                s.extract_from("@");
 
-            for (str f: forms(s))
-            course_vocabulary_forms.
-                emplace(f);
+                for (str f: forms(s))
+                course_vocabulary_forms.
+                    emplace(f);
+            }
+
+            if (entry.eng.starts_with(": "))
+            {
+                if (entry.eng.contains(" "))
+                    continue;
+
+                str s = entry.eng;
+                s.replace_all(".", "");
+                s.replace_all("!", "");
+                s.replace_all("?", "");
+                s = s.ascii_lowercased();
+                course_vocabulary_forms.
+                    emplace(s);
+            }
+            else
+            if (entry.eng.contains(" "))
+            {
+                str ss = entry.eng;
+                str sense = ss.extract_from("@");
+                ss.replace_all(",", "");
+
+                for (str s: ss.split_by(" "))
+                course_vocabulary_forms.
+                    emplace(s);
+
+                for (str s: ss.split_by(" "))
+                for (str f: forms(s))
+                course_vocabulary_forms.
+                    emplace(f);
+            }
         }
 
         reporting(course,
@@ -122,8 +154,9 @@ namespace studio::one
                     used = true;
             }
 
-            if (used or
-                course_vocabulary_forms.
+            if (used
+            or  abstract.size() < 2
+            or  course_vocabulary_forms.
                 contains(abstract))
                 continue;
 

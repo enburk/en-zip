@@ -105,19 +105,29 @@ namespace studia::one
                 for (auto e: range)
                     entries += e;
 
+                for (auto& e: entries)
+                e.link.replace_all("| ", "|0");
+
                 std::ranges::stable_sort(
                     entries, {}, &
                     entry::link);
+
+                for (auto& e: entries)
+                e.link.replace_all("|0", "| ");
 
                 str Header;
 
                 for (auto& e: entries)
                 {
                     str header = e.link;
-                    int line = std::stoi(
-                        header.extract_from("|"));
-
+                    int line = header.extract_from("|").stoi();
                     header = content::out::entry::pretty_link(header);
+
+                    e.entry.replace_all("/", blue("/"));
+                    e.entry.replace_all("\\", blue("\\"));
+                    e.entry.replace_all("|", blue("|"));
+                    e.entry.replace_all("@", blue("@"));
+                    e.entry.replace_all("%", blue("%"));
 
                     if (Header != header)
                     if (Header != "")

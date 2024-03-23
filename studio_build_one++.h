@@ -39,7 +39,7 @@ namespace studio::one
                 while (not lines.empty())
                 {
                     if (lines.front().empty()) break;
-                    int n = std::stoi(lines.front());
+                    int n = lines.front().stoi();
                     if (n < 0 or n+2 >= lines.size())
                         throw std::runtime_error(
                         "multivideo_old: n = "+str(n)+
@@ -119,7 +119,7 @@ namespace studio::one
                 while (not lines.empty())
                 {
                     if (lines.front().empty()) break;
-                    int n = std::stoi(lines.front());
+                    int n = lines.front().stoi();
                     if (n < 0 or n+2 >= lines.size())
                         throw std::runtime_error(
                         "multivideo_old: n = "+str(n)+

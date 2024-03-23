@@ -1,83 +1,26 @@
-grammar
-
 ===
-small words                   # HEAD
+small words                          # HEAD
 ===
 
+===
+about @ preposition %% {preposition} = o, об
+===
 
+: Sorry about that.
+: Don't worry about it.
+: Tell me about yourself.
+: Let me think about it.
+: Can we talk about this?
 
-about %% preposition          = o, об
-''Sorry '''about''' that.''
-''Don't worry '''about''' it.'' = ''Не волнуйся об этом.''
-''Tell me '''about''' yourself.'' = ''Расскажи мне о себе.''
+===
+about @ adverb %% {adverb}           = приблизительно, около
+===
 
-about %% adverb               = приблизительно, около
-
-
-
-with %% preposition           = с, со
-''Good luck '''with''' that.'' = ''Удачи тебе с этим.''
-''I'm down '''with''' that.'' = ''Я завязал с этим.'' %% idiomatic
-
-without %% preposition, adverb = без
-'''''without''' doubt''       = ''несомненно''
-''the knight '''without''' fear ~ and '''without''' reproach'' = ''рыцарь без страха и упрёка''
-
-
-at last                       = наконец
-at least                      = по крайней мере
-at any rate                   = в любом случае
-at this time                  = на этот раз
-at full speed                 = на полной скорости
-
-
-
-again                         = снова, ещё, ещё раз
-''Again?''
-''You can say that '''again'''!''
-''Will I see you '''again'''?''
-''May I see you '''again'''?''
-''When can I see you '''again'''?''
-
-ever                          = когда-либо, ~ когда бы то ни было
-''That's the stupidest idea ~ I've '''ever''' heard!''
-
-ever %% ''not comparable''    = ''всегда, вечно''
-''for ever''                  = ''навсегда, навечно''
-''for ever and ever''         = ''на веки вечные, во веки веков''
-''forever and aye''           = ''навсегда, вечно'' %% ''арх. поэт.''
-
-ever %% intensifier           = %% эмоционально-усилительное
-
-never                         = никогда
-''I '''never''' want to see ~ you again!''
-''I '''never''' want to talk ~ to you again!''
-
-''never more''                = ''никогда-никогда''
-''never more again''          = ''никогда-никогда-никогда''
-''never ever''                = ''никогда в жизни''
-''I '''never''' want to see you, ~ or talk to you, ~ '''ever''', again!''
-''Never say never.''
+: It's about time.
+: It's about time! @ impatient
 
 
 
 
-back @ backside %% <noun>     = спина, спинка, зад
-back @ inside} %% <noun>      = изнанка, подкладка, ~ оборотная сторона
-back @ sport} %% <noun>       = в спорте: защитник
-back @ adj.} %% <adj.>        = задний, отдаленный, ~ обратный, ~ отсталый
-back @ verb} %% <verb>        = поддерживать, подкреплять, ~ служить фоном
-back @ adv.} %% <adv.>        = назад, обратно
-back @ adv. Am.} {Am.} %% <adv.> = сзади, позади
 
-''When do you expect her '''back'''?'' = ''Когда она должна вернуться?''
-
-fore
-
-backward
-forward {adj.} %% <adj.>      = передний
-forward {adv.} %% <adv.>      = вперёд, дальше, впредь
-forward {sport} %% <noun>     = в спорте: нападающий, форвард
-forward {verb} %% <verb>      = отправлять, пересылать, ~ ускорять, способствовать
-forward! %% <int.>            = вперёд!
 

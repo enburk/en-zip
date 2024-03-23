@@ -71,7 +71,7 @@ namespace content
                 if (s == "POLITECO+") s = "POLIT+"; else
                 {}
 
-                if (ages     .contains(s)) age = std::stoi(s); else
+                if (ages     .contains(s)) age = s.stoi(); else
                 if (internals.contains(s)) internal += s; else
                 if (externals.contains(s)) external += s; else
                 if (maskereds.contains(s))

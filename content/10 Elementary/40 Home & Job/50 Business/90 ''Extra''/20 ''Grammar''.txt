@@ -1,16 +1,21 @@
-grammar
-
 ===
 small words # HEAD
 ===
 
 
+again       = снова, ещё, ещё раз
+''Again?''
+''You can say that '''again'''!''
+''Will I see you '''again'''?''
+''May I see you '''again'''?''
+''When can I see you '''again'''?''
 
 ===
 irregular verbs HEAD
 ===
 
 buy → bought, bought
+
 
 
 

@@ -66,7 +66,7 @@ namespace content::out
 
                 unit unit;
                 unit.name = un_msdos(fn.from(3));
-                unit.order = std::stoi(str(fn.upto(2)));
+                unit.order = str(fn.upto(2)).stoi();
                 unit.path = parent == "" ?
                 unit.name : parent + "/" +
                 unit.name;

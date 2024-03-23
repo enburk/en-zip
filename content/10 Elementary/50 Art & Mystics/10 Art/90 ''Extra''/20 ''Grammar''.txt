@@ -1,28 +1,63 @@
 grammar
 
 ===
-small words         # HEAD
+small words                   # HEAD
 ===
 
 
 
+with %% preposition           = с, со
+''Good luck '''with''' that.'' = ''Удачи тебе с этим.''
+''I'm down '''with''' that.'' = ''Я завязал с этим.'' %% idiomatic
+
+without %% preposition, adverb = без
+'''''without''' doubt''       = ''несомненно''
+''the knight '''without''' fear ~ and '''without''' reproach'' = ''рыцарь без страха и упрёка''
 
 
+at last                       = наконец
+at least                      = по крайней мере
+at any rate                   = в любом случае
+at this time                  = на этот раз
+at full speed                 = на полной скорости
+
+
+
+
+back @ backside %% <noun>     = спина, спинка, зад
+back @ inside} %% <noun>      = изнанка, подкладка, ~ оборотная сторона
+back @ sport} %% <noun>       = в спорте: защитник
+back @ adj.} %% <adj.>        = задний, отдаленный, ~ обратный, ~ отсталый
+back @ verb} %% <verb>        = поддерживать, подкреплять, ~ служить фоном
+back @ adv.} %% <adv.>        = назад, обратно
+back @ adv. Am.} {Am.} %% <adv.> = сзади, позади
+
+''When do you expect her '''back'''?'' = ''Когда она должна вернуться?''
+
+fore
+
+backward
+forward {adj.} %% <adj.>      = передний
+forward {adv.} %% <adv.>      = вперёд, дальше, впредь
+forward {sport} %% <noun>     = в спорте: нападающий, форвард
+forward {verb} %% <verb>      = отправлять, пересылать, ~ ускорять, способствовать
+forward! %% <int.>            = вперёд!
 
 
 
 
 ===
-relative pronouns   = относительные местоимения # 10+
+relative pronouns             = относительные местоимения # 10+
 ===
 
-which @ relative    = кто (из), что (из), ~ который, какой
-who @ relative      = который
-whose @ relative    = которого
-whom @ relative     = которому
-that @ relative     = который
+which @ relative              = кто (из), что (из), ~ который, какой
+who @ relative                = который
+whose @ relative              = которого
+whom @ relative               = которому
+that @ relative               = который
 
-whoever @ relative  = кто/что бы то ни было
-whomever @ relative = кому/чему бы то ни было
+whoever @ relative            = кто/что бы то ни было
+whomever @ relative           = кому/чему бы то ни было
+
 
 

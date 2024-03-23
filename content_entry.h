@@ -55,7 +55,7 @@ namespace content::out
         entry (str s, path path, int line) :  line{line}
         {
             link = str(path) + "|" +
-                std::to_string(line);
+            str(line).right_aligned(2);
 
             s.strip();
             s.replace_all("\t", " ");
@@ -169,6 +169,9 @@ namespace content::out
             s.replace_all(u8"\\", "/"),
             s.replace_all(u8" → ", ", "),
             vocabulary += s.split_by("|");
+
+            for (str& v: vocabulary) v.strip();
+
             vocabulary.deduplicate();
 
             if (sense != "")

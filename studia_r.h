@@ -64,7 +64,7 @@ widget<studia_r>
             
             focus = &dic.list;
 
-            dic.list.select(std::stoi(link));
+            dic.list.select(link.stoi());
         }
         if (link.starts_with("dictionary://"))
         {

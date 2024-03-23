@@ -1,8 +1,27 @@
-grammar
+===
+small words                # HEAD
+===
 
-===
-small words # HEAD
-===
+
+ever                       = когда-либо, ~ когда бы то ни было
+''That's the stupidest idea ~ I've '''ever''' heard!''
+
+ever %% ''not comparable'' = ''всегда, вечно''
+''for ever''               = ''навсегда, навечно''
+''for ever and ever''      = ''на веки вечные, во веки веков''
+''forever and aye''        = ''навсегда, вечно'' %% ''арх. поэт.''
+
+ever %% intensifier        = %% эмоционально-усилительное
+
+never                      = никогда
+''I '''never''' want to see ~ you again!''
+''I '''never''' want to talk ~ to you again!''
+
+''never more''             = ''никогда-никогда''
+''never more again''       = ''никогда-никогда-никогда''
+''never ever''             = ''никогда в жизни''
+''I '''never''' want to see you, ~ or talk to you, ~ '''ever''', again!''
+''Never say never.''
 
 
 

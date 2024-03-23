@@ -211,7 +211,7 @@ namespace eng::parser
                 or (m.text == "get"    and input.size() > 9*5)
                 or (m.text == "go"     and input.size() > 9*5)
                 or (m.text == "good"   and input.size() > 9*5)
-                or (m.text == "have"   and input.size() > 5*5)
+                or (m.text == "have"   and input.size() > 9*5)
                 or (m.text == "how"    and input.size() > 9*5)
                 or (m.text == "if"     and input.size() > 9*5)
                 or (m.text == "in"     and input.size() > 4*5)

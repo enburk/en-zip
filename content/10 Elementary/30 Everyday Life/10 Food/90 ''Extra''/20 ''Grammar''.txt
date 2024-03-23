@@ -3,7 +3,7 @@ grammar
 ===
 small words                   # HEAD
 ===
-to %% preposition             = %% обозначает направление ~ или лицо, к которому ~ обращено действие
+to @ preposition             = %% обозначает направление ~ или лицо, к которому ~ обращено действие
 ===
 
 : '''to''' the left           = налево
@@ -14,6 +14,11 @@ to %% preposition             = %% обозначает направление ~
 : two tickets '''to''' Dublin = два билета до Дублина
 : Go '''to''' hell!           = Иди к черту! %% ''точнее:'' в ад
 : Give it to me!              = Отдай!
+
+===
+= за, в честь ~ (кого-либо/чего-либо)
+: To the happy couple!
+===
 
 ===
 irregular verbs HEAD

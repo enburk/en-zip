@@ -4,6 +4,28 @@ grammar
 small words # HEAD
 ===
 
+===
+from                          = из, с
+===
+
+from here                 = отсюда
+from there                = оттуда
+from where?               = откуда?
+
+: I was there from 9 am to 4 pm.
+: Not where I come from.
+
+===
+%% указывает на причину, основание
+===
+
+: From what I remember... = Насколько я помню...
+
+===
+= от, из %% указывает на источник, происхождение; ~ часто передаётся родительным падежом
+===
+
+a bite '''from''' a snake = укус змеи
 
 
 

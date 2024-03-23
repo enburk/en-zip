@@ -4,9 +4,44 @@ grammar
 small words # HEAD
 ===
 
+===
+if = если
+===
+
+: If you say so.
+: Uh-oh, what if mom finds out?
+
+===
+then @ conjunctive  = то, тогда
+= незримо присутствует ~ почти во всех условных предложениях
+===
+
+: If she wins today, ~ she will be the champion. = If she wins today, ~ '''then''' she will be the champion.
+: If you don't know, ~ I dont know who does. = If you don't know, ~ '''then''' I dont know who does.
+
+===
+= Если в русском языке ~ ''то'' опускается только иногда ~ для краткости,
+= то в английском, наоборот, ~ ''then'' используется лишь иногда, ~ для того чтобы подчеркнуть ~ логическую связь
+===
+
+: If “pro” is the opposite of “con”, ~ then what is the opposite ~ of “progress”?
+
+===
+запятая в английском ~ обычно не ставится
+===
 
 
+===
+else                                  = ещё, кроме, иначе
+===
 
+something else              = что-нибудь ещё
+anyone else                 = кто-нибудь ещё
 
+: What else?
+: Will there be anything else?
+: Is there anything else ~ I can do for you?
 
+===
 
+: When all else fails, ~ read the instuctions.

@@ -19295,7 +19295,7 @@ hunger.wav
 hwyl.wav
 hydrophobia.wav
 iktsuarpok.wav
-ilinx # sic!.wav
+ilinx ## sic!.wav
 ilinx.wav
 indignation.wav
 inhabitiveness.wav
@@ -24240,7 +24240,6 @@ Bedroom ## qrop qr.txt
 Underwear Chandelier [underwear][chandelier] ## crop l1 t1 r2 b1 ## qrop l1 t3 r2 b4 ## qropt! ### 3.jpg
 Underwear Chandelier [underwear][chandelier] ## qrop t3 b9 ## qropt! ### 1.jpeg
 Underwear Chandelier [underwear][chandelier] ### 2.jpeg
-Paolo Pettigiani.jpg
 >>> ../datae/photo
 1962 _Jaguar E-Type Low-Drag Coupe [coupe] ## crop t1 ## qrop l3 t1 r3 ## qropt! ### (Series I).jpg
 abandoned house [abandoned] ## qrop qb.jpg

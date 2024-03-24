@@ -15,7 +15,7 @@ Great job! @ sarcastic
 ---
 hire @ job        = нанимать
 fire @ job        = увольнять
-: You're '''fired'''!
+: You're fired!
 
 ===
 ---
@@ -39,12 +39,12 @@ fee
 : “May I—is there—should I—I mean—” ~ “Whats the matter?” ~ “Your fee for this consultation?”
 ---
 account           = счёт ~ (в банке)
-: Will that be cash, or on your account?
+: Will that be cash, ~ or on your account?
 accountant        = бухгалтер
 : Old accountants never die, ~ they just lose their balance.
 ---
 venture           = рискованное предприятие, ~ рисковать, ставить на карту
-: Nothing '''ventured''', ~ nothing gained. %% proverb
+: Nothing ventured, ~ nothing gained. %% proverb
 ---
 profit            = польза, выгода
 profit/profits    = прибыль, доход

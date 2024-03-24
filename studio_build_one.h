@@ -65,6 +65,7 @@ namespace studio::one
             {
                 str ss = entry.eng;
                 str sense = ss.extract_from("@");
+                ss.replace_all(u8" → ", ", "),
                 ss.replace_all(",", "");
 
                 for (str s: ss.split_by(" "))

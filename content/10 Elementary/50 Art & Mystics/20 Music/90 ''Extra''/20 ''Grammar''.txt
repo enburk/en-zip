@@ -1,12 +1,38 @@
-grammar
-
 ===
 small words # HEAD
 ===
+===
+old @ noun %% {noun}                        = давнее прошлое, древность
+old @ adjective %% {adjective}  = старый, старинный, древний
+''comparative:'' ~ older, elder
+''superlative:'' ~ oldest, eldest
+===
 
+: Same old, same old.
+: I am getting very old.
 
+===
 
+: One day when you get older, ~ you'll understand.
+: One day when you get older, ~ you'll thank me for this.
 
+===
+---
+= такого-то возраста, ~ стольких-то лет
 
+---
+= давнишний, привычный
+: You remind me of an old, ~ old friend.
 
+---
+= бывший, прежний
+: I always like to know everything ~ about my new friends, ~ and nothing about my old ones.
+
+---
+= опытный, закоренелый
+: Old habits die hard.
+
+===
+
+: But this eternal ~ cackle, cackle, cackle ~ about things in general ~ is only fit for old, old, OLD people.
 

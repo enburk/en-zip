@@ -1,10 +1,11 @@
 demonstrative pronouns                                   = указательные местоимения
 
-this                                                     = этот, эта, это
+===
+this @ demonstrative                                                    = этот, эта, это
 these                                                    = эти %% о предметах, ~ расположенных вблизи ~ от говорящего
-that                                                     = тот, та, то
+that @ demonstrative                                                    = тот, та, то
 those                                                    = те %% о более удаленных ~ от говорящего предметах
-
+===
 
 : Who was that man?
 : Who was that woman?

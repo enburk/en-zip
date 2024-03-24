@@ -1,5 +1,3 @@
-grammar
-
 ===
 small words        # HEAD
 ===
@@ -8,6 +6,7 @@ any @ determiner   = любой, какой-нибудь, ~ всякий
 : in any case      = в любом случае
 : at any rate      = во всяком случае
 : of any sort      = какой угодно
+: Any questions? Good.
 ---
 some @ determiner  = какой-нибудь, какой-то
 some @ adverb      = приблизительно, около

@@ -1,7 +1,7 @@
-grammar
-
 ===
 small words             # HEAD
+===
+
 ===
 few                     = мало, несколько %% об исчисляемом
 a little// a little bit = немного %% о неисчисляемом

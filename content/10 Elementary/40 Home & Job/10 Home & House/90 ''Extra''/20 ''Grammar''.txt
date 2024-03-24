@@ -2,6 +2,14 @@
 small words                          # HEAD
 ===
 
+one @ only                       = единственный
+one @ whole                       = единый
+one @ same                       = одинаковый, такой-же
+---
+one @ some                       = неопределенный, какой-то
+one day                    = в один из дней, ~ когда-нибудь
+one man = кто-то, некто
+
 ===
 about @ preposition %% {preposition} = o, об
 ===
@@ -9,7 +17,6 @@ about @ preposition %% {preposition} = o, об
 : Sorry about that.
 : Don't worry about it.
 : Tell me about yourself.
-: Let me think about it.
 : Can we talk about this?
 : We need to talk about this.
 : What are you talking about?

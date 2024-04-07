@@ -17,14 +17,15 @@ criminal code              = уголовный кодекс
 code duello                = дуэльный кодекс # HISTORY+ # RARE+ # WAR+ # 14+
 
 ===
-like @ inet                      = лайк %% ''Internet'' slang
-like @ verb      = любить, нравиться # duple
-like @ same                       = похожий, подобный, ~ что-либо подобное, ~ что-либо похожее
+like @ inet                = лайк %% ''Internet'' slang
+like @ verb                = любить, нравиться # duple
+like @ same                = похожий, подобный, ~ что-либо подобное, ~ что-либо похожее
+like @ as                  = как-будто, словно, как
 ===
 
-and the like     = и тому подобное
-or the like      = или что-либо в этом роде
-as you like = как вам угодно
+and the like               = и тому подобное
+or the like                = или что-либо в этом роде
+as you like                = как вам угодно
 
 : Do you like it?
 : I don't like you.
@@ -34,8 +35,12 @@ as you like = как вам угодно
 : Just like everyone else.
 : There's no place like home.
 : I did it myself, ~ so I know what it's like.
+: What's a nice girl like you, ~ doing in a place like this?
 : Like a boss!
 
+: Birds froze in mid-air ~ and fell like stones ~ to the ground.
+
 ===
-like @ intensifier = так сказать, как бы
+like @ intensifier         = так сказать, как бы
 ===
+

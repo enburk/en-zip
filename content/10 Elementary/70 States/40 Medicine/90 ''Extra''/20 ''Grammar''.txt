@@ -1,12 +1,36 @@
-grammar
-
 ===
-small words # HEAD
+small words     # HEAD
 ===
 
+===
+yet @@          = уже, ещё
+===
 
+: Is it over yet?
+: Are we there yet?
+: Not yet.
 
+: I'll get you yet!
 
+===
+yet @ however   = однако, всё же
+===
 
+: And yet...
+: And yet... and yet...
+: And yet you don't look ~ at all stupid.
+
+===
+yet @ intensifier %% {intensifier}
+===
+
+: Yet in what a way!
+
+===
+irregular verbs # HEAD
+===
+---
+feel → felt, felt
+: How good it felt.
 
 

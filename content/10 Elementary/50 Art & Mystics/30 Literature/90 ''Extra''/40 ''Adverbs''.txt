@@ -10,21 +10,21 @@ comparative ~ and superlative ~ adverbs
 = исключения
 ===
 ---
-little                   = мало %% о неисчисляемом
-less                         = меньше
-least                    = меньше всего
+little @ adverb = мало %% о неисчисляемом
+less @ adverb   = меньше
+least @ adverb  = меньше всего
 ---
-many/much                   = много
-more                         = больше
-most                   = больше всего
+many/much       = много
+more            = больше
+most            = больше всего
 ---
-good                         = хорошо
-better                       = лучше
-best                     = наилучшим образом
+good @ adverb   = хорошо
+better @ adverb = лучше
+best @ adverb   = наилучшим образом
 ---
-bad/badly                   = плохо
-worse                        = хуже
-worst                        = наихудшим образом
+bad/badly       = плохо
+worse @ adverb  = хуже
+worst @ adverb  = наихудшим образом
 
 ===
 
@@ -36,6 +36,8 @@ worst                        = наихудшим образом
 : That's a little more tricky.
 : It is a -- MOST -- PROVOKING -- thing.
 ===
+
+
 
 
 

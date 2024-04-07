@@ -1843,7 +1843,7 @@ The Poison Arrow frog has enough poison to kill 2,201 people. [+][poison dart fr
 The toilet stall closest to the door in a public restroom is the least likely to be used. It’s also the cleanest..ogg
 The _Mona _Lisa has no eyebrows. It was the fashion in _Renaissance _Florence to shave them off..ogg
 You use more calories eating celery than there are in the celery itself..ogg
-_Brazil got its name from the nut, not the other way around.ogg
+_Brazil got its name from the nut, not the other way around..ogg
 _Texas is the only {state} that is allowed to {fly} its state flag.ogg
 _Texas is the only {state} that is allowed to {fly} its state flag.txt
 >>> ../datae\audio\podcasts\{{!Hot English Magazine}}/{{}}
@@ -2088,7 +2088,7 @@ the world is your oyster.ogg
 there wasn’t a dry eye in the house.ogg
 there's plenty more fish in the sea.ogg
 there’s a time and a place.ogg
-there’s no such thing as a free lunch.ogg
+There’s no such thing as a free lunch..ogg
 to be a big fish in a small pond.ogg
 to be in a scrape.ogg
 to be in high spirits.ogg
@@ -2948,7 +2948,7 @@ obsolescence.ogg
 occasion.ogg
 occasional.ogg
 occurence.ogg
-often.ogg
+often @ f.ogg
 OHP.ogg
 omit ## {1,2}.ogg
 one evening.ogg
@@ -3373,7 +3373,7 @@ youths -- use.ogg
 {spit} - watery liquid in your mouth.ogg
 {stray} - to move away from the intended route.ogg
 How can you tell~!.ogg
-I haven't got any money on me.ogg
+I haven't got any money on me..ogg
 It's for you. -- What's it for~!.ogg
 It's not to be sneezed at.ogg
 Should we wait for you~!.ogg
@@ -3615,7 +3615,7 @@ It could be terrible and it could be great, it's not clear.wav
 !credit.txt
 And, If You Can't Fight For Your Freedom... You Don't Deserve It.ogg
 If you are explaining, you are losing. If you are explaining, you're losing.ogg
-No copying, no printing, and don't you dare use the technology to read my book aloud.ogg
+No copying, no printing, and don't you dare use the technology to read my book aloud..ogg
 This is not about left and right. This is about right and wrong.ogg
 >>> ../datae\audio\speech/Neil Armstrong - Moon Landing Speech
 !credit.txt
@@ -14464,7 +14464,7 @@ It is no exaggeration to pronounce unequivocally.txt
 It is no exaggeration to pronounce unequivocally.wav
 Poison ivy, trailing poison oak.txt
 Poison ivy, trailing poison oak.wav
-Tell Mother I died game.wav
+Tell Mother I died game..wav
 That's not a castle! That's a fortress! How am I supposed to get into the bloody place~!.wav
 The medicine had been neat cyanide..wav
 There were cigarettes and matches. He lit up and sat back, inhaling luxuriously.txt
@@ -16463,12 +16463,8 @@ is not.wav
 islands of the blessed.wav
 islands of the blest.wav
 it is becoming evident.wav
-it is difficult to say.wav
-it is no use.wav
-it is not [].wav
 it is.wav
 it represents.wav
-it takes a good deal out of you.wav
 it takes two.wav
 it was.wav
 it wasn't.wav
@@ -16590,7 +16586,7 @@ of no importance whatsoever.wav
 off days.wav
 off.wav
 offering.wav
-often ## {2} ### t.wav
+often @ t ### {2} ### t.wav
 old memories.wav
 old stories.wav
 old-established.wav
@@ -17144,6 +17140,10 @@ In this predicament what can I do~!.wav
 Is that all~!.wav
 It is all the same..wav
 It is all true..wav
+It is difficult to say..wav
+It is no use..wav
+It is not..wav
+It takes a good deal out of you..wav
 It's a lie!.wav
 It’s not our business—is it~!.wav
 La!.wav
@@ -21862,8 +21862,8 @@ Do I have to~! ### [Child-Fem-B_Do-I-Have-To_VKT_06789].wav
 Do not disturb! ### {pix} ### [Adult-Male-D_Do-Not-Disturb_VKT_04634].wav
 Do unto others as you would have them do unto you. ### [Mid-Aged-Fem-C_Do-Unto-Others-As-You-Would-Have_VKT_10772].wav
 Do what I say, right now! ### [Adult-Fem-C_Do-What-I-Say-Right-Now_VKT_00864].mp3
-Do you come here often~! ### ofTen ### [Mid-Aged-Male-A_Do-You-Come-Here-Often_VKT_11180].wav
-Do you come here often~! ### [Mid-Aged-Male-B_Do-You-Come-Here-Often_VKT_11696].wav
+Do you come here often~! @ f ### [Mid-Aged-Male-B_Do-You-Come-Here-Often_VKT_11696].wav
+Do you come here often~! @ t ### ofTen ### [Mid-Aged-Male-A_Do-You-Come-Here-Often_VKT_11180].wav
 Do you have any idea what time it is~! ### [Adult-Male-D_Do-You-Have-Any-Idea-What-Time_VKT_04651].mp3
 Do you have any news~! ### [Mid-Aged-Male-A_Do-You-Have-Any-News_VKT_11182].wav
 Do you have insurance~! ### [Mid-Aged-Fem-B_Do-You-Have-Insurance_VKT_10422].wav
@@ -22681,10 +22681,10 @@ No one asked you. ### Mid-Aged-Male-A_No-One-Asked-You_VKT_11361.wav
 No one asked you. ### Mid-Aged-Male-A_No-One-Asked-You_VKT_11362.wav
 No problem! ### [Adult-Fem-D_No-Problem_VKT_01713].mp3
 No sweat. ### [Adult-Male-E_No-Sweat_VKT_05584].mp3
-No way! ### Mid-Aged-Male-C_No-Way_VKT_12236.wav
-No way! ### [Teen-Male-C_No-Way_VKT_16204].wav
-No way! @ disbelieving ### Adult-Male-A_Disbelieving-No-Way_VKT_03181.mp3
-No way. @ incredulous ### Adult-Male-A_Incredulous-No-Way_VKT_03297.mp3
+No way! @ disbelief ### Adult-Male-A_Disbelieving-No-Way_VKT_03181.mp3
+No way! @ disbelief ### Mid-Aged-Male-C_No-Way_VKT_12236.wav
+No way! @ disbelief ### [Teen-Male-C_No-Way_VKT_16204].wav
+No way. @ reject ### Adult-Male-A_Incredulous-No-Way_VKT_03297.mp3
 No! @ desperate ### Adult-Fem_Desperate-No_VKT_00017.mp3
 No! No! ### Adult-Male_Panic-No-No_VKT_03085.mp3
 No, I don't want to! @ indignant ### Child-Fem-A_Indignant-No-I-Dont-Want-To_VKT_06470.wav
@@ -23195,7 +23195,7 @@ That's totally cray! ### [Teen-Fem-A_Thats-Totally-Cray_VKT_14029].wav
 That's unacceptable! ### [Mid-Aged-Male-A_Thats-Unacceptable_VKT_11460].wav
 That's unreal. ### [Teen-Fem-C_Thats-Unreal_VKT_14645].wav
 That's wicked! ### [Teen-Fem-B_Thats-Wicked_VKT_14192].wav
-Thats all water under the bridge. ### Mid-Aged-Male-D_Thats-All-Water-Under-The-Bridge_VKT_12416.wav
+That’s all water under the bridge. ### Mid-Aged-Male-D_Thats-All-Water-Under-The-Bridge_VKT_12416.wav
 The best things in life are free. ### [Mid-Aged-Male-B_The-Best-Things-In-Life-Are-Free_VKT_11912].wav
 The cheque is in the mail. ### [Adult-Fem-D_The-Cheque-Is-In-The-Mail_VKT_01877].mp3
 The early bird catches the worm. ### [Senior-Fem-B_The-Early-Bird-Catches-The-Worm_VKT_13087].wav
@@ -23709,7 +23709,7 @@ zonk ### Vocalzonk CRT029915.wav
 >>> ../datae\fineart abc {{$$}}/Alenza {{Leonardo Alenza}}
 Satire of the Romantic Suicide [satire][suicide] ## date c.1839 ## qrop t13 b7.jpg
 >>> ../datae\fineart abc {{$$}}/Alma-Tadema {{Alma-Tadema}}
-A Coign of Vantage [coign of vantage][vantage point] ## date 1895.jpg
+A Coign of Vantage [coign of vantage][vantage point] ## date 1895 ## qrop b9 ## qropt!.jpg
 Sculptors in _Ancient _Rome [colossal] ## date 1877 ## crop qb ## qropt!.jpg
 >>> ../datae\fineart abc {{$$}}/Andreis {{Alex de Andreis}}
 Cavalier writing in a book [graphomania][scribomania] ## qrop t3 b10 ## qropt! {{Alex de Andreis $$}}.jpg
@@ -24359,7 +24359,7 @@ The ten main cloud types.jpg
 The ten main cloud types.txt
 tornado and lightning [tornado] ## qrop l4 r21.jpg
 waterspout.jpg
-No littering!.jpg
+No littering! [littering] ## qrop l14 r19.jpg
 >>> ../datae\photo/people
 An American officer and a French partisan with Sten.png
 An American officer and a French partisan with Sten.txt
@@ -24943,7 +24943,7 @@ thermos ## qrop t15 b5 ### flask really.jpg
 a bloat of hippos [bloat].jpg
 Bonds [elephants].jpg
 longhorns [longhorn][Texas longhorn].jpg
-Nearness [zebra][zabras].jpg
+Nearness [zebra][zabras] ## qrop t2 b10.jpg
 >>> ../datae\photo abc/Carjat {{Photo.. Étienne Carjat}}
 Gioachino Rossini [Rossini][Rossinian] {{Photo.. Étienne Carjat, 1862 $$}}.jpg
 Hector Berlioz [Berlioz][composer@music] ## qropt! {{Caricature by Étienne Carjat, 1858}}.jpg
@@ -25366,7 +25366,7 @@ Self-portrait [self-portrait@photo][photographer] ## date 1953.jpg
 >>> ../datae\photo gh/Goldes {{Photo.. David Goldes}}
 Air, glass, water, air [conductivity][electroconductibility] ## date 2013 ## crop t1 b1 ## qrop t12 b3 ## qropt!.jpg
 Arcing Wire [arcing].jpg
-bowl @ vessel [surface tension].jpg
+bowl @ vessel [surface tension] ## crop l1 ## qrop l8 r6 ## qropt!.jpg
 Candle and Flask [focus@photo][lens@physics] ## qrop l9 r2 ## qropt!.jpg
 chain reaction ## crop b1 ## qrop l12 r9 b1.jpg
 Charged Wires Spinning and Balancing on {X-Acto} Knives ## date 2013.jpg
@@ -25442,28 +25442,28 @@ Sicily, {Precocious} Kiss ## date 1968.jpg
 >>> ../datae\photo gh/Hine {{Photo.. Lewis Hine}}
 mechanic ## date 1920 ## qrop qb.jpg
 >>> ../datae\photo gh/Hoffmann {{Photo.. Heinrich Hoffmann}}
-_Hitler {rehearsing} speech in front of a mirror, 1927 [Hitler][pathetic] ### 2.jpg
-_Hitler {rehearsing} speech in front of a mirror, 1927 [Hitler][pathetic] ### 3.jpg
-_Hitler {rehearsing} speech in front of a mirror, 1927 [Hitler][pathetic] ### 4.jpg
+_Hitler rehearsing speech in front of a mirror, 1927 [Hitler][pathetic][rehearsing] ## crop l1 r2 t1 ## qrop l1 t2 r2 b12 ### 2.jpg
+_Hitler rehearsing speech in front of a mirror, 1927 [Hitler][pathetic][rehearsing] ## crop r1 ## qrop r1 b17 ### 4.jpg
+_Hitler rehearsing speech in front of a mirror, 1927 [Hitler][pathetic][rehearsing] ## qrop b19 ### 3.jpg
 >>> ../datae\photo gh/Horvat {{Photo.. Frank Horvat}}
-1955, London, UK, Lambeth, boxing boys [punch@hit].jpg
-1956, Paris, spectator at the Lido [lorgnette].jpg
+1955, London, UK, Lambeth, boxing boys [punch@hit] ## qrop l17 t1 r18.jpg
+1956, Paris, spectator at the Lido [lorgnette] ## qrop l8 r23.jpg
 1958, Paris, Bruno Cocatrix, impresario and Edith Piaf, singer, at her last performance at the Olympia [overwhelmed].jpg
-1958, Paris, for Jardin des Modes, Givenchy hat [staged scene][staged].jpg
+1958, Paris, for Jardin des Modes, Givenchy hat [staged scene][staged][binoculars] ## qrop l10 r19 ## qropt!.jpg
 1958, Paris, Françoise Sagan, writer, hiding in her loge [Sagan][celebrity].jpg
 1959, London, for Vogue UK, with horses [staged scene][staged].jpg
 1961, NY, USA, little girl and doll in Central Park [test run].jpg
-1963, Dakar, Senegal, audience at a street show [boredom].jpg
+1963, Dakar, Senegal, audience at a street show [unimpressed] ## qrop l15 r17 ## qropt!.jpg
 1963, Rio de Janeiro, Brazil, at a {macumba} session.jpg
-1963, Rio de Janeiro, Brazil, {dancing couple} [dancing].jpg
+1963, Rio de Janeiro, Brazil, dancing couple [dancing][dancing couple] ## qrop l10 r19 ## qropt!.jpg
 1963, Rio de Janeiro, Brazil, {macumba} session.jpg
 1963, Tokyo, Japan, teenagers [smoking] ### , variante.jpg
-1968, Paris, for Glamour, inspired by film director Bunuel [staged scene][staged].jpg
+1968, Paris, for Glamour, inspired by film director Bunuel [staged scene][staged] ## qrop l19 ## qropt!.jpg
 1969, Sweden, Marco [writing][write].jpg
 1972, Paris, France, photo test with Chris O'Connor [body art] ## noqrop.jpg
-1976, Paris, for Vogue France, {ready-to-wear}.jpg
+1976, Paris, for Vogue France, ready-to-wear [ready-to-wear] ## qrop b19 ## qropt!.jpg
 1978, California, USA, {ilex}.jpg
-1982, Normandy, France, willow tree [willow][willow tree].jpg
+1982, Normandy, France, willow tree [willow][willow tree] ## qrop l18 t2 r15.jpg
 Paris, Flic, 1956 [flic][flagger].jpg
 >>> ../datae\photo gh/Hussenot {{Photo.. Pierre Hussenot}}
 apple {crumble}.jpg
@@ -25697,7 +25697,7 @@ thermometer ## noqrop.jpg
 zebra crossing ## qrop l7 ## qropt!.jpg
 zipper [zip@zipper].jpg
 >>> ../datae\photo mn/Maier {{Photo.. Vivian Maier}}
-David's The Death of Marat [mirroring@psycho] ## date 1962.jpg
+David's The Death of Marat [mirroring@psycho] ## date 1962 ## qrop qr.jpg
 Self-Portrait, 1955 [selfie].jpeg
 >>> ../datae\photo mn/Maiquez {{Photo.. Alfredo Maiquez}}
 Cargo Ship on Gaillard Cut, _Panama Canal [the Panama Canal][canal@waterway] ## qrop t19 b6.jpg
@@ -25741,7 +25741,7 @@ tarantula [arachnid] ## date 1988.jpg
 baby's breath [gypsophila][Gypsophila].jpg
 Chest [chest] ## date 1987.png
 gun blast [+][revolver] ## date 1985 ## crop qb ## qropt!.jpg
-Pictures [writing][wrote][written][write, wrote, written] ## date 1977 ### Self Portrait.jpg
+Pictures [writing][wrote][written][write, wrote, written] ## date 1977 ## qrop qt ### Self Portrait.jpg
 Self Portrait [knifemen] ## date 1983.jpg
 tulip ## date 1988 ## qrop qt.jpg
 tulip ## date 1988 ### tint.jpg
@@ -25807,7 +25807,7 @@ $5 [$][dollars] ## date 2002.jpg
 1841 {Book of Proverbs} for the blind [Proverbs][embossed] ## date 1995.jpg
 A Mad Tea Party [tea party] ## date 1998.jpg
 Birds of America by Audubon %% double elephant folio [book][folio] ## date 1994 ## qropt!.jpg
-Book and Mirror on Round Table [London] ## date 2000.jpg
+Book and Mirror on Round Table [London] ## date 2000 ## qrop l13 r7.jpg
 book {damaged} by water ## date 2001.jpg
 camera obscura ## date 1991 ## qrop l6 r2 ## qropt!.jpeg
 Construction with lasers and mirrors [installation][installation art] ## date 2005 ## qrop r9 ## qropt!.jpg
@@ -27370,8 +27370,8 @@ Kabuki spectacle at the Fountains of Bellagio [Kabuki][kabuki] ## qrop l22 r11 {
 parterre ## qrop ql {{Photo.. Erik De Graaf $dreamstime 5584176}}.jpg
 Scandalesque [burlesque] {{Photo.. Dimitrii $dreamstime 5942896}}.jpg
 stage @ theater ## qrop l5 r7 ## qropt! {{Photo.. Airi Pung $dreamstime 7416897}} ### Stage with red carpet and curtains.jpg
+theatre~theater @ antique ## qropt! ## qrop r10 {{Photo.. Vito  Raccuglia $dreamstime 10402713}}.jpg
 theatre~theater @ antique %% Limassol, Cyprus ## qrop q {{Photo.. Antoniszavogiannis $dreamstime}}.jpg
-theatre~theater @ antique {{Photo.. Vito  Raccuglia $dreamstime 10402713}}.jpg
 >>> ../datae\photo_dreamstime/artifacts
 artificial snowflake [+] ## qrop q {{Photo.. Lubastock $dreamstime 79555713}}.jpg
 Christmas ball [ball@solid][bauble@Christmas] ## qrop q {{Photo.. Elen $dreamstime 308343}}.jpg
@@ -27450,13 +27450,13 @@ buck @ money {{Photo.. Nikmerkulov $dreamstime 62291258}} Hole in the paper.jpg
 cash @ money ## qrop l10 r15 {{Photo.. Petar Zigich $dreamstime 3188724}}.jpg
 cash drawer [cash@money] ## qropt! ## qrop l16 r7 {{Photo.. Liz Van Steenburgh $dreamstime 2185712}}.jpg
 count money [count] ## qrop l11 r23 {{Photo.. Cupertino10 $dreamstime 18095509}} ### yuan.jpg
-Counting some U.S. bills [count money][counting] {{Photo.. Yukchong Kwan $dreamstime 10898367}}.jpg
+Counting some U.S. bills [count money][counting] ## qrop l20 r3 ## qropt! {{Photo.. Yukchong Kwan $dreamstime 10898367}}.jpg
 gold bullions [+][bullion] ## qrop ql {{Photo.. Baloncici $dreamstime 7475276}} gold bars.jpg
 gratuity ## qrop l12 r12 ## qropt! {{Photo.. Karenr $dreamstime 14784572}}.jpg
 piggy bank [savings] {{Photo.. Daniel Gilbey $dreamstime 3138382}}.jpg
 tip @ money ## qrop l23 r11 {{Photo.. Iryna Vlasenko $dreamstime 37472549}}.jpg
+wallet ## qrop l19 r15 {{Photo.. Arrakasta $dreamstime 26445651}} ### Red wallet and Polish money.jpg
 wallet [billfold] ## qrop l14 r13 ## qropt! {{Photo.. Roman Borodaev $dreamstime 8432912}}.jpg
-wallet {{Photo.. Arrakasta $dreamstime 26445651}} ### Red wallet and Polish money.jpg
 yuan [counting][count money][count@money] ## qrop l3 r18 ## qropt! {{Photo.. Cupertino10 $dreamstime 18095509}}.jpg
 no vacancy [vacancy@room] ## qrop ql {{Photo.. Atomazul $dreamstime 60484864}}.jpg
 >>> ../datae\photo_dreamstime\business/office
@@ -27536,7 +27536,7 @@ closed ## qrop ql {{Photo.. Joe Tabb $dreamstime 30907548}}.jpg
 crossbar ## qrop l25 r7 ## qropt! {{Photo.. Yevhenii Yarmolenko $dreamstime 93888131}}.jpg
 door ## qrop q {{Photo.. Alexey Stiop $dreamstime 5402323}}.jpg
 door ## qrop t6 b10 ## qropt! {{Photo.. Sergey Dukhovnikov $dreamstime 47967915}}.jpg
-door handle [handle] {{Photo.. Jojjik $dreamstime 20534230}}.jpg
+door handle [handle] ## qrop l9 r12 ## qropt! {{Photo.. Jojjik $dreamstime 20534230}}.jpg
 door knocker [doorknocker][knocker@door] ## qrop qr {{Photo.. Chutima Chaochaiya $dreamstime 79721620}}.jpg
 door lock [lock@door] ## qrop ql {{Photo.. Mikel Martinez De Osaba $dreamstime 40496440}}.jpg
 front door ## qrop q {{Photo.. Ifeelstock $dreamstime 36104771}}.jpg

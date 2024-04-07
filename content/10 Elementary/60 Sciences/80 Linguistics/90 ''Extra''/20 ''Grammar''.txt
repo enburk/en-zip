@@ -1,12 +1,31 @@
-grammar
-
 ===
-small words # HEAD
+small words     # HEAD
 ===
 
+than            = чем, по сравнению с
+
+: Better you than me!
+: It's easier said than done.
+: That's easier said than done.
 
 
+===
+irregular verbs # HEAD
+===
 
+speak → spoke, spoken
+tell → told, told
+say → said, said
 
+===
+
+: Told you so.
+: Consider yourself told!
+
+: I said alright. @ annoyed
+: I said shut up!
+: You said what?!
+
+: I am not used to be ~ spoken to that way, sir; ~ I do but less than half ~ like it, sir.
 
 

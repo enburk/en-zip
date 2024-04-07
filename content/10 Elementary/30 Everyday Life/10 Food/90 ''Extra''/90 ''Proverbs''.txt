@@ -1,4 +1,4 @@
-proverbs                                  = поговорки
+proverbs = поговорки
 
 : A watched pot never boils.
 : Too many cooks spoil the broth.
@@ -9,8 +9,9 @@ proverbs                                  = поговорки
 : Don't put all your eggs ~ in one basket!
 
 ===
-: Revenge is sweet.                       = Месть сладка.
+: Revenge is sweet. = Месть сладка.
 : Vengeance is a dish ~ best served cold. = Месть -- это блюдо, ~ которое лучше всего ~ подавать холодным.
+
 
 
 

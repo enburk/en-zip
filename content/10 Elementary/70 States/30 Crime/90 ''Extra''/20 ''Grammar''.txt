@@ -1,10 +1,63 @@
-grammar
-
 ===
-small words # HEAD
+small words            # HEAD
 ===
 
+===
+soon                   = скоро
+{comparative:} ~ sooner
+{superlative:} ~ soonest
+===
 
+the sooner the quicker = чем раньше, тем лучше
+
+: I hope to see you soon.
+
+===
+early                  = рано, ранний
+{comparative:} ~ earlier
+{superlative:} ~ earliest
+===
+
+early in the morning   = рано утром
+
+: Early to bed and early to rise, ~ makes a man healthy, ~ wealthy and wise.
+
+===
+late                   = поздно, поздний
+{comparative:} ~ later
+{superlative:} ~ latest
+===
+
+: You're late.
+: You're late!
+: How late it was!
+: I'm going to be late. @ angry
+: Better late than never.
+: Well, better late than never.
+
+===
+be late                = опаздывать
+===
+
+: He was always late on principle, ~ his principle being that punctuality ~ is the thief of time.
+
+===
+later                  = %% указывает на неопределённый момент ~ в будущем
+===
+
+sooner or later        = рано или поздно
+
+: Come back later.
+: We'll get to that later.
+: Will I see you later?
+
+: Can we talk about this later?
+: Can't we talk about this later?
+: Can we deal with this later?
+
+===
+
+: Let not the defeatists ~ tell us that it is too late. ~ It will never be earlier. ~ Tomorrow will be later than today.
 
 
 

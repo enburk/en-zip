@@ -1,9 +1,9 @@
-memory                  = память
+memory        = память
 
 ===
-forget                  = забывать
-rememeber               = вспоминать
-forget-me-not           = незабудка
+forget        = забывать
+rememeber     = вспоминать
+forget-me-not = незабудка
 ===
 
 : I can't remember.
@@ -19,4 +19,5 @@ forget-me-not           = незабудка
 ===
 
 reminder
+
 

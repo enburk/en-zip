@@ -1,35 +1,36 @@
 ===
-small words          # HEAD
+small words     # HEAD
 ===
 ---
-on @ where           = на
-on the north         = на севере
-on those terms       = на этих условиях
+on @ where      = на
+on the north    = на севере
+on those terms  = на этих условиях
 : I'm on cloud nine. = Я на седьмом небе. %% ''точнее:'' на девятом облаке
 ---
-on @ date            = в %% перед датами, днями недели
-: on a Sunday        = в воскресенье
-: on the 5th of May  = пятого мая
+on @ date       = в %% перед датами, днями недели
+: on a Sunday   = в воскресенье
+: on the 5th of May = пятого мая
 
 ===
 ---
-depend on            = зависеть от
-insist on            = настаивать на
-on principle         = из принципа
+depend on       = зависеть от
+insist on       = настаивать на
+on principle    = из принципа
 ---
-on @ enabled         = включено
+on @ enabled    = включено
 : X-rays on!
 
 ===
 
-and so on            = и так далее
+and so on       = и так далее
 
 ===
-irregular verbs      # HEAD
+irregular verbs # HEAD
 ===
 ---
 drink → drank, drunk
 : Drank! My word! Something chronic.
+
 
 
 

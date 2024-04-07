@@ -1,16 +1,17 @@
 grammar
 
 ===
-small words        # HEAD
+small words             # HEAD
 ===
 ---
-for %% preposition = для
-for me             = для меня, мне
-for you            = для тебя, тебе
+for @@ %% {preposition} = для
+for me                  = для меня, мне
+for you                 = для тебя, тебе
 
 ===
 
-What for?          = Для чего? Зачем?
+What for?               = Для чего? Зачем?
+
 
 
 

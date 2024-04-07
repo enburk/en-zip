@@ -1,8 +1,20 @@
-grammar
+===
+small words       # HEAD
+===
 
 ===
-small words # HEAD
+above             = верх, над, выше
+below             = низ, под, ниже
 ===
+
+above zero        = выше нуля
+below zero        = ниже нуля
+
+above all         = прежде всего, главным образом
+above average     = выше среднего, исключительный
+
+below the horizon = за горизонтом
+
 
 
 

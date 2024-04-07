@@ -1,8 +1,8 @@
 '''here''' and '''there'''
 ===
-here                                = тут
-there                               = там
-here and there                      = там и сям, кое-где, ~ местами
+here           = тут
+there          = там
+here and there = там и сям, кое-где, ~ местами
 ===
 
 : Why am I even '''here'''?
@@ -22,7 +22,7 @@ here and there                      = там и сям, кое-где, ~ мес�
 ===
 
 : '''Here are''' your messages.
-: '''Here''' you '''are'''!         = Вот, пожалуйста!
+: '''Here''' you '''are'''! = Вот, пожалуйста!
 : Go straight, go left, go right, '''here''' we '''are'''.
 
 ===
@@ -53,5 +53,6 @@ there's -- there is
 
 : '''There's''' no place like home. = «В гостях хорошо, а дома лучше».
 : Where '''there's''' smoke, '''there's''' fire. = «Нет дыма без огня».
+
 
 

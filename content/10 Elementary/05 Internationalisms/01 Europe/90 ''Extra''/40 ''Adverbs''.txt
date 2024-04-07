@@ -1,31 +1,32 @@
-adverbs              = наречия
+adverbs = наречия
 
-good                 = хорошо # pix-
-bad                  = плохо # pix-
-
-===
-
-: Cool!              # pix-
-: Fine!              # pix-
-: Nice!              # pix-
-: Sweet!             # pix-
-: Great!             # pix-
+good    = хорошо # pix-
+bad     = плохо # pix-
 
 ===
 
-: Awesome!           # pix-
-: Excellent!         # pix-
-: Unreal!            # pix-
-: Golden!            # pix-
+: Cool! # pix-
+: Fine! # pix-
+: Nice! # pix-
+: Sweet! # pix-
+: Great! # pix-
 
-: Brutal!            # pix-
-: Wicked!            # pix-
-: Nasty!             # pix-
-: Rough!             # pix-
+===
+
+: Awesome! # pix-
+: Excellent! # pix-
+: Unreal! # pix-
+: Golden! # pix-
+
+: Brutal! # pix-
+: Wicked! # pix-
+: Nasty! # pix-
+: Rough! # pix-
 
 ===
 
 : Naughty, but nice! # pix-
+
 
 
 

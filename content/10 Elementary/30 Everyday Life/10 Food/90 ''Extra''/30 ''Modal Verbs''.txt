@@ -1,8 +1,8 @@
-modal verbs                 = модальные глаголы
+modal verbs         = модальные глаголы
 
 ===
-can @ verb                  = мочь, уметь
-may @ verb                  = мочь ~ (иметь разрешение)
+can @ verb          = мочь, уметь
+may @ verb          = мочь ~ (иметь разрешение)
 ===
 
 : I '''can''' do this!
@@ -12,7 +12,7 @@ may @ verb                  = мочь ~ (иметь разрешение)
 contractions:
 cannot ~ (can not)
 can’t ~ (can not)
-mayn’t ~ (may not)         = %% практически не используется
+mayn’t ~ (may not) = %% практически не используется
 ===
 
 : I '''cannot''' say.
@@ -31,7 +31,7 @@ questions
 : '''Can''' we talk?
 : '''Can''' we talk about this?
 : '''Can''' you beat that?
-: '''Can''' you dig it?     = Здесь: Do you get it? ~ Понимаешь, что я хочу сказать?
+: '''Can''' you dig it? = Здесь: Do you get it? ~ Понимаешь, что я хочу сказать?
 : Ah, '''can''' you blame a guy?
 : How '''can''' I know?
 : '''May''' I help?
@@ -44,6 +44,7 @@ negative questions
 : '''Can''' we '''not''' talk about this?
 : '''Can’t''' we talk about this?
 : '''Can’t''' this wait?
+
 
 
 

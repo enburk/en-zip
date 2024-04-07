@@ -1,7 +1,7 @@
 grammar
 
 ===
-small words               # HEAD
+small words # HEAD
 ===
 off
 ===
@@ -12,23 +12,24 @@ off
 
 ---
 = %% указывает на потерю опоры ~ или контакта
-to slip off               = соскользнуть с
+to slip off = соскользнуть с
 
 ---
 = %% указывает на отсутствие ~ чего-либо
-to be off                 = отсутствовать
-off days                  = выходные дни
+to be off   = отсутствовать
+off days    = выходные дни
 
 ===
 ---
-turn off                  = выключить
+turn off    = выключить
 : Do not turn off your computer!
 
 ===
 
-: Hands off!              = Руки прочь!
+: Hands off! = Руки прочь!
 : Keep off the grass!
 : Keep off the rocks!
+
 
 
 

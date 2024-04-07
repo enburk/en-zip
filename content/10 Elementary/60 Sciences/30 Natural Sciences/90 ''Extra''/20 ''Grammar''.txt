@@ -1,11 +1,32 @@
-grammar
-
 ===
-small words # HEAD
+small words      # HEAD
 ===
 
+===
+other            = ещё один, другой
+===
 
+the other day    = на днях, недавно, ~ на следующий день
+in other case    = в противном случае
 
+each other       = каждый второй
+and many others  = и многие другие
+
+: Do you two know each other?
+: But all the other kids are going!
+: What do you care ~ what other people think?
+: Everything I say ~ just goes in one ear ~ and out the other!
+: Would you like your coffee black? ~ -- What other colours do you have?
+
+===
+another          = другой
+===
+
+in another world = на том свете
+
+: God of Heaven! another of them.
+: I don't want to hear another word.
+: Have another biscuit?
 
 
 

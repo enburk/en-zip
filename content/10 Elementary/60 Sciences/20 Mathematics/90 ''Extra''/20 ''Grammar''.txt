@@ -1,11 +1,34 @@
-grammar
-
 ===
-small words # HEAD
+small words        # HEAD
 ===
 
+===
+as @ same          = как
+===
+---
+quick as lightning
+swift as lightning = быстрый как молния
+
+: Be quiet as a mouse.
+: When in Rome, do ~ as the Romans do.
+: It's as simple ~ as one, two, three.
+
+===
+as @ because       = так как
+===
 
 
+===
+as @ when          = когда, в то время как, ~ по мере того как
+===
+
+
+
+===
+= %% выступать в роли кого-либо
+===
+
+: He announced himself ~ as the archangel Gabriel, ~ and commanded the captain ~ to jump overboard.
 
 
 

@@ -1,14 +1,14 @@
 ===
-small words                          # HEAD
+small words                # HEAD
 ===
 
-one @ only                       = единственный
-one @ whole                       = единый
-one @ same                       = одинаковый, такой-же
+one @ only                 = единственный
+one @ whole                = единый
+one @ same                 = одинаковый, такой-же
 ---
-one @ some                       = неопределенный, какой-то
+one @ some                 = неопределенный, какой-то
 one day                    = в один из дней, ~ когда-нибудь
-one man = кто-то, некто
+one man                    = кто-то, некто
 
 ===
 about @ preposition %% {preposition} = o, об
@@ -22,11 +22,12 @@ about @ preposition %% {preposition} = o, об
 : What are you talking about?
 
 ===
-about @ adverb %% {adverb}           = приблизительно, около
+about @ adverb %% {adverb} = приблизительно, около
 ===
 
 : It's about time.
 : It's about time! @ impatient
+
 
 
 

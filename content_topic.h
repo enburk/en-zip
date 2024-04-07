@@ -108,6 +108,8 @@ namespace content::out
             array<int> tabs1, tabs2;
             for (auto& entry: entries)
             {
+                if (entry.eng.starts_with(":"))
+                    continue;
                 // eng... = rus... # opt
                 // eng... = rus
                 // eng... # opt

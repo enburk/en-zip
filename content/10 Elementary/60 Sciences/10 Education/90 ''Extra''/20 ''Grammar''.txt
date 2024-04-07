@@ -1,72 +1,19 @@
-grammar
-
 ===
-small words # HEAD
+small words   # HEAD
 ===
 
+===
+at
+===
 
-soon %% comparative '''sooner''' ~ superlative '''soonest''' = скоро
-''the '''sooner''' the quicker''                           = ''чем раньше, тем лучше ~ раньше сядешь, раньше выйдешь''
+at last       = наконец
+at least      = по крайней мере
+at any rate   = в любом случае
+at this time  = на этот раз
+at full speed = на полной скорости
 
-early %% comparative '''earlier''' ~ superlative '''earliest''' = рано
-'''''early''' in the morning''                             = ''рано утром''
-
-late %% comparative '''later''' ~ superlative '''latest''' = поздно
-''You are '''late'''!''                                    = ''Ты опоздал!''
-
-later                                                      = %% указывает на неопределённый момент ~ в будущем
-''Come back '''later'''.''
-''Can we talk about this '''later'''?''
-''Can't we talk about this '''later'''?''
-
-'''''sooner''' or '''later'''''                            = ''раньше или позже''
-
-easy %% comparative '''easier''' ~ superlative '''easiest''' = лекго, без труда, ~ спокойно, неторопливо
-''Take it '''easy'''!'' {2}
-''That's '''easy''' for you to say.''                      = ''Тебе легко сказать.''
-
-
-
-
-anyway
-anyhow
-
-with %% preposition           = с, со
-''Good luck '''with''' that.'' = ''Удачи тебе с этим.''
-''I'm down '''with''' that.'' = ''Я завязал с этим.'' %% idiomatic
-
-without %% preposition, adverb = без
-'''''without''' doubt''       = ''несомненно''
-''the knight '''without''' fear ~ and '''without''' reproach'' = ''рыцарь без страха и упрёка''
-
-
-at last                       = наконец
-at least                      = по крайней мере
-at any rate                   = в любом случае
-at this time                  = на этот раз
-at full speed                 = на полной скорости
-
-
-
-
-back @ backside %% <noun>     = спина, спинка, зад
-back @ inside} %% <noun>      = изнанка, подкладка, ~ оборотная сторона
-back @ sport} %% <noun>       = в спорте: защитник
-back @ adj.} %% <adj.>        = задний, отдаленный, ~ обратный, ~ отсталый
-back @ verb} %% <verb>        = поддерживать, подкреплять, ~ служить фоном
-back @ adv.} %% <adv.>        = назад, обратно
-back @ adv. Am.} {Am.} %% <adv.> = сзади, позади
-
-''When do you expect her '''back'''?'' = ''Когда она должна вернуться?''
-
-fore
-
-backward
-forward {adj.} %% <adj.>      = передний
-forward {adv.} %% <adv.>      = вперёд, дальше, впредь
-forward {sport} %% <noun>     = в спорте: нападающий, форвард
-forward {verb} %% <verb>      = отправлять, пересылать, ~ ускорять, способствовать
-forward! %% <int.>            = вперёд!
+: What are you looking at?
+: Do you think ~ people stare at you?
 
 
 

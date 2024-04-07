@@ -8,15 +8,17 @@ accent @ verb            = подчеркивать, акцентировать,
 accent @ emphasis        = в лингвистике: ударение, ~ диакритический знак, ~ в музыке: акцент # 14+ /// ˈəksent
 accent @ pronounce       = акцент ~ (произношение)                     # 14+ /// ˈəksent
 ---
-sentence                 = в грамматике: ~ предложение
-sentence                 = приговор
-: Marriage is not a word but a sentence.
+sentence/maxim           = сентенция, максима
+sentence @ grammar       = в грамматике: ~ предложение
+sentence @ law           = приговор
+: Marriage is not a word ~ but a sentence.
 ---
 reduction @ decrease     = уменьшение, упрощение                       # TERM+ # 16+
 reduction @ speech       = в лингвистике: ~ редукция                   # TERM+ # 16+
 ---
 transcription @ process  = запись, переписывание                       # TERM+ # 10+
 transcription @ phonetic = в фонетике: ~ транскрипция                  # TERM+ # 10+
+
 
 
 

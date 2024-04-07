@@ -1,8 +1,26 @@
-grammar
+===
+small words   # HEAD
+===
 
 ===
-small words # HEAD
+with          = с, со
 ===
+
+: Don't mess with me!
+: Good luck with that.
+: What is wrong with you?
+: What’s wrong with you?
+: I know what's the matter with you.
+: You got a problem with that?
+
+===
+without       = без
+===
+
+without doubt = несомненно
+
+
+
 
 
 

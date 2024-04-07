@@ -1,12 +1,53 @@
-grammar
-
 ===
-small words # HEAD
+small words   # HEAD
 ===
 
+===
+over @ above  = над, через, ~ свыше, сверх %% синоним: '''above''' ~ антоним: '''under'''
+===
 
+jump over     = перепрыгивать
+roll over     = перекатывать(ся)
+turn over     = переворачивать(ся)
+---
+: all over the globe
+: all over the world = во всем мире
 
+: You get over it.
+: Get over youself.
 
+===
+over and over = снова и снова
+and over again
+===
+
+: I'll think it over ~ and call you back.
+
+===
+over here     = здесь
+over there    = (вон) там
+===
+
+: Get over here!
+: Look over there.
+
+===
+over @ end    = %% окончание ''чего-либо''
+===
+
+: Is it over?''
+: The peril was over. ~ He was safe for the time.
+
+===
+over @ radio  = приём, прехожу на приём
+===
+: Over. @ radio
+: Do you copy? @ radio = как понял?
+: Roger. @ radio = вас понял
+: Roger that. @ radio
+: Copy that! @ radio
+: Over and out.
+===
 
 
 

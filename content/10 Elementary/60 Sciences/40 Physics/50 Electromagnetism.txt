@@ -15,8 +15,11 @@ electrolyte                 = электролит                     # MATH- #
 
 resistor                    = резистор                       # MATH- # TECH- # TERM- # 18+
 potentiometer               = потенциометр                   # MATH- # TECH- # TERM- # 18+
-
+---
+cathode =            катод                                      # 16+ # MATH+
+anode            = анод                                      # 16+ # MATH+
 electrode @ physics         = электрод                       # 10+
+
 photoelectric               = фотоэлектрический              # MATH- # TECH- # TERM- # 18+
 piezoelectric               = пьезоэлектрический             # MATH- # TECH- # TERM- # 18+
 

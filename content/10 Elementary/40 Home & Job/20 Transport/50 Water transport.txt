@@ -36,9 +36,10 @@ the Panama Canal      = Панамский канал                           
 the [English] Channel = Ла-Манш ~ (Английский канал)               # 10+
 root canal            = корневой канал зуба
 ---
+boatswain             = боцман
 pilot @ nautical      = лоцман
-pilotage              = проводка судов, ~ пилотаж                  # TECH+ # TERM+ # 10+
-cabotage              = каботаж                                    # TECH+ # TERM+ # 18+ /// («от мыса к мысу») (плавание судов между портами одного государства)
+pilotage @ nautical   = проводка судов, ~ пилотаж                  # TECH+ # TERM+ # 10+
+cabotage              = каботаж                                    # TECH+ # TERM+ # 18+
 
 ballast @ ship        = балласт, грузить балластом, ~ устойчивость, придавать устойчивость # 10+
 buoy                  = буй                                        # 10+
@@ -56,6 +57,7 @@ sonar                 = сонар, гидролокатор                    
 hydroacoustics        = гидроаккустика                             # TECH- # TERM- # 14+
 echolocation          = эхолокация                                 # TECH- # TERM- # 14+ /// у летучих мышей тоже
 compass @ nautical    = компас  %% ''в жаргоне моряков:'' компа́с
+
 
 
 

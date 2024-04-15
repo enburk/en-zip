@@ -6,8 +6,11 @@ armor @ body
 chain mail
 gauntlets        # 8+
 
+---
 swords
 unsheathe %% verb
+swordsman
+swordswoman
 
 Godspeed
 

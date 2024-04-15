@@ -1,7 +1,7 @@
 kitchen                 = кухня ~ (помещение)
 
 blender                 = блендер
-mixer                   = миксер
+mixer @ food            = миксер
 toaster                 = тостер
 microwave               = микроволновка
 refrigerator %% informal: fridge = холодильник
@@ -25,6 +25,7 @@ conserve @ noun %% noun = консервированные фрукты         
 
 culinary                = кулинарный                          # TERM- # pix- # 14+
 culinarian              = кулинар                             # TERM- # pix- # 14+
+
 
 
 

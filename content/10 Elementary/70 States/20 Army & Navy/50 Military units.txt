@@ -1,6 +1,5 @@
 ---
 battalion       = батальон
-division @ army = дивизия %% ''не'' дивизион
 brigade @ army  = бригада, ~ отряд, группа
 [field] army    = армия
 army group      = группа армий

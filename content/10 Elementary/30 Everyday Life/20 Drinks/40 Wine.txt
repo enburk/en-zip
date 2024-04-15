@@ -17,7 +17,8 @@ Chardonnay     = шардоне                         # TERM+
 
 sommelier      = сомелье                         # TERM+ /// Во фр. слово означало «дворецкий»
 decanter       = декантер                        # TERM+
-bouquet        = букет, аромат
+bouquet @ wine = букет, аромат
+
 
 
 

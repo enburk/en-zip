@@ -104,11 +104,18 @@ namespace content::out
 
                 for (auto& e: topic.entries)
                 for (str w: e.vocabulary)
-                searchmap += search_entry(
-                    eng::asciized(
+                {
+                    w = eng::asciized(
                     w.extract_upto("@")).
-                    ascii_lowercased(),
-                    e.eng, e.link);
+                    ascii_lowercased();
+
+                    w.replace_all("~", "");
+                    w.replace_all("  ", "");
+
+                    searchmap +=
+                    search_entry(
+                    w, e.eng, e.link);
+                }
 
                 for (auto chain:
                 topic.chains(entries))

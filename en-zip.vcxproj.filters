@@ -104,6 +104,6 @@
     <ClInclude Include="studia_r_search.h" />
     <ClInclude Include="studia_r_report_one+.h" />
     <ClInclude Include="studio_build_one++.h" />
-    <ClInclude Include="studia_r_extra.h" />
+    <ClInclude Include="studia_r_contents.h" />
   </ItemGroup>
 </Project>

@@ -5,11 +5,12 @@ self-portrait    = автопортрет
 still life       = натюрморт
 frame @ art      = рама, рамка
 exhibition @ art = выставка
-
+colour\\color    = цвет %% сравните: колорит, колер # 10+
+---
 paint @ art      = краска
 oil [paint]      = масло, маслянная краска
+oil on canvas      =       «холст, масло», ~ маслом на холсте
 paintbrush @ art = кисть
-colour\\color    = цвет %% сравните: колорит, колер # 10+
 
 curtain          = в театре: занавес
 

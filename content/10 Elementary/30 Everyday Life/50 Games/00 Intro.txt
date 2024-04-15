@@ -3,9 +3,8 @@ Game on!
 bowling          = боулинг
 darts @ game     = дартс                         # 10+
 paintball        = пейнтбол
-snooker          = снукер %% разновидность бильярда # TERM+ # 18+
-pool @ billiards = пул %% разновидность бильярда # TERM+ # 18+
 pinball          = пинбол                        # HISTORY- # 16+
+snooker          = снукер %% разновидность бильярда # TERM+ # 18+
 
 
 

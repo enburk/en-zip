@@ -1,26 +1,31 @@
 polysemic
 
 ---
-character @ nature       = характер, природа ~ (какого-либо явления) /// , ~ репутация
+talent @@                = талант, ~ талантливый человек
+talent @ job             = творческий работник
+talent @ unit            = талант %% денежная и весовая единица ~ в Древней Греции # 16+
+---
+character @ nature       = характер, природа ~ (какого-либо явления)    /// , ~ репутация
 character @ person       = персонаж, действующее лицо
 character @ symbol       = символ, знак, ~ буква, иероглиф
 ---
 sympathetic @ simpatico  = симпатичный, приятный
 sympathetic @ compassion = сочувствующий, сочувственный, ~ благосклонный
-sympathetic ink          = симпатические чернила               # 10+
+sympathetic ink          = симпатические чернила                        # 10+
 ---
-brunet|brunette @ black  = брюнет/брюнетка                     # 10+ /// # DELAY
-brunet|brunette @ brown  = шатен/шатенка                       # 10+ /// # DELAY
+brunet|brunette @ black  = брюнет/брюнетка                              # 10+ /// # DELAY
+brunet|brunette @ brown  = шатен/шатенка                                # 10+ /// # DELAY
 ---
-sanguine @ temperament   = сангвинический, ~ оптимистичный     # TERM- # 14+
-sanguine @ face          = румяный ~ (о лице)                  # TERM- # 14+
-sanguine @ art           = сангина, ~ рисунок сангиной         # TERM- # 14+
+sanguine @ temperament   = сангвинический, ~ оптимистичный              # TERM- # 14+
+sanguine @ face          = румяный ~ (о лице)                           # TERM- # 14+
+sanguine @ art           = сангина, ~ рисунок сангиной                  # TERM- # 14+
 
 ===
 ---
-mummy(1) @ corpse        = мумия                               # 10+ /// , ~ иногда: мумифицировать
-mummy(2) {Br.} @ mother %% Am. mommy = мамочка %% детское                  # 10+
+mummy(1) @ corpse        = мумия                                        # 10+ /// , ~ иногда: мумифицировать
+mummy(2) {Br.} @ mother %% Am. mommy = мамочка %% детское                           # 10+
 : Follow the Mummy
+
 
 
 

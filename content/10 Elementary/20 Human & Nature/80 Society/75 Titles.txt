@@ -20,8 +20,9 @@ signor               = синьор
 signora              = синьора
 signorina            = синьорина
 
-señor|senhor         = сеньор
+señor|senhor         = сеньор                                  # dulpe /// false friends
 señora|senhora       = сеньора
 señorita|senhorita   = сеньорита
+
 
 

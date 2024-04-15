@@ -83,6 +83,7 @@ namespace studia::one
             if (what == &starts.object.update_text)
             {
                 str s = starts.object.text; s.strip();
+                s = eng::asciized(s).ascii_lowercased();
                 if (s.size() < 2) return;
 
                 medias.object.text = "";
@@ -91,19 +92,15 @@ namespace studia::one
                 result.object.
                     clear();
 
-                auto range = map.equal_range(
-                entry{s}, [](auto& a, auto &b)
-                {
-                    str s = b.word.
-                    upto(a.word.size());
-                    s = eng::asciized(s).
-                    ascii_lowercased();
-                    return a.word < s;
-                });
+                auto it = map.lower_bound(entry{s},
+                    [](auto& a, auto &b) {
+                    return a.word < b.word;
+                    });
 
                 array<entry> entries;
-                for (auto e: range)
-                    entries += e;
+                while (it != map.end() and
+                    it->word.upto(s.size()) == s)
+                    entries += *it++;
 
                 for (auto& e: entries)
                 e.link.replace_all("| ", "|0");

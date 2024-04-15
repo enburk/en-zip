@@ -31,6 +31,12 @@ bow @ fashion      = бант
 bow @ music        = смычок
 bow @ gesture      = кланятся, поклониться, ~ поклон
 bow @ ship         = нос корабля
+---
+[olive] oil     =      масло (оливковое)
+[motor] oil     =      масло (моторное)
+oil @ petroleum    =       нефть
+oil @ painting     =       масло, маслянные краски
+butter             =       масло (сливочное)
 
 
 

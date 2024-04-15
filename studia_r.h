@@ -1,5 +1,5 @@
 #pragma once
-#include "studia_r_extra.h"
+#include "studia_r_contents.h"
 #include "studia_r_report_dic.h"
 #include "studia_r_report_one.h"
 #include "studia_r_report_one+.h"
@@ -9,7 +9,7 @@ struct studia_r:
 widget<studia_r>
 {
     app::dic::view dic;
-    studia::extras extra;
+    studia::contents contents;
     studia::dic::reports dics;
     studia::one::reports ones;
     studia::one::resorts oness;
@@ -20,11 +20,8 @@ widget<studia_r>
 
     studia_r ()
     {
-        path dir = std::filesystem::current_path();
-        extra.root = dir/"content/10 Elementary";
-
         planes += &dic;
-        planes += &extra;
+        planes += &contents;
         planes += &dics;
         planes += &ones;
         planes += &oness;
@@ -37,7 +34,7 @@ widget<studia_r>
         int i = 0;
         auto& select = selector.object;
         select.buttons(i++).text.text = "dictionary";
-        select.buttons(i++).text.text = "extras";
+        select.buttons(i++).text.text = "contents";
         select.buttons(i++).text.text = "reports: dic";
         select.buttons(i++).text.text = "reports: one";
         select.buttons(i++).text.text = "resources";
@@ -126,8 +123,8 @@ widget<studia_r>
             link = dics.link,
             notify(&link);
 
-        if (what == &extra)
-            link = extra.link,
+        if (what == &contents)
+            link = contents.link,
             notify(&link);
 
         if (what == &ones)

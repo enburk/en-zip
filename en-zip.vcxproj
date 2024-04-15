@@ -192,7 +192,7 @@
     <ClInclude Include="studia_l_request.h" />
     <ClInclude Include="studia_l_search.h" />
     <ClInclude Include="studia_r.h" />
-    <ClInclude Include="studia_r_extra.h" />
+    <ClInclude Include="studia_r_contents.h" />
     <ClInclude Include="studia_r_report_dic.h" />
     <ClInclude Include="studia_r_report_one+.h" />
     <ClInclude Include="studia_r_report_one.h" />

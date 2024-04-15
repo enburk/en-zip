@@ -14,18 +14,20 @@ torpedo         = торпеда
 flagship        = флагманский корабль, ~ флагман       /// %% ''не'' в знач. командующий
 convoy @ navy   = конвой, ~ свита, сопровождение, эскорт # 14+
 
-boatswain       = боцман
-cook            = кок                                  /// sea cook
-
 captain @ navy  = капитан, ~ капитан 1-го ранга
 commodore       = коммодор                             # 16+
 counter admiral = контр-адмирал
 vice admiral    = вице-адмирал
 
+===
+
 beam            = бимс %% балка, поддерживающая палубу # TECH+ # 16+ /// и вообще любая балка
-bowline         = булинь, ~ беседочный узел            # TECH+ # 16+
 kelson//keelson = кильсон                              # TECH+ # 16+
 Kingston valve  = кингстон                             # TECH+ # 16+
+
+bowline         = булинь, ~ беседочный узел            # TECH+ # 16+
+bowsprit        = бушприт
+
 
 
 

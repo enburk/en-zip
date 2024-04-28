@@ -38,6 +38,8 @@ speedometer %% informal: speedo = спидометр                          # 
 tachometer                   = тахометр                           # TECH+ # 10+
 odometer                     = одометр %% разговорное: счётчик    # TECH+ # 10+
 
+===
+
 diesel                       = дизель, дизельное топливо          # 10+
 turbo-diesel                 = турбодизель                        # TECH- # 10+
 antifreeze                   = антифриз                           # TECH- # 16+
@@ -50,5 +52,9 @@ automatic transmission       = автоматическая коробка (пе
 
 cylinder block               = блок цилиндров                     # TECH+ # TERM+ # 10+
 shock absorber               = амортизатор                        # TECH+ # TERM+ # 10+
+
+starter @ car                = стартёр                            # TECH+ # TERM+ # 14+
+differential @ car           = дифференциал                       # TECH+ # TERM+ # 14+
+
 
 

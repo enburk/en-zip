@@ -45,14 +45,14 @@ tender(3) @ soft      = нежный, ласковый, ~ чувствитель
 ---
 trust @ group         = трест
 trust @ reliance      = верить, доверять
-: Every drunken skipper trusts to _Providence. ~ But one of the ways of _Providence with drunken skippers ~ is to run them on the rocks.
+: Every drunken skipper trusts to Providence
 ---
 service @ assistance  = обслуживание, сервис                           # 10+ /// 1
 service @ state       = служба %% в т. ч. государственная и военная    # 10+ /// 1
 service @ religion    = обряд, служба ~ (религиозная)                  # 10+ /// 1
 serve/service @ sport = в спорте: подача                               # 10+ /// 1
 service @ kitchen     = сервиз                                         # 10+ /// много знач.
-service [tree]        = рябина, ирга                                   # 10+ /// 2 /// %% рябина домашняя, также: рябина глоговина (берека)
+service [tree]        = рябина, ирга                                   # 10+ /// 2 /// %% рябина домашняя
 
 
 

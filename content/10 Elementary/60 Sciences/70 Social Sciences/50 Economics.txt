@@ -52,8 +52,8 @@ indexation @ economy  = индексация                                    
 compensation          = компенсация, возмещение, вознаграждение
 subsidy               = субсидия, дотация
 
-obligation            = обязательство, обязанность, ~ иногда: облигация       # POLIT+
 liquidity             = ликвидность                                           # POLIT+
+liquidation           = ликвидация (предприятия), ~ продажа ценных бумаг за наличные деньги, ~ уплата долга
 
 financial instruments = финансовые инструменты                                # POLIT+
 futures               = фьючерс                                               # POLIT+
@@ -61,5 +61,6 @@ futures               = фьючерс                                          
 consolidation         = консолидация, ~ укрепление, объединение               # POLIT+
 refinancing           = рефинансирование                                      # POLIT+
 fiscal                = фискальный                                            # POLIT+
+
 
 

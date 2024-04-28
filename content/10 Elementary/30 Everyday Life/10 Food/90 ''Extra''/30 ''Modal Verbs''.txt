@@ -1,8 +1,8 @@
-modal verbs         = модальные глаголы
+modal verbs        = модальные глаголы
 
 ===
-can @ verb          = мочь, уметь
-may @ verb          = мочь ~ (иметь разрешение)
+can @ verb         = мочь, уметь
+may @ verb         = мочь ~ (иметь разрешение)
 ===
 
 : I '''can''' do this!
@@ -44,6 +44,7 @@ negative questions
 : '''Can''' we '''not''' talk about this?
 : '''Can’t''' we talk about this?
 : '''Can’t''' this wait?
+
 
 
 

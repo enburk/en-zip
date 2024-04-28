@@ -5,7 +5,7 @@ observatory               = обсерватория                            
 planetarium               = планетарий
 
 corona                    = солнечная корона                           # TERM- # 18+
-halo                      = в астрономии: гало, ~ также: нимб, ореол   # 18+
+halo @ astronomy          = в астрономии: гало, ~ также: нимб, ореол   # 18+
 moon phases//lunar phases = фазы луны                                  /// Другие варианты: phase of the moon
 ---
 Orion @ stars             = Орион ~ (созвездие)
@@ -63,5 +63,6 @@ exoplanet ~ (extrasolar planet) = экзопланета ~ (внесолнечн
 
 Big Bang                  = Большой взрыв                              # 10+
 singularity               = сингулярность                              # MATH+ # 18+
+
 
 

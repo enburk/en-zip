@@ -12,33 +12,33 @@ mole @ unit               = моль %% единица измерения ~ ко
 mole @ sauce              = моле %% мексиканский соус
 moth                      = моль %% насекомое
 ---
-chopper @ bike            = чоппер %% тип мотоцикла               # TECH- # 14+
-chopper @ copter          = разговорное: вертолёт                 # TECH- # 14+
-chopper @ knife           = секач, нож (мясника)                  # TECH- # 14+
+chopper @ bike            = чоппер %% тип мотоцикла                  # TECH- # 14+
+chopper @ copter          = разговорное: вертолёт                    # TECH- # 14+
+chopper @ knife           = секач, нож (мясника)                     # TECH- # 14+
 ---
 conductor {Br.} @ tickets = кондуктор
 conductor @ music         = дирижёр
-conductor @ physics       = в физике: проводник                   # 10+ /// Br. молниеотвод, громоотвод
-superconductor            = сверхпроводник                        # MATH- /// https://www.ted.com/talks/itay_talgam_lead_like_the_great_conductors
+conductor @ physics       = в физике: проводник                      # 10+ /// Br. молниеотвод, громоотвод
+superconductor            = сверхпроводник                           # MATH- /// https://www.ted.com/talks/itay_talgam_lead_like_the_great_conductors
 guard\\conductor @ train  = проводник ~ (в поезде)
 guide @ person            = экскурсовод, гид, ~ проводник
 guide @ book              = руководство, ~ путеводитель
 ---
-course @ path             = курс, направление, ход                # 10+
+course @ path             = курс, направление, ход                   # 10+
 : Maintain 25,000 feet, course 0-4-0. # 10+
 course @ programme        = курс обучения, ~ курс лекций, ~ курс лечения # 14+ /// много знач.
-exchange rate             = валютный '''курс'''                   # 14+
-golf course               = поле для гольфа                       # 10+
-main course               = главное блюдо                         # 10+
+exchange rate             = валютный '''курс'''                      # 14+
+golf course               = поле для гольфа                          # 10+
+main course               = главное блюдо                            # 10+
 ---
 track @ caterpillar       = трак ~ (звено гусеничной ленты)
 track @ racing            = трек, ~ велотрек, мототрек, ~ гоночная трасса
 track @ sound             = трек, ~ звуковая дорожка
-track @ mark              = тропинка, дорожка, ~ след, колея      /// , рельсы, ~ выслеживать, ~ прокладывать путь
+track @ mark              = тропинка, дорожка, ~ след, колея         /// , рельсы, ~ выслеживать, ~ прокладывать путь
 ---
-dock {Br.} @ drydock      = док                                   # 12+
-dock {Am.} @ pier         = пирс, причал                          # 12+
-dock/sorrel @ herb        = щавель                                /// #homonyms 1 – щавель, 2 – обрубок (хвоста)
+dock {Br.} @ drydock      = док                                      # 12+
+dock {Am.} @ pier         = пирс, причал                             # 12+
+dock/sorrel @ herb        = щавель                                   /// #homonyms 1 – щавель, 2 – обрубок (хвоста)
 ---
 rails @ railroad          = рельсы, железная дорога
 rails @ support           = поручни, перила
@@ -51,7 +51,7 @@ expression @ idiom        = выражение
 facial expression         = выражение лица
 : Nobody else ever called me a glorious young beast. I like that. ~ Glorious young beast '''expresses''' exactly what I like to be.
 ---
-gas @ natural             = газ                                   /// бахвалиться и др.
+gas @ natural             = газ                                      /// бахвалиться и др.
 gas ~ {Am.} @ gasoline    = бензин
 gauze @ fabric            = марля, газ (материя), ~ дымка
 gauze [bandage]           = марлевый бинт
@@ -59,6 +59,11 @@ gauze [bandage]           = марлевый бинт
 biker @ biker             = байкер
 biker @ motorcyclist      = мотоциклист
 biker @ cyclist           = велосипедист
+---
+saloon [car]\\sedan       = седан                                    # TECH-
+saloon {Br.} @ ship       = салон %% помещение для пассажиров ~ на пароходе
+saloon @ bar              = салун %% традиционное название бара ~ на Диком Западе # 16+
+
 
 
 

@@ -16,8 +16,8 @@ electrolyte                 = электролит                     # MATH- #
 resistor                    = резистор                       # MATH- # TECH- # TERM- # 18+
 potentiometer               = потенциометр                   # MATH- # TECH- # TERM- # 18+
 ---
-cathode =            катод                                      # 16+ # MATH+
-anode            = анод                                      # 16+ # MATH+
+cathode                     = катод                          # MATH+ # 16+
+anode                       = анод                           # MATH+ # 16+
 electrode @ physics         = электрод                       # 10+
 
 photoelectric               = фотоэлектрический              # MATH- # TECH- # TERM- # 18+
@@ -34,6 +34,7 @@ tesla                       = тесла %% единица индукции ~ м
 
 electromagnetic ~ induction = электромагнитная ~ индукция    # MATH+ # TERM+ # 18+
 electromagnetic ~ radiation = электромагнитное ~ излучение   # MATH+ # TERM+ # 18+
+
 
 
 

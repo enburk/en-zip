@@ -2,6 +2,7 @@ rank @ army            = звание, чин, ранг
 
 field marshal          = фельдмаршал                                  # 10+
 generalissimo          = генералиссимус                               # 10+
+brigadier general      = бригадный генерал                            # WAR+ # 16+
 adjutant               = адъютант                                     # 10+
 
 soldier                = солдат, рядовой
@@ -30,6 +31,7 @@ sniper                 = снайпер
 soldier of fortune     = солдат удачи, наёмник                        # 18+
 
 barrack                = казарма, барак                               # 14+
+
 
 
 

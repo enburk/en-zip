@@ -5,7 +5,6 @@ sportswoman             = спортсменка
 
 champion @ sport        = чемпион
 finalist @ sport        = финалист
-record @ sport          = рекорд                             /// `record
 medal @ sport           = медаль
 trophy @ sport          = трофей, приз
 

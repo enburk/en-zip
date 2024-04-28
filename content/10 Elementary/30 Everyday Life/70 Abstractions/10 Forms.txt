@@ -1,9 +1,10 @@
-forms/shapes      = формы
+forms/shapes = формы
 
-cube      = куб, кубик /// Также: нарезать кубиками.
-sphere    = сфера, шар, глобус
-cylinder  = цилиндр
-pyramid   = пирамида
-disk|disc = диск
+cube         = куб, кубик /// Также: нарезать кубиками.
+sphere       = сфера, шар, глобус
+cylinder     = цилиндр
+pyramid      = пирамида
+disk|disc    = диск
+
 
 

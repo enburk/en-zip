@@ -11,7 +11,7 @@ streetcar/trolley {Am.} = трамвай
 aerial tramway          = канатная дорога                         /// ropeway
 ---
 depot @ facility        = депо, склад, ~ автобусный/троллейбусный парк # TERM- # 10+
-depot @ station {Am.}   = станция %% автобусная или железнодорожная # 10+
+depot {Am.} @ station   = станция %% автобусная или железнодорожная # 10+
 
 draisine                = дрезина                                 # TECH- # 10+
 buffer @ train          = буфер                                   # TECH- # 16+

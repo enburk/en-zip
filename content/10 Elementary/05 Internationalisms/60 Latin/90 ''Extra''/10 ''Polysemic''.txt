@@ -36,6 +36,13 @@ project @ noun %% noun    = проект, замысел, план            # 
 project @ cast %% verb    = проецировать                     # 14+ /// pro`ject
 project @ plan %% verb    = прогнозировать, проектировать    # 12+ /// pro`ject
 project @ extend %% verb  = выступать, выдаваться            # 10+ /// pro`ject
+---
+reserve @ keep            = резерв, ~ запас, запасать
+reserve @ book            = резервировать, бронировать
+reserve Br. @ nature      = заповедник
+reserve (Canada)//reservation (US) = резервация
+reserve @ behaviour       = сдержанность
+
 ===
 sense @ appreciation      = чувство, ощущение, ощущать       # 10+
 sense @ perception        = чувство ~ (обоняния, осязания и т.д.) # 10+
@@ -46,6 +53,7 @@ sense of humour\\sense of humor = чувство юмора                    #
 sense @ meaning           = смысл, значение                  # 10+
 common sense %% also: good sense = здравый смысл                    # 10+
 nonsense                  = нонсенс                          # 10+
+
 
 
 

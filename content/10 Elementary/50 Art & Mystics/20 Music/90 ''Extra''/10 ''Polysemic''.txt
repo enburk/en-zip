@@ -21,6 +21,11 @@ conservatory {Br.}            = зимний сад, оранжерея        #
 vocalise @ noun               = вокали́з                      # ART+ # 18+ /// (пение без слов) /// voca`lise
 : Rachmaninoff's Vocalise
 vocalise\\vocalize @ verb     = издавать звуки, вокализировать %% произносить звонко # ART+ # 18+ /// `vocalise
+---
+tube @ container              = тюбик
+tube @ tech                   = труба, трубка
+tube @ music                  = туба
+
 ===
 major @ music                 = мажор, мажорный
 major @ main                  = главный, больший, ~ более важный
@@ -30,4 +35,5 @@ minor @ music                 = минор, минорный
 minor @ lesser                = малый, меньший, ~ незначительный
 minor @ age                   = несовершеннолетний
 ===
+
 

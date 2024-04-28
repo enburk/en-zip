@@ -27,5 +27,10 @@ tuberculosis bacillus        = палочка Коха                   # TERM+
 
 ===
 
+dysentery                    = дизентерия                     # TERM+ # 16+
+typhus                       = сыпной тиф                     # TERM+ # 16+
+bubonic plague               = бубонная чума                  # 16+
+
 miasma                       = миазм/миазма %% устаревший медицинский термин: ~ болезнетворные испарения # RARE+ # 16+
+
 

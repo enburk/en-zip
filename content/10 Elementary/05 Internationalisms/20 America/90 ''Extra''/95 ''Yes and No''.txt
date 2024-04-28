@@ -15,7 +15,7 @@ yes and no
 : No?
 : Ah, no!
 : No idea.
-: No way!
+: No way! @ reject # duple
 
 : Not me!
 : Not now!
@@ -28,7 +28,7 @@ yes and no
 : Nay!
 : Oh no!
 
-: Yeah!
+: Yeah! @@
 : Yeah?
 : Yeah, it's a good idea.
 : Oh, yeah! @ sarcastically

@@ -17,7 +17,7 @@ guess      = догадываться
 : I guess so.
 : I guess so!
 : Guess who? @ call
-: Guess who?
+: Guess who? @@
 
 : I don't understand.
 : Oh, I don't understand!

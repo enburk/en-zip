@@ -1,7 +1,7 @@
 verbs        = глаголы
 
 do           = делать
-go           = идти
+go @ verb    = идти
 look @ verb  = смотреть, выглядеть
 listen       = слушать
 drink @ verb = пить

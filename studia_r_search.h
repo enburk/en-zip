@@ -203,8 +203,8 @@ namespace studia::one
                     str links = fn.extract_from("[" );
                     str comnt = fn.extract_from("%%");
                     str sense = fn.extract_from("@" );
-                    if (sense != "") fn += " @ " +
-                        sense;
+                    if (sense != "") title += " @ " + sense;
+                    if (sense != "") fn += " @ " + sense;
 
                     if (index.options.
                     contains("sound"))

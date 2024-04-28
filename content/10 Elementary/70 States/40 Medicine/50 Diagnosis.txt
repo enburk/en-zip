@@ -5,7 +5,7 @@ symptom @ medicine        = симптом, признак                      
 
 amnesia                   = амнезия                                # 14+
 avitaminosis              = авитаминоз                             # 10+
-coma @ medicine           = кома                                   # 18+ /// кома в физике и астрономии, «волосяной пучок» в ботанике
+coma @ medicine           = кома                                   # 18+ /// кома в физике и астрономии
 haematoma\\hematoma       = гематома                               # 14+
 insomnia//sleeplessness   = бессонница
 panic attack              = паническая атака                       # 16+
@@ -43,7 +43,7 @@ narcolepsy                = нарколе́псия                            
 somnambulist              = сомнамбула, лунатик                    # 16+
 neurosis                  = невроз                                 # 16+
 neurasthenia              = неврастения                            # 16+
-schizophrenia             = шизофрения                             # 16+ /// (как и было сказано)
+schizophrenia             = шизофрения                             # 16+
 
 
 

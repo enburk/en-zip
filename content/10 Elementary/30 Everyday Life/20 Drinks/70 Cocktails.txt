@@ -1,19 +1,20 @@
-cocktails               = коктейли
+cocktails             = коктейли
 
-Bloody Mary             = Кровавая Мэри
-margarita               = маргарита
-daiquiri                = дайкири # TERM+
-mimosa @ cocktail       = Мимоза # TERM+
-B-52                    = Б-52
-Kamikaze                = Камикадзе # TERM+
-martini                 = мартини
-Molotov cocktail        = коктейль Молотова
+Bloody Mary           = Кровавая Мэри
+margarita             = маргарита
+daiquiri              = дайкири # TERM+
+mimosa @ cocktail     = Мимоза # TERM+
+B-52                  = Б-52
+Kamikaze              = Камикадзе # TERM+
+martini               = мартини
+Molotov cocktail      = коктейль Молотова
 
 ===
-vodka martini           = водка-мартини
+vodka martini         = водка-мартини
 “Shaken, not stirred” = «Взболтать, а не смешивать» %% ''точнее:'' взболтанный, не смешанный
 = %% При смешивании ~ напиток нагревается, ~ а при взбалтывании ~ охлаждается.
 ===
+
 
 
 

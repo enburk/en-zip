@@ -1,5 +1,5 @@
-questions     = вопросы
-answers       = ответы
+questions    = вопросы
+answers      = ответы
 
 : Really?
 : Seriously?
@@ -8,21 +8,21 @@ answers       = ответы
 ===
 
 : Am I right?
-: Are you serious?
+: Are you serious? @@
 : Are you sure?
 : Is that all?
 
 ===
 wh–questions # HEAD
 ===
-what          = что # pix-
-where         = где # pix-
-when          = когда # pix-
-who           = кто # pix-
-why           = почему # pix-
+what         = что # pix-
+where        = где # pix-
+when         = когда # pix-
+who          = кто # pix-
+why          = почему # pix-
 ===
 
-: What?
+: What? @@
 : Wait, what?
 : What is this?
 : What is that?
@@ -34,8 +34,9 @@ why           = почему # pix-
 : Where is she?
 : Where am I?
 : Where did I put it?
-
-: When?
+---
+: When? @@
+: When? @ surprised
 
 : Who?
 : Who is it?
@@ -48,6 +49,7 @@ why           = почему # pix-
 ===
 
 : To be or not to be. ~ That is the question. # 14+
+
 
 
 

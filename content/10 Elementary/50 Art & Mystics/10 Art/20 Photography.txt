@@ -21,7 +21,7 @@ focus @ photo     = фокус, фокусировать
 autofocus         = автофокус                                        # 10+
 ---
 exposure @ photo  = экспозиция                                       # TECH+ # TERM+ # 16+ /// (количество получаемого света)
-diaphragm @ photo = диафрагма %% перегородка в объективе, ~ регулирующая светопропускание # TECH+ # TERM+ # 16+
+diaphragm @ photo = диафрагма                                        # TECH+ # TERM+ # 16+
 aperture @ photo  = апертура %% степень раскрытости диафрагмы        # TECH+ # TERM+ # 18+
 
 studio @ photo    = студия
@@ -29,6 +29,7 @@ stroboscope       = стробоскоп                                       #
 photojournalism   = фотожурнализм
 paparazzi         = папарацци                                        # 14+
 selfie            = селфи
+
 
 
 

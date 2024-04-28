@@ -38,8 +38,8 @@ in a small way        = в некотором отношении
 
 ===
 %% interjections
-No way! @ disbelief   = Не может быть! Да ладно!
-No way. @ reject      = %% категорический отказ
+No way! @ disbelief   = Не может быть! Да ладно! # duple
+No way. @ reject      = %% категорический отказ # duple
 Yes way!              = %% ответ на предшествующее ''No way!''
 ===
 
@@ -47,5 +47,6 @@ Yes way!              = %% ответ на предшествующее ''No way
 %% intensifier
 way too mush          = непомерно много
 ===
+
 
 

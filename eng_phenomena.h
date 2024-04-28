@@ -20,12 +20,16 @@ namespace eng::list
     "don, m, s, re, ll, t").split_by(", ");
 
     array<str> sensitive = str(
-    "angry, annoyed, anxious, bewildered, concerned, "
-    "defiant, dejected, depressed, disbelieving, disappointed, "
-    "emphatic, enthusiastic, excited, happy, horrified, "
+    "aggravated, angry, annoyed, anxious, astonished, "
+    "bewildered, concerned, "
+    "defiant, derogatory, dejected, depressed, desperate, "
+    "disappointed, disbelieving, disinterested, "
+    "emphatic, enthusiastic, exaggerated, excited, exuberant, "
+    "forlorn, frustrated, gratified, happy, horrified, "
     "impatient, incredulous, indignant, "
-    "realization, relieved, "
-    "sad, upset"
+    "playfully, realization, relieved, "
+    "sad, sarcastic, scared, shocked, stern, suprised, sympathetic, "
+    "unimpressed, upset, urgent"
     ).split_by(", ");
 
 }

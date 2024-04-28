@@ -9,7 +9,7 @@ server @ comp      = сервер                                               
 provider @ comp    = провайдер                                                  # IT- # 10+
 
 ---
-blog               = блог %% сокращение от web log — интернет-дневник          # IT- # 14+
+blog               = блог %% сокращение от web log — интернет-дневник           # IT- # 14+
 blogger            = блогер|блоггер
 
 [internet] forum   = веб-форум/форум                                            # 10+ /// /message board
@@ -36,6 +36,7 @@ trolling           = троллинг                                           
 cybersquatting     = киберсквотинг %% регистрация доменных имен с целью перепродажи # IT+ # RARE+ # 18+
 
 hypertext          = гипертекст                                                 # IT+ # 18+
+
 
 
 

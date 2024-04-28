@@ -1,4 +1,4 @@
-state                      = государство, страна, штат, ~ государственный
+state @ gov                = государство, страна, штат, ~ государственный # duple
 ---
 flag @ state               = флаг, флажок                        /// поникнуть, упасть духом
 tricolour\\tricolor        = триколор
@@ -49,5 +49,6 @@ satellite state            = государство-сателлит            
 protectorate               = протекторат                         # POLIT+ # 16+ /// Am. /prəˈtektərət/
 Dominion|dominion          = доминион %% самоуправляющееся государство ~ в составе Британской Империи # HISTORY+ # POLIT+ # RARE+ # 16+
 dominion                   = власть, господство, владение        # HISTORY+ # POLIT+ # RARE+ # 16+
+
 
 

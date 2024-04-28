@@ -42,7 +42,10 @@ baby girl
 ---
 happy                     = счастливый, довольный
 sad                       = грустный
+: Yeah! @ happy
+: Yay! @ happy
 : You look sad.
+: uh huh @ sad
 
 shy                       = застенчивый, стеснительный, ~ робкий
 odd @ strange             = странный

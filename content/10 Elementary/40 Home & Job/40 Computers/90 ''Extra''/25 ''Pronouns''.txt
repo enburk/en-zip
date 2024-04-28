@@ -1,12 +1,12 @@
-reflexive pronouns = возвратные местоимения
+reflexive pronouns   = возвратные местоимения
 
 ===
-myself             = сам, себя, себе, собой
-yourself           = сам, себя, себе, собой
-himself            = сам, себя, себе, собой
-herself            = сама, себя, себе, собой
-oneself            = сам, себя, себе, собой
-itself             = само, себя, себе, собой
+myself   @ pronoun   = сам, себя, себе, собой
+yourself @ pronoun   = сам, себя, себе, собой
+himself  @ pronoun   = сам, себя, себе, собой
+herself  @ pronoun   = сама, себя, себе, собой
+oneself  @ pronoun   = сам, себя, себе, собой
+itself   @ pronoun   = само, себя, себе, собой
 ===
 
 : I'm just not myself today.
@@ -15,17 +15,18 @@ itself             = само, себя, себе, собой
 : Will you please keep your impertinent remarks to yourself?
 
 ===
-ourselves          = сами, себя, себе, собой
-yourselves         = сами, себя, себе, собой
-themselves         = сами, себя, себе, собой
+ourselves  @ pronoun = сами, себя, себе, собой
+yourselves @ pronoun = сами, себя, себе, собой
+themselves @ pronoun = сами, себя, себе, собой
 ===
 
 
 ===
-intensive pronouns = усилительные местоимения
+intensive pronouns   = усилительные местоимения
 = совпадают по форме с возвратными, ~ но могут быть убраны из предложения ~ без потери смысла
 ===
 
 : I'll do it myself.
 : I'll do it, Myself, thanks.
+
 

@@ -1010,8 +1010,6 @@ The butterfly effect.txt
 The French seem to combine science with politics.ogg
 The French seem to combine science with politics.txt
 >>> ../datae\audio\lectures {{ttc}}\Prof. Benjamin Schumacher - Impossible.. Physics beyond the Edge ## us/{{}}
-Any suffi ciently advanced technology is.ogg
-Any suffi ciently advanced technology is.txt
 Arthur C. Clarke 3 laws.ogg
 Arthur C. Clarke 3 laws.txt
 Henry Poincare.ogg
@@ -1019,6 +1017,8 @@ Henry Poincare.txt
 Nature abhors a vacuum.ogg
 When a distinguished but elderly scientist states.ogg
 When a distinguished but elderly scientist states.txt
+“Any sufficiently advanced technology is indistinguishable from magic.”.ogg
+“Any sufficiently advanced technology is indistinguishable from magic.”.txt
 >>> ../datae\audio\lectures {{ttc}}/Prof. Brooks Landon - Building Great Sentences ## us
 !credit.txt
 We might think of an onion.ogg
@@ -1474,7 +1474,7 @@ Job offer for telepathic person.. you know where to apply..ogg
 Last night I lay in bed looking up at the stars in the sky, and I thought to myself, where the heck is the ceiling~!.ogg
 Lift out of order~! Try the one across the street!.ogg
 Marriage is not a word but a sentence..ogg
-Never put off till tomorrow what you can avoid altogether,.ogg
+Never put off till tomorrow what you can avoid altogether..ogg
 Nostalgia isn’t what it used to be..ogg
 Old accountants never die, they just lose their balance..ogg
 Roses are red, violets are blue, most poems rhyme, but this one doesn't..ogg
@@ -1675,7 +1675,7 @@ to be long-winded -- to say something in an indirect way using lots of unnecessa
 to be over the moon -- if you’re “over the moon”, you’re really happy about something.ogg
 to be right up someone’s street -- if something is “right up someone’s street”, it’s perfect for them.ogg
 to be streets ahead -- to be much better or more advanced than someone or something.ogg
-to get a word in edgeways -- not to have the opportunity to talk bacause someone else is talking too much.ogg
+to get a word in edgeways -- not to have the opportunity to talk because someone else is talking too much.ogg
 to get the ball rolling -- to do something that helps start an activity.ogg
 to go to pot -- to be damaged or spoilt due to a lack of effort or maintenance.ogg
 to have time on your hands -- to have extra time.ogg
@@ -3449,7 +3449,7 @@ chalk.ogg
 chalked.ogg
 chalks.ogg
 clarify.ogg
-couldja ### (could you).ogg
+couldja ## = ### (could you).ogg
 determine.ogg
 durability.ogg
 heteronyms.ogg
@@ -14369,7 +14369,7 @@ Why then~!.wav
 !credit.txt
 A young man we can sketch his portrait at a dash.ogg
 A young man we can sketch his portrait at a dash.txt
-Adieu; or rather, AU REVOIR.ogg
+Adieu; or rather, AU REVOIR..ogg
 And I, said Porthos, rolling his large eyes.ogg
 And I, said Porthos, rolling his large eyes.txt
 Aramis resumed his pen, reflected a little.ogg
@@ -15131,7 +15131,7 @@ HIST! Did you hear that noise, Cabaco.wav
 I am not superstitious..wav
 I am not used to be spoken to that way, sir; I do but less than half like it, sir..wav
 I am the architect, not the builder..wav
-I did not like that plan at all.wav
+I did not like that plan at all..wav
 I don’t know..wav
 I feel funny. Fa, la! lirra, skirra!.wav
 I saw it..wav
@@ -15206,6 +15206,7 @@ Whiskey!.ogg
 !credit.txt
 Aha! Now I know how to deal with you. Aha!.ogg
 But on what terms~! Is she a servant~! If not, what is she~! [terms].ogg
+But she says she is quite willing to meet you on friendly terms and to {let bygones be bygones}. [bygones].ogg
 Don't sit on my writing-table.. you'll break it..ogg
 Drank! My word! Something chronic..ogg
 Dustman! Oh no, sir.. a gentleman. [dustman].ogg
@@ -15224,6 +15225,7 @@ Oh, you are a cruel tyrant..ogg
 Please speak to me in _English I do not understand _French..ogg
 She's quite a common girl, sir. Very common indeed. [common].ogg
 Small talk indeed! What about your large talk~! [small talk].ogg
+The floor is yours, Mr. Doolittle..ogg
 The shallow depression in the west of these islands.ogg
 The shallow depression in the west of these islands.txt
 There are your slippers. And there. Take your slippers; and may you never have a day's luck with them!.ogg
@@ -15233,6 +15235,7 @@ Whats to become of me~! Whats to become of me~!.ogg
 When he was out of work, my mother used to give him fourpence.ogg
 When he was out of work, my mother used to give him fourpence.txt
 Will you please keep your impertinent remarks to yourself~!.ogg
+You didn't thank her, or pet her, or admire her, or tell her how splendid she'd been..ogg
 >>> ../datae\audiobooks\Shaw, George Bernard - Pygmalion ## uk {{Cora McDonald}}/{{}}
 >>> ../datae\audiobooks\Shaw, George Bernard - Pygmalion ## uk {{Cora McDonald}}\{{}}/1 ## =
 Clara!.ogg
@@ -15244,6 +15247,8 @@ Amen. You are a born preacher..ogg
 Are we in the way~! [in the way].ogg
 Certainly. Quite right. Most important..ogg
 Have you no morals, man~! [morals].ogg
+Indeed! Why~!.ogg
+It's handsome. By _George, it's enormous!.ogg
 Never you mind. They did..ogg
 not at all, not at all..ogg
 Oh _Henry, _Henry, really!.ogg
@@ -15474,6 +15479,8 @@ I didn't say he was married. I said he was engaged to be married. There is a gre
 I didn't say I liked it, _Harry. I said it fascinated me. There is a great difference. [fascinated].ogg
 I have never searched for happiness. Who wants happiness~! I have searched for pleasure..ogg
 I like men who have a future and women who have a past..ogg
+I like _Wagner's music better than anybody's.ogg
+I like _Wagner's music better than anybody's.txt
 I love scandals about other people, but scandals about myself don't interest me.ogg
 I love scandals about other people, but scandals about myself don't interest me.txt
 I represent to you all the sins you have never had the courage to commit..ogg
@@ -15488,11 +15495,18 @@ In the centre of the room, clamped to an upright easel, stood the full-length po
 In the centre of the room, clamped to an upright easel, stood the full-length portrait.txt
 Intellect is in itself a mode of exaggeration, and destroys the harmony of any face..ogg
 Is that very vain of me~! I think it is rather vain. [vain].ogg
+It is not merely that I paint from him, draw from him, sketch from him.ogg
+It is not merely that I paint from him, draw from him, sketch from him.txt
+It is the problem of slavery, and we try to solve it by amusing the slaves..ogg
+Laughter is not at all a bad beginning for a friendship, and it is far the best ending for one..ogg
 Let nothing be lost upon you.  Be always searching for new sensations. Be afraid of nothing..ogg
 Men marry because they are tired; women, because they are curious.. both are disappointed..ogg
 Moderation is a fatal thing. Enough is as bad as a meal. More than enough is as good as a feast. [+][Wildean].ogg
 Nothing can cure the soul but the senses, just as nothing can cure the senses but the soul. [soul].ogg
 Royalties may not abdicate. [abdicate][royalties].ogg
+She devoted herself now to the pleasures of _French fiction, _French cookery, and _French {esprit} when she could get it..ogg
+Society -- civilized society, at least --.ogg
+Society -- civilized society, at least --.txt
 Stop, _Basil. You are talking about things of which you know nothing..ogg
 That is the reason I hate vulgar realism in literature.ogg
 That is the reason I hate vulgar realism in literature.txt
@@ -15507,6 +15521,8 @@ The people who love only once in their lives are.txt
 The peril was over. He was safe for the time..ogg
 There is only one thing in the world worse than being talked about, and that is not being talked about. [+][Wildean].ogg
 There was a horrible smell of nitric acid in the room. [nitric acid].ogg
+There was purification in punishment.ogg
+There was purification in punishment.txt
 They walked softly, as men do instinctively at night..ogg
 Those who are faithful know only the trivial side of love.. it is the faithless who know love's tragedies. [+][Wildean].ogg
 Threads snap. You would lose your way in the labyrinth..ogg
@@ -15599,17 +15615,24 @@ There was a real joy in that..ogg
 This is extraordinary..ogg
 Whose property is it~!.ogg
 Ah, you have discovered that~!.ogg
+And her voice -- I never heard such a voice..ogg
 And now good-bye..ogg
+Anglomania is very fashionable over there now, I hear. [Anglomania].ogg
 But why not~!.ogg
+Every moment was of vital importance..ogg
 Good heavens! [good heavens].ogg
+His finely chiselled nostrils quivered..ogg
 How extraordinary..ogg
 How late it was!.ogg
+I have not the slightest idea..ogg
 It is silly of you..ogg
 Let us never see each other again..ogg
 Nothing will induce me to stir a step to help you..ogg
 Now it is for me to dictate terms..ogg
+Ten minutes past two~! How horribly late! You must wake me at nine to-morrow. I have some work to do..ogg
 The thing is quite simple. Face it, and do it..ogg
 tired of standing.ogg
+Was that a paradox~!.ogg
 What is done is done. What is past is past..ogg
 What is the matter with you to-night~! You are quite out of sorts..ogg
 What it all meant~! [meant].ogg
@@ -17559,7 +17582,7 @@ That bad~!.wav
 This will be interesting..wav
 To hell with you!.wav
 Told you so..wav
-What are looking for anyway~!.wav
+What are you looking for anyway~!.wav
 What are you trying to tell me~!.wav
 When can you start~!.wav
 Who are you talking about~!.wav
@@ -18888,10 +18911,10 @@ St John the Divine of Patmos.wav
 Suppose you tell me what this is about. And it had better be good..wav
 Tea, please..wav
 Technically....wav
-That was the easy bit.wav
+That was the easy bit..wav
 That was then, this was now..wav
 That was wonderful..wav
-That's the whole point.wav
+That's the whole point..wav
 That’d be wicked..wav
 That’s where you’re wrong..wav
 The Wicked Bible.wav
@@ -19614,8 +19637,8 @@ high spirits.wav
 How could I hurt her~! She’s never been anything but kind to me!.wav
 I didn’t know they made 9th Place ribbons..wav
 I wish I didn’t embarrass so easily, it’s so embarrassing!.wav
-If not actually disgruntled, he was far from being gruntled.txt
-If not actually disgruntled, he was far from being gruntled.wav
+If not actually disgruntled, he was far from being gruntled..txt
+If not actually disgruntled, he was far from being gruntled..wav
 inappropriate behaviour.wav
 It is triangular.. me (the victim), you (the traitor) and the other (the thief)..wav
 It’s simple..wav
@@ -20691,7 +20714,7 @@ reverberate ### ElectGuitarLowTone MA023302.wav
 accordion, arpeggio.. tonic, dominant, subdominant ### AccordionArpeggioT MA020504.wav
 accordion.. staccato ### AccordionCome CTE04_17.7.wav
 cadence ### ViolinCadenceTradi AC051401.wav
-dramatic bridges... anxious, expectant ### Dramatic-Rippling-Bridge-CSS026401.wav
+dramatic bridges.. anxious, expectant ### Dramatic-Rippling-Bridge-CSS026401.wav
 mouth organ.. subdominant to tonic finale ### MouthOrganSubdomin MA026201.wav
 mouth organ.. subdominant to tonic finale ### MouthOrganSubdomin MA026203.wav
 orotund seventh chord ### AcstcGuitarMinor SDT2057204.wav
@@ -23576,7 +23599,7 @@ When can I see you again~! ### [Adult-Fem-D_When-Can-I-See-You-Again_VKT_01985].
 When do you expect her back~! ### [Mid-Aged-Fem-B_When-Do-You-Expect-Her-Back_VKT_10666].wav
 When I'm good and ready. @ indignant ### Adult-Fem-A_Indignant-When-Im-Good-And-Ready_VKT_00216.mp3
 When~! ### [Teen-Fem-A_When_VKT_14074].wav
-When~! @ suprised ### [Adult-Male-C_When_VKT_04471].mp3
+When~! @ surprised ### [Adult-Male-C_When_VKT_04471].mp3
 Where am I~! ### MaleFaintsWhereAmI PE675601.wav
 Where are you going~! ### [Senior-Male-B_Where-Are-You-Going_VKT_13752].wav
 Where do you think you're going~! ### [Adult-Fem-D_Where-Do-You-Think-Youre-Going_VKT_01987].mp3
@@ -23662,7 +23685,7 @@ yay! @ happy ### [Adult-Fem-A_Yay_VKT_00359].mp3
 Yay! @ yes ### [Senior-Male-A_Yay_VKT_13632].wav
 yea! ### ChildrenCrowd AR02_85_1.wav
 yeah ### [Teen-Fem-C_Yeah_VKT_14766].wav
-yeah! ### [Teen-Male-C_Yeah_VKT_16374].wav
+Yeah! ### [Teen-Male-C_Yeah_VKT_16374].wav
 Yeah! @ happy ### Child-Male-A_Happy-Yeah_VKT_08525.wav
 Yeah, I suppose so. ### [Teen-Male-C_Yeah-I-Suppose-So_VKT_16380].wav
 Yeah, it's a good idea. ### [Teen-Male-C_Yeah-Its-A-Good-Idea_VKT_16381].wav
@@ -23831,6 +23854,7 @@ Archangel _Gabriel [archangel Gabriel][archangel][Gabriel] ## qropt!.jpg
 >>> ../datae\fineart abc {{$$}}/Bazille {{Frédéric Bazille}}
 Monotonous Chant [+] ## date 1870 ## qrop t10 b10 ### Mélopée.jpg.uid-zps
 Monotonous Chant [monotonous] ## date 1870 ## crop r1 ## qrop t10 b10 r1 ## qropt! ### Mélopée.jpg
+Self Portrait with Palette [artist] ## date 1865.jpg
 >>> ../datae\fineart abc {{$$}}/Bellows {{George Wesley Bellows}}
 exaltation ## date 1915 ## qrop b12 ## qropt! ### Lucie.jpg
 >>> ../datae\fineart abc {{$$}}/Bettannier {{Albert Bettannier}}
@@ -23995,6 +24019,8 @@ And There Was a Cry in _Egypt [Exodus] ## noqrop ## date 1897.jpg
 In Jeopardy [jeopardy] ## date 1902 ## qrop l17 r12 ## qropt!.jpeg
 The Drone [drone@idle] ## date 1899.jpg
 The Temptation of Sir Percival [temptation][Percival][Perceval] ## crop t1 ## qrop l1 r6 t1 ## qropt! {{Arthur Hacker, 1894 $$}}.jpg
+>>> ../datae\fineart gh {{$$}}/Hale {{Lillian Westcott Hale}}
+The Convalescent [convalescent] ## date 1906.png ### Zeffy in Bed.png
 >>> ../datae\fineart gh {{$$}}/Hals {{Frans Hals}}
 René Descartes [Descartes] ## date 1648 ## qropt!.jpg
 The Laughing Cavalier [cavalier] ## qrop t4 b15 ## date 1624.jpg
@@ -24012,7 +24038,11 @@ Centaurus @ constellation ## qrop l2 ## qropt! {{Johannes Hevelius, 1687 $$}}.jp
 Ursa Major also known as the Great Bear [Ursa Major][Great Bear][constellation] ## date 1687 ## qrop l7 r8.jpg
 >>> ../datae\fineart gh {{$$}}/Homer {{Winslow Homer}}
 The Fog Warning [peril][dory] ## date 1885 ## qrop l16 r13 ## qropt!.jpg
+>>> ../datae\fineart gh {{$$}}/Hughes {{Arthur Hughes}}
+Ophelia ## date 1865.jpeg
 >>> ../datae\fineart gh {{$$}}/Hughes {{Edward Hughes}}
+Midsummer Eve [fairy ring] ## date c. 1908.jpg
+Night with her Train of Stars [train@tail] ## date 1912.jpg
 The Valkyrie's Vigil [valkyrie][vigil] {{Edward Hughes $$}}.jpg
 >>> ../datae/fineart ijkl {{$$}}
 >>> ../datae\fineart ijkl {{$$}}/Ingres {{Jean Auguste Dominique Ingres}}
@@ -24024,6 +24054,8 @@ Niccolò Paganini [Paganini][violinist] ## date 1819.jpg
 The _Virgin Adoring the Host [adoring][host@bread] ## date 1854.jpg
 >>> ../datae\fineart ijkl {{$$}}/Johnson {{Frank Tenney Johnson}}
 cowboy ## qrop t3 b23 ### Frank Ellis While visiting the SMS Ranch in Texas.jpg
+>>> ../datae\fineart ijkl {{$$}}/Kandinsky {{Vasily Kandinsky}}
+Variegation in the triangle [variegation] ## date 1927.jpg
 >>> ../datae\fineart ijkl {{$$}}/Klimt {{Gustav Klimt}}
 Death and Life [death] ## date 1911 ## qropt!.jpg
 Minerva ## date 1898 ## qropt!.jpg
@@ -24070,9 +24102,13 @@ Red Square [asymmetric][asymmetrical][red square] ## date 1915.jpg
 A Good Glass of Beer (Le Bon Bock) [bock beer][bock] ## date 1873.jpg
 Polichinelle ## sic! ## qrop t2 b1 ## qropt! {{Édouard Manet, 1873 $$}}.jpg
 The Explosion [explosion] ## date 1871.jpg
+>>> ../datae\fineart mn {{$$}}/Mendham {{Robert Mendham}}
+The Town Crier [town crier].jpg
 >>> ../datae\fineart mn {{$$}}/Michelangelo {{Michelangelo}}
 Detail of Michelangelo’s Pietà [pieta][lamentation] ## date 1498-1500.jpg
 >>> ../datae\fineart mn {{$$}}/Millais {{John Everett Millais}}
+>>> ../datae\fineart mn {{$$}}/Moore {{Albert Moore}}
+A Revery [revery] ## date 1892.jpg
 >>> ../datae\fineart mn {{$$}}/Moreau {{Gustave Moreau}}
 Chariot of Apollo [Phoebus][Apollo@myth] ## crop l1 r1 b2 ## qrop l1 r1 b5 ## qropt! {{Gustave Moreau, c 1880 $$}}.jpg
 Helen of Troy [Helen] ## qropt! {{Gustave Moreau, 1896 $$}}.jpg
@@ -24087,6 +24123,10 @@ Friedrich Nietzsche [Nietzsche] ## date 1906 ## crop l1 ## qrop l1 t10 ## qropt!
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.txt
 The Scream [scream][panic][horror] ## qrop t18 b2 ## date 1895 ## qropt!.jpg
+>>> ../datae\fineart mn {{$$}}/Murillo {{Bartolome Murillo}}
+The Assumption of the Virgin [Assumption] ## date 1670.jpg
+>>> ../datae\fineart mn {{$$}}/Neel {{Alice Neel}}
+Randall in Extremis [in extremis] ## date 1960.jpg
 >>> ../datae\fineart mn {{$$}}/Nolde {{Emil Nolde}}
 Dance Around the Golden Calf [golden calf] ## date 1910.jpg
 Wildly Dancing Children [wildly] ## date 1909.jpg
@@ -24123,6 +24163,8 @@ The Blind Man's Meal [blind] ## date 1903.jpg
 The Tragedy [tragedy@event][miserable] ## date 1903 ## qrop t4 b8 ## qropt!.jpg
 Tumblers (Mother and Son) [tumblers] ## date 1905.jpg
 Untitled [minimalism][minimalistic] ## date 1960 ## qropt!.png
+>>> ../datae\fineart opqr {{$$}}/Pooley {{Thomas Pooley}}
+Jonathan Swift [Swift] ## date 1682.jpg
 >>> ../datae\fineart opqr {{$$}}/Raphael {{Raphael}}
 The Judgment of Solomon (detail).jpg
 The Judgment of Solomon (detail).txt
@@ -24144,6 +24186,8 @@ deserter ## qrop t5 b2 ## date 1917 ## qropt!.jpg
 Dmitri Mendeleev [Mendeleev][chemist@chemistry] ## date 1885 ## qrop t11 b9.jpg
 Portrait of members of State Council [inform] ## qrop l1 r1 t5 b20 ## date 1903 ## qropt! ### Goremykin and Gerard.jpg
 Portrait of the Composer Alexander Glazunov [phlegmatic] ## qrop t6 b19 ## qropt!.jpg
+>>> ../datae\fineart opqr {{$$}}/Ribera {{Jusepe de Ribera}}
+Virgin and Child [Virgin][Child] ## date c. 1646.jpeg
 >>> ../datae\fineart opqr {{$$}}/Roerich {{Nicholas Roerich}}
 Guests from Overseas [Vikings][Varangians] ## qrop ql ## date 1901.jpg
 >>> ../datae\fineart opqr {{$$}}/Rossetti {{Dante Gabriel Rossetti}}
@@ -24184,6 +24228,7 @@ _Pilates Forum [forum] ## qrop l8 r32.jpg
 >>> ../datae\fineart s-z {{$$}}/Titian {{Titian}}
 Portrait of Doge Andrea Gritti [doge] ## date 1545 ## crop l1 t2 ## qrop l1 t2 b2 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/van Gogh {{Vincent van Gogh}}
+Blossoming Almond Tree [almond tree] ## date 1890.jpg
 Portrait of Dr. Gachet ## qrop t2 b2 ## qropt!.jpg
 Portrait of Dr. Gachet ## qrop t2 b2 ## qropt!.txt
 Self-portrait with Bandaged Ear and Pipe [ushanka][ushanka hat][Van Gogh] ## 14+ ## qrop t7 b5 ## date 1889.jpg
@@ -24757,6 +24802,11 @@ veal escalope stuffed with artichoke and parmesan [escallop][escalope][scallop@m
 yohimbe cocktail [yohimbe][yohimbine].jpg
 _Italian-style strawberry pudding [pudding] ## crop t10 ## qrop t15 ## qropt!.jpg
 сhayotes [christophene][christophine][cho-cho][merleton][pear squash][vegetable pear][choko][pipinola].jpg
+>>> ../datae\photo abc/Attar {{Photo.. Abbas Attar}}
+Mexico City, November 1, 1984.jpg
+Mexico City, November 1, 1984.txt
+Tehran. Feburary 11, 1980.jpg
+Tehran. Feburary 11, 1980.txt
 >>> ../datae\photo abc/Bagros photocuisine {{Photo.. Y. Bagros}}
 adding the butter to the preparation [preparation@food].jpg
 Andalusian loin of pork [pork loin] ## qrop t7 b4 ## qropt!.jpg
@@ -25450,7 +25500,7 @@ Dublin Bay prawns with lime sauce [Dublin Bay prawns][prawns][scampi].jpg
 fennel.jpg
 fresh dates [date@fruit] ## qrop qb.jpg
 goose {barnacles}.jpg
-green tea rice {rolls} stuffed with dried tomatoes and fried tofu.jpg
+green tea rice {rolls} stuffed with dried tomatoes and fried tofu [roll@sushi].jpg
 individual chocolate {bavarian} with summer fruit puree.jpg
 kaki fruit [kaki].jpg
 miso.jpg
@@ -25590,7 +25640,7 @@ apple {crumble}.jpg
 asparagus.jpg
 bacon blinis with {fried} egg.jpg
 Bresse hen and white wine [poultry].jpg
-buffet with cider [buffet].jpg
+buffet with cider [buffet@food].jpg
 dried cod and {coarse} sea salt [coarse-grained].jpg
 fusilli with raw tomato [fusilli].jpg
 Gugelhupfs [Gugelhopf][Kougloff][kugelhupf].jpg
@@ -26401,7 +26451,7 @@ litchi fruit [litchi][lychee][lychee][lichee][leechee][leechee][leechee][lichi][
 nectarines [nectarine][brunion] ## qrop t19 b14.jpg
 raspberry juice [beverage][juice] ## qrop t19 ## qropt!.jpg
 tomato granita [granita] ## qrop t6 b5 ## qropt!.jpg
-tube of tomato paste [tube].jpg
+tube of tomato paste [tube@container].jpg
 >>> ../datae\photo s-z/Taillard photocuisine {{Photo.. H. Taillard}}
 Breton lobster [crawfishing][crayfishing].jpg
 bundles of {green beans} wrapped with bacon.jpg
@@ -26478,7 +26528,7 @@ Lucanus cervus %% X-ray [Lucaninae][Lucanidae][Coleoptera][stag beetle][Lucanus]
 {Phyllium} ciccifolium %% X-ray [Phylliidae][Phyllioidea][Phasmatodea].jpg
 {Phyrna} grossetaitai %% X-ray [Thomisidae].jpg
 >>> ../datae\photo s-z/Veigas photocuisine {{Photo F. Veigas}}
-tube of sweetened condensed milk [tube][sweetened][condensed milk] ## qrop t2 b4 ## qropt!.jpg
+tube of sweetened condensed milk [tube@container][sweetened][condensed milk] ## qrop t2 b4 ## qropt!.jpg
 >>> ../datae\photo s-z/Viatour {{Photo.. Luc Viatour}}
 bush-cricket [Tettigoniidae][Ranunculaceae][katydid][katydids].jpg
 meadow {horsetail} [Equisetum][Equisetum pratense][shade horsetail][Equisetum].jpg
@@ -28905,7 +28955,7 @@ onion field [terraces][terrace@geo] ## qrop qr {{Photo.. Budi Rahardi $dreamstim
 plowed field [plowed][field@agro] ## qrop ql {{Photo.. Lumppini $dreamstime 76105296}}.jpg
 rake and shovel [rake] ## qrop l7 r27 {{Photo.. Oksana Ferkhova $dreamstime 94250409}}.jpg
 rice terraces [terrace@geo] ## qrop qr {{Photo.. Hupeng $dreamstime 14290659}} [Yuanyang, China].jpg
-saddle ## qrop ql {{Photo.. Holly Kuchera $dreamstime 1066816}}.jpg
+saddle @ horse ## qrop ql {{Photo.. Holly Kuchera $dreamstime 1066816}}.jpg
 scarecrows ## qrop l26 r8 {{Photo.. Beijing Hetuchuangyi Images Co,. Ltd . $dreamstime 79465958}}.jpg
 seine ## qrop ql {{Photo.. Eleni Seitanidou $dreamstime 44749446}}.jpg
 sheep ## qrop ql {{Photo.. Laurin Rinder $dreamstime 11058414}}.jpg
@@ -29915,7 +29965,7 @@ two pieces of chalk [chalk] ## qrop ql {{Photo.. Pressmaster $dreamstime 2681745
 mulatto {{Photo.. Vitalinko $dreamstime 43026934}}.jpg
 >>> ../datae\photo_dreamstime\science/astronomy
 astronomy ## qrop qr {{Photo.. Andrew7726 $dreamstime 45365403}}.jpg
-halo ## qrop l14 r20 ## qropt! {{Photo.. Crazybboy $dreamstime 44738056}}.jpg
+halo @ astronomy ## qrop l14 r20 ## qropt! {{Photo.. Crazybboy $dreamstime 44738056}}.jpg
 Horsehead Nebula [horsehead] {{Photo.. Thyrymn $dreamstime 11869843}}.jpg
 Mauna Kea Observatory, Hawaii [observatory] ## qrop ql {{Photo.. Meisterphotos $dreamstime 35679491}}.jpg
 star trails ## qrop l10 r25 {{Photo.. Fotis Mavroudakis $dreamstime 28594298}}.jpg
@@ -30854,6 +30904,8 @@ the Land of the Rising Sun [Japanese] ## qrop l5 ## qropt! {{Photo.. Shirototoro
 >>> ../datae/sculpture
 >>> ../datae\sculpture/Begas {{Reinhold Begas}}
 _Pan comforting _Psyche [+][comfort@verb] ## 14+ ## qrop b1 ## date 1857 ## qropt!.jpg
+>>> ../datae\sculpture/Bernini {{Gian Lorenzo Bernini}}
+St. Sebastian [martyrdom].jpg
 Death of Ophelia [relief@art] ## qrop l21 r11 ## date 1881 ## qropt! {{Sarah Bernhardt}}.jpg
 >>> ../datae\sculpture/Falconet {{Étienne-Maurice Falconet}}
 Biscuit porcelain figure of {Leda and the Swan} [Leda] ## date 1764-66.jpg

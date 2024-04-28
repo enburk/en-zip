@@ -99,7 +99,7 @@ namespace studio::one
             and r.sense == "" and
             not r.options.contains("sound"))
             // vocalization fits for any sense,
-            // if there is another one with provided sense
+            // unless there is another one with provided sense,
             // then it's an error and will be reported by sense-control
             if (sensecontrol.vocabs.contains(abstract))
             {
@@ -128,6 +128,9 @@ namespace studio::one
                 if (w.starts_with("to "   )) v += str(w.from(3)) + "@verb"; else
                 {}
             }
+
+            if (r.sense == "")
+            resource_vocabulary += abstract + "@@";
 
             if (r.kind == "video")
             {

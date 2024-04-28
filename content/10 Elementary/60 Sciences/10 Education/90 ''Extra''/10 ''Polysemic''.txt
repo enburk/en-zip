@@ -19,6 +19,11 @@ correctional institution %% formal = исправительное учрежде
 table @ chart           = таблица                                         # 10+
 table @ furniture       = стол, столик ~ (в ресторане)                    # 10+ /// , ~ общество за столом
 table manners           = умение вести себя за столом                     # 10+
-
+---
+reason @ cause          = причина, повод, ~ основание
+reason @ thinking       = разум, рассудок, ~ благоразумие
+reason @ deduce         = рассуждать, размышлять, ~ делать выводы
+reason @ argue          = аргументировать, обосновывать
+: Listen to reason!
 
 

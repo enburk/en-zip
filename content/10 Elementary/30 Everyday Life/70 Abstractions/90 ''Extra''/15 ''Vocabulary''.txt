@@ -5,9 +5,9 @@ hundred        = сто, сотня
 thousand       = тысяча
 one and a half = полтора
 
-wheight        = вес, взвешивать
-light          = лёгкий
-heavy          = тяжёлый
+weight         = вес, взвешивать
+light @ weight = лёгкий
+heavy @ weight = тяжёлый
 ---
 size           = размер
 length         = длина
@@ -39,4 +39,5 @@ hourglass      = песочные часы
 volume @ space = объём
 volume @ sound = громкость
 volume @ book  = том
+
 

@@ -1375,7 +1375,7 @@ mind one’s P’s and Q’s.ogg
 POW -- prisoner of war [POW][prisoner of war].ogg
 prick @ derogatory.ogg
 spectacular, more spectacular, most spectacular [spectacular].ogg
-swell~swelled~swelled or swollen [swelled][swollen].ogg
+swell, swelled, swelled~swollen [+][swell][swelled][swollen].ogg
 syllabus~syllabi, focus~foci, stimulus~stimuli, alumnus~alumni.ogg
 talk to _Ralph on the big white telephone.ogg
 TTYL (talk to you later) [TTYL].ogg
@@ -17588,6 +17588,78 @@ When can you start~!.wav
 Who are you talking about~!.wav
 You know that something is very wrong..wav
 Yours~!.wav
+>>> ../datae\audiobooks--/Dan Jurafsky - The Language Food ## us {{Steven Menasche}}
+!credit.txt
+As for Paul's hypothesis that the modern French meaning of entrée is the original one--au contraire....wav
+English does have other quite different words for flour.txt
+English does have other quite different words for flour.wav
+Flaming Coffee Diablo, Prepared en Vue of Guest.txt
+Flaming Coffee Diablo, Prepared en Vue of Guest.wav
+Francesco Datini, a fourteenth-century merchant, wrote that marzipan torte.txt
+Francesco Datini, a fourteenth-century merchant, wrote that marzipan torte.wav
+Here's a Martino's recipe for the Marzipan filling.txt
+Here's a Martino's recipe for the Marzipan filling.wav
+I know not a more profitable Commodity..txt
+I know not a more profitable Commodity..wav
+Lauzinaj.. Take a pound of sugar and grind it fine.txt
+Lauzinaj.. Take a pound of sugar and grind it fine.wav
+Next time you eat a bratwurst on a Sheboygan.txt
+Next time you eat a bratwurst on a Sheboygan.wav
+Ogilvy had a lot of experiences with different (and tough) audiences.txt
+Ogilvy had a lot of experiences with different (and tough) audiences.wav
+Oh and you might even have heard of the word we used to use.txt
+Oh and you might even have heard of the word we used to use.wav
+Potato chips turn out to be a health food.txt
+Potato chips turn out to be a health food.wav
+Salad and sauce.txt
+Salad and sauce.wav
+Sherbets were most often sour.txt
+Sherbets were most often sour.wav
+The correct response to wassail.txt
+The correct response to wassail.wav
+The order of the traditional meal.txt
+The order of the traditional meal.wav
+The recipe is long.txt
+The recipe is long.wav
+The word dessert comes from French.txt
+The word dessert comes from French.wav
+The word entree in the United States.txt
+The word entree in the United States.wav
+These days we can use the word flour to mean any finely ground grain.txt
+These days we can use the word flour to mean any finely ground grain.wav
+Wassail recipe.txt
+Wassail recipe.wav
+We delight in bacon ice cream.txt
+We delight in bacon ice cream.wav
+What's in a name~! That which we call a rose.txt
+What's in a name~! That which we call a rose.wav
+>>> ../datae\audiobooks--\Dan Jurafsky - The Language Food ## us {{Steven Menasche}}/{{}}
+all natural.wav
+au contraire.wav
+avocado.wav
+But I digress..wav
+chicory coffee.wav
+coconuts.wav
+Don't ask..wav
+Don't forget the salt. [salt].wav
+evil eye.wav
+foie gras.wav
+ketchup.wav
+lasagna.wav
+longer.wav
+lord.wav
+macaroon, macaron, macaroni.wav
+marmalade.wav
+michelada.wav
+Ninkasi ## sic!.wav
+orange blossom.wav
+pasta.wav
+service à la russe.wav
+shicker.wav
+So, to review....wav
+sound symbolism ## =.wav
+The results are astonishingly consistent..wav
+Why should this be~!.wav
 >>> ../datae\audiobooks--/David Graeber - Bullshit Jobs
 !credit.txt
 A worker's time is not his own; it belongs to the person who bought it.txt
@@ -24498,6 +24570,7 @@ matador [torero] ## crop r20 ## qrop l5 r28.jpg
 mine clearance [demining][metal detector] ## date 1967 ## qrop l7 r3 ## qropt! {{Photo.. Shunsuke Akatsuka}}.jpg
 >>> ../datae\photo/nature
 amethyst druse [+] ## qrop l7 r3 ## qropt!.jpg
+Aspen Grove, Oregon [aspen grove][aspen][grove] {{Photo.. Paul Nielsen}}.jpg
 blue whale [sulfur-bottom whale][Balaenoptera musculus][Balaenoptera] {{Photo.. Doc White}}.jpg
 camelia stamens [stamens] ## qrop t23 ## qropt! {{Photo.. Michael Brown}}.jpg
 Colorado Blue Columbine [columbine] {{Photo.. Kelly Black}}.jpg
@@ -24803,11 +24876,15 @@ yohimbe cocktail [yohimbe][yohimbine].jpg
 _Italian-style strawberry pudding [pudding] ## crop t10 ## qrop t15 ## qropt!.jpg
 сhayotes [christophene][christophine][cho-cho][merleton][pear squash][vegetable pear][choko][pipinola].jpg
 >>> ../datae\photo abc/Attar {{Photo.. Abbas Attar}}
+Ali vs Foreman. A journalist follows the fight through binoculars [fascinated][fascinating][fascination] ## date 1974.jpg
+Celebrating Purim with a tish, Jerusalem, 2016 [Purim][tish].jpg
 Cooking hand made noodles, China [noodles] ## date 1982.jpg
 Mexico City, November 1, 1984.jpg
 Mexico City, November 1, 1984.txt
+Muhammad Ali avoids a punch from George Foreman [avoid] ## date 1974.jpg
 Tehran. Feburary 11, 1980.jpg
 Tehran. Feburary 11, 1980.txt
+World Heavyweight Boxing Championship. Muhammad Ali {fooling around} [fool around] ## date 1974.jpg
 >>> ../datae\photo abc/Bagros photocuisine {{Photo.. Y. Bagros}}
 adding the butter to the preparation [preparation@food].jpg
 Andalusian loin of pork [pork loin] ## qrop t7 b4 ## qropt!.jpg
@@ -25308,6 +25385,9 @@ Swan Lake rehearsal, Grand Opera de _Paris [rehearsal] ## date 1930 ## qrop r22 
 The eyes of hatred ## qrop t37 r5.jpg
 The eyes of hatred ## qrop t37 r5.txt
 Walt Disney [Disney] ## date 1938.png
+>>> ../datae\photo def/Elgort {{Photo.. Arthur Elgort}}
+Baryshnikov plays Belmondo [play@someone] ## date 1986.jpg
+Jazz {bassist} _Ron _Carter [double bassist][string bassist][contrabassist].jpg
 >>> ../datae\photo def/Erwitt {{Photo.. Elliott Erwitt}}
 East Hampton, New York, 1981 [wail][wailing].jpg
 France, Honfleur, 1968 [misbehave][misbehavior][mischevious] ## qrop qr.jpg
@@ -25849,6 +25929,8 @@ Friedenstein Palace, {Gotha} ## date 1999.jpg
 Hermitage, Saint Petersburg [Hermitage] ## date 2017.jpg
 Metten Library, Germany [Baroque] ## date 2016.jpg
 Natural History Museum, London [hall] ## date 1985 ## qrop q.jpg
+>>> ../datae\photo ijkl/Lynes {{Photo.. George Platt Lynes}}
+Self-Portrait [unitard] ## date ca. 1945.jpg
 >>> ../datae/photo mn
 >>> ../datae\photo mn/MacLean {{Photo.. Alex MacLean}}
 Chesapeake Fish Wier, Cape Charles, Virginia [wier][weir] ## date 2018.jpg
@@ -25927,8 +26009,8 @@ _Patti _Smith with doves [+] ## date 1979.jpg
 _Richard _Gere [Gere] ## date 1982.jpg
 _Ron _Simms [buttocks] ## date 1980.jpg
 >>> ../datae\photo mn/Mark {{Photo.. Mary Ellen Mark}}
-_Dustin _Hoffman sneaks up on _Lawrence _Olivier on the set of _John _Schlesinger’s Marathon Man [sneak up][sneaks up] ## date 1976 ## qrop l10 r11 ## qropt!.jpg
 _Dustin _Hoffman sneaks up on _Lawrence _Olivier on the set of _John _Schlesinger’s Marathon Man [sneak up][sneaks up] ## date 1976 ## qrop l5 r22 ## qropt!.jpg
+_Dustin _Hoffman sneaks up on _Lawrence _Olivier on the set of _John _Schlesinger’s Marathon Man [sneak up][sneaks up][levity] ## date 1976 ## qrop l10 r11 ## qropt!.jpg
 >>> ../datae\photo mn/Maximilian {{Photo.. Maximilian Stock Ltd}}
 assorted flower-flavored vinegars [flowered][flowery][flavored][flavoured].jpg
 composition of assorted pasta [composition][pasta] ## qrop ql.jpg
@@ -26370,6 +26452,8 @@ tweed %% Model dressed in a matching tweed hat, jacket, and skirt by Yves St Lau
 Two young _Italian men dancing to music from a jukebox in a bar [temperament][expressive][expression@emotion] ## date 1963 ## qrop b3 ## qropt!.jpg
 Yemenite Israelis in Home For Aged Dancing to Celebrate Lag B'Omer Day [Lag B'Omer].jpg
 Young women swoon at a campaign appearance of presidential candidate John F. Kennedy %% late 1960 [swoon] ## qrop l9 r12 ## qropt!.jpg
+>>> ../datae\photo s-z/Sheremet {{Photo.. Andrey Sheremet}}
+brown bear [brown][bear][Ursus arctos].jpg
 >>> ../datae\photo s-z/Skerry {{Photo.. Brian Skerry}}
 A family of sperm whales, asleep in the waters of the Azores [sperm whales][a pod of whales][pod@whales] ## qrop l11 r22.jpg
 A hammerhead shark is fatally caught in a gill net [gillnet][hammerhead shark][gill net] ## qrop l20 r2 ## qropt!.jpg
@@ -26432,6 +26516,9 @@ The Cathedral of the Dormition (Uspensky Sobor), _Moscow [vault@art] ## date 200
 >>> ../datae\photo s-z/Stieglitz {{Photo.. Alfred Stieglitz $$}}
 Georgia O'Keeffe's Hands [hands].jpg
 paleontology ## qropt! ### Georgia O'Keeffe's Hands.jpg
+>>> ../datae\photo s-z/Strathdee crestock {{Photo.. Stephen Strathdee}}
+a wedge of geese [wedge@birds][geese].jpg
+autumn harbingers.jpg
 >>> ../datae\photo s-z/Strom {{Photo.. Stephen Strom}}
 Badlands, Golden Canyon [badlands].jpg
 Dune field, Abalos Unae, _Mars [dunefield].png
@@ -26655,6 +26742,7 @@ tactical nuclear weapons [tactical] ## date 25 May 1953.jpg
 The geodesics on an ellipsoid [geodesic line][geodesic] ## qropt! {{K. Rohn~Dr. A. Brill, 1877 $$}}.jpg
 tungsten green-silver metal powder [tungsten] {{USGOV}}.jpg
 Waterspouts in the Bahamas Islands [waterspout] ## qrop l15 r23 b2 {{NOAA $$}}.jpg
+Yaki point, Grand Canyon [point@geo] {{Photo.. Jon Sullivan}}.jpg
 >>> ../datae\photo {{$$}}/{{ESA}}
 Halley's Comet [Halley's comet] {{Credit.. ESA~Max Planck Institute $$}}.jpg
 rocket @ missile %% GIOVE-A atop the _Soyuz launcher on pad six at _Baikonur Cosmodrome {{Photo.. P. Muller~ESA}}.jpg
@@ -26764,7 +26852,7 @@ French {nuclear test} Encelade in the _South _Pacific, 1971 [nuclear testing] {{
 mushroom cloud ## qrop l11 r9 {{NNSA $$}} ### Dominic Truckee, 210 kilotons, June 6, 1962.jpg
 Plumbbob Hood, 74 kilotons, July 5, 1957 [mushroom cloud][kilotons] ## qrop q.png
 Umbrella blast, 1958 [underwater nuclear explosion][underwater][nuclear explosion] ## qrop b12 ## qropt! {{NNSA}}.jpg
-VIP observers are lit up by the light of an atomic bomb, 1951 [lit up] ## qrop qr ### Operation Greenhouse, Enewetak Atoll.jpg
+VIP observers are lit up by the light of an atomic bomb, 1951 [light up][lit up] ## qrop qr ### Operation Greenhouse, Enewetak Atoll.jpg
 >>> ../datae\photo {{$$}}/{{US Army}}
 control room %% The main control room at the K25 plant in Oak Ridge ## qrop ql {{Photo.. Ed Westcott, US Army $$}}.jpg
 >>> ../datae\photo {{$$}}/{{US Navy}}
@@ -27237,9 +27325,9 @@ bitten [bite, bit, bitten] ## qrop ql ## crop r18 {{Photo.. Freerlaw $dreamstime
 >>> ../datae\photo_dreamstime\!mix\words/blow-throw
 blow a kiss [blow@kiss] ## qrop l19 r14 {{Photo.. Igor Golubov $dreamstime 100130013}}.jpg
 blow a kiss [blow@kiss] ## qrop r53 ## qropt! {{Photo.. Timothy Passmore $dreamstime 2412258}}.jpg
-blow bubbles [blow] ## qrop l23 t1 r26 {{Photo.. Vlad Salikhov $dreamstime 76738998}}.jpg
-blow out ## qrop l17 r4 {{Photo.. Photomo $dreamstime 1883221}}.jpg
-blow the whistle [blow] ## qrop l20 r13 {{Photo.. Howard Sayer $dreamstime 13696591}}.jpg
+blow bubbles [blow@bubbles] ## qrop l23 t1 r26 {{Photo.. Vlad Salikhov $dreamstime 76738998}}.jpg
+blow out @ flame ## qrop l17 r4 {{Photo.. Photomo $dreamstime 1883221}}.jpg
+blow the whistle @ literally [blow@whistle] ## qrop l20 r13 {{Photo.. Howard Sayer $dreamstime 13696591}}.jpg
 exhale ## qrop qr {{Photo.. Jessamine $dreamstime 20982038}}.jpg
 Lone Star Geyser, Yellowstone [erupt][geyser] ## qrop l31 r3 {{Photo.. Kwiktor $dreamstime 34311120}}.jpg
 throw ## qrop l5 r25 {{Photo.. Florentino David $dreamstime 18648324}} ### Mike Pelfrey.jpg
@@ -27489,7 +27577,7 @@ bass guitar ## qrop l6 r5 ## qropt! {{Photo.. Diana Carapuço $dreamstime 380019
 bass guitar ## qrop qr {{Photo.. Brett Blignaut $dreamstime 42528924}}.jpg
 bass guitarist [bassist][guitarist][guitar player] {{Photo.. Regien Paassen $dreamstime 2775218}}.jpg
 bow @ music [fiddlestick] ## qrop qr {{Photo.. Furtseff $dreamstime 60913274}}.jpg
-contrabassist [contrabass][bassist] ## qropt! {{Photo.. Lachris77 $dreamstime 39492644}}.jpg
+double bass [string bass][contrabass] ## qropt! {{Photo.. Lachris77 $dreamstime 39492644}}.jpg
 electric guitar [+] ## crop l1 t1 ## qrop t1 l1 b33 {{Photo.. Vladimirs Koskins $dreamstime 1998564}}.jpg
 guitar pickup and strings [pickup@music][strings@music][string@music] ## qrop ql {{Photo.. Andreas Argirakis $dreamstime 53044438}}.jpg
 lute @ music ## qrop l5 r6 ## qropt! {{Photo.. Axel Bueckert $dreamstime 52554690}}.jpg
@@ -28752,6 +28840,7 @@ footprint ## qrop qr {{Photo.. Laurin Rinder $dreamstime 4974004}}.jpg
 Hellenistic sculpture of the 2nd century BCE [torso] ## qrop t11 b6 ## qropt! {{Photo.. Mineria6 $dreamstime 48662902}}.jpg
 lips ## qropt! {{Photo.. Maram $dreamstime}}.jpg
 nails {{Photo.. Konstantin Stepanenko $dreamstime 66134963}}.jpg
+ringlet @ hair {{Photo.. Gansovsky Vladislav $dreamstime}}.jpg
 shoulder ## qrop l13 r19 {{Photo.. Oliver Sved $dreamstime 37469343}}.jpg
 >>> ../datae\photo_dreamstime\human/body language
 appealing ## qrop l20 r13 {{Photo.. Eldadcarin $dreamstime 29979474}}.jpg
@@ -29223,7 +29312,7 @@ a skein of geese [skein@birds][geese] ## qrop l22 r12 b1 {{Photo.. Larry Keller 
 a swarm of bees [swarm] ## qrop ql {{Photo.. Pixbox77 $dreamstime 99202384}}.jpg
 a swarm of birds [swarm] ## qrop q {{Photo.. Anne Kitzman $dreamstime 1523916}}.jpg
 a team of pigs [team@pigs][passel@pigs] ## qrop l29 r5 {{Photo.. Accept001 $dreamstime 101155019}}.jpg
-a wedge of geese [wedge@birds][geese] ## qrop l8 r25 {{Photo.. Freds $dreamstime 96042}}.jpg
+a wedge of geese [wedge@birds] ## qrop l8 r25 {{Photo.. Freds $dreamstime 96042}}.jpg
 jellyfish [jelly@fish] ## qrop q {{Photo.. Geanina Bechea $dreamstime 7122839}}.jpg
 krill ## crop r30 ## qrop ql {{Photo.. Tenedos $dreamstime 36908202}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/male-female
@@ -29464,7 +29553,7 @@ red deer [deer] ## qrop l27 r6 {{Photo.. Ondřej Prosický $dreamstime 118860024
 rhinoceros [rhino] ## qrop l4 r24 ## qropt! {{Photo.. Leopoldo Palomba $dreamstime 65043897}}.jpg
 yak ## qrop l27 r8 {{Photo.. Alexander Podshivalov $dreamstime 11827025}}.jpg
 zebra {{Photo.. Javarman $dreamstime 8264800}}.jpg
-brown bear [bear] ## qrop l26 r6 ## qropt! {{Photo.. Tomatito26 $dreamstime 30415727}}.jpg
+brown bear ## qrop l26 r6 ## qropt! {{Photo.. Tomatito26 $dreamstime 30415727}}.jpg
 capybara ## qrop l5 r29 {{Photo.. Lisandrotrarbach $dreamstime 24905099}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna - mammals/cats
 an eyes of a black panther [predator] ## qrop l13 r21 {{Photo.. Eric Gevaert $dreamstime 955208}}.jpg
@@ -29573,6 +29662,7 @@ Persian cat ## qrop l15 r14 ## qropt! {{Photo.. Mdorottya $dreamstime 51843280}}
 Siamese cat ## qrop ql {{Photo.. Linncurrie $dreamstime 8089515}}.jpg
 Sphynx ## qrop q {{Photo.. Andreykuzmin $dreamstime 19227482}}.jpg
 Thai cat [Thai@cat] {{Photo.. Lorens3 $dreamstime 14244787}}.jpg
+White Bengal Tigress [tigress] {{Photo.. Karen-jane Dudley $dreamstime}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - pets - dogs
 Black Russian Terrier [terrier] {{Photo.. Putnik $dreamstime 39581236}}.jpg
 boxer ## qrop qr {{Photo.. Dkcphotography $dreamstime 18898199}}.jpg

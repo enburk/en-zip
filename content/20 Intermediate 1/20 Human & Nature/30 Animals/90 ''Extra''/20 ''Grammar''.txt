@@ -1,5 +1,5 @@
 ===
-small words # HEAD
+small words   # HEAD
 ===
 
 ===
@@ -14,7 +14,7 @@ easy
 : That's easy for you to say.
 
 ===
-hard        # duple
+hard          # duple
 {comparative:} ~ harder
 {superlative:} ~ hardest
 ===
@@ -22,4 +22,19 @@ hard        # duple
 ===
 
 : When you come to specifications it isn't easy
+
+===
+phrasal verbs # HEAD
+===
+
+move on
+get over
+
+===
+
+: You get over it.
+: Get over youself.
+: Move on, get over it.
+: It was time, Denis thought, to move on
+
 

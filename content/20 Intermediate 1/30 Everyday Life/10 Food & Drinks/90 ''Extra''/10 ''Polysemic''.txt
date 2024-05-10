@@ -3,3 +3,8 @@ polysemic
 bowl @ ball
 bowl @ vessel
 
+---
+feed @ food
+feed @ tech
+: Satellite feed lost.
+: Satellite feed confirmed.

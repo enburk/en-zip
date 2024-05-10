@@ -1,23 +1,21 @@
 mind
 
-wonder                    = %% try to guess if something is true, ~ ask yourself questions
-ponder %% formal          = %% think seriously ~ about some difficult problem
-muse on\about something   = %% think about something ~ for a long time
-contemplate               = %% think about something ~ in a concentrated manner
-reflect on\upon something = %% think deeply ~ about something
+wonder                    = try to guess if something is true, ~ ask yourself questions
+ponder %% formal          = think seriously ~ about some difficult problem
+muse on\about something   = think about something ~ for a long time
+contemplate               = think about something ~ in a concentrated manner
+reflect on\upon something = think deeply ~ about something
 
 be lost in thought
 be at a loss
 
 make choice
-estimate @ verb           # 10+
-weigh
 figure out                # 10+
 consider                  # 10+
+
 investigate
+examine                   = study something ~ in detail
+estimate @ verb           # 10+
+weigh
 
-shrug one's shoulders
-scratch one's head
 
-chew over
-mull over

@@ -24,6 +24,9 @@ rocket(2) {Br.} @ herb = руккола                                         
 cistern @ ancient      = цистерна %% хранилище пресной воды
 tanker\\tank truck//tanker truck = автоцистерна
 tank car               = вагон-цистерна
-
+---
+wagon @ cart           = фургон, повозка, ~ тележка
+wagon @ car            = кроссовер, минивэн, ~ автофургон
+[goods] wagon {Br.}    = товарный вагон
 
 

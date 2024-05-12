@@ -3,6 +3,7 @@ clergy         = клир
 cleric         = клирик, духовное лицо
 hierarch       = иерарх                                          /// # DELAY
 patriarch      = патриарх, старейшина                            /// (также церк. и библ.)
+synod          = синод, собор
 ---
 Pope|pope      = папа римский
 pontiff        = понтифик %% титул папы римского                 # TERM-
@@ -36,5 +37,6 @@ Benedictines   = бенедиктинцы
 Dominicans     = доминиканцы                                     # HISTORY+ # TERM+
 Franciscans    = францисканцы                                    # HISTORY+ # TERM+
 Jesuits        = иезуиты
+
 
 

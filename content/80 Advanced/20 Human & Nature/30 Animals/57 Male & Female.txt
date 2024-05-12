@@ -3,6 +3,8 @@ animals: ~ male & female
 ewe                   = a female sheep
 ram @ sheep           = a male sheep
 
+heifer                = a young female cow
+
 nanny goat            = a female goat
 billy goat            = a male goat
 
@@ -37,6 +39,7 @@ a she-wolf ~ with a pup
 vixen                 = a female fox
 
 brock {Br.}           = a male badger
+
 
 
 

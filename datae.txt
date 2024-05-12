@@ -24189,6 +24189,9 @@ Flaming June [June] ## date 1895.jpg
 Old _Damascus, Jew's Quarter [Damascus] ## date 1874.jpg
 Self-portrait [Leighton] ## date 1880 ## qropt!.jpg
 The Dance of the {Cymbalists} ## date 1859.jpg
+>>> ../datae\fineart ijkl {{$$}}/Lhermitte {{Léon Lhermitte}}
+Leon-Augustin Lhermitte - The Gleaners [1887].jpg.uid-zps
+The Gleaners [gleaners][glean] ## date 1887.jpg
 >>> ../datae\fineart ijkl {{$$}}/Lubarov {{Vladimir Lubarov $$$}}
 somnambulists ## date 2006.jpg
 >>> ../datae/fineart mn {{$$}}
@@ -30252,7 +30255,7 @@ cavern ## qropt! {{Photo.. Heirbornstud $dreamstime 705479}} ### the cavern at V
 Crater Lake, Oregon [Crater Lake][crater lake][caldera][caldera lake] ## qrop l4 ## qropt! {{Photo.. William Michael Norton $dreamstime 830379}}.jpg
 crevasse ## qrop b29 ## qropt! {{Photo.. Aquanaut4 $dreamstime 67895656}}.jpg
 crevice ## qrop t6 b14 {{Photo.. Kathleen Struckle $dreamstime 4107238}}.jpg
-Earth's inner core [inner core][core@geology] ## crop qr ## qrop l68 t15 r5 b24 {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
+Earth's inner core [inner core][core@geology] ## crop l68 t15 r5 b24 {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 lithosphere ## crop l37 t17 r36 b20 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 mantle @ geology ## crop l1 t8 r66 b15 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 Pamukkale, _Turkey [Turkey][travertine terraces][travertine][terraces] ## qrop l10 r24 {{Photo.. Softdreams $dreamstime 41117927}}.jpg
@@ -31058,6 +31061,9 @@ fig leaf ## qrop t3 b11 ## qropt!.txt
 >>> ../datae\sculpture/Gargallo {{Pablo Gargallo}}
 Kiki de Montparnasse [Kiki][bust@art][avant-garde] ## date 1928 ## crop t11 b4.jpg
 Water Carriers [carriers] ## date 1925.jpg
+>>> ../datae\sculpture/Kessels {{Mathieu Kessels}}
+Discobolus [discobolus] ## date 1828.jpg
+{_Mars and _Cupid [Mars@myth] ## date 1820s.jpg
 >>> ../datae\sculpture/Rodin {{Auguste Rodin}}
 Balzac, Nude Study with Arms Crossed [Balzac] ## date 1892.jpg
 Bust of Victor Hugo [bust@art][Hugo] ## date 1897 ## crop b23 ## qropt!.jpg
@@ -31068,7 +31074,8 @@ The {Thinker} ## date 1879–1889.jpg
 St Bartholomew Flayed, by Marco d'Agrate, 1562 [flayed] {{Photo.. Latente Flickr $$cc-by-sa wiki}}.jpg
 >>> ../datae/video
 >>> ../datae\video/gif
-120-cell [hyperdodecahedron][hecatonicosachoron][transformation][4-dimensional][4-polytope][polytope] {{Credit.. Jason Hise $cc-by wiki}}.gif
+120-cell %% 4-dimensional hyperdodecahedron {{Credit.. Jason Hise $cc-by wiki}}.gif
+120-cell %% 4-dimensional hyperdodecahedron {{Credit.. Jason Hise $cc-by wiki}}.txt
 A ball of ionized gas is hurled from the Sun [hurled][prominence] ## date 4 January 2002 {{ESA}}}.gif
 aerodynamics ## qropt! {{Thierry Dugnolle $$}}.gif
 Apparent retrograde motion of Mars in 2003 [retrograde motion][retrograde] {{Eugene Alvin Villar $cc-by-sa wiki}}.gif
@@ -31087,6 +31094,6 @@ Newton's cradle [conservation of momentum][momentum] ## qropt! {{Dominique Touss
 parallax effect.gif
 parallax effect.txt
 sine and cosine [sine][cosine] ## qropt! {{Credit.. LucasVB $$}}.gif
-tesseract (4-dimensional hypercube) [hypercube][4-dimensional][4-polytope][polytope] {{Credit.. Jason Hise $$}}.gif
+tesseract %% 4-dimensional hypercube [tesseract][hypercube][4-dimensional][4-polytope][polytope] {{Credit.. Jason Hise $$}}.gif
 Voyager 1 time-lapse movie of Jupiter approach, 1979 [Voyager][Jupiter@planet] ## qropt!.gif
 murmuration (starlings) [+].mp4

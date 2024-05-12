@@ -36,7 +36,6 @@ cardiology                = кардиология                            # 
 cardiogram                = кардиограмма                           # 14+
 arrhythmia                = аритмия                                # 14+
 thrombus                  = тромб                                  # 14+
-cardiac arrest            = остановка сердца                       # 18+
 ---
 psychiatrist              = психиатр                               # 16+
 narcolepsy                = нарколе́псия                            # TERM+ # 16+ /// (приступы внезапного засыпания)

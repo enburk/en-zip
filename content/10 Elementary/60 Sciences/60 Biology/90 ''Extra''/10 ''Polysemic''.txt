@@ -1,21 +1,27 @@
 polysemic
 ---
-organ @ anatomy   = о́рган                                         # 14+
-[pipe] organ      = орга́н                                         # 14+
-organ @ state     = о́рган (власти), организация, ~ печатный орган # 14+
+organ @ anatomy        = о́рган                                    # 14+
+[pipe] organ           = орга́н                                    # 14+
+organ @ state          = о́рган (власти), организация, ~ печатный орган # 14+
 ---
-teak              = тик, тиковое дерево
-tic               = нервный тик
-tick @ clock      = тиканье, тикать                               /// 1
-tick {Br.} @ mark = ставить галочку, отмечать, ~ галочка, отметка /// разг. момент и др. /// 1
-tick @ insect     = клещ                                          /// 2
+teak                   = тик, тиковое дерево
+tic                    = нервный тик
+tick @ clock           = тиканье, тикать                          /// 1
+tick {Br.} @ mark      = ставить галочку, отмечать, ~ галочка, отметка /// разг. момент и др. /// 1
+tick @ insect          = клещ                                     /// 2
 ---
-cell @ bio        = клетка %% элементарная живая система
-cell @ section    = ячейка
-cell @ mobastery  = келья
-cell @ prison     = тюремная камера
-cage @ animal     = клетка для животных
-rib cage||ribcage = грудная клетка
+cell @ bio             = клетка %% элементарная живая система
+cell @ section         = ячейка
+cell @ mobastery       = келья
+cell @ prison          = тюремная камера
+cage @ animal          = клетка для животных
+rib cage||ribcage      = грудная клетка
+---
+skate @ boot           = конек, роликовый конек
+skate @ verb %% {verb} = кользить, кататься, ~ бегать на конках
+skate @ fish           = скат
+ray @ fish             = скат
+ray @ light            = луч
 
 
 

@@ -24091,7 +24091,7 @@ Hofball in Wien [waltz][Viennese waltz] ## date 1900 ## qrop t12 r52 b21 ## qrop
 ball @ dance ## qrop l10 r20.jpg
 >>> ../datae\fineart gh {{$$}}/Giordano {{Luca Giordano}}
 The Annunciation [Annunciation][annunciation] ## date 1672 ## qrop qt.jpg
->>> ../datae\fineart gh {{$$}}/Giotto {{Giotto}
+>>> ../datae\fineart gh {{$$}}/Giotto {{Giotto}}
 Joachim's Dream, Scrovegni Chapel [Joachim] ## date 1304-06.jpg
 >>> ../datae\fineart gh {{$$}}/Greco {{El Greco}}
 caballero ## date circa 1580 ## crop t2 ## qrop t6 ## qropt!.jpg
@@ -24274,12 +24274,12 @@ The School of Athens [school@way][ancient philosophy] ## qrop l22 t16 r24 ## qro
 >>> ../datae\fineart opqr {{$$}}/Redon {{Odilon Redon}}
 buddha ## crop l1 t1 b1 ## qropt! {{Odilon Redon $$}}.jpg
 Pegasus and Hydra [Lernaean Hydra][Hydra@myth] ## qrop l10 r6 ## qropt! {{Odilon Redon, c.1907 $$}}.jpg
->>> ../datae\fineart opqr {{$$}}/Renoir {{Auguste Renoir}}
+>>> ../datae\fineart opqr {{$$}}/Renoir [+][Renoir] {{Auguste Renoir}}
 Claude Monet reading [Claude Monet][Monet][impressionist] ## date 1872.jpg
 Jeanne Samary (Reverie) [reverie] ## date 1877 ## qropt!.jpg
 Luncheon of the Boating Party [luncheon][boating][party@group] ## date 1881 ## qropt!.jpg
 Margot {Berard} ## date 1879.jpg
-Nude Seated on a Sofa [nude] ## date 1876.jpg
+Nude Seated on a Sofa ## date 1876.jpg
 Paul Cézanne [postimpressionist][Cézannian][Cézanne] ## date 1880 ### father of Post-impressionism.jpg
 Portrait of Lucie Berard (Little Girl in a White Apron) [red hair] ## date 1884 ## qrop b18 ## qropt!.jpg
 Sweeper [sweeper] ## date 1889.jpg
@@ -25927,6 +25927,8 @@ Subway Sleepers, 1950 [sleepers].jpg
 Tammany Hall, 1947 [Tammany Hall][Tammany].jpg
 Tug of War, 1949 [tug of war] ## qrop l6 r6 ## qropt!.jpg
 Watching Santa, 1944 [watching][mesmerized] ## qropt!.jpg
+>>> ../datae\photo ijkl/Leiter {{Photo.. Saul Leiter}}
+Accident [accident] ## date ca. 1955.jpg
 >>> ../datae\photo ijkl/Leonard {{Photo.. Herman Leonard}}
 Billie Holiday [Holiday][jazzwoman][sing].jpg
 Clifford Brown [trumpeter].jpg
@@ -25991,10 +25993,12 @@ black and white [black-and-white].jpg
 book.jpg
 bucket [pail].jpg
 burnt {matches}.jpg
+capital @ money.jpeg
 Copa Vino (Glass of Wine) [vino].jpg
 drain.jpg
 envelope ## qrop t8 b8 ## qropt!.jpg
 ladder into mirror [ladder][reflection] ## qrop t5 b5 ## qropt!.jpg
+paint {roller}.jpg
 razor blade.jpg
 suitcase ## qrop qt.jpg
 thermometer ## noqrop.jpg
@@ -26161,6 +26165,8 @@ A patient with Extreme Drug-Resistant Tuberculosis, or {XDR-TB}.jpg
 >>> ../datae\photo mn/Nadar {{Photo.. Nadar}}
 Helicopter Prototype [prototype] ## date 1863 ## qrop t10 b5 ## qropt!.jpg
 Pierrot ## qrop t4 b2 ## qropt! {{Photo.. Nadar, 1855 $$}}.jpg
+>>> ../datae\photo mn/Newman {{Marvin E. Newman}}
+Untitled, 1955 [kvetch].jpg
 >>> ../datae\photo mn/Nicol photocuisine {{Photo.. F. Nicol}}
 beef {sukiyaki}.jpg
 daikon with salmon roe and sake [daikon].jpg
@@ -26696,6 +26702,10 @@ The Dying Swan [ballerina][ballet dancer] ## qrop t2 b1 ## qropt!.jpg
 harcha ## sic!.jpg
 pomegranate ## qrop qt.jpg
 tapioca pearls and pomegranate seeds [tapioca pearls].jpg
+>>> ../datae\photo s-z/Winogrand {{Garry Winogrand}}
+Fort Worth, Texas [bronco] ## date 1974.jpg
+New York, from The_Animals [feed@food] ## date circa 1963.jpg
+No left or U-turn..jpeg
 >>> ../datae\photo s-z/Wong {{Photo.. Andrew Wong}}
 a pod of dolphins [pod@group] ## crop t1 ## qrop t1 r26 ## qropt!.jpg
 Bottlenose Dolphins in Surf [bottlenose dolphins][cavort][cavorting].jpg
@@ -29311,8 +29321,8 @@ mummy @ mother ## qrop l8 r4 ## qropt! {{Photo.. Masyanya $dreamstime 27835257}}
 astrological signs [astrological] {{Photo.. Starblue $dreamstime 7726013}}.jpg
 charm bracelet [charm@amulet] ## qrop t16 b17 {{Photo.. Les Cunliffe $dreamstime 37439031}}.jpg
 Gothic ankh-shaped pendant [ankh] ## qrop l14 r19 ## qropt! {{Photo.. Ekaterina Fribus $dreamstime 12921901}}.jpg
-magic wand ## qrop ql {{Photo.. Syda Productions $dreamstime 64980223}}.jpg
 magic wand ## qrop t7 b10 ## qropt! {{Nuvolanevicata $dreamstime 65376424}}.jpg
+magic wand [wand] ## qrop ql {{Photo.. Syda Productions $dreamstime 64980223}}.jpg
 mandala ## qrop l13 r11 ## qropt! {{Photo.. Adwo $dreamstime 90530786}}.jpg
 mystic ## qrop t4 b7 ## qropt! {{Photo.. Dmitrijs Mihejevs $dreamstime 1763190}} ### statue in a St. Peter's cathedral in Riga, Latvia.jpg
 Nike ## qrop t6 b15 ## qropt! {{Photo.. Ruslan Gilmanshin $dreamstime 87369814}}.jpg
@@ -31063,7 +31073,7 @@ Kiki de Montparnasse [Kiki][bust@art][avant-garde] ## date 1928 ## crop t11 b4.j
 Water Carriers [carriers] ## date 1925.jpg
 >>> ../datae\sculpture/Kessels {{Mathieu Kessels}}
 Discobolus [discobolus] ## date 1828.jpg
-{_Mars and _Cupid [Mars@myth] ## date 1820s.jpg
+_Mars and _Cupid [Mars@myth] ## date 1820s.jpg
 >>> ../datae\sculpture/Rodin {{Auguste Rodin}}
 Balzac, Nude Study with Arms Crossed [Balzac] ## date 1892.jpg
 Bust of Victor Hugo [bust@art][Hugo] ## date 1897 ## crop b23 ## qropt!.jpg

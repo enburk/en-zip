@@ -18,11 +18,15 @@ namespace studia
             auto& select = selector.object;
             select.buttons(i++).text.text = "Elementary";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Intermediate 1";
+            select.buttons(i++).text.text = "Secondary 1";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Intermediate 2";
+            select.buttons(i++).text.text = "Secondary 2";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Advanced";
+            select.buttons(i++).text.text = "Secondary 3";
+            select.buttons(i++).text.html = extracolor("Extra");
+            select.buttons(i++).text.text = "Advanced 1";
+            select.buttons(i++).text.html = extracolor("Extra");
+            select.buttons(i++).text.text = "Advanced 2";
             select.buttons(i++).text.html = extracolor("Extra");
             select.selected = 0;
         }
@@ -122,9 +126,11 @@ namespace studia
                 int m = n / 2;
                 root =
                 m == 0 ? dir / "10 Elementary":
-                m == 1 ? dir / "20 Intermediate 1":
-                m == 2 ? dir / "30 Intermediate 2":
-                m == 3 ? dir / "80 Advanced":
+                m == 1 ? dir / "20 Secondary 1":
+                m == 2 ? dir / "30 Secondary 2":
+                m == 3 ? dir / "40 Secondary 3":
+                m == 4 ? dir / "50 Advanced 1":
+                m == 5 ? dir / "60 Advanced 2":
                 "";
                 fill();
                 replane();

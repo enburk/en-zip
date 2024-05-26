@@ -15,6 +15,9 @@ long           = длинный
 short          = короткий
 : short pasta
 : long pasta
+---
+large          = большой, крупный, ~ многочисленный
+huge           = огромный, громадный, ~ гигантский
 
 height         = высота
 high           = высокий
@@ -39,5 +42,6 @@ hourglass      = песочные часы
 volume @ space = объём
 volume @ sound = громкость
 volume @ book  = том
+
 
 

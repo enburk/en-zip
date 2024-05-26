@@ -190,6 +190,8 @@ namespace app::dic::left
                 return; }
                 clicked = *index;
                 notify();
+                if (not
+                undoes.empty()) 
                 undoes.pop_back();
                 redoes = std::move(saving);
                 refresh();

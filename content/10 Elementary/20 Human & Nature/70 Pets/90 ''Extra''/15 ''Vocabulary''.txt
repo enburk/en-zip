@@ -6,11 +6,12 @@ guinea pig         = морская свинка
 rabbit @ pet       = кролик
 rat @ pet          = крыса
 
-cage @ animal      = клетка
+cage @ animal      = клетка # duple
 lead/leash @ strap = поводок
 
 puppy              = щенок
 breed              = порода
+
 
 
 

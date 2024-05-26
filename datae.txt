@@ -14455,7 +14455,7 @@ What do you mean!~.ogg
 without reckoning.ogg
 Never, never!.ogg
 That's a frightful!.ogg
-You are very amiable, no doubt, but you would be charming if you would only depart.ogg
+You are very amiable, no doubt, but you would be charming if you would only depart..ogg
 >>> ../datae\audiobooks/Fleming, Ian - You Only Live Twice {{Martin Jarvis}}
 !credit.txt
 Common oleander (Nerium Indicum).txt
@@ -24072,7 +24072,7 @@ grammar ## date 1407 ## qrop r20 ## qropt!.jpg
 Bouquet of Peonies and Iris [bouquet@flowers] ## qrop b5 ## qropt!.jpg
 Large Bouquet with Three Peonies [bouquet@flowers] ## date 1879 ## qrop t2 b3 ## qropt!.jpg
 Sweet Peas in a Vase [sweet peas] ## date 1888 ## qrop t8 b2 ## qropt!.jpg
-Vase of Roses [bouquet@flowers] ## date 1875.jpg
+Vase of Roses [bouquet@flowers] ## date 1875 ## qrop qb.jpg
 >>> ../datae\fineart def {{$$}}/Fortuny {--Mariano Fortuny y Marsal}
 An Ecclesiastic [ecclesiastic] ## date 1874.jpg
 The Print Collector [collector@art] ## date 1866 ## qrop l3 t5 r28 b4.jpg
@@ -24159,7 +24159,7 @@ Variegation in the triangle [variegation] ## date 1927.jpg
 Death and Life [death] ## date 1911 ## qropt!.jpg
 Minerva ## date 1898 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Knight {{Daniel Knight}}
-Hailing the Ferryman [hailing][hail@call] ## qrop l13.jpg
+Hailing the Ferryman [hailing][hail@call] ## qrop l14 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Kramskoy {{Ivan Kramskoy}}
 Portrait of Empress Maria Feodorovna [empress] ## date 1882 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Kupka {{Frantisek Kupka}}
@@ -24279,7 +24279,7 @@ Claude Monet reading [Claude Monet][Monet][impressionist] ## date 1872.jpg
 Jeanne Samary (Reverie) [reverie] ## date 1877 ## qropt!.jpg
 Luncheon of the Boating Party [luncheon][boating][party@group] ## date 1881 ## qropt!.jpg
 Margot {Berard} ## date 1879.jpg
-Nude Seated on a Sofa ## date 1876.jpg
+Nude Seated on a Sofa ## date 1876 ## qropt!.jpg
 Paul Cézanne [postimpressionist][Cézannian][Cézanne] ## date 1880 ### father of Post-impressionism.jpg
 Portrait of Lucie Berard (Little Girl in a White Apron) [red hair] ## date 1884 ## qrop b18 ## qropt!.jpg
 Sweeper [sweeper] ## date 1889.jpg
@@ -24455,7 +24455,7 @@ thumbprint.jpg
 Alpha {Crucis}.jpg
 Antares @ star.jpg
 Aquila (the Eagle) [Altair][Aquilae] ## qrop t12 b8.jpg
-Aquila (the Eagle) [Aquila].jpg
+Aquila (the Eagle) [Aquila] ## qrop t11 b9.jpg
 Crux (The Southern Cross) [Crux][Southern Cross][southern cross] ## qrop l6 r17.jpg
 Lyra @ constellation.jpg
 Scorpius @ constellation ## qrop qr.jpg
@@ -24631,7 +24631,7 @@ Lenticular cloud over {Mount Fuji} [Fuji].jpg
 Lenticular cloud, {Mt _Shasta} [Mount Shasta] {{Photo.. Jane English}}.jpg
 polar stratospheric clouds [nacreous clouds][nacreous] ## qrop l13 r30.jpg
 Red-eyed Tree Frog, close up of an egg clutch, about 5 days old [clutch@frog eggs][eggs@frog] ## qrop qb {{Photo.. Christian Ziegler}}.jpg
-rock ptarmigan [ptarmigan][Lagopus muta][Lagopus] ## qrop l7 r27.jpg
+rock ptarmigan [ptarmigan][Lagopus muta][Lagopus] ## qrop l7 r27 b1.jpg
 Sea &sharp;1 [sea] ## date 2007 {{Photo.. Wolfgang Uhlig}} ## qrop ql.jpg
 seascape ## qrop q {{Photo.. Nicholas Hughes}}.jpg
 seastar on sponge [seastar][sea star][sponge@animal] {{Photo.. Cristine McConnell}}.jpg
@@ -24673,11 +24673,11 @@ Woman Hides in Fear of Sniper.txt
 _Einstein sticking his tongue out ## date 1951 ## qrop t3 b9 ## qropt! {{Photo.. Arthur Sasse}}.jpg
 _Einstein sticking his tongue out ## date 1951 ## qrop t3 b9 ## qropt! {{Photo.. Arthur Sasse}}.txt
 _Joseph _Stalin [Joseph Stalin][Stalin][thumb one's nose][cock a snook] ## qrop t11 b12 ## qropt! {{Photo.. Nikolai Vlasik}}.jpg
-pinning clothespins [pinning] {{Photo.. Walter Whitman}}.jpg
+pinning clothespins [pinning] ## qrop l5 r21 {{Photo.. Walter Whitman}}.jpg
 Prow of the Titanic [prow][Titanic] ## qrop l18 ## qropt! {{Photo.. Emory Kristof}}.jpg
 >>> ../datae\photo/ropes
 Army Officer Shoulder Aiguillette [aiguillette][aglet][aiglet].jpg
-boatswain's lanyard {lanyard}.jpg
+boatswain's lanyard [lanyard].jpg
 >>> ../datae\photo\ropes/epaulettes
 British, 1st Foot Guard {Epaulette}.jpg
 British, 9th Regt of Foot, Colonel Epaulettes [Epaulettes][epaulettes] ## qrop l7 r9 ## qropt!.jpg
@@ -24784,7 +24784,7 @@ scissors and thread [scissors] ## noqrop.jpg
 Street {arrow}, _Boston, _Massachusetts ## date 1960.jpg
 The Tetons and the Snake River [Tetons@mountains][river] ## qrop l12 r8 {{Photo.. Ansel Adams $$USGOV}}.jpg
 Thundercloud, Lake Tahoe [Lake Tahoe][Tahoe] ## date 1936.jpg
-Window, _Stevenson House, _Monterey, _California [window] ## date 1953.jpg
+Window, _Stevenson House, _Monterey, _California [window] ## date 1953 ## qropt!.jpg
 >>> ../datae\photo abc/Alpert {{Photo.. Max Alpert}}
 A battalion commander [commander] ## date 1942.jpg
 >>> ../datae\photo abc/Amon photocuisine {{Photo.. D. Amon}}
@@ -24793,11 +24793,11 @@ cauliflower ## qrop l1 r6 ## qropt!.jpg
 langoustine ## qrop t8 b7 ## qropt!.jpg
 parmesan and grater [Parmese][parmesan][grater] ## qrop qb.jpg
 Roquefort and port [Roquefort].jpg
-tabbouleh [taboule].jpg
+tabbouleh [taboule] ## qrop ql.jpg
 >>> ../datae\photo abc/Arnold {{Photo.. Corey Arnold}}
 coyote yip ## qrop ql.jpg
 coyote yip ## qrop ql.txt
-gale ## date 2004.jpg
+gale ## date 2004 ## qrop ql.jpg
 Head Strong.jpg
 Head Strong.txt
 icy bow [icy][bow@ship] ## date 2006 ## qrop qr.jpg
@@ -24838,9 +24838,9 @@ _Phi _Phi _Le island near _Phuket, {_Thailand}.jpg
 Bagpipers with the _Indian Army [bagpipers] ## qrop t4 b32.jpg
 >>> ../datae\photo abc\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/cats
 A boy holds his blue tabby and white {Norwegian Forest cat}.jpg
+American Shorthair Brown Patched Tabby Cat [brindled][tabby cat][shorthair][American Shorthair][american shorthair][Tabby][tabby] ## crop l5 r5 ## qrop l9 r24.jpg
 Seal Pointed _Persian Longhair Cat [Persian longhair][Persian cat][seal point][seal-pointed][Persian Longhair Cat][Persian longhair cat] ## qrop t9 b2 ## qropt!.jpg
 Snow Chocolate Spotted Tabby {_Bengal Cat} [Bengal] ## qrop qt.jpg
-{American Shorthair} Brown Patched {Tabby} Cat [brindled][tabby cat][shorthair] ## crop l5 r5 ## qrop l7 r20.jpg
 {_European Shorthair} Kittens.jpg
 >>> ../datae\photo abc\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/cows
 Brown Cow [cattlebeast][Brune cow][Brown][brown][Cow][cow] ## qrop q.jpg
@@ -24927,15 +24927,15 @@ yohimbe cocktail [yohimbe][yohimbine].jpg
 _Italian-style strawberry pudding [pudding] ## crop t10 ## qrop t15 ## qropt!.jpg
 сhayotes [christophene][christophine][cho-cho][merleton][pear squash][vegetable pear][choko][pipinola].jpg
 >>> ../datae\photo abc/Attar {{Photo.. Abbas Attar}}
-Ali vs Foreman. A journalist follows the fight through binoculars [fascinated][fascinating][fascination] ## date 1974.jpg
+Ali vs Foreman. A journalist follows the fight through binoculars [fascinated][fascinating][fascination] ## date 1974 ## qrop l12 r22.jpg
 Celebrating Purim with a tish, Jerusalem, 2016 [Purim][tish].jpg
-Cooking hand made noodles, China [noodles] ## date 1982.jpg
+Cooking hand made noodles, China [noodles] ## date 1982 ## qrop l22 r10.jpg
 Mexico City, November 1, 1984.jpg
 Mexico City, November 1, 1984.txt
-Muhammad Ali avoids a punch from George Foreman [avoid] ## date 1974.jpg
-Tehran. Feburary 11, 1980.jpg
-Tehran. Feburary 11, 1980.txt
-World Heavyweight Boxing Championship. Muhammad Ali {fooling around} [fool around] ## date 1974.jpg
+Muhammad Ali avoids a punch from George Foreman [avoid] ## date 1974 ## qrop l29 r4.jpg
+Tehran. Feburary 11, 1980 ## qrop l19 r14.jpg
+Tehran. Feburary 11, 1980 ## qrop l19 r14.txt
+World Heavyweight Boxing Championship. Muhammad Ali fooling around [fool around][fooling around] ## date 1974 ## qrop l27 r7.jpg
 >>> ../datae\photo abc/Bagros photocuisine {{Photo.. Y. Bagros}}
 adding the butter to the preparation [preparation@food].jpg
 Andalusian loin of pork [pork loin] ## qrop t7 b4 ## qropt!.jpg
@@ -24979,7 +24979,7 @@ Blue _Bible [books] ## date 2004.jpg
 book leaves [leaf@book][leaves@book] ### A Road Divided.jpg
 plastic bag.png
 >>> ../datae\photo abc/Baudonnet photocusine {{Photo.. Baudonnet}}
-lychee cake [+].jpg
+lychee cake [+] ## qrop qb.jpg
 pomelo crumble [crumble@food].jpg
 >>> ../datae\photo abc/Belmonte photocuisine {{Photo.. Belmonte}}
 black tomato curry, buckwheat and {shellfish}.jpg
@@ -25014,7 +25014,7 @@ beef paupiette with tomatoes and ceps [paupiette] ## qrop qr.jpg
 canned Brussels sprouts [canned][Brussels sprouts][brussels sprouts] ## qrop t5 b1 ## qropt!.jpg
 canned {Brussels sprouts} [canned].jpg.uid-zps
 cherry tomatoes with caraway and orange [cherry tomatoes] ## qrop t12 b4 ## qropt!.jpg
-filet mignon steak with muesli crumble topping [filet mignon].jpg
+filet mignon steak with muesli crumble topping [filet mignon] ## qrop t10 b11.jpg
 haddock and cream dip [dip@food].jpg
 oysters with orange and red pepper [oysters] ## qrop t14 b19 ## crop t12 b15.jpg
 packets of spices [packets].jpg
@@ -25095,7 +25095,7 @@ cream of lentil soup with steaky bacon [soup][cream of lentil].jpg
 curry and apple risotto [risotto] ## qrop qb.jpg
 fennel grilled with aniseed [fennel].jpg
 foie gras poached in broth with pepper aspic [foie gras].jpg
-garlic chuletillas [chuletillas][mutton].jpg
+garlic chuletillas [chuletillas][mutton] ## qrop ql.jpg
 gnocchis with champignons, tomate sauce and basil [gnocchis].jpg
 grand aïoli %% a traditional Provençal dish [aïoli][Provençal][Provencal] ## qrop l4 r7 ## qropt!.jpg
 ham and red pepper {tortilla} [Spanish omelette].jpg
@@ -25129,7 +25129,7 @@ cherries.jpg
 cherry tomatoes.jpg
 chickpeas.jpg
 dry red kidney beans [kidney beans][common bean][red bean] ## qrop qb.jpg
-eggplant [aubergine].jpg
+eggplant [aubergine] ## qrop qb.jpg
 feta.jpg
 flaked almonds [flaked] ## qrop qb.jpg
 garlic bulb and cloves [garlic].jpg
@@ -25276,7 +25276,7 @@ Hands of Henry Cowell [pianistic] ## date 1926.jpg
 insouciant ## date 1932 ## qrop l4 ## qropt!.jpg
 Lovers, _Trinity Churchyard, New York City [lovers] ## date 1956.jpg
 Lyle Tuttle, {tattoo artist} ## date 1976.jpg
-Nun at Sacred Heart, Oakwood [nun] ## date 1976.jpg
+Nun at Sacred Heart, Oakwood [nun] ## date 1976 ## qrop t12 b8.jpg
 Phoenix {recumbent} ## date 1968.jpg
 >>> ../datae\photo abc\Cunningham {{Photo.. Imogen Cunningham}}/plants
 agave ## date 1930.jpg
@@ -25342,7 +25342,7 @@ dab filet [dab@food][fillet@food][fillet@food].jpg
 eggplant tian [tian] ## qrop qb.jpg
 eggplant.jpg
 fish {galantine} with mayonnaise.jpg
-Grandmother's baked egg {custard} with apples.jpg
+Grandmother's baked egg custard with apples [custard] ## qrop l20 r5.jpg
 leeks [leek].jpg
 Madras chicken curry royal [Madras chicken curry][Madras curry][Madras].jpg
 peanut oil and peanuts [peanut][peanut oil][peanuts] ## qrop qb.jpg
@@ -25395,17 +25395,17 @@ Tulipa 'Rococo' [Tulipa][tulip][rococoish] ## qrop t10 ## qropt!.jpg
 subway @ metro ## qrop q ### #.jpg
 subway @ metro ## qrop q.jpg
 >>> ../datae\photo def/Duca photocuisine {{Photo.. A. Duca}}
-Basque {cake}.jpg
+Basque cake [cake] ## qrop q.jpg
 beef consommé with quenelles [consommé] ## qrop qb.jpg
-cake ### Barranx cake.jpg
-cassoulet ### Grand-Mere Doladille.jpg
+cake ## qrop qb ### Barranx cake.jpg
+cassoulet ## qrop qb ### Grand-Mere Doladille.jpg
 ceps à la béarnaise [à la béarnaise][dish@food].jpg
 chicken parmentier [parmentier][hash@food].jpg
 chocolate galettes [galette][galettes] ## qrop qb.jpg
-fennel and haddock tatin tart [fennel].jpg
+fennel and haddock tatin tart [fennel] ## qrop t12 b6.jpg
 goose with chestnuts [main course] ## qrop qt.jpg
 Gruyère salad [Gruyère].jpg
-Gugelhupf [Gugelhopf][Kouglof][bundt cake].jpg
+Gugelhupf [Gugelhopf][Kouglof][bundt cake] ## qrop qt.jpg
 matelote with Riesling [matelote] ## qropt!.jpg
 mesclun with duck [mesclun] ### Aiguillettes.jpg
 piece of cake ### Barranx cake.jpg
@@ -25438,9 +25438,9 @@ The eyes of hatred ## qrop t37 r5.txt
 Walt Disney [Disney] ## date 1938.png
 >>> ../datae\photo def/Elgort {{Photo.. Arthur Elgort}}
 Baryshnikov plays Belmondo [play@someone] ## date 1986.jpg
-Jazz {bassist} _Ron _Carter [double bassist][string bassist][contrabassist].jpg
+Jazz bassist _Ron _Carter [double bassist][string bassist][contrabassist][bassist] ## qrop t8 ## qropt!.jpg
 >>> ../datae\photo def/Erwitt {{Photo.. Elliott Erwitt}}
-East Hampton, New York, 1981 [wail][wailing].jpg
+East Hampton, New York, 1981 [wail][wailing] ## qrop l18 r9 ## qropt!.jpg
 France, Honfleur, 1968 [misbehave][misbehavior][mischevious] ## qrop qr.jpg
 Las Vegas, Nevada, 1954 [Las Vegas][one-armed bandit][gambling][casino] ## qrop l21 r13.jpg
 Metropolitan Museum of Art, New York [aim] ## date 1949.jpg
@@ -26705,7 +26705,7 @@ tapioca pearls and pomegranate seeds [tapioca pearls].jpg
 >>> ../datae\photo s-z/Winogrand {{Garry Winogrand}}
 Fort Worth, Texas [bronco] ## date 1974.jpg
 New York, from The_Animals [feed@food] ## date circa 1963.jpg
-No left or U-turn..jpeg
+No left or U-turn. [U-turn] ## crop l20 r2 ## qrop l31 r2.jpeg
 >>> ../datae\photo s-z/Wong {{Photo.. Andrew Wong}}
 a pod of dolphins [pod@group] ## crop t1 ## qrop t1 r26 ## qropt!.jpg
 Bottlenose Dolphins in Surf [bottlenose dolphins][cavort][cavorting].jpg

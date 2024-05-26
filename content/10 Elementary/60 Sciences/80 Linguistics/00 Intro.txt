@@ -19,9 +19,11 @@ apostrophe    = апостроф           # TERM- # 14+ /// Greek
 lingua franca = лингва франка      # 16+
 Esperanto     = эсперанто          # 16+
 cockney       = кокни              # 16+
+argot         = арго, жаргон       # 16+
 ---
 pidgin        = пиджин %% упрощенный язык # TERM+ # 16+
 creole        = креольский язык    # TERM+ # 16+
-Creole        = креол, креольский  # TERM+ # 16+ /// # DELAY
+Creole        = креол, креольский  # TERM+ # 16+
+
 
 

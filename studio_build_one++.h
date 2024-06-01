@@ -6,10 +6,14 @@ namespace studio::one
     (
         content::out::course& course,
         array<std::pair<ent, array<res>>>& multivideo,
-        hashmap<res, array<ent>>& multientry,
+        hashmap<res, array<ent>> const& multientry,
         media::out::data& data
     )
     {
+        auto
+        course_entries =
+        course.entries;
+
         auto& debug = course.root.add_theme(99, "Debug");
         {
             auto& anomal = debug.
@@ -17,7 +21,7 @@ namespace studio::one
             add_topic(00, "anomal").
             add_chain(00);
 
-            for (auto [i,entry]: enumerate(course.entries))
+            for (auto [i,entry]: enumerate(course_entries))
             if (entry.anomaly != "")
                 anomal.add_leaf(i).
                 entry = i;
@@ -81,10 +85,10 @@ namespace studio::one
 
                 for (res r: ress)
                 {
-                    int n = course.entries.size(); if (old)
+                    int n = course_entries.size(); if (old)
                     oldes.add_leaf(oldes.units.size()).entry = n; else
                     newes.add_leaf(newes.units.size()).entry = n;
-                    course.entries += *entry;
+                    course_entries += *entry;
                     data.one_add(n, r);
 
                     if (not old)
@@ -169,12 +173,12 @@ namespace studio::one
 
                 for (ent e: ents)
                 {
-                    int n = course.entries.size(); if (old)
+                    int n = course_entries.size(); if (old)
                     oldes.add_leaf(oldes.units.size()).entry = n; else
                     newes.add_leaf(newes.units.size()).entry = n;
-                    course.entries += *e;
+                    course_entries += *e;
                     data.one_add(n, r);
-
+                
                     if (not old)
                     list += e->formatted(30,80);
                 }
@@ -189,6 +193,9 @@ namespace studio::one
             sys::write(dir_new / (date +
             str(listn++).right_aligned(6, '0')), list),
             list.clear();
+
+            course.entries =
+            course_entries;
         }
     }
 }

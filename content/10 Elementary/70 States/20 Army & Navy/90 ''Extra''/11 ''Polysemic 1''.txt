@@ -1,23 +1,23 @@
 polysemic
----
+***
 Guard//Guards            = гвардия
 guard @ person           = охранник, охрана, защита  ~ охранять
 guard @ sword            = гарда %% защитная часть эфеса
 guardian angel           = ангел-хранитель
 bodyguard                = телохранитель
----
+***
 tank @ armor             = танк
 tank @ reservoir         = бак, цистерна, ~ резервуар
 tank top {Am.} @ shirt   = майка
 tank top {Br.} @ sweater = вязаный жилет
----
+***
 carbine                  = карабин ~ (винтовка)
 carabiner                = карабин ~ (соединительное устройство)
----
+***
 cornet @ rank            = корнет ~ (чин)                                   # 14+
 cornet @ music           = корнет ~ (музыкальный инструмент)                # 14+
 cornet {Br.} @ food      = вафельный рожок                                  # 14+ /// и другие предметы конической формы
----
+***
 mine @ my                = мой                                              /// 1
 mine @ industry          = шахта, рудник, ~ месторождение                   /// 2
 : There's a large mustard-mine near here. ~ And the moral of that is -- ~ “The more there is of mine, ~ the less there is of yours.”
@@ -30,7 +30,7 @@ mortar @ mixture         = строительный раствор
 mortar @ vessel          = ступка, ступа
 pestle                   = пестик ~ (ступки), ~ толочь в ступе
 pistil                   = пестик ~ (цветка)
----
+***
 rapier                   = рапира                                           # 12+
 foil @ sword             = рапира %% колющее тренировочное оружие           # 12+ /// 3
 foil @ sport             = рапира %% современный спортивный снаряд          # 12+ /// 3
@@ -38,10 +38,11 @@ foil @ metal             = фольга, станиоль, ~ покрывать 
 foil @ plastic           = прозрачная ~ пластиковая пленка                  /// 1
 foil @ contrast          = контраст, фон, орнамент                          /// 1
 foil @ prevent %% {verb} = расстраивать планы, ~ мешать (кому-либо)         # 12+ /// 2
----
+***
 division @ army          = дивизия %% ''не'' дивизион
 division @ math          = деление %% в математике
 division @ sport         = в спорте: дивизион
+
 
 
 

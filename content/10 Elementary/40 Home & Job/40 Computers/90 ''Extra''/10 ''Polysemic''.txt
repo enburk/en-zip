@@ -1,12 +1,12 @@
 polysemic
----
+***
 chip @ comp                = чип
 chip @ token               = фишка, марка ~ (для игры)
 chip @ piece               = стружка, щепка
 chip @ damage              = скол, щербинка /// ничего не стоящая вещь и др.
 chips {Am.} @ crisps       = чипсы
 chips {Br.} @ french fries = картофель фри
----
+***
 code @ crypto              = код, шифр, ~ система кодирования, ~ кодировать
 code @ program             = текст программы, ~ программировать
 code @ law                 = кодекс, ~ свод законов
@@ -43,5 +43,6 @@ as you like                = как вам угодно
 ===
 like @ intensifier %% intensifier = так сказать, как бы
 ===
+
 
 

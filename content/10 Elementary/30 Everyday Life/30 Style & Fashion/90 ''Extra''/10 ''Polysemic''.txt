@@ -1,9 +1,9 @@
 polysemic
----
+***
 jacket @ main             = куртка                                       # 16+
 jacket @ suit             = пиджак                                       # 16+
 jacket @ jacket           = жакет                                        # 16+
----
+***
 jumper(1) {Br.} @ sweater = джемпер, свитер, пуловер
 jumper(1) {Am.} @ dress   = сарафан
 jumper(2) @ person        = прыгун                                       /// тех. и спорт. значения
@@ -11,31 +11,31 @@ jumping rope              = прыгалки
 show jumping              = конкур
 jump-start %% noun, verb  = разговорное: «прикуривать» %% запускать двигатель от ~ аккумулятора другого автомобиля
 : Go jump in the lake!
----
+***
 mantle @ clothes          = мантия, накидка                              # 12+
 mantle @ geology          = мантия %% в геологии                         # 12+
----
+***
 robe @ academic           = мантия %% элемент академической одежды       # 16+
 robe @ home               = халат %% ''не'' роба в знач. рабочая одежда  # 16+
----
+***
 boa @ accessory           = боа                                          # 16+
 boa @ snake               = боа, удав                                    # 16+
----
+***
 cap @ hat                 = кепка, шапка, фуражка
 cap @ lid                 = колпак, колпачёк, крышка
 cap @ mushroom            = шляпка ~ (гриба)
 baseball cap              = бейсболка
 forage cap                = пилотка %% ''не'' фуражка
----
+***
 medallion @ medal         = медальон ~ (в виде большой медали)           # 14+
 locket                    = медальон ~ (открывающийся)                   # 14+
 medallion @ food          = медальон ~ (блюдо)                           # 14+
 medallion @ architecture  = медальон ~ (в архитектуре)                   # 14+
----
+***
 crêpe @ fabric            = креп                                         # RARE- # 18+
 crêpe [paper]             = гофрированная бумага                         # RARE- # 18+
 crêpe @ food              = блинчик ~ (тонкий)                           # RARE- # 18+
----
+***
 scrub @ cosmetics         = скраб
 scrub @ brush             = чистить, скрести, тереть
 scrub @ shrubs            = кустарник, заросли
@@ -51,6 +51,7 @@ essential rights          = основные права и свободы
 extract @ substance       = экстракт, вытяжка                            # 14+
 extract @ citation        = выдержка, отрывок %% из книги, музыкального произведения и т.п. # 14+
 extract @ verb %% verb    = извлекать, добывать, ~ выжимать, экстрагировать # 14+
+
 
 
 

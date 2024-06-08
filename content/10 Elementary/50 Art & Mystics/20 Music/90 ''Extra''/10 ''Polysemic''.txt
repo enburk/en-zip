@@ -1,27 +1,27 @@
 polysemic
----
+***
 note @ music                  = нота, нотка
 note @ diplomacy              = нота ~ (дипломатическая)     # 16+
 note @ record                 = записка, примечание, ~ заметка, замечать, отмечать
 notebook @ paper              = ноутбук, ~ записная книжка, ~ блокнот
 [bank] note {Br.} %% Am. bill = банкнота
----
+***
 bass(1) @ music               = бас, басовый
 bass(2) @ fish                = окунь                        /// есть еще американская липа и т.п.
 bassist                       = басист %% бас-гитарист, контрабасист, тубист и др. # 10+
----
+***
 country @ music               = кантри                       # 10+
 country @ rural               = деревня, сельская местность, сельский
 : It is quite evident ~ that you have always lived in the country.
 country @ state               = страна
----
+***
 conservatoire\\conservatory   = консерватория                # 16+
 conservatory {Br.}            = зимний сад, оранжерея        # 16+
----
+***
 vocalise @ noun               = вокали́з                      # ART+ # 18+ /// (пение без слов) /// voca`lise
 : Rachmaninoff's Vocalise
 vocalise\\vocalize @ verb     = издавать звуки, вокализировать %% произносить звонко # ART+ # 18+ /// `vocalise
----
+***
 tube @ container              = тюбик
 tube @ tech                   = труба, трубка
 tube @ music                  = туба
@@ -35,5 +35,6 @@ minor @ music                 = минор, минорный
 minor @ lesser                = малый, меньший, ~ незначительный
 minor @ age                   = несовершеннолетний
 ===
+
 
 

@@ -143,6 +143,12 @@ namespace content::out
             for (int i=b*2/3+1; i<b; i++) if (tabs2[i] < 80) tab2 = tabs2[i];
             array<str> ss;
             for (auto& entry: entries)
+            if (entry.eng == "---" and (
+            str(str(path.stem().string()).from(3)).starts_with("''Polysemic''") or
+            str(str(path.stem().string()).from(3)).starts_with("''Polysemic ") or
+            str(str(path.stem().string()).from(3)).starts_with("''False Friends''") or
+            str(str(path.stem().string()).from(3)).starts_with("''False Friends ")))
+            ss += "***"; else
             ss += entry.formatted(tab1, tab2);
             return ss;
         }

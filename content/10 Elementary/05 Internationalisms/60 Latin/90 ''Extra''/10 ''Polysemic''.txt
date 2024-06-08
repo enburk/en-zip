@@ -1,42 +1,42 @@
 polysemic
----
+***
 cardinal @ rank           = кардинал                         # 14+
 cardinal @ color %% color = тёмно-красный ~ (цвет)           # 14+
 cardinal @ bird           = кардинал ~ (птица)               # 14+
 cardinal @ adjective      = кардинальный, основной           # 14+
 cardinal sin %% also: deadly sin = смертный грех                    # 16+
 cardinal number           = количественное числительное      # 14+
----
+***
 argument @ reason         = аргумент, довод                  # 10+
 argument @ quarrel        = спор, ссора                      # 10+
 : An Argument In The Corridors ~ Of The Opera # 10+
----
+***
 apparatus @ device        = оборудование, ~ аппарат, прибор
 apparatus @ bureaucratic  = государственный аппарат          # 14+
----
+***
 comfort @ noun            = комфорт
 comfort @ verb            = утешение, утешать
----
+***
 vulgar @ obscene          = вульгарный, пошлый, грубый       # 14+
 vulgar @ popular          = простонародный, ~ обыкновенный, банальный # 14+
----
+***
 pension @ payment         = пенсия, пособие
 pension @ hotel           = пансион                          # 14+ /// /pɑːnsiˈoʊn/
----
+***
 colony @ region           = колония ~ (зависимая территория) # 10+
 colony @ group            = колония, сообщество ~ (организмов) # 10+
----
+***
 reflex @ response         = рефлекс, рефлекторный            # 10+
 reflex @ mirror           = отражать, отражение              # 10+
----
+***
 constitution @ law        = конституция, ~ основной закон    # 14+
 constitution @ body       = конституция, ~ телосложение      # 14+ /// здоровье, ~~строение, состав, устройство
----
+***
 project @ noun %% noun    = проект, замысел, план            # 10+ /// `project
 project @ cast %% verb    = проецировать                     # 14+ /// pro`ject
 project @ plan %% verb    = прогнозировать, проектировать    # 12+ /// pro`ject
 project @ extend %% verb  = выступать, выдаваться            # 10+ /// pro`ject
----
+***
 reserve @ keep            = резерв, ~ запас, запасать
 reserve @ book            = резервировать, бронировать
 reserve Br. @ nature      = заповедник
@@ -52,8 +52,9 @@ sixth sense               = шестое чувство                   # 10+
 sense of humour\\sense of humor = чувство юмора                    # 10+
 ===
 sense @ meaning           = смысл, значение                  # 10+
-common sense//good sense = здравый смысл                    # 10+
+common sense//good sense  = здравый смысл                    # 10+
 nonsense                  = нонсенс                          # 10+
+
 
 
 

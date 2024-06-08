@@ -2,13 +2,14 @@
 water          = вода
 snow           = снег
 dale           = дол, долина
-night          = ночь
+night          = ночь # duple
 
 tree           = дерево
 birch          = береза
 nest @ bird    = гнездо
 wolf           = волк
 mouse @ animal = мышь
+
 
 
 

@@ -6,13 +6,14 @@ Armagnac            = арманьяк                   # RARE-
 absinthe/absinth    = абсент
 balsam              = бальзам
 ---
-whisky              = канадский и шотландский ~ виски # TERM+ # pix-
-whiskey             = американский и ирландский ~ виски # TERM+ # pix-
+whisky              = канадский и шотландский ~ виски # TERM+ # duple # pix-
+whiskey             = американский и ирландский ~ виски # TERM+ # duple # pix-
 Scotch ~ [whisky]   = шотландский виски, ~ скотч # TERM+ # pix-
 Bourbon ~ [whiskey] = бурбон %% кукурузный виски # TERM+ # pix-
 ---
 gin                 = джин
 gin and tonic       = джин-тоник
+
 
 
 

@@ -6,7 +6,7 @@ apéritif|aperitif         = аперитив              # 18+
 
 soup                      = суп
 cream soup                = суп-пюре
-bouillon                  = бульон %% или суп на бульоне
+bouillon                  = бульон %% или суп на бульоне # duple
 consommé|consomme         = консоме %% осветлённый бульон # RARE+ # 18+
 escalope {Br.}            = эскалоп               # 10+
 fillet\\filet @ food      = филе                  # 10+
@@ -42,11 +42,13 @@ restaurant                = ресторан
 menu                      = меню
 maître d'hôtel\\maître d' = метрдотель            # 18+
 chef                      = шеф-повар
-gourmand                  = гурман, также: обжора
+gourmand                  = гурман, ~ также: обжора # duple
 banquet                   = банкет                # 16+ /// , давать банкет
 picnic                    = пикник                /// , устраивать пикник
 champagne                 = шампанское            # 18+
 cognac                    = коньяк                # 18+
+
+
 
 
 

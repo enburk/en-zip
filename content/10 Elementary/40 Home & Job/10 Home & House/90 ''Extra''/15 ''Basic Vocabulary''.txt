@@ -6,7 +6,7 @@ village        = деревня, поселок
 
 palace         = дворец, особняк, ~ официальная резиденция
 
-garden         = сад, огород
+garden         = сад, огород /// French
 bench @ park   = скамейка, скамья
 
 floor @ house  = пол

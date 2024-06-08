@@ -44,6 +44,7 @@ namespace content::out
             {
                 if (entry.eng == ""
                 and entry.rus == ""
+                or  entry.eng.starts_with("***")
                 or  entry.eng.starts_with("~~~")
                 or  entry.eng.starts_with("===")
                 or  entry.eng.starts_with("---"))
@@ -80,6 +81,12 @@ namespace content::out
                 {
                     ordered = true;
                     continue;
+                }
+                if (entry.eng.starts_with("***"))
+                {
+                    ordered = true;
+                    entry.opt.external
+                    += "HEAD";
                 }
 
                 entry.opt |= opt;

@@ -1,0 +1,37 @@
+animals:
+youngsters
+---
+calf @ cow       = a young cow or bull %% also: deer, elephant, seal, whale, giraffe
+elephant calf
+
+lamb             = a young sheep
+kid @ goat       = a young goat
+---
+piglet           = a young pig
+shoat @ domestic = a young, newly-weaned pig
+wild boar shoat
+---
+foal @ domestic  = a baby horse
+filly            = a young female horse
+colt             = a young male horse
+zebra foal
+
+fawn @ deer      = a young deer
+joey @ kangaroo  = a young kangaroo
+
+leveret          = a young hare
+rabbit kit
+
+whelp            = any young carnivorous mammal, ~ especially puppy
+
+lion cub
+panther cub
+leopard cub
+cougar kitten
+bobcat kitten
+/// As a future reference, Genus Panthera; i.e. tigers, lions, jaguars, and leopards roar, chuff and have CUBS.
+/// Genus Felidae, housecats of all breeds, all small wild cats such as, Serval, Asian Leopard Cat, Sand Cat,
+/// Cougar, Caracal and the like all purr and all babies are called KITTENS.
+
+cubs/pups/kits @ fox %% of a fox
+

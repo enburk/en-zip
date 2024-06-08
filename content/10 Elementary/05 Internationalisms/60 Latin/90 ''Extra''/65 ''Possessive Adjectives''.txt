@@ -1,7 +1,7 @@
 possessive adjectives = притяжательные прилагательные # 10+
 
 ===
-my                    = мой
+my                    = мой                           # duple
 ===
 
 : It's not '''my''' fault.
@@ -19,17 +19,19 @@ your                  = твой
 : '''Your''' door is ajar. = Твоя дверь приоткрыта.
 
 ===
-his                   = его
-her                   = её
-its                   = его/её
+his                   = его                           # duple
+her                   = её                            # duple
+its                   = его/её                        # duple
 ===
 
 : It is '''his'''.
 
 ===
 our                   = наш
-their                 = их
+their                 = их                            # duple
 ===
+
+
 
 
 

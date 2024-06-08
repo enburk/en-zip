@@ -66,6 +66,7 @@ namespace content::out
             if (s == ""
             or  s.starts_with("~~~")
             or  s.starts_with("---")
+            or  s.starts_with("***")
             or  s.starts_with("==="))
                 return;
 

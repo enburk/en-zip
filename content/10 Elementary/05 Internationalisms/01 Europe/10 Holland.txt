@@ -1,19 +1,20 @@
 Holland              = Голландия %% историческая область Нидерландов; ~ ''часто:'' синоним Нидерландов # pix- # 8+
-the Netherlands      = Нидерланды        # pix- # 8+
-Dutch                = нидерландский     # pix- # 8+
+the Netherlands      = Нидерланды               # pix- # 8+
+Dutch                = нидерландский            # pix- # 8+
 
-gas @ natural        = газ, газовый, ~ наполнять газом
+gas @ natural        = газ, газовый, ~ наполнять газом # duple
 drill @ tool         = дрель, ~ сверло, сверлить # 10+
-brandy               = бренди            # 18+
+brandy               = бренди                   # 18+
 waffles              = вафли
 rucksack {Br.}       = рюкзак
-mannequin            = манекен           /// , манекенщица (устар.)
+mannequin            = манекен                  /// , манекенщица (устар.)
 Santa Claus          = Санта-Клаус
-cruise               = круиз             # 10+
-dock {Br.} @ drydock = док               # 12+
-skipper              = шкипер            # 14+ /// Dutch ???
+cruise               = круиз                    # 10+
+dock {Br.} @ drydock = док                      # duple # 12+
+skipper              = шкипер                   # 14+ /// Dutch ???
 harpoon              = гарпун
-Yankee               = янки              # 16+ /// # DELAY
+Yankee               = янки                     # 16+ /// # DELAY
+
 
 
 

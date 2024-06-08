@@ -1,11 +1,12 @@
 prepositions = предлоги # 10+
 
 ===
-on           = на       # pix-
-in           = в        # pix-
+on           = на       # duple # pix-
+in           = в        # duple # pix-
 ===
 
 an apple '''on''' plates
+
 
 
 

@@ -1,6 +1,6 @@
 basic ~ vocabulary
 
-dozen          = дюжина
+dozen          = дюжина /// French
 hundred        = сто, сотня
 thousand       = тысяча
 one and a half = полтора
@@ -38,10 +38,15 @@ narrow         = узкий
 hour           = час
 hourglass      = песочные часы
 
+week           = неделя
+month          = месяц
+year           = год
+
 ===
 volume @ space = объём
 volume @ sound = громкость
 volume @ book  = том
+
 
 
 

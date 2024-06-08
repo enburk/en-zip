@@ -5,10 +5,9 @@ lorry\\truck @ car = грузовик
 bridge             = мост
 ---
 ticket @ transport = билет
-: : Tickets, please!
+: Tickets, please!
 
-
-: Why do cows have bells? ~ Because their horns don’t work.
+vehicle            /// Latin
 
 ===
 ship @ vessel      = корабль, судно, ~ перевозить груз
@@ -32,6 +31,7 @@ runway @ airport   = взлетно-посадочная полоса
 ---
 wing @ plane       = крыло (самолета)
 wing\\fender @ car = крыло (автомобиля)
+
 
 
 

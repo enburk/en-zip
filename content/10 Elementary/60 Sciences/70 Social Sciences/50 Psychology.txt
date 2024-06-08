@@ -12,19 +12,19 @@ mass hysteria                = массовая истерия
 psychosis                    = психоз
 paranoia                     = паранойя
 phobia                       = фобия
-mania                        = мания
-claustrophobia               = клаустрофобия
-kleptomania                  = клептомания
-
-Oedipus complex              = эдипов комплекс
+mania                        = мания                                 # duple
 
 latent                       = латентный, скрытый
 fetish                       = фети́ш                                 /// фе́тиш
 ---
 sadism                       = садизм
-sadist                       = садист
 masochism                    = мазохизм
-masochist                    = мазохист
+
+===
+
+claustrophobia               = клаустрофобия
+kleptomania                  = клептомания
+Oedipus complex              = эдипов комплекс
 
 ===
 
@@ -41,6 +41,7 @@ neuro-linguistic programming = нейролингвистическое прог
 
 hypnosis                     = гипноз
 hallucination                = галлюцинация
+
 
 
 

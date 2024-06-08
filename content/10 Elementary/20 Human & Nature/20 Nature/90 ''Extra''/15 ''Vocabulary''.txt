@@ -11,7 +11,7 @@ sunset          = закат
 morning         = утро
 day             = день
 evening         = вечер
-night           = вечер, ночь
+night           = вечер, ночь # duple
 
 ice             = лед
 drop @ water    = капля, капать, ~ падать, уронить
@@ -45,5 +45,6 @@ winter          = зима
 spring @ season = весна
 summer          = лето
 autumn\\fall    = осень
+
 
 

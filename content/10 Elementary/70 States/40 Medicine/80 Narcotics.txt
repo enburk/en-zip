@@ -19,7 +19,7 @@ ecstasy/extasy              = экстази
 depressant                  = депрессант
 sedative                    = седативный %% успокаивающий, болеутоляющий
 
-alcohol                     = алкоголь
+alcohol                     = алкоголь # duple
 barbiturate                 = барбитурат
 ---
 opium                       = опиум
@@ -34,4 +34,5 @@ LSD                         = ЛСД
 ===
 
 overdose                    = передозировка
+
 

@@ -30,7 +30,7 @@ ignorance                   = неведение, невежество %% ''не
 : Ignorance is bliss.       = Счастье в неведении.
 ---
 exultation                  = ликование, торжество %% ''не'' экзальтация      # 16+
-exaltation                  = экзальтация                                     # 16+
+exaltation                  = экзальтация                                     # duple # 16+
 ---
 dream @ sleep               = сон, видеть сны
 dream ~ (of, about) @ wish  = мечта, мечтать, ~ грезить, воображать
@@ -48,6 +48,7 @@ intelligent @ AI            = обладающий искусственным и
 intelligence @ mind         = ум, сообразительность
 intelligence @ espionage    = разведывательная служба, ~ разведывательные данные /// сведения, информация
 : Central Intelligence Agency
+
 
 
 

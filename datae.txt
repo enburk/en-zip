@@ -3625,16 +3625,16 @@ This is not about left and right. This is about right and wrong.ogg
 >>> ../datae\audio\speech/Neil Armstrong - Moon Landing Speech
 !credit.txt
 That's one small step for a man, one giant leap for mankind.ogg
->>> ../datae\audio/speech {{edu}}
->>> ../datae\audio\speech {{edu}}/Linus Torvalds
+>>> ../datae\audio/speech edu
+>>> ../datae\audio\speech edu/Linus Torvalds
 Hello, this is Linus Torvalds, and I pronounce Linux as.ogg
 Hello, this is Linus Torvalds, and I pronounce Linux as.txt
->>> ../datae\audio\speech {{edu}}/Scott Meyers - C++ and Beyond, 2012 ## us
+>>> ../datae\audio\speech edu/Scott Meyers - C++ and Beyond, 2012 ## us
 !credit.txt
 As I look at upon you it occurs to me.ogg
 As I look at upon you it occurs to me.txt
->>> ../datae\audio/speech {{gov}}
->>> ../datae\audio\speech {{gov}}/Franklin Delano Roosevelt - Pearl Harbor Address to the Nation
+>>> ../datae\audio/speech gov
+>>> ../datae\audio\speech gov/Franklin Delano Roosevelt - Pearl Harbor Address to the Nation
 !credit.txt
 During the intervening time.ogg
 During the intervening time.txt
@@ -3644,7 +3644,7 @@ It will be recorded that the distance of Hawaii from Japan.ogg
 It will be recorded that the distance of Hawaii from Japan.txt
 Yesterday, December 7th, 1941 -- a date which will live in infamy.ogg
 Yesterday, December 7th, 1941 -- a date which will live in infamy.txt
->>> ../datae\audio\speech {{gov}}/Franklin Delano Roosevelt - The Arsenal of Democracy
+>>> ../datae\audio\speech gov/Franklin Delano Roosevelt - The Arsenal of Democracy
 !credit.txt
 But at this moment they do not know how soon they will be embraced to death by their allies..ogg
 But the width of those oceans is not what it was in the days of clipper ships..ogg
@@ -3661,7 +3661,7 @@ They call it a ''negotiated peace.'' Nonsense!.ogg
 This is not a matter of sentiment or of controversial personal opinion.ogg
 This is not a matter of sentiment or of controversial personal opinion.txt
 We have the men, the skill, the wealth, and above all, the will..ogg
->>> ../datae\audio\speech {{gov}}/Franklin Delano Roosevelt - The Banking Crisis
+>>> ../datae\audio\speech gov/Franklin Delano Roosevelt - The Banking Crisis
 !credit.txt
 And it is my belief that hoarding during the past week.ogg
 And it is my belief that hoarding during the past week.txt
@@ -3677,11 +3677,11 @@ The new currency is being sent out by the Bureau of Engraving and Printing.txt
 We do not want and will not have another epidemic of bank failures..ogg
 You people must have faith; you must not be stampeded by rumors or guesses.ogg
 You people must have faith; you must not be stampeded by rumors or guesses.txt
->>> ../datae\audio\speech {{gov}}/George W. Bush
+>>> ../datae\audio\speech gov/George W. Bush
 !credit.txt
 Most of you are renowned scholars, intellectuals, and writers.ogg
 Most of you are renowned scholars, intellectuals, and writers.txt
->>> ../datae\audio\speech {{gov}}/Gerald R. Ford - Pardoning Richard M. Nixon
+>>> ../datae\audio\speech gov/Gerald R. Ford - Pardoning Richard M. Nixon
 !credit.txt
 As a man, my first consideration is to be true to my own convictions.ogg
 As a man, my first consideration is to be true to my own convictions.txt
@@ -3694,14 +3694,14 @@ I do believe, with all my heart and mind and spirit.txt
 I have concluded that only I can do that, and if I can, I must..ogg
 Now, therefore, I, Gerald R. Ford.ogg
 Now, therefore, I, Gerald R. Ford.txt
->>> ../datae\audio\speech {{gov}}/John F. Kennedy - Cuban Missile Crisis
+>>> ../datae\audio\speech gov/John F. Kennedy - Cuban Missile Crisis
 !credit.txt
 I call upon Chairman Khrushchev.ogg
 I call upon Chairman Khrushchev.txt
 I have directed the Armed Forces to prepare for any eventualities..ogg
 We will not prematurely or unnecessarily risk the costs of worldwide nuclear war.ogg
 We will not prematurely or unnecessarily risk the costs of worldwide nuclear war.txt
->>> ../datae\audio\speech {{gov}}/John F. Kennedy - Inaugural Address
+>>> ../datae\audio\speech gov/John F. Kennedy - Inaugural Address
 !credit.txt
 And so my fellow _Americans, ask not what your country can do for you.ogg
 And so my fellow _Americans, ask not what your country can do for you.txt
@@ -3710,14 +3710,14 @@ I, John Fitzgerald Kennedy, do solemnly swear that.txt
 If a free society cannot help the many who are poor, it cannot save the few who are rich..ogg
 Let us go forth to lead the land we love, asking _His blessing and _His help.ogg
 Let us go forth to lead the land we love, asking _His blessing and _His help.txt
->>> ../datae\audio\speech {{gov}}/Lyndon Johnson - Renunciation Speech
+>>> ../datae\audio\speech gov/Lyndon Johnson - Renunciation Speech
 !credit.txt
 It has not been easy -- far from it..ogg
 The _United _States just must bring its balance of payments.ogg
 The _United _States just must bring its balance of payments.txt
 Throughout my entire public career.ogg
 Throughout my entire public career.txt
->>> ../datae\audio\speech {{gov}}/Richard Nixon - Resignation Speech
+>>> ../datae\audio\speech gov/Richard Nixon - Resignation Speech
 !credit.txt
 I have never been a quitter..ogg
 I would have preferred to carry through to the finish whatever the personal agony.ogg
@@ -3727,7 +3727,7 @@ Therefore, I shall resign the _Presidency effective at noon tomorrow..ogg
 Throughout the long and difficult period of Watergate.ogg
 Throughout the long and difficult period of Watergate.txt
 Vice President _Ford will be sworn in as President at that hour in this office..ogg
->>> ../datae\audio\speech {{gov}}/Ronald Reagan - A Time for Choosing
+>>> ../datae\audio\speech gov/Ronald Reagan - A Time for Choosing
 !credit.txt
 And they say if we'll only avoid.ogg
 And they say if we'll only avoid.txt
@@ -3755,7 +3755,7 @@ Well, I, for one, resent it when a representative of the people.ogg
 Well, I, for one, resent it when a representative of the people.txt
 _Alexander _Hamilton said, ''A nation which can prefer disgrace to danger.ogg
 _Alexander _Hamilton said, ''A nation which can prefer disgrace to danger.txt
->>> ../datae\audio\speech {{gov}}/Winston Churchill
+>>> ../datae\audio\speech gov/Winston Churchill
 !credit.txt
 Arm yourselves, and be ye men of valour, and be in readiness for the conflict..ogg
 But if we fail, then the whole world, including the United States.ogg
@@ -3766,8 +3766,8 @@ I see great reason for intense vigilance and exertion.txt
 The Battle of _France is over. The Battle of _Britain is about to begin. [Battle of Britain].ogg
 We shall defend our Island.ogg
 We shall defend our Island.txt
->>> ../datae\audio/various {{var}}
->>> ../datae\audio\various {{var}}/1 ## Case {{}}
+>>> ../datae\audio/various var
+>>> ../datae\audio\various var/1 ## Case {{}}
 Alpheratz.ogg
 Arcturus.ogg
 Deubhe ## sic!.ogg
@@ -3780,7 +3780,7 @@ Rigil Kent.ogg
 Shaula ## sic!.ogg
 Spica.ogg
 Suhail.ogg
->>> ../datae\audio\various {{var}}\1 ## Case {{}}/TechTarget ## =
+>>> ../datae\audio\various var\1 ## Case {{}}/TechTarget ## =
 802.11.ogg
 ACL.ogg
 ASCII.ogg
@@ -3856,9 +3856,9 @@ WSDL.ogg
 WYSIWYG.ogg
 Xanadu.ogg
 Zubenelgenube ## sic!.ogg
->>> ../datae\audio\various {{var}}/Erica Bell {{Erica Bell}} ## us
->>> ../datae\audio\various {{var}}\Erica Bell {{Erica Bell}} ## us/{{}}
->>> ../datae\audio\various {{var}}\Erica Bell {{Erica Bell}} ## us\{{}}/## Case
+>>> ../datae\audio\various var/Erica Bell {{Erica Bell}} ## us
+>>> ../datae\audio\various var\Erica Bell {{Erica Bell}} ## us/{{}}
+>>> ../datae\audio\various var\Erica Bell {{Erica Bell}} ## us\{{}}/## Case
 absolutely.ogg
 actually true.ogg
 all right.ogg
@@ -24246,6 +24246,8 @@ Laborers [laborers][blue-collar][working class] ## date 1926 ## qropt!.jpg
 Mother of God with Child [Mother of God] ## date 1922.jpg
 Our Lady of Mollifying of Cruel Hearts [Our Lady][mollify][mollifying] ## date 1915 ## qrop l3 ## qropt!.jpg
 Our Lady of {Petrograd} ## date 1920.jpg
+>>> ../datae\fineart opqr {{$$}}/Pettie {{John Pettie}}
+Reductio ad absurdum [reductio ad absurdum][proof by contradiction][apagoge] ## date 1884.jpg
 >>> ../datae\fineart opqr {{$$}}/Picasso {{Pablo Picasso}}
 Ascete [ascete][ascetic] ## date 1903 ## qrop t7 b7 ## qropt!.jpeg
 Celestina or Woman with a Cast [cast@squint] ## date 1904.jpg
@@ -24662,6 +24664,7 @@ coal miner [coalminer][coal-miner][miner@worker] ## qrop t2 ## qropt! {{Photo.. 
 Dr. Igor Charkovsky, the _Soviet pioneer of baby yoga, dolphin birthing, and {water birthing} [water birth].jpg
 Frenchman Crying During Nazi Occupation of France ## qrop l4 r5 ## qropt!.jpg
 Frenchman Crying During Nazi Occupation of France ## qrop l4 r5 ## qropt!.txt
+John McCarthy playing chess at Stanford's IBM 7090 [computer scientist][McCarthy][intelligence] ## date 1967.png
 Lev Landau [Landau] {{Photo.. M.S. Nappelbaum}}.jpg
 Paul Joseph Geobbels, _Nazi propaganda minister [Geobbels][geobbels][propaganda] ## qrop t7 b8 ## qropt!.jpg
 Salvador {Dalí} ## date 1929 {{Photo.. Luis Buñuel}}.jpg
@@ -27142,7 +27145,7 @@ knitting pattern [pattern] ## qrop l17 r16 {{Photo.. Lakhesis $dreamstime 172024
 lace pattern [pattern] ## qrop q {{Photo.. Nongnuch Leelaphasuk $dreamstime 29252740}}.jpg
 LED stripe [LED strip][LED] ## qrop ql {{Photo.. Mykhailo Kovtoniuk $dreamstime 51457371}}.jpg
 mango chunks [chunks] ## qrop l12 t1 r22 {{Photo.. Draftmode $dreamstime 31308690}}.jpg
-orange slice and cranberries [orange slice][slice] ## qrop l6 r28 {{Photo.. Ekaterina79 $dreamstime 45257517}}.jpg
+orange slice and cranberries [orange slice][slice@food] ## qrop l6 r28 {{Photo.. Ekaterina79 $dreamstime 45257517}}.jpg
 pearl strands [strands] ## qrop qr {{Photo.. Kenneth Sponsler $dreamstime 391312}}.jpg
 raffia strands [strands] ## qrop ql {{Photo.. Sarah2 $dreamstime 25573451}}.jpg
 ribbon roll [roll] ## qrop l16 t1 r18 {{Photo.. Copacool $dreamstime 45961917}}.jpg

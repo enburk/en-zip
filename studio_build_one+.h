@@ -119,10 +119,11 @@ namespace studio::one
             report::anoma1 += link(entry);
             report::anoma1 += ""; }
 
-            if (actual == 0)
+            if (actual < 2)
                 continue;
 
             for (ent entry: voc.entries)
+            if  (not entry->opt.external.contains("HEAD"))
             report::duples += link(entry);
             report::duples += "";
         }

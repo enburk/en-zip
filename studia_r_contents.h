@@ -22,11 +22,11 @@ namespace studia
             select.buttons(i++).text.html = extracolor("Extra");
             select.buttons(i++).text.text = "Secondary 2";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Secondary 3";
+            select.buttons(i++).text.text = "Tertiary 1";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Advanced 1";
+            select.buttons(i++).text.text = "Tertiary 2";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Advanced 2";
+            select.buttons(i++).text.text = "Tertiary 3";
             select.buttons(i++).text.html = extracolor("Extra");
             select.selected = 0;
         }
@@ -128,9 +128,9 @@ namespace studia
                 m == 0 ? dir / "10 Elementary":
                 m == 1 ? dir / "20 Secondary 1":
                 m == 2 ? dir / "30 Secondary 2":
-                m == 3 ? dir / "40 Secondary 3":
-                m == 4 ? dir / "50 Advanced 1":
-                m == 5 ? dir / "60 Advanced 2":
+                m == 3 ? dir / "40 Tertiary 1":
+                m == 4 ? dir / "50 Tertiary 2":
+                m == 5 ? dir / "60 Tertiary 3":
                 "";
                 fill();
                 replane();

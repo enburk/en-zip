@@ -18,5 +18,6 @@ clutch @ bird eggs = %% a group of eggs
 clutch @ frog eggs = %% a group of eggs
 clutch @ car       = %% the pedal in a car
 clutch @ verb %% {verb}
-clutch [bag]
+clutch [bag]       # duple
+
 

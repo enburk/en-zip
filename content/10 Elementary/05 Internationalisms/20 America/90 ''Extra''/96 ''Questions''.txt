@@ -18,7 +18,7 @@ wh–questions # HEAD
 what         = что # pix-
 where        = где # pix-
 when         = когда # pix-
-who          = кто # pix-
+who          = кто # duple # pix-
 why          = почему # pix-
 ===
 
@@ -49,6 +49,7 @@ why          = почему # pix-
 ===
 
 : To be or not to be. ~ That is the question. # 14+
+
 
 
 

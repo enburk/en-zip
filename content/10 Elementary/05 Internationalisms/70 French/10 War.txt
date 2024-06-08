@@ -8,7 +8,7 @@ campaign @ war        = кампания                                        
 front @ military      = фронт                                            # 10+
 flank @ military      = фланг                                            # 10+
 patrol                = патруль, патрулировать                           # 10+
-picket                = пикет, дозор                                     # 18+
+picket @ war          = пикет, дозор                                     # 18+
 ricochet              = рикошет                                          # 10+
 palisade              = палисад, частокол                                # 18+
 embrasure             = амбразура, бойница                               # WAR- # 18+
@@ -37,6 +37,7 @@ gallop                = галоп, нестись                              
 cuirass               = кираса, ~ в зоологии: панцирь                    # HISTORY- # WAR- # 12+
 
 revanchism            = реваншизм                                        # WAR- # 14+
+
 
 
 

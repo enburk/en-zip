@@ -17,8 +17,7 @@ shock        = шок, шокировать
 stupor       = ступор, оцепенение
 
 ecstasy      = экстаз                                        # 16+ /// extasy - не норм.
-euphoria     = эйфория                                       # 16+
-exaltation   = экзальтация                                   # 16+
+exaltation   = экзальтация                                   # duple # 16+
 
 hysterics    = истерика                                      # 16+
 hysteric     = истерик/истеричка                             # 16+
@@ -30,6 +29,6 @@ culmination  = кульминация                                   # 10+
 peak         = пик                                           # 10+
 
 apathy       = апатия                                        # 16+
-depression   = депрессия                                     # 16+
 nostalgia    = ностальгия                                    # 16+
+
 

@@ -20,7 +20,7 @@ Hindi, Tamil etc.   = хинди, тамильский ~ и другие (язы
 
 bungalow            = бунгало                            # 12+ /// Hindi
 veranda|verandah    = веранда                            /// Hindi
-pyjamas\\pajamas    = пижама                             /// Hindi
+pyjamas\\pajamas    = пижама                             # duple /// irregular plurals /// Hindi
 bandana|bandanna    = бандана                            /// bandhnu – метод окрашивания ткани - хинди, от badhnati–binds-санскр.
 shampoo             = шампунь                            /// Hindi - champo  - разминай мускулы
 
@@ -28,6 +28,7 @@ jungle              = джунгли                            /// Hindi – ja
 mongoose            = мангуст                            /// Indic
 catamaran           = катамаран                          # 10+ /// Tamil
 curry               = карри                              # MEAT # 12+ /// Tamil
+
 
 
 

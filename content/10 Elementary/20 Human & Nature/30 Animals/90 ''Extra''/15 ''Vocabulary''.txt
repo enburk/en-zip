@@ -26,8 +26,7 @@ bull @ ox            = бык
 fish %% plural: fish = рыба
 whale                = кит
 
-snake/serpent        = змея
-venomous             = ядовитый
+snake                = змея
 frog                 = лягушка
 caterpillar          = гусеница
 
@@ -41,10 +40,11 @@ fly @ insect         = муха
 fly @ verb           = лететь
 
 feather @ bird       = перо
-wing @ bird          = крыло
+wing @ bird          = крыло # duple
 tail @ animal        = хвост
 paw @ animal         = лапа
 fur @ amimal         = мех
+
 
 
 

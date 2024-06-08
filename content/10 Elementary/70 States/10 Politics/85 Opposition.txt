@@ -5,7 +5,7 @@ protest @ verb %% verb = протестовать
 
 demonstration          = демонстрация, ~ также: показ
 petition               = петиция, хода́тайство, ~ обращение              # POLIT+ # 16+
-picket                 = пикет, пикетировать                            # 16+
+picket @ politics      = пикет, пикетировать                            # 16+
 
 pamphlet               = брошюра, памфлет                               # POLIT+ # 16+
 proclamation           = провозглашение, ~ прокламация                  # POLIT+ # 16+ /// %% агитационная листовка
@@ -27,4 +27,5 @@ terror @ politics      = в политике: террор                      
 terror @ fear          = страх, ужас                                    # 16+
 terrorism              = терроризм
 suicide bomber         = террорист-смертник                             # 18+
+
 

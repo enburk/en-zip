@@ -40,7 +40,7 @@ block @ pulley                = блок ~ (механизм)
 block @ unit                  = узел, блок ~ (прибора или аппарата)
 block @ city                  = квартал ~ (городской)
 military alliance             = военно-политический блок
-slate                         = избирательный блок
+slate @ politics              = избирательный блок
 ---
 butterfly @ swimming          = в плавании: баттерфляй
 butterfly @ animal            = бабочка // %% также: непостоянный, ~ легкомысленный человек
@@ -57,6 +57,7 @@ train @ retinue               = свита
 record @ sport                = рекорд                           /// `record
 record @ noun                 = запись %% в т.ч. аудио- или видео- /// `record
 record @ verb                 = записывать                       /// re`cord
+
 
 
 

@@ -19,7 +19,7 @@ rumba                    = румба                                        # 1
 cha-cha-cha              = ча-ча-ча                                     # 14+
 bossa nova               = босанова|босса-нова                          # 18+
 paso doble               = пасодобль                                    # 18+
-salsa                    = сальса                                       # 16+
+salsa @ dance            = сальса                                       # 16+
 lambada                  = ламбада                                      # 16+ /// (Brazil) Portuguese
 
 ===
@@ -45,6 +45,7 @@ en pointe                = на пуантах %% (фр.)                       
 
 ballet master            = балетмейстер                                 # 16+
 choreographer            = хореограф                                    # 10+
+
 
 
 

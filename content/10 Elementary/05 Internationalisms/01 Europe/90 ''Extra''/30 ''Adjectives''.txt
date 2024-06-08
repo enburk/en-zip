@@ -1,7 +1,7 @@
 adjectives = прилагательные
 
-good       = хороший
-bad        = плохой
+good       = хороший    # duple
+bad        = плохой     # duple
 
 open       = открытый
 closed     = закрытый
@@ -10,12 +10,13 @@ empty      = пустой
 full       = полный
 
 soft       = мягкий
-hard       = твердый, жёсткий
+hard       = твердый, жёсткий # duple
 
 wet        = мокрый
 dry        = сухой
 
-little     = маленький
-big        = большой
+little     = маленький  # duple
+big        = большой    # duple
+
 
 

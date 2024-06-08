@@ -3,10 +3,11 @@ verbs        = глаголы
 do           = делать
 go @ verb    = идти
 look @ verb  = смотреть, выглядеть
-listen       = слушать
 drink @ verb = пить
+listen       = слушать
 sleep        = спать
 think        = думать
+
 
 
 

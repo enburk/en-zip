@@ -28960,7 +28960,7 @@ dialogue ## crop l24 r10 ## qrop l24 t1 r10 {{Photo.. Mengtianhan $dreamstime 49
 dialogue ## crop l24 r10 ## qrop l24 t1 r10 {{Photo.. Mengtianhan $dreamstime 49724091}} ### tango dancers.txt
 >>> ../datae\photo_dreamstime\human/emotions
 alarm @ worry [alarmed] ## qrop q {{Photo.. Razzdazzstock $dreamstime 76059354}}.jpg
-annoyed ## qrop q {{Photo.. Pressmaster $dreamstime 8341556}}.jpg
+annoyed [annoy][annoyance] ## qrop q {{Photo.. Pressmaster $dreamstime 8341556}}.jpg
 apprehension ## qrop l23 r11 {{Photo.. Igor Golubov $dreamstime 99639227}}.jpg
 bad-tempered [tempered] ## qrop l14 r19 {{Photo.. Joseph Cortes $dreamstime 517544}}.jpg
 be about to cry [about to] ## qrop l28 r5 {{Photo.. Koldunova Anna $dreamstime 108371230}}.jpg

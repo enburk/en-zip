@@ -29,6 +29,32 @@ namespace media
                 logs::err << red(bold(str(path) +
                 " !UTF-8: [" + line + "]"));
 
+                bool ansi = false;
+                unsigned char prev1 = ' ';
+                unsigned char prev2 = ' ';
+                for (char c: line)
+                {
+                    if (prev1 == 0xE2 and prev2 == 0x80
+                    or  prev1 == 0xE2 and prev2 == 0x86
+                    or  prev2 == 0xCA
+                    or  prev2 == 0xC9)
+                        continue;
+
+                    unsigned char u = (
+                    unsigned char)(c);
+                    if (u == 0x97 // m-dash
+                    or  u == 0x93 // left quot
+                    or  u == 0x94 // right quot
+                    or  u == 0x92 // apostrophe
+                    or  false) ansi = true;
+
+                    prev1 = prev2;
+                    prev2 = c;
+                }
+                if (ansi)
+                logs::err << red(bold(str(path) +
+                " !ANSI: [" + line + "]"));
+
                 if (line.starts_with("%%")
                 or  line.starts_with("**")) {
                     title_stop = true; str

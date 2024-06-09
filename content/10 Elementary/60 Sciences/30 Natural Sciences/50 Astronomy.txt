@@ -18,9 +18,9 @@ Alpha Centauri            = Альфа Центавра                         
 
 Pleiades//Seven Sisters   = Плеяды %% рассеянное звездное скопление    # TERM- # 16+
 globular cluster          = шаровое звёздное скопление                 # 12+
-
-zenith                    = зенит                                      # MATH+ # RARE+ # TERM+ # 18+ /// есть в Азии
-nadir                     = надир                                      # MATH+ # RARE+ # TERM+ # 18+
+---
+zenith                    = зенит                                      # MATH+ # RARE+ # TERM+ # duple # 18+ /// есть в Азии
+nadir                     = надир %% противоположное зениту направление # MATH+ # RARE+ # TERM+ # 18+
 
 ===
 astrophysics              = астрофизика                                # TERM+
@@ -63,6 +63,7 @@ exoplanet ~ (extrasolar planet) = экзопланета ~ (внесолнечн
 
 Big Bang                  = Большой взрыв                              # 10+
 singularity               = сингулярность                              # MATH+ # 18+
+
 
 
 

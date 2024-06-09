@@ -89,6 +89,7 @@ namespace studio::one
         course.entries,
         data.resources);
 
+        array<str> sounds;
         hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
@@ -122,6 +123,17 @@ namespace studio::one
             {
                 auto& w = abstract;
                 auto& v = resource_vocabulary;
+
+                if (w.starts_with("a "    )) v += w.from(2); else
+                if (w.starts_with("an "   )) v += w.from(3); else
+                if (w.starts_with("the "  )) v += w.from(4); else
+                if (w.starts_with("to "   )) v += w.from(3); else
+                {}
+                if (w.starts_with("a "    )) v += str(w.from(2)) + "@@"; else
+                if (w.starts_with("an "   )) v += str(w.from(3)) + "@@"; else
+                if (w.starts_with("the "  )) v += str(w.from(4)) + "@@"; else
+                if (w.starts_with("to "   )) v += str(w.from(3)) + "@@"; else
+                {}
                 if (w.starts_with("a "    )) v += str(w.from(2)) + "@noun"; else
                 if (w.starts_with("an "   )) v += str(w.from(3)) + "@noun"; else
                 if (w.starts_with("the "  )) v += str(w.from(4)) + "@noun"; else
@@ -130,7 +142,8 @@ namespace studio::one
             }
 
             if (r.sense == "")
-            resource_vocabulary += abstract + "@@";
+            resource_vocabulary +=
+                abstract + "@@";
 
             if (r.kind == "video")
             {
@@ -178,7 +191,21 @@ namespace studio::one
             or  r.kind == "video")
             unused_resources.
                 emplace(&r);
+
+            if (r.kind == "audio"
+            and r.options.contains("sound"))
+            {
+                str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
+                str dir = r.path.parent_path().string();
+                if (not dir.starts_with(s)) continue;
+                dir = dir.from(s.size());
+                sounds += dir + "/" + r.abstract;
+            }
         }
+
+        sounds.deduplicate();
+        sys::write("../data/sounds.txt",
+        sounds);
 
         sensecontrol.report_unused(unused_resources);
 

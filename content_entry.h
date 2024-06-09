@@ -96,6 +96,11 @@ namespace content::out
             if (s.starts_with(": "))
             {
                 s = s.from(2);
+                s.replace_all("|" , "/");
+                s.replace_all("\\", "/");
+                s.replace_all("//", "/");
+                s.replace_all("~", "");
+                s.canonicalize();
                 if (sense != "")
                 s += "@" + sense;
                 vocabulary += s;

@@ -2,12 +2,37 @@ sounds
 
 burp
 belch
-
-baby raspberry
-baby cooing
+choke
+sputter
+wheeze
 
 ===
-laugh                                          # HEAD
+
+double gasping belch with extra effort # SOUND
+small choker belch       # SOUND
+
+baby raspberry           # SOUND
+baby cooing              # SOUND
+
+ailing groan             # SOUND
+aggravated grunt         # SOUND
+choking grunt            # SOUND
+exertion grunt           # SOUND
+straining grunt          # SOUND
+corny attack scream      # SOUND
+
+gagging cough            # SOUND
+hacking cough            # SOUND
+muffled cough            # SOUND
+nagging cough            # SOUND
+wheeze and cough         # SOUND
+
+grumbling stomach        # SOUND
+hack & spit              # SOUND
+snotty cough gags        # SOUND
+
+===
+laugh                    # HEAD
 ===
 
 chuckle
@@ -16,14 +41,16 @@ scoff
 
 ===
 
-chuckles                                       # SOUND
-hoarse laughter, panting                       # SOUND
-raucous laughter                               # SOUND
-short scoff                                    # SOUND
+chuckles                 # SOUND
+hoarse laughter, panting # SOUND
+raucous laughter         # SOUND
+short scoff              # SOUND
 
 frightened scream ~ followed by relieved chuckles # SOUND
 short horror scream ~ followed by embarassed chuckles # SOUND
 short scream ~ followed by embarassed chuckles # SOUND
+
+
 
 
 

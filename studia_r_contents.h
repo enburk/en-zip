@@ -9,7 +9,6 @@ namespace studia
         gui::area<gui::selector> selector;
         binary_property<path> root;
         sfx::dirwatcher watcher;
-        bool extra = false;
         str link;
 
         contents ()
@@ -29,11 +28,6 @@ namespace studia
             select.buttons(i++).text.text = "Tertiary 3";
             select.buttons(i++).text.html = extracolor("Extra");
             select.selected = 0;
-        }
-
-        void replane ()
-        {
-            table.refresh();
         }
 
         void fill ()
@@ -59,6 +53,8 @@ namespace studia
                 rgba{} :
                 rgba{};
             };
+
+            bool extra = selector.object.selected.now % 2 == 1;
 
             for (path group: sys::dirs(root.now))
             {
@@ -115,14 +111,13 @@ namespace studia
                 int h = gui::metrics::text::height*13/10;
                 selector.coord = xywh(0, 0, W, h);
                 table   .coord = xyxy(0, h, W, H);
-                replane();
+                table.refresh();
             }
 
             if (what == &selector)
             {
                 int n = selector.object.selected.now;
                 path dir = std::filesystem::current_path() / "content";
-                extra = n % 2 == 1;
                 int m = n / 2;
                 root =
                 m == 0 ? dir / "10 Elementary":
@@ -133,7 +128,7 @@ namespace studia
                 m == 5 ? dir / "60 Tertiary 3":
                 "";
                 fill();
-                replane();
+                table.refresh();
             }
 
             if (what == &root)
@@ -144,7 +139,7 @@ namespace studia
             if (what == &watcher)
             {
                 fill();
-                replane();
+                table.refresh();
             }
 
             if (what == &table)

@@ -6,148 +6,126 @@ namespace app
     widget<Contents>
     {
         gui::canvas canvas;
+        gui::table table;
+        gui::selector selector;
+        binary_property<str> selected;
+        content::unit* root = nullptr;
+        bool extraful = false;
 
-        struct flist:
-        widget<flist>
+        void fill()
         {
-            str selected;
-            array<str> paths;
-            gui::widgetarium<gui::button> list;
-            //void on_change (void* w) override {
-            //    if (w == &list) {
-            //    selected = paths[
-            //    list.notifier_index];
-            //    notify(); } }
-        };
+            if (not root) return;
+            if (root->units.empty()) return;
+            int n = selector.selected.now;
+            if (n < 0) return;
 
-        flist flist;
-        gui::scroller<
-        gui::vertical>
-             scroller;
+            table.cells.clear();
+            bool extra = (n % 2 == 1) and extraful;
+            if (extraful) n = n / 2;
+            content::unit& cycle =
+                root->units[n];
 
-        gui::binary_property<str> selected;
-
-        struct block
-        {
-            array<str> path;
-            array<str> topics;
-        };
-        array<block> blocks;
-
-        void refresh ()
-        {
-        }
-
-        void replane ()
-        {
-            int t = scroller.top;
-            int W = coord.now.w; if (W <= 0) return;
-            int H = coord.now.h; if (H <= 0) return;
-            int h = gui::metrics::text::height*12/10;
-            int l = gui::metrics::line::width;
-            int n = W/(9*h);
-            int w = W/n;
-
-            auto title = [](str s)
+            auto on_change_state = [](gui::button& b)
             {
-                if (s.starts_with("''")
-                and s.  ends_with("''")) {
-                    s.truncate(); s.erase(0);
-                    s.truncate(); s.erase(0);
-                    s = extracolor(
-                    s); }
-                return s;
+                auto style = gui::skins[b.skin.now];
+                auto r =
+                b.coord.now.local();
+                b.frame.thickness = 0;
+                b.frame.coord = xywh{};
+                b.image.coord = xywh{};
+                b.text.coord = r; r.deflate(1);
+                b.canvas.coord = r;
+                b.canvas.color =
+                b.enabled.now ?
+                b.mouse_hover.now?
+                b.mouse_clicked.now?
+                style.middle.first :
+                style.normal.first :
+                rgba{} :
+                rgba{};
             };
 
-            flist.list.clear();
-
-            int x = 0;
-            int y = 0;
-            int r = 0; // height of row of blocks
-
-            for (auto& block: blocks)
+            for (auto& group: cycle.units)
             {
-                int yy = 0;
-                str spaces = " ";
-                
-                for (str s: block.path)
-                {
-                    // flist.paths += 
-                    auto& line = flist.list.emplace_back();
-                    line.coord = xywh(x, y + yy, w, h);
-                    line.text.alignment = xy(pix::left, pix::center);
-                    line.text.html = spaces + yellow(bold(title(s)));
-                    yy += h; spaces += " ";
-                }
+                auto& cells = table.cells;
+                int Y = cells.size();
+                auto& b = cells[Y][0];
+                b.enabled = false;
+                b.text.html = bold(blue(group.name));
+                b.text.alignment = xy(pix::left, pix::center);
+                b.on_change_state = [&](){ on_change_state(b); };
+                b.on_change_state();
 
-                for (str s: block.topics)
+                for (auto theme: group.units)
                 {
-                    auto& line = flist.list.emplace_back();
-                    line.coord = xywh(x, y + yy, w, h);
-                    line.text.alignment = xy(pix::left, pix::center);
-                    line.text.html = spaces + title(s);
-                    yy += h;
-                }
+                    if (theme.name == "''Extra''")
+                        break;
 
-                r = max(r, yy);
+                    int y = Y + 1;
+                    int x = cells[y].size();
+                    auto& b = cells[y][x];
+                    b.enabled = false;
+                    b.text.html = bold(black(theme.name));
+                    b.text.alignment = xy(pix::left, pix::center);
+                    b.on_change_state = [&](){ on_change_state(b); };
+                    b.on_change_state();
 
-                x += w;
-                if (x + w > W)
-                {
-                    x = 0;
-                    y += r + h;
-                    r = 0;
+                    content::unit& Theme =
+                        extra and not
+                        theme.units.empty() ?
+                        theme.units.back() :
+                        theme;
+
+                    for (auto topic: Theme.units)
+                    {
+                        y++;
+                        for (int i=0; i<x; i++)
+                        {
+                            auto& b = cells[y][i];
+                            b.enabled = b.text.text != "",
+                            b.on_change_state = [&](){ on_change_state(b); },
+                            b.on_change_state();
+                        }
+                        str name = topic.name;
+                        if (name.starts_with("''")
+                        and name.  ends_with("''")) {
+                            name.truncate(); name.erase(0);
+                            name.truncate(); name.erase(0);
+                            name = extracolor(
+                            name); }
+
+                        auto& b = cells[y][x];
+                        b.text.html = name;
+                        b.text.alignment = xy(pix::left, pix::center);
+                        b.on_change_state = [&](){ on_change_state(b); };
+                        b.on_change_state();
+                        b.name = topic.path;
+                    }
                 }
             }
 
-            if (x > 0)
-                y += r;
-
-            flist     .coord = xyxy(0, 0, W, H);
-            scroller  .coord = xyxy(W, 0, W, H);
-            flist.list.coord = xywh(0, 0, W, y);
-
-            scroller.span = y;
-            scroller.step = h;
-            scroller.top  = t; xywh rr =
-            flist.list.coord;  rr.y = -scroller.top;
-            flist.list.coord = rr;
+            table.refresh();
         }
 
-        bool topic (content::unit& unit)
+        void reload (str name, content::unit& root_)
         {
-            bool ok = true;
-            for (auto& u: unit.units)
-            if (u.name != "") {
-            ok = false; break; }
-            return ok;
-        }
+            root = &root_;
+            extraful = name ==
+                "app::Ones";
 
-        array<block> fill (content::unit& parent)
-        {
-            array<block> blocks; block block;
+            int i = 0;
+            selector.selected = -1;
+            selector.buttons.clear();
+            for (auto cycle: root->units)
+            {
+                selector.buttons(i++).text.text =
+                    cycle.name;
 
-            for (auto& unit: parent.units)
-                if (topic(unit))
-                block.topics +=
-                unit.name;
-
-            if (not block.topics.empty()) {
-                block.path = parent.path.split_by("/");
-                blocks += block; }
-
-            for (auto& unit: parent.units)
-                if (not topic(unit))
-                blocks += fill(unit);
-
-            return blocks;
-        }
-
-        void reload (str name, content::unit& root)
-        {
-            blocks = fill(root);
-            replane();
-            refresh();
+                if (extraful)
+                selector.buttons(i++).text.html =
+                    extracolor("Extra");
+            }
+            selector.selected = 0;
         }
 
         void on_change (void* what) override
@@ -158,8 +136,12 @@ namespace app
             {
                 canvas.coord =
                 coord.now.local();
-                replane();
-                refresh();
+                int W = coord.now.w; if (W <= 0) return;
+                int H = coord.now.h; if (H <= 0) return;
+                int h = gui::metrics::text::height*13/10;
+                selector.coord = xywh(0, 0, W, h);
+                table   .coord = xyxy(0, h, W, H);
+                table.refresh();
             }
 
             if (what == &skin)
@@ -169,37 +151,18 @@ namespace app
                 ultralight.first;
             }
 
-            if (what == &flist)
+            if (what == &selector)
+            {
+                fill();
+            }
+
+            if (what == &table)
             {
                 selected.was = selected.now;
-                selected.now = flist.selected;
+                selected.now = table.cells.notifier->
+                notifier->name.now;
                 notify();
             }
-
-            if (what == &selected)
-            {
-                refresh();
-            }
-
-            if (what == &scroller) { xywh r =
-                flist.list.coord; r.y = -scroller.top;
-                flist.list.coord = r;
-            }
-        }
-
-        bool on_mouse_wheel (xy p, int delta) override
-        {
-            int h = scroller.step;
-            delta /= abs(delta) < 20 ? abs(delta) : 20;
-            delta *= h > 0 ? h : gui::metrics::text::height;
-            if (sys::keyboard::ctrl ) delta *= 5;
-            if (sys::keyboard::shift) delta *= coord.now.h;
-            int d = flist.coord.now.h - flist.list.coord.now.h; // may be negative
-            int y = flist.list.coord.now.y + delta;
-            if (y < d) y = d;
-            if (y > 0) y = 0;
-            scroller.top =-y;
-            return true;
         }
     };
 }

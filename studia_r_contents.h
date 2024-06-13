@@ -56,24 +56,29 @@ namespace studia
 
             bool extra = selector.object.selected.now % 2 == 1;
 
+            const bool GH = true; // groups horizontally
+            const bool GV = not GH;
+
             for (path group: sys::dirs(root.now))
             {
                 auto& cells = table.cells;
-                int Y = cells.size();
-                auto& b = cells[Y][0];
+                int X = GV or cells.empty() ? 0 : cells[0].size();
+                int Y = GH ? 0 : cells.size();
+                auto& b = table.cell(X,Y);
                 b.enabled = false;
-                b.text.html = bold(blue(str(group.stem()).from(3)));
+                b.text.html = bold(black(str(group.stem()).from(3)));
                 b.text.alignment = xy(pix::left, pix::center);
                 b.on_change_state = [&](){ on_change_state(b); };
                 b.on_change_state();
 
                 for (path theme: sys::dirs(group))
                 {
-                    int y = Y + 1;
-                    int x = cells[y].size();
-                    auto& b = cells[y][x];
+                    if (GH) Y += 2;
+                    int y = GH ? Y : Y + 1;
+                    int x = GH ? X : cells[y].size();
+                    auto& b = table.cell(x,y);
                     b.enabled = false;
-                    b.text.html = bold(black(str(theme.stem()).from(3)));
+                    b.text.html = bold(blue(str(theme.stem()).from(3)));
                     b.text.alignment = xy(pix::left, pix::center);
                     b.on_change_state = [&](){ on_change_state(b); };
                     b.on_change_state();
@@ -81,14 +86,8 @@ namespace studia
                     for (path topic: sys::files(extra ? theme/"90 ''Extra''" : theme))
                     {
                         y++;
-                        for (int i=0; i<x; i++)
-                        {
-                            auto& b = cells[y][i];
-                            b.enabled = b.text.text != "",
-                            b.on_change_state = [&](){ on_change_state(b); },
-                            b.on_change_state();
-                        }
-                        auto& b = cells[y][x];
+                        if (GH) Y++;
+                        auto& b = table.cell(x,y);
                         str s = str(topic.stem()).from(3); s.strip("'");
                         b.text.html = extra ? extracolor(s) : black(s);
                         b.text.alignment = xy(pix::left, pix::center);

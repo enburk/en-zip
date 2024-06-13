@@ -101,7 +101,7 @@ namespace app
                             name); }
 
                         y++;
-                        if (GH) Y ++;
+                        if (GH) Y++;
                         auto& b = table.cell(x,y);
                         b.text.html = name;
                         b.text.alignment = xy(pix::left, pix::center);

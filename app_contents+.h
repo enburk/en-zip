@@ -45,6 +45,9 @@ namespace app
                 rgba{};
             };
 
+            const bool GH = true; // groups horizontally
+            const bool GV = not GH;
+
             for (auto& group: cycle.units)
             {
                 if (group.kind !=
@@ -52,10 +55,11 @@ namespace app
                     continue;
 
                 auto& cells = table.cells;
-                int Y = cells.size();
-                auto& b = cells[Y][0];
+                int X = GV or cells.empty() ? 0 : cells[0].size();
+                int Y = GH ? 0 : cells.size();
+                auto& b = table.cell(X,Y);
                 b.enabled = false;
-                b.text.html = bold(blue(group.name));
+                b.text.html = bold(black(group.name));
                 b.text.alignment = xy(pix::left, pix::center);
                 b.on_change_state = [&](){ on_change_state(b); };
                 b.on_change_state();
@@ -66,11 +70,12 @@ namespace app
                         content::unit::theme)
                         continue;
 
-                    int y = Y + 1;
-                    int x = cells[y].size();
-                    auto& b = cells[y][x];
+                    if (GH) Y += 2;
+                    int y = GH ? Y : Y + 1;
+                    int x = GH ? X : cells[y].size();
+                    auto& b = table.cell(x,y);
                     b.enabled = false;
-                    b.text.html = bold(black(theme.name));
+                    b.text.html = bold(blue(theme.name));
                     b.text.alignment = xy(pix::left, pix::center);
                     b.on_change_state = [&](){ on_change_state(b); };
                     b.on_change_state();
@@ -87,14 +92,6 @@ namespace app
                             content::unit::topic)
                             continue;
 
-                        y++;
-                        for (int i=0; i<x; i++)
-                        {
-                            auto& b = cells[y][i];
-                            b.enabled = b.text.text != "",
-                            b.on_change_state = [&](){ on_change_state(b); },
-                            b.on_change_state();
-                        }
                         str name = topic.name;
                         if (name.starts_with("''")
                         and name.  ends_with("''")) {
@@ -103,7 +100,9 @@ namespace app
                             name = extracolor(
                             name); }
 
-                        auto& b = cells[y][x];
+                        y++;
+                        if (GH) Y ++;
+                        auto& b = table.cell(x,y);
                         b.text.html = name;
                         b.text.alignment = xy(pix::left, pix::center);
                         b.on_change_state = [&](){ on_change_state(b); };

@@ -137,4 +137,25 @@ namespace eng
         }
         return s;
     }
+
+    generator<str> forms (str s)
+    {
+        co_yield s;
+
+        if (s.size() < 3
+        or s.contains(" "))
+            co_return;
+
+        for (str form: {"s", "ing", "ed"})
+        {
+            str f = eng::form(s, form);
+            if (f != s) co_yield f;
+
+            if (s.size() - form.size() < 3)
+                continue;
+
+            str b = eng::backform(s, form);
+            if (b != s)  co_yield b;
+        }
+    }
 }

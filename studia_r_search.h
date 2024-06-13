@@ -161,8 +161,8 @@ namespace studia::one
             }
             if (what == &media.object)
             {
-                str s = media.object.text; s.strip();
-                if (s.size() < 2) return;
+                str src = media.object.text; src.strip();
+                if (src.size() < 2) return;
 
                 title.object.text = "";
                 words.object.text = "";
@@ -171,66 +171,71 @@ namespace studia::one
                 result.object.
                     clear();
 
-                if (app::vocabulary.size() == 0) return;
-                auto i = app::vocabulary.lower_bound_case_insensitive(s);
-                bool o = eng::equal_case_insensitive(
-                     s,  app::vocabulary[i].title);
-
-                media.object.editor.color = o ?
-                gui::skins[skin].dark.first :
-                gui::skins[skin].error.first;
-                if (not o) return;
-
-                using index= media::index;
-                array<index> audio;
-                array<index> video;
-
-                auto range =
-                app::mediadata.entries_dic.equal_range(
-                media::entry_index{i, 0}, [](auto a, auto b)
-                { return a.entry < b.entry; });
-
-                for (auto [entry, media]: range)
+                for (str word: eng::forms(src))
                 {
-                    auto& index = app::mediadata.media_index[media];
+                    if (app::vocabulary.size() == 0) return;
+                    auto i = app::vocabulary.lower_bound_case_insensitive(word);
+                    bool o = eng::equal_case_insensitive(
+                         word,  app::vocabulary[i].title);
 
-                    str s = doc::html::untagged(
-                        media::canonical(index.title));
+                    media.object.editor.color = o ?
+                    gui::skins[skin].dark.first :
+                    gui::skins[skin].error.first;
+                    if (not o) return;
 
-                    if (index.options.
-                    contains("sound"))
-                    s = "[" + s + "]";
+                    using index= media::index;
+                    array<index> audio;
+                    array<index> video;
 
-                    str kind =
-                        index.kind == "audio" ? green ("[audio]"):
-                        index.kind == "video" ? purple("[video]"):
-                        "";
-                    str title =
-                        index.kind == "audio" ? gray(s):
-                        index.kind == "video" ? dark(s):
-                        "";
+                    auto range =
+                    app::mediadata.entries_dic.equal_range(
+                    media::entry_index{i, 0}, [](auto a, auto b)
+                    { return a.entry < b.entry; });
 
-                    str fn = str(
-                    str2path(index.path).stem());
-                    fn = un_msdos(fn);
-                    fn.strip();
+                    for (auto [entry, media]: range)
+                    {
+                        auto& index = app::mediadata.media_index[media];
 
-                    str yadda = fn.extract_from("###");
-                    str meta  = fn.extract_from("{{");
-                    str optio = fn.extract_from("##");
-                    str links = fn.extract_from("[" );
-                    str comnt = fn.extract_from("%%");
-                    str sense = fn.extract_from("@" );
-                    if (sense != "") title += " @ " + sense;
-                    if (sense != "") fn += " @ " + sense;
+                        str s = doc::html::untagged(
+                            media::canonical(index.title));
 
-                    if (index.options.
-                    contains("sound"))
-                    fn += " # SOUND";
+                        if (index.options.
+                        contains("sound"))
+                        s = "[" + s + "]";
 
-                    result.object << linked(
-                    kind + " " + title,
-                    "clipboard://: " + fn);
+                        str kind =
+                            index.kind == "audio" ? green ("[audio]"):
+                            index.kind == "video" ? purple("[video]"):
+                            "";
+                        str title =
+                            index.kind == "audio" ? gray(s):
+                            index.kind == "video" ? dark(s):
+                            "";
+
+                        str fn = str(
+                        str2path(index.path).stem());
+                        fn = un_msdos(fn);
+                        fn.strip();
+
+                        str yadda = fn.extract_from("###");
+                        str meta  = fn.extract_from("{{");
+                        str optio = fn.extract_from("##");
+                        str links = fn.extract_from("[" );
+                        str comnt = fn.extract_from("%%");
+                        str sense = fn.extract_from("@" );
+                        if (sense != "") title += " @ " + sense;
+                        if (sense != "") fn += " @ " + sense;
+
+                        if (index.options.
+                        contains("sound"))
+                        fn += " # SOUND";
+
+                        title.replace_all(word, black(word));
+
+                        result.object << linked(
+                        kind + " " + title,
+                        "clipboard://: " + fn);
+                    }
                 }
             }
         }

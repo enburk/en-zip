@@ -42,7 +42,7 @@ namespace studio::one
                 str sense =
                 s.extract_from("@");
 
-                for (str f: forms(s))
+                for (str f: eng::forms(s))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -73,7 +73,7 @@ namespace studio::one
                     emplace(s);
 
                 for (str s: ss.split_by(" "))
-                for (str f: forms(s))
+                for (str f: eng::forms(s))
                 course_vocabulary_forms.
                     emplace(f);
             }

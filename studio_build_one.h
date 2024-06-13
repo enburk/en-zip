@@ -370,6 +370,35 @@ namespace studio::one
 
         if (true) sys::out::file("../data/course.dat") << course.root;
         if (true) sys::out::file("../data/course_entries.dat") << course.entries;
-        if (true) sys::out::file("../data/course_searchmap.dat") << course.searchmap;
+        if (true) sys::out::file("../data/course_searchmap_title.dat") << course.searchmap;
+
+        using search_entry =
+        content::out::course::search_entry;
+        array<search_entry> searchmap;
+        for (auto& e: course.searchmap)
+        {
+            if (e.word.size() > 30)
+                continue;
+
+            auto words =
+            eng::parser::entries(
+            vocabulary, e.word, false);
+
+            words.erase_if([](str const& s){ return s.size() < 3; });
+            words.deduplicate();
+
+            for (str w: words)
+            searchmap +=
+            search_entry(
+            w, e.entry, e.link);
+        }
+
+        std::ranges::
+        stable_sort(
+        searchmap, {}, &
+        search_entry::
+        word);
+
+        if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
     }
 }

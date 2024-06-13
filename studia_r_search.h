@@ -8,19 +8,23 @@ namespace studia::one
         using editor = gui::text::one_line_editor;
         using entry = content::out::course::search_entry;
 
-        gui::text::view Starts;
-        gui::text::view Medias;
-        gui::area<editor> starts;
-        gui::area<editor> medias;
+        gui::text::view Title;
+        gui::text::view Words;
+        gui::text::view Media;
+        gui::area<editor> title;
+        gui::area<editor> words;
+        gui::area<editor> media;
         gui::area<gui::console> result;
         sys::thread  thread;
-        array<entry> map;
+        array<entry> titlemap;
+        array<entry> wordsmap;
         str link;
 
         search ()
         {
-            Starts.text = "starts with:";
-            Medias.text = "media contain:";
+            Title.text = "starts with:";
+            Words.text = "word starts with:";
+            Media.text = "media contain:";
             result.object.view.wordwrap = false;
             result.object.view.ellipsis = true;
             reload();
@@ -28,10 +32,10 @@ namespace studia::one
 
         void reload (content::unit* unit = nullptr, str path = "")
         {
-            starts.object.text = "";
-            if (true) sys::in::file(
-            "../data/course_searchmap.dat")
-            >> map;
+            title.object.text = "";
+            words.object.text = "";
+            if (true) sys::in::file("../data/course_searchmap_title.dat") >> titlemap;
+            if (true) sys::in::file("../data/course_searchmap_words.dat") >> wordsmap;
         }
 
         void on_change (void* what) override
@@ -48,10 +52,12 @@ namespace studia::one
                 int y = 0;
 
                 result.coord = xywh(0, 0, W-w, H);
-                Starts.coord = xywh(W-w, y, w, h); y += h;
-                starts.coord = xywh(W-w, y, w, h); y += h;
-                Medias.coord = xywh(W-w, y, w, h); y += h;
-                medias.coord = xywh(W-w, y, w, h); y += h;
+                Title .coord = xywh(W-w, y, w, h); y += h;
+                title .coord = xywh(W-w, y, w, h); y += h;
+                Words .coord = xywh(W-w, y, w, h); y += h;
+                words .coord = xywh(W-w, y, w, h); y += h;
+                Media .coord = xywh(W-w, y, w, h); y += h;
+                media .coord = xywh(W-w, y, w, h); y += h;
             }
             if (what == &skin)
             {
@@ -63,10 +69,12 @@ namespace studia::one
                     ed.object.padding = xyxy{2*l, 2*l, 2*l, 2*l};
                     ed.show_focus = true; };
 
-                Starts.color = s.touched.first;
-                Medias.color = s.touched.first;
-                edit(starts);
-                edit(medias);
+                Title.color = s.touched.first;
+                Words.color = s.touched.first;
+                Media.color = s.touched.first;
+                edit(title);
+                edit(words);
+                edit(media);
             }
 
             if (what == &result.object.link)
@@ -80,13 +88,22 @@ namespace studia::one
                 notify(&link);
             }
 
-            if (what == &starts.object.update_text)
+            if (what == &title.object.update_text
+            or  what == &words.object.update_text)
             {
-                str s = starts.object.text; s.strip();
+                bool first = 
+                what == &title.object.update_text;
+                auto& edit = first ? title : words;
+                auto& map = first ? titlemap : wordsmap;
+
+                str s = edit.object.text; s.strip();
                 s = eng::asciized(s).ascii_lowercased();
                 if (s.size() < 2) return;
 
-                medias.object.text = "";
+                if (first)
+                words.object.text = ""; else
+                title.object.text = "";
+                media.object.text = "";
                 thread.stop = true;
                 thread.join();
                 result.object.
@@ -142,12 +159,13 @@ namespace studia::one
                     e.link);
                 }
             }
-            if (what == &medias.object)
+            if (what == &media.object)
             {
-                str s = medias.object.text; s.strip();
+                str s = media.object.text; s.strip();
                 if (s.size() < 2) return;
 
-                starts.object.text = "";
+                title.object.text = "";
+                words.object.text = "";
                 thread.stop = true;
                 thread.join();
                 result.object.
@@ -158,7 +176,7 @@ namespace studia::one
                 bool o = eng::equal_case_insensitive(
                      s,  app::vocabulary[i].title);
 
-                medias.object.editor.color = o ?
+                media.object.editor.color = o ?
                 gui::skins[skin].dark.first :
                 gui::skins[skin].error.first;
                 if (not o) return;

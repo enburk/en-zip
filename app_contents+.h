@@ -47,6 +47,10 @@ namespace app
 
             for (auto& group: cycle.units)
             {
+                if (group.kind !=
+                    content::unit::theme)
+                    continue;
+
                 auto& cells = table.cells;
                 int Y = cells.size();
                 auto& b = cells[Y][0];
@@ -58,8 +62,9 @@ namespace app
 
                 for (auto theme: group.units)
                 {
-                    if (theme.name == "''Extra''")
-                        break;
+                    if (theme.kind !=
+                        content::unit::theme)
+                        continue;
 
                     int y = Y + 1;
                     int x = cells[y].size();
@@ -78,6 +83,10 @@ namespace app
 
                     for (auto topic: Theme.units)
                     {
+                        if (topic.kind !=
+                            content::unit::topic)
+                            continue;
+
                         y++;
                         for (int i=0; i<x; i++)
                         {

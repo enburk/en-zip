@@ -208,7 +208,7 @@ namespace studia::one
                             index.kind == "video" ? purple("[video]"):
                             "";
                         str title =
-                            index.kind == "audio" ? gray(s):
+                            index.kind == "audio" ? dark(s):
                             index.kind == "video" ? dark(s):
                             "";
 
@@ -230,7 +230,7 @@ namespace studia::one
                         contains("sound"))
                         fn += " # SOUND";
 
-                        title.replace_all(word, black(word));
+                        title.replace_all(word, bold(word));
 
                         result.object << linked(
                         kind + " " + title,

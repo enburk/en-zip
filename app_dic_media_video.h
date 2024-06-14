@@ -152,6 +152,7 @@ namespace app::dic::video
                 Play.icon.load(pix::util::icon("play.play",  Play.coord.now.size, c, r));
                 Stop.icon.load(pix::util::icon("play.pause", Stop.coord.now.size, c, r));
             }
+
             if (what == &skin)
             {
                 frame1.color = gui::skins[skin].ultralight.first;

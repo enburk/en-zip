@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "studia_l_editor.h"
 namespace studia
 {
@@ -33,9 +33,13 @@ namespace studia
 
         binary_property<path> root;
         gui::area<gui::text::view> where;
+        gui::area<gui::button> back;
+        gui::area<gui::button> fore;
         gui::area<contents> contents;
         gui::area<editor> editor;
         gui::splitter splitter;
+        array<path> backs;
+        array<path> fores;
 
         void on_change (void* what) override
         {
@@ -52,9 +56,17 @@ namespace studia
                      "::splitter", 10, 25, 50);
 
                 contents.coord = xyxy(0, 0, x, H);
-                where   .coord = xyxy(x, 0, W, h);
+                where   .coord = xyxy(x,     0, W-2*h, h);
+                back    .coord = xyxy(W-2*h, 0, W-1*h, h);
+                fore    .coord = xyxy(W-1*h, 0, W-0*h, h);
                 editor  .coord = xyxy(x, h, W, H);
                 editor  .show_focus = true;
+            }
+
+            if (what == &skin)
+            {
+                back.object.text.html = monospace(bold(u8"←"));
+                fore.object.text.html = monospace(bold(u8"→"));
             }
 
             if (what == &name)
@@ -70,13 +82,27 @@ namespace studia
 
             if (what == &contents)
             {
-                editor.object.path = contents.object.selected.now;
+                auto target = contents.object.selected.now;
+
+                if (editor.object.path != path{}
+                and editor.object.path != target)
+                if (backs.empty() or
+                    backs.back() !=
+                    editor.object.path)
+                {
+                    backs +=
+                    editor.object.path;
+                    fores.clear();
+                }
+
+                editor.object.path = target;
                 
                 if (editor.object.path.now ==
                     editor.object.path.was) {
                     doc::text::repo::reload();
                     editor.object.editor.
-                    update_text = true; }
+                    update_text = true;
+                }
 
                 path p =
                 std::filesystem::relative(editor.object.path,
@@ -100,6 +126,34 @@ namespace studia
                 header = str(ss, blue("/"));
                 where.object.html = header;
             }
+
+            if (what == &back and not backs.empty())
+            {
+                auto path =
+                backs.back();
+                backs.pop_back();
+                fores += editor.object.path;
+                auto Backs = std::move(backs);
+                auto Fores = std::move(fores);
+                contents.object.selected = path;
+                backs = std::move(Backs);
+                fores = std::move(Fores);
+            }
+            if (what == &fore and not fores.empty())
+            {
+                auto path =
+                fores.back();
+                fores.pop_back();
+                backs += editor.object.path;
+                auto Backs = std::move(backs);
+                auto Fores = std::move(fores);
+                contents.object.selected = path;
+                backs = std::move(Backs);
+                fores = std::move(Fores);
+            }
+
+            back.object.enabled = not backs.empty();
+            fore.object.enabled = not fores.empty();
         }
     };
 }

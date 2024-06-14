@@ -82,8 +82,10 @@ namespace studia::one
                 link = result.object.link;
                 if (link.starts_with("clipboard://"))
                 {
+                    str path = link.extract_from("file://");
                     sys::clipboard::set(link.from(12));
-                    return;
+                    if (not sys::keyboard::alt) return;
+                    link = "file://" + path;
                 }
                 notify(&link);
             }
@@ -234,7 +236,8 @@ namespace studia::one
 
                         result.object << linked(
                         kind + " " + title,
-                        "clipboard://: " + fn);
+                        "clipboard://: " + fn +
+                        "file://" + index.path);
                     }
                 }
             }

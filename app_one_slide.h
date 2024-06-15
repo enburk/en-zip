@@ -66,7 +66,7 @@ namespace app::one
         {
             if (what == &playing)
             {
-                if (not entries.empty())
+                if (entries.empty()) medio.done(); else
                 switch(entries[current]->status) {
                 case state::ready:
                 case state::paused:

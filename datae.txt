@@ -37,6 +37,7 @@ meh.mp3
 prescriptive.wav
 purpose.wav
 SOS [SOS][Morse code].ogg
+What do you keep saying you will for~! Why don’t you do it~!.wav
 >>> ../datae\audio/## number ## =
 1200.ogg
 150,000 to 200,000.ogg
@@ -15202,7 +15203,7 @@ What day is today.txt
 What day is today.wav
 >>> ../datae\audiobooks\Márquez - One Hundred Years of Solitude ## uk {{John Lee}}/{{}}
 >>> ../datae\audiobooks\Márquez - One Hundred Years of Solitude ## uk {{John Lee}}\{{}}/1
-Melquíades.wav
+Melquíades ## sic!.wav
 naturally.wav
 stake.wav
 He is immortal.wav
@@ -17868,7 +17869,7 @@ Are you going to continue to scold me~!.wav
 autocratic.wav
 Bluebeard.wav
 Capiche~!.wav
-coïtus interruptus.wav
+coïtus interruptus ## sic!.wav
 Did you wish to offer your commiserations~!.wav
 Double crap. Where’s he going with this~!.wav
 Er… yes..wav
@@ -17954,12 +17955,12 @@ Apsyrtus.wav
 Aristaeus.wav
 Artemis.wav
 Atalanta.wav
-Athamas.wav
+Athamas ## sic!.wav
 Atlas.wav
 Biton and Cleobis.wav
 Boeotia.wav
 Canace ## sic!.wav
-Cecrops.wav
+Cecrops ## sic!.wav
 Colchis, the country of the Golden Fleece [Colchis].wav
 Delos.wav
 Dictys ## sic!.wav
@@ -17970,25 +17971,25 @@ Helen.wav
 Helenus.wav
 Hestia.wav
 Homer.wav
-Ino.wav
+Ino ## sic!.wav
 Ionian.wav
 Italy.wav
 Jocasta.wav
 Linus.wav
 Marpessa ## sic!.wav
 Midgard.wav
-Muspelheim.wav
+Muspelheim ## sic!.wav
 Nausicaä.wav
 Odin.wav
-Omphale.wav
+Omphale ## sic!.wav
 Orestes.wav
 Otus and Ephialtes.wav
 Pallas.wav
 Parthenopaeus ## sic!.wav
 Pelias.wav
-Phidias.wav
+Phidias ## sic!.wav
 Philemon.wav
-Phrixus.wav
+Phrixus ## sic!.wav
 Pluto.wav
 Pyramus and Thisbe.wav
 Sibyl of Cumae.wav
@@ -18940,6 +18941,7 @@ I’d rather not..ogg
 I’m pleased..ogg
 Necessarily~!.ogg
 Of course..ogg
+Oh, _Michael. I’m getting to you. I’m actually getting to you.ogg
 Okay, fine..ogg
 Shit!.ogg
 Shit, shit, shit!.ogg
@@ -19692,6 +19694,14 @@ Zyzzyva. A class of weevils. Last word in AHD. It comes from the sound that that
 Nature abhors a vacuum..wav
 Peter Piper picked a peck of pickled peppers and put them in a pot..wav
 Railroad Crossing, look out for the cars. Can you spell that, without any R's~!.wav
+>>> ../datae\audiobooks--/Stephen Baxter - The Medusa Chronicles
+!credit.txt
+>>> ../datae\audiobooks--\Stephen Baxter - The Medusa Chronicles/{{}}
+an ambassador.wav
+Did you set this up, you old coot~!.wav
+Look!.wav
+Martians.wav
+mobilis in mobili ## sic!.wav
 >>> ../datae\audiobooks--/Tiffany Watt Smith - The Book of Human Emotions {{Suzanne Toren}}
 !credit.txt
 ALICE AYRES.txt
@@ -24549,7 +24559,7 @@ Vox Populi.txt
 >>> ../datae\fineart ijkl {{$$}}/Leighton {{Frederick Leighton}}
 Daedalus and Icarus [Daedalus][Icarus] ## qropt! ## date 1869.jpg
 David [David@biblical] ## date 1865 ## qrop l2 r21 ## qropt!.jpg
-Elisha Raising the Son of the Shunamite [Elisha][Shunamite][resurrection][prophets] ## date 1881 ## qrop l3 r37.jpg
+Elisha Raising the Son of the Shunamite [Elisha][Shunamite][resurrection][prophets] ## date 1881 ## qrop l4 r40 b8.jpg
 Flaming June [June] ## date 1895.jpg
 Old _Damascus, Jew's Quarter [Damascus] ## date 1874.jpg
 Self-portrait [Leighton] ## date 1880 ## qropt!.jpg
@@ -24585,6 +24595,9 @@ Saint George and the dragon [Saint George] {{Gustave Moreau, 1890 $$}}.jpg
 An Omnibus Ride to Piccadilly Circus ## qrop l16 r10.jpg
 An Omnibus Ride to Piccadilly Circus ## qrop l16 r10.txt
 An {Omnibus} Ride to _Piccadilly _Circus.jpg.uid-zps
+>>> ../datae\fineart mn {{$$}}/Moroni {{Giovanni Battista Moroni}}
+Portrait of a Man (The Tailor).bmp.uid-zps
+Portrait of a Man [tailor] ## date 1565-68.jpg
 >>> ../datae\fineart mn {{$$}}/Munch {{Edvard Munch}}
 Friedrich Nietzsche [Nietzsche] ## date 1906 ## crop l1 ## qrop l1 t10 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b9 ## qropt!.jpg
@@ -24613,6 +24626,8 @@ Our Lady of Mollifying of Cruel Hearts [Our Lady][mollify][mollifying] ## date 1
 Our Lady of {Petrograd} ## date 1920.jpg
 >>> ../datae\fineart opqr {{$$}}/Pettie {{John Pettie}}
 Reductio ad absurdum [reductio ad absurdum][proof by contradiction][apagoge] ## date 1884 ## qrop l8 r23.jpg
+>>> ../datae\fineart opqr {{$$}}/Phillips {{Bert Greer Phillips}}
+Warbonnet Shadows [warbonnet][war bonnet].jpg
 >>> ../datae\fineart opqr {{$$}}/Picasso {{Pablo Picasso}}
 Ascete [ascete][ascetic] ## date 1903 ## qrop t7 b7 ## qropt!.jpeg
 Celestina or Woman with a Cast [cast@squint] ## date 1904.jpg
@@ -24678,6 +24693,9 @@ Muscles ## crop r10 ## qrop l2 r19 ## qropt!.txt
 Belgium, _France, and _England before the _German invasion, 1914 [allegorical].jpg
 Diana, The Huntress [Diana][Artemis~Diana][Huntress][huntress] ## date 1899 ## qrop t6 b13.jpg
 Pierrot's Embrace [necking] ## date 1900 ## crop t9 ## qropt!.jpg
+>>> ../datae\fineart s-z {{$$}}/Serebriakova {{Zinaida Serebriakova}}
+House of Cards [house of cards] ## date 1919.jpg
+House of Cards [house of cards] ## date 1919.jpg.uid-zps
 >>> ../datae\fineart s-z {{$$}}/Serov {{Valentin Serov}}
 Portrait of A. Kasyanov [sceptic] ## qrop t6 b10 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Sheludyakov {{Oleg Sheludyakov $$$}}
@@ -24973,6 +24991,7 @@ raw dice {streaky bacon} {{Photo.. M. Lorthios}}.jpg
 red onion [red][onion] {{Photo.. A. Caste}}.jpg
 rolled white and raspberry {log} cake {{Photo.. Swalens}}.jpg
 vodka martini [James Bond][Bondesque] ### james_bond_roger_moore_getty.jpg
+wassail ## qrop qb.png
 Fort Alexander I,  Gulf of Finland, near St. Petersburg [fort].jpg
 ghost.jpg
 hang one's head ### Bobby Knight, coach of the US Olympic basketball team.jpg
@@ -25162,6 +25181,10 @@ langoustine ## qrop t8 b7 ## qropt!.jpg
 parmesan and grater [Parmese][parmesan][grater] ## qrop qb.jpg
 Roquefort and port [Roquefort].jpg
 tabbouleh [taboule] ## qrop ql.jpg
+>>> ../datae\photo abc/Arbus {{Photo.. Diane Arbus}}
+42nd Street movie theater audience, N.Y.C. [movie theater] ## date 1958.jpg
+Child with Toy Hand Grenade in Central Park [hand grenade] ## date 1962.jpg
+Young Couple in Washington Square Park, NYC [couple].jpg
 >>> ../datae\photo abc/Arnold {{Photo.. Corey Arnold}}
 coyote yip ## qrop ql.jpg
 coyote yip ## qrop ql.txt
@@ -25576,6 +25599,7 @@ White Wolf Leap %% Ellesmere Island, Canada [white wolf][Ellesmere Island] ## da
 Winter Sun Dogs and Prairie %% Nobles County, Minnesota [sun dog] ## date 1976 ## qrop l16 r17.jpg
 >>> ../datae\photo abc/Brandt {{Photo.. Bill Brandt}}
 Early morning on the river, 1930s [gull].jpeg
+East End girl dancing the {Lambeth Walk} [Lambeth][East End] ## date 1936.jpg
 Housewife, Bethnal Green, 1937 [housewife].jpeg
 In a Mayfair drawing room, 1939 [backgammon].jpeg
 Lamplighter, Kensington, c. 1930 [lamplighter].jpeg
@@ -26302,6 +26326,8 @@ Tug of War, 1949 [tug of war] ## qrop l6 r6 ## qropt!.jpg
 Watching Santa, 1944 [watching][mesmerized] ## qropt!.jpg
 >>> ../datae\photo ijkl/Leiter {{Photo.. Saul Leiter}}
 Accident [accident] ## date ca. 1955 ## qrop l20 t1 r12 ## qropt!.jpg
+Deborah, c. 1960 [fever@temperature].jpg
+Shoes of the Shoeshine Man, c. 1950 [shoeshine].jpg
 >>> ../datae\photo ijkl/Leonard {{Photo.. Herman Leonard}}
 Billie Holiday [Holiday][jazzwoman][sing].jpg
 Clifford Brown [trumpeter].jpg
@@ -26758,7 +26784,7 @@ poached egg with salmon [poached egg] ## qrop t13 b2 ## qropt!.jpg
 raw sea bream parcel [parcel] ## qrop t11 b9.jpg
 rhubarb {meringue} pie.jpg
 scallops served in a coconut shell [served] ## qrop t12 b9.jpg
-shrimp and cockle broth with ginger [cockleshell][cockle] ## qrop t8 b13.jpg
+shrimp and cockle broth with ginger [cockleshell][cockle] ## qrop l2 t8 b13.jpg
 smoked salmon and {nori} leaf rolls.jpg
 spinach, bacon and sage {crostini}.jpg
 tartlet with tuna and tomate [tartlet].jpg
@@ -26911,7 +26937,7 @@ Dust storm, _Australia [dust storm][Australia] ## qrop l20 r21.jpg
 flipper and fur of {southern elephant seal} [flipper@seal].jpg
 gray angelfish above shipwreck [gray angelfish][angelfish].jpg
 Humpback whale, Alaska [spout@whale][spouting whale] ## qrop qr.jpg
-pectoral fin of humpback whale [pectoral fin][pectoral@fin][flipper@whale] ## qrop l20 r14.jpg
+pectoral fin of humpback whale [pectoral fin][pectoral@fin][flipper@whale] ## qrop l20 r14 b1.jpg
 Self portrait of photographer with a {Steller sea lion} about to bite his head.jpg
 Steller sea lions swimming underwater [a raft of sea lions][Steller sea lion][sea lions][raft@group] ## qrop l14 r11 ## qropt!.jpg
 tail of humpback whale [tail@animal][whale's tail][whale tail] ## qrop l22 r12.jpg
@@ -27076,8 +27102,8 @@ harcha ## sic!.jpg
 pomegranate ## qrop qt.jpg
 tapioca pearls and pomegranate seeds [tapioca pearls].jpg
 >>> ../datae\photo s-z/Winogrand {{Garry Winogrand}}
-Fort Worth, Texas [bronco] ## date 1974.jpg
-New York, from The_Animals [feed@food] ## date circa 1963.jpg
+Fort Worth, Texas [bronco] ## date 1974 ## qrop l10 r23.jpg
+New York, from The Animals [feed@food] ## date circa 1963 ## qrop qr.jpg
 No left or U-turn. [U-turn] ## crop l20 r2 ## qrop l31 r2.jpeg
 >>> ../datae\photo s-z/Wong {{Photo.. Andrew Wong}}
 a pod of dolphins [pod@group] ## crop t1 ## qrop t1 r26 ## qropt!.jpg
@@ -27108,7 +27134,7 @@ Buster Brown suit.jpg
 anthropomorphic ## qrop l12 r14 ## qropt! {{sashimomura $cc-by wiki}} ### Replicas of the robots from All Is Full of Love, Björk.jpg
 autoclave ## qrop l5 r22 {{Otis Historical Archives $cc-by wiki}}.jpg
 dominoes ## qrop l32 t4 b3 {{Photo.. Liko81 $cc-by wiki}}.jpg
-jute fiber [fiber] {{Photo.. Biswarup Ganguly $cc-by wiki}}.jpeg
+jute fiber [fiber] ## crop t6 ## qrop l6 r10 t6 ## qropt! {{Photo.. Biswarup Ganguly $cc-by wiki}}.jpeg
 The Great Cameo of France, five layers sardonyx, Rome, c. 23 AD [sardonyx][cameo] ## qropt! {{Photo.. Marie-Lan Nguyen $cc-by wiki}}.jpg
 chromatic aberration {{$$}}.jpg
 Corinthian order [capital@column][order@architecture] ## crop t1 b2 ## qrop l11 t1 r12 b2 ## qropt! {{Photo.. Louis-Émile Durandelle, 1870s $$}}.jpg
@@ -27123,7 +27149,7 @@ Black demonstrators attempting to swim in the Atlantic Ocean, on a ''white'' bea
 Cornet Churchill, 4th Queen's Own Hussars, 1895 [cornet@rank] ## qrop t12 ## qropt!.jpg
 Helmut Wick, October 1940 [ace@pilot] ## qrop t15 b10 ## qropt! {{Photo.. Striemann~Bundesarchiv $cc-by-sa}}.jpg
 Hiroshima @ bomb ## qrop r19 ## qropt! {{Photo.. U.S. Navy $$}} ### photo with Paul Tibbet's autograph.jpg
-King _George _V {accosted} by beggar, Derby Day, 1920 [accost].jpg
+King _George _V accosted by beggar, Derby Day, 1920 [accost][accosted] ## qrop l2 r7 ## qropt!.jpg
 Ku Klux Klan parade, _DC [Ku Klux Klan][KKK][white supremacy][supremacy] ## date 1926 ## qropt! {{Photo.. Buyenlarge~Getty Images}}.jpg
 mummification ## qropt! {{The New York Times photo archive $$}}.JPG
 mummification ## qropt! {{The New York Times photo archive $$}}.txt
@@ -27177,7 +27203,7 @@ tactical nuclear weapons [tactical] ## date 25 May 1953.jpg
 The geodesics on an ellipsoid [geodesic line][geodesic] ## qropt! {{K. Rohn~Dr. A. Brill, 1877 $$}}.jpg
 tungsten green-silver metal powder [tungsten] {{USGOV}}.jpg
 Waterspouts in the Bahamas Islands [waterspout] ## qrop l15 r23 b2 {{NOAA $$}}.jpg
-Yaki point, Grand Canyon [point@geo] {{Photo.. Jon Sullivan}}.jpg
+Yaki point, Grand Canyon [point@geo] ## qrop l1 r1 ## qropt! {{Photo.. Jon Sullivan}}.jpg
 >>> ../datae\photo {{$$}}/{{ESA}}
 Halley's Comet [Halley's comet] {{Credit.. ESA~Max Planck Institute $$}}.jpg
 rocket @ missile %% GIOVE-A atop the _Soyuz launcher on pad six at _Baikonur Cosmodrome {{Photo.. P. Muller~ESA}}.jpg
@@ -27244,7 +27270,7 @@ Comparison of {Aral Sea} between 1989 and 2008.jpg
 Earth's limb (astronaut photo) [limb@astro].jpg
 Greenland ## qrop l2 t10 r2 b2.jpg
 Hurricane Isabel, 2003 [hurricane][hurricane eye][eye@hurricane] ## qrop q {{NASA $$}}.jpg
-Río de la Plata estuary [Río de la Plata][estuary].jpeg
+Río de la Plata estuary [Río de la Plata][estuary] ## qrop q.jpeg
 Santorini @ volcano ## qrop qt.jpg
 Sunglint on Newfoundland [Newfoundland][newfoundland] ## qrop l13 r21.jpg
 sunglint.jpg
@@ -27305,7 +27331,7 @@ U.S. Naval hospital ship Mercy [USN][hospital ship] ## qrop l23 r12 {{Photo.. Je
 USS _Carl _Vinson (CVN 70) aircraft carrier [USS][CVN][supercarrier][aircraft carrier] ## qrop l9 r12 ## qropt! {{Photo.. Dusty Howell}}.jpg
 >>> ../datae\photo {{$$}}/{{USAF}}
 A CV-22 Osprey, {tilt rotor} helicopter [tiltrotor][tiltable] {{Photo.. Markus Maier}}.jpg
-A {jet engine} for an F-15 Eagle runs at full afterburner in the test cell [afterburning] {{Photo.. Robert Zoellner}}.jpg
+A jet engine for an F-15 Eagle runs at full afterburner in the test cell [afterburning][jet engine] ## qrop l11 r8 ## qropt! {{Photo.. Robert Zoellner}}.jpg
 Boeing XB-17 waist blister turret [blister@air] ## qrop l11 r15 ## qropt!.jpg
 crossword ## qrop t6 b1 ## qropt! {{Photo.. Joe Laws ~ USAF $$}} ### First Lt. Tony Wickman creates military-themed crossword puzzles.jpg
 F-15 Eagles and an F-16 Fighting Falcon [air force][Air Force][USAF] ## noqrop {{Photo.. Kevin J. Gruenwald}}.jpg
@@ -27347,10 +27373,10 @@ gel {electrophoresis}.jpg
 Glycine-nitrate process produces ultrafine metal oxide powders [ultrafine particle].jpg
 metal oxide powder [oxide] ## crop r1 ## qrop t13 r1 b14.jpg
 molten glassy material glows orange with incandescence [molten][incandescence][vitrification][vitrify] ## qrop t3 b18.jpg
-pectoral sandpiper [+][Scolopacidae].jpg
+pectoral sandpiper [+][Scolopacidae] ## crop t1 r1 b1 ## qrop l6 t1 r17 b1.jpg
 Sailing into the sunset [sailing].jpg
 Ultrapure {Yttrium}-90.jpg
-vitrification [vitrified][vitreous].jpg
+vitrification [vitrified][vitreous] ## qrop l6 r12 b1.jpg
 >>> ../datae\photo {{$$}}/{{USGS}}
 bauxite ## qrop l2 r6 ## qropt! {{USGS}}.jpg
 graphite ## qrop ql {{USGS $$}}.jpg
@@ -27588,38 +27614,38 @@ Danger! Deep water! [deep water] ## qrop l21 r5 ## qropt! {{Photo.. Johndavidpho
 Danger! Deep water! [deep water].wav
 Danger! [danger] ## qrop l10 r15 {{Photo.. Gsphotography $dreamstime 96360249}}.jpg
 Danger! [danger].wav
-Deadly sneaker waves and hazardous surf! [sneaker waves] {{Photo.. Karin Hildebrand Lau $dreamstime 11348566}}.jpg
+Deadly sneaker waves and hazardous surf! [sneaker waves] ## qrop r37 b5 {{Photo.. Karin Hildebrand Lau $dreamstime 11348566}}.jpg
 Deadly sneaker waves and hazardous surf! [sneaker waves].wav
 Do not turn off your computer! [turn off] ## qrop l14 r10 ## qropt! {{Photo.. Ifeelstock $dreamstime 92680130}}.jpg
 Do not turn off your computer! [turn off].wav
 High voltage! [high voltage] ## qrop l19 r15 {{Photo.. Terrence Allison $dreamstime 58274149}}.jpg
 High voltage! [high voltage].wav
 Keep away from the sides of the building! [keep away from].wav
-Keep away from the sides of the building! [keep away from][keep away] {{Photo.. Nick Biebach $dreamstime 30591999}}.jpg
+Keep away from the sides of the building! [keep away from][keep away] ## qrop qr {{Photo.. Nick Biebach $dreamstime 30591999}}.jpg
 Keep off the grass! [keep off] ## qrop qr {{Photo.. Olgalngs $dreamstime 95769102}}.jpg
 Keep off the grass! [keep off].wav
 Keep out! [keep out] ## qrop l9 r10 ## qropt! {{Photo.. Fotomy $dreamstime 18415047}}.jpg
 Mind your step! [mind] ## qrop t9 b25 ## crop t10 b15 {{Photo.. Mrcmos $dreamstime 94281608}}.jpg
 Mind your step! [mind].wav
-Ransom! Your file have been encrypted! [ransom] {{Photo.. Ratthanarong Phraibung $dreamstime 92433087}}.jpg
+Ransom! Your file have been encrypted! [ransom] ## qrop l8 r26 {{Photo.. Ratthanarong Phraibung $dreamstime 92433087}}.jpg
 Ransom! Your file have been encrypted! [ransom].wav
 Rip currents in this area! [rip currents] ## qrop ql {{Photo.. Bernhard Richter $dreamstime 29273031}}.jpg
 Rip currents in this area! [rip currents].wav
-Risk of electric shock! Do not open! [electric shock] {{Photo.. Fotoeye75 $dreamstime 53458}}.jpg
+Risk of electric shock! Do not open! [electric shock] ## qrop l12 r12 {{Photo.. Fotoeye75 $dreamstime 53458}}.jpg
 Risk of electric shock! Do not open! [electric shock].wav
 Risk of falling! [falling] ## qrop l9 r8 {{Photo.. Nick Loginov $dreamstime 61571978}}.jpg
 Risk of falling! [falling].wav
 Rocks fall from the cliff! [cliff] {{Photo.. Martingraf $dreamstime 60026647}}.jpg
 Rocks fall from the cliff! [cliff].wav
 Steep drop beyond this point! [caution] ## qrop l13 r15 ## qropt! {{Photo.. Martincp $dreamstime 53430425}}.jpg
-Sudden high waves! Keep off the rocks! [sudden] {{Photo.. Paul Brennan $dreamstime 47129044}}.jpg
+Sudden high waves! Keep off the rocks! [sudden] ## qrop l27 r15 {{Photo.. Paul Brennan $dreamstime 47129044}}.jpg
 Sudden high waves! Keep off the rocks! [sudden].wav
 Swift water and eroding bank! [danger] ## qrop l18 r16 {{Photo.. Bounder32h $dreamstime 43774308}}.jpg
 Thin ice! Keep off! [keep off] ## qrop l4 r29 {{Photo.. Janeh15 $dreamstime 8246152}}.jpg
 Thin ice! Keep off! [keep off].wav
 Warning! Electric fence! [electric fence] ## qrop qr ## crop qr {{Photo.. Carroteater $dreamstime 31439814}}.jpg
 Warning! Electric fence! [electric fence].wav
-Waves sweep over the breakwater in heavy seas. Keep well clear! [caution] {{Photo.. Martincp $dreamstime 53430907}}.jpg
+Waves sweep over the breakwater in heavy seas. Keep well clear! [caution] ## qrop q {{Photo.. Martincp $dreamstime 53430907}}.jpg
 Waves sweep over the breakwater in heavy seas. Keep well clear! [caution].wav
 >>> ../datae\photo_dreamstime\!mix/signs-3
 Beware of falling objects! [beware] ## qrop l18 r16 {{Photo.. Max Crow $dreamstime 88697825}}.jpg
@@ -27630,7 +27656,7 @@ Beware of the dog! [beware] ## qrop l18 r16 {{Photo.. Richard Johnson $dreamstim
 Beware of the dog! [beware].wav
 Beware of the gardener! [gardener] ## qrop l22 r12 {{Photo.. Alan Harden $dreamstime 24739775}}.jpg
 Beware of the gardener! [gardener].wav
-Danger! Keep out! Security warning.. These premises are patrolled by guard~dog patrols! [premises] {{Photo.. Fotomy $dreamstime 18415072}}.jpg
+Danger! Keep out! Security warning.. These premises are patrolled by guard~dog patrols! [premises] ## qrop t13 b20 {{Photo.. Fotomy $dreamstime 18415072}}.jpg
 Danger! Keep out! Security warning.. These premises are patrolled by guard~dog patrols! [premises].wav
 Do not disturb! [disturb] ## qrop l4 r9 ## qropt! {{Photo.. Erik De Graaf $dreamstime 11303575}}.jpg
 Entry prohibited! [prohibited] {{Photo.. 1stgallery $dreamstime 83035722}}.jpg
@@ -27650,13 +27676,13 @@ Strictly no admittance! [strictly][admittance].wav
 Violators will be prosecuted! [violators][prosecuted] ## qrop qr {{Photo.. Mike Kuhlman $dreamstime 94862040}}.jpg
 Violators will be prosecuted! [violators][prosecuted].wav
 >>> ../datae\photo_dreamstime\!mix/signs-4
-Beware of feeding the monkeys because they can be dangerous! [monkeys] {{Photo.. Rungsun Tuntijariyapun $dreamstime 49664672}}.jpg
+Beware of feeding the monkeys because they can be dangerous! [monkeys] ## qrop l17 ## qropt! {{Photo.. Rungsun Tuntijariyapun $dreamstime 49664672}}.jpg
 Beware of feeding the monkeys because they can be dangerous!.wav
-Caution! This sign has sharp edges! Do not touch the edges of this sign! [edges] {{Photo.. Seashell317 $dreamstime 42466055}}.jpg
+Caution! This sign has sharp edges! Do not touch the edges of this sign! [edges] ## qrop t19 b25 {{Photo.. Seashell317 $dreamstime 42466055}}.jpg
 Caution! This sign has sharp edges! Do not touch the edges of this sign!.wav
-Coyotes in the area! Watch your children and keep pets under control at all time. [coyotes] {{Photo.. Isabela66 $dreamstime 37856709}}.jpg
+Coyotes in the area! Watch your children and keep pets under control at all time. [coyotes] ## qrop t28 b10 {{Photo.. Isabela66 $dreamstime 37856709}}.jpg
 Coyotes in the area! Watch your children and keep pets under control at all time..wav
-Do not bleach! Do not dry clean! Do not tumble dry! [bleach] {{Photo.. Ultraone $dreamstime 16904705}}.jpg
+Do not bleach! Do not dry clean! Do not tumble dry! [bleach] ## qrop l18 r10 ## qropt! {{Photo.. Ultraone $dreamstime 16904705}}.jpg
 Do not bleach! Do not dry clean! Do not tumble dry!.wav
 Do not enter grain tank when machine is running! [grain tank][running] ## crop l36 ## qrop l41 r3 {{Photo.. Jarjarbits $dreamstime 93596378}}.jpg
 Do not enter grain tank when machine is running! [grain tank][running].wav
@@ -27669,7 +27695,8 @@ Don't put all your eggs in one basket! [don't put all your eggs in one basket] #
 Don't put all your eggs in one basket!.wav
 Dry clean only! [dry clean] ## qrop l15 r19 {{Photo.. Brad Calkins $dreamstime 13280308}}.jpg
 Dry clean only! [dry clean].wav
-Gators cannot be tamed. Feeding them can result in their mistaking a hand for a handout. [molest][handout] ## crop l14 t25 r11 b4 ## qrop t26 b5 {{Photo.. Junko Barker $dreamstime 97667820}}.jpg
+Gators cannot be tamed. ## crop l14 t25 r11 b4 ## qrop t26 b5 ## qropt! {{Photo.. Junko Barker $dreamstime 97667820}}.jpg
+Gators cannot be tamed. ## crop l14 t25 r11 b4 ## qrop t26 b5 ## qropt! {{Photo.. Junko Barker $dreamstime 97667820}}.txt
 Gators cannot be tamed. Feeding them can result in their mistaking a hand for a handout..wav
 Hard hat and steel toe boots required! [required] ## crop l5 r3 ## qropt! {{Photo.. Modfos $dreamstime 49281403}}.jpg
 Hard hat and steel toe boots required!.wav
@@ -27682,18 +27709,18 @@ Noise may provoke hornet attacks! [hornet][noise] ## crop l5 r11 ## qrop l13 r20
 Noise may provoke hornet attacks!.wav
 Nothing is illegal until you get caught! [caught] ## qrop l2 r8 ## qropt! {{Photo.. Ricochet69 $dreamstime 106639005}}.jpg
 Nothing is illegal until you get caught!.wav
-Pay as you enter. Exact fare, please! [exact] ## qrop l27 r3 {{Photo.. Martin  Meehan $dreamstime 49407535}}.jpg
+Pay as you enter. Exact fare, please! [exact] ## qrop l27 r3 ## qropt! {{Photo.. Martin  Meehan $dreamstime 49407535}}.jpg
 Pet waste transmits disease! Leash and clean up after your pet. [waste] ## qrop l27 t8 r12 b2 ## crop l17 r4 {{Photo.. Tatiana Morozova $dreamstime 32680356}}.jpg
 Pet waste transmits disease! Leash and clean up after your pet..wav
 Please, warn horses of your approach! [warn] ## qrop l2 t6 r36 b1 ## crop l5 r20 {{Photo.. Kariklaustermeier $dreamstime 76021580}}.jpg
 Please, warn horses of your approach!.wav
-Polar bear alert! Stop! Don't walk in this area! [alert] ## crop l21 {{Photo.. Photographerlondon $dreamstime 30848478}}.jpg
+Polar bear alert! Stop! Don't walk in this area! [alert] ## crop l21 ## qrop qr {{Photo.. Photographerlondon $dreamstime 30848478}}.jpg
 Polar bear alert! Stop! Don't walk in this area!.wav
 Protective gloves must be worn! [worn] ## qrop l11 r17 ## qropt! {{Photo.. Radu Sporea $dreamstime 8130646}}.jpg
 Protective gloves must be worn!.wav
-Snake alert! Watch where you walk! Stay on the paths! [alert] ## qrop l9 r23 ## crop l4 r15 {{Photo.. Iprintezis $dreamstime 61026967}}.jpg
+Snake alert! Watch where you walk! Stay on the paths! [alert] ## qrop l10 r23 ## crop l4 r15 ## qropt! {{Photo.. Iprintezis $dreamstime 61026967}}.jpg
 Snake alert! Watch where you walk! Stay on the paths!.wav
-This facility is closed due to continued vandalism! [facility][due to][vandalism] ## qrop l4 r19 {{Photo.. Eutoch $dreamstime 35610359}}.jpg
+This facility is closed due to continued vandalism! [facility][due to][vandalism] ## qrop l4 r19 ## qropt! {{Photo.. Eutoch $dreamstime 35610359}}.jpg
 This facility is closed due to continued vandalism!.wav
 Warning! Unsafe structure! [unsafe] ## qrop q {{Photo.. Paul Reynolds $dreamstime 55772593}}.jpg
 Warning! Unsafe structure!.wav
@@ -27722,8 +27749,8 @@ Look out for the locomotive! [look out][locomotive] ## qrop l8 r7 ## qropt! {{Ph
 Look out for the locomotive! [look out][locomotive] {{$Bunny F3 #7S2A5PG}}.wav
 No parking anytime! Tow away zone. [tow-away zone] ## qrop t2 b23 {{Photo.. Clicspics $dreamstime 75161642}}.jpg
 No parking anytime! Tow away zone. [tow-away zone] {{$Bunny F3 #7S2A5PG}}.wav
+No parking in the driveway! Violators will be towed! [towed] ## qrop l10 r23 {{Photo.. Benkrut $dreamstime 17263852}}.jpg
 No parking in the driveway! Violators will be towed! [towed] {{$Bunny F3 #7S2A5PG}}.wav
-No parking in the driveway! Violators will be towed! [towed] {{Photo.. Benkrut $dreamstime 17263852}}.jpg
 Park at your own risk! [at your own risk] ## qrop l1 r33 {{Photo.. Peter Emmett $dreamstime 4388302}}.jpg
 Park at your own risk! [at your own risk] {{$Bunny F3 #7S2A5PG}}.wav
 Private parking. Wheel clamping in operation! [wheel clamp][wheel clamping] ## qrop l49 t13 r1 b12 {{Photo.. Cheerapat Trinkajee $dreamstime 51869056}}.jpg
@@ -27872,7 +27899,7 @@ tendency ## qrop ql {{Photo.. Gualtiero Boffi $dreamstime 7466180}}.jpg
 used paper handkerchiefs [used] ## qrop l12 r12 ## qropt! {{Photo.. Sergio Delle Vedove $dreamstime 102997985}}.jpg
 Vatican Museum, Rome, Italy [spiral][staircase][spiral staircase] ## qrop q {{Photo.. Marco Polidoro $dreamstime 49419268}}.jpg
 vinyl disc [disk][disc] ## qrop ql {{Photo.. Sebastianknight $dreamstime 3309974}}.jpg
-weight {{Photo.. Orangesquid $dreamstime 25875317}}.jpg
+weight ## qrop l19 t1 r15 {{Photo.. Orangesquid $dreamstime 25875317}}.jpg
 >>> ../datae\photo_dreamstime/art
 an apple and a pear [minimalism] ## qrop l12 r8 {{Photo.. Kaspargallery $dreamstime 15389784}}.jpg
 Aranjuez, Madrid [support] ## qrop qr {{Photo.. Kaplan69 $dreamstime 59091098}}.jpg

@@ -15,17 +15,17 @@ namespace studia
         {
             int i = 0;
             auto& select = selector.object;
-            select.buttons(i++).text.text = "Elementary";
+            select.buttons(i++).text.text = "Primary";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Secondary 1";
+            select.buttons(i++).text.text = "Secondary";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Secondary 2";
+            select.buttons(i++).text.text = "Tertiary";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Tertiary 1";
+            select.buttons(i++).text.text = "Quaternaty";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Tertiary 2";
+            select.buttons(i++).text.text = "Quinary";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Tertiary 3";
+            select.buttons(i++).text.text = "Senary";
             select.buttons(i++).text.html = extracolor("Extra");
             select.selected = 0;
         }
@@ -119,12 +119,12 @@ namespace studia
                 path dir = std::filesystem::current_path() / "content";
                 int m = n / 2;
                 root =
-                m == 0 ? dir / "10 Elementary":
-                m == 1 ? dir / "20 Secondary 1":
-                m == 2 ? dir / "30 Secondary 2":
-                m == 3 ? dir / "40 Tertiary 1":
-                m == 4 ? dir / "50 Tertiary 2":
-                m == 5 ? dir / "60 Tertiary 3":
+                m == 0 ? dir / "10 Primary":
+                m == 1 ? dir / "20 Secondary":
+                m == 2 ? dir / "30 Tertiary":
+                m == 3 ? dir / "40 Quaternary":
+                m == 4 ? dir / "50 Quinary":
+                m == 5 ? dir / "60 Senary":
                 "";
                 fill();
                 table.refresh();

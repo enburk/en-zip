@@ -16,7 +16,7 @@ widget<studia_r>
     studia::one::search search;
     array<gui::base::widget*> planes;
     gui::area<gui::selector> selector;
-    unary_property<str> link;
+    str link;
 
     studia_r ()
     {
@@ -136,9 +136,13 @@ widget<studia_r>
             notify(&link);
 
         if (what == &search.link)
-            link = "one://" +
-            search.link,
+        {
+            link = search.link;
+            if (not link.starts_with("one://")
+            and not link.starts_with("file://"))
+            link = "one://" + link;
             notify(&link);
+        }
     }
 };
 

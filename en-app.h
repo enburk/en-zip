@@ -214,6 +214,9 @@ widget<App>
             where.html =
             one.where;
 
+        if (what == &Ones) Conon.on = false;
+        if (what == &Twos) Conon.on = false;
+
         if (what == &one)
         {
             play.play.show(one.status != sfx::media::state::playing);

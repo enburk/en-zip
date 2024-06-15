@@ -147,21 +147,29 @@ namespace app::one
                 slides[i-1].entries.empty() and
                 slides[i-1].entries.back()->pixed;
 
-                int hh = entry.resize(w, h);
+                auto [ww, hh] = entry.resize_to_fit(w, h);
                 if (hh + y > h - d or i == 0
                 or  entry.pixed != was_pixed
                 or  entry.number == -1
                 or  entry.new_chain)
                     nextslide();
 
+                if (entry.widen
+                and p.x == 0) // next slide - next line 
+                    nextslide();
+
                 if (not entry.pixed) y += d;
 
                 entry.coord = xywh(
                 slides[i-1].coord.now.x,
-                slides[i-1].coord.now.y + y, w, hh);
+                slides[i-1].coord.now.y + y, ww, hh);
                 slides[i-1].entries += &entry;
 
-                y += hh;
+                if (entry.widen)
+                    nextslide(),
+                    y = h;
+
+                else y += hh;
             }
 
             slides.truncate(i);

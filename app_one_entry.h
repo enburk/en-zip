@@ -27,6 +27,8 @@ namespace app::one
         bool pixed = false;
         bool vocal = false;
         bool sound = false;
+        bool widen = false;
+        bool wide  = false;
         int clicked = 0;
 
 #define using(x) decltype(player.x)& x = player.x;
@@ -59,6 +61,8 @@ namespace app::one
                 [](auto a, auto b){ return
                 a.entry < b.entry; });
 
+            widen = false;
+
             for (auto [entry, media]: range)
             {
                 auto& i =
@@ -72,6 +76,10 @@ namespace app::one
                     sounds += i; else
                     audios += i;
                 }
+
+                if (i.options.
+                contains("wide"))
+                wide = true;
             }
 
             audio_index = {}; int aa = audios.size();
@@ -173,13 +181,14 @@ namespace app::one
             }
         }
 
-        int resize (int w, int h)
+        xy resize (int w, int h)
         {
             int l = gui::metrics::line::width;
             int d = gui::metrics::text::height;
+            int W = w;
 
-            if (w < l+l) return 0; w -= l+l; 
-            if (h < l+l) return 0; h -= l+l; 
+            if (w < l+l) return xy{}; w -= l+l; 
+            if (h < l+l) return xy{}; h -= l+l; 
 
             script.alignment = xy{pix::center, pix::top};
             credit.alignment = xy{pix::left,   pix::top};
@@ -206,7 +215,26 @@ namespace app::one
             credic.coord = credit.coord.now + xy(+l,-l);
             credid.coord = credit.coord.now + xy(+l,+l);
 
-            return l + psize.y + ssize.y + l;
+            return xy{W, l + psize.y + ssize.y + l};
+        }
+
+        xy resize_to_fit (int w, int h)
+        {
+            widen = wide;
+            script.columns = 1;
+            if (wide) w *= 2;
+
+            xy size = resize(w, h);
+
+            if (size.y > h and not wide)
+            {
+                w *= 2;
+                script.columns = 2;
+                size = resize(w, h);
+                widen = true;
+            }
+
+            return size;
         }
 
         void on_change (void* what) override
@@ -215,11 +243,11 @@ namespace app::one
                 coord.was.size !=
                 coord.now.size)
             {
-                resize(
-                coord.now.w,
-                coord.now.h);
-                frame.coord =
-                coord.now.local();
+                // resize(
+                // coord.now.w,
+                // coord.now.h);
+                // frame.coord =
+                // coord.now.local();
             }
 
             if (what == &skin)

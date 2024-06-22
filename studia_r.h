@@ -119,27 +119,32 @@ widget<studia_r>
             planes[i]->show(i == n);
         }
 
-        if (what == &dics)
-            link = dics.link,
-            notify(&link);
+        bool l = false;
 
-        if (what == &contents)
-            link = contents.link,
-            notify(&link);
+        if (what == &dics)  l = true, link = dics.link;
 
-        if (what == &ones)
-            link = ones.link,
-            notify(&link);
+        if (what == &contents) l = true, link = contents.link;
+
+        if (what == &ones) l = true, link = ones.link;
         
-        if (what == &oness)
-            link = oness.link,
-            notify(&link);
+        if (what == &oness) l = true, link = oness.link;
 
-        if (what == &search.link)
+        if (what == &search.link) l = true, link = search.link;
+
+        if (l and link.starts_with("clipboard://"))
         {
-            link = search.link;
+            str path = link.extract_from("file://");
+            sys::clipboard::set(link.from(12));
+            if (path != "" and sys::keyboard::alt)
+            link = "file://" + path; else
+            link = "";
+        }
+
+        if (l and link != "")
+        {
             if (not link.starts_with("one://")
-            and not link.starts_with("file://"))
+            and not link.starts_with("file://")
+            and not link.starts_with("clipboard://"))
             link = "one://" + link;
             notify(&link);
         }

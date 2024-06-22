@@ -53,6 +53,18 @@ namespace studio::one
         return s;
     };
 
+    str cliplink (res const& r)
+    {
+        str s = r->full();
+        if (r->options.
+            contains("sound"))
+            s = "[" + s + "]";
+
+        return linked(
+        dark(html(s)),
+        "clipboard://: " + r->abstract +
+        "file://" + str(r->path));
+    }
     str link (res const& r)
     {
         str s = r->full();
@@ -71,9 +83,10 @@ namespace studio::one
         dark(entry->pretty_link()),
         "one://" + entry->link);
     }
-    str link (content::out::entry& e) {
-        return link(&e); }
-
+    str link (content::out::entry& e)
+    {
+        return link(&e);
+    }
 
     void reporting (
         content::out::course const& course,
@@ -263,6 +276,28 @@ namespace studio::one
         }
     };
 
+    auto all_entries(res r, eng::vocabulary& vocabulary)
+    {
+        auto entries = r->entries;
+
+        if ((r->kind == "audio"
+        and entries.size() == 0
+        and not r->options.contains("=")
+        and not r->options.contains("=="))
+        or  entries.contains("+"))
+            entries += eng::parser::entries(
+                vocabulary, r->title,
+                r->options.contains
+                ("Case"));
+        else
+        if (r->title.contains("/"))
+        for (str s: r->title.split_by("/"))
+            entries += s;
+
+        entries.try_erase("+");
+        return entries;
+    }
+
     void suggestions
     (
         content::out::course& course,
@@ -274,23 +309,11 @@ namespace studio::one
         array<res>> unused_resources_vocabulary;
         for (res r: unused_resources)
         {
-            auto entries = r->entries;
+            auto entries = all_entries(r, vocabulary);
 
-            if ((r->kind == "audio"
-            and entries.size() == 0
-            and not r->options.contains("=")
-            and not r->options.contains("=="))
-            or  entries.contains("+"))
-                entries += eng::parser::entries(
-                    vocabulary, r->title,
-                    r->options.contains
-                    ("Case"));
-            else
-            if (r->title.contains("/"))
-            for (str s: r->title.split_by("/"))
-                entries += s;
-
-            entries.try_erase("+");
+            if (r->kind == "audio"
+            and entries.size() == 1)
+                continue;
 
             for (str s: entries)
             unused_resources_vocabulary[s] += r;
@@ -300,16 +323,21 @@ namespace studio::one
 
         for (auto& entry: course.entries)
         {
+            if (entry.eng.starts_with(":"))
+                continue;
+
             array<res> audios;
             array<res> videos;
 
-            for (str& s: entry.vocabulary)
+            for (str phrase: entry.vocabulary)
+            for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), true))
+            for (str form: eng::forms(word))
             {
-                for (str word: eng::parser::entries(
-                    vocabulary, s.upto_first("@"), true))
-                    current_vocabulary.emplace(word);
+                if (
+                current_vocabulary.contains(form)) continue;
+                current_vocabulary.emplace(form);
 
-                auto it = unused_resources_vocabulary.find(s);
+                auto it = unused_resources_vocabulary.find(form);
                 if (it == unused_resources_vocabulary.end())
                     continue;
 
@@ -327,7 +355,7 @@ namespace studio::one
 
                     // if all words are known
                     bool well_known = true;
-                    for (str x: r->entries)
+                    for (str x: all_entries(r, vocabulary))
                     if  (not current_vocabulary.contains(x))
                         well_known = false;
 
@@ -345,14 +373,14 @@ namespace studio::one
                 report::audiop += link(entry);
                 for (res r: audios)
                 report::audiop += 
-                link(r);
+                cliplink(r);
             }
             if (not videos.empty())
             {
                 report::videop += link(entry);
                 for (res r: videos)
                 report::videop +=
-                link(r);
+                cliplink(r);
             }
         }
     }

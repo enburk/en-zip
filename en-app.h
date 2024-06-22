@@ -169,13 +169,6 @@ widget<App>
             coord.now.size)
             refresh();
 
-        if (what == &alpha
-        and alpha.to == 255
-        and first_time)
-            first_time = false,
-            one.play(),
-            two.play();
-
         if (what == &splitter1) refresh();
         if (what == &splitter2) refresh();
 
@@ -186,6 +179,14 @@ widget<App>
             refresh();
 
         bool o = one.shown();
+
+        if (what == &alpha
+        and alpha.to == 255
+        and first_time) {
+            first_time = false;
+            o ? one.play() :
+                two.play();
+        }
 
         if (what == &play.play) o? one.play() : two.play();
         if (what == &play.stop) o? one.stop() : two.stop();

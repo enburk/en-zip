@@ -101,9 +101,6 @@ namespace report = studio::one::report;
             if (what == &consobar)
             {
                 link = consobar.object.link;
-                if (not link.starts_with("one://")
-                and not link.starts_with("file://"))
-                link = "one://" + link;
                 notify();
             }
             if (what == &alpha && shown())

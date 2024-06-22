@@ -23,8 +23,11 @@ captain @ rank        = капитан, командир экипажа, ~ ли�
 general @ rank        = генерал, командующий                             # WAR-
 marshal @ rank        = маршал                                           # WAR- # 10+
 
+===
+
 escort @ noun %% noun = эскорт, сопровождение                            # 14+ /// `escort
 escort @ verb %% verb = эскортировать, сопровождать                      # 14+ /// es`cort
+
 parade @ military     = парад
 chevron @ army        = шеврон                                           # WAR- # 18+
 epaulettes {esp.} {Br.}\\{Am.} {usually} epaulets = эполеты                                          # WAR- # 10+

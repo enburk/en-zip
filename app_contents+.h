@@ -133,6 +133,7 @@ namespace app
                 selector.buttons(i++).text.html =
                     extracolor("Extra");
             }
+            selector.layout();
             selector.selected = 0;
         }
 

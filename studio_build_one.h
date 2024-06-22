@@ -177,6 +177,9 @@ namespace studio::one
                 contains(abstract))
                 continue;
 
+            if (r.options.contains("="))
+            report::anoma2 += cliplink(&r);
+
             int spaces = 0;
             for (char c: abstract)
             if  (c == ' ')
@@ -265,7 +268,9 @@ namespace studio::one
             auto us = noaudio or soundio? array<str>{} : entry.us;
 
             bool sound_ok = not soundio;
-            bool video_ok = nopixed;
+            bool video_ok = nopixed or
+            entry.eng.starts_with(":") or
+            entry.eng == "";
 
             array<res> videos;
 
@@ -340,11 +345,11 @@ namespace studio::one
 
             if (r->kind == "audio")
                 report::audioq +=
-                link(r);
+                cliplink(r);
 
             if (r->kind == "video")
                 report::videoq +=
-                link(r);
+                cliplink(r);
         }
 
         if (int nn = 500, n = 

@@ -4,26 +4,30 @@ score @ sport noun %% noun = счёт
 score @ sport verb %% verb = забивать
 : Hey, what's the score?
 
-whistle @ sport            = свисток, свистеть
-
 face-off                   = вбрасывание
 stick @ hockey             = клюшка
 puck @ hockey              = шайба
 ice skates                 = коньки
 
-helmet @ sport             = шлем, каска
 ---
 running @ sport            = бег
 stopwatch                  = секундомер
 : Ready, steady, go!       = На старт, внимание, марш!
 : When I say 'Go,' go. Go!
 
+helmet @ sport             = шлем, каска
 trainers\\sneakers         = кроссовки
-
 belt @ martial arts        = пояс
+whistle @ sport            = свист, свисток, ~ свистеть
 
+---
 dumbbells                  = гантели
 kettlebell                 = гиря
+barbell                    = штанга %% (вес)
+goal post                  = штанга %% (ворот)
+
+cup @ sport                = кубок
+
 
 
 

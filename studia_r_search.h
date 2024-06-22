@@ -80,13 +80,6 @@ namespace studia::one
             if (what == &result.object.link)
             {
                 link = result.object.link;
-                if (link.starts_with("clipboard://"))
-                {
-                    str path = link.extract_from("file://");
-                    sys::clipboard::set(link.from(12));
-                    if (not sys::keyboard::alt) return;
-                    link = "file://" + path;
-                }
                 notify(&link);
             }
 
@@ -173,17 +166,19 @@ namespace studia::one
                 result.object.
                     clear();
 
+                bool good = false;
+
                 for (str word: eng::forms(src))
                 {
                     if (app::vocabulary.size() == 0) return;
                     auto i = app::vocabulary.lower_bound_case_insensitive(word);
-                    bool o = eng::equal_case_insensitive(
-                         word,  app::vocabulary[i].title);
 
-                    media.object.editor.color = o ?
-                    gui::skins[skin].dark.first :
-                    gui::skins[skin].error.first;
-                    if (not o) return;
+                    if (not
+                        eng::equal_case_insensitive(word,
+                        app::vocabulary[i].title))
+                        continue;
+
+                    good = true;
 
                     using index= media::index;
                     array<index> audio;
@@ -240,6 +235,10 @@ namespace studia::one
                         "file://" + index.path);
                     }
                 }
+
+                media.object.editor.color = good ?
+                gui::skins[skin].dark.first :
+                gui::skins[skin].error.first;
             }
         }
     };

@@ -6,6 +6,7 @@ mean       = значить
 understand = понимать
 suppose    = предпологать
 guess      = догадываться
+sure       = уверенный, верный, безошибочный, ~ конечно, непременно, безусловно
 ===
 
 : I don't know!
@@ -18,6 +19,7 @@ guess      = догадываться
 : I guess so!
 : Guess who? @ call
 : Guess who? @@
+: Guess who!
 
 : I don't understand.
 : Oh, I don't understand!
@@ -26,24 +28,24 @@ guess      = догадываться
 
 : What do you mean?
 : What does that mean?
+: What did this mean?
+: I’m sorry but I fail to grasp your meaning.
+---
 : What does it mean?
 : Of course you know ~ what ‘it’ means.
-: I’m sorry but I fail to grasp your meaning.
-
+---
 : I suppose...
 : I suppose.
+: I suppose so.
 : Yeah, I suppose so.
-
-: What's the point?
-: What's the matter?
-: It doesn't matter, I guess.
-: It doesn't matter.
 
 : Are you blind?
 : Don't you see?
 : Do you grasp it?
 : What part of ‘No’ ~ don't you understand?
 
+: Are you sure?
+: We don't know for sure!
 
 
 

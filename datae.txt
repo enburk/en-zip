@@ -1,4 +1,4 @@
->>> ../datae/assets ## ==
+>>> ../datae/assets ## asset
 flag.ru.png
 flag.uk.png
 flag.us.png
@@ -454,7 +454,7 @@ give away.ogg
 grab it.ogg
 has been.ogg
 home owner.ogg
-leads on.ogg
+leads on ## course-.ogg
 sail away.ogg
 take time.ogg
 told him.ogg
@@ -937,7 +937,7 @@ You may not have realized that etc.ogg
 You may not have realized that etc.txt
 >>> ../datae\audio\lectures {{ttc}}\Prof. Anne Curzan - The Secret Life of Words ## us/{{}}
 And life is long. [long].ogg
-And they sad ''really~!''.ogg
+And they said ''really~!''.ogg
 Could you tell me what time it is~!.ogg
 Do you have a few minutes~!.ogg
 Do you know what time it is~!.ogg
@@ -1310,7 +1310,7 @@ going to.ogg
 gung ho.ogg
 hell’s bells.ogg
 helpful advice.ogg
-here we are.ogg
+Here we are..ogg
 in the morning.ogg
 in the same way.ogg
 inside track.ogg
@@ -1692,7 +1692,7 @@ word on the street -- “word on the street” is what people are saying about s
 work like a charm -- to work very well.ogg
 >>> ../datae\audio\podcasts\{{!Hot English Magazine}}/Jokes
 !credit.txt
-Did you ever hear the story about the broken pencil~! Nevermind, it’s pointless..ogg
+Did you ever hear the story about the broken pencil~! Never mind, it’s pointless..ogg
 Do you find it hard to make decisions~! Well... yes and no. It depends..ogg
 Do you say, ‘Nine and five is thirteen’, or ‘Nine and five are thirteen’~! -- Neither. Nine and five is fourteen..ogg
 Doctor! Doctor! I keep losing my memory.ogg
@@ -2722,7 +2722,7 @@ hat.ogg
 hazel.ogg
 headed notepaper.ogg
 health-related.ogg
-heard tell.ogg
+heard tell ## course-.ogg
 helped.ogg
 her.ogg
 herbivorous.ogg
@@ -2873,7 +2873,7 @@ magnificent.ogg
 maintain.ogg
 maintenance.ogg
 majority.ogg
-make bread.ogg
+make bread ## course-.ogg
 managerial.ogg
 managing director.ogg
 manana.ogg
@@ -3207,7 +3207,7 @@ starting tomorrow.ogg
 statistically.ogg
 stew.ogg
 stiffen.ogg
-stop now.ogg
+Stop now!.ogg
 stop.ogg
 store.ogg
 strain.ogg
@@ -3779,7 +3779,7 @@ Rigil Kent.ogg
 Shaula ## sic!.ogg
 Spica.ogg
 Suhail.ogg
->>> ../datae\audio\various var\1 ## Case {{}}/TechTarget ## =
+>>> ../datae\audio\various var\1 ## Case {{}}/TechTarget ## sic!
 802.11.ogg
 ACL.ogg
 ASCII.ogg
@@ -3870,7 +3870,7 @@ blinked.ogg
 book of spells.ogg
 breath.ogg
 broccoli and beef.ogg
-carriage house ## =.ogg
+carriage house ## ==.ogg
 character.ogg
 chill.ogg
 comforting.ogg
@@ -3888,7 +3888,7 @@ gasped.ogg
 go home.ogg
 good.ogg
 gotcha.ogg
-great granddaughter ## =.ogg
+great granddaughter.ogg
 growled.ogg
 hello.ogg
 here.ogg
@@ -3997,10 +3997,10 @@ You're so clever..ogg
 {Rose-throated {Becard}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bishop
 {Yellow-crowned {Bishop}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/blackbird ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/blackbird ## ==
 {Jamaican Blackbird}.ogg
 {Tricolored Blackbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bluebird ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bluebird ## ==
 {Mountain Bluebird}.ogg
 {Western Bluebird}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bluethroat
@@ -4016,7 +4016,7 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bullfinch
 {Eurasian {Bullfinch}}.ogg
 {Greater Antillean {Bullfinch}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bunting ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bunting ## ==
 {Lazuli Bunting}.ogg
 {Painted {Bunting}}.ogg
 {Snow Bunting}.ogg
@@ -4032,7 +4032,7 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chachalaca
 {Plain {Chachalaca}}.ogg
 {Rufous-bellied {Chachalaca}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chickadee ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chickadee ## ==
 {Carolina Chickadee}.ogg
 {Chestnut-Backed Chickadee}.ogg
 {Gray-headed Chickadee}.ogg
@@ -4040,7 +4040,7 @@ You're so clever..ogg
 {Mountain Chickadee}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chuck-will's-widow
 {Chuck-will's-widow}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/coot ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/coot ## ==
 {Caribbean Coot}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/cowbird
 {Bronzed {Cowbird}}.ogg
@@ -4050,14 +4050,14 @@ You're so clever..ogg
 {Yellow-breasted {Crake}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/crossbill
 {Red {Crossbill}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/crow ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/crow ## ==
 {Fish Crow}.ogg
 {Jamaican Crow}.ogg
 {Mexican Crow}.ogg
 {Northwestern Crow}.ogg
 {Sinaloa Crow}.ogg
 {Tamaulipas Crow}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/cuckoo ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/cuckoo ## ==
 {Chestnut-bellied Cuckoo}.ogg
 {Common {Cuckoo}}.ogg
 {Jamaican {Lizard-Cuckoo}} [Jamaican Lizard Cuckoo][Lizard Cuckoo].ogg
@@ -4069,7 +4069,7 @@ You're so clever..ogg
 {Bristle-thighed {Curlew}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dipper
 {American {Dipper}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dove ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dove ## ==
 {Caribbean Dove}.ogg
 {Common {Ground-Dove}} [Common Ground Dove][Ground Dove].ogg
 {Crested {Quail-Dove}} [Crested Quail Dove][Quail Dove].ogg
@@ -4082,7 +4082,7 @@ You're so clever..ogg
 {Zenaida Dove}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dowitcher
 {Long-billed {Dowitcher}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/duck ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/duck ## ==
 {Black-bellied {Whistling-Duck}} [Black-bellied Whistling Duck][Whistling Duck].ogg
 {Harlequin Duck}.ogg
 {Masked Duck}.ogg
@@ -4107,7 +4107,7 @@ You're so clever..ogg
 {Collared {Forest {Falcon}}} [Collared Forest-Falcon][Forest-Falcon].ogg
 {Laughing {Falcon}}.ogg
 {Peregrine {Falcon}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/finch ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/finch ## ==
 {Cassin's {Finch}}.ogg
 {Gray-crowned {Rosy-Finch}} [Gray-crowned Rosy Finch][Rosy Finch].ogg
 {Rufous-capped {Brush-Finch}} [Rufous-capped Brush Finch][Brush Finch].ogg
@@ -4115,7 +4115,7 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/flicker
 {Gilded {Flicker}}.ogg
 {Northern {Flicker}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/flycatcher ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/flycatcher ## ==
 {Ash-Throated Flycatcher}.ogg
 {Brown-crested Flycatcher}.ogg
 {Buff-breasted Flycatcher}.ogg
@@ -4165,7 +4165,7 @@ You're so clever..ogg
 {Emperor {Goose}}.ogg
 {Greater {White-fronted Goose}}.ogg
 {Snow Goose}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grackle ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grackle ## ==
 {Boat-tailed Grackle}.ogg
 {Great-tailed {Grackle}}.ogg
 {Greater {Antillean Grackle}}.ogg
@@ -4173,13 +4173,13 @@ You're so clever..ogg
 {Black-faced {Grassquit}}.ogg
 {Yellow-faced {Grassquit}}.ogg
 {Yellow-shouldered {Grassquit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grebe ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grebe ## ==
 {Clark's Grebe}.ogg
 {Horned {Grebe}}.ogg
 {Least {Grebe}}.ogg
 {Red-necked Grebe}.ogg
 {Western Grebe}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grosbeak ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grosbeak ## ==
 {Black-faced Grosbeak}.ogg
 {Black-headed Grosbeak}.ogg
 {Blue Grosbeak}.ogg
@@ -4202,7 +4202,7 @@ You're so clever..ogg
 {Gyrfalcon}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/harrier
 {Northern {Harrier}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hawk ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hawk ## ==
 {Common {Black Hawk}}.ogg
 {Cooper's Hawk}.ogg
 {Gray Hawk}.ogg
@@ -4216,7 +4216,7 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/heron
 {Great {Blue {Heron}}}.ogg
 {Yellow-crowned {Night-Heron}} [Yellow-crowned Night Heron][Night Heron][night heron].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hummingbird ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hummingbird ## ==
 {Allen's Hummingbird}.ogg
 {Anna's {Hummingbird}}.ogg
 {Berylline Hummingbird}.ogg
@@ -4238,7 +4238,7 @@ You're so clever..ogg
 {Long-tailed {Jaegar}} [jaeger][skua].ogg
 {Parasitic {Jaegar}} [jaeger][skua].ogg
 {Pomarine {Jaegar}} [jaeger][skua].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/jay ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/jay ## ==
 {Black-throated {Magpie-Jay}} [magpie].ogg
 {Brown Jay}.ogg
 {Florida {Scrub-Jay}} [Florida Scrub Jay][Scrub Jay].ogg
@@ -4251,7 +4251,7 @@ You're so clever..ogg
 {Western {Scrub-Jay}} [Scrub Jay].ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/junco
 {Yellow-eyed {Junco}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kingbird ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kingbird ## ==
 {Cassin's Kingbird}.ogg
 {Couch's Kingbird}.ogg
 {Gray {Kingbird}}.ogg
@@ -4324,12 +4324,12 @@ You're so clever..ogg
 {Brown {Noddy}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nutcracker
 {Clark's {Nutcracker}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nuthatch ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nuthatch ## ==
 {Brown-Headed Nuthatch}.ogg
 {Pygmy Nuthatch}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/orangequit
 {Orangequit}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/oriole ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/oriole ## ==
 {Altamira Oriole}.ogg
 {Audubon's Oriole}.ogg
 {Bullock's Oriole}.ogg
@@ -4342,7 +4342,7 @@ You're so clever..ogg
 {Montezuma {Oropendola}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/osprey
 {Osprey}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/owl ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/owl ## ==
 {Barn Owl}.ogg
 {Boreal Owl}.ogg
 {Burrowing Owl}.ogg
@@ -4396,7 +4396,7 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/phoebe
 {Black {Phoebe}}.ogg
 {Say's {Phoebe}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pigeon ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pigeon ## ==
 {Band-tailed {Pigeon}}.ogg
 {Red-billed Pigeon}.ogg
 {Ring-tailed Pigeon}.ogg
@@ -4408,7 +4408,7 @@ You're so clever..ogg
 {Red-throated {Pipit}}.ogg
 {Sprague's {Pipit}}.ogg
 {Water {Pipit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/plover ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/plover ## ==
 {American {Golden Plover}}.ogg
 {Black-bellied {Plover}}.ogg
 {Common {Ringed Plover}}.ogg
@@ -4495,7 +4495,7 @@ You're so clever..ogg
 {Brown-backed {Solitaire}}.ogg
 {Rufous-throated {Solitaire}}.ogg
 {Townsend's {Solitaire}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/sparrow ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/sparrow ## ==
 {Bachman's Sparrow}.ogg
 {Baird's Sparrow}.ogg
 {Black-chinned Sparrow}.ogg
@@ -4530,7 +4530,7 @@ You're so clever..ogg
 {Red-billed {Streamertail}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/surfbird
 {Surfbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swallow ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swallow ## ==
 {Cave Swallow}.ogg
 {Cliff Swallow} [cliff].ogg
 {Golden Swallow}.ogg
@@ -4538,13 +4538,13 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swan
 {Tundra Swan}.ogg
 {Whooper Swan}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swift ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swift ## ==
 {Antillean {Palm-Swift}} [palm swift].ogg
 {Black Swift}.ogg
 {Vaux's Swift}.ogg
 {White-collared Swift}.ogg
 {White-throated Swift}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tanager ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tanager ## ==
 {Black-cheeked {Ant-Tanager}}.ogg
 {Dusky-faced Tanager}.ogg
 {Flame-colored Tanager}.ogg
@@ -4576,7 +4576,7 @@ You're so clever..ogg
 {California {Thrasher}}.ogg
 {Crissal {Thrasher}}.ogg
 {Curve-Billed Thrasher}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/thrush ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/thrush ## ==
 {Gray-Cheeked Thrush}.ogg
 {Orange-billed {Nightingale-Thrush}}.ogg
 {Russet {Nightingale-Thrush}}.ogg
@@ -4596,7 +4596,7 @@ You're so clever..ogg
 {Masked {Tityra}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tody
 {Jamaican {Tody}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/towhee ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/towhee ## ==
 {Abert's Towhee}.ogg
 {Brown Towhee}.ogg
 {California Towhee}.ogg
@@ -4618,7 +4618,7 @@ You're so clever..ogg
 {Northern {Beardless-{Tyrannulet}}} [Beardless Tyrannulet].ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/verdin
 {Verdin}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/vireo ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/vireo ## ==
 {Black-Capped Vireo}.ogg
 {Black-whiskered Vireo}.ogg
 {Blue {Mountain Vireo}}.ogg
@@ -4634,7 +4634,7 @@ You're so clever..ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wagtail
 {White {Wagtail}}.ogg
 {Yellow {Wagtail}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/warbler ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/warbler ## ==
 {Arctic Warbler}.ogg
 {Arrow-headed Warbler}.ogg
 {Bachman's Warbler}.ogg
@@ -4670,7 +4670,7 @@ You're so clever..ogg
 {Buff-throated {Woodcreeper}}.ogg
 {Ivory-billed {Woodcreeper}}.ogg
 {White-striped {Woodcreeper}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/woodpecker ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/woodpecker ## ==
 {Acorn Woodpecker}.ogg
 {Black-backed Woodpecker}.ogg
 {Downy Woodpecker}.ogg
@@ -4685,7 +4685,7 @@ You're so clever..ogg
 {Red-cockaded Woodpecker}.ogg
 {Strickland's Woodpecker}.ogg
 {Three-toed Woodpecker}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wren ## =
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wren ## ==
 {Banded Wren}.ogg
 {Bay Wren}.ogg
 {Bewick's Wren}.ogg
@@ -8855,7 +8855,6 @@ ziggurat [=].wav
 Zimbabwe.wav
 zugzwang.wav
 >>> ../datae/audio ## Case ## us
->>> ../datae\audio ## Case ## us/{{$$$google}} scan-once!
 >>> ../datae\audio ## Case ## us/{{$Bunny F1 #5ELCI70}}
 a lot.wav
 abrasive disc.wav
@@ -12508,7 +12507,7 @@ Thai cat.wav
 the alpha and the omega.wav
 the Andes [=].wav
 the Indian Ocean [=].wav
-the Mesolytic ## =.wav
+the Mesolytic ## ==.wav
 the Nile River.wav
 the Paleolithic [=].wav
 the Panama Canal [=].wav
@@ -12526,7 +12525,7 @@ thrombus [=].wav
 tic [=].wav
 tick-tock [=].wav
 tigress.wav
-time is money [=].wav
+time is money.wav
 time [=].wav
 Titan [=].wav
 Titans [=].wav
@@ -12646,7 +12645,7 @@ zoom.wav
 zucchini [=].wav
 zugzwang [].wav
 >>> ../datae\audio ## Case ## us/{{$Bunny F3 #7S2A5PG}}
->>> ../datae\audio ## Case ## us\{{$Bunny F3 #7S2A5PG}}/1 ## =
+>>> ../datae\audio ## Case ## us\{{$Bunny F3 #7S2A5PG}}/1
 accessories.wav
 adverbs.wav
 aerialists.wav
@@ -12875,7 +12874,7 @@ worried.wav
 wrench.wav
 xylophone.wav
 yolks.wav
->>> ../datae\audio ## Case ## us\{{$Bunny F3 #7S2A5PG}}/2 ## = ## pixed
+>>> ../datae\audio ## Case ## us\{{$Bunny F3 #7S2A5PG}}/2 ## pixed
 a bunch of bananas.wav
 a cup of custard with black cherry topping.wav
 a handwheel of a watertight door.wav
@@ -12890,10 +12889,10 @@ a towpath beside a canal under a bridge [].wav
 a towpath beside a canal under a bridge.wav
 actresses with scripts.wav
 Allen wrench.wav
-alligator gar.wav
+alligator gar ## ==.wav
 allspice and a bay leaf.wav
 almonds coated with chocolate and sugar.wav
-amusement park, theme park.wav
+amusement park, theme park ## ==.wav
 amusement park.wav
 an ophthalmologist's box with lenses.wav
 antlers of a deer.wav
@@ -12901,7 +12900,7 @@ Asian rice noodles wok with chicken and vegetables.wav
 bell pepper.wav
 bike wrench.wav
 bobble cap.wav
-bobble hat, bobble cap.wav
+bobble hat, bobble cap ## ==.wav
 bobble hat.wav
 bobcat kitten.wav
 body language.wav
@@ -12921,12 +12920,12 @@ Christmas ball.wav
 Christmas bells.wav
 Christmas ornament.wav
 clean a carpet.wav
-cleaner, vacuum cleaner.wav
+cleaner, vacuum cleaner ## ==.wav
 closed to all vehicles in both directions.wav
 contact lenses.wav
 copper sulfate crystals.wav
 corn kernels and popcorn in a row.wav
-cotton swabs, Q-tips.wav
+cotton swabs, Q-tips ## ==.wav
 cotton swabs.wav
 crab spider.wav
 cracked glass.wav
@@ -12953,7 +12952,7 @@ epic fail.wav
 eyelash extensions.wav
 fast food.wav
 February 14th.wav
-First Course.wav
+first course.wav
 fishing line.wav
 fishing reel.wav
 floating bridge.wav
@@ -12961,7 +12960,7 @@ floating campfire.wav
 floating docks.wav
 flying fish.wav
 fold one's arms.wav
-From Head to Claws.wav
+from head to claws ## ==.wav
 frozen red currants.wav
 frozen spinach cubes.wav
 fruit fly.wav
@@ -12989,7 +12988,7 @@ hex key.wav
 high heels.wav
 hole puncher.wav
 hornet's nest.wav
-hornets' nest, hornet's nest.wav
+hornets' nest, hornet's nest ## ==.wav
 hornets' nest.wav
 horseback riding.wav
 hose fitting.wav
@@ -13054,7 +13053,7 @@ peculiar device.wav
 Picasso triggerfish.wav
 platform shoe.wav
 pleated purse.wav
-pontoon bridge, floating bridge.wav
+pontoon bridge, floating bridge ## ==.wav
 pontoon bridge.wav
 pup, puppy.wav
 raw chicken drumsticks.wav
@@ -13090,7 +13089,7 @@ shredded paper.wav
 shrug one's shoulders.wav
 side mirror.wav
 side road at an acute angle.wav
-side-view mirror, side mirror.wav
+side-view mirror, side mirror ## ==.wav
 side-view mirror.wav
 SIM card.wav
 similar but different.wav
@@ -13109,7 +13108,6 @@ squid ink pasta with shrimp [].wav
 St Patrick's Day.wav
 starfruit and starfish.wav
 stay-tab opening [][].wav
-Steep drop beyond this point!.wav
 steep grade, steep hill.wav
 steep grade.wav
 steep hill.wav
@@ -13122,7 +13120,6 @@ stuffed cucumbers.wav
 sun-dried yolks.wav
 suntan lotion.wav
 swan-shaped towel.wav
-Swift water and eroding bank!.wav
 swim caps and goggles.wav
 swim ring.wav
 Swiss army knife.wav
@@ -13134,7 +13131,7 @@ tape measure.wav
 tear-stained cheeks.wav
 Thanksgiving Day.wav
 Thanksgiving turkey.wav
-Thanksgiving, Thanksgiving Day.wav
+Thanksgiving, Thanksgiving Day ## ==.wav
 the Fourth of July.wav
 the fourth Thursday of November.wav
 the main entrance to a park.wav
@@ -13385,7 +13382,7 @@ Levi.ogg
 Methusael.ogg
 Methuselah.ogg
 Mithredath.ogg
-Mordecai the Jew ## =.ogg
+Mordecai the Jew ## ==.ogg
 Moses.ogg
 Nethinims.ogg
 Persia and Media [Media].ogg
@@ -13714,12 +13711,14 @@ Ah, THAT'S the great puzzle!.ogg
 ALICE'S RIGHT FOOT, ESQ.ogg
 ALICE'S RIGHT FOOT, ESQ.txt
 And I wish you wouldn't keep appearing and vanishing so suddenly.. you make one quite giddy..ogg
+And things are worse than ever -- for I never was so small as this before, never!.ogg
 But I THINK I can kick a little!.ogg
 But it sounds uncommon nonsense..ogg
 But little girls eat eggs quite as much as serpents do, you know..ogg
 Call the next witness. [witness].ogg
 Flamingoes and mustard both bite. And the moral of that is--''Birds of a feather flock together.''.ogg
 Good-bye, feet!.ogg
+Her chin was pressed so closely against her foot, that there was hardly room to open her mouth.ogg
 However, the Multiplication Table doesn't signify.. let's try Geography..ogg
 I can't explain MYSELF, I'm afraid, sir.ogg
 I can't explain MYSELF, I'm afraid, sir.txt
@@ -13739,6 +13738,8 @@ Never imagine yourself not to be otherwise.txt
 Oh, how I wish I could shut up like a telescope!.ogg
 Reeling and Writhing, of course, to begin with.ogg
 Reeling and Writhing, of course, to begin with.txt
+Rule Forty-two.  ALL PERSONS MORE THAN A MILE HIGH HAVE TO LEAVE THE COURT..ogg
+That begins with an _M, such as mouse-traps, and the moon, and memory, and muchness.ogg
 There's a large mustard-mine near here. And the moral of that is.ogg
 There's a large mustard-mine near here. And the moral of that is.txt
 they're a kind of serpent.ogg
@@ -13749,12 +13750,12 @@ Why, there's hardly enough of me left to make ONE respectable person!.ogg
 You insult me by talking such nonsense!.ogg
 >>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}/{{}}
 ''There's PLENTY of room!'' said Alice indignantly. [indignantly].ogg
->>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}\{{}}/1
 cat.ogg
 chronic.ogg
 drank.ogg
 dreadful.ogg
-Earlscourt.ogg
+Earlscourt ## sic!.ogg
 etiquette.ogg
 Hungarian!.ogg
 huzza!.ogg
@@ -13764,7 +13765,7 @@ indeed~!.ogg
 Jabberwocky.ogg
 mop.ogg
 muchness.ogg
-never!.ogg
+Never!.ogg
 phew!.ogg
 please!.ogg
 ready.ogg
@@ -13778,34 +13779,21 @@ tyrant.ogg
 ugh!.ogg
 walk.ogg
 you.ogg
->>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}\{{}}/2 ## =
-A constant howling and sneezing.ogg
-And things are worse than ever -- for I never was so small as this before, never!.ogg
-another of them.ogg
+>>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}\{{}}/2
 barley sugar.ogg
-by _Oscar _Wilde.ogg
 clove pink [clove pink][clove-pink].ogg
-Fetch me my gloves this moment! [fetch].ogg
-Good-bye, all..ogg
-Her chin was pressed so closely against her foot, that there was hardly room to open her mouth.ogg
-I don't believe it!.ogg
-I'd rather not..ogg
-Some of the words have got altered.ogg
-That begins with an _M, such as mouse-traps, and the moon, and memory, and muchness.ogg
-to let bygones be bygones.ogg
 to play croquet.ogg
-Who are you~!.ogg
-Why your cat grins like that~!.ogg
 you know.ogg
-_French, music, AND WASHING -- extra.ogg
-_Mary _Ann!  _Mary _Ann! [Mary Ann].ogg
 Don't be impertinent..ogg
 Down, down, down..ogg
 Everybody says ''come on!'' here..ogg
 Explanations take such a dreadful time..ogg
+Fetch me my gloves this moment!.ogg
 He's perfectly idiotic!.ogg
 Hush! hush!.ogg
 I advise you to leave off this minute!.ogg
+I don't believe it!.ogg
+I'd rather not..ogg
 I've often seen a cat without a grin.ogg
 I've often seen a cat without a grin.txt
 Listen!.ogg
@@ -13815,10 +13803,13 @@ Oh, my dear _Dinah! [Dinah].ogg
 Perhaps it doesn't understand _English..ogg
 Please, Ma'am, is this _New _Zealand or _Australia~!.ogg
 quack, quack, quack.ogg
-Rule Forty-two.  ALL PERSONS MORE THAN A MILE HIGH HAVE TO LEAVE THE COURT..ogg
 Silence in the court!.ogg
+Some of the words have got altered..ogg
 thump! thump!.ogg
 Which way~! Which way~! [which].ogg
+Who are you~!.ogg
+Why your cat grins like that~!.ogg
+_Mary _Ann!  _Mary _Ann! [Mary Ann].ogg
 >>> ../datae\audiobooks/Carroll, Lewis - Through the Looking-Glass ## uk {{Cora McDonald}}
 !credit.txt
 ''BRILLIG'' means four o'clock in the afternoon -- the time when you begin BROILING things for dinner..ogg
@@ -13850,6 +13841,7 @@ Let's fight till six, and then have dinner..ogg
 Look up, speak nicely, and don't twiddle your fingers all the time..ogg
 Now, HERE, you see, it takes all the running YOU can do, to keep in the same place.ogg
 Now, HERE, you see, it takes all the running YOU can do, to keep in the same place.txt
+Nurse! Do let's pretend that I'm a hungry hyaena, and you're a bone..ogg
 One, two! One, two! And through and through.ogg
 One, two! One, two! And through and through.txt
 Principal rivers - there ARE none. Principal mountains - I'm on the only one, but I don't think it's got any name..ogg
@@ -13869,18 +13861,16 @@ Why, sometimes I've believed as many as six impossible things before breakfast..
 You may call it ''nonsense'' if  you like, but I'VE heard nonsense.ogg
 You may call it ''nonsense'' if  you like, but I'VE heard nonsense.txt
 >>> ../datae\audiobooks\Carroll, Lewis - Through the Looking-Glass ## uk {{Cora McDonald}}/{{}}
->>> ../datae\audiobooks\Carroll, Lewis - Through the Looking-Glass ## uk {{Cora McDonald}}\{{}}/2 ## =
-And yards and yards of it got unwound again. [unwound][yards].ogg
-JABBERWOCKY.ogg
-Ridiculous!.ogg
 A hill CAN'T be a valley, you know. That would be nonsense. [hill].ogg
+And yards and yards of it got unwound again. [unwound][yards].ogg
 Don't tease so!.ogg
 Have another biscuit~!.ogg
 It is a -- MOST -- PROVOKING -- thing..ogg
+JABBERWOCKY.ogg
 My finger's bleeding! Oh, oh, oh, oh!.ogg
-Nurse! Do let's pretend that I'm a hungry hyaena, and you're a bone..ogg
+Ridiculous!.ogg
 Tickets, please!.ogg
-_L, I KNOW it begins with _L! [L].ogg
+_L, I KNOW it begins with _L!.ogg
 >>> ../datae\audiobooks/Cervantes - Don Quixote {{Simon Vance}}
 !credit.txt
 I bid thee heartily farewell..wav
@@ -13913,7 +13903,7 @@ two times two is... two times two is approximately 4 point l0l0l0l0l0l0l0l0l0...
 We make contact in ten minutes. Please check your seat harness..wav
 You can't have very small, intelligent creatures; you need a minimum brain size..wav
 >>> ../datae\audiobooks\Clarke, Arthur C. - 2001 A Space Odyssey {{Dick Hill}}/{{}}
->>> ../datae\audiobooks\Clarke, Arthur C. - 2001 A Space Odyssey {{Dick Hill}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Clarke, Arthur C. - 2001 A Space Odyssey {{Dick Hill}}\{{}}/1
 academy.wav
 alone.wav
 ambassador.wav
@@ -13929,7 +13919,6 @@ reacquisition.wav
 telephone.wav
 to glow.wav
 to the contrary.wav
-understandably enough in the circumstances.wav
 whipped away.wav
 But this is ridiculous..wav
 Did you have a good trip~!.wav
@@ -13942,6 +13931,7 @@ The quick brown fox jumps over the lazy dog.wav
 There is no doubt about that..wav
 This is an extraordinary ratio..wav
 three million years.wav
+understandably enough in the circumstances.wav
 >>> ../datae\audiobooks/Clarke, Arthur C. - Firstborn ## uk {{John Lee}}
 !credit.txt
 Every plowshare could be turned to a sword. [plowshare].wav
@@ -13951,7 +13941,7 @@ On Mars, if you stepped outdoors at high noon in midsummer on the equator, you�
 Released from their parent’s gravity field.txt
 Released from their parent’s gravity field.wav
 >>> ../datae\audiobooks\Clarke, Arthur C. - Firstborn ## uk {{John Lee}}/{{}}
->>> ../datae\audiobooks\Clarke, Arthur C. - Firstborn ## uk {{John Lee}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Clarke, Arthur C. - Firstborn ## uk {{John Lee}}\{{}}/1
 all of which.wav
 ambitious.wav
 approach.wav
@@ -13966,7 +13956,7 @@ empire.wav
 firstborn.wav
 Galatea.wav
 grew bored.wav
-Mount Weather.wav
+Mount Weather ## Case.wav
 nonlocality.wav
 one hour.wav
 owl.wav
@@ -14009,7 +13999,19 @@ Those are growing out of nearly pure urine.wav
 When I ran my own search for solutions.txt
 When I ran my own search for solutions.wav
 >>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}/{{}}
->>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}\{{}}/## == ## course-
+a sterilizing agent.wav
+Adam and Eve in Gucci shoes.wav
+conditions are different here.wav
+from the Moon.wav
+just too long.wav
+most of the month.wav
+none better.wav
+resources from the Moon.wav
+the black hair.wav
+to move worlds.wav
+uncompromising fashion.wav
+>>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}\{{}}/1
 a shield.wav
 aftershock.wav
 Alexander the Great.wav
@@ -14028,7 +14030,7 @@ crazy.wav
 do.wav
 follow me.wav
 forecast.wav
-GMOs.wav
+GMOs ## Case.wav
 her.wav
 hibernacula.wav
 hubris.wav
@@ -14051,31 +14053,19 @@ Tuesday.wav
 uncertainly.wav
 Universal Time.wav
 visitor.wav
->>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}\{{}}/2 ## =
-a sterilizing agent.wav
-Adam and Eve in Gucci shoes.wav
-conditions are different here.wav
+>>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}\{{}}/3
+a chance that had to be taken.wav
+a long way from home.wav
 electronic components.wav
 evidently not.wav
-from the Moon.wav
-just too long.wav
-most of the month.wav
-none better.wav
 not a cloud in the sky.wav
-resources from the Moon.wav
 ripping up the night.wav
+salt of the earth.wav
 squirt it on.wav
-the black hair.wav
 the electromagnetic pulse.wav
 the end of the world.wav
 the extinction of humankind.wav
 the palace in the sky.wav
-to move worlds.wav
-uncompromising fashion.wav
->>> ../datae\audiobooks\Clarke, Arthur C. - Sunstorm ## uk {{John Lee}}\{{}}/3
-a chance that had to be taken.wav
-a long way from home.wav
-salt of the earth.wav
 Ah, but when have we humans ever been sensible~!.wav
 Am I right~!.wav
 Are you such a fool that you can't see it~!.wav
@@ -14120,7 +14110,7 @@ You'd be surprised..wav
 >>> ../datae\audiobooks/Clarke, Arthur C. - The Last Theorem ## uk {{Mark Bramhall}}
 !credit.txt
 >>> ../datae\audiobooks\Clarke, Arthur C. - The Last Theorem ## uk {{Mark Bramhall}}/{{}}
->>> ../datae\audiobooks\Clarke, Arthur C. - The Last Theorem ## uk {{Mark Bramhall}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Clarke, Arthur C. - The Last Theorem ## uk {{Mark Bramhall}}\{{}}/1
 arithmetica.wav
 Bhaskara.wav
 chikungunya.wav
@@ -14132,7 +14122,13 @@ Who was this fellow—did you say Einstein~! Sounds German to me..wav
 You say it is your duty, Warrant Officer. I respect that.txt
 You say it is your duty, Warrant Officer. I respect that.wav
 >>> ../datae\audiobooks\Clarke, Arthur C. - Time's Eye ## uk {{John Lee}}/{{}}
->>> ../datae\audiobooks\Clarke, Arthur C. - Time's Eye ## uk {{John Lee}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Clarke, Arthur C. - Time's Eye ## uk {{John Lee}}\{{}}/## == ## course-
+and that.wav
+for no payment at all.wav
+not authentic.wav
+through the eye.wav
+to this end.wav
+>>> ../datae\audiobooks\Clarke, Arthur C. - Time's Eye ## uk {{John Lee}}\{{}}/1
 a mammoth.wav
 a monstrosity.wav
 Africa.wav
@@ -14166,7 +14162,7 @@ proskynesis.wav
 pudgy.wav
 reentry.wav
 remarkably.wav
-RPG.wav
+RPG ## Case.wav
 Rudyard Kipling.wav
 seeker.wav
 sepoys.wav
@@ -14197,13 +14193,6 @@ themselves.wav
 there.wav
 trees.wav
 well.wav
->>> ../datae\audiobooks\Clarke, Arthur C. - Time's Eye ## uk {{John Lee}}\{{}}/2 ## =
-and that.wav
-for no payment at all.wav
-not authentic.wav
-through the eye.wav
-to this end.wav
-What a gagglefuck. [gagglefuck].wav
 >>> ../datae\audiobooks\Clarke, Arthur C. - Time's Eye ## uk {{John Lee}}\{{}}/3
 identifiable at a glance.wav
 playing both ends against the middle.wav
@@ -14227,6 +14216,7 @@ One does what one must..wav
 Praise, My Soul, the King of Heaven.wav
 Quite the sensation..wav
 Time's Eye.wav
+What a gagglefuck. [gagglefuck].wav
 What a place!.wav
 What do you think~!.wav
 What the devil now~!.wav
@@ -14283,7 +14273,16 @@ THOMAS Anstis ship’d himself at Providence in the Year 1718.wav
 Those who jumped overboard from the Flames.txt
 Those who jumped overboard from the Flames.wav
 >>> ../datae\audiobooks\Defoe, Daniel - A General History of the Pyrates ## uk {{John Lee}}/{{}}
->>> ../datae\audiobooks\Defoe, Daniel - A General History of the Pyrates ## uk {{John Lee}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Defoe, Daniel - A General History of the Pyrates ## uk {{John Lee}}\{{}}/## == ## course-
+a few foolish words.wav
+as well as subsistence.wav
+do all concur.wav
+Indian corn.wav
+more prosperous.wav
+on this story.wav
+small beer.wav
+to move off without bidding farewell to his friends.wav
+>>> ../datae\audiobooks\Defoe, Daniel - A General History of the Pyrates ## uk {{John Lee}}\{{}}/1
 &c..wav
 a Frenchman.wav
 a man-of-war.wav
@@ -14323,25 +14322,14 @@ truth.wav
 turtling.wav
 unparalleled.wav
 whereas.wav
->>> ../datae\audiobooks\Defoe, Daniel - A General History of the Pyrates ## uk {{John Lee}}\{{}}/2 ## =
-a few foolish words.wav
-as well as subsistence.wav
-at the same time.wav
-do all concur.wav
-feed on.wav
-Indian corn.wav
-more prosperous.wav
-on this story.wav
-small beer.wav
-the Island of Providence.wav
-the King Solomon.wav
-to move off without bidding farewell to his friends.wav
 a capital offense.wav
 and the reason seems plain.wav
 and therefore.wav
+at the same time.wav
 But this is not all, my Lord..wav
 By G— it is naked Truth..wav
 et cetera.wav
+feed on.wav
 for little or nothing.wav
 I must observe another thing....wav
 I say.wav
@@ -14357,6 +14345,8 @@ No doubt on’t. [on't].wav
 Now there..wav
 Set a thief to catch a thief..wav
 the best of them.wav
+the Island of Providence.wav
+the King Solomon.wav
 the next day [].wav
 the next day.wav
 This being approved of, it was unanimously resolved on..wav
@@ -14413,12 +14403,13 @@ Why you told me he was a young man.ogg
 Why you told me he was a young man.txt
 Why, madame, have you not thought proper to wear your diamond studs.ogg
 Why, madame, have you not thought proper to wear your diamond studs.txt
+You are very amiable, no doubt, but you would be charming if you would only depart..ogg
 You cannot have failed to remark.ogg
 You cannot have failed to remark.txt
 You mean to say that he deceives me.ogg
 You mean to say that he deceives me.txt
 >>> ../datae\audiobooks\Dumas, Alexandre - The Three Musketeers ## uk {{John Lee}}/{{}}
->>> ../datae\audiobooks\Dumas, Alexandre - The Three Musketeers ## uk {{John Lee}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Dumas, Alexandre - The Three Musketeers ## uk {{John Lee}}\{{}}/1
 adieu.ogg
 Athos!.ogg
 au revoir.ogg
@@ -14439,16 +14430,16 @@ silence!.ogg
 the ninny.ogg
 the traitor.ogg
 this.ogg
-truly!.ogg
+Truly!.ogg
 undead.ogg
->>> ../datae\audiobooks\Dumas, Alexandre - The Three Musketeers ## uk {{John Lee}}\{{}}/2 ## =
+>>> ../datae\audiobooks\Dumas, Alexandre - The Three Musketeers ## uk {{John Lee}}\{{}}/2
 a manuscript in folio.ogg
 a young man.ogg
 ah, ah! [].ogg
 ah, ah!.ogg
-and now~!.ogg
+And now~!.ogg
 Athos, Porthos, and Aramis.ogg
-by whom~!.ogg
+By whom~!.ogg
 Do you say~!.ogg
 Here I am..ogg
 most willingly.ogg
@@ -14458,7 +14449,6 @@ What do you mean!~.ogg
 without reckoning.ogg
 Never, never!.ogg
 That's a frightful!.ogg
-You are very amiable, no doubt, but you would be charming if you would only depart..ogg
 >>> ../datae\audiobooks/Fleming, Ian - You Only Live Twice {{Martin Jarvis}}
 !credit.txt
 Common oleander (Nerium Indicum).txt
@@ -14480,7 +14470,21 @@ There were cigarettes and matches. He lit up and sat back, inhaling luxuriously.
 You only live twice.. Once when you are born.txt
 You only live twice.. Once when you are born.wav
 >>> ../datae\audiobooks\Fleming, Ian - You Only Live Twice {{Martin Jarvis}}/{{}}
->>> ../datae\audiobooks\Fleming, Ian - You Only Live Twice {{Martin Jarvis}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Fleming, Ian - You Only Live Twice {{Martin Jarvis}}\{{}}/## == ## course-
+a man in league with the devil.wav
+budding chrysanthemums on the slopes of Mount Fuji.wav
+four-jet turbofan Douglas DC-8.wav
+in a sincere manner.wav
+in invitation.wav
+in promise~!.wav
+listened with deference.wav
+perfumes and pearls.wav
+the chrysanthemum season.wav
+the sugary perfume of dogwood.wav
+the traditional and auspicious tortoiseshell motif.wav
+to accomplish his mission.wav
+very discreet.wav
+>>> ../datae\audiobooks\Fleming, Ian - You Only Live Twice {{Martin Jarvis}}\{{}}/1
 a Japanese.wav
 anthropologist.wav
 asthenic.wav
@@ -14500,23 +14504,9 @@ the hair.wav
 the ninja.wav
 to fail.wav
 turbofan.wav
->>> ../datae\audiobooks\Fleming, Ian - You Only Live Twice {{Martin Jarvis}}\{{}}/2 ## =
-a man in league with the devil.wav
-at the very least.wav
-budding chrysanthemums on the slopes of Mount Fuji.wav
-Douglas DC-8.wav
-four-jet turbofan Douglas DC-8.wav
-in a sincere manner.wav
-in invitation.wav
-in promise~!.wav
-listened with deference.wav
-perfumes and pearls.wav
-the chrysanthemum season.wav
-the sugary perfume of dogwood.wav
-the traditional and auspicious tortoiseshell motif.wav
-to accomplish his mission.wav
-very discreet.wav
 >>> ../datae\audiobooks\Fleming, Ian - You Only Live Twice {{Martin Jarvis}}\{{}}/3
+at the very least.wav
+Douglas DC-8.wav
 scissors cut paper.wav
 success or failure.wav
 taking aim.wav
@@ -14537,9 +14527,6 @@ What in hell was all this about~!.wav
 You only live twice..wav
 >>> ../datae\audiobooks/Heller, Joseph - Catch-22 ## us {{Trevor White}}
 !credit.txt
->>> ../datae\audiobooks\Heller, Joseph - Catch-22 ## us {{Trevor White}}/2 ## =
-Have you seen _Milton, _John~!.ogg
-Is anybody in the _John, _Milton~!.ogg
 Catch-22. Anyone who wants to get out of combat duty isn't really crazy..ogg
 Chaplain, I once studied Latin.ogg
 Chaplain, I once studied Latin.txt
@@ -14676,14 +14663,13 @@ Two hours. One hundred and twenty minutes. Anything might be done in that time. 
 When I say 'Go,' go. Go!.ogg
 Worried about the cosmos, eh~!.ogg
 >>> ../datae\audiobooks\Huxley, Aldous - Crome Yellow {{Robert Whitfield}}/{{}}
->>> ../datae\audiobooks\Huxley, Aldous - Crome Yellow {{Robert Whitfield}}\{{}}/2 ## =
-You were rather worried about the cosmos last night..ogg
 Black ladders lack bladders..ogg
 Capital performance, capital..ogg
 Everything is still to come, still to come, though it can't be very far off now..ogg
 I did it myself, so I know what it's like..ogg
 The secret of writing is Inspiration..ogg
 The thing had its merits. Oh, decidedly, decidedly! [merits].ogg
+You were rather worried about the cosmos last night..ogg
 >>> ../datae\audiobooks/James, Henry - The Bostonians ## us {{Bill Hootkins}}
 !credit.txt
 And who in the world is Miss Tarrant.ogg
@@ -14761,7 +14747,7 @@ Where was the chap I saw in that picture somewhere.wav
 With will will we withstand, withsay..wav
 Yes but what about oysters. Unsightly like a clot of phlegm. Filthy shells. Devil to open them too..wav
 >>> ../datae\audiobooks\Joyce, James - Ulysses {{Jim Norton}}/{{}}
->>> ../datae\audiobooks\Joyce, James - Ulysses {{Jim Norton}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Joyce, James - Ulysses {{Jim Norton}}\{{}}/1
 a shrew.wav
 Dreck!.wav
 garibaldi.wav
@@ -14982,7 +14968,13 @@ Your woraciousness, fellow-critters.txt
 Your woraciousness, fellow-critters.wav
 You’d better stop spinning that yarn to me—I’m not green. [spin a yarn].wav
 >>> ../datae\audiobooks\Melville, Herman - Moby Dick ## us {{William Hootkins}}/{{}}
->>> ../datae\audiobooks\Melville, Herman - Moby Dick ## us {{William Hootkins}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Melville, Herman - Moby Dick ## us {{William Hootkins}}\{{}}/## == ## course-
+and besides.wav
+Asiatic cholera.ogg
+delightfully and unmistakably warm.wav
+else the most terrible jeopardy would involve all hands.wav
+more hominum.wav
+>>> ../datae\audiobooks\Melville, Herman - Moby Dick ## us {{William Hootkins}}\{{}}/1
 a castaway.wav
 a gam.ogg
 a king.ogg
@@ -14993,7 +14985,6 @@ a sperm whale.wav
 admiral Nelson.wav
 all astir.wav
 an integral.ogg
-Asiatic cholera.ogg
 avatar.ogg
 aye.ogg
 beware!.ogg
@@ -15046,7 +15037,7 @@ may be.wav
 mealy-mouthed.wav
 Merry Christmas.wav
 narwhale.wav
-never~!.ogg
+Never~!.ogg
 nippers.wav
 noun.wav
 obstreperously.wav
@@ -15059,7 +15050,6 @@ pool.ogg
 pâté de foie gras.wav
 Quaker.ogg
 revenge.ogg
-Sir~!.wav
 skrimshander.wav
 slobgollion.wav
 spears.wav
@@ -15078,8 +15068,8 @@ the harpooneer.ogg
 the hyena.wav
 the line.wav
 the phantoms.wav
-the season on the line.wav
-the Season-on-the-Line.wav
+the season on the line ## Case.wav
+the Season-on-the-Line ## Case.wav
 the sermon.wav
 the street.wav
 the tail.wav
@@ -15090,23 +15080,15 @@ whaler.wav
 whatever.wav
 whew!.ogg
 Zeuglodon.wav
->>> ../datae\audiobooks\Melville, Herman - Moby Dick ## us {{William Hootkins}}\{{}}/2 ## =
-and besides.wav
-delightfully and unmistakably warm.wav
-else the most terrible jeopardy would involve all hands.wav
-inexplicable question.wav
-insufferable fetor.wav
-into full consideration.wav
-more hominum.wav
-such a thwack [thwack].ogg
-the mealy-mouthed porpoise.wav
-unconditional inoffensiveness by all to all.wav
 >>> ../datae\audiobooks\Melville, Herman - Moby Dick ## us {{William Hootkins}}\{{}}/3
 asphaltic pavement.wav
 clubs and spears.wav
 confidential terms.wav
 even now.wav
 even then.wav
+inexplicable question.wav
+insufferable fetor.wav
+into full consideration.wav
 meddling with other people’s business.wav
 miserable man.wav
 nimble as a cat.wav
@@ -15115,6 +15097,9 @@ once more.ogg
 six feet five in his socks.wav
 somehow and somewhere.wav
 stream of time.wav
+such a thwack [thwack].ogg
+the mealy-mouthed porpoise.wav
+unconditional inoffensiveness by all to all.wav
 very good.ogg
 whistle of astonishment.wav
 A problem~!.wav
@@ -15157,6 +15142,7 @@ Sail ho!.wav
 Shall I call that wise or foolish, now.txt
 Shall I call that wise or foolish, now.wav
 Ship ahoy! Have ye seen the White Whale~!.wav
+Sir~!.wav
 So, what’s all this staring been about~!.wav
 Star-bo-l-e-e-n-s, a-h-o-y! Eight bells there below! Tumble up!.wav
 Take it easy—why don’t ye take it easy, I say, and burst all your livers and lungs!.wav
@@ -15318,15 +15304,12 @@ When he was out of work, my mother used to give him fourpence.txt
 Will you please keep your impertinent remarks to yourself~!.ogg
 You didn't thank her, or pet her, or admire her, or tell her how splendid she'd been..ogg
 >>> ../datae\audiobooks\Shaw, George Bernard - Pygmalion ## uk {{Cora McDonald}}/{{}}
->>> ../datae\audiobooks\Shaw, George Bernard - Pygmalion ## uk {{Cora McDonald}}\{{}}/1 ## =
-Clara!.ogg
->>> ../datae\audiobooks\Shaw, George Bernard - Pygmalion ## uk {{Cora McDonald}}\{{}}/2 ## =
-Did you try~!.ogg
-You selfish pig.ogg
 A fraud! Oh no. [fraud].ogg
 Amen. You are a born preacher..ogg
 Are we in the way~! [in the way].ogg
 Certainly. Quite right. Most important..ogg
+Clara!.ogg
+Did you try~!.ogg
 Have you no morals, man~! [morals].ogg
 Indeed! Why~!.ogg
 It's handsome. By _George, it's enormous!.ogg
@@ -15342,6 +15325,7 @@ Very well, sir. It's for you to say..ogg
 Well !!!.ogg
 Well, it is and it isn't..ogg
 What a pity!.ogg
+You selfish pig.ogg
 >>> ../datae\audiobooks/Stoker, Bram - Dracula ## uk {{John Lee}}
 !credit.txt
 Are you mad, that you speak of such things.ogg
@@ -15447,21 +15431,20 @@ You'll get bed and breakfast all right.. more than you can stomach..ogg
 You’re arrested for Gate-breaking.ogg
 You’re arrested for Gate-breaking.txt
 >>> ../datae\audiobooks\Tolkien, J.R.R. - The Lord of the Rings {{Rob Inglis}}/{{}}
->>> ../datae\audiobooks\Tolkien, J.R.R. - The Lord of the Rings {{Rob Inglis}}\{{}}/2 ## =
-Then we shall see what we shall see.ogg
 Are you getting weary, or feeling impatient, hmm, eh~!.ogg
 But I do feel hungry. Hmm! Can I smell it from here~! What have you stewed~!.ogg
 I am hungry. What is the time~!.ogg
 I’ll do as I choose and go as I please.ogg
+Then we shall see what we shall see.ogg
 Warning~! Warning against what~!.ogg
 What are you thinking about~! Have you decided what to do~!.ogg
 >>> ../datae\audiobooks/Wells, H. G. - The War of the Worlds ## uk {{Cori Samuel}}
 !credit.txt
->>> ../datae\audiobooks\Wells, H. G. - The War of the Worlds ## uk {{Cori Samuel}}/1 ## =
-mad as a March hare.wav
-to us.wav
 The cylinder was artificial—hollow—with an end that screwed out! Something within the cylinder was unscrewing the top!.wav
 The immediate pressure of necessity has brightened their intellects, enlarged their powers, and hardened their hearts..wav
+>>> ../datae\audiobooks\Wells, H. G. - The War of the Worlds ## uk {{Cori Samuel}}/{{}}
+mad as a March hare.wav
+to us ## course-.wav
 >>> ../datae\audiobooks/Wilde, Oscar - Collected Stories {{Frank Muller}}
 !credit.txt
 The world is a stage, but the play is badly cast. [+][Wildean].wav
@@ -15485,8 +15468,6 @@ The next morning, however, when they came down to breakfast.txt
 ''Bring me the two most precious things in the city,'' said God.txt
 ''What a remarkable phenomenon,'' said the Professor of Ornithology.ogg
 ''What a remarkable phenomenon,'' said the Professor of Ornithology.txt
->>> ../datae\audiobooks\Wilde, Oscar - The Happy Prince. Tales ## uk {{Cora McDonald}}/2 ## =
-We have certain accomplishments, and that is more than sufficient.ogg
 And I am so clever that sometimes I don't understand a single word of what I am saying..ogg
 BAD and GRAND sound very much the same, indeed they often are the same..ogg
 Boom! Boom! went the Roman Candle. [Roman candle].ogg
@@ -15505,6 +15486,8 @@ TRESPASSERS WILL BE PROSECUTED.ogg
 What a curious shape you are! May I ask were you born like that, or is it the result of an accident~!.ogg
 Whizz! Whizz! went the Catherine Wheel. [Catherine wheel][whizz].ogg
 You will never be in the best society unless you can stand on your heads..ogg
+>>> ../datae\audiobooks\Wilde, Oscar - The Happy Prince. Tales ## uk {{Cora McDonald}}/{{}}
+We have certain accomplishments, and that is more than sufficient.ogg
 >>> ../datae\audiobooks/Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}
 !credit.txt
 A cigarette is the perfect type of a perfect pleasure.ogg
@@ -15633,7 +15616,7 @@ _Basil, this is extraordinary!  I must see _Dorian _Gray..ogg
 _Dorian's whims are laws to everybody, except himself. [whims].ogg
 _Sibyl, you are mad about him. [mad].ogg
 >>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}/{{}}
->>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/1 ## =
+>>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/1
 ah.ogg
 am.ogg
 charmingly.ogg
@@ -15963,7 +15946,7 @@ a charlatan.wav
 a cloud.wav
 a curse.wav
 a dog's chance.wav
-a fair start.wav
+a fair start ## course-.wav
 a finger.wav
 a French.wav
 a general speculation.wav
@@ -15981,7 +15964,7 @@ a man and a woman.wav
 a man.wav
 a melon.wav
 a naked man [naked].wav
-a new sense.wav
+a new sense ## course-.wav
 a noise.wav
 a pessimist.wav
 a plasterer's labourer.wav
@@ -16055,7 +16038,7 @@ another [].wav
 another.wav
 answer.wav
 anxious solicitude.wav
-any case.wav
+any case ## course-.wav
 anyhow.wav
 anything.wav
 architect.wav
@@ -16181,8 +16164,8 @@ Burma.wav
 burst.wav
 business.wav
 busy.wav
-but all the time.wav
-but also.wav
+but all the time ## course-.wav
+but also ## course-.wav
 but.wav
 butcher.wav
 by degrees.wav
@@ -16425,7 +16408,7 @@ full speed.wav
 furiously.wav
 further.wav
 future.wav
-gained by work.wav
+gained by work ## course-.wav
 gains.wav
 gales.wav
 gallop away at full speed.wav
@@ -16459,7 +16442,7 @@ go now.wav
 go.wav
 going back.wav
 going fantee [go Fantee].wav
-going on.wav
+going on ## course-.wav
 gold plate.wav
 gold.wav
 golden age.wav
@@ -16470,7 +16453,7 @@ got used to it.wav
 grasp.wav
 grass.wav
 great figures.wav
-great force.wav
+great force ## course-.wav
 great gamblers.wav
 green park.wav
 grew large.wav
@@ -16495,7 +16478,7 @@ hard-working.wav
 harden itself.wav
 have past away.wav
 he had.wav
-he has.wav
+he has ## course-.wav
 he.wav
 health.wav
 heaved.wav
@@ -16543,7 +16526,7 @@ in any case.wav
 in fact.wav
 in filth.wav
 in first.wav
-in luck.wav
+in luck ## course-.wav
 in one way or another.wav
 in other case.wav
 in other words.wav
@@ -16568,7 +16551,7 @@ instead.wav
 interest.wav
 interested in.wav
 irreproachably.wav
-is not.wav
+is not ## course-.wav
 islands of the blessed.wav
 islands of the blest.wav
 it is becoming evident.wav
@@ -16578,7 +16561,7 @@ it takes two.wav
 it was.wav
 it wasn't.wav
 it will become.wav
-it would.wav
+it would ## course-.wav
 jam.wav
 jar.wav
 jaw.wav
@@ -16690,7 +16673,7 @@ numbers.wav
 obeyed.wav
 occasionally.wav
 occupy the throne.wav
-of course..wav
+of course.wav
 of no importance whatsoever.wav
 off days.wav
 off.wav
@@ -17034,7 +17017,7 @@ they had.wav
 they were.wav
 thief.wav
 thinking nothing at all.wav
-this is.wav
+this is ## course-.wav
 this.wav
 those fellows.wav
 thus.wav
@@ -17417,7 +17400,7 @@ in a first place.wav
 in a twinkling of an eye.wav
 Indian raja.wav
 intelligence.wav
-it did.wav
+it did ## course-.wav
 it was.wav
 jump.wav
 keep still.wav
@@ -17482,7 +17465,7 @@ that's all.wav
 the babies.wav
 the melting pot.wav
 the sooner the quicker.wav
-they do.wav
+they do ## course-.wav
 thing.wav
 til they all did [til].wav
 time.wav
@@ -22198,7 +22181,7 @@ Alright! @ excited ### Child-Fem-A_Excited-Alright_VKT_06369.wav
 Alright. ### [Mid-Aged-Fem-C_Alright_VKT_10711].wav
 Alright. @ dejected ### Child-Fem-A_Dejected-Alright_VKT_06346.wav
 Am I right, or am I right~! ### [Mid-Aged-Fem-C_Am-I-Right-Or-Am-I-Right_VKT_10714].wav
-am not ### [Child-Fem-B_Am-Not_VKT_06710].wav
+am not ## course- ### [Child-Fem-B_Am-Not_VKT_06710].wav
 Am not! ### [Child-Fem-B_Am-Not_VKT_06710].wav
 Amen! ### Mid-Aged-Fem-C_Amen_VKT_10713.wav
 And action! ### Mid-Aged-Male-A_And-Action_VKT_11116.wav
@@ -22827,7 +22810,7 @@ How've you been keeping~! ### [Mid-Aged-Fem-B_Howve-You-Been-Keeping_VKT_10486].
 How've you been~! ### [Adult-Fem-D_Howve-You-Been_VKT_01556].mp3
 How've you been~! ### [Mid-Aged-Male-C_Howve-You-Been_VKT_12145].wav
 Howdy! ### [Senior-Male-A_Howdy_VKT_13348].wav
-how~! ### [Adult-Male-F_How_VKT_05971].mp3
+How~! ### [Adult-Male-F_How_VKT_05971].mp3
 How~! ### [Mid-Aged-Fem-C_How_VKT_10841].wav
 huh! ### [Adult-Fem-B_Huh_VKT_00513].mp3
 Huh, nice job! ### [Mid-Aged-Male-C_Huh-Nice-Job_VKT_12148].wav
@@ -24105,7 +24088,7 @@ Why am I doing this~! @ stress on I ### [Teen-Fem-C_Why-Am-I-Doing-This_VKT_1475
 Why am I doing this~! @ stress on why ### [Teen-Male-A_Why-Am-I-Doing-This_VKT_15578].wav
 Why am I even here~! ### [Adult-Male-C_Why-Am-I-Even-Here_VKT_04493].mp3
 Why not~! ### [HumanVocalMal CTE03_84.6].wav
-Why, oh why, oh why~! ### [HumanVocalMal CTE03_84.4].wav
+Why, oh why, oh why~! ## course- ### [HumanVocalMal CTE03_84.4].wav
 Why, why, tell me why~! ### [HumanVocalMal CTE03_91.3].wav
 Why~! ### [Adult-Fem-F_Why_VKT_02704].mp3
 Wicked! ### [Adult-Fem-B_Wicked_VKT_00787].mp3
@@ -25657,7 +25640,7 @@ Nickel Tailings, Sudbury, _Ontario [pollution][tailings] ## date 1996 ###.jpg
 Nickel Tailings, Sudbury, _Ontario [pollution][tailings] ## date 1996.jpg
 Open Pit Copper Mine, Highland Valley, British Columbia [open-pit mine][pit@mine] ## date 1985.jpg
 The Gulf oil spill, Oil Skimming Boat near Ground Zero, June 24, 2010 [oil spill][oil spot][spill@oil][ecological].jpg
-Uralkali Potash Mine #3, Berezniki, Russia [potashery] ## date 2017.jpg
+Uralkali Potash Mine, Berezniki, Russia [potashery] ## date 2017.jpg
 >>> ../datae\photo abc/Bury photocuisine {{Photo.. M. Bury}}
 boiled candy {lollipops}.jpg
 boiled candy {lollipops}.jpg.uid-zps
@@ -25780,6 +25763,14 @@ Aerial view of the South Fork of the Potomac River [Pendelton county][Potomac][v
 Cadiz Dunes Wilderness, Mojave Desert [Mojave Desert][wilderness][San Bernardino County][desert].jpg
 Cadiz Dunes Wilderness, Mojave Desert [Mojave Desert][wilderness][San Bernardino County][desert][dune][dunes] ## qrop l10 r27.jpg
 Lower Manhattan and New York Harbor [Manhattan].jpg
+>>> ../datae\photo def/De Lassée {{Photo.. Floriane De Lassée}}
+Caravanserai, Istanbul [caravanserai].jpg
+construction site ### Las Vegas.jpg
+Las Vegas.jpg
+Macao.jpg
+Shanghai [office building].jpg
+Shanghai.jpg
+Sulawesi, Indonesia [Sulawesi][veranda].jpg
 >>> ../datae\photo def/de Luca {{Photo.. Araldo de Luca}}
 Ancient Silver Cosmetic Spoon [cosmetic spoon][cosmetic] ## qrop q.jpg
 Hilt of Sword in Honor of Ferdinand the Devout of Bourbon and Duke of Noto [hilt of sword][hilt].jpg
@@ -25974,6 +25965,10 @@ sausages and {saucissons}.jpg
 Swedish {crispbreads}.jpg
 vegetable broth [vegetable soup].jpg
 vegetable broth [vegetable soup].jpg.uid-zps
+>>> ../datae\photo def/Fokos {{Photo.. David Fokos}}
+Breaking Clouds [broken clouds][broken@clouds].jpg
+gate @ passage.jpg
+solar eclipse ## date 2002.jpg
 >>> ../datae\photo def/Fondacci-Markezana {{Photo.. Fondacci-Markezana}}
 chocolate and pistachio {macaroons}.jpg
 chocolate and pistachio {tuile} biscuits.jpg
@@ -26031,6 +26026,15 @@ roast beef with gravy and vegetables in Yorkshire pudding [gravy][Yorkshire pudd
 seasoning steaks [seasoning] ## qrop ql.jpg
 three saffron sugar crystals [saffron yellow] ## qrop l4 r8 ## qropt!.jpg
 two Turkish {flatbreads}.jpg
+>>> ../datae\photo def/Frankel {{Photo.. Felice Frankel}}
+A metaphor for binary language [binary] ## crop r9 ## qrop r23 ## qropt!.jpg
+A piece of computer magnetic-core memory under microscope [core memory][ferrite].jpg
+Bacillus subtilis colony [Bacillus][bacillus].jpg
+darkfield device [darkfield][microscope][microscopy].jpg
+Iron-riched fluid under the influence of magnets [ferrofluid][magnetorheological][magnetorheological fluid].jpg
+lotus effect [superhydrophobicity][superhydrophobic][hydrophobic].jpg
+Proteus colony [proteus].png
+vibrating string [vibrating].jpg
 >>> ../datae\photo def/Freed {{Photo.. Leonard Freed}}
 A man taken into custody in a police car %% New York City, 1978 [take into custody][handcuffed] ## qropt!.jpg
 An _IBM programmer, 1965 [reset button][programmer] ## qrop l25 r8.jpg
@@ -27723,9 +27727,11 @@ Risk of falling! [falling].wav
 Rocks fall from the cliff! [cliff] {{Photo.. Martingraf $dreamstime 60026647}}.jpg
 Rocks fall from the cliff! [cliff].wav
 Steep drop beyond this point! [caution] ## qrop l13 r15 ## qropt! {{Photo.. Martincp $dreamstime 53430425}}.jpg
+Steep drop beyond this point! [caution].wav
 Sudden high waves! Keep off the rocks! [sudden] ## qrop l27 r15 b2 {{Photo.. Paul Brennan $dreamstime 47129044}}.jpg
 Sudden high waves! Keep off the rocks! [sudden].wav
 Swift water and eroding bank! [danger] ## qrop l18 r16 {{Photo.. Bounder32h $dreamstime 43774308}}.jpg
+Swift water and eroding bank! [danger].wav
 Thin ice! Keep off! [keep off] ## qrop l4 r29 {{Photo.. Janeh15 $dreamstime 8246152}}.jpg
 Thin ice! Keep off! [keep off].wav
 Warning! Electric fence! [electric fence] ## qrop qr ## crop qr {{Photo.. Carroteater $dreamstime 31439814}}.jpg
@@ -30022,7 +30028,7 @@ sparrow ## qrop l23 r11 {{Photo.. Pindiyath100 $dreamstime 5949276}}.jpg
 stork ## qrop l25 r9 {{Photo.. Alinamd $dreamstime 106633847}}.jpg
 sulphur-crested cockatoo {{Photo.. Panuruangjan $dreamstime 32498319}}.jpg
 sulphur-crested cockatoo {{Photo.. Panuruangjan $dreamstime 32498319}}.txt
-swan ## qrop ql {{Photo.. Beijing Hetuchuangyi Images Co,. Ltd . $dreamstime 79448067}}.jpg
+swans [swan] ## qrop ql {{Photo.. Beijing Hetuchuangyi Images Co,. Ltd . $dreamstime 79448067}}.jpg
 toucan {{Photo.. Scanrail $dreamstime 31455101}}.jpg
 violet sabrewing [sabrewing] ## qrop l25 r8 {{Photo.. Ondřej Prosický $dreamstime 67982186}}.jpg
 white peacock [peacock] ## qrop l7 r18 {{Photo.. Marta Mirecka $dreamstime 6470318}}.jpg

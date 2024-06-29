@@ -8,9 +8,11 @@ namespace studia::one
         using editor = gui::text::one_line_editor;
         using entry = content::out::course::search_entry;
 
+        gui::text::view Exact;
         gui::text::view Title;
         gui::text::view Words;
         gui::text::view Media;
+        gui::area<editor> exact;
         gui::area<editor> title;
         gui::area<editor> words;
         gui::area<editor> media;
@@ -22,6 +24,7 @@ namespace studia::one
 
         search ()
         {
+            Exact.text = "exactly:";
             Title.text = "starts with:";
             Words.text = "word starts with:";
             Media.text = "media contain:";
@@ -32,6 +35,7 @@ namespace studia::one
 
         void reload (content::unit* unit = nullptr, str path = "")
         {
+            exact.object.text = "";
             title.object.text = "";
             words.object.text = "";
             if (true) sys::in::file("../data/course_searchmap_title.dat") >> titlemap;
@@ -52,6 +56,8 @@ namespace studia::one
                 int y = 0;
 
                 result.coord = xywh(0, 0, W-w, H);
+                Exact .coord = xywh(W-w, y, w, h); y += h;
+                exact .coord = xywh(W-w, y, w, h); y += h;
                 Title .coord = xywh(W-w, y, w, h); y += h;
                 title .coord = xywh(W-w, y, w, h); y += h;
                 Words .coord = xywh(W-w, y, w, h); y += h;
@@ -69,9 +75,11 @@ namespace studia::one
                     ed.object.padding = xyxy{2*l, 2*l, 2*l, 2*l};
                     ed.show_focus = true; };
 
+                Exact.color = s.touched.first;
                 Title.color = s.touched.first;
                 Words.color = s.touched.first;
                 Media.color = s.touched.first;
+                edit(exact);
                 edit(title);
                 edit(words);
                 edit(media);
@@ -83,36 +91,46 @@ namespace studia::one
                 notify(&link);
             }
 
-            if (what == &title.object.update_text
+            if (what == &exact.object.update_text
+            or  what == &title.object.update_text
             or  what == &words.object.update_text)
             {
-                bool first = 
-                what == &title.object.update_text;
-                auto& edit = first ? title : words;
-                auto& map = first ? titlemap : wordsmap;
+                bool o1 = what == &exact.object.update_text;
+                bool o2 = what == &title.object.update_text;
+                bool o3 = what == &words.object.update_text;
+
+                auto& edit = o1 ? exact : o2 ? title : words;
+                auto& map = o2 ? titlemap : wordsmap;
 
                 str s = edit.object.text; s.strip();
                 s = eng::asciized(s).ascii_lowercased();
                 if (s.size() < 2) return;
 
-                if (first)
-                words.object.text = ""; else
-                title.object.text = "";
+                if (not o1) exact.object.text = "";
+                if (not o2) title.object.text = "";
+                if (not o3) words.object.text = "";
+
                 media.object.text = "";
                 thread.stop = true;
                 thread.join();
                 result.object.
                     clear();
 
-                auto it = map.lower_bound(entry{s},
+                auto lower = map.lower_bound(entry{s},
+                    [](auto& a, auto &b) {
+                    return a.word < b.word;
+                    });
+
+                auto upper = map.upper_bound(entry{s + "zzz"},
                     [](auto& a, auto &b) {
                     return a.word < b.word;
                     });
 
                 array<entry> entries;
-                while (it != map.end() and
-                    it->word.upto(s.size()) == s)
-                    entries += *it++;
+                for (auto it = lower; it != upper; ++it)
+                if (o1 and it->word == s or
+                not o1 and it->word.upto(s.size()) == s)
+                    entries += *it;
 
                 for (auto& e: entries)
                 e.link.replace_all("| ", "|0");
@@ -159,6 +177,7 @@ namespace studia::one
                 str src = media.object.text; src.strip();
                 if (src.size() < 2) return;
 
+                exact.object.text = "";
                 title.object.text = "";
                 words.object.text = "";
                 thread.stop = true;

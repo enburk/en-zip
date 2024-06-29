@@ -315,7 +315,11 @@ namespace studio::one
             and entries.size() == 1)
                 continue;
 
-            for (str s: entries)
+            for (str& s: entries)
+            s = eng::lowercased(simple(s));
+            entries.deduplicate();
+
+            for (str s: entries) if (s.size() >= 2)
             unused_resources_vocabulary[s] += r;
         }
 
@@ -333,6 +337,8 @@ namespace studio::one
             for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), true))
             for (str form: eng::forms(word))
             {
+                form = eng::lowercased(simple(form));
+                
                 if (
                 current_vocabulary.contains(form)) continue;
                 current_vocabulary.emplace(form);
@@ -356,8 +362,11 @@ namespace studio::one
                     // if all words are known
                     bool well_known = true;
                     for (str x: all_entries(r, vocabulary))
-                    if  (not current_vocabulary.contains(x))
-                        well_known = false;
+                    if  (not x.contains(" ") // "see you"
+                    and  not current_vocabulary.contains(
+                         eng::lowercased(simple(x)))) {
+                         well_known = false;
+                         break; }
 
                     if (not well_known)
                         continue;

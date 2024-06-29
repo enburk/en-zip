@@ -30,6 +30,8 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
+        const array<str> forms = {"s", "ing", "ed", "ly", "lly", "less", "ness"};
+
         hashset<str> course_vocabulary_forms;
         hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
@@ -42,17 +44,17 @@ namespace studio::one
                 str sense =
                 s.extract_from("@");
 
-                for (str f: eng::forms(s))
+                for (str f: eng::forms(s, forms))
                 course_vocabulary_forms.
                     emplace(f);
             }
 
             if (entry.eng.starts_with(": "))
             {
-                if (entry.eng.contains(" "))
+                str s = entry.eng,from(2);
+                if (s.contains(" "))
                     continue;
 
-                str s = entry.eng;
                 s.replace_all(".", "");
                 s.replace_all("!", "");
                 s.replace_all("?", "");
@@ -73,7 +75,7 @@ namespace studio::one
                     emplace(s);
 
                 for (str s: ss.split_by(" "))
-                for (str f: eng::forms(s))
+                for (str f: eng::forms(s, forms))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -89,10 +91,16 @@ namespace studio::one
         course.entries,
         data.resources);
 
+        int more_audio = 0;
+        int more_video = 0;
+
         array<str> sounds;
         hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
+            if (r.options.contains("asset"))
+                continue;
+
             str abstract = simple(r.
                 abstract);
 
@@ -124,22 +132,29 @@ namespace studio::one
                 auto& w = abstract;
                 auto& v = resource_vocabulary;
 
-                if (w.starts_with("a "    )) v += w.from(2); else
-                if (w.starts_with("an "   )) v += w.from(3); else
-                if (w.starts_with("the "  )) v += w.from(4); else
-                if (w.starts_with("to "   )) v += w.from(3); else
+                if (w.starts_with("a "  )) v += w.from(2); else
+                if (w.starts_with("an " )) v += w.from(3); else
+                if (w.starts_with("the ")) v += w.from(4); else
+                if (w.starts_with("to " )) v += w.from(3); else
                 {}
-                if (w.starts_with("a "    )) v += str(w.from(2)) + "@@"; else
-                if (w.starts_with("an "   )) v += str(w.from(3)) + "@@"; else
-                if (w.starts_with("the "  )) v += str(w.from(4)) + "@@"; else
-                if (w.starts_with("to "   )) v += str(w.from(3)) + "@@"; else
+                if (w.starts_with("a "  )) v += str(w.from(2)) + "@@"; else
+                if (w.starts_with("an " )) v += str(w.from(3)) + "@@"; else
+                if (w.starts_with("the ")) v += str(w.from(4)) + "@@"; else
+                if (w.starts_with("to " )) v += str(w.from(3)) + "@@"; else
                 {}
-                if (w.starts_with("a "    )) v += str(w.from(2)) + "@noun"; else
-                if (w.starts_with("an "   )) v += str(w.from(3)) + "@noun"; else
-                if (w.starts_with("the "  )) v += str(w.from(4)) + "@noun"; else
-                if (w.starts_with("to "   )) v += str(w.from(3)) + "@verb"; else
+                if (w.starts_with("a "  )) v += str(w.from(2)) + "@noun"; else
+                if (w.starts_with("an " )) v += str(w.from(3)) + "@noun"; else
+                if (w.starts_with("the ")) v += str(w.from(4)) + "@noun"; else
+                if (w.starts_with("to " )) v += str(w.from(3)) + "@verb"; else
                 {}
             }
+
+            str
+            abstract_ = abstract;
+            abstract_.replace_all("_", "");
+            if (abstract_!= abstract)
+                resource_vocabulary +=
+                abstract_;
 
             if (r.sense == "")
             resource_vocabulary +=
@@ -173,12 +188,19 @@ namespace studio::one
 
             if (used
             or  abstract.size() < 2
+            or  r.options.contains("course-")
             or  course_vocabulary_forms.
                 contains(abstract))
                 continue;
 
             if (r.options.contains("="))
             report::anoma2 += cliplink(&r);
+
+            if (abstract.starts_with("a "  )) abstract = abstract.from(2); else
+            if (abstract.starts_with("an " )) abstract = abstract.from(3); else
+            if (abstract.starts_with("the ")) abstract = abstract.from(4); else
+            if (abstract.starts_with("to " )) abstract = abstract.from(3); else
+            {}
 
             int spaces = 0;
             for (char c: abstract)
@@ -187,13 +209,17 @@ namespace studio::one
 
             int k =
             spaces == 0 ? 11 :
-            spaces == 1 ? 20 : 40;
+            spaces == 1 ? 25 : 50;
 
             if (r.weight < k
             or  r.sense != ""
             or  r.kind == "video")
             unused_resources.
                 emplace(&r);
+            else
+            if (r.kind == "audio"
+            and abstract.contains(" "))
+                more_audio++;
 
             if (r.kind == "audio"
             and r.options.contains("sound"))
@@ -352,6 +378,12 @@ namespace studio::one
                 cliplink(r);
         }
 
+        report::audioq.log += bold(blue(
+        "+" + str(more_audio) + " more"));
+
+        report::videoq.log += bold(blue(
+        "+" + str(more_video) + " more"));
+
         if (int nn = 500, n = 
         report::audiom.log.size(); n > 2*nn)
         report::audiom.log.resize(nn),
@@ -382,14 +414,11 @@ namespace studio::one
         array<search_entry> searchmap;
         for (auto& e: course.searchmap)
         {
-            if (e.word.size() > 30)
-                continue;
-
             auto words =
             eng::parser::entries(
             vocabulary, e.word, false);
 
-            words.erase_if([](str const& s){ return s.size() < 3; });
+            words.erase_if([](str const& s){ return s.size() < 2; });
             words.deduplicate();
 
             for (str w: words)

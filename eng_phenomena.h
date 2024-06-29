@@ -100,6 +100,7 @@ namespace eng
             if (s.ends_with("e" )) { s.truncate(); }
             s += "ed";
         }
+        else s += kind;
         return s;
     }
 
@@ -135,10 +136,16 @@ namespace eng
             s.truncate(); if (last_cons(s))
             s.truncate();
         }
+        else
+        if (s.ends_with(kind))
+        {
+            s.resize(s.size() -
+                kind.size());
+        }
         return s;
     }
 
-    generator<str> forms (str s)
+    generator<str> forms (str s, array<str> const& forms = {"s", "ing", "ed"})
     {
         co_yield s;
 
@@ -146,7 +153,7 @@ namespace eng
         or s.contains(" "))
             co_return;
 
-        for (str form: {"s", "ing", "ed"})
+        for (str form: forms)
         {
             str f = eng::form(s, form);
             if (f != s) co_yield f;
@@ -155,7 +162,7 @@ namespace eng
                 continue;
 
             str b = eng::backform(s, form);
-            if (b != s)  co_yield b;
+            if (b != s) co_yield b;
         }
     }
 }

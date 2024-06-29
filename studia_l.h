@@ -66,6 +66,8 @@ widget<studia_l>
             one.contents.object.selected = path; 
             one.editor.object.editor.go(doc::place{
             line != "" ? line.stoi() : 0, 0});
+
+            focus = &one;
         }
         if (link.starts_with("file://"))
         {

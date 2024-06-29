@@ -56,25 +56,9 @@ namespace studio::dic
 
         for (auto& r: data.resources)
         {
-            if (r.title == "speaker.128x096"
-            or  r.title == "player.black.play.64x64"
-            or  r.title == "player.black.pause.64x64"
-            or  r.title == "player.black.next.64x64"
-            or  r.title == "player.black.stop.64x64"
-            or  r.title == "icon.chevron.up.black.128x128"
-            or  r.title == "icon.chevron.down.black.128x128"
-            or  r.title == "icon.chevron.right.black.128x128"
-            or  r.title == "icon.chevron.left.black.128x128"
-            or  r.title == "icon.chevron.up.double.black.128x128"
-            or  r.title == "icon.chevron.down.double.black.128x128"
-            or  r.title == "icon.chevron.right.double.black.128x128"
-            or  r.title == "icon.chevron.left.double.black.128x128"
-            or  r.title == "icon.settings.black.192x192")
-            {
-                r.options += "asset";
+            if (r.options.contains("asset")) {
                 data.assets.insert(&r);
-                continue;
-            }
+                continue; }
 
             if (r.abstract.contains(one_of ("{}[]")))
                 report::errors += yellow("{}[]:") +
@@ -120,6 +104,13 @@ namespace studio::dic
             if (s.starts_with("Her "  )) entries += "one's" + str(s.from(3)); else
             {}
 
+            str
+            abstract_ = r.abstract;
+            abstract_.replace_all("_", "");
+            if (abstract_!= r.abstract)
+                entries +=
+                abstract_;
+
             array<str> apostros; str a = u8"’";
             for(auto& e: entries) if (e.contains(a)) apostros += e;
             for(auto& e: apostros) e.replace_all(a, "'");
@@ -153,6 +144,9 @@ namespace studio::dic
             for (auto& r: rr)
             if (r->kind == "audio") a++; else
             if (r->kind == "video") v++;
+
+            if (a > 1000) a = a/100*100; else
+            if (a > 100) a = a/10*10;
 
             if (a > 0) frequency_a[a] += entry;
             if (v > 0) frequency_v[v] += entry;
@@ -288,6 +282,7 @@ namespace studio::dic
                 r.usage[0] = it->second.size();
 
             if (it == resources2titles.end()
+            and not r.options.contains("asset")
             and not r.options.contains("sic!")
             and not r.options.contains("==")
             and not r.options.contains("=")

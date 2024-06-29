@@ -141,8 +141,9 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "date "};
-                    static const array<str> exact = {"sic!", "Case", "wide", "=", "==",
-                    "us","uk","ca","au","ru", "poem","song","sound","number","pixed",
+                    static const array<str> exact = {"sic!","Case","wide","asset","course-",
+                    "us","uk","ca","au","ru", "=", "==", "xlam",
+                    "poem","song","sound","number","pixed",
                     "fade","fade in","fade out",
                     "{1}","{2}","{3}","{1,2}",
                     "reduced","unclear"};
@@ -159,7 +160,7 @@ namespace media::scan
                 for (str option: resource.options)
                 {
                     static const array<str> upto5 = {"crop ", "qrop ", "date "};
-                    static const array<str> exact = {"sic!", "Case", "wide", "=", "==",
+                    static const array<str> exact = {"sic!","Case","wide","asset","course-",
                     "6+","8+","10+","12+","14+","16+","18+","21+","99+",
                     "qropt!", "noqrop"};
                     if (not exact.contains(option)

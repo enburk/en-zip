@@ -8,6 +8,7 @@ date(2) @ fruit           = финик
 object(1) @ noun          = объект, предмет, цель                     # 10+ /// `object
 object(1) @ grammar       = в грамматике: дополнение                  # 12+ /// `object
 object(2) @ verb          = возражать, протестовать                   # 10+ /// ob`ject
+: an object is a noun, ~ to object is a verb
 ---
 objective @ adjective     = объективный
 objective @ photo %% also: object lens/glass = объектив

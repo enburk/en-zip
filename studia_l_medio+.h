@@ -13,6 +13,7 @@ namespace studia
         gui::button button_qrop;
         gui::button button_Qrop;
         gui::button button_drop;
+        gui::button button_cmin;
         gui::button button_Zoom;
         gui::button button_zoom;
         gui::button button_play;
@@ -77,15 +78,16 @@ namespace studia
                 int w = gui::metrics::text::height*5;
                 int h = gui::metrics::text::height*12/10;
 
-                button_full.coord = xywh(0*W/8, 0, W/8, h);
-                button_crop.coord = xywh(1*W/8, 0, W/8, h);
-                button_qrop.coord = xywh(2*W/8, 0, W/8, h);
-                button_Qrop.coord = xywh(3*W/8, 0, W/8, h);
-                button_drop.coord = xywh(4*W/8, 0, W/8, h);
-                button_Zoom.coord = xywh(5*W/8, 0, W/8, h);
-                button_zoom.coord = xywh(6*W/8, 0, W/8, h);
-                button_play.coord = xywh(7*W/8, 0, W/8, h);
-                button_stop.coord = xywh(8*W/8, 0, W/8, h);
+                button_full.coord = xywh(0*W/9, 0, W/9, h);
+                button_crop.coord = xywh(1*W/9, 0, W/9, h);
+                button_qrop.coord = xywh(2*W/9, 0, W/9, h);
+                button_Qrop.coord = xywh(3*W/9, 0, W/9, h);
+                button_drop.coord = xywh(4*W/9, 0, W/9, h);
+                button_cmin.coord = xywh(5*W/9, 0, W/9, h);
+                button_Zoom.coord = xywh(6*W/9, 0, W/9, h);
+                button_zoom.coord = xywh(7*W/9, 0, W/9, h);
+                button_play.coord = xywh(8*W/9, 0, W/9, h);
+                button_stop.coord = xywh(9*W/9, 0, W/9, h);
 
                 canvas.coord = xyxy(0, h, W, H);
                 full  .coord = xyxy(0, h, W, H);
@@ -108,6 +110,7 @@ namespace studia
                 button_qrop.text.text = "qrop";
                 button_Qrop.text.text = "qropt!";
                 button_drop.text.text = "reset";
+                button_cmin.text.text = "course-";
                 button_Zoom.text.text = "zoom+";
                 button_zoom.text.text = "zoom-";
                 button_play.text.text = "play";
@@ -184,6 +187,13 @@ namespace studia
                 resource.options.
                 try_emplace(
                 "qropt!");
+                notify();
+            }
+            if (what == &button_cmin)
+            {
+                resource.options.
+                try_emplace(
+                "course-");
                 notify();
             }
             if (what == &button_drop)

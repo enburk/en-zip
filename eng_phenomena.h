@@ -145,13 +145,16 @@ namespace eng
         return s;
     }
 
-    generator<str> forms (str s, array<str> const& forms = {"s", "ing", "ed"})
+    generator<str> forms (str s)
     {
         co_yield s;
 
         if (s.size() < 3
         or s.contains(" "))
             co_return;
+
+        const array<str> forms =
+        {"s", "ing", "ed", "ly", "lly", "less", "ness"};
 
         for (str form: forms)
         {

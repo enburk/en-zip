@@ -335,7 +335,7 @@ namespace studio::one
 
             for (str phrase: entry.vocabulary)
             for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), true))
-            for (str form: eng::forms(word))
+            for (auto forms = eng::forms(word); str form: forms)
             {
                 form = eng::lowercased(simple(form));
                 
@@ -362,7 +362,8 @@ namespace studio::one
                     // if all words are known
                     bool well_known = true;
                     for (str x: all_entries(r, vocabulary))
-                    if  (not x.contains(" ") // "see you"
+                    if  (x.size() >= 2 // skip "," "!" "?"
+                    and  not x.contains(" ") // "see you"
                     and  not current_vocabulary.contains(
                          eng::lowercased(simple(x)))) {
                          well_known = false;

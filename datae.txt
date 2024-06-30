@@ -26126,6 +26126,18 @@ whisk ## qrop t4 b13 ## qropt!.jpg
 Greta _Garbo [+][actress@cinema] ## date 1925 ## qrop l3 r14 ## qropt!.jpg
 >>> ../datae\photo gh/Gescheidt {{Photo.. Alfred Gescheidt}}
 Self-portrait [self-portrait@photo][photographer] ## date 1953.jpg
+>>> ../datae\photo gh/Giovan {{Photo.. Tria Giovan}}
+A Civil War Cipher Key Captured in _Richmond [cipher][cryptographic].jpg
+Civil War Cavalryman Gear.jpg
+Civil War Cavalryman Gear.txt
+Civil War Union {Signalman}'s Uniform.jpg
+Civil War {Derringer}.jpg
+Handcuffs Used on _Lincoln Assassin [handcuffs].jpg
+Hatchet and Leather Belt from U.S. Civil War [hatchet@@].jpg
+Rare _Confederate Artifacts from the Civil War.jpg
+Rare _Confederate Artifacts from the Civil War.txt
+Shimmer [shimmer] ## date 2008.jpg
+{Confederate States of America} Silver Pin with {Thirteen} Stars.jpg
 >>> ../datae\photo gh/Goldes {{Photo.. David Goldes}}
 Air, glass, water, air [conductivity][electroconductibility] ## date 2013 ## crop t1 b1 ## qrop t12 b3 ## qropt!.jpg
 Arcing Wire [arcing].jpg
@@ -29184,7 +29196,7 @@ wine ## qrop ql {{Photo.. Zetaty $dreamstime 75498695}} White wine composition w
 >>> ../datae\photo_dreamstime\food/~kitchenware
 a cast-iron pot with a lid [lid] ## qrop l23 r5 ## qropt! {{Photo.. Monika Adamczyk $dreamstime 104230581}}.jpg
 a fried egg in a cast-iron pan [fried egg] ## qrop l4 r25 ## qropt! {{Photo.. Lana Langlois $dreamstime 6895440}}.jpg
-a meat tenderizer and a hatchet [hatchet] ## qrop l12 r7 ## qropt! {{Photo.. Владимир Сухачёв $dreamstime 108124509}}.jpg
+a meat tenderizer and a hatchet [hatchet@food] ## qrop l12 r7 ## qropt! {{Photo.. Владимир Сухачёв $dreamstime 108124509}}.jpg
 a spatula and a pastry brush [spatula][pastry brush] ## qrop l24 r10 {{Photo.. Ratmaner $dreamstime 37611806}}.jpg
 biscuit cutters [cookie cutters] ## qrop l6 r23 ## qropt! {{Photo.. Elena Schweitzer $dreamstime 15602368}}.jpg
 blender ## qrop t14 b19 {{Photo.. Food-micro $dreamstime 23710287}}.jpg
@@ -31281,7 +31293,7 @@ washing {{Photo.. Stocksolutions $dreamstime 30313206}}.jpg
 Engine of a tractor Porsche Diesel Type 216, 1961 [diesel engine][diesel] ## crop q {{Photo.. Sergey Kohl $dreamstime 94156584}}.jpg
 escalator ## qrop qr {{Photo.. Vladitto $dreamstime 16962928}}.jpg
 Ferris wheel ## qrop l25 r9 {{Photo.. Rixie $dreamstime 90242107}}.jpg
-gearwheel [gear wheel] ## qrop l14 r11 {{Photo.. Oleg Kozlov $dreamstime 313469}}.jpg
+gearwheel [gear wheel][gear@wheel] ## qrop l14 r11 {{Photo.. Oleg Kozlov $dreamstime 313469}}.jpg
 >>> ../datae\photo_dreamstime\transport/historic
 caravan ## qrop l14 r9 {{Photo.. Dmitry Rukhlenko $dreamstime 30389002}}.jpg
 rickshaw ## qrop l18 r10 {{Photo.. Cenk Unver $dreamstime 14479207}}.jpg

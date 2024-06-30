@@ -30,8 +30,6 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
-        const array<str> forms = {"s", "ing", "ed", "ly", "lly", "less", "ness"};
-
         hashset<str> course_vocabulary_forms;
         hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
@@ -44,14 +42,14 @@ namespace studio::one
                 str sense =
                 s.extract_from("@");
 
-                for (str f: eng::forms(s, forms))
+                for (str f: eng::forms(s))
                 course_vocabulary_forms.
                     emplace(f);
             }
 
             if (entry.eng.starts_with(": "))
             {
-                str s = entry.eng,from(2);
+                str s = entry.eng.from(2);
                 if (s.contains(" "))
                     continue;
 
@@ -59,8 +57,9 @@ namespace studio::one
                 s.replace_all("!", "");
                 s.replace_all("?", "");
                 s = s.ascii_lowercased();
+                for (str f: eng::forms(s))
                 course_vocabulary_forms.
-                    emplace(s);
+                    emplace(f);
             }
             else
             if (entry.eng.contains(" "))
@@ -71,11 +70,7 @@ namespace studio::one
                 ss.replace_all(",", "");
 
                 for (str s: ss.split_by(" "))
-                course_vocabulary_forms.
-                    emplace(s);
-
-                for (str s: ss.split_by(" "))
-                for (str f: eng::forms(s, forms))
+                for (str f: eng::forms(s))
                 course_vocabulary_forms.
                     emplace(f);
             }

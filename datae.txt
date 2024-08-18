@@ -29,7 +29,7 @@ speaker.064x048.png
 speaker.128x096.png
 >>> ../datae/audio
 >>> ../datae\audio/!unknown
-as in ## =.wav
+as in ## == ## course-.wav
 hahaha [+][laugh].ogg
 humuhumunukunukuapuaa.wav
 introduction.wav
@@ -346,9 +346,9 @@ now.ogg
 on.ogg
 open.ogg
 play badmenton.ogg
-play basketball.ogg
-play football.ogg
-play hockey.ogg
+play basketball ## course-.ogg
+play football ## course-.ogg
+play hockey ## course-.ogg
 play table tennis.ogg
 play voleyboll.ogg
 raid a bike.ogg
@@ -589,7 +589,7 @@ husband and wife.ogg
 '{elusive}' is an adjective meaning 'difficult to catch or hold' or 'hard to explain or understand'.ogg
 '{generate}' is a verb meaning 'to bring into existence' or 'to be the cause of'.ogg
 '{ingratitude}' is a noun meaning 'a lack of thankfulness'.ogg
->>> ../datae\audio\courses\{{Sadlier-Oxford Vocabulary Workshop}} ## us/{{}} ## Case
+>>> ../datae\audio\courses\{{Sadlier-Oxford Vocabulary Workshop}} ## us/{{}}
 a farewell.ogg
 a misfortune.ogg
 abase.ogg
@@ -707,9 +707,9 @@ discredit.ogg
 elusive.ogg
 endlessly.ogg
 excitement.ogg
-France.ogg
+France ## Case.ogg
 generate.ogg
-George Eliot.ogg
+George Eliot ## Case.ogg
 idolize.ogg
 impulses.ogg
 in no time at all.ogg
@@ -719,7 +719,7 @@ ingratitude.ogg
 into the abyss.ogg
 jobs.ogg
 natural formations.ogg
-now, here we go.ogg
+Now, here we go....ogg
 one more time.ogg
 pit.ogg
 politics.ogg
@@ -745,11 +745,11 @@ to subside.ogg
 to support.ogg
 tractable.ogg
 unyielding.ogg
-US citizenship.ogg
+US citizenship ## Case.ogg
 wealth.ogg
 with a sharp point.ogg
 with alacrity.ogg
-your turn.ogg
+Your turn..ogg
 >>> ../datae\audio\courses/{{The Lowdown Improve Your Speech}}
 !credit.txt
 'Anyways' is from Old _English, the correct form in current _English is 'anyway'. [anyways] .ogg
@@ -937,7 +937,7 @@ You may not have realized that etc.ogg
 You may not have realized that etc.txt
 >>> ../datae\audio\lectures {{ttc}}\Prof. Anne Curzan - The Secret Life of Words ## us/{{}}
 And life is long. [long].ogg
-And they said ''really~!''.ogg
+And they said “really~!”.ogg
 Could you tell me what time it is~!.ogg
 Do you have a few minutes~!.ogg
 Do you know what time it is~!.ogg
@@ -1300,7 +1300,7 @@ big wig.ogg
 but every once in awhile.ogg
 cordiality versus heartiness.ogg
 do's and don'ts.ogg
-extravagant in dress.ogg
+extravagant in dress ## course-.ogg
 fart around.wav
 from you.ogg
 go into extra innings.ogg
@@ -1915,7 +1915,6 @@ I don’t understand..ogg
 I haven’t got anything to declare..ogg
 I hope to see you soon..ogg
 >>> ../datae\audio\podcasts\{{!Hot English Magazine}}\{{}}/idioms
-!credit.txt
 a bolt out of the blue.ogg
 a cloud on the horizon.ogg
 a fly in the ointment.ogg
@@ -1976,7 +1975,7 @@ break a leg.ogg
 breathe down someone’s neck.ogg
 bring the house down.ogg
 business as usual.ogg
-by the skin of your teeth.ogg
+by the skin of your teeth [+}[by the skin of one’s teeth].ogg
 call it a day.ogg
 can talk the hind legs off a donkey.ogg
 change hands.ogg
@@ -1987,7 +1986,7 @@ corner the market.ogg
 cruising for a bruising.ogg
 cut corners.ogg
 cut through something like a hot knife through butter.ogg
-cut your own throat.ogg
+cut your own throat [+][cut one's own throat].ogg
 daylight robbery.ogg
 dim your lights.ogg
 do your homework.ogg
@@ -2833,7 +2832,7 @@ jumps.ogg
 just a bit.ogg
 key.ogg
 kitten.ogg
-know, knowledge.ogg
+know, knowledge ## course-.ogg
 knowledge.ogg
 knuckle.ogg
 kumquat.ogg
@@ -2885,7 +2884,7 @@ marvellous.ogg
 marvelous.ogg
 mature.ogg
 maturity, mature.ogg
-McFadzean ## =.ogg
+McFadzean ## sic!.ogg
 measure.ogg
 measurement.ogg
 medicinal.ogg
@@ -3391,40 +3390,12 @@ Let's look at some unexpected non-rhyming words.txt
 Listen to the word listen.ogg
 Listen to the word listen.txt
 >>> ../datae\audio\podcasts\{{American English Pronunciation Podcast}} ## us/pairs
-add -- odd -- awed.ogg
-battle -- bottle.ogg
-bed -- bid -- bead.ogg
-bug -- buck.ogg
-cat -- cot -- caught.ogg
-check -- chick -- cheek.ogg
-etch -- itch -- each.ogg
-fell -- fill -- feel.ogg
-go -- goal.ogg
 goat -- got.ogg
-good, look, book, foot, cookie.ogg
-green -- grin.ogg
-grin -- green.ogg
-heat -- eat.ogg
-heat -- hit.ogg
 hitch -- itch.ogg
 I can do it -- I can't do it.ogg
-iPad -- iPod.ogg
-itch -- each.ogg
-league -- leak.ogg
-least -- list.ogg
-list -- least.ogg
-net -- knit -- neat.ogg
 note -- not.ogg
-own -- on.ogg
-quit -- quite -- quiet.ogg
-sad -- sod -- sawed.ogg
-sleep -- slip.ogg
 slip -- sleep.ogg
-so -- soul.ogg
 soak -- sock.ogg
-spend -- spent.ogg
-steal -- still.ogg
-whale -- wale.ogg
 where -- wear.ogg
 whether -- weather.ogg
 which -- witch.ogg
@@ -3567,7 +3538,7 @@ When you're sick and go to the doctor, frequently the doctor will stick you with
 Why is it that in the 1960s, when only one parent worked outside the home.ogg
 Why is it that in the 1960s, when only one parent worked outside the home.txt
 >>> ../datae\audio\podcasts\{{Voice of America, 2008}}/{{}}
->>> ../datae\audio\podcasts\{{Voice of America, 2008}}\{{}}/## Case ## =
+>>> ../datae\audio\podcasts\{{Voice of America, 2008}}\{{}}/## Case
 border.ogg
 cloth.ogg
 driftwood.ogg
@@ -3869,7 +3840,7 @@ bastard.ogg
 blinked.ogg
 book of spells.ogg
 breath.ogg
-broccoli and beef.ogg
+broccoli and beef ## course-.ogg
 carriage house ## ==.ogg
 character.ogg
 chill.ogg
@@ -3885,7 +3856,7 @@ doing.ogg
 Eva~!.ogg
 friendly.ogg
 gasped.ogg
-go home.ogg
+go home ## course-.ogg
 good.ogg
 gotcha.ogg
 great granddaughter.ogg
@@ -3970,94 +3941,94 @@ Yes, I do..ogg
 You are very welcome..ogg
 You're so clever..ogg
 >>> ../datae\audio/zoo
->>> ../datae\audio\zoo/{{Cornell Lab of Ornithology}}
+>>> ../datae\audio\zoo/{{Cornell Lab of Ornithology}} ## course-
 !credit.txt
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/ani
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/ani
 {Groove-billed {Ani}}.ogg
 {Smooth-billed {Ani}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/antbird
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/antbird
 {Bicolored {Antbird}}.ogg
 {Chestnut-backed {Antbird}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/antthrush
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/antthrush
 {Black-headed {Antthrush}} [ant thrush].ogg
 {Rufous-breasted {Antthrush}} [ant thrush].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/attila
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/attila
 {Bright-rumped {Attila}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/auklet
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/auklet
 {Cassin's {Auklet}}.ogg
 {Least {Auklet}}.ogg
 {Parakeet {Auklet}}.ogg
 {Rhinocerous {Auklet}}.ogg
 {Whiskered {Auklet}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bananaquit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bananaquit
 {Bananaquit}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/becard
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/becard
 {Gray-collared {Becard}}.ogg
 {Jamaican {Becard}}.ogg
 {Rose-throated {Becard}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bishop
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bishop
 {Yellow-crowned {Bishop}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/blackbird ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/blackbird ## ==
 {Jamaican Blackbird}.ogg
 {Tricolored Blackbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bluebird ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bluebird ## ==
 {Mountain Bluebird}.ogg
 {Western Bluebird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bluethroat
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bluethroat
 {Bluethroat}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bobwhite
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bobwhite
 {Northern {Bobwhite}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/brant
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/brant
 {Brant}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bufflehead
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bufflehead
 {Bufflehead}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bulbul
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bulbul
 {Red-whiskered {Bulbul}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bullfinch
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bullfinch
 {Eurasian {Bullfinch}}.ogg
 {Greater Antillean {Bullfinch}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bunting ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bunting ## ==
 {Lazuli Bunting}.ogg
 {Painted {Bunting}}.ogg
 {Snow Bunting}.ogg
 {Varied Bunting}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/bushtit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/bushtit
 {Bushtit}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/cacique
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/cacique
 {Yellow-winged {Cacique}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/canvasback
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/canvasback
 {Canvasback}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/caracara
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/caracara
 {Crested {Caracara}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chachalaca
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/chachalaca
 {Plain {Chachalaca}}.ogg
 {Rufous-bellied {Chachalaca}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chickadee ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/chickadee ## ==
 {Carolina Chickadee}.ogg
 {Chestnut-Backed Chickadee}.ogg
 {Gray-headed Chickadee}.ogg
 {Mexican Chickadee}.ogg
 {Mountain Chickadee}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/chuck-will's-widow
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/chuck-will's-widow
 {Chuck-will's-widow}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/coot ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/coot ## ==
 {Caribbean Coot}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/cowbird
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/cowbird
 {Bronzed {Cowbird}}.ogg
 {Shiny Cowbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/crake
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/crake
 {White-throated {Crake}}.ogg
 {Yellow-breasted {Crake}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/crossbill
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/crossbill
 {Red {Crossbill}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/crow ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/crow ## ==
 {Fish Crow}.ogg
 {Jamaican Crow}.ogg
 {Mexican Crow}.ogg
 {Northwestern Crow}.ogg
 {Sinaloa Crow}.ogg
 {Tamaulipas Crow}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/cuckoo ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/cuckoo ## ==
 {Chestnut-bellied Cuckoo}.ogg
 {Common {Cuckoo}}.ogg
 {Jamaican {Lizard-Cuckoo}} [Jamaican Lizard Cuckoo][Lizard Cuckoo].ogg
@@ -4065,11 +4036,11 @@ You're so clever..ogg
 {Mangrove Cuckoo}.ogg
 {Oriental Cuckoo}.ogg
 {Squirrel Cuckoo}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/curlew
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/curlew
 {Bristle-thighed {Curlew}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dipper
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/dipper
 {American {Dipper}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dove ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/dove ## ==
 {Caribbean Dove}.ogg
 {Common {Ground-Dove}} [Common Ground Dove][Ground Dove].ogg
 {Crested {Quail-Dove}} [Crested Quail Dove][Quail Dove].ogg
@@ -4080,9 +4051,9 @@ You're so clever..ogg
 {White-tipped Dove}.ogg
 {White-winged Dove}.ogg
 {Zenaida Dove}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dowitcher
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/dowitcher
 {Long-billed {Dowitcher}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/duck ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/duck ## ==
 {Black-bellied {Whistling-Duck}} [Black-bellied Whistling Duck][Whistling Duck].ogg
 {Harlequin Duck}.ogg
 {Masked Duck}.ogg
@@ -4090,32 +4061,32 @@ You're so clever..ogg
 {Ring-necked Duck}.ogg
 {Ruddy Duck}.ogg
 {West Indian {Whistling-Duck}} [West Indian Whistling Duck][Whistling Duck].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/dunlin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/dunlin
 {Dunlin} [].ogg
 {Dunlin}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/egret
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/egret
 {Cattle {Egret}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/eider
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/eider
 {Common {Eider}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/elaenia
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/elaenia
 {Greater Antillean {Elaenia}}.ogg
 {Jamaican {Elaenia}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/euphonia
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/euphonia
 {Jamaican {Euphonia}}.ogg
 {Scrub {Euphonia}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/falcon
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/falcon
 {Collared {Forest {Falcon}}} [Collared Forest-Falcon][Forest-Falcon].ogg
 {Laughing {Falcon}}.ogg
 {Peregrine {Falcon}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/finch ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/finch ## ==
 {Cassin's {Finch}}.ogg
 {Gray-crowned {Rosy-Finch}} [Gray-crowned Rosy Finch][Rosy Finch].ogg
 {Rufous-capped {Brush-Finch}} [Rufous-capped Brush Finch][Brush Finch].ogg
 {Saffron Finch}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/flicker
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/flicker
 {Gilded {Flicker}}.ogg
 {Northern {Flicker}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/flycatcher ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/flycatcher ## ==
 {Ash-Throated Flycatcher}.ogg
 {Brown-crested Flycatcher}.ogg
 {Buff-breasted Flycatcher}.ogg
@@ -4137,60 +4108,60 @@ You're so clever..ogg
 {Tufted Flycatcher}.ogg
 {Vermilion Flycatcher}.ogg
 {Yellow-olive Flycatcher}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/frog
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/frog
 {California {Red-Legged {Frog}}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/fulmar
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/fulmar
 {Northern {Fulmar}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/gadwall
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/gadwall
 {Gadwall}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/gallinule
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/gallinule
 {Purple {Gallinule}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/garganey
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/garganey
 {Garganey}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/gnatcatcher
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/gnatcatcher
 {Black-capped {Gnatcatcher}}.ogg
 {Black-tailed {Gnatcatcher}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/godwit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/godwit
 {Bar-tailed {Godwit}}.ogg
 {Hudsonian {Godwit}}.ogg
 {Marbled {Godwit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/goldeneye
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/goldeneye
 {Barrow's {Goldeneye}}.ogg
 {Common {Goldeneye}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/goldfinch
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/goldfinch
 {Lawrence's {Goldfinch}}.ogg
 {Lesser {Goldfinch}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/goose
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/goose
 {Bean Goose}.ogg
 {Emperor {Goose}}.ogg
 {Greater {White-fronted Goose}}.ogg
 {Snow Goose}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grackle ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/grackle ## ==
 {Boat-tailed Grackle}.ogg
 {Great-tailed {Grackle}}.ogg
 {Greater {Antillean Grackle}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grassquit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/grassquit
 {Black-faced {Grassquit}}.ogg
 {Yellow-faced {Grassquit}}.ogg
 {Yellow-shouldered {Grassquit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grebe ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/grebe ## ==
 {Clark's Grebe}.ogg
 {Horned {Grebe}}.ogg
 {Least {Grebe}}.ogg
 {Red-necked Grebe}.ogg
 {Western Grebe}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grosbeak ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/grosbeak ## ==
 {Black-faced Grosbeak}.ogg
 {Black-headed Grosbeak}.ogg
 {Blue Grosbeak}.ogg
 {Pine Grosbeak}.ogg
 {Slate-colored {Grosbeak}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/grouse
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/grouse
 {Blue {Grouse}}.ogg
 {Sage Grouse}.ogg
 {Sharp-tailed {Grouse}}.ogg
 {Spruce Grouse}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/gull
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/gull
 {Black-headed Gull}.ogg
 {Bonaparte's {Gull}}.ogg
 {Glaucous Gull}.ogg
@@ -4198,11 +4169,11 @@ You're so clever..ogg
 {Herring {Gull}}.ogg
 {Laughing Gull}.ogg
 {Mew Gull}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/gyrfalcon
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/gyrfalcon
 {Gyrfalcon}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/harrier
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/harrier
 {Northern {Harrier}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hawk ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/hawk ## ==
 {Common {Black Hawk}}.ogg
 {Cooper's Hawk}.ogg
 {Gray Hawk}.ogg
@@ -4211,12 +4182,12 @@ You're so clever..ogg
 {Sharp-shinned Hawk}.ogg
 {Short-tailed Hawk}.ogg
 {Zone-tailed Hawk}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hermit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/hermit
 {Green {Hermit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/heron
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/heron
 {Great {Blue {Heron}}}.ogg
 {Yellow-crowned {Night-Heron}} [Yellow-crowned Night Heron][Night Heron][night heron].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/hummingbird ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/hummingbird ## ==
 {Allen's Hummingbird}.ogg
 {Anna's {Hummingbird}}.ogg
 {Berylline Hummingbird}.ogg
@@ -4230,15 +4201,15 @@ You're so clever..ogg
 {Vervain Hummingbird}.ogg
 {Violet-crowned Hummingbird}.ogg
 {White-eared Hummingbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/ibis
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/ibis
 {White-faced {Ibis}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/jacana
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/jacana
 {Northern {Jacana}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/jaegar
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/jaegar
 {Long-tailed {Jaegar}} [jaeger][skua].ogg
 {Parasitic {Jaegar}} [jaeger][skua].ogg
 {Pomarine {Jaegar}} [jaeger][skua].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/jay ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/jay ## ==
 {Black-throated {Magpie-Jay}} [magpie].ogg
 {Brown Jay}.ogg
 {Florida {Scrub-Jay}} [Florida Scrub Jay][Scrub Jay].ogg
@@ -4249,9 +4220,9 @@ You're so clever..ogg
 {Scrub {Jay}}.ogg
 {Steller's Jay}.ogg
 {Western {Scrub-Jay}} [Scrub Jay].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/junco
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/junco
 {Yellow-eyed {Junco}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kingbird ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/kingbird ## ==
 {Cassin's Kingbird}.ogg
 {Couch's Kingbird}.ogg
 {Gray {Kingbird}}.ogg
@@ -4259,77 +4230,77 @@ You're so clever..ogg
 {Thick-billed Kingbird}.ogg
 {Tropical {Kingbird}}.ogg
 {Western Kingbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kingfisher
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/kingfisher
 {Green {Kingfisher}}.ogg
 {Ringed Kingfisher}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kiskadee
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/kiskadee
 {Great {Kiskadee}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kite
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/kite
 {Hook-billed {Kite}}.ogg
 {Snail {Kite}}.ogg
 {Swallow-tailed {Kite}}.ogg
 {White-tailed {Kite}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/kittiwake
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/kittiwake
 {Black-legged {Kittiwake}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/knot
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/knot
 {Red {Knot}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/limpkin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/limpkin
 {Limpkin}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/longspur
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/longspur
 {Chestnut-Collared {Longspur}}.ogg
 {Lapland {Longspur}}.ogg
 {McCown's {Longspur}}.ogg
 {Smith's {Longspur}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/loon
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/loon
 {Pacific {Loon}}.ogg
 {Red-throated Loon}.ogg
 {Yellow-billed Loon}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/macaw
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/macaw
 {Military {Macaw}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/magpie
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/magpie
 {Black-billed {Magpie}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/manakin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/manakin
 {Blue-crowned {Manakin}}.ogg
 {Orange-collared {Manakin}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/mango
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/mango
 {Jamaican {Mango}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/mannikin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/mannikin
 {Nutmeg {Mannikin}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/martin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/martin
 {Caribbean {Martin}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/merganser
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/merganser
 {Common {Merganser}}.ogg
 {Red-breasted {Merganser}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/mockingbird
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/mockingbird
 {Bahama {Mockingbird}}.ogg
 {Blue {Mockingbird}}.ogg
 {Northern {Mockingbird}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/motmot
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/motmot
 {Russet-crowned {Motmot}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/murre
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/murre
 {Common {Murre}}.ogg
 {Thick-billed {Murre}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/murrelet
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/murrelet
 {Ancient {Murrelet}}.ogg
 {Kittlitz's {Murrelet}}.ogg
 {Marbled {Murrelet}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nighthawk
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/nighthawk
 {Antillean {Nighthawk}}.ogg
 {Common {Nighthawk}}.ogg
 {Lesser {Nighthawk}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nightjar
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/nightjar
 {Buff-collared {Nightjar}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/noddy
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/noddy
 {Black {Noddy}}.ogg
 {Brown {Noddy}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nutcracker
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/nutcracker
 {Clark's {Nutcracker}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/nuthatch ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/nuthatch ## ==
 {Brown-Headed Nuthatch}.ogg
 {Pygmy Nuthatch}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/orangequit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/orangequit
 {Orangequit}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/oriole ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/oriole ## ==
 {Altamira Oriole}.ogg
 {Audubon's Oriole}.ogg
 {Bullock's Oriole}.ogg
@@ -4337,12 +4308,12 @@ You're so clever..ogg
 {Jamaican Oriole}.ogg
 {Scott's Oriole}.ogg
 {Streak-backed Oriole}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/oropendola
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/oropendola
 {Chestnut-headed {Oropendola}}.ogg
 {Montezuma {Oropendola}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/osprey
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/osprey
 {Osprey}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/owl ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/owl ## ==
 {Barn Owl}.ogg
 {Boreal Owl}.ogg
 {Burrowing Owl}.ogg
@@ -4362,53 +4333,53 @@ You're so clever..ogg
 {Spotted Owl}.ogg
 {Western {Screech-Owl}}.ogg
 {Whiskered {Screech-Owl}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/oystercatcher
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/oystercatcher
 {Black {Oystercatcher}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/parakeet
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/parakeet
 {Olive-throated (Jamaican) {Parakeet}} [Olive-throated Parakeet][Jamaican Parakeet].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/parrot
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/parrot
 {Black-billed {Parrot}}.ogg
 {Lilac-crowned {Parrot}}.ogg
 {Thick-billed {Parrot}}.ogg
 {White-fronted {Parrot}}.ogg
 {Yellow-billed {Parrot}}.ogg
 {Yellow-caped {Parrot}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/parrotlet
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/parrotlet
 {Green-rumped {Parrotlet}}.ogg
 {Mexican {Parrotlet}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/parula
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/parula
 {Tropical {Parula}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pauraque
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/pauraque
 {Common {Pauraque}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/petrel
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/petrel
 {Fork-tailed {Storm-{Petrel}}} [Fork-tailed Storm Petrel][Storm Petrel].ogg
 {Leach's {Storm-{Petrel}}} [Leach's Storm Petrel][Storm Petrel].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pewee
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/pewee
 {Greater {Pewee}}.ogg
 {Jamaican {Pewee}}.ogg
 {Western {Wood-{Pewee}}} [Wood Pewee].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/phainopepla
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/phainopepla
 {Phainopepla}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/phalarope
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/phalarope
 {Red {Phalarope}}.ogg
 {Red-necked {Phalarope}}.ogg
 {Wilson's {Phalarope}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/phoebe
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/phoebe
 {Black {Phoebe}}.ogg
 {Say's {Phoebe}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pigeon ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/pigeon ## ==
 {Band-tailed {Pigeon}}.ogg
 {Red-billed Pigeon}.ogg
 {Ring-tailed Pigeon}.ogg
 {White-crowned {Pigeon}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pintail
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/pintail
 {Northern {Pintail}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pipit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/pipit
 {American {Pipit}}.ogg
 {Red-throated {Pipit}}.ogg
 {Sprague's {Pipit}}.ogg
 {Water {Pipit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/plover ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/plover ## ==
 {American {Golden Plover}}.ogg
 {Black-bellied {Plover}}.ogg
 {Common {Ringed Plover}}.ogg
@@ -4416,19 +4387,19 @@ You're so clever..ogg
 {Lesser {Golden-Plover}}.ogg
 {Pacific {Golden Plover}}.ogg
 {Wilson's Plover}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/poorwill
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/poorwill
 {Common {Poorwill}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/potoo
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/potoo
 {Northern {Potoo}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/ptarmigan
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/ptarmigan
 {Rock {Ptarmigan}}.ogg
 {White-tailed {Ptarmigan}}.ogg
 {Willow {Ptarmigan}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/puffin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/puffin
 {Horned {Puffin}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/pyrrhuloxia
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/pyrrhuloxia
 {Pyrrhuloxia}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/quail
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/quail
 {California {Quail}}.ogg
 {Elegant {Quail}}.ogg
 {Gambel's {Quail}}.ogg
@@ -4436,31 +4407,31 @@ You're so clever..ogg
 {Mountain {Quail}}.ogg
 {Scaled {Quail}}.ogg
 {Spotted {Wood-{Quail}}} [Spotted Wood Quail][Wood Quail].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/rail
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/rail
 {Black {Rail}}.ogg
 {Clapper Rail}.ogg
 {Gray-necked {Wood-Rail}} [wood rail].ogg
 {King Rail}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/raven
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/raven
 {Chihuahuan {Raven}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/redhead
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/redhead
 {Redhead}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/redpoll
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/redpoll
 {Common {Redpoll}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/redstart
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/redstart
 {Painted {Redstart}}.ogg
 {Slate-throated {Redstart}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/roadrunner
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/roadrunner
 {Greater {Roadrunner}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/robin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/robin
 {Clay-colored {Robin}}.ogg
 {Rufous-backed {Robin}}.ogg
 {White-throated {Robin}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/rubythroat
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/rubythroat
 {Siberian {Rubythroat}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/sanderling
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/sanderling
 {Sanderling}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/sandpiper
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/sandpiper
 {Buff-breasted Sandpiper}.ogg
 {Common Sandpiper}.ogg
 {Least {Sandpiper}}.ogg
@@ -4471,31 +4442,31 @@ You're so clever..ogg
 {Western Sandpiper}.ogg
 {White-rumped Sandpiper}.ogg
 {Wood Sandpiper}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/sapsucker
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/sapsucker
 {Red-breasted {Sapsucker}}.ogg
 {Williamson's {Sapsucker}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/scaup
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/scaup
 {Greater {Scaup}}.ogg
 {Lesser {Scaup}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/seedeater
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/seedeater
 {White-collared {Seedeater}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/shoveler
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/shoveler
 {Northern {Shoveler}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/shrike
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/shrike
 {Loggerhead {Shrike}}.ogg
 {Northern {Shrike}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/siskin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/siskin
 {Black-headed {Siskin}}.ogg
 {Yellow-bellied {Siskin}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/skimmer
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/skimmer
 {Black {Skimmer}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/skylark
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/skylark
 {Skylark}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/solitaire
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/solitaire
 {Brown-backed {Solitaire}}.ogg
 {Rufous-throated {Solitaire}}.ogg
 {Townsend's {Solitaire}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/sparrow ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/sparrow ## ==
 {Bachman's Sparrow}.ogg
 {Baird's Sparrow}.ogg
 {Black-chinned Sparrow}.ogg
@@ -4519,32 +4490,32 @@ You're so clever..ogg
 {Seaside Sparrow}.ogg
 {White-crowned Sparrow}.ogg
 {White-eared {Ground-Sparrow}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/starthroat
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/starthroat
 {Plain-capped {Starthroat}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/stilt
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/stilt
 {Black-necked {Stilt}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/stork
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/stork
 {Wood {Stork}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/streamertail
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/streamertail
 {Black-billed {Streamertail}}.ogg
 {Red-billed {Streamertail}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/surfbird
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/surfbird
 {Surfbird}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swallow ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/swallow ## ==
 {Cave Swallow}.ogg
 {Cliff Swallow} [cliff].ogg
 {Golden Swallow}.ogg
 {Violet-green Swallow}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swan
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/swan
 {Tundra Swan}.ogg
 {Whooper Swan}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/swift ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/swift ## ==
 {Antillean {Palm-Swift}} [palm swift].ogg
 {Black Swift}.ogg
 {Vaux's Swift}.ogg
 {White-collared Swift}.ogg
 {White-throated Swift}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tanager ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tanager ## ==
 {Black-cheeked {Ant-Tanager}}.ogg
 {Dusky-faced Tanager}.ogg
 {Flame-colored Tanager}.ogg
@@ -4555,12 +4526,12 @@ You're so clever..ogg
 {Summer Tanager}.ogg
 {Western Tanager}.ogg
 {White-throated {Shrike-Tanager}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tattler
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tattler
 {Gray-tailed {Tattler}}.ogg
 {Wandering {Tattler}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/teal
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/teal
 {Green-winged {Teal}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tern
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tern
 {Aleutian Tern} [Aleutian].ogg
 {Arctic Tern}.ogg
 {Common Tern}.ogg
@@ -4569,34 +4540,34 @@ You're so clever..ogg
 {Royal Tern}.ogg
 {Sandwich Tern}.ogg
 {Sooty Tern}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/thick-knee
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/thick-knee
 {Double-striped {Thick-knee}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/thrasher
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/thrasher
 {Bendire's {Thrasher}}.ogg
 {California {Thrasher}}.ogg
 {Crissal {Thrasher}}.ogg
 {Curve-Billed Thrasher}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/thrush ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/thrush ## ==
 {Gray-Cheeked Thrush}.ogg
 {Orange-billed {Nightingale-Thrush}}.ogg
 {Russet {Nightingale-Thrush}}.ogg
 {Varied Thrush}.ogg
 {White-chinned Thrush}.ogg
 {White-eyed Thrush}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tinamou
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tinamou
 {Highland {Tinamou}}.ogg
 {Slaty-breasted {Tinamou}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tit
 {Siberian {Tit}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/titmouse
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/titmouse
 {Bridled Titmouse}.ogg
 {Juniper {Titmouse}}.ogg
 {Plain {Titmouse}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tityra
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tityra
 {Masked {Tityra}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tody
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tody
 {Jamaican {Tody}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/towhee ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/towhee ## ==
 {Abert's Towhee}.ogg
 {Brown Towhee}.ogg
 {California Towhee}.ogg
@@ -4604,21 +4575,21 @@ You're so clever..ogg
 {Eastern Towhee}.ogg
 {Green-Tailed Towhee}.ogg
 {Spotted Towhee}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/treefrog
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/treefrog
 {Pacific {Treefrog}} [tree frog].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/trogan
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/trogan
 {Eared {Trogan}} [trogon].ogg
 {Elegant {Trogan}} [trogon].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/trogon
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/trogon
 {Mountain {Trogon}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/turnstone
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/turnstone
 {Black {Turnstone}}.ogg
 {Ruddy {Turnstone}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/tyrannulet
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/tyrannulet
 {Northern {Beardless-{Tyrannulet}}} [Beardless Tyrannulet].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/verdin
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/verdin
 {Verdin}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/vireo ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/vireo ## ==
 {Black-Capped Vireo}.ogg
 {Black-whiskered Vireo}.ogg
 {Blue {Mountain Vireo}}.ogg
@@ -4631,10 +4602,10 @@ You're so clever..ogg
 {Solitary Vireo}.ogg
 {White-Eyed Vireo}.ogg
 {Yellow-green Vireo}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wagtail
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/wagtail
 {White {Wagtail}}.ogg
 {Yellow {Wagtail}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/warbler ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/warbler ## ==
 {Arctic Warbler}.ogg
 {Arrow-headed Warbler}.ogg
 {Bachman's Warbler}.ogg
@@ -4656,21 +4627,21 @@ You're so clever..ogg
 {Swainson's Warbler}.ogg
 {Townsend's Warbler}.ogg
 {Virginia's Warbler}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wheatear
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/wheatear
 {Northern {Wheatear}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/whimbrel
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/whimbrel
 {Whimbrel}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/widow
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/widow
 {Chuck-Will's-widow} [Chuck Will's widow].ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wigeon
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/wigeon
 {American {Wigeon}}.ogg
 {Eurasian {Wigeon}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/woodcreeper
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/woodcreeper
 {Black-striped {Woodcreeper}}.ogg
 {Buff-throated {Woodcreeper}}.ogg
 {Ivory-billed {Woodcreeper}}.ogg
 {White-striped {Woodcreeper}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/woodpecker ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/woodpecker ## ==
 {Acorn Woodpecker}.ogg
 {Black-backed Woodpecker}.ogg
 {Downy Woodpecker}.ogg
@@ -4685,7 +4656,7 @@ You're so clever..ogg
 {Red-cockaded Woodpecker}.ogg
 {Strickland's Woodpecker}.ogg
 {Three-toed Woodpecker}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wren ## ==
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/wren ## ==
 {Banded Wren}.ogg
 {Bay Wren}.ogg
 {Bewick's Wren}.ogg
@@ -4703,11 +4674,11 @@ You're so clever..ogg
 {Spotted Wren}.ogg
 {Stripe-breasted Wren}.ogg
 {White-breasted {Wood-Wren}}.ogg
->>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}}/wrentit
+>>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/wrentit
 {Wrentit}.ogg
 >>> ../datae\audio\zoo/{{Starry Night Education}} ## Case ## sic!
 >>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic!/Asteroids {{}}
-Annefrank ## =.mp3
+Annefrank.mp3
 Apophis.mp3
 Astraea.mp3
 Bacchus.mp3
@@ -4723,7 +4694,7 @@ Hygiea.mp3
 Irene.mp3
 Iris.mp3
 Juno.mp3
-Kalliope ## = .mp3
+Kalliope.mp3
 Lutetia.mp3
 Massalia.mp3
 Melpomene.mp3
@@ -5599,7 +5570,7 @@ centrifugal force ## {2}.wav
 ceremonial.wav
 ceremony [=].wav
 chair.wav
-chaliphate ## =.wav
+chaliphate ## sic!.wav
 chameleon [=].wav
 champ.wav
 champignon [=].wav
@@ -6005,7 +5976,7 @@ dribbling [=].wav
 druid.wav
 dryads [=].wav
 dualism [=].wav
-duce ## =.wav
+duce ## sic!.wav
 dueler [=].wav
 dugong.wav
 duma.wav
@@ -6101,7 +6072,7 @@ ester [=].wav
 Esther [=].wav
 estrogen.wav
 etc. [=].wav
-ethnograph ## =.wav
+ethnograph ## sic!.wav
 etiquette [=].wav
 etymology [=].wav
 eugenics [=].wav
@@ -6446,7 +6417,7 @@ hieroglyph [=].wav
 Hilbert space [=].wav
 Himalaya [=].wav
 Hinduism [=].wav
-hipparch ## =.wav
+hipparch ## sic!.wav
 hippopotamus [=].wav
 hiss.wav
 historian.wav
@@ -6517,7 +6488,7 @@ hyperbolic paraboloid [=].wav
 hyperbolic secant ## {1}.wav
 hyperbolic secant ## {2}.wav
 hyperbolic tangent [=].wav
-hyperdodecahedron ## =.wav
+hyperdodecahedron ## sic!.wav
 hyperextensions [=].wav
 hypertension.wav
 hypnosis [=].wav
@@ -6773,16 +6744,16 @@ knockout [=].wav
 know-how [=].wav
 koala [=].wav
 Koh-i-noor.wav
-kompot ## =.wav
+kompot ## sic!.wav
 Koran [=].wav
 Korean War.wav
 Kremlin.wav
 krill.wav
 Kronos [=].wav
-Kruzenshtern ## =.wav
+Kruzenshtern ## sic!.wav
 krypton [=].wav
 kung fu [=].wav
-kusudama ## =.wav
+kusudama ## sic!.wav
 kvass [=].wav
 labyrinth [=].wav
 lackey [=].wav
@@ -6870,7 +6841,7 @@ livery [=].wav
 livre [=].wav
 llama.wav
 Lobachevskian geometry [=].wav
-Lobachevsky ## =.wav
+Lobachevsky ## sic!.wav
 lobby [=].wav
 lobotomy [] [=].wav
 lobster.wav
@@ -6978,7 +6949,7 @@ martini [=].wav
 Marxism [=].wav
 Mary [=].wav
 mascarpone.wav
-Maserati ## =.wav
+Maserati ## sic!.wav
 mask [=].wav
 masochist [=].wav
 masonry [=].wav
@@ -7217,7 +7188,7 @@ narcissistic [=].wav
 narcotic [=].wav
 narwhal [=].wav
 narwhale.wav
-Nasreddin Hodja ## =.wav
+Nasreddin Hodja ## sic!.wav
 National Convention.wav
 national park [=].wav
 natural gas.wav
@@ -8358,7 +8329,7 @@ stomatology.wav
 stomp.wav
 stool.wav
 storm.wav
-Stradivari ## =.wav
+Stradivari ## sic!.wav
 strafe.wav
 strangeness.wav
 strategic.wav
@@ -13866,7 +13837,6 @@ And yards and yards of it got unwound again. [unwound][yards].ogg
 Don't tease so!.ogg
 Have another biscuit~!.ogg
 It is a -- MOST -- PROVOKING -- thing..ogg
-JABBERWOCKY.ogg
 My finger's bleeding! Oh, oh, oh, oh!.ogg
 Ridiculous!.ogg
 Tickets, please!.ogg
@@ -13949,7 +13919,7 @@ areosynchronous.wav
 awe.wav
 Bella.wav
 camels.wav
-Carel.wav
+Carel ## sic!.wav
 Chicago Tribune.wav
 detach.wav
 empire.wav
@@ -13961,7 +13931,7 @@ nonlocality.wav
 one hour.wav
 owl.wav
 personable.wav
-poom.wav
+poom ## sic!.wav
 prying eyes.wav
 Q Bomb [Q-bomb] ## sic!.wav
 Q-Day ## sic!.wav
@@ -14111,8 +14081,8 @@ You'd be surprised..wav
 !credit.txt
 >>> ../datae\audiobooks\Clarke, Arthur C. - The Last Theorem ## uk {{Mark Bramhall}}/{{}}
 >>> ../datae\audiobooks\Clarke, Arthur C. - The Last Theorem ## uk {{Mark Bramhall}}\{{}}/1
-arithmetica.wav
-Bhaskara.wav
+arithmetica ## sic!.wav
+Bhaskara ## sic!.wav
 chikungunya.wav
 the number.wav
 Diophantus's Arithmetica.wav
@@ -14141,7 +14111,7 @@ bristling.wav
 cars.wav
 confluence.wav
 council of war.wav
-dekas.wav
+dekas ## sic!.wav
 discontinuity.wav
 endures.wav
 Eureka!.wav
@@ -14152,10 +14122,10 @@ heard.wav
 Henry V.wav
 joining up.wav
 Lahore sore.wav
-pakhtunwali.wav
-Pandjeh.wav
+pakhtunwali ## sic!.wav
+Pandjeh ## sic!.wav
 paradox.wav
-Perdiccas.wav
+Perdiccas ## sic!.wav
 perhaps.wav
 primulas.wav
 proskynesis.wav
@@ -14171,12 +14141,12 @@ shamanists.wav
 shucks.wav
 smith.wav
 Soyuz.wav
-sphaira.wav
+sphaira ## sic!.wav
 stereo.wav
-Subedei.wav
+Subedei ## sic!.wav
 Swiss-made.wav
 Tau Ceti.wav
-Temüjin.wav
+Temüjin ## sic!.wav
 Tengri.wav
 the back.wav
 the chimp.wav
@@ -14306,7 +14276,7 @@ nothing.wav
 P.S..wav
 pearl.wav
 perceptible.wav
-Pharmacusa.wav
+Pharmacusa ## sic!.wav
 Plutarch.wav
 quarter-master.wav
 Scarborough.wav
@@ -14425,7 +14395,7 @@ must.ogg
 nosferatu.ogg
 positive~!.ogg
 prodigiously.ogg
-Richelieu.ogg
+Richelieu ## sic!.ogg
 silence!.ogg
 the ninny.ogg
 the traitor.ogg
@@ -14445,7 +14415,7 @@ Here I am..ogg
 most willingly.ogg
 The king's Musketeers and the cardinal's Guards.ogg
 too many.ogg
-What do you mean!~.ogg
+What do you mean~!.ogg
 without reckoning.ogg
 Never, never!.ogg
 That's a frightful!.ogg
@@ -14753,13 +14723,13 @@ Dreck!.wav
 garibaldi.wav
 Lycopodium.wav
 parallax.wav
-Poldy!.wav
+Poldy! ## sic!.wav
 Prrwht!.wav
 Rtststr!.wav
 Shandygaff~!.wav
 the last.wav
 whisper.wav
->>> ../datae\audiobooks\Joyce, James - Ulysses {{Jim Norton}}\{{}}/2 ## =
+>>> ../datae\audiobooks\Joyce, James - Ulysses {{Jim Norton}}\{{}}/2
 De mortuis nil nisi prius..wav
 Doctor Diet and Doctor Quiet.wav
 Entrez, mes enfants!.wav
@@ -15314,7 +15284,7 @@ Have you no morals, man~! [morals].ogg
 Indeed! Why~!.ogg
 It's handsome. By _George, it's enormous!.ogg
 Never you mind. They did..ogg
-not at all, not at all..ogg
+Not at all, not at all..ogg
 Oh _Henry, _Henry, really!.ogg
 Oh, boo---hoo---oo--- [boo hoo].ogg
 Oh, you are incorrigible..ogg
@@ -15633,16 +15603,15 @@ pity.ogg
 Robinsoniana.ogg
 strange.ogg
 why.ogg
->>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/2 ## =
+>>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/2
 absolutely incompetent.ogg
 all right.ogg
 apt to linger.ogg
-be fatal.ogg
-be so.ogg
+be fatal ## course-.ogg
 better than good.ogg
 but now and then.ogg
 complete failure.ogg
-Dorian Gray.ogg
+Dorian Gray ## Case.ogg
 for ever.ogg
 great deal too much.ogg
 grew wilful.ogg
@@ -15653,7 +15622,6 @@ I believe.ogg
 it has been said.ogg
 it is.ogg
 not at all.ogg
-nuts going on.ogg
 one thing worth having.ogg
 tell me.ogg
 to be absurdly melodramatic.ogg
@@ -15661,45 +15629,43 @@ to be good.ogg
 to be in the fashion.ogg
 to be married.ogg
 too late.ogg
-too much of myself.ogg
 very well.ogg
->>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/3 ## =
-But it is not quite what I expected..ogg
-He felt intensely interested..ogg
-I absolutely refuse to do anything in the matter. It is insane of you to ask me..ogg
-I am nearly always at home at five o'clock..ogg
-If it were only the other way!.ogg
-It is an interesting question..ogg
-My dear fellow, why~!.ogg
-Pace gives life..ogg
-Show him to me. Which is he~! Point him out. I must see him!.ogg
-The man knew more than enough _English for that..ogg
-There is not a moment to be lost..ogg
-There was a real joy in that..ogg
-This is extraordinary..ogg
-Whose property is it~!.ogg
 Ah, you have discovered that~!.ogg
 And her voice -- I never heard such a voice..ogg
 And now good-bye..ogg
 Anglomania is very fashionable over there now, I hear. [Anglomania].ogg
+But it is not quite what I expected..ogg
 But why not~!.ogg
 Every moment was of vital importance..ogg
 Good heavens! [good heavens].ogg
+He felt intensely interested..ogg
 His finely chiselled nostrils quivered..ogg
 How extraordinary..ogg
 How late it was!.ogg
+I absolutely refuse to do anything in the matter. It is insane of you to ask me..ogg
+I am nearly always at home at five o'clock..ogg
 I have not the slightest idea..ogg
+If it were only the other way!.ogg
+It is an interesting question..ogg
 It is silly of you..ogg
 Let us never see each other again..ogg
+My dear fellow, why~!.ogg
 Nothing will induce me to stir a step to help you..ogg
 Now it is for me to dictate terms..ogg
+Pace gives life..ogg
+Show him to me. Which is he~! Point him out. I must see him!.ogg
 Ten minutes past two~! How horribly late! You must wake me at nine to-morrow. I have some work to do..ogg
+The man knew more than enough _English for that..ogg
 The thing is quite simple. Face it, and do it..ogg
+There is not a moment to be lost..ogg
+There was a real joy in that..ogg
+This is extraordinary..ogg
 tired of standing.ogg
 Was that a paradox~!.ogg
 What is done is done. What is past is past..ogg
 What is the matter with you to-night~! You are quite out of sorts..ogg
 What it all meant~! [meant].ogg
+Whose property is it~!.ogg
 You must. You have no choice. Don't delay..ogg
 >>> ../datae/audiobooks {{$$librivox}}
 Ah, excellent, excellent, very good endeed!.wav
@@ -16006,7 +15972,7 @@ air.wav
 alas [].wav
 alas.wav
 alive.wav
-all her life.wav
+all her life ## course-.wav
 all of them.wav
 all terracotta [terracotta].wav
 all the more apparent [all the more].wav
@@ -16047,7 +16013,7 @@ art.wav
 artists.wav
 as has been said.wav
 as it is.wav
-as it was.wav
+as it was ## course-.wav
 as time passed away.wav
 as, for example.wav
 as.wav
@@ -16092,7 +16058,7 @@ be guilty.wav
 be happy.wav
 be idle with.wav
 be interested in.wav
-be off.wav
+be off ## course-.wav
 be sure.wav
 be true.wav
 be.wav
@@ -16438,7 +16404,7 @@ glass.wav
 gliding by.wav
 gloomy eyes.wav
 go back.wav
-go now.wav
+go now ## course-.wav
 go.wav
 going back.wav
 going fantee [go Fantee].wav
@@ -16537,7 +16503,7 @@ in the evening.wav
 in the first place.wav
 in the mass.wav
 in the next.wav
-in this manner.wav
+in this manner ## course-.wav
 in tiles.wav
 indistinguishable from the other.wav
 individual.wav
@@ -16559,7 +16525,7 @@ it is.wav
 it represents.wav
 it takes two.wav
 it was.wav
-it wasn't.wav
+it wasn't ## course-.wav
 it will become.wav
 it would ## course-.wav
 jam.wav
@@ -16597,7 +16563,7 @@ life.wav
 lighter jobs.wav
 like a new sense.wav
 little by little.wav
-little models.wav
+little models ## course-.wav
 liver.wav
 locked.wav
 London's the place..wav
@@ -16685,7 +16651,7 @@ old-established.wav
 old.wav
 on a sudden.wav
 on a Sunday.wav
-on off days.wav
+on off days ## course-.wav
 on sporting objects.wav
 on the north.wav
 on the one hand.wav
@@ -16696,7 +16662,7 @@ once.wav
 one day ### {parenthesis}.wav
 one man.wav
 one match.wav
-one night.wav
+one night ## course-.wav
 one, two, three, four.wav
 one.wav
 only.wav
@@ -16785,7 +16751,7 @@ professor of natural philosophy.wav
 progress.wav
 prostitutes.wav
 proud neck.wav
-public speeches.wav
+public speeches ## course-.wav
 purpose.wav
 purse.wav
 putting bulbs.wav
@@ -16856,7 +16822,7 @@ smile.wav
 smiled.wav
 smooth.wav
 snuffed out.wav
-so it was.wav
+so it was ## course-.wav
 so that.wav
 so.wav
 sober.wav
@@ -16988,7 +16954,7 @@ the secret agent.wav
 the selves.wav
 the sensible.wav
 the sky.wav
-the spirit of the past.wav
+the spirit of the past ## course-.wav
 the stable.wav
 the stillness.wav
 The Sunday Paper ## =.wav
@@ -17128,7 +17094,7 @@ wasn't.wav
 waste of time.wav
 we are.wav
 we have.wav
-we may.wav
+we may ## course-.wav
 we shall.wav
 we.wav
 weather.wav
@@ -17169,7 +17135,7 @@ would.wav
 wreckage.wav
 yes.wav
 you are.wav
-you may.wav
+you may ## course-.wav
 you.wav
 A man can..wav
 absolutely essential.wav
@@ -17475,7 +17441,7 @@ to be happy.wav
 to be nice.wav
 to begin with.wav
 to catch.wav
-to face it.wav
+to face it ## course-.wav
 to feel quite glad.wav
 to hear.wav
 to learn more.wav
@@ -17588,7 +17554,11 @@ To what do I owe the extreme pleasure~! Is anything wrong, sir~!.wav
 >>> ../datae\audiobooks--/Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}
 !credit.txt
 >>> ../datae\audiobooks--\Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}/{{}}
->>> ../datae\audiobooks--\Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}\{{}}/## == ## course-
+a little short in the body.wav
+first thing tomorrow.wav
+large print.wav
+>>> ../datae\audiobooks--\Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}\{{}}/1
 a bitch.wav
 a car.wav
 besides.wav
@@ -17600,10 +17570,6 @@ released.wav
 starve.wav
 take.wav
 to stay.wav
->>> ../datae\audiobooks--\Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}\{{}}/2 ## =
-a little short in the body.wav
-first thing tomorrow.wav
-large print.wav
 >>> ../datae\audiobooks--\Clea Simon - Parrots Prove Deadly ## us {{Tavia Gilbert}}\{{}}/3
 a warrant out for my arrest.wav
 all the time.wav
@@ -17815,9 +17781,6 @@ The first I knew about it was when a workman arrived at my home yesterday.wav
 Well didn’t you think of anything.txt
 Well didn’t you think of anything.wav
 >>> ../datae\audiobooks--\Douglas Adams - The Hitchhiker's Guide to the Galaxy {{Stephen Fry}}/{{}}
->>> ../datae\audiobooks--\Douglas Adams - The Hitchhiker's Guide to the Galaxy {{Stephen Fry}}\{{}}/1 ## =
-Trillian.wav
-Zaphod Beeblebrox.wav
 A meal would be most welcome..wav
 And there we are..wav
 Come on now... but look!.wav
@@ -17832,10 +17795,12 @@ Oh God I’m so depressed..wav
 out of thin air.wav
 Sounds ghastly..wav
 to be quite honest with you.wav
+Trillian ## sic!.wav
 Well well well..wav
 Well, what do you think~!.wav
 What the hell happened~!.wav
 Yeah OK..wav
+Zaphod Beeblebrox ## sic!.wav
 >>> ../datae\audiobooks--/E. J. White - You Talkin' To Me
 !credit.txt
 >>> ../datae\audiobooks--\E. J. White - You Talkin' To Me/ipa
@@ -18163,7 +18128,13 @@ when did tumblr collectively decide not to use punctuation.wav
 Wikipedia administrators were more polite before they’d been elected as admins.txt
 Wikipedia administrators were more polite before they’d been elected as admins.wav
 >>> ../datae\audiobooks--\Gretchen McCulloch - Because Internet ## ca {{Gretchen McCulloch}}/{{}}
->>> ../datae\audiobooks--\Gretchen McCulloch - Because Internet ## ca {{Gretchen McCulloch}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Gretchen McCulloch - Because Internet ## ca {{Gretchen McCulloch}}\{{}}/## == ## course-
+&sharp;E m p h a s i s™.wav
+but a little later.wav
+for aesthetic effect.wav
+This is true, historically speaking, but common usage has moved on and therefore so do I..wav
+“Doctor, could I possibly trouble you to open the window~!” versus “Open the window!”.wav
+>>> ../datae\audiobooks--\Gretchen McCulloch - Because Internet ## ca {{Gretchen McCulloch}}\{{}}/1
 ALL CAPS.wav
 applause!.wav
 bafflement.wav
@@ -18185,15 +18156,12 @@ SHOUTING.wav
 SNAFU.wav
 the setup.wav
 upside down.wav
->>> ../datae\audiobooks--\Gretchen McCulloch - Because Internet ## ca {{Gretchen McCulloch}}\{{}}/2 ## =
-&sharp;E m p h a s i s™.wav
-but a little later.wav
-But I don’t feel greeted by ‘hey,’ I feel summoned! [hey].wav
+>>> ../datae\audiobooks--\Gretchen McCulloch - Because Internet ## ca {{Gretchen McCulloch}}\{{}}/2
+But I don’t feel greeted by ‘hey,’ I feel summoned!.wav
 But why are you wearing it in this sauna~!.wav
 digitus impudicus.wav
 enclosed letters.wav
 for a loooong time.wav
-for aesthetic effect.wav
 four red heart emoji.wav
 History Major Heraldic Beast.wav
 How they were getting it~!.wav
@@ -18211,12 +18179,10 @@ roll on the floor laughing.wav
 Skull and crossbones~!.wav
 Sounds good!!!.wav
 the see-no-evil, hear-no-evil, speak-no-evil monkeys.wav
-This is true, historically speaking, but common usage has moved on and therefore so do I..wav
 up yours.wav
 very sensitive.wav
 Ye Olde Tea Shoppe.wav
 you weren’t.wav
-“Doctor, could I possibly trouble you to open the window~!” versus “Open the window!”.wav
 afaik (as far as I know) [afaik][AFAIK][as far as I know].wav
 Are your kids allowed to have some C-A-K-E~!.wav
 BEHOLD THE FIELD IN WHICH I GROW MY FVCKS.txt
@@ -18666,7 +18632,19 @@ We have hands.txt
 We have hands.wav
 Why then, to cure thy Itching, Jove, thou now art going a Bitching. [bitching] {{Charles Cotton}}.wav
 >>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}/{{}}
->>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}\{{}}/## == ## course-
+burnt face.wav
+fuck it.wav
+I do.wav
+it is.wav
+maybe with a giggle.wav
+my shit.wav
+nigger in the woodpile.wav
+Nigger Mike.wav
+not knowing.wav
+Why not in the first~!.wav
+William Jennings Bryan.wav
+>>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}\{{}}/1
 a bitch.wav
 an irregularity.wav
 approve.wav
@@ -18700,37 +18678,26 @@ tuchus.wav
 tushie.wav
 who.wav
 windfucker.wav
->>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}\{{}}/2 ## =
-and the sky did not fall in.wav
+>>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}\{{}}/2
+And the sky did not fall in..wav
 as in.wav
 as such.wav
 Being in Total Control, Honey [bitch].wav
-burnt face.wav
 but above all.wav
 but even then.wav
 case in point.wav
 expletive infixation.wav
 for example.wav
-fuck it.wav
 Grimm's Law.wav
-I do.wav
 in vain.wav
-it is.wav
 less obvious.wav
 like hell.wav
-maybe with a giggle.wav
-my shit.wav
-nigger in the woodpile.wav
-Nigger Mike.wav
-not knowing.wav
 not only that.wav
 over here vs. over there.wav
 taboo terms.wav
 The grammar they don't tell you about..wav
 we must consider.wav
 whether or not.wav
-why not in the first~!.wav
-William Jennings Bryan.wav
 But I suspect this analysis is a little facile..wav
 C'mon, let's face it. There's no use talking..wav
 Higgledy-piggledy, hocus-pocus, helter-skelter, hoochie-coochie....wav
@@ -18747,20 +18714,20 @@ Modern English.wav
 Now we can aks. [aks].wav
 One might ask.. “Did any black people ever actually say 'gwine' for 'going to'~! [gwine].wav
 >>> ../datae\audiobooks--\John McWhorter - Talking Back, Talking Black ## us {{John McWhorter}}/{{}}
->>> ../datae\audiobooks--\John McWhorter - Talking Back, Talking Black ## us {{John McWhorter}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\John McWhorter - Talking Back, Talking Black ## us {{John McWhorter}}\{{}}/1
 also.wav
 baby mama.wav
 Chaucer.wav
 counterexplanation.wav
 dismissable.wav
 fumed.wav
-monoglossia.wav
+monoglossia ## sic!.wav
 puttin' it on.wav
 sadly.wav
 to nitpick.wav
 to sum.wav
 worldwide.wav
->>> ../datae\audiobooks--\John McWhorter - Talking Back, Talking Black ## us {{John McWhorter}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\John McWhorter - Talking Back, Talking Black ## us {{John McWhorter}}\{{}}/2
 And it wouldn't be impossible....wav
 It shouldn't be surprising....wav
 myself included.wav
@@ -19003,7 +18970,7 @@ What are your facienda~! Your list of things that you must get done~! [facienda]
 When the planet Venus shines at dusk, it becomes Hesperus.txt
 When the planet Venus shines at dusk, it becomes Hesperus.wav
 >>> ../datae\audiobooks--\Mark Forsyth - The Etymologicon ## us {{Don Hagen}}/{{}}
->>> ../datae\audiobooks--\Mark Forsyth - The Etymologicon ## us {{Don Hagen}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Mark Forsyth - The Etymologicon ## us {{Don Hagen}}\{{}}/1
 a waitress.wav
 appendix.wav
 argument.wav
@@ -19012,20 +18979,20 @@ Cambridge.wav
 cars.wav
 caterwauling.wav
 causey-webs.wav
-cinqasept.wav
+cinqasept ## sic!.wav
 clockwise.wav
 conge.wav
-cowfyne.wav
-crastinate.wav
+cowfyne ## sic!.wav
+crastinate ## sic!.wav
 curglaff.wav
 disbelief.wav
 donkey.wav
-earnder.wav
+earnder ## sic!.wav
 en charette.wav
 eschaton.wav
-essoinment.wav
+essoinment ## sic!.wav
 Exodus.wav
-fartleberries.wav
+fartleberries ## sic!.wav
 feague.wav
 fleshling.wav
 flânerie.wav
@@ -19037,12 +19004,12 @@ hypnopompic.wav
 intermission.wav
 jumentous.wav
 lamp-life.wav
-latrocinium.wav
-lestobiosis.wav
+latrocinium ## sic!.wav
+lestobiosis ## sic!.wav
 mamihlapinatapai.wav
 mastication.wav
 materteral.wav
-matriotic.wav
+matriotic ## sic!.wav
 matutinal.wav
 moon-curser.wav
 nod-crafty.wav
@@ -19050,35 +19017,35 @@ nullibiquitous.wav
 obdormition.wav
 one.wav
 oneirocritical.wav
-opsonia.wav
-oze.wav
+opsonia ## sic!.wav
+oze ## sic!.wav
 pantofles.wav
 papuliferous.wav
 paralipomenon.wav
 petechial.wav
-petecure.wav
+petecure ## sic!.wav
 philoprogenitive.wav
-pimginnits.wav
-pissuprest.wav
-proling.wav
-quafftide.wav
+pimginnits ## sic!.wav
+pissuprest ## sic!.wav
+proling ## sic!.wav
+quafftide ## sic!.wav
 quidnuncery.wav
 quirly.wav
 sack.wav
 seppuku.wav
-shturmovshchina.wav
+shturmovshchina ## sic!.wav
 skeuomorphs.wav
 sky-clad.wav
 soss.wav
 sprezzatura.wav
-spunkie.wav
+spunkie ## sic!.wav
 supernaculum.wav
 swale.wav
 swank.wav
 technically.wav
 teeth.wav
 the day-peep.wav
-the Deipnosophistae.wav
+the Deipnosophistae ## sic!.wav
 the greking.wav
 the nightingale floor.wav
 the ponk.wav
@@ -19091,10 +19058,10 @@ tocsin.wav
 trilly.wav
 withershins.wav
 wrines.wav
-xanthodontic.wav
+xanthodontic ## sic!.wav
 yew-tree [yew][yew-tree].wav
 zwodder.wav
->>> ../datae\audiobooks--\Mark Forsyth - The Etymologicon ## us {{Don Hagen}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\Mark Forsyth - The Etymologicon ## us {{Don Hagen}}\{{}}/2
 1 p.m..wav
 a hedge creeper.wav
 a link boy.wav
@@ -19170,7 +19137,7 @@ What I've always wondered.wav
 Wrong place~! No. Wrong time, then. Yes..wav
 You don’t have to make it work, anyway. You have to stop it working. You don’t need knowledge for that, you need ignorance..wav
 >>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}/{{}}
->>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/1
 a delivery man.wav
 a fallen angel.wav
 anathema.wav
@@ -19201,9 +19168,9 @@ in short.wav
 incalculable.wav
 infra-black.wav
 inside.wav
-nouvelle.wav
+nouvelle ## sic!.wav
 now.wav
-odegra.wav
+odegra ## sic!.wav
 oozing.wav
 poker.wav
 pollution.wav
@@ -19216,7 +19183,7 @@ swear.wav
 The Galaxatrons ## sic!.wav
 the man.wav
 the master.wav
-the metatron.wav
+the metatron ## sic!.wav
 them [].wav
 them.wav
 things.wav
@@ -19227,10 +19194,10 @@ voodoo.wav
 vroooom! [+][vroom].wav
 vrooosh! [+][vroosh].wav
 youngster.wav
->>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/2
 amperage fuse.wav
-and suddenly.wav
-and there we were.wav
+And suddenly....wav
+And there we were..wav
 bad books.wav
 blank, disdainful incomprehension.wav
 bounden duty.wav
@@ -19243,7 +19210,7 @@ dimple in the bumper.wav
 dramatis personae.wav
 drinking tea.wav
 for miles and miles.wav
-funny thing is.wav
+Funny thing is....wav
 in the rain.wav
 move up here.wav
 must have took a long time.wav
@@ -19256,7 +19223,7 @@ quite untroubled and at peace with the world.wav
 rather good organization.wav
 take the hint.wav
 taken an interest.wav
-there is, however.wav
+There is, however....wav
 to vanish without trace into the seas of oblivion.wav
 top fashion model.wav
 underneath it all.wav
@@ -19375,7 +19342,7 @@ The gods ate of the apples of immortality and regained their youth..wav
 The smith will begin to build his wall.txt
 The smith will begin to build his wall.wav
 >>> ../datae\audiobooks--\Neil Gaiman - Norse Mythology ## uk {{Neil Gaiman}}/{{}}
->>> ../datae\audiobooks--\Neil Gaiman - Norse Mythology ## uk {{Neil Gaiman}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Neil Gaiman - Norse Mythology ## uk {{Neil Gaiman}}\{{}}/1
 becoming.wav
 bonds.wav
 cathedrals.wav
@@ -19387,7 +19354,7 @@ ends.wav
 Freyr.wav
 gallows.wav
 giants.wav
-Gleipnir.wav
+Gleipnir ## sic!.wav
 gold.wav
 names.wav
 nowhere.wav
@@ -19407,7 +19374,7 @@ three.wav
 throw away.wav
 two.wav
 wall.wav
->>> ../datae\audiobooks--\Neil Gaiman - Norse Mythology ## uk {{Neil Gaiman}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\Neil Gaiman - Norse Mythology ## uk {{Neil Gaiman}}\{{}}/2
 a trick of the light.wav
 all but one of them.wav
 bone marrow.wav
@@ -19439,7 +19406,7 @@ Hello, father!.wav
 I hate you so much..wav
 I must think about this. I must ponder. I must reflect..wav
 I need little enough payment for what I am offering..wav
-I see....wav
+I see. [].wav
 I see..wav
 I suggest this....wav
 I will hold on..wav
@@ -19499,7 +19466,7 @@ The sheep can't get up and there's no way to tell how serious it is.wav
 There's the First Law of Kipple, 'Kipple drives out nonkipple.' Like Gresham's law about bad money. [kipple][Gresham's law]..wav
 You ought to be scared to the soles of your feet..wav
 >>> ../datae\audiobooks--\Philip K. Dick - Do Androids Dream of Electric Sheep {{Scott Brick}}/{{}}
->>> ../datae\audiobooks--\Philip K. Dick - Do Androids Dream of Electric Sheep {{Scott Brick}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Philip K. Dick - Do Androids Dream of Electric Sheep {{Scott Brick}}\{{}}/1
 a chickenhead.wav
 a squirrel.wav
 alive.wav
@@ -19511,7 +19478,7 @@ ersatz.wav
 peaches.wav
 prestige.wav
 silence.wav
->>> ../datae\audiobooks--\Philip K. Dick - Do Androids Dream of Electric Sheep {{Scott Brick}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\Philip K. Dick - Do Androids Dream of Electric Sheep {{Scott Brick}}\{{}}/2
 all of a sudden.wav
 in a way.wav
 Institute of Special Trade Skills of America.wav
@@ -19557,7 +19524,7 @@ Surely you're joking, Mr. Feynman!.ogg
 Telephone! Briiing!.ogg
 Telephone! Briiing!.txt
 >>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}/{{}}
->>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}\{{}}/1
 gee.ogg
 gloooooooooow [glow].ogg
 glycerine.ogg
@@ -19569,11 +19536,10 @@ pshshshsht.ogg
 triboluminescence.ogg
 wow!.ogg
 zoom.ogg
->>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}\{{}}/2
 back and forth.ogg
 Excuse me!.ogg
 If you wish..ogg
-It's a letter from my wife - it says TJXYWZ TW1X3.ogg
 Like what~!.ogg
 What are you~!.ogg
 You're making a social error.ogg
@@ -19583,6 +19549,7 @@ Do you think people stare at you~!.ogg
 Do you think people talk about you~!.ogg
 Excuse me... can you understand...ogg
 Excuse me... can you understand...txt
+It's a letter from my wife - it says TJXYWZ TW1X3.ogg
 pi = 3.14159.ogg
 Two bodies, are considered equivalent.ogg
 Two bodies, are considered equivalent.txt
@@ -19594,9 +19561,9 @@ The only difference between lymphodenema and lymphodenoma.txt
 The only difference between lymphodenema and lymphodenoma.wav
 What do you care what other people think~!.wav
 >>> ../datae\audiobooks--\Richard Feynman - What Do You Care What Other People Think~! {{Raymond Todd}}/{{}}
->>> ../datae\audiobooks--\Richard Feynman - What Do You Care What Other People Think~! {{Raymond Todd}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Richard Feynman - What Do You Care What Other People Think~! {{Raymond Todd}}\{{}}/1
 ajar.wav
-Cherchez la femme.wav
+cherchez la femme.wav
 epilogue.wav
 Hodgkin's disease.wav
 nothing.wav
@@ -19605,8 +19572,8 @@ Port of Spain.wav
 preface.wav
 six weeks ahead of time.wav
 The bathroom is down the hall..wav
-the first thing is.wav
-the other thing is.wav
+The first thing is....wav
+The other thing is....wav
 tombstone engraving.wav
 And I swear to you, I'd never seen him before in my life!.wav
 Aw, don't worry about it!.wav
@@ -19763,7 +19730,7 @@ While a British person may say they feel ‘a bit miffed, actually’.wav
 You know it’s not a good idea (Brabant).txt
 You know it’s not a good idea (Brabant).wav
 >>> ../datae\audiobooks--\Tiffany Watt Smith - The Book of Human Emotions {{Suzanne Toren}}/{{}}
->>> ../datae\audiobooks--\Tiffany Watt Smith - The Book of Human Emotions {{Suzanne Toren}}\{{}}/1 ## =
+>>> ../datae\audiobooks--\Tiffany Watt Smith - The Book of Human Emotions {{Suzanne Toren}}\{{}}/1
 a baffler.wav
 a freak.wav
 a sneaker.wav
@@ -19944,7 +19911,7 @@ wanderlust.wav
 wlatsome ## sic!.wav
 wonderdrug.wav
 worry.wav
->>> ../datae\audiobooks--\Tiffany Watt Smith - The Book of Human Emotions {{Suzanne Toren}}\{{}}/2 ## =
+>>> ../datae\audiobooks--\Tiffany Watt Smith - The Book of Human Emotions {{Suzanne Toren}}\{{}}/2
 a double blow.wav
 a field guide.wav
 a little off-piste.wav
@@ -22160,7 +22127,6 @@ aha! ### 1,2,3.wav
 aha! @ catch ### [Adult-Male-B_Ah-Ha_VKT_03506].mp3
 aha! @ realization ### [Adult-Male-F_Uh-Huh_VKT_06199].mp3
 aha! @ triumph ### [Senior-Male-A_Ah-Ha_VKT_13206].wav
-aha! a-ha! ### 1,2,3.wav
 ahh ### CrowdReaction 1009_49_2.wav
 Ahh @ medical ### [Adult-Male-B_Ahh_VKT_03504].mp3
 ahh! ### [Adult-Fem-D_Ahh_VKT_01378].mp3
@@ -22751,7 +22717,6 @@ hm @ tired ### HUMAN-VOCAL_GEN-HDF-15459.wav
 hmmm ### [Senior-Fem-B_Hmmm_VKT_12890].wav
 hmm~! ### [Adult-Male-B_Hmm_VKT_03663].mp3
 Ho! Ho! Ho! ### [Senior-Male-A_Ho-Ho-Ho_VKT_13331].wav
-Ho! Ho! Ho! Ho! ### [Senior-Male-A_Ho-Ho-Ho-Ho_VKT_13334].wav
 Ho, ho, ho, ho! ### [Senior-Male-A_Ho-Ho-Ho-Ho_VKT_13334].wav
 Ho-ho, don't mess with me! ### [Adult-Male-D_Ho-Ho-Dont-Mess-With-Me_VKT_04735].mp3
 Hold my calls~! ### [Mid-Aged-Fem-C_Hold-My-Calls_VKT_10839].wav
@@ -23310,8 +23275,8 @@ oh my goodness! ### [Teen-Fem-A_Oh-My-Goodness_VKT_13950].wav
 oh my gosh! ### [Adult-Fem-B_Oh-My-Gosh_VKT_00623].mp3
 Oh my gosh! ### [Adult-Fem-B_Oh-My-Gosh_VKT_00625].mp3
 oh my gosh! ### [Adult-Fem-E_Oh-My-Gosh_VKT_02260].mp3
-oh no! ### [Adult-Fem-G_Oh-No_VKT_02938].mp3
-oh no~! ### [Mid-Aged-Male-B_Oh-No_VKT_11847].wav
+Oh no! ### [Adult-Fem-G_Oh-No_VKT_02938].mp3
+Oh no~! ### [Mid-Aged-Male-B_Oh-No_VKT_11847].wav
 oh yeah ### [Teen-Male-A_Oh-Yeah_VKT_15416].wav
 oh yeah @ affirmatively ### [Adult-Fem-E_Oh-Yeah_VKT_02268].mp3
 oh yeah! ### [Adult-Fem-E_Oh-Yeah_VKT_02267].mp3
@@ -23841,7 +23806,7 @@ Uh, I don't know. ### [Adult-Male-C_Uh-I-Dont-Know_VKT_04402].mp3
 Uh, I forgot. ### [Adult-Fem-E_Uh-I-Forgot_VKT_02364].mp3
 Uh, I'm so tired. ### [Adult-Male-E_Uh-Im-So-Tired_VKT_05729].mp3
 Uh, quit your complaining. ### Adult-Fem-C_Uh-Quit-Your-Complaining_VKT_01236.mp3
-Uh, uh, uh ### Adult-Fem-B_Uh-Uh-Uh_VKT_00743.mp3
+Uh, uh, uh. ### Adult-Fem-B_Uh-Uh-Uh_VKT_00743.mp3
 Uh, what's wrong now~! ### [Adult-Male-E_Uh-Whats-Wrong-Now_VKT_05738].mp3
 Uh, when are we getting there~! ### [Teen-Male-C_Uh-When-Are-We-Getting-There_VKT_16298].wav
 uh-oh! ### HumanVocalFem CTE03_50.6.wav
@@ -24923,13 +24888,14 @@ Roman medical knife [medical knife][scalpel][rusty] ## date 1st-3rd century AD {
 Tea and coffee service, ca. 1800 [service@kitchen] ## qrop l22 t2 r5 {{Photo.. Christian Wiltberger}}.jpg
 Tea tray and urn, 1799 [tea tray][tea urn] {{Photo.. John McMullin}}.jpg
 twopence [tuppence].jpg
-Bentley Advertisement [middle-finger][middle finger].jpg
+Bentley Advertisement [middle-finger][middle finger] ## qropt!.jpg
 blazer.jpg
 Calliope [Calliope][Muse].jpg
 Chicago City Lights [Chicago] ## qrop l13 r3 ## qropt! {{Photo.. Jim Richardson}}.jpg
 clamshells @ packaging.jpg
 Clio, Muse of History %% 2nd century, Roman copy from a Greek original, The Hermitage Museum [Clio][Muse] ## qrop t3 b4 ## qropt!.jpg
 crate opener [opener] ## qrop l3 r6 ## qropt!.jpg
+crocs @ shoes ###.jpeg
 diving tower [diving platform] {{Photo.. Joel Meyerowitz}}.jpg
 Eid-ul-Fitr congregation ## qrop q {{Photo.. Azim Khan Ronnie}}.jpg
 Eid-ul-Fitr congregation ## qrop q {{Photo.. Azim Khan Ronnie}}.txt
@@ -24946,14 +24912,15 @@ Porto and Stilton [digestif] ## qrop qr {{Photo... A. Harris}}.jpg
 raw dice {streaky bacon} {{Photo.. M. Lorthios}}.jpg
 red onion [red][onion] {{Photo.. A. Caste}}.jpg
 rolled white and raspberry {log} cake {{Photo.. Swalens}}.jpg
-United Steaks of America [steak] {{Photo.. Dominic Episcopo}}.jpg
+United Steaks of America [steak] ## qrop l16 r18 {{Photo.. Dominic Episcopo}}.jpg
 vodka martini [James Bond][Bondesque] ### james_bond_roger_moore_getty.jpg
 wassail ## qrop qb.png
 ghost.jpg
 hang one's head ### Bobby Knight, coach of the US Olympic basketball team.jpg
 Hang'er [hanger] ## date 1996 ## qropt! {{Photo.. Dominic Rouse}}.jpg
+highway {{Photo.. Mariusz Wilkowski}}.jpg
 IQlight lamp, designed by Holger Strøm, 1973 [lamp@home] ## noqrop.jpg
-Lips [lips] ## noqrop {{Photo.. Luis Venegas}}.jpg
+Lips [mouth@human] ## noqrop {{Photo.. Luis Venegas}}.jpg
 matador [torero] ## crop r20 ## qrop l5 r28.jpg
 >>> ../datae\photo/nature
 amethyst druse [+] ## qrop l7 r3 ## qropt!.jpg
@@ -25039,6 +25006,7 @@ Cheryl Cook refused to leave her home ## qropt!.txt
 Children hopping on {pogo sticks}, 1958.jpg
 coal miner [coalminer][coal-miner][miner@worker] ## qrop t2 ## qropt! {{Photo.. James Wiley}}.jpg
 Dr. Igor Charkovsky, the _Soviet pioneer of baby yoga, dolphin birthing, and {water birthing} [water birth].jpg
+freckles {{Photo.. Robert Lubanski}}.jpg
 Frenchman Crying During Nazi Occupation of France ## qrop l4 r5 ## qropt!.jpg
 Frenchman Crying During Nazi Occupation of France ## qrop l4 r5 ## qropt!.txt
 John McCarthy playing chess at Stanford's IBM 7090 [computer scientist][McCarthy][intelligence] ## date 1967.png
@@ -25130,7 +25098,7 @@ A day when everything goes wrong ## qrop l11 r16 ## crop l10 r8.txt
 All my apples ## crop l2 r5 ## qrop l10 r5 ## qropt!.jpg
 All my apples ## crop l2 r5 ## qrop l10 r5 ## qropt!.txt
 Chimney Sweeps, _Prague [chimney sweeps] ## date 1998 ## crop l9.jpg
-Hand, _Paris [hand] ## date 2010 ## crop l5 r20 ## qrop l7 r27.jpg
+Hand, _Paris [hand@human] ## date 2010 ## crop l5 r20 ## qrop l7 r27.jpg
 Man Repairing Bicycle Tire [bicyclist] ## date 2000 ## crop r15.jpg
 Twins, Baska ## crop t10 b10 ## qrop q.jpg
 Twins, Baska ## crop t10 b10 ## qrop q.txt
@@ -25628,18 +25596,18 @@ Tutankhamun sarcophagus [+] ## qrop l22 t5 r7 ## date 1926.jpg
 Unbroken Seal on the Third Shrine of Tutankhamun [seal @ sealing] ## date 1924.jpg
 Wood Box in the Form of Tutankhamun's Cartouche or Royal Name [cartouche][artifact][artefact] ## date 1920s ## qrop t14 b12.jpg
 >>> ../datae\photo abc/Burtynsky {{Photo.. Edward Burtynsky}}
-Abandoned Marble Quarry, Rochester, _Vermont [quarry] ## date 1991.jpg
+Abandoned Marble Quarry, Rochester, _Vermont [quarry] ## date 1991 ## qrop q.jpg
 Carrara Marble Quarries [Massa Carrara] ## date 1993,.jpg
-Carrara Marble Quarries, _Italy [quarry] ## date 1993.jpg
-Coal Mine, North Rhine, Westphalia, Germany [open-pit mine][pit@mine] ## date 2015.jpg
-Dryland Farming, _Monegros County, _Aragon, _Spain [dryland farming][Aragon] ## date 2010.jpg
+Carrara Marble Quarries, _Italy [quarry] ## date 1993 ## qrop ql.jpg
+Coal Mine, North Rhine, Westphalia, Germany [open-pit mine][pit@mine] ## date 2015 ## qrop l14 r11.jpg
+Dryland Farming, _Monegros County, _Aragon, _Spain [dryland farming][Aragon] ## date 2010 ## qrop qr.jpg
 GERD, Benishangul-Gumuz Region, Ethiopia [GERD] ## date 2019.jpg
 Lake Lefroy, Western _Australia [Lefroy][Western Australia] ## date 2007.jpg
-Makrana Marble Quarries, Rajasthan, _India [quarry] ## date 2000.jpg
-Nickel Tailings, Sudbury, _Ontario [pollution][tailings] ## date 1996 ###.jpg
-Nickel Tailings, Sudbury, _Ontario [pollution][tailings] ## date 1996.jpg
-Open Pit Copper Mine, Highland Valley, British Columbia [open-pit mine][pit@mine] ## date 1985.jpg
-The Gulf oil spill, Oil Skimming Boat near Ground Zero, June 24, 2010 [oil spill][oil spot][spill@oil][ecological].jpg
+Makrana Marble Quarries, Rajasthan, _India [quarry] ## date 2000 ## noqrop.jpg
+Nickel Tailings, Sudbury, _Ontario [pollution][tailings] ## date 1996 ## noqrop.jpg
+Nickel Tailings, Sudbury, _Ontario [pollution][tailings] ## date 1996 ## qrop q.jpg
+Open Pit Copper Mine, Highland Valley, British Columbia [open-pit mine][pit@mine] ## date 1985 ## qrop q.jpg
+The Gulf oil spill, Oil Skimming Boat near Ground Zero, June 24, 2010 [oil spill][oil spot][spill@oil][ecological] ## qrop l8 r17.jpg
 Uralkali Potash Mine, Berezniki, Russia [potashery] ## date 2017.jpg
 >>> ../datae\photo abc/Bury photocuisine {{Photo.. M. Bury}}
 boiled candy {lollipops}.jpg
@@ -25660,8 +25628,8 @@ _Danish Film Director _Lars _Von _Trier [audacity] ## qropt!.jpg
 >>> ../datae\photo abc/Caldicott {{Photo.. Richard Caldicott}}
 thermos ## qrop t15 b5 ### flask really.jpg
 >>> ../datae\photo abc/Calvert {{Photo.. Piers Calvert}}
-Bolivian Altiplano [altiplano].jpg
-London in the fog [London].jpg
+Bolivian Altiplano [altiplano] ## qrop ql.jpg
+London in the fog [London] ## qrop qr.jpg
 Sierra Nevada del Cocuy [Andes].jpg
 >>> ../datae\photo abc/Cano {{Photo.. Marina Cano}}
 a bloat of hippos [bloat].jpg
@@ -25682,9 +25650,9 @@ Orb Weaver Spider on Web [orb-weaver spider][orb][weaver].jpg
 crushing herbs in mortar [mortar] ## qrop t6 b15 ## qropt!.jpg
 >>> ../datae\photo abc/Ciol {{Photo.. Elio Ciol}}
 corncobs drying in bundles [+].jpg
-Detail of Coat of Arms from an Italian Renaissance Bookbinding with Velvet and Inlaid Silverwork [coat of arms].jpg
-Detail of {John the Evangelist} from a Renaissance European Gold and Silverwork {Reliquary} with the Four {Evangelists}.jpg
-Kingdom of _Italy Coat of Arms [Kingdom of Italy][coat of arms].jpg
+Detail of Coat of Arms from an Italian Renaissance Bookbinding with Velvet and Inlaid Silverwork [coat of arms] ## qrop t7 b3 ## qropt!.jpg
+Detail of {John the Evangelist} from a Renaissance European Gold and Silverwork {Reliquary} with the Four {Evangelists} ## qrop qt.jpg
+Kingdom of _Italy Coat of Arms [Kingdom of Italy][coat of arms] ## qrop t1 b1 ## qropt!.jpg
 On the Lake of Fusine [recreation] ## date 1985.jpg
 >>> ../datae\photo abc/Clevenger {{Photo.. Ralph Clevenger}}
 aboriginal spear {thrower} and throwing sticks.jpg
@@ -25703,7 +25671,7 @@ Abandoned Villa in Emilia-Romagna [abandoned][Emilia-Romagna][emilia-romagna] ##
 Abandoned Villa [abandoned] ## qrop l7 t1 r13.jpg
 Basilica of Sacré-Cœur de Montmartre (Sacred Heart of Montmartre) [Montmartre][montmartre] ## crop t4 b11 ## qropt!.jpg
 >>> ../datae\photo abc/Cunningham {{Photo.. Imogen Cunningham}}
-another arm [arm] ## date 1973 ## qropt!.jpg
+another arm [arm@human] ## date 1973 ## qropt!.jpg
 Blind Sculptor [blind] ## date 1952 ## qrop qb.jpg
 Braille [braille][tactile] ## date 1933 ## qrop l17 r7.jpg
 Edward Weston and Margrethe Mather [Mather] ## date 1922 ### , Platinum Rolls.jpg
@@ -25764,13 +25732,13 @@ Cadiz Dunes Wilderness, Mojave Desert [Mojave Desert][wilderness][San Bernardino
 Cadiz Dunes Wilderness, Mojave Desert [Mojave Desert][wilderness][San Bernardino County][desert][dune][dunes] ## qrop l10 r27.jpg
 Lower Manhattan and New York Harbor [Manhattan].jpg
 >>> ../datae\photo def/De Lassée {{Photo.. Floriane De Lassée}}
-Caravanserai, Istanbul [caravanserai].jpg
-construction site ### Las Vegas.jpg
+Caravanserai, Istanbul [caravanserai] ## qrop q.jpg
+construction site ## qrop ql ### Las Vegas.jpg
 Las Vegas.jpg
 Macao.jpg
-Shanghai [office building].jpg
+Shanghai [office building] ## qrop qr.jpg
 Shanghai.jpg
-Sulawesi, Indonesia [Sulawesi][veranda].jpg
+Sulawesi, Indonesia [Sulawesi][veranda] ## qrop l26 b1.jpg
 >>> ../datae\photo def/de Luca {{Photo.. Araldo de Luca}}
 Ancient Silver Cosmetic Spoon [cosmetic spoon][cosmetic] ## qrop q.jpg
 Hilt of Sword in Honor of Ferdinand the Devout of Bourbon and Duke of Noto [hilt of sword][hilt].jpg
@@ -26028,13 +25996,13 @@ three saffron sugar crystals [saffron yellow] ## qrop l4 r8 ## qropt!.jpg
 two Turkish {flatbreads}.jpg
 >>> ../datae\photo def/Frankel {{Photo.. Felice Frankel}}
 A metaphor for binary language [binary] ## crop r9 ## qrop r23 ## qropt!.jpg
-A piece of computer magnetic-core memory under microscope [core memory][ferrite].jpg
-Bacillus subtilis colony [Bacillus][bacillus].jpg
-darkfield device [darkfield][microscope][microscopy].jpg
-Iron-riched fluid under the influence of magnets [ferrofluid][magnetorheological][magnetorheological fluid].jpg
-lotus effect [superhydrophobicity][superhydrophobic][hydrophobic].jpg
+A piece of computer magnetic-core memory under microscope [core memory][ferrite] ## qrop qt.jpg
+Bacillus subtilis colony [Bacillus][bacillus] ## qrop qr.jpg
+darkfield device [darkfield][microscope][microscopy] ## qrop l8 r22.jpg
+Iron-riched fluid under the influence of magnets [ferrofluid][magnetorheological][magnetorheological fluid] ## qrop l4 r31.jpg
+lotus effect [superhydrophobicity][superhydrophobic][hydrophobic] ## qrop l25 r10.jpg
 Proteus colony [proteus].png
-vibrating string [vibrating].jpg
+vibrating string [vibrating] ## qrop ql.jpg
 >>> ../datae\photo def/Freed {{Photo.. Leonard Freed}}
 A man taken into custody in a police car %% New York City, 1978 [take into custody][handcuffed] ## qropt!.jpg
 An _IBM programmer, 1965 [reset button][programmer] ## qrop l25 r8.jpg
@@ -26127,17 +26095,17 @@ Greta _Garbo [+][actress@cinema] ## date 1925 ## qrop l3 r14 ## qropt!.jpg
 >>> ../datae\photo gh/Gescheidt {{Photo.. Alfred Gescheidt}}
 Self-portrait [self-portrait@photo][photographer] ## date 1953.jpg
 >>> ../datae\photo gh/Giovan {{Photo.. Tria Giovan}}
-A Civil War Cipher Key Captured in _Richmond [cipher][cryptographic].jpg
+A Civil War Cipher Key Captured in _Richmond [cipher][cryptographic] ## qrop l5 r5 ## qropt!.jpg
 Civil War Cavalryman Gear.jpg
 Civil War Cavalryman Gear.txt
+Civil War Derringer [Derringer][derringer] ## qrop l14 r5.jpg
 Civil War Union {Signalman}'s Uniform.jpg
-Civil War {Derringer}.jpg
+Confederate States of America Silver Pin with Thirteen Stars [Confederate States of America][confederate states of america][Thirteen][thirteen] ## qrop l18 t18 r16.jpg
 Handcuffs Used on _Lincoln Assassin [handcuffs].jpg
 Hatchet and Leather Belt from U.S. Civil War [hatchet@@].jpg
-Rare _Confederate Artifacts from the Civil War.jpg
-Rare _Confederate Artifacts from the Civil War.txt
-Shimmer [shimmer] ## date 2008.jpg
-{Confederate States of America} Silver Pin with {Thirteen} Stars.jpg
+Rare _Confederate Artifacts from the Civil War ## qrop l15 r4.jpg
+Rare _Confederate Artifacts from the Civil War ## qrop l15 r4.txt
+Shimmer [shimmer] ## date 2008 ## qrop ql.jpg
 >>> ../datae\photo gh/Goldes {{Photo.. David Goldes}}
 Air, glass, water, air [conductivity][electroconductibility] ## date 2013 ## crop t1 b1 ## qrop t12 b3 ## qropt!.jpg
 Arcing Wire [arcing].jpg
@@ -26158,6 +26126,29 @@ Water Heated In a Cup [thermal conductivity][heat conductivity] ## date 2003 ## 
 >>> ../datae\photo gh/Gottlieb {{Photo.. William P. Gottlieb}}
 clarinettist~clarinetist ## qrop qr {{Photo.. William P. Gottlieb, 1948 $$LOC}} ### Portrait of Fess Williams and Freddie Moore.jpg
 Louis Armstrong [trumpeter@music] {{Photo.. William P. Gottlieb, 1946 $$LOC}}.jpg
+>>> ../datae\photo gh/Greene {{Photo.. Milton Greene}}
+Audrey Hepburn [+].jpg
+Marilyn Monroe smiling while wrestling (or hugging) a bronze Discobolus statue [fool around] ## date 1956 ## noqrop.jpg
+Marlene Dietrich [+] ## date 1952.jpg
+Marlene Dietrich [+] ## date 1952.jpg.uid-zps
+Suzy Parker in Norell's red sequin sheath ## date 1952 ## qrop t18 b7 ## qropt!.jpg
+Suzy Parker in Norell's red sequin sheath ## date 1952 ## qrop t18 b7 ## qropt!.txt
+>>> ../datae\photo gh/Greines {{Photo.. Irving Greines}}
+116 [number].jpg
+brick wall [wall].jpg
+broom @ utensil.jpg
+fire door ## qrop l17 r16.jpg
+For I know the plans I have for you.jpg
+For I know the plans I have for you.txt
+graffiti.jpg
+No parking! [no parking@@] ## qrop qt.jpg
+panelboard ## qrop ql.jpg
+Please be advised! [advised] ## qrop l11 r16.jpg
+Post no bills! %% a sign intended to discourage unauthorized flyposting [flyposting][fly-posting] ## qrop t10 b15.jpg
+Rue Christine near Rue Des Grandes Augustins, 6th Arr., Paris, France [door knocker].jpg
+sign.jpg
+stage door [stagedoor][stage-door].jpg
+Zombies inside! [warning] ## qrop r21.jpg
 >>> ../datae\photo gh/Guichard {{Photo.. Jean Guichard}}
 A large wave engulfed the lighthouse [engulf][engulfed] ## qrop l21 r12.jpg
 A large wave {engulfed} the lighthouse [engulf].jpg.uid-zps
@@ -26173,7 +26164,9 @@ Bird in Flight [flight] ## date 1959.jpg
 Blue Light, _Amazon [blue] ## date 1965.jpg
 diving in ## date 1984.jpg
 Impala Grazing, _Kenya [impalas][antelopes] ## date 1970.jpg
+Japanese Rose [flower] ## date 1981.jpeg
 matador, tercio de capa [tercio][bullfight][bullfighting] ## date 1956.jpg
+peach-coloured begonias [begonia][peachy][begonias] ## date 1983 ## qrop t28 b6.jpg
 picador, tercio de varas [tercio][bullfight][bullfighting][bullfighter][picador] ## date 1956.jpg
 picador, tercio de varas [tercio][bullfight][bullfighting][bullfighter][picador][torero] ## date 1956 ## qrop l15 r19.jpg
 Pinwheels [pinwheels] ## date 1960s.jpg
@@ -26195,6 +26188,19 @@ cheesecake with salmon roe [cheesecake] ## qrop qb.jpg
 moist chocolate cake [moist chocolate][moist].jpg
 panacotta with sumer fruit [pana cotta][pannacotta].jpg
 purple {watercress} sprouts.jpg
+>>> ../datae\photo gh/Halsman {{Photo.. Philippe Halsman}}
+Bobby Fischer [Fischer][Grandmaster][grandmaster] ## date 1967 ## qropt!.jpg
+Brigitte Bardot ## date 1951.jpg
+Jack-of-all-trades (Jean Cocteau) [Jack-of-all-trades] ## date 1948.jpg ## qrop t5 b7.jpeg
+Jean Cocteau [fascinated] ## qrop t17 b13.jpg
+Martha Graham & Merce Cunningham [leap] ## date 1948.jpg
+Professor Oppenheimer [Oppenheimer][physicist] ## date 1958 ## noqrop.jpg
+Salvador Dalí [+][surrealist] ## date 1943.jpg
+Salvador Dalí [bug-eyed][bug eyes] ## qrop t3 b19.jpg
+Salvador Dalí [loupe][magnifying glass][magnify] ## date 1946 ## qropt!.jpg
+Superimposed Face of A Woman [superimposed][superimpose] ## date 1967 ## qrop q.jpg
+Tippi Hedren [light up@cigarette] ## date 1962 ## qrop t17 b6.jpg
+Vladimir Nabokov, Montreux, Switzerland [butterfly hunting][lepidopterist] ## date 1966.jpg
 >>> ../datae\photo gh/Hammond photocuisine {{Photo.. F. Hammond}}
 blackberry {kir}.jpg
 copper cookware set [copper][cookware] ## qrop l12 r15 ## qropt!.jpg
@@ -26218,6 +26224,8 @@ Madison Avenue, Secret Wishes [Madison Avenue] ## date 1962.jpg
 Pittsburg, {Stealing} His Nuts ## date 1958.jpg
 Seville, Spain, in Holy week, men are resting after carrying an enormous religious {float}, 1972.jpg
 Sicily, {Precocious} Kiss ## date 1968.jpg
+>>> ../datae\photo gh/Highsmith {{Photo.. Carol Highsmith}}
+St. _Anthony's _Roman _Catholic Church, Long Beach, California [church][Long Beach].jpg
 >>> ../datae\photo gh/Hine {{Photo.. Lewis Hine}}
 mechanic ## date 1920 ## qrop qb.jpg
 >>> ../datae\photo gh/Hoffmann {{Photo.. Heinrich Hoffmann}}
@@ -26279,6 +26287,10 @@ Passing the sand dunes, Nam Cuong hills, Vietnam.jpg
 Passing the sand dunes, Nam Cuong hills, Vietnam.txt
 Water-chestnuts harvesting season [water chestnuts] ## crop l10 r10.jpg
 Water-chestnuts harvesting season [water chestnuts][].jpg
+>>> ../datae\photo gh/Hyde {{Photo.. John Hyde}}
+a pod of orcas [orca][orcas][a pod of whales].jpg
+aurora, northern lights [+][aurora borealis].jpg
+moose.jpg
 >>> ../datae/photo ijkl
 >>> ../datae\photo ijkl/Iwanon photocuisine {{Photo.. C. Iwanon}}
 cauliflower, confit tomato, Beaufort, olive and raw ham {timbale} [timbales].jpg
@@ -26315,6 +26327,12 @@ Silver _Neopolitan teapot and {tea caddy}.jpg
 Silver {skyphos} from _Pompeii.jpg
 Statue of {Saint Barbara} depicted with her tower.jpg
 The House of the Little Fountain at _Pompeii [Pompeian red].jpg
+>>> ../datae\photo ijkl/Kasebier {{Photo.. Gertrude Kasebier}}
+Belles of the Ball [belle of the ball] ## date 1906.jpg
+Indian Chief [chief@Indian] ## date ca. 1901.jpg
+Sioux Indian [Sioux] ## date ca 1898.jpg
+The Manger [breastfeed][breastfeeding] ## date 1899.jpg
+Yoked and Muzzled [yoked] ## date 1915.jpg
 >>> ../datae\photo ijkl/Katseff {{Photo.. Adam Katseff}}
 river ## date 2014 ## qrop ql ### River V, 2014.jpg
 river ## date 2014 ## qrop qr ### River III, 2014.jpg
@@ -26341,7 +26359,7 @@ long-tailed macaque [crab-eating macaque][cynomolgus][Macaca fascicularis] ## da
 mara @ rodent ## date 2012.jpg
 marabou [adjutant stork][marabou stork] ## date 2012.jpg
 polar bear ## date 2009.jpg
-silverback gorilla [ape] ## date 2010.jpg
+silverback gorilla [ape][silverback] ## date 2010.jpg
 >>> ../datae\photo ijkl/Kontos {{Photo.. Yannis Kontos}}
 Life As An Amputee.jpg
 Life As An Amputee.txt
@@ -26460,6 +26478,7 @@ thinly sliced {turnip}.jpg
 vanilla ice cream {dessert} ## qrop t10 b3 ## qropt!.jpg
 >>> ../datae\photo ijkl/Listri {{Photo.. Massimo Listri}}
 Admont Abbey Library, Austria [Baroque].jpeg
+Agate and Gold Snuffbox, ca. 1760 [gemwork][snuffbox].jpg
 Biblioteca Marucelliana, Florence [library] ## qrop ql.jpg
 Cistern in Royal Alcázar of Seville [cistern@ancient] ## date 2022 ## qrop q.jpg
 Friedenstein Palace, {Gotha} ## date 1999.jpg
@@ -26471,6 +26490,7 @@ Self-Portrait [unitard] ## date ca. 1945 ## qropt!.jpg
 >>> ../datae/photo mn
 >>> ../datae\photo mn/MacLean {{Photo.. Alex MacLean}}
 Chesapeake Fish Wier, Cape Charles, Virginia [wier][weir] ## date 2018.jpg
+Dinghies Clustered Around Dock, Duxbury [dinghy][dinghies] ## date 2010.jpg
 >>> ../datae\photo mn/Madoz {{Photo.. Chema Madoz}}
 atlas ## qrop qt.jpg
 black and white [black-and-white].jpg
@@ -26533,6 +26553,7 @@ tarantula [arachnid] ## date 1988.jpg
 baby's breath [gypsophila][Gypsophila].jpg
 Chest [chest] ## date 1987.png
 gun blast [+][revolver] ## date 1985 ## crop qb ## qropt!.jpg
+leg @ human %% _Lisa _Lyon ## date 1981.jpg
 Pictures [writing][wrote][written][write, wrote, written] ## date 1977 ## qrop qt ### Self Portrait.jpg
 Self Portrait [knifemen] ## date 1983.jpg
 tulip ## date 1988 ## qrop qt.jpg
@@ -26541,7 +26562,6 @@ _Dennis _Speight [Speight] ## 99+ ## date 1983.jpg
 _Dennis _Speight [Speight] ## date 1983 [].jpg
 _Ken _Moody and _Robert _Sherman [bald] ## date 1984.jpg
 _Ken _Moody [Moody] ## date 1983.jpg
-_Lisa _Lyon [leg] ## date 1981.jpg
 _Lisa _Lyon [veil] ## date 1980 ## qrop ql.jpg
 _Michael _Roth [torso] ## date 1983.jpg
 _Patti _Smith with doves [+] ## date 1979.jpg
@@ -26550,10 +26570,25 @@ _Ron _Simms [buttocks] ## date 1980.jpg
 >>> ../datae\photo mn/Mark {{Photo.. Mary Ellen Mark}}
 _Dustin _Hoffman sneaks up on _Lawrence _Olivier on the set of _John _Schlesinger’s Marathon Man [sneak up][sneaks up] ## date 1976 ## qrop l5 r22 ## qropt!.jpg
 _Dustin _Hoffman sneaks up on _Lawrence _Olivier on the set of _John _Schlesinger’s Marathon Man [sneak up][sneaks up][levity] ## date 1976 ## qrop l10 r11 ## qropt!.jpg
+>>> ../datae\photo mn/Marlow {{Photo.. Peter Marlow}}
+A bathroom complete with a silver lilo, Hotel Tiffany, Kyoto [lilo] ## date 2000.jpg
+A club for truck drivers, which is a euphemism for a brothel. Galicia, Spain, 1998 [whorehouse].jpg
+Concorde ## date October 2003.jpg
+>>> ../datae\photo mn/Mate {{Photo.. Bence Mate}}
+hoopoe %% Upupa epops [Upupa epops][Upupa].jpg
+mushroom.jpg
+>>> ../datae\photo mn/Mauli {{Photo.. Hans Mauli}}
+Bryce Canyon [Bryce][Utah].jpg
+Window Dressing [window dressing].jpg
 >>> ../datae\photo mn/Maximilian {{Photo.. Maximilian Stock Ltd}}
 assorted flower-flavored vinegars [flowered][flowery][flavored][flavoured].jpg
 composition of assorted pasta [composition][pasta] ## qrop ql.jpg
 dairy produce [dairy][dairy product][dairy products].jpg
+>>> ../datae\photo mn/McDonald {{Photo.. Joe McDonald}}
+A scrub jay perches on the top of a field and guide book [corvids][Corvidae][Corvoidea][Corvida].jpg
+East African {oryx} [Orix][beisa].jpg
+grasshopper sparrow [sparrow].jpg
+serval marking territory [territorialism][territoriality][scent marking][territorial marking][territorial pissing].jpg
 >>> ../datae\photo mn/McNally {{Photo.. Joseph McNally}}
 grip ## qrop qb.jpg
 grip ## qrop qb.txt
@@ -26631,6 +26666,11 @@ hot chocolate and cinnamon [hot chocolate].jpg
 pastry-making utensils [pastrymaking].jpg
 rose-flavored macaroons [rose-flavored][flavored][flavoured].jpg
 stacked plates with forks [stacked].jpg
+>>> ../datae\photo mn/Muller {{Photo.. Mark Vincent Muller}}
+gator ### Swamp.jpg
+nIght {eruption}.jpg
+short-eared {elephant shrew}.jpg
+sidewinder @ snake [sidewinding].jpg
 >>> ../datae\photo mn/Myke {{Photo.. Shelley Myke}}
 American kestrel [kestrel][Falco][falcon] ## qrop l19 r5 ### 1.jpg
 American kestrel [kestrel][Falco][falcon] ## qrop qr ### 2.jpg
@@ -26647,8 +26687,12 @@ pincushion flower %% Pinchus protea [Pinchus protea][Pinchus][pincushion@flower]
 >>> ../datae\photo mn/Nachtwey {{Photo.. James Nachtwey}}
 A patient with Extreme Drug-Resistant Tuberculosis, or {XDR-TB}.jpg
 >>> ../datae\photo mn/Nadar {{Photo.. Nadar}}
-Helicopter Prototype [prototype] ## date 1863 ## qrop t10 b5 ## qropt!.jpg
-Pierrot ## qrop t4 b2 ## qropt! {{Photo.. Nadar, 1855 $$}}.jpg
+Claude Debussy [Debussy][Debussyan] ## date 1908.jpg
+Cleo de Merode as Cleopatra [Cleo][Merode][Belle Époque] ## date 1894.jpg
+Franz Liszt [+] ## date 1884.jpg
+George Sand [George] ## date 1865.jpg
+Pierrot laughing [Pierrot][laughing] ## qrop t4 b2 ## qropt! ## date 1855.jpg
+Sarah Bernhardt as {Lady Macbeth} [Macbeth] ## date 1884.jpg
 >>> ../datae\photo mn/Newman {{Marvin E. Newman}}
 Untitled, 1955 [kvetch] ## qrop t6 b18.jpg
 >>> ../datae\photo mn/Nicol photocuisine {{Photo.. F. Nicol}}
@@ -27056,6 +27100,11 @@ Gothic {rib-vault} ceiling %% Choir, Sainte-Chappelle, _Paris [vault@art][riblik
 Gothic {rib-vault} ceiling %% Nave, Sainte-Chappelle, _Paris [vault@art][riblike] ## date 2006.jpg
 Nave, St. _Anne’s Church, Annaberg-Buchholz, _German [ornament] ## date 2008.jpg
 The Cathedral of the Dormition (Uspensky Sobor), _Moscow [vault@art] ## date 2004.jpg
+>>> ../datae\photo s-z/Sternberger {{Photo.. Marcel Sternberger}}
+George Bernard Shaw, London, 1939 [Shaw].jpg
+H. G. Wells [Wells].jpeg
+Josephine Charlotte [intention].jpg
+Stefan Zweig, novelist, London, 1938 [Stefan][novelist].jpg
 >>> ../datae\photo s-z/Stieglitz {{Photo.. Alfred Stieglitz $$}}
 Georgia O'Keeffe's Hands [hands].jpg
 paleontology ## qropt! ### Georgia O'Keeffe's Hands.jpg
@@ -27415,7 +27464,7 @@ French {nuclear test} Encelade in the _South _Pacific, 1971 [nuclear testing] {{
 mushroom cloud ## qrop l11 r9 {{NNSA $$}} ### Dominic Truckee, 210 kilotons, June 6, 1962.jpg
 Plumbbob Hood, 74 kilotons, July 5, 1957 [mushroom cloud][kilotons] ## qrop q.png
 Umbrella blast, 1958 [underwater nuclear explosion][underwater][nuclear explosion] ## qrop b12 ## qropt! {{NNSA}}.jpg
-VIP observers are lit up by the light of an atomic bomb, 1951 [light up][lit up] ## qrop qr ### Operation Greenhouse, Enewetak Atoll.jpg
+VIP observers are lit up by the light of an atomic bomb, 1951 [light up@illuminate][lit up] ## qrop qr ### Operation Greenhouse, Enewetak Atoll.jpg
 >>> ../datae\photo {{$$}}/{{US Army}}
 control room %% The main control room at the K25 plant in Oak Ridge ## qrop ql {{Photo.. Ed Westcott, US Army $$}}.jpg
 >>> ../datae\photo {{$$}}/{{US Navy}}
@@ -27683,7 +27732,7 @@ No drones! ## sic! ## qropt! ## qrop l8 r25 {{Photo.. Gunold $dreamstime 7427192
 No drones! ## sic! {{$Bunny F3 #7S2A5PG}}.wav
 No fishing! ## sic! ## qropt! ## qrop ql {{Photo.. Jonathan White $dreamstime 1402948}}.jpg
 No fishing! ## sic! {{$Bunny F3 #7S2A5PG}}.wav
-No parking! [no parking][parking] ## crop l7 ## qrop l7 r15 ## qropt! {{Photo.. Yury Yanshin $dreamstime 76831013}}.jpg
+No parking! [no parking@@][parking] ## crop l7 ## qrop l7 r15 ## qropt! {{Photo.. Yury Yanshin $dreamstime 76831013}}.jpg
 No parking! [no parking][parking] {{$Bunny F3 #7S2A5PG}}.wav
 No running! ## sic! ## qropt! ## qrop t2 b1 {{Photo.. Oskanov $dreamstime 104785905}}.jpg
 No running! ## sic! {{$Bunny F3 #7S2A5PG}}.wav
@@ -27825,7 +27874,7 @@ Snake alert! Watch where you walk! Stay on the paths! [alert] ## qrop l10 r23 ##
 Snake alert! Watch where you walk! Stay on the paths!.wav
 This facility is closed due to continued vandalism! [facility][due to][vandalism] ## qrop l4 r19 ## qropt! {{Photo.. Eutoch $dreamstime 35610359}}.jpg
 This facility is closed due to continued vandalism!.wav
-Warning! Unsafe structure! [unsafe] ## qrop q {{Photo.. Paul Reynolds $dreamstime 55772593}}.jpg
+Warning! Unsafe structure! [unsafe][warning][warning sign] ## qrop q {{Photo.. Paul Reynolds $dreamstime 55772593}}.jpg
 Warning! Unsafe structure!.wav
 >>> ../datae\photo_dreamstime\!mix/signs-transport
 Beware of blast! [blast] ## qrop l12 r18 ## qropt! {{Photo.. Warren Parsons $dreamstime 1048395}}.jpg
@@ -27862,7 +27911,7 @@ Stop here on red signal! No stopping anytime! Don't even think of parking here! 
 Stop here on red signal! No stopping anytime! Don't even think of parking here! [regulation] {{$Bunny F3 #7S2A5PG}}.wav
 Stop, look and listen before crossing the line! [crossing] ## qrop l1 r33 {{Photo.. Martin  Meehan $dreamstime 41372032}}.jpg
 Stop, look and listen before crossing the line! [crossing] {{$Bunny F3 #7S2A5PG}}.wav
-Warning.. no parking area! [no parking] ## qrop l24 t15 r26 b10 {{Photo.. Carolyn Franks $dreamstime 74016685}}.jpg
+Warning.. no parking area! [no parking@@] ## qrop l24 t15 r26 b10 {{Photo.. Carolyn Franks $dreamstime 74016685}}.jpg
 Warning.. no parking area! [no parking] {{$Bunny F3 #7S2A5PG}}.wav
 Watch the gap between car and platform! [gap] ## qrop t9 b19 ## qropt! {{Photo.. David Melian $dreamstime 58128775}}.jpg
 Watch the gap between car and platform! [gap] {{$Bunny F3 #7S2A5PG}}.wav
@@ -29111,7 +29160,7 @@ a keg of beer [keg] ## qrop l21 r9 ## qropt! {{Photo.. Grafvision $dreamstime 43
 advocaat ## qrop ql {{Photo.. Joanna Zopoth-lipiejko $dreamstime 4756249}} Egg liqueur.jpg
 alcohol ## qrop l10 r15 {{Photo.. Romans Klevcovs $dreamstime 75547820}}.jpg
 alcoholic ## qrop l10 r10 ## qropt! {{Photo.. Aleksandr Geleznov $dreamstime 1824424}} ### Vine-glases with devil.jpg
-bar ## qrop l15 r19 {{Photo.. Catalina Zaharescu Tiensuu $dreamstime 20572265}} ### Olut Huone, traditional beer and sport English bar in Tampere, Finland.jpg
+bar @ alco ## qrop l15 r19 {{Photo.. Catalina Zaharescu Tiensuu $dreamstime 20572265}} ### Olut Huone, traditional English bar in Tampere, Finland.jpg
 bar stool ## qrop l24 r11 {{Photo.. Kolotype $dreamstime 46438987}}.jpg
 beer ## qrop l4 r30 {{Photo.. Nik0s79 $dreamstime 10620054}} ### lager.jpg
 cider ## qrop l37 t1 b5 {{Photo.. Photka $dreamstime 11435630}}.jpg
@@ -29397,17 +29446,17 @@ blond~blonde {{Photo.. Subbotina $dreamstime}}.jpg
 cross one's arms ## qrop l7 r27 {{Photo.. Maxim Lupascu $dreamstime 108091152}}.jpg
 cross one's fingers ## qrop qr {{Photo.. Waroot Tangtumsatid $dreamstime 111099897}}.jpg
 cut one's nails [cut][cut, cut, cut] ## qrop l10 r3 {{Photo.. Leila Akhundova $dreamstime 9049854}}.jpg
-ear ## qrop t8 b4 ## qropt! {{Photo.. Anette Linnea Rasmussen $dreamstime 198386}}.jpg
-eye @ body [iris@eye] ## qrop q {{Photo.. Lunamarina $dreamstime 20118658}}.jpg
-eye @ body {{Photo.. Olga Ekaterincheva $dreamstime 6541248}}.jpg
+ear @ human ## qrop t8 b4 ## qropt! {{Photo.. Anette Linnea Rasmussen $dreamstime 198386}}.jpg
+eye @ human [iris@eye] ## qrop q {{Photo.. Lunamarina $dreamstime 20118658}}.jpg
+eye @ human {{Photo.. Olga Ekaterincheva $dreamstime 6541248}}.jpg
 fold one's arms ## qrop l15 r19 ## qropt! {{Photo.. Rohappy $dreamstime 60119126}}.jpg
 fold one's arms ## qrop l2 r28 {{Photo.. Rohappy $dreamstime 60906477}}.jpg
 footprint ## qrop qr {{Photo.. Laurin Rinder $dreamstime 4974004}}.jpg
 Hellenistic sculpture of the 2nd century BCE [torso] ## qrop t11 b6 ## qropt! {{Photo.. Mineria6 $dreamstime 48662902}}.jpg
-lips ## qropt! {{Photo.. Maram $dreamstime}}.jpg
+lips @ human ## qropt! {{Photo.. Maram $dreamstime}}.jpg
 nails {{Photo.. Konstantin Stepanenko $dreamstime 66134963}}.jpg
 ringlet @ hair ## qrop qt {{Photo.. Gansovsky Vladislav $dreamstime}}.jpg
-shoulder ## qrop l13 r19 {{Photo.. Oliver Sved $dreamstime 37469343}}.jpg
+shoulder @ human ## qrop l13 r19 {{Photo.. Oliver Sved $dreamstime 37469343}}.jpg
 >>> ../datae\photo_dreamstime\human/body language
 appealing ## qrop l20 r13 {{Photo.. Eldadcarin $dreamstime 29979474}}.jpg
 give someone attitude [give attitude][attitude] ## qrop l32 r2 {{Photo.. 9nongphoto $dreamstime 65334192}}.jpg
@@ -30000,8 +30049,7 @@ Steller's sea eagle [sea eagle][Haliaeetus][Haliaeetus pelagicus][eagle] ## qrop
 talons of an eagle [talons@bird][claws] ## qrop l13 r7 ## qropt! {{Photo.. Iurii Kuzo $dreamstime 59571949}}.jpg
 black grouse [grouse] ## qrop l12 r21 {{Photo.. Ondřej Prosický $dreamstime 119983334}}.jpg
 black swan [swan] ## qrop qr {{Photo.. Sunheyy $dreamstime 5591907}}.jpg
-black woodpecker ({Dryocopus} martius) [woodpecker] ## qrop ql {{Photo.. Ondřej Prosický $dreamstime 80548616}}.jpg
-black woodpecker [woodpecker] ## qrop ql {{Photo.. Ondřej Prosický $dreamstime 80548616}}.jpg
+black woodpecker %% Dryocopus martius [Dryocopus][woodpecker] ## qrop ql {{Photo.. Ondřej Prosický $dreamstime 80548616}}.jpg
 black-capped kingfisher %% Halcyon pileata [Halcyon] {{Photo.. Panuruangjan $dreamstime 32805878}}.jpg
 blue coua [coua] ## qrop l8 r26 {{Photo.. Ondřej Prosický $dreamstime 97622767}}.jpg
 bluebird ## qrop t6 b27 {{Photo.. Mbolina $dreamstime 68768861}} ### Bluebirds fly in sunlight.jpg
@@ -30036,7 +30084,6 @@ scarlet macaw [scarlet] ## crop qr ## qropt! {{Photo.. Stacy Barnett $dreamstime
 seagull ## qrop qr {{Photo.. Basslinegfx $dreamstime 102565}}.jpg
 singing nightingale [+] ## qrop l4 r30 {{Photo.. Victortyakht $dreamstime 60602689}}.jpg
 sparrow ## qrop l21 r13 {{Photo.. Pindiyath100 $dreamstime 5949276}}.jpg
-sparrow ## qrop l23 r11 {{Photo.. Pindiyath100 $dreamstime 5949276}}.jpg
 stork ## qrop l25 r9 {{Photo.. Alinamd $dreamstime 106633847}}.jpg
 sulphur-crested cockatoo {{Photo.. Panuruangjan $dreamstime 32498319}}.jpg
 sulphur-crested cockatoo {{Photo.. Panuruangjan $dreamstime 32498319}}.txt
@@ -30164,7 +30211,7 @@ dolphins [dolphin] ## qrop l13 r12 {{Photo.. Orlandin $dreamstime 37430440}}.jpg
 dugong ## qrop qr {{Photo.. Tim Heusinger Von Waldegge $dreamstime 12899551}} ### [Sea cow (Dugong dugon)].jpg
 humpback whale [whale] ## qrop l9 r24 {{Photo.. Izanbar $dreamstime 101758451}}.jpg
 humpback whales [humpback@whale][whale] ## qrop l24 r8 ## qropt! {{Photo.. Yann Hubert $dreamstime 57381102}}.jpg
-killer whale ## qrop l10 r23 {{Photo.. Dave Riganelli $dreamstime 2616817}}.jpg
+killer whale [grampus] ## qrop l10 r23 {{Photo.. Dave Riganelli $dreamstime 2616817}}.jpg
 sea lion ## qrop l16 r18 {{Photo.. Greg Amptman $dreamstime 31069470}}.jpg
 sperm whale [+][cachalot] ## qrop l25 r9 ## crop l10 {{Photo.. Isselee $dreamstime 2257221}} [Sperm whale].jpg
 tail @ animal ## qrop l4 r27 ## qropt! {{Photo.. Remus Grigore $dreamstime 32940911}}.jpg
@@ -30260,7 +30307,7 @@ anaconda ## qrop q {{Photo.. Joel Santana $dreamstime 50398054}}.jpg
 basilisk @ animal ## qrop ql {{Photo.. Michaelfitzsimmons $dreamstime 39345878}}.jpg
 caiman ## qrop l42 b7 {{Photo.. Steve Kingsman $dreamstime 15068497}}.jpg
 chameleon ## qrop qb {{Photo.. Kseniya Bondareva $dreamstime 11498981}}.jpg
-crocodile mouth [+] ## qrop ql {{Photo.. Sbures $dreamstime 14727328}}.jpg
+crocodile mouth [crocodile][mouth@animal] ## qrop ql {{Photo.. Sbures $dreamstime 14727328}}.jpg
 Emerald tree boa [boa@snake] ## qrop l25 r9 {{Photo.. Victor Moussa $dreamstime 55608486}}.jpg
 frog ## qrop q {{Photo.. Alexey Stiop $dreamstime 5740970}}.jpg
 frog [silhouette][amphibian] ## qrop ql {{Photo.. Roberto Orecchia $dreamstime 3871257}}.jpg
@@ -30415,7 +30462,6 @@ sunset ## qrop qr {{Photo.. Paul Hampton $dreamstime 2841024}} Cornish Sunset.jp
 >>> ../datae\photo_dreamstime\nature/terrain
 Adriatic Sea above Dubrovnik [Adriatic sea][archipelago] ## qrop ql {{Photo.. Tomi Tenetz $dreamstime 21504724}}.jpg
 Antelope Canyon, Arizona [Antelope Canyon][canyon] ## qrop t12 b22 {{Photo.. Jf123 $dreamstime 20985366}}.jpg
-bar @ nautical ## qrop l9 r18 ## qropt! {{Photo.. Ivo Velinov $dreamstime 4248714}} ### Veleka, Bulgaria.jpg
 boulder ## qrop qr {{Photo.. Ian Woolcock $dreamstime 22685558}} ### Moeraki Boulders at Dawn South Island New Zealand.jpg
 cascade ## crop r23 ## qrop ql {{Photo.. Kenneth Summers $dreamstime 1312487}}.jpg
 dale ## qrop ql {{Photo.. Razvan Cosa $dreamstime 1091706}} Hay stack on rural hillside.jpg
@@ -30433,6 +30479,7 @@ pebbles ## qrop qr {{Photo.. Artcasta $dreamstime 15845438}}.jpg
 plateau ## crop l10 ## qrop qr {{Photo.. Serban Enache $dreamstime 90767}} Hintertux Glacier in Zillertal, Austria.jpg
 ridge ## qrop l5 r20 {{Photo.. Ionut David $dreamstime 10259709}}.jpg
 rock @ moutain ## qrop q {{Photo.. Markus Schieder $dreamstime 51534902}} Cap de Formentor, Balearic Island, Majorca.jpg
+sand bar [sandbar][bar@sand] ## qrop l9 r18 ## qropt! {{Photo.. Ivo Velinov $dreamstime 4248714}} ### Veleka, Bulgaria.jpg
 savanna [savannah] ## qrop l6 r23 ## crop r19 {{Photo.. Michal Bednarek $dreamstime 28951201}} ### [Serengeti, Tanzania].jpg
 slope ## qrop ql {{Photo.. Sakalouski Uladzislau $dreamstime 55255662}}.jpg
 snow mountain [slope] ## crop qr {{Photo.. Ninotti $dreamstime 59179612}}.jpg
@@ -31401,7 +31448,7 @@ Narrow steep road. Use low gears. [low gears] ## qrop qr {{Photo.. Kelly Vandell
 no horns [horns] ## qrop qr {{Photo.. Mrcmos $dreamstime 85404941}}.jpg
 no horse riding ## sic! ## qrop ql {{Photo.. Jevanto $dreamstime 91021548}}.jpg
 no overtaking [overtaking] ## qrop l15 r18 {{Photo.. Topstep07 $dreamstime 58385314}}.jpg
-no parking ## qrop l1 t38 r6 {{Photo.. Lkpro555 $dreamstime 66121277}}.jpg
+no parking sign [no parking@sign] ## qrop l1 t38 r6 {{Photo.. Lkpro555 $dreamstime 66121277}}.jpg
 one lane bridge [lane@road] ## qrop l24 r9 {{Photo.. Georgesheldon $dreamstime 82829234}}.jpg
 pass on this side [pass@move] {{Photo.. Mpfaff $dreamstime 21957630}}.jpg
 pedestrian crossing [crosswalk] ## qrop ql {{Photo.. Neueid $dreamstime 10947034}}.jpg
@@ -31489,7 +31536,7 @@ katana ## qrop ql {{Photo.. Vladimir Kokorin $dreamstime 96894597}}.jpg
 Minceta Tower, the highest point in the Dubrovnik defence system [stronghold] ## qrop l7 r26 {{Photo.. Phant $dreamstime 81367487}}.jpg
 swords ## qrop l20 r4 ## qropt! {{Photo.. Pavel Losevsky $dreamstime 1412410}}.jpg
 Udine castle, Italy [Udine][tower] ## qrop l21 r12 {{Photo.. Avphotosales $dreamstime 99982516}}.jpg
-unsheathe ## qrop l10 r24 {{Photo.. Elena  Zidkova $dreamstime 7987917}}.jpg
+unsheathe [unsheath] ## qrop l10 r24 {{Photo.. Elena  Zidkova $dreamstime 7987917}}.jpg
 warrior ## qrop qt {{Photo.. Kaplan69 $dreamstime 99149905}} ### Gothic, Catalunya.jpg
 improvised explosive device [IED][bomb] ## qrop l20 r13 {{Photo.. Ivan Kmit $dreamstime 65119041}}.jpg
 legionary ## qrop t17 b10 ## qropt! {{Photo.. Meunierd $dreamstime 42800587}}.jpg

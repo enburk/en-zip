@@ -1,5 +1,9 @@
 questions    = вопросы
 answers      = ответы
+===
+ask          = спрашивать
+answer       = отвечать
+===
 
 : Really?
 : Seriously?
@@ -26,7 +30,10 @@ why          = почему # pix-
 : What is this?
 : What is that?
 : What is it?
+: What are you?
 : What is your name?
+: What do you think?
+: What do I do?
 
 : Where?
 : Where is he?
@@ -44,10 +51,12 @@ why          = почему # pix-
 : Why?
 : But why?
 : Why not?
+: But why not?
 
 ===
 
 : To be or not to be. ~ That is the question. # 14+
+
 
 
 

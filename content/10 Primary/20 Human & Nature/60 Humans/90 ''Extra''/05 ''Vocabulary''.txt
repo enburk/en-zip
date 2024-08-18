@@ -7,25 +7,25 @@ die                       = умереть, умирать, ~ затухать
 : Death and Life
 ===
 
-body                      = тело
-head                      = голова
-face                      = лицо
-shoulder                  = плечо
-arm                       = рука
-hand                      = рука ~ (кисть)
-leg                       = нога
-knee                      = колено
-
-finger                    = палец (на руке)
-thumb                     = большой палец
-toe                       = палец (на ноге)
+body @ human              = тело
+head @ human              = голова
+face @ human              = лицо
+shoulder @ human          = плечо
+arm @ human               = рука
+hand @ human              = рука ~ (кисть)
+leg @ human               = нога
+knee @ human              = колено
+---
+finger @ human            = палец (на руке)
+thumb @ human             = большой палец
+toe @ human               = палец (на ноге)
 nails @ human             = ногти
 
-eye                       = глаз
-ear                       = ухо
-mouth                     = рот
-lips                      = губы
-cheek                     = щека
+eye @ human               = глаз
+ear @ human               = ухо
+mouth @ human             = рот
+lips @ human              = губы
+cheek @ human             = щека
 
 ===
 
@@ -53,6 +53,7 @@ shy                       = застенчивый, стеснительный, 
 crazy                     = сумашедший, безумный, ~ чокнутый
 : Are you crazy?
 : You're crazy!
+
 
 
 

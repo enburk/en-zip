@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "app.h"
 namespace studio::one
 {
@@ -22,6 +22,7 @@ namespace studio::one
         report anoma2("anoma2");
         report anomal("anomal");
         report duples("duples");
+        report orders("orders");
         report audiom("audiom");
         report audiop("audiop");
         report audioq("audioq");
@@ -49,7 +50,7 @@ namespace studio::one
     {
         s.replace_all(mdash, "---");
         s.replace_all(ndash, "--");
-        s.replace_all(u8"�", "'");
+        s.replace_all(u8"’", "'");
         return s;
     };
 
@@ -391,6 +392,67 @@ namespace studio::one
                 for (res r: videos)
                 report::videop +=
                 cliplink(r);
+            }
+        }
+    }
+
+    void order_check
+    (
+        content::out::course& course,
+        eng::vocabulary& vocabulary
+    )
+    {
+        hashmap<str, array<ent>> phrase_vocabulary;
+        hashmap<str, array<ent>> single_vocabulary;
+
+        for (auto& entry: course.entries)
+        {
+            bool single = true;
+            if  (not entry.opt.external.contains("HEAD")
+            and  not entry.eng.contains(str(u8"→")))
+            for (str phrase: entry.vocabulary)
+            if (phrase.contains(" ")) {
+                single = false;
+                break; }
+
+            if (single)
+            {
+                array<str> forms;
+                for (str word: entry.vocabulary)
+                for (str form: eng::forms(word.upto_first("@"))) if (form.size() >= 2)
+                forms += eng::lowercased(simple(form));
+                forms.deduplicate();
+
+                for (str form: forms)
+                if (phrase_vocabulary.contains(form) and
+                not single_vocabulary.contains(form))
+                {
+                    report::orders += "";
+                    for (ent e: phrase_vocabulary[form])
+                    report::orders += link(*e);
+                    report::orders += link(entry);
+                }
+
+                for (str phrase: entry.vocabulary)
+                for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), false))
+                for (str form: eng::forms(word)) if (form.size() >= 2)
+                forms += eng::lowercased(simple(form));
+                forms.deduplicate();
+
+                for (str form: forms)
+                single_vocabulary[form] += &entry;
+            }
+            else
+            {
+                array<str> words;
+                for (str phrase: entry.vocabulary)
+                for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), false))
+                if (word.size() >= 2)
+                words += eng::lowercased(simple(word));
+                words.deduplicate();
+
+                for (str word: words)
+                phrase_vocabulary[word] += &entry;
             }
         }
     }

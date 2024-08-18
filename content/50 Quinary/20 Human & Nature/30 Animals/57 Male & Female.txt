@@ -27,7 +27,10 @@ mallard drake
 
 gander                = a male goose
 tercel//tiercel       = a male hawk or falcon
+
 pen @ swan            = a female swan
+cob @ swan = a male swan
+
 ---
 buck @ deer           = a male deer
 stag/hart @ deer      = an adult male deer

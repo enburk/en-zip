@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <set>
 #include <regex>
 #include "eng_abc.h"
 namespace eng::list
@@ -100,12 +101,26 @@ namespace eng
             if (s.ends_with("e" )) { s.truncate(); }
             s += "ed";
         }
+        else
+        if (kind == "al"
+        or  kind == "ly"
+        or  kind == "ness")
+        {
+            if (s.ends_with("y" )) { s.truncate(); s += "i"; }
+            s += kind;
+        }
         else s += kind;
         return s;
     }
 
     str backform (str s, str kind)
     {
+        if (s.size() -
+         kind.size() < 3)
+        {
+            // do nothing
+        }
+        else
         if (kind == "s")
         {
             if (s.ends_with("ies"))
@@ -137,6 +152,22 @@ namespace eng
             s.truncate();
         }
         else
+        if (kind == "ness" and s.ends_with("ness"))
+        {
+            s.truncate();
+            s.truncate();
+            s.truncate();
+            s.truncate(); if (s.ends_with("i"))
+            s.truncate(), s += "y";
+        }
+        else
+        if (kind == "ly" and s.ends_with("ly"))
+        {
+            s.truncate();
+            s.truncate(); if (s.ends_with("i"))
+            s.truncate(), s += "y";
+        }
+        else
         if (s.ends_with(kind))
         {
             s.resize(s.size() -
@@ -145,27 +176,36 @@ namespace eng
         return s;
     }
 
-    generator<str> forms (str s)
+    auto forms (str s)
     {
-        co_yield s;
+        std::set<str> backforms;
+        
+        const array<str> kinds =
+        {"ness", "less", "ly", "al", "ing", "ed", "s"};
 
-        if (s.size() < 3
-        or s.contains(" "))
-            co_return;
-
-        const array<str> forms =
-        {"s", "ing", "ed", "ly", "lly", "less", "ness"};
-
-        for (str form: forms)
+        for (str kind: kinds)
         {
-            str f = eng::form(s, form);
-            if (f != s) co_yield f;
-
-            if (s.size() - form.size() < 3)
-                continue;
-
-            str b = eng::backform(s, form);
-            if (b != s) co_yield b;
+            auto
+            ff = backforms;
+            ff.emplace(s);
+            for (str f: ff)
+            {
+                str b = backform(f, kind);
+                if (b != s) backforms.
+                emplace(b);
+            }
         }
+
+        auto
+        forms = backforms;
+        forms.emplace(s);
+
+        for (str kind: kinds)
+        {
+            if (backforms.empty()) forms.emplace(form(s, kind)); else
+            for (str b: backforms) forms.emplace(form(b, kind));
+        }
+
+        return forms;
     }
 }

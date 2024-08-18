@@ -1,6 +1,9 @@
 conflict               = конфликт
-
+---
 problem                = проблема
+: A problem?
+: What is his problem?
+
 collision              = столкновение, конфликт, ~ коллизия # 16+
 confrontation @ people = столкновение, ~ конфронтация # 18+
 antagonism             = антагонизм                   # 18+

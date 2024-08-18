@@ -114,6 +114,10 @@ namespace studio::one
                     if (it != course_vocabulary.end())
                         it->second.resources += &r;
                 }
+                // "@@" ignored by sense-control
+                auto it = course_vocabulary.find(abstract+"@@");
+                if (it != course_vocabulary.end())
+                    it->second.resources += &r;
                 // if there is sense-less entry
                 // then it's an error and will be reported
                 // by sense-control
@@ -204,7 +208,7 @@ namespace studio::one
 
             int k =
             spaces == 0 ? 11 :
-            spaces == 1 ? 25 : 50;
+            spaces == 1 ? 30 : 60;
 
             if (r.weight < k
             or  r.sense != ""
@@ -348,6 +352,7 @@ namespace studio::one
         out << dark(bold("ONE: MAKE REPORTS..."));
 
         suggestions(course, unused_resources, vocabulary);
+        order_check(course, vocabulary);
 
         std::multimap<int, res>
             weighted_unused_resources;

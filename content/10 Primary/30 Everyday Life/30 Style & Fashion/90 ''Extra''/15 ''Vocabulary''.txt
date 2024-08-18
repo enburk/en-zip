@@ -23,7 +23,9 @@ cotton            = хлопок, хлопковый
 leather           = кожа, кожаный
 
 hat               = шляпа
+---
 umbrella          = зонт, зонтик
+: open umbrella   # SOUND
 
 necklace          = ожерелье, колье
 pendant           = подвеска, кулон
@@ -31,6 +33,7 @@ earrings          = серьги
 
 lipstick          = помада
 facial mask       = маска для лица
+
 
 
 

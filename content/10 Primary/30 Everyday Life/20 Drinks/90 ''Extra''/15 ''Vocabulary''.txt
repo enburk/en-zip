@@ -2,7 +2,9 @@ basic ~ vocabulary
 
 drink             = пить, напиток, ~ выпивка
 sip               = маленький глоток, ~ пригубить, отпивать
-pour              = наливать
+---
+pour              = наливать, насыпать
+: pour sugar      # SOUND
 
 juice             = сок
 tea               = чай
@@ -23,10 +25,13 @@ saucer            = блюдце
 teapot            = чайник
 kettle//teakettle = электрический чайник
 boil              = кипеть
+: The kettle is boiling.
+: tea kettle off  # SOUND
 
 ---
 thirsty           = испытывающий жажду
 : I'm thirsty.    = Я хочу пить.
+
 
 
 

@@ -134,6 +134,7 @@ widget<studia_r>
         if (l and link.starts_with("clipboard://"))
         {
             str path = link.extract_from("file://");
+            if (not sys::keyboard::alt)
             sys::clipboard::set(link.from(12));
             if (path != "" and sys::keyboard::alt)
             link = "file://" + path; else

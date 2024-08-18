@@ -172,10 +172,20 @@ namespace content::out
                         en += s.split_by("/");
             }
 
-            for (str s: en*uk*us)
-            s.replace_all(u8"\\", "/"),
-            s.replace_all(u8" → ", ", "),
-            vocabulary += s.split_by("|");
+            for (str e: en*uk*us)
+            e.replace_all(u8"\\", "/"),
+            vocabulary += e.split_by("|");
+
+
+            if (s.contains(str(u8" → ")))
+            {
+                str s1 = s;
+                str s2 = s;
+                s1.replace_all(u8" → ", ", "),
+                s2.replace_all(u8" → ", " -- "),
+                vocabulary += s1;
+                vocabulary += s2;
+            }
 
             for (str& v: vocabulary) v.strip();
 
@@ -341,6 +351,7 @@ namespace content::in
             }
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });
+            html.replace_all(u8"→",blue(u8"→"));
             html.replace_all("\\",blue("/"));
             html.replace_all("|" ,blue("/"));
             html.replace_all("[" ,blue("["));

@@ -36,6 +36,7 @@ blancmange                = бланманже             # RARE- # 18+
 mousse                    = мусс                  # 10+
 profiteroles {Br.}        = профитроли            # RARE- # 16+
 souffle|soufflé           = суфле                 # 10+
+dragée                    = драже
 
 cafe|café                 = кафе
 restaurant                = ресторан
@@ -47,6 +48,7 @@ banquet                   = банкет                # 16+ /// , давать
 picnic                    = пикник                /// , устраивать пикник
 champagne                 = шампанское            # 18+
 cognac                    = коньяк                # 18+
+
 
 
 

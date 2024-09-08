@@ -27,12 +27,13 @@ trajectory @ army       = траектория
 cannonade               = канонада
 
 metal detector          = металлоискатель
-night vision            = ночное видение
+night vision @ army     = ночное видение
 gas mask                = противогаз
 tracer @ army           = трассирующая пуля, ~ трассирующий снаряд          # WAR-
 
 detonation              = детонация, взрыв
 detonator               = детонатор                                         # WAR-
+
 
 
 

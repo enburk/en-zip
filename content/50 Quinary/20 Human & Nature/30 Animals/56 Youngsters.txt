@@ -3,6 +3,7 @@ chicks                = young birds
 chick @ chicken       = a young chicken
 duckling              = a young duck
 gosling               = a young geese
+keet                  = a young guinea fowl
 ===
 
 cygnet                = a young swan
@@ -40,6 +41,7 @@ mantis nymph
 
 maggot                = a larva of a fly
 pupa %% plural pupae  = an insect in the development stage ~ between larva and adult
+
 
 
 

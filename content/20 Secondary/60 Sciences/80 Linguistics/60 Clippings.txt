@@ -1,49 +1,63 @@
 clippings
 
-berg @ iceberg         = iceberg
-
 rhino                  = rhinoceros
-hippo
+hippo                  = hippopotamus
 ---
 gator
 crocs @ crocodiles
 crocs @ shoes
 
-chimp = chimpanzee
+chimp                  = chimpanzee
+grizz                  = grizzly bear
 
-bro = brother
-celeb = celebrity
-collab = collaboration
----
-veg @ noun             = vegetarian, ~ vegetable(s)
-veg @ verb %% {verb}   = to vegetate, ~ to engage in complete inactivity, ~ to rest
+bro                    = brother
+sis = sister
+fam                    = family
+teen = teenager
 
-choc/choco = chocolate
-cauli = cauliflower
+choc/choco             = chocolate
 
-bookie = bookmaker
-goalie = goalkeeper, ~ goaltender, netminder
+glam                   = glamour, glamorous
+mani                   = manicure
+pedi                   = pedicure
 
-apt @ apartment        = apartment
-fridge                 = refrigerator
+bookie                 = bookmaker
+goalie                 = goalkeeper, ~ goaltender, netminder
+ref @ referee          = referee
+gym                    = gymnasium
+roid = steroid 
 
 limo                   = limousine
-prop @ aero = propeller
+prop @ aero            = propeller
+copter                 = helicopter
+tach = tachometer
 
-specs @ spectacles     = spectacles
-specs @ specifications = specifications
+===
+---
+demo @ demonstration   = demonstration
+demo @ demolition      = demolition
 
 lab @ laboratory       = laboratory
 telecom                = telecommunications
 admin                  = administration, ~ administrator, ~ sysadmin
+creds                  = credentials
+nick @ nickname        = nickname
 
-biz = business, especially one connected with entertainment
-ad @ advertisement     = advertisement
+info                   = information
+stats = statistics 
+exam                   = examination
 
-recap @ recapitulation = recapitulation
+diam @ diameter        = diameter
+diam @ diamond         = diamond
 
 bio @ biography        = biography
 bio @ biology          = biology
 
-ammo                   = ammunition
+---
+med                    = medical
+meds                   = medications
+vet = veterinarian 
+ 
+
+
 

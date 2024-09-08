@@ -2,6 +2,7 @@ cars
 
 rover
 roadster @ car
+convertible @ car
 monster truck
 SUV %% sport utility-vehicle
 
@@ -18,7 +19,12 @@ tailfin
 car door handle
 suicide door                  # 16+
 
-fuel cap
+hood ornament
+
+gas cap//fuel cap
+fuel door//gas lid
+fuel filler flap
+
 dashboard @ car               # 10+
 ---
 seat @ car

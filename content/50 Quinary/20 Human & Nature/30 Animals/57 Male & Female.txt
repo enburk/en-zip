@@ -29,7 +29,7 @@ gander                = a male goose
 tercel//tiercel       = a male hawk or falcon
 
 pen @ swan            = a female swan
-cob @ swan = a male swan
+cob @ swan            = a male swan
 
 ---
 buck @ deer           = a male deer
@@ -38,13 +38,16 @@ doe @ deer %% {Br.} {also} hind
 bull elk\\bull moose
 cow elk\\cow moose
 a whale cow with a calf
+
 bull elephant
+cow elephant
 
 a snow leopard ~ and a leopardess
 a she-wolf ~ with a pup
 vixen                 = a female fox
 
 brock {Br.}           = a male badger
+
 
 
 

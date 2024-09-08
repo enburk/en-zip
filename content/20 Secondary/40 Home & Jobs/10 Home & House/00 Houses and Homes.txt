@@ -5,3 +5,18 @@ flat @ apartment
 room @ room
 
 brick wall
+panoramic window
+
+---
+stairs/steps
+landing @ stair
+stair flight = a run of stairs or steps between landings
+staircase
+stairway
+stairwell
+handrail
+
+newel
+newel post
+banister
+balustre\\baluster

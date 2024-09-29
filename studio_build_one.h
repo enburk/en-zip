@@ -208,7 +208,7 @@ namespace studio::one
 
             int k =
             spaces == 0 ? 11 :
-            spaces == 1 ? 30 : 60;
+            spaces == 1 ? 50 : 200;
 
             if (r.weight < k
             or  r.sense != ""

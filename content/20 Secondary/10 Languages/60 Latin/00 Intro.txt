@@ -12,12 +12,14 @@ quiet
 silence
 mute
 
-motion
 move
 movement
+motion
 
+---
 cancel
 quit
+: Uh, quit your complaining.
 
 prefer
 preference
@@ -34,11 +36,17 @@ use
 invert
 reject
 repair
+---
 repeat
+: Press 3 to repeat menu.
+
 resist
 reverse
 prepare
+---
 exist
+: If God exists, He must be laughing right now.
+
 extend
 animate
 excavate

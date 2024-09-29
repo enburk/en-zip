@@ -57,20 +57,22 @@ namespace studio::one
     str cliplink (res const& r)
     {
         str s = r->full();
-        if (r->options.
-            contains("sound"))
+        if (r->options.contains("sound"))
             s = "[" + s + "]";
+
+        str abstract = r->abstract;
+        if (r->options.contains("sound"))
+            abstract += " # SOUND";
 
         return linked(
         dark(html(s)),
-        "clipboard://: " + r->abstract +
+        "clipboard://: " + abstract +
         "file://" + str(r->path));
     }
     str link (res const& r)
     {
         str s = r->full();
-        if (r->options.
-            contains("sound"))
+        if (r->options.contains("sound"))
             s = "[" + s + "]";
 
         return linked(
@@ -314,6 +316,11 @@ namespace studio::one
 
             if (r->kind == "audio"
             and entries.size() == 1)
+                continue;
+
+            // skip sounds for now
+            if (r->kind == "audio"
+            and r->options.contains("sound"))
                 continue;
 
             for (str& s: entries)

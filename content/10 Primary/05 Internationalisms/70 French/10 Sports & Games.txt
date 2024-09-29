@@ -7,7 +7,7 @@ racket|racquet        = ракетка
 vis-à-vis %% literary = визави, ~ лицом к лицу %% # 18+ /// ~~в сравнении, в отношении
 chance                = случай, случайность, ~ шанс, возможность
 billiards             = бильярд                   # duple # 10+ /// irregular plurals
-cue                   = кий                       # 12+ /// знак, намёк, реплика
+cue @ billiards       = кий                       # 12+ /// знак, намёк, реплика
 roulette              = рулетка                   # 16+
 croupier              = крупье                    # 16+
 

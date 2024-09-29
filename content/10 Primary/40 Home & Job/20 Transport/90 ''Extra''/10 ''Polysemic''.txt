@@ -40,7 +40,7 @@ dock {Br.} @ drydock      = док                                      # duple 
 dock {Am.} @ pier         = пирс, причал                             # duple # 12+
 dock/sorrel @ herb        = щавель                                   /// #homonyms 1 – щавель, 2 – обрубок (хвоста)
 ***
-rails @ railroad          = рельсы, железная дорога   # duple
+rails @ railroad          = рельсы, железная дорога                  # duple
 rails @ support           = поручни, перила
 rails @ fence             = ограда
 ***
@@ -63,6 +63,7 @@ biker @ cyclist           = велосипедист
 saloon [car]\\sedan       = седан                                    # TECH-
 saloon {Br.} @ ship       = салон %% помещение для пассажиров ~ на пароходе
 saloon @ bar              = салун %% традиционное название бара ~ на Диком Западе # 16+
+
 
 
 

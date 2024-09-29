@@ -13,7 +13,6 @@ parachute                   = парашют                  /// , спуска
 fuselage                    = фюзеляж                  # TECH- # 10+
 aileron                     = элерон                   # TECH+ # 14+
 longeron                    = лонжерон                 # TECH+ # 14+
-chassis %% plural: chassis  = шасси                    # TECH- # 10+
 
 turbine                     = турбина
 locomotive                  = локомотив, паровоз       # 10+ /// двигатель поезда, движущая сила (в спорте и др.), ~~локомотив, паровоз, локомотивный

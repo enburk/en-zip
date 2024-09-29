@@ -5,10 +5,10 @@ berg @ iceberg         = iceberg
 celeb                  = celebrity
 collab                 = collaboration
 congrats               = congratulations
-trubs = troubles
+trubs                  = troubles
 
 dreds/locks            = dreadlocks
-tatt = tattoo
+tatt                   = tattoo
 ---
 veg @ noun             = vegetarian, ~ vegetable(s)
 veg @ verb %% {verb}   = to vegetate, ~ to engage in complete inactivity, ~ to rest
@@ -22,12 +22,12 @@ cray @ crazy           = crazy
 : That's cray cray.
 
 ---
-resto @ restaurant = restaurant
-resto @ restoration = restoration ~ (of an old car or building, etc.)
+resto @ restaurant     = restaurant
+resto @ restoration    = restoration ~ (of an old car or building, etc.)
 
-rehab = rehabilitation
-showbiz = showbusiness
-tix = tickets
+rehab                  = rehabilitation
+showbiz                = showbusiness
+tix                    = tickets
 
 peke                   = Pekingese
 
@@ -36,7 +36,7 @@ condo {Am.}            = condominium
 fridge                 = refrigerator
 comfy                  = comfortable
 lino {Br.}             = linoleum
-reno = renovation
+reno                   = renovation
 
 biz                    = business, especially one connected with entertainment
 ad @ advertisement     = advertisement
@@ -45,16 +45,17 @@ merch                  = merchandise
 
 intro                  = introduction
 recap @ recapitulation = recapitulation
-uke @ ukulele = ukulele
+uke @ ukulele          = ukulele
 pic @ picture          = picture
-sitcom = situation comedy
-romcom = romantic comedy
-sci-fi = science fiction
+sitcom                 = situation comedy
+romcom                 = romantic comedy
+sci-fi                 = science fiction
 
 specs @ spectacles     = spectacles
 specs @ specifications = specifications
 ---
 dev                    = developer, ~ development
 : game dev
+
 
 

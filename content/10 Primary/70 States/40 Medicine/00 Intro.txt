@@ -1,25 +1,26 @@
-medicine @ practice = медицина, лекарство, ~ талисман (у индейцев)
+medicine          = медицина, лекарство, ~ талисман (у индейцев)
 ===
-medicine man        = знахарь, шаман %% ''особенно'' у индейцев   # 10+
+medicine man      = знахарь, шаман %% ''особенно'' у индейцев     # 10+
 ===
 
-prophylaxis         = профилактика                                # 10+
-sanitary            = санитарный, ~ гигиенический                 # 10+
+prophylaxis       = профилактика                                  # 10+
+sanitary          = санитарный, ~ гигиенический                   # 10+
 ---
-clinic              = клиника, поликлиника, медпункт              /// ~консультация
-polyclinic {Br.}    = поликлиника
+clinic            = клиника, поликлиника, медпункт                /// ~консультация
+polyclinic {Br.}  = поликлиника
 
-hospital            = больница, ~ ветеринарная клиника, ~ лазарет, госпиталь /// ~ ремонтная мастерская
-hospitalisation\\hospitalization = госпитализация                              # TERM+ # 10+
+hospital          = больница, ~ ветеринарная клиника, ~ лазарет, госпиталь /// ~ ремонтная мастерская
+hospitalisation\\hospitalization = госпитализация                                # TERM+ # 10+
 
-veterinary clinic   = ветеринарная клиника
-vet\\veterinarian   = ветеринар
+veterinary clinic = ветеринарная клиника
+vet\\veterinarian = ветеринар
 
-hospice             = хоспис, ~ монастырская гостиница            # 16+
-sanatorium %% Am. also: sanitarium = санаторий                                   # 10+
+hospice           = хоспис, ~ монастырская гостиница              # 16+
+sanatorium %% Am. also: sanitarium = санаторий                                     # 10+
 
-hypochondriac       = ипохондрик %% мнимый больной                # 16+
+hypochondriac     = ипохондрик %% мнимый больной                  # 16+
 
 ===
 
 : Say Ahhh!
+

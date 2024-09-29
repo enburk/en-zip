@@ -1,63 +1,66 @@
 clippings
 
-rhino                  = rhinoceros
-hippo                  = hippopotamus
+rhino                = rhinoceros
+hippo                = hippopotamus
 ---
 gator
 crocs @ crocodiles
 crocs @ shoes
 
-chimp                  = chimpanzee
-grizz                  = grizzly bear
+chimp                = chimpanzee
+grizz                = grizzly bear
 
-bro                    = brother
-sis = sister
-fam                    = family
-teen = teenager
+bro                  = brother
+sis                  = sister
+fam                  = family
+teen                 = teenager
 
-choc/choco             = chocolate
+choc/choco           = chocolate
 
-glam                   = glamour, glamorous
-mani                   = manicure
-pedi                   = pedicure
+glam                 = glamour, glamorous
+mani                 = manicure
+pedi                 = pedicure
 
-bookie                 = bookmaker
-goalie                 = goalkeeper, ~ goaltender, netminder
-ref @ referee          = referee
-gym                    = gymnasium
-roid = steroid 
+bookie               = bookmaker
+goalie               = goalkeeper, ~ goaltender, netminder
+ref @ referee        = referee
+gym                  = gymnasium
+roid                 = steroid
 
-limo                   = limousine
-prop @ aero            = propeller
-copter                 = helicopter
-tach = tachometer
+limo                 = limousine
+prop @ aero          = propeller
+propwash//prop wash  = propeller wash
+copter               = helicopter
+tach                 = tachometer
 
 ===
 ---
-demo @ demonstration   = demonstration
-demo @ demolition      = demolition
+demo @ demonstration = demonstration
+demo @ demolition    = demolition
 
-lab @ laboratory       = laboratory
-telecom                = telecommunications
-admin                  = administration, ~ administrator, ~ sysadmin
-creds                  = credentials
-nick @ nickname        = nickname
+lab @ laboratory     = laboratory
+telecom              = telecommunications
+admin                = administration, ~ administrator, ~ sysadmin
+creds                = credentials
+nick @ nickname      = nickname
 
-info                   = information
-stats = statistics 
-exam                   = examination
+info                 = information
+stats                = statistics
+exam                 = examination
 
-diam @ diameter        = diameter
-diam @ diamond         = diamond
+diam @ diameter      = diameter
+diam @ diamond       = diamond
 
-bio @ biography        = biography
-bio @ biology          = biology
+bio @ biography      = biography
+bio @ biology        = biology
 
 ---
-med                    = medical
-meds                   = medications
-vet = veterinarian 
- 
+med                  = medical
+meds                 = medications
+vet                  = veterinarian
+
+
+
 
 
 

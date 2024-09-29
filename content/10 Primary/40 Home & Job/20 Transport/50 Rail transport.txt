@@ -1,4 +1,4 @@
-rails @ railroad        = рельсы, железная дорога     # duple
+rails @ railroad        = рельсы, железная дорога                 # duple
 
 semaphore               = семафор
 
@@ -15,6 +15,7 @@ depot {Am.} @ station   = станция %% автобусная или желе
 
 draisine                = дрезина                                 # TECH- # 10+
 buffer @ train          = буфер                                   # TECH- # 16+
+
 
 
 

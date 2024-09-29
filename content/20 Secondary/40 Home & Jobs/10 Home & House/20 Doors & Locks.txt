@@ -5,22 +5,27 @@ gate @ doorway
 front door                   # 8+
 door knocker                 # 8+ /// doorknocker, ~ knocker
 door handle
+doorknob
 
 door lock
 latch @ door
-latch hook
+cabin hook
 crossbar
 hinge @ door                 # 10+
 rivets                       # 10+
-
+---
 keys @ door
 keyhole
 peephole %% Br. also spyhole # 8+
 keycard//card key            /// ~~key card %% also mainly Am. card key #  8+
 key chain                    # 8+
+keyring
 
 padlock
-paddlocked latch             # 8+
+padlocked latch              # 8+
+
+lever lock
+knob lock
 
 locked @ door
 unlocked @ door

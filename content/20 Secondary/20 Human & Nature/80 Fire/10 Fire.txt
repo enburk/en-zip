@@ -46,7 +46,9 @@ smoke bomb
 flare @ torch
 flares @ aero
 
-forest fire
+---
+wildfire//forest fire
+bushfire||bush fire %% Australia
 inferno      = a large fire
 
 

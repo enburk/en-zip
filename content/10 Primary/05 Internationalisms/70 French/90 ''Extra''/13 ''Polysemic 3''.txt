@@ -13,6 +13,9 @@ Mason @ Freemason    = масон                                              #
 ace @ pilot          = ас, знаток                                         # 14+
 ace @ cards          = туз                                                # 14+ /// очко, эксперт
 ace @ tennis         = в теннисе: эйс %% подача навылет                   # 14+
+***
+chassis @ car %% plural: chassis = шасси транспорного средства                        # TECH- # 10+
+landing gear         = шасси летательного аппарата
 
 
 

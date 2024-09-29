@@ -23,14 +23,14 @@ prelim                 = preliminary
 
 recirc                 = recirculation
 refurb                 = refurbish
-tarp = tarpaulin
+tarp                   = tarpaulin
 
 nym                    = pseudonym
 paren                  = parenthesis
 pen test               = penetration test
 
-typo = typographical error
-vocab = vocabulary
+typo                   = typographical error
+vocab                  = vocabulary
 
 memo                   = memorandum
 muni                   = municipal
@@ -43,6 +43,7 @@ nuke @ weapon          = nuclear weapon
 
 detox                  = detoxification
 
-Tut = Tutankhamon
+Tut                    = Tutankhamon
+
 
 

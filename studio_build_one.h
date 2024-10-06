@@ -39,7 +39,7 @@ namespace studio::one
                 course_vocabulary[s].
                 entries += &entry;
 
-                str sense =
+                str ignored_sense =
                 s.extract_from("@");
 
                 for (str f: eng::forms(s))
@@ -50,6 +50,9 @@ namespace studio::one
             if (entry.eng.starts_with(": "))
             {
                 str s = entry.eng.from(2);
+                str ignored_sense =
+                s.extract_from("@");
+
                 if (s.contains(" "))
                     continue;
 
@@ -65,7 +68,8 @@ namespace studio::one
             if (entry.eng.contains(" "))
             {
                 str ss = entry.eng;
-                str sense = ss.extract_from("@");
+                str ignored_sense =
+                ss.extract_from("@");
                 ss.replace_all(u8" → ", ", "),
                 ss.replace_all(",", "");
 
@@ -102,11 +106,11 @@ namespace studio::one
             if (r.kind == "audio"
             and r.sense == "" and
             not r.options.contains("sound"))
-            // vocalization fits for any sense,
-            // unless there is another one with provided sense,
-            // then it's an error and will be reported by sense-control
             if (sensecontrol.vocabs.contains(abstract))
             {
+                // vocalization fits for any sense,
+                // unless there is another one with provided sense,
+                // then it's an error and will be reported by sense-control
                 for (auto [entry,_]: sensecontrol.vocabs[abstract])
                 for (str s: entry->vocabulary)
                 {
@@ -148,6 +152,13 @@ namespace studio::one
                 {}
             }
 
+            if (r.kind == "audio"
+            and r.sense == "" and
+            not r.options.contains("sound")
+            and abstract.contains("("))
+                resource_vocabulary +=
+                abstract.debracketed("(",")");
+
             str
             abstract_ = abstract;
             abstract_.replace_all("_", "");
@@ -156,7 +167,7 @@ namespace studio::one
                 abstract_;
 
             if (r.sense == "")
-            resource_vocabulary +=
+                resource_vocabulary +=
                 abstract + "@@";
 
             if (r.kind == "video")
@@ -195,6 +206,11 @@ namespace studio::one
             if (r.options.contains("="))
             report::anoma2 += cliplink(&r);
 
+            if (r.options.contains("xlam"))
+                continue;
+
+            // for unused resources
+
             if (abstract.starts_with("a "  )) abstract = abstract.from(2); else
             if (abstract.starts_with("an " )) abstract = abstract.from(3); else
             if (abstract.starts_with("the ")) abstract = abstract.from(4); else
@@ -207,7 +223,8 @@ namespace studio::one
                 spaces++;
 
             int k =
-            spaces == 0 ? 11 :
+            false?max<int>() :
+            spaces == 0 ? 20 :
             spaces == 1 ? 50 : 200;
 
             if (r.weight < k

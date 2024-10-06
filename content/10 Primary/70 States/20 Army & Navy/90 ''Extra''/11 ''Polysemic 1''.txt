@@ -20,7 +20,7 @@ cornet {Br.} @ food      = вафельный рожок                        
 ***
 mine @ my                = мой                                              /// 1
 mine @ industry          = шахта, рудник, ~ месторождение                   /// 2
-: There's a large mustard-mine near here. ~ And the moral of that is -- ~ “The more there is of mine, ~ the less there is of yours.”
+: There's a large mustard-mine near here. And the moral of that is /// “The more there is of mine, ~ the less there is of yours.”
 miner @ worker           = шахтёр, золотоискатель, рудокоп %% значение минёр устарело /// печник-землекоп и др. насекомые
 mine @ army              = мина %% но не артиллерийская                     /// 2
 mortar bomb              = мина %% артиллерийская

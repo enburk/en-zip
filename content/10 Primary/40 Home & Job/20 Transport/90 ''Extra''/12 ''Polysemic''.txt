@@ -1,0 +1,39 @@
+***
+mole @ pier               = мол
+mole @ animal             = крот
+mole @ spot               = родинка
+mole @ unit               = моль %% единица измерения ~ количества вещества
+mole @ sauce              = моле %% мексиканский соус
+moth                      = моль %% насекомое
+***
+conductor {Br.} @ tickets = кондуктор
+conductor @ music         = дирижёр
+conductor @ physics       = в физике: проводник                      # 10+ /// Br. молниеотвод, громоотвод
+superconductor            = сверхпроводник                           # MATH- /// https://www.ted.com/talks/itay_talgam_lead_like_the_great_conductors
+guard\\conductor @ train  = проводник ~ (в поезде)
+guide @ person            = экскурсовод, гид, ~ проводник
+guide @ book              = руководство, ~ путеводитель
+***
+course @ path             = курс, направление, ход                   # 10+
+: Maintain 25,000 feet, course 0-4-0. # 10+
+course @ programme        = курс обучения, ~ курс лекций, ~ курс лечения # 14+ /// много знач.
+exchange rate             = валютный '''курс'''                      # 14+
+golf course               = поле для гольфа                          # 10+
+main course               = главное блюдо                            # 10+
+***
+express @ transport       = скорый, экспресс %% поезд, автобус
+express @ convey          = выражать
+expression @ emotion      = экспрессия
+expression @ idiom        = выражение
+facial expression         = выражение лица
+: Nobody else ever called me a glorious young beast. I like that. Glorious young beast '''expresses''' exactly what I like to be.
+***
+terminal @ airport               = терминал ~ (аэропорта)                             # 10+
+terminal @ railroad               = конечная станция, ~ вокзал                           # 10+
+container terminal    = контейнерный терминал                      # TERM- # 10+
+terminal @ comp = терминал (устройство или программа)
+terminal @ electro = клемма
+terminal @ end = заключительный, конечный
+= умирающий (о больном), ~ смертельный (о болезни)
+terminator @ electro = в электронике: ~ ограничитель, ~ терминатор
+

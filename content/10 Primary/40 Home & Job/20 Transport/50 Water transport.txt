@@ -3,7 +3,6 @@ port @ marine         = порт, гавань                               # 1
 pier @ jetty          = пирс, дамба, мол                           # 10+
 
 container @ transport = контейнер                                  /// , ёмкость, сосуд
-container terminal    = контейнерный терминал                      # TERM- # 10+
 tanker @ ship         = танкер                                     # 10+
 ---
 barge @ boat          = баржа                                      # 10+

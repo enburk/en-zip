@@ -4,8 +4,10 @@ berg @ iceberg         = iceberg
 
 celeb                  = celebrity
 collab                 = collaboration
-congrats               = congratulations
 trubs                  = troubles
+---
+congrats               = congratulations
+: Congrats!
 
 dreds/locks            = dreadlocks
 tatt                   = tattoo

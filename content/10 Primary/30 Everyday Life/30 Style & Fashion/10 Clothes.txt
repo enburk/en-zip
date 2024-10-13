@@ -1,12 +1,14 @@
 clothes                  = одежда
 
 blazer                   = блейзер                                    # RARE+ # 18+
+---
 jeans                    = джинсы
 pair of jeans            = пара джинсов
 
 shorts                   = шорты
 Bermudas//Bermuda shorts = бермуды                                    # RARE- # 10+
 leggings                 = лосины, легинсы                            # 16+
+breeches//britches       = бриджи
 
 pullover                 = пуловер                                    # 14+
 sweater {Am.}            = свитер
@@ -21,6 +23,13 @@ tunic                    = туника                                     # 18
 
 top                      = топ/топик %% также любая другая одежда ~ для верхней части тела # 18+
 topless                  = топлес                                     # 18+
+
+===
+uniform                  = униформа, форма
+school uniform           = школьная форма
+: Mama, that girl has a red cardigan! And that one, and that one...
+dress code               = дресс-код                                  # 14+
+
 
 
 

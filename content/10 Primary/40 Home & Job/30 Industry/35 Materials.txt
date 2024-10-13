@@ -36,9 +36,6 @@ emulsion         = эмульсия                                      # TECH-
 
 aerosol          = аэрозоль                                      # 10+
 aerogel          = аэрогель                                      # TECH+ # 16+
----
-resin            = смола, канифоль %% ''не'' резина              # TECH+ # 18+
-epoxy [resin]    = эпоксидная смола                              # TECH+ # 18+
 
 
 

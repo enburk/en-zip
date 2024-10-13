@@ -5,15 +5,15 @@ upstairs
 
 pillow
 unmade bed
-
-chair
+---
+chair @ furniture # duple
 armchair
 
 sun lounger ~ {esp.} {Br.} %% also sunlounger, lounger
 
 flowerpot
 
-thermostat # 8+
+thermostat        # 8+
 
 socket %% {Br.} {also} power point ~ {Am.} {also} outlet
 plug
@@ -27,3 +27,4 @@ basement
 
 bookcase
 bookshelf
+

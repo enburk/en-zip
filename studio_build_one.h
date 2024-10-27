@@ -435,6 +435,7 @@ namespace studio::one
             eng::parser::entries(
             vocabulary, e.word, false);
 
+            words += e.word.split_by(" "); // ursa major
             words.erase_if([](str const& s){ return s.size() < 2; });
             words.deduplicate();
 

@@ -61,6 +61,15 @@ namespace app::one
                 [](auto a, auto b){ return
                 a.entry < b.entry; });
 
+            int xlam = 0;
+            for (auto& audio: audios)
+                if (audio.options.contains("xlam"))
+                    xlam++;
+
+            if (xlam < audios.size())
+                audios.erase_if([](auto& audio){
+                return audio.options.contains("xlam"); });
+
             widen = false;
 
             for (auto [entry, media]: range)

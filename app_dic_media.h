@@ -29,8 +29,16 @@ namespace app::dic::media
         if (index.kind == "audio") audios += index;
         if (index.kind == "video") videos += index; }
 
-        for (int j=0; j<audios.size(); j++)
-            logs::audio << log(audios[j]);
+        int xlam = 0;
+        for (auto& audio: audios)
+            if (audio.options.contains("xlam"))
+                xlam++;
+
+        if (xlam < audios.size())
+            audios.erase_if([](auto& audio){
+            return audio.options.contains("xlam"); });
+
+        for (auto& audio: audios) logs::audio << log(audio);
 
         auto uniquify = [](array<index>& a)
         {

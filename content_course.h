@@ -110,7 +110,8 @@ namespace content::out
                     ascii_lowercased();
 
                     w.replace_all("~", "");
-                    w.replace_all("  ", "");
+                    w.replace_all("  ", " ");
+                    w.replace_all("  ", " ");
 
                     searchmap +=
                     search_entry(

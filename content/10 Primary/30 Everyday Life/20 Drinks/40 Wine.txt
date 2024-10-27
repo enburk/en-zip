@@ -4,6 +4,7 @@ Burgundy       = бургундское                     # pix-
 
 brut           = брют                            # TERM-
 dessert wine   = десертное вино                  # TERM-
+
 Madeira [wine] = мадера
 Malvasia       = мальвазия %% самый сладкий вид мадеры # RARE+
 sherry         = херес ~ (шерри)

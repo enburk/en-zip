@@ -314,6 +314,11 @@ namespace studio::one
         {
             auto entries = all_entries(r, vocabulary);
 
+            entries.try_erase("a");
+            entries.try_erase("an");
+            entries.try_erase("the");
+            entries.try_erase("to");
+
             if (r->kind == "audio"
             and entries.size() == 1)
                 continue;

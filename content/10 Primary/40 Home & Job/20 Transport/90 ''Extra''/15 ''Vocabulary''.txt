@@ -18,19 +18,27 @@ sail @ nautical    = парус, ~ идти под парусом
 topsail            = марсель, топсель
 
 ===
----
+
+***
 flight @ act       = полет
 flight @ trip      = рейс ~ (самолета)
 flight attendant   = стюард/стюардесса
----
+
+***
 take off @ plane   = взлетать
 land @ plane       = садиться
 runway @ airport   = взлетно-посадочная полоса
 : Flight 291 you are cleared for take of.
 : You are cleared to land on runway 24.
----
+
+***
 wing @ plane       = крыло (самолета)
 wing\\fender @ car = крыло (автомобиля)
+wing @ building    = флигель, крыло дома
+wing @ party       = крыло (политической партии)
+wing @ front       = фланг
+wing @ air force   = авиакрыло (тактическая единица)
+
 
 
 

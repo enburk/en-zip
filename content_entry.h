@@ -296,12 +296,13 @@ namespace content::in
                     s = uk + "<br>" + us;
                 }
 
-                s.rebracket("{","}",[](str s){ return small(blue(s)); });
+                s.rebracket("{","}", [](str s){ return small(blue(s)); });
 
                 if (comnt != "")
                 {
                     for (str marker: eng_markers)
                     comnt.replace_all(marker, italic(marker));
+                    comnt.rebracket("{","}", [](str s){ return green(s); });
                     if (s != "") s += "<br>";
                     s += small(dark(comnt));
                 }

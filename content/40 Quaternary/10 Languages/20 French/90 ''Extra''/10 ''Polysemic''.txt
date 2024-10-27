@@ -1,24 +1,26 @@
 polysemic
 ***
-facet @ gem   = any one of the flat surfaces cut into a gem
-facet @ math  = a face of a polytope
-facet @ eye   = one member of a compound eye
+facet @ gem    = any one of the flat surfaces cut into a gem
+facet @ math   = a face of a polytope
+facet @ eye    = one member of a compound eye
 ***
-dart @ weapon = a short lance or javelin
+dart @ weapon  = a short lance or javelin
 dart @ darts
-dart @ fold   = a fold that is stitched on a garment
-dart @ move   = a sudden or fast movement
+dart @ fold    = a fold that is stitched on a garment
+dart @ move    = a sudden or fast movement
 ***
-fade @ out    = a gradual decrease of brightness or volume
+fade @ out     = a gradual decrease of brightness or volume
 fade in
 fade out
 fade away
 fade @ haircut
 ***
 custom @ habit = habitual practice
-custom @ made = specialized, unique, ~ custom-made
-customs = the government department or agency ~ that is authorised to collect the taxes ~ imposed on imported goods
-customer = a client
+custom @ made  = specialized, unique, ~ custom-made
+customs        = the government department or agency ~ that is authorised to collect the taxes ~ imposed on imported goods
+customer       = a client
+: customer who knows what he wants
+
 
 
 

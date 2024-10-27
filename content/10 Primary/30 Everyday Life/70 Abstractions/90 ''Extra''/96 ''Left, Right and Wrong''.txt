@@ -13,18 +13,24 @@ right @ true    = правильно, правильный, ~ правый
 right @ exactly = точно, как раз
 ===
 
+: on the right of you
 : In 300 yards turn '''right'''.
-: To the left, straight on, ~ to the right, straight on again...
 
 : Do what I say, '''right''' now!
 : Stop that, '''right''' now!
 : I'll be '''right''' back.
 
 : This can't be right
+: Yeah. Right. Thanks.
 
 ---
 all right
 : So that was all right.
+: Are you all right?
+
+---
+rights          = права
+: all rights reserved
 
 ===
 wrong @ untrue  = неправильно, неправильный
@@ -36,11 +42,12 @@ wrong @ bad     = вред, зло, обида
 : What is '''wrong''' with you?
 : You were '''right''', and I was '''wrong'''.
 : Am I '''right''', or am I '''right'''?
-: I may be '''wrong''', no doubt I am, ~ I generally AM '''wrong''' I belive, ~ but that is my oppinion.
+: I may be '''wrong''', no doubt I am, ~ I generally AM '''wrong''' I believe, ~ but that is my oppinion.
 : Two '''wrongs''' don't make a '''right'''.
 
 ===
 
 : Everything will turn out '''right''' ~ in the end.
+
 
 

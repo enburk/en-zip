@@ -52,12 +52,16 @@ pic @ picture          = picture
 sitcom                 = situation comedy
 romcom                 = romantic comedy
 sci-fi                 = science fiction
+---
+panto {Br.}            = pantomime
+: Frankly, pantos are so weird
 
 specs @ spectacles     = spectacles
 specs @ specifications = specifications
 ---
 dev                    = developer, ~ development
 : game dev
+
 
 
 

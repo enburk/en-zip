@@ -8,6 +8,8 @@ sudoku        = судоку                          # 10+
 go @ game     = го                              # 16+
 ---
 puzzle        = загадка, головоломка, ~ затруднение, озадачивать
+: And this was a real puzzle.
+: Ah, THAT'S the great puzzle!
 jigsaw [puzzle]//puzzle {esp.} {Am.} = пазлы
 Rubik's Cube  = кубик Рубика
 ---

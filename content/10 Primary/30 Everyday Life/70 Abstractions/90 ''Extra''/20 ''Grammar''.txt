@@ -1,35 +1,48 @@
 ===
-small words # HEAD
+small words           # HEAD
 ===
 
 ===
-very        = очень # duple
+very                  = очень # duple
 ===
-
+---
+: Very good.
 : Very nice.
 : Ah, excellent, excellent, ~ very good endeed!
 : Be very very quiet!
 
 ===
-very much   = очень сильно
+very much @ extremely = очень сильно
 ===
 
-===
-too @ very  = слишком
-===
+: Thank you very much!
 
 ===
-too much    = слишком много
-too many    = слишком много
+very much @ indeed    = в самом деле, ~ действительно
+===
+
+: Very much so.
+
+===
+too @ very            = слишком, совсем
+===
+
+: Oh, that's too bad.
+
+===
+too much              = слишком много
+too many              = слишком много
 ===
 
 : Oh! this is really too much.
 
 ===
-too @ also  = также, тоже, ~ к тому же, более того
+too @ also            = также, тоже, ~ к тому же, более того
 ===
 
+: Hello to you too.
 : You can't have your cake ~ and eat it too, ~ you know.
+
 
 
 

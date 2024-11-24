@@ -28,6 +28,11 @@ questions             # HEAD
 
 : '''Why do''' you answer me ~ so roughly?
 
-
-
+===
+answers             # HEAD
+===
+---
+: Yes, I do.
+: No, I don't.
+: Oh, I do, I do.
 

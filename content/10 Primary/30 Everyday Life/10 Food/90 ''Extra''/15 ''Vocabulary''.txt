@@ -19,7 +19,7 @@ pork                    = свинина
 seafood                 = морепродукты
 salmon @ food           = лосось
 shrimp @ food           = креветка, креветки
-: I’m on a seafood diet. ~ What's a seafood diet? ~ When I “see food”, I eat it!
+: I’m on a seafood diet. -- What's a seafood diet? -- When I “see food”, I eat it!
 
 ===
 ---

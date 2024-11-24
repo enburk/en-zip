@@ -1,6 +1,7 @@
 public transport    = общественный транспорт                  # 10+
-
+---
 taxi                = такси
+: Taxi!
 ---
 bus @ auto          = автобус
 minibus             = микроавтобус

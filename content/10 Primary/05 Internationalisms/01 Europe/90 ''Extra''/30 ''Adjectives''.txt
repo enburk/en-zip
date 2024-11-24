@@ -4,7 +4,7 @@ good       = хороший    # duple
 bad        = плохой     # duple
 
 open       = открытый
-closed     = закрытый
+closed @@  = закрытый
 
 empty      = пустой
 full       = полный
@@ -17,6 +17,7 @@ dry        = сухой
 
 little     = маленький  # duple
 big        = большой    # duple
+
 
 
 

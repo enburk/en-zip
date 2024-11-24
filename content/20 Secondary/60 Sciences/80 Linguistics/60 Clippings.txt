@@ -43,6 +43,9 @@ telecom              = telecommunications
 admin                = administration, ~ administrator, ~ sysadmin
 creds                = credentials
 nick @ nickname      = nickname
+---
+caps = capital letters, ~ capitals
+: ALL CAPS
 
 info                 = information
 stats                = statistics

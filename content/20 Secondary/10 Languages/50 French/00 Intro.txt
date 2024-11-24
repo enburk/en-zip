@@ -33,7 +33,10 @@ pottery
 random
 range
 rear
+---
 wait
+: Wait, um...
+
 try
 join
 fairy
@@ -53,7 +56,9 @@ across
 bauble
 choice
 chase
+---
 cheat
+: You cheated!
 
 danger
 damage

@@ -27,7 +27,7 @@ carriage @ horse
 : horse drawn carriage # SOUND
 carriage @ typewriter
 : typewriter: carriage return # SOUND
-carriage @ rail {Br.}
+carriage {Br.} @ rail
 baby carriage {Am.}
 gun carriage
 

@@ -349,7 +349,7 @@ play badmenton.ogg
 play basketball ## course-.ogg
 play football ## course-.ogg
 play hockey ## course-.ogg
-play table tennis.ogg
+play table tennis ## course-.ogg
 play voleyboll.ogg
 raid a bike.ogg
 room.ogg
@@ -1524,32 +1524,32 @@ They caused me to come across as a bit of an ignoramus.ogg
 They caused me to come across as a bit of an ignoramus.txt
 >>> ../datae\audio\podcasts\{{!Hot English Magazine}}/Error Corrections
 !credit.txt
-Come here!.ogg
-Could you lend me a pen, please~! Could I borrow  a pen, please~!.ogg
-Do you like it~! Yes, I do!.ogg
-Do you like it~!.ogg
-Don’t worry about that..ogg
-Have you got a minute to talk to me~! Do you have a minute to talk to me~!.ogg
-History repeats itself..ogg
-I am going home..ogg
-I find it incredible that you can’t do that..ogg
-I know the answer..ogg
-I make a lot of mistakes when I speak English..ogg
-I never thought it would be such a success..ogg
-I was sick all day yesterday. I was sick the whole day yesterday..ogg
-I was there from 9 am to 4 pm..ogg
-I will go there in May..ogg
-I'm afraid I've made a mistake..ogg
-If I understood you, I would be able to help you..ogg
-If she wins today, she will be the champion..ogg
-It is my favorite film..ogg
-She speaks Swedish very well..ogg
-The article was mostly concerned with environmental issues..ogg
-We met in the morning..ogg
-We were there for six hours..ogg
-Which house do you live in~!.ogg
-You are free to do whatever you want..ogg
-You don’t know what she sad..ogg
+Come here! @ fix.ogg
+Could you lend me a pen, please~! Could I borrow  a pen, please~! @ fix.ogg
+Do you like it~! @ fix.ogg
+Do you like it~! Yes, I do! @ fix.ogg
+Don’t worry about that. @ fix.ogg
+Have you got a minute to talk to me~! Do you have a minute to talk to me~! @ fix.ogg
+History repeats itself. @ fix.ogg
+I am going home. @ fix.ogg
+I find it incredible that you can’t do that. @ fix.ogg
+I know the answer. @ fix.ogg
+I make a lot of mistakes when I speak English. @ fix.ogg
+I never thought it would be such a success. @ fix.ogg
+I was sick all day yesterday. I was sick the whole day yesterday. @ fix.ogg
+I was there from 9 am to 4 pm. @ fix.ogg
+I will go there in May. @ fix.ogg
+I'm afraid I've made a mistake. @ fix.ogg
+If I understood you, I would be able to help you. @ fix.ogg
+If she wins today, she will be the champion. @ fix.ogg
+It is my favorite film. @ fix.ogg
+She speaks Swedish very well. @ fix.ogg
+The article was mostly concerned with environmental issues. @ fix.ogg
+We met in the morning. @ fix.ogg
+We were there for six hours. @ fix.ogg
+Which house do you live in~! @ fix.ogg
+You are free to do whatever you want. @ fix.ogg
+You don’t know what she sad. @ fix.ogg
 >>> ../datae\audio\podcasts\{{!Hot English Magazine}}/Idioms
 !credit.txt
 a bone of contention -- something controversial the people spend a lot of time arguing or fighting about.ogg
@@ -13208,7 +13208,7 @@ Road ahead flooded. Road closed..wav
 Road ahead flooded.wav
 Road closed.wav
 Sudden high waves!.wav
-Thin ice!.wav
+Thin ice! ## course-.wav
 Turn handle to jettison door!.wav
 Warning!.wav
 Wash me!.wav
@@ -15067,7 +15067,7 @@ stream of time.wav
 such a thwack [thwack].ogg
 the mealy-mouthed porpoise.wav
 unconditional inoffensiveness by all to all.wav
-very good.ogg
+Very good..ogg
 whistle of astonishment.wav
 A problem~!.wav
 Away, and bring us napkins!.wav
@@ -16464,7 +16464,7 @@ humiliation.wav
 hunger.wav
 Hyde Park.wav
 I am.wav
-I have.wav
+I have ## course-.wav
 I [].wav
 I.wav
 identical.wav
@@ -16545,7 +16545,7 @@ kings.wav
 knees.wav
 lace.wav
 lady.wav
-large spectacles.wav
+large spectacles ## course-.wav
 lay upon the ground.wav
 laziest.wav
 leasure.wav
@@ -16575,7 +16575,7 @@ made for.wav
 maids.wav
 many times.wav
 many, many months.wav
-march a thousand miles.wav
+march a thousand miles ## course-.wav
 marketplace.wav
 marshes.wav
 marshland.wav
@@ -16604,7 +16604,7 @@ mostly.wav
 mouth.wav
 musical boxes.wav
 must die.wav
-must have.wav
+must have ## course-.wav
 must.wav
 natural man ## course-.wav
 natural philosophy.wav
@@ -17087,7 +17087,7 @@ was.wav
 wasn't.wav
 waste of time.wav
 we are.wav
-we have.wav
+we have ## course-.wav
 we may ## course-.wav
 we shall.wav
 we.wav
@@ -17796,20 +17796,185 @@ That would be killing the goose that laid the golden egg!.wav
 You cannot be magnificent without an entourage..wav
 >>> ../datae\audiobooks--/David Graeber - Debt {{Grover Gardner}}
 !credit.txt
+Ancient coins invariably circulated at a value higher than their metal content.txt
+Ancient coins invariably circulated at a value higher than their metal content.wav
+At its simplest, honor is that excess dignity that must be defended with the knife or sword.txt
+At its simplest, honor is that excess dignity that must be defended with the knife or sword.wav
+At this point, however, the principle has been exposed as a flagrant lie.txt
+At this point, however, the principle has been exposed as a flagrant lie.wav
+Bondmaids~! Doesn't that mean slaves.txt
+Bondmaids~! Doesn't that mean slaves.wav
+but also because both the relation between master and slave, and between employer and employee, are in principle impersonal.txt
+but also because both the relation between master and slave, and between employer and employee, are in principle impersonal.wav
+But in a similar way, religious traditions often insist that the only true charity is anonymous.txt
+But in a similar way, religious traditions often insist that the only true charity is anonymous.wav
+But why interest~! Why make a general theory of human motivation.txt
+But why interest~! Why make a general theory of human motivation.wav
+Clearly, the book was meant to annoy its readers, and for more than two thousand years, it has succeeded brilliantly..wav
+Entertainers of every stripe found liberal patronage.txt
+Entertainers of every stripe found liberal patronage.wav
+Feudalism was a notoriously messy and complicated business.txt
+Feudalism was a notoriously messy and complicated business.wav
+Honor Is Surplus Dignity.wav
+How much did we pay last year~! How much did our ancestors have to pay~!.wav
+I have been told (I suspect it isn't true) that in parts of Belarus.txt
+I have been told (I suspect it isn't true) that in parts of Belarus.wav
+I owe you one.txt
+I owe you one.wav
+I remember as a child several times being told that among the Inuit.txt
+I remember as a child several times being told that among the Inuit.wav
+If one is to believe MacKay, the entire population of London conceived the simultaneous delusion.txt
+If one is to believe MacKay, the entire population of London conceived the simultaneous delusion.wav
+If someone fixing a broken water pipe says.txt
+If someone fixing a broken water pipe says.wav
 If you cannot bargain with the gods because they already have everything.txt
 If you cannot bargain with the gods because they already have everything.wav
+In a heroic system, it is only debts of honor—the need to repay gifts, to exact revenge.txt
+In a heroic system, it is only debts of honor—the need to repay gifts, to exact revenge.wav
+In Chicago, for instance, a friend once took me on a drive down a beautiful old street.txt
+In Chicago, for instance, a friend once took me on a drive down a beautiful old street.wav
+In defending a freedman accused of continuing to provide sexual favors to his former master.txt
+In defending a freedman accused of continuing to provide sexual favors to his former master.wav
+In English, thank you derives from think.txt
+In English, thank you derives from think.wav
+In fact, the English please is short for if you please.txt
+In fact, the English please is short for if you please.wav
+In other words, he'd been living beyond his means, got himself in trouble.txt
+In other words, he'd been living beyond his means, got himself in trouble.wav
+In part this systems work because no one knows how they really work.wav
+Increasingly, they did not just want money. They needed it.txt
+Increasingly, they did not just want money. They needed it.wav
+It is all very well, Luther said, for us to imagine that all might live as true Christians.txt
+It is all very well, Luther said, for us to imagine that all might live as true Christians.wav
+It is the secret scandal of capitalism that at no point has it been organized primarily around free labor..wav
+It was only with the creation of the Bank of England in 1694.txt
+It was only with the creation of the Bank of England in 1694.wav
+Jesus's parable of the unforgiving servant makes a joke out of the matter.txt
+Jesus's parable of the unforgiving servant makes a joke out of the matter.wav
+Or consider Adam Smith.txt
+Or consider Adam Smith.wav
+Politics, after all, is the art of persuasion.txt
+Politics, after all, is the art of persuasion.wav
+Sins are debts to God.. unavoidable, but perhaps manageable.txt
+Sins are debts to God.. unavoidable, but perhaps manageable.wav
+Six hundred years later, we find a case from an Icelandic saga of an aging Viking named Egil.txt
+Six hundred years later, we find a case from an Icelandic saga of an aging Viking named Egil.wav
+So what is slavery~! I've already begun to suggest an answer in the last chapter.txt
+So what is slavery~! I've already begun to suggest an answer in the last chapter.wav
+Still, if freedom is basically our right to own things, or to treat things as if we own them.txt
+Still, if freedom is basically our right to own things, or to treat things as if we own them.wav
 Surely one has to pay one's debts..wav
+The argument soon became that if a merchant made a commercial loan.txt
+The argument soon became that if a merchant made a commercial loan.wav
+The captive, having refused his one final chance to save his honor by killing himself.txt
+The captive, having refused his one final chance to save his honor by killing himself.wav
+The Emperor is sinking under the weight of endless debts.txt
+The Emperor is sinking under the weight of endless debts.wav
+the fact that, in the Old Testament, usury is not quite forbidden to everyone.txt
+the fact that, in the Old Testament, usury is not quite forbidden to everyone.wav
+The figure of Cortes is instructive for another reason.txt
+The figure of Cortes is instructive for another reason.wav
+The first stock markets in Holland and Britain were based mainly in trading shares of the East and West India companies.txt
+The first stock markets in Holland and Britain were based mainly in trading shares of the East and West India companies.wav
+The following story, which purports to tell the reaction of a merchant's son named Li.txt
+The following story, which purports to tell the reaction of a merchant's son named Li.wav
+The hazards, the concourse, the prizes, keyed men to the pitch of war.txt
+The hazards, the concourse, the prizes, keyed men to the pitch of war.wav
+The level of trust thereby created between merchants in the great Malay entrepot Malacca.txt
+The level of trust thereby created between merchants in the great Malay entrepot Malacca.wav
+The moment we recognize someone as a different sort of person.txt
+The moment we recognize someone as a different sort of person.wav
+The most absurd and preposterous of all, and which shewed, more completely than any other.txt
+The most absurd and preposterous of all, and which shewed, more completely than any other.wav
 The story of money for economists always begins with a fantasy world of barter.txt
 The story of money for economists always begins with a fantasy world of barter.wav
+This connection between borrowing and lying, incidentally, is an important one to history.txt
+This connection between borrowing and lying, incidentally, is an important one to history.wav
+To say that we own ourselves is, oddly enough.txt
+To say that we own ourselves is, oddly enough.wav
+We are all communists with our closest friends, and feudal lords when dealing with small children.txt
+We are all communists with our closest friends, and feudal lords when dealing with small children.wav
+What made Roman slavery so unusual, in historical terms.txt
+What made Roman slavery so unusual, in historical terms.wav
+Whereas Persian and Arab thinkers assumed that the market emerged as an extension of mutual aid.txt
+Whereas Persian and Arab thinkers assumed that the market emerged as an extension of mutual aid.wav
+While markets are ways of exchanging goods through the medium of money.txt
+While markets are ways of exchanging goods through the medium of money.wav
+With the appearance of money, it could also become unclear what was a gift, and what a loan.txt
+With the appearance of money, it could also become unclear what was a gift, and what a loan.wav
+You can't have cutthroat competition where there is no one stopping people from literally cutting one another's throats..wav
+You can't lend money to a child, or to a lunatic. Well, you can, but the courts won't help you get it back..wav
 >>> ../datae\audiobooks--\David Graeber - Debt {{Grover Gardner}}/{{}}
+>>> ../datae\audiobooks--\David Graeber - Debt {{Grover Gardner}}\{{}}/1
+Anaximander, of Miletus.wav
+Anaximenes, of Miletus.wav
+be repaid.wav
+c. 585 BC-c. 525 BC.wav
+case in point.wav
+Christendom.wav
+exchange.wav
+greed.wav
+municipal bonds.wav
+Panopticon.wav
+perpetual endowment.wav
+political rapprochement.wav
+proselytize.wav
+rapprochement.wav
+ruq'a ## sic!.wav
+spiritualized.wav
+symbolon ## sic!.wav
+the unlimited.wav
+totoloque ## sic!.wav
+varieties of phantasmagoric madness.wav
+workplace pilfering.wav
+>>> ../datae\audiobooks--\David Graeber - Debt {{Grover Gardner}}\{{}}/2
+How did this come about~! And why~!.wav
+I buy someone a beer; they buy me the next one..wav
+It was mathematical. This made it seem objective, even scientific..wav
+Money could be loaned..wav
+Pay all men what you owe..wav
+Profits are the reward for risk..wav
+This is quite an extraordinary text. On one level it’s a joke; in others, it could hardly be more serious..wav
+Venerable Sir, the King greeted him.txt
+Venerable Sir, the King greeted him.wav
+Wait a minute! I asked. You can do that.txt
+Wait a minute! I asked. You can do that.wav
+Yet it did happen, and it had lasting effects..wav
+Amongst human beings none will save another.txt
+Amongst human beings none will save another.wav
+But the issue is more complicated..wav
+But we can guess. Let's try a thought experiment..wav
+Eleven pesos, then.txt
+Eleven pesos, then.wav
 For every subtle and complicated question, there is a perfectly simple.txt
 For every subtle and complicated question, there is a perfectly simple.wav
 For example~!.wav
+Free your mind of the idea of deserving, of the idea of earning, and you will begin to be able to think..txt
+Free your mind of the idea of deserving, of the idea of earning, and you will begin to be able to think..wav
 If you owe the bank a hundred thousand dollars.txt
 If you owe the bank a hundred thousand dollars.wav
+It's quite possible to turn honor into money, almost impossible to convert money into honor..txt
+It's quite possible to turn honor into money, almost impossible to convert money into honor..wav
+Nasruddin's neighbor once came by ask if he could borrow his donkey for an unexpected errand.txt
+Nasruddin's neighbor once came by ask if he could borrow his donkey for an unexpected errand.wav
+Of all the beings that have existence only in the minds of men.txt
+Of all the beings that have existence only in the minds of men.wav
+One day Nasruddin's neighbor, a notorious miser, came by to announce he was throwing a party.txt
+One day Nasruddin's neighbor, a notorious miser, came by to announce he was throwing a party.wav
 So what exactly was the point of extracting the gold, stamping one’s picture on it.txt
 So what exactly was the point of extracting the gold, stamping one’s picture on it.wav
 tally sticks.wav
+The living generation always acknowledged a legal obligation to the previous generations.txt
+The living generation always acknowledged a legal obligation to the previous generations.wav
+The shirt is five pesos. Right~!.txt
+The shirt is five pesos. Right~!.wav
+The treasury is based upon mining, the army upon the treasury.txt
+The treasury is based upon mining, the army upon the treasury.wav
+We will buy the poor for silver, the needy for a pair of sandals.txt
+We will buy the poor for silver, the needy for a pair of sandals.wav
+When an enemy's army comes, it seeks some profit..txt
+When an enemy's army comes, it seeks some profit..wav
+Where there is justice in war, there is also justice in usury. --Saint Ambrose.wav
 >>> ../datae\audiobooks--/Douglas Adams - The Hitchhiker's Guide to the Galaxy {{Stephen Fry}}
 !credit.txt
 For a moment, nothing happened.txt
@@ -18306,6 +18471,438 @@ We are not told..wav
 “Enter boldly and go straight to my mother, who will be spinning at the hearth. What my mother says my father will do.”.wav
 “Off with you and be glad you are not smartly slapped as anyone else would have been who waked me.”.wav
 “You crooked, shifty rogue! Anyone who would keep pace with your craftiness must be a canny dealer.”.wav
+>>> ../datae\audiobooks--/Erin Moore - That's Not English {{Marguerite Gavin}}
+!credit.txt
+A gag in the popular 1980s political sitcom Yes Minister.txt
+A gag in the popular 1980s political sitcom Yes Minister.wav
+A redhead in America will be considered enviable and special.txt
+A redhead in America will be considered enviable and special.wav
+A working-class person from London or Essex, seeking agreement.txt
+A working-class person from London or Essex, seeking agreement.wav
+All Americans grow up pledging allegiance to the flag each school day.txt
+All Americans grow up pledging allegiance to the flag each school day.wav
+Although 77 percent of US companies do offer paid vacations and holidays.txt
+Although 77 percent of US companies do offer paid vacations and holidays.wav
+Although the English make fun of Americans for saying French words.txt
+Although the English make fun of Americans for saying French words.wav
+American adjectives have always gone up to eleven.txt
+American adjectives have always gone up to eleven.wav
+American parents in England have to get used to saying trousers instead of pants.txt
+American parents in England have to get used to saying trousers instead of pants.wav
+Americans are divided over whether they love or hate what they perceive.txt
+Americans are divided over whether they love or hate what they perceive.wav
+Americans like their snacks to come with health claims.. low-fat, gluten-free, no trans fats, calcium-enriched, multigrain.txt
+Americans like their snacks to come with health claims.. low-fat, gluten-free, no trans fats, calcium-enriched, multigrain.wav
+Americans think that all English people sound posh, and they won’t let the English forget it..wav
+Americans, who love to accuse the English of prissiness, are a bit prissy themselves.txt
+Americans, who love to accuse the English of prissiness, are a bit prissy themselves.wav
+Americans’ less-enunciated accents, and tendency to speak louder.txt
+Americans’ less-enunciated accents, and tendency to speak louder.wav
+An American friend who has lived in both countries summed it up.txt
+An American friend who has lived in both countries summed it up.wav
+An anorak is someone (usually male) with an obsessive interest in a niche subject.txt
+An anorak is someone (usually male) with an obsessive interest in a niche subject.wav
+An English novelist named Mrs. Henry De La Pasture was quoted in The New York Times.txt
+An English novelist named Mrs. Henry De La Pasture was quoted in The New York Times.wav
+Aniseed balls are dusky purple and, as advertised, taste like aniseed.txt
+Aniseed balls are dusky purple and, as advertised, taste like aniseed.wav
+Another theory is that the word comes from the Cherokee word eankke, which means “coward.” How embarrassing. [+][Yankee].wav
+Anything from a bag of granola to a box of chocolates can be labeled as luxury.txt
+Anything from a bag of granola to a box of chocolates can be labeled as luxury.wav
+Around here, you need a word to describe the state of not being in uniform. And the English have one.. mufti..wav
+As Americans say, if you don’t ask, you don’t get. But also.. Be careful what you wish for..wav
+Bugger off means go away. I’ll be buggered is a general expression of surprise.txt
+Bugger off means go away. I’ll be buggered is a general expression of surprise.wav
+But in most of America if someone asks you your favorite sausage.txt
+But in most of America if someone asks you your favorite sausage.wav
+Chapter 1. Quite.txt
+Chapter 1. Quite.wav
+Chapter X. Middle Class.txt
+Chapter X. Middle Class.wav
+Chapter X. Moreish.txt
+Chapter X. Moreish.wav
+Class warfare supposedly died out years ago in England.txt
+Class warfare supposedly died out years ago in England.wav
+Clever Clogs is a slightly pejorative name for a person of above-average intelligence and below-average modesty..wav
+Clothing may not be bespoke in America, but want to know what is.txt
+Clothing may not be bespoke in America, but want to know what is.wav
+Dudeism—“a belief system that teaches us that the universe wants us to take it easy”.txt
+Dudeism—“a belief system that teaches us that the universe wants us to take it easy”.wav
+English men, in particular, can be peacocks, fond of hats.txt
+English men, in particular, can be peacocks, fond of hats.wav
+English schools are fanatical about games, and about getting children outside in all weather.txt
+English schools are fanatical about games, and about getting children outside in all weather.wav
+Even being fourth in line to the throne doesn’t exempt an English redhead from ridicule.txt
+Even being fourth in line to the throne doesn’t exempt an English redhead from ridicule.wav
+Every so often, a word comes along that means just what it sounds like.txt
+Every so often, a word comes along that means just what it sounds like.wav
+Here are just a few of the many moods and meanings these two syllables can convey.txt
+Here are just a few of the many moods and meanings these two syllables can convey.wav
+Here’s the rule.. For simple futurity, use shall after I or we.txt
+Here’s the rule.. For simple futurity, use shall after I or we.wav
+I've known Americans who made entire careers in the Middle East.txt
+I've known Americans who made entire careers in the Middle East.wav
+If Americans are so into their individuality, the English might wonder.txt
+If Americans are so into their individuality, the English might wonder.wav
+If an American hears “a proper cup of tea,”.txt
+If an American hears “a proper cup of tea,”.wav
+If something is cozy and comfortable in England it might be called homely.txt
+If something is cozy and comfortable in England it might be called homely.wav
+If the English snaffle, Americans prefer to mainline their snacks, typically on the run.txt
+If the English snaffle, Americans prefer to mainline their snacks, typically on the run.wav
+If you ask an American whether it’s good to be smart, he would likely say yes.txt
+If you ask an American whether it’s good to be smart, he would likely say yes.wav
+In a country where Paul McCartney is known as Macca.txt
+In a country where Paul McCartney is known as Macca.wav
+In America there is no middle way. You’re strapping on the feedbag, surrendering to your animal urges.txt
+In America there is no middle way. You’re strapping on the feedbag, surrendering to your animal urges.wav
+In America, being in trade has never been stigmatized.txt
+In America, being in trade has never been stigmatized.wav
+In America, euphemism is such big business.txt
+In America, euphemism is such big business.wav
+In an article for The New Yorker, “Take It or Leave It,” the English author Zadie Smith.txt
+In an article for The New Yorker, “Take It or Leave It,” the English author Zadie Smith.wav
+In England by the mid-1970s, cheers had become a colloquial synonym for thanks.txt
+In England by the mid-1970s, cheers had become a colloquial synonym for thanks.wav
+In England, a muppet is a foolish or incompetent person.txt
+In England, a muppet is a foolish or incompetent person.wav
+In England, by contrast, redheads are taunted and ridiculed for life.txt
+In England, by contrast, redheads are taunted and ridiculed for life.wav
+In England, sneakers or running shoes are called trainers.txt
+In England, sneakers or running shoes are called trainers.wav
+In England, unlike in America, partner isn’t a code word for “same-sex partner.”.wav
+In English English, quite means “rather” or “fairly,”.txt
+In English English, quite means “rather” or “fairly,”.wav
+In English English, the word tip has several meanings.txt
+In English English, the word tip has several meanings.wav
+In fact, Noah Webster’s purified Bible, in which he substituted euphemisms.txt
+In fact, Noah Webster’s purified Bible, in which he substituted euphemisms.wav
+In her book The Anglo Files.. A Field Guide to the British, Sarah Lyall.txt
+In her book The Anglo Files.. A Field Guide to the British, Sarah Lyall.wav
+In the United States, this is considered something of an art form.txt
+In the United States, this is considered something of an art form.wav
+Incidentally, the English call fanny packs “bum bags,” but they hardly ever wear them..wav
+Incidentally, when your child asks for rubbers.txt
+Incidentally, when your child asks for rubbers.wav
+Ironically, it was American snack companies that also pioneered the practice of charging more for far less food.txt
+Ironically, it was American snack companies that also pioneered the practice of charging more for far less food.wav
+It is not unusual, in the real America, to meet a graduate of the Ned Flanders School of Swearing.txt
+It is not unusual, in the real America, to meet a graduate of the Ned Flanders School of Swearing.wav
+It is said in the South that there are three types of Yankees.txt
+It is said in the South that there are three types of Yankees.wav
+It sounds like an antisocial act that could get you ten to fifteen in a maximum-security gaol.txt
+It sounds like an antisocial act that could get you ten to fifteen in a maximum-security gaol.wav
+Lunch at Pret is more expensive than at the local deli.txt
+Lunch at Pret is more expensive than at the local deli.wav
+Mama, that girl has a red cardigan! And that one, and that one....wav
+Many Americans consider peanut butter a perfectly reasonable breakfast food, and why not.txt
+Many Americans consider peanut butter a perfectly reasonable breakfast food, and why not.wav
+Mufti has been the slang term for plain clothes in the British Army for more than two hundred years.txt
+Mufti has been the slang term for plain clothes in the British Army for more than two hundred years.wav
+Mustn’t grumble is a phrase as much associated with the English.txt
+Mustn’t grumble is a phrase as much associated with the English.wav
+My mother unknowingly ordered an off-menu iced tea at one of our favorite restaurants.txt
+My mother unknowingly ordered an off-menu iced tea at one of our favorite restaurants.wav
+No one wants smart people lording it over them.txt
+No one wants smart people lording it over them.wav
+Of all the words Americans have borrowed from the English.txt
+Of all the words Americans have borrowed from the English.wav
+One of the most common complaints the English make after visiting America.txt
+One of the most common complaints the English make after visiting America.wav
+One of their latest menu items is the Peanut Butter Cup Pancake Breakfast.txt
+One of their latest menu items is the Peanut Butter Cup Pancake Breakfast.wav
+Pubs are safe and friendly places where everyone is made to feel welcome.txt
+Pubs are safe and friendly places where everyone is made to feel welcome.wav
+Pull, snog, and shag are the English synonyms for pick up, make out, and screw.txt
+Pull, snog, and shag are the English synonyms for pick up, make out, and screw.wav
+Reference will also be made, even in medical settings, to the back passage.txt
+Reference will also be made, even in medical settings, to the back passage.wav
+Saying “couch” (or worse, “settee”) instead of “sofa” is a class-baiting crime in some English households.txt
+Saying “couch” (or worse, “settee”) instead of “sofa” is a class-baiting crime in some English households.wav
+Shall has all but disappeared from American English.txt
+Shall has all but disappeared from American English.wav
+Should an English person appear to make an embarrassing effort.txt
+Should an English person appear to make an embarrassing effort.wav
+Skint comes from the word skinned, meaning flayed, exposed.txt
+Skint comes from the word skinned, meaning flayed, exposed.wav
+Some English women, perhaps in reaction to being made to wear pinafores.txt
+Some English women, perhaps in reaction to being made to wear pinafores.wav
+Someone (or something) described as scrappy in England is untidy or poorly organized.txt
+Someone (or something) described as scrappy in England is untidy or poorly organized.wav
+Southern Americans use Yankee to describe Northerners.txt
+Southern Americans use Yankee to describe Northerners.wav
+Stories abound of vacationing Brits being chased out of restaurants by American servers.txt
+Stories abound of vacationing Brits being chased out of restaurants by American servers.wav
+The English find American linguistic hedges rather droll—especially bathroom.txt
+The English find American linguistic hedges rather droll—especially bathroom.wav
+The English get—and take—at least twenty days of vacation.txt
+The English get—and take—at least twenty days of vacation.wav
+The English have a way of describing something that is genuine.txt
+The English have a way of describing something that is genuine.wav
+The English have a word for a person with that kind of intelligence.txt
+The English have a word for a person with that kind of intelligence.wav
+The English novelist Patricia Finney has said that she loves Americans because.txt
+The English novelist Patricia Finney has said that she loves Americans because.wav
+The equivalent large packages in England will say, in a large, admonishing font.txt
+The equivalent large packages in England will say, in a large, admonishing font.wav
+The fluidity of social mobility in the United States is like a roller coaster.txt
+The fluidity of social mobility in the United States is like a roller coaster.wav
+The infantilizing boyfriend and girlfriend apply.txt
+The infantilizing boyfriend and girlfriend apply.wav
+The middle needs approval to enjoy the spoils of its position.txt
+The middle needs approval to enjoy the spoils of its position.wav
+The reason for the season, as pious Americans remind us.txt
+The reason for the season, as pious Americans remind us.wav
+The word sod—used to describe a foolish person, or to tell someone to “sod off” (get lost)—is actually short for sodomite..wav
+The word succulent makes me want to go hide in a closet and never come out. No idea why..wav
+There has long been a conviction among the English that clever people are, well, not very nice..wav
+There is a brand of confidence that comes from knowing the rules well enough to flout them..wav
+there’s no doubt that Americans have an ambivalent relationship with the word smart.txt
+there’s no doubt that Americans have an ambivalent relationship with the word smart.wav
+This clipped and carefully enunciated accent is known as received pronunciation.txt
+This clipped and carefully enunciated accent is known as received pronunciation.wav
+To fancy someone, in English English, is to have a romantic attraction.txt
+To fancy someone, in English English, is to have a romantic attraction.wav
+To snaffle is to eat something quickly, and sometimes without permission.txt
+To snaffle is to eat something quickly, and sometimes without permission.wav
+We arrive at Anne’s nursery, where most of the mothers are wearing near-identical skinny jeans.txt
+We arrive at Anne’s nursery, where most of the mothers are wearing near-identical skinny jeans.wav
+When Americans say sorry, they mostly mean it.txt
+When Americans say sorry, they mostly mean it.wav
+When Martin Scorsese’s The Wolf of Wall Street was released in 2014.txt
+When Martin Scorsese’s The Wolf of Wall Street was released in 2014.wav
+Whinging is a passive occupation, whereas someone who complains.txt
+Whinging is a passive occupation, whereas someone who complains.wav
+Why do American tourists, who must have heard how much it rains in England.txt
+Why do American tourists, who must have heard how much it rains in England.wav
+You get what you get and you don’t get upset.txt
+You get what you get and you don’t get upset.wav
+>>> ../datae\audiobooks--\Erin Moore - That's Not English {{Marguerite Gavin}}/{{}}
+>>> ../datae\audiobooks--\Erin Moore - That's Not English {{Marguerite Gavin}}\{{}}/1
+16.30.wav
+a complete blur.wav
+a form of dismissal.wav
+a guy.wav
+a sophisticated unsophistication.wav
+abide.wav
+after all.wav
+al desko.wav
+all the year round.wav
+Altoids ## sic!.wav
+among other things.wav
+an Alice band.wav
+an obsession.wav
+anti-intellectualism.wav
+at our peril.wav
+attractive.wav
+bespoke.wav
+blazes on the trail.wav
+bloody-minded.wav
+bloody.wav
+Boca Raton.wav
+bona fides.wav
+boring.wav
+Boxing Day.wav
+British accent.wav
+bub.wav
+builder's tea.wav
+by choice.wav
+Charles Dickens.wav
+Chattanooga, Tennessee.wav
+cheers.wav
+childhood indoctrination.wav
+chip on the shoulder [+][chip on one's shoulder].wav
+chippiness.wav
+clever.wav
+cluster-cuss.wav
+Crimbo.wav
+cultural.wav
+dandy.wav
+David and Goliath.wav
+dirt cheap.wav
+dude ranch.wav
+dude.wav
+effort.wav
+esophagus.wav
+etc..wav
+excel.wav
+exclusive.wav
+exclusivity.wav
+exit.wav
+figure it out.wav
+for better or worse.wav
+fortnight.wav
+free of charge.wav
+ginger.wav
+gob.wav
+Gobsmack.tv ## sic!.wav
+gobsmacked.wav
+great for sharing.wav
+half four.wav
+hard cheese.wav
+here be dragons.wav
+Hobson-Jobson.wav
+humped zebra crossing.wav
+interestingly.wav
+is not specified.wav
+issuing a fatwa.wav
+jolly hard.wav
+keep a stiff upper lip.wav
+kidneys on toast.wav
+kippers.wav
+knackered.wav
+links or patties.wav
+love-to-share pack.wav
+make a go of it.wav
+moreish.wav
+mufty.wav
+not entirely uncontroversial.wav
+not important.wav
+onesies.wav
+open.wav
+otherwise.wav
+partner.wav
+Peter Pan.wav
+popular culture.wav
+preschool.wav
+proper.wav
+pull.wav
+quite a distinction.wav
+quite.wav
+reserved.wav
+RP.wav
+scrappy.wav
+scunner.wav
+sense of entitlement.wav
+shall.wav
+signed off on.wav
+skint.wav
+soda bread.wav
+solipsistic.wav
+sorry.wav
+stiff upper lip.wav
+Stratford-upon-Avon.wav
+stuff of legend.wav
+suburban Valley girls.wav
+summed it up [sum up].wav
+swell.wav
+take exercise.wav
+tall poppy syndrome.wav
+tax-free shopping.wav
+tea.wav
+the diner breakfast.wav
+the full English.wav
+the naked eye.wav
+the principal boy ## =.wav
+the rest of us.wav
+tip.wav
+to enthuse.wav
+to knacker.wav
+to live in peace.wav
+to pony up for a cause.wav
+to reveal.wav
+to ‘shake it all about.wav
+too clever by half.wav
+trainers.wav
+unfamiliarity.wav
+uniform.wav
+unknown.wav
+unrefined.wav
+very little indeed.wav
+way out.wav
+whinge.wav
+>>> ../datae\audiobooks--\Erin Moore - That's Not English {{Marguerite Gavin}}\{{}}/2
+a gap year, or twelve-month holiday, before starting university.wav
+a higher percentage than ever before.wav
+A mufti is an expert in Islamic law who is entitled to rule on religious matters, for example issuing a fatwa..wav
+Ah, capitalism.. the entrepreneurial spirit that animates America!.wav
+AIBU (Am I being unreasonable~!).wav
+All right, then..wav
+Americans say “four thirty” or “half past four.” The English do, too, but they also might say “half four.”.wav
+An English “state school” is the equivalent of an American “public school,”.txt
+An English “state school” is the equivalent of an American “public school,”.wav
+Blame the marketers..wav
+Bloody ’ell!.wav
+blowing one’s own trumpet.wav
+But consider....wav
+But novelty has also played a role in their success, and novelty wears off. [+][wear off].wav
+But you’d be wrong..wav
+By Appointment to Her Majesty the Queen.wav
+changed priorities ahead.wav
+charcoal grey with flecks of glitter from Butter London.wav
+chicken and avocado with pine nuts.wav
+Closets are few and far between..wav
+Dude, that sounds way too ambitious..wav
+Even the BBC has stopped insisting on RP..wav
+exhilarating when you’re up, and nauseating when you’re down.wav
+getting exactly what they’ve paid for.wav
+huevos rancheros (eggs with salsa, bell peppers, refried beans, and tortillas).wav
+I really like your wapdoodle! What a great snockticker!.wav
+I think we can answer that objectively..wav
+I want’ never gets..wav
+Is that too much to ask~!.wav
+Is this normal~!.wav
+It could have been any one of us..wav
+I’m a Clever Clogs!.wav
+I’m absolutely knackered..wav
+Karma is a boomerang..wav
+Keep calm and carry on..wav
+MBE (member of the Order of the British Empire).wav
+NCT (National Childbirth Trust).wav
+NHS (National Health Service).wav
+Now you know..wav
+The Baby Boomers pioneered “if it feels good, do it.”.wav
+Think chips made in the shape of little shovels, so as to hold a maximum quantity of dip..wav
+Think mini Oreos that you can pour into your piehole from a twelve-ounce cup..wav
+This is achieved through self-deprecation—jokes at one’s own expense..wav
+Time is money..wav
+To each his own..wav
+to get things done by hook or by crook.wav
+two weeks—one bloody fortnight.wav
+We are right back where we started..wav
+What a radical idea..wav
+What you want me to do about it, mate~!.wav
+Why Do Some Americanisms Irritate People~!.wav
+You can take nothing for granted..wav
+You haven’t been there lately..wav
+You know it when you see it..wav
+You’ll certainly feel lost in the wilderness..wav
+A lot of people use the terms ‘bespoke’ and ‘made-to-measure’ interchangeably.txt
+A lot of people use the terms ‘bespoke’ and ‘made-to-measure’ interchangeably.wav
+Churchill also said that one could “always count on Americans.txt
+Churchill also said that one could “always count on Americans.wav
+Frankly, pantos are so weird.txt
+Frankly, pantos are so weird.wav
+Give my people plenty of beer, good beer, and cheap beer.txt
+Give my people plenty of beer, good beer, and cheap beer.wav
+I went doolally at the durbar and was sent back to Blighty in a dooley feeling rather dikki.txt
+I went doolally at the durbar and was sent back to Blighty in a dooley feeling rather dikki.wav
+In New England we have nine months of winter and three months of darned poor sledding. ## credit aphorism.wav
+It’s not that I’m so smart, it’s just that I stay with problems longer.txt
+It’s not that I’m so smart, it’s just that I stay with problems longer.wav
+I’m not the smartest fellow in the world, but I can sure pick smart colleagues.txt
+I’m not the smartest fellow in the world, but I can sure pick smart colleagues.wav
+Londoners are just permanently petulant, irritated. I think we wake up taking offense.txt
+Londoners are just permanently petulant, irritated. I think we wake up taking offense.wav
+My grandmother used to say ‘good NIGHT’ when something surprised or shocked her..txt
+My grandmother used to say ‘good NIGHT’ when something surprised or shocked her..wav
+Politicians who have been to private school and “Oxbridge”.txt
+Politicians who have been to private school and “Oxbridge”.wav
+Thanks to the Interstate Highway System.txt
+Thanks to the Interstate Highway System.wav
+The English feign indifference.txt
+The English feign indifference.wav
+The future is something which everyone reaches at the rate of 60 minutes an hour.txt
+The future is something which everyone reaches at the rate of 60 minutes an hour.wav
+The world is your cow. But you have to do the milking. ## credit aphorism.wav
+There’s a rule of thumb within my friendship group.txt
+There’s a rule of thumb within my friendship group.wav
+To foreigners, a Yankee is an American.txt
+To foreigners, a Yankee is an American.wav
+While having tiffin on the veranda of my bungalow.txt
+While having tiffin on the veranda of my bungalow.wav
+Whoa, the hokey cokey.txt
+Whoa, the hokey cokey.wav
 >>> ../datae\audiobooks--/Eve Ensler - The Vagina Monologues ## us {{Eve Ensler}}
 Are you there~!.ogg
 >>> ../datae\audiobooks--\Eve Ensler - The Vagina Monologues ## us {{Eve Ensler}}/{{}}
@@ -18915,7 +19512,7 @@ windfucker.wav
 >>> ../datae\audiobooks--\John McWhorter - Nine Nasty Words ## us {{John McWhorter}}\{{}}/2
 And the sky did not fall in..wav
 as in.wav
-as such.wav
+as such @ parenthesis.wav
 Being in Total Control, Honey [bitch].wav
 but above all.wav
 but even then.wav
@@ -19507,7 +20104,7 @@ customer who knows what he wants.wav
 dimple in the bumper.wav
 dramatis personae.wav
 drinking tea.wav
-for miles and miles.wav
+for miles and miles ## course-.wav
 Funny thing is....wav
 in the rain.wav
 move up here.wav
@@ -20299,7 +20896,7 @@ the mark of weakness.wav
 the next big thing.wav
 they do.wav
 tipped out.wav
-to light up.wav
+to light up @ illuminate.wav
 to measure up to.wav
 to press tight.wav
 to spoil it.wav
@@ -22403,7 +23000,7 @@ Access denied. ### Voice-Computer-Speaker-Female-Access-Denied_COMM-2245.wav
 Access denied. ### [Adult-Fem-A_Access-Denied_VKT_00058].mp3
 Access granted. ### Voice-Computer-Room-Female-Access-Granted_COMM-2215.wav
 acknowledged ### Voice-Computer-Female-Acknowledged_COMM-2030.wav
-Action! ### Mid-Aged-Male-A_Action_VKT_11109.wav
+Action! ## course- ### Mid-Aged-Male-A_Action_VKT_11109.wav
 Affirmative. ### Two-Way-Radio-Male_Affirmative_VKT_17182.wav
 Again~! ### [Adult-Male-D_Again_VKT_04533].mp3
 Ah, bite me! ### [Teen-Male-C_Ah-Bite-Me_VKT_15983].wav
@@ -22447,10 +23044,10 @@ Am I right, or am I right~! [+][am I right or am I right] ### [Mid-Aged-Fem-C_Am
 am not ## course- ### [Child-Fem-B_Am-Not_VKT_06710].wav
 Am not! ### [Child-Fem-B_Am-Not_VKT_06710].wav
 Amen! ### Mid-Aged-Fem-C_Amen_VKT_10713.wav
-And action! ### Mid-Aged-Male-A_And-Action_VKT_11116.wav
+And action! ## course- ### Mid-Aged-Male-A_And-Action_VKT_11116.wav
 And your point is~! ### [Adult-Fem-D_And-Your-Point-Is_VKT_01384].mp3
 And your point was~! ### [Adult-Fem-D_And-Your-Point-Was_VKT_01385].mp3
-And, action! ### [Mid-Aged-Fem-B_And-Action_VKT_10390].wav
+And, action! ## course- ### [Mid-Aged-Fem-B_And-Action_VKT_10390].wav
 And, cut! ### [Mid-Aged-Male-B_And-Cut_VKT_11628].wav
 Ante up! ### [Mid-Aged-Fem-B_Ante-Up_VKT_10391].wav
 Any calls while I was out~! ### Mid-Aged-Male-C_Any-Calls-While-I-Was-Out_VKT_12046.wav
@@ -22884,7 +23481,7 @@ Good grief! ### Adult-Fem-D_Good-Grief_VKT_01494.mp3
 Good grief! ### [Adult-Fem-D_Good-Grief_VKT_01494].mp3
 Good job! ### [Mid-Aged-Male-C_Good-Job_VKT_12100].wav
 Good luck with that. ### [Adult-Male-C_Good-Luck-With-That_VKT_04148].mp3
-Good luck! ### [Adult-Fem-G_Good-Luck_VKT_02839].mp3
+Good luck! @ valediction ### [Adult-Fem-G_Good-Luck_VKT_02839].mp3
 Good morning! ### [Adult-Fem-B_Good-Morning_VKT_00469].mp3
 Good morning! ### [Adult-Male-F_Good-Morning_VKT_05944].mp3
 Good morning. @ depressed ### Child-Young-Male-A_Depressed-Good-Morning_VKT_09505.wav
@@ -23342,9 +23939,9 @@ Jackass! ### [Adult-Male-D_Jackass_VKT_04848].mp3
 jerk ### [Adult-Fem-D_Jerk_VKT_01650].mp3
 Jesus! ### Vocals-ManSayingJesus-SemiS_B01-09352.wav
 Just a heads up. ### [Mid-Aged-Fem-C_Just-A-Heads-Up_VKT_10917].wav
-just a minute ### [Adult-Fem-C_Just-A-Minute_VKT_01035].mp3
 Just a minute! @ annoyed ### Teen-Fem-A_Annoyed-Just-A-Minute_VKT_13774.wav
 Just a minute, please. ### [Teen-Fem-C_Just-A-Minute-Please_VKT_14471].wav
+Just a minute. ### [Adult-Fem-C_Just-A-Minute_VKT_01035].mp3
 Just a minute. ### [Mid-Aged-Male-B_Just-A-Minute_VKT_11794].wav
 Just a second, please. ### [Senior-Fem-B_Just-A-Second-Please_VKT_12964].wav
 Just a way I like it! ### [Senior-Male-A_Just-The-Way-I-Like-It_VKT_13435].wav
@@ -23664,7 +24261,6 @@ ouch! ### [Child-Fem-B_Ouch_VKT_07117].wav
 ouch! ow!.wav
 out ### [Teen-Fem-D_Keep-Out_VKT_14970].wav
 Out of sight, out of mind. ### [Senior-Male-A_Out-Of-Sight-Out-Of-Mind_VKT_13498].wav
-over and out ### [Adult-Male-F_Over-And-Out_VKT_06118].mp3
 Over and out. ### [Two-Way-Radio-Fem_Over-And-Out_VKT_17171].wav
 Over. @ radio ### [Two-Way-Radio-Fem_Over_VKT_17169].wav
 ow! ### [Teen-Male-A_Ow_VKT_15424].wav
@@ -23685,7 +24281,7 @@ perfect ### [Mid-Aged-Male-A_Practice-Makes-Perfect_VKT_11408].wav
 pff ### Laughter-Male_GEN-HD4-42388.wav
 phew! @ relieved ### ReactionCrowd AR04_44_4.wav
 Pick up the phone! ### [Adult-Fem-D_Pick-Up-The-Phone_VKT_01763].mp3
-Pick up the white courtesy phone. ### Public-Address-Fem_Pick-Up-White-Courtesy-Phone_VKT_17133.wav
+Pick up your call on the white courtesy phone. ### Public-Address-Fem_Pick-Up-White-Courtesy-Phone_VKT_17133.wav
 Pick up! ### [Adult-Fem-D_Pick-Up_VKT_01759].mp3
 Piece of cake! ### [Senior-Male-A_Piece-Of-Cake_VKT_13504].wav
 Piss off! @ annoyed ### [Teen-Fem-A_Annoyed-Piss-Off_VKT_13778].wav
@@ -24733,15 +25329,14 @@ ball @ dance ## qrop l10 r20.jpg
 >>> ../datae\fineart gh {{$$}}/Giordano {{Luca Giordano}}
 The Annunciation [Annunciation][annunciation] ## date 1672 ## qrop qt.jpg
 >>> ../datae\fineart gh {{$$}}/Giotto {{Giotto}}
-Detail of The Dream of Joachim [angel] ## date c. 1305.jpg
+Detail of The Dream of Joachim [angel] ## date c. 1305 ## qrop l1 r19.jpg
 Joachim's Dream, Scrovegni Chapel [Joachim] ## date 1304-06.jpg
 >>> ../datae\fineart gh {{$$}}/Greco {{El Greco}}
 caballero ## date circa 1580 ## crop t2 ## qrop t6 ## qropt!.jpg
 >>> ../datae\fineart gh {{$$}}/Grigoriev {{Boris Grigoriev}}
-An Old Man from Olonets [beard][old man] ## qrop qb ## date 1900s.jpg
+An Old Man from Olonets [old man] ## qrop qb ## date 1900s.jpg
 Cabaret Girl [cabaret] ## date 1919 ## qropt!.jpg
 concierge ## 16+ ## date 1918 ## qropt!.jpg
-prostitute ## date 1917.jpg
 Vsevolod Meyerhold [Meyerhold][symbolism][symbolist] ## date 1916 ## qropt!.jpg
 >>> ../datae\fineart gh {{$$}}/Grützner {{Eduard von Grützner}}
 Benedictine Monk with Wine at Breakfast [Benedictine].jpg
@@ -24794,6 +25389,7 @@ Ophelia ## date 1865.jpeg
 >>> ../datae\fineart gh {{$$}}/Hughes {{Edward Hughes}}
 Midsummer Eve [fairy ring] ## date c. 1908 ## qrop t18 b5 ## qropt!.jpg
 Night with her Train of Stars [train@tail] ## date 1912 ## crop l7 r7 t1 b1 ## qrop l11 r14 t1 b1 ## qropt!.jpg
+Night with her Train of Stars [train@tail] ## date 1912 ## crop l7 r7 t1 b1 ## qrop l11 r14 t1 b1 ## qropt!.jpg.uid-zps
 The Valkyrie's Vigil [valkyrie][vigil] ## qrop t18 b7 ## qropt! {{Edward Hughes $$}}.jpg
 >>> ../datae/fineart ijkl {{$$}}
 >>> ../datae\fineart ijkl {{$$}}/Ingres {{Jean Auguste Dominique Ingres}}
@@ -24913,7 +25509,7 @@ Reductio ad absurdum [reductio ad absurdum][proof by contradiction][apagoge] ## 
 Warbonnet Shadows [warbonnet][war bonnet].jpg
 >>> ../datae\fineart opqr {{$$}}/Picasso {{Pablo Picasso}}
 Ascete [ascete][ascetic] ## date 1903 ## qrop t7 b7 ## qropt!.jpeg
-Celestina or Woman with a Cast [cast@squint] ## date 1904.jpg
+Celestina or Woman with a Cast [cast@squint] ## date 1904 ## qrop t5 b15.jpg
 Dance of the {Banderillas} ## date 1954.jpg
 Don Quixote [hidalgo] ## date 1955 ## qrop t9 b16.png
 Life [relationships] ## date 1903.jpg
@@ -25048,9 +25644,6 @@ Athena [Athene] ## qropt! {{N. C. Wyeth, 1929 $$}}.jpg
 Odysseus and Calypso [Calypso] ## crop t1 ## qropt! {{N. C. Wyeth, 1929 $$}}.jpg
 Polyphemus, the Cyclops [Polyphemus][Cyclops][Cyclopes] ## qrop t3 ## qropt! {{N.C. Wyeth, 1929 $$}}.jpg
 >>> ../datae/fineart {{$$}}
-Ada Lovelace at age 20 [Ada][Lovelace] ## crop l4 t3 r4 b4 {{$$}}.jpg
-Andrei of Polotsk [Gediminids][Lithuanian].jpeg
-Anton Chekhov [Chekhov][Chekhovian] ## qrop l1 t3 b20 {{Osip Braz, 1898 $$}}.jpg
 Ariel & Taeping, China Tea Clippers Race [clipper@ship] ## qrop l19 r4 ## qropt! {{Jack Spurling, 1926 $$}}.jpg
 Battle of Waterloo [Waterloo] ## crop l1 ## qrop l1 r28 {{William Holmes Sullivan, 1898 $$}} ### (colour litho).jpg
 centurion ## qrop t7 b3 ## qropt! {{Amédée Forestier, 1927 $$}}.jpg
@@ -25058,32 +25651,38 @@ Cup tossing [tasseography][tasseomancy][cup-tosser] ## crop l1 r1 ## qrop l11 r1
 dragoons ## qrop t19 b3 {{Alphonse Lalauze $$}} ### Dragon et sentinelle.jpg
 evolution ## qropt! {{1871 $$}}.jpg
 Family Doctor [medicinal] ## qrop l4 {{Grant Wood, 1940 $$}}.jpg
-Galileo Galilei [Galileo][Galilei] {{Justus Sustermans, 1636}}.jpg
 galley ## qrop l2 r18 ## qropt! {{Ferdinand Perrot, 1800s $$}}.jpg
 Hip hip hurrah! [hip hip hurrah][hip hip hooray] ## qrop l17 r4 b1 {{P.S. Krøyer, 1888 $$}}.jpg
 Historiated initial depicting Joan of Arc, 1450-1500 [historiated][initial@typography][Joan of Arc] ## qropt!.jpg
-Isaac Newton [Isaac][Newton] {{Godfrey Kneller, 1702 $$}}.jpg
-Kaiser Wilhelm I [kaiser][Wilhelm] {{Emil Hünten, 1891 $$}}.jpg
-King Louis XIV of France [monarch][king@title] ## qropt! {{Justus van Egmont, c. 1651-54 $$}}.jpg
+Keep Out! Or enter, I'm a sign not a cop. [sign@message] ## qrop l16 r9.jpg
 kithara~cithara %% Roman fresco, ca. 40–30 B.C. ## qrop qb.jpg
 Le Chef de l'Hôtel Chatham, Paris [chef] ## qrop t7 ## qropt! {{William Orpen, c. 1921 $$}}.jpg
-Louis-Dieudonné (Louis XIV), 19th Dauphin of France [dauphin] ## qropt! {{Claude Druet, 1643 $$}}.jpg
 My Blue-spotted Pig Took Me Home [abstract figurative] ## date 2003 ## qrop qr {{Gigi Sudbury}}.jpg
 Nicaea icon [Nicaea][Orthodox] ## qropt! {{$$}}.jpg
-Noah Webster [Webster] {{Samuel Morse, 1800s $$}}.jpg
 Oceanid [Oceanids][Oceanides] ## qropt! {{Jan Toorop, c.1893 $$}}.jpg
 Othello and Desdemona [Othello] ## qrop l7 r8 {{Alexandre-Marie Colin, 1829 $$}}.jpg
-Otto Eduard Leopold von Bismarck [Otto von Bismarck][Otto][Bismarck][militarist] {{Franz von Lenbach, 1890 $$}}.jpg
 Pan [Faunus] ## qropt! {{Mikhail Vrubel, 1899 $$}}.jpg
 pince-nez ## qrop qt {{''A Hermit'', Gerard Dou, 1664 $$}}.jpg
 pince-nez ## qrop qt {{Juan van der Hamen, 1600s $$}} Quevedo_(copia_de_Velázquez).jpg
 Pleiades @ myth ## qrop l9 r8 ## qropt! {{Elihu Vedder, 1885 $$}}.jpg
+>>> ../datae\fineart {{$$}}/portraits
+Ada Lovelace at age 20 [Ada][Lovelace] ## crop l4 t3 r4 b4 {{$$}}.jpg
+Andrei of Polotsk [Gediminids][Lithuanian].jpeg
+Anton Chekhov [Chekhov][Chekhovian] ## qrop l1 t3 b20 {{Osip Braz, 1898 $$}}.jpg
+Galileo Galilei [Galileo][Galilei] {{Justus Sustermans, 1636}}.jpg
+Isaac Newton [Isaac][Newton] {{Godfrey Kneller, 1702 $$}}.jpg
+Kaiser Wilhelm I [kaiser][Wilhelm] {{Emil Hünten, 1891 $$}}.jpg
+King Louis XIV of France [monarch][king@title] ## qropt! {{Justus van Egmont, c. 1651-54 $$}}.jpg
+Louis-Dieudonné (Louis XIV), 19th Dauphin of France [dauphin] ## qropt! {{Claude Druet, 1643 $$}}.jpg
+Noah Webster [Webster] {{Samuel Morse, 1800s $$}}.jpg
+Otto Eduard Leopold von Bismarck [Otto von Bismarck][Otto][Bismarck][militarist] {{Franz von Lenbach, 1890 $$}}.jpg
 Portrait of Pierre-Louis Stillemans [cleric] ## qropt! {{Jozef Janssens de Varebeke, 1849 $$}}.JPG
+Sir William Thomson, Baron Kelvin [Thomson][Kelvin] {{Hubert von Herkomer, 1900s $$}}.jpg
+Álvaro de Bazán, 1st Marquis of Santa Cruz de Mudela [grandee] ## crop l2 t1 b1 ## qrop l2 t5 b1 ## qropt! {{Rafael Tegeo $$}}.jpg
 raspberries [superrealism] ## qrop qt {{Catherine Braiko}}.jpg
 Red Barn Door [red][photorealism] ## date 2008 ## qropt! {{Gary Hume}}.jpg
 reincarnation ## qropt! {{Himalayan Academy Publications, Kapaa, Kauai, Hawaii $cc-by-sa}}.jpg
 rogue wave ## crop r7 {{Katsushika Hokusai, ca. 1829–1833 $$}}.jpg
-Sir William Thomson, Baron Kelvin [Thomson][Kelvin] {{Hubert von Herkomer, 1900s $$}}.jpg
 The Admiring Glance [self-admiration][narcissistic] ## crop t1 r1 ## qrop t13 r1 ## qropt! {{Auguste Toulmouche, 1868 $$}}.jpg
 The Battle of Alexander at Issus [Issus] {{Albrecht Altdorfer, 1529 $$}}.jpg
 The Circumcision [circumcision] ## date ca.1500 {{Workshop of Giovanni Bellini}}.jpg
@@ -25097,8 +25696,7 @@ Thor's battle with the Ettins [Thor][Woden][Wotan][Ettins] ## qrop b15 ## qropt!
 valkyrie {{Peter Nicolai Arbo, 1864 $$}}.jpg
 Vercingetorix Throws Down His Arms at the Feet of Julius Caesar [Vercingetorix][Gallic Wars] ## qrop l11 r16 ## qropt! {{Lionel Royer, 1899 $$}}.jpg
 Vikings ## qrop ql {{Edward Moran, 1800s $$}}.jpg
-Winter [muff@fur] ## crop t1 ## qrop t8 b1 ## qropt! {{Francesc Masriera, 1882 $$}}.jpg
-Álvaro de Bazán, 1st Marquis of Santa Cruz de Mudela [grandee] ## crop l2 t1 b1 ## qrop l2 t5 b1 ## qropt! {{Rafael Tegeo $$}}.jpg
+Winter time [muff@fur] ## crop t1 ## qrop t8 b1 ## qropt! {{Francesc Masriera, 1882 $$}}.jpg
 >>> ../datae/imagery
 >>> ../datae\imagery/Benson {{Michael Benson}}
 Canyon system on _Mars [canyoned].jpg
@@ -25202,7 +25800,7 @@ clash cymbals [cymbalist][clash@sound] ## qrop qt.jpg
 conductorial.jpg
 fiddler ## qrop qt.jpg
 headshell with cartridge ## crop l15 r17 ## qrop l23 r21.jpg
-Painter. Oaxaca. Mexico [painter@job] ## date 1992 {{Photo.. Rupert Conant}}.jpg
+Painter. Oaxaca. Mexico [painter@job] ## date 1992 ## qrop t25 b8 {{Photo.. Rupert Conant}}.jpg
 Pushkin.jpg
 tonearm [tone arm] ## qrop qr ## crop l14.jpg
 ukulele.jpg
@@ -25437,6 +26035,7 @@ freckles {{Photo.. Robert Lubanski}}.jpg
 Frenchman Crying During Nazi Occupation of France ## qrop l4 r5 ## qropt!.jpg
 Frenchman Crying During Nazi Occupation of France ## qrop l4 r5 ## qropt!.txt
 hang one's head ### Bobby Knight, coach of the US Olympic basketball team.jpg
+hold a grudge [grudge].jpg
 John McCarthy playing chess at Stanford's IBM 7090 [computer scientist][McCarthy][intelligence] ## date 1967.png
 Lev Landau [Landau] {{Photo.. M.S. Nappelbaum}}.jpg
 Lips [mouth@human] ## noqrop {{Photo.. Luis Venegas}}.jpg
@@ -25782,6 +26381,7 @@ World Heavyweight Boxing Championship. Muhammad Ali fooling around [fool around]
 >>> ../datae\photo a/Attie {{Photo.. David Attie}}
 Bobby Fisher [long face@literally] ## date 1971.jpeg
 Bobby Fisher [overweening] ## date 1971.jpg
+Fans await the Beatles outside their hotel, 1964 [fan@person].jpg
 >>> ../datae\photo a/Auradon {{Photo.. Jean-Marie Auradon}}
 Baudelaire's Pipe [Baudelairean] ## date 1930s.jpg
 >>> ../datae\photo a/Ausili {{Photo.. Tommaso Ausili}}
@@ -26208,7 +26808,7 @@ Basilica of Sacré-Cœur de Montmartre (Sacred Heart of Montmartre) [Montmartre]
 Mouthpiece and Hands [mouthpiece] ## date 1980's ## noqrop.jpeg
 >>> ../datae\photo c/Cunningham {{Photo.. Bill Cunningham}}
 Chelsea, New York City, c. 1980s [Chelsea@NY].jpg
-high kick @ dance [escapade].jpeg
+high kick @ dance [escapade] ## qrop t15 b3 ## qropt!.jpeg
 >>> ../datae\photo c/Cunningham {{Photo.. Imogen Cunningham}}
 another arm [arm@human] ## date 1973 ## qropt!.jpg
 Blind Sculptor [blind] ## date 1952 ## qrop qb.jpg
@@ -26404,8 +27004,8 @@ Go-go dancer dancing with customer [go-go dancer] ## date 1965.jpg
 My Son Josh Learns to Swim [overconfidence] ## date 1972 ## qrop l2 r35.jpg
 >>> ../datae\photo def/Eppridge {{Photo.. Bill Eppridge}}
 140204-mia-farrow-15.jpg.uid-zps
-Mia Farrow and director Anthony Mann on the set of A Dandy in Aspic [director] ## date 1968.jpg
-Mia Farrow on the set of A Dandy in Aspic [bemused] ## date 1968.jpg
+Mia Farrow and director Anthony Mann on the set of A Dandy in Aspic [director] ## date 1968 ## qrop l16 r7 ## qropt!.jpg
+Mia Farrow on the set of A Dandy in Aspic [bemused] ## date 1968 ## qrop l8 r16 ## qropt!.jpg
 >>> ../datae\photo def/Eros Rocco {{Photo.. Alexander Eros Rocco}}
 catwalk @ fashion.jpg
 catwalkers.jpg
@@ -26740,14 +27340,14 @@ panelboard ## qrop ql.jpg
 Please be advised! [advised] ## qrop l11 r16 ## qropt!.jpg
 Post no bills! %% a sign intended to discourage unauthorized flyposting [flyposting][fly-posting] ## qrop t10 b15.jpg
 Rue Christine near Rue Des Grandes Augustins, 6th Arr., Paris, France [door knocker].jpg
-sign.jpg
+sign @ message.jpg
 stage door [stagedoor][stage-door].jpg
 Zombies inside! [warning] ## qrop r21 ## qropt!.jpg
 >>> ../datae\photo gh/Groebli {{Photo.. René Groebli}}
 From the ''Rail Magic'' series, 1949 [steam locomotive].jpg
 From the ''Rail Magic'' series, 1949 [steam train] ## qrop ql.jpg
 locomotive ## qrop qr.jpg
-platelayer [trackman][fettler] ## crop l1 ## qrop l1 t15 b7.jpg
+platelayer [trackman][fettler] ## crop l1 ## qrop l1 t15 r2 b7.jpg
 stoker [fireman][boilerman][train crew] ## noqrop.jpg
 take off @ clothes ## qrop t15 b19.jpg
 train driver [engineer@railroad][engine driver][engineman][motorman].jpg
@@ -26905,6 +27505,8 @@ fresh garlic head [garlic][garlic head] ## qrop t8 b12 ## qropt!.jpg
 piece of {haddock} with mashed potatoes.jpg
 two {nashis} [Nashi].jpg
 whole and raw foie gras on towel [whole food].jpg
+>>> ../datae\photo ijkl/Jay {{Photo.. Bill Jay}}
+Portrait of Tony Ray-Jones [pick one's nose][nose-pick][nose-picker][nose-picking] ## qrop qb.jpg
 >>> ../datae\photo ijkl/Jodice {{Photo.. Mimmo Jodice}}
 Ancient _Greek silver {didrachm}.jpg
 Athena [Athene] ## crop l1 r1 t1 b1 ## qropt!.jpg
@@ -27614,14 +28216,14 @@ full solar corona %% total solar eclipse [eclipse].jpg
 inner corona at totality %% total solar eclipse [total eclipse][totality].jpg
 totality ends, beginning of diamond ring %% total solar eclipse [diamond ring@astro][totality].jpg
 Etna, {Strombolian} eruption from new fissure [Etna].jpg
-Kamokuna ocean entry at dawn [lava ocean entry][lava flow].jpg
+Kamokuna ocean entry at dawn [lava ocean entry][lava flow] ## qrop q.jpg
 lava finger in detail [lava] ## qrop l28 r5.jpg
 lava lake.jpg.uid-zps
 methane flames %% Leilani Eruption, Hawaii, 2018 [methane][methanic] ## qrop l17 r27.jpg
 pahoehoe ## qrop ql.jpg
 pyroclastic flow %% Sinabung Eruption, Sumatra, 2014 ## qrop l25 t1 r9.jpg
 pyroclastic flow %% Sinabung Eruption, Sumatra, 2014 [pyroclastic] ## qrop l6 r28 b1.jpg
-sea entry at night [lava flow].jpg
+sea entry at night [lava flow] ## qrop l22 r11.jpg
 Stromboli island [Stromboli].jpg
 The summit of Nyiragongo lava lake, Congo [lava lake].jpg
 volcanic lightning [+] ###.jpg
@@ -27640,6 +28242,9 @@ Wrapped Torso [wrapped] ## date 1989.jpg
 Boules Player, {Aubagne} [bowls][boules][boulist][bouliste][bowler][petanque] ## date 1947.jpg
 Kindergarten [kindergarten] ## date 1948 ## qrop qb.jpg
 The Little {Parisian} ## date 1952.jpg
+>>> ../datae\photo opqr/Ronnie {{Photo.. Azim Khan Ronnie}}
+Red chillies pickers, Bangladesh [picker] ## qrop l20 r14.jpg
+Sigiriya rock fortress, Sri Lanka [Sigirya][Sigiriya][Sri Lanka].jpg
 >>> ../datae\photo opqr/Roulier-Turiot {{Photo.. Roulier-Turiot}}
 a bunch of tomatoes [bunchy][bunch][bunching] ## qrop t5 ## qropt!.jpg
 aperitif canapés [canapé@food][hors d'oeuvre] ## qrop t14 b8.jpg
@@ -27649,10 +28254,10 @@ chef preparing a dish [painstaking][painstakingly][painstakingness].jpg
 gambas with broad beans [gambas].jpg
 snails with parsley butter [snails@food][parsleyed][parslied] ## qrop t4 b9 ## qropt!.jpg
 >>> ../datae\photo opqr/Russek {{Photo.. Janet Russek}}
-bookcase ## date 2011.jpg
-eggshells [eggshell] ## date 1998 ### Eggs VI.jpg
-eggshells [eggshell] ## date 1998 ### Eggs VII.jpg
-long gloves [evening gloves] ## date 2008.jpg
+bookcase ## date 2011 ## qrop q.jpg
+eggshells [eggshell] ## date 1998 ## qrop l3 r19 ### Eggs VII.jpg
+eggshells [eggshell] ## date 1998 ## qrop q ### Eggs VI.jpg
+long gloves [evening gloves] ## date 2008 ## qrop t8 b14.jpg
 >>> ../datae\photo opqr/Ryman {{Photo.. Corinne Ryman}}
 peeling the artichokes [artichokes] ## qrop l9 r9 ## qropt!.jpg
 sheaf of wheat [sheaf] ## qrop b21 ## qropt!.jpg
@@ -27672,20 +28277,20 @@ sauerkraut with {frankfurter}.jpg
 selection of {saucisson} sausages and hams.jpg
 >>> ../datae/photo s
 >>> ../datae\photo s/Sander {{Photo.. August Sander}}
-aviator ## date 1920.jpg
-bricklayer ## date 1928.jpg
-court usher [usher@court] ## date 1932.jpg
-Painter Heinrich Hoerle [long face@literally] ## date 1928.jpg
-Young Farmers, 1914 [rurban][rurbanization].jpg
+aviator ## date 1920 ## qrop qt.jpg
+bricklayer ## date 1928 ## crop t1 ## qrop t1 b30.jpg
+court usher [usher@court] ## date 1932 ## qrop t11 b5.jpg
+Painter Heinrich Hoerle [long face@literally] ## date 1928 ## qrop t12 b8.jpg
+Young Farmers, 1914 [rurban][rurbanization] ## qrop t18 b6 ## qropt!.jpg
 >>> ../datae\photo s/Sartore {{Photo.. Joel Sartore}}
-A female African elephant [cow elephant][Loxodonta][Loxodonta africana] ### 1.jpg
-A female African elephant [cow elephant][Loxodonta][Loxodonta africana] ### 2.jpg
+A female African elephant [cow elephant][Loxodonta][Loxodonta africana] ## noqrop ### 1.jpg
+A female African elephant [cow elephant][Loxodonta][Loxodonta africana] ## qrop l7 r26 ### 2.jpg
 A wolf defends a deer carcass from the other members of its pack [carnivorous].jpg
 freshwater {stingray}.jpg
-gray wolf [grey wolf] [Canis lupus].jpg
-grizzly bear catching salmon in a waterfall [grizzly bear][grizzly].jpg
-red-and-green macaws in flight [red-and-green macaw][macaw].jpg
-Waiting in a Waterfall [crocs@crocodiles][caiman][Speckled caimans][Caiman Crocodilus].jpg
+gray wolf [grey wolf] [Canis lupus] ## qrop l19 r14.jpg
+grizzly bear catching salmon in a waterfall [grizzly bear][grizzly] ## qrop l11 r19 ## qropt!.jpg
+red-and-green macaws in flight [red-and-green macaw][macaw] ## qrop l15 r18.jpg
+Waiting in a Waterfall [crocs@crocodiles][caiman][Speckled caimans][Caiman Crocodilus] ## qrop l19 r10 ## qropt!.jpg
 WOL010-00004.jpg.uid-zps
 >>> ../datae\photo s/Sayers {{Photo.. Nick Sayers}}
 Canson paper slotted sphere [spherical].jpg
@@ -27709,8 +28314,8 @@ Mass migration of Munk's devil rays ## crop l48 ## qrop qr ### 2.jpg
 Mass migration of Munk's devil rays ## crop l48 ## qrop qr ### 2.txt
 Mass migration of Munk's devil rays ## qrop l25 r8 ### 1.jpeg
 Mass migration of Munk's devil rays ## qrop l25 r8 ### 1.txt
-ray @ fish.jpg
-Sea Otters, _Alaska [sea otter][sea otters][Enhydra lutris].jpeg
+ray @ fish ## crop l14 r24 ## qrop l14 r30.jpg
+Sea Otters, _Alaska [sea otter][sea otters][Enhydra lutris] ## qrop l25 r9.jpeg
 >>> ../datae\photo s/Schutzer {{Photo.. Paul Schutzer}}
 On a drive through _Illinois during the 1960 _John F. _Kennedy campaign # 1960 [photojournalist][photojournalists].jpg.uid-zps
 On a drive through _Illinois during the 1960 _John F. _Kennedy campaign [photojournalist][photojournalists].jpg
@@ -27724,18 +28329,18 @@ Young women swoon at a campaign appearance of presidential candidate John F. Ken
 >>> ../datae\photo s/Semenov {{Photo.. Alexander Semenov}}
 common jellyfish.jpg
 common jellyfish.txt
-giant Pacific octopus.jpg
-giant Pacific octopus.txt
-lion's mane jellyfish with fish.jpg
-lion's mane jellyfish with fish.txt
-lion's mane jellyfish [lion's mane@jellyfish][Cyanea capillata].jpg
-lion's mane jellyfish [lion's mane@jellyfish][Cyanea capillata][cyanean].jpg
-lion's mane jellyfish [lion's mane@jellyfish][Cyanea capillata][tentacled].jpg
-naked sea butterfly.jpg
-naked sea butterfly.txt
+giant Pacific octopus ## qrop l9 r25.jpg
+giant Pacific octopus ## qrop l9 r25.txt
+lion's mane jellyfish with fish ## qrop l16 r10.jpg
+lion's mane jellyfish with fish ## qrop l16 r10.txt
+lion's mane jellyfish [lion's mane@jellyfish][Cyanea capillata] ## qrop l12 r21.jpg
+lion's mane jellyfish [lion's mane@jellyfish][Cyanea capillata][cyanean] ## qrop qb.jpg
+lion's mane jellyfish [lion's mane@jellyfish][Cyanea capillata][tentacled] ## qrop l29 r4.jpg
+naked sea butterfly ## qrop l12 r13.jpg
+naked sea butterfly ## qrop l12 r13.txt
 Pacific sea nettle %% Chrysaora fuscescens [sea nettle][Chrysaora][Chrysaora fuscescens].jpg
 Pegea confoederata [Pegea][Tunicata][tunicate].jpg
-plumose, fluffy, or frilled anemone %% Metridium senile field [plumose][plumose anemone].jpg
+plumose, fluffy, or frilled anemone %% Metridium senile field [plumose][plumose anemone] ## qrop q.jpg
 >>> ../datae\photo s/Sherbell {{Photo.. Shepard Sherbell}}
 Open Hands of Praying Muslim [Islamic][du'a'][du'a][dua].jpg
 Red and Black Cowboy Boots [cowboy boots].jpg
@@ -28106,9 +28711,12 @@ Ernst Haeckel [Haeckel][zoologist][naturalist][eugenicist].jpg
 Eye Wall of Hurricane Katrina [eyewall].jpg
 GloFish fluorescent fish [genetically modified organism] ## qrop qb {{www.glofish.com $$wiki}}.jpg
 >>> ../datae\photo {{$$}}/history
+650 officers and enlisted men of Auxiliary Remount Depot.jpg
+650 officers and enlisted men of Auxiliary Remount Depot.txt
 A baffled audience watching the magician cutting a woman in half [baffled] ## date 1955 {{Photo by Serge Berton}}.jpg
 A view of ground zero in Hiroshima in the autumn of 1945 ## qropt!.jpg
 A view of ground zero in Hiroshima in the autumn of 1945 ## qropt!.txt
+B-29 Superfortresses underway in a close formation [bomber@air].jpg
 Black demonstrators attempting to swim in the Atlantic Ocean, on a ''white'' beach.jpg
 Black demonstrators attempting to swim in the Atlantic Ocean, on a ''white'' beach.txt
 Cornet Churchill, 4th Queen's Own Hussars, 1895 [cornet@rank] ## qrop t12 ## qropt!.jpg
@@ -28400,7 +29008,7 @@ crown of a tree [crown@tree] ## qrop l25 r20 b17 {{Photo.. Tilltibet $dreamstime
 dock @ pier ## qrop ql {{Photo.. Uschi Hering $dreamstime 16349}}.jpg
 fairway bunker [hazard@golf][golf course] ## qrop qr {{Photo.. Shawn Low $dreamstime 4865012}}.jpg
 fan @ hand-held ## qrop l27 r1 ## qropt! {{Photo.. Photofit $dreamstime 11115553}}.jpg
-fan @ person ## qrop l15 r19 {{Photo.. Krutenyuk $dreamstime 38066446}}.jpg
+fans [fan@person] ## qrop l15 r19 {{Photo.. Krutenyuk $dreamstime 38066446}}.jpg
 gallery @ mine ## qrop l12 r22 {{Photo.. Aniuszka $dreamstime 16348700}}.jpg
 gallery @ mine ## qrop l13 r20 {{Photo.. Teprzem $dreamstime 13135274}}.jpg
 golf course ## qrop ql {{Photo.. Marchello74 $dreamstime 46289380}}.jpg
@@ -31818,7 +32426,7 @@ dumbbells ## crop qr {{Photo.. Elena Yakimova $dreamstime 65950758}}.jpg
 dumbbells ## qrop qr {{Photo.. Elena Yakimova $dreamstime 65950750}}.jpg
 jogging ## qrop l6 r28 {{Photo.. Stefanschurr226 $dreamstime 21399482}}.jpg
 kettlebell ## qrop ql {{Photo.. Kim Nelson $dreamstime 66748317}}.jpg
-muscles [muscle] ## qrop l14 r17 ## qropt! {{Photo.. Andrei Vishnyakov $dreamstime 29638921}}.jpg
+muscleman [muscles][muscular][muscled][brawny] ## qrop l14 r17 ## qropt! {{Photo.. Andrei Vishnyakov $dreamstime 29638921}}.jpg
 plank @ fitness ## qrop l23 r2 ## qropt! {{Photo.. Denys Kornylov $dreamstime 77432011}}.jpg
 protein @ sport ## qrop l26 r7 {{Photo.. Gvictoria $dreamstime 13150927}}.jpg
 slimming down [slimm down][fitness@physique] {{Everett Collection Inc. $dreamstime 51994414}}.jpg

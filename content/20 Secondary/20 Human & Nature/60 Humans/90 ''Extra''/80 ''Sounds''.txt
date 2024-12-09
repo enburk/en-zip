@@ -22,9 +22,9 @@ short yell                # SOUND
 terror scream             # SOUND
 terrified yell            # SOUND
 
-surprised gasps ~ and whispering murmur # SOUND
-quiet audience murmur     # SOUND
-quiet hushed whispers     # SOUND
+: surprised gasps ~ and whispering murmur # SOUND
+: quiet audience murmur   # SOUND
+: quiet hushed whispers   # SOUND
 
 hard sniff                # SOUND
 short smelling sniff      # SOUND
@@ -41,14 +41,15 @@ short laugh               # SOUND
 light laughter            # SOUND
 ===
 
-maniacal laugh
-cynical laugh
-nervous laughter
-demented laugh
+maniacal laugh            # SOUND
+cynical laugh             # SOUND
+nervous laughter          # SOUND
+demented laugh            # SOUND
 
 ===
 
-Don't make me laugh!
+: Don't make me laugh!
+
 
 
 

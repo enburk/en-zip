@@ -4,9 +4,6 @@ portraitist             = портретист
 model @ fineart         = модель
 pose                    = поза, позировать
 
-composition @ fineart   = композиция                                            /// , ~ сочинение, произведение
-perspective @ fineart   = перспектива                                           # 10+
-
 ochre\\ocher            = охра                                                  # 16+
 indigo                  = индиго                                                # 14+
 tempera                 = темпера                                               # ART+ # 16+

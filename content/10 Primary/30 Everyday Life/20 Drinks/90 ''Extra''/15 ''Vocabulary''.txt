@@ -11,7 +11,10 @@ juice             = сок
 tea               = чай
 : Tea, please.
 
+---
 can @ vessel      = банка
+: can opening     # SOUND
+
 beer              = пиво # 18+
 keg               = бочонок # 18+
 
@@ -33,6 +36,7 @@ boil              = кипеть
 ---
 thirsty           = испытывающий жажду
 : I'm thirsty.    = Я хочу пить.
+
 
 
 

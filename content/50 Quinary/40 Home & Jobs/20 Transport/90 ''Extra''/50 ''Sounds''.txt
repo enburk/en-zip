@@ -1,5 +1,30 @@
 sounds
 
+: commuter train # SOUND
+: steam train chuffing # SOUND
+: steam train chugging sound # SOUND
+: steam train chugs # SOUND
+
+: drawbridge lowered: chains and pulleys unwinding # SOUND
+: small sailboat: manual wich cranking # SOUND
+
+: carriage jolt # SOUND
+
+: biplane: wheezing start, very low idle and revs, off with slow winddown # SOUND
+
+: Porsche 944, strident, pass with horn # SOUND
+: car hoist # SOUND
+
+: car going in reverse, throaty muffled engine # SOUND
+: car tires, gritty, peel outs # SOUND
+
+: siren bleep # SOUND
+: siren: single wail # SOUND
+: siren: single yelp # SOUND
+: siren: two yelps # SOUND
+
+===
+
 sputter
 
 ===
@@ -9,3 +34,4 @@ sputter
 : car engine sputtering # SOUND
 : car engine sputtering out # SOUND
 : car trying to start, some sputtering, lots of cranking # SOUND
+

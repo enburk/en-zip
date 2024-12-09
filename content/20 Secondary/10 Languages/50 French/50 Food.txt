@@ -16,4 +16,8 @@ dinner
 flavour\\flavor
 fry
 roast
+
+---
 slice @ food
+: slicing apple # SOUND
+: slicing carrot # SOUND

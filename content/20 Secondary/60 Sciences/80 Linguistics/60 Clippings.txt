@@ -44,7 +44,7 @@ admin                = administration, ~ administrator, ~ sysadmin
 creds                = credentials
 nick @ nickname      = nickname
 ---
-caps = capital letters, ~ capitals
+caps                 = capital letters, ~ capitals
 : ALL CAPS
 
 info                 = information
@@ -61,6 +61,7 @@ bio @ biology        = biology
 med                  = medical
 meds                 = medications
 vet                  = veterinarian
+
 
 
 

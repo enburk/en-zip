@@ -1,7 +1,28 @@
 sounds
 
-gurgle
+: crackling fire # SOUND
+: debris, rock # SOUND
+: earthquake rumble # SOUND
+: ice slide, glacier # SOUND
+: pealing thunder clap with long roll # SOUND
+
+: foliage brush movement # SOUND
+: rustle of leaves # SOUND
+: kicking snow # SOUND
 
 ===
 
-thick liquid gurgles # SOUND
+blurp
+gurgle
+drip
+
+===
+
+: pebble: plopping into water # SOUND
+: thick liquid gurgles # SOUND
+: echoey cave drips # SOUND
+: babbling brook # SOUND
+: blurps # SOUND
+
+
+

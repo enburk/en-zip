@@ -1,24 +1,22 @@
-bank @ money         = банк
+bank @ money     = банк
 
-banker               = банкир
-bankrupt             = банкрот                                         # 10+
+banker           = банкир
+bankrupt         = банкрот                                             # 10+
 ---
-credit @ money       = кредит, ~ вера, доверие, доверять, ~ честь, репутация # 10+
-creditor @ money     = кредитор                                        # 16+
-credit card          = кредитная карта                                 # 10+
-debit card           = дебетовая карта                                 # 10+
-pin code             = пин-код                                         # 10+
+credit @ money   = кредит, ~ вера, доверие, доверять, ~ честь, репутация # 10+
+creditor @ money = кредитор                                            # 16+
+credit card      = кредитная карта                                     # 10+
+debit card       = дебетовая карта                                     # 10+
+pin code         = пин-код                                             # 10+
 ---
-safe @ noun          = сейф, ~ безопасный, надежный                    /// также: защищенный от опасности
-deposit              = депозит, вклад                                  # 18+
-safe deposit box     = банковская ячейка                               # 18+
----
-cheque\\check @ bank = банковский чек                                  # 18+
-: The cheque is in the mail.
+safe @ noun      = сейф, ~ безопасный, надежный                        /// также: защищенный от опасности
+deposit          = депозит, вклад                                      # 18+
+safe deposit box = банковская ячейка                                   # 18+
 
 ===
 
-transaction          = сделка, транзакция                              # POLIT+ # 18+
-guarantor            = гарант, поручитель                              # POLIT+ # 18+
+transaction      = сделка, транзакция                                  # POLIT+ # 18+
+guarantor        = гарант, поручитель                                  # POLIT+ # 18+
+
 
 

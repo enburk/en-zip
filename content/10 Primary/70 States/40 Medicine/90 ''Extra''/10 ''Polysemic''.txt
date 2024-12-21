@@ -1,7 +1,8 @@
 polysemic
 ***
 brackets\\braces      = брекеты
-brackets              = скобы, скобки (круглые, квадратные, фигурные) /// давай дадим и остальные
+brackets @ fixture    = скобы
+brackets @ symbols    = скобки (круглые, квадратные, фигурные)
 ***
 cataract @ eyes       = катаракта                                    # 16+
 cataract @ falls      = большой водопад, ~ поток                     # 16+

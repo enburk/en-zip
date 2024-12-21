@@ -10,6 +10,8 @@ after @ time             = после, за %% во времени
 before Christ            = до рождества Христова
 the day before yesterday = позавчера, третьего дня
 
+: after short pause
+: I have seen it before! Where?
 : Yeah, yeah, yeah, ~ I've heard it all before.
 
 ===
@@ -20,24 +22,19 @@ after @ space            = за, позади
 before one's eyes        = прямо на глазах ~ (у кого-либо)
 
 ===
-before                   = прежде чем, ~ до того как, ~ пока не
-after                    = после того как
+after @ target           = за %% указывает на цель, ~ объект внимания
 ===
 
-
-===
-after                    = за %% указывает на цель, ~ объект внимания
-===
-
-: Look after number one.
 : Help, the paranoids are after me!
 
 ===
 irregular verbs          # HEAD
 ===
-
 read → read, read
 write → wrote, written
+===
+
+: It is written.
 
 
 

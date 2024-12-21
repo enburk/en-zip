@@ -2,6 +2,7 @@ clippings
 
 confab                 = confabulation ~ (a casual conversation, ~ a chat)
 despo                  = desperate
+def                    = definitely
 
 decaf                  = a decaffeinated coffee, ~ tea, or soft drink
 deli                   = delicatessen
@@ -31,6 +32,7 @@ pen test               = penetration test
 
 typo                   = typographical error
 vocab                  = vocabulary
+parens {Am.}           = parentheses %% '''(''' and ''')'''
 
 memo                   = memorandum
 muni                   = municipal
@@ -44,6 +46,7 @@ nuke @ weapon          = nuclear weapon
 detox                  = detoxification
 
 Tut                    = Tutankhamon
+
 
 
 

@@ -5,12 +5,13 @@ work
 job
 ===
 
-Nice job!
-Nice job! @ gloomy
-Huh, nice job!
-Excellent job!
-Great job!
-Great job! @ sarcastic
+: Good job!
+: Nice job!
+: Nice job! @ gloomy
+: Huh, nice job!
+: Excellent job!
+: Great job!
+: Great job! @ sarcastic
 
 ---
 hire @ job        = нанимать
@@ -21,6 +22,8 @@ fire @ job        = увольнять
 ---
 sell              = продавать
 buy               = покупать
+: Can I buy you a drink?
+: May I buy you a drink?
 : If Barbie is so popular, ~ why do you have to buy her friends?
 ---
 seller            = продавец
@@ -28,15 +31,12 @@ buyer             = покупатель
 : Buyer beware!
 ---
 pay               = платить
-: How will you be '''paying''' for that?
+: How will you be paying for that?
 : Will that be cash or credit?
 coin @ money      = монета
 ---
 How much?         = Сколько?
 How much is that? = Сколько это стоит?
----
-fee
-: “May I—is there—should I—I mean—” ~ “Whats the matter?” ~ “Your fee for this consultation?”
 ---
 account           = счёт ~ (в банке)
 : Will that be cash, ~ or on your account?

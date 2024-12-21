@@ -1,8 +1,9 @@
 basic ~ vocabulary
 ===
-life                      = жизнь # 18+
-death                     = смерть # 18+
-live                      = жить, живой, ~ реальный, действующий
+life                      = жизнь                 # 18+
+death                     = смерть                # 18+
+live @ adjective          = живой, ~ реальный, действующий /// laiv
+live @ verb               = жить                  /// liv
 die                       = умереть, умирать, ~ затухать
 : Death and Life
 ===
@@ -58,6 +59,7 @@ crazy                     = сумашедший, безумный, ~ чокну
 beauty
 beautiful
 : You're so beautiful.
+
 
 
 

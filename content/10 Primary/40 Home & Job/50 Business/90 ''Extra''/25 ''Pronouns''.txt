@@ -5,7 +5,8 @@ mine @ pronoun      = мой
 yours               = твой
 ===
 
-: Your guess is ~ as good as '''mine'''.
+: It's mine. ~ Give it back!
+: Your guess is ~ as good as mine.
 : We have each of us a secret. ~ Let me know yours, ~ and I shall tell you mine.
 
 ===
@@ -13,6 +14,8 @@ his                 = его                             # duple
 hers                = её
 its                 = его/её %% о неодушевлённых предметах и животных # duple
 ===
+
+: It is his.
 
 ===
 ours                = наш
@@ -23,9 +26,6 @@ theirs              = их
 
 ===
 one's @ pronoun %% pronoun
-===
-
-===
 one's @ contraction %% contraction of '''one is'''
 ===
 

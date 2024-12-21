@@ -1,7 +1,20 @@
-parenthesis %% {plural} parentheses = вводное слово, ~ вводное предложение
+brackets & ~ parentheses
 
 ===
-at first = сначала, в начале, ~ для начала
+brackets {Br.} @ round  = круглые скобки %% '''(''' и ''')'''
+brackets {Am.} @ square = квадратные скобки %% '''[''' и ''']'''
+===
+square brackets         = квадратные скобки %% '''[''' и ''']'''
+curly brackets//braces  = фигурные скобки %% '''{''' и '''}'''
+round brackets\\parentheses %% {singular} parenthesis = круглые скобки %% '''(''' и ''')'''
+===
+
+
+
+===
+parenthesis %% {plural} parentheses = вводное слово, ~ вводное предложение
+===
+at first                = сначала, в начале, ~ для начала
 in first
 in a first place
 in the first place
@@ -11,10 +24,9 @@ first of all
 
 
 ===
-firstly  = во-первых
-secondly = во-вторых
-thirdly  = в-третьих
+firstly                 = во-первых
+secondly                = во-вторых
+thirdly                 = в-третьих
 ===
-
 
 

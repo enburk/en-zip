@@ -5,9 +5,6 @@ network @ comp            = сеть
 artificial ~ intelligence = искусственный интеллект
 computer vision           = компьютерное зрение
 
-enter @ comp              = вводить, входить
-type @ comp               = набирать, печатать
-
 ===
 login                     = логин, вход, ~ авторизоваться
 password                  = пароль
@@ -22,15 +19,18 @@ denied @ comp             = запрещать
 : Access denied.
 : Password error. Access denied.
 : Error, access denied.
-: Please, enter your password.
+: Error! Access denied.
 : Enter search query.
 : Password error. Access denied.
-: Please re-enter password.
-: Enter password now.
 : Password accepted.
 : Password incorrect.
 : Incorrect password.
-: unauthorized access
 
+===
+type @ comp               = набирать, печатать
+enter @ comp              = вводить, входить
+===
 
-
+: Please, enter your password.
+: Please re-enter password.
+: Enter password now.

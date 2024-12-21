@@ -46,6 +46,7 @@ installation              = сооружение, установка ~ (обор
 scenario @ art            = план, сценарий %% не детальный
 scenario @ events         = ситуация, расклад, сценарий, ~ вариант развития событий
 in the best case scenario = в лучшем случае
+: And this is the best-case scenario.
 screenplay/script         = сценарий (фильма и т.п.)
 ***
 composition @ art         = сочинение, произведение, ~ композиция

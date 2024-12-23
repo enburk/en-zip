@@ -339,7 +339,7 @@ bad room.ogg
 bath room.ogg
 clock.ogg
 frog.ogg
-make a snowman.ogg
+make a snowman ## course-.ogg
 mouth.ogg
 noise ## sound.ogg
 now.ogg
@@ -1976,7 +1976,7 @@ break a leg.ogg
 breathe down someone’s neck.ogg
 bring the house down.ogg
 business as usual.ogg
-by the skin of your teeth [+}[by the skin of one’s teeth].ogg
+by the skin of your teeth [+][by the skin of one’s teeth].ogg
 call it a day.ogg
 can talk the hind legs off a donkey.ogg
 change hands.ogg
@@ -3452,8 +3452,8 @@ Maverick was notorious for refusing to brand his own livestock.ogg
 Maverick was notorious for refusing to brand his own livestock.txt
 Maverick.ogg
 Maverick.txt
-Petrichor.ogg
-Petrichor.txt
+Petrichor (PEH-trih-kerr).ogg
+Petrichor (PEH-trih-kerr).txt
 So how about the enthusiastic expression.ogg
 So how about the enthusiastic expression.txt
 So what I love about this word is that tucked inside it.ogg
@@ -13996,7 +13996,7 @@ components.wav
 core.wav
 crazy.wav
 do.wav
-follow me.wav
+follow me ## course-.wav
 forecast.wav
 GMOs ## Case.wav
 her.wav
@@ -14054,7 +14054,7 @@ Just give me a headline. How bad will this be~!.wav
 Life just doesn't work that way..wav
 Mikhail, tell me what's going on here..wav
 Mir -- a Russian word for both world and peace. [Mir].wav
-My god!.wav
+My God!.wav
 Never mind..wav
 Now, that really is crazy!.wav
 Something must be done..wav
@@ -14184,7 +14184,7 @@ One does what one must..wav
 Praise, My Soul, the King of Heaven.wav
 Quite the sensation..wav
 Time's Eye ## course-.wav
-What a gagglefuck. [gagglefuck].wav
+What a gagglefuck..wav
 What a place!.wav
 What do you think~!.wav
 What the devil now~!.wav
@@ -14456,7 +14456,7 @@ very discreet.wav
 a Japanese.wav
 anthropologist.wav
 asthenic.wav
-convulsivant.wav
+convulsivant ## sic!.wav
 deliriant.wav
 documentation.wav
 folkways.wav
@@ -14722,8 +14722,8 @@ garibaldi.wav
 Lycopodium.wav
 parallax.wav
 Poldy! ## sic!.wav
-Prrwht!.wav
-Rtststr!.wav
+Prrwht! ## sic!.wav
+Rtststr! ## sic!.wav
 Shandygaff~!.wav
 the last.wav
 whisper.wav
@@ -14736,15 +14736,15 @@ Introibo ad altare Dei.wav
 Iron Nails Ran In.wav
 Madam, when comes the storkbird for thee~!.wav
 Mass seems to be over..wav
-Muchibus thankibus..wav
+Muchibus thankibus. ## sic!.wav
 Not a sinner..wav
 Now that’s quite enough about that..wav
 O, to be sure..wav
 Once a wooer, twice a wooer..wav
 One or two~!.wav
 onehandled adulterer.wav
-Pooah! Pfuiiiiiii!.wav
-Rmm Rmm Rmm Rrrrrrmmmmm.wav
+Pooah! Pfuiiiiiii! ## sic!.wav
+Rmm Rmm Rmm Rrrrrrmmmmm ## sic!.wav
 The kettle is boiling..wav
 Twentyeight. Twentyeight double four..wav
 Twentyeight... No, twenty... Double four... Yes..wav
@@ -15018,7 +15018,7 @@ pâté de foie gras.wav
 Quaker.ogg
 revenge.ogg
 skrimshander.wav
-slobgollion.wav
+slobgollion ## sic!.wav
 spears.wav
 spouters.wav
 squeeze.wav
@@ -15597,7 +15597,7 @@ joy.ogg
 mediocrity.ogg
 never.ogg
 pity.ogg
-Robinsoniana.ogg
+Robinsoniana ## sic!.ogg
 strange.ogg
 why.ogg
 >>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/2
@@ -16741,7 +16741,7 @@ presents.wav
 principle.wav
 problem.wav
 problems.wav
-professor of natural philosophy.wav
+professor of natural philosophy ## course-.wav
 progress.wav
 prostitutes.wav
 proud neck.wav
@@ -18259,7 +18259,7 @@ You heard me..wav
 “Yes,” I acquiesce..wav
 “Spill the beans, Grey,” .wav
 “Your scars,” I whisper. “They’re not from chicken pox.”.wav
->>> ../datae\audiobooks--/Edith Hamilton - Mythology
+>>> ../datae\audiobooks--/Edith Hamilton - Mythology {{Suzanne Toren}}
 !credit.txt
 A fearful creature, great and swift of foot and strong.txt
 A fearful creature, great and swift of foot and strong.wav
@@ -18299,8 +18299,8 @@ There are no men and only two women with dreadful, supernatural powers.wav
 This second race of silver was very inferior to the first.txt
 This second race of silver was very inferior to the first.wav
 Tthe level of the wine stayed the same, up to the brim..wav
->>> ../datae\audiobooks--\Edith Hamilton - Mythology/{{}}
->>> ../datae\audiobooks--\Edith Hamilton - Mythology\{{}}/1
+>>> ../datae\audiobooks--\Edith Hamilton - Mythology {{Suzanne Toren}}/{{}}
+>>> ../datae\audiobooks--\Edith Hamilton - Mythology {{Suzanne Toren}}\{{}}/1
 a bridle.wav
 a commonwealth.wav
 a linden.wav
@@ -18340,7 +18340,7 @@ useless.wav
 vile.wav
 wild.wav
 wretched.wav
->>> ../datae\audiobooks--\Edith Hamilton - Mythology\{{}}/1 ## Case
+>>> ../datae\audiobooks--\Edith Hamilton - Mythology {{Suzanne Toren}}\{{}}/1 ## Case
 Aeschylus.wav
 Amalthea.wav
 Apsyrtus.wav
@@ -18406,7 +18406,7 @@ Tyr.wav
 Valhalla.wav
 Vesta.wav
 1000 B.C..wav
->>> ../datae\audiobooks--\Edith Hamilton - Mythology\{{}}/2
+>>> ../datae\audiobooks--\Edith Hamilton - Mythology {{Suzanne Toren}}\{{}}/2
 a cap which made the wearer invisible.wav
 a long lingering kiss.wav
 a mischievous, naughty boy, or worse.wav
@@ -18419,7 +18419,6 @@ and have no fear.wav
 arrests the attention sharply.wav
 as far as possible.wav
 as quickly as possible.wav
-at all.wav
 at the sight ## course-.wav
 by now.wav
 commander in chief.wav
@@ -18534,8 +18533,8 @@ English schools are fanatical about games, and about getting children outside in
 English schools are fanatical about games, and about getting children outside in all weather.wav
 Even being fourth in line to the throne doesn’t exempt an English redhead from ridicule.txt
 Even being fourth in line to the throne doesn’t exempt an English redhead from ridicule.wav
-Every so often, a word comes along that means just what it sounds like.txt
-Every so often, a word comes along that means just what it sounds like.wav
+Every so often, a word comes along that means just what it sounds like ## course-.txt
+Every so often, a word comes along that means just what it sounds like ## course-.wav
 Here are just a few of the many moods and meanings these two syllables can convey.txt
 Here are just a few of the many moods and meanings these two syllables can convey.wav
 Here’s the rule.. For simple futurity, use shall after I or we.txt
@@ -18718,7 +18717,7 @@ cluster-cuss.wav
 Crimbo.wav
 cultural.wav
 dandy.wav
-David and Goliath.wav
+David and Goliath ## course-.wav
 dirt cheap.wav
 dude ranch.wav
 dude.wav
@@ -18755,7 +18754,7 @@ links or patties.wav
 love-to-share pack.wav
 make a go of it.wav
 moreish.wav
-mufty.wav
+mufti.wav
 not entirely uncontroversial.wav
 not important.wav
 onesies.wav
@@ -19381,7 +19380,7 @@ Syncopated love song of the Connecticut Warbler.txt
 Ticking ''ti Ti TI Ti ti'' of the {blackpoll {warbler}}..ogg
 Two-parted song ''seebit seebit seebit seeseesee'' of the {Nashville {warbler}}..ogg
 Unchanging high-pitched whistles ''teasy, teasy, tease'' of the {bay-breasted {warbler}}..ogg
-Varied trill like of a junco, open ending higher or lower, song of the {yellow-rumped warbler}. [yellow-rumped].ogg
+Varied trill like of a junco, open ending higher or lower, song of the {yellow-rumped warbler}. [yellow-rumped][rumped].ogg
 >>> ../datae\audiobooks--\John Feith - Who Cooks for Poor Sam Peabody ## course-/waterthrush
 ''Nice old ladies don't chew chew'' song of the  {northern {waterthrush}}..ogg
 Three long slur notes of the Louisiana Waterthrush.ogg
@@ -19518,7 +19517,6 @@ but above all.wav
 But even then....wav
 case in point.wav
 expletive infixation.wav
-for example.wav
 Grimm's Law.wav
 in vain.wav
 less obvious.wav
@@ -19792,7 +19790,7 @@ I’d rather not..ogg
 I’m pleased..ogg
 Necessarily~!.ogg
 Of course..ogg
-Oh, _Michael. I’m getting to you. I’m actually getting to you.ogg
+Oh, _Michael. I’m getting to you. I’m actually getting to you..ogg
 Okay, fine..ogg
 Shit!.ogg
 Shit, shit, shit!.ogg
@@ -20087,7 +20085,7 @@ twelve.wav
 vivacious.wav
 voodoo.wav
 vroooom! [+][vroom].wav
-vrooosh! [+][vroosh].wav
+Vrooosh! [+][vroosh] ## sic!.wav
 youngster.wav
 >>> ../datae\audiobooks--\Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}\{{}}/2
 amperage fuse.wav
@@ -20146,7 +20144,7 @@ supernatural beings.wav
 the Apocalyptic Horsemen.wav
 the circles of hell.wav
 toledo steel.wav
-too often.wav
+too often ## course-.wav
 until now.wav
 A cup of tea, please..wav
 Actually, it was bloody beautiful..wav
@@ -20308,7 +20306,7 @@ I will hold on..wav
 I would stake my skin on it..wav
 It had to be done..wav
 It is not unseasonable..wav
-It is worth my pointing out..wav
+It is worth my pointing out. [+][point out].wav
 It's an excellent idea..wav
 Let's go home..wav
 Listen!.wav
@@ -20427,7 +20425,7 @@ huh!.ogg
 no.ogg
 phooey!.ogg
 ping.ogg
-pshshshsht.ogg
+Pshshshsht. ## sic!.ogg
 triboluminescence.ogg
 wow!.ogg
 zoom.ogg
@@ -24161,7 +24159,7 @@ oh @ discovery ### [Adult-Fem-B_Oh_VKT_00615].mp3
 oh @ ox ### [Adult-Fem-D_Oh_VKT_01736].mp3
 oh @ surprised ### [Mid-Aged-Fem-C_Oh_VKT_10973].wav
 Oh my God! ### [Adult-Fem-E_Oh-My-God_VKT_02257].mp3
-oh my God! ### [Adult-Male-F_Oh-My-God_VKT_06103].mp3
+Oh my God! ### [Adult-Male-F_Oh-My-God_VKT_06103].mp3
 Oh my God! @ articulate ### [Teen-Fem-C_Oh-My-God_VKT_14542].wav
 oh my goodness! ### [Teen-Fem-A_Oh-My-Goodness_VKT_13950].wav
 oh my gosh! ### [Adult-Fem-B_Oh-My-Gosh_VKT_00623].mp3
@@ -25347,7 +25345,7 @@ Falstaff ## date 1906.jpg
 Falstaff ## date 1906.jpg.uid-zps
 Mephisto [cunning] ## date 1895 ## qrop t3 b15.jpg
 >>> ../datae\fineart gh {{$$}}/Gudiol {{Montserrat Gudiol}}
-Lovers.jpg
+Lovers [lovers].jpg
 Saint Georgina Slays the Dragon [Georgina] ## date 1974.jpg
 Seated Woman [seated] ## date 1981.jpg
 Woman in Red [figurative@art] ## date 1970 ## qrop qt.jpg
@@ -25422,8 +25420,8 @@ Assembly of Peter I [assembly@gathering] ## qrop qb.jpg
 >>> ../datae\fineart ijkl {{$$}}/Leighton {{Edmund Blair Leighton}}
 Accolade [accolade] ## qrop t17 ## qropt! {{Edmund Blair Leighton, 1901 $$}}.jpg
 Elaine.jpeg
-Godspeed ## qrop t19 b9.jpg
-Godspeed ## qrop t19 b9.txt
+Godspeed! ## qrop t19 b9.jpg
+Godspeed! ## qrop t19 b9.txt
 In Time of Peril [peril][perils][perilous] ## date 1897 ## qrop r15 ## qropt!.jpg
 Secret ## qrop l12 r10 t1.jpg
 Secret ## qrop l12 r10 t1.txt
@@ -25458,7 +25456,7 @@ A Good Glass of Beer (Le Bon Bock) [bock beer][bock] ## date 1873.jpg
 Polichinelle ## sic! ## qrop t2 b1 ## qropt! {{Édouard Manet, 1873 $$}}.jpg
 The Explosion [explosion] ## date 1871.jpg
 >>> ../datae\fineart mn {{$$}}/Matisse {{Henri Matisse}}
-Portrait of the Artist's Wife [Fauvism] ## date 1912.jpg
+Portrait of the Artist's Wife [Fauvism][fauvism] ## date 1912.jpg
 >>> ../datae\fineart mn {{$$}}/Mendham {{Robert Mendham}}
 The Town Crier [town crier].jpg
 >>> ../datae\fineart mn {{$$}}/Michelangelo {{Michelangelo}}
@@ -25668,7 +25666,7 @@ hypnotist @ circus {{Juliano Kaglis}}.jpg
 Keep Out! Or enter, I'm a sign not a cop. [sign@message] ## qrop l16 r9.jpg
 kithara~cithara %% Roman fresco, ca. 40–30 B.C. ## qrop qb.jpg
 Le Chef de l'Hôtel Chatham, Paris [chef] ## qrop t7 ## qropt! {{William Orpen, c. 1921 $$}}.jpg
-My Blue-spotted Pig Took Me Home [abstract figurative] ## date 2003 ## qrop qr {{Gigi Sudbury}}.jpg
+My Blue-spotted Pig Took Me Home [abstract figurative][spotted] ## date 2003 ## qrop qr {{Gigi Sudbury}}.jpg
 Nicaea icon [Nicaea][Orthodox] ## qropt! {{$$}}.jpg
 Oceanid [Oceanids][Oceanides] ## qropt! {{Jan Toorop, c.1893 $$}}.jpg
 Othello and Desdemona [Othello] ## qrop l7 r8 {{Alexandre-Marie Colin, 1829 $$}}.jpg
@@ -25718,6 +25716,19 @@ The Cat's Paw Nebula, named for its shape [nebula] ## qrop ql.jpg
 Chaetopoda [chaetopods][annelids] {{Ernst Haeckel $$}}.jpg
 circles or spiral~! [illusion][optical illusion] {{Mysid $$wiki}}.png
 Cutaway illustration of a hobo stove including air convection [hobo stove] ## qrop t9 b4 ## qropt! {{Image.. Dontpanic}}.jpg
+>>> ../datae\imagery/Danti {{Egnazio Danti}}
+Anatolian peninsula [Anatolia][Anatolian].jpg
+Anatolian peninsula [Anatolia][Anatolian].jpg.uid-zps
+Egnazio Danti - Anatolian peninsula with ancient toponyms and Middle East - (MeisterDrucke-8109).jpg.uid-zps
+Egnazio Danti - Great Britain and Ireland - (MeisterDrucke-7775).jpg.uid-zps
+Egnazio Danti - South Africa Mozambique and part of Madagascar - (MeisterDrucke-8104).jpg.uid-zps
+Egnazio Danti - The Scandinavian peninsula - (MeisterDrucke-8056).jpg.uid-zps
+Great Britain and Ireland [Great Britain].jpg
+Great Britain and Ireland [Great Britain].jpg.uid-zps
+Mozambique and part of Madagascar [Mozambique][Mozambique Channel].jpg
+Mozambique and part of Madagascar [Mozambique][Mozambique Channel].jpg.uid-zps
+Scandinavian peninsula [Scandinavia][Scandinavian].jpg
+Scandinavian peninsula [Scandinavia][Scandinavian].jpg.uid-zps
 >>> ../datae\imagery/Deitch {{Gene Deitch}}
 Understanding Computer Technology [computer literacy][toilet humour] ## qrop l2 ## qropt! {{after Gene Deitch}}.jpg
 Understanding the Technology (detail) [debugging][debugging tool][backup] ## date 1991.jpg
@@ -25812,7 +25823,7 @@ accordionist.jpg
 clash cymbals [cymbalist][clash@sound] ## qrop qt.jpg
 conductorial.jpg
 fiddler ## qrop qt.jpg
-headshell with cartridge ## crop l15 r17 ## qrop l23 r21.jpg
+headshell with cartridge [headshell] ## crop l15 r17 ## qrop l23 r21.jpg
 Painter. Oaxaca. Mexico [painter@job] ## date 1992 ## qrop t25 b8 {{Photo.. Rupert Conant}}.jpg
 Pushkin.jpg
 red fire glass [fire glass][decorative].jpg
@@ -25890,7 +25901,7 @@ Viking village replica, Iceland [Iceland] ## qrop qb.jpg
 clamshells @ packaging.jpg
 Clio, Muse of History %% 2nd century, Roman copy from a Greek original, The Hermitage Museum [Clio][Muse] ## qrop t3 b4 ## qropt!.jpg
 crate opener [opener] ## qrop l3 r6 ## qropt!.jpg
-diving tower {{Photo.. Joel Meyerowitz}}.jpg
+diving tower [diving platform] {{Photo.. Joel Meyerowitz}}.jpg
 Emerson Knives Gentleman Jim [knives].jpg
 eugenics ## qrop l4 r1 ## qropt!.jpg
 >>> ../datae\photo/fashion
@@ -25911,7 +25922,7 @@ ruffles @ fabric ## qrop q.jpg
 sneakers ## qrop q ### Nike 1.jpg
 sneakers ## qrop r1 t15 b19 ### Nike 2.jpg
 sneakers [trainers] ### Nike 3.jpg
-tighten one's tie.jpg
+tighten one's tie [tighten].jpg
 Floral Paintings..  Van Gogh Sunflower Remix [floral] ## qrop t9 b6 ## qropt! {{Fong Qi Wei}}.jpg
 folding screen ## qrop t17 b2 ## qropt! {{Photo.. ABM}}.jpg
 >>> ../datae\photo/food
@@ -26106,6 +26117,7 @@ Formula 1 car [racing car][race car].jpeg
 Formula One [Formula 1][F1] ## crop l22 ## noqrop.jpg
 racing driver [pilot@racing] ## qrop ql.jpg
 racing helmets [autosport][helmet@sport].jpg
+riffle shuffle [riffle@shuffle][dovetail shuffle].jpg
 underwater lap counter [lap@pool].jpeg
 Windsurfer _Robby _Naish [windsurfer][windsurfing] ## qrop l3 r31 {{Photo.. Hoch Zwei}}.jpg
 Yankees {{}} New York Yankees Manager Billy Martin argues with umpire Durwood Merrill.jpg
@@ -26231,6 +26243,12 @@ Street {arrow}, _Boston, _Massachusetts ## date 1960.jpg
 The Tetons and the Snake River [Tetons@mountains][river] ## qrop l12 r8 {{Photo.. Ansel Adams $$USGOV}}.jpg
 Thundercloud, Lake Tahoe [Lake Tahoe][Tahoe] ## date 1936.jpg
 Window, _Stevenson House, _Monterey, _California [window] ## date 1953 ## qropt!.jpg
+>>> ../datae\photo a/Adelman {{Photo.. Bob Adelman}}
+Andy Warhol in Gristedes Supermarket Near 47th Street Factory, 1964 [pop art].jpg
+Water hosing demonstrators.jpeg
+Water hosing demonstrators.txt
+wrath.jpg
+wrath.jpg.uid-zps
 >>> ../datae\photo a/Alpert {{Photo.. Max Alpert}}
 A battalion commander [commander] ## date 1942.jpg
 >>> ../datae\photo a/Amendola {{Photo.. Aurelio Amendola}}
@@ -26525,7 +26543,7 @@ On the Road to _Cuzco, _Peru, 1954 [traveler][Peruvian].jpg
 tail @ plane.jpg
 Tokyo. Sumo fighters [sumo] ## date 1951.jpg
 vine ## date 1935.jpg
-Zebra Woman # 1942 [zebralike].jpg
+Zebra Woman [zebralike] ## date 1942.jpg
 >>> ../datae\photo b/Blair {{Photo.. Jonathan Blair}}
 Aerial view of Arizona's Meteor Crater under a rare blanket of snow [impact crater] ## qrop qr.jpg
 Aerial View of Old Dubrovnik [Dubrovnik][Croatia][fortified] ## date 1985.jpg
@@ -26806,7 +26824,7 @@ Nandina Covered in Ice [nandina][heavenly bamboo].jpg
 Orb Weaver Spider on Web [orb-weaver spider][orb][weaver].jpg
 >>> ../datae\photo c/Cartier-Bresson {{Photo.. Henri Cartier-Bresson}}
 altar boy.jpg
-Egypt, Cairo, 1950. In a shop selling Sudanese ivory, American looking at the show window..jpeg
+Egypt, Cairo, 1950. In a shop selling Sudanese ivory, American looking at the {show window}..jpeg
 Fountain Kiss [kiss] ## qrop ql.jpg
 Paris. Saint Germain des Prés. Brasserie Lipp. 1969 [miniskirts][miniskirt] ## qrop t15 b12 ## qropt!.jpg
 Queen _Charlotte's Ball, _London, 1959 [waltz] ## qrop qb.jpg
@@ -26924,7 +26942,7 @@ St. John's wort [Hypericum perforatum][Hypericum].jpg
 all-American hot dog [hot dog][hotdog].jpg
 betta closeup [betta].jpg
 fresh orange slices [slices][slice@food].jpg
-orange slush [sluch@drink].jpg
+orange slush [slush@drink] ## qrop qr.jpg
 purple cabbage [red cabbage].jpg
 red strawberries [strawberries].jpg
 >>> ../datae\photo def/Desgrieux {{Photo.. Pierre Desgrieux}}
@@ -28407,7 +28425,7 @@ Pegea confoederata [Pegea][Tunicata][tunicate].jpg
 plumose, fluffy, or frilled anemone %% Metridium senile field [plumose][plumose anemone] ## qrop q.jpg
 >>> ../datae\photo s/Sherbell {{Photo.. Shepard Sherbell}}
 Open Hands of Praying Muslim [Islamic][du'a'][du'a][dua].jpg
-Red and Black Cowboy Boots [cowboy boots] ## qrop l20 r14 b1.jpg
+Red and Black Cowboy Boots [cowboy boots][cowboylike][cowboyish] ## qrop l20 r14 b1.jpg
 Ronald and Nancy Reagan Waving to Crowd, 1988 [Reagan].jpg
 >>> ../datae\photo s/Sheremet {{Photo.. Andrey Sheremet}}
 brown bear [brown][bear][Ursus arctos].jpg
@@ -28461,10 +28479,10 @@ Children of Londonderry, 1970s [Londonderry].jpg
 Phnom Penh, April 1975 [Khmer Rouge].jpg
 >>> ../datae\photo s/Steel {{Photo.. Arthur Steel}}
 a royal letdown [letdown][flat tyre] ## qrop l10 r23.jpg
-applying lipstick ## qrop q.jpg
+applying lipstick [applying] ## qrop q.jpg
 Baby Bugatti Tourer %% Vintage car auction, Alexandra Palace, 1975 [Bugatti][vintage car] ## qrop ql.jpg
 Baby Love Bug %% Volkswagen Owner’s Meet, Great Britain 1980 [Volkswagen][Beetle][Bug][Love Bug].jpg
-Bone Idle – Gracious the bloodhound, Sussex, 1986.jpg
+Bone Idle – Gracious the bloodhound [bone idle] ## date 1986.jpg
 Candy in Curlers [Yorkshire Terrier].jpg
 Charles and Diana on their wedding day [affectionate] ## qrop r2 ## qropt!.jpg
 deerstalker [deerstalker hat] ## qrop l27 r6.jpg
@@ -28474,7 +28492,7 @@ Italian Priest, St. Peter’s Basiica, Rome [priest] ## date 1971 ## qrop l3 t7 
 Linda Husjord [tattoo] ## date 2000 ## qrop t3 ## qropt! ### Gold Coast Hotel & Casino, Las Vegas.jpg
 Mask of Tutankhamun %% The British Museum, 1972 [priceless][invaluable] ## qrop l24 r6 t2 ## qropt!.jpg
 sale of umbrellas [the shoemaker's children go barefoot][the cobbler's children ~ are the worst shod] ## qrop l18 t22 r30 b2.jpg
-Short Back And Sidespin %% Punk Martin Gale is so potty about Snooker he’s let it go to his head [punk]..jpg
+Short Back And Sidespin %% Punk Martin Gale is so potty about Snooker he’s let it go to his head. [punk].jpg
 The Dealmaker Rupert Murdoch [dealmaker].jpg
 The Iron-ing Lady %% Margaret and Denis Thatcher, Kent, 1975 [Iron Lady].jpg
 toffee-nosed rose judges %% RHS Chelsea flower show, London, 1967 [toffee-nosed] ## qrop l30 t2 r4 b1.jpg
@@ -28643,7 +28661,7 @@ _Australian sprinter _Cathy _Freeman, 400m final %% _Sydney, 2000 [400 metres][4
 _Maurice _Greene after winning the 100m event %% _Sydney, 2000 [winner] ## qrop ql.jpg
 _Swiss figure skater _Lucinda _Ruh [bend over backwards@literally] ## date 2001 ## qrop l18 r14.jpg
 >>> ../datae\photo t-z/Varda {{Photo.. Agnès Varda}}
-Self-portrait with Bellini painting, Venice, Italy, 1960.jpeg
+Self-portrait with Bellini painting, Venice, Italy [resemblant][resemblance] ## date 1960.jpeg
 >>> ../datae\photo t-z/Veasey {{Photo.. Nick Veasey}}
 Lucanus cervus %% X-ray [Lucaninae][Lucanidae][Coleoptera][stag beetle][Lucanus][lucanus] ## qrop l12 t1 r8.jpg
 {Chiasognathus} grantii %% X-ray [Lucanidae][Darwin's beetle][Grant's stag beetle][Chilean stag beetle][Coleoptera].jpg

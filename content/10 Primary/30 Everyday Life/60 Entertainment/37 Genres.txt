@@ -12,10 +12,10 @@ bandito {Am.}             = бандит ~ (мексиканский)        # R
 animation                 = анимация, мультипликация, ~ живость, оживление # 10+
 animator                  = аниматор, мультипликатор       # 10+
 anime                     = аниме                          # 10+
-
-documentary               = документальный фильм           # 10+
+---
 mainstream                = мейнстрим                      # 16+
 art house                 = артхаус                        # 16+
 blockbuster               = блокбастер                     # 10+
-
+documentary               = документальный фильм           # 10+
+: Star Wars is not a documentary.
 

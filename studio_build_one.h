@@ -451,6 +451,9 @@ namespace studio::one
         search_entry::
         word);
 
+        auto r = std::ranges::unique(searchmap);
+        searchmap.erase(r.begin(), r.end());
+
         if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
     }
 }

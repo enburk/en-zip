@@ -7,10 +7,23 @@ warlock                   = колдун
 
 magic wand                = волшебная палочка
 staff                     = посох
----
-spell                     = заклинание
-: Do witches run spell checkers?
 
 ghost                     = првидение, призрак
 
 tasseography//tasseomancy = гадание на кофейной гуще %% или на чайном или винном осадке
+
+===
+spell @ magic             = заклинание, заговор, ~ очарование, околдовывать
+spell @ time              = срок, время, ~ промежуток времени
+spell @ write             = произносить или писать слово по буквам
+===
+
+: book of spells
+: How do you spell that?
+: How do you spell your name?
+
+===
+
+: Do witches run spell checkers?
+
+

@@ -1,7 +1,10 @@
 shopping
 
+show window//display window
 shop window\\store window
+
 [shopping] basket
+plastic bag
 
 gift bag
 gift box
@@ -11,5 +14,5 @@ label @ clothes  # 8+
 petite @ clothes = of a small size # 10+
 tag @ clothes    # 10+
 
-plastic bag
+
 

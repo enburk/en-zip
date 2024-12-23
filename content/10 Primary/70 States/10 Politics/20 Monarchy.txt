@@ -3,7 +3,7 @@ monarchy                = монархия
 monarch                 = монарх
 monarchist              = монархист                                          # 14+
 royalist                = монархист, роялист                                 # 14+
-: You needn't to be better royalist ~ than the king.
+: You needn't be a better royalist than the king.
 
 coronation              = коронация
 tiara                   = тиара, диадема                                     # 14+
@@ -42,9 +42,9 @@ sultanate               = султанат                                      
 
 shah                    = шах                                                # TERM- # 14+
 padishah                = падишах                                            # TERM- # 14+ /// Persian
-
+---
 rajah|raja              = раджа                                              # TERM- # 16+
 maharajah||maharaja     = махараджа                                          # TERM- # 16+
-
+: Indian raja
 
 

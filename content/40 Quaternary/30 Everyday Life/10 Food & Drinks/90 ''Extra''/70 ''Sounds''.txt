@@ -1,8 +1,5 @@
 sounds
 
-: ice cream cone eating: exaggerated smacking and breathing # SOUND
-: beer gulp with lip smack # SOUND
-
 : manual can opener: puncture small juice tin can # SOUND
 : pour out thick liquid from can, heavy glugs # SOUND
 : ice cubes tinkling in a glass # SOUND
@@ -33,5 +30,11 @@ munch
 : crispy snack: single hard crunch # SOUND
 : Crunch crunch went the key in the lock.
 
+===
+smack
+===
 
+: ice cream cone eating: exaggerated smacking and breathing # SOUND
+: lip smack with funny taste in mouth # SOUND
+: beer gulp with lip smack # SOUND
 

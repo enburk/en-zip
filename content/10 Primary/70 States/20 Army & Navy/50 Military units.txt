@@ -5,8 +5,11 @@ brigade @ army  = бригада, ~ отряд, группа
 [field] army    = армия
 army group      = группа армий
 
+===
 squadron @ army = эскадрон  # 14+
 squadron @ navy = эскадра   # 14+
 squadron @ air  = эскадрилья # 14+ /// (Французская escadrille -- это более мелкое формирование.)
+===
 
+: He was the squadron intelligence officer
 

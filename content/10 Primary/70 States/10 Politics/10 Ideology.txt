@@ -2,7 +2,7 @@ ideology                = идеология
 
 conservative            = консервативный, ~ консерватор
 liberal                 = либеральный, ~ либерал
-radical                 = радикальный, ~ радикал
+radical @@                = радикальный, ~ радикал
 reactionary             = реакционный, ~ реакционер
 
 centrist                = центрист                             # 16+
@@ -26,4 +26,6 @@ paternalism             = патернализм                          # POLI
 communist||Communist    = коммунист, коммунистический          # 16+
 socialist               = социалист, социалистический          # 16+
 
+===
 
+: What a radical idea.

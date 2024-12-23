@@ -26,14 +26,21 @@ commune @ community          = коммуна                    # 14+
 commune @ communicate        = общаться                   # 14+ /// /kəˈmjuːn/
 commune @ church             = причащаться
 ***
+summit @ politics            = саммит                     # 16+
+summit @ mountain            = вершина ~ (горы)           # 16+
+
+===
+***
 bill @ law                   = билль, законопроект        # 16+
 bill @ bird                  = клюв
 bill @ cap                   = козырек
 bill {Am.} @ money           = банкнота
 bill\\check @ invoice        = счет к оплате
-***
-summit @ politics            = саммит                     # 16+
-summit @ mountain            = вершина ~ (горы)           # 16+
+===
+check @ control = контроль, проверка, ~ проверять
+: Check, check, check.
+: Check, 1, 2, 3, check, 1, 2, 3.
+check @ chess = в шахматах: шах
 
 
 

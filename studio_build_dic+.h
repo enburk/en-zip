@@ -323,9 +323,15 @@ namespace studio::dic
 
         for (auto& [s, map]: abstractmap) if (map.size() > 1)
         {
+            int audios = 0;
+            for (auto& [t, r]: map)
+            if (r->kind == "audio") audios++;
+            if (audios < 2) continue;
+
             report::errors +=
             red(bold("conflicting abstracts:"));
             for (auto& [t, r]: map)
+            if (r->kind == "audio")
             report::errors +=
             linked(html(r->abstract),
             "file://" + str(r->path));

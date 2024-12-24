@@ -23,7 +23,7 @@ order @ request               = заказ
 order @ bio                   = в зоологии: отряд, ~ в ботанике: порядок   # RARE+ # TERM+ # 14+
 order @ architecture          = в архитектуре: ордер                       # ART+ # RARE+ # 16+
 warrant                       = ордер ~ (на обыск, арест и т.п.)           # 14+
-arrest warrant//warrant of arrest              = ордер на арест                             # 14+ /// ~warrant of arrest
+arrest warrant//warrant of arrest = ордер на арест                             # 14+ /// ~warrant of arrest
 : a warrant out for my arrest
 billet                        = ордер на постой                            # HISTORY+ # WAR+ # 16+
 ***
@@ -42,6 +42,7 @@ fast @ quick                  = быстрый, скорый, ~ спешащий
 fast @ firm                   = крепкий, прочный, ~ запор, задвижка        # 10+ /// , ~ крепко, прочно
 fastener                      = крепёж
 fast @ naval                  = швартов                                    # 14+
+
 
 
 

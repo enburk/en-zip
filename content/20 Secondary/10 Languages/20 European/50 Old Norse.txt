@@ -6,15 +6,24 @@ egg         # duple
 get
 take
 want
-call
 loose
+---
+call
+: Just give 'em a call.
+---
 seem
+: Things aren't always what they seem.
 ---
 they        # duple
 their       # duple
 nay
 
+---
 gift
+: the gift of God
+: a gifted man
+: Don't look a gift horse in the mouth.
+
 skill
 skin
 skirt
@@ -23,7 +32,10 @@ anger
 birth
 die         # duple
 
+---
 fellow
+: Who was this fellow—did you say Einstein? Sounds German to me.
+
 kid @@      = originaly: a young goat
 
 flat
@@ -45,7 +57,9 @@ wing @ bird # duple
 
 gang
 law
+---
 trust
+: Never trust a woman who gives funny names to means of transport.
 
 raft @ craft
 wreck @ ship
@@ -56,6 +70,7 @@ stack
 score
 odd @ uneven
 odd @ strange
+: It feels—odd.
 
 
 

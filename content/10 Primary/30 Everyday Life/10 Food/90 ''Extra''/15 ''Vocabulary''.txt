@@ -30,8 +30,8 @@ sweets                  = сладости, конфеты
 sour                    = кислый
 bitter                  = горький
 spicy                   = пряный, пикантный, ~ острый
-tough                   = жёсткий
-: The beef was fine--tough, but with body in it.
+tough @ food            = жёсткий
+: The beef was fine—tough, ~ but with body in it.
 ===
 
 candy                   = леденцы, конфеты
@@ -46,6 +46,7 @@ full @ food             = сытый
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
 
 
 

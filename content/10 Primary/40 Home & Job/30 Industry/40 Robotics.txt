@@ -2,12 +2,17 @@ robotics           = робототехника
 robot              = робот
 
 android            = андроид
-anthropomorphic    = антропоморфный %% человекоподобный # TERM- # 16+
 cyborg             = киборг
 biobot             = биоробот
-drone              = дрон                            /// %% ''разговорное для:'' ~ беспилотный летательный аппарат
+drone              = дрон
+
+===
+
+anthropomorphic    = антропоморфный %% человекоподобный # TERM- # 16+
 
 manipulator @ tech = манипулятор ~ (механизм)        # TECH+ # 14+
 servomotor         = сервопривод                     # TECH+ # 16+
 
+===
 
+: Maybe you're an android, ~ with a false memory, ~ like they give them.

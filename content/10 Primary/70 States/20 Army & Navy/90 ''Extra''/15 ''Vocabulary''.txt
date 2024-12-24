@@ -1,14 +1,15 @@
 basic ~ vocabulary
 
-infantry = пехота
+infantry      = пехота
 
-colonel  = полковник
+colonel       = полковник
 commander in chief||commander-in-chief = главнокомандующий
 
 ---
-cannon @ gun = пушка, орудие
-gun @ cannon = пушка, орудие
-gun @ rifle = ружье, винтовка
-gun @ pistol = пистолет, револьвер
+cannon @ gun  = пушка, орудие
+gun @ cannon  = пушка, орудие
+gun @ rifle   = ружье, винтовка
+gun @ pistol  = пистолет, револьвер
 [machine] gun = автомат, пулемет
-rifle = винтовка
+rifle         = винтовка
+

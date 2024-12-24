@@ -14,6 +14,8 @@ mute
 quiet
 : Quiet, please.
 : Quiet, please!
+: Be quiet,  I'm thinking.
+: Be very, very quiet.
 
 move
 movement
@@ -22,6 +24,7 @@ motion
 ---
 cancel
 quit
+: Quit complaining!
 : Uh, quit your complaining.
 
 prefer
@@ -55,7 +58,10 @@ excavate
 naval
 utility
 scissors
+---
 succeed
+: If at first you don't succeed, try try again.
+
 laundry
 miracle
 multitude
@@ -64,5 +70,6 @@ century
 umbrella
 exit
 rotation
+
 
 

@@ -3,7 +3,7 @@ polysemic
 state @ gov            = государство, страна, штат, ~ государственный    # duple
 state @ verb           = заявлять, утверждать, излагать %% в устной или письменной форме
 state @ status         = состояние, положение
-state of the art = современный технический уровень
+state of the art       = современный технический уровень
 personnel//staff       = штат, персонал
 ***
 policy @ principle     = политика, курс, стратегия, ~ линия поведения    # 14+ /// 1
@@ -38,6 +38,7 @@ consignment            = партия товара, груз                    
 ===
 
 : I like to be treated as an individual. You like to be treated as a party.
+
 
 
 

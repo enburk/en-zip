@@ -18,5 +18,15 @@ bedroom        = спальня, ~ гостиничный номер
 
 wallpaper      = обои
 
+===
+place @ area   = место, помещать
+place @ town   = город, местечко, ~ населенный пункт
+place @ home   = дом, жилище
+place @ square = полщадь
+place @ role   = должность, место
+===
 
-
+: What a place!
+: London's the place.
+: There's no place like home.
+: Wrong place? No. Wrong time, then. Yes.

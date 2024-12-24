@@ -10,12 +10,17 @@ board @ ship            = борт ~ (морского или воздушног
 board @ wood            = доска
 board @ comp            = плата
 Board|board @ committee = совет, правление, ~ руководство, коллегия # 14+
-boards                  = подмостки, сцена                          # 14+
+boards                  = подмостки, сцена
+===
+aboard                  = на борту, на борт ~ (корябля, самолета), ~ в вагоне
+All aboard!             = посадка зако́нчена! ~ (сигнал к отправлению)
+: Do you know who you have got aboard here?
 ===
 
 chessboard              = шахматная доска
 skateboard              = скейтборд
 bulletin board {Am.}    = доска объявлений
+
 
 
 

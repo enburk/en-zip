@@ -6,8 +6,13 @@ equal
 addition
 subtraction
 
-error
+---
 doubt
+: I doubt it.
+: No doubt.
+: There is no doubt about that.
+
+error
 valid
 incorrect
 confidence

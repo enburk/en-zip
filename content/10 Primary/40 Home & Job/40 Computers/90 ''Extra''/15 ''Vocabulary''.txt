@@ -17,14 +17,13 @@ denied @ comp             = запрещать
 ===
 
 : Access denied.
-: Password error. Access denied.
 : Error, access denied.
 : Error! Access denied.
 : Enter search query.
-: Password error. Access denied.
 : Password accepted.
 : Password incorrect.
 : Incorrect password.
+: Password error. Access denied.
 
 ===
 type @ comp               = набирать, печатать

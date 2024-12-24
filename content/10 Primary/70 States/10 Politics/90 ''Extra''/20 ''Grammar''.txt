@@ -18,6 +18,10 @@ which @ determiner %% {determiner} = какой, который, ~ каково�
 : Which house ~ do you live in?
 
 ===
+
+: Stop, _Basil. You are talking about things of which you know nothing.
+
+===
 such @ determiner %% {determiner} = такой, подобный
 ===
 
@@ -27,6 +31,7 @@ such @ determiner %% {determiner} = такой, подобный
 : There’s no such thing ~ as a free lunch.
 : Now tell me, sir, ~ have you ever seen ~ such a thing?
 : Why does he ask ~ such personal questions?
+: Are you mad, that you speak of such things
 
 ===
 such @ pronoun %% {pronoun}       = тот, такой, те, такие, ~ таковой

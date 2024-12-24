@@ -37,10 +37,11 @@ bill @ cap                   = козырек
 bill {Am.} @ money           = банкнота
 bill\\check @ invoice        = счет к оплате
 ===
-check @ control = контроль, проверка, ~ проверять
+check @ control              = контроль, проверка, ~ проверять
 : Check, check, check.
 : Check, 1, 2, 3, check, 1, 2, 3.
-check @ chess = в шахматах: шах
+check @ chess                = в шахматах: шах
+
 
 
 

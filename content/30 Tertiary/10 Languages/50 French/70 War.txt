@@ -6,7 +6,10 @@ retreat
 surrender
 defeat
 
+---
 target
+: Target lock.
+
 javelin
 archer
 disarm

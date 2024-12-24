@@ -22,15 +22,20 @@ remember
 request
 research
 lesson
-failure
 reply
+---
+failure
+: Failure is not an option.
 
 bon voyage
 journey
 
 jetty
-
+---
 rule
+: A rule?
+: broke the rules
+
 plain
 pottery
 random
@@ -39,9 +44,16 @@ rear
 ---
 wait
 : Wait, um...
-
+: You just wait and see.
+---
 try
+: Did you try?
+: Just you try it on.
+: What are you trying to tell me?
+---
 join
+: Join the army, ~ see the world!
+
 fairy
 feature
 fuel
@@ -51,11 +63,16 @@ enlarge
 entry @ door
 envelop
 
+---
 search
 discover
+: Ah, you have discovered that?
 
 aid
+---
 across
+: Lift out of order? Try the one across the street!
+
 bauble
 choice
 chase

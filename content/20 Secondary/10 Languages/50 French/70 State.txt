@@ -2,7 +2,7 @@
 royal
 nobility
 manor
-count
+count @ title
 countess
 duke
 duchess
@@ -20,11 +20,15 @@ union
 
 enterprise
 tax
-debt
 benefit
 payment
 vendor
+---
+debt
+: Surely one has to pay one's debts.
+---
 poor
+: Poor thing!
 
 district
 citizen

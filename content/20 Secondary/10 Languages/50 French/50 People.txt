@@ -6,20 +6,23 @@ age
 
 marriage
 couple
-
+---
 agree
 agreement
+: Why would he agree to that?
 
-pity
-rage
-distress
-trouble
-
-jolly
+---
 joy
+jolly
+: sense of joy
+: There was a real joy in that.
+: For they are jolly good fellows
 
+---
 pleasant
 pleasure
+: Are you here for business or pleasure?
+: I have never searched for happiness. Who wants happiness? I have searched for pleasure.
 
 pain
 hurt
@@ -30,3 +33,14 @@ touch
 : Please, do not touch!
 : Don’t touch anything!
 : Are you sure nobody's touch it?
+
+===
+pity
+rage
+distress
+trouble
+===
+
+: What a pity!
+: Uh oh, here comes trouble.
+: You think you’ve got troubles

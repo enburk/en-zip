@@ -123,7 +123,7 @@ namespace studio::one
                 if (it != course_vocabulary.end())
                     it->second.resources += &r;
                 // if there is sense-less entry
-                // then it's an error and will be reported
+                // then it's an error and it'll be reported
                 // by sense-control
                 continue;
             }
@@ -211,23 +211,29 @@ namespace studio::one
 
             // for unused resources
 
-            if (abstract.starts_with("a "  )) abstract = abstract.from(2); else
-            if (abstract.starts_with("an " )) abstract = abstract.from(3); else
-            if (abstract.starts_with("the ")) abstract = abstract.from(4); else
-            if (abstract.starts_with("to " )) abstract = abstract.from(3); else
-            {}
-
             int spaces = 0;
             for (char c: abstract)
             if  (c == ' ')
                 spaces++;
+
+            if (spaces == 1)
+            if (abstract.starts_with("a "  )
+            or  abstract.starts_with("an " )
+            or  abstract.starts_with("the ")
+            or  abstract.starts_with("to " ))
+                continue;
+
+            if (spaces == 2)
+            if (abstract.starts_with("to be "))
+                continue;
 
             int k =
             false?max<int>() :
             spaces == 0 ? 20 :
             spaces == 1 ? 50 : 200;
 
-            if (r.weight < k
+            if (false
+            or  r.weight < k
             or  r.sense != ""
             or  r.kind == "video")
             unused_resources.
@@ -445,12 +451,7 @@ namespace studio::one
             w, e.entry, e.link);
         }
 
-        std::ranges::
-        stable_sort(
-        searchmap, {}, &
-        search_entry::
-        word);
-
+        std::ranges::stable_sort(searchmap);
         auto r = std::ranges::unique(searchmap);
         searchmap.erase(r.begin(), r.end());
 

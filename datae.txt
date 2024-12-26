@@ -1153,7 +1153,7 @@ a child.ogg
 a combo.ogg
 a cup.ogg
 a dysphemism.ogg
-a girl~! ## ==.ogg
+A girl~! ## == ## course-.ogg
 a let.ogg
 a line.ogg
 a muntin.ogg
@@ -4675,8 +4675,8 @@ You're so clever..ogg
 {White-breasted {Wood-Wren}}.ogg
 >>> ../datae\audio\zoo\{{Cornell Lab of Ornithology}} ## course-/wrentit
 {Wrentit}.ogg
->>> ../datae\audio\zoo/{{Starry Night Education}} ## Case ## sic!
->>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic!/Asteroids {{}}
+>>> ../datae\audio\zoo/{{Starry Night Education}} ## Case ## sic! ## course-
+>>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Asteroids {{}}
 Annefrank.mp3
 Apophis.mp3
 Astraea.mp3
@@ -4703,7 +4703,7 @@ Psyche.mp3
 Thalia.mp3
 Thetis.mp3
 Vesta.mp3
->>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic!/Constellations
+>>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Constellations
 !credit.txt
 Andromeda (The Chained Maiden).mp3
 Antlia (The Air Pump).mp3
@@ -4794,7 +4794,7 @@ Vela (The Sail).mp3
 Virgo (The Maiden).mp3
 Volans (The Flying Fish).mp3
 Vulpecula (The Fox).mp3
->>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic!/Meteor Showers {{}}
+>>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Meteor Showers {{}}
 Eta Aquarids.mp3
 Geminids.mp3
 Lyrids.mp3
@@ -4804,7 +4804,7 @@ Perseids.mp3
 Quadrantids.mp3
 South Delta Aquarids.mp3
 South Taurids.mp3
->>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic!/Planets & Moons {{}}
+>>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Planets & Moons {{}}
 Adrastea.mp3
 Aitne.mp3
 Amalthea.mp3
@@ -4906,7 +4906,7 @@ Triton.mp3
 Umbriel.mp3
 Uranus.mp3
 Venus.mp3
->>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic!/Stars {{}}
+>>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Stars {{}}
 Acamar.mp3
 Achernar.mp3
 Acrux.mp3
@@ -13232,7 +13232,7 @@ a fall.ogg
 a man's wife.ogg
 a reproof.ogg
 according to his charge.ogg
-all be forgotten.ogg
+All be forgotten..ogg
 amen [].ogg
 and, behold.ogg
 appeared.ogg
@@ -14569,7 +14569,7 @@ I'm asking the questions. You're answering them..ogg
 I'm not shouting..ogg
 Let go of me, you idiot!.ogg
 That is what I mean..ogg
-The bastards..ogg
+The bastards. ## course-.ogg
 What~!.ogg
 When I turn you both loose, go.ogg
 When I turn you both loose, go.txt
@@ -15942,7 +15942,7 @@ a subordinate.wav
 a thief.wav
 a whole year.wav
 a wilderness.wav
-a wonderful time.wav
+a wonderful time ## course-.wav
 about this time.wav
 about two o'clock.wav
 about.wav
@@ -20859,7 +20859,7 @@ Mercedes de Acosta.wav
 mirror neurons.wav
 mono no aware.wav
 moral sentiments.wav
-more seriously.wav
+more seriously ## course-.wav
 morose delectation.wav
 much heat of the heart, such as in a lion.wav
 nothing appeals.wav

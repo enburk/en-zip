@@ -135,9 +135,9 @@ namespace studia::one
                 for (auto& e: entries)
                 e.link.replace_all("| ", "|0");
 
-                std::ranges::stable_sort(
-                    entries, {}, &
-                    entry::link);
+                std::ranges::stable_sort(entries, {}, &entry::link);
+                auto r = std::ranges::unique(entries, {}, &entry::link);
+                entries.erase(r.begin(), r.end());
 
                 for (auto& e: entries)
                 e.link.replace_all("|0", "| ");

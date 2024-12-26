@@ -2,6 +2,7 @@
 doctor        = доктор, врач %% также: доктор наук
 patient       = пациент                # 8+
 patient       = терпеливый             # 8+
+: Please, be patient!
 ===
 
 ---

@@ -13,7 +13,7 @@ namespace content::out
         {
             str word, entry, link;
 
-            bool operator == (search_entry const&) const = default;
+            auto operator <=> (search_entry const&) const = default;
 
             friend void operator >> (sys::in::pool& pool, search_entry& x) {
                 pool >> x.word;

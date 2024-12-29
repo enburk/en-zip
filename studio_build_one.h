@@ -232,7 +232,7 @@ namespace studio::one
             spaces == 0 ? 20 :
             spaces == 1 ? 50 : 200;
 
-            if (false
+            if (true//false
             or  r.weight < k
             or  r.sense != ""
             or  r.kind == "video")

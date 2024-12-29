@@ -1,7 +1,8 @@
 food           = еда
-
+---
 lunch          = ланч                       # 10+
 business lunch = бизнес-ланч                # 10+
+: Lunch break!
 
 recipe         = рецепт
 ingredients    = ингредиенты

@@ -22,6 +22,7 @@ café au lait               = кофе с молоком               # TERM+ #
 Americano                  = американо                    # TERM- # 14+
 Vienna coffee              = венский кофе %% кофе со взбитыми сливками # TERM- # 16+
 Irish coffee               = кофе по-ирландски            # TERM- # 18+ /// ,~ирландский кофе
+Turkish coffee             = кофе по-турецки
 Arabica                    = арабика                      # 10+
 chicory                    = цикорий                      # RARE+ # 14+
 

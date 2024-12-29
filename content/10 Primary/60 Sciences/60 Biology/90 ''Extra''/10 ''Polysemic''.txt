@@ -12,7 +12,7 @@ tick @ insect          = клещ                                     /// 2
 ***
 cell @ bio             = клетка %% элементарная живая система
 cell @ section         = ячейка
-cell @ mobastery       = келья
+cell @ monastery       = келья
 cell @ prison          = тюремная камера
 cage @ animal          = клетка для животных                      # duple
 rib cage||ribcage      = грудная клетка

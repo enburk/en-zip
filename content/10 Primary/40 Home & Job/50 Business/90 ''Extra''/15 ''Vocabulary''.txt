@@ -39,7 +39,7 @@ How much?         = Сколько?
 How much is that? = Сколько это стоит?
 : Um, how much is that?
 ---
-account           = счёт ~ (в банке)
+[bank] account           = счёт ~ (в банке)
 : Will that be cash, ~ or on your account?
 accountant        = бухгалтер
 : Old accountants never die, ~ they just lose their balance.

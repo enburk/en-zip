@@ -21,8 +21,9 @@ caballero             = кабальеро                                     #
 
 ===
 
+peer @ noble                  = пэр                                           # 14+
 lord                  = лорд                                          # 14+
-peer                  = пэр                                           # 14+
+: But this is not all, my Lord.
 
 baronet               = баронет %% промежуточный титул ~ между рыцарем и бароном # HISTORY+ # 16+
 baronetess            = баронетесса                                   # HISTORY+ # RARE+ # 16+

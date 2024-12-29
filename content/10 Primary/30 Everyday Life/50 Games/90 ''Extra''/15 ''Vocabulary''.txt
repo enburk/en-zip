@@ -1,7 +1,7 @@
 basic ~ vocabulary
 
 chess                        = шахматы
-heads or tails? %% idiomatic = орёл или решка?
+Heads or tails? = Орёл или решка?
 noughts and crosses\\tic-tac-toe = крестики-нолики
 ---
 dice @ game %% plural: dice  = игра в кости, ~ кости (игральные)

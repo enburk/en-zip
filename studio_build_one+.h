@@ -323,8 +323,8 @@ namespace studio::one
             and entries.size() == 1)
                 continue;
 
-            // skip sounds for now
-            if (r->kind == "audio"
+            if (false//true
+            and r->kind == "audio"
             and r->options.contains("sound"))
                 continue;
 

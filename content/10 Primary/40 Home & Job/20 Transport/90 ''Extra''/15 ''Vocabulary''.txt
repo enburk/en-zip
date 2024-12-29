@@ -12,6 +12,7 @@ vehicle            /// Latin
 ===
 ship @ vessel      = корабль, судно, ~ перевозить груз
 boat               = лодка, шлюпка, ~ корабль, судно
+: You missed the boat.
 ===
 ---
 sail @ nautical    = парус, ~ идти под парусом

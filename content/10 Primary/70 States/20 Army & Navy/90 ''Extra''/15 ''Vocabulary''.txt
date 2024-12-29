@@ -13,3 +13,7 @@ gun @ pistol  = пистолет, револьвер
 [machine] gun = автомат, пулемет
 rifle         = винтовка
 
+---
+arms @ war = оружие, вооружение
+: Present arms!
+arms race = гонка вооружений

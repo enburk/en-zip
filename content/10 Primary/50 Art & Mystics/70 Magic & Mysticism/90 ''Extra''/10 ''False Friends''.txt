@@ -1,11 +1,12 @@
 false ~ friends
 ***
-spiritual      = духовный, ~ редко: спиритуалистический # 16+ /// # DELAY /// спиричуэл
-spiritualistic = спиритуалистический               # 16+ /// # DELAY
+spiritual                                  = духовный, ~ редко: спиритуалистический # 16+ /// # DELAY /// спиричуэл
+spiritualistic                             = спиритуалистический # 16+ /// # DELAY
 ***
 medium @ spiritualism %% {plural:} mediums = иногда: медиум
 medium @ environment %% {plural:} media, mediums = среда, средство, способ
-medium @ middle = середина, средний
+medium @ middle                            = середина, средний
 : small, medium and large
+
 
 

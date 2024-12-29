@@ -12,9 +12,11 @@ answer       = отвечать
 ===
 
 : Am I right?
+: Are you okay?
 : Are you serious? @@
 : Is that all?
 : Is this nice?
+: Is this normal?
 
 ===
 wh–questions # HEAD
@@ -34,6 +36,8 @@ why          = почему # pix-
 : What are you?
 : What is your name?
 : What do you think?
+: What do you say?
+: What do you see?
 : What do I do?
 
 : Where?
@@ -53,6 +57,7 @@ why          = почему # pix-
 : But why?
 : Why not?
 : But why not?
+: Why do you do this?
 
 ===
 

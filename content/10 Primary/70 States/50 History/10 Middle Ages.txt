@@ -21,7 +21,7 @@ caballero             = кабальеро                                     #
 
 ===
 
-peer @ noble                  = пэр                                           # 14+
+peer @ noble          = пэр                                           # 14+
 lord                  = лорд                                          # 14+
 : But this is not all, my Lord.
 
@@ -49,6 +49,7 @@ Reconquista           = Реконкиста %% отвоевание Пирен�
 Fernand Magellan      = Фернан Магеллан
 Vasco da Gama         = Васко да Гама
 Marco Polo            = Марко Поло
+
 
 
 

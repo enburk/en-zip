@@ -1,9 +1,33 @@
 grammar
 
 ===
-small words # HEAD
+irregular verbs # HEAD
 ===
 
+speak → spoke, spoken
+tell → told, told
+say → said, said
+
+===
+
+: Told you so.
+: We are not told.
+: Consider yourself told!
+
+: I said alright. @ annoyed
+: I said shut up!
+: You said what?!
+
+===
+
+: I am not used to be ~ spoken to that way, sir; ~ I do but less than half ~ like it, sir.
+
+===
+think → thought, thought
+===
+
+: Have you thought of that?
+: He knows so little about me, I thought to myself.
 
 
 

@@ -10,6 +10,10 @@ cast @ throw        = to throw
 : A time to cast away stones, and a time to gather stones together.
 
 ---
+cast @ assign       = to consider, ~ to assign
+: To say that we own ourselves is, oddly enough /// to cast ourselves as both master and slave simultaneously.
+
+---
 cast @ mould        = an object made in a mould
 
 ===
@@ -36,3 +40,4 @@ casting vote        = a vote made by the leader or chair of a group, in the even
 to cast a spell
 
 a cast of crabs
+

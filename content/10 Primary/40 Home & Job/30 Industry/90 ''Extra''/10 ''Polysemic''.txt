@@ -4,7 +4,7 @@ bolt @ tech                   = болт, винт
 bolt @ arrow                  = болт ~ (арбалетная стрела)         # WAR-
 bolt @ latch                  = засов, задвижка                    /// рулон
 bolt @ firearm                = затвор                             # WAR-
-[lightning] bolt//bolt of lightning              = вспышка молнии
+[lightning] bolt//bolt of lightning = вспышка молнии
 ***
 anchor [bolt]                 = анкер (анкерный болт), ~ прикреплять, присоединять # 16+
 anchor @ nautical             = якорь, бросать якорь               # 16+ /// ~~опора (в перенос. значении)
@@ -39,6 +39,7 @@ radiator @ auto               = радиатор ~ (автомобильный) 
 coke @ coal                   = кокс, коксовать
 coke @ drink                  = разговорное: ~ кола, кока-кола
 coke @ cocaine                = сленг: кокаин
+
 
 
 

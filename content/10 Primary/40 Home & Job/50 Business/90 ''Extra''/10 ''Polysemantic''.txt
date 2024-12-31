@@ -45,7 +45,7 @@ tender(2) @ car       = тендер ~ (вагон с топливом и вод
 tender(3) @ soft      = нежный, ласковый, ~ чувствительный, хрупкий    # POLIT- # 16+
 ---
 trust @ group         = трест
-trust @ reliance      = верить, доверять 
+trust @ reliance      = верить, доверять
 : Can they be trusted?
 : Every drunken skipper trusts to Providence
 ---
@@ -55,6 +55,7 @@ service @ religion    = обряд, служба ~ (религиозная)     
 serve/service @ sport = в спорте: подача                               # 10+ /// 1
 service @ kitchen     = сервиз                                         # 10+ /// много знач.
 service [tree]        = рябина, ирга                                   # 10+ /// 2 /// %% рябина домашняя
+
 
 
 

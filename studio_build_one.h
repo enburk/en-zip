@@ -402,6 +402,9 @@ namespace studio::one
         }
 
         report::audioq.log += bold(blue(
+        "total: " + str(report::audioq.log.size())));
+
+        report::audioq.log += bold(blue(
         "+" + str(more_audio) + " more"));
 
         report::videoq.log += bold(blue(

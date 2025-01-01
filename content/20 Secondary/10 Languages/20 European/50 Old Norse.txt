@@ -25,9 +25,12 @@ gift
 : Don't look a gift horse in the mouth.
 
 skill
-skin
 skirt
 anger
+---
+skin
+: There's more than one way to skin a cat.
+: And I, said Porthos, rolling his large eyes
 
 birth
 die         # duple

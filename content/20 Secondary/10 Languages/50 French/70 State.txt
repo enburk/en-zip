@@ -43,6 +43,11 @@ peasant
 ===
 
 saint
+---
+pray
 prayer
-preach
+: Pray _God!
+---
 priest
+preach
+: Practice what you preach!

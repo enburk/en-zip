@@ -1,6 +1,9 @@
 basic ~ vocabulary
 
 band @ music                 = в музыке: группа
+
+song = песня
+sing = петь
 singer                       = певец/певица
 
 headphones                   = наушники
@@ -19,5 +22,7 @@ cello %% formal: violoncello = виолончель # 16+
 
 tuning @ music               = настройка  # TECH- /// строй – это tune, pitch
 
+===
 
+: A bird sings because it has a song.
 

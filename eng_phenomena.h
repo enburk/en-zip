@@ -181,7 +181,11 @@ namespace eng
         std::set<str> backforms;
         
         const array<str> kinds =
-        {"ness", "less", "ly", "al", "ing", "ed", "s"};
+        {
+            "ness", "less", "ly", "al",
+            "ist", "ism", "ian",
+            "ing", "ed", "s",
+        };
 
         for (str kind: kinds)
         {

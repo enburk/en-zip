@@ -24,7 +24,7 @@ Vienna coffee              = венский кофе %% кофе со взбит
 Irish coffee               = кофе по-ирландски            # TERM- # 18+ /// ,~ирландский кофе
 Turkish coffee             = кофе по-турецки
 Arabica                    = арабика                      # 10+
-chicory                    = цикорий                      # RARE+ # 14+
+chicory @ coffee           = цикорий                      # RARE+ # 14+
 
 hot chocolate//[hot] cocoa = горячий шоколад, какао
 cocoa powder               = какао-порошок

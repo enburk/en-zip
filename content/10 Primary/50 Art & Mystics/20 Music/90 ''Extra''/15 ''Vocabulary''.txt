@@ -2,8 +2,8 @@ basic ~ vocabulary
 
 band @ music                 = в музыке: группа
 
-song = песня
-sing = петь
+song                         = песня
+sing                         = петь
 singer                       = певец/певица
 
 headphones                   = наушники
@@ -25,4 +25,5 @@ tuning @ music               = настройка  # TECH- /// строй – э
 ===
 
 : A bird sings because it has a song.
+
 

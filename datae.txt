@@ -508,7 +508,6 @@ husband and wife.ogg
 '{abashed}' is an adjective and participle meaning 'embarrassed' or 'ashamed'.ogg
 '{abate}' is a verb that has several meanings.ogg
 '{abate}' is a verb that has several meanings.txt
-'{abdicate}' is a verb meaning 'to resign' or 'to disown'.ogg
 '{abduct}' is a verb meaning 'to kidnap' or 'to carry off by force'.ogg
 '{abet}' is a verb meaning to encourage or assist especially in something wrong or unworthy.ogg
 '{abhor}' is a verb meaning to regard with horror or to hate deeply.ogg
@@ -517,8 +516,6 @@ husband and wife.ogg
 '{abominable}' is an adjective meaning arousing hatred or disgusting.ogg
 '{abominate}' is a verb meaning to have an intense dislike or hatred for.ogg
 '{abound}' is a verb meaning to be plentiful or to be filled.ogg
-'{abridge}' is a verb meaning to make shorter.ogg
-'{abscond}' is a verb meaning to run off and hide.ogg
 '{absolve}' is a verb meaning to clean from blame, responsibility or guilt.ogg
 '{abstain}' is a verb meaning to stay away from doing something by one's own choice.ogg
 '{abstemious}' is an adjective meaning moderate or sparing, or characterized by abstinence and self-discipline.ogg
@@ -533,7 +530,6 @@ husband and wife.ogg
 '{accrue}' is a verb meaning to grow or accumulate in the course of time or to happen as a natural result.ogg
 '{acculturation}' is a noun meaning the modification of social patterns, traits or structures.ogg
 '{acculturation}' is a noun meaning the modification of social patterns, traits or structures.txt
-'{acme}' is a noun meaning the highest point.ogg
 '{acquiesce}' is a verb meaning to accept without protest or to submit.ogg
 '{acquit}' is a verb meaning to declare not guilty or discharge completely or to conduct oneself.ogg
 '{acrid}' is an adjective meaning harsh in taste or odour, or sharp in manner or temper.ogg
@@ -542,7 +538,6 @@ husband and wife.ogg
 '{acute}' is an adjective with several meanings including.ogg
 '{acute}' is an adjective with several meanings including.txt
 '{ad infinitum}' is an adverb meaning endlessly.ogg
-'{adage}' is a noun meaning a proverb or wise saying.ogg
 '{adhere}' is a verb meaning to stick to or remain attach, or to be devoted as a follower or supporter.ogg
 '{adjacent}' is an adjective meaning near, next to or adjoining.ogg
 '{adjourn}' is a verb meaning to stop for a time or to move to another place.ogg
@@ -552,7 +547,6 @@ husband and wife.ogg
 '{adulterate}' is a verb meaning to make worse by the addition of something of lesser value.ogg
 '{adventitious}' is an adjective meaning resulting from chance, or accidental or not essential.ogg
 '{advent}' is a noun meaning an arrival or coming into existence.ogg
-'{adversary}' is a noun meaning an enemy or opponent.ogg
 '{adverse}' is an adjective meaning unfavorable or working against or hostile.ogg
 '{affable}' is an adjective meaning courteous or pleasant, sociable or easy to speak to.ogg
 '{affiliated}' is an adjective and participle meaning associated or connected.ogg
@@ -564,7 +558,6 @@ husband and wife.ogg
 '{aggrandize}' is a verb meaning to increase in greatness, power or wealth.txt
 '{aghast}' is an adjective meaning filled with amazement, disgust, fear or terror.ogg
 '{agitation}' is a noun meaning a violent movement, noisy confusion or excitement.ogg
-'{ajar}' may be used as an adjective or adverb meaning hardly open.ogg
 '{akin}' is an adjective meaning related by blood, or having similar characteristics or qualities.ogg
 '{alacrity}' is a noun meaning cheerful readiness or eager action.ogg
 '{alienate}' is a verb meaning to make hostile or to transfer.ogg
@@ -588,7 +581,14 @@ husband and wife.ogg
 '{devastate}' is a verb meaning 'to destrory' or 'lay waste'.ogg
 '{elusive}' is an adjective meaning 'difficult to catch or hold' or 'hard to explain or understand'.ogg
 '{generate}' is a verb meaning 'to bring into existence' or 'to be the cause of'.ogg
-'{ingratitude}' is a noun meaning 'a lack of thankfulness'.ogg
+{abdicate} is a verb meaning 'to resign' or 'to disown'.ogg
+{abridge} is a verb meaning to make shorter.ogg
+{abscond} is a verb meaning to run off and hide.ogg
+{acme} is a noun meaning the highest point.ogg
+{adage} is a noun meaning a proverb or wise saying.ogg
+{adversary} is a noun meaning an enemy or opponent.ogg
+{ajar} may be used as an adjective or adverb meaning hardly open.ogg
+{ingratitude} is a noun meaning 'a lack of thankfulness'.ogg
 >>> ../datae\audio\courses\{{Sadlier-Oxford Vocabulary Workshop}} ## us/{{}}
 a farewell.ogg
 a misfortune.ogg
@@ -1127,7 +1127,7 @@ Please, let us listen to the Mozart's piano concerto in A minor K. 310.txt
 Requiem ## course-.ogg
 Requiem ## course-.txt
 The second movement of the piano concerto no. 21 [concerto][piano concerto][Mozart].ogg
-Well, lets hear the aria. [aria][Mozart].ogg
+Well, let's hear the aria. [aria][Mozart].ogg
 >>> ../datae\audio\lectures {{ttc}}/Prof. Robert Greenberg - Great Masters.. The Schumanns
 !credit.txt
 As an example of Bach's Lutheran inspired.ogg
@@ -1355,7 +1355,7 @@ an Achilles heel.ogg
 beating around the bush.ogg
 BRB (be right back).ogg
 child~children [children].ogg
-cu ~ see you [+][CU].ogg
+cu (see you) [+][CU].ogg
 distance ## {2}.ogg
 dour ## {1}.ogg
 dour ## {2}.ogg
@@ -3450,8 +3450,8 @@ Maverick told people he considered branding cruelty to animals.ogg
 Maverick told people he considered branding cruelty to animals.txt
 Maverick was notorious for refusing to brand his own livestock.ogg
 Maverick was notorious for refusing to brand his own livestock.txt
-Maverick.ogg
-Maverick.txt
+Mmmmmaverick. Maverick, Maverick, Maverick.ogg
+Mmmmmaverick. Maverick, Maverick, Maverick.txt
 Petrichor (PEH-trih-kerr).ogg
 Petrichor (PEH-trih-kerr).txt
 So how about the enthusiastic expression.ogg
@@ -13670,7 +13670,6 @@ Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth
 ''Talking of axes,'' said the Duchess, ''chop off her head!''.ogg
 ''That's the reason they're called lessons,'' the Gryphon remarked..  ''because they lessen from day to day.'' [lessons].ogg
 ''Ugh!'' said the Lory, with a shiver..ogg
-''Well, if I must, I must,'' the King said, with a melancholy air. [must].ogg
 ''You!'' said the Caterpillar contemptuously.  ''Who are YOU~!'' [contemptuously].ogg
 A barrowful of WHAT~! [barrowful].ogg
 A mouse -- of a mouse -- to a mouse -- a mouse -- O mouse!.ogg
@@ -13695,7 +13694,7 @@ I gave her one, they gave him two.txt
 I move that the meeting adjourn, for the immediate adoption of more energetic remedies..ogg
 It's a mineral, I THINK..ogg
 It's a vegetable. It doesn't look like one, but it is. [vegetable].ogg
-It's always six o'clock now. [six o'clock].ogg
+It's always six o'clock now..ogg
 Let me see.. four times five is twelve.ogg
 Let me see.. four times five is twelve.txt
 London is the capital of Paris.ogg
@@ -13777,6 +13776,7 @@ Which way~! Which way~! [which].ogg
 Who are you~!.ogg
 Why your cat grins like that~!.ogg
 _Mary _Ann!  _Mary _Ann! [Mary Ann].ogg
+“Well, if I must, I must,” the King said, with a melancholy air. [must].ogg
 >>> ../datae\audiobooks/Carroll, Lewis - Through the Looking-Glass ## uk {{Cora McDonald}}
 !credit.txt
 ''BRILLIG'' means four o'clock in the afternoon -- the time when you begin BROILING things for dinner..ogg
@@ -14677,7 +14677,7 @@ goodbye to my sleep for this night anyhow.txt
 goodbye to my sleep for this night anyhow.wav
 He sighed aside.txt
 He sighed aside.wav
-Her name and address she then told with my tooraloom tooraloom tay. [address].wav
+Her name and address she then told with my tooraloom tooraloom tay. [address][tooraloo].wav
 I moved among them on the frozen Liffey.txt
 I moved among them on the frozen Liffey.wav
 I wish somebody would write me a loveletter.txt
@@ -15097,7 +15097,7 @@ Men, this gold is mine, for I earned it..wav
 Oh certainly..wav
 Oh! the metempsychosis! [metempsychosis].wav
 Oh, take medicine, take medicine! [medicine].wav
-Out of the trunk, the branches grow; out of them, the twigs. [twigs].wav
+Out of the trunk, the branches grow; out of them, the twigs..wav
 Philologically considered, it is absurd..wav
 Possibilities would become probabilities--every probability the next thing to a certainty..wav
 Prick ears, and listen!.wav
@@ -15461,8 +15461,8 @@ Ah! what a cynic you are! [cynic].ogg
 Ah! what a nuisance people's people are! [nuisance][people].ogg
 All crime is vulgar, just as all vulgarity is crime..ogg
 All influence is immoral..ogg
-Always.ogg
-Always.txt
+Always! That is a dreadful word. It makes me shudder when I hear it..ogg
+Always! That is a dreadful word. It makes me shudder when I hear it..txt
 And beauty is a form of genius---is higher, indeed, than genius, as it needs no explanation..ogg
 And the one charm of marriage is that it makes a life of deception absolutely necessary for both parties. [deception].ogg
 anybody can be good in the country.ogg
@@ -15816,7 +15816,7 @@ And yet you don't look at all stupid..wav
 As little as possible~! Who's to measure the possibility~!.wav
 Do you need a reward for an act of generosity~!.wav
 Do you think I'm so very easely pleased~!.wav
-I dont know what do you mean..wav
+I don't know what do you mean..wav
 I'd promise almost anything..wav
 We judge from different points of view evidently..wav
 >>> ../datae\audiobooks {{$$librivox}}/James Fernald - English Synonyms and Antonyms
@@ -18168,7 +18168,7 @@ overpowering.wav
 palm-twitchingly mad.wav
 parachute.wav
 short changed.wav
-shouty capitals.wav
+shouty capitals ## course-.wav
 spill the beans.wav
 talkative.wav
 us.wav
@@ -18410,7 +18410,7 @@ all of gold ## course-.wav
 all the while.wav
 all unknowing.wav
 an apparition so strange that it was vaguely terrifying.wav
-and have no fear.wav
+and have no fear ## course-.wav
 arrests the attention sharply.wav
 as far as possible.wav
 as quickly as possible.wav
@@ -19018,7 +19018,7 @@ Constantly hitting shift puts a lot of strain on the ol’ hands. [Shift].wav
 Gosh hecking darn it!.wav
 HHOS (haha only serious) [HHOS][haha only serious].wav
 ICT (information and communications technologies) [ICT][information and communications technologies].wav
-ikr (“I know, right~!”) [ikr].wav
+ikr (I know, right~!) [ikr].wav
 It costs a lot of money to look this cheap..wav
 libra pondo, “a pound by weight” [libra][libra pondo][pound].wav
 Oh, that’s rather clever!.wav
@@ -19030,8 +19030,8 @@ Try it yourself sometime!.wav
 WAAF (Women's Auxiliary Air Force) [WAAF][Women's Auxiliary Air Force].wav
 Wait, um....wav
 What if you put a tiny drop of mercury with a lit candle in the free-falling elevator~!.wav
-WHEN YOU WRITE IN ALL CAPS IT SOUNDS LIKE YOU’RE SHOUTING.txt
-WHEN YOU WRITE IN ALL CAPS IT SOUNDS LIKE YOU’RE SHOUTING.wav
+WHEN YOU WRITE IN ALL CAPS IT SOUNDS LIKE YOU’RE SHOUTING ## course-.txt
+WHEN YOU WRITE IN ALL CAPS IT SOUNDS LIKE YOU’RE SHOUTING ## course-.wav
 “netiquette” for new “netizens” [netiquette][netizens].wav
 >>> ../datae\audiobooks--/Jenny Lawson - Let's Pretend This Never Happened ## us {{Jenny Lawson}}
 !credit.txt
@@ -19162,7 +19162,7 @@ Airy laughs and blowing into _Coke bottle tones of the {greater {prairie chicken
 Loud ''crow crow crow'' and ''car car car'' of the {American {crow}}..ogg
 Nervous mechanical trills and ''kip kip'' of the {white-winged {crossbill}}..ogg
 Rolling resonant rattle of the {sandhill crane}..ogg
-Short clucks and trumpety call of the  {American {coot}}..ogg
+Short clucks and trumpety call of the {American {coot}}..ogg
 Squeaks and catlike ''meaw'' of the {grey {catbird}}. [catlike].ogg
 Very high, thin, melodic whistle of the {brown {creeper}}..ogg
 Whistles, grunts and rattles of the {yellow-breasted {chat}}..ogg
@@ -19559,7 +19559,7 @@ not exactly but close.wav
 with a certain amount of success.wav
 African American Vernacular English (AAVE).wav
 And that, ladies and gentlemen, is quite a bit..wav
-Of course.....wav
+Of course....wav
 So, how do you like them apples~!.wav
 Watch out! You never know..wav
 Who dat say dey gonna beat dem Saints~!.txt
@@ -20542,7 +20542,7 @@ Railroad Crossing, look out for the cars. Can you spell that, without any R's~!.
 !credit.txt
 >>> ../datae\audiobooks--\Stephen Baxter - The Medusa Chronicles/{{}}
 an ambassador.wav
-Did you set this up, you old coot~!.wav
+Did you set this up, you old coot~! [+][set up].wav
 Look!.wav
 Martians.wav
 mobilis in mobili ## sic!.wav
@@ -23421,8 +23421,8 @@ Freeze! This is the police! ### [Adult-Male_Freeze-This-Is-The-Police_VKT_03070]
 Game on! ### [Teen-Fem-A_Game-On_VKT_13824].wav
 Gamma rays detected. ### Voice-Computer-Speaker-Female-Gamma-Rays-Detected_COMM-2274.wav
 Garbage in, garbage out. ### [Adult-Male-D_Garbage-In-Garbage-Out_VKT_04675].mp3
-gee whiz! ### Senior-Male-B_Gee-Whiz_VKT_13710.wav
-gee whiz! ### [Mid-Aged-Fem-C_Gee-Whiz_VKT_10788].wav
+Gee whiz! ### Senior-Male-B_Gee-Whiz_VKT_13710.wav
+Gee whiz! ### [Mid-Aged-Fem-C_Gee-Whiz_VKT_10788].wav
 Gee! ### CrowdReaction 1009_49_5.wav
 Gee! ### CrowdReaction 1009_49_6.wav
 Gee! ### [Mid-Aged-Fem-C_Gee_VKT_10787].wav
@@ -23530,7 +23530,7 @@ Have you got a light~! ### [Adult-Male-F_Have-You-Got-A-Light_VKT_05958].mp3
 Have you got the time~! ### [Adult-Fem-C_Have-You-Got-The-Time_VKT_00917].mp3
 Having a wonderful time. Wish you were here. ### [Senior-Male-A_Having-A-Wonderful-Time_VKT_13307].wav
 He did it! ### [Child-Fem-B_He-Did-It_VKT_06852].wav
-He he he, yeah ok. ### HUMAN-VOCAL_GEN-HDF-15440.wav
+He he he, yeah okay. ### HUMAN-VOCAL_GEN-HDF-15440.wav
 He he he, yeah, right. ### HUMAN-VOCAL_GEN-HDF-15441.wav
 He is so cute! ### [Teen-Fem-A_He-Is-So-Cute_VKT_13843].wav
 He who hesitates is lost. ### Mid-Aged-Male-A_He-Who-Hesitates-Is-Lost_VKT_11248.wav
@@ -24216,9 +24216,9 @@ okay @ acknowledgment [acknowledgment] ### [Mid-Aged-Male-C_Okay_VKT_12247].wav
 okay @ agreement [agreement] ### [Adult-Male-C_Okay_VKT_04306].mp3
 okay @ attention getter [attention getter] ### [Adult-Male-F_Okay_VKT_06110].mp3
 okay @ interjection ### [Mid-Aged-Fem-C_Okay_VKT_10976].wav
+Okay, I guess. ### [Adult-Male-C_Okay-I-Guess_VKT_04307].mp3
+Okay, I guess. @ dejected ### [Teen-Male-A_Dejected-Okay-I-Guess_VKT_15217].wav
 Okay, stop it. ### [Child-Fem-B_Okay-Stop-It_VKT_07103].wav
-Okey, I guess. ### [Adult-Male-C_Okay-I-Guess_VKT_04307].mp3
-Okey, I guess. @ dejected ### [Teen-Male-A_Dejected-Okay-I-Guess_VKT_15217].wav
 Old habits die hard. ### [Mid-Aged-Fem-C_Old-Habits-Die-Hard_VKT_10981].wav
 On the ground, now! Face down, hands behind your head! ### Mid-Aged-Male-A_On-The-Ground-Now-Face-Down_VKT_11393.wav
 once in a blue moon ### [Senior-Fem-B_Once-In-A-Blue-Moon_VKT_13031].wav
@@ -25077,7 +25077,7 @@ You wish! ### [Teen-Male-A_You-Wish_VKT_15617].wav
 You won't do better anywhere else. ### [Adult-Male-D_You-Wont-Do-Better-Anywhere-Else_VKT_05281].mp3
 You young whippersnapper! ### [Senior-Male-B_You-Young-Whippersnapper_VKT_13770].wav
 You'd better be sure about that. ### [Adult-Fem-D_Youd-Better-Be-Sure-About-That_VKT_02048].mp3
-You'll need to take that up with the boss. ### [Mid-Aged-Male-C_Youll-Need-To-Take-That-The-Boss_VKT_12354].wav
+You'll need to take that up with the boss. [+][take up] ### [Mid-Aged-Male-C_Youll-Need-To-Take-That-The-Boss_VKT_12354].wav
 You'll need to take that up with your manager. ### [Mid-Aged-Fem-B_Youll-Need-To-Take-That-Manager_VKT_10692].wav
 You're a brat! ### [Adult-Male-A_Youre-A-Brat_VKT_03490].mp3
 You're bad! ### [Child-Fem-A_Youre-Bad_VKT_06680].wav
@@ -26484,6 +26484,14 @@ liturgy ## qrop l26 r4.jpg
 peak ## qrop l7 r26.jpg
 Pope John Paul II [Holy Communion][Communion][Eucharist] ## qrop l22 t4 r15 b4.jpg
 Trace, _Okavango Delta, _Botsvana [elephantine][trace@step] ## date 2006 ## qropt!.jpg
+>>> ../datae\photo b/Beaton {{Photo.. Cecil Beaton}}
+Actress Audrey Hepburn Wearing My Fair Lady Costume [Audrey][hatted].jpg
+Baba Beaton, c.1929 [Beaton].jpg
+Cecil Beaton arriving with his sisters for the cricket match between Eton and Harrow [Beaton] {{}}.jpg
+Jean-Paul Sartre [Sartrean].jpg
+Model Reading a Large Folio [folio].jpg
+Sir Cecil Beaton [Beaton] ## date 1974 {{Photo.. John Hedgecoe}}.jpg
+Twiggy on a Plinth [plinth].jpg
 >>> ../datae\photo b/Bell {{Photo.. Gary Bell}}
 thorny devil [thorny] ## qrop l16 r17.jpg
 >>> ../datae\photo b/Belmonte photocuisine {{Photo.. Belmonte}}
@@ -26842,6 +26850,8 @@ Paris. Saint Germain des Prés. Brasserie Lipp. 1969 [miniskirts][miniskirt] ## 
 Queen _Charlotte's Ball, _London, 1959 [waltz] ## qrop qb.jpg
 >>> ../datae\photo c/Chabaneix {{Photo.. De Chabaneix}}
 crushing herbs in mortar [mortar] ## qrop t6 b15 ## qropt!.jpg
+>>> ../datae\photo c/Chancel {{Photo.. Philippe Chancel}}
+DPRK [North Korean][Democratic People's Republic of Korea] ## date 2005.jpg
 >>> ../datae\photo c/Ciol {{Photo.. Elio Ciol}}
 corncobs drying in bundles [+].jpg
 Detail of Coat of Arms from an Italian Renaissance Bookbinding with Velvet and Inlaid Silverwork [coat of arms] ## qrop t7 b3 ## qropt!.jpg
@@ -26868,7 +26878,7 @@ underwater beds [spa] ## date 2010 ## qrop qr.jpg
 >>> ../datae\photo c/Costi {{Pthoto.. Eleonora Costi}}
 Abandoned Mental institution in Lombardia [abandoned] ## qrop l12 r22.jpg
 Abandoned Villa in Emilia-Romagna [abandoned][Emilia-Romagna][emilia-romagna] ## qrop l20 r13.jpg
-Abandoned Villa [abandoned] ## qrop l7 t1 r13.jpg
+abandoned villa [abandoned] ## qrop l7 t1 r13.jpg
 Basilica of Sacré-Cœur de Montmartre (Sacred Heart of Montmartre) [Montmartre][montmartre] ## crop t4 b11 ## qropt!.jpg
 >>> ../datae\photo c/Cowans {{Photo.. Adger Cowans}}
 Mouthpiece and Hands [mouthpiece] ## date 1980's ## noqrop.jpeg
@@ -26912,6 +26922,14 @@ The Bath [bath] ## date 1952.jpg
 The Unmade Bed [unmade bed][unmade] ## date 1957 ## qrop l2 r16 ## qropt!.jpg
 Three Heads and Four Hands [dolls] ## date 1964.jpg
 umbrella handle and hand [handle] ## date 1932.jpg
+>>> ../datae\photo c/Schiller {{Photo.. Charles Schiller}}
+baked sweet potatoes [sweet potato][batata].jpg
+radicchio [Italian chicory][chicory@Italian].jpg
+roasted onions [roasted].jpg
+shakshuka.jpg
+sweet potatoes [yam@sweet potato].jpg
+tomatoes.jpg
+twine @ thread.jpg
 >>> ../datae/photo def
 >>> ../datae\photo def/Davey {{Photo.. Sean Davey}}
 A bodysurfer inside a perfect wave at Keiki beach in Hawaii [bodysurfing][bodysurfer] ## qrop l3 r30.jpg
@@ -27156,6 +27174,10 @@ The skeleton of a {Gaboon viper} ## date 1952.jpg
 >>> ../datae\photo def/Feinstein {{Photo.. Barry Feinstein}}
 Janis Joplin, ''Pearl'' album cover, 1970 [Joplin].png
 William Wyler's Oscar [Oscar].jpg
+>>> ../datae\photo def/Fenn {{Photo.. Al Fenn}}
+Boxer Rocky Marciano {signing a contract} for a fight with Joe Louis.jpg
+Polio vaccine production, 1955 [polio][poliomyelitis].jpg
+turbulence [turbulent].jpg
 >>> ../datae\photo def/Fenot photocuisine {{Photo.. E. Fenot}}
 ham, cheese and vegetables cooked in {wax paper}.jpg
 spoonful of chickpeas [chickpeas] ## qrop t19 b6 ## qropt!.jpg

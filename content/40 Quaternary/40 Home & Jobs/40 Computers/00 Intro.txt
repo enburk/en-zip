@@ -3,5 +3,6 @@ computers
 ---
 fetch
 : Fetch me my gloves this moment!
-prefetch = to load data in anticipation of their need  
+prefetch = to load data in anticipation of their need
+
 

@@ -50,5 +50,13 @@ tread pattern                 # 10+
 jettison                      # 12+
 : Turn handle to jettison door! # 12+
 
+===
+arrive                        /// French
+depart                        /// French
+===
+
+: Flight 219 has now arrived.
+: Flight 291 is now arriving at gate 3.
+
 
 

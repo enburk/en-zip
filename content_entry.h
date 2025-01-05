@@ -131,6 +131,9 @@ namespace content::out
             if (s.contains("~~"))
             errors += "~~";
 
+            if (s.contains("_"))
+            errors += "_";
+
             if (false)
             if (s.contains(","))
             errors += ",";

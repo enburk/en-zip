@@ -7,6 +7,7 @@ tanker @ ship         = танкер                                     # 10+
 ---
 barge @ boat          = баржа                                      # 10+
 barge @ warship       = барка                                      # 10+
+trawler               = траулер
 ---
 [sailing] yacht       = яхта
 [motor] yacht         = яхта
@@ -56,6 +57,7 @@ sonar                 = сонар, гидролокатор                    
 hydroacoustics        = гидроаккустика                             # TECH- # TERM- # 14+
 echolocation          = эхолокация                                 # TECH- # TERM- # 14+ /// у летучих мышей тоже
 compass @ nautical    = компас  %% ''в жаргоне моряков:'' компа́с
+
 
 
 

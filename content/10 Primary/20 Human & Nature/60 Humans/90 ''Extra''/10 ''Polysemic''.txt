@@ -21,12 +21,21 @@ brunet|brunette @ brown  = шатен/шатенка                            
 sanguine @ temperament   = сангвинический, ~ оптимистичный              # TERM- # 14+
 sanguine @ face          = румяный ~ (о лице)                           # TERM- # 14+
 sanguine @ art           = сангина, ~ рисунок сангиной                  # TERM- # 14+
+***
+solid @ adjective        = твердый, сплошной, прочный, крепкий, ~ основательный, надежный, солидный
+solid @ body             = твердое тело
+solid @ math             = трехмерная фигура
+***
+fortune @ luck           = удача, счастье, ~ счастливый случай
+fortune @ future         = судьба
+fortune @ wealth         = богатство, состояние
 
 ===
 ***
 mummy(1) @ corpse        = мумия                                        # 10+ /// , ~ иногда: мумифицировать
 mummy(2) {Br.} @ mother %% Am. mommy = мамочка %% детское                           # 10+
 : Follow the Mummy
+
 
 
 

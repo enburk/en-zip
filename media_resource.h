@@ -102,18 +102,16 @@ namespace media
                 str(path)));
 
             abstract = title;
+            abstract.replace_all("_", "");
             if (sense != "")
             abstract += "@" +
                 sense;
 
             entries += links.split_strip_by("][");
             options += optio.split_strip_by("##");
+            entries.erase_all("="); // voicebunny processing legacy
             entries.erase_all("");
             options.erase_all("");
-
-            // voicebunny processing legacy
-            std::erase_if(entries, [](auto s)
-                { return s == "="; });
         }
 
         str opt (str kind) const

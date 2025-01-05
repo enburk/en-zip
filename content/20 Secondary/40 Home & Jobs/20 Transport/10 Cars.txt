@@ -39,6 +39,6 @@ oversize load                 # 10+
 
 car repair
 
-driving licence ~ {Britain}
-driver's license ~ {US}
-driver's licence ~ {Australia, Canada, New Zealand}
+driving licence %% {Britain}
+driver's license %% {US}
+driver's licence %% {Australia, Canada, New Zealand}

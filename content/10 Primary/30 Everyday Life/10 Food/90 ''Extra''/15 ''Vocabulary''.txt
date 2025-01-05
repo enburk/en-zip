@@ -23,6 +23,12 @@ shrimp @ food           = креветка, креветки
 
 ===
 ---
+fat @ food              = жир, жирный, ~ сало, растительное масло
+fat @ rich              = обильный, богатый, ~ выгодный, доходный
+: When times are good and fortune smiles
+
+===
+---
 sweet                   = сладкий, милый, ~ нежный, приятный
 sweets                  = сладости, конфеты
 : Is that sweet or what?
@@ -46,6 +52,7 @@ full @ food             = сытый
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
 
 
 

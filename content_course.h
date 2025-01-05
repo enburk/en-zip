@@ -46,8 +46,13 @@ namespace content::out
             using logs::out;
             using logs::err;
 
-            if (level < 3)
-            out << "scan " + str(dir);
+            static int WORDS = 0, Words = 0, words = 0;
+            static int QUOTS = 0, Quots = 0, quots = 0;
+
+            if (level == 0) WORDS = 0, QUOTS = 0;
+            if (level == 1) Words = 0, Quots = 0;
+            if (level == 2) words = 0, quots = 0;
+
             for (path path: sys::paths(dir))
             {
                 str fn = is_directory(path) ?
@@ -120,12 +125,30 @@ namespace content::out
                     w, e.eng, e.link);
                 }
 
+                for (auto& e: topic.entries)
+                {
+                    if (e.eng == "") continue;
+                    if (e.eng.starts_with(":"))
+                    QUOTS++, Quots++, quots++; else
+                    WORDS++, Words++, words++;
+                }
+
                 for (auto chain:
                 topic.chains(entries))
                 unit.units += chain;
 
                 units += std::move(unit);
             }
+
+            str count = 
+            level == 0 ? str(WORDS) + " + " + str(QUOTS) :
+            level == 1 ? str(Words) + " + " + str(Quots) :
+            level == 2 ? str(words) + " + " + str(quots) :
+            "";
+
+            if (level <= 2)
+            out << "scan " + str(dir) + " " +
+            blue(italic(count));
 
             return units;
         }

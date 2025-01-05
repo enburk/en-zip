@@ -18,10 +18,16 @@ Aesop's Fables         = басни Эзопа                                  
 censure                = порицание, осуждение, ~ обвинительный приговор %% ''не'' цензура # 12+ /// ~~ порицать, осуждать
 censorship             = цензура                                             # 12+
 ***
+remark                 = замечание, наблюдение, ~ замечать, наблюдать
+remarkable             = замечательный
+: Will you please keep your impertinent remarks to yourself?
+: There are some remarkable documents that may be consulted.
+***
 literacy               = грамотность, осведомленность %% ''не'' литературность
 computer literacy      = компьютерная грамотность
 literally              = буквально, дословно %% ''не'' литературно
 literary               = литературный, ~ книжный, педантичный
+
 
 
 

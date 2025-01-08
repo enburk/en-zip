@@ -3,12 +3,27 @@ cards//card games = карточные игры
 card @ cards      = карта
 poker @ cards     = покер
 bluff @ cards     = блеф, обман ~ притворяться, блефовать
-joker @ cards     = джокер                 /// (шут, joke -- шутка)
+joker @ cards     = джокер                       /// (шут, joke -- шутка)
 
 ===
 
-whist             = вист                   # HISTORY+ # 16+ /// диалектизм (ирл.) тихо!, тихий, тишина и т.п.
+whist             = вист                         # HISTORY+ # 16+
 piquet            = пикет %% старинная карточная игра # HISTORY+ # 16+ /// фр.
+
+===
+gambling          = азартная игра, ~ игра на деньги # HEAD
+===
+
+casino            = казино
+blackjack         = блэкджек|блек-джек
+
+zero @ roulette   = зеро %% нулевой сектор рулетки # TERM-
+Russian roulette  = русская рулетка
+
+===
+
+lottery           = лотерея
+jackpot           = джекпот                      /// (куш, самый крупный выигрыш)
 
 
 

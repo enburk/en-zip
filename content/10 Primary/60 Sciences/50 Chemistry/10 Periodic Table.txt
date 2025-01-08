@@ -20,7 +20,7 @@ zirconium             = цирконий               # TERM- # 16+
 titanium              = титан                  # 10+
 chromium              = хром                   # 10+
 cobalt                = кобальт                # TERM+ # 16+
-nickel                = никель                 # 10+
+nickel @ metal        = никель                 # 10+
 zinc                  = цинк                   # 10+
 molybdenum            = молибден               # TERM+ # 16+
 iridium               = иридий                 # TERM+ # 16+
@@ -54,5 +54,6 @@ xenon headlights      = ксеноновые фары
 ===
 
 transuranium elements = трансурановые элементы # TERM- # 16+
+
 
 

@@ -53,6 +53,8 @@ namespace studia
             cache = "../data/!detail";
             cache /= stem + ext;
 
+            std::filesystem::remove(cache);
+
             array<byte> video_bytes;
             array<byte> audio_bytes;
             if (media::videoexts.contains(ext))

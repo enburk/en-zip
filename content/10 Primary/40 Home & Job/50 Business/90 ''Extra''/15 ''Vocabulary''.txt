@@ -10,7 +10,7 @@ job
 : Nice job! @ gloomy
 : Huh, nice job!
 : Excellent job!
-: Great job!
+: Great job! @@
 : Great job! @ sarcastic
 
 ---
@@ -35,7 +35,7 @@ pay               = платить
 : Will that be cash or credit?
 coin @ money      = монета
 ---
-How much?         = Сколько?
+How much? @@      = Сколько?
 How much is that? = Сколько это стоит?
 : Um, how much is that?
 ---
@@ -51,6 +51,7 @@ profit            = польза, выгода
 profit/profits    = прибыль, доход
 : The result is a colossal profit, ~ which comes to me.
 : Profits are the reward for risk.
+
 
 
 

@@ -5,4 +5,6 @@ fetch
 : Fetch me my gloves this moment!
 prefetch = to load data in anticipation of their need
 
+: You cannot teach beginners top-down programming, because they don't know which end is up. ~ – C A R Hoare
+: Multithreading is just one damn thing after, before, or simultaneous with another. ~ – Andrei Alexandrescu
 

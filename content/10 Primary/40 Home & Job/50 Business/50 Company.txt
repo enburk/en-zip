@@ -3,7 +3,6 @@ company @ business = компания
 corporation        = корпорация                                   # 10+
 consortium         = консорциум                                   # 18+
 cartel             = картель                                      # 18+
-syndicate          = синдикат                                     # 18+
 startup [company]  = стартап                                      # POLIT- # 10+
 
 holding company    = холдинговая компания                         # POLIT+ # TERM+ # 18+

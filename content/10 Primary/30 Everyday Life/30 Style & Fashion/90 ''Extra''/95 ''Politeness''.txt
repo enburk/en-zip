@@ -1,8 +1,8 @@
 politeness = вежливость, учтивость
 
-: Please!
+: Please! @@
 : Please?
-: Yes, please.
+: Yes, please. @@
 : Yes, please!
 
 : Can I help you?
@@ -11,9 +11,9 @@ politeness = вежливость, учтивость
 : Could you help me, please?
 : You could help a little.
 
-: Thank you.
+: Thank you. @@
 : Thank you very much!
-: You're welcome.
+: You're welcome. @@
 : You are very welcome.
 : Fine, thank you.
 : No, thank you.

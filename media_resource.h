@@ -114,6 +114,13 @@ namespace media
             options.erase_all("");
         }
 
+        generator<str> Entries ()
+        {
+            co_yield abstract;
+            for (str e: entries)
+            co_yield e;
+        }
+
         str opt (str kind) const
         {
             for (str o: options)

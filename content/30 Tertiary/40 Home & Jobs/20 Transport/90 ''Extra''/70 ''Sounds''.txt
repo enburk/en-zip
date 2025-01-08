@@ -19,7 +19,6 @@ sounds
 
 : small boat anchor # SOUND
 : steamship whistle # SOUND
-: steam train whistle blast # SOUND
 : train arrives at station # SOUND
 
 : airplane: close canopy # SOUND

@@ -153,19 +153,42 @@ namespace studio::one
             }
 
             for (auto& r: resources)
+            for (auto& e: r.Entries())
             {
-                if (r.sense == "") continue;
-                str abstract = simple(r.
-                    abstract);
-
-                str dummy = 
-                abstract.extract_from("@");
+                str entry = e;
+                str sense = entry.extract_from("@");
+                if (sense == "") continue;
 
                 if (r.kind == "video"
                 or  r.kind == "audio"
                 and r.options.contains("sound"))
-                videos[abstract][&r] = false; else
-                audios[abstract][&r] = false;
+                videos[entry][&r] = false; else
+                audios[entry][&r] = false;
+            }
+
+            // add sensless to them also
+
+            for (auto& r: resources)
+            for (auto& e: r.Entries())
+            {
+                str entry = e;
+                str sense = entry.extract_from("@");
+                if (sense != "") continue;
+
+                if (r.kind == "video"
+                or  r.kind == "audio"
+                and r.options.contains("sound"))
+                {
+                    if (videos.contains(entry))
+                        videos[entry][&r] =
+                        false;
+                }
+                else
+                {
+                    if (audios.contains(entry))
+                        audios[entry][&r] =
+                        false;
+                }
             }
 
             for (auto& entry: entries)
@@ -212,14 +235,11 @@ namespace studio::one
             }
 
             for (auto& r: resources)
+            for (auto& e: r.Entries())
             {
-                if (r.sense != "") continue;
-                str abstract = simple(r.
-                    abstract);
-
-                str sense = 
-                abstract.extract_from("@");
-                str s = abstract;
+                str entry = e;
+                str sense = entry.extract_from("@");
+                if (sense != "") continue;
 
                 bool videolike = false
                 or  r.kind == "video"
@@ -229,19 +249,19 @@ namespace studio::one
                 auto& medios = videolike ?
                     videos : audios;
 
-                if (medios.contains(s)
-                or  vocabs.contains(s) and videolike)
+                if (medios.contains(entry)
+                or  vocabs.contains(entry) and videolike)
                 {
                     report::errors += bold(
                     red("sensless: ")) +
                     link(&r);
 
-                    if (vocabs.contains(s))
-                    for (auto [e,_]: vocabs[s])
+                    if (vocabs.contains(entry))
+                    for (auto [e,_]: vocabs[entry])
                     report::errors += link(e);
 
-                    if (medios.contains(s))
-                    for (auto [r,_]: medios[s])
+                    if (medios.contains(entry))
+                    for (auto [r,_]: medios[entry])
                     report::errors += link(r);
                 }
             }

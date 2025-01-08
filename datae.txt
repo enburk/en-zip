@@ -6198,7 +6198,7 @@ Franciscans [=].wav
 frau.wav
 freestyle.wav
 fricassee.wav
-frisbee [=].wav
+Frisbee.wav
 frondeur [=].wav
 fräulein [fraulein].wav
 fuchsia.wav
@@ -6957,7 +6957,7 @@ massage [=].wav
 massive [=].wav
 Mastiff.wav
 matador.wav
-material @ adjective.wav
+material.wav
 materialism.wav
 materialist [=].wav
 materialization [=].wav
@@ -8059,7 +8059,7 @@ Scorpius [=].wav
 Scotch.wav
 Scotland [=].wav
 scout [=].wav
-scrabble [=].wav
+Scrabble.wav
 scrape [=].wav
 scream.wav
 scroll [=].wav
@@ -8419,7 +8419,7 @@ synapse ## {2} ### [si-nAps].wav
 synchronous.wav
 syncopation.wav
 syncretistic.wav
-syndicate.wav
+syndicate @ noun.wav
 syndrome.wav
 synecdoche.wav
 synergetics.wav
@@ -14036,7 +14036,7 @@ But the questions remained..wav
 But we've a long way to go..wav
 Do you think anybody's going to believe it~!.wav
 Failure is not an option..wav
-Good Lord!.wav
+Good _Lord!.wav
 Have you really no idea how unlikely this scenario is~!.wav
 Homo troglodytes troglodytes, humankind's nearest cousins.wav
 How bad will this be~!.wav
@@ -15898,6 +15898,7 @@ What do you take me for~! How dare you make such a proposal to me~!.wav
 What is it~!.wav
 >>> ../datae\audiobooks {{$$librivox}}/{{$$Cori Samuel}}
 >>> ../datae\audiobooks {{$$librivox}}\{{$$Cori Samuel}}/1 ## Case
+2nite ## sic!.wav
 a chance meeting.wav
 a charlatan.wav
 a cloud.wav
@@ -16025,6 +16026,8 @@ at this time.wav
 atmosphere.wav
 aunt.wav
 avaunt.wav
+B @ text.wav
+b4 ## sic!.wav
 back [].wav
 backs.wav
 bad habit.wav
@@ -17041,6 +17044,7 @@ twilight.wav
 two months.wav
 two.wav
 types.wav
+U @ text.wav
 ubiquitous.wav
 umbrella.wav
 unambitious.wav
@@ -17062,6 +17066,7 @@ uphill.wav
 upon my word.wav
 upon the whole.wav
 Upper Burma ## course-.wav
+ur @ text.wav
 us.wav
 used.wav
 useless.wav
@@ -17159,7 +17164,7 @@ For _God's sake!.wav
 Go on, go on!.wav
 Go on..wav
 Good heavens!.wav
-Good _Lord! ### 1.wav
+Good _Lord!.wav
 He paused. ## course-.wav
 He says that he has a splendid idea..wav
 He sighed..wav
@@ -17254,6 +17259,7 @@ Why not indeed~!.wav
 Why not~!.wav
 Why~! [].wav
 Why~!.wav
+Y @ text.wav
 Yes, I could..wav
 Yes..wav
 Yet in what a way!.wav
@@ -21039,9 +21045,9 @@ parp ### ParpDonk CRT2016901.wav
 parp ### ParpDonk CRT2016902.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound/boom-blast
 blam ### BlamCrashDebris CRT2016101.wav
-blast ### Blasts EC07_64_1.wav
-blast ### Explosion MIX64_50_14.wav
-blast ### Explosions-Blast-Ext-Medium_B01-04989.wav
+blast @ explosion ### Explosions-Blast-Ext-Medium_B01-04989.wav
+blast @ gun ### Explosion MIX64_50_14.wav
+blasts ## course- ### Blasts EC07_64_1.wav
 boom ### BoomsExplosions EC09_51_2.wav
 chains rattle ### Chains-Rattle_OBIN_305.wav
 chug ### Chugs SFX01_28_1.wav
@@ -22954,6 +22960,7 @@ Give it to me! ### [Teen-Male-B_Give-It-To-Me_VKT_15674].wav
 It's not my fault. ### [Teen-Male-C_Its-Not-My-Fault_VKT_16149].wav
 Just a minute! ### [Adult-Fem-D_Just-A-Minute_VKT_01652].mp3
 Just in the nick of time. ### [Mid-Aged-Male-A_Just-In-The-Nick-Of-Time_VKT_11322].wav
+K @ text ### [Child-Fem-B_Okay_VKT_07097].wav
 Never mind. ### [Adult-Male-D_Never-Mind_VKT_04894].mp3
 Of course! ### [Adult-Fem-D_Of-Course_VKT_01733].mp3
 okay ### [Child-Fem-B_Okay_VKT_07097].wav
@@ -23491,6 +23498,7 @@ Gotcha! ### Adult-Fem-D_Gotcha_VKT_01501.mp3
 Gotcha! ### Adult-Male-E_Gotcha_VKT_05397.mp3
 Gotcha! ### Senior-Fem-A_Gotcha_VKT_12507.wav
 Gotta light~! ### [Adult-Male-F_Gotta-Light_VKT_05949].mp3
+gr8 ### [Mid-Aged-Fem-A_Great_VKT_10153].wav
 Great idea! ### [Adult-Fem-D_Great-Idea_VKT_01505].mp3
 Great idea! ### {pix} ### [Teen-Male-C_Great-Idea_VKT_16044].wav
 Great job! ### [Adult-Male-F_Great-Job_VKT_05950].mp3
@@ -23962,6 +23970,7 @@ Keep your shirt on! ### [Adult-Male-C_Keep-Your-Shirt-On_VKT_04241].mp3
 Keep your shirt on! @ emphatic ### Adult-Male-A_Emphatic-Keep-Your-Shirt-On_VKT_03199.mp3
 Kind of. ### [Child-Very-Young-Male-A_Kind-Of_VKT_09414].wav
 Knock-knock! ### Child-Fem-C_Knock-Knock_VKT_07508.wav
+l8r ### [Adult-Male-C_Later_VKT_04243].mp3
 Later! ### [Adult-Male-C_Later_VKT_04243].mp3
 Lay in a course! ### Mid-Aged-Male-A_Lay-In-A-Course_VKT_11326.wav
 Leave her alone! @ horrified ### Adult-Male_Horrified-Leave-Her-Alone_VKT_03073.mp3
@@ -24362,6 +24371,7 @@ rough ### Adult-Fem-D_Rough_VKT_01781.mp3
 rough ### Adult-Male-F_Rough_VKT_06128.mp3
 rough ### Adult-Male-F_Rough_VKT_06129.mp3
 >>> ../datae\audiohero {{$audiohero.com}}/s
+cu ## sic! ### [Senior-Male-A_See-You_VKT_13521].wav
 S'up~! ### [Teen-Fem-D_S-Up_VKT_15055].wav
 S21... S21... Control to S21. ### Police-Dispatcher-Fem_S21-Call_VKT_16611.wav
 Same old, same old. ### [Adult-Male-C_Same-Old-Same-Old_VKT_04328].mp3
@@ -26501,6 +26511,8 @@ pumpkin {gnocchis} with argan oil and dandelion.jpg
 red cabbage, apple and walnut salad [red cabbage] ## qrop t19 r1 b15.jpg
 risotto with {Swiss chards}.jpg
 soba with artichokes and horseradish [soba].jpg
+>>> ../datae\photo b/Besnyo {{Photo.. Eva Besnyö}}
+Boy with a cello, Hungary, 1931 [cello][busker].jpg
 >>> ../datae\photo b/Bichon photocuisine {{Photo.. F. Bichon}}
 a bunch of garlic [garlic] ## qrop qb.jpg
 Dublin Bay {prawns}.jpg
@@ -27063,7 +27075,7 @@ subway @ metro ## qrop q.jpg
 >>> ../datae\photo def/Duca photocuisine {{Photo.. A. Duca}}
 Basque cake [cake] ## qrop q.jpg
 beef consommé with quenelles [consommé] ## qrop qb.jpg
-cake ## qrop qb ### Barranx cake.jpg
+cake @ dessert ## qrop qb ### Barranx cake.jpg
 cassoulet ## qrop qb ### Grand-Mere Doladille.jpg
 ceps à la béarnaise [à la béarnaise][dish@food].jpg
 chicken parmentier [parmentier][hash@food].jpg
@@ -27258,6 +27270,9 @@ spoonful of saffron threads and spoonful of {saffron} powder.jpg
 St. Peter's fish ({John Dory}) [St Pierre][Peter's Fish][Saint Pierre fish].jpg
 tasty {squid}.jpg
 tasty {squid}.jpg.uid-zps
+>>> ../datae\photo def/Fontana {{Photo.. Franco Fontana}}
+Imaginary Landscape, Puglia, Italy [Puglian] ## date 1995.jpg
+Untitled [guitar-shaped] ## sic!.jpg
 >>> ../datae\photo def/Food & Drink photocuisine {{Photo.. Food & Drink}}
 brownie with a scoop of vanilla ice cream [brownie] ## qrop t12 b13.jpg
 caramelized poultry with physalis [caramelized][poultry][physalis@food] ## qrop qt.jpg
@@ -27890,7 +27905,7 @@ tarantula [arachnid] ## date 1988.jpg
 >>> ../datae\photo mn\Mapplethorpe {{Photo.. Robert Mapplethorpe}}/[Mapplethorpian]
 baby's breath [gypsophila][Gypsophila].jpg
 Chest [chest] ## date 1987.png
-gun blast [+][revolver][[discharge@firearm] ## date 1985 ## crop qb ## qropt!.jpg
+gun blast [+][revolver][[discharge@firearm][blast@firearm] ## date 1985 ## crop qb ## qropt!.jpg
 leg @ human %% _Lisa _Lyon ## date 1981.jpg
 Pictures [writing][wrote][written][write, wrote, written] ## date 1977 ## qrop qt ### Self Portrait.jpg
 Self Portrait [knifemen] ## date 1983.jpg
@@ -28523,7 +28538,7 @@ Country Doctor [slump] ## qrop t8 b23.jpg
 Dance of the Flaming Coke [coke@coal] ## date 1955 ## qrop l20 r14 ## qropt!.png
 Leaping rubber explosively created from butadiene gas in bottle [butadiene].jpg
 Minamata disease.jpg
-U.S. Marines blasting out a cave on Hill 382 during the Battle of Iwo Jima [blasting].jpg
+U.S. Marines blasting out a cave on Hill 382 during the Battle of Iwo Jima [blasting][blast@explosion].jpg
 Waiting for Survivors %% the sinking of the SS Andrea Doria [anticipation].jpg
 >>> ../datae\photo s/Smithson {{Photo.. Aline Smithson}}
 couple [embracing] ## qrop qb ### Undercover 2.jpg
@@ -29603,7 +29618,7 @@ crumpled newspaper [crumpled] ## qrop l17 r18 ## qropt! {{Photo.. Pemotret $drea
 cubes [cube] ## qrop l8 r25 {{Photo.. Ssphoto $dreamstime 341185}}.jpg
 digital ## qrop l6 r6 ## qropt! {{Photo.. Vetkit $dreamstime 55104825}}.jpg
 disposable plastic plates [disposable] ## qrop l3 r38 {{Photo.. Lobur $dreamstime 66292668}}.jpg
-distance ## qrop l27 r5 {{Photo.. Bokgallery $dreamstime 52724390}}.jpg
+distance @ measure ## qrop l27 r5 {{Photo.. Bokgallery $dreamstime 52724390}}.jpg
 divided ## qrop l22 r11 {{Photo.. Sergey Serdyuk $dreamstime 83715491}}.jpg
 Do not duplicate! [duplicate] ## qrop r18 ## qropt! {{Photo.. Josiah Garber $dreamstime 168199}}.jpg
 down feather [fluffy] ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 89869830}}.jpg
@@ -31445,9 +31460,8 @@ tap @ screw ## qrop l6 r28 {{Photo.. Josef Bosak $dreamstime 4103385}}.jpg
 tape measure [measuring tape] ## qrop ql {{Photo.. Costin79 $dreamstime 25496275}}.jpg
 tongue-and-groove pliers [water pump pliers][Multi-Grips][tongue-and-groove] ## qrop l1 t4 b40 {{Photo.. Bertold Werkmann $dreamstime 7507993}}.jpg
 toolbox [tool box] ## qrop l30 ## qropt! {{Photo.. Creasencesro $dreamstime 5229390}}.jpg
-tools ## qrop qr {{Photo.. Andydi $dreamstime 60023632}}.jpg
-tools ## qrop qr {{Photo.. Iurii Gud $dreamstime 70854604}}.jpg
 tools @ tech ## qrop qr {{Photo.. Andydi $dreamstime 60023632}}.jpg
+tools @ tech ## qrop qr {{Photo.. Iurii Gud $dreamstime 70854604}}.jpg
 vernier caliper with a bearing [vernier caliper][callipers][calipers] ## qrop l12 t1 r14 ## qropt! {{Photo.. Evgeny Kosharsky $dreamstime 65681603}}.jpg
 vice~vise [vice][vise] ## qrop t11 b20 {{Photo.. Alexander Klenov $dreamstime 80210134}}.jpg
 wheel brace [brace][lug wrench] {{Photo.. Iurii Gud $dreamstime 89903315}}.jpg
@@ -32266,7 +32280,7 @@ halo @ astronomy ## qrop l14 r20 ## qropt! {{Photo.. Crazybboy $dreamstime 44738
 Horsehead Nebula [horsehead] {{Photo.. Thyrymn $dreamstime 11869843}}.jpg
 Mauna Kea Observatory, Hawaii [observatory] ## qrop ql {{Photo.. Meisterphotos $dreamstime 35679491}}.jpg
 star trails ## qrop l10 r25 {{Photo.. Fotis Mavroudakis $dreamstime 28594298}}.jpg
-binary code @ qrop ql {{Photo.. Aleksandr Atkishkin $dreamstime 53789140}}.jpg
+binary code ## qrop ql {{Photo.. Aleksandr Atkishkin $dreamstime 53789140}}.jpg
 >>> ../datae\photo_dreamstime\science/biology
 a hybrid of blackberry and raspberry [hybrid] {{Photo.. Sundraw $dreamstime 34240503}}.jpg
 amaryllis stamens [stamen][stamens] ## qrop l8 r26 {{Photo.. Pixelklex $dreamstime 74967987}}.jpg

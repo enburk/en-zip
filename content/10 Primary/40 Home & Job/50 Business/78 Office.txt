@@ -8,7 +8,7 @@ shredder                   = шредер                                 # RARE
 stapler                    = степлер                                # 10+
 staple remover             = антистеплер                            # 10+
 
-cooler                     = кулер                                  # 10+
+cooler @ water             = кулер                                  # 10+
 
 ===
 photocopy                  = ксерокопия                             # 10+
@@ -35,5 +35,6 @@ novocaine                  = новокаин                               # 16
 heroin                     = героин                                 # 18+
 
 zipper %% Br. usually: zip = молния                                 # 10+ /// 8+
+
 
 

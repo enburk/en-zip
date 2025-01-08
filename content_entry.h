@@ -196,6 +196,7 @@ namespace content::out
 
             if (sense != "")
             for (str& v: vocabulary)
+            if (sense != v)
             v += "@" + sense;
         }
 

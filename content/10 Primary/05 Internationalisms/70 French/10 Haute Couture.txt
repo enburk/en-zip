@@ -10,6 +10,7 @@ blouse                    = блуза, блузка                       # 10+
 beret                     = берет                               # 14+
 pom-pon//pom-pom          = помпон
 buttonhole\\boutonniere   = бутоньерка                          # 12+
+---
 brooch ~ {esp.} {Br.}     = брошь                               # 10+
 broach/pin ~ {esp.} {Am.} = брошь                               # 10+
 bracelet                  = браслет

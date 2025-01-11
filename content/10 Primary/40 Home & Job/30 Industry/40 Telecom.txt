@@ -1,7 +1,7 @@
 telecommunications = телекоммуникации                           # 10+
 
-television ~ (TV)  = телевидение, телевизор
-programme\\program = программа %% ''в том числе'' телевизионная # 10+
+television ~ (TV) @ device = телевидение, телевизор
+programme\\program @ TV = программа %% ''в том числе'' телевизионная # 10+
 
 telephony          = телефония                                  # TECH+ # 10+
 phone//telephone   = телефон

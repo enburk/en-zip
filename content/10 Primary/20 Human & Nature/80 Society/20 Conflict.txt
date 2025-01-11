@@ -1,6 +1,6 @@
 conflict               = конфликт
 ---
-problem                = проблема, вопрос, задача
+problem @ socio               = проблема, вопрос, задача
 : What is his problem?
 : What is her problem?
 

@@ -16,7 +16,7 @@ owl                  = сова
 wild                 = дикий
 predator             = хищник
 prey                 = добыча
-fox                  = лиса
+fox @ animal                  = лиса
 bear                 = медведь
 
 elephant             = слон

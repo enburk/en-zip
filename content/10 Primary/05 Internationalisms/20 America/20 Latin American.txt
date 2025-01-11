@@ -2,7 +2,7 @@ Latin America = Латинская Америка # 10+
 Latin American ~ Spanish
 
 ranch         = ранчо             # 10+ /// American Spanish
-mustang       = мустанг           # 10+ /// Mexican Spanish
+mustang @ horse      = мустанг           # 10+ /// Mexican Spanish
 lasso         = лассо             # 10+ /// American Spanish
 machete       = мачете            # 10+ /// Spanish
 gringo        = гринго            # 16+ /// American Spanish

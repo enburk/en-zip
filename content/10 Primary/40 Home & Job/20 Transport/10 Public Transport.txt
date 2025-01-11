@@ -8,7 +8,7 @@ minibus             = микроавтобус
 school bus          = школьный автобус
 
 metro               = метро
-undeground\\subway  = метро
+undeground\\subway @ metro = метро
 the tube {Br.}      = метро
 
 ===
@@ -32,7 +32,7 @@ economy class       = эконом-класс                            # POLIT
 ===
 ---
 escalator           = эскалатор
-lift\\elevator      = лифт
+lift\\elevator @ transport      = лифт
 : His elevator doesn't go ~ all the way to the top.
 : Her elevator does not go ~ all the way to the top.
 

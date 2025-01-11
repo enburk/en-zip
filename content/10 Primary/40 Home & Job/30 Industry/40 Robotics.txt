@@ -4,7 +4,7 @@ robot              = робот
 android            = андроид
 cyborg             = киборг
 biobot             = биоробот
-drone              = дрон
+drone @ aero             = дрон
 
 ===
 

@@ -1,7 +1,7 @@
 Persia       = Персия                                                      # pix- # 8+
 Persian      = персидский                                                  # pix- # 8+
 
-caravan      = караван                                                     # 10+
+caravan @ camels      = караван                                                     # 10+
 caravanserai = караван-сарай                                               # 18+ /// caravansary ненорм.
 bazaar       = базар                                                       # 8+
 baksheesh    = бакшиш                                                      # 18+ /// backsheesh ненорм. или устар. но в Дракуле

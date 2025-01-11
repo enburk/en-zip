@@ -2,7 +2,7 @@ basic ~ vocabulary
 
 ---
 tools @ tech       = инструменты, ~ инструментарий
-axe\\ax            = топор
+axe\\ax @ tool           = топор
 hammer             = молоток
 nail @ tech        = гвоздь
 

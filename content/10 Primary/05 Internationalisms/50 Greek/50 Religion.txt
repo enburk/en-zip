@@ -1,8 +1,8 @@
 
-angel      = ангел                                  /// , в бизнесе: лицо, оказывающее финансовую поддержку /// angels (military slang) = altitude 1000 ft
+angel      = ангел                                  /// , в бизнесе: лицо, оказывающее финансовую поддержку
 archangel  = архангел
 basilica   = базилика                               # 18+
-icon|ikon  = икона
+icon|ikon @ religion = икона
 apotheosis = апофеоз, прославление, ~ обожествление # 16+
 apologist  = апологет                               # RARE+ # 18+
 demiurge   = демиург                                # 18+

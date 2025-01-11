@@ -18,7 +18,7 @@ drop @ water    = капля, капать, ~ падать, уронить
 river           = река
 lake            = озеро
 ---
-stone           = камень
+stone @ rock          = камень
 rock @ moutain  = скала, утёс
 rock @ stone    = камень, булыжник
 mountains       = горы
@@ -44,7 +44,7 @@ nuts @ fruits   = орехи
 winter          = зима
 spring @ season = весна
 summer          = лето
-autumn\\fall    = осень
+autumn\\fall @ season   = осень
 
 
 

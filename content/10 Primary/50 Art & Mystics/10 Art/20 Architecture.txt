@@ -15,7 +15,7 @@ pilaster            = пилястра/пилястр                   # RARE- 
 caryatid            = кариатида                          # 18+ /// (статуя женщины, поддерживающая антаблемент)
 
 arch @ art          = арка
-arcade              = аркада                             # 14+ /// French arcade, from Italian arcata ‎(“arch of a bridge”), from Latin arcus ‎(“arc”)
+arcade @ art              = аркада                             # 14+ /// French arcade, from Italian arcata ‎(“arch of a bridge”), from Latin arcus ‎(“arc”)
 
 balustrade @ art    = балюстрада                         # 14+ /// Borrowing from French balustrade, from Italian balaustrata
 baluster            = балясина

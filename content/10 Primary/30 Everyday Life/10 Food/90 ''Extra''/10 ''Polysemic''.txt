@@ -31,7 +31,7 @@ buffet [car]            = вагон-ресторан                       /// 
 buffet @ blow           = удар, ударять, ~ бороться
 ***
 leek                    = зелёный лук
-onion                   = репчатый лук
+onion @ fruit           = репчатый лук
 bow @ weapon            = лук ~ (оружие)
 bow @ fashion           = бант
 bow @ music             = смычок

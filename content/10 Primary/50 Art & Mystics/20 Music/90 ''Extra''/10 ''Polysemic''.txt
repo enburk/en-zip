@@ -30,6 +30,11 @@ tube @ music                  = туба
 passage @ music               = пассаж %% в музыке, литературе
 passage @ way                 = проход, проезд, переход
 passage @ corridor            = корридор, галерея
+***
+suite @ music                 = сюита                                                # 18+ /// гарнитур
+suite @ room            = апартаменты, ~ номер люкс
+suite @ kit = набор, комплект
+suite @ retinue = свита
 
 ===
 major @ music                 = мажор, мажорный

@@ -2,7 +2,6 @@ basic ~ vocabulary
 
 wheel              = колесо
 lorry\\truck @ car = грузовик
-bridge             = мост
 ---
 ticket @ transport = билет
 : Tickets, please!

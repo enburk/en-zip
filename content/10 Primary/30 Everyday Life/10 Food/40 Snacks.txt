@@ -1,6 +1,6 @@
 snack            = перекус, ~ легкая закуска
 
-crisps\\chips    = чипсы
+crisps\\chips @ crisps   = чипсы
 popcorn          = попкорн
 
 sandwich         = сэндвич

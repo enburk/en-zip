@@ -7,7 +7,7 @@ funicular               = фуникулёр                               # 10+
 ---
 tramway                 = трамвайные рельсы %% ''не'' трамвай
 tram/tramcar {Br.}      = трамвай
-streetcar/trolley {Am.} = трамвай
+streetcar/trolley {Am.} @ tram = трамвай
 aerial tramway          = канатная дорога                         /// ropeway
 ---
 depot @ facility        = депо, склад, ~ автобусный/троллейбусный парк # TERM- # 10+

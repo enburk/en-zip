@@ -1,7 +1,7 @@
 ***
 box(1) @ boxing              = боксировать %% бокс (вид спорта) -- boxing
 box(2) @ cuboid              = коробка, ящик
-post box\\mailbox            = почтовый ящик
+post box\\mailbox @ post box           = почтовый ящик
 box(2) @ booth               = будка, ложа
 box\\cup @ protector         = в спорте: защита паха ~ (ракушка)           # SPORT+ # 14+
 box @ TV %% {mainly} {Br.}   = разговорное: телевизор ~ (телек, ящик)
@@ -20,7 +20,7 @@ ring a gong                  = звонить в гонг                       
 round @ sport                = раунд, ряд, серия
 round @ circle               = круглый, округлый, ~ круг, окружность
 : The earth is round, like an orange.
-round {esp.} {Br.}\\{Am.} {usually} around = вокруг, кругом ~ (со всех сторон; по кругу)
+round {esp.} {Br.}\\{Am.} {usually} around @ around = вокруг, кругом ~ (со всех сторон; по кругу)
 : Stop beating '''around''' the bush. = Хватит ходить вокруг да около.
 round @ arm                  = заряд, патрон                               # WAR-
 round number                 = круглое число
@@ -33,7 +33,7 @@ clubs @ cards                = трефы                                       
 club [sandwich]
 ***
 court @ tennis               = корт
-court/courtyard              = (внутренний) двор
+court/courtyard @ courtyard              = (внутренний) двор
 court @ royal                = двор ~ (королевский)
 court @ legal                = суд, судебное заседание
 court @ love                 = добиваться расположения, ~ ухаживать (за женщиной) /// тупик, рисковать

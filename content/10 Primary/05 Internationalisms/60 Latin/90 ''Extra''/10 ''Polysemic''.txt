@@ -40,7 +40,7 @@ project @ extend %% verb  = выступать, выдаваться            
 reserve @ keep            = резерв, ~ запас, запасать
 reserve @ book            = резервировать, бронировать
 reserve Br. @ nature      = заповедник
-reserve (Canada)//reservation (US) = резервация
+reserve (Canada)//reservation (US) @ Indian = резервация
 reserve @ behaviour       = сдержанность
 
 ===

@@ -1,4 +1,4 @@
-football\\soccer            = футбол
+football\\soccer @ soccer           = футбол
 
 match @ soccer              = матч
 pass @ soccer               = пас, передача, передать
@@ -17,7 +17,7 @@ overtime @ soccer           = овертайм, ~ дополнительное �
 
 ===
 rugby                       = регби                  # 10+
-American football\\football = американский футбол
+American football\\football @ American football = американский футбол
 quarterback                 = квотербек              # SPORT+ # 14+
 touchdown                   = тачдаун                # SPORT- # 14+
 

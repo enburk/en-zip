@@ -46,7 +46,13 @@ sequence
 solution
 successor
 relation
+
+---
+cure
 remedy
+: Does it hurt? Yes. Shall I cure it? No.
+: Poisons the only cures. Remedy where you least expect it.
+
 response
 parcel
 parity
@@ -93,8 +99,9 @@ ability
 ---
 accept
 : No prophet is accepted in his own country.
-
+---
 access
+: Please, enter access code.
 
 glue
 increase
@@ -127,7 +134,6 @@ famous
 description
 edition
 elevation
-eminent
 event
 
 gratuity

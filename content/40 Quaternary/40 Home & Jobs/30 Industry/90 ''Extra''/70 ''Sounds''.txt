@@ -17,6 +17,7 @@ sounds
 
 : air pressure purge # SOUND
 : hydraulic valves release air and steam # SOUND
+: double spray burst # SOUND
 
 : aluminum extension ladder: retract # SOUND
 : extension ladder: climb up # SOUND

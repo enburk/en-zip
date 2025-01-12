@@ -17,7 +17,7 @@ wild                 = дикий
 predator             = хищник
 prey                 = добыча
 fox @ animal                  = лиса
-bear                 = медведь
+bear @ animal                = медведь
 
 elephant             = слон
 horse                = лошадь

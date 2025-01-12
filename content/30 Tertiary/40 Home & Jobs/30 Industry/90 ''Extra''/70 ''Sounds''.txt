@@ -10,7 +10,6 @@ sounds
 
 : servo # SOUND
 : pull start # SOUND
-: double spray burst # SOUND
 
 : shoemaker's workshop: shoe being patched # SOUND
 : cut wire snip # SOUND

@@ -1,7 +1,7 @@
 false ~ friends
 ***
 circle                     = окружность, круг %% ''не'' циркуль
-compass//pair of compasses = циркуль
+compass//pair of compasses @ draw = циркуль
 compass @ magnetic         = компас
 ***
 discreet                   = осторожный, сдержанный, ~ рассудительный %% не дискретный # MATH+ # 18+ /// ~~ неяркий, неброский

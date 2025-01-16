@@ -6,15 +6,15 @@ alley @ street              = переулок, проулок                  
 avenue @ street             = авеню                                # 10+
 avenue @ alley              = аллея, дорога ~ (ведущая к дому)     # 10+
 ***
-address @ noun %% noun      = адрес
-address @ verb %% verb      = адресовать, общаться ~ (к кому-либо)
-address @ attention         = обращать внимание, ~ решать вопросы, ~ принимать меры
+address @ noun %% {noun}      = адрес
+address @ verb %% {verb}      = адресовать, общаться ~ (к кому-либо)
+address @ attention         = обращать внимание, ~ сосредотачивать усилия
 address @ speech            = обращение ~ (официальная речь)
 ***
 terrace @ house             = терраса, веранда                     # 10+
 terrace @ geo               = терраса, насыпь                      # 10+
 ***
-bureau @ body %% plural: bureaus/bureaux = бюро, отдел, управление              # 10+
+bureau @ body %% {plural:} bureaus/bureaux = бюро, отдел, управление              # 10+
 bureau {Br.} @ furniture    = бюро, письменный стол                # 10+
 bureau {Am.} @ furniture Am = комод                                # 10+
 commode                     = комод                                # 10+

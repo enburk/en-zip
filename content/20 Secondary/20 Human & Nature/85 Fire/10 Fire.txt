@@ -13,8 +13,8 @@ candle
 extinguished candle
 grave candle//grave lantern
 
-burn %% verb
-smoulder\\smolder %% verb
+burn @ fire %% {verb}
+smoulder\\smolder %% {verb}
 
 firework
 sparkler
@@ -40,7 +40,7 @@ torches
 blowtorch %% Br. also blowlamp
 gas burner
 
-fuse
+fuse @ fire
 smoke bomb
 ---
 flare @ torch

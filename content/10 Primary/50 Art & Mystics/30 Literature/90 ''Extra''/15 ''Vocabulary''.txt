@@ -5,7 +5,7 @@ bookshelf %% plural: bookshelves = книжная полка
 fairytale = сказка
 
 paper     = бумага
-ink       = чернила
+ink @ writing      = чернила
 inkwell   = чернильница
 quill     = перо
 

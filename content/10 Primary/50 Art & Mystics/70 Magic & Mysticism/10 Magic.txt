@@ -1,7 +1,7 @@
 magic             = волшебство, магия, ~ магический
 
 magician          = маг
-robe/mantle       = мантия
+robe/mantle @ magic      = мантия
 ---
 charm @ charm     = чары, очарование, ~ очаровывать                       # duple # 10+
 charm @ amulet    = амулет, талисман                                      # 10+

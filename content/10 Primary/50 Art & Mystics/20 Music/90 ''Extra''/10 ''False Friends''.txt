@@ -1,7 +1,7 @@
 false ~ friends
 ***
 compositor        = наборщик %% ''не'' композитор             # 14+
-composer          = композитор %% шахматный и музыкальный     # pix- # 14+
+composer @ music  = композитор %% шахматный и музыкальный     # pix- # 14+
 compose @ create  = сочинять, писать %% музыкальное или литературное произведение # 16+
 compose @ merge   = составлять                                # 16+
 : Humanity is '''composed''' ~ of the dead and of the living. ~ The dead are much the more numerous. # 16+

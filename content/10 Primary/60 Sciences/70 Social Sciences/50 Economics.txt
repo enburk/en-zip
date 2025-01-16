@@ -41,7 +41,7 @@ quota @ economy       = квота                                              
 
 ===
 finances              = финансы, доходы, бюджет
-financier             = финансист
+financier @ job            = финансист
 ===
 
 central bank          = центральный банк

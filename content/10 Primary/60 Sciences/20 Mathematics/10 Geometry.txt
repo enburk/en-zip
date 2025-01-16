@@ -4,7 +4,7 @@ parallel                    = параллель, параллельный
 perpendicular               = перпендикуляр, перпендикулярный # 10+
 
 parallelogram               = параллелограмм                # 10+
-rhombus/diamond             = ромб                          /// rhomb не дают в словарях (Longman, Ox., Cam)
+rhombus/diamond @ geometry            = ромб                          /// rhomb не дают в словарях (Longman, Ox., Cam)
 trapezium\\trapezoid        = трапеция
 ellipse                     = эллипс                        # 10+ /// Greek
 pentagon                    = пятиугольник                  # 10+

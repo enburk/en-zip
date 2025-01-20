@@ -16,6 +16,9 @@ short          = короткий
 : short pasta
 : long pasta
 ---
+inch @ unit = дюйм
+: Why can’t your nose be 12 inches long? Because then it would be a foot.
+---
 large          = большой, крупный, ~ многочисленный
 huge           = огромный, громадный, ~ гигантский
 

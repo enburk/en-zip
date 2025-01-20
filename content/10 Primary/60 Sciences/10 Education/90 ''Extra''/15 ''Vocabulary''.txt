@@ -1,14 +1,22 @@
 basic ~ vocabulary
+
 ---
 digits            = цифры
 letters @ symbols = буквы
 letters @ papers  = письма
+
 ---
 pen @ tool        = ручка
 pencil            = карандаш
+
 ---
 homework          = домашняя работа
 : I don't want to do my homework! @@
+
+---
+lesson = урок, занятие, лекция, ~ вывод, опыт, мораль
+: “That's the reason they're called lessons,” the Gryphon remarked:  “because they lessen from day to day.”
+
 
 
 

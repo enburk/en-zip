@@ -1,20 +1,21 @@
-rails @ railroad        = рельсы, железная дорога                 # duple
+rails @ railroad      = рельсы, железная дорога                   # duple
 
-semaphore               = семафор
+semaphore             = семафор
 
-monorail                = монорельс %% монорельсовая железная дорога
-funicular               = фуникулёр                               # 10+
+monorail              = монорельс %% монорельсовая железная дорога
+funicular             = фуникулёр                                 # 10+
 ---
-tramway                 = трамвайные рельсы %% ''не'' трамвай
-tram/tramcar {Br.}      = трамвай
+tramway               = трамвайные рельсы %% ''не'' трамвай
+tram/tramcar {Br.}    = трамвай
 streetcar/trolley {Am.} @ tram = трамвай
-aerial tramway          = канатная дорога                         /// ropeway
+aerial tramway        = канатная дорога                           /// ropeway
 ---
-depot @ facility        = депо, склад, ~ автобусный/троллейбусный парк # TERM- # 10+
-depot {Am.} @ station   = станция %% автобусная или железнодорожная # 10+
+depot @ facility      = депо, склад, ~ автобусный/троллейбусный парк # TERM- # 10+
+depot {Am.} @ station = станция %% автобусная или железнодорожная # 10+
 
-draisine                = дрезина                                 # TECH- # 10+
-buffer @ train          = буфер                                   # TECH- # 16+
+draisine              = дрезина                                   # TECH- # 10+
+buffer @ train        = буфер                                     # TECH- # 16+
+
 
 
 

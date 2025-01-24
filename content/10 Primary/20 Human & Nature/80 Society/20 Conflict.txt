@@ -1,6 +1,6 @@
 conflict               = конфликт
 ---
-problem @ socio               = проблема, вопрос, задача
+problem @ socio        = проблема, вопрос, задача
 : What is his problem?
 : What is her problem?
 
@@ -26,6 +26,9 @@ conflict of interest   = конфликт интересов           # 16+
 categorically          = категорически                # 10+
 on principle           = из принципа, ~ принципиально # 10+ /// NEW
 
+===
+
+: I love scandals about other people, but scandals about myself don't interest me
 
 
 

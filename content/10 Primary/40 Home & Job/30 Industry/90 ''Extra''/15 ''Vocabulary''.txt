@@ -2,7 +2,7 @@ basic ~ vocabulary
 
 ---
 tools @ tech       = инструменты, ~ инструментарий
-axe\\ax @ tool           = топор
+axe\\ax @ tool     = топор
 hammer             = молоток
 nail @ tech        = гвоздь
 
@@ -19,6 +19,7 @@ corn {Am.} @ maize = кукуруза
 ===
 
 : Give us the tools, and we will finish the job.
+
 
 
 

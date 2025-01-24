@@ -21,7 +21,7 @@ callipers\\calipers %% plural # 10+
 magnifying glass
 safety goggles ~ and earplugs
 
-mallet                        # 10+
+mallet @ tool                       # 10+
 sledgehammer
 
 hook @ tech
@@ -43,7 +43,7 @@ shavings @ wood
 
 ===
 
-chain
+chain @ tech
 
 rope
 knot

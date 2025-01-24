@@ -1,5 +1,5 @@
 ===
-fitness @ physique                  = фитнесс
+fitness @ physique       = фитнесс
 ===
 
 aerobics                 = аэробика              # 14+
@@ -25,6 +25,7 @@ quadriceps               = квадрицепс            # TERM+ # 14+
 
 protein @ sport          = протеин               # SPORT+ # 16+
 anabolic steroids        = анаболические стероиды # SPORT+ # 16+ /// , informal: anabolics  , анаболики
+
 
 
 

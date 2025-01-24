@@ -41,7 +41,7 @@ quota @ economy       = квота                                              
 
 ===
 finances              = финансы, доходы, бюджет
-financier @ job            = финансист
+financier @ job       = финансист
 ===
 
 central bank          = центральный банк
@@ -61,6 +61,7 @@ futures               = фьючерс                                          
 consolidation         = консолидация, ~ укрепление, объединение               # POLIT+
 refinancing           = рефинансирование                                      # POLIT+
 fiscal                = фискальный                                            # POLIT+
+
 
 
 

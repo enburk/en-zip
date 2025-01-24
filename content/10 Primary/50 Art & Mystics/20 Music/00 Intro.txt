@@ -1,16 +1,17 @@
-music            = музыка, ноты
+music        = музыка, ноты
 
-musician         = музыкант
-motif            = мотив %% музыкальный, декоративный и др.
-melody           = мелодия
-composition      = композиция, ~ сочинение, произведение
+musician     = музыкант
+motif        = мотив %% музыкальный, декоративный и др.
+melody       = мелодия
+composition  = композиция, ~ сочинение, произведение
 
-tempo            = темп
-rhythm           = ритм
-metronome        = метроном # ART- # TERM- # 14+
-pause            = пауза
+tempo        = темп
+rhythm       = ритм
+metronome    = метроном # ART- # TERM- # 14+
+pause        = пауза
 
-concert hall     = концертный зал
+concert hall = концертный зал
+
 
 
 

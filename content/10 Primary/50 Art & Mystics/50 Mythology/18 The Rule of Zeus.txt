@@ -13,10 +13,10 @@ Olympians             = олимпийцы
 ===
 
 Apollo @ myth         = Аполлон
-Artemis/Diana @ myth        = Артемида/Диана %% Greek/Roman
-Ares/Mars @ myth            = Арес/Марс %% Greek/Roman                                /// Аре́с|А́рес [арэс]
+Artemis/Diana @ myth  = Артемида/Диана %% Greek/Roman
+Ares/Mars @ myth      = Арес/Марс %% Greek/Roman                                /// Аре́с|А́рес [арэс]
 Hephaestus/Vulcan     = Гефест/Вулкан %% Greek/Roman
-Hermes/Mercury @ myth       = Гермес/Меркурий %% Greek/Roman
+Hermes/Mercury @ myth = Гермес/Меркурий %% Greek/Roman
 Persephone/Proserpina = Персефона/Прозерпина %% Greek/Roman                     # 16+ /// |Proserpine
 ---
 Dionysus/Bacchus      = Дионис/Вакх/Бахус %% Greek/Roman                        # 16+
@@ -43,5 +43,6 @@ ambrosia              = амброзия %% пища богов
 nectar @ myth         = нектар %% напиток богов
 
 caduceus              = кадуце́й %% жезл Гермеса/Меркурия                        # RARE+ # 16+
+
 
 

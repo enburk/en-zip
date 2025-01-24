@@ -9,7 +9,7 @@ log @ tree  = the trunk of a dead tree
 log cabin   # duple
 log cake
 ===
-log/logbook = a detailed record of a voyage of a ship or aircraft
+log/logbook @ logbook = a detailed record of a voyage of a ship or aircraft
 log @ comp  = a chronological record of computer/network usage
 log in
 log out

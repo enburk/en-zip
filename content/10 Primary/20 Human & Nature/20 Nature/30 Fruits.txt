@@ -16,9 +16,10 @@ grapefruit        = грейпфрут
 mango             = манго
 olive             = олива, оливка, маслина /// греч. ἐλαία, лат. oliva
 nectarine         = нектарин   # RARE-
-physalis @ fruit         = физалис    # RARE+ # 18+
+physalis @ fruit  = физалис    # RARE+ # 18+
 pistachios        = фисташки
 pomegranate       = гранат
+
 
 
 

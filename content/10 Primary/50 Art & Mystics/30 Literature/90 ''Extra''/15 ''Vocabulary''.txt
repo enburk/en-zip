@@ -1,11 +1,12 @@
 basic ~ vocabulary
 
-book      = книга
+book          = книга
 bookshelf %% plural: bookshelves = книжная полка
-fairytale = сказка
+fairytale     = сказка
 
-paper     = бумага
-ink @ writing      = чернила
-inkwell   = чернильница
-quill     = перо
+paper         = бумага
+ink @ writing = чернила
+inkwell       = чернильница
+quill         = перо
+
 

@@ -9,7 +9,7 @@ hyacinth            = гиацинт                                 # RARE+
 hydrangea/hortensia = гортензия                               # RARE+ # 10+
 lavender            = лаванда                                 # 10+
 
-lotus @ flower               = лотос
+lotus @ flower      = лотос
 lily                = лилия
 water lily          = кувшинка
 calla [lily]        = калла                                   # 10+ /// (вовсе не лилия) /// ботаники этот вид больше в каллы не включают
@@ -22,6 +22,7 @@ narcissus %% plural: narcissus/narcissuses/narcissi = нарцисс            
 nasturtium          = настурция                               # RARE+ # 14+
 oleander            = олеандр                                 # RARE+ # 16+
 peony               = пион                                    # 14+
+
 
 
 

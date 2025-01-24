@@ -16,8 +16,8 @@ owl                  = сова
 wild                 = дикий
 predator             = хищник
 prey                 = добыча
-fox @ animal                  = лиса
-bear @ animal                = медведь
+fox @ animal         = лиса
+bear @ animal        = медведь
 
 elephant             = слон
 horse                = лошадь
@@ -44,6 +44,7 @@ wing @ bird          = крыло # duple
 tail @ animal        = хвост
 paw @ animal         = лапа
 fur @ amimal         = мех
+
 
 
 

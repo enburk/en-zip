@@ -7,7 +7,7 @@ farm @ agro       = ферма
 farmer            = фермер
 ---
 cowboy            = ковбой
-cow @ domestic              = корова                            /// запугивать
+cow @ domestic    = корова                            /// запугивать
 spur              = шпора, пришпоривать               # 10+
 
 plantation        = плантация                         # 10+
@@ -39,6 +39,7 @@ herbicides        = гербициды                         # TERM- # 18+
 aeration          = аэрация                           # TERM- # 18+
 
 extensive farming = экстенсивное земледелие           # POLIT- # TERM- # 18+
+
 
 
 

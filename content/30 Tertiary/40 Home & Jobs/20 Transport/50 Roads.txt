@@ -2,7 +2,7 @@ roads              # pix-
 
 ---
 crossroads %% plural: crossroads # 10+
-{Br.} {also} junction \\ {Am.} {also} intersection # 10+
+{Br.} {also} junction \\ {Am.} {also} intersection @ road # 10+
 box junction
 
 zebra crossing
@@ -20,7 +20,7 @@ left-hand traffic  # 10+
 speed bump %% {Br.} {also} speed hump, ~ sleeping policeman
 
 lane @ road        # 10+
-footpath {esp.} {Br.}\\{Am.} {usually} trail # 10+
+footpath {esp.} {Br.}\\{Am.} {usually} trail @ footpath # 10+
 
 exit @ road
 

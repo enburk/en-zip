@@ -17,7 +17,17 @@ B @ text  = be
 R @ text  = are
 K @ text  = okay
 
-LOL  ~ (laugh out loud)
+---
+LOL ~ (laugh out loud) @@
+: LOL @ l-o-l
+: LOL @ lol
+
+BTW ~ (by the way)
+OMG ~ (oh my god)
+WTF ~ (what the fuck?)
+
+===
+
 LMAO ~ (laughing my ass off)
 ROFL ~ (rolling on the floor laughing)
 
@@ -30,9 +40,5 @@ np  ~ (no problem)
 nvm ~ (never mind)
 ofc ~ (of course)
 jk  ~ (just kidding)
-
-BTW ~ (by the way)
-OMG ~ (oh my god)
-WTF ~ (what the fuck?)
 
 

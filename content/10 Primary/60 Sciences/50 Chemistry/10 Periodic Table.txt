@@ -43,7 +43,7 @@ inert gas//noble gas  = инертный газ           # 16+
 ===
 
 helium                = гелий                  # 16+
-neon @ gas                  = неон                   # 10+
+neon @ gas            = неон                   # 10+
 argon                 = аргон                  # TERM+ # 16+
 krypton               = криптон                # TERM+ # 16+
 radon                 = радон                  # TERM+ # 16+
@@ -54,6 +54,7 @@ xenon headlights      = ксеноновые фары
 ===
 
 transuranium elements = трансурановые элементы # TERM- # 16+
+
 
 
 

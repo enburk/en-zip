@@ -4,7 +4,7 @@ parallel                    = параллель, параллельный
 perpendicular               = перпендикуляр, перпендикулярный # 10+
 
 parallelogram               = параллелограмм                # 10+
-rhombus/diamond @ geometry            = ромб                          /// rhomb не дают в словарях (Longman, Ox., Cam)
+rhombus/diamond @ geometry  = ромб                          /// rhomb не дают в словарях (Longman, Ox., Cam)
 trapezium\\trapezoid        = трапеция
 ellipse                     = эллипс                        # 10+ /// Greek
 pentagon                    = пятиугольник                  # 10+
@@ -42,6 +42,7 @@ icosahedron                 = икосаэдр                      # MATH+ # 14
 
 Euclidean geometry          = Евклидова геометрия           # MATH- # TERM- # 16+
 postulate                   = постулат, постулировать       # MATH- # TERM- # 16+
+
 
 
 

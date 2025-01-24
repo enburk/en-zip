@@ -1,10 +1,11 @@
 plurals
 
-alumni = ''plural of'' ~ alumnus
-alumnae = ''plural of'' ~ alumna
+alumni                 = ''plural of'' ~ alumnus
+alumnae                = ''plural of'' ~ alumna
 
-syllabi//syllabuses = ''plural of'' ~ syllabus
+syllabi//syllabuses    = ''plural of'' ~ syllabus
 
 honorariums//honoraria = ''plural of'' ~ honorarium
 
-loci = ''plural of'' ~ locus
+loci                   = ''plural of'' ~ locus
+

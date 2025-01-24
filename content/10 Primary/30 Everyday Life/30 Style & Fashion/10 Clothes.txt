@@ -1,34 +1,35 @@
 clothes                  = одежда
 
-blazer                   = блейзер                                    # RARE+ # 18+
+blazer                   = блейзер # RARE+ # 18+
 ---
 jeans                    = джинсы
 pair of jeans            = пара джинсов
 
 shorts                   = шорты
-Bermudas//Bermuda shorts = бермуды                                    # RARE- # 10+
-leggings                 = лосины, легинсы                            # 16+
+Bermudas//Bermuda shorts = бермуды # RARE- # 10+
+leggings                 = лосины, легинсы # 16+
 breeches//britches       = бриджи
 
-pullover                 = пуловер                                    # 14+
+pullover                 = пуловер # 14+
 sweater {Am.}            = свитер
-cardigan                 = кардиган                                   # RARE+ # 16+
+cardigan                 = кардиган # RARE+ # 16+
 
 ===
 
-bikini                   = бикини                                     # 16+
-sarong                   = саронг                                     # RARE- # 18+
-pāreu|pareo              = парео                                      # RARE- # 18+
-tunic                    = туника                                     # 18+
+bikini                   = бикини  # 16+
+sarong                   = саронг  # RARE- # 18+
+pāreu|pareo              = парео   # RARE- # 18+
+tunic                    = туника  # 18+
 
-top @ clothing                     = топ/топик %% также любая другая одежда ~ для верхней части тела # 18+
-topless                  = топлес                                     # 18+
+top @ clothing           = топ/топик %% также любая другая одежда ~ для верхней части тела # 18+
+topless                  = топлес  # 18+
 
 ===
 uniform                  = униформа, форма
 school uniform           = школьная форма
 : Mama, that girl has a red cardigan! And that one, and that one...
-dress code               = дресс-код                                  # 14+
+dress code               = дресс-код # 14+
+
 
 
 

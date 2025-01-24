@@ -1,6 +1,6 @@
-cinema                = кинематография, кино ~ (искусство)           # 10+
+cinema                     = кинематография, кино ~ (искусство)           # 10+
 ===
-cinema\\movie theater @ movie theater     = кинотеатр
+cinema\\movie theater @ movie theater = кинотеатр
 cinematography             = кинематография, ~ кинематограф               # 10+
 ===
 
@@ -45,6 +45,7 @@ trailer @ cinema           = трейлер                                     
 ===
 
 happy ending               = хэппи-энд                                    # 10+
+
 
 
 

@@ -1,50 +1,51 @@
 basic ~ vocabulary
 
-rain            = дождь, ~ идти (о дожде)
-wind            = ветер
-sky             = небо
-cloud           = облако
-rainbow         = радуга
+rain                  = дождь, ~ идти (о дожде)
+wind                  = ветер
+sky                   = небо
+cloud                 = облако
+rainbow               = радуга
 ---
-sunrise         = восход
-sunset          = закат
-morning         = утро
-day             = день
-evening         = вечер
-night           = вечер, ночь # duple
+sunrise               = восход
+sunset                = закат
+morning               = утро
+day                   = день
+evening               = вечер
+night                 = вечер, ночь # duple
 
-ice             = лед
-drop @ water    = капля, капать, ~ падать, уронить
-river           = река
-lake            = озеро
+ice                   = лед
+drop @ water          = капля, капать, ~ падать, уронить
+river                 = река
+lake                  = озеро
 ---
 stone @ rock          = камень
-rock @ moutain  = скала, утёс
-rock @ stone    = камень, булыжник
-mountains       = горы
-hill            = холм
+rock @ moutain        = скала, утёс
+rock @ stone          = камень, булыжник
+mountains             = горы
+hill                  = холм
 ---
-sea             = море
-surf @ waves    = прибой
-shell/seashell  = раковина
-sand            = песок
+sea                   = море
+surf @ waves          = прибой
+shell/seashell        = раковина
+sand                  = песок
 ---
-forest          = лес
-oak             = дуб
-maple           = клен
-pine            = сосна
-spruce          = хвойное дерево, ~ ель
-grass           = трава
+forest                = лес
+oak                   = дуб
+maple                 = клен
+pine                  = сосна
+spruce                = хвойное дерево, ~ ель
+grass                 = трава
 
-berries         = ягоды
-mushrooms       = грибы
-nuts @ fruits   = орехи
+berries               = ягоды
+mushrooms             = грибы
+nuts @ fruits         = орехи
 
 ---
-winter          = зима
-spring @ season = весна
-summer          = лето
-autumn\\fall @ season   = осень
+winter                = зима
+spring @ season       = весна
+summer                = лето
+autumn\\fall @ season = осень
+
 
 
 

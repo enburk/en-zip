@@ -1,11 +1,12 @@
-transport @ noun %% noun = транспорт                    /// `transport
-transport @ verb %% verb = перевозить, транспортировать /// tran`sport
+transport @ noun %% noun = транспорт                           /// `transport
+transport @ verb %% verb = перевозить, транспортировать        /// tran`sport
 
 tunnel                   = тоннель/туннель
-viaduct                  = виадук                       # RARE- # 18+
+viaduct                  = виадук                              # RARE- # 18+
 
-transit @ transport                 = перевозка, проезд, ~ транзит, транзитный # 14+
-transcontinental         = трансконтинентальный         # 14+
+transit @ transport      = перевозка, проезд, ~ транзит, транзитный # 14+
+transcontinental         = трансконтинентальный                # 14+
+
 
 
 

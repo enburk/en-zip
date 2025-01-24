@@ -9,7 +9,7 @@ crushed velvet        = a lustrous velvet with a patterned appearance
 ***
 grate @ grill         = grill
 grate @ grater        = using a grater
-: grating             # SOUND
+: grating @ grater             # SOUND
 grating @ drain       = drain cover
 : light traffic over metal grate # SOUND
 grating @ harsh %% <adjective> = ''(of a sound)'' harsh and unpleasant
@@ -52,7 +52,7 @@ counter clockwise
 ***
 dial @ scale          = a graduated, circular scale over which a needle moves to show a measurement
 dial @ clock          = a clock face
-dial/sundial
+dial/sundial @ sundial
 dial @ phone          = a disk with finger holes on a telephone
 dial @ verb %% <verb> = to use a dial or a telephone
 : dialing 100         # SOUND

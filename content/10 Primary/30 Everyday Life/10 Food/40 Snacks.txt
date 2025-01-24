@@ -1,25 +1,26 @@
-snack            = перекус, ~ легкая закуска
+snack                  = перекус, ~ легкая закуска
 
-crisps\\chips @ crisps   = чипсы
-popcorn          = попкорн
+crisps\\chips @ crisps = чипсы
+popcorn                = попкорн
 
-sandwich         = сэндвич
-toast @ food     = тост, гренок, ~ подрумяниваться
-pâté             = паштет              /// нем. Pastete
-hummus|houmous   = хумус               # 16+
-cracker          = крекер
-croutons         = гренки, сухарики, ~ крутоны # RARE+ # 16+
+sandwich               = сэндвич
+toast @ food           = тост, гренок, ~ подрумяниваться
+pâté                   = паштет        /// нем. Pastete
+hummus|houmous         = хумус         # 16+
+cracker                = крекер
+croutons               = гренки, сухарики, ~ крутоны # RARE+ # 16+
 
 ---
-sausage @ thin   = сосиска
-sausage @ middle = сарделька
-sausage @ thick  = колбаса
-liver sausage    = ливерная колбаса    # 14+
-sausage tree     = колбасное дерево
+sausage @ thin         = сосиска
+sausage @ middle       = сарделька
+sausage @ thick        = колбаса
+liver sausage          = ливерная колбаса # 14+
+sausage tree           = колбасное дерево
 
 ===
 
-betel leaves     = листья бетеля       # RARE+ # 18+
+betel leaves           = листья бетеля # RARE+ # 18+
+
 
 
 

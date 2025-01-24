@@ -14,7 +14,7 @@ quay ''vs'' ~ pier ''vs'' ~ dock
 ===
 
 quay
-pier
+pier @ jetty # duple
 dock @ pier # duple
 wharf
 jetty

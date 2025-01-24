@@ -27,7 +27,7 @@ fuel filler flap
 dashboard @ car               # 10+
 ---
 seat @ car
-seat belt
+seat belt||seatbelt
 ---
 tyre\\tire @ car
 spare tyre\\spare tire

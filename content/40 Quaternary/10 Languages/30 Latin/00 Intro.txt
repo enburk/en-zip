@@ -9,7 +9,9 @@ commemoration
 assault
 burglar
 interrogation
+---
 testimony
+: DO YOU SWEAR that the testimony you are about to give
 ---
 prosecution
 : TRESPASSERS WILL BE PROSECUTED
@@ -17,6 +19,9 @@ prosecution
 prosperity
 commodity
 conscription
+---
+receive
+: Glad to hear what~! asked Jenny, emerging suddenly like a cuckoo from a clock
 ---
 usury
 usurer
@@ -99,7 +104,10 @@ premise
 depiction
 desolation
 frustum
+---
 devastation
+: The image of devastation and death
+
 proximity
 caption = the descriptive heading or title
 

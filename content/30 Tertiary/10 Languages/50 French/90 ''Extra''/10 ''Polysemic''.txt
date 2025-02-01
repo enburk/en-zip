@@ -9,7 +9,7 @@ crushed velvet        = a lustrous velvet with a patterned appearance
 ***
 grate @ grill         = grill
 grate @ grater        = using a grater
-: grating @ grater             # SOUND
+: grating @ grater    # SOUND
 grating @ drain       = drain cover
 : light traffic over metal grate # SOUND
 grating @ harsh %% <adjective> = ''(of a sound)'' harsh and unpleasant
@@ -57,5 +57,6 @@ dial @ phone          = a disk with finger holes on a telephone
 dial @ verb %% <verb> = to use a dial or a telephone
 : dialing 100         # SOUND
 : We're sorry, it is not neccessary to dial a one.
+
 
 

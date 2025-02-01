@@ -198,6 +198,8 @@ namespace studio::one
 
             if (used
             or  abstract.size() < 2
+            or  r.options.contains("=")
+            or  r.options.contains("==")
             or  r.options.contains("sic!")
             or  r.options.contains("course-")
             or  course_vocabulary_forms.

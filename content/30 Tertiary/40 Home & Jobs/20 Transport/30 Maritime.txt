@@ -15,6 +15,6 @@ quay ''vs'' ~ pier ''vs'' ~ dock
 
 quay
 pier @ jetty # duple
-dock @ pier # duple
+dock @ pier  # duple
 wharf
 jetty

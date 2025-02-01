@@ -1,0 +1,22 @@
+rifles
+
+---
+stock @ rifle
+buttplate||butt plate
+
+handguard||hand guard
+swivel @ rifle
+
+front sight @ rifle
+rearsight||rear sight
+
+---
+bolt @ rifle
+cocking handle
+lever @ rifle
+
+===
+
+: semi-automatic rifle: cocking charge lever # SOUND
+: rifle: bolt jam # SOUND
+

@@ -140,8 +140,7 @@ namespace studio::one
         {
             for (auto& entry: entries)
             {
-                if (entry.sense == ""
-                or  entry.sense == "@")
+                if (entry.sense == "")
                     continue;
 
                 for (str s: entry.vocabulary)
@@ -159,14 +158,13 @@ namespace studio::one
                 str sense = entry.extract_from("@");
                 if (sense == "") continue;
 
-                if (r.kind == "video"
-                or  r.kind == "audio"
-                and r.options.contains("sound"))
+                if (r.videolike())
                 videos[entry][&r] = false; else
                 audios[entry][&r] = false;
             }
 
-            // add sensless to them also
+            // add sensless also
+            // for listing of examples
 
             for (auto& r: resources)
             for (auto& e: r.Entries())
@@ -175,20 +173,12 @@ namespace studio::one
                 str sense = entry.extract_from("@");
                 if (sense != "") continue;
 
-                if (r.kind == "video"
-                or  r.kind == "audio"
-                and r.options.contains("sound"))
-                {
-                    if (videos.contains(entry))
-                        videos[entry][&r] =
-                        false;
-                }
-                else
-                {
-                    if (audios.contains(entry))
-                        audios[entry][&r] =
-                        false;
-                }
+                auto& medios = r.videolike() ?
+                    videos : audios;
+
+                if (medios.contains(entry))
+                    medios[entry][&r] =
+                    false;
             }
 
             for (auto& entry: entries)
@@ -196,9 +186,11 @@ namespace studio::one
                 if (entry.sense == "@") continue;
                 if (entry.sense == "")
                 {
+                    bool head = entry.opt.external.contains("HEAD");
+
                     for (str s: entry.vocabulary)
                     if (audios.contains(s)
-                    or  videos.contains(s))
+                    or  videos.contains(s) and not head)
                     {
                         report::errors += bold(
                         red("sensless: ")) +
@@ -234,6 +226,8 @@ namespace studio::one
                 }
             }
 
+            hashset<str> reported;
+
             for (auto& r: resources)
             for (auto& e: r.Entries())
             {
@@ -241,17 +235,16 @@ namespace studio::one
                 str sense = entry.extract_from("@");
                 if (sense != "") continue;
 
-                bool videolike = false
-                or  r.kind == "video"
-                or  r.kind == "audio"
-                and r.options.contains("sound");
-
-                auto& medios = videolike ?
+                auto& medios = r.videolike() ?
                     videos : audios;
 
                 if (medios.contains(entry)
-                or  vocabs.contains(entry) and videolike)
+                or  vocabs.contains(entry) and r.videolike())
                 {
+                    if ( // prevent multiple reports
+                    reported.contains(entry)) continue;
+                    reported.emplace(entry);
+
                     report::errors += bold(
                     red("sensless: ")) +
                     link(&r);

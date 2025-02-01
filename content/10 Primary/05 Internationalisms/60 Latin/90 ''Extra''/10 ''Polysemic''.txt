@@ -14,8 +14,8 @@ argument @ quarrel        = спор, ссора                      # 10+
 apparatus @ device        = оборудование, ~ аппарат, прибор
 apparatus @ bureaucratic  = государственный аппарат          # 14+
 ***
-comfort @ noun            = комфорт
-comfort @ verb            = утешение, утешать
+comfort @ pleasure        = комфорт
+comfort @ relieve         = утешение, утешать
 ***
 vulgar @ obscene          = вульгарный, пошлый, грубый       # 14+
 vulgar @ popular          = простонародный, ~ обыкновенный, банальный # 14+
@@ -55,6 +55,7 @@ sense @ meaning           = смысл, значение                  # 10+
 common sense//good sense  = здравый смысл                    # 10+
 nonsense                  = нонсенс                          # 10+
 : Nonsense!
+
 
 
 

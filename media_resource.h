@@ -137,6 +137,19 @@ namespace media
             return s;
         }
 
+        bool videolike () const
+        {
+            return
+            kind == "video" or
+            kind == "audio" and
+            options.contains("sound");
+        }
+
+        bool audiolike () const
+        {
+            return not videolike();
+        }
+
         str text () const
         {
             str s = title;

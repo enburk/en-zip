@@ -98,13 +98,13 @@ I will return, yes I will return ## course-.txt
 >>> ../datae\audio\## song/Beatles, The - All My Loving
 Close your eyes and I'll kiss you ## course-.ogg
 Close your eyes and I'll kiss you ## course-.txt
-I'll pretend That I'm kissing.ogg
-I'll pretend That I'm kissing.txt
+I'll pretend That I'm kissing ## course-.ogg
+I'll pretend That I'm kissing ## course-.txt
 >>> ../datae\audio\## song/Beatles, The - All together now
 All together now....ogg
 >>> ../datae\audio\## song/Beatles, The - And I Love Her
-Bright are the stars that shine.ogg
-Bright are the stars that shine.txt
+Bright are the stars that shine ## course-.ogg
+Bright are the stars that shine ## course-.txt
 >>> ../datae\audio\## song/Beatles, The - Carry that weight
 Boy, you gotta carry that weight.ogg
 Boy, you gotta carry that weight.txt
@@ -118,8 +118,8 @@ Beep beep'm beep beep yeah.txt
 Is there anybody going to listen to my story.ogg
 Is there anybody going to listen to my story.txt
 >>> ../datae\audio\## song/Beatles, The - It Won't Be Long
-Since you left me I'm so alone.ogg
-Since you left me I'm so alone.txt
+Since you left me I'm so alone ## course-.ogg
+Since you left me I'm so alone ## course-.txt
 >>> ../datae\audio\## song/Beatles, The - Maxwell's silver hammer
 Joan was quizzical, studied pataphysical.ogg
 Joan was quizzical, studied pataphysical.txt
@@ -153,13 +153,13 @@ What would you think if I sang out of tune.txt
 >>> ../datae\audio\## song/Beatles, The - Yellow Submarine
 And our friends are all on board.ogg
 And our friends are all on board.txt
-As we live a life of ease.ogg
-As we live a life of ease.txt
+As we live a life of ease ## course-.ogg
+As we live a life of ease ## course-.txt
 We all live in our yellow submarine ## course-.ogg
 We all live in our yellow submarine ## course-.txt
 >>> ../datae\audio\## song/Beatles, The - Yesterday
-Suddenly, I'm not half to man I used to be.ogg
-Suddenly, I'm not half to man I used to be.txt
+Suddenly, I'm not half to man I used to be ## course-.ogg
+Suddenly, I'm not half to man I used to be ## course-.txt
 Why she had to go I don't know she wouldn't say.ogg
 Why she had to go I don't know she wouldn't say.txt
 Yesterday, all my troubles seemed so far away ## course-.ogg
@@ -207,7 +207,7 @@ sitar.ogg
 barf.ogg
 bite apple [apple][crunching].ogg
 cock-a-doodle-doo.ogg
-dial.ogg
+dial @ phone.ogg
 ding dong.ogg
 >>> ../datae\audio\## sound/freesfx.co.uk
 >>> ../datae\audio\## sound\freesfx.co.uk/animals
@@ -224,7 +224,7 @@ whale [whalesong][whale].mp3
 brush off ## =.mp3
 brush.mp3
 clearing throat.mp3
-coin.mp3
+coin @ money.mp3
 coins.mp3
 >>> ../datae\audio\## sound\freesfx.co.uk/doors
 close.mp3
@@ -234,9 +234,9 @@ creakily.mp3
 creaking.mp3
 knock.mp3
 knocking.mp3
-latch [].mp3
-latch.mp3
-lock.mp3
+latch @ door [].mp3
+latch @ door.mp3
+lock @ door.mp3
 prison cell [prison cell][jail cell].mp3
 shut [shut][shutting].mp3
 squeak.mp3
@@ -264,7 +264,7 @@ burst out laughing.mp3
 buzz [buzz][buzzes][buzzed][buzzing].ogg
 chewing gum mouth open [chewing][chewing gum].ogg
 chiming pottery.ogg
-coins dropped on wooden floor [coin][coins].ogg
+coins dropped on wooden floor [coin@money][coins].ogg
 cracking peanuts.mp3
 creaking wood [creak][creaks][creaky][creaking].ogg
 dial-up connection [dial-up][modem].ogg
@@ -277,7 +277,7 @@ mobile phone interference ## crop 0-15 ## fade out.mp3
 popping bubble wrap ## crop 0-15 ## fade out.mp3
 purring cat [+][purr].mp3
 rivulet ## fade out.mp3
-scrubbing [scrub][scrubbing].ogg
+scrubbing [scrub@brush][scrubbing].ogg
 sheep ## crop 0-15 ## fade out.mp3
 shopping mall cashier ## crop 0-17 ## fade out.mp3
 snapping twig.mp3
@@ -288,7 +288,7 @@ start up car with seat belt warning beep.mp3
 sticky tape [sticky tape].ogg
 supermarket.. price scan.mp3
 thunder ## fade out.ogg
-ticking [tick][ticks][ticked][ticking].ogg
+ticking [tick@clock][ticks][ticked][ticking].ogg
 toilet.. flush [+][flush toilet].ogg
 traffic jam.ogg
 weep.ogg
@@ -508,8 +508,6 @@ husband and wife.ogg
 '{abate}' is a verb that has several meanings.txt
 '{abhor}' is a verb meaning to regard with horror or to hate deeply.ogg
 '{abyss}' is a noun meaning a deep or bottomless pit.ogg
-'{acculturation}' is a noun meaning the modification of social patterns, traits or structures.ogg
-'{acculturation}' is a noun meaning the modification of social patterns, traits or structures.txt
 '{acquiesce}' is a verb meaning to accept without protest or to submit.ogg
 '{acute}' is an adjective with several meanings including.ogg
 '{acute}' is an adjective with several meanings including.txt
@@ -542,6 +540,8 @@ husband and wife.ogg
 {accommodate} is a verb meaning to do a favor or service for.txt
 {accomplice} is a noun meaning someone who takes part in a crime.ogg
 {accrue} is a verb meaning to grow or accumulate in the course of time or to happen as a natural result.ogg
+{acculturation} is a noun meaning the modification of social patterns, traits or structures.ogg
+{acculturation} is a noun meaning the modification of social patterns, traits or structures.txt
 {acme} is a noun meaning the highest point.ogg
 {acquit} is a verb meaning to declare not guilty or discharge completely or to conduct oneself.ogg
 {acrid} is an adjective meaning harsh in taste or odour, or sharp in manner or temper.ogg
@@ -726,7 +726,7 @@ politics.ogg
 portfolios.ogg
 possible.ogg
 problem.ogg
-project.ogg
+projects.ogg
 responsive.ogg
 shortlived.ogg
 similarly.ogg
@@ -960,7 +960,7 @@ Sticks and stones can break my bones.ogg
 Sticks and stones can break my bones.txt
 The buck stops here..ogg
 Turn right, go straight, turn left -- look, we're here..ogg
-What a project! [project].ogg
+What a project!.ogg
 What chaos! [chaos].ogg
 What happened there~!.ogg
 What's up~!.ogg
@@ -1064,8 +1064,8 @@ _C minor chord heard low in the piano [C minor][c minor].ogg
 !credit.txt
 I just want to play you the exposition.ogg
 I just want to play you the exposition.txt
-If this doesn't twiddle whatever needs to be.ogg
-If this doesn't twiddle whatever needs to be.txt
+If this doesn't twiddle whatever needs to be twaddled than you are not twiddleable..ogg
+If this doesn't twiddle whatever needs to be twaddled than you are not twiddleable..txt
 On the piano a glissando is playing.ogg
 On the piano a glissando is playing.txt
 So, Wolfgang Christian Gottlieb.ogg
@@ -1142,8 +1142,8 @@ The Arabesque, Op.18 [Arabesque][arabesque][Schumann].ogg
 >>> ../datae\audio\lectures {{ttc}}/Prof. Steven Pollock - Great Ideas of Classical Physics ## us
 !credit.txt
 Let's consider a spherical cow..ogg
-Some people think that Columbus.ogg
-Some people think that Columbus.txt
+Some people think that Columbus discovered that the _Earth is round.ogg
+Some people think that Columbus discovered that the _Earth is round.txt
 >>> ../datae\audio\lectures {{ttc}}/{{}}
 >>> ../datae\audio\lectures {{ttc}}\{{}}/_Prof. Anne Curzan ## us
 >>> ../datae\audio\lectures {{ttc}}\{{}}\_Prof. Anne Curzan ## us/1
@@ -1650,7 +1650,7 @@ put the screws on -- use force, or the threat of force, to get what you want.ogg
 put~stick the knife in -- to do or say something unpleasant to someone.ogg
 put~throw a spanner in the works -- to do something that causes another thing to fail or to go badly.ogg
 raise a few eyebrows -- to surprise people.ogg
-ride out the storm, weather the storm  -- to continue existing during a difficult period.ogg
+ride out the storm, weather the storm -- to continue existing during a difficult period.ogg
 roll up your sleeves -- to get ready for work.ogg
 rule the roost -- to be the most powerful person in an organisation.ogg
 run with the hare and hunt with the hounds -- to support two competing sides in an argument.ogg
@@ -1724,6 +1724,7 @@ What does a cannibal call a phone book~! A menu..ogg
 What does a pelican have in common with someone who spends a lot~! They both have large bills..ogg
 What is more useful after it is broken~! An egg..ogg
 What is the capital of Nebraska~! -- That's easy. It’s ‘N’..ogg
+What is the capital of Nebraska~! -- That's easy. It’s ‘N’..txt
 What kind of shoes do you make from banana skins~! Slippers..ogg
 What lies in a pram and wobbles~! A jelly baby..ogg
 What musical instrument did the ancient _Britons play~! The Anglo Saxophone..ogg
@@ -1732,7 +1733,7 @@ What’s on television tonight~! The same as always.. a vase of flowers and a bo
 What’s the difference between _Chinese food and _Italian food.ogg
 What’s the difference between _Chinese food and _Italian food.txt
 What’s white and goes up~! A confused snowflake..ogg
-What’s worse than a giraffe with a sore throat~! A centipede with sore feet.ogg
+What’s worse than a giraffe with a sore throat~! A centipede with sore feet..ogg
 Where do Aliens keep their sandwiches~! In a “launch” box..ogg
 Where would you send a sick mule.ogg
 Where would you send a sick mule.txt
@@ -2288,7 +2289,7 @@ authenticity.ogg
 average.ogg
 awkwardness.ogg
 axe.ogg
-B.ogg
+B @ letter.ogg
 backward-looking.ogg
 ball bearing.ogg
 ball-point pen.ogg
@@ -3405,7 +3406,7 @@ a cat.ogg
 a contest (noun), to contest (verb) [contest].ogg
 advertise.ogg
 alcoholic.ogg
-an object is a noun, to object is a verb [object].ogg
+an object is a noun, to object is a verb [object@@].ogg
 anxiety.ogg
 apology.ogg
 atrophy.ogg
@@ -3576,8 +3577,8 @@ Of all the grifters, the confidence man is the aristocrat.wav
 >>> ../datae\audio\quots/{{George Eliot}}
 Blessed is the man, who having nothing to say, abstains from giving in words evidence of the fact..ogg
 >>> ../datae\audio\quots/{{Søren Kierkegaard}}
-Anxiety is the dizziness of freedom.txt
-Anxiety is the dizziness of freedom.wav
+Anxiety is the dizziness of freedom..txt
+Anxiety is the dizziness of freedom..wav
 >>> ../datae\audio/speech
 >>> ../datae\audio\speech/Elon Musk - on Artificial Intelligence
 !credit.txt
@@ -3695,7 +3696,7 @@ Sometimes I have succeeded. And sometimes I have failed..ogg
 Therefore, I shall resign the _Presidency effective at noon tomorrow..ogg
 Throughout the long and difficult period of Watergate.ogg
 Throughout the long and difficult period of Watergate.txt
-Vice President _Ford will be sworn in as President at that hour in this office..ogg
+Vice President _Ford will be sworn in as President at that hour in this office. [+][swear in].ogg
 >>> ../datae\audio\speech gov/Ronald Reagan - A Time for Choosing
 !credit.txt
 And they say if we'll only avoid.ogg
@@ -3722,16 +3723,16 @@ We haven't balanced our budget 28 out of the last 34 years..ogg
 Well I'd like to suggest there is no such thing as a left or right. There's only an up or down..ogg
 Well, I, for one, resent it when a representative of the people.ogg
 Well, I, for one, resent it when a representative of the people.txt
-_Alexander _Hamilton said, ''A nation which can prefer disgrace to danger.ogg
-_Alexander _Hamilton said, ''A nation which can prefer disgrace to danger.txt
+_Alexander _Hamilton said, A nation which can prefer disgrace to danger.ogg
+_Alexander _Hamilton said, A nation which can prefer disgrace to danger.txt
 >>> ../datae\audio\speech gov/Winston Churchill
 !credit.txt
 Arm yourselves, and be ye men of valour, and be in readiness for the conflict..ogg
 But if we fail, then the whole world, including the United States.ogg
 But if we fail, then the whole world, including the United States.txt
 Give us the tools, and we will finish the job..ogg
-I see great reason for intense vigilance and exertion.ogg
-I see great reason for intense vigilance and exertion.txt
+I see great reason for intense vigilance and exertion, but none whatever for panic or despair..ogg
+I see great reason for intense vigilance and exertion, but none whatever for panic or despair..txt
 The Battle of _France is over. The Battle of _Britain is about to begin. [Battle of Britain].ogg
 We shall defend our Island.ogg
 We shall defend our Island.txt
@@ -3877,7 +3878,7 @@ musky fragrance.ogg
 nope.ogg
 not now ## course-.ogg
 nuh-uh.ogg
-OK [OK][okay].ogg
+OK [OK][okay@@].ogg
 over and over.ogg
 overwhelming.ogg
 pace.ogg
@@ -3932,7 +3933,7 @@ No briefs~!. [briefs].ogg
 No, I didn't..ogg
 No, not now..ogg
 Problems~!.ogg
-Thank you..ogg
+Thank you. @@.ogg
 That's true..ogg
 What a wimp..ogg
 What's wrong~!.ogg
@@ -5208,7 +5209,7 @@ agnosticism [=].wav
 agora.wav
 agriculture [=].wav
 agronomist [=].wav
-aha!.wav
+aha! @@.wav
 air force.wav
 air taxi ## course-.wav
 airport.wav
@@ -5736,7 +5737,6 @@ contrast [=].wav
 contusion [=].wav
 convert @ noun ### [`convert].wav
 convert @ verb ### [con`vert].wav
-convert.wav
 convulsions [=].wav
 convulsive [=].wav
 coo.wav
@@ -7865,7 +7865,7 @@ redaction [=].wav
 reduction [=].wav
 referee [=].wav
 referendum.wav
-reflex [=].wav
+reflex @ mirror ### noun [`reflex].wav
 reflexive [=].wav
 reform.wav
 refrigerator [=].wav
@@ -8838,7 +8838,7 @@ Adam Smith.wav
 Adam's apple.wav
 additive [=].wav
 affair.wav
-ahh! [=].wav
+ahh! @@.wav
 Alan Turing.wav
 Alexandria [=].wav
 alley-oop.wav
@@ -10889,7 +10889,7 @@ comfort.wav
 command [=].wav
 comment [=].wav
 compact disc ## course-.wav
-complex @ noun ### [`complex] [=].wav
+complex ### [`complex].wav
 complex numbers [=].wav
 compliment.wav
 compost [=].wav
@@ -11277,7 +11277,7 @@ guppy.wav
 gymnast.wav
 gyroscope.wav
 >>> ../datae\audio ## Case ## us\{{$Bunny F2 #F06DAM4}} 2/h
-ha! [=].wav
+ha! @@.wav
 Hades [=].wav
 halite [=].wav
 harakiri [=].wav
@@ -12091,8 +12091,7 @@ reduction [=].wav
 reef [=].wav
 referendum.wav
 refinancing [=].wav
-reflex @ noun.wav
-reflex [=].wav
+reflex @ response ### noun [`reflex].wav
 refraction [=].wav
 regent [=].wav
 register [=].wav
@@ -13158,9 +13157,9 @@ blue cheese.wav
 Are you absolutely sure~!.wav
 Beware of dog!.wav
 Caution!.wav
-Come here! ### 2.wav
-Come here! ### 3.wav
-Come here!.wav
+Come here! @@ ### 2.wav
+Come here! @@ ### 3.wav
+Come here! @@.wav
 Crossing. No gates..wav
 Do not eat!.wav
 Do not open!.wav
@@ -13663,7 +13662,6 @@ Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth
 Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth.txt
 >>> ../datae\audiobooks/Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}
 !credit.txt
-'''Tis so,'' said the Duchess.. ''and the moral of that is -- Oh, 'tis love, 'tis love, that makes the world go round!''.ogg
 ''Talking of axes,'' said the Duchess, ''chop off her head!''.ogg
 ''Ugh!'' said the Lory, with a shiver..ogg
 A barrowful of WHAT~! [barrowful].ogg
@@ -13679,7 +13677,7 @@ But little girls eat eggs quite as much as serpents do, you know..ogg
 Call the next witness. [witness].ogg
 Flamingoes and mustard both bite. And the moral of that is--''Birds of a feather flock together.''.ogg
 Good-bye, feet!.ogg
-Her chin was pressed so closely against her foot, that there was hardly room to open her mouth.ogg
+Her chin was pressed so closely against her foot, that there was hardly room to open her mouth..ogg
 However, the Multiplication Table doesn't signify.. let's try Geography..ogg
 I can't explain MYSELF, I'm afraid, sir.ogg
 I can't explain MYSELF, I'm afraid, sir.txt
@@ -13771,6 +13769,7 @@ Which way~! Which way~! [which].ogg
 Who are you~!.ogg
 Why your cat grins like that~!.ogg
 _Mary _Ann!  _Mary _Ann! [Mary Ann].ogg
+“'Tis so,” said the Duchess.. “and the moral of that is -- Oh, 'tis love, 'tis love, that makes the world go round!”.ogg
 “Begin at the beginning,” the King said gravely, “and go on till you come to the end.. then stop.”.ogg
 “That's the reason they're called lessons,” the Gryphon remarked..  “because they lessen from day to day.”.ogg
 “Well, if I must, I must,” the King said, with a melancholy air. [must].ogg
@@ -13987,7 +13986,7 @@ baffling.wav
 besides.wav
 bonds.wav
 citizens.wav
-complex.wav
+complex ### [`complex].wav
 components.wav
 core.wav
 crazy.wav
@@ -14515,11 +14514,11 @@ His specialty was alfalfa.ogg
 His specialty was alfalfa.txt
 Hungry Joe had his gun out and was struggling.ogg
 Hungry Joe had his gun out and was struggling.txt
-I had examined myself pretty thoroughly and discovered that I was unfit for military service.ogg
+I had examined myself pretty thoroughly and discovered that I was unfit for military service..ogg
 I'm a real, slam-bang, honest-to-goodness, three-fisted humdinger.ogg
 I'm a real, slam-bang, honest-to-goodness, three-fisted humdinger.txt
-If they pricked him, didn't he bleed.ogg
-If they pricked him, didn't he bleed.txt
+If they pricked him, didn't he bleed~! And if he was tickled, didn’t he laugh~!.ogg
+If they pricked him, didn't he bleed~! And if he was tickled, didn’t he laugh~!.txt
 Men, Colonel Cargill began in Yossarian's squadron.ogg
 Men, Colonel Cargill began in Yossarian's squadron.txt
 Nobody asked you for clarification.ogg
@@ -14600,8 +14599,8 @@ Books.ogg
 Books.txt
 Curves—no, that was inadequate.ogg
 Curves—no, that was inadequate.txt
-Glad to hear what.ogg
-Glad to hear what.txt
+Glad to hear what~! asked Jenny, emerging suddenly like a cuckoo from a clock.ogg
+Glad to hear what~! asked Jenny, emerging suddenly like a cuckoo from a clock.txt
 Good heavens, what a weight.ogg
 Good heavens, what a weight.txt
 He took nobody by surprise; there was nobody to take..ogg
@@ -14892,8 +14891,8 @@ Queequeg was George Washington cannibalistically developed. [cannibalistically].
 Speak, but speak!—Aye, aye! thy silence, then, ''that'' voices thee..wav
 Such dreary streets! blocks of blackness.txt
 Such dreary streets! blocks of blackness.wav
-Sure it is, nevertheless, that the Sperm Whale.ogg
-Sure it is, nevertheless, that the Sperm Whale.txt
+Sure it is, nevertheless, that the Sperm Whale has no proper olfactories.ogg
+Sure it is, nevertheless, that the Sperm Whale has no proper olfactories.txt
 The act of paying is perhaps the most uncomfortable infliction.txt
 The act of paying is perhaps the most uncomfortable infliction.wav
 The fact is, that among his hunters at least.txt
@@ -15328,8 +15327,8 @@ And then all the host of Rohan burst into song.txt
 Arrows thick as the rain came whistling over the battlements.ogg
 Arrows thick as the rain came whistling over the battlements.txt
 Ash! Ash and smoke blown away on the wind! [ash].ogg
-But how and why.ogg
-But how and why.txt
+But how and why~! For if his legs were tied, how did he walk~!.ogg
+But how and why~! For if his legs were tied, how did he walk~!.txt
 Clip-clop, clip-clop came the approaching rider. The fall of the hoofs sounded loud in the still, foggy air. [clip-clop][hoofs].ogg
 Days passed and The Day drew nearer. [the day].ogg
 Despair, or folly.ogg
@@ -15420,8 +15419,8 @@ perfectly proportioned.wav
 !credit.txt
 I am afraid something has been spilt there.ogg
 I am afraid something has been spilt there.txt
-Starve you to death.ogg
-Starve you to death.txt
+Starve you to death~! Oh, Mr. Ghost—I mean Sir _Simon, are you hungry~!.ogg
+Starve you to death~! Oh, Mr. Ghost—I mean Sir _Simon, are you hungry~!.txt
 The next morning, however, when they came down to breakfast.ogg
 The next morning, however, when they came down to breakfast.txt
 >>> ../datae\audiobooks/Wilde, Oscar - The Happy Prince. Tales ## uk {{Cora McDonald}}
@@ -15665,8 +15664,8 @@ Ah, excellent, excellent, very good endeed!.wav
 !credit.txt
 Only ignorance! only ignorance! how can you talk about only ignorance.txt
 Only ignorance! only ignorance! how can you talk about only ignorance.wav
-Practice makes perfect.txt
-Practice makes perfect.wav
+Practice makes perfect, and 'twould be a pity if it didn't.txt
+Practice makes perfect, and 'twould be a pity if it didn't.wav
 To be punished and abused when I was doing my very best was so hard it took the heart out of me..wav
 >>> ../datae\audiobooks {{$$librivox}}/Charlotte Gilman - Moving the Mountain
 !credit.txt
@@ -15788,7 +15787,7 @@ What do you want~! Money~!.wav
 I insist upon the withdrawal of that expression! I have been called a fool!.wav
 I may be wrong, no doubt I am, I generally AM wrong I believe, but that is my oppinion..wav
 My dear sir, excuse my addressing you; but I cannot help feeling that you prefer this table and that we are in your way..wav
-Pah! the seat is all dusty. These foreigners are deplorably unclean in their habits.wav
+Pah! the seat is all dusty. These foreigners are deplorably unclean in their habits..wav
 Rent must be paid, dear boy. It is inevitable, Harry, inevitable..wav
 >>> ../datae\audiobooks {{$$librivox}}\George Bernard Shaw - Widower's Houses/{{}}
 Do you know to whom you are speaking my good man~!.wav
@@ -16185,7 +16184,7 @@ cockneys.wav
 cold.wav
 come down.wav
 come.wav
-comfort @ verb [].wav
+comfort.wav
 coming.wav
 comparatively speaking.wav
 comparatively.wav
@@ -17249,7 +17248,7 @@ What man has done man can do..wav
 What more could I want~!.wav
 What's that~!.wav
 What's to be done now~!.wav
-What~!.wav
+What~! @@.wav
 What’s the matter~!.wav
 Whence did I come~!.wav
 Where are you going~!.wav
@@ -18908,7 +18907,7 @@ Are you there~!.ogg
 a twat.ogg
 cunt ## course-.ogg
 cunt.ogg
-fantastic.ogg
+fantastic @@.ogg
 fluff.ogg
 itsy-bitsy.ogg
 politically correct.ogg
@@ -19573,8 +19572,8 @@ Who dat say dey gonna beat dem Saints~!.wav
 !credit.txt
 A religion soothes. It helps people make sense of things.txt
 A religion soothes. It helps people make sense of things.wav
-Anyone who smirks what is a big deal.txt
-Anyone who smirks what is a big deal.wav
+Anyone who smirks What’s the big deal is either ignorant (possible).txt
+Anyone who smirks What’s the big deal is either ignorant (possible).wav
 Certain questions are not to be asked.txt
 Certain questions are not to be asked.wav
 From a certain distance it looks like we are dealing with people who went crazy.txt
@@ -19590,8 +19589,8 @@ What kind of people do these things ### 1.txt
 What kind of people do these things ### 1.wav
 What kind of people do these things ### 2.txt
 What kind of people do these things ### 2.wav
-What the person feels.txt
-What the person feels.wav
+What the person feels is based on what they have been taught to feel.txt
+What the person feels is based on what they have been taught to feel.wav
 >>> ../datae\audiobooks--\John McWhorter - Woke Racism ## us {{John McWhorter}}/{{}}
 >>> ../datae\audiobooks--\John McWhorter - Woke Racism ## us {{John McWhorter}}\{{}}/1
 a mismatch.wav
@@ -20397,8 +20396,6 @@ Well, that was that..wav
 You could have gotten a hundred and some odd dollars for it..wav
 >>> ../datae\audiobooks--/Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}
 !credit.txt
-'When you take a lump of sugar and crush it with a pair of pliers.ogg
-'When you take a lump of sugar and crush it with a pair of pliers.txt
 I hope you remembered to open this letter carefully.ogg
 I hope you remembered to open this letter carefully.txt
 I often had this problem of demonstrating to these fellas something that they didn't believe.ogg
@@ -20416,6 +20413,8 @@ Suppose some Martians were to come down to earth.wav
 Surely you're joking, Mr. Feynman!.ogg
 Telephone! Briiing!.ogg
 Telephone! Briiing!.txt
+When you take a lump of sugar and crush it with a pair of pliers.ogg
+When you take a lump of sugar and crush it with a pair of pliers.txt
 >>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}/{{}}
 >>> ../datae\audiobooks--\Richard Feynman - Surely You're Joking, Mr. Feynman ## us {{Raymond Todd]}}\{{}}/1
 gee.ogg
@@ -20952,7 +20951,7 @@ Perhaps not..wav
 rubbing their hands with glee.wav
 Slush! slush! sound the scythe strokes. [sluch][scythe].wav
 SMART - specific, measurable, assignable, realistic, time-related goals.wav
-Sorrow gripped his heart.wav
+Sorrow gripped his heart..wav
 the crippling sorrow of estrangement.wav
 The only thing we have to fear is fear itself.txt
 The only thing we have to fear is fear itself.wav
@@ -20967,7 +20966,7 @@ What can we do~!.wav
 You just wait and see..wav
 ‘It is not enough to succeed. Others must fail.’ - Gore Vidal.wav
 ‘It is sweet to perceive from what misfortunes you yourself are free.’ - Lucretius.wav
-‘What goes up must come down,’ we say, in a warning sort of voice.wav
+‘What goes up must come down,’ we say, in a warning sort of voice..wav
 >>> ../datae/audiohero {{$audiohero.com}}
 >>> ../datae\audiohero {{$audiohero.com}}/## poem
 Humpty Dumpty ### [Adult-Fem-B_Humpty-Dumpty-Sat-On-A-Wall_VKT_00516].mp3
@@ -22186,7 +22185,7 @@ eating potato chips ### Human-Eat-Potato-Chip_OBIN_590.wav
 egg timer ## course- ### Timer_DIGIFX2-41.wav
 egg.. crack & fry with grease spatters ## crop 0-16 ## fade out ### EggCrackFryWGrease TE033001.wav
 frying, sizzling ### FryingSomethingSiz PE971503.wav
-grating ### Food-Grate-Carrot_GEN-HD4-40933.wav
+grating @ grater ### Food-Grate-Carrot_GEN-HD4-40933.wav
 greasy sizzles on hot pan ### CookingKitchen-Meat-Int-C-8_B05-02229.wav
 hand held mixer ### MixerHandHeldElec PE1042304.wav
 ice cream cone eating.. exaggerated smacking and breathing ## crop 0-28 ## fade out ### IceCreamConeEating AZ174901.wav
@@ -22274,8 +22273,8 @@ triple blips ### ToneTripleBlips.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\home & office/bathroom
 dab shaving cream ### HumanShave 6032_31_1.wav
 perfume spray ### [BOTTLE-PERFUME_GEN-HDF-04683].wav
-plunge ### Plunger 6032_74_1.wav
-plunge ### Plunger 6032_74_2.wav
+plunge @ into ### Plunger 6032_74_1.wav
+plunge @ into ### Plunger 6032_74_2.wav
 rubber plunger plunging ### Plunger 6117_76_1.wav
 scrub ### Brush-Toilet-Scrub_GEN-HD2-28238.wav
 scrubbing bathtub ## crop 0-28 ## fade ### BrushScrub_DIGIB03-52.wav
@@ -22310,7 +22309,7 @@ garage door.. slam close and lock ### GarageDoor 9005_03_7.wav
 jingle keys, unlock and open ## crop 0-9.30 ## fade out ### Keys IN05_28.wav
 jingle keys, unlock and open ## crop 9.30-27 ## fade out ### Keys IN05_28.wav
 kick door ### KickDoor 9006_32_1.wav
-latch ### [fo_stalldoor_latch_02_hpx].wav
+latch @ door ### [fo_stalldoor_latch_02_hpx].wav
 massive door close and lock ### MassiveDoorCloseL EVL010901.wav
 metal latch double clunk ### MetalLatchDblClun PE1027112.wav
 screen door.. squeak and sproing ### ScreenDoorOpenSlam AZ141901.wav
@@ -22964,7 +22963,7 @@ Just in the nick of time. ### [Mid-Aged-Male-A_Just-In-The-Nick-Of-Time_VKT_1132
 K @ text ### [Child-Fem-B_Okay_VKT_07097].wav
 Never mind. ### [Adult-Male-D_Never-Mind_VKT_04894].mp3
 Of course! ### [Adult-Fem-D_Of-Course_VKT_01733].mp3
-okay ### [Child-Fem-B_Okay_VKT_07097].wav
+okay @@ ### [Child-Fem-B_Okay_VKT_07097].wav
 one thousand ### [Adult-Fem-D_One-Thousand_VKT_01750].mp3
 Thanks a lot! ### [Adult-Fem-E_Thanks-A-Lot_VKT_02323].mp3
 That's great! ### [Adult-Fem-E_Thats-Great_VKT_02338].mp3
@@ -23014,17 +23013,17 @@ Ah, shut up! ### [Adult-Male-E_Ah-Shut-Up_VKT_05287].mp3
 Ah, sweetie! ### [Adult-Fem-B_Ah-Sweetie_VKT_00391].mp3
 Ah, that's great! ### [Teen-Fem-B_Ah-Thats-Great_VKT_14106].wav
 Ah, what the hell! ### [Adult-Male-C_Ah-What-The-Hell_VKT_04070].mp3
-aha! ### 1,2,3.wav
 aha! @ catch ### [Adult-Male-B_Ah-Ha_VKT_03506].mp3
 aha! @ realization ### [Adult-Male-F_Uh-Huh_VKT_06199].mp3
 aha! @ triumph ### [Senior-Male-A_Ah-Ha_VKT_13206].wav
+aha! @@ ### 1,2,3.wav
 ahh ### CrowdReaction 1009_49_2.wav
 Ahh @ medical ### [Adult-Male-B_Ahh_VKT_03504].mp3
-ahh! ### [Adult-Fem-D_Ahh_VKT_01378].mp3
-ahh! ### [Adult-Male-D_Ahh_VKT_04537].mp3
 ahh! @ impatient ### [Adult-Fem-C_Ahh_VKT_00813].mp3
 ahh! @ urgent ### [Adult-Fem-D_Ahh_VKT_01379].mp3
 Ahh! @ yell ### [Senior-Fem_Ahh_VKT_18325].wav
+ahh! @@ ### [Adult-Fem-D_Ahh_VKT_01378].mp3
+ahh! @@ ### [Adult-Male-D_Ahh_VKT_04537].mp3
 Ala Kazam! [alakazam][kazaam] ### RoaringFieryWhoos CRT019803.wav
 Alert! Alert! Alert! ### Voice-Computer-Female-Alert-Alert-Alert_COMM-2033.wav
 All aboard! ### HumanVocal 6032_42_5.wav
@@ -23514,8 +23513,8 @@ h-hey ### [Adult-Male-B_H-Hey_VKT_03652].mp3
 ha ha ha ha ### [Adult-Fem-D_Ha-Ha-Ha-Ha_VKT_01513].mp3
 Ha ha, busted! ### [Adult-Male-E_Ha-Ha-Busted_VKT_05403].mp3
 Ha ha, sucker! ### [Teen-Male-C_Ha-Ha-Sucker_VKT_16046].wav
-ha! ### [Child-Fem-C_Ha_VKT_07429].wav
 ha! @ attack ### Human-Hit_GEN-HD4-41929.wav
+ha! @@ ### [Child-Fem-C_Ha_VKT_07429].wav
 Ha-ha! @ defiant ### Adult-Male-A_Defiant-Ha-Ha_VKT_03175.wav
 ha-ha! haha!.wav
 Ha-ha, gotcha! ### [Adult-Male-E_Ha-Ha-Gotcha_VKT_05404].mp3
@@ -23999,8 +23998,8 @@ Listen up! ### [Teen-Male-B_Listen-Up_VKT_15775].wav
 Live and learn. ### [Adult-Fem-B_Live-And-Learn_VKT_00575].mp3
 Live and let live! ### [Senior-Male-B_Live-And-Let-Live_VKT_13727].wav
 Lock 'em up and throw away the key! ### [Mid-Aged-Fem-C_Lock-em-Up-And-Throw-Away-The-Key_VKT_10928].wav
-LOL ### [Teen-Fem-B_LOL_VKT_14161].wav
 LOL @ l-o-l ### [Teen-Male-A_LOL_VKT_15373].wav
+LOL @ lol ### [Teen-Fem-B_LOL_VKT_14161].wav
 Look after number one. ### [Mid-Aged-Male-B_Look-After-Number-One_VKT_11806].wav
 Look before you leap. ### [Mid-Aged-Male-C_Look-Before-You-Leap_VKT_12204].wav
 Look on the bright side. ### [Senior-Fem-B_Look-On-The-Bright-Side_VKT_12977].wav
@@ -24219,11 +24218,11 @@ ohhh! @ astonished ### CrowdAstonishedOhh PE945804.wav
 oh~! ### [Adult-Male-F_Oh_VKT_06101].mp3
 OK ### [Adult-Fem-C_Okay_VKT_01121].mp3
 OK ### [Adult-Fem-G_Okay_VKT_02945].mp3
-okay ### [Adult-Male-E_Okay_VKT_05616].mp3
 okay @ acknowledgment [acknowledgment] ### [Mid-Aged-Male-C_Okay_VKT_12247].wav
 okay @ agreement [agreement] ### [Adult-Male-C_Okay_VKT_04306].mp3
 okay @ attention getter [attention getter] ### [Adult-Male-F_Okay_VKT_06110].mp3
 okay @ interjection ### [Mid-Aged-Fem-C_Okay_VKT_10976].wav
+okay @@ ### [Adult-Male-E_Okay_VKT_05616].mp3
 Okay, I guess. ### [Adult-Male-C_Okay-I-Guess_VKT_04307].mp3
 Okay, I guess. @ dejected ### [Teen-Male-A_Dejected-Okay-I-Guess_VKT_15217].wav
 Okay, stop it. ### [Child-Fem-B_Okay-Stop-It_VKT_07103].wav
@@ -24515,8 +24514,8 @@ Thank god! ### [Adult-Male-F_Thank-God_VKT_06173].mp3
 Thank goodness! ### [Senior-Male-A_Thank-Goodness_VKT_13546].wav
 Thank you very much! ### [Adult-Fem-F_Thank-You-Very-Much_VKT_02578].mp3
 Thank you! @ exuberant ### Child-Fem-A_Exuberant-Thank-You_VKT_06377.wav
-Thank you. ### [Adult-Fem-C_Thank-You_VKT_01196].mp3
 Thank you. @ annoyed ### Adult-Male-A_Annoyed-Thank-You_VKT_03117.mp3
+Thank you. @@ ### [Adult-Fem-C_Thank-You_VKT_01196].mp3
 Thanks a lot! ### [Adult-Fem-F_Thanks-A-Lot_VKT_02576].mp3
 Thanks for a wonderful evening. ### [Adult-Fem-D_Thanks-For-A-Wonderful-Evening_VKT_01838].mp3
 Thanks for stoppin' by. ### [Adult-Male-C_Thanks-For-Stoppin-By_VKT_04369].mp3
@@ -24880,13 +24879,13 @@ whatever ### [Adult-Male-C_Whatever_VKT_04438].mp3
 Whatever. ### [Teen-Fem-B_Whatever_VKT_14209].wav
 Whats the country of your citizenship~! ### Mid-Aged-Fem-B_Whats-The-Country-Citizenship_VKT_10657.wav
 Whats your country of citizenship~! ### Mid-Aged-Male-C_Whats-Your-Country-Citizenship_VKT_12317.wav
-What~! ### [Adult-Fem-C_What_VKT_01253].mp3
-What~! ### [Adult-Male-B_What_VKT_03958].mp3
-What~! ### [Adult-Male-C_What_VKT_04420].mp3
-What~! ### [Teen-Male-B_What_VKT_15898].wav
 What~! @ annoyed ### Mid-Aged-Fem-A_Annoyed-What_VKT_10075.wav
 What~! @ disbelieving ### Child-Male-A_Disbelieving-What_VKT_08480.wav
 What~! @ incredulous ### Child-Male-A_Incredulous-What_VKT_08579.wav
+What~! @@ ### [Adult-Fem-C_What_VKT_01253].mp3
+What~! @@ ### [Adult-Male-B_What_VKT_03958].mp3
+What~! @@ ### [Adult-Male-C_What_VKT_04420].mp3
+What~! @@ ### [Teen-Male-B_What_VKT_15898].wav
 When all else fails, read the instuctions. ### [Mid-Aged-Fem-B_When-All-Else-Fails-Read_VKT_10665].wav
 When are we getting there~! @ impatient ### Teen-Fem-A_Impatient-When-Are-We-Getting-There_VKT_13891.wav
 When can I see you again~! ### [Adult-Fem-D_When-Can-I-See-You-Again_VKT_01985].mp3
@@ -25888,8 +25887,8 @@ balcony @ house ## qrop qb {{Photo.. Santiago Bañón Irujo}}.jpg
 Inside the Taj Mahal Mosque [archway] ## qrop qt {{Photo.. Jose Eduardo Silva}}.jpg
 The Jantar Mantar astronomical observatory ‘guitar neck’, Jaipur, India [architecture] ## qrop t4 b18 ## qropt! {{Photo.. O’Hara}}.jpg
 IQlight lamp, designed by Holger Strøm, 1973 [lamp@home] ## noqrop.jpg
-knob lock [lock@door] ## qrop r21 ## qropt!.jpg
-lever lock [lock@door] ## qrop l5 r7 ## qropt!.jpg
+knob lock [lock@knob] ## qrop r21 ## qropt!.jpg
+lever lock [lock@lever] ## qrop l5 r7 ## qropt!.jpg
 panoramic window [panoramic] {{Photo.. Michele Marchiani}}.jpg
 >>> ../datae\photo\city/stairs
 Convent de San Bernardino de Siena, Valladolid, Yucatan, Mexico [staircase][L-shaped staircase] ## qrop t13 b20.jpg
@@ -25899,7 +25898,7 @@ stairs ## qrop q.jpeg
 stairwell ## qrop q {{Photo.. Wahahaz $dreamstime 59275583}}.jpg
 steps [stair] ## qrop q.jpeg
 U-shaped staircase [staircase][half-turn] ## qrop qb.jpg
-toilet door latch [latch].jpg
+toilet door latch [latch@door].jpg
 Viking village replica, Iceland [Iceland] ## qrop qb.jpg
 clamshells @ packaging.jpg
 Clio, Muse of History %% 2nd century, Roman copy from a Greek original, The Hermitage Museum [Clio][Muse] ## qrop t3 b4 ## qropt!.jpg
@@ -26123,7 +26122,7 @@ racing helmets [autosport][helmet@sport].jpg
 riffle shuffle [riffle@shuffle][dovetail shuffle] ## qrop l7 r18.jpg
 underwater lap counter [lap@pool] ## qrop l18 r7.jpeg
 Windsurfer _Robby _Naish [windsurfer][windsurfing] ## qrop l3 r31 {{Photo.. Hoch Zwei}}.jpg
-Yankees {{}} New York Yankees Manager Billy Martin argues with umpire Durwood Merrill.jpg
+Yankees [New York Yankees] %% New York Yankees Manager Billy Martin argues with umpire Durwood Merrill.jpg
 >>> ../datae\photo/transport
 beating against the wind [sailing] ## qrop ql.jpeg
 Bentley Advertisement [middle-finger][middle finger] ## qropt!.jpg
@@ -26252,6 +26251,10 @@ Water hosing demonstrators.jpeg
 Water hosing demonstrators.txt
 wrath ## qrop l8 r13.jpg
 wrath.jpg.uid-zps
+>>> ../datae\photo a/Albrecht {{Photo.. Kristoffer Albrecht}}
+Mug, spoon and eggs [mug] ## date 1983.jpg
+old documents [+][archive] ## date 1993.jpg
+Plant in Book [pressed flowers] ## date 1986.jpg
 >>> ../datae\photo a/Alpert {{Photo.. Max Alpert}}
 A battalion commander [commander] ## date 1942.jpg
 >>> ../datae\photo a/Amendola {{Photo.. Aurelio Amendola}}
@@ -26348,7 +26351,7 @@ Lhasa apso's hair blown around [Lhasa apso][lhasa apso] ## qrop t10 b12.jpg
 Light Colored _American Cocker Spaniel [Cocker Spaniel][cocker spaniel][American cocker spaniel] ## qrop l21 r13.jpg
 Saluki ## qrop l1 r17.jpg
 Shar-Pei Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkled][Shar-Pei][shar-pei] ## qrop l4 r27.jpg
-Shar-Pei Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkles][Shar-Pei][shar-pei] ## qrop l12 r13 ## qropt!.jpg
+Shar-Pei Puppy [Shar Pei][Chinese Shar-Pei][Chinese fighting dog][wrinkles][wrinkly@animal][Shar-Pei][shar-pei] ## qrop l12 r13 ## qropt!.jpg
 Standard Spitz [Spitz][spitz][Standard Spitz][standard spitz] ## qrop t8 b16.jpg
 Three _Yorkshire Terriers [Yorkshire Terriers][Yorkshire terriers] ## qrop l23 r9.jpg
 _Afghan Hound [Afghan][Hound][hound] ## qrop l9 r24.jpg
@@ -27099,6 +27102,8 @@ speculoos and crushed apple mille-feuille [speculoos].jpg
 stewed apricots [stewed].jpg
 stuffed {red peppers}.jpg
 ttoro (Basque fish soup with seafood) [ttoro][Basque Country].jpg
+>>> ../datae\photo def/Dukoff {{Photo.. Lauren Dukoff}}
+Scott Weiland [banjoing].jpg
 >>> ../datae\photo def/Edgerton {{Photo.. Harold Edgerton}}
 antique gun {firing} [fire@shot] ## date 1935.jpg
 bullet piercing an apple [piercing@verb] ## date 1964.jpg
@@ -27652,7 +27657,7 @@ Water-chestnuts harvesting season [water chestnuts][].jpg
 >>> ../datae\photo gh/Hyde {{Photo.. John Hyde}}
 a pod of orcas [orca][orcas][a pod of whales] ## qrop l4 r35.jpg
 aurora, northern lights [+][aurora borealis] ## qrop l15 r18.jpg
-moose ## noqrop.jpg
+moose [elk@moose] ## noqrop.jpg
 >>> ../datae/photo ijkl
 >>> ../datae\photo ijkl/Irwin {{Photo.. Kirk Irwin}}
 save @ hockey ## qrop l13 r21 b1.jpg
@@ -27725,6 +27730,8 @@ yawn ### Budapest.jpeg
 >>> ../datae\photo ijkl/Khalip {{Photo.. Yakov Khalip}}
 punch cards ## date 1962 [punched card].jpg
 Thirst [thirst] ## date 1950s.jpg
+>>> ../datae\photo ijkl/Kinszki {{Photo.. Imre Kinszki}}
+cigarettes ## date 1930.jpeg
 >>> ../datae\photo ijkl/Kirkland {{Photo.. Douglas Kirkland}}
 Coco _Chanel sews the shoulder of a tweed coat on a fashion model [Chanel][couturier] ## date 1961 ## qrop l4 r17 ## qropt!.jpg
 Danger, curves ahead! [curves][curvy][curvaceous] ## date 1983 ## qrop l19 r6 ## qropt! ### Jamie Lee Curtis.jpg
@@ -27735,6 +27742,16 @@ Keith Haring and Grace Jones, “Vamp,” Burbank, 1986 [vamp].jpeg
 Marilyn Monroe ## date 1961.jpg
 Opera singer Placido Domingo conducting [conductor@music][conducting] ## date 2000s ## qrop t16 ## qropt!.jpg
 Palm Beach, Florida, 2000 [Palm Beach].jpg
+>>> ../datae\photo ijkl/Koentjoro {{Photo.. Hengki Koentjoro}}
+coco mist [coco@palm].jpg
+descend.jpg
+estuary.jpg
+plunge @ dive.jpg
+rails @ railroad.jpg
+S-shaped.jpg
+stripes [striped].jpg
+submerge.jpg
+swimmer.jpg
 >>> ../datae\photo ijkl/Koldby {{Photo.. Morten Koldby}}
 bear @ animal ## date 2009.jpg
 Bengal tiger %% Panthera tigris tigris [Bengal tiger][Panthera][Panthera tigris tigris] ## date 2009.jpg
@@ -28019,6 +28036,12 @@ white mink [mink] ## date 1952 ## qrop l10 r15.jpg
 Nusch and Paul Eluard, Roland Penrose, Man Ray, Ady Fidelin [picnickers] ## date 1937.jpg
 rat tails [rats][tails] ## date 1930.jpg
 The Shadow of the Great Pyramid [shadow@light] ## date 1938 ## qrop qb.jpg
+>>> ../datae\photo mn/Model {{Photo.. Lisette Model}}
+Lower East Side, 1942 [Manhattanite].jpg
+Madama Lucrezia, Rome [disfigured].jpg
+Paris Flea Market [flea market].jpg
+running legs [running] ## date 1940-41.jpg
+Trento, Italy [Trento][Trent].jpg
 >>> ../datae\photo mn/Modotti {{Photo.. Tina Modotti}}
 Bandolier, corn, guitar [bandolier][Mexican] ## date 1927 ## qrop t17 b5 ## qropt!.jpg
 Hands of the {puppeteer} ## date 1929.jpg
@@ -28963,6 +28986,7 @@ Helmut Wick, October 1940 [ace@pilot] ## qrop t15 b10 ## qropt! {{Photo.. Striem
 Hiroshima @ bomb ## qrop r19 ## qropt! {{Photo.. U.S. Navy $$}} ### photo with Paul Tibbet's autograph.jpg
 King _George _V accosted by beggar, Derby Day, 1920 [accost][accosted] ## qrop l2 r7 ## qropt!.jpg
 Ku Klux Klan parade, _DC [Ku Klux Klan][KKK][white supremacy][supremacy] ## date 1926 ## qropt! {{Photo.. Buyenlarge~Getty Images}}.jpg
+Leni Riefenstahl and her crew shooting Olympia [Riefenstahlian][shoot@photo][shooting] ## date 1936.jpg
 Mug shot of De Gracy (sic) and Edward Dalton, Central Police Station, Sydney, c.1920 [mug shot][magsmen] ## qrop l9 r10.jpg
 mummification ## qropt! {{The New York Times photo archive $$}}.JPG
 mummification ## qropt! {{The New York Times photo archive $$}}.txt
@@ -30664,8 +30688,8 @@ cherries [cherry] ## qrop ql {{Photo.. Roksana Bashyrova $dreamstime 30957455}}.
 cherries [cherry] ## qrop ql {{Photo.. Zhekos $dreamstime 25661265}}.jpg
 cherry tomatoes ## qrop ql {{Photo.. Tatyana Nyshko $dreamstime 5400747}}.jpg
 cherry {{Photo.. Petr Malyshev $dreamstime 53623924}}.jpg
-coconut ## qrop ql {{Photo.. Siamimages $dreamstime 1355955}}.jpg
 coconut ## qrop t18 b8 ## qropt! {{Photo.. Siamimages $dreamstime 1355958}}.jpg
+coconut [coco@fruit] ## qrop ql {{Photo.. Siamimages $dreamstime 1355955}}.jpg
 dates [date@fruit] ## qrop l5 r10 ## qropt! {{Photo.. Sarah2 $dreamstime 21903324}}.jpg
 dragon fruit [pitahaya][dragon fruit][dragonfruit] ## qrop l9 r6 ## qropt! {{Photo.. Zuzana Randlova $dreamstime 112289991}}.jpg
 dried apricots [dried] ## qrop l4 r29 {{Photo.. James Lewis $dreamstime 1148018}}.jpg
@@ -31229,7 +31253,7 @@ thumbs-down [thumbs down] ## qrop l19 r15 {{Photo.. Khosrork $dreamstime 1054204
 triumphant {{Photo.. Maxim Lupascu $dreamstime 108961620}}.jpg
 uncertainty [uncertain] ## qrop qr {{Photo.. Koldunova Anna $dreamstime 107929916}}.jpg
 unpleased ## qrop qr {{Photo.. Andrii Biletskyi $dreamstime 107756418}}.jpg
-upset ## qrop l22 r12 ## qropt! {{Photo.. Anton Petukhov $dreamstime 23766200}}.jpg
+upset @ distressed ## qrop l22 r12 ## qropt! {{Photo.. Anton Petukhov $dreamstime 23766200}}.jpg
 wish ## qrop l11 r14 {{Photo.. Oksana Chernenko $dreamstime 100309376}}.jpg
 worried [worry] ## qrop l30 r3 {{Photo.. Mykola Kravchenko $dreamstime 89573131}}.jpg
 >>> ../datae\photo_dreamstime\human/expressions
@@ -31343,7 +31367,7 @@ wheat [corn@grain] ## qrop q {{Photo.. Rtsubin $dreamstime 49966037}}.jpg
 Bangkok, Thailand [bridge@way][infrastructure] ## qrop ql {{Photo.. Kittijaroon $dreamstime 35590435}}.jpg
 bearings ## qrop l9 t1 r25 {{Photo.. Phuchit $dreamstime 108512528}}.jpg
 BP Deepwater Horizon oil spill [disaster] ## qrop l7 r18 ## qropt! {{Photo.. Lighttouch $dreamstime 19121910}}.jpg
-chain ## qrop l14 r19 {{Photo.. Dawn Allynn $dreamstime 259032}}.jpg
+chain @ tech ## qrop l14 r19 {{Photo.. Dawn Allynn $dreamstime 259032}}.jpg
 chimney ## qrop l19 r16 {{Photo.. Mycteria $dreamstime 62840181}}.jpg
 >>> ../datae\photo_dreamstime\industry/comp
 compact disc [compact] ## qrop l16 r9 ## qropt! {{Photo.. Kasia Biel $dreamstime 1063905}}.jpg
@@ -31394,7 +31418,7 @@ spring clamp terminal block [terminal block][terminal@electro] ## qrop l10 r23 {
 emergency stop button [+] ## qrop l16 r18 t1 {{Photo.. Realchemyst $dreamstime 54084732}}.jpg
 engineer @ tech ## qrop ql {{Photo.. Benjawan Sittidech $dreamstime 93949403}}.jpg
 factory ## qrop l34 ## qropt! {{Photo.. Keng Po Leung $dreamstime 58472001}}.jpg
-faucets [tap][faucet] ## qrop l13 r20 {{Photo.. Rahmat Nugroho $dreamstime 63187424}}.jpg
+faucets [tap@faucet][faucet] ## qrop l13 r20 {{Photo.. Rahmat Nugroho $dreamstime 63187424}}.jpg
 fiber laser cutting machine [fiber laser][cutting] ## qrop l24 r9 {{Photo.. Phuchit $dreamstime 94303389}}.jpg
 forklift truck ## qrop l18 r16 {{Photo.. Baloncici $dreamstime 18627044}}.jpg
 fuses @ electric ## qrop l18 r15 {{Photo.. Arnau2098 $dreamstime 39872101}}.jpg
@@ -31519,7 +31543,7 @@ tools @ tech ## qrop qr {{Photo.. Iurii Gud $dreamstime 70854604}}.jpg
 vernier caliper with a bearing [vernier caliper][callipers][calipers] ## qrop l12 t1 r14 ## qropt! {{Photo.. Evgeny Kosharsky $dreamstime 65681603}}.jpg
 vice~vise [vice][vise] ## qrop t11 b20 {{Photo.. Alexander Klenov $dreamstime 80210134}}.jpg
 wheel brace [brace][lug wrench] {{Photo.. Iurii Gud $dreamstime 89903315}}.jpg
-wooden mallet [mallet] ## qrop l10 r15 ## qropt! {{Photo.. Venusangel $dreamstime 26140547}}.jpg
+wooden mallet [mallet@tool] ## qrop l10 r15 ## qropt! {{Photo.. Venusangel $dreamstime 26140547}}.jpg
 wrench {{Photo.. Iurii Gud $dreamstime 89903148}}.jpg
 wrench {{Photo.. Iurii Gud $dreamstime 89903220}}.jpg
 wrench {{Photo.. Iurii Gud $dreamstime 89903223}}.jpg
@@ -31529,7 +31553,7 @@ weld ## qrop qt {{Photo.. Brad Calkins $dreamstime 14698751}}.jpg
 welding ## qrop l8 r25 {{Photo.. Iliadilium $dreamstime 39332646}}.jpg
 winch ## qrop q {{Photo.. Emzet70 $dreamstime 54370011}}.jpg
 wind turbine ## qrop l15 r29 {{Photo.. Domjan Bonacin $dreamstime 85007891}}.jpg
-windmill ## qrop ql {{Photo.. Michel De Nijs $dreamstime 73428862}}.jpg
+windmill @ machinery ## qrop ql {{Photo.. Michel De Nijs $dreamstime 73428862}}.jpg
 worm drive ## qrop l12 r22 {{Photo.. Ben Carlson $dreamstime 33267629}}.jpg
 loupe ## qrop ql {{Photo.. Dmitry Grushin $dreamstime 26457060}}.jpg
 manoeuvre~maneuver ## qrop l16 r17 {{Photo.. Onefivenine $dreamstime 2866182}}.jpg
@@ -32079,7 +32103,7 @@ birch catkins [catkins][birch][birch tree][Betula][Betulaceae] ## qrop ql {{Phot
 birch wood [birch][birch tree][Betula][Betulaceae] ## qrop ql {{Photo.. Vladimir Grigoriev $dreamstime 44022369}}.jpg
 bush @ plant ## qrop q {{Photo.. Victor Zastol`skiy $dreamstime 20776995}}.jpg
 chaparral ## qrop l7 r26 {{Photo.. Mtilghma $dreamstime 20258314}}.jpg
-coconut palm [palm@tree] ## qrop q {{Photo.. Dmitry Chulov $dreamstime 49920136}}.jpg
+coconut palm [palm@tree][coco@palm] ## qrop q {{Photo.. Dmitry Chulov $dreamstime 49920136}}.jpg
 cone @ plant ## qrop l8 r26 {{Photo.. Mario Juen $dreamstime 45121976}}.jpg
 eucalyptus [gum tree] ## qrop qr {{Photo.. Kosmos111 $dreamstime 45496461}}.jpg
 fig leaf @ nature ## qrop l15 r20 {{Photo.. Elcap $dreamstime 8230833}}.jpg
@@ -32885,7 +32909,7 @@ chrome @ bike ## qrop qr {{Photo.. David Stein $dreamstime 660854}}.jpg
 cycle rickshaw [becak][pedicab][velotaxi] ## qrop l13 r5 ## qropt! {{Photo.. I Wei Huang $dreamstime 71370293}}.jpg
 cycling [cyclism] {{Photo.. Jean Schweitzer $dreamstime 792966}}.jpg
 cyclist [biker@cyclist] ## qrop l27 r6 {{Photo.. Lane Erickson $dreamstime 19929558}}.jpg
-rim ## qrop t29 b4 {{Photo.. Patricia Cale $dreamstime 561619}}.jpg
+rim @ wheel ## qrop t29 b4 {{Photo.. Patricia Cale $dreamstime 561619}}.jpg
 saddle @ bike ## qrop l2 r8 ## qropt! {{Photo.. Dgstudio $dreamstime 21590492}}.jpg
 snowmobile ## qrop l21 r8 {{Photo.. Svetlana485 $dreamstime 30143232}} ### snowmobile during snow cross-country race.jpg
 speedometer and steering column [motorbike][motorcycle] ## qrop l4 r18 ## qropt! {{Photo.. Kamski59 $dreamstime 39435964}}.jpg
@@ -33268,7 +33292,7 @@ tent ## qrop l26 r6 {{Photo.. Sander  Van Der Werf $dreamstime 40008137}}.jpg
 the Land of the Rising Sun [Japanese] ## qrop l5 ## qropt! {{Photo.. Shirototoro $dreamstime 16349101}}.jpg
 >>> ../datae/sculpture
 >>> ../datae\sculpture/Begas {{Reinhold Begas}}
-_Pan comforting _Psyche [+][comfort@verb] ## 14+ ## qrop b1 ## date 1857 ## qropt!.jpg
+_Pan comforting _Psyche [+][comfort@relieve] ## 14+ ## qrop b1 ## date 1857 ## qropt!.jpg
 >>> ../datae\sculpture/Bernini {{Gian Lorenzo Bernini}}
 St. Sebastian [martyrdom].jpg
 >>> ../datae\sculpture/Bienaimé {{Luigi Bienaimé}}

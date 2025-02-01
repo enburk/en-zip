@@ -31,7 +31,7 @@ immobiliser\\immobilizer     = иммобилайзер/иммобилизато
 radiator @ car               = радиатор                           # 10+
 grill|grille @ car           = решетка радиатора                  # 10+
 
-moulding\\molding            = молдинг                            # TECH+ # 18+
+moulding\\molding @ car           = молдинг                            # TECH+ # 18+
 aerography                   = аэрография                         # 10+
 
 speedometer %% informal: speedo = спидометр                          # 10+

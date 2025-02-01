@@ -1,7 +1,5 @@
 sounds
 
 : bugle call: alarm # SOUND
-: semi-automatic rifle: cocking charge lever # SOUND
 : revolver: chamber spin # SOUND
-: rifle: bolt jam # SOUND
 : smoke grenade: pop and ignate # SOUND

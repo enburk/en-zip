@@ -21,7 +21,7 @@ antenna @ insect           = щупальце %% у насекомых
 parabolic antenna          = параболическая антенна                  # TECH+ # 14+
 
 receiver @ tech            = ресивер, ~ приёмник, получатель         # TECH+ # 16+
-receiver @ phone           = телефонная трубка                       # TECH+ # 16+
+receiver @ telephone       = телефонная трубка                       # TECH+ # 16+
 
 telemetry                  = телеметрия                              # TECH+ # 18+
 monitoring                 = наблюдение, слежение, ~ мониторинг      # TECH- # 16+

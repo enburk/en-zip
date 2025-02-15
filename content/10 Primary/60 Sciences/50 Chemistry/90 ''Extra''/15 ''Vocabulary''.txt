@@ -1,6 +1,25 @@
 basic ~ vocabulary
 
+oxygen = кислород
+hydrogen = водород
+nitrogen = азот
+carbon @ chemistry = углерод
+
+fluorine = фтор
+sodium = натрий
+sulfur = сера
+arsenic = мышьяк
+
+iron @ chemistry = железо
+copper @ chemistry = медь
+tin @ chemistry = олово
+mercury @ chemistry = ртуть
+lead @ chemistry = свинец
+
+===
+
 acid      = кислота, кислотный, ~ кислый
+alkali = щелочь
 
 test tube = пробирка
 

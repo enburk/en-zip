@@ -380,6 +380,9 @@ namespace studio::one
         suggestions(course, unused_resources, vocabulary);
         order_check(course, vocabulary);
 
+        std::map<str, array<res>> words;
+        std::map<int, array<res>> Words;
+
         std::multimap<int, res>
             weighted_unused_resources;
         for (res r:  unused_resources)
@@ -395,6 +398,11 @@ namespace studio::one
                 contains(s))
                 continue;
 
+            if (r->kind == "audio"
+            and not s.contains(" ")) {
+                words[s] += r;
+                continue; }
+
             if (r->kind == "audio")
                 report::audioq +=
                 cliplink(r);
@@ -403,6 +411,10 @@ namespace studio::one
                 report::videoq +=
                 cliplink(r);
         }
+
+        for (auto& [s, rr] : words) if (rr.size() > 1) Words[rr.size()] += rr;
+        for (auto& [n, rr] : Words) for (auto r: rr)
+        report::audioq += cliplink(r);
 
         report::audioq.log += bold(blue(
         "total: " + str(report::audioq.log.size())));

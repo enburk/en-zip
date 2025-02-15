@@ -1,9 +1,9 @@
 jobs
 
-commuter   = a person who regularly travels from one place to another, typically to work
+commuter          = a person who regularly travels from one place to another, typically to work
 
 ---
-undertaker = a funeral director
+undertaker        = a funeral director
 : Why did the undertaker lose his job? Because he made a grave mistake.
 
 ===
@@ -17,7 +17,9 @@ fool's errand
 
 ---
 skive {Br.} @ job = to avoid one's lessons or work
-shirk = to avoid, especially a duty, ~ responsibility, etc.
+shirk             = to avoid, especially a duty, ~ responsibility, etc.
 : The art of skiving, as it’s sometimes called in England /// but proper shirking does seem to require something real to shirk
 
 : Think about saying “Good job!”
+
+: Kings, earls, emperors, pashas, emirs, squires

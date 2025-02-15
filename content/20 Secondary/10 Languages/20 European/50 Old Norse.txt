@@ -24,9 +24,6 @@ gift @ gift
 : a gifted man
 : Don't look a gift horse in the mouth.
 
-skill
-skirt
-anger
 ---
 skin
 : There's more than one way to skin a cat.
@@ -34,6 +31,10 @@ skin
 
 birth
 die         # duple
+
+ski
+skirt
+stack @ pile
 
 ---
 fellow
@@ -49,28 +50,15 @@ wrong
 
 dirt
 bloom
-boulder
 fog
 sky
 
-reindeer
-
-gait
 window @ house
 wing @ bird # duple
 
 gang
 law
----
-trust
-: Never trust a woman who gives funny names to means of transport.
 
 raft @ craft
 wreck @ ship
-
-ski
-stack @ pile
-
-
-
 

@@ -184,7 +184,9 @@ widget<App>
         and alpha.to == 255
         and first_time) {
             first_time = false;
-            o ? one.play() :
+            o ? one.reload():
+                two.reload();
+            o ? one.play():
                 two.play();
         }
 

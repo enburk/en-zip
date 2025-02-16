@@ -320,6 +320,7 @@ namespace studio::one
 
             bool sound_ok = not soundio;
             bool video_ok = nopixed or
+            entry.eng.contains(str(u8"→")) or
             entry.eng.starts_with(":") or
             entry.eng == "";
 
@@ -353,6 +354,7 @@ namespace studio::one
                 if (r->kind == "video")
                     video_ok = true;
             }
+
             str s = html(entry.eng);
             str snd = red(bold(" sound "));
             str ens = red(bold(" en: " + html(str(en, ", "))));
@@ -398,8 +400,8 @@ namespace studio::one
                 contains(s))
                 continue;
 
-            if (r->kind == "audio"
-            and not s.contains(" ")) {
+            if (r->audiolike() and
+            not s.contains(" ")) {
                 words[s] += r;
                 continue; }
 
@@ -431,7 +433,7 @@ namespace studio::one
         report::audiom.log += bold(blue(
         "+" + str(n-nn) + " more"));
 
-        if (int nn = 500, n = 
+        if (int nn = 2000, n = 
         report::videom.log.size(); n > 2*nn)
         report::videom.log.resize(nn),
         report::videom.log += bold(blue(

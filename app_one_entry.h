@@ -150,9 +150,10 @@ namespace app::one
 
             str text = doc::html::untagged(html);
 
-            player.stay = gui::time{1000 +
-            video_index.title.size() * 10 +
-                text.size() * 10};
+            player.stay = gui::time{int((1000.0 +
+                video_index.title.size() * 10.0 +
+                text.size() * 10.0) /
+                app::speed)};
 
             script.html = html;
             credit.html = "";

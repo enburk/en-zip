@@ -149,9 +149,10 @@ namespace app::video
                 start = gui::time::now;
             }
 
-            if (what == &playing
-            and video.status == state::finished
-            and start + stay < gui::time::now)
+            if (what == &playing and start + stay < gui::time::now)
+            if (video.status == state::finished or
+                video.duration - video.elapsed <
+                gui::time{int(100*app::speed)})
             {
                 medio.done();
                 stay.ms = int(std::round(

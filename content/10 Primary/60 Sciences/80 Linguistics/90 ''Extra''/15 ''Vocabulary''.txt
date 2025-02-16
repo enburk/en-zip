@@ -1,13 +1,14 @@
 basic ~ vocabulary
 
-dictionary = словарь, справочник
-word  @ grammar      = слово
+dictionary          = словарь, справочник
+word  @ grammar     = слово
 
-consonant  = согласный ~ (звук)
-vowel      = гласный звук, ~ гласная буква
+consonant           = согласный ~ (звук)
+vowel               = гласный звук, ~ гласная буква
 
-subject @ grammar = подлежащее
-object @ grammar = дополнение # duple
+subject @ grammar   = подлежащее
+object @ grammar    = дополнение # duple
 predicate @ grammar = сказуемое
+
 
 

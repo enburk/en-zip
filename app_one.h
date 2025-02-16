@@ -14,6 +14,7 @@ namespace app::one
         property<bool> translated = false;
 
         sfx::media::medio medio;
+        gui::timer nexter;
 
         using state = sfx::media::state;
 
@@ -69,9 +70,37 @@ namespace app::one
 
         void Next ()
         {
+            stop();
+            auto theme = stage.theme;
+            theme = theme->next_theme();
+            if (not theme)
+                return;
+
+            // std::this_thread::sleep_for(2s); // 
+
+            //std::rotate(
+            //std::begin(stages),
+            //std::begin(stages)+1,
+            //std::end  (stages));
+
+            go(theme->path);
+            play();
         }
         void Prev ()
         {
+            stop();
+            auto theme = stage.theme;
+            theme = theme->prev_theme();
+            if (not theme)
+                return;
+
+            //std::rotate(
+            //std::rbegin(stages),
+            //std::rbegin(stages)+1,
+            //std::rend  (stages));
+
+            go(theme->path);
+            play();
         }
 
         void go (str path, bool app_shown = true)
@@ -88,10 +117,7 @@ namespace app::one
                 extracolor("Extra"));
 
             sys::settings::save(
-            "app::one::path",
-            stage.theme ?
-            stage.theme->path:
-                "");
+            "app::one::path", stage.path());
         }
 
         void on_change (void* what) override
@@ -113,15 +139,20 @@ namespace app::one
                     notify();
                     break;
                 case state::finished:
-                    //stage.next();
-                    //stage.show();
-                    //stage.play();
+                    nexter.setup(2s);
                     medio.done();
                     notify();
                     break;
                 default:
                     break;
                 }
+            }
+
+            if (what == &nexter)
+            {
+                nexter.stop();
+                Next();
+                notify();
             }
 
             if (what == &playmode)

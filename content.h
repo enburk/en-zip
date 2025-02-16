@@ -50,21 +50,34 @@ namespace content
             theme;
         }
 
-        //unit* first (Kind k)
-        //{
-        //}
-        //
-        //unit* last (Kind k)
-        //{
-        //}
-        //
-        //unit* prev (Kind k)
-        //{
-        //}
-        //
-        //unit* next (Kind k)
-        //{
-        //}
+        unit* first_theme ()
+        {
+            for (unit& u: units)
+            if (u.kind == theme)
+            return u.first_theme(); else
+            return this;
+            return this;
+        }
+
+        unit* next_theme (int current = 0)
+        {
+            for (; current < units.size(); current++)
+            if (units[current].kind == theme)
+            return units[current].first_theme();
+
+            if (not parent) return nullptr;
+
+            for (int n = 0; n < parent->units.size(); n++)
+                if (&(parent->units[n]) == this)
+                    return parent->next_theme(n+1);
+
+            return nullptr;
+        }
+
+        unit* prev_theme (int Order = -1)
+        {
+            return nullptr;
+        }
 
         void sort ()
         {

@@ -2,10 +2,10 @@
 royal
 nobility
 manor
-count @ title
-countess
-duke
-duchess
+
+district
+citizen
+peasant
 
 ---
 prison
@@ -13,6 +13,7 @@ jail
 robbery
 judge
 : Stop judging.
+
 ---
 foreign
 : foreign countries
@@ -22,19 +23,19 @@ embassy
 treaty
 union
 
+===
+
 enterprise
 vendor
 tax
+
 ---
 benefit
 payment
 : In our society there seems to be a general rule that
+
 ---
 debt
 : Surely one has to pay one's debts.
-
-district
-citizen
-peasant
 
 

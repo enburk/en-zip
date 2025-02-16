@@ -34,6 +34,14 @@ namespace app::one
         unit* where = nullptr;
         unit* theme = nullptr;
 
+        str path ()
+        {
+            return 
+            theme ?
+            theme->path:
+            "";
+        }
+
         void fill ()
         {
             theme = where;
@@ -264,7 +272,7 @@ namespace app::one
         void next ()
         {
             showslide();
-            if (current >= slides.size()-1) return;
+            if (current+1 >= slides.size()) return;
             current++;
             if (status != state::playing)
             showslide();
@@ -286,7 +294,7 @@ namespace app::one
                     playslide();
                     break;
                 case state::finished:
-                    if (current >= slides.size()-1) {
+                    if (current+1 >= slides.size()) {
                         medio.done();
                         break;
                     }

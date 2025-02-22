@@ -145,7 +145,7 @@ namespace app::one
                 html = media::canonical(audio_index.title);
                 if (audio_index.credit != "") html += "<br>"
                 "<div style=\"line-height: 20%\"><br></div>" +
-                gray(small(audio_index.credit));
+                gray(small(media::canonical(audio_index.credit)));
             }
 
             str text = doc::html::untagged(html);

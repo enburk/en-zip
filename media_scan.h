@@ -128,6 +128,18 @@ namespace media::scan
                 resource.credit.replace_all(", read by", "<br>read by");
                 resource.credit.replace_all(", narrated by", "<br>narrated by");
 
+                if (resource.credit.contains   ("read by "))
+                    resource.credit.replace_all("read by ", "<small><small>read by "),
+                    resource.credit += "</small></small>";
+
+                if (resource.credit.contains   ("narrated by "))
+                    resource.credit.replace_all("narrated by ", "<small><small>narrated by "),
+                    resource.credit += "</small></small>";
+
+                if (resource.credit.contains   ("The Great Courses"))
+                    resource.credit.replace_all("The Great Courses", "<small><small>The Great Courses"),
+                    resource.credit += "</small></small>";
+
                 resources += resource;
 
                 if (resource.title.contains(one_of("#@")))

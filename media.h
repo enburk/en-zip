@@ -116,19 +116,19 @@ namespace media
         {
             s = ss.front(); ss.upto(1).erase();
             
-            for (str ww : ss)
+            for (str x: ss)
             {
                 int n = 0;
-                for (char c : ww)
+                for (char c : x)
                     if((c < '0') || ('9' < c &&
                         c < 'A') || ('Z' < c &&
                         c < 'a') || ('z' < c))
                         break; else n++;
 
-                str w = ww.upto(n);
-                str r = ww.from(n);
+                str word = x.upto(n);
+                str rest = x.from(n);
 
-                s += linked(w,w) + r;
+                s += linked(word,word) + rest;
             }
         }
 

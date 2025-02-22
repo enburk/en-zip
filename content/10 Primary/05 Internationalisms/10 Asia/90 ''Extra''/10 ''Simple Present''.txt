@@ -1,3 +1,4 @@
+grammar
 Simple Present Tense                         = простое настоящее %% Другие названия: ~ '''Present Simple, Present Indefinite''' ~ (настоящее неопределённое)
 
 : I know. @@                                 = Я знаю.

@@ -59,15 +59,19 @@ namespace content
             return this;
         }
 
-        unit* next_theme (int current = 0)
+        unit* next_theme (int current)
         {
-            for (; current < units.size(); current++)
+            for (int n = current; n < units.size(); n++)
             if (units[current].kind == theme)
             return units[current].first_theme();
+            
+            //if (current < units.size())
+            //if (units[current].kind != theme)
+            //return this;
 
             if (not parent) return nullptr;
 
-            for (int n = 0; n < parent->units.size(); n++)
+            for (int n=0; n < parent->units.size(); n++)
                 if (&(parent->units[n]) == this)
                     return parent->next_theme(n+1);
 

@@ -19,6 +19,7 @@ namespace app::one
         property<int>  number = -1;
         property<bool> translated = false;
 
+        content::unit* topic = nullptr;
         media::index audio_index;
         media::index sound_index;
         media::index video_index;

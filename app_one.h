@@ -72,11 +72,12 @@ namespace app::one
         {
             stop();
             auto theme = stage.theme;
-            theme = theme->next_theme();
+            auto topic = stage.topic;
+            for (int n=0; n < theme->units.size(); n++)
+            if  (topic == &(theme->units[n]))
+            theme = theme->next_theme(n+1);
             if (not theme)
                 return;
-
-            // std::this_thread::sleep_for(2s); // 
 
             //std::rotate(
             //std::begin(stages),
@@ -105,7 +106,7 @@ namespace app::one
 
         void go (str path, bool app_shown = true)
         {
-            stage.where = course.find(path);
+            stage.topic = course.find(path);
             if (app_shown)
             stage.fill();
 
@@ -115,9 +116,6 @@ namespace app::one
             where.replace_all("/", blue("/"));
             where.replace_all("''Extra''",
                 extracolor("Extra"));
-
-            sys::settings::save(
-            "app::one::path", stage.path());
         }
 
         void on_change (void* what) override

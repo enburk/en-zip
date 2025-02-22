@@ -11,6 +11,7 @@ namespace app::one
         gui::time instantly = 50ms;
         gui::time smoothly = 500ms;
         gui::time swiftly  = 100ms;
+        content::unit* topic = nullptr;
         int current = 0;
 
         using state = sfx::media::state;

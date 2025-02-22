@@ -31,7 +31,7 @@ namespace app::one
 
         using unit = content::unit;
 
-        unit* where = nullptr;
+        unit* topic = nullptr;
         unit* theme = nullptr;
 
         str path ()
@@ -44,7 +44,7 @@ namespace app::one
 
         void fill ()
         {
-            theme = where;
+            theme = topic;
 
             while ( theme
                 and theme->kind != unit::theme) theme =
@@ -107,6 +107,7 @@ namespace app::one
                         e.number = leaf.entry;
                         e.new_topic = false;
                         e.new_chain = false;
+                        e.topic = &topic;
                         e.hide();
                         e.load();
                     }
@@ -120,6 +121,13 @@ namespace app::one
             current = 0;
             resize();
             load();
+
+            if (not slides.empty()) {
+            topic = slides.front().topic;
+            sys::settings::save(
+                "app::one::path",
+                    topic->path);
+            }
         }
 
         void resize ()
@@ -203,6 +211,14 @@ namespace app::one
 
                 for (auto& e: s.entries)
                 e->shift(xy(0, H/2-hh/2));
+
+                if (s.entries.empty())
+                    std::abort();
+
+                s.topic = s.entries.front()->topic;
+
+                if (not s.topic)
+                    std::abort();
             }
         }
 
@@ -227,6 +243,13 @@ namespace app::one
                 current = slides.size()-1;
                 for (slide& s: slides)
                 s.show();
+
+                if (not slides.empty()) {
+                topic = slides.front().topic;
+                sys::settings::save(
+                    "app::one::path",
+                        topic->path);
+                }
             }
         }
 
@@ -243,6 +266,11 @@ namespace app::one
             slides.empty()) return;
             slides[current].play();
             scroll(-height);
+
+            topic = slides[current].topic,
+            sys::settings::save(
+                "app::one::path",
+                    topic->path);
         }
 
         void showslide ()

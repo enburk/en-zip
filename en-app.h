@@ -197,15 +197,15 @@ widget<App>
         if (what == &play.Next) o? one.Next() : two.Next();
         if (what == &play.Prev) o? one.Prev() : two.Prev();
 
-        if (what == &ones) one.go(ones.selected, shown());
-        if (what == &Ones) one.go(Ones.selected, shown());
+        if (what == &ones) one.go(ones.selected);
+        if (what == &Ones) one.go(Ones.selected);
         if (what == &ones
         or  what == &Ones)
         if (shown())
             one.play();
 
-        if (what == &twos) two.go(twos.selected, shown());
-        if (what == &Twos) two.go(Twos.selected, shown());
+        if (what == &twos) two.go(twos.selected);
+        if (what == &Twos) two.go(Twos.selected);
         if (what == &twos
         or  what == &Twos)
         if (shown())

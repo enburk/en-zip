@@ -70,52 +70,53 @@ namespace app::one
 
         void Next ()
         {
+            if (not stage.topic) return;
+            auto topic = stage.topic->next();
+            if (not topic) return;
+
             stop();
-            auto theme = stage.theme;
-            auto topic = stage.topic;
-            for (int n=0; n < theme->units.size(); n++)
-            if  (topic == &(theme->units[n]))
-            theme = theme->next_theme(n+1);
-            if (not theme)
-                return;
 
             //std::rotate(
             //std::begin(stages),
             //std::begin(stages)+1,
             //std::end  (stages));
 
-            go(theme->path);
+            go(topic->path);
             play();
         }
         void Prev ()
         {
+            if (not stage.topic) return;
+            auto topic = stage.topic->prev();
+            if (not topic) return;
+
             stop();
-            auto theme = stage.theme;
-            theme = theme->prev_theme();
-            if (not theme)
-                return;
 
             //std::rotate(
             //std::rbegin(stages),
             //std::rbegin(stages)+1,
             //std::rend  (stages));
 
-            go(theme->path);
+            go(topic->path);
             play();
         }
 
         void go (str path, bool app_shown = true)
         {
-            stage.topic = course.find(path);
-            if (app_shown)
-            stage.fill();
+            stage.go(path, shown());
 
             where =
-            stage.theme ?
-            stage.theme->path:red(bold(path));
+            stage.topic and
+            stage.topic->parent?
+            stage.topic->parent->path : red(bold(path));
             where.replace_all("/", blue("/"));
             where.replace_all("''Extra''",
                 extracolor("Extra"));
+
+            if(
+            stage.topic and
+            stage.topic->parent) sys::settings::save("app::one::path",
+            stage.topic->parent->path);
         }
 
         void on_change (void* what) override

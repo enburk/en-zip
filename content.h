@@ -50,39 +50,6 @@ namespace content
             theme;
         }
 
-        unit* first_theme ()
-        {
-            for (unit& u: units)
-            if (u.kind == theme)
-            return u.first_theme(); else
-            return this;
-            return this;
-        }
-
-        unit* next_theme (int current)
-        {
-            for (int n = current; n < units.size(); n++)
-            if (units[current].kind == theme)
-            return units[current].first_theme();
-            
-            //if (current < units.size())
-            //if (units[current].kind != theme)
-            //return this;
-
-            if (not parent) return nullptr;
-
-            for (int n=0; n < parent->units.size(); n++)
-                if (&(parent->units[n]) == this)
-                    return parent->next_theme(n+1);
-
-            return nullptr;
-        }
-
-        unit* prev_theme (int Order = -1)
-        {
-            return nullptr;
-        }
-
         void sort ()
         {
             std::ranges::sort(units, [](auto& a, auto& b)
@@ -167,5 +134,86 @@ namespace content
         unit& add_topic (int Order, str Name) { return add(topic, Order, Name); }
         unit& add_chain (int Order) { return add(chain, Order, ""); }
         unit& add_leaf  (int Order) { return add(leaf , Order, ""); }
+
+        unit* first_topic ()
+        {
+            for (unit& u: units)
+            if (u.kind == topic)
+            return &u;
+            return nullptr;
+        }
+
+        unit* first_theme ()
+        {
+            for (unit& u: units)
+            if (u.kind == theme)
+            return u.first_theme(); else
+            return this;
+            return this;
+        }
+
+        unit* next_theme (int current)
+        {
+            for (unit& u: units.from(current))
+            if (u.kind == theme)
+            return u.first_theme();
+
+            if (not parent) return nullptr;
+
+            for (int n=0; n < parent->units.size(); n++)
+            if (&(parent->units[n]) == this)
+            return parent->next_theme(n+1);
+            return nullptr;
+        }
+
+        unit* next ()
+        {
+            if (not kind == topic)
+                return nullptr;
+
+            if (not parent
+            or  not parent->kind == theme)
+                return nullptr;
+
+            auto Theme = parent->next_theme(0);
+            return Theme? Theme->first_topic():
+                nullptr;
+        }
+
+        unit* prev_theme (int current)
+        {
+            for (int i=current; i >= 0 and i<units.size(); i--)
+            if (units[i].kind == theme)
+            return &units[i]; else
+            return this;
+            return prev_theme();
+        }
+
+        unit* prev_theme ()
+        {
+            if (not kind == theme)
+                return nullptr;
+
+            if (not parent
+            or  not parent->kind == theme)
+                return nullptr;
+
+            for (int n=0; n < parent->units.size(); n++)
+            if (&(parent->units[n]) == this)
+            return parent->prev_theme(n-1);
+            return nullptr;
+        }
+
+        unit* prev ()
+        {
+            if (not kind == topic)
+                return nullptr;
+
+            if (not parent
+            or  not parent->kind == theme)
+                return nullptr;
+
+            return parent->prev_theme();
+        }
     };
 }

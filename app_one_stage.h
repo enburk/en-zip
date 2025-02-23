@@ -32,30 +32,42 @@ namespace app::one
         using unit = content::unit;
 
         unit* topic = nullptr;
-        unit* theme = nullptr;
 
-        str path ()
+        void go (str path, bool app_shown = true)
         {
-            return 
-            theme ?
-            theme->path:
-            "";
+            topic = course.find(path);
+            if (not topic) return;
+
+            if (topic->kind == unit::theme)
+            if (auto theme = topic->first_theme())
+                topic = theme->first_topic();
+
+            if (app_shown)
+            {
+                fill();
+
+                for (int i=0; i<slides.size(); i++)
+                if (slides[i].topic == topic) {
+                    current = i;
+                    scroll(-height);
+                    break;
+                }
+            }
         }
 
         void fill ()
         {
-            theme = topic;
+            if (not topic
+            or  not topic->kind == unit::topic)
+                return;
 
-            while ( theme
-                and theme->kind != unit::theme) theme =
-                    theme->parent;
+            auto theme = topic->parent;
 
-            while ( theme and
-                not theme->units.empty()
-                and theme->units.front().kind == unit::theme) theme =
-                   &theme->units.front();
+            if (not theme
+            or  not theme->kind == unit::theme)
+                return;
 
-            if (not theme) return;
+            Stop();
 
             int i = 0;
 
@@ -121,13 +133,6 @@ namespace app::one
             current = 0;
             resize();
             load();
-
-            if (not slides.empty()) {
-            topic = slides.front().topic;
-            sys::settings::save(
-                "app::one::path",
-                    topic->path);
-            }
         }
 
         void resize ()
@@ -244,13 +249,16 @@ namespace app::one
                 for (slide& s: slides)
                 s.show();
 
-                if (not slides.empty()) {
+                if (not slides.empty())
                 topic = slides.front().topic;
-                sys::settings::save(
-                    "app::one::path",
-                        topic->path);
-                }
             }
+        }
+
+        void Stop ()
+        {
+            for (auto& slide: slides)
+            slide.stop();
+            medio.stop();
         }
 
         void stop ()
@@ -267,10 +275,7 @@ namespace app::one
             slides[current].play();
             scroll(-height);
 
-            topic = slides[current].topic,
-            sys::settings::save(
-                "app::one::path",
-                    topic->path);
+            topic = slides[current].topic;
         }
 
         void showslide ()

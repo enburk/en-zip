@@ -159,7 +159,8 @@ namespace app::one
             script.html = html;
             credit.html = "";
 
-            if (pixed)
+            if (pixed and
+            not video_index.options.contains("texted"))
             {
                 str t = video_index.title;
                 str c = media::canonical(t);

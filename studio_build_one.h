@@ -25,15 +25,29 @@ namespace studio::one
         err << red(bold("ONE ERRORS:"));
         err << report::errors.log; }
 
+        array<str> needed_en;
+        array<str> needed_us;
+        array<str> needed_uk;
+
         hashmap<res, array<ent>> multientry;
         array<std::pair<ent, array<res>>> multivideo;
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
         hashset<str> course_vocabulary_forms;
+        hashmap<str, int> course_vocabulary_ens;
+        hashmap<str, int> course_vocabulary_uss;
+        hashmap<str, int> course_vocabulary_uks;
         hashmap<str, voc> course_vocabulary;
         for (auto& entry: course.entries)
         {
+            if (not entry.eng.starts_with(": "))
+            {
+                for (str s: entry.en) course_vocabulary_ens[s.extract_upto("@")]++;
+                for (str s: entry.us) course_vocabulary_uss[s.extract_upto("@")]++;
+                for (str s: entry.uk) course_vocabulary_uks[s.extract_upto("@")]++;
+            }
+
             for (str s: entry.vocabulary)
             {
                 course_vocabulary[s].
@@ -79,6 +93,10 @@ namespace studio::one
                     emplace(f);
             }
         }
+
+        for (auto& [s,n]: course_vocabulary_ens) n = min(n, 6);
+        for (auto& [s,n]: course_vocabulary_uss) n = min(n, 6);
+        for (auto& [s,n]: course_vocabulary_uks) n = min(n, 6);
 
         reporting(course,
         course_vocabulary);
@@ -297,12 +315,12 @@ namespace studio::one
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));
 
-        auto fullfill = [](array<str>& units, str word)
+        auto fullfill = [](array<str>& units, str word, hashmap<str, int>& nn)
         {
-            units.erase_if([word](str& unit)
+            units.erase_if([word, &nn](str& unit)
             {
                 for (str s: unit.split_by("|"))
-                if (s == word) return true;
+                if (s == word and --nn[s] <= 0) return true;
                 return false;
             });
         };
@@ -342,10 +360,10 @@ namespace studio::one
 
                 str w = simple(r->abstract);
 
-                if (r->kind == "audio") {
-                if (r->options.contains("uk")) fullfill(uk, w);
-                if (r->options.contains("us")) fullfill(us, w);
-                /*        in any case       */ fullfill(en, w); }
+                if (r->kind == "audio" and not r->options.contains("xlam")) {
+                if (r->options.contains("uk")) fullfill(uk, w, course_vocabulary_uks);
+                if (r->options.contains("us")) fullfill(us, w, course_vocabulary_uss);
+                /*        in any case       */ fullfill(en, w, course_vocabulary_ens); }
 
                 if (r->kind == "audio"
                 and r->options.contains("sound"))
@@ -365,6 +383,10 @@ namespace studio::one
             if (not us.empty()) report::audiom += linked(s + uss, entry.link);
             if (not sound_ok  ) report::audiom += linked(s + snd, entry.link);
             if (not video_ok  ) report::videom += linked(s + " ", entry.link);
+
+            for (str s: en) needed_en += s.extract_upto("@");
+            for (str s: us) needed_us += s.extract_upto("@");
+            for (str s: uk) needed_uk += s.extract_upto("@");
 
             videos.deduplicate();
             for (res r: videos)
@@ -476,5 +498,9 @@ namespace studio::one
         searchmap.erase(r.begin(), r.end());
 
         if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
+
+        needed_en.stable_deduplicate(); sys::write("../data/needed_en.txt", needed_en);
+        needed_us.stable_deduplicate(); sys::write("../data/needed_us.txt", needed_us);
+        needed_uk.stable_deduplicate(); sys::write("../data/needed_uk.txt", needed_uk);
     }
 }

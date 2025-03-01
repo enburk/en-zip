@@ -1,8 +1,11 @@
-emotions
-
 ===
-anger
-angry
+emotions             # HEAD
+anger %% {noun}      # pix-
+angry %% {adjective} # pix-
+===
+
+angry monkey
+
 ===
 
 : Give me a break! @ angry

@@ -29,6 +29,8 @@ namespace app::one
         using(error)
         #undef using
 
+        ~stage () { Stop(); }
+
         using unit = content::unit;
 
         unit* topic = nullptr;

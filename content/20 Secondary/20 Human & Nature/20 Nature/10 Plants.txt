@@ -3,6 +3,7 @@ plants
 grass
 bush @ plant
 trail @ forest
+fern
 
 trunk @ tree
 stump @ tree
@@ -10,15 +11,14 @@ growth rings # 8+
 
 maple leaves
 oak leaves
-acorn
-birch catkins
+
 willow [tree]
 aspens
 
 fir
 needles @ plant
-fern
 
 ---
-coco @ palm  = coconut palm
-coco @ fruit = coconut
+coco @ palm  = coconut palm /// from Spanish, not a clipping
+coco @ fruit = coconut     /// from Spanish, not a clipping
+

@@ -55,7 +55,7 @@ namespace app::dic::video
             script.forbidden_links = links;
             credit.forbidden_links = links;
 
-            str s = index.title;
+            str s = index.options.contains("texted") ? "" : index.title;
             str c = index.credit;
 
             s = eng::parser::embolden(s, links);
@@ -67,6 +67,9 @@ namespace app::dic::video
                 s += "<br>" + dark(
                 media::canonical(
                 index.comment));
+
+            // prevent 0-height script
+            if (s == "") s = "&nbsp;";
 
             script.html = s;
             credit.html = gray(small(c));

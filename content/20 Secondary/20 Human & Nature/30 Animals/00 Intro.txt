@@ -1,22 +1,12 @@
 animals
 
-impala %% plural impala, impalas # 10+
-mouflon|moufflon # 10+
-
 polar bear
 
 arctic fox
-flying fox       # 8+
-
-warthog
+flying fox # 8+
 
 hedgehog @ animal
 beaver
----
-porcupine        # 8+
-porcupine spine  # 8+
-
-mandrill
 
 snail
 
@@ -24,7 +14,5 @@ toad @ frog
 king cobra
 
 emperor penguins
-elephant bird
-
 
 

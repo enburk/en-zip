@@ -180,11 +180,20 @@ namespace content
                 nullptr;
         }
 
+        unit* last_theme ()
+        {
+            for (unit& u: reverse(units))
+            if (u.kind == theme)
+            return u.last_theme(); else
+            return this;
+            return this;
+        }
+
         unit* prev_theme (int current)
         {
             for (int i=current; i >= 0 and i<units.size(); i--)
             if (units[i].kind == theme)
-            return &units[i]; else
+            return units[i].last_theme(); else
             return this;
             return prev_theme();
         }
@@ -213,7 +222,9 @@ namespace content
             or  not parent->kind == theme)
                 return nullptr;
 
-            return parent->prev_theme();
+            auto Theme = parent->prev_theme();
+            return Theme? Theme->first_topic():
+                nullptr;
         }
     };
 }

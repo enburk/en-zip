@@ -35,10 +35,10 @@ namespace app::one
 
         unit* topic = nullptr;
 
-        void go (str path, bool app_shown = true)
+        void go (unit* t, bool app_shown = true)
         {
-            topic = course.find(path);
-            if (not topic) return;
+            if (not t or t == topic) return;
+            topic = t;
 
             if (topic->kind == unit::theme)
             if (auto theme = topic->first_theme())
@@ -48,12 +48,21 @@ namespace app::one
             {
                 fill();
 
+                bool found = false;
                 for (int i=0; i<slides.size(); i++)
-                if (slides[i].topic == topic) {
-                    current = i;
-                    scroll(-height);
-                    break;
+                {
+                    if (not found) current = i;
+                    if (playmode.now and found)
+                        slides[i].hide(); else
+                        slides[i].show();
+                    if (slides[i].topic == topic)
+                        found = true;
                 }
+
+                int y =
+                slides.empty() ? 0 :
+                slides[current].coord.to.y;
+                scroll(-y - coord.now.h + height);
             }
         }
 

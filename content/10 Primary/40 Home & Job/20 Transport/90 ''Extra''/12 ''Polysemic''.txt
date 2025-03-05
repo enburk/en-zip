@@ -13,6 +13,7 @@ superconductor            = сверхпроводник                        
 guard\\conductor @ train  = проводник ~ (в поезде)
 guide @ person            = экскурсовод, гид, ~ проводник
 guide @ book              = руководство, ~ путеводитель
+: “The Guide is definitive. ~ Reality is frequently ~ inaccurate.”
 ***
 course @ path             = курс, направление, ход                # 10+
 : Maintain 25,000 feet, course 0-4-0. # 10+

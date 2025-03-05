@@ -1,9 +1,7 @@
-firefighting                # pix-
+firefighting
 
 firefighter
 fire extinguisher
-firefighting foam
-
 fire truck
 
 fire alarm
@@ -13,15 +11,23 @@ fire door
 ===
 
 fire hose
-hose nozzle                 # 14+
-hose fitting                # 14+
-fire hose reel              # 14+
+fire hose reel
 
 [fire] hydrant
-spare sprinkler heads
+
 fire bucket
 fireman's axe\\fireman's ax # 8+
+
 ---
 fire emergency phone
 break glass, press here
+
+===
+
+hose nozzle
+hose fitting
+
+spare sprinkler heads
+
+firefighting foam
 

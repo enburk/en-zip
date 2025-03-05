@@ -9,10 +9,12 @@ namespace studia::one
         using entry = content::out::course::search_entry;
 
         gui::text::view Exact;
+        gui::text::view EXact;
         gui::text::view Title;
         gui::text::view Words;
         gui::text::view Media;
         gui::area<editor> exact;
+        gui::area<editor> eXact;
         gui::area<editor> title;
         gui::area<editor> words;
         gui::area<editor> media;
@@ -25,8 +27,9 @@ namespace studia::one
         search ()
         {
             Exact.text = "exactly:";
+            EXact.text = "has exactly:";
             Title.text = "starts with:";
-            Words.text = "word starts with:";
+            Words.text = "has word starting with:";
             Media.text = "media contain:";
             result.object.view.wordwrap = false;
             result.object.view.ellipsis = true;
@@ -36,6 +39,7 @@ namespace studia::one
         void reload (content::unit* unit = nullptr, str path = "")
         {
             exact.object.text = "";
+            eXact.object.text = "";
             title.object.text = "";
             words.object.text = "";
             if (true) sys::in::file("../data/course_searchmap_title.dat") >> titlemap;
@@ -58,6 +62,8 @@ namespace studia::one
                 result.coord = xywh(0, 0, W-w, H);
                 Exact .coord = xywh(W-w, y, w, h); y += h;
                 exact .coord = xywh(W-w, y, w, h); y += h;
+                EXact .coord = xywh(W-w, y, w, h); y += h;
+                eXact .coord = xywh(W-w, y, w, h); y += h;
                 Title .coord = xywh(W-w, y, w, h); y += h;
                 title .coord = xywh(W-w, y, w, h); y += h;
                 Words .coord = xywh(W-w, y, w, h); y += h;
@@ -76,10 +82,12 @@ namespace studia::one
                     ed.show_focus = true; };
 
                 Exact.color = s.touched.first;
+                EXact.color = s.touched.first;
                 Title.color = s.touched.first;
                 Words.color = s.touched.first;
                 Media.color = s.touched.first;
                 edit(exact);
+                edit(eXact);
                 edit(title);
                 edit(words);
                 edit(media);
@@ -92,21 +100,24 @@ namespace studia::one
             }
 
             if (what == &exact.object.update_text
+            or  what == &eXact.object.update_text
             or  what == &title.object.update_text
             or  what == &words.object.update_text)
             {
-                bool o1 = what == &exact.object.update_text;
+                bool o0 = what == &exact.object.update_text;
+                bool o1 = what == &eXact.object.update_text;
                 bool o2 = what == &title.object.update_text;
                 bool o3 = what == &words.object.update_text;
 
-                auto& edit = o1 ? exact : o2 ? title : words;
-                auto& map = o2 ? titlemap : wordsmap;
+                auto& edit = o0 ? exact : o1 ? eXact : o2 ? title : words;
+                auto& map = o0 or o2 ? titlemap : wordsmap;
 
                 str s = edit.object.text; s.strip();
                 s = eng::asciized(s).ascii_lowercased();
-                if (s.size() < 2) return;
+                if (not o0 and s.size() < 2 or s == "") return;
 
-                if (not o1) exact.object.text = "";
+                if (not o0) exact.object.text = "";
+                if (not o1) eXact.object.text = "";
                 if (not o2) title.object.text = "";
                 if (not o3) words.object.text = "";
 
@@ -128,8 +139,8 @@ namespace studia::one
 
                 array<entry> entries;
                 for (auto it = lower; it != upper; ++it)
-                if (o1 and it->word == s or
-                not o1 and it->word.upto(s.size()) == s)
+                if ((o0 or o1) and it->word == s or
+                not (o0 or o1) and it->word.upto(s.size()) == s)
                     entries += *it;
 
                 for (auto& e: entries)
@@ -178,6 +189,7 @@ namespace studia::one
                 if (src.size() < 2) return;
 
                 exact.object.text = "";
+                eXact.object.text = "";
                 title.object.text = "";
                 words.object.text = "";
                 thread.stop = true;

@@ -1,30 +1,28 @@
-tourism        = туризм
+tourism      = туризм
 
-tourist        = турист
-tour           = тур
+tourist      = турист
+tour         = тур
 
-hotel          = отель
-motel          = мотель                                          # 10+
-hostel         = общежитие, хо́стел                               # 10+ /// (недорогая гостиница)
-camping\\campground %% Br. also campsite = кемпинг                                         # 10+ /// (лагерь для автотуристов)
-tent           = тент, палатка
+hotel        = отель
+motel        = мотель                                            # 10+
+hostel       = общежитие, хо́стел                                 # 10+ /// (недорогая гостиница)
+camping\\campground %% Br. also campsite = кемпинг                                           # 10+ /// (лагерь для автотуристов)
+tent         = тент, палатка
 
-exotica        = экзотика                                        # 10+
-acclimatisation\\acclimatization, ~ acclimation = акклиматизация                                  # 10+
+exotica      = экзотика                                          # 10+
+acclimatisation\\acclimatization, ~ acclimation = акклиматизация                                    # 10+
 
-guide @ man    = экскурсовод, гид, ~ проводник                   # 10+
-guide @ manual = путеводитель                                    # 10+
-
-spa            = спа                                             /// %% слово происходит от названия ~ бельгийского курорта Спа # 10+
-safari         = сафари                                          # 10+
+spa          = спа                                               /// %% слово происходит от названия ~ бельгийского курорта Спа # 10+
+safari       = сафари                                            # 10+
 
 ===
 
-visa           = виза                                            # 10+
-passport       = паспорт
-biometric      = биометрический                                  # 16+
+visa         = виза                                              # 10+
+passport     = паспорт
+biometric    = биометрический                                    # 16+
 
-stamp @ mark   = штамп                                           # 10+
-stamp @ post   = почтовая марка                                  # 10+
+stamp @ mark = штамп                                             # 10+
+stamp @ post = почтовая марка                                    # 10+
+
 
 

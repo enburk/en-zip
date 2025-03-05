@@ -502,5 +502,12 @@ namespace studio::one
         needed_en.stable_deduplicate(); sys::write("../data/needed_en.txt", needed_en);
         needed_us.stable_deduplicate(); sys::write("../data/needed_us.txt", needed_us);
         needed_uk.stable_deduplicate(); sys::write("../data/needed_uk.txt", needed_uk);
+
+        int needed_nn = 500;
+        int step = needed_en.size()/needed_nn;
+        if (step == 0) step = 1;
+        array<str> needed; needed.reserve(needed_nn);
+        for (int i=0; i<needed_en.size(); i++) needed += needed_en[i];
+        sys::write("../data/needed.txt", needed);
     }
 }

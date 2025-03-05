@@ -62,7 +62,8 @@ namespace app::one
                 int y =
                 slides.empty() ? 0 :
                 slides[current].coord.to.y;
-                scroll(-y - coord.now.h + height);
+                for (auto& e: entries) e.shift(xy{0,-y}, 500ms);
+                for (auto& s: slides ) s.shift(xy{0,-y}, 500ms);
             }
         }
 

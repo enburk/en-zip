@@ -178,7 +178,17 @@ namespace eng
 
     auto forms (str s)
     {
+        std::set<str> forms;
         std::set<str> backforms;
+        forms.emplace(s);
+
+        const hashset<str> excepts = 
+        {
+            "me", "so", 
+        };
+
+        if (excepts.contains(s))
+            return forms;
         
         const array<str> kinds =
         {
@@ -201,7 +211,6 @@ namespace eng
             }
         }
 
-        auto
         forms = backforms;
         forms.emplace(s);
 

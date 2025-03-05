@@ -11,7 +11,7 @@ liqueur       = ликёр
 
 pub           = паб
 bar stool     = барный табурет/стул
-shaker        = шейкер
+[cocktail] shaker        = шейкер
 ---
 toast @ drink = тост, ~ провозглашать тост
 : Cheers!

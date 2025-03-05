@@ -1,5 +1,26 @@
 sounds
 
+
+===
+
+painful yell              # SOUND
+panic yells               # SOUND
+short yell                # SOUND
+terror scream             # SOUND
+terrified yell            # SOUND
+
+: surprised gasps ~ and whispering murmur # SOUND
+: quiet audience murmur   # SOUND
+: quiet hushed whispers   # SOUND
+
+hard sniff                # SOUND
+short smelling sniff      # SOUND
+three sniffs with a snort # SOUND
+
+baby hiccups              # SOUND
+baby short babble         # SOUND
+
+
 gasp
 sigh
 
@@ -12,24 +33,24 @@ blowing nose
 
 ===
 
-baby babble           # SOUND
-baby spitting         # SOUND
-baby vocalization     # SOUND
+baby babble               # SOUND
+baby spitting             # SOUND
+baby vocalization         # SOUND
 
-big sigh              # SOUND
-heavy sigh            # SOUND
-quick sigh            # SOUND
-sigh of relief        # SOUND
-agonizing sigh        # SOUND
+big sigh                  # SOUND
+heavy sigh                # SOUND
+quick sigh                # SOUND
+sigh of relief            # SOUND
+agonizing sigh            # SOUND
 
-short gasp            # SOUND
-surprised gasp        # SOUND
-gasping crowd         # SOUND
-short gasping scream  # SOUND
+short gasp                # SOUND
+surprised gasp            # SOUND
+gasping crowd             # SOUND
+short gasping scream      # SOUND
 
-startled gasp         # SOUND
-short startled scream # SOUND
-gasp of wonderment    # SOUND
+startled gasp             # SOUND
+short startled scream     # SOUND
+gasp of wonderment        # SOUND
 
 ===
 
@@ -37,7 +58,7 @@ gasp of wonderment    # SOUND
 : shocked gasp, ~ hushed voices ~ and whispers # SOUND
 
 ===
-laugh                 # HEAD
+laugh                     # HEAD
 ===
 
 giggle
@@ -45,12 +66,13 @@ exclamation of laughter
 
 ===
 
-short giggle          # SOUND
-baby quick laugh      # SOUND
-delighted laugh       # SOUND
+short giggle              # SOUND
+baby quick laugh          # SOUND
+delighted laugh           # SOUND
 
 : little girl giggling, ~ high pitched, amused # SOUND
 : amusing anecdote ~ or joke type ~ laughter # SOUND
+
 
 
 

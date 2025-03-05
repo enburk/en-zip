@@ -81,7 +81,12 @@ namespace app::one
 
             stop(); stage().Stop();
 
+            xywh
+            r = stages.coord.now.local();
+            r += xy(L*r.w, 0);
+
             stages[0].hide();
+            stages[0].coord = r;
             stages.rotate(0,1,N);
             place(1s);
 
@@ -97,7 +102,12 @@ namespace app::one
 
             stop(); stage().Stop();
 
+            xywh
+            r = stages.coord.now.local();
+            r -= xy(L*r.w, 0);
+
             stages[N-1].hide();
+            stages[N-1].coord = r;
             stages.rotate(0, N-1, N);
             place(1s);
 

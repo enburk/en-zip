@@ -155,7 +155,7 @@ namespace media::scan
                     static const array<str> upto5 = {"crop ", "date "};
                     static const array<str> exact = {"sic!","Case","wide","asset","course-",
                     "us","uk","ca","au","ru", "=", "==", "xlam",
-                    "poem","song","sound","number","pixed","texted",
+                    "poem","song","sound","number","pixed","texted","long",
                     "fade","fade in","fade out",
                     "{1}","{2}","{3}","{1,2}",
                     "reduced","unclear"};

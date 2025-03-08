@@ -10,6 +10,18 @@ constexpr std::string_view ndash    = "\xE2""\x80""\x93"sv; // n-dash
 constexpr std::string_view lquot    = "\xE2""\x80""\x9C"sv; // “
 constexpr std::string_view rquot    = "\xE2""\x80""\x9D"sv; // ”
 
+str simple (str s)
+{
+    s.replace_all(ellipsis, "...");
+    s.replace_all(mspace, " ");
+    s.replace_all(mdash, "---");
+    s.replace_all(ndash, "--");
+    s.replace_all(lquot, "\"");
+    s.replace_all(rquot, "\"");
+    s.replace_all(u8"’", "'");
+    return s;
+};
+
 str digit = "0123456789";
 str LATIN = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 str latin = "abcdefghijklmnopqrstuvwxyz";

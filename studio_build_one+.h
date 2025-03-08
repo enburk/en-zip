@@ -29,6 +29,7 @@ namespace studio::one
         report videom("videom");
         report videop("videop");
         report videoq("videoq");
+        report wordsm("wordsm");
 
         void load () { for (auto& [name, report]: map) report->load(); }
         void save () { for (auto& [name, report]: map) report->save(); }
@@ -44,14 +45,6 @@ namespace studio::one
     {
         array<ent> entries;
         array<res> resources;
-    };
-
-    str simple (str s)
-    {
-        s.replace_all(mdash, "---");
-        s.replace_all(ndash, "--");
-        s.replace_all(u8"’", "'");
-        return s;
     };
 
     str cliplink (res const& r)

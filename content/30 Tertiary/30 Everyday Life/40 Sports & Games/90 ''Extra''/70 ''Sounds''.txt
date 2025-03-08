@@ -1,5 +1,14 @@
 sounds
 
+: motocross: jumping # SOUND
+: slow speed on dirt path # SOUND
+
+: chalking cue # SOUND
+: pool billiards: balls hit balls # SOUND
+: cards deck # SOUND
+: dominoes clack # SOUND
+
+
 : skipping # SOUND
 : skipping rope # SOUND
 : bouncing ball # SOUND

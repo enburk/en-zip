@@ -119,6 +119,7 @@ namespace content::out
                     w.replace_all("~", "");
                     w.replace_all("  ", " ");
                     w.replace_all("  ", " ");
+                    w = simple(w);
 
                     searchmap +=
                     search_entry(

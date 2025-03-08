@@ -35,6 +35,7 @@ namespace studio::one
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
         hashset<str> course_vocabulary_forms;
+        hashmap<str, int> resources_vocabulary;
         hashmap<str, int> course_vocabulary_ens;
         hashmap<str, int> course_vocabulary_uss;
         hashmap<str, int> course_vocabulary_uks;
@@ -50,6 +51,8 @@ namespace studio::one
 
             for (str s: entry.vocabulary)
             {
+                s = simple(s);
+
                 course_vocabulary[s].
                 entries += &entry;
 
@@ -70,6 +73,8 @@ namespace studio::one
                 if (s.contains(" "))
                     continue;
 
+                s = simple(s);
+
                 s.replace_all(".", "");
                 s.replace_all("!", "");
                 s.replace_all("?", "");
@@ -86,6 +91,8 @@ namespace studio::one
                 ss.extract_from("@");
                 ss.replace_all(u8" → ", ", "),
                 ss.replace_all(",", "");
+
+                ss = simple(ss);
 
                 for (str s: ss.split_by(" "))
                 for (str f: eng::forms(s))
@@ -117,6 +124,12 @@ namespace studio::one
         {
             if (r.options.contains("asset"))
                 continue;
+
+            if (r.kind == "audio")
+            for (str s: eng::parser::entries(vocabulary, simple(r.title), true))
+            if (str(s.upto(1)) != str(s.upto(1)).capitalized() and
+            not course_vocabulary_forms.contains(s))
+                resources_vocabulary[s]++;
 
             str abstract = simple(r.
                 abstract);
@@ -461,8 +474,6 @@ namespace studio::one
         report::videom.log += bold(blue(
         "+" + str(n-nn) + " more"));
 
-        report::save();
-
         if (true)
         generate_debug_theme(
             course,
@@ -509,5 +520,97 @@ namespace studio::one
         array<str> needed; needed.reserve(needed_nn);
         for (int i=0; i<needed_en.size(); i++) needed += needed_en[i];
         sys::write("../data/needed.txt", needed);
+
+        auto doubt_it = [](str s)
+        {
+            return s.ends_with(".");
+        };
+        auto skip_it = [](str s)
+        {
+            const hashset<str> reject =
+            {
+                "of a", "on the"
+            };
+
+            return false
+            or s.size() <= 2
+            or s.ends_with("'")
+            or s.ends_with("-")
+            or eng::list::contractionparts.contains(s)
+            or reject.contains(s);
+        };
+        std::multimap<int,str> resources_vocabulary_sorted;
+        std::multimap<int,str> resources_vocabulary_doubted;
+        for (auto [s, n]: resources_vocabulary) if (n >= 2)
+        if (skip_it(s)) {;} else if (doubt_it(s))
+        resources_vocabulary_doubted.emplace(n, s); else
+        resources_vocabulary_sorted .emplace(n, s);
+        for (auto [n, s]: resources_vocabulary_sorted)
+        report::wordsm.log += s + " (" + str(n) + ")";
+        report::wordsm.log += "---------------------";
+        for (auto [n, s]: resources_vocabulary_doubted)
+        report::wordsm.log += s + " (" + str(n) + ")";
+        report::wordsm.log += bold(blue(str(
+        report::wordsm.log.size()) + " total"));
+
+        // sounds lengths control
+
+        bool sounds_lengths_update = false;
+        array<str> sounds_lengths = sys::optional_text_lines(
+          "../data/sounds_lengths.txt");
+
+        hashmap<str, int> sounds_lengths_map;
+        for (str s: sounds_lengths) {
+            str sec = s.extract_upto(" "); if(sec != "")
+            sounds_lengths_map[s] = std::stoi(sec); }
+
+        for (auto& r: data.resources)
+        if (r.kind == "audio"
+        and r.options.contains("sound") and
+        not r.options.contains("long"))
+        {
+            int duration = 0;
+            auto it = sounds_lengths_map.find(path2str(r.path));
+            if (it == sounds_lengths_map.end())
+            {
+                auto Location = data.storage.add(r,1);
+
+                auto source = [](int source){
+                    return "../data/media/storage." +
+                    std::to_string(source) + ".dat"; };
+
+                auto bytes = sys::bytes(source(
+                    Location.location.source),
+                    Location.location.offset,
+                    Location.location.length);
+
+                sys::audio::player audio;
+                sys::audio::decoder decoder(bytes);
+
+                audio.load(
+                decoder.output,
+                decoder.channels,
+                decoder.samples,
+                decoder.bps);
+
+                duration = int(audio.duration);
+
+                sounds_lengths += str(duration) + " " + path2str(r.path);
+                sounds_lengths_update = true;
+            }
+            else duration = it->second;
+
+            if (duration > 20.0)
+            report::errors.log += link(&r) + " " +
+            red(str(duration) + " sec");
+        }
+
+        if (sounds_lengths_update)
+            sys::write("../data/"
+           "sounds_lengths.txt",
+            sounds_lengths);
+
+        ///////////////
+        report::save();
     }
 }

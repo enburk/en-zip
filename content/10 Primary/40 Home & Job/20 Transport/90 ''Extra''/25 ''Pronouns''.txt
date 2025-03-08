@@ -11,7 +11,7 @@ each @ pronoun      = каждый, любой
 
 ===
 
-something           = что-то, кое-что, что-нибудь
+something @@        = что-то, кое-что, что-нибудь
 anything            = что-нибудь, что угодно
 everything          = всё
 nothing             = ничего, ничто
@@ -52,6 +52,7 @@ no one/nobody       = никто
 ===
 
 : However, ~ SOMEBODY killed SOMETHING: ~ that's clear, at any rate.
+
 
 
 

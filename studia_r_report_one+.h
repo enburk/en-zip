@@ -12,7 +12,7 @@ namespace report = studio::one::report;
         {
             str link;
             gui::console audiom, audiop, audioq;
-            gui::console videom, videop, videoq;
+            gui::console videom, videop, videoq, wordsm;
             array<gui::console*> consoles;
             array<report::report*> reports;
             array<int> readiness;
@@ -24,6 +24,7 @@ namespace report = studio::one::report;
                 consoles += &videop; reports += &report::videop; readiness += 1;
                 consoles += &audioq; reports += &report::audioq; readiness += 1;
                 consoles += &videoq; reports += &report::videoq; readiness += 1;
+                consoles += &wordsm; reports += &report::wordsm; readiness += 1;
                 for (auto& c: consoles)
                 c->hide();
             }
@@ -68,6 +69,7 @@ namespace report = studio::one::report;
             sel.buttons(i++).text.text = "video+";
             sel.buttons(i++).text.text = "audio?";
             sel.buttons(i++).text.text = "video?";
+            sel.buttons(i++).text.text = "words-";
             sel.selected = 0;
             reload();
         }

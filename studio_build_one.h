@@ -94,7 +94,7 @@ namespace studio::one
 
                 ss = simple(ss);
 
-                for (str s: ss.split_by(" "))
+                for (str s: eng::parser::entries(vocabulary, ss, true))
                 for (str f: eng::forms(s))
                 course_vocabulary_forms.
                     emplace(f);
@@ -521,21 +521,24 @@ namespace studio::one
         for (int i=0; i<needed_en.size(); i++) needed += needed_en[i];
         sys::write("../data/needed.txt", needed);
 
+        // missed words
+
         auto doubt_it = [](str s)
         {
-            return s.ends_with(".");
+            return false;
         };
         auto skip_it = [](str s)
         {
             const hashset<str> reject =
             {
-                "of a", "on the"
+                // "of a", "on the"
             };
 
             return false
             or s.size() <= 2
             or s.ends_with("'")
             or s.ends_with("-")
+            or s.ends_with(".")
             or eng::list::contractionparts.contains(s)
             or reject.contains(s);
         };

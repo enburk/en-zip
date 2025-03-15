@@ -23,3 +23,9 @@ sounds
 
 : airplane: close canopy # SOUND
 : airplane: open canopy # SOUND
+
+: bicycle tire being inflated # SOUND
+: motorcycle helmet: visor down # SOUND
+: Harley Davidson: electric starter # SOUND
+
+: sonar pings # SOUND

@@ -1,25 +1,9 @@
 transport
 
-drawbridge            # 8+
-bascule bridge        # 8+
-pontoon bridge//floating bridge # 8+
-a towpath beside a canal ~ under a bridge
-
-rim @ wheel
-spokes
-
-alloy wheel           # 10+
-steering wheel
-gearwheel||gear wheel # 10+
-Ferris wheel ~ {esp.} {Am.}
-{Br.} {also} ~ big wheel
-trucks @ wheel        # 10+
-
-convex mirror
-winding road
+highway
 
 diesel engine
 
-highway
+filling station//petrol station//garage\\gas station
 
-platelayer\\trackman %% Br. also fettler
+

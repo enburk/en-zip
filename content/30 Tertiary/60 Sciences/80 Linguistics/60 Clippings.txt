@@ -1,5 +1,36 @@
 clippings
 
+choc/choco           = chocolate
+
+glam                 = glamour, glamorous
+mani                 = manicure
+pedi                 = pedicure
+
+bookie               = bookmaker
+goalie               = goalkeeper, ~ goaltender, netminder
+
+prop @ aero          = propeller
+propwash//prop wash  = propeller wash
+
+---
+demo @ demonstration = demonstration
+demo @ demolition    = demolition
+
+---
+caps                 = capital letters, ~ capitals
+: ALL CAPS
+
+diam @ diameter      = diameter
+diam @ diamond       = diamond
+
+---
+med                  = medical
+meds                 = medications
+vet                  = veterinarian
+
+
+
+
 berg @ iceberg         = iceberg
 daff {Br.} @ daffodil  = daffodil
 
@@ -61,7 +92,7 @@ specs @ spectacles     = spectacles
 specs @ specifications = specifications
 ---
 dev                    = developer, ~ development
-: game dev
+game dev
 
 
 

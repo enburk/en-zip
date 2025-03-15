@@ -1,4 +1,3 @@
-cars
 
 rover
 roadster @ car
@@ -6,39 +5,19 @@ convertible @ car
 monster truck
 SUV %% sport utility-vehicle
 
-milk cooling tank
-dodgem [car]\\bumper car
+===
 
-bonnet\\hood @ car
-wing mirror\\side-view mirror /// , ~ side mirror
 headlamp
 tail lights||taillights
 tailfin
----
-car door handle
-suicide door                  # 16+
 
-hood ornament
-
-gas cap//fuel cap
-fuel door//gas lid
-fuel filler flap
-
-dashboard @ car               # 10+
 ---
 seat @ car
 seat belt||seatbelt
+
+disc brakes %% usually plural
+
 ---
 tyre\\tire @ car
-spare tyre\\spare tire
 tyre tracks\\tire tracks
-flat tyre\\flat tire
 
-snow chains                   # 12+
-oversize load                 # 10+
-
-car repair
-
-driving licence %% {Britain}
-driver's license %% {US}
-driver's licence %% {Australia, Canada, New Zealand}

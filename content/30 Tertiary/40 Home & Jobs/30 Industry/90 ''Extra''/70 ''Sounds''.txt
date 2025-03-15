@@ -1,5 +1,13 @@
 sounds
 
+
+: steam press # SOUND
+: air compressor: release air # SOUND
+
+: sandpaper, sanding # SOUND
+
+
+
 : metal beam drag # SOUND
 : dump gravel from wheelbarrow # SOUND
 : dump sand out of wheelbarrow # SOUND

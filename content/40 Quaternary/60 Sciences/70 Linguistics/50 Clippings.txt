@@ -3,6 +3,9 @@ clippings
 confab                 = confabulation ~ (a casual conversation, ~ a chat)
 despo                  = desperate
 def                    = definitely
+---
+diff = difference
+: So what the big diff between them?
 
 decaf                  = a decaffeinated coffee, ~ tea, or soft drink
 deli                   = delicatessen
@@ -27,12 +30,14 @@ refurb                 = refurbish
 tarp                   = tarpaulin
 
 nym                    = pseudonym
-paren                  = parenthesis
+creds                  = credentials
 pen test               = penetration test
 
+---
 typo                   = typographical error
 vocab                  = vocabulary
 parens {Am.}           = parentheses %% '''(''' and ''')'''
+paren                  = parenthesis
 
 memo                   = memorandum
 muni                   = municipal

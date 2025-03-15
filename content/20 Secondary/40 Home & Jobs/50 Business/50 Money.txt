@@ -1,15 +1,6 @@
 money
 
-an ancient copper coin ~ coated with patina
----
-wallet             /// French
-billfold {Am.}
-: You know, I’m not really this tall. I’m just sitting on my wallet.
-
 count money %% {verb}
----
-tip @ money        # 16+
-gratuity %% formal # 16+ /// Latin
 
 gold coin
 

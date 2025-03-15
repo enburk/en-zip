@@ -1,21 +1,11 @@
 sounds
 
----
-tick tack                   # SOUND
-tick tock                   # SOUND
-coo-coo @ clocks            # SOUND
-
 heater                      # SOUND
 smoke detector              # SOUND
 
 ---
 telephone answering machine # SOUND
 : telephone busy            # SOUND
-
-ding                        # SOUND
-ding dong                   # SOUND
-
-: perfume spray             # SOUND
 
 : kick door                 # SOUND
 : door open with a kick     # SOUND

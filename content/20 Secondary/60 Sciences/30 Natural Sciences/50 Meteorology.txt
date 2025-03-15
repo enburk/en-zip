@@ -1,41 +1,20 @@
 meteorology
 
-cumulus cloud                # 8+
-lenticular cloud             # 8+
-nacreous clouds %% (polar stratospheric clouds) # 12+
-noctilucent clouds           # 12+
-cirrus clouds                # 12+
+---
+cumulus cloud                 
+lenticular cloud
+
+===
+              
+nacreous clouds = polar stratospheric clouds 
+noctilucent clouds           
 iridescent clouds
-fire rainbow %% circumhorizontal arc # 8+
-
-precipitation %% uncountable # 10+
-raindrops||rain drops
-rain cloud
-
-scattered clouds
-broken clouds
-overcast sky
-sky obscured
+fire rainbow = circumhorizontal arc 
 
 ===
 
-stratocumulus clouds         # 14+
-altocumulus clouds           # 12+
-towering cumulus %% cumulus congestus cloud # 8+
-cumulonimbus cloud           # 8+
-anvil cloud %% cumulonimbus incus # 12+
-
-downpour %% heavy rain       # 8+
-thunderstorm
-lightning storm//electrical storm
-
-supercell %% rotating thunderstorm # 8+
-shelf cloud                  # 8+
-roll cloud                   # 8+
-wall cloud                   # 8+
-funnel cloud                 # 10+
-rope tornado %% roping out tornado # 10+
-mammatus clouds              # 8+
+raindrops||rain drops
+rain cloud
 
 rough sea
 crashing wave
@@ -46,7 +25,10 @@ dust storm
 dust devil
 
 blizzard
-ash cloud                    # 10+
+
+
+
+
 
 
 

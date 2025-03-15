@@ -1,4 +1,5 @@
 basic ~ vocabulary
+
 ===
 life                      = жизнь                 # 18+
 death                     = смерть                # 18+
@@ -32,6 +33,9 @@ cheek @ human             = щека
 
 man %% plural: men        = мужчина, муж
 woman %% plural: women    = женщина
+
+husband = муж
+wife         = жена
 
 adult                     = взрослый
 child %% plural: children = ребенок

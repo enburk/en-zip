@@ -1,48 +1,31 @@
 doors & locks
 
 gate @ doorway
----
-front door                   # 8+
-door knocker                 # 8+ /// doorknocker, ~ knocker
-door handle
-doorknob
+front door
+
+===
 
 door lock
-latch @ door
-cabin hook
 crossbar
-hinge @ door                 # 10+
-rivets                       # 10+
----
+
 keys @ door
 keyhole
 peephole %% Br. also spyhole # 8+
-keycard//card key            /// ~~key card %% also mainly Am. card key #  8+
-key chain                    # 8+
-keyring
 
-padlock
-padlocked latch              # 8+
-
-lever lock
-knob lock
-
-locked @ door
-unlocked @ door
-closed @ door
-
-combination lock             # 8+
-a handwheel ~ of a watertight door # 8+
-
-key around the neck
-
+locked @ door %% {adjective}
+unlocked @ door %% {adjective}
+closed @ door %% {adjective}
 
 ===
 
 : Have you the key of the door?
-: Please, do not ring unless an answer is required.
-: Lock 'em up ~ and throw away the key!
 
 ===
 
 : And when I found ~ the door was locked, ~ I pulled and pushed ~ and kicked and knocked.
+
+
+
+
+
+

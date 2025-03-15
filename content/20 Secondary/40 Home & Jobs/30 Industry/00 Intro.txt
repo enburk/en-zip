@@ -1,17 +1,16 @@
-industry                     # pix-
+industry                   
+
 ---
 power plant                  # 10+
 {Br.} {also} ~ power station # 10+
+pylon @ power                       # 10+
 
-pylon                        # 10+
 solar panel                  # 8+
 industrial building          # 10+
-oil well                     # 8+
-storage tanks                # 10+
-hard hat
-copper scrap                 # 8+
 
+hard hat
 construction site
+bulldozer tracks
 
 control room                 # 10+
 emergency stop button        # 8+
@@ -19,24 +18,12 @@ emergency stop button        # 8+
 wind turbine
 windmill @ machinery
 
+---
 pipe
 pipeline
-springs and pipes
 
-panelboard
 
-bubble wrap                  # 10+
-foam peanuts %% also: packing peanuts, ~ packing noodles # 10+
 
-forklift [truck] %% also: fork-lift
-a boom of a crane            = the lifting part of a crane # 10+
 
-bulldozer tracks %% countable
-bulldozer continuous track
 
-===
-
-fishing boat
-fishing net
-seine                        = fishing net with floats # 10+
 

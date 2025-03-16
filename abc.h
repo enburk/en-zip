@@ -38,8 +38,8 @@ str yellow    (str s) { return "<font color=#BF360C>" + s + "</font>"; }
 str monospace (str s) { return "<font face=\"monospace\">" + s + "</font>"; }
 str html      (str s) { return doc::html::encoded(s); }
 str linked    (str s, str link) {
-    return "<a href=\"" + link +
-        "\">" + s + "</a>"; }
+    return "<a href=\"" + link + "\">" + 
+        s + "</a>"; }
 
 str un_msdos (str s)
 {

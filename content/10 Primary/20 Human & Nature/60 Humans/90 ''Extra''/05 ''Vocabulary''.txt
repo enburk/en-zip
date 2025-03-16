@@ -34,8 +34,8 @@ cheek @ human             = щека
 man %% plural: men        = мужчина, муж
 woman %% plural: women    = женщина
 
-husband = муж
-wife         = жена
+husband                   = муж
+wife                      = жена
 
 adult                     = взрослый
 child %% plural: children = ребенок
@@ -63,6 +63,7 @@ crazy                     = сумашедший, безумный, ~ чокну
 beauty
 beautiful
 : You're so beautiful.
+
 
 
 

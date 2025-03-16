@@ -1,42 +1,43 @@
 clippings
 
-rhino                = rhinoceros
-hippo                = hippopotamus
+rhino            = rhinoceros
+hippo            = hippopotamus
 ---
 gator
 crocs @ crocodiles
 crocs @ shoes
 
-chimp                = chimpanzee
-grizz                = grizzly bear
+chimp            = chimpanzee
+grizz            = grizzly bear
 
 ===
 
-bro                  = brother
-sis                  = sister
-fam                  = family
-teen                 = teenager
+bro              = brother
+sis              = sister
+fam              = family
+teen             = teenager
 
-ref @ referee        = referee
-gym                  = gymnasium
-roid                 = steroid
+ref @ referee    = referee
+gym              = gymnasium
+roid             = steroid
 
-limo                 = limousine
-copter               = helicopter
-tach                 = tachometer
+limo             = limousine
+copter           = helicopter
+tach             = tachometer
 
 ===
 
-telecom              = telecommunications
-admin                = administration, ~ administrator, ~ sysadmin
-nick @ nickname      = nickname
+telecom          = telecommunications
+admin            = administration, ~ administrator, ~ sysadmin
+nick @ nickname  = nickname
 
-info                 = information
-stats                = statistics
-exam                 = examination
-lab @ laboratory     = laboratory
+info             = information
+stats            = statistics
+exam             = examination
+lab @ laboratory = laboratory
 
-bio @ biography      = biography
-bio @ biology        = biology
+bio @ biography  = biography
+bio @ biology    = biology
+
 
 

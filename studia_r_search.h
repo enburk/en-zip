@@ -114,7 +114,11 @@ namespace studia::one
 
                 str s = edit.object.text; s.strip();
                 s = eng::asciized(s).ascii_lowercased();
-                if (not o0 and s.size() < 2 or s == "") return;
+
+                if (s == "" or not o0
+                and s.size() <= 1 and
+                not content::search_symbols.contains(s))
+                    return;
 
                 if (not o0) exact.object.text = "";
                 if (not o1) eXact.object.text = "";
@@ -186,7 +190,9 @@ namespace studia::one
             if (what == &media.object)
             {
                 str src = media.object.text; src.strip();
-                if (src.size() < 2) return;
+                if (src.size() < 2 and
+                not content::search_symbols.contains(src))
+                    return;
 
                 exact.object.text = "";
                 eXact.object.text = "";
@@ -215,17 +221,24 @@ namespace studia::one
                     array<index> audio;
                     array<index> video;
 
-                    auto range =
+                    auto range0 =
                     app::mediadata.entries_dic.equal_range(
                     media::entry_index{i, 0}, [](auto a, auto b)
                     { return a.entry < b.entry; });
+
+                    auto range1 =
+                    app::mediadata.entries_one.equal_range(
+                    media::entry_index{i, 0}, [](auto a, auto b)
+                    { return a.entry < b.entry; });
+
+                    auto range = range0.empty() ? range1 : range0;
 
                     for (auto [entry, media]: range)
                     {
                         auto& index = app::mediadata.media_index[media];
 
                         str s = doc::html::untagged(
-                            media::canonical(index.title));
+                        media::canonical(index.title));
 
                         if (index.options.
                         contains("sound"))
@@ -236,8 +249,8 @@ namespace studia::one
                             index.kind == "video" ? purple("[video]"):
                             "";
                         str title =
-                            index.kind == "audio" ? dark(s):
-                            index.kind == "video" ? dark(s):
+                            index.kind == "audio" ? dark(html(s)):
+                            index.kind == "video" ? dark(html(s)):
                             "";
 
                         str fn = str(
@@ -259,6 +272,8 @@ namespace studia::one
                         fn += " # SOUND";
 
                         title.replace_all(word, bold(word));
+
+                        fn.replace_all("_", "");
 
                         result.object << linked(
                         kind + " " + title,

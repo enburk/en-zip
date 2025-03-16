@@ -16,6 +16,8 @@ namespace content
         optional_log err;
     }
 
+    const std::set<str> search_symbols = {"/","@","#","&","(",")","=",ellipsis};
+
     struct unit
     {
         str name;

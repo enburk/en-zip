@@ -122,8 +122,8 @@ namespace content::out
                     w = simple(w);
 
                     searchmap +=
-                    search_entry(
-                    w, e.eng, e.link);
+                    search_entry(w,
+                    e.eng, e.link);
                 }
 
                 for (auto& e: topic.entries)
@@ -132,6 +132,12 @@ namespace content::out
                     if (e.eng.starts_with(":"))
                     QUOTS++, Quots++, quots++; else
                     WORDS++, Words++, words++;
+
+                    for (str s: search_symbols)
+                    if (e.eng.contains(s))
+                    searchmap +=
+                    search_entry(s,
+                    e.eng, e.link);
                 }
 
                 for (auto chain:

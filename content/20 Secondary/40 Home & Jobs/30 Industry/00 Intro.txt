@@ -1,9 +1,9 @@
-industry                   
+industry
 
 ---
 power plant                  # 10+
 {Br.} {also} ~ power station # 10+
-pylon @ power                       # 10+
+pylon @ power                # 10+
 
 solar panel                  # 8+
 industrial building          # 10+
@@ -21,6 +21,7 @@ windmill @ machinery
 ---
 pipe
 pipeline
+
 
 
 

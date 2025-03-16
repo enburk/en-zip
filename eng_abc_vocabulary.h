@@ -119,6 +119,8 @@ namespace eng
             return i;
         }
 
+        bool contains (str const& s) { return index(s) ? true : false; }
+
         int lower_bound_case_insensitive (str const& s)
         {
             str lower = lowercased(s);

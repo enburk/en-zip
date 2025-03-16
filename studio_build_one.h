@@ -60,6 +60,7 @@ namespace studio::one
                 s.extract_from("@");
 
                 for (str f: eng::forms(s))
+                if (vocabulary.contains(f))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -70,16 +71,18 @@ namespace studio::one
                 str ignored_sense =
                 s.extract_from("@");
 
-                if (s.contains(" "))
-                    continue;
-
                 s = simple(s);
-
                 s.replace_all(".", "");
                 s.replace_all("!", "");
                 s.replace_all("?", "");
                 s = s.ascii_lowercased();
+
+                if (s.contains(" ") and
+                not vocabulary.contains(s))
+                    continue;
+
                 for (str f: eng::forms(s))
+                if (vocabulary.contains(f))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -95,7 +98,7 @@ namespace studio::one
                 ss = simple(ss);
 
                 for (str s: eng::parser::entries(vocabulary, ss, true))
-                for (str f: eng::forms(s))
+                for (str f: eng::forms(s)) if (vocabulary.contains(f))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -531,7 +534,7 @@ namespace studio::one
         {
             const hashset<str> reject =
             {
-                // "of a", "on the"
+                "like to", //"on the"
             };
 
             return false

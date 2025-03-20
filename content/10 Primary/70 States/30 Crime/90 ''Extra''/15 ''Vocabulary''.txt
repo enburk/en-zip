@@ -1,7 +1,10 @@
 basic ~ vocabulary
 
+
 thief          = вор
 theft          = кража
+
+murder         = убийство
 
 mobster {Am.}  = бандит, гангстер
 
@@ -21,6 +24,7 @@ innocent @ law = невинный, невиновный
 : We find the defendant, guilty.
 : We find the defendant, not guilty.
 : We are unable to reach a verdict.
+
 
 
 

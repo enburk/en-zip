@@ -20,15 +20,15 @@ control panel   = панель управления, приборная пане
 indicator       = индикатор, указатель, показатель   # TECH-
 detector        = детектор                           # TECH-
 
-regulator       = регулятор, ~ стабилизатор ~ (напряжения) # TECH- # 16+
-regulator       = регулировщик                       # TECH- # 16+
+regulator @ device      = регулятор, ~ стабилизатор ~ (напряжения) # TECH- # 16+
+regulator @ man      = регулировщик                       # TECH- # 16+
 
 centrifuge      = центрифуга                         # 10+
 compressor      = компрессор                         # 10+
 boiler          = паровой котел, ~ кипятильник, ~ бойлер /// суповая курица (наряду с broiler)
 hydrant         = гидрант                            # 10+
-thermostat      = термостат                          # 16+
-ventilator      = вентилятор
+thermostat @ industry     = термостат                          # 16+
+ventilator @ industry     = вентилятор
 
 fix             = чинить, прикреплять, ~ фиксировать /// Am. стряпать
 calibrate       = калибровать, ~ проверять, выверять # TECH+ # TERM- # 14+

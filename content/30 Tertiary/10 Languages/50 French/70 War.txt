@@ -5,6 +5,7 @@ siege
 retreat
 surrender
 defeat
+disarm
 
 ---
 target
@@ -12,11 +13,10 @@ target
 
 javelin
 archer
-disarm
 
 vengeance
 revenge
 
 warrior
 traitor
-visor
+visor @ arm

@@ -19,38 +19,46 @@ fire @ job        = увольнять
 : You're fired!
 
 ===
----
 sell              = продавать
 buy               = покупать
 : Can I buy you a drink?
 : May I buy you a drink?
 : If Barbie is so popular, ~ why do you have to buy her friends?
----
+===
 seller            = продавец
 buyer             = покупатель
 : Buyer beware!
+===
+
 ---
 pay               = платить
+cost              = стоимость, ~ стоить
 : How will you be paying for that?
 : Will that be cash or credit?
+
 coin @ money      = монета
+
 ---
 How much? @@      = Сколько?
 How much is that? = Сколько это стоит?
 : Um, how much is that?
+
 ---
 [bank] account    = счёт ~ (в банке)
 : Will that be cash, ~ or on your account?
 accountant        = бухгалтер
 : Old accountants never die, ~ they just lose their balance.
+
 ---
 venture           = рискованное предприятие, ~ рисковать, ставить на карту
 : Nothing ventured, ~ nothing gained. %% proverb
+
 ---
 profit            = польза, выгода
 profit/profits    = прибыль, доход
 : The result is a colossal profit, ~ which comes to me.
 : Profits are the reward for risk.
+
 
 
 

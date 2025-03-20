@@ -5427,7 +5427,7 @@ bravado.wav
 bravo!.wav
 Brie.wav
 brigade [=].wav
-briquet~briquette.wav
+briquet [+][briquette].wav
 broccoli.wav
 bronchi.wav
 bronchial asthma ## course-.wav
@@ -5445,8 +5445,8 @@ burger~burgher [burger][burgher].wav
 burgomaster [].wav
 burgomeister [].wav
 burlesque.wav
+burnoose [+][burnous].wav
 burnoose [=].wav
-burnoose~burnous.wav
 bursitis [=].wav
 bushel.wav
 Bushman.wav
@@ -6303,11 +6303,11 @@ Greek [=].wav
 Greenwich meridian [=].wav
 Greenwich [=].wav
 griffin [=].wav
+griffon [+][gryphon].wav
 griffon [=].wav
-griffon~gryphon.wav
+grill [+][grille].wav
 grill [=].wav
 grille [=].wav
-grill~grille.wav
 grimace [=].wav
 grimoire [=].wav
 gringo [=].wav
@@ -6472,8 +6472,8 @@ hysteric [=].wav
 >>> ../datae\audio ## Case ## uk\{{$Bunny M1 #25CHSPG Dugald Allen}}/ij
 I beg your pardon~! [] [=].wav
 ichthyosaur [=].wav
+icon [+][ikon].wav
 icon.wav
-icon~ikon.wav
 icosahedron.wav
 idea [=].wav
 ideal gas [=].wav
@@ -7787,7 +7787,7 @@ quorum [=].wav
 Ra [=].wav
 race [=].wav
 Rachmaninoff's Vocalise [+][vocalise].wav
-racket~racquet.wav
+racket [+][racquet}.wav
 radar [=].wav
 radial line.wav
 radian.wav
@@ -8084,7 +8084,7 @@ shampoo [=].wav
 Shar-Pei [Shar Pei][Shar Pei].wav
 shawl.wav
 shchi [].wav
-sheik~sheikh ## {1}.wav
+sheik [+][sheikh] ## {1}.wav
 sheik~sheikh ## {2}.wav
 shekel [=].wav
 sherbet.wav
@@ -8132,7 +8132,7 @@ sinecure.wav
 Singapore.wav
 sinus [=].wav
 sinusoid [=].wav
-siphon~syphon ## course-.wav
+siphon [+][syphon] ## course-.wav
 sir [=].wav
 Sirius [=].wav
 sister.wav
@@ -8691,7 +8691,7 @@ velour [=].wav
 velvet.wav
 velveteen.wav
 ventilator.wav
-veranda~verandah.wav
+veranda [+][verandah].wav
 verbal.wav
 Verdun.wav
 vermicelli [=].wav
@@ -9213,8 +9213,8 @@ scooter.wav
 Scylla.wav
 seppuku.wav
 sevruga.wav
+Shar Pei [+][Shar-Pei].wav
 Shar Pei [Shar Pei][Shar-Pei][shar-pei][shar pei].wav
-Shar Pei~Shar-Pei.wav
 shilling.wav
 sigma.wav
 Singapore.wav
@@ -9292,7 +9292,7 @@ waltz.wav
 werewolf.wav
 whew!.wav
 whiskey.wav
-whisky~whiskey.wav
+whisky [+][whiskey].wav
 whist.wav
 whoo [=].wav
 whoosh [=].wav
@@ -9305,8 +9305,8 @@ yak.wav
 yakuza.wav
 yataghan.wav
 Yggdrasil.wav
+yogurt [+][yoghurt].wav
 yogurt.wav
-yogurt~yoghurt.wav
 zombie.wav
 >>> ../datae\audio ## Case ## us/{{$Bunny F2 #F06DAM4}}
 >>> ../datae\audio ## Case ## us\{{$Bunny F2 #F06DAM4}}/a
@@ -9422,8 +9422,8 @@ baggage carousel.wav
 baguette [=].wav
 balance [=].wav
 bark [=].wav
+barque [+][bark].wav
 barquentine [=].wav
-barque~bark [=].wav
 baseball cap.wav
 basilisk ## {1} ### bAsilisk.wav
 basketball.wav
@@ -9460,7 +9460,7 @@ Brahms [=].wav
 brandy.wav
 breeze [=].wav
 bridge [=].wav
-briquet~briquette [=].wav
+briquette [+][briquet].wav
 British [][][][][] [=].wav
 Bronze Age [=].wav
 bullion [=].wav
@@ -9480,8 +9480,8 @@ cafe.wav
 caffeine [=].wav
 café-chantant.wav
 calamari.wav
+calends [+][kalends].wav
 calends [=].wav
-calends~kalends.wav
 calendula [=].wav
 caliber.wav
 calibrate [=].wav
@@ -9510,7 +9510,7 @@ cat.wav
 catacombs [=].wav
 catafalque ## {1} ### cAtafalque.wav
 catalog.wav
-catalogue~catalog.wav
+catalogue [+][catalog].wav
 catapult [=].wav
 certificate.wav
 charismatic.wav
@@ -9647,12 +9647,12 @@ dinosaur [=].wav
 diplodocus [=].wav
 diplomacy [=].wav
 diplomatic [=].wav
+disc [+][disk].wav
 disc [=].wav
 discrete [=].wav
 discriminant [=].wav
 disharmony [=].wav
 disk [=].wav
-disk~disc [=].wav
 disorientation [=].wav
 dispatcher [=].wav
 display [=].wav
@@ -9662,9 +9662,9 @@ diver [=].wav
 diversification [=].wav
 dividend [=].wav
 Doberman pinscher.wav
+Doberman [+][Dobermann].wav
 Doberman.wav
 Doberman~Dobermann Pinscher.wav
-Doberman~Dobermann.wav
 doge [=].wav
 dominate [=].wav
 Donskoy.wav
@@ -9767,8 +9767,8 @@ gasoline [=].wav
 gastronome ## {1} ### gAstronome.wav
 gauze bandage [=].wav
 gavotte [=].wav
+gelatin [+][gelatine].wav
 gelatin.wav
-gelatin~gelatine [=].wav
 Genghis Khan [=].wav
 genocide [=].wav
 geocentric [=].wav
@@ -10108,7 +10108,7 @@ minuet [].wav
 miso soup.wav
 miss [=].wav
 missis.wav
-missus~missis.wav
+missus [+][missis].wav
 monk [=].wav
 Mont Blanc [=].wav
 morganatic [=].wav
@@ -10456,7 +10456,7 @@ abolitionism [=].wav
 Aborigines.wav
 abscess [=].wav
 abscissa [=].wav
-absinth~absinthe ### [Ab-sinth].wav
+absinth [+][absinthe] ### [Ab-sinth].wav
 absolute monarchy [=].wav
 absorbent [=].wav
 abstinence [=].wav
@@ -10777,8 +10777,8 @@ buffer.wav
 buggy.wav
 bureaucrat [=].wav
 burka [=].wav
+burqa [+][burka].wav
 burqa.wav
-burqa~burka.wav
 bushel.wav
 business lunch [=].wav
 butterfly effect [=].wav
@@ -11233,7 +11233,7 @@ gravity assist maneuver [=].wav
 Great Barrier Reef [=].wav
 Great Depression [=].wav
 Greek mythology [=].wav
-grill~grille.wav
+grille [+][grill].wav
 grimoire [=].wav
 grippe [=].wav
 ground.wav
@@ -11587,7 +11587,7 @@ monocoque [=].wav
 monogram.wav
 monolith.wav
 monolog.wav
-monologue~monolog.wav
+monologue [+][monolog].wav
 monorail [=].wav
 monotone function [=].wav
 monotonic function [=].wav
@@ -12028,7 +12028,7 @@ racial discrimination [=].wav
 racism [=].wav
 racket [=].wav
 racketeer [=].wav
-racket~racquet.wav
+racquet [+][racket].wav
 radar.wav
 radian [=].wav
 radiation.wav
@@ -12535,7 +12535,7 @@ velociraptor [=].wav
 Venice.wav
 Venus [=][].wav
 violet.wav
-Virgil~Vergil [=].wav
+Virgil [+][Vergil].wav
 virtuoso [=].wav
 virtuous [=].wav
 visa [=].wav
@@ -18027,8 +18027,8 @@ For a moment, nothing happened.txt
 For a moment, nothing happened.wav
 Forty-two..wav
 He was roughly humanoid in appearance except for the extra head and third arm..wav
-Just don't say things like that.txt
-Just don't say things like that.wav
+Just don't say things like that. How can anyone maintain a positive mental attitude.txt
+Just don't say things like that. How can anyone maintain a positive mental attitude.wav
 On no account allow a Vogon to read poetry at you..wav
 One of the major difficulties Trillian experienced in her relationship with Zaphod.txt
 One of the major difficulties Trillian experienced in her relationship with Zaphod.wav

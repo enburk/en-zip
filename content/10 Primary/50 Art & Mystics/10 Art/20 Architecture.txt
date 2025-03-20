@@ -18,7 +18,7 @@ arch @ art          = арка
 arcade @ art        = аркада                             # 14+ /// French arcade, from Italian arcata ‎(“arch of a bridge”), from Latin arcus ‎(“arc”)
 
 balustrade @ art    = балюстрада                         # 14+ /// Borrowing from French balustrade, from Italian balaustrata
-baluster            = балясина
+balustre\\baluster  = балясина
 
 cornice             = карниз                             # 10+
 parapet @ art       = парапет, перила

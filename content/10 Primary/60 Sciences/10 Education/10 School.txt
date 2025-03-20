@@ -2,19 +2,24 @@ school @ institution          = школа, ~ учебное заведение
 
 class @ school                = класс, группа %% Но: ~ the first grade -- первый класс ~ the second grade -- второй класс ~ и т.п. /// # polysemic /// Томпсон
 student @ school              = учащийся, студент               # 10+ /// Latin /// ученик - pupil
+
 ---
 elementary                    = простой, базовый, ~ элементарный, ~ первоначальный # 10+
 elementary school {Am.}       = начальная школа                 # 10+
 : Elementary,~ my dear Watson!
 = %% на самом деле, ~ в текстах Конан Дойля ~ эта фраза не встречается # ART- # HISTORY- # 14+
+
 ---
 gymnasium @ gym %% informal: gym = спортзал                        # 10+
 gymnasium @ Greek             = гимнасий %% в Древней Греции    # 10+
 gymnasium @ school            = гимназия %% европейская школа ~ для подготовки к университету # 10+
 lyceum                        = лицей                           # 10+
 
+===
+
 dictation                     = диктант, диктовка
 examination %% informal: exam = экзамен
+practice                      = практика, опыт, ~ тренировка, упражнение
 
 semester                      = семестр
 term\\trimester               = триместр                        # RARE-
@@ -22,6 +27,7 @@ term\\trimester               = триместр                        # RARE-
 methodics                     = методика                        # 10+
 didactic                      = поучительный, ~ дидактический   # TERM- # 18+
 chrestomathy                  = хрестоматия                     # TERM- # 18+
+
 
 
 

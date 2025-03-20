@@ -1,12 +1,21 @@
 ===
 small words     # HEAD
-rather @@
 ===
 
-: I’d rather not. # duple
-: Adieu; or rather, AU REVOIR.
-: Organizing my thoughts rather.
-: Don't speak. Let me think. ~ Or, rather, let me try ~ not to think.
+---
+fast @ speed
+faster %% {comparative}
+fastest %% {superlative}
+
+---
+slow @ speed
+slower %% {comparative}
+slowest %% {superlative}
+
+===
+
+: faster and faster
+
 
 ===
 irregular verbs # HEAD

@@ -8,6 +8,7 @@ one and a half = полтора
 weight         = вес, взвешивать
 light @ weight = лёгкий
 heavy @ weight = тяжёлый
+
 ---
 size           = размер
 length         = длина
@@ -15,9 +16,11 @@ long           = длинный
 short          = короткий
 : short pasta
 : long pasta
+
 ---
 inch @ unit    = дюйм
 : Why can’t your nose be 12 inches long? Because then it would be a foot.
+
 ---
 large          = большой, крупный, ~ многочисленный
 huge           = огромный, громадный, ~ гигантский
@@ -33,6 +36,7 @@ thin           = тонкий
 depth          = глубина
 deep           = глубокий
 shallow        = мелкий
+
 ---
 wide           = широкий
 narrow         = узкий

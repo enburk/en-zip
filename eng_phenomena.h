@@ -193,6 +193,7 @@ namespace eng
         const array<str> kinds =
         {
             "ness", "less", 
+            "ibility", "ability",
             "tion", "sion", "ful",
             "able", "ably", "ible", "ibly", 
             "ist", "ism", "ian", "ly", "al",

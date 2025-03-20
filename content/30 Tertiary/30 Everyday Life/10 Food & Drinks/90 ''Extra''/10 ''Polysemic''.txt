@@ -3,3 +3,13 @@ polysemic
 ***
 mould\\mold @ food
 mould\\mold @ shape
+
+***
+grate @ grill   = grill
+grate @ grater  = using a grater
+: grating @ grater # SOUND
+grating @ drain = drain cover
+: light traffic over metal grate # SOUND
+grating @ harsh %% <adjective> = ''(of a sound)'' harsh and unpleasant
+
+

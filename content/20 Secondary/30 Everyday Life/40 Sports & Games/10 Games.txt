@@ -1,19 +1,17 @@
 games
 
 ---
-chess game      # 10+
-pawn @ chess    # 10+
-queen @ chess   # 10+
+chess game      
+pawn @ chess    
+queen @ chess   
 knights @ chess
 Grandmaster
 
 ---
-deck of cards   # 16+
-ace of hearts   # 16+
-queen of spades # 16+
-jack of clubs   # 16+
-shuffle         # 16+
-house of cards
+ace of hearts   
+queen of spades 
+jack of clubs   
+shuffle         
 
 8 ball @ ball
 billiard balls, ~ a cue and a chalk

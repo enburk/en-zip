@@ -208,6 +208,7 @@ namespace studia::one
                 for (str word: eng::forms(src))
                 {
                     if (app::vocabulary.size() == 0) return;
+
                     auto i = app::vocabulary.lower_bound_case_insensitive(word);
 
                     if (not

@@ -1,11 +1,14 @@
 basic ~ vocabulary
+
 ---
 clothes           = одежда, платье
 dress @ verb      = одежда, ~ одевать, одеваться
 dress/gown @ noun = платье
+
 ---
 suit @ clothes    = костюм
 bathing suit      = купальный костюм
+
 ---
 skirt @ clothes   = юбка
 shirt @ clothes   = рубашка, сорочка
@@ -22,6 +25,7 @@ cotton            = хлопок, хлопковый
 leather           = кожа, кожаный
 
 hat               = шляпа
+
 ---
 umbrella          = зонт, зонтик
 : open umbrella   # SOUND

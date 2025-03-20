@@ -1,7 +1,7 @@
 ===
 doctor        = доктор, врач %% также: доктор наук
-patient       = пациент                # 8+
-patient       = терпеливый             # 8+
+patient @ medical      = пациент                # 8+
+patient @ temper      = терпеливый             # 8+
 : Please, be patient!
 ===
 

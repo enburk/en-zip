@@ -1,7 +1,6 @@
 ---
 royal
 nobility
-manor
 
 district
 citizen
@@ -37,5 +36,6 @@ payment
 ---
 debt
 : Surely one has to pay one's debts.
+
 
 

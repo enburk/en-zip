@@ -4,8 +4,8 @@ small words            # HEAD
 
 ===
 soon                   = скоро
-{comparative:} ~ sooner
-{superlative:} ~ soonest
+sooner %% {comparative}
+soonest %% {superlative}
 ===
 
 the sooner the quicker = чем раньше, тем лучше
@@ -14,8 +14,8 @@ the sooner the quicker = чем раньше, тем лучше
 
 ===
 early                  = рано, ранний
-{comparative:} ~ earlier
-{superlative:} ~ earliest
+earlier %% {comparative}
+earliest %% {superlative}
 ===
 
 early in the morning   = рано утром
@@ -24,8 +24,8 @@ early in the morning   = рано утром
 
 ===
 late                   = поздно, поздний
-{comparative:} ~ later
-{superlative:} ~ latest
+later %% {comparative}
+latest %% {superlative}
 ===
 : late at night
 : too late

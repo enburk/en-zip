@@ -534,7 +534,7 @@ namespace studio::one
         {
             const hashset<str> reject =
             {
-                "like to", //"on the"
+                "like to", "is all"
             };
 
             return false
@@ -615,6 +615,12 @@ namespace studio::one
             sys::write("../data/"
            "sounds_lengths.txt",
             sounds_lengths);
+
+        // combine samples
+        array<path> src =
+        sys::files("../datae_sample/combine");
+        path dst = "../datae_sample/combined.wav";
+        if (not src.empty()) media::audio::combine(src, dst, 0.1, 0.0, 0.0, true);
 
         ///////////////
         report::save();

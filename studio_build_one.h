@@ -59,8 +59,7 @@ namespace studio::one
                 str ignored_sense =
                 s.extract_from("@");
 
-                for (str f: eng::forms(s))
-                if (vocabulary.contains(f))
+                for (str f: eng::forms(s, vocabulary))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -81,8 +80,7 @@ namespace studio::one
                 not vocabulary.contains(s))
                     continue;
 
-                for (str f: eng::forms(s))
-                if (vocabulary.contains(f))
+                for (str f: eng::forms(s, vocabulary))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -98,7 +96,7 @@ namespace studio::one
                 ss = simple(ss);
 
                 for (str s: eng::parser::entries(vocabulary, ss, true))
-                for (str f: eng::forms(s)) if (vocabulary.contains(f))
+                for (str f: eng::forms(s, vocabulary))
                 course_vocabulary_forms.
                     emplace(f);
             }
@@ -534,7 +532,7 @@ namespace studio::one
         {
             const hashset<str> reject =
             {
-                "like to", "is all"
+                "like to", "is all", "in that", "comes from", "for that"
             };
 
             return false

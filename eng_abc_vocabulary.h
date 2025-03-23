@@ -112,16 +112,16 @@ namespace eng
     {
         std::vector<int> cache;
 
-        std::optional<int> index (str const& s)
+        std::optional<int> index (str const& s) const
         {
             int i = lower_bound(s);
             if (data[i].title != s) return {};
             return i;
         }
 
-        bool contains (str const& s) { return index(s) ? true : false; }
+        bool contains (str const& s) const { return index(s) ? true : false; }
 
-        int lower_bound_case_insensitive (str const& s)
+        int lower_bound_case_insensitive (str const& s) const
         {
             str lower = lowercased(s);
             str upper = uppercased(s);
@@ -136,7 +136,7 @@ namespace eng
             return i;
         }
 
-        int lower_bound (str const& s)
+        int lower_bound (str const& s) const
         {
             auto b = data.begin();
             auto e = data.end();
@@ -205,3 +205,6 @@ namespace eng
         }
     };
 }
+
+namespace eng { using vocabulary = vocabulary_cached; }
+

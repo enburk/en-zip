@@ -1,7 +1,7 @@
 polysemic
 ***
-nature @ eco                = природа
-nature @ character                = натура, природа ~ (человека или явления)
+nature @ eco           = природа
+nature @ character     = натура, природа ~ (человека или явления)
 model/sitter @ fineart = натура (модель), ~ натурщик/натурщица     # 14+
 ***
 iris @ flower          = и́рис                                      # 10+
@@ -16,6 +16,7 @@ palm @ hand            = ладонь
 relief @ land          = рельеф, рельефность                       /// 2
 relief @ art           = рельеф ~ (вид скульптуры)
 relief @ relax         = облегчение, утешение                      /// 1
+
 
 
 

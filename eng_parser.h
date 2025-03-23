@@ -1,7 +1,6 @@
 ﻿#pragma once
 #include "eng_phenomena.h"
 #include "eng_abc_vocabulary_trie.h"
-namespace eng { using vocabulary = vocabulary_cached; }
 namespace eng::parser
 {
     using token = doc::text::token;

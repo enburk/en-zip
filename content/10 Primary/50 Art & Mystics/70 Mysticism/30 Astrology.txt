@@ -1,21 +1,22 @@
-astrology          = астрология # 10+
+astrology            = астрология # 10+
 
-astral             = астральный, звездный # 10+
-astral plane       = астральный план # 10+
+astral               = астральный, звездный # 10+
+astral plane         = астральный план # 10+
 
-horoscope          = гороскоп  # 10+
+horoscope            = гороскоп # 10+
 ---
-astrological signs = знаки зодиака
-Aries       @ zodiac       = Овен      # TERM-
-Taurus      @ zodiac       = Телец     # TERM-
-Gemini      @ zodiac       = Близнецы  # TERM-
-Cancer      @ zodiac       = Рак       # TERM-
-Leo         @ zodiac       = Лев       # TERM-
-Virgo       @ zodiac       = Дева      # TERM-
-Libra       @ zodiac       = Весы      # TERM-
-Scorpio     @ zodiac       = Скорпион  # TERM-
-Sagittarius @ zodiac       = Стрелец   # TERM-
-Capricorn   @ zodiac       = Козерог   # TERM-
-Aquarius    @ zodiac       = Водолей   # TERM-
-Pisces      @ zodiac       = Рыбы      # TERM-
+astrological signs   = знаки зодиака
+Aries       @ zodiac = Овен     # TERM-
+Taurus      @ zodiac = Телец    # TERM-
+Gemini      @ zodiac = Близнецы # TERM-
+Cancer      @ zodiac = Рак      # TERM-
+Leo         @ zodiac = Лев      # TERM-
+Virgo       @ zodiac = Дева     # TERM-
+Libra       @ zodiac = Весы     # TERM-
+Scorpio     @ zodiac = Скорпион # TERM-
+Sagittarius @ zodiac = Стрелец  # TERM-
+Capricorn   @ zodiac = Козерог  # TERM-
+Aquarius    @ zodiac = Водолей  # TERM-
+Pisces      @ zodiac = Рыбы     # TERM-
+
 

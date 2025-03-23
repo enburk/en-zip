@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <set>
 #include <regex>
-#include "eng_abc.h"
+#include "eng_abc_vocabulary.h"
 namespace eng::list
 {
     array<str> contractions = str(
@@ -109,6 +109,12 @@ namespace eng
             if (s.ends_with("y" )) { s.truncate(); s += "i"; }
             s += kind;
         }
+        else
+        if (kind == "tion")
+        {
+            if (s.ends_with("t" )) s.truncate();
+            s += kind;
+        }
         else s += kind;
         return s;
     }
@@ -168,6 +174,13 @@ namespace eng
             s.truncate(), s += "y";
         }
         else
+        if (kind == "ic" and s.ends_with("ic"))
+        {
+            s.truncate();
+            s.truncate();
+            s += "y";
+        }
+        else
         if (s.ends_with(kind))
         {
             s.resize(s.size() -
@@ -176,52 +189,102 @@ namespace eng
         return s;
     }
 
-    auto forms (str s)
+    str backform2 (str s, str kind)
     {
-        std::set<str> forms;
-        std::set<str> backforms;
-        forms.emplace(s);
+        if (s.size() -
+         kind.size() < 3)
+        {
+            // do nothing
+        }
+        else
+        if (kind == "s" and s.ends_with("es"))
+        {
+            s.truncate();
+        }
+        else
+        if (kind == "ed" and s.ends_with("ed"))
+        {
+            s.truncate();
+        }
+        else
+        if (kind == "ly" and s.ends_with("ly"))
+        {
+            s.truncate();
+            s.truncate();
+            s += "e";
+        }
+        else
+        if (kind == "ic" and s.ends_with("ic"))
+        {
+            s.truncate();
+            s.truncate();
+        }
+        return s;
+    }
+
+    const array<str> combinable_suffixes =
+    {
+        "ology",
+        "ness", "less",
+        "tion", "sion", "ment",
+        "able", "ible", "ably", "ibly", 
+        "ist", "ism", "ian", "ish", "ize", "ise", "ful",
+        "ly", "ic", "al", "y",
+        "ing", "ed", "s",
+    };
+
+    auto upforms (str s, vocabulary const& vocabulary) -> array<str>
+    {
+        array<str> forms;
+        if (not vocabulary.contains(s)) return forms;
+        for (str suffix: combinable_suffixes)
+        forms += upforms(form(s, suffix), vocabulary);
+        forms += s;
+        return forms;
+    }
+
+    auto backforms (str s) -> array<str>
+    {
+        array<str> forms; forms += s;
+        for (str suffix: combinable_suffixes)
+        {
+            str f = backform(s, suffix);
+            if (f != s) forms += backforms(f);
+            str g = backform2(s, suffix);
+            if (g != s) forms += backforms(g);
+        }
+        return forms;
+    }
+
+    auto combiforms (str s, vocabulary const& vocabulary)
+    {
+        array<str> forms;
+        array<str> ff = backforms(s);
+        for (str f: reverse(ff))
+        if (not forms.contains(f))
+        forms += upforms(f, vocabulary);
+        return forms;
+    }
+
+    auto forms (str s, vocabulary const& vocabulary)
+    {
+        hashmap<str, array<str>> cache;
+
+        array<str> & forms = cache[s];
+
+        if (not forms.empty()) return forms;
+
+        forms += s;
 
         const hashset<str> excepts = 
         {
             "me", "so", 
         };
-
         if (excepts.contains(s))
-            return forms;
-        
-        const array<str> kinds =
-        {
-            "ness", "less", 
-            "ibility", "ability",
-            "tion", "sion", "ful",
-            "able", "ably", "ible", "ibly", 
-            "ist", "ism", "ian", "ly", "al",
-            "ing", "ed", "s",
-        };
+        return forms;
 
-        for (str kind: kinds)
-        {
-            auto
-            ff = backforms;
-            ff.emplace(s);
-            for (str f: ff)
-            {
-                str b = backform(f, kind);
-                if (b != s) backforms.
-                emplace(b);
-            }
-        }
-
-        forms = backforms;
-        forms.emplace(s);
-
-        for (str kind: kinds)
-        {
-            if (backforms.empty()) forms.emplace(form(s, kind)); else
-            for (str b: backforms) forms.emplace(form(b, kind));
-        }
-
+        forms += combiforms(s, vocabulary);
+        forms.deduplicate();
         return forms;
     }
 }

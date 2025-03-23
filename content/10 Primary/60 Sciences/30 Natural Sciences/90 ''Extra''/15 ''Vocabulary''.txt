@@ -1,18 +1,32 @@
 basic ~ vocabulary
 
-white dwarf       = белый карлик
+white dwarf           = белый карлик
 
-solar eclipse     = солнечное затмение
-lunar eclipse     = лунное затмение
+solar eclipse         = солнечное затмение
+lunar eclipse         = лунное затмение
 
-solar mass        = солнечная масса %% единица измерения массы звезд
-solar wind        = солнечный ветер
+solar mass            = солнечная масса %% единица измерения массы звезд
+solar wind            = солнечный ветер
 
-volcanic eruption = извержение вулкана
+volcanic eruption     = извержение вулкана
+
 ---
-weather           = погода
-weather report    = метеосводка
+weather               = погода
+weather report        = метеосводка
 
+===
 
+east @ geo            = восток
+west @ geo            = запад
+north @ geo           = серер
+south @ geo           = юг
 
+===
+
+east//eastern @ geo   = восточный
+west//western @ geo   = западный
+north//northern @ geo = серерный
+south//southern @ geo = южный
+
+===
 

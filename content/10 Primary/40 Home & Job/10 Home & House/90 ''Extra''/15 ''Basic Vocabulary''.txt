@@ -1,7 +1,7 @@
 basic ~ vocabulary
 
 town           = город, городок, ~ центр города
-suburb         = пригород                /// Latin
+suburb         = пригород /// Latin
 village        = деревня, поселок
 
 palace         = дворец, особняк, ~ официальная резиденция
@@ -30,3 +30,4 @@ place @ role   = должность, место
 : London's the place.
 : There's no place like home.
 : Wrong place? No. Wrong time, then. Yes.
+

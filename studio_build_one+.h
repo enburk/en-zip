@@ -354,7 +354,7 @@ namespace studio::one
 
             for (str phrase: entry.vocabulary)
             for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), true))
-            for (auto forms = eng::forms(word); str form: forms)
+            for (auto forms = eng::forms(word, vocabulary); str form: forms)
             {
                 form = eng::lowercased(simple(form));
                 
@@ -437,7 +437,7 @@ namespace studio::one
             {
                 array<str> forms;
                 for (str word: entry.vocabulary)
-                for (str form: eng::forms(word.upto_first("@"))) if (form.size() >= 2)
+                for (str form: eng::forms(word.upto_first("@"), vocabulary)) if (form.size() >= 2)
                 forms += eng::lowercased(simple(form));
                 forms.deduplicate();
 
@@ -453,7 +453,7 @@ namespace studio::one
 
                 for (str phrase: entry.vocabulary)
                 for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), false))
-                for (str form: eng::forms(word)) if (form.size() >= 2)
+                for (str form: eng::forms(word, vocabulary)) if (form.size() >= 2)
                 forms += eng::lowercased(simple(form));
                 forms.deduplicate();
 

@@ -4,10 +4,7 @@ corporation        = корпорация                                   # 10
 consortium         = консорциум                                   # 18+
 cartel             = картель                                      # 18+
 startup [company]  = стартап                                      # POLIT- # 10+
----
 holding company    = холдинговая компания                         # POLIT+ # TERM+ # 18+
-affiliated         = аффилированный %% являющийся филиалом        # POLIT+ # TERM+ # 18+
-: ''affiliated'' is an adjective and participle meaning associated or connected
 ---
 management         = управление, руководство, ~ правление         # 10+
 risk management    = управление рисками                           # POLIT+ # 18+

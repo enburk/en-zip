@@ -205,7 +205,7 @@ namespace studia::one
 
                 bool good = false;
 
-                for (str word: eng::forms(src))
+                for (str word: eng::forms(src, app::vocabulary))
                 {
                     if (app::vocabulary.size() == 0) return;
 

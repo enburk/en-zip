@@ -1,19 +1,20 @@
 ===
-doctor        = доктор, врач %% также: доктор наук
-patient @ medical      = пациент                # 8+
-patient @ temper      = терпеливый             # 8+
+doctor            = доктор, врач %% также: доктор наук
+patient @ medical = пациент            # 8+
+patient @ temper  = терпеливый         # 8+
 : Please, be patient!
 ===
 
 ---
-temperature   = температура
-musculature   = мускулатура            # 10+
-pulse         = пульс, пульсировать, ~ ритм, вибрация
+temperature       = температура
+musculature       = мускулатура        # 10+
+pulse             = пульс, пульсировать, ~ ритм, вибрация
 
 ---
-vein @ blood  = вена                   # 10+
-vein @ leaf   = жилка ~ (на листе)     # 10+
-vein @ marble = прожилка ~ (в мраморе) # 10+
+vein @ blood      = вена               # 10+
+vein @ leaf       = жилка ~ (на листе) # 10+
+vein @ marble     = прожилка ~ (в мраморе) # 10+
+
 
 
 

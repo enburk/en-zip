@@ -12,7 +12,7 @@ password                  = пароль
 
 error @ comp              = ошибка
 access @ comp             = доступ
-denied @ comp             = запрещать
+deny @ comp               = запрещать
 
 ===
 
@@ -32,5 +32,7 @@ enter @ comp              = вводить, входить
 
 : Please, enter your password.
 : Please, re-enter password.
+: Please, enter access code.
 : Enter password now.
 : Enter parameters.
+

@@ -1,12 +1,14 @@
 sounds
 
-: baboon shrieks # SOUND
-: fox: fearful distant scream # SOUND
-: wolf howling # SOUND
-: adult lion: short purr # SOUND
+baboon shrieks       # SOUND
+wolf howling         # SOUND
+wing flaps           # SOUND
+ducklings chattering # SOUND
+geese honking        # SOUND
 
-: wing flaps # SOUND
-: ducklings chattering # SOUND
-: geese honking # SOUND
-: mallard duck: single call # SOUND
+===
+
+: adult lion: short purr # SOUND
+: fox: fearful distant scream # SOUND
+
 

@@ -9,8 +9,16 @@ widget<studias>
     studia_r studia_r;
     gui::splitter splitter;
 
+    studias () { reload(); }
+
     void reload ()
     {
+        media::info::shortenings.clear();
+        auto ss = sys::optional_text_lines(
+        "../data/shortenings.txt");
+        for (int i=0; i+1<ss.size(); i+=2)
+        media::info::shortenings[ss[i]] = ss[i+1];
+
         studia_l.reload();
         studia_r.reload();
     }

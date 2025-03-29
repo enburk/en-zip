@@ -1,8 +1,8 @@
 articles      = в грамматике: ~ артикли
 
 ===
-a             # HEAD
-an            # HEAD
+a @ article   # HEAD
+an @ article  # HEAD
 ===
 = неопределенный артикль '''a, an''' ~ произошел от числительного:
 one @ numeric = один
@@ -30,6 +30,7 @@ that          = тот # duple
 ---
 '''the''' owl
 '''the''' owls
+
 
 
 

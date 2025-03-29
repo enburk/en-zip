@@ -1,18 +1,32 @@
 ===
-small words     # HEAD
+small words       # HEAD
 ===
 
 
 ===
-irregular verbs # HEAD
+irregular verbs   # HEAD
 /// →
 ===
 
 
 ===
-phrasal verbs   # HEAD
+phrasal verbs     # HEAD
 ===
 
+
+
+===
+irregular plurals # HEAD
+advice %% {plural:} ~ advice
+===
+
+: He says things that annoy me. ~ He gives me good advice.
+: I told them once I told them twice, ~ they would not listen to advice.
+: Elves seldom give unguarded advice
+
+===
+
+Please be advised!
 
 
 

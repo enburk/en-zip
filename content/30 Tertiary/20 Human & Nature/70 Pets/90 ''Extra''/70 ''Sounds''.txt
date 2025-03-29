@@ -1,11 +1,13 @@
 sounds
 
-: dog knoks over trash can and gets into the trash # SOUND
-: dog sniffs # SOUND
+dog sniffs  # SOUND
+
+horse snort # SOUND
+huffs       # SOUND
+neigh       # SOUND
+
+===
 
 : dog reaction: ~ puzzled mumble # SOUND
 : dog reaction: ~ amused frustration # SOUND
 
-: horse snort # SOUND
-: huffs # SOUND
-: neigh # SOUND

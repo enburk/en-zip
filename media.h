@@ -176,4 +176,8 @@ namespace media
         optional_log out;
         optional_log err;
     }
+    namespace info
+    {
+        hashmap<str,str> shortenings;
+    }
 }

@@ -1,5 +1,40 @@
 sounds
 
+gasp
+sigh
+
+hic
+spit
+fart
+
+===
+
+baby babble                # SOUND
+baby spitting              # SOUND
+baby vocalization          # SOUND
+
+big sigh                   # SOUND
+heavy sigh                 # SOUND
+quick sigh                 # SOUND
+sigh of relief             # SOUND
+agonizing sigh             # SOUND
+
+short gasp                 # SOUND
+surprised gasp             # SOUND
+frightened gasping         # SOUND
+gasping crowd              # SOUND
+short gasping scream       # SOUND
+
+startled gasp              # SOUND
+short startled scream      # SOUND
+gasp of wonderment         # SOUND
+
+===
+
+terror scream              # SOUND
+terrified yell             # SOUND
+
+
 ===
 
 groan
@@ -33,6 +68,11 @@ short sigh of disgust      # SOUND
 laugh                      # HEAD
 ===
 
+short giggle               # SOUND
+baby quick laugh           # SOUND
+delighted laugh            # SOUND
+
+
 snicker
 
 ===
@@ -46,6 +86,7 @@ hilarious laughter
 quick snicker              # SOUND
 drunken delirious giggling # SOUND
 : man in crowd laughs ~ in exaggerated fashion # SOUND
+
 
 
 

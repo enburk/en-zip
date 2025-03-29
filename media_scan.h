@@ -100,6 +100,7 @@ namespace media::scan
                     if (r.title   != "") resource.title   = r.title;
                     if (r.comment != "") resource.comment = r.comment;
                     if (r.credit  != "") resource.credit  = r.credit;
+
                     resource.options += r.options;
                     resource.entries += r.entries;
 

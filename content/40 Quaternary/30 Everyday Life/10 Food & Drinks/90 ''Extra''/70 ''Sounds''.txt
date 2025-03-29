@@ -19,6 +19,12 @@ sounds
 : jar: screw lid on # SOUND
 : jar: unscrew lid # SOUND
 
+: scraping the skin of vegetable # SOUND
+: spatula: scrape in large frying pan # SOUND
+
+: pour and fizz # SOUND
+: slurping through straw # SOUND
+
 ===
 
 crunch
@@ -41,4 +47,5 @@ smack
 : ice cream cone eating: exaggerated smacking and breathing # SOUND
 : lip smack with funny taste in mouth # SOUND
 : beer gulp with lip smack # SOUND
+
 

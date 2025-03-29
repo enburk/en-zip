@@ -1,8 +1,6 @@
 animals:
 male & female
 
-she-bear
-
 ewe                   = a female sheep
 ram @ sheep           = a male sheep
 
@@ -16,11 +14,10 @@ mare                  = a female horse
 
 jack/jackass @ donkey = a male donkey
 jenny/jennet @ donkey = a female donkey
----
-hen @ chicken
-rooster ~ {esp.} {Am.} %% Br. usually cock
+
 peacock               = a male peafowl
 peahen                = a female peafowl
+
 ---
 drake @ duck          = a male duck
 mallard drake
@@ -39,11 +36,6 @@ bull elk\\bull moose
 cow elk\\cow moose
 a whale cow with a calf
 
-bull elephant
-cow elephant
-
-a snow leopard ~ and a leopardess
-a she-wolf ~ with a pup
 vixen                 = a female fox
 
 brock {Br.}           = a male badger

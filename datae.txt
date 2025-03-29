@@ -484,8 +484,8 @@ you are -- you're.ogg
 !credit.txt
 A flea and a fly flew up in a flue.ogg
 A flea and a fly flew up in a flue.txt
-Betty bought a bit of better butter.ogg
-Betty bought a bit of better butter.txt
+Betty bought a bit of better butter. But, said she, This butter's bitter..ogg
+Betty bought a bit of better butter. But, said she, This butter's bitter..txt
 Here are TH exceptions that I like to point out.ogg
 Here are TH exceptions that I like to point out.txt
 Smooth. Believe it or not but.ogg
@@ -13125,90 +13125,117 @@ bite one's lip.wav
 blow the whistle.wav
 blue cheese.wav
 >>> ../datae\audio ## Case ## us/{{Zvukograd Cara}}
-a pair of colors.wav
-a passel of pigs.wav
-a passel of possums.wav
-a [].wav
-a.wav
-accelerator.wav
-acclimation.wav
-acclimatization.wav
-acoustics.wav
-adjectives.wav
-adjustable wrench.wav
-admiral.wav
-adverbs.wav
-advisement.wav
-aerie.wav
-agate.wav
-airplane.wav
-alcohol.wav
-algebra.wav
-Algonquian languages.wav
-alligator.wav
-alpaca.wav
-alter ego.wav
+>>> ../datae\audio ## Case ## us\{{Zvukograd Cara}}/1
 aluminum.wav
-amethyst.wav
-amphitheater.wav
-amphora.wav
-an apple on plates.wav
-an.wav
-analogy.wav
-anapest.wav
-anatomy.wav
-And you, Brutus~!.wav
-anesthesia.wav
-antipode.wav
 anyways.wav
-apartment building.wav
-apparel.wav
-appetizer.wav
-Arabia.wav
-Arawakan languages.wav
-archaic.wav
-archangel.wav
-architecture.wav
-ardor.wav
-aristocrat.wav
-arithmetic.wav
-armor.wav
-around.wav
-articles.wav
 artifact.wav
-Asia.wav
 ask.wav
-astronomy.wav
-asymmetrical.wav
-atmosphere.wav
-Australian Aboriginal languages.wav
 auto mechanic.wav
 aw shucks.wav
 ax.wav
-Aztecan languages.wav
 baby carriage.wav
 bad.wav
 balance.wav
-balcony.wav
-baluster.wav
-bamboo.wav
-Band-Aid.wav
-bandito.wav
 barbarian.wav
-barbecue.wav
-bard.wav
 basis.wav
 beefsteak tomato.wav
-beluga.wav
-big.wav
-billfold.wav
-birdhouses.wav
-bobsled.wav
 bomb.wav
 bouillon cube.wav
 boutonniere.wav
 braces.wav
 braid.wav
+burgher.wav
+carnival.wav
+checkers.wav
+chopsticks.wav
+clarinetist.wav
+contrails.wav
+cookie.wav
+coverall.wav
+cow moose.wav
+date.wav
+decimeter.wav
+defense.wav
+Dewey, Cheatem and Howe.wav
+diagnosis.wav
+doorman.wav
+Dutch.wav
+elevator.wav
+elk.wav
+entrée.wav
+epaulets.wav
+etc..wav
+Europe.wav
+fender.wav
+fireman's ax.wav
+Gaelic.wav
+giraffe.wav
+grated beet.wav
+gray wolf.wav
+grilled cheese.wav
+gross.wav
+Hindi, Tamil etc..wav
+India.wav
+labor.wav
+Malay.wav
+mobster.wav
+moose.wav
+mustache.wav
+my.wav
+omelet.wav
+overalls.wav
+pumpjack.wav
+regular verbs.wav
+retiree.wav
+rigor.wav
+rooster.wav
+skillet.wav
+the ball.wav
+the balls.wav
+veterinarian.wav
+vulcanization.wav
+>>> ../datae\audio ## Case ## us\{{Zvukograd Cara}}/2
+a @ letter ### a.wav
+a @ letter ### ei.wav
+a pair of colors.wav
+a passel of pigs.wav
+accelerator.wav
+acclimation.wav
+adjectives.wav
+adjustable wrench.wav
+admiral.wav
+advisement.wav
+aerie.wav
+agate.wav
+alcohol.wav
+algebra.wav
+alligator.wav
+amethyst.wav
+an apple on plates.wav
+analogy.wav
+anapest.wav
+apartment building.wav
+appetizer.wav
+Arabia.wav
+ardor.wav
+aristocrat.wav
+arithmetic.wav
+armor.wav
+Asia.wav
+asymmetrical.wav
+atmosphere.wav
+Australian Aboriginal languages.wav
+balcony.wav
+baluster.wav
+bamboo.wav
+Band-Aid.wav
+bandito.wav
+bard.wav
+beluga.wav
+big.wav
+billfold.wav
+birdhouses.wav
+bobsled.wav
 bravura.wav
 brother and sister.wav
 brow.wav
@@ -13216,55 +13243,22 @@ buffalo.wav
 bull moose.wav
 bulletin board.wav
 bumper car.wav
-bureau.wav
-burgher.wav
 bushido.wav
 buzzard.wav
 cacophony.wav
-cadaster.wav
-calipers.wav
-calligraphy.wav
-camarilla.wav
 campground.wav
-candelabrum.wav
 candy.wav
-canonization.wav
-caravel.wav
-carnival.wav
 cashew.wav
 cataclysm.wav
-center of mass.wav
-centimeter.wav
-chaparral.wav
-checkers.wav
 chemist.wav
-chopsticks.wav
-cilantro.wav
-clarinetist.wav
 closed.wav
-clothespins.wav
-code blue.wav
 coffee.wav
-collie.wav
 color.wav
-comedy.wav
-company.wav
-concert.wav
-condo.wav
-conjunctions.wav
 conservatory.wav
-contractions.wav
-contrails.wav
 cookie cutters.wav
-cookie.wav
 corn.wav
-corrida.wav
 cosmetics.wav
-cotton candy.wav
 coupe.wav
-coverall.wav
-cow moose.wav
-cream.wav
 creek.wav
 cubic meter.wav
 cup.wav
@@ -13273,132 +13267,67 @@ curling iron.wav
 cynicism.wav
 dame.wav
 dandy.wav
-date.wav
 daughter.wav
-decimeter.wav
-defense.wav
-demagogy.wav
 demeanor.wav
 demiurge.wav
-demobilization.wav
-democracy.wav
-demon.wav
 demonstrative pronouns.wav
-demoralization.wav
 depot.wav
-Dewey, Cheatem and Howe.wav
-diadem.wav
-diagnosis.wav
 disjunctive questions.wav
-disorganization.wav
-doorman.wav
 Dutch oven.wav
-Dutch.wav
-echidna.wav
-ecumene.wav
 edelweiss.wav
 eggplant rolls.wav
 eggplants.wav
-elevator.wav
 elixir.wav
-elk.wav
 encyclopedia.wav
 endeavor.wav
-energy.wav
-entrée.wav
-epaulets.wav
 epicenter.wav
-ER.wav
 Eskimo-Aleut languages.wav
 especially.wav
-etc..wav
-Europe.wav
 fall.wav
 faucet.wav
-favorite.wav
-fender.wav
-Ferris wheel.wav
 fervor.wav
 fiber.wav
 fiesta.wav
 filet.wav
-fireman's ax.wav
-fjord.wav
-flamenco.wav
-flat tire.wav
-flavor.wav
 flower girls.wav
 forms of the verb to be.wav
 freeway.wav
-French.wav
-frypan.wav
 full.wav
-furor.wav
-Gaelic.wav
 gas pump.wav
-gas station.wav
 gazelle.wav
-geography.wav
-German.wav
-giraffe.wav
 good-humored.wav
 good.wav
-grab.wav
 graduate student.wav
 gram.wav
-grammar.wav
-grated beet.wav
 gray owl.wav
-gray wolf.wav
 greeting card.wav
-grilled cheese.wav
-gross.wav
 guru.wav
 Hamburger.wav
 hammock.wav
-harbor.wav
 hard.wav
 harmony.wav
 he is.wav
 him.wav
-Hindi, Tamil etc..wav
 history.wav
-Holland.wav
-honor.wav
 hutch.wav
-hygiene.wav
 ill-humored.wav
-in.wav
-India.wav
-interjections.wav
-internationalisms.wav
 intersection.wav
 irony.wav
-irregular verbs.wav
 it.wav
 jasmine.wav
 jeweler.wav
 jewellery.wav
-jewelry.wav
 jigsaw puzzle.wav
 Johnny-on-the-spot.wav
 judgment.wav
-jumper.wav
-karma.wav
-katana.wav
 kerosene.wav
 kilogram.wav
-kimono.wav
-komondor.wav
-labor.wav
 ladybug.wav
 lasso.wav
 last but not least.wav
-Latin American Spanish.wav
 lemming.wav
 licorice.wav
 little.wav
-logic.wav
 lug wrench.wav
 luster.wav
 mailbox.wav
@@ -13406,10 +13335,6 @@ mailboxes.wav
 mainly.wav
 making cotton candy.wav
 malamute.wav
-Malay.wav
-Malaysia.wav
-maneuver.wav
-maneuvers.wav
 manual labor.wav
 Maori.wav
 math.wav
@@ -13422,59 +13347,35 @@ micrometer.wav
 millimeter.wav
 mince.wav
 minivan.wav
-mobilization.wav
-mobster.wav
 moccasins.wav
 mold.wav
 molding.wav
 mongoose.wav
 moonshine.wav
-moose.wav
-mortal.wav
 movie theater.wav
 muleta.wav
 music.wav
-mustache.wav
-my.wav
-myrtle.wav
 Nahuan.wav
 necktie.wav
 negative forms of the verb to be.wav
 night.wav
-nirvana.wav
-norm.wav
-Norwegian.wav
 ocher.wav
-odor.wav
-Old Norse.wav
-omelet.wav
 on.wav
-organism.wav
-oval.wav
-overalls.wav
 overpass.wav
-pajamas.wav
 Paleozoic era.wav
-panacea.wav
-panorama.wav
 pantyhose.wav
-papaya.wav
 paprika.wav
 paraffin.wav
 parens.wav
 parentheses.wav
 parlor.wav
-parterre.wav
 parts of speech.wav
 period.wav
 Persia.wav
-Persian.wav
 personal pronouns.wav
 phalanx.wav
-philosophy.wav
 piaster.wav
 pilaf.wav
-pin.wav
 pipe wrench.wav
 pirate.wav
 pitcher.wav
@@ -13482,55 +13383,30 @@ piña colada.wav
 plaid.wav
 platinum blonde.wav
 playoff.wav
-plow.wav
 plural nouns.wav
-pony.wav
 porter.wav
-Portugal.wav
-prepositions.wav
-primary.wav
-procession.wav
 professor.wav
 prologue.wav
 pronouns.wav
 pumping jack.wav
-pumpjack.wav
 pumps.wav
 purse.wav
-Pythagorean theorem.wav
-Q-tips.wav
 Quechua.wav
 questions.wav
 rack.wav
-reaction.wav
-regular verbs.wav
 reservation.wav
-retiree.wav
-rhododendron.wav
-rigor.wav
 roadwork.wav
 rodeo.wav
-rooster.wav
-root for.wav
-rottweiler.wav
 rumor.wav
 saber.wav
 saddle.wav
-sakura.wav
 salami.wav
 same.wav
-sandal.wav
-Sanskrit.wav
 Santa Claus.wav
 sari.wav
-sarong.wav
-savory.wav
 scales.wav
 scepter.wav
 Scots.wav
-Scottish.wav
-sedan.wav
-sense of humor.wav
 sharpener and eraser.wav
 she is.wav
 shoestrings.wav
@@ -13538,43 +13414,26 @@ short pants.wav
 sidewalk.wav
 Simple Past Tense.wav
 Simple Present Tense.wav
-skillet.wav
 skipper.wav
-slalom.wav
 slices of beet.wav
-slogan.wav
 smolder.wav
-so.wav
 somber.wav
-soybeens.wav
 spare tire.wav
 specter.wav
-splendor.wav
-step.wav
 steps.wav
-sterilization.wav
-store window [].wav
 store window.wav
 story.wav
 streetcar.wav
 subjective case.wav
 sumo.wav
-tactic.wav
 tactics.wav
 taffeta.wav
-tango.wav
 tank truck.wav
 tanker truck.wav
-tapir.wav
-tatami.wav
 telephone booth.wav
 that's.wav
 that.wav
-the ball.wav
-the balls.wav
-the owl.wav
 the.wav
-therapy.wav
 they.wav
 third-person singular.wav
 this.wav
@@ -13583,38 +13442,22 @@ tic-tac-toe.wav
 tie.wav
 tire tracks.wav
 tire.wav
-tomato.wav
-torero.wav
 totalizator.wav
 track and field.wav
 trackman.wav
-trail.wav
 trapezoid.wav
-tree.wav
-tricolor.wav
 trimester.wav
 trolley.wav
 truck.wav
 tulip.wav
 Tupi.wav
-turban.wav
-Turkey.wav
 ultramarine.wav
 up and down.wav
 usually.wav
-valor.wav
-vapor.wav
-verbs.wav
-veterinarian.wav
 vise.wav
 vocalize.wav
 voodoo.wav
-voyage.wav
-vulcanization.wav
-wapiti.wav
-water.wav
 watercolor.wav
-wh-questions [].wav
 wh-questions.wav
 what.wav
 when.wav
@@ -16783,7 +16626,7 @@ debates.wav
 defined.wav
 deliberate.wav
 delicious.wav
-depended upon.wav
+depended upon ## course-.wav
 depends.wav
 desolate homes.wav
 despair.wav
@@ -18246,8 +18089,8 @@ The order of the traditional meal was something like the following.txt
 The order of the traditional meal was something like the following.wav
 The recipe is long and involves toasting the seeds; frying the chiles and then soaking them.txt
 The recipe is long and involves toasting the seeds; frying the chiles and then soaking them.wav
-The word dessert comes from French.txt
-The word dessert comes from French.wav
+The word dessert comes from French, where it is the participle of desservir, “to de-serve,”.txt
+The word dessert comes from French, where it is the participle of desservir, “to de-serve,”.wav
 The word entree in the United States.txt
 The word entree in the United States.wav
 These days we can use the word flour to mean any finely ground grain.txt
@@ -18562,14 +18405,22 @@ Yeah OK..wav
 Zaphod Beeblebrox ## sic!.wav
 >>> ../datae\audiobooks--/Douglas Adams - The Restaurant at the End of the Universe {{Martin Freeman}}
 !credit.txt
+Arthur picked up one of the letter stones from his home-made Scrabble set. It was a T..txt
+Arthur picked up one of the letter stones from his home-made Scrabble set. It was a T..wav
 But what about the End of the Universe~! We'll miss the big moment..txt
 But what about the End of the Universe~! We'll miss the big moment..wav
 fine weather for the concert here this afternoon. I'm standing here in front of the stage, the reporter lied.txt
 fine weather for the concert here this afternoon. I'm standing here in front of the stage, the reporter lied.wav
+Fruit and berries on strange planets either make you live or make you die.txt
+Fruit and berries on strange planets either make you live or make you die.wav
+His mouth started to speak, but his brain decided it hadn't got anything to say yet and shut it again.txt
+His mouth started to speak, but his brain decided it hadn't got anything to say yet and shut it again.wav
 In fact there are three freely convertible currencies in the Galaxy, but none of them count.txt
 In fact there are three freely convertible currencies in the Galaxy, but none of them count.wav
 Infinite.. Bigger than the biggest thing ever and then some. Much bigger than that in fact, really amazingly immense.txt
 Infinite.. Bigger than the biggest thing ever and then some. Much bigger than that in fact, really amazingly immense.wav
+One of the major problems encountered in time travel is not that of accidentally becoming your own father or mother.txt
+One of the major problems encountered in time travel is not that of accidentally becoming your own father or mother.wav
 Structural linguistics is a bitterly divided and unhappy discipline.txt
 Structural linguistics is a bitterly divided and unhappy discipline.wav
 The first thing they saw on leaving the lift was a long concrete wall with over fifty doors in it offering lavatory facilities.txt
@@ -18588,14 +18439,20 @@ This was the view through the Galactic centre from which they were travelling, a
 This was the view through the Galactic centre from which they were travelling, and indeed had been travelling for years.wav
 Transtellar Cruise Lines would like to apologize to passengers for the continuing delay to this flight.txt
 Transtellar Cruise Lines would like to apologize to passengers for the continuing delay to this flight.wav
+Zaphod's eyes sparkled with something that may or may not have been avarice as he passed over them..txt
+Zaphod's eyes sparkled with something that may or may not have been avarice as he passed over them..wav
 >>> ../datae\audiobooks--\Douglas Adams - The Restaurant at the End of the Universe {{Martin Freeman}}/{{}}
+a speculative philosopher.wav
 apres vie.wav
 Dunno. Let's find out shall we~!.wav
 Everything you never wanted to know about sex but have been forced to find out..wav
+I have no opinion. How can I say~!.wav
 It is also of course stupefyingly dangerous..wav
+It was an old face, thin and distinguished, careworn but not unkind..wav
 nine hundred and thirty-eight thousand and twenty-four and nine hundred and thirty-eight thousand and twenty-six.txt
 nine hundred and thirty-eight thousand and twenty-four and nine hundred and thirty-eight thousand and twenty-six.wav
 Shee, you guys are so unhip it's a wonder your bums don't fall off.wav
+That's absolutely horrible, exclaimed Arthur, the most revolting thing I've ever heard..wav
 There is nothing. Void. Emptiness. Oblivion. Absolute nothing..wav
 This is meant to be a polite after-dinner conversation is it~!.wav
 This is, many would say, impossible..wav
@@ -19287,7 +19144,7 @@ anti-intellectualism.wav
 at our peril.wav
 attractive.wav
 bespoke.wav
-blazes on the trail.wav
+blazes on the trail [+][trailblaze].wav
 bloody-minded.wav
 bloody.wav
 Boca Raton.wav
@@ -21669,10 +21526,10 @@ Mary had a little lamb ### [Adult-Fem-B_Mary-Had-A-Little-Lamb_VKT_00581].txt
 Rub-a-dub-dub ### [Adult-Fem-E_Rub-A-Dub-Dub-Three-Men-In-A-Tub_VKT_02299].mp3
 Rub-a-dub-dub ### [Adult-Fem-E_Rub-A-Dub-Dub-Three-Men-In-A-Tub_VKT_02299].txt
 >>> ../datae\audiohero {{$audiohero.com}}/## song
-Dastardly Workhouse Song ### [Workhouse-Pendulum-WAM010401] ### full.txt
-Dastardly Workhouse Song ### [Workhouse-Pendulum-WAM010401] ### full.wav
 Dastardly Workhouse Song ### [Workhouse-Pendulum-WAM012401] ### short.txt
 Dastardly Workhouse Song ### [Workhouse-Pendulum-WAM012401] ### short.wav
+Dastardly Workhouse Song (full) ## course- ### [Workhouse-Pendulum-WAM010401] ### full.txt
+Dastardly Workhouse Song (full) ## course- ### [Workhouse-Pendulum-WAM010401] ### full.wav
 I'm a little teapot ### [Child-Fem-B_Im-A-Little-Teapot_VKT_06938].txt
 I'm a little teapot ### [Child-Fem-B_Im-A-Little-Teapot_VKT_06938].wav
 Itsy Bitsy Spider ### [Adult-Fem-F_The-Itsy-Bitsy-Spider_VKT_02579].mp3
@@ -22340,14 +22197,12 @@ grumbling stomach ### HumanGurgle_DIGIFX5-29.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans\physiology/gulp-glug
 glub ### WaterGlub UWT03_47.2.wav
 glub ### WaterUnderwater 6110_44_2.wav
-glug-glug [glug] ### BeerBottlePourGlug PE580210.wav
-glug-glug-glug [glug] ### DrinkingWglugglug CRT026602.wav
 glugs ### PourCuteGlugs PE581502.wav
 gulp ### Glass-Pickup-Gulp-Drink_B07-01203.wav
 gulping ### ColaFizzingAsItIsB TE037504.wav
 gulps ### GulpsDrinking2x HF027901.wav
+pouring beer with glugs [glug] ### BeerBottlePourGlug PE580210.wav
 pouring wine with glugs ### PourWineGlugs PE581506.wav
-water cooler glugs ### WaterCoolerGlugs PE581701.wav
 hack & spit ### Cough-Male-Hack-Spit-Disgus_B07-00647.wav
 heartbeat [heart][beat] ## crop 0-5 ## fade out  ### HeartBeat3Fast SDT2036403.wav
 heartbeat [heart][beat] ## crop 0-5 ## fade out ### SlowHeartbeats WHO01_66_1.wav
@@ -22884,7 +22739,7 @@ kitchen.. trash compactor ## crop 5- ### TrashCompactor_DIGIB01-43.wav
 peel ### [FOOD-PEEL_GEN-HDF-11405].wav
 pepper grinder twists ### PepperGrinderVari TE2037203.wav
 potato chips.. reach in, munch ### PotatoChipsBagReac PE584503.wav
-pour sugar ### [DetergentPowderPou PE584206].wav
+pouring sugar ### [DetergentPowderPou PE584206].wav
 salt shaker ### SaltOrPepperShaker TE033401.wav
 Saran wrap.. ripping a sheet from roll ### CookingKitchen-SaranWrap-9_B05-02267.wav
 Saran wrap.. rustling & folding movements ### CookingKitchen-SaranWrap-1_B05-02253.wav
@@ -23352,13 +23207,13 @@ break shot ### [BILLIARDS-POOL_GEN-HDF-03729].wav
 chalking cue ### Billiards 6031_14_6.wav
 pool billiards.. balls hit balls ### Games-PoolBilliards-Int-C-8_B03-02231.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\sports & games/board
+card flip ### CardFlipsCardTurnO FS051501.wav
 card flip over, grab and slide ### CardFlipsGrabsCard FS051601.wav
-cards deck ### [Cards 6010_55_9].wav
 cards shuffle ### [CardsShuffleDeck WES100801].wav
+deck of cards ### [Cards 6010_55_9].wav
 dice shake and roll onto table ### DiceShakeRollDiceS FS051001.wav
 dominoes clack ### DominoesClack.wav
-flip card ### CardFlipsCardTurnO FS051501.wav
-flip through deck of cards ### Cards 6010_55_5.wav
+flip through the deck of cards ### Cards 6010_55_5.wav
 playing cards.. shuffling ### Playing-Cards-Shuffle_OBIN_768.wav
 riffle ### CardsShuffleDeck WES100801.wav
 riffle ### CardsShuffleDeck WES101001.wav
@@ -26661,6 +26516,9 @@ brown bear [ferocious] ## qrop qt.jpg
 Divine Snake [green vine snake][snake] ## qrop l30 r7 {{Photo.. Raviprakash S S}}.jpg
 Elephant's Foot Hovering over a Chick ## qropt!.jpg
 Elephant's Foot Hovering over a Chick ## qropt!.txt
+European badger [Eurasian badger][badger@animal] ### 1.jpg
+European badger [Eurasian badger][badger@animal] ### 2.jpg
+European badger [Eurasian badger][badger@animal] ### 3.jpg
 Glowing eyes of an alligator at dusk [red eyes][eyeshine][tapetum lucidum] ## qrop l20 r12 {{Photo.. Larry Lynch}}.jpg
 green tree python %% Morelia viridis [python][Morelia viridis][Morelia] ## qrop l8 r13 ## qropt! {{Photo.. Jenny Rollo}}.jpg
 humpback whale [cetacean] ## qrop l8 r26 {{Photo.. Thomas Wiewandt}}.jpg
@@ -26906,7 +26764,7 @@ making a face [make a face][facial expression][grimacing] ## qrop t9 b11 {{Photo
 Male human head louse, Pediculus humanus capitis {{Photo.. Gilles San Martin $cc-by-sa wiki}}.jpg
 Male human head louse, Pediculus humanus capitis {{Photo.. Gilles San Martin $cc-by-sa wiki}}.txt
 mastodon ## qrop l1 r2 ## qropt! {{Sergiodlarosa $cc-by-sa wiki}}.jpg
-Megalodon tooth with two great white shark teeth [megalodon] ## qrop r8 ## qropt! {{Brocken Inaglory $cc-by-sa wiki}}.jpg
+Megalodon tooth with two great white shark teeth [megalodon][tooth@animal] ## qrop r8 ## qropt! {{Brocken Inaglory $cc-by-sa wiki}}.jpg
 neutral zone face-off [face-off][face off][faceoff][neutral zone] ## qrop l9 ## qropt! {{Photo.. Fleurdelisé $cc-by-sa}} ### faceoff.JPG
 non-biting midge {{Photo.. Darrah Leffler $cc-by-sa wiki}}.jpg
 non-biting midge {{Photo.. Darrah Leffler $cc-by-sa wiki}}.txt
@@ -29094,7 +28952,7 @@ scallops served in a coconut shell [served] ## qrop t12 b9.jpg
 shrimp and cockle broth with ginger [cockleshell][cockle] ## qrop l2 t8 b13.jpg
 smoked salmon and {nori} leaf rolls.jpg
 spinach, bacon and sage {crostini}.jpg
-tartlet with tuna and tomate [tartlet].jpg
+tartlet with tuna and tomato [tartlet].jpg
 tea candle.jpg
 tea candle.jpg.uid-zps
 vegetables with tapenade tart and goat's cheese with tarragon {tart}.jpg
@@ -31060,7 +30918,7 @@ sewing machine needles [sewing machine@needles] ## qrop l3 r22 {{Photo.. Sarah2 
 sewing tools [sewing] ## qrop l2 r32 b1 {{Photo.. Lanasvitankova $dreamstime 67656444}}.jpg
 stitch unpicker [unpicker][seam ripper] ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 83073834}}.jpg
 tape ## qrop l33 b10 {{Photo.. Mariellam1 $dreamstime 49545704}}.jpg
-thimbles ## qrop l23 r10 {{Photo.. Veronika Mannova $dreamstime 7863069}}.jpg
+thimbles [thimble] ## qrop l23 r10 {{Photo.. Veronika Mannova $dreamstime 7863069}}.jpg
 threads [thread] ## qrop ql {{Photo.. Elenamuz $dreamstime 51321616}}.jpg
 yarn ## qrop q {{Photo.. Anton Matveev $dreamstime 81362163}}.jpg
 yarn ## qrop q {{Photo.. Deyangeorgiev $dreamstime 36780913}}.jpg
@@ -31957,7 +31815,6 @@ disgust [disgusted] ## qrop l26 r7 {{Photo.. Eldadcarin $dreamstime 29979497}}.j
 disrelish {{Photo.. Petarneychev $dreamstime 21058119}}.jpg
 distaste ## qrop l7 r27 {{Photo.. arthurzeps $dreamstime 67324753}}.jpg
 distressed ## qrop qr {{Photo.. Andreaobzerova $dreamstime 113645601}}.jpg
-distrustful ## qrop l16 r17 {{Photo.. Maksim Kamyshanskii $dreamstime 111076851}}.jpg
 dream @ wish ## qrop l6 r28 ## qropt! {{Photo.. Famveldman $dreamstime 77602778}}.jpg
 empathy ## qrop l19 r6 ## qropt! {{Photo.. Elliot Burlingham $dreamstime 30432328}}.jpg
 empty ## qrop q {{Photo.. Vadymvdrobot $dreamstime 72389025}}.jpg
@@ -31984,6 +31841,7 @@ startled ## qrop l7 r27 {{Photo.. Koldunova Anna $dreamstime 108371013}}.jpg
 stomachache [stomach ache] ## qrop l21 r13 {{Photo.. Waroot Tangtumsatid $dreamstime 113216005}}.jpg
 stretch ## qrop l14 r8 ## qropt! {{Photo.. Waroot Tangtumsatid $dreamstime 113214127}}.jpg
 stupor ## qrop q {{Photo.. Koldunova Anna $dreamstime 107906439}}.jpg
+suspicious [distrust][distrustful] ## qrop l16 r17 {{Photo.. Maksim Kamyshanskii $dreamstime 111076851}}.jpg
 tease ## qrop l19 r15 {{Photo.. Khosrork $dreamstime 105420672}}.jpg
 think ## qrop qr {{Photo.. Mimagephotography $dreamstime 65256770}}.jpg
 thumbs up [thumbs-up] ## qrop l15 r18 {{Photo.. Waroot Tangtumsatid $dreamstime 111099402}}.jpg

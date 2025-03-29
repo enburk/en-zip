@@ -1,5 +1,7 @@
 sounds
 
+: mallard duck: single call # SOUND
+
 : western diamondback rattlesnake: tail rattles # SOUND
 : Mojave rattlesnake: tail rattles # SOUND
 

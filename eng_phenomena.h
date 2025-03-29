@@ -207,6 +207,14 @@ namespace eng
             s.truncate();
         }
         else
+        if (kind == "ing" and s.ends_with("ing"))
+        {
+            s.truncate();
+            s.truncate();
+            s.truncate();
+            s += "e";
+        }
+        else
         if (kind == "ly" and s.ends_with("ly"))
         {
             s.truncate();

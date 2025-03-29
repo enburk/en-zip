@@ -1,18 +1,21 @@
 sounds
 
+: dog knoks over trash can and gets into the trash # SOUND
+
+
 : chicken cackle # SOUND
 : chicks peeping # SOUND
 
 : hen startled, flapping wings # SOUND
 : sustained baa, quick vibrato, slightly irritated # SOUND
-: hoofbeats # SOUND
+: hoofbeats  # SOUND
 
-: pig snort # SOUND
+pig snort    # SOUND
+pigs oinking # SOUND
 : pig: deep nasally grunts # SOUND
-: pigs oinking # SOUND
 
 : angry cat growl and hiss # SOUND
-: cat spits # SOUND
+: cat spits  # SOUND
 
 : dog: chompimg and munching # SOUND
 : dog: desperate yelps # SOUND

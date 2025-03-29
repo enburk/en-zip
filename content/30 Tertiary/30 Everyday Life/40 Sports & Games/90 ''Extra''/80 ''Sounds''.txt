@@ -1,38 +1,31 @@
 sounds
 
-: motocross: jumping # SOUND
+motocross: jumping # SOUND
 
-: chalking cue # SOUND
-: pool billiards: balls hit balls # SOUND
-: cards deck # SOUND
-: dominoes clack # SOUND
-
-
-: skipping # SOUND
-: skipping rope # SOUND
-: bouncing ball # SOUND
-
-: canoe: lauch from shore # SOUND
-: lift canoe, dump water out # SOUND
-
-: boxing gloves hitting hand held pads # SOUND
-: boxing: exercise & workouts # SOUND
-
-: basketball chants: airball # SOUND
-: basketball chants: defense # SOUND
-: basketball chants: go, fight, win # SOUND
-: basketball chants: hey ref you suck # SOUND
-
-: ice hockey: face off # SOUND
-: ice hockey: slap shot # SOUND
-: ice hockey: slap shot hitting post # SOUND
-
-: jump off diving board # SOUND
-: water sports: diving # SOUND
+skipping           # SOUND
+skipping rope      # SOUND
+bouncing ball      # SOUND
 
 ===
 
-: gambling: stack of chips # SOUND
-: cards shuffle # SOUND
-: flip card # SOUND
-: flip through deck of cards # SOUND
+chalking cue       # SOUND
+dominoes clack     # SOUND
+
+card flip          # SOUND
+cards shuffle      # SOUND
+
+===
+
+: basketball chants: ~ defense # SOUND
+
+: pool billiards: ~ balls hit balls # SOUND
+
+: water sports: ~ diving # SOUND
+
+: flip through ~ the deck of cards # SOUND
+
+: gambling: ~ stack of chips # SOUND
+
+
+
+

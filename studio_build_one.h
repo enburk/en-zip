@@ -20,7 +20,7 @@ namespace studio::one
         report::clear();
         report::errors += course.errors;
         report::anomal += course.anomal;
-        
+
         if (not report::errors.log.empty()) {
         err << red(bold("ONE ERRORS:"));
         err << report::errors.log; }
@@ -120,11 +120,27 @@ namespace studio::one
         int more_video = 0;
 
         array<str> sounds;
+        array<str> shortenings;
         hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
             if (r.options.contains("asset"))
                 continue;
+
+            if (r.kind == "audio"
+            and r.abstract != r.title)
+            {
+                str a = simple(r.abstract);
+                str t = simple(r.title);
+                a.extract_from("@");
+                t.extract_from("@");
+                a.replace_all("_", "");
+                t.replace_all("_", "");
+                t.replace_all("\n", "<br>");
+                if (a != t)
+                shortenings += a,
+                shortenings += t;
+            }
 
             if (r.kind == "audio")
             for (str s: eng::parser::entries(vocabulary, simple(r.title), true))
@@ -292,6 +308,10 @@ namespace studio::one
         sounds.deduplicate();
         sys::write("../data/sounds.txt",
         sounds);
+
+        // NO shortenings.deduplicate();
+        sys::write("../data/shortenings.txt",
+        shortenings);
 
         sensecontrol.report_unused(unused_resources);
 

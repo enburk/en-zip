@@ -94,6 +94,7 @@ namespace content::out
             s.replace_all("'''", "");
             s.replace_all("''" , "");
             s.replace_all("~",   "");
+            s.canonicalize();
             s = simple(s);
 
             {
@@ -199,7 +200,6 @@ namespace content::out
             s.replace_all("~", "");
             s.replace_all("||","|");
             s.debracket("(",")");
-            s.canonicalize();
 
             if (s.contains(
             one_of   ("{_}")))

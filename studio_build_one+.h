@@ -173,7 +173,7 @@ namespace studio::one
         report::wordsm.log.size()) + " total"));
     }
 
-    void report_shortenings(array<media::resource> const& resources)
+    void report_shortenings(array<media::resource>& resources)
     {
         array<str> shortenings;
 

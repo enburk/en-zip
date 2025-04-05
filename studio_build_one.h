@@ -145,13 +145,13 @@ namespace studio::one
                 matches.deduplicate();
             }
 
+            if (r.options.contains("="))
+            report::anoma2 += cliplink(&r) + red(bold(" ## ="));
+
             bool used = false;
             for (str s: matches)
             if (course_matches_add(s, r))
                  used = true;
-
-            if (r.options.contains("="))
-            report::anoma2 += cliplink(&r);
 
             if (used
             or  abstract.size() < 2
@@ -203,18 +203,18 @@ namespace studio::one
             if (r->kind == "video") n++;
             if (n <= 1) continue;
 
-            array<res> aa;
-            array<res> vv;
+            array<res> audios;
+            array<res> videos;
             for (res r: voc.resources)
             if (r->kind == "video")
-            vv += r; else
-            aa += r;
+            videos += r; else
+            audios += r;
 
-            vv.erase_if([&single_videos](res r){
+            videos.erase_if([&single_videos](res r){
             return single_videos.contains(r); });
 
-            if (not vv.empty())
-            voc.resources = aa * vv;
+            if (not videos.empty())
+            voc.resources = audios * videos;
         }
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));
@@ -234,13 +234,14 @@ namespace studio::one
             bool isahead = entry.opt.external.contains("HEAD");
             bool nopixed = entry.opt.internal.contains("pix-") or isahead;
             bool noaudio = entry.opt.internal.contains("audio-");
+            bool nosound = entry.opt.internal.contains("sound-");
             bool soundio = entry.opt.external.contains("SOUND");
 
-            auto en = noaudio or soundio? array<str>{} : entry.en;
-            auto uk = noaudio or soundio? array<str>{} : entry.uk;
-            auto us = noaudio or soundio? array<str>{} : entry.us;
+            if (noaudio) report::anoma2 += link(entry) + red(bold(" audio-"));
+            if (nosound) report::anoma2 += link(entry) + red(bold(" sound-"));
 
-            bool sound_ok = not soundio;
+            bool vocal_ok = noaudio or soundio;
+            bool sound_ok = nosound or not soundio;
             bool video_ok = nopixed or
             entry.eng.contains(str(u8"→")) or
             entry.eng.starts_with(":") or
@@ -251,30 +252,36 @@ namespace studio::one
             for (str& s: entry.matches)
             for (res& r: course_matches[s].resources)
             {
-                if (r->kind == "video"
-                and nopixed) continue;
+                if (r->sound() and nosound) continue;
+                if (r->vocal() and noaudio) continue;
+                if (r->video() and nopixed) continue;
 
-                if (r->kind == "audio"
-                and noaudio) continue;
+                if (r->sound() && r->abstract != entry.abstract) continue;
+                if (r->vocal() && r->abstract != entry.abstract) continue;
 
-                if (r->kind == "video")
-                    videos += r;
+                if (r->sound()) sound_ok = true;
+                if (r->vocal()) vocal_ok = true;
+                if (r->video()) video_ok = true, videos += r;
 
                 data.one_add(i, r);
+            }
 
-                str w = simple(r->abstract);
+            auto en = vocal_ok? array<str>{} : entry.en;
+            auto uk = vocal_ok? array<str>{} : entry.uk;
+            auto us = vocal_ok? array<str>{} : entry.us;
 
-                if (r->kind == "audio" and not r->options.contains("xlam")) {
-                if (r->options.contains("uk")) fullfill(uk, w, course_uks);
-                if (r->options.contains("us")) fullfill(us, w, course_uss);
-                /*        in any case       */ fullfill(en, w, course_ens); }
+            if (not vocal_ok)
+            for (str& s: entry.matches)
+            for (res& r: course_matches[s].resources)
+            if (r->vocal() and not r->options.contains("xlam"))
+            {
+                bool uks = r->options.contains("uk");
+                bool uss = r->options.contains("us");
+                bool ens = true;
 
-                if (r->kind == "audio"
-                and r->options.contains("sound"))
-                    sound_ok = true;
-
-                if (r->kind == "video")
-                    video_ok = true;
+                if (uks) fullfill(uk, r->abstract, course_uks);
+                if (uss) fullfill(us, r->abstract, course_uss);
+                if (ens) fullfill(en, r->abstract, course_ens);
             }
 
             str s = html(entry.eng);
@@ -288,9 +295,9 @@ namespace studio::one
             if (not sound_ok  ) report::audiom += linked(s + snd, entry.link);
             if (not video_ok  ) report::videom += linked(s + " ", entry.link);
 
-            for (str s: en) needed_en += s.extract_upto("@");
-            for (str s: us) needed_us += s.extract_upto("@");
-            for (str s: uk) needed_uk += s.extract_upto("@");
+            for (str s: en) needed_en += s;
+            for (str s: us) needed_us += s;
+            for (str s: uk) needed_uk += s;
 
             videos.deduplicate();
             for (res r: videos)

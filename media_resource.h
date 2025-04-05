@@ -121,6 +121,10 @@ namespace media
             co_yield e;
         }
 
+        bool sound () { return kind == "audio" and     options.contains("sound)"); }
+        bool vocal () { return kind == "audio" and not options.contains("sound)"); }
+        bool video () { return kind == "video"; }
+
         str opt (str kind) const
         {
             for (str o: options)

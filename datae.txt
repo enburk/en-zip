@@ -3477,8 +3477,8 @@ Format wars have been part of technological innovation.ogg
 Format wars have been part of technological innovation.txt
 In fact, most of the Founding Fathers and early presidents were Deists. [Deists].ogg
 It's often said that America is a litigious society. Litigious, meaning we file a lot of lawsuits..ogg
-Men's dress furnishings is a fancy term.ogg
-Men's dress furnishings is a fancy term.txt
+Men's dress furnishings is a fancy term for neckties and accessories like those silky little handkerchiefs.ogg
+Men's dress furnishings is a fancy term for neckties and accessories like those silky little handkerchiefs.txt
 One of Columbia's final, though most enduring, appearances.ogg
 One of Columbia's final, though most enduring, appearances.txt
 The copper Lady Liberty looked a lot like Columbia.ogg
@@ -4676,7 +4676,7 @@ Psyche.mp3
 Thalia.mp3
 Thetis.mp3
 Vesta.mp3
->>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Constellations
+>>> ../datae\audio\zoo\{{Starry Night Education}} ## Case ## sic! ## course-/Constellations ## (o)
 !credit.txt
 Andromeda (The Chained Maiden).mp3
 Antlia (The Air Pump).mp3
@@ -14868,8 +14868,8 @@ Do you know where we can find him.ogg
 Do you know where we can find him.txt
 Don't come in for anything unless you're sure I'm not here.ogg
 Don't come in for anything unless you're sure I'm not here.txt
-Get it~! -- No, sir. -- Don’t sir me!  -- Yes, sir. -- And say sir when you don’t..ogg
-Get it~! -- No, sir. -- Don’t sir me!  -- Yes, sir. -- And say sir when you don’t..txt
+Get it~! -- No, sir. -- Don’t sir me! -- Yes, sir. -- And say sir when you don’t..ogg
+Get it~! -- No, sir. -- Don’t sir me! -- Yes, sir. -- And say sir when you don’t..txt
 Ha! Ha! Ha! Eat your livers, you bastards. This time you're really in for it..ogg
 Ha! Ha! They’ve got the new Lepage glue gun.ogg
 Ha! Ha! They’ve got the new Lepage glue gun.txt
@@ -22932,7 +22932,7 @@ cinder block, tumbling ### FoleyMovement-CinderblockDo_B04-04284.wav
 flint igniter ### TORCH-PROPANE_GEN-HDF-23508.wav
 flint igniter ### TORCH-PROPANE_GEN-HDF-23513.wav
 friction ### FrictionMetalMidTo CS016401.wav
-gas weld ## crop 0-8 ## fade out ### Welding_DIGIE11-28.wav
+gas welding ## crop 0-8 ## fade out ### Welding_DIGIE11-28.wav
 grinder ### GrinderElectric L2IND2_07_4.wav
 hatch ### HATCH-SHIP_GEN-HDF-14033.wav
 hay making, by hands, using pitch fork ## crop 0-22 ## fade out ### FarmHay_DIGIC01-73.wav
@@ -26237,7 +26237,7 @@ Sir Hugh Reid, in the Uniform of the Scottish Archers [Reid][Scottish][beret] ##
 Sir William Thomson, Baron Kelvin [Thomson][Kelvin] {{Hubert von Herkomer, 1900s $$}}.jpg
 Álvaro de Bazán, 1st Marquis of Santa Cruz de Mudela [grandee] ## crop l2 t1 b1 ## qrop l2 t5 b1 ## qropt! {{Rafael Tegeo $$}}.jpg
 raspberries [superrealism] ## qrop qt {{Catherine Braiko}}.jpg
-Red Barn Door [red][photorealism] ## date 2008 ## qropt! {{Gary Hume}}.jpg
+Red Barn Door [red][photorealism][barn door] ## date 2008 ## qropt! {{Gary Hume}}.jpg
 reincarnation ## qropt! {{Himalayan Academy Publications, Kapaa, Kauai, Hawaii $cc-by-sa}}.jpg
 rogue wave ## crop r7 {{Katsushika Hokusai, ca. 1829–1833 $$}}.jpg
 The Admiring Glance [self-admiration][narcissistic] ## crop t1 r1 ## qrop t13 r1 ## qropt! {{Auguste Toulmouche, 1868 $$}}.jpg
@@ -26399,6 +26399,7 @@ silver 2 reales cob [real@coin][cob@coin] ## qrop l15 r10.jpg
 Silver {dirham}, Caliphate of Cordoba.jpg
 Square silver half {dirham}, {Almohad} era.jpg
 monogram ## qrop qr.jpg
+Neolithic stone axe head [Neolithic][stone axe].jpeg
 >>> ../datae\photo\artifacts/netsuke {{IvoryAndArt}}
 Carvers Family %% Mammoth Ivory Netsuke [netsuke] ## qrop q.jpg
 Family Selling Fish %% Mammoth Ivory Netsuke [netsuke] ## qrop q.jpg
@@ -26525,6 +26526,7 @@ humpback whale [cetacean] ## qrop l8 r26 {{Photo.. Thomas Wiewandt}}.jpg
 Monarch Butterfly cluster at the Pismo Beach butterfly grove [monarch butterflies] {{Photo.. Sylvia Latham}}.jpg
 Mother, calf, and escort sleeping peacefully [humpback][humpback whale] ## qrop t11 b9 {{Photo.. acid-hologram}}.jpg
 parrot snake [Leptophis ahaetulla] {{Photo.. Theo Allofs}}.jpg
+plesiosaur gastroliths [gastrolith][gizzard stone].jpeg
 red-eyed tree frog egg clutch %% about 5 days old [clutch of eggs@frog][clutch@frog eggs][eggs@frog] ## qrop qb {{Photo.. Christian Ziegler}}.jpg
 Scuba Diver and {Goliath Grouper} %% Epinephelus itajara [Epinephelus] ## noqrop {{Photo.. Michael Patrick O'Neill}}.jpg
 sea otter ## qrop l6 r23 b1.jpg
@@ -27834,7 +27836,7 @@ Swedish {crispbreads}.jpg
 vegetable broth [vegetable soup].jpg
 vegetable broth [vegetable soup].jpg.uid-zps
 >>> ../datae\photo def/Fokos {{Photo.. David Fokos}}
-Breaking Clouds [broken clouds][broken@clouds].jpg
+broken clouds [broken@clouds].jpg
 gate @ passage.jpg
 solar eclipse ## date 2002.jpg
 >>> ../datae\photo def/Fondacci-Markezana {{Photo.. Fondacci-Markezana}}
@@ -28399,7 +28401,7 @@ Ali vs. Liston ## qrop qt.jpg
 Ali vs. Liston ## qrop qt.txt
 Battleship New Jersey Shell [battleship].jpg
 boxing ring [ring@boxing] ### _Muhammad _Ali _KOs _Cleveland _Williams, 1966.jpg
-Juan Marichal Pitching to Willie Davis [pitching].jpg
+Juan Marichal Pitching to Willie Davis [pitching][pitcher@baseball][pitch@baseball].jpg
 quarterback ## qrop qr ### Y.A. Tittle.jpg
 “Get up and fight, sucker!” %% Ali vs. Liston [sucker].jpg
 >>> ../datae\photo ijkl/Leipzig {{Photo.. Arthur Leipzig}}
@@ -33565,8 +33567,8 @@ tail fin ## qrop l11 r15 {{Photo.. Larry Gevert $dreamstime 43094849}}.jpg
 tail lights [taillights] ## qrop l6 r18 ## qropt! {{Photo.. Njnightsky $dreamstime 6971038}}.jpg
 wing mirror [side-view mirror][side mirror] ## qrop l3 r25 ## qropt! {{Photo.. Hupeng $dreamstime 107683617}}.jpg
 wing mirror [side-view mirror][side mirror] ## qrop t9 b25 {{Photo.. Martin  Meehan $dreamstime 57787529}}.jpg
-wing~fender @ car ## qrop l18 r15 {{Photo.. Hxdbzxy $dreamstime 14958022}} ### fender, wheel, and tire.jpg
-wing~fender @ car ## qrop l21 r5 ## qropt! {{Photo.. John Sfondilias $dreamstime 909386}}.jpg
+wing~fender [wing@car][fender@car] ## qrop l18 r15 {{Photo.. Hxdbzxy $dreamstime 14958022}} ### fender, wheel, and tire.jpg
+wing~fender [wing@car][fender@car] ## qrop l21 r5 ## qropt! {{Photo.. John Sfondilias $dreamstime 909386}}.jpg
 external trunk [trunk@car] ## qrop l23 r5 ## qropt! {{Photo.. Georgemuresan $dreamstime 9829101}}.jpg
 fill the tank [petrol tank][gas tank] ## qrop l21 ## qropt! {{Photo.. Anna Moskvina $dreamstime 47671783}}.jpg
 flat tyre [flat tire] ## qrop l12 r22 {{Photo.. Esmehelit $dreamstime 73070755}}.jpg
@@ -33780,7 +33782,7 @@ railroad crossing [crossing] ## qrop qr {{Photo.. Steveheap $dreamstime 26881454
 road roller ## qrop l15 r19 {{Photo.. Stockr $dreamstime 77104907}}.jpg
 roundabout ## qrop l14 r21 {{Photo.. Romastudio $dreamstime 35553354}}.jpg
 S curve [curve][S-shaped] ## qrop ql {{Photo.. Lane Erickson $dreamstime 43401265}}.jpg
-speed bump [speed hump][sleeping policeman] ## qrop l4 r8 ## qropt! {{Photo.. Sergiy1975 $dreamstime 78744092}}.jpg
+speed hump ## qrop l4 r8 ## qropt! {{Photo.. Sergiy1975 $dreamstime 78744092}}.jpg
 stop line [stop] ## qrop l19 r14 {{Photo.. Yuryz $dreamstime 27830512}}.jpg
 temporary traffic light [temporary] ## qrop ql {{Photo.. Alpegor $dreamstime 76860654}}.jpg
 traffic light [traffic lights][stoplights] ## qrop l15 r19 {{Photo.. Beijing Hetuchuangyi Images Co,. Ltd . $dreamstime 79445109}}.jpg

@@ -34,80 +34,38 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
 
-        hashset<str> course_vocabulary_forms;
-        hashmap<str, int> resources_vocabulary;
-        hashmap<str, int> course_vocabulary_ens;
-        hashmap<str, int> course_vocabulary_uss;
-        hashmap<str, int> course_vocabulary_uks;
-        hashmap<str, voc> course_vocabulary;
+        hashset<str> course_vocabulary;
+        hashmap<str, int> course_ens;
+        hashmap<str, int> course_uss;
+        hashmap<str, int> course_uks;
+        hashmap<str, voc> course_matches;
         for (auto& entry: course.entries)
         {
-            if (not entry.eng.starts_with(": "))
-            {
-                for (str s: entry.en) course_vocabulary_ens[s.extract_upto("@")]++;
-                for (str s: entry.us) course_vocabulary_uss[s.extract_upto("@")]++;
-                for (str s: entry.uk) course_vocabulary_uks[s.extract_upto("@")]++;
-            }
+            for (str s: entry.matches)
+            course_matches[s].entries += &entry;
 
-            for (str s: entry.vocabulary)
-            {
-                s = simple(s);
-
-                course_vocabulary[s].
-                entries += &entry;
-
-                str ignored_sense =
-                s.extract_from("@");
-
-                for (str f: eng::forms(s, vocabulary))
-                course_vocabulary_forms.
-                    emplace(f);
-            }
+            entry.vocabulate(vocabulary);
+            for (str v: entry.vocabulary)
+            course_vocabulary.emplace(v);
 
             if (entry.eng.starts_with(": "))
-            {
-                str s = entry.eng.from(2);
-                str ignored_sense =
-                s.extract_from("@");
-
-                s = simple(s);
-                s.replace_all(".", "");
-                s.replace_all("!", "");
-                s.replace_all("?", "");
-                s = s.ascii_lowercased();
-
-                if (s.contains(" ") and
-                not vocabulary.contains(s))
-                    continue;
-
-                for (str f: eng::forms(s, vocabulary))
-                course_vocabulary_forms.
-                    emplace(f);
-            }
-            else
-            if (entry.eng.contains(" "))
-            {
-                str ss = entry.eng;
-                str ignored_sense =
-                ss.extract_from("@");
-                ss.replace_all(u8" → ", ", "),
-                ss.replace_all(",", "");
-
-                ss = simple(ss);
-
-                for (str s: eng::parser::entries(vocabulary, ss, true))
-                for (str f: eng::forms(s, vocabulary))
-                course_vocabulary_forms.
-                    emplace(f);
-            }
+                continue;
+            
+            for (str s: entry.en) course_ens[s]++;
+            for (str s: entry.us) course_uss[s]++;
+            for (str s: entry.uk) course_uks[s]++;
         }
+        for (auto& [s,n]: course_ens) n = min(n, 6);
+        for (auto& [s,n]: course_uss) n = min(n, 6);
+        for (auto& [s,n]: course_uks) n = min(n, 6);
 
-        for (auto& [s,n]: course_vocabulary_ens) n = min(n, 6);
-        for (auto& [s,n]: course_vocabulary_uss) n = min(n, 6);
-        for (auto& [s,n]: course_vocabulary_uks) n = min(n, 6);
+        reporting(course, course_matches);
 
-        reporting(course,
-        course_vocabulary);
+        report_missing_words(course_vocabulary, data.resources, vocabulary);
+
+        report_shortenings(data.resources);
+
+        report_long_sounds(data);
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
 
@@ -116,107 +74,47 @@ namespace studio::one
         course.entries,
         data.resources);
 
-        int more_audio = 0;
-        int more_video = 0;
+        auto course_matches_add = [&course_matches](str s, Res& r)
+        {
+            auto it = course_matches.find(s);
+            if (it == course_matches.end()) return false;
+            it->second.resources += &r; return true;
+        };
 
-        array<str> sounds;
-        array<str> shortenings;
         hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
-            if (r.options.contains("asset"))
-                continue;
+            str abstract = r.
+                abstract;
 
-            if (r.kind == "audio"
-            and r.abstract != r.title)
+            if (abstract.contains(one_of("()")))
             {
-                str a = simple(r.abstract);
-                str t = simple(r.title);
-                a.extract_from("@");
-                t.extract_from("@");
-                a.replace_all("_", "");
-                t.replace_all("_", "");
-                t.replace_all("\n", "<br>");
-                if (a != t)
-                shortenings += a,
-                shortenings += t;
+                abstract.debracket("(",")");
+                if (not r.options.contains("(o)"))
+                report::errors += red(bold("():")) + link(&r);
             }
 
-            if (r.kind == "audio")
-            for (str s: eng::parser::entries(vocabulary, simple(r.title), true))
-            if (str(s.upto(1)) != str(s.upto(1)).capitalized() and
-            not course_vocabulary_forms.contains(s))
-                resources_vocabulary[s]++;
-
-            str abstract = simple(r.
-                abstract);
-
-            if (r.kind == "audio"
-            and r.sense == "" and
-            not r.options.contains("sound"))
-            if (sensecontrol.vocabs.contains(abstract))
+            if (r.sense == "" and
+            not sensecontrol.videolike(r) // vocal
+            and sensecontrol.senses.contains(abstract))
             {
-                // vocalization fits for any sense,
-                // unless there is another one with provided sense,
-                // then it's an error and will be reported by sense-control
-                for (auto [entry,_]: sensecontrol.vocabs[abstract])
-                for (str s: entry->vocabulary)
-                {
-                    auto it = course_vocabulary.find(s);
-                    if (it != course_vocabulary.end())
-                        it->second.resources += &r;
-                }
-                // "@@" ignored by sense-control
-                auto it = course_vocabulary.find(abstract+"@@");
-                if (it != course_vocabulary.end())
-                    it->second.resources += &r;
-                // if there is sense-less entry
-                // then it's an error and it'll be reported
-                // by sense-control
+                for (str s: sensecontrol.senses[abstract])
+                course_matches_add(s, r);
                 continue;
             }
 
-            array<str>
-            resource_vocabulary;
-            resource_vocabulary += abstract;
-            {
-                auto& w = abstract;
-                auto& v = resource_vocabulary;
+            if (course_matches_add(abstract, r))
+                continue;
 
-                if (w.starts_with("a "  )) v += w.from(2); else
-                if (w.starts_with("an " )) v += w.from(3); else
-                if (w.starts_with("the ")) v += w.from(4); else
-                if (w.starts_with("to " )) v += w.from(3); else
-                {}
-                if (w.starts_with("a "  )) v += str(w.from(2)) + "@@"; else
-                if (w.starts_with("an " )) v += str(w.from(3)) + "@@"; else
-                if (w.starts_with("the ")) v += str(w.from(4)) + "@@"; else
-                if (w.starts_with("to " )) v += str(w.from(3)) + "@@"; else
-                {}
-                if (w.starts_with("a "  )) v += str(w.from(2)) + "@noun"; else
-                if (w.starts_with("an " )) v += str(w.from(3)) + "@noun"; else
-                if (w.starts_with("the ")) v += str(w.from(4)) + "@noun"; else
-                if (w.starts_with("to " )) v += str(w.from(3)) + "@verb"; else
+            array<str> matches;
+            {
+                const auto& a = abstract;
+                if (a.starts_with("a "  )) matches += str(a.from(2)) + "@noun"; else
+                if (a.starts_with("an " )) matches += str(a.from(3)) + "@noun"; else
+                if (a.starts_with("the ")) matches += str(a.from(4)) + "@noun"; else
+                if (a.starts_with("to " )) matches += str(a.from(3)) + "@verb"; else
                 {}
             }
-
-            if (r.kind == "audio"
-            and r.sense == "" and
-            not r.options.contains("sound")
-            and abstract.contains("("))
-                resource_vocabulary +=
-                abstract.debracketed("(",")");
-
-            str
-            abstract_ = abstract;
-            abstract_.replace_all("_", "");
-            if (abstract_!= abstract)
-                resource_vocabulary +=
-                abstract_;
-
-            if (r.sense == "")
-                resource_vocabulary +=
-                abstract + "@@";
 
             if (r.kind == "video")
             {
@@ -225,39 +123,45 @@ namespace studio::one
                     continue;
 
                 if (r.entries.contains("+"))
-                resource_vocabulary +=
+                matches +=
                     eng::parser::entries(
                     vocabulary, r.title,
                     r.options.contains
                     ("Case"));
 
-                resource_vocabulary +=
-                    r.entries;
+                matches += r.entries;
+
+                const auto& a = abstract;
+                if (a.starts_with("a "  )) matches += a.from(2); else
+                if (a.starts_with("an " )) matches += a.from(3); else
+                if (a.starts_with("the ")) matches += a.from(4); else
+                if (a.starts_with("to " )) matches += a.from(3); else
+                {}
+
+                array<str> senseless;
+                for (str s: matches)
+                if (s.contains("@")) senseless += s.extract_upto("@");
+                matches += senseless;
+                matches.deduplicate();
             }
 
             bool used = false;
-            for (str s: resource_vocabulary)
-            {
-                auto it = course_vocabulary.find(s);
-                if (it != course_vocabulary.end())
-                    it->second.resources += &r,
-                    used = true;
-            }
+            for (str s: matches)
+            if (course_matches_add(s, r))
+                 used = true;
+
+            if (r.options.contains("="))
+            report::anoma2 += cliplink(&r);
 
             if (used
             or  abstract.size() < 2
             or  r.options.contains("=")
             or  r.options.contains("==")
             or  r.options.contains("sic!")
+            or  r.options.contains("xlam")
             or  r.options.contains("course-")
-            or  course_vocabulary_forms.
+            or  course_vocabulary.
                 contains(abstract))
-                continue;
-
-            if (r.options.contains("="))
-            report::anoma2 += cliplink(&r);
-
-            if (r.options.contains("xlam"))
                 continue;
 
             // for unused resources
@@ -278,46 +182,12 @@ namespace studio::one
             if (abstract.starts_with("to be "))
                 continue;
 
-            int k =
-            false?max<int>() :
-            spaces == 0 ? 20 :
-            spaces == 1 ? 50 : 200;
-
-            if (true//false
-            or  r.weight < k
-            or  r.sense != ""
-            or  r.kind == "video")
-            unused_resources.
-                emplace(&r);
-            else
-            if (r.kind == "audio"
-            and abstract.contains(" "))
-                more_audio++;
-
-            if (r.kind == "audio"
-            and r.options.contains("sound"))
-            {
-                str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
-                str dir = r.path.parent_path().string();
-                if (not dir.starts_with(s)) continue;
-                dir = dir.from(s.size());
-                sounds += dir + "/" + r.abstract;
-            }
+            unused_resources.emplace(&r);
         }
-
-        sounds.deduplicate();
-        sys::write("../data/sounds.txt",
-        sounds);
-
-        // NO shortenings.deduplicate();
-        sys::write("../data/shortenings.txt",
-        shortenings);
-
-        sensecontrol.report_unused(unused_resources);
 
         std::unordered_set<res> single_videos;
 
-        for (auto& [s,voc]: course_vocabulary)
+        for (auto& [s,voc]: course_matches)
         {
             int n = 0;
             res v = 0;
@@ -326,7 +196,7 @@ namespace studio::one
             if (n == 1) single_videos.emplace(v);
         }
 
-        for (auto& [s,voc]: course_vocabulary)
+        for (auto& [s,voc]: course_matches)
         {
             int n = 0;
             for (res r: voc.resources)
@@ -378,8 +248,8 @@ namespace studio::one
 
             array<res> videos;
 
-            for (str& s: entry.vocabulary)
-            for (res& r: course_vocabulary[s].resources)
+            for (str& s: entry.matches)
+            for (res& r: course_matches[s].resources)
             {
                 if (r->kind == "video"
                 and nopixed) continue;
@@ -395,9 +265,9 @@ namespace studio::one
                 str w = simple(r->abstract);
 
                 if (r->kind == "audio" and not r->options.contains("xlam")) {
-                if (r->options.contains("uk")) fullfill(uk, w, course_vocabulary_uks);
-                if (r->options.contains("us")) fullfill(us, w, course_vocabulary_uss);
-                /*        in any case       */ fullfill(en, w, course_vocabulary_ens); }
+                if (r->options.contains("uk")) fullfill(uk, w, course_uks);
+                if (r->options.contains("us")) fullfill(us, w, course_uss);
+                /*        in any case       */ fullfill(en, w, course_ens); }
 
                 if (r->kind == "audio"
                 and r->options.contains("sound"))
@@ -435,8 +305,26 @@ namespace studio::one
 
         out << dark(bold("ONE: MAKE REPORTS..."));
 
+        sensecontrol.report_unused(unused_resources);
         suggestions(course, unused_resources, vocabulary);
         order_check(course, vocabulary);
+
+        array<str> sounds;
+        for (res r:  unused_resources)
+        {
+            if (r->kind == "audio"
+            and r->options.contains("sound"))
+            {
+                str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
+                str dir = r->path.parent_path().string();
+                if (not dir.starts_with(s)) continue;
+                dir = dir.from(s.size());
+                sounds += dir + "/" + r->abstract;
+            }
+        }
+        sounds.deduplicate();
+        sys::write("../data/sounds.txt",
+        sounds);
 
         std::map<str, array<res>> words;
         std::map<int, array<res>> Words;
@@ -456,7 +344,7 @@ namespace studio::one
                 contains(s))
                 continue;
 
-            if (r->audiolike() and
+            if (r->kind == "audio" and
             not s.contains(" ")) {
                 words[s] += r;
                 continue; }
@@ -476,12 +364,6 @@ namespace studio::one
 
         report::audioq.log += bold(blue(
         "total: " + str(report::audioq.log.size())));
-
-        report::audioq.log += bold(blue(
-        "+" + str(more_audio) + " more"));
-
-        report::videoq.log += bold(blue(
-        "+" + str(more_video) + " more"));
 
         if (int nn = 500, n = 
         report::audiom.log.size(); n > 2*nn)
@@ -541,98 +423,6 @@ namespace studio::one
         array<str> needed; needed.reserve(needed_nn);
         for (int i=0; i<needed_en.size(); i += step) needed += needed_en[i];
         sys::write("../data/needed.txt", needed);
-
-        // missed words
-
-        auto doubt_it = [](str s)
-        {
-            return false;
-        };
-        auto skip_it = [](str s)
-        {
-            const hashset<str> reject =
-            {
-                "like to", "is all", "in that", "comes from", "for that"
-            };
-
-            return false
-            or s.size() <= 2
-            or s.ends_with("'")
-            or s.ends_with("-")
-            or s.ends_with(".")
-            or eng::list::contractionparts.contains(s)
-            or reject.contains(s);
-        };
-        std::multimap<int,str> resources_vocabulary_sorted;
-        std::multimap<int,str> resources_vocabulary_doubted;
-        for (auto [s, n]: resources_vocabulary) if (n >= 2)
-        if (skip_it(s)) {;} else if (doubt_it(s))
-        resources_vocabulary_doubted.emplace(n, s); else
-        resources_vocabulary_sorted .emplace(n, s);
-        for (auto [n, s]: resources_vocabulary_sorted)
-        report::wordsm.log += s + " (" + str(n) + ")";
-        report::wordsm.log += "---------------------";
-        for (auto [n, s]: resources_vocabulary_doubted)
-        report::wordsm.log += s + " (" + str(n) + ")";
-        report::wordsm.log += bold(blue(str(
-        report::wordsm.log.size()) + " total"));
-
-        // sounds lengths control
-
-        bool sounds_lengths_update = false;
-        array<str> sounds_lengths = sys::optional_text_lines(
-          "../data/sounds_lengths.txt");
-
-        hashmap<str, int> sounds_lengths_map;
-        for (str s: sounds_lengths) {
-            str sec = s.extract_upto(" "); if(sec != "")
-            sounds_lengths_map[s] = std::stoi(sec); }
-
-        for (auto& r: data.resources)
-        if (r.kind == "audio"
-        and r.options.contains("sound") and
-        not r.options.contains("long"))
-        {
-            int duration = 0;
-            auto it = sounds_lengths_map.find(path2str(r.path));
-            if (it == sounds_lengths_map.end())
-            {
-                auto Location = data.storage.add(r,1);
-
-                auto source = [](int source){
-                    return "../data/media/storage." +
-                    std::to_string(source) + ".dat"; };
-
-                auto bytes = sys::bytes(source(
-                    Location.location.source),
-                    Location.location.offset,
-                    Location.location.length);
-
-                sys::audio::player audio;
-                sys::audio::decoder decoder(bytes);
-
-                audio.load(
-                decoder.output,
-                decoder.channels,
-                decoder.samples,
-                decoder.bps);
-
-                duration = int(audio.duration);
-
-                sounds_lengths += str(duration) + " " + path2str(r.path);
-                sounds_lengths_update = true;
-            }
-            else duration = it->second;
-
-            if (duration > 20.0)
-            report::errors.log += link(&r) + " " +
-            red(str(duration) + " sec");
-        }
-
-        if (sounds_lengths_update)
-            sys::write("../data/"
-           "sounds_lengths.txt",
-            sounds_lengths);
 
         // combine samples
         array<path> src =

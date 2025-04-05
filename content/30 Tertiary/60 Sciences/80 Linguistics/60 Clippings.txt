@@ -1,98 +1,40 @@
 clippings
 
-choc/choco             = chocolate
+choc/choco           = chocolate
 
-glam                   = glamour, glamorous
-mani                   = manicure
-pedi                   = pedicure
+glam                 = glamour, glamorous
+mani                 = manicure
+pedi                 = pedicure
 
-bookie                 = bookmaker
-goalie                 = goalkeeper, ~ goaltender, netminder
+bookie               = bookmaker
+goalie               = goalkeeper, ~ goaltender, netminder
 
-prop @ aero            = propeller
-propwash//prop wash    = propeller wash
+prop @ aero          = propeller
+propwash//prop wash  = propeller wash
+
+condo {Am.}          = condominium
+fridge               = refrigerator
 
 ---
-demo @ demonstration   = demonstration
-demo @ demolition      = demolition
+demo @ demonstration = demonstration
+demo @ demolition    = demolition
+
+intro                = introduction
+pic @ picture        = picture
+sci-fi               = science fiction
 
 ---
-caps                   = capital letters, ~ capitals
+caps                 = capital letters, ~ capitals
 : ALL CAPS
 
-diam @ diameter        = diameter
-diam @ diamond         = diamond
-
 ---
-med                    = medical
-meds                   = medications
-vet                    = veterinarian
+med                  = medical
+meds                 = medications
+vet                  = veterinarian
 
 
 
 
-berg @ iceberg         = iceberg
-daff {Br.} @ daffodil  = daffodil
-
-celeb                  = celebrity
-collab                 = collaboration
-trubs                  = troubles
----
-congrats               = congratulations
-: Congrats!
-
-dreds/locks            = dreadlocks
-tatt                   = tattoo
----
-veg @ noun             = vegetarian, ~ vegetable(s)
-veg @ verb %% {verb}   = to vegetate, ~ to engage in complete inactivity, ~ to rest
-
----
-cray @ crayfish        = crayfish
-cray @ crazy           = crazy
-: Cray.
-: That's cray.
-: Cray cray.
-: That's cray cray.
-
----
-resto @ restaurant     = restaurant
-resto @ restoration    = restoration ~ (of an old car or building, etc.)
-
-rehab                  = rehabilitation
-showbiz                = showbusiness
-tix                    = tickets
-
-peke                   = Pekingese
-
-apt @ apartment        = apartment
-condo {Am.}            = condominium
-fridge                 = refrigerator
-comfy                  = comfortable
-lino {Br.}             = linoleum
-reno                   = renovation
-
-biz                    = business, especially one connected with entertainment
-ad @ advertisement     = advertisement
-divvy                  = dividend, divide
-merch                  = merchandise
-
-intro                  = introduction
-recap @ recapitulation = recapitulation
-uke @ ukulele          = ukulele
-pic @ picture          = picture
-sitcom                 = situation comedy
-romcom                 = romantic comedy
-sci-fi                 = science fiction
----
-panto {Br.}            = pantomime
-: Frankly, pantos are so weird
-
-specs @ spectacles     = spectacles
-specs @ specifications = specifications
----
-dev                    = developer, ~ development
-game dev
 
 
 

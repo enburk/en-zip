@@ -1,5 +1,6 @@
 ﻿#pragma once
-#include "eng_abc.h"
+#include "eng_parser.h"
+#include "eng_phenomena.h"
 #include "content_options.h"
 namespace content
 {
@@ -48,7 +49,10 @@ namespace content::out
         array<str> uk;
         array<str> us;
         array<str> vocabulary;
+        array<str> phrases;
+        array<str> matches;
         array<str> errors;
+        str abstract;
         int line = 0;
         str link;
 
@@ -79,12 +83,6 @@ namespace content::out
             for (str o: opt.unknown)
             errors += "UNKNOWN OPTION: " + o;
 
-            s.replace_all("'''", "");
-            s.replace_all("''" , "");
-            s.replace_all(u8"’", "'");
-            s.replace_all(mdash, "---");
-            s.replace_all(ndash, "--");
-
             str
             commt = s.extract_from("%%");
             sense = s.extract_from("@");
@@ -93,20 +91,10 @@ namespace content::out
             or  sense.contains("}"))
             errors += "SENSE: " + sense;
 
-            if (s.starts_with(": "))
-            {
-                s = s.from(2);
-                s.replace_all("|" , "/");
-                s.replace_all("\\", "/");
-                s.replace_all("//", "/");
-                s.replace_all("~", "");
-                s.canonicalize();
-                if (sense != "")
-                s += "@" + sense;
-                vocabulary += s;
-                en += s;
-                return;
-            }
+            s.replace_all("'''", "");
+            s.replace_all("''" , "");
+            s.replace_all("~",   "");
+            s = simple(s);
 
             {
                 str x = s;
@@ -124,80 +112,115 @@ namespace content::out
                 anomaly = "{}()[]";
             }
 
-            s.replace_all("||","|");
-            s.replace_all("//","/");
-            s.debracket("(",")");
+            parse(s);
 
-            if (s.contains("~~"))
-            errors += "~~";
+            abstract = str(en*uk*us);
 
-            if (s.contains("_"))
-            errors += "_";
+            for (str x: en*uk*us)
+            matches += x.split_strip_by("|");
+            matches += abstract;
+            matches.deduplicate();
 
-            if (false)
-            if (s.contains(","))
-            errors += ",";
+            if (sense != "@")
+            if (sense != "") for (str& x: matches)
+            if (sense != x) x += "@" + sense;
+        }
+
+        void parse (str s)
+        {
+            if (s.starts_with(": "))
+            {
+                s = s.from(2);
+                int spaces = 0;
+                for (char c: s) if (c == ' ') spaces++;
+                if (spaces < 5)
+                {
+                    str x = s;
+                    x.replace_all(".", "");
+                    x.replace_all("!", "");
+                    x.replace_all("?", "");
+                    x = s.ascii_lowercased();
+                    phrases += x;
+                }
+                en += s;
+                return;
+            }
+
+            if (s.contains(str(u8" → ")))
+            {
+                // might not → mightn’t ~ {esp.} {Br.}
+                // spill → ~ spilled\spilt, ~ spilled\spilt
+                if (s.contains("//")
+                or  s.contains("\\\\"))
+                errors += u8"complex → ";
+                s.replace_all(u8" → ","/");
+                s.replace_all(", ","/");
+                s.replace_all("\\","/");
+                parse(s);
+                return;
+            }
+
+            if (s.contains("//"))
+            {
+                for (str x: s.split_strip_by("//"))
+                parse(x);
+                return;
+            }
+
+            if (s.contains("\\\\"))
+            {
+                str k =
+                s.extract_upto("\\\\");
+                if (not k.contains("{Br.}")) k += " {Br.}";
+                if (not s.contains("{Am.}")) s += " {Am.}";
+                parse(k);
+                parse(s);
+                return;
+            }
 
             bool br = s.contains("{Br.}");
             bool am = s.contains("{Am.}");
+
+            if (br and
+                not us.empty())
+                errors += "us before uk";
+
+            if (not br and not am)
+            if (not uk.empty() or
+                not us.empty())
+                errors += "en after uk or us";
+
+            array<str> & audio =  br ? uk : am ? us : en;
 
             for (str marker: Eng_markers)
             s.replace_all(marker, "");
             s.replace_all("[", "");
             s.replace_all("]", "");
             s.replace_all("~", "");
+            s.replace_all("||","|");
+            s.debracket("(",")");
             s.canonicalize();
 
             if (s.contains(
-            one_of   ("{}")))
-            errors += "{}";
+            one_of   ("{_}")))
+            errors += "{_}";
 
-            if (s.contains(one_of("/|\\")))
+            for (str x: s.split_by("/"))
             {
-                str ss = s;
-                ss.replace_all("|" , "/");
-                ss.replace_all("\\", "/");
-                ss.replace_all("//", "/");
-                vocabulary += ss;
+                x.replace_all("\\","/"); phrases += x;
+                if (opt.internal.contains("+ru"))
+                x += " -- " + rus;
+                audio += x;
             }
-            if (s.contains("\\\\"))
-            {
-                str k =
-                s.extract_upto("\\\\");
-                uk += k.split_by("/");
-                us += s.split_by("/");
-            }
-            else
-            {
-                if (br and am) errors += "Br. & Am."; else
-                if (br) uk += s.split_by("/"); else
-                if (am) us += s.split_by("/"); else
-                        en += s.split_by("/");
-            }
+        }
 
-            for (str e: en*uk*us)
-            e.replace_all(u8"\\", "/"),
-            vocabulary += e.split_by("|");
-
-
-            if (s.contains(str(u8" → ")))
-            {
-                str s1 = s;
-                str s2 = s;
-                s1.replace_all(u8" → ", ", "),
-                s2.replace_all(u8" → ", " -- "),
-                vocabulary += s1;
-                vocabulary += s2;
-            }
-
-            for (str& v: vocabulary) v.strip();
-
+        void vocabulate (eng::vocabulary const& voc)
+        {
+            for (str p: phrases)
+            for (str e: eng::parser::entries(voc, p, true))
+            for (str f: eng::forms(e, voc))
+            vocabulary += f;
             vocabulary.deduplicate();
-
-            if (sense != "")
-            for (str& v: vocabulary)
-            if (sense != v)
-            v += "@" + sense;
         }
 
         str formatted (int tab1, int tab2) const
@@ -249,7 +272,7 @@ namespace content::out
             link = str(ss, blue("/"));
             return link;
         }
-        str pretty_link () { return
+        str pretty_link () const { return
             pretty_link(link); }
 
         friend void operator << (sys::out::pool& pool, entry const& x) {

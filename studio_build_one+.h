@@ -62,7 +62,7 @@ namespace studio::one
         "clipboard://: " + abstract +
         "file://" + str(r->path));
     }
-    str link (res const& r)
+    str link (media::resource const* r)
     {
         str s = r->full();
         if (r->options.contains("sound"))
@@ -72,14 +72,14 @@ namespace studio::one
         dark(html(s)),
         "file://" + str(r->path));
     }
-    str link (ent const& entry)
+    str link (content::out::entry const* entry)
     {
         return linked(
         html(entry->eng) + "  " +
         dark(entry->pretty_link()),
         "one://" + entry->link);
     }
-    str link (content::out::entry& e)
+    str link (content::out::entry const& e)
     {
         return link(&e);
     }
@@ -119,11 +119,163 @@ namespace studio::one
         }
     }
 
+    void report_missing_words(
+        hashset<str> const& course_vocabulary,
+        array<media::resource> const& resources,
+        eng::vocabulary& vocabulary)
+    {
+        hashmap<str, int> resources_vocabulary;
+
+        for (auto& r: resources)
+        {
+            if (r.kind == "audio")
+            for (str s: eng::parser::entries(vocabulary, simple(r.title), false))
+            if (str(s.upto(1)) != str(s.upto(1)).capitalized()
+            and not course_vocabulary.contains(s))
+                resources_vocabulary[s]++;
+        }
+
+        auto doubt_it = [](str s)
+        {
+            return false;
+        };
+        auto skip_it = [](str s)
+        {
+            const hashset<str> reject =
+            {
+                "like to", "is all", "in that", "comes from", "for that"
+            };
+
+            return false
+            or s.size() <= 2
+            or s.ends_with("'")
+            or s.ends_with("-")
+            or s.ends_with(".")
+            or eng::list::contractionparts.contains(s)
+            or reject.contains(s);
+        };
+
+        std::multimap<int,str> resources_vocabulary_sorted;
+        std::multimap<int,str> resources_vocabulary_doubted;
+        
+        for (auto [s, n]: resources_vocabulary) if (n >= 2)
+        if (skip_it(s)) {;} else if (doubt_it(s))
+        resources_vocabulary_doubted.emplace(n, s); else
+        resources_vocabulary_sorted .emplace(n, s);
+        
+        for (auto [n, s]: resources_vocabulary_sorted)
+        report::wordsm.log += s + " (" + str(n) + ")";
+        report::wordsm.log += "---------------------";
+        
+        for (auto [n, s]: resources_vocabulary_doubted)
+        report::wordsm.log += s + " (" + str(n) + ")";
+        report::wordsm.log += bold(blue(str(
+        report::wordsm.log.size()) + " total"));
+    }
+
+    void report_shortenings(array<media::resource> const& resources)
+    {
+        array<str> shortenings;
+
+        for (auto& r: resources)
+        {
+            if (r.kind == "audio"
+            and r.abstract != r.title)
+            {
+                str a = simple(r.abstract);
+                str t = simple(r.title);
+                a.extract_from("@");
+                t.extract_from("@");
+                a.replace_all("_", "");
+                t.replace_all("_", "");
+                t.replace_all("\n", "<br>");
+                if (a != t)
+                shortenings += a,
+                shortenings += t;
+            }
+        }
+
+        sys::write("../data/shortenings.txt", shortenings);
+    }
+
+    void report_long_sounds(media::out::data& data)
+    {
+        bool sounds_lengths_update = false;
+        array<str> sounds_lengths = sys::optional_text_lines(
+          "../data/sounds_lengths.txt");
+
+        hashmap<str, int> sounds_lengths_map;
+        for (str s: sounds_lengths) {
+            str sec = s.extract_upto(" "); if(sec != "")
+            sounds_lengths_map[s] = std::stoi(sec); }
+
+        for (auto& r: data.resources)
+        if (r.kind == "audio"
+        and r.options.contains("sound") and
+        not r.options.contains("long"))
+        {
+            int duration = 0;
+            auto it = sounds_lengths_map.find(path2str(r.path));
+            if (it == sounds_lengths_map.end())
+            {
+                auto Location = data.storage.add(r,1);
+
+                auto source = [](int source){
+                    return "../data/media/storage." +
+                    std::to_string(source) + ".dat"; };
+
+                auto bytes = sys::bytes(source(
+                    Location.location.source),
+                    Location.location.offset,
+                    Location.location.length);
+
+                sys::audio::player audio;
+                sys::audio::decoder decoder(bytes);
+
+                audio.load(
+                decoder.output,
+                decoder.channels,
+                decoder.samples,
+                decoder.bps);
+
+                duration = int(audio.duration);
+
+                sounds_lengths += str(duration) + " " + path2str(r.path);
+                sounds_lengths_update = true;
+            }
+            else duration = it->second;
+
+            if (duration > 20.0)
+            report::errors.log += link(&r) + " " +
+            red(str(duration) + " sec");
+        }
+
+        if (sounds_lengths_update)
+            sys::write("../data/"
+           "sounds_lengths.txt",
+            sounds_lengths);
+    }
+
     struct sensecontrol
     {
-        hashmap<str, hashmap<ent, bool>> vocabs;
+        // vocalization fits for any sense,
+        // unless there is another one with provided sense
+
+        hashmap<str, std::set<str>> senses;
+        hashmap<str, hashmap<ent, bool>> course;
         hashmap<str, hashmap<res, bool>> audios;
         hashmap<str, hashmap<res, bool>> videos;
+
+        bool videolike (Res& r)
+        {
+            return
+            r.kind == "video" or
+            r.kind == "audio" and
+            r.options.contains
+            ("sound");
+        }
+
+        auto& medios (Res& r) { return videolike(r) ? videos : audios; }
 
         sensecontrol
         (
@@ -131,29 +283,21 @@ namespace studio::one
             array<Res>& resources
         )
         {
-            for (auto& entry: entries)
+            for (auto& entry: entries) if (entry.sense != "")
+            for (str s: entry.matches)
             {
-                if (entry.sense == "")
-                    continue;
-
-                for (str s: entry.vocabulary)
-                {
-                    str dummy = 
-                    s.extract_from("@");
-                    vocabs[s][&entry] = false;
-                }
+                str title = s;
+                str sense = title.extract_from("@");
+                course[title][&entry] = false;
+                senses[title].emplace(s);
             }
 
             for (auto& r: resources)
             for (auto& e: r.Entries())
             {
-                str entry = e;
-                str sense = entry.extract_from("@");
-                if (sense == "") continue;
-
-                if (r.videolike())
-                videos[entry][&r] = false; else
-                audios[entry][&r] = false;
+                str title = e;
+                str sense = title.extract_from("@");
+                if (sense != "") medios(r)[title][&r] = false;
             }
 
             // add sensless also
@@ -162,60 +306,51 @@ namespace studio::one
             for (auto& r: resources)
             for (auto& e: r.Entries())
             {
-                str entry = e;
-                str sense = entry.extract_from("@");
-                if (sense != "") continue;
-
-                auto& medios = r.videolike() ?
-                    videos : audios;
-
-                if (medios.contains(entry))
-                    medios[entry][&r] =
-                    false;
+                str title = e;
+                str sense = title.extract_from("@");
+                if (sense == "" &&
+                medios(r).contains(title))
+                medios(r)[title][&r] = false;
             }
 
             for (auto& entry: entries)
             {
-                if (entry.sense == "@") continue;
                 if (entry.sense == "")
+                for (str s: entry.matches)
+                if (audios.contains(s)
+                or  videos.contains(s) and
+                not entry.opt.external.contains("HEAD"))
                 {
-                    bool head = entry.opt.external.contains("HEAD");
+                    report::errors += bold(
+                    red("sensless: ")) +
+                    link(entry);
 
-                    for (str s: entry.vocabulary)
-                    if (audios.contains(s)
-                    or  videos.contains(s) and not head)
-                    {
-                        report::errors += bold(
-                        red("sensless: ")) +
-                        link(entry);
+                    if (course.contains(s))
+                    for (auto [e,_]: course[s]) if (e != &entry)
+                    report::errors += link(e);
 
-                        if (vocabs.contains(s))
-                        for (auto [e,_]: vocabs[s]) if (e != &entry)
-                        report::errors += link(e);
+                    if (audios.contains(s))
+                    for (auto [r,_]: audios[s])
+                    report::errors += link(r);
 
-                        if (audios.contains(s))
-                        for (auto [r,_]: audios[s])
-                        report::errors += link(r);
-
-                        if (videos.contains(s))
-                        for (auto [r,_]: videos[s])
-                        report::errors += link(r);
-                    }
+                    if (videos.contains(s))
+                    for (auto [r,_]: videos[s])
+                    report::errors += link(r);
                 }
-                else
+
+                if (entry.sense != ""
+                and entry.sense != "@")
+                for (str s: entry.matches)
                 {
-                    for (str s: entry.vocabulary)
-                    {
-                        str sense = s.extract_from("@");
+                    str sense = s.extract_from("@");
 
-                        if (audios.contains(s))
-                        for (auto& [r, used]: audios[s])
-                        if (r->sense == sense) used = true;
+                    if (audios.contains(s))
+                    for (auto& [r, used]: audios[s])
+                    if (r->sense == sense) used = true;
 
-                        if (videos.contains(s))
-                        for (auto& [r, used]: videos[s])
-                        if (r->sense == sense) used = true;
-                    }
+                    if (videos.contains(s))
+                    for (auto& [r, used]: videos[s])
+                    if (r->sense == sense) used = true;
                 }
             }
 
@@ -224,30 +359,27 @@ namespace studio::one
             for (auto& r: resources)
             for (auto& e: r.Entries())
             {
-                str entry = e;
-                str sense = entry.extract_from("@");
+                str title = e;
+                str sense = title.extract_from("@");
                 if (sense != "") continue;
 
-                auto& medios = r.videolike() ?
-                    videos : audios;
-
-                if (medios.contains(entry)
-                or  vocabs.contains(entry) and r.videolike())
+                if (medios(r).contains(title)
+                or  course.contains(title) and videolike(r))
                 {
                     if ( // prevent multiple reports
-                    reported.contains(entry)) continue;
-                    reported.emplace(entry);
+                    reported.contains(title)) continue;
+                    reported.emplace(title);
 
                     report::errors += bold(
                     red("sensless: ")) +
                     link(&r);
 
-                    if (vocabs.contains(entry))
-                    for (auto [e,_]: vocabs[entry])
+                    if (course.contains(title))
+                    for (auto [e,_]: course[title])
                     report::errors += link(e);
 
-                    if (medios.contains(entry))
-                    for (auto [r,_]: medios[entry])
+                    if (medios(r).contains(title))
+                    for (auto [r,_]: medios(r)[title])
                     report::errors += link(r);
                 }
             }
@@ -270,8 +402,8 @@ namespace studio::one
                 red("unused sense: ")) +
                 link(R);
 
-                if (vocabs.contains(s))
-                for (auto [e,_]: vocabs[s])
+                if (course.contains(s))
+                for (auto [e,_]: course[s])
                 report::errors += link(e);
 
                 if (audios.contains(s))
@@ -352,9 +484,7 @@ namespace studio::one
             array<res> audios;
             array<res> videos;
 
-            for (str phrase: entry.vocabulary)
-            for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), true))
-            for (auto forms = eng::forms(word, vocabulary); str form: forms)
+            for (str form: entry.vocabulary)
             {
                 form = eng::lowercased(simple(form));
                 
@@ -436,8 +566,7 @@ namespace studio::one
             if (single)
             {
                 array<str> forms;
-                for (str word: entry.vocabulary)
-                for (str form: eng::forms(word.upto_first("@"), vocabulary)) if (form.size() >= 2)
+                for (str form: entry.vocabulary) if (form.size() >= 2)
                 forms += eng::lowercased(simple(form));
                 forms.deduplicate();
 
@@ -451,9 +580,7 @@ namespace studio::one
                     report::orders += link(entry);
                 }
 
-                for (str phrase: entry.vocabulary)
-                for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), false))
-                for (str form: eng::forms(word, vocabulary)) if (form.size() >= 2)
+                for (str form: entry.vocabulary) if (form.size() >= 2)
                 forms += eng::lowercased(simple(form));
                 forms.deduplicate();
 
@@ -463,9 +590,7 @@ namespace studio::one
             else
             {
                 array<str> words;
-                for (str phrase: entry.vocabulary)
-                for (str word: eng::parser::entries(vocabulary, phrase.upto_first("@"), false))
-                if (word.size() >= 2)
+                for (str word: entry.vocabulary) if (word.size() >= 2)
                 words += eng::lowercased(simple(word));
                 words.deduplicate();
 

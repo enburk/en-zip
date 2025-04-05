@@ -1,5 +1,23 @@
 sounds
 
+
+: metal beam drag # SOUND
+: dump gravel from wheelbarrow # SOUND
+: dump sand out of wheelbarrow # SOUND
+
+: digging into snow with effort # SOUND
+: digging with shovel in sand # SOUND
+
+: pull start # SOUND
+
+: cut wire snip # SOUND
+: rapid scissor snips # SOUND
+
+: pole driven in with sledgehammer # SOUND
+: sledgehammer hits onto thick ice # SOUND
+: sledgehammer hitting safety glass: break, fall over # SOUND
+
+
 : blacksmith: filing and shaping horse shoes # SOUND
 : blacksmith: hammering on anvil # SOUND
 : blacksmith: hemmering metal # SOUND
@@ -9,7 +27,6 @@ sounds
 : hammer impact on rock # SOUND
 : ratchet wrench # SOUND
 
-: hay making, by hands, using pitch fork # SOUND
 : large old wood barn door rolling on pulleys on overhead track # SOUND
 
 : pulley squeak # SOUND

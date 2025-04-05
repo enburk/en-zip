@@ -1,47 +1,21 @@
+maritime ~ transport
+waterborne ~ transport
 
-breakwaters
-pier poles          # 8+
-
-floating docks      # 8+
-dry dock            # 8+
-
-underwater scooters # 8+
-furled sail         # 10+
 rope ladder @ marine
 mooring line
+
 deckchairs on a deck
-
-shipwreck
-ran aground
-keel over//capsize
-
-boat wake
-propeller wash %% informal: prop wash # 8+
-
-
-
-aft
-
-leeward/downwind
-windward/upwind
-
-running before the wind
-beating against the wind
 
 spinnaker
 
-===
-quay ''vs'' ~ pier ''vs'' ~ dock
-===
+breakwaters
+pier poles
 
-quay
-pier @ jetty        # duple
-dock @ pier         # duple
-wharf
-jetty               /// French
+floating docks
+dry dock
 
 ===
 
-: Again, I always go to sea as a sailor, because
+underwater scooters
 
 

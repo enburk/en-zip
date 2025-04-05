@@ -1,33 +1,37 @@
 cars
 
+steering wheel
 
-driving licence %% {Britain}
-driver's license %% {USA}
-driver's licence %% {Australia, Canada, New Zealand}
+external trunk
 
+shock absorber
 
-milk cooling tank
-dodgem [car]\\bumper car
+glove box
 
-bonnet\\hood @ car
-wing mirror\\side-view mirror /// , ~ side mirror
 ---
-car door handle
-suicide door                  # 16+
+petrol pump\\gas pump
+fill the tank
+gas up ~ {Am.}
 
-hood ornament
+---
+washing @ car
+polishing @ car
+: Wash me!
 
-gas cap//fuel cap
-fuel door//gas lid
-fuel filler flap
+===
 
-dashboard @ car               # 10+
+driving licence %% Britain
+driver's licen'''s'''e %% USA
+driver's licen'''c'''e %% Australia, Canada, New Zealand
 
-spare tyre\\spare tire
+===
+
+car accident
 flat tyre\\flat tire
 
-snow chains                   # 12+
-oversize load                 # 10+
+===
 
 car repair
+
+
 

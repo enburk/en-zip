@@ -1,14 +1,19 @@
 sounds
 
+: buzz roll with cymbal crash # SOUND
+: guiro, single scrape # SOUND
+
+: glockenspiel: single note # SOUND
+: glockenspiel: tumble down # SOUND
+: orotund seventh chord # SOUND
+
 : melancholic arpeggio chord, long sustain # SOUND
 : strong vocal groove # SOUND
-: vibrant spanish guitar tag # SOUND
 : various horns used as talking instruments # SOUND
 
 : clavichord, descending, slow down # SOUND
 : xylophone, ascending # SOUND
 : electric guitar: fade in and sustain # SOUND
-: electric guitar: low note accent # SOUND
 : steel guitar: chordal wobble # SOUND
 : harp: diminished gliss down # SOUND
 

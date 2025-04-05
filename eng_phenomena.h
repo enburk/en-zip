@@ -276,7 +276,7 @@ namespace eng
 
     auto forms (str s, vocabulary const& vocabulary)
     {
-        hashmap<str, array<str>> cache;
+        static hashmap<str, array<str>> cache;
 
         array<str> & forms = cache[s];
 

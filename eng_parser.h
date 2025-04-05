@@ -117,7 +117,7 @@ namespace eng::parser
                 best.text;
     }
 
-    array<str> entries (eng::vocabulary& voc, str input, bool casesensitive)
+    array<str> entries (eng::vocabulary const& voc, str input, bool casesensitive)
     {
         array<str> entries;
 

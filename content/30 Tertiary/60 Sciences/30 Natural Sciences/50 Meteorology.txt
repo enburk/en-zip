@@ -1,23 +1,11 @@
 meteorology
 
-scattered clouds
-broken clouds
-overcast sky
-sky obscured
-
-===
-
-cirrus clouds
-stratocumulus clouds         # 14+
-altocumulus clouds           # 12+
-towering cumulus %% cumulus congestus cloud # 8+
-cumulonimbus cloud           # 8+
-anvil cloud %% cumulonimbus incus # 12+
-
 precipitation %% uncountable # 10+
 downpour %% heavy rain       # 8+
 thunderstorm
 lightning storm//electrical storm
+
+===
 
 supercell %% rotating thunderstorm # 8+
 shelf cloud                  # 8+
@@ -25,7 +13,6 @@ roll cloud                   # 8+
 wall cloud                   # 8+
 funnel cloud                 # 10+
 rope tornado %% roping out tornado # 10+
-mammatus clouds              # 8+
 
 
 

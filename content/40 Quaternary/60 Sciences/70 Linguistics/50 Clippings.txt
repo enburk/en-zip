@@ -1,5 +1,71 @@
 clippings
 
+diam @ diameter        = diameter
+diam @ diamond         = diamond
+
+berg @ iceberg         = iceberg
+daff {Br.} @ daffodil  = daffodil
+
+celeb                  = celebrity
+collab                 = collaboration
+trubs                  = troubles
+
+---
+congrats               = congratulations
+: Congrats!
+
+dreds/locks            = dreadlocks
+tatt                   = tattoo
+
+---
+veg @ noun             = vegetarian, ~ vegetable(s)
+veg @ verb %% {verb}   = to vegetate, ~ to engage in complete inactivity, ~ to rest
+
+---
+cray @ crayfish        = crayfish
+cray @ crazy           = crazy
+: Cray.
+: That's cray.
+: Cray cray.
+: That's cray cray.
+
+---
+resto @ restaurant     = restaurant
+resto @ restoration    = restoration ~ (of an old car or building, etc.)
+
+rehab                  = rehabilitation
+showbiz                = showbusiness
+tix                    = tickets
+
+peke                   = Pekingese
+
+apt @ apartment        = apartment
+comfy                  = comfortable
+lino {Br.}             = linoleum
+reno                   = renovation
+
+biz                    = business, especially one connected with entertainment
+ad @ advertisement     = advertisement
+divvy                  = dividend, divide
+merch                  = merchandise
+
+recap @ recapitulation = recapitulation
+uke @ ukulele          = ukulele
+sitcom                 = situation comedy
+romcom                 = romantic comedy
+---
+panto {Br.}            = pantomime
+: Frankly, pantos are so weird
+
+specs @ spectacles     = spectacles
+specs @ specifications = specifications
+---
+dev                    = developer, ~ development
+game dev
+
+
+
+
 confab                 = confabulation ~ (a casual conversation, ~ a chat)
 despo                  = desperate
 def                    = definitely
@@ -28,6 +94,7 @@ prelim                 = preliminary
 recirc                 = recirculation
 refurb                 = refurbish
 tarp                   = tarpaulin
+servo                  = a servomechanism ~ or servomotor
 
 nym                    = pseudonym
 creds                  = credentials
@@ -51,6 +118,7 @@ nuke @ weapon          = nuclear weapon
 detox                  = detoxification
 
 Tut                    = Tutankhamon
+
 
 
 

@@ -2,7 +2,7 @@ traffic signs//road signs
 
 speed limit
 no parking @ sign
-no horse riding              # us-
+no horse riding
 no overtaking
 
 no entry
@@ -11,16 +11,20 @@ wrong way
 stop @ sign
 dead end
 
+give way
+turn right
+
+
+
+
 pedestrian crossing\\crosswalk # 8+
 rough railroad crossing
 children @ sign
 
 hurricane ~ evacuation route # uk- # 10+
 
-give way
 route for pedal cycles ~ and mopeds ~ only
 
-turn right
 direction to be followed: ~ left only
 pass on this side            # 12+
 
@@ -64,4 +68,5 @@ fingerpost
 
 : Interstate 25
 : Route 66
+
 

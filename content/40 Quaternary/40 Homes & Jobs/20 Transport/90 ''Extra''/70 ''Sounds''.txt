@@ -1,5 +1,25 @@
 sounds
 
+
+: tire spin # SOUND
+
+: garbage truck # SOUND
+: hood slam shut # SOUND
+
+: putting tire on rim # SOUND
+: high-octane engine revs # SOUND
+
+
+: airplane: close canopy # SOUND
+: airplane: open canopy # SOUND
+
+: bicycle tire being inflated # SOUND
+: motorcycle helmet: visor down # SOUND
+: Harley Davidson: electric starter # SOUND
+
+: sonar pings # SOUND
+
+
 : clickety-clack of a train # SOUND
 : streetcar... arrives, departs # SOUND
 : subway: pull into overhead station # SOUND

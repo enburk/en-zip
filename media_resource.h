@@ -101,7 +101,7 @@ namespace media
             "parse links error: " +
                 str(path)));
 
-            abstract = title;
+            abstract = simple(title);
             abstract.replace_all("_", "");
             if (sense != "")
             abstract += "@" +
@@ -135,19 +135,6 @@ namespace media
             if (sense != "")
             s += " @ " + sense;
             return s;
-        }
-
-        bool videolike () const
-        {
-            return
-            kind == "video" or
-            kind == "audio" and
-            options.contains("sound");
-        }
-
-        bool audiolike () const
-        {
-            return not videolike();
         }
 
         str text () const

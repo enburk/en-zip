@@ -1,0 +1,31 @@
+roads
+
+box junction
+
+
+flyover\\overpass
+interchange
+
+
+lane @ road
+footpath {esp.} {Br.}\\{Am.} {usually} trail @ footpath
+
+exit @ road
+
+---
+temporary traffic light
+stop line
+
+---
+pavement
+cobblestone road
+unpaved road
+pavement\\sidewalk # 8+
+curbstone          # 8+
+
+road roller
+
+===
+
+
+

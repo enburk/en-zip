@@ -20,6 +20,9 @@ namespace eng
 
         array<entry> data;
         int size () const { return data.size(); }
+
+        const
+        entry& operator [] (int i) const { return data[i]; }
         entry& operator [] (int i) { return data[i]; }
 
         std::optional<int> index (str const& s)

@@ -66,7 +66,7 @@ namespace studio::dic
                 "file://" + r.path.
                     string());
 
-            abstractmap[r.abstract][r.title] = &r;
+            abstractmap[r.abstract][simple(r.title)] = &r;
 
             array<str> entries = r.entries;
 
@@ -103,13 +103,6 @@ namespace studio::dic
             if (s.starts_with("His "  )) entries += "one's" + str(s.from(3)); else
             if (s.starts_with("Her "  )) entries += "one's" + str(s.from(3)); else
             {}
-
-            str
-            abstract_ = r.abstract;
-            abstract_.replace_all("_", "");
-            if (abstract_!= r.abstract)
-                entries +=
-                abstract_;
 
             array<str> apostros; str a = u8"’";
             for(auto& e: entries) if (e.contains(a)) apostros += e;

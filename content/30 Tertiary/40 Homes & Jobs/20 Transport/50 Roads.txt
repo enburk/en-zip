@@ -1,46 +1,35 @@
-roads              # pix-
+roads
 
 ---
-crossroads %% plural: crossroads # 10+
-{Br.} {also} junction \\ {Am.} {also} intersection @ road # 10+
-box junction
+crossroads %% plural: crossroads
+{Br.} {also} ~ junction @ road
+{Am.} {also} ~ intersection @ road
 
 zebra crossing
 railroad crossing
 
-motorway\\freeway  # 10+
-
-flyover\\overpass  # 10+
-interchange        # 10+
+motorway\\freeway
 
 S curve
-roundabout         # 10+
+roundabout
 
-left-hand traffic  # 10+
-speed bump %% {Br.} {also} speed hump, ~ sleeping policeman
+===
 
-lane @ road        # 10+
-footpath {esp.} {Br.}\\{Am.} {usually} trail @ footpath # 10+
-
-exit @ road
+left-hand traffic
 
 ---
-traffic light//traffic lights\\{Am.} {also} stoplights %% plural
-temporary traffic light
-stop line
+speed hump
+speed bump
+{Br.} {also} ~ sleeping policeman
 
 ---
-pavement
-cobblestone road
-unpaved road
-pavement\\sidewalk # 8+
-curbstone          # 8+
-
-road roller
+traffic light||traffic lights
+{Am.} {also} ~ stoplights
 
 ===
 
 : Home is where the road ends.
-: Stop here on red signal! ~ No stopping anytime! ~ Don't even think of parking here!
+
+
 
 

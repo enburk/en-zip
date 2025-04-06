@@ -84,13 +84,17 @@ namespace studio::one
         hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
+            if (r.options.contains("asset")
+            or  r.options.contains("noqrop"))
+                continue;
+
             str abstract = r.
                 abstract;
 
             if (abstract.contains(one_of("()")))
             {
                 abstract.debracket("(",")");
-                if (not r.options.contains("(o)"))
+                if (r.vocal() and not r.options.contains("(o)"))
                 report::errors += red(bold("():")) + link(&r);
             }
 
@@ -118,10 +122,6 @@ namespace studio::one
 
             if (r.kind == "video")
             {
-                if (r.options.contains("asset")
-                or  r.options.contains("noqrop"))
-                    continue;
-
                 if (r.entries.contains("+"))
                 matches +=
                     eng::parser::entries(
@@ -232,11 +232,6 @@ namespace studio::one
         for (auto [i, entry]: enumerate(course.entries))
         {
             if (entry.matches.empty()) continue;
-
-            if (entry.abstract == "alpha, beta, gamma, delta")
-            {
-                int a = 0; a++;
-            }
 
             bool isahead = entry.opt.external.contains("HEAD");
             bool nopixed = entry.opt.internal.contains("pix-") or isahead;

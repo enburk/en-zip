@@ -94,6 +94,8 @@ communist, Communist ### 0.wav
 confederation, confederacy ### 0.wav
 costumer, costumier ### 0.wav
 could'ya, couldja ### 0.wav
+criminalistics, forensic science ### 0.wav
+criminalistics, forensic science ### 1.wav
 Cronus, Kronos ### 0.wav
 curé, curate ### 0.wav
 curé, curate ### 1.wav
@@ -110,6 +112,12 @@ début, debut ### 0.wav
 décolleté, decolletage ### 0.wav
 décolleté, decolletage ### 1.wav
 décor, decor ### 0.wav
+ecstasy, extasy ### 0.wav
+ecstasy, extasy ### 1.wav
+ecstasy, extasy ### 2.wav
+ecstasy, extasy ### 3.wav
+ecstasy, extasy ### 4.wav
+ecstasy, extasy ### 5.wav
 effendi, effendy ### 0.wav
 Erinyes, Furies ### 0.wav
 faience, faïence ### 0.wav
@@ -209,6 +217,8 @@ political science, politology ### 2.wav
 political science, politology ### 3.wav
 Pope, pope ### 0.wav
 poseur, poser ### 0.wav
+pricelist, price list ### 0.wav
+pricelist, price list ### 1.wav
 providence, Providence ### 0.wav
 racket, racquet ### 0.wav
 racket, racquet ### 1.wav
@@ -232,6 +242,8 @@ slices of beetroot, slices of beet ### 0.wav
 solfège, solfeggio ### 0.wav
 souffle, soufflé ### 0.wav
 souffle, soufflé ### 1.wav
+sports car, sportscar ### 0.wav
+sports car, sportscar ### 1.wav
 sticky notes, stickies ### 0.wav
 stimulants, psychostimulants ### 0.wav
 stimulants, psychostimulants ### 1.wav
@@ -1596,7 +1608,7 @@ all that jazz.ogg
 amn’t--am not--amn’t [amn’t].ogg
 an Achilles heel.ogg
 beating around the bush.ogg
-BRB (be right back).ogg
+BRB -- be right back.ogg
 child~children [children].ogg
 cu (see you) [+][CU].ogg
 distance ## {2}.ogg
@@ -1604,26 +1616,26 @@ dour ## {1}.ogg
 dour ## {2}.ogg
 dove @ verb.ogg
 every day.ogg
-F2F (face to face).ogg
-face threatening acts (FTA).ogg
+F2F -- face to face.ogg
 fantastic @ sarcasm.ogg
+FTAs -- face threatening acts.ogg
 I have shaved, I have shaven [shaved][shaven].ogg
 I walk, you walk, she walks [walks].ogg
 in- meaning not [in-].ogg
-KIA (killed in action).ogg
+KIA -- killed in action.ogg
 know, knew, known.ogg
 Makes me sick..ogg
 Meg as a shortening for Margaret [Meg].ogg
 menage a trois.ogg
 menage a trois.txt
 mind one’s P’s and Q’s.ogg
-POW (prisoner of war) ## Case.ogg
+POW -- prisoner of war ## Case.ogg
 prick @ derogatory.ogg
 spectacular, more spectacular, most spectacular [spectacular].ogg
 swell, swelled, swelled~swollen [+][swell][swelled][swollen].ogg
 syllabus~syllabi, focus~foci, stimulus~stimuli, alumnus~alumni.ogg
 talk to _Ralph on the big white telephone.ogg
-TTYL (talk to you later).ogg
+TTYL -- talk to you later.ogg
 waiter -- waitress.ogg
 >>> ../datae\audio\lectures {{ttc}}\{{}}/_Prof. Arthur T. Benjamin ## us
 a recurrence.ogg
@@ -13596,7 +13608,7 @@ moonshine.wav
 movie theater.wav
 muleta.wav
 music.wav
-Nahuan.wav
+Nahuan ## sic!.wav
 necktie.wav
 negative forms of the verb to be.wav
 night.wav
@@ -13653,8 +13665,8 @@ she is.wav
 shoestrings.wav
 short pants.wav
 sidewalk.wav
-Simple Past Tense.wav
-Simple Present Tense.wav
+Simple Past Tense [+][simple past].wav
+Simple Present Tense [+][simple present].wav
 skipper.wav
 slices of beet.wav
 smolder.wav
@@ -19504,7 +19516,7 @@ a gap year, or twelve-month holiday, before starting university.wav
 a higher percentage than ever before.wav
 A mufti is an expert in Islamic law who is entitled to rule on religious matters, for example issuing a fatwa..wav
 Ah, capitalism.. the entrepreneurial spirit that animates America!.wav
-AIBU (Am I being unreasonable~!).wav
+AIBU -- Am I being unreasonable~!.wav
 All right, then..wav
 Americans say “four thirty” or “half past four.” The English do, too, but they also might say “half four.”.wav
 An English “state school” is the equivalent of an American “public school,”.txt
@@ -19536,8 +19548,8 @@ I’m absolutely knackered..wav
 Karma is a boomerang..wav
 Keep calm and carry on..wav
 MBE (member of the Order of the British Empire).wav
-NCT (National Childbirth Trust).wav
-NHS (National Health Service).wav
+NCT -- National Childbirth Trust.wav
+NHS -- National Health Service.wav
 Now you know. ## course-.wav
 The Baby Boomers pioneered “if it feels good, do it.”.wav
 Think chips made in the shape of little shovels, so as to hold a maximum quantity of dip..wav
@@ -26594,7 +26606,7 @@ A Seifert surface of the Borromean rings [Seifert surface][Borromean rings] ## q
 gyroid.jpg
 Klein bottles [Klein bottle] ## qrop l12 r15.jpg
 Menger sponge ## qrop q.jpg
-stellated octahedron (merkaba) [merkaba][stellated].jpg
+stellated octahedron (merkaba) [merkaba][stellated] ## qrop q.jpg
 >>> ../datae\install/Munson {{Portia Munson}}
 Bedroom ## qrop qr.jpeg
 Bedroom ## qrop qr.txt
@@ -26639,7 +26651,7 @@ silver 2 reales cob [real@coin][cob@coin] ## qrop l15 r10.jpg
 Silver {dirham}, Caliphate of Cordoba.jpg
 Square silver half {dirham}, {Almohad} era.jpg
 monogram ## qrop qr.jpg
-Neolithic stone axe head [Neolithic][stone axe].jpeg
+Neolithic stone axe head [Neolithic][stone axe] ## qrop l18 r14 ## qropt!.jpeg
 >>> ../datae\photo\artifacts/netsuke {{IvoryAndArt}}
 Carvers Family %% Mammoth Ivory Netsuke [netsuke] ## qrop q.jpg
 Family Selling Fish %% Mammoth Ivory Netsuke [netsuke] ## qrop q.jpg
@@ -26694,7 +26706,7 @@ clamshells @ packaging.jpg
 Clio, Muse of History %% 2nd century, Roman copy from a Greek original, The Hermitage Museum [Clio][Muse] ## qrop t3 b4 ## qropt!.jpg
 crate opener [opener] ## qrop l3 r6 ## qropt!.jpg
 diving tower [diving platform] ## qrop l9 r13 {{Photo.. Joel Meyerowitz}}.jpg
-Emerson Knives Gentleman Jim [knives].jpg
+Emerson Knives Gentleman Jim [knives] ## qrop l7 r6 ## qropt!.jpg
 eugenics ## qrop l4 r1 ## qropt!.jpg
 >>> ../datae\photo/fashion
 apparel @ clothing ## qrop qb.jpg
@@ -26757,9 +26769,9 @@ brown bear [ferocious] ## qrop qt.jpg
 Divine Snake [green vine snake][snake] ## qrop l30 r7 {{Photo.. Raviprakash S S}}.jpg
 Elephant's Foot Hovering over a Chick ## qropt!.jpg
 Elephant's Foot Hovering over a Chick ## qropt!.txt
-European badger [Eurasian badger][badger@animal] ### 1.jpg
-European badger [Eurasian badger][badger@animal] ### 2.jpg
-European badger [Eurasian badger][badger@animal] ### 3.jpg
+European badger [Eurasian badger][badger@animal] ## qrop l5 r24 ### 3.jpg
+European badger [Eurasian badger][badger@animal] ## qrop l8 r21 ### 2.jpg
+European badger [Eurasian badger][badger@animal] ## qrop qr ### 1.jpg
 Glowing eyes of an alligator at dusk [red eyes][eyeshine][tapetum lucidum] ## qrop l20 r12 {{Photo.. Larry Lynch}}.jpg
 green tree python %% Morelia viridis [python][Morelia viridis][Morelia] ## qrop l8 r13 ## qropt! {{Photo.. Jenny Rollo}}.jpg
 humpback whale [cetacean] ## qrop l8 r26 {{Photo.. Thomas Wiewandt}}.jpg
@@ -26784,7 +26796,7 @@ black-and-red broadbill [broadbill].jpg
 boreal owl ## qrop t9 b11.jpg
 burrowing owl.jpg
 chaffinch in the snow [chaffinch] {{Photo.. Edite Artmann}} ### crestock.jpg
-chestnut-sided {warbler}.jpg
+chestnut-sided warbler [warbler] ## qrop l27 r17.jpg
 emperor penguins %% Dawson-Lambton Glacier, Antarctica ## qrop l15 t1 r21 {{Photo.. Fritz Polking}}.jpg
 Eurasian bullfinch [bullfinch] {{Photo.. Thomas Hinsche}}.jpg
 European bee-eater [bee-eater] ## qrop t7 ## qropt!.jpg
@@ -26793,7 +26805,7 @@ Fossilized egg of the now-extinct Madagascar elephant bird [enormous][elephant b
 grandalas.jpg
 green bee-eater [bee-eater].jpg
 green wing macaw [macaw].jpg
-laughing dove [dove@bird].jpg
+laughing dove [dove@bird] ## qrop t13 b3 ## qropt!.jpg
 least seedsnipe %% Thinocorus rumicivorus [Thinocorus][seedsnipe] {{Photo.. Pablo Caceres}}.jpg
 little baby saw-whet owl [owlet][saw-whet owl] ## qrop q {{Photo.. Jason Lazerda}}.jpg
 northern hawk-owl [hawk-owl][northern hawk owl][Surnia ulula][Surnia] {{Photo.. Magnus Berggren}}.jpg
@@ -26811,7 +26823,7 @@ Steller's jay [jay@bird] {{Photo.. Warren Griffin}}.jpg
 tawny-flanked prinia [prinia][Prinia][Cisticolidae].jpg
 turquoise-browed motmot [motmot].jpg
 willow ptarmigan %% Lagopus lagopus [willow grouse][ptarmigan] ## qrop l27 t1 r7 {{Photo.. Steven Kazlowski}}.jpg
-yellow warbler [warbler] {{Photo.. Doug Lloyd}}.jpg
+yellow warbler [warbler] ## qrop l14 r20 b1 {{Photo.. Doug Lloyd}}.jpg
 camelia stamens [stamens] ## qrop t23 ## qropt! {{Photo.. Michael Brown}}.jpg
 chambered nautilus shell [spiral].jpg
 Colorado Blue Columbine [columbine] {{Photo.. Kelly Black}}.jpg
@@ -26986,7 +26998,7 @@ decoy flares [decoy@flares][flares] ## qrop l7 r10 ## qropt!.jpg
 Mortar propellant containers of various sizes and shapes [mortar propellant][propellant] ## qrop t3 b2 ## qropt!.jpg
 wheelchair {{Photo.. Sonja Hoeykens}}.jpg
 >>> ../datae\photo/~cc-by-sa
-200 watt bulb filament at reduced voltage [filament@tungsten] {{Photo.. Arnoldius $cc-by-sa wiki}}.jpg
+200 watt bulb filament at reduced voltage [filament@tungsten] ## qropt! ## qrop l2 r2 {{Photo.. Arnoldius $cc-by-sa wiki}}.jpg
 amethyst ## qrop qr {{Photo.. JJ Harrison $cc-by-sa}}.jpg
 Armed Klansman in southeastern Ohio, 1987 [Klansman][klansman] {{Photo.. Paul Walsh $cc-by-sa wiki}}.jpg
 Armigerous signet ring bearing the arms of the Baronnet family %% Goldsmith.. Jean-Pierre Gautheron [armigerous][signet ring] ## crop l16 r4 ## qropt! {{Photo.. Marc Baronnet $cc-by-sa wiki}}.jpeg
@@ -27013,7 +27025,7 @@ non-biting midge {{Photo.. Darrah Leffler $cc-by-sa wiki}}.txt
 Pappenheim-hilt rapier [guard@sword][hilt@sword] ## qrop l15 r15 ## qropt! {{Photo.. Rama $cc-by-sa wiki}}.jpg
 plesiosaur ## qropt! {{Credit.. NobuTamura $cc-by-sa wiki}}.jpg
 receiving a medication through an intravenous line [intravenous][intravenous therapy][intravenous line] ## qrop t15 b5 ## qropt! {{Photo.. Calleamanecer $cc-by-sa wiki}}.jpg
-record player needle [record player][needle@player][turntable] {{Photo.. Moehre1992 $$cc-by-sa wiki}}.jpg
+record player needle [record player][needle@player][turntable] ## qrop l20 r5 {{Photo.. Moehre1992 $$cc-by-sa wiki}}.jpg
 Skull of Australopithecus africanus [Australopithecus] ## crop t3 ## qrop t3 b8 ## qropt! {{Photo.. Guérin Nicolas $cc-by-sa}}.JPG
 skysurfing ## qrop t14 b11 {{Photo.. Steve Cadman $cc-by-sa}}.jpg
 smoky quartz [smoky@color] {{Photo.. JJ Harrison $cc-by-sa}}.jpg
@@ -27304,7 +27316,6 @@ nightgown ## date 2007 ## qrop qr.jpg
 _Robert _Mapplethorpe [Mapplethorpian] ## date NIC, 1987.jpg
 >>> ../datae\photo b/Bartley {{Photo.. Mary Ellen Bartley}}
 Blue _Bible [books] ## date 2004.jpg
-book leaves [leaf@book][leaves@book] ### A Road Divided.jpg
 plastic bag ## qrop l20 r15 b2.png
 >>> ../datae\photo b/Baudonnet photocusine {{Photo.. Baudonnet}}
 lychee cake [+] ## qrop qb.jpg
@@ -27632,7 +27643,7 @@ Swiss clown Grock (Adrien Wettach) [astonished] ## date 1955.jpg
 Mask of Tutankhamun [Tutankhamun] ### Tutankhamun’s death mask.jpg
 Outermost Coffin of Tutankhamun [pharaoh] ## date 1920s ## qropt!.jpg
 Tutankhamun sarcophagus [+] ## qrop l22 t5 r7 ## date 1926.jpg
-Unbroken Seal on the Third Shrine of Tutankhamun [seal @ sealing] ## date 1924.jpg
+Unbroken Seal on the Third Shrine of Tutankhamun [seal @ sealing] ## date 1924 ## qrop l8 r13 ## qropt!.jpg
 Wood Box in the Form of Tutankhamun's Cartouche or Royal Name [cartouche][artifact][artefact] ## date 1920s ## qrop t14 b12.jpg
 >>> ../datae\photo b/Burtynsky {{Photo.. Edward Burtynsky}}
 Abandoned Marble Quarry, Rochester, _Vermont [quarry] ## date 1991 ## qrop q.jpg
@@ -28433,7 +28444,7 @@ Mainbocher Corset (tight) [corset] ## date 1939 ## qrop q.jpeg
 1963, Rio de Janeiro, Brazil, {macumba} session.jpg
 1963, Tokyo, Japan, teenagers [smoking] ### , variante.jpg
 1968, Paris, for Glamour, inspired by film director Bunuel [staged scene][staged] ## qrop l19 ## qropt!.jpg
-1969, Sweden, Marco [writing][write].jpg
+1969, Sweden, Marco [writing][write] ## qrop l19 r15.jpg
 1972, Paris, France, photo test with Chris O'Connor [body art] ## noqrop.jpg
 1976, Paris, for Vogue France, ready-to-wear [ready-to-wear] ## qrop b19 ## qropt!.jpg
 1978, California, USA, {ilex}.jpg
@@ -28608,7 +28619,7 @@ split {pea soup} with black sesame seeds and bacon.jpg
 apple in cider and {apple brandy}.jpg
 artichoke.jpg
 bacon chip [chip@food] ## qrop qr.jpg
-beetroot leaf [leaf].jpg
+beetroot leaf [leaf] ## qrop l18 r7.jpg
 corn on the cob and a spoonful of polenta [polenta] ## qrop t14 b11.jpg
 croquette de tulipe [tuliplike].jpg
 dough ball on a wooden bread spatula [dough][doughball][spatula] ## qrop l4 r3 ## qropt!.jpg
@@ -28641,7 +28652,7 @@ Ali vs. Liston ## qrop qt.jpg
 Ali vs. Liston ## qrop qt.txt
 Battleship New Jersey Shell [battleship].jpg
 boxing ring [ring@boxing] ### _Muhammad _Ali _KOs _Cleveland _Williams, 1966.jpg
-Juan Marichal Pitching to Willie Davis [pitching][pitcher@baseball][pitch@baseball].jpg
+Juan Marichal Pitching to Willie Davis [pitching][pitcher@baseball][pitch@baseball] ## qrop qt.jpg
 quarterback ## qrop qr ### Y.A. Tittle.jpg
 “Get up and fight, sucker!” %% Ali vs. Liston [sucker].jpg
 >>> ../datae\photo ijkl/Leipzig {{Photo.. Arthur Leipzig}}
@@ -28715,11 +28726,11 @@ Hermitage, Saint Petersburg [Hermitage] ## date 2017.jpg
 Metten Library, Germany [Baroque] ## date 2016.jpg
 Natural History Museum, London [hall] ## date 1985 ## qrop q.jpg
 >>> ../datae\photo ijkl/Lowell {{Photo.. Christopher Lowell}}
-bath tub [bathtub][tub@bath] ## date 2010.jpg
+bath tub [bathtub][tub@bath] ## date 2010 ## crop l3 r3 ## noqrop.jpg
 Before Macy's Thanksgiving Day Parade [Thanksgiving Thursday].jpg
-bookstore employee [bookstore] ## date 2006.jpg
+bookstore employee [bookstore] ## date 2006 ## crop l13 r20.jpg
 Monkeys & Motorcycle, Lopburi [Lopburi] ## date 2007.jpg
-The Romantic Poets [bookshelves][bookshelf] ## date 2006.jpg
+The Romantic Poets [bookshelves][bookshelf] ## date 2006 ## crop r22 ## qrop l20 t6 r30 b19.jpg
 Thirty One Days &sharp;12 [skinny-dip].jpg
 >>> ../datae\photo ijkl/Lynes {{Photo.. George Platt Lynes}}
 Self-Portrait [unitard] ## date ca. 1945 ## qropt!.jpg
@@ -28802,7 +28813,7 @@ tulip ## date 1988 ## qrop qt.jpg
 tulip ## date 1988 ### tint.jpg
 _Dennis _Speight [Speight] ## 99+ ## date 1983.jpg
 _Dennis _Speight [Speight] ## date 1983 [].jpg
-_Ken _Moody and _Robert _Sherman [bald] ## date 1984.jpg
+_Ken _Moody and _Robert _Sherman [bald] ## date 1984 ## qrop qt.jpg
 _Ken _Moody [Moody] ## date 1983.jpg
 _Lisa _Lyon [veil] ## date 1980 ## qrop ql.jpg
 _Michael _Roth [torso] ## date 1983.jpg
@@ -28817,7 +28828,7 @@ A bathroom complete with a silver lilo, Hotel Tiffany, Kyoto [lilo] ## date 2000
 A club for truck drivers, which is a euphemism for a brothel. Galicia, Spain, 1998 [whorehouse].jpg
 Concorde ## date October 2003.jpg
 >>> ../datae\photo mn/Mate {{Photo.. Bence Mate}}
-hoopoe %% Upupa epops [Upupa epops][Upupa] ## qrop t6 b28.jpg
+hoopoe %% Upupa epops [Upupa epops][Upupa] ## qrop t6 r1 b28.jpg
 mushroom.jpg
 >>> ../datae\photo mn/Mauli {{Photo.. Hans Mauli}}
 Bryce Canyon [Bryce][Utah].jpg
@@ -28856,7 +28867,7 @@ butterfly @ swimming ## date 1948 ## qrop qt.jpg
 clearing the fence [clearing@fence].jpg
 flamenco step [flamenco] ## date 1941 ## qropt!.jpg
 Lindy Hop, Leon James and Willa Mae Ricker [Lindy Hop] ## date 1943.jpg
-Pablo Picasso using a small flashlight to {draw} a figure in the air ## date 1949.png
+Pablo Picasso using a small flashlight to draw a figure in the air [draw] ## date 1949 ## qrop l1 t9 b12.png
 Stan Cavenaugh juggles tenpins [juggler][juggles][tenpins] ## date 1941 ## qrop qb.jpg
 Stroboscopic image of FBI agent Del Bryce [special agent][agent@special] ## qropt! ## qrop t13 b7.jpg
 View of Students and Others in Main Entrance at MIT [MIT] ## date 1956.jpg
@@ -28924,7 +28935,7 @@ stacked plates with forks [stacked].jpg
 >>> ../datae\photo mn/Muller {{Photo.. Mark Vincent Muller}}
 gator ## qrop l13 r19 ### Swamp.jpg
 nIght eruption [eruption] ## qrop l23 r11.jpg
-short-eared elephant shrew [elephant shrew] ## qrop l31 r5.jpg
+short-eared elephant shrew [elephant shrew] ## qrop l31 r5 b1.jpg
 sidewinder @ snake [sidewinding] ## qrop l16 r26.jpg
 >>> ../datae\photo mn/Myke {{Photo.. Shelley Myke}}
 American kestrel [kestrel][Falco][falcon] ## qrop l19 r5 ### 1.jpg
@@ -29147,7 +29158,7 @@ The bow of a ship {cutting} through a calm sea surface [bow@ship].jpg
 traditional cutter [cutter@ship][gaffrigger].jpg
 windsurf.jpg
 >>> ../datae\photo opqr/Pretaroli {{Photo.. Annalaura Pretaroli}}
-peach rose [peach @ color].jpg
+peach rose [peach @ color] ## qrop t15 b18.jpg
 pink passion rose [pink passion][pink] ## date 2020 ## qrop l1 t14 b20.jpg
 red rose [red@color].jpg
 ruby rose [ruby@color][ruby red] ## date 2020 ## qrop t26 b7.jpg
@@ -29436,15 +29447,15 @@ Country Doctor [slump] ## qrop t8 b23.jpg
 Dance of the Flaming Coke [coke@coal] ## date 1955 ## qrop l20 r14 ## qropt!.png
 Leaping rubber explosively created from butadiene gas in bottle [butadiene].jpg
 Minamata disease.jpg
-U.S. Marines blasting out a cave on Hill 382 during the Battle of Iwo Jima [blasting][blast@explosion] ## qrop l10 r12.jpg
+U.S. Marines blasting out a cave on Hill 382 during the Battle of Iwo Jima [blasting][blast@explosion] ## qrop l11 r12.jpg
 Waiting for Survivors %% the sinking of the SS Andrea Doria [anticipation].jpg
 >>> ../datae\photo s/Smithson {{Photo.. Aline Smithson}}
 couple @ people [embrace][embracing] ## qrop qb ### Undercover 2.jpg
 People I Don’t Know [photograph][photograph~photo][photo] ### 7.jpg
 >>> ../datae\photo s/Snowdon {{Photo.. Lord Snowdon}}
-Anthony Blunt, Keeper of the Queen's pictures [slide@image] ## date 1963.jpg
+Anthony Blunt, Keeper of the Queen's pictures [slide@image] ## date 1963 ## qrop qr.jpg
 Hands of Yehudi Menuhin [Yehudi][Menuhin] ## date 1981.png
-HRH Prince _Charles, 1956 [HRH][Charles][prince][Prince of Wales].jpg
+HRH Prince _Charles, 1956 [HRH][Charles][prince][Prince of Wales] ## qrop qb.jpg
 Photographer John French [photographer] ## date 1957.jpg
 Princess _Diana, 1991 [Princess of Wales].jpg
 >>> ../datae\photo s/Souders {{Photo.. Paul Souders}}
@@ -30525,7 +30536,7 @@ abstract landscape [abstract art] {{Zsolt Horvath $dreamstime 1626832}}.jpg
 angry monkey [angry] ## qrop l20 r13 {{Photo.. Andrei Dumitriu $dreamstime 57815613}}.jpg
 Antelope Canyon, Utah [narrow][slot canyon] ## qrop l15 r19 {{Photo.. Lunamarina $dreamstime 34022889}}.jpg
 arrow @ form ## qrop l17 r14 ## qropt! {{Photo.. Ekaterina79 $dreamstime 95636606}}.jpg
-bald & hairy [bald@head][hairy] ## qrop l16 r18 {{Photo.. Rene Jansa $dreamstime 17757951}}.jpg
+bald & hairy [bald@man][hairy@man] ## qrop l16 r18 {{Photo.. Rene Jansa $dreamstime 17757951}}.jpg
 bell pepper ## qrop t13 b12 {{Photo.. Aliced $dreamstime 62766583}}.jpg
 checkered plate [checkered] ## qrop l19 r17 {{Photo.. Terracestudio $dreamstime 20656571}}.jpg
 Christmas bulbs [bulbs] ## qrop l30 r4 {{Photo.. Loongar $dreamstime 27082440}}.jpg
@@ -30635,7 +30646,7 @@ stucco moulding [stucco][moulding@art][molding@art] ## qrop t5 b5 ## qropt! {{Ph
 tassel ## qrop l20 r13 {{Photo.. Deyangeorgiev $dreamstime 37259116}}.jpg
 tissue paper ## qrop l1 r33 {{Photo.. Brighton $dreamstime 14710727}}.jpg
 vases [vase] ### qrop l3 r3 t3 b3 {{Photo.. Dezayin $dreamstime 59046836}}.jpg
-Eixample, Barcelona [bite] ## qrop t7 {{Photo.. Kaplan69 $dreamstime 82986174}}.jpg
+Eixample, Barcelona [bite] ## qrop t7 r1 {{Photo.. Kaplan69 $dreamstime 82986174}}.jpg
 Est deus in nobis (there is a god within us) -- Ovid [Latin][Ovid] ## qropt! {{Photo.. Spanychev $dreamstime 24718127}}.jpg
 >>> ../datae\photo_dreamstime\art/fineart
 an orange and a pear [minimalism] ## qrop q {{Kaspargallery $dreamstime}}.jpg
@@ -32304,7 +32315,7 @@ silica gel [silica][silica gel][desiccant][hygroscopic] ## qrop ql {{Photo.. Atm
 sponge @ porous [porous] ## qrop qr {{Photo.. Zkruger $dreamstime 42026008}}.jpg
 spray ## qrop l8 r25 {{Photo.. Vevesoran $dreamstime 16747706}}.jpg
 thermoplastic resin [+] ## qrop q {{Photo.. Xxlphoto $dreamstime 10777968}}.jpg
-nodding donkey {{Photo.. Panaramka $dreamstime 106412963}}.jpg
+nodding donkey ## qrop qr {{Photo.. Panaramka $dreamstime 106412963}}.jpg
 oil well ## qrop qr {{Photo.. Neacsu Razvan Chirnoaga $dreamstime 19376774}}.jpg
 packages [package] {{Photo.. Rene Van Den Berg $dreamstime 36505527}}.jpg
 pipe ## qrop ql {{Photo.. Tiago Estima $dreamstime 9422832}}.jpg
@@ -32481,7 +32492,7 @@ red fox [fox@animal] ## qrop l19 r6 ## qropt! {{Photo.. Cenorman $dreamstime 120
 rooster [cock] ## qrop qr {{Photo.. Njnightsky $dreamstime 14913128}}.jpg
 stag @ deer [hart@deer] ## qrop ql {{Photo.. Ondřej Prosický $dreamstime 70945509}}.jpg
 Pigmy seahorse (Hippocampus bargipanti) [Hippocampus][pigmy seahorse][pigmy@small][seahorse] ## qrop ql {{Photo.. Armin Keller $dreamstime 51849974}}.jpg
-sea urchin test (hard shell) [sea urchin][test@shell] {{Photo.. Noah Browning $dreamstime 57497494}}.jpg
+sea urchin test (hard shell) [sea urchin][test@shell] ## qrop qt {{Photo.. Noah Browning $dreamstime 57497494}}.jpg
 seashells [shell][seashell] ## qrop qr {{Photo.. Breakermaximus $dreamstime 74887367}}.jpg
 shells ## qrop l14 r18 ## qropt! {{Photo.. Viovita $dreamstime 51413766}}.jpg
 >>> ../datae\photo_dreamstime\nature\fauna/youngsters
@@ -33170,7 +33181,7 @@ Arabic numerals [algebra] ## qrop qr {{Agsandrew $dreamstime 52031905}}.jpg
 digits ## qrop l23 r15 {{Photo.. Joseph Cortes $dreamstime 553212}}.jpg
 eight [8] ## qrop l16 r14 ## qropt! {{Photo.. Marietjie Opperman $dreamstime 80900410}}.jpg
 five [5] {{Photo.. Marietjie Opperman $dreamstime 80900693}}.jpg
-four [4] {{Photo.. Marietjie Opperman $dreamstime 80899018}}.jpg
+four [4] ## qrop qr {{Photo.. Marietjie Opperman $dreamstime 80899018}}.jpg
 nine [9] ## qrop qr {{Photo.. Marietjie Opperman $dreamstime 80900519}}.jpg
 one [1] {{Photo.. Marietjie Opperman $dreamstime 80691362}}.jpg
 seven [7] ## qrop q {{Photo.. Marietjie Opperman $dreamstime 80900427}}.jpg
@@ -33339,7 +33350,7 @@ cavern ## qropt! {{Photo.. Heirbornstud $dreamstime 705479}} ### the cavern at V
 Crater Lake, Oregon [Crater Lake][crater lake][caldera][caldera lake] ## qrop l4 ## qropt! {{Photo.. William Michael Norton $dreamstime 830379}}.jpg
 crevasse ## qrop b29 ## qropt! {{Photo.. Aquanaut4 $dreamstime 67895656}}.jpg
 crevice ## qrop t6 b14 {{Photo.. Kathleen Struckle $dreamstime 4107238}}.jpg
-Earth's inner core [inner core][core@geology] ## crop l68 t15 r5 b24 {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
+Earth's inner core [inner core][core@geology] ## crop l68 t15 r5 b24 ## qrop l69 t15 r5 b24 {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 lithosphere ## crop l37 t17 r36 b20 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 mantle @ geology ## crop l1 t8 r66 b15 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 Pamukkale, _Turkey [Turkey][travertine terraces][travertine][terraces] ## qrop l10 r24 {{Photo.. Softdreams $dreamstime 41117927}}.jpg

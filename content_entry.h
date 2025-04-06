@@ -97,11 +97,6 @@ namespace content::out
             s.canonicalize();
             s = simple(s);
 
-            if (s == "alpha/beta/gamma/delta")
-            {
-                int a = 0; a++;
-            }
-
             if (s == "") return;
 
             {

@@ -17,10 +17,10 @@ evasive action
 initialisms # HEAD
 ===
 
-KIA         = killed in action
-POW         = prisoner of war
+KIA         = killed in action                         # +ru
+POW         = prisoner of war                          # +ru
 ---
-AWOL        = absent without official ~ leave (permission)
+AWOL        = absent without ~ official leave %% (permission) # +ru
 : Furlough said Newt
 
 ===

@@ -1,4 +1,4 @@
 idioms
 
-: bug someone -- ~ to annoy or irritate someone
-: badger someone -- ~ to annoy someone ~ by repeatedly asking them ~ something
+bug someone    = to annoy or irritate someone                             # +ru
+badger someone = to annoy someone ~ by repeatedly asking them ~ something # +ru

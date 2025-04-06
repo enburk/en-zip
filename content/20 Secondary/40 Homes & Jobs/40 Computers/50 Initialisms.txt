@@ -17,29 +17,33 @@ B @ texting  = be
 R @ texting  = are
 K @ texting  = okay
 
+
+# +ru
+
 ---
-LOL ~ (laugh out loud) @@
+LOL          = laugh out loud
 : LOL @ l-o-l
 : LOL @ lol
 
-BTW ~ (by the way)
-OMG ~ (oh my god)
-WTF ~ (what the fuck?)
+BTW          = by the way
+OMG          = oh my god
+WTF          = what the fuck?
 
 ===
 
-LMAO ~ (laughing my ass off)
-ROFL ~ (rolling on the floor laughing)
+LMAO         = laughing my ass off
+ROFL         = rolling on the floor laughing
 
-idc ~ (I don’t care)
-idk ~ (I don’t know)
-ikr ~ (I know, right?)
+idc          = I don’t care
+idk          = I don’t know
+ikr          = I know, right?
 
-nbd ~ (no big deal)
-np  ~ (no problem)
-nvm ~ (never mind)
-ofc ~ (of course)
-jk  ~ (just kidding)
+nbd          = no big deal
+np           = no problem
+nvm          = never mind
+ofc          = of course
+jk           = just kidding
+
 
 
 

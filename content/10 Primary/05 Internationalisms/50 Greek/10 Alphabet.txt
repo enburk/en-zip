@@ -1,16 +1,18 @@
 ===
 alphabet                                  = алфавит
 ===
-alpha, beta, ~ gamma, delta %% Αα Ββ Γγ Δδ = альфа, бета, ~ гамма, дельта  # pix- # 10+
-epsilon, zeta, ~ eta, theta %% Εε Ζζ Ηη Θθ = эпсилон, дзета, ~ эта, тета   # MATH+ # pix- # 16+
+alpha/beta/gamma/delta %% Αα Ββ Γγ Δδ     = альфа, бета, ~ гамма, дельта    # pix- # 10+
+//alpha, beta, ~ gamma, delta %% Αα Ββ Γγ Δδ = альфа, бета, ~ гамма, дельта    # pix- # 10+
+epsilon, zeta, ~ eta, theta %% Εε Ζζ Ηη Θθ = эпсилон, дзета, ~ эта, тета     # MATH+ # pix- # 16+
 ===
-iota, kappa, ~ lambda, mu %% Ιι Κκ Λλ Μμ  = йота, каппа, ~лямбда, мю      # MATH+ # pix- # 16+
-nu, xi, ~ omicron, pi %% Νν Ξξ Οο Ππ      = ню, кси, омикрон, пи          # MATH+ # pix- # 16+
+iota, kappa, ~ lambda, mu %% Ιι Κκ Λλ Μμ  = йота, каппа, ~лямбда, мю        # MATH+ # pix- # 16+
+nu, xi, ~ omicron, pi %% Νν Ξξ Οο Ππ      = ню, кси, омикрон, пи            # MATH+ # pix- # 16+
 ===
-rho, sigma, ~ tau, upsilon %% Ρρ Σσ Ττ Υυ = ро, сигма, ~ тау, ипсилон     # MATH+ # pix- # 16+
-phi, chi, ~ psi, omega %% Φφ Χχ Ψψ Ωω     = фи, хи, пси, омега            # MATH+ # pix- # 16+
+rho, sigma, ~ tau, upsilon %% Ρρ Σσ Ττ Υυ = ро, сигма, ~ тау, ипсилон       # MATH+ # pix- # 16+
+phi, chi, ~ psi, omega %% Φφ Χχ Ψψ Ωω     = фи, хи, пси, омега              # MATH+ # pix- # 16+
 ===
 the alpha and the omega                   = альфа и омега %% начало и конец чего-либо, ~ самое важное # 16+
+
 
 
 

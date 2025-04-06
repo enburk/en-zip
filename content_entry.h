@@ -97,6 +97,13 @@ namespace content::out
             s.canonicalize();
             s = simple(s);
 
+            if (s == "alpha/beta/gamma/delta")
+            {
+                int a = 0; a++;
+            }
+
+            if (s == "") return;
+
             {
                 str x = s;
                 x.replace_all("|","");
@@ -115,7 +122,8 @@ namespace content::out
 
             parse(s);
 
-            abstract = str(en*uk*us);
+            abstract = str(en*uk*us, ", ");
+            abstract.replace_all("|",", ");
 
             for (str x: en*uk*us)
             matches += x.split_strip_by("|");

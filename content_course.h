@@ -110,16 +110,11 @@ namespace content::out
                 anomal += ""; }
 
                 for (auto& e: topic.entries)
-                for (str w: e.vocabulary)
+                for (str w: e.matches)
                 {
                     w = eng::asciized(
                     w.extract_upto("@")).
                     ascii_lowercased();
-
-                    w.replace_all("~", "");
-                    w.replace_all("  ", " ");
-                    w.replace_all("  ", " ");
-                    w = simple(w);
 
                     searchmap +=
                     search_entry(w,

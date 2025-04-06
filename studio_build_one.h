@@ -231,6 +231,13 @@ namespace studio::one
 
         for (auto [i, entry]: enumerate(course.entries))
         {
+            if (entry.matches.empty()) continue;
+
+            if (entry.abstract == "alpha, beta, gamma, delta")
+            {
+                int a = 0; a++;
+            }
+
             bool isahead = entry.opt.external.contains("HEAD");
             bool nopixed = entry.opt.internal.contains("pix-") or isahead;
             bool noaudio = entry.opt.internal.contains("audio-");
@@ -247,6 +254,7 @@ namespace studio::one
             entry.eng.starts_with(":") or
             entry.eng == "";
 
+            array<res> vocals;
             array<res> videos;
 
             for (str& s: entry.matches)
@@ -256,12 +264,12 @@ namespace studio::one
                 if (r->vocal() and noaudio) continue;
                 if (r->video() and nopixed) continue;
 
-                if (r->sound() && r->abstract != entry.abstract) continue;
-                if (r->vocal() && r->abstract != entry.abstract) continue;
+                if (r->sound() and r->abstract == entry.abstract) sound_ok = true;
+                if (r->vocal() and r->abstract == entry.abstract) vocal_ok = true;
+                if (r->video()) video_ok = true;
 
-                if (r->sound()) sound_ok = true;
-                if (r->vocal()) vocal_ok = true;
-                if (r->video()) video_ok = true, videos += r;
+                if (r->vocal()) vocals += r;
+                if (r->video()) videos += r;
 
                 data.one_add(i, r);
             }
@@ -271,8 +279,7 @@ namespace studio::one
             auto us = vocal_ok? array<str>{} : entry.us;
 
             if (not vocal_ok)
-            for (str& s: entry.matches)
-            for (res& r: course_matches[s].resources)
+            for (res r: vocals)
             if (r->vocal() and not r->options.contains("xlam"))
             {
                 bool uks = r->options.contains("uk");
@@ -295,9 +302,9 @@ namespace studio::one
             if (not sound_ok  ) report::audiom += linked(s + snd, entry.link);
             if (not video_ok  ) report::videom += linked(s + " ", entry.link);
 
-            for (str s: en) needed_en += s;
-            for (str s: us) needed_us += s;
-            for (str s: uk) needed_uk += s;
+            needed_en += en;
+            needed_us += us;
+            needed_uk += uk;
 
             videos.deduplicate();
             for (res r: videos)
@@ -308,6 +315,49 @@ namespace studio::one
             multivideo += std::make_pair(
                 &course.entries[i],
                 std::move(videos));
+
+            if (vocal_ok   or
+            not en.empty() or
+            not uk.empty() or
+            not us.empty())
+                continue;
+
+            array<array<res>> list;
+
+            auto fill = [&list, &vocals](array<str>& units, str lang)
+            {
+                for (str ss: units)
+                {
+                    list += array<res>{};
+                    for (str s: ss.split_by("|")) for (res r: vocals)
+                    if (not r->options.contains("xlam"))
+                    if (r->options.contains(lang) or lang == "")
+                    if (r->abstract == s) list.back() += r;
+                    if (list.back().empty())
+                    report::errors +=
+                    "combine nonsense";
+                }
+            };
+
+            fill(entry.en, "");
+            fill(entry.uk, "uk");
+            fill(entry.us, "us");
+
+            int nn = 0;
+            auto combine = [&list, &nn, &entry]
+            (this auto const& combine, array<path> rr, int n) -> void
+            {
+                if (n >= list.size())
+                {
+                    path dst = "../data/combine/";
+                    dst += entry.abstract + " ### " + str(nn++) + ".wav";
+                    media::audio::combine(rr, dst, 0.1, 0.0, 0.0, false);
+                    return;
+                }
+                for (res r: list[n])
+                combine(rr + r->path, n+1);
+            };
+            combine({}, 0);
         }
 
         out << dark(bold("ONE: MAKE REPORTS..."));

@@ -10,22 +10,24 @@ antidepressant              = антидепрессант
 cannabis                    = конопля
 marijuana                   = марихуана
 
+---
 coca                        = кока
 cocaine                     = кокаин
-
 amphetamine                 = амфетамин
-ecstasy/extasy              = экстази
+ecstasy||extasy             = экстази
 
 depressant                  = депрессант
 sedative                    = седативный %% успокаивающий, болеутоляющий
 
 alcohol                     = алкоголь # duple
 barbiturate                 = барбитурат
+
 ---
 opium                       = опиум
 morphine                    = морфин, морфий
 codeine                     = кодеин
 heroin                      = героин
+
 ---
 hallucinogen                = галлюциноген
 psychedelic                 = психоделик, психоделический
@@ -34,5 +36,6 @@ LSD                         = ЛСД
 ===
 
 overdose                    = передозировка
+
 
 

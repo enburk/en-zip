@@ -1,4 +1,4 @@
-astronomy                 = астрономия                                    # pix-
+astronomy                 = астрономия
 
 telescope                 = телескоп, ~ складывать/складываться, ~ раздвигать/раздвигаться
 observatory               = обсерватория                                  # 10+
@@ -63,6 +63,7 @@ exoplanet ~ (extrasolar planet) = экзопланета ~ (внесолнечн
 
 Big Bang                  = Большой взрыв                                 # 10+
 singularity               = сингулярность                                 # MATH+ # 18+
+
 
 
 

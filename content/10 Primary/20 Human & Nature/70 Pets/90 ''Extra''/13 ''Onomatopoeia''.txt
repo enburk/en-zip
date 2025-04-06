@@ -1,9 +1,12 @@
 onomatopoeia
 
-arf/woof    = гав
+---
+arf         = гав
+woof        = гав
 bow-wow     = гав-гав %% также: собачка (детское)
 
 miaow\\meow = мяу, мяукать /// Am. also /mew/miau
 purr        = мур-р, мурлыкать, урчать
+
 
 

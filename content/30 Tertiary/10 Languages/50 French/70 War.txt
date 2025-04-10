@@ -2,13 +2,13 @@
 reconnaissance
 siege
 
-retreat
+retreat @ war
 surrender
 defeat
 disarm
 
 ---
-target
+target @ war
 : Target lock.
 
 javelin

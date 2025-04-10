@@ -11,8 +11,9 @@ praline                = пралине                                         
 sugar                  = сахар
 saccharin              = сахарин
 saccharine             = сахарный, приторный %% ''также в переносном смысле''
-syrup                  = сироп
+syrup @ food           = сироп
 /// Old French – sirop (Italian siroppo),
 /// в араб. sharab - питье, вино; sirup нестанд.
+
 
 

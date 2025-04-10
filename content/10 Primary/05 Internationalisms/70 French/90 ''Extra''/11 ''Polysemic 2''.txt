@@ -19,11 +19,12 @@ avant-garde                  = авангард, авангардный ~ (в и
 vanguard                     = авангард ~ (в военном деле)     # 14+ /// # figurative ?
 ***
 spectacle                    = спектакль, представление, зрелище
-spectacles                   = очки                            /// NEW
+spectacles @ glasses         = очки                            /// NEW
 spectacled cobra             = индийская кобра, ~ очковая змея /// NEW
 glasses @ eyeglasses         = очки                            /// NEW
 glasses @ vessels            = стекла, стаканы, бокалы         /// NEW
 goggles                      = защитные очки                   /// NEW
+
 
 
 

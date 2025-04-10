@@ -11,7 +11,9 @@ annoy//annoyance
 : Stop that! @ annoyed
 : Never mind! @ annoyed
 : Give it back! @ annoyed
+: I don't know. @ annoyed
 : I said alright. @ annoyed
+: Just a minute! @ annoyed
 : What's your problem? @ annoyed
 : What the hell do you want? @ annoyed
 

@@ -4,7 +4,7 @@ microscope     = микроскоп
 
 virus @ bio    = вирус
 microbe        = микроб
-bacteria       = бактерия
+bacteria       = бактерии
 
 colony @ bio   = колония                       # 14+
 culture @ bio  = культура                      # 14+

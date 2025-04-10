@@ -21,6 +21,9 @@ tatt                   = tattoo
 veg @ noun             = vegetarian, ~ vegetable(s)
 veg @ verb %% {verb}   = to vegetate, ~ to engage in complete inactivity, ~ to rest
 
+pecs                   = pectoral muscles
+abs                    = abdominal muscles
+
 ---
 cray @ crayfish        = crayfish
 cray @ crazy           = crazy
@@ -118,6 +121,7 @@ nuke @ weapon          = nuclear weapon
 detox                  = detoxification
 
 Tut                    = Tutankhamon
+
 
 
 

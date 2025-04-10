@@ -55,7 +55,7 @@ sad                       = грустный
 
 ---
 shy                       = застенчивый, стеснительный, ~ робкий
-crazy                     = сумашедший, безумный, ~ чокнутый
+crazy @ adjective         = сумашедший, безумный, ~ чокнутый
 : Are you crazy?
 : You're crazy!
 
@@ -63,6 +63,7 @@ crazy                     = сумашедший, безумный, ~ чокну
 beauty
 beautiful
 : You're so beautiful.
+
 
 
 

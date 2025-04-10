@@ -259,12 +259,15 @@ namespace studio::one
                 if (r->vocal() and noaudio) continue;
                 if (r->video() and nopixed) continue;
 
-                if (r->sound() and r->abstract == entry.abstract) sound_ok = true;
-                if (r->vocal() and r->abstract == entry.abstract) vocal_ok = true;
-                if (r->video()) video_ok = true;
-
                 if (r->vocal()) vocals += r;
                 if (r->video()) videos += r;
+
+                if (r->sound() and r->abstract != entry.abstract) continue;
+                if (r->vocal() and r->abstract != entry.abstract) continue;
+
+                if (r->sound()) sound_ok = true;
+                if (r->vocal()) vocal_ok = true;
+                if (r->video()) video_ok = true;
 
                 data.one_add(i, r);
             }
@@ -311,10 +314,7 @@ namespace studio::one
                 &course.entries[i],
                 std::move(videos));
 
-            if (vocal_ok   or
-            not en.empty() or
-            not uk.empty() or
-            not us.empty())
+            if (vocal_ok)
                 continue;
 
             array<array<res>> list;
@@ -328,15 +328,15 @@ namespace studio::one
                     if (not r->options.contains("xlam"))
                     if (r->options.contains(lang) or lang == "")
                     if (r->abstract == s) list.back() += r;
-                    if (list.back().empty())
-                    report::errors +=
-                    "combine nonsense";
+                    if (list.back().empty()) return false;
                 }
+                return true;
             };
 
-            fill(entry.en, "");
-            fill(entry.uk, "uk");
-            fill(entry.us, "us");
+            if (not fill(entry.en, "")
+            or  not fill(entry.uk, "uk")
+            or  not fill(entry.us, "us"))
+                continue;
 
             int nn = 0;
             auto combine = [&list, &nn, &entry]

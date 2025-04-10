@@ -11,7 +11,7 @@ faience|faïence         = фаянс                               # RARE+ # 18
 china                   = фарфор                              # 14+
 maiolica                = майолика %% разновидность керамики  # RARE+ # 18+
 
-grill                   = гриль ~ (решётка)                   # 10+
+grill @ food            = гриль ~ (решётка)                   # 10+
 bouillon cube {Am.}     = бульонный кубик                     # 14+
 gelatin|gelatine        = желатин, ~ иногда: желе             # 14+
 
@@ -24,6 +24,7 @@ conserve @ noun %% noun = консервированные фрукты         
 
 culinary                = кулинарный                          # TERM- # pix- # 14+
 culinarian              = кулинар                             # TERM- # pix- # 14+
+
 
 
 

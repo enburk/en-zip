@@ -4,11 +4,12 @@ snow           = снег
 dale           = дол, долина
 night          = ночь # duple
 
-tree           = дерево
+tree @ plant   = дерево
 birch          = береза
 nest @ bird    = гнездо
 wolf           = волк
 mouse @ animal = мышь
+
 
 
 

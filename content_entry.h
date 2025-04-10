@@ -128,6 +128,19 @@ namespace content::out
             if (sense != "@")
             if (sense != "") for (str& x: matches)
             if (sense != x) x += "@" + sense;
+
+            if (sense == "" and
+            not s.starts_with(": ")
+            and s.contains(str(u8" → ")))
+            {
+                sense = u8"→";
+                str last = (en*uk*us).back();
+                array<str> lasts = last.split_strip_by("|");
+                for (str& x: matches)
+                if (x != abstract and
+                not lasts.contains(x))
+                x += "@" + sense;
+            }
         }
 
         void parse (str s)

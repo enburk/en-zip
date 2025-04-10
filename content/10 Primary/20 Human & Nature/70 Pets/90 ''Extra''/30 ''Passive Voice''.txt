@@ -1,19 +1,19 @@
 grammar
-passive voice        = страдательный залог
+passive voice           = страдательный залог
 ===
 = образуется с помощью ~ глагола '''to be''' ~ в нужном времени
 = и '''past participle''' ~ (3-ей формы) ~ смыслового глагола
 ===
-past participial     = причастие прошедшего времени
+past participial        = причастие прошедшего времени
 ===
 = как и форма ~ простого прошедшего времени, ~ образуется добавлением ~ окончания '''–ed''' ~ к ''правильным'' глаголам
 ===
 
-open → open'''ed'''  = открыт, открытый
-close → clos'''ed''' = закрыт, закрытый
+open → open'''ed'''     = открыт, открытый
+close → clos'''ed''' @@ = закрыт, закрытый
 
 ===
-irregular verbs      # HEAD
+irregular verbs         # HEAD
 ===
 
 do → did, done
@@ -34,7 +34,7 @@ make → made, made
 ===
 
 : Sorry, the shop '''is closed'''.
-: So I '''was told'''. = Так мне сказали.
+: So I '''was told'''.  = Так мне сказали.
 
 : '''Are''' we '''supposed''' to be here?
 : How could it best '''be done'''?
@@ -48,7 +48,8 @@ make → made, made
 
 ===
 
-to be continued      = продолжение следует
+to be continued         = продолжение следует
+
 
 
 

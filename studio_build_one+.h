@@ -275,7 +275,7 @@ namespace studio::one
             ("sound");
         }
 
-        auto& medios (Res& r) { return videolike(r) ? videos : audios; }
+        auto& map (Res& r) { return videolike(r) ? videos : audios; }
 
         sensecontrol
         (
@@ -288,6 +288,7 @@ namespace studio::one
             {
                 str title = s;
                 str sense = title.extract_from("@");
+                if (sense != "" and sense != str(u8"→"))
                 course[title][&entry] = false;
                 senses[title].emplace(s);
             }
@@ -297,20 +298,30 @@ namespace studio::one
             {
                 str title = e;
                 str sense = title.extract_from("@");
-                if (sense != "") medios(r)[title][&r] = false;
+                if (sense != "") map(r)[title][&r] = false;
+                if (sense != "") senses[title].emplace(e);
             }
 
             // add sensless also
-            // for listing of examples
+            // for listing of occurrences
+
+            for (auto& entry: entries) if (entry.sense == "" or entry.sense == "@")
+            for (str s: entry.matches)
+                if (course.contains(s)
+                or  audios.contains(s)
+                or  videos.contains(s))
+                course[s][&entry] = true;
 
             for (auto& r: resources)
             for (auto& e: r.Entries())
             {
                 str title = e;
                 str sense = title.extract_from("@");
-                if (sense == "" &&
-                medios(r).contains(title))
-                medios(r)[title][&r] = false;
+                if (sense == "" and not r.vocal())
+                if (course.contains(title)
+                or  audios.contains(title)
+                or  videos.contains(title))
+                map(r)[title][&r] = true;
             }
 
             for (auto& entry: entries)
@@ -363,7 +374,7 @@ namespace studio::one
                 str sense = title.extract_from("@");
                 if (sense != "") continue;
 
-                if (medios(r).contains(title)
+                if (map(r).contains(title)
                 or  course.contains(title) and videolike(r))
                 {
                     if ( // prevent multiple reports
@@ -378,9 +389,9 @@ namespace studio::one
                     for (auto [e,_]: course[title])
                     report::errors += link(e);
 
-                    if (medios(r).contains(title))
-                    for (auto [r,_]: medios(r)[title])
-                    report::errors += link(r);
+                    if (map(r).contains(title))
+                    for (auto [x,_]: map(r)[title]) if (x != &r)
+                    report::errors += link(x);
                 }
             }
         }

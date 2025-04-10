@@ -1,9 +1,10 @@
 Arawakan ~ languages = аравакские языки %% языки идейцев ~ северной и центральной части ~ Южной Америки # 12+
 
-barbecue             = барбекю # MEAT # 10+ /// Arawakan
+barbecue @ food      = барбекю # MEAT # 10+ /// Arawakan
 canoe                = каноэ # 10+ /// Arawakan
 hammock              = гамак /// Arawakan
 savanna|savannah     = саванна /// Taino (Arawakan)
 iguana               = игуана /// Arawakan
+
 
 

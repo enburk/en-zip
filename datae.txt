@@ -33,8 +33,11 @@ Achilles heel, Achilles' heel ### 0.wav
 ah!, aah! ### 0.wav
 ah!, aah! ### 1.wav
 aha!, a-ha! ### 0.wav
+alpha, beta, gamma, delta ### 0.wav
 and behold, and, behold ### 0.wav
 and behold, and, behold ### 1.wav
+anyway, anyhow ### 0.wav
+anyway, anyhow ### 1.wav
 anyway, anyways ### 0.wav
 anyway, anyways ### 1.wav
 arcade machine, arcade cabinet ### 0.wav
@@ -44,6 +47,8 @@ arcade machine, arcade cabinet ### 3.wav
 arrest warrant, warrant of arrest ### 0.wav
 arrest warrant, warrant of arrest ### 1.wav
 Asclepius, Aesculapius ### 0.wav
+asphalt, bitumen ### 0.wav
+asphalt, bitumen ### 1.wav
 asymmetric, asymmetrical ### 0.wav
 Aztec, Aztecs ### 0.wav
 barque, bark ### 0.wav
@@ -56,6 +61,10 @@ bike, motorbike, motorcycle ### 0.wav
 bike, motorbike, motorcycle ### 1.wav
 bike, motorbike, motorcycle ### 2.wav
 bike, motorbike, motorcycle ### 3.wav
+block, blocked shot ### 0.wav
+block, blocked shot ### 1.wav
+Board, board ### 0.wav
+Board, board ### 1.wav
 boombox, boom box ### 0.wav
 boombox, boom box ### 1.wav
 borsch, borscht ### 0.wav
@@ -79,16 +88,22 @@ cafe, café ### 1.wav
 calends, kalends ### 0.wav
 Callisto, Kallisto ### 1.wav
 Callisto, Kallisto ### 2.wav
+catch, caught, caught ### 0.wav
+catch, caught, caught ### 1.wav
+catch, caught, caught ### 2.wav
 champ, chomp ### 0.wav
 champ, chomp ### 1.wav
 champ, chomp ### 2.wav
 champ, chomp ### 3.wav
 champ, chomp ### 4.wav
 champ, chomp ### 5.wav
+chief, boss ### 0.wav
+chief, boss ### 1.wav
 choir, chorus ### 0.wav
 chow chow, Chow Chow ### 0.wav
 cliché, cliche ### 0.wav
 cliché, cliche ### 1.wav
+close, closed ### 0.wav
 commander in chief, commander-in-chief ### 0.wav
 communist, Communist ### 0.wav
 confederation, confederacy ### 0.wav
@@ -108,6 +123,9 @@ detective story, detective novel ### 0.wav
 dialectic, dialectics ### 0.wav
 dialectic, dialectics ### 1.wav
 disk, disc ### 0.wav
+do, did ### 0.wav
+do, did ### 1.wav
+do, did ### 2.wav
 début, debut ### 0.wav
 décolleté, decolletage ### 0.wav
 décolleté, decolletage ### 1.wav
@@ -119,7 +137,21 @@ ecstasy, extasy ### 3.wav
 ecstasy, extasy ### 4.wav
 ecstasy, extasy ### 5.wav
 effendi, effendy ### 0.wav
+epsilon, zeta, eta, theta ### 0.wav
+epsilon, zeta, eta, theta ### 1.wav
+epsilon, zeta, eta, theta ### 10.wav
+epsilon, zeta, eta, theta ### 11.wav
+epsilon, zeta, eta, theta ### 2.wav
+epsilon, zeta, eta, theta ### 3.wav
+epsilon, zeta, eta, theta ### 4.wav
+epsilon, zeta, eta, theta ### 5.wav
+epsilon, zeta, eta, theta ### 6.wav
+epsilon, zeta, eta, theta ### 7.wav
+epsilon, zeta, eta, theta ### 8.wav
+epsilon, zeta, eta, theta ### 9.wav
 Erinyes, Furies ### 0.wav
+expertise, examination ### 0.wav
+expertise, examination ### 1.wav
 faience, faïence ### 0.wav
 faience, faïence ### 1.wav
 flash mob, flashmob ### 0.wav
@@ -146,6 +178,7 @@ halva, halwa ### 0.wav
 halva, halwa ### 1.wav
 Hasid, Hassid ### 0.wav
 Hasid, Hassid ### 1.wav
+hear, heard ### 0.wav
 Heracles, Hercules ### 0.wav
 Heracles, Hercules ### 1.wav
 Hermes, Mercury ### 0.wav
@@ -175,6 +208,7 @@ incrustation, inlay ### 0.wav
 inert gas, noble gas ### 0.wav
 inert gas, noble gas ### 1.wav
 Internet, internet ### 0.wav
+iota, kappa, lambda, mu ### 0.wav
 judoka, judoist ### 0.wav
 judoka, judoist ### 1.wav
 kippa, kippah ### 0.wav
@@ -188,10 +222,14 @@ Mahicans, Mohicans ### 3.wav
 makeup, make-up ### 0.wav
 makeup, make-up ### 1.wav
 man, men ### 1.wav
+mass, Mass ### 0.wav
+mass, Mass ### 1.wav
 masterclass, master class ### 0.wav
 Maya, Mayans ### 0.wav
 missus, missis ### 0.wav
 missus, missis ### 1.wav
+model, sitter ### 0.wav
+model, sitter ### 1.wav
 must-have, must have ### 0.wav
 Möbius strip, Möbius band ### 0.wav
 narwhal, narwhale ### 0.wav
@@ -205,8 +243,13 @@ party horn, party blower ### 0.wav
 per mille, per mil ### 0.wav
 per mille, per mil ### 1.wav
 perigee, apogee ### 0.wav
+period, periods ### 0.wav
+personnel, staff ### 0.wav
+personnel, staff ### 1.wav
 Petri dish, petri dish ### 0.wav
 Petri dish, petri dish ### 1.wav
+phi, chi, psi, omega ### 0.wav
+phi, chi, psi, omega ### 1.wav
 Picasso triggerfish, lagoon triggerfish ### 0.wav
 playwright, dramatist ### 0.wav
 Pole Star, Polaris ### 0.wav
@@ -227,9 +270,15 @@ Ragnarök, Ragnarok ### 0.wav
 Raphael, Raphaello ### 0.wav
 Raphael, Raphaello ### 1.wav
 reductio ad absurdum, proof by contradiction ### 0.wav
+register, registry ### 0.wav
 Russian salad, Olivier ### 0.wav
 Russian salad, Olivier ### 1.wav
 résumé, resume ### 0.wav
+see, saw ### 0.wav
+serve, service ### 0.wav
+serve, service ### 1.wav
+serve, service ### 2.wav
+serve, service ### 3.wav
 Shar Pei, Shar-Pei ### 0.wav
 Shar Pei, Shar-Pei ### 2.wav
 Shar Pei, Shar-Pei ### 3.wav
@@ -277,10 +326,12 @@ water poloist, water polo player ### 0.wav
 whisky, whiskey ### 0.wav
 whisky, whiskey ### 1.wav
 whisky, whiskey ### 2.wav
+woman, women ### 0.wav
 yada yada, yadda yadda ### 0.wav
 yada yada, yadda yadda ### 1.wav
 yatagan, yataghan ### 0.wav
 yatagan, yataghan ### 1.wav
+yeti, abominable snowman ### 0.wav
 yogurt, yoghurt ### 0.wav
 éclair, eclair ### 0.wav
 >>> ../datae\audio/!unknown
@@ -552,11 +603,11 @@ A Flat Major [A].mp3
 A Major [A].mp3
 A Minor Harmonic [A][minor@scale].mp3
 A Minor Melodic [A][minor@scale].mp3
-B Flat Major [B][flat@music].mp3
-B Flat Minor Harmonic [B].mp3
-B Flat Minor Melodic [B].mp3
-B Major [B].mp3
-B Minor Harmonic [B].mp3
+B Flat Major [B@note][flat@music].mp3
+B Flat Minor Harmonic [B@note].mp3
+B Flat Minor Melodic [B@note].mp3
+B Major [B@note].mp3
+B Minor Harmonic [B@note].mp3
 C Major [C][major@scale].mp3
 C Minor Harmonic [C].mp3
 C Minor Melodic [C].mp3
@@ -1199,7 +1250,7 @@ Do you know what time it is~!.ogg
 Fillers fill up the space..ogg
 Go straight, go left, go right, here we are..ogg
 How are you~!.ogg
-I don't know..ogg
+I don't know. @@.ogg
 I love you..ogg
 If you don't know, I don't know who does..ogg
 Inhaling--exhaling again and again. [inhaling][exhaling].ogg
@@ -1403,6 +1454,7 @@ Some people think that Columbus discovered that the _Earth is round.txt
 >>> ../datae\audio\lectures {{ttc}}\{{}}/_Prof. Anne Curzan ## us
 >>> ../datae\audio\lectures {{ttc}}\{{}}\_Prof. Anne Curzan ## us/1
 99.ogg
+A @ letter.ogg
 a benchwarmer.ogg
 a child.ogg
 a combo.ogg
@@ -1419,7 +1471,6 @@ a phrase.ogg
 a retronym.ogg
 a shibboleth.ogg
 a skirt.ogg
-a.ogg
 absurdity.ogg
 acquit.ogg
 ad hoc.ogg
@@ -2168,7 +2219,7 @@ Come on, get to the point!.ogg
 Everything OK~!.ogg
 Have you got the time on you, please~!.ogg
 I beg your pardon~!.ogg
-I don’t understand..ogg
+I don’t understand. @@.ogg
 I haven’t got anything to declare..ogg
 I hope to see you soon..ogg
 >>> ../datae\audio\podcasts\{{!Hot English Magazine}}\{{}}/idioms
@@ -3141,7 +3192,7 @@ miraculous.ogg
 miscellaneous.ogg
 miserable.ogg
 mix-up.ogg
-mm.ogg
+mm @@.ogg
 mobile phone.ogg
 Mongolia.ogg
 mountaineer.ogg
@@ -4162,7 +4213,7 @@ Problems~!.ogg
 Thank you. @@.ogg
 That's true..ogg
 What a wimp..ogg
-What's wrong~!.ogg
+What's wrong~! @@.ogg
 Yes, I do..ogg
 You are very welcome..ogg
 You're so clever..ogg
@@ -7769,7 +7820,7 @@ Pharisee.wav
 pharmacist.wav
 pharmacology [=].wav
 phenomenon.wav
-phew!.wav
+phew! @@.wav
 phi.wav
 philology.wav
 philosopher.wav
@@ -11144,7 +11195,6 @@ conic section [=].wav
 consensus [=].wav
 conservative.wav
 conserve @ noun ### [`conserve].wav
-conserve @ verb ### [con`serve].wav
 consolidation [=].wav
 consonance [=].wav
 constant.wav
@@ -13717,7 +13767,6 @@ when.wav
 who.wav
 widow.wav
 will.wav
-wow.wav
 yam.wav
 yes and no.wav
 yoga.wav
@@ -13758,11 +13807,9 @@ capsule.wav
 coconut.wav
 confections.wav
 conflict.wav
-conserve.wav
 democracy.wav
 dialect.wav
 empty.wav
-escort.wav
 excavator.wav
 fan.wav
 finger.wav
@@ -14348,8 +14395,8 @@ Jabberwocky.ogg
 mop.ogg
 muchness.ogg
 Never!.ogg
-phew!.ogg
-Please!.ogg
+phew! @@.ogg
+Please! @@.ogg
 ready.ogg
 Ridiculous!.ogg
 soup.ogg
@@ -15188,7 +15235,7 @@ I'm not shouting..ogg
 Let go of me, you idiot!.ogg
 That is what I mean..ogg
 The bastards. ## course-.ogg
-What~!.ogg
+What~! @ incredulous.ogg
 When I turn you both loose, go. Break clean in the clinches and come back fighting. Go!.ogg
 When I turn you both loose, go. Break clean in the clinches and come back fighting. Go!.txt
 Who is that lunatic, anyway~!.ogg
@@ -15298,7 +15345,7 @@ goodbye to my sleep for this night anyhow.txt
 goodbye to my sleep for this night anyhow.wav
 He sighed aside.txt
 He sighed aside.wav
-Her name and address she then told with my tooraloom tooraloom tay. [address][tooraloo].wav
+Her name and address she then told with my tooraloom tooraloom tay. [+][tooraloo].wav
 I moved among them on the frozen Liffey.txt
 I moved among them on the frozen Liffey.wav
 I wish somebody would write me a loveletter.txt
@@ -15705,7 +15752,7 @@ I am not superstitious..wav
 I am not used to be spoken to that way, sir; I do but less than half like it, sir..wav
 I am the architect, not the builder..wav
 I did not like that plan at all..wav
-I don’t know..wav
+I don’t know. @@.wav
 I feel funny. Fa, la! lirra, skirra!.wav
 I saw it..wav
 I try all things; I achieve what I can..wav
@@ -17799,7 +17846,7 @@ Do not. ## course-.wav
 Don't you see~!.wav
 Economically the city gains. ## course-.wav
 Excellent!.wav
-Fire!.wav
+Fire! @ call.wav
 for a good while.wav
 for a long time.wav
 for a while.wav
@@ -17819,14 +17866,14 @@ How could it best be done~!.wav
 How dreadful!.wav
 How good it felt..wav
 How would you like that~!.wav
-Hurry up!.wav
+Hurry up! @@.wav
 I am afraid indeed....wav
 I believe that is a bad word!.wav
 I cannot say..wav
 I did my very best..wav
 I forgot it..wav
 I knew it!.wav
-I know..wav
+I know. @@.wav
 I must confess.wav
 I must go..wav
 I resolved. [resolved].wav
@@ -17847,7 +17894,7 @@ La!.wav
 Look, it's beginning to rain..wav
 Morning, _James!.wav
 Nay!.wav
-No!.wav
+No! @@.wav
 No, not a might..wav
 Oh, but that doesn't count..wav
 Oh, how beautiful!.wav
@@ -17891,7 +17938,7 @@ What for~!.wav
 What is to be done~!.wav
 What man has done man can do..wav
 What more could I want~!.wav
-What's that~!.wav
+What's that~! @@.wav
 What's to be done now~!.wav
 What~! @@.wav
 What’s the matter~!.wav
@@ -18276,7 +18323,7 @@ Are you okay~!.wav
 At this point I just couldn't be sure..wav
 Bugger off!.wav
 Cogitating, huh~!.wav
-Come on!.wav
+Come on! @@.wav
 Considering my suspicions I thought a little more caution might be advisable..wav
 Go wild!.wav
 Hello to you too..wav
@@ -19828,7 +19875,7 @@ So I win. Or lose. Maybe both..wav
 Star Wars is not a documentary..wav
 Stop judging..wav
 Strychnine~! Like... the stuff you put in rat poison~!.wav
-Surprise! ## course-.wav
+Surprise!.wav
 That's totally barbaric..wav
 the genitals.wav
 This is exactly what I'm talking about..wav
@@ -19883,8 +19930,8 @@ Hollow ''coo coo'' or ''coo coo coo'' of the {black-billed {cuckoo}}..ogg
 Distressed ''what~! what~! what~!'' of the {wood {duck}}..ogg
 Rapid flight song of the {short-billed {dowitcher}}..ogg
 >>> ../datae\audiobooks--\John Feith - Who Cooks for Poor Sam Peabody ## course-/dove
-Mournful ''hoo-la-hoop, hoop, hoop'' of the {mourning {dove}}. [mournful].ogg
-Soft {cooing} and loud wing flaps of the {rock {dove}}..ogg
+Mournful ''hoo-la-hoop, hoop, hoop'' of the {mourning dove}. [mournful][dove@bird].ogg
+Soft {cooing} and loud wing flaps of the {rock dove}. [dove@bird].ogg
 >>> ../datae\audiobooks--\John Feith - Who Cooks for Poor Sam Peabody ## course-/E
 Descending weeny scream and harsh ''cree, cree, cree'' calls of the {bald {eagle}}..ogg
 Hoarse low-pitched {croaks} of the {great {egret}}. [hoarse].ogg
@@ -22102,7 +22149,7 @@ brandt burbling ### BirdBrandt IN01_03.wav
 carrion crow (Corvus corone) ### BirdCarrionCrow_DIGIC03-10.wav
 cheeping ### Backgrounds-Jungle-Saipan-Day_BON-00075.wav
 chirping ### KnockoutChirpBir CRT2030801.wav
-coo-coo ## crop 0-5 ## fade out ### BirdCuckoo_DIGIFX2-81.wav
+coo-coo @ bird ## crop 0-5 ## fade out ### BirdCuckoo_DIGIFX2-81.wav
 crow caws ### Crow-Caw-Tepid-x3_B07-00655.wav
 currawong ### KurrawongChirpingN PE913202.wav
 dove~pigeon coos ### DovePigeonCoo PE912203.wav
@@ -22120,7 +22167,7 @@ gooney bird [goony] ### BirdsAmbGoonyBirdC APS10324.wav
 hummingbird wing flapping ### BirdHummingbird JBA03_35_1.wav
 hummingbird wing flutters ### HummingbirdWingFlu FS058801.wav
 hummingbird wing flutters ### HummingbirdWingFlu FS058805.wav
-jay.. piercing and nagging calls [jay] ### Birds-Jay-Ext-Close-Up-Pier_B04-01362.wav
+jay.. piercing and nagging calls [jay@bird] ### Birds-Jay-Ext-Close-Up-Pier_B04-01362.wav
 lilac-breasted roller (Coracias caudatus) [Coracias][Coraciidae] ### LilacBreastedRolle PE547901.wav
 lilac-breasted roller (Coracias caudatus) [Coracias][Coraciidae] ### LilacBreastedRolle PE547902.wav
 Magellanic penguins braying ### Penguin JBA02_54.wav
@@ -22291,8 +22338,8 @@ baby whining ### Baby-D_Fussy-Whining_VKT_17336.wav
 baby.. very upset crying, cantankerous ### Baby-1MonthOld-Int-Clos-140_B04-00581.wav
 Da Da Da ### Baby-B_Da-Da-Da_VKT_17308.wav
 bite ### BiteVegetablePeppe PE391603.wav
-blow ### HUMAN-BLOW_GEN-HDF-14829.wav
-blow ### HUMAN-BLOW_GEN-HDF-14832.wav
+blow @ air ### HUMAN-BLOW_GEN-HDF-14829.wav
+blow @ air ### HUMAN-BLOW_GEN-HDF-14832.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans/body
 back pats and rub ### BackPatsRub HF038510.wav
 body frisk and pat down ### BodyFriskPatDown HF038701.wav
@@ -22363,7 +22410,7 @@ grit, run, boots ### Feet-Grit-Walk-Boots_B07-00999.wav
 grit, run, slide ## crop 8- ### Feet-Sand-Grit-Run-Slide_B07-01052.wav
 man walks and staggers in snow ## crop 0-13 ## fade out ### FSManWalksStaggers HF036901.wav
 rhythmic stomp & clap ### Crowd50IntRhythmi LCA017501.wav
-running ### FootstepsRunning 1013_30.wav
+running @ sport ### FootstepsRunning 1013_30.wav
 running up on gravel ### FootstepsGravel IN13_25.wav
 school corridor.. footsteps and shuffle ### SchoolCorridorFSSh PE964601.wav
 slow stride on hard surface [stride] ## crop 0-19 ### FoleyFootsteps-CementSton-1_B06A-02914.wav
@@ -22456,8 +22503,8 @@ gulps ### GulpsDrinking2x HF027901.wav
 pouring beer with glugs [glug] ### BeerBottlePourGlug PE580210.wav
 pouring wine with glugs ### PourWineGlugs PE581506.wav
 hack & spit ### Cough-Male-Hack-Spit-Disgus_B07-00647.wav
-heartbeat [heart][beat] ## crop 0-5 ## fade out  ### HeartBeat3Fast SDT2036403.wav
-heartbeat [heart][beat] ## crop 0-5 ## fade out ### SlowHeartbeats WHO01_66_1.wav
+heartbeat [heart@anatomy][beat] ## crop 0-5 ## fade out  ### HeartBeat3Fast SDT2036403.wav
+heartbeat [heart@anatomy][beat] ## crop 0-5 ## fade out ### SlowHeartbeats WHO01_66_1.wav
 hic ### CartoonHiccup 4003_35_2.wav
 hiccup ### HumanHiccup CTE03_34.1.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans\physiology/slurp
@@ -22678,7 +22725,7 @@ sigh of relief ### [Adult-Fem_Sigh-of-Relief_VKT_18049].wav
 sigh of relief ### [Adult-Fem_Sigh-of-Relief_VKT_18050].wav
 sighing ### HumanSnore_DIGII04-32.wav
 struggling, breathing and panting ### Adult-Fem_Struggling-Breathing-and-Panting_VKT_17391.wav
-whistle ### Whistle 6037_92_1.wav
+whistle @ sport ### Whistle 6037_92_1.wav
 whistle.. short shaky blow ### WhistleShortShakyBlowB.wav
 wolf whistle ### [Adult-Fem_Wolf-Whistle_VKT_18156].wav
 yawn ### [HumanYawn 6032_43_3].wav
@@ -22697,7 +22744,7 @@ funk segue ### FunkSeguesTags MIX60_41_5.wav
 funk segue ### FunkSeguesTags MIX60_42_5.wav
 gamelan ethnic drums [gamelan] ### MusicTransEthniDr SDT048901.wav
 hard rock, thrash ### HardRock CE02_63_3.wav
-stride piano the way it should be played [stride][piano] ## crop 74-107 ## fade ### 37-Mr-Stride_Full_FM2194.wav
+stride piano the way it should be played [stride][piano@stride] ## crop 74-107 ## fade ### 37-Mr-Stride_Full_FM2194.wav
 techno ### MusicAccents LE01_52_2.wav
 the Star Spangled Banner, a capella [Star Spangled Banner] ### MusicAnthem SME01_01.1.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### music/instr
@@ -22711,7 +22758,7 @@ kazoo ### MusicFx IMA01_35_1.wav
 mouth harp ### BoingCartoon CTE01_39.5.wav
 mouth organ ### MouthOrganDescendi MA025603.wav
 mouth organ ### MouthOrganShrtFstG MA026602.wav
-organ ### OrganTaunt SME01_63.1.wav
+organ @ music ### OrganTaunt SME01_63.1.wav
 sitar ### MUSIC-SITAR_GEN-HDF-17877.wav
 twangy sitar accent [twangy][sitar] ### SitarAccents EC10_99_5.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### music/instr-brass
@@ -22796,7 +22843,7 @@ somber spanish guitar tag ### SoloGuitarAccents LE02_59_1.wav
 steel guitar.. chordal wobble ### GuitarComedy CTE06_09.6.wav
 ta-da accent ### GuitarComedy CTE05_65.3.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### music/instr-woodwind
-flute ## course- ### FluteShrtLightFl SDT2056701.wav
+flute @ music ## course- ### FluteShrtLightFl SDT2056701.wav
 melancholic arpeggio chord, long sustain ### ElectGuitarMelanch MA022101.wav
 reverberant ### ElectGuitarLowTone MA023301.wav
 reverberate ### ElectGuitarLowTone MA023302.wav
@@ -22912,7 +22959,7 @@ digital camera.. self winding ### CameraDigital_DIGIG01-38.wav
 digital camera... rapid shots ### CAMERA-DIGITAL_GEN-HDF-05800.wav
 cash register tapping & ding ### CashRegisterTappin PE966601.wav
 cassette player ## = ### STEREO-BOOM-BOX_GEN-HDF-21810.wav
-click ### [HighpitchedMouseSi PE413307].wav
+click @ comp ### [HighpitchedMouseSi PE413307].wav
 data scramble ### DataScrambleScanni MM016001.wav
 echocardiograph [electrocardiogram] ### Electrocardiogram PE145901.wav
 electric fizzle ### Electric-JacobsLadder-In-5_B04-03936.wav
@@ -22927,7 +22974,7 @@ key stroke ### TypewriterManual 6109_84_1.wav
 laser printer ### COMPUTER-PRINTER_GEN-HDF-08364.wav
 PC.. startup with aborted boot up ### PcStartupAbortedBo PE411501.wav
 phone ring.. slightly muffled then unmuffled ### Telephones-Motorola550Ce-38_B04-08093.wav
-phonograph, stylus slides across record [phonograph][stylus] ### RecordPlayer_DIGIB03-73.wav
+phonograph, stylus slides across record [phonograph][stylus@phono] ### RecordPlayer_DIGIB03-73.wav
 photocopier ### PHOTOCOPIER_GEN-HDF-19028.wav
 sewing machine.. staggered line ### SEWING-MACHINE_GEN-HDF-20985.wav
 subwoofer single woosh ### SubwooferSnglWhoo PE1081801.wav
@@ -23003,7 +23050,7 @@ slicing carrot ### FOOD-SLICE_GEN-HDF-11428.wav
 slicing hard vegetable ### FoodSlice 6105_72_3.wav
 slicing hard vegetable ### FoodSlice 6105_72_4.wav
 tea kettle off ### TeaKettleOff PE972201.wav
-toast ### GlassClinkToastDbl PE582627 (1).wav
+toast @ drink ### GlassClinkToastDbl PE582627 (1).wav
 toaster.. pop up ### Toaster-Up_GEN-HD4-44484.wav
 toaster.. pop up ### TOASTER_GEN-HDF-23375.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\food/utensils
@@ -23026,7 +23073,7 @@ small plastic cereal bowl.. drop and spin ### Dishes-Bowl-Plastic-Cereal-Drop-An
 spatula.. scrape in large frying pan ### Dishes-Spatula-Plastic-Pan-Scrape_GEN-HD2-29452.wav
 water dropped on hot stove, sizzle ### WaterSizzle 6088_60_1.wav
 watermelon ### BiteJuicyWatermelo PE390401.wav
-fuse ### [FuseSizzleStrong CRT2046901].wav
+fuse @ fire ### [FuseSizzleStrong CRT2046901].wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various/home & office
 accordion door shut ### DoorMetalAccordianShutA.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\home & office/alarm
@@ -23072,7 +23119,7 @@ perfume spray ### [BOTTLE-PERFUME_GEN-HDF-04683].wav
 plunge @ into ### Plunger 6032_74_1.wav
 plunge @ into ### Plunger 6032_74_2.wav
 rubber plunger plunging ### Plunger 6117_76_1.wav
-scrub ### Brush-Toilet-Scrub_GEN-HD2-28238.wav
+scrub @ brush ### Brush-Toilet-Scrub_GEN-HD2-28238.wav
 scrubbing bathtub ## crop 0-28 ## fade ### BrushScrub_DIGIB03-52.wav
 shaving bowl, brushing up lather ## crop 0-8 ## fade ### ShavCreamBowlBrush PE695701.wav
 shaving bowl, brushing up lather ## crop 8- ## fade ### ShavCreamBowlBrush PE695701.wav
@@ -23138,7 +23185,7 @@ flip through the pages ### BOOK-HARDCOVER_GEN-HDF-04403.wav
 furious crumpling ### Paper-PaperBagRustle-and-Moveme_B01-06895.wav
 gift wrapping paper.. roll up ### Paper-Wrapping-Roll-Up_GEN-HD4-42958.wav
 leaf through file folders in cabinet drawer ### FileFolder 6028_66_3.wav
-magazine ### BookMagazine 9001_51_2.wav
+magazine @ press ### BookMagazine 9001_51_2.wav
 marker pen, felt-tip ## crop 0-4 ### PenMarker_DIGIF5-69.wav
 marker pen, felt-tip ## crop 4-12 ### PenMarker_DIGIF5-69.wav
 paper shuffling ### Paper-PaperShuffling-CU-T-1_B05-06682.wav
@@ -23151,7 +23198,7 @@ scissors cut paper ## crop 0-9 ### Scissors-Cut-Paper_OBIN_872.wav
 stack of papers slide off table ### Paper-StackOfPapers-Int-C-1_B05-06706.wav
 stack of papers slide off table ### Paper-StackOfPapers-Int-C-3_B05-06708.wav
 stack of papers slide off table ### Paper-StackOfPapers-Int-C-7_B05-06712.wav
-stamp ### STAMP-PRICER_GEN-HDF-21699.wav
+stamp @ mark ### STAMP-PRICER_GEN-HDF-21699.wav
 thick paper crease ### PaperPoster 6117_70_3.wav
 torn cheque ### ChequeTear 6045_85_2.wav
 turn the page ### Book 6102_68_2.wav
@@ -23239,7 +23286,7 @@ electric arc sizzle ### ElectArcSizzleMid PE1030427.wav
 extension ladder.. climb up ### Ladder 6032_47_3.wav
 firestarter ### FireStarter6ch SEG017401.L.wav
 firestarter ### FireStarter6ch SEG018301.L.wav
-flare ### [BreakStreetFlareD AHS024801].wav
+flare @ torch ### [BreakStreetFlareD AHS024801].wav
 grave digger ### GraveDigger TFH01_67.wav
 grinder ### [GrinderPepper 6020_97_4].wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\industy-tools/hammer
@@ -23352,19 +23399,19 @@ thaw, thin ice rasping, early morning ## crop 0-17 ### IceCrack_DIGIC03-46.wav
 babbling brook ### WaterLiquid-BabblingBrook-C_B01-09458.wav
 bay water lapping against shore ## fade out ### BayWaterLappingAga PE992602.wav
 breaking wave ### [WaterOcean 6100_13].wav
-cataract ## crop 0-15 ## fade out ### [City-Ambience-Niagara-Falls_GEN-HD4-39693].wav
+cataract @ falls ## crop 0-7 ## fade out ### [City-Ambience-Niagara-Falls_GEN-HD4-39693].wav
 drip ### DripSmlDripAfterDr PE990301.wav
 echoey cave drips ### EchoeyCaveDripsWa SIG021005.wav
 echoey cave drips ### EchoeyCaveDripsWa SIG021006.wav
 gurgle ## crop 0-15 ## fade out ### WaterGurgle_DIGIC05-19.wav
 splash ### WaterSplashArmHitsC.wav
-surf ## crop 0-30 ## fade out ### [BroadWarmSurfPebbl PE784301].wav
+surf @ waves ## crop 0-10 ## fade out ### [BroadWarmSurfPebbl PE784301].wav
 surf.. gentle water lap ### OceanGentleWater SDT2045604.wav
 surf.. strong water lap ### OceanStrongWaveO SDT2045504.wav
 water churning ## fade out ### WaterChurningStdy HF075501.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\nature/wind
 buffeting wind ## crop 0-14 ## fade out ### BuffetingWindHigh AHS028101.wav
-gust ### [IndGustWind PE780101].wav
+gust @ wind ### [IndGustWind PE780101].wav
 storm ### [Wind-Ocean-Storm-Constant-Squall_WND01-151].wav
 storm, wind gusts ## crop 0-15 ## fade out ### [HeavyWindGustingHo PE033501].wav
 wind gust.. heavy and wispy ### WindGustHeavyWisp TE2021901.wav
@@ -23388,7 +23435,7 @@ hotel desk bell ### [BELL-DESK_GEN-HDF-03265].wav
 Irish jig on wooden floor ## crop 0-12 ## fade out ### FootstepWood IN12_71.wav
 judge's gavel in courtroom ### Gavel_DIGIF3-43.wav
 large cathedral [ambience][echoing] ## crop 0-15 ## fade ### CROWD-CHURCH_GEN-HDF-08796.wav
-movie director, quiet on the set [set] ### HumanVocal IN14_42.wav
+movie director, quiet on the set [quiet on the set][set@movie] ### HumanVocal IN14_42.wav
 parade ambience.. approaching marching drums ## crop 0-63 ## fade out ### ParadeAmbienceAppr CT020201.wav
 party horn, party blower ### [HornParty 2017_88_1].wav
 radio dispatch callouts ## crop 0-9 ### RadioDispatchCallouts.wav
@@ -23418,7 +23465,7 @@ shake ### THERMOS-METAL_GEN-HDF-23278.wav
 shut down ### M60TankExtIdleShut AZ022501.wav
 shut down ### PowerDownElectShut SE053901.wav
 sparkler ### [SparklerMatchLig CRT2047101].wav
-spin ### LidMetal 9006_49_4.wav
+spin @ move ### LidMetal 9006_49_4.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various/sports & games
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\sports & games/!chant
 basketball chants.. airball ### Sports-Basketball-Crowd_BON-00823.wav
@@ -23467,8 +23514,8 @@ dice shake and roll onto table ### DiceShakeRollDiceS FS051001.wav
 dominoes clack ### DominoesClack.wav
 flip through the deck of cards ### Cards 6010_55_5.wav
 playing cards.. shuffling ### Playing-Cards-Shuffle_OBIN_768.wav
-riffle ### CardsShuffleDeck WES100801.wav
 riffle ### CardsShuffleDeck WES101001.wav
+riffle shuffle [riffle@shuffle][dovetail shuffle] ### CardsShuffleDeck WES100801.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\sports & games/bowling
 ball that rolls off the lane into the gutter ### BowlingBallRollsG WES013601.wav
 ball that rolls off the lane into the gutter ### Sports-Bowling-MediumShot-2_B04-07794.wav
@@ -23478,8 +23525,8 @@ bowling.. gutter ball ### BowlingGutterBall SS021203.wav
 boxer skipping.. various speeds and styles ## crop 0-12 ### BOXING-GYMNASIUM_GEN-HDF-05433.wav
 boxing gloves hitting hand held pads ### BOXING-GYMNASIUM_GEN-HDF-05372.wav
 boxing.. exercise & workouts ### BOXING-GYMNASIUM_GEN-HDF-05435.wav
-punch ### ChinPunch FS040405.wav
-punch ### PunchesGruntsPunch FS040902.wav
+punch @ hit ### ChinPunch FS040405.wav
+punch @ hit ### PunchesGruntsPunch FS040902.wav
 punching bag ### BoxingPunchingBag 6102_89_7.wav
 speed bag ## = ### BoxingSpeedBag 6074_43_2.wav
 speed bag ## = ### SpeedBagSpeedBagHi AC038901.wav
@@ -23501,9 +23548,9 @@ light weight set on rack ### ExerciseEquipme S1103_05_13.wav
 sit up bench.. adjust height ### ExerciseEquipmen S1103_15_2.wav
 weight ### EXERCISE-WEIGHTS_GEN-HDF-10843.wav
 weightlifting.. weights put on bar, snatch ## crop 6-32 ### ExerciseWeightRoom_DIGIH04-03.wav
-gymnasium ## crop 0-17 ## fade ### GYMNASIUM-COMMUNITY-CENTRE_GEN-HDF-13930.wav
-gymnasium ## crop 17-24 ## fade ### GYMNASIUM-COMMUNITY-CENTRE_GEN-HDF-13930.wav
-gymnasium ## crop 24-32 ## fade ### GYMNASIUM-COMMUNITY-CENTRE_GEN-HDF-13930.wav
+gymnasium @ gym ## crop 0-7 ## fade ### GYMNASIUM-COMMUNITY-CENTRE_GEN-HDF-13930.wav
+gymnasium @ gym ## crop 17-24 ## fade ### GYMNASIUM-COMMUNITY-CENTRE_GEN-HDF-13930.wav
+gymnasium @ gym ## crop 24-32 ## fade ### GYMNASIUM-COMMUNITY-CENTRE_GEN-HDF-13930.wav
 gymnastics.. run and vault over horse ### Gymnastics 6031_46_4.wav
 high jump ### HighJump_DIGIH02-38.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\sports & games/hockey
@@ -23538,7 +23585,7 @@ figure skater.. single axel jump ### SKATING-ICE_GEN-HDF-21297.wav
 figure skater.. single loop jump ### SKATING-ICE_GEN-HDF-21294.wav
 ice skating.. layback spin ### SkatingIce S1104_91_1.wav
 ice skating.. rough turn ## crop 0-5 ### IceSkatingRoughTu WES071601.wav
-roller skating [rollerblading][inline skating][skate] ### RollerBladingSkat WES074001.wav
+roller skating [rollerblading][inline skating][skate@verb] ### RollerBladingSkat WES074001.wav
 roller skating.. coasting by ### RollerBladingCoas WES073801.wav
 skateboard ### Sports-Skateboard-MCUMcTwis_B05-07504.wav
 skiing, slalom ## crop 19-29 ## fade out ### Ski IN20_70.wav
@@ -23548,8 +23595,8 @@ slow speed on dirt path ### ALL-TERRAIN-VEHICLE_GEN-HDF-00640.wav
 starter pistol ## = ### GunPistolWeaponStarterPistolInt.wav
 trampoline.. short bounces ### Gymnastics 6031_46_1.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\sports & games/water
-dive ### SWIMMING_GEN-HDF-22135.wav
 dive from springboard ### SwimmingDive S1105_56_1.wav
+diving @ swimming ### SWIMMING_GEN-HDF-22135.wav
 jump off diving board ### SWIMMING_GEN-HDF-22137.wav
 swimming.. butterfly stroke ### SwimmingRace S1105_58_6.wav
 swimming.. freestyle stroke ### SwimmingRace S1105_57_2.wav
@@ -23571,7 +23618,7 @@ air pump ### AirPump CTE01_16.1.wav
 air pump ### AirPump CTE01_16.3.wav
 airbrake ### AirBrakeDieselTruc PE854604.wav
 backfire ### AutoBackfire 5022_87.wav
-boat throttle movement [throttle] ### BoatThrottleMoveme PE344402.wav
+boat throttle movement [throttle@boat] ### BoatThrottleMoveme PE344402.wav
 boat.. old motor putting steady ### BoatPuttPutt CTV03_50_02.wav
 carriage jolt ### CarriageJoltsForCa HS037302.wav
 carriage up and past fast on hard gravely surface ### ByCarriageUpPastFa EE103001.wav
@@ -23637,15 +23684,15 @@ siren.. single wail ### Sirens-Police-WailYelper-37_B04-07404.wav
 siren.. single yelp ### Sirens-Police-WailYelper-18_B04-07385.wav
 siren.. single yelp ### Sirens-Police-WailYelper-50_B04-07417.wav
 siren.. two yelps ### Sirens-Police-WailYelper-17_B04-07384.wav
-skid ### AutoSkid 6061_81.wav
-skid ### AutoSkid 6061_82.wav
-skid ### [CarSkidShort PE738706].wav
+skid @ car ### AutoSkid 6061_81.wav
+skid @ car ### AutoSkid 6061_82.wav
+skid @ car ### [CarSkidShort PE738706].wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\transport\cars/starter
 car won't start ### AutoStarter 5022_67.wav
 car won't start ### AutoStarter 5022_69.wav
 heavy starter grind ### Auto-Jeep-CJ10-False-Start_GEN-HD4-38579.wav
-starter ### AutoStarter 5022_66.wav
-starter ### AutoStarter 6043_98_1.wav
+starter @ car ### AutoStarter 5022_66.wav
+starter @ car ### AutoStarter 6043_98_1.wav
 starter ignition grind ### Cars-StarterIgnitionGrin-10_B03-00975.wav
 starter ignition grind ### Cars-StarterIgnitionGrin-14_B03-00979.wav
 tire spin ### AUTO-TIRE-SPIN_6EXT8-10410.wav
@@ -23663,7 +23710,7 @@ motorcycle helmet.. visor down ### Helmet 6015_97_4.wav
 revving, 125 cc ### Motorcycle125Rev SOS076901.wav
 ship deck ### [OceanStdySeaWindFr PE996601].wav
 shut off ### BroussardIdleInt PE226501.wav
-small boat anchor [anchor] ### Anchor S1215_77_2.wav
+small boat anchor [anchor@nautical] ### Anchor S1215_77_2.wav
 snowmobile ### SnowmobileYamaha 6067_95_1.wav
 sonar pings ### SonarPings HI057601.wav
 steamship whistle ### in_ship_steamwhistle_02_hpx.wav
@@ -23684,8 +23731,8 @@ train arrives at station ### Subway-Train-Arrives-Station_OBIN_882.wav
 train station ### Backgrounds-TrainStation-In_B01-02064.wav
 turnstiles ## crop 0-20 ## fade ### TurnstilesPeopleSt PE984301.wav
 turnstiles ## crop 20- ## fade ### TurnstilesPeopleSt PE984301.wav
-wagon ### Wagons-Horse-and-Carriage-Ex-36_B05-09195.wav
-trap ### MetalAnimalTrapsMe FS059407.wav
+wagon @ cart ### Wagons-Horse-and-Carriage-Ex-36_B05-09195.wav
+trap @ snare ### MetalAnimalTrapsMe FS059407.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various/~mix
 accordion door.. slide open ### AccordionDoor 9001_01_1.wav
 adding machine ## = ### AddingMachine 6044_01_2.wav
@@ -23705,7 +23752,7 @@ cupboard.. squeak closed ### CabinetCupboard 9002_13_2.wav
 curtain slide ### CurtainSlidePlasti HF018914.wav
 dialing 100 ### BritDeskTelDial100 PE593603.wav
 door bell [+][door-bell] ### Chimes 1020_37_4.wav
-drill ### DrillScrewingScrewHandHeldSmlS PEHD034102.wav
+drill @ tool ### DrillScrewingScrewHandHeldSmlS PEHD034102.wav
 eerie children laughter [eerie] ### ChildrenEerieLau SDT2033903.wav
 flicking a spring type door stopper ### FlickingSpringDoo PE1025501.wav
 fluorescent light tube pop, shatters ### FluorescentLightTu AZ200901.wav
@@ -23717,7 +23764,7 @@ girls screaming ### Children 2008_14.wav
 granola bar.. open ### Food-Wrap-Granola-Bar_GEN-HD4-40972.wav
 hammer and chisel.. breaking concrete ### ChiselConcrete 6012_07_1.wav
 hand cart by fast on cobblestone ### Cart-Hand-On-Cobblestone_CART041.wav
-helicopter idles on runway [+][chopper] ### mi_huey_idle_02_hpx.wav
+helicopter idles on runway [+][chopper@copter] ## fade out ### mi_huey_idle_02_hpx.wav
 ink-jet printer warms up and cleans print head ### ComputerPrinterInk PE413904.wav
 kiss ### CartoonKiss 4003_36_4.wav
 large rock tumbling down slope ### RockFall 6038_26_3.wav
@@ -23736,7 +23783,7 @@ Scotch tape ### TapePlastic 6109_07_1.wav
 seething large crowd ## crop 0-7 ## fade out ### ExtArabCrowdAngry 3D064001.wav
 show box with hinged lid ### BOX-SHOE_GEN-HDF-05261.wav
 sip with gulping swallow ### FoleyMovement-Sip-and-Swallow-I_B03-02166.wav
-skid & crash [crash] ### CrashAuto 2007_59_1.wav
+skid & crash [crash@car] ### CrashAuto 2007_59_1.wav
 small batches of paper thrown onto desk ### FoleyMovement-SmallBatche-3_B04-04462.wav
 small flight case.. close lid and lock ### CaseFlight 9003_18_3.wav
 straight razor, sharpen ### RazorSharpen AMA04_71_3.wav
@@ -23750,7 +23797,7 @@ wrap present [gift-wrap] ### Paper-Wrapping-Wrap-Small-Box-Tape_GEN-HD4-43018.wa
 wring out cloth with drips and airy squirt ### ClothWringOutSquir FS056502.wav
 >>> ../datae\audiohero {{$audiohero.com}}/## unclear
 >>> ../datae\audiohero {{$audiohero.com}}\## unclear/## reduced
-Alright. ### [Senior-Fem-B_Alright_VKT_12772].wav
+Alright. @@ ### [Senior-Fem-B_Alright_VKT_12772].wav
 Congratulations! ### [Mid-Aged-Male-C_Congratulations_VKT_12066].wav
 Give it to me! ### [Teen-Male-B_Give-It-To-Me_VKT_15674].wav
 It's not my fault. ### [Teen-Male-C_Its-Not-My-Fault_VKT_16149].wav
@@ -26303,7 +26350,7 @@ _Venus Rising from the Sea - A Deception [deception][deceptive] ## date 1822 ## 
 >>> ../datae\fineart opqr {{$$}}/Peale {{Rembrandt Peale}}
 _George _Washington [Washington] ## date 1795.jpeg
 >>> ../datae\fineart opqr {{$$}}/Petrov-Vodkin {{Kuzma Petrov-Vodkin}}
-1919. Alarm [alarm@emo][anxiousness] ## date 1934 ## crop b1 ## qrop t5 b1 ## qropt!.jpeg
+1919. Alarm [alarm@emo][anxiousness] ## date 1934 ## crop b1 ## qrop t7 b3 ## qropt!.jpeg
 At the Samovar [samovar] ## 12+ ## qrop qt ## date 1926.jpg
 Earthquake in Crimea [earthquake][panic] ## date 1927-1928 ## qropt!.jpg
 Laborers [laborers][blue-collar][working class] ## date 1926 ## qropt!.jpg
@@ -26955,16 +27002,19 @@ Tutankhamun's tomb [Tutankhamun][Tut] ## qrop l15 r29.jpg
 University of _Nebraska stadium [tilt-shift][stadium] ## qrop l3 r5 ## qropt!.jpg
 >>> ../datae\photo/war
 >>> ../datae\photo\war/!history
+15th century armet helmet [armet].jpg
+armet.jpg
 Australian Aboriginal waddy war club [waddy@club][war club][club@weapon][nulla nulla] ## noqrop.jpg
 bullet mold [mold@shape] ## qrop l19 r6.jpg
 Japanese {arrowhead} ### 2.jpg
 Japanese {arrowhead} ### 3.jpg
 Japanese {arrowhead} ### 6.jpg
+Polish gorget, 1768 [gorget@armour] ### Ryngraf Konfederatów Barskich.jpg
 spearhead [spearpoint][spear point] ## noqrop ### 2.jpg
 spearhead [spearpoint][spear point] ## qrop ql ### 1.jpg
 >>> ../datae\photo\war\!history/swords
 1902 German Officer's Presentation Sword [sword] ## qrop l3 r11 ## qropt!.jpg
-A Bavarian Landwehr Officers Sabre [sabre] ## qrop l5 r6 ## qropt!.png
+A Bavarian Landwehr Officers Sabre [sabre@weapon][saber@weapon] ## qrop l5 r6 ## qropt!.png
 US Navy cutlass %% 1861 [cutlass][short sword] ## qrop l2 r2 ## qropt!.jpeg
 US Navy cutlass with scabbard %% 1861 [scabbard] ## qrop r1 ## qropt!.jpg
 Boeing B-17 Flying Fortress is falling down [shot down] ## date 1944.jpeg
@@ -27087,7 +27137,7 @@ Water hosing demonstrators.txt
 wrath ## qrop l8 r13.jpg
 wrath.jpg.uid-zps
 >>> ../datae\photo a/Albrecht {{Photo.. Kristoffer Albrecht}}
-Mug, spoon and eggs [mug] ## date 1983.jpg
+Mug, spoon and eggs [mug@cup] ## date 1983.jpg
 old documents [+][archive] ## date 1993 ## qrop l7 r11 ## qropt!.jpg
 Plant in Book [pressed flowers][pressed] ## date 1986 ## qrop l25 r2.jpg
 >>> ../datae\photo a/Alpert {{Photo.. Max Alpert}}
@@ -27643,7 +27693,7 @@ Swiss clown Grock (Adrien Wettach) [astonished] ## date 1955.jpg
 Mask of Tutankhamun [Tutankhamun] ### Tutankhamun’s death mask.jpg
 Outermost Coffin of Tutankhamun [pharaoh] ## date 1920s ## qropt!.jpg
 Tutankhamun sarcophagus [+] ## qrop l22 t5 r7 ## date 1926.jpg
-Unbroken Seal on the Third Shrine of Tutankhamun [seal @ sealing] ## date 1924 ## qrop l8 r13 ## qropt!.jpg
+Unbroken Seal on the Third Shrine of Tutankhamun [seal@stamp][unbroken] ## date 1924 ## qrop l8 r13 ## qropt!.jpg
 Wood Box in the Form of Tutankhamun's Cartouche or Royal Name [cartouche][artifact][artefact] ## date 1920s ## qrop t14 b12.jpg
 >>> ../datae\photo b/Burtynsky {{Photo.. Edward Burtynsky}}
 Abandoned Marble Quarry, Rochester, _Vermont [quarry] ## date 1991 ## qrop q.jpg
@@ -28391,7 +28441,7 @@ making {dough}.jpg
 >>> ../datae\photo gh/Harholdt {{Photo.. Peter Harholdt}}
 Inuit Ateguk Model Woman's Parka [parka].jpg
 _Italian Helmet With Rampant Lion [helmet@armor] ## qrop t2 b2 ## qropt!.jpg
-_Micmac Beaded Hide Moccasins [moccasins][Mi'kmaq].png
+_Micmac Beaded Hide Moccasins [moccasins@indian][Mi'kmaq].png
 >>> ../datae\photo gh/Hawkes {{Photo.. Jason Hawkes}}
 Aerial view of Beachy Head and Seven Sisters {chalk cliffs}, {East Sussex} [cliff][chalkface][headland].jpg
 Aerial view of {burning} corn field.jpg
@@ -28835,7 +28885,7 @@ Bryce Canyon [Bryce][Utah].jpg
 Window Dressing [window dressing].jpg
 >>> ../datae\photo mn/Maximilian {{Photo.. Maximilian Stock Ltd}}
 assorted flower-flavored vinegars [flowered][flowery][flavored][flavoured].jpg
-composition of assorted pasta [composition][pasta] ## qrop ql.jpg
+composition of assorted pasta [composition@mix][pasta] ## qrop ql.jpg
 dairy produce [dairy][dairy product][dairy products].jpg
 >>> ../datae\photo mn/McDonald {{Photo.. Joe McDonald}}
 A scrub jay perches on the top of a field and guide book [corvids][Corvidae][Corvoidea][Corvida].jpg
@@ -28881,7 +28931,7 @@ The Shadow of the Great Pyramid [shadow@light] ## date 1938 ## qrop qb.jpg
 Lower East Side, 1942 [Manhattanite].jpg
 Madama Lucrezia, Rome [disfigured] ## qrop b5 ## qropt!.jpg
 Paris Flea Market [flea market] ## qrop l1 r19.jpg
-running legs [running] ## date 1940-41 ## qropt!.jpg
+running legs [running@walk] ## date 1940-41 ## qropt!.jpg
 Trento, Italy [Trento][Trent].jpg
 >>> ../datae\photo mn/Modotti {{Photo.. Tina Modotti}}
 Bandolier, corn, guitar [bandolier][Mexican] ## date 1927 ## qrop t17 b5 ## qropt!.jpg
@@ -29590,7 +29640,7 @@ sandstone ### 1.jpg.uid-zps
 sandstone ### 2.jpg.uid-zps
 sandstone @ geo ## qrop ql ### 1.jpg
 sandstone @ geo ## qrop qr ### 2.jpg
-tree ## qrop t17 b8.jpg
+tree @ plant ## qrop t17 b8.jpg
 tree.jpg.uid-zps
 wadi ## qrop l11 r14.jpg
 wadi.jpg.uid-zps
@@ -29788,7 +29838,7 @@ Rocket Man %% mobula ray breaching [breach][breaching][mobula ray][mobula].jpg
 The Untouchables [untouchable].jpg
 wolf ## qrop ql ### I am pure alpha.jpg
 >>> ../datae\photo t-z/Yoshida {{Photo.. Kimiko Yoshida}}
-Large B [B].jpg
+Large B [B@letter].jpg
 Large I [I].jpg
 Large S [S].jpg
 Large U [U][V].jpg
@@ -30149,7 +30199,7 @@ time {{Photo.. Rido $dreamstime 8375918}} Blue clock on wall with school bell.jp
 abandoned building [abandoned] ## qrop l21 r12 {{Photo.. Annavaczi $dreamstime 45043268}}.jpg
 bare feet [bare] ## qrop l15 r18 {{Photo.. Lane Erickson $dreamstime 8219685}}.jpg
 breaking wave [breaking] ## qrop l7 r26 {{Photo.. Stanislav Moroz $dreamstime 39888878}}.jpg
-broken egg [broken] ## qrop qt {{Photo.. Illia Bondar $dreamstime 92437571}}.jpg
+broken egg [broken@@] ## qrop qt {{Photo.. Illia Bondar $dreamstime 92437571}}.jpg
 calendar ## qrop ql {{Photo.. Flynt $dreamstime 36594024}}.jpg
 convex mirror [convex] ## qrop qr {{Photo.. Paop $dreamstime 108411329}}.jpg
 cracked glass [cracked] ## qrop ql {{Photo.. Youths $dreamstime 14869677}}.jpg
@@ -30376,7 +30426,7 @@ Coyotes in the area! Watch your children and keep pets under control at all time
 Coyotes in the area! Watch your children and keep pets under control at all time..wav
 Do not bleach! Do not dry clean! Do not tumble dry! [bleach] ## qrop l18 r10 ## qropt! {{Photo.. Ultraone $dreamstime 16904705}}.jpg
 Do not bleach! Do not dry clean! Do not tumble dry!.wav
-Do not enter grain tank when machine is running! [grain tank][running] ## crop l36 ## qrop l41 r3 {{Photo.. Jarjarbits $dreamstime 93596378}}.jpg
+Do not enter grain tank when machine is running! [grain tank][running@machine] ## crop l36 ## qrop l41 r3 {{Photo.. Jarjarbits $dreamstime 93596378}}.jpg
 Do not enter grain tank when machine is running! [grain tank][running].wav
 Do not feed wild horses and burros! $500 fine. [burros] ## crop l16 ## qrop l32 r2 {{Photo.. Czuber $dreamstime 23213250}}.jpg
 Do not feed wild horses and burros! $500 fine. [burros] ### 3.wav
@@ -30490,7 +30540,7 @@ throw away {{Photo.. Gpointstudio $dreamstime 33216776}} Throwing a crumpled pap
 throw up one's hands [throw one's hands up] ## qrop l16 r18 b1 {{Photo.. Volodymyr Melnyk $dreamstime 104862507}}.jpg
 toss ## qrop l19 r14 {{Photo.. Vadymvdrobot $dreamstime 71667115}}.jpg
 Turn handle to jettison door! [jettison] ## qrop l18 r15 {{Photo.. Dtfoxfoto $dreamstime 32393416}}.jpg
-broken [break, broke, broken] ## qrop q {{Photo.. Nikolay Ostanin $dreamstime 65543955}}.jpg
+broken @@ [break, broke, broken] ## qrop q {{Photo.. Nikolay Ostanin $dreamstime 65543955}}.jpg
 closed @ door ## qrop q {{Photo.. Poonsap Likitwachalakul $dreamstime 91427913}}.jpg
 examine ## qrop l14 r20 b1 {{Photo.. Melanie  Defazio $dreamstime 2627055}}.jpg
 hang on a rope [hang] ## qrop ql {{Photo.. Vladislav Zhukov $dreamstime 112039629}}.jpg
@@ -30660,7 +30710,7 @@ frame @ art ## qrop l14 r14 ## qropt! {{Photo.. Loongar $dreamstime 96213490}}.j
 gouache ## qrop qr {{Photo.. Vvoevale $dreamstime 58533969}}.jpg
 graffiti ## qrop l4 r30 {{Photo.. Gavin Song $dreamstime 94210203}}.jpg
 oil paint ## qrop qt {{Photo.. Popa Sorin $dreamstime 4520438}}.jpg
-orange painted texture [orange@color][orangeish] {Photo.. Vladimirs Prusakovs $dreamstime 20040527}.jpg
+orange painted texture [orange@color][orangeish] {{Photo.. Vladimirs Prusakovs $dreamstime 20040527}}.jpg
 paintbrush @ art ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 76870198}}.jpg
 palette ## qrop qr {{Photo.. Владимир Сухачёв $dreamstime 118045026}}.jpg
 palette ## qrop t20 b14 {{Photo.. Popa Sorin $dreamstime 4520438}}.jpg
@@ -30812,7 +30862,7 @@ bucket ## qrop qr {{Photo.. Marietjie Opperman $dreamstime 81704292}}.jpg
 >>> ../datae\photo_dreamstime/business
 ATM [pin code] ## qrop l13 r31 {{Photo.. Adrian Lewart $dreamstime 16772660}}.jpg
 billboard ## qrop l4 r19 ## qropt! {{Photo.. Pakhnyushchyy $dreamstime 6607548}}.jpg
-boss ## qrop l21 r12 {{Photo.. Suzanne Tucker $dreamstime 290100}} ### Watchful Eye.jpg
+boss @ job ## qrop l21 r12 {{Photo.. Suzanne Tucker $dreamstime 290100}} ### Watchful Eye.jpg
 business card ## qrop l15 r19 {{Photo.. Badboo $dreamstime 2087539}}.jpg
 business card ## qrop l18 r16 {{Photo.. Kantver $dreamstime 66757642}}.jpg
 cheque @ bank [check@bank] ## qrop l24 r9 {{Photo.. Andrey Popov $dreamstime 58873697}}.jpg
@@ -30970,7 +31020,7 @@ keycard [key card][card key] ## qrop l7 r13 {{Photo.. Theerawut Sindam $dreamsti
 keyhole [keyway] ## qrop ql {{Photo.. Maggie Molloy $dreamstime 9432067}}.jpg
 keys @ door ## qrop l10 r18 ## qropt! {{Photo.. Dana Rothstein $dreamstime}} ### [house keys].jpg
 keys @ door ## qrop qr {{Photo.. Kupparock $dreamstime 27891681}}.jpg
-keys [key → keys] ## crop l13 r11 ## qropt! ## qrop l14 r12 {{Photo.. 350jb $dreamstime 14455783}} ### Keys to the castle.jpg
+keys [key, keys @ door] ## crop l13 r11 ## qropt! ## qrop l14 r12 {{Photo.. 350jb $dreamstime 14455783}} ### Keys to the castle.jpg
 latch @ door ## qrop q {{Photo.. Mr.smith Chetanachan $dreamstime 28604421}}.jpg
 locked @ door ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 76263426}} ### padlock.jpg
 padlock ## qrop ql {{Photo.. Wimseyed $dreamstime 107439154}}.jpg
@@ -31050,8 +31100,8 @@ cosmonaut ## qrop t12 b21 {{Photo.. Pavel Losevsky $dreamstime 13803744}}.jpg
 big screen ## qrop l14 r17 ## qropt! {{Photo.. Pavel Losevsky $dreamstime 20004387}}.jpg
 clapperboard ## qrop l23 r2 {{Photo.. Irochka $dreamstime 33407236}}.jpg
 clapperboard [clapper board][clapper@cinema][cinema@art] ## qrop l6 r13 ## qropt! {{Photo.. Irochka $dreamstime 33407212}}.jpg
-film stock [film@media] {{Photo.. Andre Maritz $dreamstime 74656}} film reel.jpg
-film stock [film@media] {{Photo.. Juliana Galluccio $dreamstime 814485}}.jpg
+film stock [film@medium] {{Photo.. Andre Maritz $dreamstime 74656}} film reel.jpg
+film stock [film@medium] {{Photo.. Juliana Galluccio $dreamstime 814485}}.jpg
 Green Lantern, Superman and Batman [superhero][superheroes] ## qrop l12 ## qropt! {{Photo.. Martingraf $dreamstime 25574316}}.jpg
 movie theater [cinema@movie theater] ## qrop l11 r23 {{Photo.. Pavel Losevsky $dreamstime 20004384}}.jpg
 movie theater [cinema@movie theater] ## qrop l6 r28 {{Photo.. Pavel Losevsky $dreamstime 33337157}}.jpg
@@ -31099,7 +31149,7 @@ pleated purse [purse@vintage] ## qrop l19 r14 {{Photo.. Sally Wallis $dreamstime
 pompom [pom-pom][pompon] ## qrop ql {{Photo.. Sandra Cunningham $dreamstime 3533148}}.jpg
 Santa sack [sack@Santa] ## qrop l18 r15 {{Photo.. Aleksey Satyrenko $dreamstime 77884206}}.jpg
 socks [sock] ## qrop qt {{Photo.. Margaryta Shkarebko $dreamstime 65556723}}.jpg
-spectacles ## qrop l11 r15 ## qropt! {{Photo.. Underworld $dreamstime 106010306}}.jpg
+spectacles @ glasses ## qrop l11 r15 ## qropt! {{Photo.. Underworld $dreamstime 106010306}}.jpg
 umbrella ## qrop l11 ## qropt! {{Photo.. Win Nondakowit $dreamstime 26166913}}.jpg
 woman accessories [accessories][accessories] ## qrop r31 ## qropt! {{Photo.. Anton Matveev $dreamstime 106303158}}.jpg
 boutique ## qrop ql {{Photo.. David Hilcher $dreamstime 5530211}}.jpg
@@ -31142,7 +31192,7 @@ kimono {{Photo.. Carlos Martinez Duncker $dreamstime 54555826}}.jpg
 mask @ masquerade ## qrop ql {{Photo.. Michael Flippo $dreamstime 37826149}}.jpg
 >>> ../datae\photo_dreamstime\fashion/dressmaking
 a ball of yarn and knitting needles [knitting needles] ## crop t3 r42 b9 ## qropt! ## qrop t4 r42 b9 {{Photo.. Deyangeorgiev $dreamstime 22568408}}.jpg
-a glass jar full of buttons [full] ## qrop q {{Photo.. Richard Van Der Spuy $dreamstime 103998938}}.jpg
+a glass jar full of buttons [full@filled] ## qrop q {{Photo.. Richard Van Der Spuy $dreamstime 103998938}}.jpg
 a kitten is playing with a ball of yarn [a ball of yarn][playing] ## qrop l15 r18 {{Photo.. Anton Matveev $dreamstime 88517874}}.jpg
 a kitten is playing with a ball of yarn [a ball of yarn][playing] ## qrop l18 r16 {{Photo.. Anton Matveev $dreamstime 96092619}}.jpg
 button ## qrop q {{Photo.. Dleonis $dreamstime 12464138}}.jpg
@@ -31157,8 +31207,8 @@ lace ## qrop q {{Photo.. Voyagerix $dreamstime 48998357}}.jpg
 lace ## qrop ql {{Photo.. Emberiza $dreamstime 6368543}}.jpg
 mannequin ## 14+ ## qrop l5 r20 {{Photo.. Wong Chee Yen $dreamstime 1549097}}.jpg
 mannequins [mannequin] ## 12+ ## qrop ql {{Photo.. Lisavan $dreamstime 1174001}}.jpg
-needle ## qrop l18 r15 {{Photo.. Goldnetz $dreamstime 32096999}}.jpg
-needle and thread [needle] ## qrop l18 r16 {{Photo.. Bazruh $dreamstime 73738024}}.jpg
+needle @ sewing ## qrop l18 r15 {{Photo.. Goldnetz $dreamstime 32096999}}.jpg
+needle and thread [needle@sewing] ## qrop l18 r16 {{Photo.. Bazruh $dreamstime 73738024}}.jpg
 patch ## qrop l9 r24 {{Photo.. Sarah2 $dreamstime 17756424}}.jpg
 pin @ sewing ## qrop qb {{Photo.. Martin Konečný $dreamstime 13303824}}.jpg
 pin basting [baste][dressmaking] ## qrop qt {{Photo.. Veronika Mannova $dreamstime 7863034}}.jpg
@@ -31335,7 +31385,7 @@ tag @ clothes ## qrop l9 r24 {{Photo.. Thapakorn Tawornnurak $dreamstime 1017940
 snap fastener [snap button][press stud][popper][pop fastener] ## qrop l13 r12 {{Photo.. Dleonis $dreamstime 36138162}}.jpg
 >>> ../datae\photo_dreamstime/food
 baguette ## qrop qr {{Photo.. Astormfr $dreamstime 30662635}}.jpg
-barbecue ## qrop l9 r24 {{Photo.. Grafner $dreamstime 26251175}} ### Bbq with sausages and steak.jpg
+barbecue @ food ## qrop l9 r24 {{Photo.. Grafner $dreamstime 26251175}} ### Bbq with sausages and steak.jpg
 bon appétit! ## qrop qr {{Photo.. Stephanie Connell $dreamstime 3782534}}.jpg
 buckwheat ## qrop q {{Photo.. Alvarracrazy $dreamstime 13154824}}.jpg
 cafeteria ## qrop qr {{Photo.. Adisa $dreamstime 65939541}} Paris cafe.jpg
@@ -31391,7 +31441,7 @@ meringues ## qrop q {{Photo.. Brighton $dreamstime 30027546}}.jpg
 mousse ## qrop t32 b2 {{Photo.. Liv Friis-larsen $dreamstime}}.jpg
 nougat ## qrop l36 b3 ## qropt! {{Photo.. Igorr $dreamstime 68726318}}.jpg
 peach jam [jam@food] ## qrop qr {{Photo.. Monika Adamczyk $dreamstime 224386}}.jpg
-peaches in a syrup [syrup] ## qrop l4 r16 ## qropt! {{Photo.. Gabrieldome $dreamstime 12201796}}.jpg
+peaches in a syrup [syrup@food] ## qrop l4 r16 ## qropt! {{Photo.. Gabrieldome $dreamstime 12201796}}.jpg
 praline ## qrop qr {{Photo.. Subbotina $dreamstime 52675719}}.jpg
 profiteroles ## qropt! {{Photo.. Margouillat $dreamstime 20213731}}.jpg
 rhubarb and meringue pie [rhubarb][pie@food] ## qrop t31 b3 {{Photo.. Catalina Zaharescu Tiensuu $dreamstime 51160999}}.jpg
@@ -31495,7 +31545,7 @@ salad ## qrop qr {{Photo.. Chris Dortch $dreamstime 419672}} ### Mexican Food.jp
 starter~appetizer ## qrop l13 r16 ## qropt! {{Photo.. Aleksandr Mogilevetc $dreamstime 76533085}}.jpg
 starter~appetizer ## qrop l26 r8 {{Photo.. Studiogi $dreamstime 24560537}}.jpg
 stuffed cucumbers [stuffed@food] ## qrop q {{Photo.. Ivan Mateev $dreamstime 48868754}}.jpg
-menu ## qrop ql {{Photo.. Cgsniper $dreamstime 27405323}}.jpg
+menu @ food ## qrop ql {{Photo.. Cgsniper $dreamstime 27405323}}.jpg
 mold @ food [mould@food][mouldy][moldy] ## qrop l20 r13 {{Photo.. Deviddo $dreamstime 67365348}}.jpg
 mold @ food [mould@food][mouldy][moldy] ## qrop qr {{Photo.. Deviddo $dreamstime 67365261}}.jpg
 muesli ## qrop l6 t2 r23 {{Photo.. Belka10 $dreamstime 46201593}}.jpg
@@ -31708,7 +31758,7 @@ beer ## qrop l4 r30 {{Photo.. Nik0s79 $dreamstime 10620054}} ### lager.jpg
 cider ## qrop l37 t1 b5 {{Photo.. Photka $dreamstime 11435630}}.jpg
 English pub [pub] ## qrop l16 r18 {{Photo.. Anizza $dreamstime 23668587}}.jpg
 grog ## qrop l4 r20 {{Photo.. Poznyakov $dreamstime 81372184}}.jpg
-punch ## qrop t9 ## qropt! {{Photo.. Brebca $dreamstime 21267990}}.jpg
+punch @ drink ## qrop t9 ## qropt! {{Photo.. Brebca $dreamstime 21267990}}.jpg
 sambuca ## qrop qr {{Photo.. Massimiliano Gallo $dreamstime 23813303}}.jpg
 toast @ drink ## qrop ql {{Photo.. Kiriill Ryzhov $dreamstime 38718616}}.jpg
 bottles [bottle] ## qrop q {{Photo.. Zirconicusso $dreamstime 16809559}} Empty bottles.jpg
@@ -31751,7 +31801,7 @@ kefir ## qrop l9 r8 ## qropt! {{Photo.. Gkmf10 $dreamstime 20627420}}.jpg
 lemonade ## qrop qr {{Photo.. Barbara Helgason $dreamstime 14801530}}.jpg
 milkshake {{Photo.. Vimart $dreamstime 54720569}}.jpg
 mineral water ## qrop q {{Photo.. Showice $dreamstime 26533188}}.jpg
-mug ## qrop q {{Photo.. Designsstock $dreamstime 21549318}}.jpg
+mug @ cup ## qrop q {{Photo.. Designsstock $dreamstime 21549318}}.jpg
 paper cup [cup@vessel] ## qrop t30 b3 {{Photo.. Javier De La Piedra $dreamstime 4018707}}.jpg
 plastic cups [plastic cup][cups@vessel][cup@vessel] ## qrop l7 r27 {{Photo.. Lobur $dreamstime 66293167}}.jpg
 slush @ drink ## qrop qr {{Photo.. Elena Moiseeva $dreamstime 34557880}}.jpg
@@ -31968,7 +32018,7 @@ Maya~Mayans ## qrop l16 r18 {{Photo.. Valery Shanin $dreamstime 20092393}}.jpg
 pirate {{Photo.. Thorstenschmitt $dreamstime 19519142}}.jpg
 Samurai armor [armor@body][armour@body] ## qrop t6 b14 ## qropt! {{Photo.. Anna Yakimova $dreamstime 9312565}}.jpg
 Spartan ## qrop l12 r13 {{Photo.. Nikolai Sorokin $dreamstime 30478532}}.jpg
-Statue of Queen Isabel II, Madrid, Spain [queen@royal] {Photo.. Kaplan69 $dreamstime 58885355}}.jpg
+Statue of Queen Isabel II, Madrid, Spain [queen@royal] {{Photo.. Kaplan69 $dreamstime 58885355}}.jpg
 Taj Mahal ## qrop l11 r6 ## qropt! {{Photo.. Sergeychernov $dreamstime 29901138}}.jpg
 Taj Mahal [mausoleum] ## qrop qr {{Photo.. Sergeychernov $dreamstime 31960362}}.jpg
 The coat of arms of the Ottoman Empire [Ottoman Empire] ## qrop t4 b3 ## qropt! {{Engin Korkmaz $dreamstime 30113588}}.jpg
@@ -32048,7 +32098,7 @@ white heels, pearl bracelet and earrings [weddingish] ## qrop l22 r11 {{Photo.. 
 dialogue [dialog] ## crop l24 r10 ## qrop l24 t1 r10 {{Photo.. Mengtianhan $dreamstime 49724091}} ### tango dancers.jpg
 dialogue [dialog] ## crop l24 r10 ## qrop l24 t1 r10 {{Photo.. Mengtianhan $dreamstime 49724091}} ### tango dancers.txt
 >>> ../datae\photo_dreamstime\human/emotions
-alarm @ worry [alarmed] ## qrop q {{Photo.. Razzdazzstock $dreamstime 76059354}}.jpg
+alarm @ emo [alarmed] ## qrop q {{Photo.. Razzdazzstock $dreamstime 76059354}}.jpg
 annoyed [annoy][annoyance] ## qrop q {{Photo.. Pressmaster $dreamstime 8341556}}.jpg
 apprehension ## qrop l23 r11 {{Photo.. Igor Golubov $dreamstime 99639227}}.jpg
 bad-tempered [tempered] ## qrop l14 r19 {{Photo.. Joseph Cortes $dreamstime 517544}}.jpg
@@ -32117,14 +32167,13 @@ What's going on there~! [what's going on] ## qrop l12 r22 {{Photo.. Eldadcarin $
 Who, me~! [me] ## qrop l22 r12 {{Photo.. Khosrork $dreamstime 105420578}}.jpg
 You're late! [late] ## qrop l16 r17 {{Photo.. Oleg Shelomentsev $dreamstime 19445707}}.jpg
 >>> ../datae\photo_dreamstime\human/gestures
-bad ## qrop l19 r14 {{Photo.. Khosrork $dreamstime 105420459}}.jpg
+bad @ gesture ## qrop l19 r14 {{Photo.. Khosrork $dreamstime 105420459}}.jpg
 bite one's lip ## qrop l19 r15 {{Photo.. Vadymvdrobot $dreamstime 68683481}}.jpg
 bow @ gesture ## qrop l10 r2 ## qropt! {{Photo.. Bojan Dzodan $dreamstime 11751366}}.jpg
 embrace [hug] ## qrop t19 b15 {{Photo.. Volodymyr Melnyk $dreamstime 104552853}}.jpg
 make a face ## qrop l26 r7 {{Photo.. Eldadcarin $dreamstime 29796842}}.jpg
 mime [gesticulation] ## qrop q {{Photo.. Igor Korionov $dreamstime 10064289}}.jpg
 mimic @ imitate ## qropt! {{Photo.. Deborah Coles $dreamstime 7768958}} ### [mermaid and diver].jpg
-OK @ gesture ## qrop ql {{Photo.. Soleg1974 $dreamstime 66104638}}.jpg
 shh! @ gesture ## qropt! ## qrop l7 r16 {{Photo.. Frantab01 $dreamstime 10929871}}.jpg
 shh! @ gesture ### [Child-Fem-A_Quiet-Shh_VKT_06555].wav
 something smells bad [smell] ## qrop l27 r6 {{Photo.. Koldunova Anna $dreamstime 98783167}}.jpg
@@ -32145,7 +32194,7 @@ matrimonial ## qrop l8 r25 ## qropt! {{Photo.. Subbotina $dreamstime 12644639}} 
 matrimonial ## qrop ql {{Photo.. Robert Milek $dreamstime 6184388}} Wedding rings.jpg
 Valentine [valentine] ## qrop l13 r19 {{Photo.. Olga Oliynik $dreamstime 23129657}}.jpg
 >>> ../datae\photo_dreamstime\human/stereotypes
-crazy ## qrop l9 r10 ## qropt! {{Photo.. Scott Griessel $dreamstime 5318655}}.jpg
+crazy @ adjective ## qrop l9 r10 ## qropt! {{Photo.. Scott Griessel $dreamstime 5318655}}.jpg
 intellectual ## qrop t15 ## qropt! {{Everett Collection Inc. $dreamstime 52013328}} ### Couple playing chess.jpg
 odd @ strange ## qrop l10 r23 ## qropt! {{Photo.. Volodymyr Melnyk $dreamstime 84405730}}.jpg
 steampunk ## qrop t6 b22 ## qropt! {{Photo.. Andrey Kiselev $dreamstime 32893203}}.jpg
@@ -32500,7 +32549,7 @@ bobcat kitten [+] ## qrop qr {{Photo.. Chris Lorenz $dreamstime 16510118}}.jpg
 calf @ cow ## qrop l17 r4 {{Photo.. Leopold Brix $dreamstime 35607708}}.jpg
 chick @ chicken ## qrop l15 r18 {{Photo.. Deviddo $dreamstime 99713842}}.jpg
 chicken @ fowl {{Photo.. Kingan $dreamstime 72416285}}.jpg
-chicks ## qrop l3 r7 {{Photo.. Samantha Hileman $dreamstime 93080478}}.jpg
+chicks [chick@bird] ## qrop l3 r7 {{Photo.. Samantha Hileman $dreamstime 93080478}}.jpg
 cougar kitten [kitten] ## qrop qr {{Photo.. Holly Kuchera $dreamstime 68335957}}.jpg
 cubs~pups~kits of a red fox @ fox [cubs][pups][kits] {{Photo.. Janusz Pieńkowski $dreamstime 37552551}}.jpg
 cygnet ## qrop l15 r18 {{Photo.. Tom Meaker $dreamstime 89851776}}.jpg
@@ -32658,7 +32707,7 @@ whale shark ## qrop ql {{Photo.. Diverstef $dreamstime 13741282}}.jpg
 whitetip reef shark [whitetip][reef shark] ## qrop l15 r10 {{Photo.. Roman Vintonyak $dreamstime 10873075}}.jpg
 >>> ../datae\photo_dreamstime\nature/fauna - insecta
 bee ## qrop q {{Photo.. Jeffrey Van Daele $dreamstime 547480}}.jpg
-beetle ## qrop l8 r16 ## qropt! {{Photo.. Pavel Trankov $dreamstime 42440988}}.jpg
+beetle @ insect ## qrop l8 r16 ## qropt! {{Photo.. Pavel Trankov $dreamstime 42440988}}.jpg
 caterpillar ## qrop l12 r12 ## qropt! {{Photo.. Wong Hock Weng John $dreamstime 14917064}}.jpg
 caterpillar ## qropt! {{Photo.. Panuruangjan $dreamstime 32815181}}.jpg
 cricket @ insect ## qrop l1 r32 {{Photo.. Sarah2 $dreamstime 55676929}}.jpg
@@ -32862,7 +32911,7 @@ taipan ## qrop qr {{Photo.. Rafael Ben-ari $dreamstime 71347224}}.jpg
 aloe vera [aloe] ## qrop ql {{Photo.. Amphaiwan $dreamstime 32405577}}.jpg
 amanita {{Photo.. Ferrerivideo $dreamstime 29669597}}.jpg
 boletus ## qrop l16 r18 {{Photo.. Maria  Rebenko $dreamstime 60966657}}.jpg
-cactus [cacti][cactuses][cactusses] ## qrop qr {{Photo.. Shirophoto $dreamstime 19045622}}.jpg
+cacti [cactus][cactuses][cactusses] ## qrop qr {{Photo.. Shirophoto $dreamstime 19045622}}.jpg
 clover ## qrop qr {{Photo.. Penny Ward Marcus $dreamstime 61059173}}.jpg
 fern ## qrop qr {{Photo.. Sergeychernov $dreamstime 32603696}}.jpg
 fly agaric [toadstool] ## qrop l2 r31 {{Photo.. Joruba $dreamstime 16832665}}.jpg
@@ -32973,7 +33022,7 @@ sakura ## qrop l3 r21 {{Photo.. Kuanchong Ng $dreamstime 3302128}}.jpg
 sequoia ## qrop l10 r24 {{Photo.. Galyna Andrushko $dreamstime 54189587}}.jpg
 spruce ## qrop ql {{Photo.. Dimktf $dreamstime 22080349}}.jpg
 stump @ tree ## qrop q {{Photo.. Sjstudio357 $dreamstime 104504555}}.jpg
-tree ## qrop ql {{Photo.. Andrea Borsani $dreamstime 6820299}}.jpg
+tree @ plant ## qrop ql {{Photo.. Andrea Borsani $dreamstime 6820299}}.jpg
 Tuscany, Italy [Tuscany][cypress] ## qrop qr {{Kaspargallery $dreamstime}}.jpg
 fog ## qrop q {{Photo.. Andrei Calangiu $dreamstime 3226707}}.jpg
 horizon ## qrop q {{Photo.. Jimmy Lopes $dreamstime 1719735}}.jpg
@@ -33238,7 +33287,7 @@ genetics ## qrop ql {{Photo.. Danil Chepko $dreamstime 69920310}}.jpg
 insect ## qrop ql {{Photo.. Igor Kolos $dreamstime 14780916}}.jpg
 insulin ## qrop l13 r15 ## qropt! {{Photo.. Sherry Young $dreamstime 37133481}}.jpg
 insulin ## qrop l28 r4 ## qropt! {{Photo.. Merzavka $dreamstime 13120839}}.jpg
-Japanese beetle (Popillia japonica) [beetle] ## qrop qr {{Photo.. Dskow3 $dreamstime 52673867}}.jpg
+Japanese beetle (Popillia japonica) [beetle@insect] ## qrop qr {{Photo.. Dskow3 $dreamstime 52673867}}.jpg
 laboratory mouse ## qrop l10 r19 ## qropt! {{Photo.. Dmitriy Shironosov $dreamstime 3778755}}.jpg
 laboratory mouse given intraperitoneal injection [intraperitoneal injection][intraperitoneal] {{Photo.. Natalia Sinjushina $dreamstime 574845}}.jpg
 laboratory rat [rat@lab] {{Photo.. Brunoweltmann $dreamstime 17677930}}.jpg
@@ -33289,7 +33338,7 @@ skunk cabbage [Symplocarpus foetidus][Symplocarpus] ## qrop qr {{Photo.. Tommaso
 spider monkey [monkey][spiderlike][Ateles fusciceps][Ateles] ## qrop l12 r22 {{Photo.. Wrangel $dreamstime 55226337}}.jpg
 spotted eagle ray [spotted][eagle ray][Aetobatus narinari][Aetobatus] ## qrop l7 r27 b1 {{Photo.. Izanbar $dreamstime 57776630}}.jpg
 spotted eagle ray [spotted][eagle ray][Aetobatus narinari][Aetobatus] ## qrop ql {{Photo.. Joanne Weston $dreamstime 24490722}}.jpg
-stag beetle [beetle][Lucanidae] ## qrop l6 r19 {{Photo.. Mihályné Molnár $dreamstime 66118904}}.jpg
+stag beetle [beetle@insect][Lucanidae] ## qrop l6 r19 {{Photo.. Mihályné Molnár $dreamstime 66118904}}.jpg
 striated heron [+][Butorides striata][Butorides] ## qrop ql {{Photo.. Ondřej Prosický $dreamstime 75946966}}.jpg
 thresher shark [thresher][Alopias] ## qrop l17 r16 {{Photo.. Aquanaut4 $dreamstime 23187324}}.jpg
 tiger lily [tigerlike][Lilium superbum][Lilium] ## qrop l2 r22 {{Photo.. Tamara Hughbanks Harding $dreamstime 43024548}}.jpg
@@ -33350,7 +33399,7 @@ cavern ## qropt! {{Photo.. Heirbornstud $dreamstime 705479}} ### the cavern at V
 Crater Lake, Oregon [Crater Lake][crater lake][caldera][caldera lake] ## qrop l4 ## qropt! {{Photo.. William Michael Norton $dreamstime 830379}}.jpg
 crevasse ## qrop b29 ## qropt! {{Photo.. Aquanaut4 $dreamstime 67895656}}.jpg
 crevice ## qrop t6 b14 {{Photo.. Kathleen Struckle $dreamstime 4107238}}.jpg
-Earth's inner core [inner core][core@geology] ## crop l68 t15 r5 b24 ## qrop l69 t15 r5 b24 {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
+Earth's inner core [inner core][core@geology] ## crop l68 t15 r5 b24 ## qrop l69 t16 r5 b24 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 lithosphere ## crop l37 t17 r36 b20 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 mantle @ geology ## crop l1 t8 r66 b15 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 Pamukkale, _Turkey [Turkey][travertine terraces][travertine][terraces] ## qrop l10 r24 {{Photo.. Softdreams $dreamstime 41117927}}.jpg
@@ -33399,7 +33448,7 @@ aquamarine ## qrop t9 b7 ## qropt! {{Photo.. Gozzoli $dreamstime 9761546}}.jpg
 calcite ## qrop l6 r4 ## qropt! {{Photo.. Baldomir $dreamstime 25493194}}.jpg
 celestine [mineral] ## qrop q {{Photo.. Robert Semnic $dreamstime 22803515}}.jpg
 double-terminated quartz crystal [+] ## qrop t20 b5 {{Photo.. Gozzoli $dreamstime 9153640}}.jpg
-granite ## qrop r60 b60 {{Photo.. Alexey Bykov $dreamstime 39559043}}.jpg
+granite @ stone ## qrop r60 b60 {{Photo.. Alexey Bykov $dreamstime 39559043}}.jpg
 granule ## qrop qr {{Photo.. Lightprints $dreamstime 1170874}}.jpg
 lazurite pendulum [lazurite] ## qrop qb {{Photo.. Michaela Stejskalova $dreamstime 15846174}}.jpg
 malachite ## qrop l23 r10 {{Photo.. Cl2004lhy $dreamstime 54315160}} Metal Ore malachite.jpg
@@ -33450,9 +33499,9 @@ teddy bear ## qrop t12 b12 ## qropt! {{Photo.. Mrivserg $dreamstime 87745258}}.j
 temari @ toy [the balls][Japanese] ## qrop l14 r12 ## qropt! {{Photo.. Kupparock $dreamstime 27844092}}.jpg
 temari @ toy [the balls][Japanese] ## qrop t23 b10 ## qropt! {{Photo.. Kupparock $dreamstime 27844082}}.jpg
 temari @ toy [the ball][Japanese] ## qrop q {{Photo.. Kupparock $dreamstime 27844078}}.jpg
-toy horse [toy@horse] ## qrop l25 r8 {{Photo.. Nataliesusu $dreamstime 7799807}}.jpg
-toy horse [toy@horse] ## qrop qb {{Photo.. Nataliesusu $dreamstime 7799742}}.jpg
-toy shovel [toy@shovel] ## qrop t8 b9 ## qropt! {{Photo.. Hein Teh $dreamstime 102733925}}.jpg
+toy horse [toy] ## qrop l25 r8 {{Photo.. Nataliesusu $dreamstime 7799807}}.jpg
+toy horse [toy] ## qrop qb {{Photo.. Nataliesusu $dreamstime 7799742}}.jpg
+toy shovel [toy] ## qrop t8 b9 ## qropt! {{Photo.. Hein Teh $dreamstime 102733925}}.jpg
 toys [toy → toys] ## qrop ql {{Photo.. Guilhermeferraz $dreamstime 103726243}}.jpg
 toys [toy → toys] ## qrop ql {{Photo.. Guilhermeferraz $dreamstime 103726288}}.jpg
 windmill @ toy ## qrop l15 r19 ## qropt! {{Photo.. Aurora Esperanza Ángeles Flores $dreamstime 99631854}}.jpg
@@ -33808,7 +33857,7 @@ alloy wheel ## qrop l10 r20 {{Photo.. Peter Harrison $dreamstime 15951}}.jpg
 bonnet~hood @ car ## qrop l15 r5 ## qropt! {{Photo.. Onion $dreamstime 17080270}}.jpg
 car door handle [handle] ## qrop l21 r8 ## qropt! {{Photo.. Oleg Zhukov $dreamstime 64754491}}.jpg
 car door handle [handle] ## qrop qb {{Photo.. George Tsartsianidis $dreamstime 23820351}}.jpg
-fuel door [fuel@door][gas lid] ## qrop l12 r13 {{Photo.. Christian Delbert $dreamstime 15323875}}.jpg
+fuel door [fuel][gas lid] ## qrop l12 r13 {{Photo.. Christian Delbert $dreamstime 15323875}}.jpg
 grill~grille @ car ## qrop l15 r17 {{Photo.. Jack Schiffer $dreamstime 75348}}.jpg
 grill~grille @ car ## qrop l3 r30 {{Photo.. Jamie Roach $dreamstime 16084293}}.jpg
 headlamp ## qrop l29 r5 {{Photo.. Anton Matveev $dreamstime 61828768}}.jpg
@@ -33824,7 +33873,7 @@ external trunk [trunk@car] ## qrop l23 r5 ## qropt! {{Photo.. Georgemuresan $dre
 fill the tank [petrol tank][gas tank] ## qrop l21 ## qropt! {{Photo.. Anna Moskvina $dreamstime 47671783}}.jpg
 flat tyre [flat tire] ## qrop l12 r22 {{Photo.. Esmehelit $dreamstime 73070755}}.jpg
 fuel nozzle [nozzle] ## qrop qr {{Photo.. Phairin Theekawong $dreamstime 77103109}}.jpg
-garage ## qrop l5 r28 ## qropt! {{Photo.. Simonpugh $dreamstime 14026508}}.jpg
+garage @ building ## qrop l5 r28 ## qropt! {{Photo.. Simonpugh $dreamstime 14026508}}.jpg
 gas station [filling station][petrol station][petrol filling station][garage@petrol] ## qrop l6 r27 {{Photo.. Volodymyr Vyshnivetskyy $dreamstime 69608734}}.jpg
 gas up ## qrop qr {{Photo.. Deviddo $dreamstime 110903111}}.jpg
 hazard button [hazard][hazard switch] ## qrop l18 r16 {{Photo.. Jeonghyeon Noh $dreamstime 64699276}}.jpg
@@ -33844,7 +33893,7 @@ pressure washing [pressurewash] ## qrop l14 r20 {{Photo.. Stocksolutions $dreams
 school bus ## qropt! ## qrop l3 r2 {{Photo.. Robert Paul Van Beets $dreamstime 2053353}}.jpg
 scratches @ car ## qrop l25 r9 {{Photo.. Finallast $dreamstime 41370175}}.jpg
 seat belt ## qrop ql {{Photo.. Livijusr $dreamstime 37093424}}.jpg
-seat belt alarm [alarm] ## crop t3 r48 b28 {{Photo.. Pamela Au $dreamstime 69497110}}.jpg
+seat belt alarm [alarm@signal] ## crop t3 r48 b28 {{Photo.. Pamela Au $dreamstime 69497110}}.jpg
 shock absorber ## qrop ql {{Photo.. Sutichak $dreamstime 57870476}}.jpg
 shock absorber ## qrop qt {{Photo.. Picstudio $dreamstime 62773729}} ### motorcycle spring shocker.jpg
 skid @ car ## qrop l29 r5 {{Photo.. Ee Hh $dreamstime 106641099}}.jpg
@@ -34012,7 +34061,7 @@ traffic signs [road signs] ## qrop qr {{Photo.. Lucapbl $dreamstime 87661597}}.j
 turn right [+] ## qrop ql {{Photo.. Mrivserg $dreamstime 42647192}}.jpg
 unprotected quayside or riverbank [unprotected] ## qrop l28 r5 {{Photo.. Thomas Lukassek $dreamstime 106594826}}.jpg
 work area ahead [work area][roadwork] ## qrop l24 r5 ## qropt! {{Photo.. Wimalgorzata $dreamstime 85098212}}.jpg
-wrong way [wrong] ## qrop q {{Photo.. Joe Sohm $dreamstime 91997394}}.jpg
+wrong way [wrong@untrue] ## qrop q {{Photo.. Joe Sohm $dreamstime 91997394}}.jpg
 Yield! Cross traffic does not stop. [yield].wav
 Yield! Cross traffic does not stop. [yield][give way] ## qrop t11 b23 {{Photo.. Ken Wolter $dreamstime 32039953}}.jpg
 >>> ../datae\photo_dreamstime\transport/roads

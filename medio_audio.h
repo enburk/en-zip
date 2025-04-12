@@ -23,7 +23,7 @@ namespace media::audio
         p.wait();
 
         using namespace std::chrono_literals;
-        for (int i=0; i<10; i++)
+        for (int i=0; i<100; i++)
             if (std::filesystem::exists(destination))
                 return; else std::this_thread::sleep_for(100ms);
 

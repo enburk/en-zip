@@ -310,7 +310,7 @@ namespace studio::one
                 if (course.contains(s)
                 or  audios.contains(s)
                 or  videos.contains(s))
-                course[s][&entry] = true;
+                    course[s][&entry] = true;
 
             for (auto& r: resources)
             for (auto& e: r.Entries())
@@ -319,9 +319,8 @@ namespace studio::one
                 str sense = title.extract_from("@");
                 if (sense == "" and not r.vocal())
                 if (course.contains(title)
-                or  audios.contains(title)
-                or  videos.contains(title))
-                map(r)[title][&r] = true;
+                or  map(r).contains(title))
+                    map(r)[title][&r] = true;
             }
 
             for (auto& entry: entries)

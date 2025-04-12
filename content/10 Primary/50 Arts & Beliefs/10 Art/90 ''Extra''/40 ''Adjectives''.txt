@@ -12,10 +12,16 @@ superlatives      = превосходная %% о степени сравнен
 big               = большой # duple
 bigg'''er'''      = больше
 bigg'''est'''     = самый большой
+
 ---
 warm              = тёплый
 warm'''er'''      = более тёплый
 warm'''est'''     = самый тёплый
+
+---
+close @ near      = близкий
+closer            = ближе
+closest           = самый близкий, ~ ближайший
 
 ===
 = такой же принцип у ''двусложных'', ~ оканчивающихся на '''–y, -er, -ow, -ble'''
@@ -49,6 +55,7 @@ simpl'''est'''//'''most''' simple = самый простой
 ===
 
 : That's the stupidest idea ~ I've ever heard!
+
 
 
 

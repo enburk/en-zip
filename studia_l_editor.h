@@ -79,5 +79,15 @@ namespace studia
                 doc::text::repo::save();
             }
         }
+
+        void on_key (str key, bool down, bool input) override
+        {
+            if (down
+            and key == "ctrl+insert"
+            and editor.page.tooltip.on.now
+            and editor.page.tooltip.text.text != "")
+            sys::clipboard::set(editor.page.tooltip.text.text); else
+            editor.on_key(key, down, input);
+        }
     };
 }

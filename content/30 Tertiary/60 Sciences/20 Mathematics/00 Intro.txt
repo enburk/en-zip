@@ -1,5 +1,10 @@
 maths\\math
 
+add      @ math %% {verb}
+subtract @ math %% {verb}
+multiply @ math %% {verb}
+divide   @ math %% {verb}
+
 difficult math problem
 
 ---

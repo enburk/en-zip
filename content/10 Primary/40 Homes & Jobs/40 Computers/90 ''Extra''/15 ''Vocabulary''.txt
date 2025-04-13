@@ -5,6 +5,8 @@ network @ comp            = сеть
 artificial ~ intelligence = искусственный интеллект
 computer vision           = компьютерное зрение
 
+device                    = устройство, прибор, ~ аппарат, механизм
+
 ===
 login                     = логин, вход, ~ авторизоваться
 password                  = пароль
@@ -35,4 +37,5 @@ enter @ comp              = вводить, входить
 : Please, enter access code.
 : Enter password now.
 : Enter parameters.
+
 

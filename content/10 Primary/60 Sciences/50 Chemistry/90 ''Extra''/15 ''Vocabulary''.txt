@@ -10,11 +10,11 @@ sodium              = натрий
 sulfur              = сера
 arsenic             = мышьяк
 
-iron @ chemistry    = железо
-copper @ chemistry  = медь
-tin @ chemistry     = олово
+iron @ metal        = железо
+copper @ metal      = медь
+tin @ metal         = олово
 mercury @ chemistry = ртуть
-lead @ chemistry    = свинец
+lead @ matal        = свинец
 
 ===
 
@@ -22,5 +22,6 @@ acid                = кислота, кислотный, ~ кислый
 alkali              = щелочь
 
 test tube           = пробирка
+
 
 

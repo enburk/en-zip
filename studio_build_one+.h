@@ -372,6 +372,9 @@ namespace studio::one
                 str title = e;
                 str sense = title.extract_from("@");
                 if (sense != "") continue;
+                if (sense == "" and r.sense == "@"
+                and title == r.abstract)
+                    continue;
 
                 if (map(r).contains(title)
                 or  course.contains(title) and videolike(r))

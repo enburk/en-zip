@@ -4,4 +4,4 @@ sounds
 : arrow impact on wood # SOUND
 : castle gate raised # SOUND
 
-: carriage up and past fast on hard gravely surface # SOUND
+: carriage up and past fast ~ on hard gravely surface # SOUND

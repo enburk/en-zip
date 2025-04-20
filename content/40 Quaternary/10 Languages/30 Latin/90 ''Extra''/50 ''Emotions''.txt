@@ -1,20 +1,22 @@
-emotions
-
 ===
-indignant//indignantly//indignation
-===
-
-: Goodbye. @ indignant
-: No, I don't want to! @ indignant
-: When I'm good and ready. @ indignant
-
-: I don't want ~ to do homework. @ indignant
-: I don't want ~ to do my homework! @ indignant
-
+emotions # HEAD
+relieve
 ===
 
-: ''There's PLENTY of room!'' ~ said Alice indignantly.
+: aahs @ relieved
+: phew! @ relieved
+: You scared me half to death! @ relieved
+: relieved aaah # SOUND
+: relieved exhale # SOUND
+
+===
+exaggeration
+===
+
+: So, here's the thing. @ exaggerated
+: man in crowd laughs ~ in exaggerated fashion # SOUND
+: Intellect is in itself a mode of exaggeration, and destroys the harmony of any face.
 
 ===
 
-: So how did we get to the situation we see today
+: What the person feels is based on what they have been taught to feel /// by a paradigm that teaches them to exaggerate and even fabricate the "feeling."

@@ -3,7 +3,7 @@ computers
 ---
 fetch
 : Fetch me my gloves this moment!
-prefetch = to load data in anticipation of their need
+prefetch                   = to load data in anticipation of their need
 
 : You cannot teach beginners top-down programming, because they don't know which end is up. ~ – C A R Hoare
 : Multithreading is just one damn thing after, before, or simultaneous with another. ~ – Andrei Alexandrescu
@@ -11,9 +11,15 @@ prefetch = to load data in anticipation of their need
 : The popular computer operating system Unix was case-sensitive
 
 ---
-err      = to make a mistake
+err                        = to make a mistake
 : To err is human, to forgive divine.
 : To err is human but to really foul things up requires a computer.
+
+security through obscurity = relying on a potential attacker's lack of knowledge as a means of security
+
+operator precedence
+
+===
 
 : CYBERCHONDRIA (dictionary)
 

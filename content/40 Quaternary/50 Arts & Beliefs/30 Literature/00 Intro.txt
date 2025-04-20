@@ -1,5 +1,11 @@
 literature
 
+caption   = the descriptive heading or title
+preface
+
+narrative /// Latin
+narration
+
 ---
 headline
 : The news headlines today are...

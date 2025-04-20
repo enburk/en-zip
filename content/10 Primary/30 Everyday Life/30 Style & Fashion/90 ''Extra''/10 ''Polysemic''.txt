@@ -2,7 +2,7 @@ polysemic
 ***
 jacket @ main             = куртка                                       # 16+
 jacket @ suit             = пиджак                                       # 16+
-jacket @ jacket           = жакет                                        # 16+
+jacket @@                 = жакет                                        # 16+
 ***
 jumper(1) {Br.} @ sweater = джемпер, свитер, пуловер
 jumper(1) {Am.} @ dress   = сарафан

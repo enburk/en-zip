@@ -3,6 +3,20 @@ logic
 proposition /// Latin
 contradictory
 
+---
+relations @ logic
+transitive @ logic
+: If ''a < b'' and ''b < c'' then ''a < c''.
+symmetric @ logic
+: If ''a &eq; b'' then ''b &eq; a''.
+reflexive @ logic
+: ''a &eq; a''
+
+---
+imply       /// French
+: A implies B %% A &eq;&gt; B
+
 ===
 
 : Contrariwise, -- continued _Tweedledee, -- if it was so, it might be; and if it were so, it would be;
+

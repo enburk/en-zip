@@ -1,7 +1,14 @@
 justice
 
-legislation /// Latin
-aggravation /// Latin
+
+burglar       /// Latin
+interrogation /// Latin
+---
+testimony     /// Latin
+: DO YOU SWEAR that the testimony you are about to give
+
+legislation   /// Latin
+aggravation   /// Latin
 
 trial @ law
 
@@ -12,15 +19,15 @@ fraud
 : A fraud! Oh no.
 
 ---
-swindler    = a person who swindles, ~ cheats or defrauds
+swindler      = a person who swindles, ~ cheats or defrauds
 : In a scam reported in various forms, the swindler would stand upon a bridge
 
 ---
-ransom      /// French
+ransom        /// French
 : THIS is to certify whom it may or doth concern, that we GENTLEMEN OF FORTUNE /// ransom
 
 ---
-infraction  /// Latin
+infraction    /// Latin
 : We accuse you also of the commission of crimes /// and infractions we don’t even know about yet. Guilty or innocent?
 
 ---
@@ -42,3 +49,4 @@ take into custody
 : Punishment, eh? said one starry like ex-soldier type. You lot should be exterminated. /// Like so many noisome pests. Punishment indeed.
 
 : I have been told (I suspect it isn't true) that in parts of Belarus /// gangs prey so systematically on travelers on trains and busses
+

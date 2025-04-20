@@ -1,9 +1,9 @@
 football\\soccer @ soccer = футбол
 
 match @ soccer            = матч
-pass @ soccer             = пас, передача, передать
+pass @ soccer             = пас, передача, ~ передать
 dribbling @ soccer        = дриблинг                 # SPORT- # 18+
-goal @ soccer             = гол
+goal @ soccer             = гол, ворота
 goalkeeper @ soccer       = вратарь/голкипер         # 14+
 linesman @ soccer         = лайнсмен, судья на линии # SPORT+ # 16+
 foul @ soccer             = фол, нарушение правил    # SPORT- # 16+

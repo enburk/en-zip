@@ -22,6 +22,7 @@ demo @ demolition    = demolition
 intro                = introduction
 pic @ picture        = picture
 sci-fi               = science fiction
+slo-mo||slow-mo      = slow motion
 
 ---
 caps                 = capital letters, ~ capitals
@@ -31,6 +32,7 @@ caps                 = capital letters, ~ capitals
 med                  = medical
 meds                 = medications
 vet                  = veterinarian
+
 
 
 

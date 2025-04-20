@@ -1,4 +1,4 @@
-algebra @ math         = алгебра
+algebra                = алгебра
 
 Arabic numerals        = арабские цифры                       # 10+
 ---
@@ -33,5 +33,6 @@ monotonic function     = монотонная функция                   #
 continuum              = континуум                            # MATH+ # TERM+ # 18+
 mantissa               = мантисса                             # MATH+ # TERM+ # 18+
 Fibonacci numbers      = числа Фибоначчи                      # MATH+ # TERM- # 16+
+
 
 

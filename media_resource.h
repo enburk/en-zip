@@ -103,8 +103,7 @@ namespace media
 
             abstract = simple(title);
             abstract.replace_all("_", "");
-            if (sense != ""
-            and sense != "@")
+            if (sense != "")
             abstract  += "@" +
                 sense;
 

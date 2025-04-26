@@ -25,14 +25,11 @@ namespace studio::one
         err << red(bold("ONE ERRORS:"));
         err << report::errors.log; }
 
+        out << dark(bold("ONE: SCAN ENTRIES..."));
+
         array<str> needed_en;
         array<str> needed_us;
         array<str> needed_uk;
-
-        hashmap<res, array<ent>> multientry;
-        array<std::pair<ent, array<res>>> multivideo;
-
-        out << dark(bold("ONE: SCAN ENTRIES..."));
 
         hashset<str> course_vocabulary;
         hashmap<str, int> course_ens;
@@ -41,6 +38,10 @@ namespace studio::one
         hashmap<str, voc> course_matches;
         for (auto& entry: course.entries)
         {
+            if (entry.sense != "")
+            {
+                int a = 0; a++;
+            }
             for (str s: entry.matches)
             course_matches[s].entries += &entry;
 
@@ -55,11 +56,12 @@ namespace studio::one
             for (str s: entry.us) course_uss[s]++;
             for (str s: entry.uk) course_uks[s]++;
         }
+
         for (auto& [s,n]: course_ens) n = min(n, 6);
         for (auto& [s,n]: course_uss) n = min(n, 6);
         for (auto& [s,n]: course_uks) n = min(n, 6);
 
-        reporting(course, course_matches);
+        report_duples(course);
 
         report_missing_words(course_vocabulary, data.resources, vocabulary);
 
@@ -69,54 +71,43 @@ namespace studio::one
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
 
-        sensecontrol
-        sensecontrol(
-        course.entries,
-        data.resources);
-
-        auto course_matches_add = [&course_matches](str s, Res& r)
-        {
-            auto it = course_matches.find(s);
-            if (it == course_matches.end()) return false;
-            it->second.resources += &r; return true;
-        };
-
-        hashset<res> unused_resources;
         for (auto& r: data.resources)
         {
+            if (r.sense != "")
+            {
+                int a = 0; a++;
+            }
             if (r.options.contains("asset")
             or  r.options.contains("noqrop"))
                 continue;
 
-            str abstract = r.
-                abstract;
+            if (r.vocal() and
+            not r.options.contains("(o)")
+            and r.abstract.contains(one_of("()")))
+            report::errors += red(bold("(): ")) + link(&r);
 
-            if (abstract.contains(one_of("()")))
+            if (r.options.contains("="))
+            report::anoma2 += cliplink(&r) + red(bold(" ## ="));
+
+            if (r.vocal())
             {
-                abstract.debracket("(",")");
-                if (r.vocal() and not r.options.contains("(o)"))
-                report::errors += red(bold("():")) + link(&r);
-            }
+                str& a = r.abstract;
+                bool uk = r.options.contains("uk");
+                bool us = r.options.contains("us");
+                bool en = true;
 
-            if (r.sense == "" and
-            not sensecontrol.videolike(r) // vocal
-            and sensecontrol.senses.contains(abstract))
-            {
-                for (str s: sensecontrol.senses[abstract])
-                course_matches_add(s, r);
-                continue;
+                if (uk and course_uks.contains(a)) course_uks[a]--;
+                if (us and course_uss.contains(a)) course_uss[a]--;
+                if (en and course_ens.contains(a)) course_ens[a]--;
             }
-
-            if (course_matches_add(abstract, r))
-                continue;
 
             array<str> matches;
             {
-                const auto& a = abstract;
-                if (a.starts_with("a "  )) matches += str(a.from(2)) + "@noun"; else
-                if (a.starts_with("an " )) matches += str(a.from(3)) + "@noun"; else
-                if (a.starts_with("the ")) matches += str(a.from(4)) + "@noun"; else
-                if (a.starts_with("to " )) matches += str(a.from(3)) + "@verb"; else
+                const str& a = r.abstract; matches += a;
+                if (a.starts_with("a "  )) matches += str(a.from(2)); else
+                if (a.starts_with("an " )) matches += str(a.from(3)); else
+                if (a.starts_with("the ")) matches += str(a.from(4)); else
+                if (a.starts_with("to " )) matches += str(a.from(3)); else
                 {}
             }
 
@@ -130,107 +121,95 @@ namespace studio::one
                     ("Case"));
 
                 matches += r.entries;
-
-                const auto& a = abstract;
-                if (a.starts_with("a "  )) matches += a.from(2); else
-                if (a.starts_with("an " )) matches += a.from(3); else
-                if (a.starts_with("the ")) matches += a.from(4); else
-                if (a.starts_with("to " )) matches += a.from(3); else
-                {}
-
-                array<str> senseless;
-                for (str s: matches)
-                if (s.contains("@")) senseless += s.extract_upto("@");
-                matches += senseless;
-                matches.deduplicate();
             }
 
-            if (r.options.contains("="))
-            report::anoma2 += cliplink(&r) + red(bold(" ## ="));
+            for (str& s: matches)
+            s = s.extract_upto("@");
+            matches.deduplicate();
 
-            bool used = false;
             for (str s: matches)
-            if (course_matches_add(s, r))
-                 used = true;
-
-            if (used
-            or  abstract.size() < 2
-            or  r.options.contains("=")
-            or  r.options.contains("==")
-            or  r.options.contains("sic!")
-            or  r.options.contains("xlam")
-            or  r.options.contains("course-")
-            or  course_vocabulary.
-                contains(abstract))
-                continue;
-
-            // for unused resources
-
-            int spaces = 0;
-            for (char c: abstract)
-            if  (c == ' ')
-                spaces++;
-
-            if (spaces == 1)
-            if (abstract.starts_with("a "  )
-            or  abstract.starts_with("an " )
-            or  abstract.starts_with("the ")
-            or  abstract.starts_with("to " ))
-                continue;
-
-            if (spaces == 2)
-            if (abstract.starts_with("to be "))
-                continue;
-
-            unused_resources.emplace(&r);
+            course_matches[s].resources += &r;
         }
 
-        std::unordered_set<res> single_videos;
+        for (auto [s,n]: course_uks) if (n > 0) needed_uk += s;
+        for (auto [s,n]: course_uss) if (n > 0) needed_us += s;
+        for (auto [s,n]: course_ens) if (n > 0) needed_en += s;
 
-        for (auto& [s,voc]: course_matches)
+        needed_uk += "";
+        needed_us += "";
+        needed_en += "";
+
+        out << dark(bold("ONE: FULFILL..."));
+
+        hashmap<ent, array<res>> vocals;
+        hashmap<ent, array<res>> sounds;
+        hashmap<ent, array<res>> videos;
+        hashset<res> resources_used;
+        hashset<res> resources_single;
+
+        for (Ent& entry: course.entries)
         {
-            int n = 0;
-            res v = 0;
-            for (res r: voc.resources)
-            if (r->kind == "video") n++, v = r;
-            if (n == 1) single_videos.emplace(v);
+            if (entry.sense != "")
+            {
+                int a = 0; a++;
+            }
+            for (str& s: entry.matches)
+            for (res& r: course_matches[s].resources)
+            {
+                bool isahead = entry.opt.external.contains("HEAD");
+                bool nopixed = entry.opt.internal.contains("pix-") or isahead;
+                bool noaudio = entry.opt.internal.contains("audio-");
+                bool nosound = entry.opt.internal.contains("sound-");
+
+                if (r->sound() and nosound) continue;
+                if (r->vocal() and noaudio) continue;
+                if (r->video() and nopixed) continue;
+
+                if (r->sound() and entry.audio_fits(r->abstract))  sounds[&entry] += r;
+                if (r->vocal() and entry.audio_fits(r->abstract))  vocals[&entry] += r;
+                if (r->video() and entry.video_fits(r->Entries())) videos[&entry] += r;
+            }
+
+            for (auto medio: {&vocals, &sounds, &videos})
+            if ((*medio).contains(&entry)
+            and (*medio)[&entry].size() == 1) resources_single.emplace(
+                (*medio)[&entry].front());
         }
 
-        for (auto& [s,voc]: course_matches)
+        int entry_number = 0;
+        for (Ent& entry: course.entries)
         {
-            int n = 0;
-            for (res r: voc.resources)
-            if (r->kind == "video") n++;
-            if (n <= 1) continue;
+            for (auto medio: {&vocals, &sounds, &videos})
+            {
+                if (not (*medio).contains(&entry)) continue;
+                auto& mm = (*medio)[&entry];
 
-            array<res> audios;
-            array<res> videos;
-            for (res r: voc.resources)
-            if (r->kind == "video")
-            videos += r; else
-            audios += r;
+                auto xx = mm;
+                xx.erase_if([&resources_single](res r){
+                return r->options.contains("xlam"); });
+                if (not xx.empty()) mm = xx;
 
-            videos.erase_if([&single_videos](res r){
-            return single_videos.contains(r); });
+                auto yy = mm;
+                yy.erase_if([&resources_single](res r){
+                return resources_single.contains(r); });
+                if (not yy.empty()) mm = yy;
 
-            if (not videos.empty())
-            voc.resources = audios * videos;
+                for (res r: mm)
+                data.one_add(entry_number, r),
+                resources_used.emplace(r);
+            }
+
+            entry_number++;
         }
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));
 
-        auto fullfill = [](array<str>& units, str word, hashmap<str, int>& nn)
+        for (Ent& entry: course.entries)
         {
-            units.erase_if([word, &nn](str& unit)
+            if (entry.sense != "")
             {
-                for (str s: unit.split_by("|"))
-                if (s == word and --nn[s] <= 0) return true;
-                return false;
-            });
-        };
-
-        for (auto [i, entry]: enumerate(course.entries))
-        {
+                int a = 0; a++;
+            }
             if (entry.matches.empty()) continue;
 
             bool isahead = entry.opt.external.contains("HEAD");
@@ -242,89 +221,64 @@ namespace studio::one
             if (noaudio) report::anoma2 += link(entry) + red(bold(" audio-"));
             if (nosound) report::anoma2 += link(entry) + red(bold(" sound-"));
 
-            bool vocal_ok = noaudio or soundio;
-            bool sound_ok = nosound or not soundio;
-            bool video_ok = nopixed or
+            bool vocal_ok = not vocals[&entry].empty() or noaudio or soundio;
+            bool sound_ok = not sounds[&entry].empty() or nosound or not soundio;
+            bool video_ok = not videos[&entry].empty() or nopixed or
             entry.eng.contains(str(u8"→")) or
             entry.eng.starts_with(":") or
             entry.eng == "";
 
-            array<res> vocals;
-            array<res> videos;
-
-            for (str& s: entry.matches)
-            for (res& r: course_matches[s].resources)
-            {
-                if (r->sound() and nosound) continue;
-                if (r->vocal() and noaudio) continue;
-                if (r->video() and nopixed) continue;
-
-                if (r->vocal()) vocals += r;
-                if (r->video()) videos += r;
-
-                if (r->sound() and r->abstract != entry.abstract) continue;
-                if (r->vocal() and r->abstract != entry.abstract) continue;
-
-                if (r->sound()) sound_ok = true;
-                if (r->vocal()) vocal_ok = true;
-                if (r->video()) video_ok = true;
-
-                data.one_add(i, r);
-            }
-
-            auto en = vocal_ok? array<str>{} : entry.en;
-            auto uk = vocal_ok? array<str>{} : entry.uk;
-            auto us = vocal_ok? array<str>{} : entry.us;
-
-            if (not vocal_ok)
-            for (res r: vocals)
-            if (r->vocal() and not r->options.contains("xlam"))
-            {
-                bool uks = r->options.contains("uk");
-                bool uss = r->options.contains("us");
-                bool ens = true;
-
-                if (uks) fullfill(uk, r->abstract, course_uks);
-                if (uss) fullfill(us, r->abstract, course_uss);
-                if (ens) fullfill(en, r->abstract, course_ens);
-            }
-
             str s = html(entry.eng);
-            str snd = red(bold(" sound "));
-            str ens = red(bold(" en: " + html(str(en, ", "))));
-            str uks = red(bold(" uk: " + html(str(uk, ", "))));
-            str uss = red(bold(" us: " + html(str(us, ", "))));
-            if (not en.empty()) report::audiom += linked(s + ens, entry.link);
-            if (not uk.empty()) report::audiom += linked(s + uks, entry.link);
-            if (not us.empty()) report::audiom += linked(s + uss, entry.link);
-            if (not sound_ok  ) report::audiom += linked(s + snd, entry.link);
-            if (not video_ok  ) report::videom += linked(s + " ", entry.link);
-
-            needed_en += en;
-            needed_us += us;
-            needed_uk += uk;
-
-            videos.deduplicate();
-            for (res r: videos)
-                multientry[r] +=
-                &course.entries[i];
-
-            if (videos.size() >= 2)
-            multivideo += std::make_pair(
-                &course.entries[i],
-                std::move(videos));
+            if (not vocal_ok) report::audiom += linked(s, entry.link);
+            if (not sound_ok) report::audiom += linked(s, entry.link) + red(bold(" sound"));
+            if (not video_ok) report::videom += linked(s, entry.link);
 
             if (vocal_ok)
                 continue;
 
+            auto fullfill = [](array<str>& units, str word)
+            {
+                units.erase_if([word](str& unit)
+                {
+                    for (str s: unit.split_by("|"))
+                    if (s == word) return true;
+                    return false;
+                });
+            };
+
+            array<res> rr;
+            for (str& s: entry.matches)
+            for (res& r: course_matches[s].resources)
+            if (r->vocal()) rr += r;
+
+            auto ens = entry.en;
+            auto uks = entry.uk;
+            auto uss = entry.us;
+
+            for (res r: rr)
+            if  (not r->options.contains("xlam"))
+            {
+                bool uk = r->options.contains("uk");
+                bool us = r->options.contains("us");
+                bool en = true;
+
+                if (uk) fullfill(uks, r->abstract);
+                if (us) fullfill(uss, r->abstract);
+                if (en) fullfill(ens, r->abstract);
+            }
+
+            needed_en += ens;
+            needed_us += uss;
+            needed_uk += uks;
+
             array<array<res>> list;
 
-            auto fill = [&list, &vocals](array<str>& units, str lang)
+            auto fill = [&list, &rr](array<str>& units, str lang)
             {
                 for (str ss: units)
                 {
                     list += array<res>{};
-                    for (str s: ss.split_by("|")) for (res r: vocals)
+                    for (str s: ss.split_by("|")) for (res r: rr)
                     if (not r->options.contains("xlam"))
                     if (r->options.contains(lang) or lang == "")
                     if (r->abstract == s) list.back() += r;
@@ -340,43 +294,77 @@ namespace studio::one
 
             int nn = 0;
             auto combine = [&list, &nn, &entry]
-            (this auto const& combine, array<path> rr, int n) -> void
+            (this auto const& combine, array<path> pp, int n) -> void
             {
                 if (n >= list.size())
                 {
                     path dst = "../data/combine/";
                     dst += entry.abstract + " ### " + str(nn++) + ".wav";
-                    media::audio::combine(rr, dst, 0.1, 0.0, 0.0, false);
+                    media::audio::combine(pp, dst, 0.1, 0.0, 0.0, false);
                     return;
                 }
                 for (res r: list[n])
-                combine(rr + r->path, n+1);
+                combine(pp + r->path, n+1);
             };
             combine({}, 0);
         }
 
         out << dark(bold("ONE: MAKE REPORTS..."));
 
+        hashset<res> unused_resources;
+        for (auto& r: data.resources)
+        {
+            if (resources_used.contains(&r)
+            or  r.abstract.size() < 2
+            or  r.options.contains("=")
+            or  r.options.contains("==")
+            or  r.options.contains("sic!")
+            or  r.options.contains("xlam")
+            or  r.options.contains("course-")
+            or  course_vocabulary.
+                contains(r.abstract))
+                continue;
+
+            int spaces = 0;
+            for (char c: r.abstract)
+            if  (c == ' ')
+                spaces++;
+
+            if (spaces == 1)
+            if (r.abstract.starts_with("a "  )
+            or  r.abstract.starts_with("an " )
+            or  r.abstract.starts_with("the ")
+            or  r.abstract.starts_with("to " ))
+                continue;
+
+            if (spaces == 2)
+            if (r.abstract.starts_with("to be "))
+                continue;
+
+            unused_resources.emplace(&r);
+        }
+
+        sensecontrol
+        sensecontrol(
+        course.entries,
+        data.resources);
+
         sensecontrol.report_unused(unused_resources);
         suggestions(course, unused_resources, vocabulary);
         order_check(course, vocabulary);
 
-        array<str> sounds;
-        for (res r:  unused_resources)
+        array<str>  unused_sounds;
+        for (res r: unused_resources) if (r->sound())
         {
-            if (r->kind == "audio"
-            and r->options.contains("sound"))
-            {
-                str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
-                str dir = r->path.parent_path().string();
-                if (not dir.starts_with(s)) continue;
-                dir = dir.from(s.size());
-                sounds += dir + "/" + r->abstract;
-            }
+            str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
+            str dir = r->path.parent_path().string();
+            if (not dir.starts_with(s)) continue;
+            dir = dir.from(s.size());
+            unused_sounds += dir + "/" + r->abstract;
         }
-        sounds.deduplicate();
+        unused_sounds.deduplicate();
         sys::write("../data/sounds.txt",
-        sounds);
+        unused_sounds);
 
         std::map<str, array<res>> words;
         std::map<int, array<res>> Words;
@@ -428,6 +416,21 @@ namespace studio::one
         report::videom.log.resize(nn),
         report::videom.log += bold(blue(
         "+" + str(n-nn) + " more"));
+
+
+        hashmap<res, array<ent>> multientry;
+        array<std::pair<ent, array<res>>> multivideo;
+        for (auto [i, entry]: enumerate(course.entries))
+        {
+            for (res r: videos[&entry])
+                multientry[r] +=
+                &course.entries[i];
+
+            if (videos[&entry].size() >= 2)
+            multivideo += std::make_pair(
+                &course.entries[i],
+                videos[&entry]);
+        }
 
         if (true)
         generate_debug_theme(

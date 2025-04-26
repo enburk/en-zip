@@ -48,9 +48,10 @@ namespace content::out
         array<str> en;
         array<str> uk;
         array<str> us;
+        array<str> matches;
+        array<str> video_matches;
         array<str> vocabulary;
         array<str> phrases;
-        array<str> matches;
         array<str> errors;
         str abstract;
         int line = 0;
@@ -125,22 +126,78 @@ namespace content::out
             matches += abstract;
             matches.deduplicate();
 
-            if (sense != "@")
-            if (sense != "") for (str& x: matches)
-            if (sense != x) x += "@" + sense;
+            for (str x: en*uk*us)
+            video_matches += x.split_strip_by("|");
+            video_matches += abstract;
 
             if (sense == "" and
             not s.starts_with(": ")
             and s.contains(str(u8" → ")))
+            video_matches.upto(1).erase();
+            video_matches.deduplicate();
+
+            if (sense != "@")
+            if (sense != "") for (str& x: video_matches)
+            if (sense != x) x += "@" + sense;
+
+            if (sense != "")
+            abstract  += "@" +
+                sense;
+        }
+
+        bool audio_fits (str r_abstract)
+        {
+            if (sense != "")
             {
-                sense = u8"→";
-                str last = (en*uk*us).back();
-                array<str> lasts = last.split_strip_by("|");
-                for (str& x: matches)
-                if (x != abstract and
-                not lasts.contains(x))
-                x += "@" + sense;
+                int a = 0; a++;
             }
+            if (sense == "@")
+            {
+                int a = 0; a++;
+            }
+
+            array<str> matches;
+            const str& s = r_abstract; matches += s;
+            if (s.starts_with("a "  )) matches += str(s.from(2)) + "@noun"; else
+            if (s.starts_with("an " )) matches += str(s.from(3)) + "@noun"; else
+            if (s.starts_with("the ")) matches += str(s.from(4)) + "@noun"; else
+            if (s.starts_with("to " )) matches += str(s.from(3)) + "@verb"; else
+            {}
+
+            str a = abstract;
+            if (not s.contains("@"))
+            a = a.extract_upto("@");
+
+            return matches.contains(a);
+        }
+
+        bool video_fits (array<str> video_entries)
+        {
+            if (sense != "")
+            {
+                int a = 0; a++;
+            }
+            if (sense == "@")
+            {
+                int a = 0; a++;
+            }
+            auto matches = video_entries;
+            for (str s: video_entries)
+            if (s.starts_with("a "  )) matches += str(s.from(2)); else
+            if (s.starts_with("an " )) matches += str(s.from(3)); else
+            if (s.starts_with("the ")) matches += str(s.from(4)); else
+            if (s.starts_with("to " )) matches += str(s.from(3)); else
+            {}
+
+            if (sense == ""
+            or  sense == "@")
+            for (str& s: matches)
+            s = s.extract_upto("@");
+
+            for (str s: matches)
+            if (video_matches.contains(s))
+            return true;
+            return false;
         }
 
         void parse (str s)

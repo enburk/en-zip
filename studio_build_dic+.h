@@ -60,11 +60,11 @@ namespace studio::dic
                 data.assets.insert(&r);
                 continue; }
 
-            if (r.abstract.contains(one_of ("{}[]")))
-                report::errors += yellow("{}[]:") +
-                linked(html(r.abstract),
-                "file://" + r.path.
-                    string());
+            for (str e: r.Entries())
+            if (e.contains(one_of ("{}[]")))
+                report::errors += yellow("{}[]: ") +
+                linked(html(r.path.stem().string()),
+                "file://" + r.path.string());
 
             abstractmap[r.abstract][simple(r.title)] = &r;
 

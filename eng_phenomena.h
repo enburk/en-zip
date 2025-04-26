@@ -274,25 +274,53 @@ namespace eng
         return forms;
     }
 
+    struct forms_cache_type
+    {
+        hashmap<str, array<str>> map;
+        bool modified = false;
+
+        forms_cache_type()
+        {
+            sys::in::file file("../data/forms_cache.dat");
+            array<array<str>> a; file >> a;
+            map.reserve(a.size());
+            for (array<str> ss: a)
+            map[ss.front()] = ss.from(1);
+        }
+
+        ~forms_cache_type()
+        {
+            if (not modified) return;
+            sys::out::file file("../data/forms_cache.dat");
+            array<array<str>> a; a.reserve((int)map.size());
+            for (auto [s, ss]: map) a += s*ss;
+            file << a;
+        }
+
+        auto forms (str s, vocabulary const& vocabulary)
+        {
+            array<str> & forms = map[s];
+
+            if (not forms.empty()) return forms;
+
+            forms += s; modified = true;
+
+            const hashset<str> excepts = 
+            {
+                "me", "so", 
+            };
+            if (excepts.contains(s))
+            return forms;
+
+            forms += combiforms(s, vocabulary);
+            forms.deduplicate();
+            return forms;
+        }
+    };
+    forms_cache_type forms_cache;
+
     auto forms (str s, vocabulary const& vocabulary)
     {
-        static hashmap<str, array<str>> cache;
-
-        array<str> & forms = cache[s];
-
-        if (not forms.empty()) return forms;
-
-        forms += s;
-
-        const hashset<str> excepts = 
-        {
-            "me", "so", 
-        };
-        if (excepts.contains(s))
-        return forms;
-
-        forms += combiforms(s, vocabulary);
-        forms.deduplicate();
-        return forms;
+        return forms_cache.forms(s, vocabulary);
     }
 }

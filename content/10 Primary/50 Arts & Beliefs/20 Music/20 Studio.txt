@@ -8,7 +8,7 @@ stereo             = стерео, стереосистема    # 10+
 mono @ music       = моно, монофонический     # 10+
 
 equalizer %% Br. also: equaliser = эквалайзер               # 14+
-boombox~boom box   = бумбокс                  # 10+
+boombox||boom box  = бумбокс                  # 10+
 subwoofer          = сабвуфер                 # 10+
 ---
 
@@ -23,5 +23,6 @@ vinyl [disc]       = винил ~ (грампластинка)  # 10+
 
 remix              = ремикс                   # 10+
 discography        = дискография              # TERM+ # 16+
+
 
 

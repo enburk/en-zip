@@ -41,7 +41,7 @@ namespace media
             meta  = fn.extract_upto("}}");
 
             str optio = title.extract_from("##");
-            str links = title.extract_from("[" ); links.strip("[]");
+            str links = title.extract_from("[" ); links.trimr("]");
             comment   = title.extract_from("%%");
             sense     = title.extract_from("@" );
 
@@ -107,9 +107,10 @@ namespace media
             abstract  += "@" +
                 sense;
 
+            links.replace_all("] [", "][");
             entries += links.split_strip_by("][");
             options += optio.split_strip_by("##");
-            entries.erase_all("="); // voicebunny processing legacy
+            entries.erase_all("=");
             entries.erase_all("");
             options.erase_all("");
         }

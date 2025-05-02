@@ -435,21 +435,25 @@ namespace studio::one
         array<res>> unused_resources_vocabulary;
         for (res r: unused_resources)
         {
+            int spaces = 0;
+            for (char c: r->abstract)
+            if  (c == ' ') spaces++;
+
+            if (spaces == 0 and r->vocal())
+                continue;
+
+            if (spaces == 1 and r->vocal())
+            if (r->abstract.starts_with("a "  )
+            or  r->abstract.starts_with("an " )
+            or  r->abstract.starts_with("the ")
+            or  r->abstract.starts_with("to " ))
+                continue;
+
+            if (spaces == 2 and r->vocal())
+            if (r->abstract.starts_with("to be "))
+                continue;
+
             auto entries = all_entries(r, vocabulary);
-
-            entries.try_erase("a");
-            entries.try_erase("an");
-            entries.try_erase("the");
-            entries.try_erase("to");
-
-            if (r->kind == "audio"
-            and entries.size() == 1)
-                continue;
-
-            if (false//true
-            and r->kind == "audio"
-            and r->options.contains("sound"))
-                continue;
 
             for (str& s: entries)
             s = eng::lowercased(simple(s));

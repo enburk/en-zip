@@ -4,29 +4,12 @@ sounds
 : debris, rock # SOUND
 : earthquake rumble # SOUND
 : ice slide, glacier # SOUND
-: pealing thunder clap with long roll # SOUND
 
 : foliage brush movement # SOUND
 : rustle of leaves # SOUND
 : kicking snow # SOUND
 
-===
-
+---
+: pealing thunder clap with long roll # SOUND
 : Thunder didn't just rumble overhead, it tore the air in half.
-
-===
-
-blurp
-gurgle
-drip
-
-===
-
-: pebble: plopping into water # SOUND
-: thick liquid gurgles # SOUND
-: echoey cave drips # SOUND
-: babbling brook # SOUND
-: blurps # SOUND
-
-
 

@@ -1,7 +1,4 @@
-animals:
 groups
-
-
 
 a skulk ~ of foxes
 a sleuth ~ of bears
@@ -12,22 +9,12 @@ a crash ~ of rhinos
 a tower ~ of giraffe
 an implausibility ~ of wildebeest
 
-a heard ~ of elephants
-a parade ~ of elephants
-
 a mob ~ of kangaroos
 a whoop ~ of gorillas
 
 a passel ~ of possums ~ {Am.}
 a business ~ of mongooses
 a conspiracy ~ of lemurs
-
----
-a shoal ~ of fish
-a school ~ of fish      = a group of fish ~ swimming in the same direction
-a school ~ of barracudas
-
-a pod ~ of dolphins
 
 ---
 a raft ~ of sea lions   = in the water
@@ -40,6 +27,32 @@ a fever ~ of stingrays
 gam
 mod
 
+
+---
+a team of pigs\\a passel of pigs
+a sounder ~ of swine
+a sounder ~ of warhogs
+
+drove
+
+a gaggle ~ of geese     = on the ground or water
+a skein ~ of geese      = in flight
+a wedge ~ of geese
+---
+a raft of ducks//a paddling of ducks = on the water
+a safe ~ of ducks       = on the ground
+a brood ~ of ducklings
+
+a flight ~ of swallows
+a charm ~ of finches
+a parliament ~ of owls
+a conspiracy ~ of ravens
+
+
+a swarm ~ of birds
+a swarm ~ of bees
+a flutter ~ of butterflies
+a cloud ~ of mosquitoes
 
 
 

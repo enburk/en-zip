@@ -147,54 +147,37 @@ namespace content::out
 
         bool audio_fits (str r_abstract)
         {
-            if (sense != "")
-            {
-                int a = 0; a++;
-            }
-            if (sense == "@")
-            {
-                int a = 0; a++;
-            }
-
-            array<str> matches;
-            const str& s = r_abstract; matches += s;
-            if (s.starts_with("a "  )) matches += str(s.from(2)) + "@noun"; else
-            if (s.starts_with("an " )) matches += str(s.from(3)) + "@noun"; else
-            if (s.starts_with("the ")) matches += str(s.from(4)) + "@noun"; else
-            if (s.starts_with("to " )) matches += str(s.from(3)) + "@verb"; else
+            array<str> fits;
+            const str& s = r_abstract; fits += s;
+            if (s.starts_with("a "  )) fits += str(s.from(2)) + "@noun"; else
+            if (s.starts_with("an " )) fits += str(s.from(3)) + "@noun"; else
+            if (s.starts_with("the ")) fits += str(s.from(4)) + "@noun"; else
+            if (s.starts_with("to " )) fits += str(s.from(3)) + "@verb"; else
             {}
 
             str a = abstract;
             if (not s.contains("@"))
             a = a.extract_upto("@");
 
-            return matches.contains(a);
+            return fits.contains(a);
         }
 
         bool video_fits (array<str> video_entries)
         {
-            if (sense != "")
-            {
-                int a = 0; a++;
-            }
-            if (sense == "@")
-            {
-                int a = 0; a++;
-            }
-            auto matches = video_entries;
+            auto fits = video_entries;
             for (str s: video_entries)
-            if (s.starts_with("a "  )) matches += str(s.from(2)); else
-            if (s.starts_with("an " )) matches += str(s.from(3)); else
-            if (s.starts_with("the ")) matches += str(s.from(4)); else
-            if (s.starts_with("to " )) matches += str(s.from(3)); else
+            if (s.starts_with("a "  )) fits += str(s.from(2)); else
+            if (s.starts_with("an " )) fits += str(s.from(3)); else
+            if (s.starts_with("the ")) fits += str(s.from(4)); else
+            if (s.starts_with("to " )) fits += str(s.from(3)); else
             {}
 
             if (sense == ""
             or  sense == "@")
-            for (str& s: matches)
+            for (str& s: fits)
             s = s.extract_upto("@");
 
-            for (str s: matches)
+            for (str s: fits)
             if (video_matches.contains(s))
             return true;
             return false;
@@ -280,7 +263,12 @@ namespace content::out
 
             for (str x: s.split_by("/"))
             {
-                x.replace_all("\\","/"); phrases += x;
+                x.strip();
+                x.replace_all("\\","/");
+                x.replace_all("| ","|");
+                x.replace_all(" |","|");
+                
+                phrases += x;
                 if (opt.internal.contains("+ru"))
                 x += " -- " + rus;
                 audio += x;

@@ -1,10 +1,12 @@
-Hungary        = Венгрия # pix- # 10+
-Hungarian      = венгерский # pix- # 10+
+Hungary        = Венгрия # 10+
+Hungarian      = венгерский # 10+
 
 hussar         = гусар # 10+
+komondor       = комондор # sic! # 14+
+
 paprika        = па́прика # 10+
 goulash [soup] = гуляш # MEAT # 10+
-komondor       = комондор # 14+
+
 
 
 

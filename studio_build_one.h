@@ -31,17 +31,27 @@ namespace studio::one
         array<str> needed_us;
         array<str> needed_uk;
 
-        hashset<str> course_vocabulary;
-        hashmap<str, int> course_ens;
-        hashmap<str, int> course_uss;
-        hashmap<str, int> course_uks;
-        hashmap<str, voc> course_matches;
-        for (auto& entry: course.entries)
+        struct nln
         {
-            if (entry.sense != "")
+            int n = 0;
+            int last = 0;
+            void add (int l)
             {
-                int a = 0; a++;
+                if (last = 0 or last+10 > l)
+                if (n < 6) n++;
+                last = l;
             }
+        };
+
+        hashset<str> course_vocabulary;
+        hashmap<str, nln> course_ens;
+        hashmap<str, nln> course_uss;
+        hashmap<str, nln> course_uks;
+        hashmap<str, voc> course_matches;
+        for (int i=0; i < course.entries.size(); i++)
+        {
+            auto& entry = course.entries[i];
+
             for (str s: entry.matches)
             course_matches[s].entries += &entry;
 
@@ -51,15 +61,36 @@ namespace studio::one
 
             if (entry.eng.starts_with(": "))
                 continue;
+
+            if  (not entry.opt.internal.contains("sic!"))
+            for (str ss: entry.en*entry.us*entry.uk)
+            for (str s: ss.split_by("|"))
+            {
+                s.erase_all('(');
+                s.erase_all(',');
+                s.erase_all(';');
+                s.erase_all('.');
+                s.erase_all('?');
+                s.erase_all('!');
+                s.erase_all(')');
+                s.replace_all("/", " ");
+                s.replace_all(u8"“", "");
+                s.replace_all(u8"”", "");
+                for (str w: s.split_by(" "))
+                if (w == eng::lowercased(w)
+                and not vocabulary.contains(w)
+                and not vocabulary.contains(s))
+                report::errors += red(bold(w +" : ")) + link(entry);
+            }
             
-            for (str s: entry.en) course_ens[s]++;
-            for (str s: entry.us) course_uss[s]++;
-            for (str s: entry.uk) course_uks[s]++;
+            for (str ss: entry.en) for (str s: ss.split_by("|")) course_ens[s].add(i);
+            for (str ss: entry.us) for (str s: ss.split_by("|")) course_uss[s].add(i);
+            for (str ss: entry.uk) for (str s: ss.split_by("|")) course_uks[s].add(i);
         }
 
-        for (auto& [s,n]: course_ens) n = min(n, 6);
-        for (auto& [s,n]: course_uss) n = min(n, 6);
-        for (auto& [s,n]: course_uks) n = min(n, 6);
+        std::erase_if(course_ens, [](auto pair){ return pair.second.n < 2; });
+        std::erase_if(course_uss, [](auto pair){ return pair.second.n < 2; });
+        std::erase_if(course_uks, [](auto pair){ return pair.second.n < 2; });
 
         report_duples(course);
 
@@ -73,10 +104,6 @@ namespace studio::one
 
         for (auto& r: data.resources)
         {
-            if (r.sense != "")
-            {
-                int a = 0; a++;
-            }
             if (r.options.contains("asset")
             or  r.options.contains("noqrop"))
                 continue;
@@ -91,14 +118,14 @@ namespace studio::one
 
             if (r.vocal())
             {
-                str& a = r.abstract;
+                str& a  = r.abstract;
                 bool uk = r.options.contains("uk");
                 bool us = r.options.contains("us");
                 bool en = true;
 
-                if (uk and course_uks.contains(a)) course_uks[a]--;
-                if (us and course_uss.contains(a)) course_uss[a]--;
-                if (en and course_ens.contains(a)) course_ens[a]--;
+                if (uk and course_uks.contains(a)) course_uks[a].n--;
+                if (us and course_uss.contains(a)) course_uss[a].n--;
+                if (en and course_ens.contains(a)) course_ens[a].n--;
             }
 
             array<str> matches;
@@ -131,14 +158,6 @@ namespace studio::one
             course_matches[s].resources += &r;
         }
 
-        for (auto [s,n]: course_uks) if (n > 0) needed_uk += s;
-        for (auto [s,n]: course_uss) if (n > 0) needed_us += s;
-        for (auto [s,n]: course_ens) if (n > 0) needed_en += s;
-
-        needed_uk += "";
-        needed_us += "";
-        needed_en += "";
-
         out << dark(bold("ONE: FULFILL..."));
 
         hashmap<ent, array<res>> vocals;
@@ -149,10 +168,6 @@ namespace studio::one
 
         for (Ent& entry: course.entries)
         {
-            if (entry.sense != "")
-            {
-                int a = 0; a++;
-            }
             for (str& s: entry.matches)
             for (res& r: course_matches[s].resources)
             {
@@ -206,10 +221,6 @@ namespace studio::one
 
         for (Ent& entry: course.entries)
         {
-            if (entry.sense != "")
-            {
-                int a = 0; a++;
-            }
             if (entry.matches.empty()) continue;
 
             bool isahead = entry.opt.external.contains("HEAD");
@@ -299,7 +310,7 @@ namespace studio::one
                 if (n >= list.size())
                 {
                     path dst = "../data/combine/";
-                    dst += entry.abstract + " ### " + str(nn++) + ".wav";
+                    dst += entry.abstract.upto_first("@") + " ### " + str(nn++) + ".wav";
                     media::audio::combine(pp, dst, 0.1, 0.0, 0.0, false);
                     return;
                 }
@@ -323,22 +334,6 @@ namespace studio::one
             or  r.options.contains("course-")
             or  course_vocabulary.
                 contains(r.abstract))
-                continue;
-
-            int spaces = 0;
-            for (char c: r.abstract)
-            if  (c == ' ')
-                spaces++;
-
-            if (spaces == 1)
-            if (r.abstract.starts_with("a "  )
-            or  r.abstract.starts_with("an " )
-            or  r.abstract.starts_with("the ")
-            or  r.abstract.starts_with("to " ))
-                continue;
-
-            if (spaces == 2)
-            if (r.abstract.starts_with("to be "))
                 continue;
 
             unused_resources.emplace(&r);
@@ -468,16 +463,17 @@ namespace studio::one
 
         if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
 
-        needed_en.stable_deduplicate(); sys::write("../data/needed_en.txt", needed_en);
-        needed_us.stable_deduplicate(); sys::write("../data/needed_us.txt", needed_us);
-        needed_uk.stable_deduplicate(); sys::write("../data/needed_uk.txt", needed_uk);
+        needed_en.stable_deduplicate(); needed_en += "";
+        needed_us.stable_deduplicate(); needed_us += "";
+        needed_uk.stable_deduplicate(); needed_uk += "";
 
-        int needed_nn = 1000;
-        int step = needed_en.size()/needed_nn;
-        if (step == 0) step = 1;
-        array<str> needed; needed.reserve(needed_nn);
-        for (int i=0; i<needed_en.size(); i += step) needed += needed_en[i];
-        sys::write("../data/needed.txt", needed);
+        for (auto [s,x]: course_ens) if (x.n > 0) needed_en.try_emplace(s);
+        for (auto [s,x]: course_uss) if (x.n > 0) needed_us.try_emplace(s);
+        for (auto [s,x]: course_uks) if (x.n > 0) needed_uk.try_emplace(s);
+
+        sys::write("../data/needed_en.txt", needed_en);
+        sys::write("../data/needed_us.txt", needed_us);
+        sys::write("../data/needed_uk.txt", needed_uk);
 
         // combine samples
         array<path> src =

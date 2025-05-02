@@ -1,15 +1,16 @@
 basic ~ vocabulary
 
-government = правительство, ~ управление
+government          = правительство, ~ управление
 
 ===
-creature @ politics               ставленник ~ (книж. креатура)
-creature @ being               тварь, создание, ~ творение, существо
-creative                творческий, созидательный
+creature @ politics = ставленник ~ (книж. креатура)
+creature @ being    = тварь, создание, ~ творение, существо
+creative            = творческий, созидательный
 ===
 
 : Do you spell ''creature'' ~ with a double ''e''?
 : North American oysters ~ do not make pearls of any value. ~ Useless creatures!
 : You can't have very small, ~ intelligent creatures; ~ you need a minimum brain size.
+
 
 

@@ -1,5 +1,4 @@
-animals:
-male & female
+genders
 
 ewe                   = a female sheep
 ram @ sheep           = a male sheep
@@ -9,14 +8,8 @@ heifer                = a young female cow
 nanny goat            = a female goat
 billy goat            = a male goat
 
-stallion              = an adult male horse /// stud?
-mare                  = a female horse
-
 jack/jackass @ donkey = a male donkey
 jenny/jennet @ donkey = a female donkey
-
-peacock               = a male peafowl
-peahen                = a female peafowl
 
 ---
 drake @ duck          = a male duck
@@ -32,9 +25,6 @@ cob @ swan            = a male swan
 buck @ deer           = a male deer
 stag/hart @ deer      = an adult male deer
 doe @ deer %% {Br.} {also} hind
-bull elk\\bull moose
-cow elk\\cow moose
-a whale cow with a calf
 
 vixen                 = a female fox
 

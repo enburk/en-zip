@@ -4,7 +4,6 @@ sounds
 
 
 : chicken cackle # SOUND
-: chicks peeping # SOUND
 
 : hen startled, flapping wings # SOUND
 : sustained baa, quick vibrato, slightly irritated # SOUND

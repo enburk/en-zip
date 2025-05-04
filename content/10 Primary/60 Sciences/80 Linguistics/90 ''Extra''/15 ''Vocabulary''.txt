@@ -1,14 +1,29 @@
 basic ~ vocabulary
 
-dictionary          = словарь, справочник
-word  @ grammar     = слово
+dictionary                   = словарь, справочник
+word  @ grammar              = слово
 
-consonant           = согласный ~ (звук)
-vowel               = гласный звук, ~ гласная буква
+consonant                    = согласный ~ (звук)
+vowel                        = гласный звук, ~ гласная буква
 
-subject @ grammar   = подлежащее
-object @ grammar    = дополнение # duple
-predicate @ grammar = сказуемое
+subject @ grammar            = подлежащее
+object @ grammar             = дополнение # duple
+predicate @ grammar          = сказуемое
 
+===
+
+exclamation mark             = восклицательный знак
+question mark                = вопросительный знак
+dot//full stop//period {Am.} @ mark = точка
+
+===
+comma                        = запятая
+semicolon                    = точка с запятой
+===
+
+dash @ mark                  = тире
+hyphen @ mark                = дефис
+
+quotation marks//quote marks = кавычки
 
 

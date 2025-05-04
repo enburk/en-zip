@@ -282,7 +282,9 @@ namespace eng
         forms_cache_type()
         {
             sys::in::file file("../data/forms_cache.dat");
-            array<array<str>> a; file >> a;
+            array<array<str>> a;
+            file.get_endianness();
+            file >> a;
             map.reserve(a.size());
             for (array<str> ss: a)
             map[ss.front()] = ss.from(1);
@@ -294,6 +296,7 @@ namespace eng
             sys::out::file file("../data/forms_cache.dat");
             array<array<str>> a; a.reserve((int)map.size());
             for (auto [s, ss]: map) a += s*ss;
+            file << 0x12345678; // endianness
             file << a;
         }
 

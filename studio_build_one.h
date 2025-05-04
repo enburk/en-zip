@@ -356,6 +356,7 @@ namespace studio::one
             if (not dir.starts_with(s)) continue;
             dir = dir.from(s.size());
             unused_sounds += dir + "/" + r->abstract;
+            report::audioq += cliplink(r);
         }
         unused_sounds.deduplicate();
         sys::write("../data/sounds.txt",
@@ -384,11 +385,11 @@ namespace studio::one
                 words[s] += r;
                 continue; }
 
-            if (r->kind == "audio")
+            if (r->vocal())
                 report::audioq +=
                 cliplink(r);
 
-            if (r->kind == "video")
+            if (r->video())
                 report::videoq +=
                 cliplink(r);
         }

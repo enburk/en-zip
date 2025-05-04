@@ -1,0 +1,17 @@
+symbols
+
+bang @ symbol             = !
+octothorpe//sharp//hash @ symbol = &sharp;
+at @ symbol               = @
+hat/caret @ symbol        = ^
+underscore                = _
+tick/backtick @ symbol    = `
+
+---
+slash @ symbol            = /
+backslash//whack @ symbol = \
+pipe @ symbol             = |
+
+asterisk//star//splat @ symbol = *
+bullet//splat @ symbol    = •
+

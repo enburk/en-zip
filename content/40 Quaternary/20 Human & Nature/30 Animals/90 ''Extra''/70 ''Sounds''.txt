@@ -1,10 +1,5 @@
 sounds
 
-: mallard duck: single call # SOUND
-
-: western diamondback rattlesnake: tail rattles # SOUND
-: Mojave rattlesnake: tail rattles # SOUND
-
 : a lone cricket chirps # SOUND
 : lemur chirps # SOUND
 
@@ -12,13 +7,11 @@ sounds
 : hummingbird wing flutters # SOUND
 : pigeon wings fluttering # SOUND
 
-: red tailed hawk, screech # SOUND
 : duck quacks # SOUND
 : seagull squawks # SOUND
-: seagulls crying, shrieking # SOUND
+: mallard duck: single call # SOUND
 
-: black leopard, throaty snarl # SOUND
 : leopard growl: hollow and low # SOUND
 : lynx: grooming licks and low purring # SOUND
 : tiger growl and roar # SOUND
-: tiger growls with inhale, second growl more sharp and attacking # SOUND
+

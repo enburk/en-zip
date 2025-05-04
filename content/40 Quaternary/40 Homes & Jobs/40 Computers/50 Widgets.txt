@@ -1,0 +1,16 @@
+widgets
+
+---
+checkbox//tick box
+tick @ widget = a mark (✓, ✔, ☑, etc.) used to indicate 'yes', 'complete' or 'correct'
+
+toolbar
+tooltip
+
+---
+list box
+dropdown list
+combo box
+
+splitter
+scroller

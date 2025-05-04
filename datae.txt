@@ -642,6 +642,7 @@ burst out laughing.mp3
 buzz [buzz][buzzes][buzzed][buzzing].ogg
 chewing gum mouth open [chewing][chewing gum].ogg
 chiming pottery.ogg
+clap @ thunder ## fade out.ogg
 coins dropped on wooden floor [coin@money][coins].ogg
 cracking peanuts.mp3
 creaking wood [creak][creaks][creaky][creaking].ogg
@@ -883,17 +884,6 @@ here and there.ogg
 husband and wife.ogg
 >>> ../datae\audio\courses/{{Sadlier-Oxford Vocabulary Workshop}} ## us
 >>> ../datae\audio\courses\{{Sadlier-Oxford Vocabulary Workshop}} ## us/definitions
-'{abhor}' is a verb meaning to regard with horror or to hate deeply.ogg
-'{abyss}' is a noun meaning a deep or bottomless pit.ogg
-'{acquiesce}' is a verb meaning to accept without protest or to submit.ogg
-'{acute}' is an adjective with several meanings including.ogg
-'{acute}' is an adjective with several meanings including.txt
-'{ad infinitum}' is an adverb meaning endlessly.ogg
-'{admonish}' is a verb meaning to caution, scold or remind.ogg
-'{adroit}' is an adjective meaning skillful or expert.ogg
-'{altercation}' is a noun meaning an angry argument.ogg
-'{amass}' is a verb meaning to bring or come together.ogg
-'{devastate}' is a verb meaning 'to destrory' or 'lay waste'.ogg
 {abase} is a verb meaning 'to lower, degrade or humble'.ogg
 {abashed} is an adjective and participle meaning 'embarrassed' or 'ashamed'.ogg
 {abate} is a verb that has several meanings.ogg
@@ -901,6 +891,7 @@ husband and wife.ogg
 {abdicate} is a verb meaning 'to resign' or 'to disown'.ogg
 {abduct} is a verb meaning 'to kidnap' or 'to carry off by force'.ogg
 {abet} is a verb meaning to encourage or assist especially in something wrong or unworthy.ogg
+{abhor} is a verb meaning to regard with horror or to hate deeply.ogg
 {abjure} is a verb meaning to avoid or repudiate.ogg
 {abnormal} is an adjective meaning not usual or not typical.ogg
 {abominable} is an adjective meaning arousing hatred or disgusting.ogg
@@ -912,6 +903,7 @@ husband and wife.ogg
 {abstain} is a verb meaning to stay away from doing something by one's own choice.ogg
 {abstemious} is an adjective meaning moderate or sparing, or characterized by abstinence and self-discipline.ogg
 {abut} is a verb meaning to join at one end or to support.ogg
+{abyss} is a noun meaning a deep or bottomless pit.ogg
 {accede} is a verb that means either to yield to or to assume a dignity or office.ogg
 {accelerate} is a verb meaning to speed up or to bring about more quickly.ogg
 {acclimate} is a verb meaning to adapt to a new environment or situation.ogg
@@ -922,14 +914,20 @@ husband and wife.ogg
 {acculturation} is a noun meaning the modification of social patterns, traits or structures.ogg
 {acculturation} is a noun meaning the modification of social patterns, traits or structures.txt
 {acme} is a noun meaning the highest point.ogg
+{acquiesce} is a verb meaning to accept without protest or to submit.ogg
 {acquit} is a verb meaning to declare not guilty or discharge completely or to conduct oneself.ogg
 {acrid} is an adjective meaning harsh in taste or odour, or sharp in manner or temper.ogg
 {acrimonious} is an adjective meaning stinging or bitter in temper or tone.ogg
 {actuate} is a verb meaning to move to action or to impel.ogg
+{acute} is an adjective with several meanings including.ogg
+{acute} is an adjective with several meanings including.txt
+{ad infinitum} is an adverb meaning endlessly.ogg
 {adage} is a noun meaning a proverb or wise saying.ogg
 {adhere} is a verb meaning to stick to or remain attach, or to be devoted as a follower or supporter.ogg
 {adjacent} is an adjective meaning near, next to or adjoining.ogg
 {adjourn} is a verb meaning to stop for a time or to move to another place.ogg
+{admonish} is a verb meaning to caution, scold or remind.ogg
+{adroit} is an adjective meaning skillful or expert.ogg
 {adulation} is a noun meaning praise or flattery that is excessive.ogg
 {adulterate} is a verb meaning to make worse by the addition of something of lesser value.ogg
 {adventitious} is an adjective meaning resulting from chance, or accidental or not essential.ogg
@@ -957,20 +955,55 @@ husband and wife.ogg
 {allot} is a verb meaning to assign or distribute into shares.ogg
 {allude} is a verb meaning to refer to casually or indirectly.ogg
 {aloof} is an adjective meaning withdrawn or standing apart from others.ogg
+{altercation} is a noun meaning an angry argument.ogg
 {amalgamate} is a verb meaning to unite or to combine elements onto a unified whole.ogg
+{amass} is a verb meaning to bring or come together.ogg
 {ambidextrous} is an adjective meaning able to use both hands equally well, or deceitful and hypocritical.ogg
 {ameliorate} is a verb meaning to improve or to correct a flaw or shortcoming.ogg
 {amenable} is an adjective meaning willing to follow advice or authority, tractable, or submissive, or responsive.ogg
 {amicable} is an adjective meaning peaceful or friendly.ogg
 {ample} is an adjective meaning more than enough or large and spacious.ogg
 {animosity} is a noun meaning strong dislike or bitter hostility.ogg
+{arid} is an adjective meaning extremely dry or uninteresting.wav
+{assailant} is a noun meaning a person who attacks violently.wav
+{besiege} is a verb meaning to attack by surrounding or to cause worry or trouble.wav
+{billow} functions as two parts of speech. It can be used as a noun meaning a large wave.txt
+{billow} functions as two parts of speech. It can be used as a noun meaning a large wave.wav
+{confront} is a verb meaning to meet face to face, especially as a challenge..txt
+{confront} is a verb meaning to meet face to face, especially as a challenge..wav
+{constrain} is a verb meaning to force or to restrain.wav
+{contemporary} functions as two parts of speech. It can be used as an adjective meaning belonging to the same period of time.txt
+{contemporary} functions as two parts of speech. It can be used as an adjective meaning belonging to the same period of time.wav
 {deem} is a verb meaning 'to believe' or 'to have an opinion'.ogg
+{denounce} is a verb meaning to condemn openly or to accuse formally.wav
+{depict} is a verb meaning to portray or to represent in a picture.wav
+{devastate} is a verb meaning 'to destrory' or 'lay waste'.ogg
+{disinterested} is an adjective meaning fair-minded or indifferent.wav
+{douse} is a verb meaning to plunge into a liquid or to put out quickly.wav
 {elusive} is an adjective meaning 'difficult to catch or hold' or 'hard to explain or understand'.ogg
+{encompass} is a verb meaning to encircle, to enclose, or to include .wav
+{expressly} is an adverb meaning plainly or for a particular purpose.wav
+{famished} may be used as an adjective or as a participle, meaning suffering severely from hunger or some other lack.wav
+{forsake} is a verb meaning to give up or to leave.wav
+{gainful} is an adjective meaning profitable or bringing in money or special advantage.wav
 {generate} is a verb meaning 'to bring into existence' or 'to be the cause of'.ogg
+{groundless} is an adjective meaning without any good reason or cause.wav
+{hypocrite} is a noun meaning a person who pretends to be what he or she is not.wav
+{immense} is an adjective meaning very large or beyond ordinary means of measurement.wav
+{incomprehensible} is an adjective meaning impossible to understand.wav
+{inept} is an adjective meaning totally without skill or appropriateness.wav
+{ingenious} is an adjective, meaning showing remarkable originality or resourcefulness.wav
 {ingratitude} is a noun meaning 'a lack of thankfulness'.ogg
+{instantaneous} is an adjective, meaning done in an instant or immediate.wav
+{irk} is a verb meaning to annoy or make weary.wav
+{misgiving} is a noun that means a feeling of fear or doubt.wav
+{oaf} is a noun meaning a stupid person or a big clumsy slow individual.wav
+{recede} is a verb meaning to move backward or to become more distant.wav
+{repast} is a noun meaning a meal.wav
 >>> ../datae\audio\courses\{{Sadlier-Oxford Vocabulary Workshop}} ## us/{{}}
 a farewell.ogg
 a misfortune.ogg
+a totally disinterested observer.wav
 abase.ogg
 abashed.ogg
 abate.ogg
@@ -1064,42 +1097,60 @@ amplify.ogg
 an abyss of despare.ogg
 anarchy.ogg
 anathema.ogg
+ancient history.wav
 anecdote.ogg
 anguish.ogg
 animated.ogg
 animosity.ogg
 annex.ogg
 annotation.ogg
+arid.wav
+assailant.wav
 at ease.ogg
 be discouraged by adverse circumstances.ogg
+billow.wav
 bottomless pit.ogg
 called.ogg
 childhood.ogg
 class.ogg
 completely.ogg
+confront.wav
 confrontation.ogg
 confusion.ogg
 connected.ogg
+constrain.wav
+contemporary.wav
 deem.ogg
+depict.wav
 devastate.ogg
 discredit.ogg
+disinterested.wav
 elusive.ogg
+encompass.wav
 endlessly.ogg
 excitement.ogg
+face to face.wav
+fair-minded.wav
 France ## Case.ogg
+gainful.wav
 generate.ogg
 George Eliot ## Case.ogg
+groundless.wav
+hypocrite.wav
 idolize.ogg
 impulses.ogg
 in no time at all.ogg
 in public ## course-.ogg
 including.ogg
+incomprehensible.wav
 ingratitude.ogg
 into the abyss.ogg
 jobs.ogg
+mimic.wav
 natural formations.ogg
 Now, here we go....ogg
 one more time.ogg
+parts of speech.wav
 pit.ogg
 politics.ogg
 portfolios.ogg
@@ -1112,6 +1163,7 @@ similarly.ogg
 sore.ogg
 space and time.ogg
 sufficient.ogg
+The mockingbird can mimic the songs of other birds..wav
 throughout the world.ogg
 to confirm.ogg
 to discredit an opponent.ogg
@@ -1119,12 +1171,15 @@ to distribute.ogg
 to grant.ogg
 to impel.ogg
 to nullify.ogg
+to restrain.wav
 to smooth or polish.ogg
 to subside.ogg
 to support.ogg
+to testify in court.wav
 tractable.ogg
 unyielding.ogg
 US citizenship ## Case.ogg
+violently.wav
 wealth.ogg
 with a sharp point.ogg
 with alacrity ## course-.ogg
@@ -22417,7 +22472,7 @@ blow @ air ### HUMAN-BLOW_GEN-HDF-14832.wav
 back pats and rub ### BackPatsRub HF038510.wav
 body frisk and pat down ### BodyFriskPatDown HF038701.wav
 body pat down ### BodyPatDown HF038702.wav
-clap ### Clap CTE01_44.1.wav
+clap @ hands ### Clap CTE01_44.1.wav
 combing ### RoughCombingBrushi PE397201.wav
 drumming fingers ## crop 0-3.5 ### HumanCrack_DIGIFX5-30.wav
 face pats ## crop 0-5 ### BodyHitsImpacts-FacePats-CU_B01-02405.wav
@@ -22922,7 +22977,7 @@ ta-da accent ### GuitarComedy CTE05_65.3.wav
 flute @ music ## course- ### FluteShrtLightFl SDT2056701.wav
 melancholic arpeggio chord, long sustain ## long ### ElectGuitarMelanch MA022101.wav
 reverberant ### ElectGuitarLowTone MA023301.wav
-reverberate ### ElectGuitarLowTone MA023302.wav
+reverberation [+][reverberate] ### ElectGuitarLowTone MA023302.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### music/solfeggio
 accordion, arpeggio.. tonic, dominant, subdominant ### AccordionArpeggioT MA020504.wav
 accordion.. staccato ### AccordionCome CTE04_17.7.wav
@@ -23643,7 +23698,8 @@ ice hockey.. slap shot hitting post ### HOCKEY-ICE_GEN-HDF-14252.wav
 ice hockey.. wrister ### Sports-IceHockey-WoodHoc-47_B06A-05838.wav
 skate scrape on ice ### HockeySkatingSkat SSC030201.wav
 skater.. dig in ### HockeyPlayerSkate SSC031905.wav
-World Cup of Hockey, Toronto.. crowd chants ''Go Leafs Go!'' ## crop 0-20 ## fade out ### Sports-Ice-Hockey-Chant-Go-Leafs-Go_BON-00932.wav
+World Cup of Hockey, Toronto.. crowd chants Go Leafs Go! ## crop 0-20 ## fade out.txt
+World Cup of Hockey, Toronto.. crowd chants Go Leafs Go! ## crop 0-20 ## fade out.wav
 Indy race car.. decelerating hard at end of straightaway ### AUTO-RACE-INDY_GEN-HDF-02423.wav
 jog away lethargic ### Feet-Dirt-Track-Jog-Away-Le_B07-00962.wav
 joggers ## crop 0-10 ## fade out ### JoggersByOnAsphalt CT031201.wav

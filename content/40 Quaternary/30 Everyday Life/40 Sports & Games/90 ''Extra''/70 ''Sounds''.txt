@@ -16,6 +16,7 @@ sounds
 
 
 
+: soccer, coaching, pep talk # SOUND
 
 : figure skater: flip jump # SOUND
 : figure skater: single axel jump # SOUND
@@ -23,7 +24,7 @@ sounds
 : ice skating: layback spin # SOUND
 : ice skating: rough turn # SOUND
 
-: World Cup of Hockey, Toronto: crowd chants ''Go Leafs Go!'' # SOUND
+: World Cup of Hockey, Toronto: crowd chants Go Leafs Go! # SOUND
 : hockey stick, drag on ice # SOUND
 : ice hockey: body check # SOUND
 : ice hockey: bodycheck into boards # SOUND

@@ -7,14 +7,15 @@ upset @ distressed = distressed
 
 : But mom! @ upset
 : I want to! @ upset
-: Give it back! @ upset # duple
+: Give it back! @ upset
 : You broke it. @ upset
 
 ===
 
-: crowd upset walla # SOUND
-: upset murmuring, arguing # SOUND
+: crowd upset walla
+: upset murmuring, arguing
 
 : You get what you get and you don’t get upset
+
 
 

@@ -20,12 +20,13 @@ stop line
 pavement
 cobblestone road
 unpaved road
-pavement\\sidewalk # 8+
-curbstone          # 8+
+pavement\\sidewalk
+curbstone
 
 road roller
 
 ===
+
 
 
 

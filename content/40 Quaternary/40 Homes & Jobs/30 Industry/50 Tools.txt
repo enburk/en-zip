@@ -1,4 +1,4 @@
-tools                         # pix-
+tools
 
 dowels
 copper washers
@@ -13,19 +13,19 @@ sledgehammer
 hobby knife blade
 cutter knife
 
-chisel                        /// French
+chisel     /// French
 
 
 
 flat-head screwdriver
 cross-head screwdriver
 
-socket spanner\\socket wrench # 8+
-wheel brace\\lug wrench       # 12+
+socket spanner\\socket wrench
+wheel brace\\lug wrench
 bike spanner\\bike wrench
-Stillson wrench\\pipe wrench  # 8+
+Stillson wrench\\pipe wrench
 adjustable spanner\\adjustable wrench %% {also} crescent spanner
-Allen key\\Allen wrench %% {also} hex key # 8+
+Allen key\\Allen wrench %% {also} hex key
 
 tongue-and-groove pliers//water pump pliers//Multi-Grips
 
@@ -35,10 +35,11 @@ trowel
 
 tap @ screw %% cutting tool
 
-staple gun                    /// , ~ tacker
+staple gun /// , ~ tacker
 snips %% plural
 
 crate opener
+
 
 
 

@@ -2,17 +2,18 @@ doors & locks
 
 latch @ door
 cabin hook
-hinge @ door    # 10+
-rivets          # 10+
+hinge @ door
+rivets
 
-padlocked latch # 8+
+padlocked latch
 
 lever lock
 knob lock
 
-a handwheel ~ of a watertight door # 8+
+a handwheel ~ of a watertight door
 
 key around the neck
+
 
 
 

@@ -27,7 +27,11 @@ mitigate
 execute
 assert
 assign
+
+---
 designate
+: designate functions as two parts of speech. It can be used as a verb, meaning to indicate or to appoint
+
 obfuscate
 reveal
 submerge

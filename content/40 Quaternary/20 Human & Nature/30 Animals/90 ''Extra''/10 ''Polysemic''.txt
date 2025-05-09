@@ -5,6 +5,13 @@ seal @ animal
 seal @ stamp
 
 ***
+swallow @ bird
+: That sure is a bitter pill to swallow.
+swallow @ gulp
+: sip with gulping swallow
+: That sure is a bitter pill to swallow.
+
+***
 perch @ fish           /// French/Latin
 perch @ rod            /// French/Latin
 perch @ verb %% {verb} = to rest on a perch ~ (especially, of a bird), ~ to roost
@@ -31,4 +38,5 @@ bore @ boredom         = to inspire boredom, ~ one who inspires boredom
 bore @ tool
 bore @ hole            = a hole drilled or milled through something
 ===
+
 

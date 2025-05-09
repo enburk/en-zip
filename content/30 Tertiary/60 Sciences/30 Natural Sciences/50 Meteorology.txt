@@ -1,18 +1,19 @@
 meteorology
 
-precipitation %% uncountable # 10+
-downpour %% heavy rain       # 8+
+precipitation %% uncountable
+downpour %% heavy rain
 thunderstorm
 lightning storm//electrical storm
 
 ===
 
-supercell %% rotating thunderstorm # 8+
-shelf cloud                  # 8+
-roll cloud                   # 8+
-wall cloud                   # 8+
-funnel cloud                 # 10+
-rope tornado %% roping out tornado # 10+
+supercell %% rotating thunderstorm
+shelf cloud
+roll cloud
+wall cloud
+funnel cloud
+rope tornado %% roping out tornado
+
 
 
 

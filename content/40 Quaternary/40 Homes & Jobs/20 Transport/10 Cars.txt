@@ -6,7 +6,7 @@ bonnet\\hood @ car
 wing mirror\\side-view mirror /// , ~ side mirror
 ---
 car door handle
-suicide door                  # 16+
+suicide door
 
 hood ornament
 
@@ -14,11 +14,12 @@ gas cap//fuel cap
 fuel door//gas lid
 fuel filler flap
 
-dashboard @ car               # 10+
+dashboard @ car
 
 spare tyre\\spare tire
 
-snow chains                   # 12+
-oversize load                 # 10+
+snow chains
+oversize load
+
 
 

@@ -515,8 +515,8 @@ Don't care to hear 'em play a tango.ogg
 Don't care to hear 'em play a tango.txt
 I've got no kick against modern jazz.ogg
 I've got no kick against modern jazz.txt
-Just let me hear some of that rock and roll music.ogg
-Just let me hear some of that rock and roll music.txt
+Just let me hear some of that rock and roll music ## course-.ogg
+Just let me hear some of that rock and roll music ## course-.txt
 >>> ../datae\audio\## song/Beatles, The - Run For Your Life
 Well you know that I'm a wicked guy.ogg
 Well you know that I'm a wicked guy.txt
@@ -788,7 +788,7 @@ palm.ogg
 panic.ogg
 pear [].ogg
 peer [].ogg
-perfect pronunciation.ogg
+perfect pronunciation ## course-.ogg
 poor.ogg
 portable.ogg
 posture.ogg
@@ -966,7 +966,9 @@ husband and wife.ogg
 {animosity} is a noun meaning strong dislike or bitter hostility.ogg
 {arid} is an adjective meaning extremely dry or uninteresting.wav
 {assailant} is a noun meaning a person who attacks violently.wav
+{barrage} is a noun meaning a rapid, large-scale outpouring.wav
 {besiege} is a verb meaning to attack by surrounding or to cause worry or trouble.wav
+{bigot} is a noun meaning an intolerant, prejudiced person.wav
 {billow} functions as two parts of speech. It can be used as a noun meaning a large wave.txt
 {billow} functions as two parts of speech. It can be used as a noun meaning a large wave.wav
 {confront} is a verb meaning to meet face to face, especially as a challenge..txt
@@ -977,16 +979,21 @@ husband and wife.ogg
 {deem} is a verb meaning 'to believe' or 'to have an opinion'.ogg
 {denounce} is a verb meaning to condemn openly or to accuse formally.wav
 {depict} is a verb meaning to portray or to represent in a picture.wav
+{designate} functions as two parts of speech. It can be used as a verb, meaning to indicate or to appoint.txt
+{designate} functions as two parts of speech. It can be used as a verb, meaning to indicate or to appoint.wav
 {devastate} is a verb meaning 'to destrory' or 'lay waste'.ogg
 {disinterested} is an adjective meaning fair-minded or indifferent.wav
+{diversity} is a noun meaning difference or a condition of having many different types.wav
 {douse} is a verb meaning to plunge into a liquid or to put out quickly.wav
 {elusive} is an adjective meaning 'difficult to catch or hold' or 'hard to explain or understand'.ogg
 {encompass} is a verb meaning to encircle, to enclose, or to include .wav
+{enigma} is a noun meaning someone or something extremely puzzling or something that cannot be understood or explained.wav
 {expressly} is an adverb meaning plainly or for a particular purpose.wav
 {famished} may be used as an adjective or as a participle, meaning suffering severely from hunger or some other lack.wav
 {forsake} is a verb meaning to give up or to leave.wav
 {gainful} is an adjective meaning profitable or bringing in money or special advantage.wav
 {generate} is a verb meaning 'to bring into existence' or 'to be the cause of'.ogg
+{gloat} is a verb meaning to look at or think about with great intensity and satisfaction or to take great personal joy in.wav
 {groundless} is an adjective meaning without any good reason or cause.wav
 {hypocrite} is a noun meaning a person who pretends to be what he or she is not.wav
 {immense} is an adjective meaning very large or beyond ordinary means of measurement.wav
@@ -1000,6 +1007,17 @@ husband and wife.ogg
 {oaf} is a noun meaning a stupid person or a big clumsy slow individual.wav
 {recede} is a verb meaning to move backward or to become more distant.wav
 {repast} is a noun meaning a meal.wav
+{ruffle}.. to wrinkle or make uneven, to annoy or to flip through, a gathered strip of material.txt
+{ruffle}.. to wrinkle or make uneven, to annoy or to flip through, a gathered strip of material.wav
+{serene} is an adjective with several meanings including peaceful, free of emotional upset, clear and free of storm, or majestic.wav
+{sheepish} is an adjective meaning embarrassed or meek or timid.wav
+{slake} is a verb meaning to satisfy, relieve, or bring to an end.wav
+{stamina} is a noun meaning the strength needed to keep going or overcome strain.wav
+{terrain} is a noun meaning the landscape or a field of knowledge.wav
+{vocation} is a noun meaning a trade, profession, or occupation, or a sense of special calling for one's work.wav
+{waylay} is a verb meaning to lie and wait for and attack.wav
+{wither} is a verb meaning to dry up or sag or to cause someone to feel ashamed or very small.wav
+{wow} -- a solemn or sacred promise, to declare or promise in a solemn way.wav
 >>> ../datae\audio\courses\{{Sadlier-Oxford Vocabulary Workshop}} ## us/{{}}
 a farewell.ogg
 a misfortune.ogg
@@ -1107,13 +1125,17 @@ annotation.ogg
 arid.wav
 assailant.wav
 at ease.ogg
+barrage.wav
 be discouraged by adverse circumstances.ogg
+bigot.wav
 billow.wav
 bottomless pit.ogg
 called.ogg
+champions.wav
 childhood.ogg
 class.ogg
 completely.ogg
+comprehensive.wav
 confront.wav
 confrontation.ogg
 confusion.ogg
@@ -1122,9 +1144,11 @@ constrain.wav
 contemporary.wav
 deem.ogg
 depict.wav
+designate.wav
 devastate.ogg
 discredit.ogg
 disinterested.wav
+diversity ## {1}.wav
 elusive.ogg
 encompass.wav
 endlessly.ogg
@@ -1135,10 +1159,13 @@ France ## Case.ogg
 gainful.wav
 generate.ogg
 George Eliot ## Case.ogg
+gloat.wav
 groundless.wav
+hands-on exhibits.wav
 hypocrite.wav
 idolize.ogg
 impulses.ogg
+In 1939, Winston Churchill said that he considered Russia “a riddle wrapped in a mystery inside an enigma.”.wav
 in no time at all.ogg
 in public ## course-.ogg
 including.ogg
@@ -1150,6 +1177,7 @@ mimic.wav
 natural formations.ogg
 Now, here we go....ogg
 one more time.ogg
+pacifist.wav
 parts of speech.wav
 pit.ogg
 politics.ogg
@@ -1158,11 +1186,17 @@ possible.ogg
 problem.ogg
 projects.ogg
 responsive.ogg
+sage.wav
+serene.wav
+sheepish.wav
 shortlived.ogg
 similarly.ogg
+slake.wav
 sore.ogg
 space and time.ogg
+stamina.wav
 sufficient.ogg
+terrain.wav
 The mockingbird can mimic the songs of other birds..wav
 throughout the world.ogg
 to confirm.ogg
@@ -1180,9 +1214,12 @@ tractable.ogg
 unyielding.ogg
 US citizenship ## Case.ogg
 violently.wav
+waylay.wav
 wealth.ogg
+wise.wav
 with a sharp point.ogg
 with alacrity ## course-.ogg
+wither.wav
 Your turn..ogg
 >>> ../datae\audio\courses/{{The Lowdown Improve Your Speech}}
 !credit.txt
@@ -1767,7 +1804,7 @@ the chair of the department.ogg
 the f-word.ogg
 the generic pronoun problem.ogg
 the lexicon of female fopperies.ogg
-the Northern Cities Vowel Shift.ogg
+the Northern Cities Vowel Shift ## course-.ogg
 the sentence adverb.ogg
 the stunning accomplishment.ogg
 the Swadesh list.ogg
@@ -1856,7 +1893,7 @@ immoral.ogg
 implicit.ogg
 indeterminate.ogg
 no.ogg
-profound influence.ogg
+profound influence ## course-.ogg
 topoi.ogg
 tremendous influence.ogg
 We don't know for sure!.ogg
@@ -2944,7 +2981,7 @@ diva.ogg
 diverse.ogg
 diversify.ogg
 diversion, divert.ogg
-diversity.ogg
+diversity ## {2}.ogg
 divert.ogg
 divide, division.ogg
 division.ogg
@@ -3688,7 +3725,7 @@ three-piece suit.ogg
 three-point turn.ogg
 three.ogg
 throw your weight around.ogg
-thumb -- thump.ogg
+thumb -- thump ## course-.ogg
 time travel.ogg
 time-consuming.ogg
 TLC.ogg
@@ -4088,8 +4125,8 @@ Let us go forth to lead the land we love, asking _His blessing and _His help.txt
 >>> ../datae\audio\speech gov/Lyndon Johnson - Renunciation Speech
 !credit.txt
 It has not been easy -- far from it..ogg
-The _United _States just must bring its balance of payments.ogg
-The _United _States just must bring its balance of payments.txt
+The _United _States just must bring its balance of payments ## course-.ogg
+The _United _States just must bring its balance of payments ## course-.txt
 Throughout my entire public career.ogg
 Throughout my entire public career.txt
 >>> ../datae\audio\speech gov/Richard Nixon - Resignation Speech
@@ -13470,7 +13507,7 @@ southern bald ibis.wav
 spare sprinkler heads.wav
 spider monkey.wav
 spouting whale.wav
-squeeze (something) out.wav
+squeeze (something) out ## course-.wav
 squeeze out.wav
 squid ink pasta with shrimp [].wav
 St. Patrick's Day.wav
@@ -14027,7 +14064,7 @@ a reproof.ogg
 according to his charge.ogg
 All be forgotten..ogg
 amen [].ogg
-and, behold.ogg
+and behold.ogg
 appeared.ogg
 arise.ogg
 ashamed.ogg
@@ -14040,7 +14077,7 @@ cast away.ogg
 cease.ogg
 cherubims.ogg
 children.ogg
-commit adultery.ogg
+commit adultery ## course-.ogg
 communing.ogg
 concerning that matter.ogg
 continually.ogg
@@ -14460,7 +14497,6 @@ Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth
 Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth.txt
 >>> ../datae\audiobooks/Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}
 !credit.txt
-''Talking of axes,'' said the Duchess, ''chop off her head!''.ogg
 ''Ugh!'' said the Lory, with a shiver..ogg
 A barrowful of WHAT~! [barrowful].ogg
 A mouse -- of a mouse -- to a mouse -- a mouse -- O mouse!.ogg
@@ -14506,7 +14542,6 @@ What IS the use of repeating all that stuff~!.ogg
 Why, there's hardly enough of me left to make ONE respectable person!.ogg
 You insult me by talking such nonsense!.ogg
 >>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}/{{}}
-''There's PLENTY of room!'' said Alice indignantly. [indignantly].ogg
 >>> ../datae\audiobooks\Carroll, Lewis - Alice's Adventures in Wonderland ## uk {{Cora McDonald}}\{{}}/1
 cat.ogg
 chronic.ogg
@@ -14567,11 +14602,13 @@ Which way~! Which way~! [which].ogg
 Who are you~!.ogg
 Why your cat grins like that~!.ogg
 _Mary _Ann!  _Mary _Ann! [Mary Ann].ogg
+“There's PLENTY of room!” said Alice indignantly. [indignantly].ogg
 “'Tis so,” said the Duchess.. “and the moral of that is -- Oh, 'tis love, 'tis love, that makes the world go round!”.ogg
 “Begin at the beginning,” the King said gravely, “and go on till you come to the end.. then stop.”.ogg
+“Talking of axes,” said the Duchess, “chop off her head!”.ogg
 “That's the reason they're called lessons,” the Gryphon remarked.. “because they lessen from day to day.”.ogg
 “Well, if I must, I must,” the King said, with a melancholy air. [must].ogg
-“You!” said the Caterpillar contemptuously.  “Who are YOU~!”.ogg
+“You!” said the Caterpillar contemptuously. “Who are YOU~!”.ogg
 >>> ../datae\audiobooks/Carroll, Lewis - Through the Looking-Glass ## uk {{Cora McDonald}}
 !credit.txt
 ''BRILLIG'' means four o'clock in the afternoon -- the time when you begin BROILING things for dinner..ogg
@@ -15269,7 +15306,7 @@ at the very least.wav
 Douglas DC-8.wav
 scissors cut paper.wav
 success or failure.wav
-taking aim.wav
+taking aim ## course-.wav
 All right, my friend. Now tell me. What's the problem~!.wav
 An hour went by..wav
 And what does that prove~!.wav
@@ -15778,7 +15815,7 @@ duodecimos.wav
 Euroclydon!.wav
 experiment.wav
 eyes.wav
-fac-similes.wav
+fac-similes ## = ## course-.wav
 facetiousness.wav
 fetor.ogg
 gam.wav
@@ -16258,7 +16295,7 @@ I am off to the _Pyramids. Good-bye!.ogg
 Indeed, I have always been of opinion that hard work is.ogg
 Indeed, I have always been of opinion that hard work is.txt
 It is quite evident that you have always lived in the country..ogg
-Swallow, Swallow, little Swallow. [swallow].ogg
+Swallow, Swallow, little Swallow. [swallow] ## course-.ogg
 The climate in the north of _Europe is really dreadful..ogg
 The fact is that I find this place rather tedious..ogg
 There is neither society here, nor solitude. In fact, it is essentially suburban..ogg
@@ -16339,8 +16376,8 @@ Intellect is in itself a mode of exaggeration, and destroys the harmony of any f
 Is that very vain of me~! I think it is rather vain. [vain].ogg
 It is an odd thing, but every one who disappears is said to be seen at San Francisco.ogg
 It is an odd thing, but every one who disappears is said to be seen at San Francisco.txt
-It is not merely that I paint from him, draw from him, sketch from him.ogg
-It is not merely that I paint from him, draw from him, sketch from him.txt
+It is not merely that I paint from him, draw from him, sketch from him ## course-.ogg
+It is not merely that I paint from him, draw from him, sketch from him ## course-.txt
 It is the problem of slavery, and we try to solve it by amusing the slaves..ogg
 Laughter is not at all a bad beginning for a friendship, and it is far the best ending for one..ogg
 Let nothing be lost upon you. Be always searching for new sensations. Be afraid of nothing..ogg
@@ -16387,7 +16424,7 @@ When one is in love, one always begins by deceiving one's self.ogg
 When one is in love, one always begins by deceiving one's self.txt
 Will you have some coffee, you fellows~!  Waiter, bring coffee.ogg
 Will you have some coffee, you fellows~!  Waiter, bring coffee.txt
-Yes, I am glad now.  I wonder shall I always be glad~!.ogg
+Yes, I am glad now. I wonder shall I always be glad~!.ogg
 You and I are what we are, and will be what we will be. [+][Wildean].ogg
 You call yesterday the past~!.ogg
 You cut life to pieces with your epigrams..ogg
@@ -16418,7 +16455,7 @@ why.ogg
 >>> ../datae\audiobooks\Wilde, Oscar - The Picture of Dorian Gray ## uk {{John Moffatt}}\{{}}/2
 absolutely incompetent.ogg
 all right.ogg
-apt to linger.ogg
+apt to linger ## course-.ogg
 be fatal ## course-.ogg
 better than good.ogg
 but now and then.ogg
@@ -16426,7 +16463,7 @@ complete failure.ogg
 Dorian Gray ## Case.ogg
 for ever.ogg
 great deal too much ## course-.ogg
-grew wilful.ogg
+grew wilful ## course-.ogg
 half an hour.ogg
 half-past six.ogg
 how dreadful.ogg
@@ -16617,7 +16654,7 @@ négligé.wav
 “Picked up!” Oh no... too dégagé, Mr. _Sartorius, too dégagé. I should say “had the priveledge of becoming acquainted with.”.wav
 >>> ../datae\audiobooks {{$$librivox}}/H. G. Wells - The War of the Worlds
 !credit.txt
-Flutter, flutter, went the flag, first to the right, then to the left..wav
+Flutter, flutter, went the flag, first to the right, then to the left. ## course-.wav
 >>> ../datae\audiobooks {{$$librivox}}/Henry James - Portrait of a Lady
 !credit.txt
 Ah, you must be our crazy aunt Lidia!.wav
@@ -16815,7 +16852,7 @@ anguish.wav
 another [].wav
 another.wav
 answer.wav
-anxious solicitude.wav
+anxious solicitude ## course-.wav
 any case ## course-.wav
 anyhow.wav
 anything.wav
@@ -16870,7 +16907,7 @@ be enforced.wav
 be friendly ## course-.wav
 be guilty ## course-.wav
 be happy ## course-.wav
-be idle with.wav
+be idle with ## course-.wav
 be interested in.wav
 be off ## course-.wav
 be sure ## course-.wav
@@ -17160,7 +17197,7 @@ first course.wav
 first of all.wav
 first.wav
 flame.wav
-flew by.wav
+flew by ## course-.wav
 flower.wav
 fly.wav
 folded.wav
@@ -17203,7 +17240,7 @@ genially.wav
 gentle.wav
 Georgian.wav
 gesture.wav
-giddy girl [giddy].wav
+giddy girl [giddy] ## course-.wav
 gilt.wav
 ginger.wav
 gipsy.wav
@@ -17497,7 +17534,7 @@ pair.wav
 pale.wav
 paper.wav
 Paracelsus.wav
-Paradise Lost.wav
+Paradise Lost ## course-.wav
 paradoxically enough.wav
 park.wav
 parks.wav
@@ -17588,7 +17625,7 @@ sad.wav
 safe.wav
 sandworks ## sic!.wav
 say.wav
-scattered on the grass.wav
+scattered on the grass ## course-.wav
 science.wav
 scold.wav
 sea.wav
@@ -17828,7 +17865,7 @@ to keep up ## course-.wav
 to labor.wav
 to look at.wav
 to mitigate.wav
-to put it in a nutshell.wav
+to put it in a nutshell ## course-.wav
 to putting bulbs ## course-.wav
 to rest.wav
 to revive.wav
@@ -17987,7 +18024,7 @@ Good heavens!.wav
 Good _Lord!.wav
 He paused. ## course-.wav
 He says that he has a splendid idea..wav
-He sighed..wav
+He sighed. ## course-.wav
 Heavens!.wav
 How can I know~!.wav
 How could it best be done~!.wav
@@ -18039,7 +18076,7 @@ Tell me what happened..wav
 Thanks..wav
 The grass is green..wav
 The idea! ## course-.wav
-the Sorrows of _Werter.wav
+the Sorrows of _Werter ## course-.wav
 The thing is very exactly the other way around..wav
 There is plenty of time..wav
 There is something highly ridiculous about it..wav
@@ -18222,7 +18259,7 @@ quick as lightning.wav
 quite a matter of fact manner.wav
 quite a while.wav
 quite close to us.wav
-quite glad.wav
+quite glad ## course-.wav
 quite happy.wav
 rats.wav
 real people ## course-.wav
@@ -18237,7 +18274,7 @@ so.wav
 sociology.wav
 some.wav
 sort.wav
-startled jump.wav
+startled jump ## course-.wav
 still more ## course-.wav
 still.wav
 suppose.wav
@@ -18543,7 +18580,7 @@ ketchup.wav
 lasagna.wav
 longer.wav
 lord.wav
-macaroon, macaron, macaroni.wav
+macaroon, macaron, macaroni ## course-.wav
 marmalade.wav
 michelada.wav
 Ninkasi ## sic!.wav
@@ -19144,8 +19181,8 @@ Asleep~! Nay, wake. Here is what will charm the steed you covet..wav
 Can he be Apollo~! Or Aphrodite's lord~! Not one of Poseidon's bold sons, for they are dead..wav
 Evil his heart, but honey-sweet his tongue.txt
 Evil his heart, but honey-sweet his tongue.wav
-Halcyon days.txt
-Halcyon days.wav
+Halcyon days. While birds of calm sit brooding on the charmed wave..txt
+Halcyon days. While birds of calm sit brooding on the charmed wave..wav
 If only he had had some greatness of mind as well.txt
 If only he had had some greatness of mind as well.wav
 Intelligence did not figure largely in anything he did and was often conspicuously absent.txt
@@ -19304,7 +19341,7 @@ in a very strange way ## course-.wav
 in no time at all.wav
 leaped up three times ## course-.wav
 lifted him up ## course-.wav
-lovely white heifer [heifer].wav
+lovely white heifer [heifer] ## course-.wav
 most of all [].wav
 most of all.wav
 one and all ## course-.wav
@@ -19571,7 +19608,7 @@ anti-intellectualism.wav
 at our peril.wav
 attractive.wav
 bespoke.wav
-blazes on the trail [+][trailblaze].wav
+blazes on the trail [+][trailblaze] ## course-.wav
 bloody-minded.wav
 bloody.wav
 Boca Raton.wav
@@ -19887,7 +19924,7 @@ up yours ## course-.wav
 very sensitive ## course-.wav
 Ye Olde Tea Shoppe.wav
 you weren’t.wav
-afaik (as far as I know) [afaik][AFAIK][as far as I know].wav
+AFAIK -- as far as I know [+][afaik][AFAIK].wav
 After all, if you're going to address your tweets to posterity.txt
 After all, if you're going to address your tweets to posterity.wav
 Are your kids allowed to have some C-A-K-E~!.wav
@@ -19897,7 +19934,7 @@ colon hyphen open parenthesis.txt
 colon hyphen open parenthesis.wav
 Constantly hitting shift puts a lot of strain on the ol’ hands. [Shift].wav
 Gosh hecking darn it!.wav
-HHOS (haha only serious) [HHOS][haha only serious].wav
+HHOS -- haha only serious [+][hhos][HHOS].wav
 ICT (information and communications technologies) [ICT][information and communications technologies].wav
 ikr (I know, right~!) [ikr].wav
 It costs a lot of money to look this cheap..wav
@@ -20134,7 +20171,7 @@ Ringing ''teacher teacher teacher'' song of the {ovenbird}..ogg
 ''Hoo, hoo-hoo, hoo, hoo'' deep {hoots} of the {great horned {owl}}..ogg
 ''Who cooks for you, who {cooks} for you all~!'' call of the {barred {owl}}..ogg
 Evenly repeated whistles of the {northern {saw-whet {owl}}}..ogg
-Low single mourning {hoots} of the {{long-eared} {owl}}..ogg
+Low single mourning {hoots} of the {long-eared} {owl}. [+][long-eared owl].ogg
 Sustained tremolo note of the {eastern {screech {owl}}}..ogg
 >>> ../datae\audiobooks--\John Feith - Who Cooks for Poor Sam Peabody ## course-/P
 ''Chewy, chewy, chewy'' notes and other whistles of the {semipalmated {plover}}..ogg
@@ -20435,7 +20472,7 @@ worldwide.wav
 >>> ../datae\audiobooks--\John McWhorter - Talking Back, Talking Black ## us {{John McWhorter}}\{{}}/2
 And it wouldn't be impossible....wav
 It shouldn't be surprising....wav
-myself included.wav
+myself included ## course-.wav
 not exactly but close.wav
 with a certain amount of success.wav
 African American Vernacular English (AAVE).wav
@@ -21062,7 +21099,7 @@ bad books ## course-.wav
 blank, disdainful incomprehension.wav
 bounden duty.wav
 certain impressions ## course-.wav
-clandestine affection.wav
+clandestine affection ## course-.wav
 coitus interruptus.wav
 contact embarrassment.wav
 customer who knows what he wants.wav
@@ -21172,7 +21209,7 @@ That was wonderful..wav
 That's the whole point..wav
 That’d be wicked..wav
 That’s where you’re wrong..wav
-The Wicked Bible.wav
+The Wicked Bible ## course-.wav
 There ought to be something..wav
 This can't be right.wav
 This one's yours. The other one's... er... someone else's..wav
@@ -21243,7 +21280,7 @@ going on inside ## course-.wav
 only three things ## course-.wav
 reach down.wav
 smooth and soft to the touch.wav
-The Dark World.wav
+The Dark World ## course-.wav
 up above the horizon.wav
 up the waterfall.wav
 >>> ../datae\audiobooks--\Neil Gaiman - Norse Mythology ## uk {{Neil Gaiman}}\{{}}/3
@@ -21308,7 +21345,7 @@ You..wav
 We called it a labyrinth, but I guess it’s just a maze..wav
 >>> ../datae\audiobooks--\Neil Gaiman - Trigger Warning ## uk {{Neil Gaiman}}/{{}}
 Enter at your own risk..wav
-on profound levels.wav
+on profound levels ## course-.wav
 to us.wav
 >>> ../datae\audiobooks--/Philip K. Dick - Do Androids Dream of Electric Sheep {{Scott Brick}}
 !credit.txt
@@ -21781,11 +21818,11 @@ a double blow.wav
 a field guide ## course-.wav
 a little off-piste.wav
 a problem employee ## course-.wav
-accidents of the soul.wav
-acting with integrity.wav
+accidents of the soul ## course-.wav
+acting with integrity ## course-.wav
 all at once.wav
 an embarrassment of riches.wav
-anxious expectation.wav
+anxious expectation ## course-.wav
 as in disgust.wav
 at all [].wav
 at all.wav
@@ -22189,8 +22226,6 @@ whoosh ### SwishesWhooshes-Whoosh-MC-1_B05-07756.wav
 whoosh ### ThinJetWhoosh2 WHOO4_44_2.wav
 whoosh of whip being twirled, then sharp crack of whip snaps ### BullWhipCrackWho PE247101.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound/thud-thunk-thump -thwack
-beer mug.. thump and clink ### BeerMugThumpClinks PE580603.wav
-beer mug.. thump and clink ### BeerMugThumpClinks PE580604.wav
 blade into wood.. thunk ### BladeKnifeWoodThu PE1053401.wav
 boat hull slap metal thump ### BoatHullSlapMetalThumpZA.wav
 boing, clank, thunk ### Boing-Boing-Clank-Thunk_CART019.wav
@@ -22269,10 +22304,10 @@ alligator chuffs followed by a long exhale ### AlligatorChuffBrea AT063803.wav
 baboon shrieks ### BaboonShriekMultiA PE926601.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### animals/birds
 American bittern [bittern] ## crop 0-10 ### BirdAmericanBittern_DIGIC04-27.wav
-barrel owl hoots ### BarrelOwlHoots PE914101.wav
 black woodpecker ## crop 0-5 ### [BirdBlackWoodpecker_DIGIC11-06].wav
 black woodpecker.. pecks ### Birds-BlackWoodpecker-Ext-2_B04-01340.wav
 blacksmith lapwing [blacksmith plover][lapwing] ## crop 0-7 ### BlacksmithPloverMo PE546901.wav
+boreal owl hoots ### BarrelOwlHoots PE914101.wav
 brandt burbling ### BirdBrandt IN01_03.wav
 carrion crow (Corvus corone) ## crop 29- ### BirdCarrionCrow_DIGIC03-10.wav
 cheeping ## crop 0-8 ## fade out ### Backgrounds-Jungle-Saipan-Day_BON-00075.wav
@@ -22282,7 +22317,7 @@ crow caws ### Crow-Caw-Tepid-x3_B07-00655.wav
 currawong ### KurrawongChirpingN PE913202.wav
 dove~pigeon coos ### DovePigeonCoo PE912203.wav
 duck quacks ## crop 0-8  ### DucksQuacksDuckQua AT085201.wav
-eastern screech owl ## crop 0-15 ### 18-32 ### BirdEasterScreechOwl_DIGIC03-22.wav
+eastern screech owl ## crop 0-15 ## course- ### 18-32 ### BirdEasterScreechOwl_DIGIC03-22.wav
 fish eagle ### FishEagleCUZimbabw PE547101.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### animals\birds/geese
 a gaggle of geese ## crop 0-6 ## fade out ### BirdGeese IN01_38.wav
@@ -22471,11 +22506,11 @@ blow @ air ### HUMAN-BLOW_GEN-HDF-14832.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans/body
 back pats and rub ### BackPatsRub HF038510.wav
 body frisk and pat down ### BodyFriskPatDown HF038701.wav
-body pat down ### BodyPatDown HF038702.wav
+body pat down ## course- ### BodyPatDown HF038702.wav
 clap @ hands ### Clap CTE01_44.1.wav
 combing ### RoughCombingBrushi PE397201.wav
 drumming fingers ## crop 0-3.5 ### HumanCrack_DIGIFX5-30.wav
-face pats ## crop 0-5 ### BodyHitsImpacts-FacePats-CU_B01-02405.wav
+face pats ## crop 0-5 ## course- ### BodyHitsImpacts-FacePats-CU_B01-02405.wav
 gritting teeth ## crop 0-3 ### HumanEat_DIGIFX5-13.wav
 mouth, finger, wobble ## crop 0-4 ### MouthFingerWobbleNoise.wav
 mouth, finger, wobble ## crop 4- ### MouthFingerWobbleNoise.wav
@@ -22727,8 +22762,8 @@ crowd cheers & fluctuating horn toots ### CrowdCheersHornTootsFluctuatin PEHD093
 fear and worry ## crop 0-11 ## fade out ### GrpFearWorry PE962401.wav
 football crowd.. concerned rumbling ## crop 0-15 ## fade out ### Fball Crwd Concerned LtRt SUR0127.wav
 frustration ### HUMAN-VOCAL_GEN-HDF-15437.wav
-gasping astonishment and chatter ### GaspAstonishChatte PE601101.wav
-gasping astonishment and chatter ### GaspAstonishSmlCro PE601102.wav
+gasping of astonishment and chatter ### GaspAstonishChatte PE601101.wav
+gasping of astonishment and chatter ### GaspAstonishSmlCro PE601102.wav
 greeting each other at party ## crop 0-9 ## fade out ### Crowd-Small-Greeting-Party_CROWD354.wav
 hailing whistle ### [Adult-Fem_Hailing-Whistle_VKT_18153].wav
 hushed voices and whispering ### Crowd-Small-Hushed-Surprised_CROWD357.wav
@@ -22766,7 +22801,7 @@ almost cry, sob ## crop 0-16 ### HumanCry 1016_23_1.wav
 almost cry, sob ## crop 16- ### HumanCry 1016_23_1.wav
 child sobbing, snivelling ## crop 0-20 ### HumanCry IN10_54.wav
 child sobbing, snivelling ## crop 20-40 ### HumanCry IN10_54.wav
-sobbing, in grief [sobbing][grief] ### HumanCry IN14_34.wav
+sobbing, in grief [sobbing][grief] ## course- ### HumanCry IN14_34.wav
 sobbing, reunion ## crop 0-15 ## fade out ### HumanCry IN14_35.wav
 sobbing, upset ### Human-Cry-Female_OBIN_586.wav
 sobbing, whimpering, snivelling ### HumanCry IN10_56.wav
@@ -22782,7 +22817,6 @@ gasp ### Teenager-Fem_Gasp_VKT_17469.wav
 gasp ### [Teenager-Fem_Quick-Gasp_VKT_17472].wav
 gasp of wonderment ### GaspOoohWonderSmlC PE601003.wav
 gasping crowd ### Crowd-Reaction-Gasp_OBIN_385.wav
-gasping of astonishment and chatter ### GaspAstonishChatte PE601101.wav
 shocked gasp, hushed voices and whispers ### Crowd-Small-Shocked-Gasp_CROWD414.wav
 short gasp ### HumanGasp 6032_18_5.wav
 startled gasp ### GaspSmlCrowdSurpri PE600801.wav
@@ -22847,7 +22881,7 @@ agonizing sigh ### [Teenager-Fem_Agonizing-Sigh_VKT_18072].wav
 big sigh ### [Teenager-Fem_Big-Sigh_VKT_18073].wav
 exasperated sigh ### [Teenager-Male_Exasperated-Sigh_VKT_18082].wav
 heavy sigh ### [Adult-Male_Heavy-Sigh_VKT_18052].wav
-quick exasperated sigh ### Child-Fem_Quick-Exasperated-Sigh_VKT_18056.wav
+quick exasperated sigh ## course- ### Child-Fem_Quick-Exasperated-Sigh_VKT_18056.wav
 quick sigh ### [Child-Male_Quick-Sigh_VKT_18058].wav
 short sigh of disgust ### [Child-Male_Short-Sigh-of-Disgust_VKT_18060].wav
 sigh ### [Senior-Male_Sigh_VKT_18070].wav
@@ -22855,7 +22889,7 @@ sigh of relief ### [Adult-Fem_Sigh-of-Relief_VKT_18048].wav
 sigh of relief ### [Adult-Fem_Sigh-of-Relief_VKT_18049].wav
 sigh of relief ### [Adult-Fem_Sigh-of-Relief_VKT_18050].wav
 sighing ### HumanSnore_DIGII04-32.wav
-struggling, breathing and panting ### Adult-Fem_Struggling-Breathing-and-Panting_VKT_17391.wav
+struggling, breathing and panting ## course- ### Adult-Fem_Struggling-Breathing-and-Panting_VKT_17391.wav
 whistle @ sport ### Whistle 6037_92_1.wav
 whistle.. short shaky blow ### WhistleShortShakyBlowB.wav
 wolf whistle ### [Adult-Fem_Wolf-Whistle_VKT_18156].wav
@@ -29482,7 +29516,7 @@ miso soup.jpg
 bowl @ ball ## qrop t2 b3 ## qropt!.jpg
 Jazz trumpeter _Dizzy _Gillespie puffing out his cheeks [puff out][puff out one's cheeks][puffing out] ## date 1989 ## qrop t5 ## qropt! ### 2.jpg
 Jazz trumpeter _Dizzy _Gillespie puffing out his cheeks [puff out][puff out one's cheeks][puffing out] ## date 1989 ## qrop t6 ## qropt! ### 1.jpeg
-Wrapped Torso [wrapped] ## date 1989.jpg
+Wrapped Torso [wrapped] ## date 1989 ## course-.jpg
 >>> ../datae\photo opqr/Ronis {{Photo.. Willy Ronis}}
 4197_10716099_4.jpg.uid-zps
 Boules Player, {Aubagne} [bowls][boules][boulist][bouliste][bowler][petanque] ## date 1947.jpg
@@ -31996,7 +32030,7 @@ julienne carrots peeler [julienned][peeler] ## qrop l22 r12 {{Photo.. Kungverylu
 kitchen ## qrop ql {{Photo.. Phartisan $dreamstime 1931874}}.jpg
 kitchen knife [knife] ## qrop l20 r9 ## qropt! {{Photo.. Milyavsky $dreamstime 105984225}}.jpg
 meat tenderizer [tenderizer][meat mallet][mallet@meat] ## qrop l15 r19 {{Photo.. Владимир Сухачёв $dreamstime 108124665}}.jpg
-microwave ## qrop l5 r5 ## qropt! {{Photo.. Jaroslav Moravcik $dreamstime 41908031}}.jpg
+microwave [microwave oven] ## qrop l5 r5 ## qropt! {{Photo.. Jaroslav Moravcik $dreamstime 41908031}}.jpg
 mixer @ food ## qrop l14 r7 ## qropt! {{Photo.. Photos1st $dreamstime 13213833}}.jpg
 pizza cutter [pizza wheel] ## qrop l4 r29 {{Photo.. Karpenkov Denis $dreamstime 90452642}}.jpg
 plastic colander [colander] ## qrop l17 r15 ## qropt! {{Photo.. Eleni Seitanidou $dreamstime 39298305}}.jpg
@@ -32769,7 +32803,7 @@ talons of an eagle [talons@bird][claws] ## qrop l13 r7 ## qropt! {{Photo.. Iurii
 black grouse [grouse] ## qrop l12 r21 {{Photo.. Ondřej Prosický $dreamstime 119983334}}.jpg
 black swan [swan] ## qrop qr {{Photo.. Sunheyy $dreamstime 5591907}}.jpg
 black woodpecker %% Dryocopus martius [Dryocopus][woodpecker] ## qrop ql {{Photo.. Ondřej Prosický $dreamstime 80548616}}.jpg
-black-capped kingfisher %% Halcyon pileata [Halcyon] {{Photo.. Panuruangjan $dreamstime 32805878}}.jpg
+black-capped kingfisher %% Halcyon pileata [Halcyon][halcyon@bird] {{Photo.. Panuruangjan $dreamstime 32805878}}.jpg
 blue coua [coua] ## qrop l8 r26 {{Photo.. Ondřej Prosický $dreamstime 97622767}}.jpg
 bluebird ## qrop t6 b27 {{Photo.. Mbolina $dreamstime 68768861}} ### Bluebirds fly in sunlight.jpg
 brown skua [skua] ## qrop l31 r3 {{Photo.. Ondřej Prosický $dreamstime 107363699}}.jpg
@@ -32789,7 +32823,7 @@ golden pheasant [pheasant] ## qrop l25 r8 {{Photo.. Chinnasorn Pangcharoen $drea
 goose ## qrop qr {{Photo.. Sigge $dreamstime 1119771}}.jpg
 Green-winged macaw [ara] ## qrop qt {{Photo.. Ig0rzh $dreamstime 46317501}}.jpg
 kiwi @ bird ## qrop q {{Photo.. Wrangel $dreamstime 72582104}}.jpg
-male {ruddy kingfisher} %% Halcyon coromanda [Halcyon] {{Photo.. Panuruangjan $dreamstime 32821737}}.jpg
+male {ruddy kingfisher} %% Halcyon coromanda [Halcyon][halcyon@bird] {{Photo.. Panuruangjan $dreamstime 32821737}}.jpg
 nest @ bird ## qrop qr {{Photo.. Serban Enache $dreamstime 19733056}}.jpg
 peafowl ## qrop l6 r28 {{Photo.. Seawhisper $dreamstime 12731364}}.jpg
 pelican ## qrop qr {{Photo.. Ynamaku $dreamstime 1923178}}.jpg

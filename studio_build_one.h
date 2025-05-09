@@ -266,6 +266,15 @@ namespace studio::one
             auto uks = entry.uk;
             auto uss = entry.us;
 
+            array<str> all_words;
+            for (str ss: ens*uks*uss)
+            for (str s: ss.split_by("|"))
+                all_words += s;
+
+            for (res r: rr)
+            if (all_words.contains(r->abstract))
+                resources_used.emplace(r);
+
             for (res r: rr)
             if  (not r->options.contains("xlam"))
             {

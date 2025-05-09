@@ -1,8 +1,11 @@
 ===
 small words     # HEAD
 send
+scan
 ===
 
+: supermarket: price scan
+: Iris scan complete.
 
 ===
 irregular verbs # HEAD
@@ -13,6 +16,7 @@ send → sent, sent
 ===
 phrasal verbs   # HEAD
 ===
+
 
 
 

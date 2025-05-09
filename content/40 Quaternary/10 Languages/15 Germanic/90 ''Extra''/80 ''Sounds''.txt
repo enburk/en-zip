@@ -1,10 +1,13 @@
 sounds
 
-angry groan
-nervous groan
-painful groan
-scared nervous groans
-uncomfortable groan
+angry groan           # SOUND
+nervous groan         # SOUND
+painful groan         # SOUND
+scared nervous groans # SOUND
+uncomfortable groan   # SOUND
+
+: baby spitting       # SOUND
+: baby happy spitting # SOUND
 
 
 

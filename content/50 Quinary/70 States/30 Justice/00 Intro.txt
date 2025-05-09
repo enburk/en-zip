@@ -4,14 +4,14 @@ homicide        = the killing of one person by another, whether premeditated or 
 
 ---
 frisk//pat down = to check someone's body for concealed items, especially weapons
-: body frisk and pat down
+: body frisk and pat down # SOUND
 
 ---
 accomplice
-: ''accomplice'' is a noun meaning someone who takes part in a crime
+: accomplice is a noun meaning someone who takes part in a crime
 ---
 abduct
-: ''abduct'' is a verb meaning 'to kidnap' or 'to carry off by force'
+: abduct is a verb meaning 'to kidnap' or 'to carry off by force'
 
 ---
 snitch          = to inform on, especially in betrayal of others
@@ -25,5 +25,6 @@ nark {Br.}
 : Of all the grifters, the confidence man is the aristocrat
 
 : Five centuries ago in England, eavesdropping
+
 
 

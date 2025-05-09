@@ -40,16 +40,16 @@ scoff
 slaver
 ---
 snare
-: snare drum
+: snare drum  # SOUND
 
 snape
 ---
 stagger
-: sewing machine: staggered line
-: man walks and staggers in snow
+: sewing machine: staggered line # SOUND
+: man walks and staggers in snow # SOUND
 ---
 wail
-: agonizing wail
+: agonizing wail # SOUND
 : wailing in pain
 : A long-drawn wail came down the wind
 
@@ -63,6 +63,7 @@ wassail
 
 scant
 scantily
+
 
 
 

@@ -6,9 +6,8 @@ seal @ stamp
 
 ***
 swallow @ bird
-: That sure is a bitter pill to swallow.
 swallow @ gulp
-: sip with gulping swallow
+: sip with gulping swallow # SOUND
 : That sure is a bitter pill to swallow.
 
 ***
@@ -38,5 +37,6 @@ bore @ boredom         = to inspire boredom, ~ one who inspires boredom
 bore @ tool
 bore @ hole            = a hole drilled or milled through something
 ===
+
 
 

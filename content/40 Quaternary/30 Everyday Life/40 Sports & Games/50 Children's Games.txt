@@ -14,7 +14,7 @@ playground
 ===
 
 slide @ playground
-: children on playground
+: children on playground # SOUND
 
 ===
 toys         # HEAD
@@ -26,5 +26,6 @@ lip/mouth ~ (of a balloon) @ balloon
 
 marbles @ balls
 temari @ toy = %% Japanese embroidered balls
+
 
 

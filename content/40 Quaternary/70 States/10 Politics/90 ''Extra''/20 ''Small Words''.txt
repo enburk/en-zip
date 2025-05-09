@@ -1,5 +1,5 @@
 ===
-small words
+small words     # HEAD
 aware
 ===
 
@@ -33,15 +33,15 @@ dim
 toward
 ---
 toss
-: gambling: chip is tossed into a pile of chips
+: gambling: chip is tossed into a pile of chips # SOUND
 : tossing on the waves
 
 within
 ---
 hum
-: quick hum and air hiss
-: bluesy humming
-: background hum
+: quick hum and air hiss # SOUND
+: bluesy humming # SOUND
+: background hum # SOUND
 
 due
 ---
@@ -97,13 +97,14 @@ heck
 excel
 ---
 sob
-: almost cry, sob
-: sobbing, upset
+: almost cry, sob # SOUND
+: sobbing, upset # SOUND
 
 glare
 ---
 gritty
-: walk on gritty stone and gravel
+: walk on gritty stone and gravel # SOUND
+
 
 
 

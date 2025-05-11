@@ -1,5 +1,5 @@
 ===
-small words # HEAD
+small words   # HEAD
 ===
 
 
@@ -10,8 +10,14 @@ small words # HEAD
 
 
 ===
-/// phrasal verbs   # HEAD
+phrasal verbs # HEAD
 ===
+
+---
+rule out
+= to disallow, to make unavailable
+= to reject an option from a list of possibilities
+: Only an X-ray scan will rule out broken bones.
 
 
 

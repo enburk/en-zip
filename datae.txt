@@ -996,6 +996,7 @@ husband and wife.ogg
 {gloat} is a verb meaning to look at or think about with great intensity and satisfaction or to take great personal joy in.wav
 {groundless} is an adjective meaning without any good reason or cause.wav
 {hypocrite} is a noun meaning a person who pretends to be what he or she is not.wav
+{idolize} is a verb, meaning to worship as an idol or to love very much.wav
 {immense} is an adjective meaning very large or beyond ordinary means of measurement.wav
 {incomprehensible} is an adjective meaning impossible to understand.wav
 {inept} is an adjective meaning totally without skill or appropriateness.wav
@@ -1003,17 +1004,30 @@ husband and wife.ogg
 {ingratitude} is a noun meaning 'a lack of thankfulness'.ogg
 {instantaneous} is an adjective, meaning done in an instant or immediate.wav
 {irk} is a verb meaning to annoy or make weary.wav
+{keepsake} is a noun, meaning something kept in memory of the giver or souvenir.wav
 {misgiving} is a noun that means a feeling of fear or doubt.wav
 {oaf} is a noun meaning a stupid person or a big clumsy slow individual.wav
+{petty} is an adjective meaning unimportant, narrow-minded, or minor.wav
+{plight} functions as two parts of speech. It can be used as a noun, meaning a bad condition.txt
+{plight} functions as two parts of speech. It can be used as a noun, meaning a bad condition.wav
 {recede} is a verb meaning to move backward or to become more distant.wav
 {repast} is a noun meaning a meal.wav
+{repent} is a verb, meaning to feel sorry for what one has done or failed to do.wav
+{reverie} is a noun, meaning a daydream or the condition of being lost in thought.wav
+{revocation} is a noun, meaning an act of calling back or an annulment or cancellation.wav
 {ruffle}.. to wrinkle or make uneven, to annoy or to flip through, a gathered strip of material.txt
 {ruffle}.. to wrinkle or make uneven, to annoy or to flip through, a gathered strip of material.wav
+{scan} functions as two parts of speech. It can be a verb, meaning to examine closely.txt
+{scan} functions as two parts of speech. It can be a verb, meaning to examine closely.wav
 {serene} is an adjective with several meanings including peaceful, free of emotional upset, clear and free of storm, or majestic.wav
 {sheepish} is an adjective meaning embarrassed or meek or timid.wav
 {slake} is a verb meaning to satisfy, relieve, or bring to an end.wav
 {stamina} is a noun meaning the strength needed to keep going or overcome strain.wav
+{strand} also functions as two parts of speech. It can be used as a noun, meaning a beach or shore.txt
+{strand} also functions as two parts of speech. It can be used as a noun, meaning a beach or shore.wav
+{strife} is a noun meaning bitter disagreement or fighting.wav
 {terrain} is a noun meaning the landscape or a field of knowledge.wav
+{topple} is a verb, meaning to fall forward or to overturn.wav
 {vocation} is a noun meaning a trade, profession, or occupation, or a sense of special calling for one's work.wav
 {waylay} is a verb meaning to lie and wait for and attack.wav
 {wither} is a verb meaning to dry up or sag or to cause someone to feel ashamed or very small.wav
@@ -1166,6 +1180,7 @@ hypocrite.wav
 idolize.ogg
 impulses.ogg
 In 1939, Winston Churchill said that he considered Russia “a riddle wrapped in a mystery inside an enigma.”.wav
+In a marriage ceremony, the phrase, I plight my trough, means I give my word..wav
 in no time at all.ogg
 in public ## course-.ogg
 including.ogg
@@ -1173,20 +1188,30 @@ incomprehensible.wav
 ingratitude.ogg
 into the abyss.ogg
 jobs.ogg
+keepsake.wav
 mimic.wav
+mortal.wav
 natural formations.ogg
 Now, here we go....ogg
 one more time.ogg
+Only an X-ray scan will rule out broken bones..wav
+overturn.wav
 pacifist.wav
 parts of speech.wav
+petty.wav
 pit.ogg
+plight.wav
 politics.ogg
 portfolios.ogg
 possible.ogg
 problem.ogg
 projects.ogg
+repent.wav
 responsive.ogg
+reverie.wav
+revocation.wav
 sage.wav
+scan.wav
 serene.wav
 sheepish.wav
 shortlived.ogg
@@ -1195,6 +1220,8 @@ slake.wav
 sore.ogg
 space and time.ogg
 stamina.wav
+strand.wav
+strife.wav
 sufficient.ogg
 terrain.wav
 The mockingbird can mimic the songs of other birds..wav
@@ -1210,6 +1237,7 @@ to smooth or polish.ogg
 to subside.ogg
 to support.ogg
 to testify in court.wav
+topple.wav
 tractable.ogg
 unyielding.ogg
 US citizenship ## Case.ogg
@@ -2937,7 +2965,7 @@ denouement.ogg
 dental floss [].ogg
 depression.ogg
 deregulate.ogg
-derive, derivative.ogg
+derive, derivative ## course-.ogg
 derive.ogg
 descend.ogg
 describe, description, descriptive.ogg
@@ -6134,7 +6162,7 @@ company [=].wav
 compass [=].wav
 complex ## {2} ### [`complex].wav
 compote.wav
-compound eyes [=].wav
+compound eyes ## course-.wav
 computer games [=].wav
 concept car [=].wav
 concert hall [=].wav
@@ -14612,7 +14640,7 @@ _Mary _Ann!  _Mary _Ann! [Mary Ann].ogg
 >>> ../datae\audiobooks/Carroll, Lewis - Through the Looking-Glass ## uk {{Cora McDonald}}
 !credit.txt
 ''BRILLIG'' means four o'clock in the afternoon -- the time when you begin BROILING things for dinner..ogg
-''MIMSY'' is ''flimsy and miserable''.ogg
+''MIMSY'' is ''flimsy and miserable'' ## course-.ogg
 And a ''BOROGOVE'' is a thing shabby-looking bird with its feathers sticking out all round something like a live mop..ogg
 And as in uffish thought he stood.ogg
 And as in uffish thought he stood.txt
@@ -15563,7 +15591,7 @@ Entrez, mes enfants!.wav
 Green is the grass that grows on the ground..wav
 Introibo ad altare Dei.wav
 Iron Nails Ran In.wav
-Madam, when comes the storkbird for thee~!.wav
+Madam, when comes the storkbird for thee~! ## course-.wav
 Mass seems to be over..wav
 Muchibus thankibus. ## sic!.wav
 Not a sinner..wav
@@ -16257,6 +16285,37 @@ I’ll do as I choose and go as I please..ogg
 Then we shall see what we shall see..ogg
 Warning~! Warning against what~!.ogg
 What are you thinking about~! Have you decided what to do~!.ogg
+>>> ../datae\audiobooks/Vonnegut, Kurt - Welcome to the Monkey House
+!credit.txt
+Another big change took place about sixty years ago.txt
+Another big change took place about sixty years ago.wav
+Furlough said Newt.txt
+Furlough said Newt.wav
+Gee—I could tell that one was a doozy.txt
+Gee—I could tell that one was a doozy.wav
+I can speak of tens of thousands of dollars.txt
+I can speak of tens of thousands of dollars.wav
+The motto of the place.. “If it's any good, we've got it. If it's no good, we've sold it.”.wav
+The siren goes bweep-bweep-bweep instead of rowrrr, and is guaranteed to be audible at a distance of three miles..wav
+They reeled, whirled, swiveled, flounced, capered, gamboled, and spun..wav
+Two years in prison and two thousand dollars fine for every ball I took out.txt
+Two years in prison and two thousand dollars fine for every ball I took out.wav
+>>> ../datae\audiobooks\Vonnegut, Kurt - Welcome to the Monkey House/{{}}
+A Streetcar Named Desire.wav
+A tart~! A wench~!.wav
+absolutely uncompetitive.wav
+Although the expression ain't I is perhaps defensible.txt
+Although the expression ain't I is perhaps defensible.wav
+Am I not~!.wav
+Boy! said Hazel, that was a doozy, wasn't it.txt
+Boy! said Hazel, that was a doozy, wasn't it.wav
+cross my heart and hope to die.wav
+Is that all you've got to say~!.wav
+Kiselevsk ## sic!.wav
+not at all.wav
+Oh! @ startled [+][startled].wav
+sixteen.wav
+tabu.wav
 >>> ../datae\audiobooks/Wells, H. G. - The War of the Worlds ## uk {{Cori Samuel}}
 !credit.txt
 The cylinder was artificial—hollow—with an end that screwed out! Something within the cylinder was unscrewing the top!.wav
@@ -17451,7 +17510,7 @@ mind.wav
 mistake.wav
 monastic.wav
 Mont Blanc.wav
-mooning and brooding.wav
+mooning and brooding ## course-.wav
 more or less.wav
 more regretful ## course-.wav
 moreover.wav
@@ -17610,7 +17669,7 @@ quiescence.wav
 quiet.wav
 quietly.wav
 quite well.wav
-rather excessively.wav
+rather excessively ## course-.wav
 rather.wav
 regiment.wav
 rein.wav
@@ -18088,7 +18147,6 @@ thrown away ## course-.wav
 till death them do part.wav
 to a considerable extent.wav
 To the left, straight on, to the right, straight on again....wav
-to worry of one's nerves.wav
 twelve o'clock.wav
 upside down.wav
 utterly and entirely.wav
@@ -18477,7 +18535,7 @@ a warrant out for my arrest.wav
 all the time.wav
 as permeable as a sieve.wav
 curiouser and curiouser.wav
-die of pure fear.wav
+die of pure fear ## course-.wav
 far far away.wav
 go wild.wav
 interesting thought.wav
@@ -20939,6 +20997,8 @@ Work, like justice, must not only be done, it must be seen to be done..wav
 !credit.txt
 Actually, there's a very similar, possibly ghost quote that I brought up in another lecture, which is that when Abraham Lincoln.txt
 Actually, there's a very similar, possibly ghost quote that I brought up in another lecture, which is that when Abraham Lincoln.wav
+And if talking about a command in a third person.txt
+And if talking about a command in a third person.wav
 And then we're going to talk about spelling... we're going to explain why G-H-O-T-I could conceivably spell fish..txt
 And then we're going to talk about spelling... we're going to explain why G-H-O-T-I could conceivably spell fish..wav
 Anglo-Saxon is a West-Germanic language. Here is an example from the.txt
@@ -20950,8 +21010,13 @@ As an aside, J.R.R. Tolkien attempted to create a more logical and perfect alpha
 As bad as it is it's actually not the worst spelling system on Earth..wav
 Bill Clinton's “that all depends on what the meaning of is is,” is nothing compared to the problem of defining a word.txt
 Bill Clinton's “that all depends on what the meaning of is is,” is nothing compared to the problem of defining a word.wav
+But even if you don't know what a participle is, you know one thing about participles. Participles are not supposed to dangle..wav
+Grammarian, please. I have to agree here with David Crystal and many others that this is a rule of unimaginable stupidity.txt
+Grammarian, please. I have to agree here with David Crystal and many others that this is a rule of unimaginable stupidity.wav
 I have the benefit of being able to invoke the English professor rule. If I said it, it's grammatically correct enough for me.txt
 I have the benefit of being able to invoke the English professor rule. If I said it, it's grammatically correct enough for me.wav
+I know some people who get really, really worked up about whether they should say, if I were you or if I was you.txt
+I know some people who get really, really worked up about whether they should say, if I were you or if I was you.wav
 If you hear someone say “h-where are you going” you can make a good guess that this person grew up north of a line.txt
 If you hear someone say “h-where are you going” you can make a good guess that this person grew up north of a line.wav
 If you use he, you're gendering. If you use she, it's jarring. If you use they, you're making a plural not match with a singular.txt
@@ -20962,20 +21027,36 @@ Now, the Vikings for a while were just content in raiding England every summer..
 Now, the Vikings for a while were just content in raiding England every summer... I'm sorry, do I sound too anti-Viking.wav
 Now, there's also an irritating grammar rule that goes along with conjunctions.. never start a sentence with a conjunction.txt
 Now, there's also an irritating grammar rule that goes along with conjunctions.. never start a sentence with a conjunction.wav
+Old English did not have a future tense. Hence the mildly bitter Anglo-Saxon's joke, “Old English. There is no future in it.”.wav
 One of my favorite excuses for bizarre spelling comes from fashions in writing. At one point, angular writing was popular.txt
 One of my favorite excuses for bizarre spelling comes from fashions in writing. At one point, angular writing was popular.wav
 One of the reasons that people have a problem is when they hear antecedent, they think ANTI.txt
 One of the reasons that people have a problem is when they hear antecedent, they think ANTI.wav
+Other times, we create strong verbs for effect. So we get woke and boke, being the past tense of wake and bake.txt
+Other times, we create strong verbs for effect. So we get woke and boke, being the past tense of wake and bake.wav
 Paratactic just means setting things next to each other. One thing next to the other, next to the other, next to the other.txt
 Paratactic just means setting things next to each other. One thing next to the other, next to the other, next to the other.wav
+Schwa is the sound of the vowel in the. My German friends say that's why Americans sound like.txt
+Schwa is the sound of the vowel in the. My German friends say that's why Americans sound like.wav
 So if you go and tell people, “you know what, from a linguistic point of view, your grammar's flawless.”.txt
 So if you go and tell people, “you know what, from a linguistic point of view, your grammar's flawless.”.wav
+So we've got the indicative mood and the imperative mood and now we go into the depths of hell, the subjunctive..wav
+Somehow, go collected an entirely different word and used it in the past tense.txt
+Somehow, go collected an entirely different word and used it in the past tense.wav
 Spelling is also tied even more intimately into grammar in some cases. When we say one “goose,” but two “geese,”.txt
 Spelling is also tied even more intimately into grammar in some cases. When we say one “goose,” but two “geese,”.wav
+Split infinitives is a faulty analogy to Latin grammar. It's a rule that was only invented in the 18th century.txt
+Split infinitives is a faulty analogy to Latin grammar. It's a rule that was only invented in the 18th century.wav
 That by the way was completely intentional and not in aptitude on my part.txt
 That by the way was completely intentional and not in aptitude on my part.wav
+That, by the way, is an example of paranormal-masia, when one word sounds just a little too close to another word.txt
+That, by the way, is an example of paranormal-masia, when one word sounds just a little too close to another word.wav
+The imperative is usually marked by not using a subject in the sentence. This is the famous understood you.txt
+The imperative is usually marked by not using a subject in the sentence. This is the famous understood you.wav
 The reason that English spelling is so screwed up, I mean, is so interesting.txt
 The reason that English spelling is so screwed up, I mean, is so interesting.wav
+The subjunctive in modern English is used for things that have not yet happened but aren't truly in the future..txt
+The subjunctive in modern English is used for things that have not yet happened but aren't truly in the future..wav
 The tour guide said, “And if you look to your left, you can see the red panda sleeping in the sun.”.txt
 The tour guide said, “And if you look to your left, you can see the red panda sleeping in the sun.”.wav
 Then English spelling went through a phase where scholars tried to make English words look more like their supposed Latin sources.txt
@@ -20984,6 +21065,8 @@ Thorn and eth were used in English writing up until the Norman Conquest, then we
 Thorn and eth were used in English writing up until the Norman Conquest, then were lost, and then made a temporary comeback.wav
 We don't want to say moose mooses. We can't say moose meese. So what do we do We just call it moose moose.txt
 We don't want to say moose mooses. We can't say moose meese. So what do we do We just call it moose moose.wav
+We say “The dog walks.” “The dogs walk.” “The cow moos.” “The cows moo.” I wanna call this the Conservation of S Law.txt
+We say “The dog walks.” “The dogs walk.” “The cow moos.” “The cows moo.” I wanna call this the Conservation of S Law.wav
 When I was growing up, I was taught that the proper plural of octopus was octopi.txt
 When I was growing up, I was taught that the proper plural of octopus was octopi.wav
 When people find out that I'm an English professor, they often say things like, “Uh-oh, I’d better watch my grammar.”.txt
@@ -20996,8 +21079,12 @@ pronoun antecedent agreement.wav
 Proto-Indo-European.wav
 sound it out [sound out].wav
 word classes ## =.wav
+an irrationality.wav
 And it is a red panda, Ailurus fulgens (which means “shining cat” in Latin). [Ailurus fulgens][Ailurus][red panda].wav
 Keep your stinking Latin grammar rules in your own language..wav
+schwa.wav
+See, I told you we would get to the future. It would just take a while..wav
+understood you ## = ## sic!.wav
 >>> ../datae\audiobooks--/Neil Gaiman - Good Omens ## uk {{Martin Jarvis}}
 !credit.txt
 All was black, gloomy and awful. There was no light at the end of the tunnel—or if there was, it was an oncoming train..wav
@@ -21486,6 +21573,37 @@ They would have to revise all the manuals..wav
 What is so special about it~!.wav
 What the hell is that word~!.wav
 Why doesn't he just say it straight~!.wav
+>>> ../datae\audiobooks--/Ross & Kathryn Petras - That Doesn't Mean What You Think It Means
+!credit.txt
+A quick linguistic note, in linguistics, amelioration is a technical word for a semantic change.txt
+A quick linguistic note, in linguistics, amelioration is a technical word for a semantic change.wav
+Adjur means to require, often under oath, to earnestly urge..wav
+Adverse, adjective, not favorable, harmful, averse, adjective, opposed to, or strongly disliking..txt
+Adverse, adjective, not favorable, harmful, averse, adjective, opposed to, or strongly disliking..wav
+All together phrase in one place all at once. Altogether adverb completely totally..txt
+All together phrase in one place all at once. Altogether adverb completely totally..wav
+Amicable doesn't really work to describe a person. Amiable does.txt
+Amicable doesn't really work to describe a person. Amiable does.wav
+apocryphal (adjective).. something that is not true but often believed to be.wav
+appraise verb to establish a value, estimate an amount, apprise verb to give information..txt
+appraise verb to establish a value, estimate an amount, apprise verb to give information..wav
+As Steve Martin once said, some people have “a way with words”, and other people, “oh, uh, not have way.”.wav
+Careless errors Maybe. But let's strive to keep things straight, and for paintings or houses.txt
+Careless errors Maybe. But let's strive to keep things straight, and for paintings or houses.wav
+Since alternate has become, sometimes grudgingly, an accepted alternative to alternative.txt
+Since alternate has become, sometimes grudgingly, an accepted alternative to alternative.wav
+That said, people have been confusing averse and adverse for years, and we can blame it all on the Romans..wav
+The phrase shows up in 1627 in Captain John Smith's A sea Grammar. What is the anchor away.txt
+The phrase shows up in 1627 in Captain John Smith's A sea Grammar. What is the anchor away.wav
+Words are peripatetic. They don't stay put. They boldly forge ahead, no matter how hard we try to hold them back..wav
+>>> ../datae\audiobooks--\Ross & Kathryn Petras - That Doesn't Mean What You Think It Means/{{}}
+all together -- altogether.wav
+alternative.wav
+ambivalent.wav
+apocryphal.wav
+loosely speaking.wav
+Nice and easy..wav
+So what the big diff between them~!.wav
 >>> ../datae\audiobooks--/Roy Blount Jr. Jr.  - Alphabet Juice ## us {{Roy Blount Jr. Jr.}}
 !credit.txt
 >>> ../datae\audiobooks--\Roy Blount Jr. Jr.  - Alphabet Juice ## us {{Roy Blount Jr. Jr.}}/1 ## Case {{}}
@@ -21838,12 +21956,11 @@ disappointed affection ## course-.wav
 double insanity.wav
 emotional quotient or EQ [EQ].wav
 faint in dismay.wav
-fear entrepreneurs.wav
+fear entrepreneurs ## course-.wav
 fed up with it.wav
 feeling good ## course-.wav
 Freudian slips.wav
 frowned upon.wav
-good fear.wav
 good spirits.wav
 grow some balls.wav
 guilt trips.wav
@@ -21878,7 +21995,7 @@ paying it forward [+][pay forward].wav
 permanent attribute.wav
 petri dish.wav
 peur des espaces ## sic!.wav
-premature burials.wav
+premature burials ## course-.wav
 putri malu (Mimosa pudica) [Mimosa].wav
 running amok.wav
 self-actualisation.wav
@@ -21886,7 +22003,7 @@ self-pride.wav
 sex drive.wav
 sexual frustration.wav
 Sigmund Freud.wav
-sign of indignation.wav
+sign of indignation ## course-.wav
 snatched away.wav
 striking a core.wav
 table talk.wav
@@ -22497,7 +22614,7 @@ baby short yell ### [Baby-B_Short-Yell_VKT_17324].wav
 baby spitting ### Baby-A_Spitting_VKT_17305.wav
 baby squawk ### Baby-B_Fussy-Squawk_VKT_17309.wav
 baby sucking pacifier ### BabySuckingPacifie PE145401.wav
-baby whining ### Baby-D_Fussy-Whining_VKT_17336.wav
+baby whining ## course- ### Baby-D_Fussy-Whining_VKT_17336.wav
 baby.. very upset crying, cantankerous ### Baby-1MonthOld-Int-Clos-140_B04-00581.wav
 Da Da Da ### Baby-B_Da-Da-Da_VKT_17308.wav
 bite ### BiteVegetablePeppe PE391603.wav
@@ -22688,7 +22805,7 @@ sniffle ### [HumanSniffle 6032_30_1].wav
 three sniffs with a snort ### Sniff4ThreeSniffsA PE135501.wav
 snoring ## crop 0-10 ## fade out ### ManSnoringLightlyW AZ175501.wav
 snoring ### Vocals-Snoring-Int-ECU-Male_B05-09139.wav
-snotty cough gags [gags] ### SnottyCoughGags CRT2058501.wav
+snotty cough gags [gags] ## course- ### SnottyCoughGags CRT2058501.wav
 spit ### HumanSpit 6032_38_2.wav
 spit ### [Human-Spit-Dry-Breathe_GEN-HD2-30572].wav
 sputter ### BreathBlowSputter.wav
@@ -22759,7 +22876,7 @@ disgruntled murmur and grumbling ## crop 17-24 ## fade ### Crowd-Male-Disgruntle
 disgruntled murmur and grumbling ## crop 9-17 ## fade ### Crowd-Male-Disgruntled_CROWD153.wav
 mob.. disgruntled mumuring ### Crowd-Medium-Male-Mob_CROWD228.wav
 crowd cheers & fluctuating horn toots ### CrowdCheersHornTootsFluctuatin PEHD093302.wav
-fear and worry ## crop 0-11 ## fade out ### GrpFearWorry PE962401.wav
+fear and worry ## crop 0-11 ## fade out ## course- ### GrpFearWorry PE962401.wav
 football crowd.. concerned rumbling ## crop 0-15 ## fade out ### Fball Crwd Concerned LtRt SUR0127.wav
 frustration ### HUMAN-VOCAL_GEN-HDF-15437.wav
 gasping of astonishment and chatter ### GaspAstonishChatte PE601101.wav
@@ -30533,8 +30650,8 @@ Keep off the grass! [keep off].wav
 Keep out! [keep out] ## qrop l9 r10 ## qropt! {{Photo.. Fotomy $dreamstime 18415047}}.jpg
 Mind your step! [mind] ## qrop t9 b25 ## crop t10 b15 {{Photo.. Mrcmos $dreamstime 94281608}}.jpg
 Mind your step! [mind].wav
+Ransom! Your file have been encrypted! [ransom] ## course-.wav
 Ransom! Your file have been encrypted! [ransom] ## qrop l8 r26 {{Photo.. Ratthanarong Phraibung $dreamstime 92433087}}.jpg
-Ransom! Your file have been encrypted! [ransom].wav
 Rip currents in this area! [rip currents] ## qrop ql {{Photo.. Bernhard Richter $dreamstime 29273031}}.jpg
 Rip currents in this area! [rip currents].wav
 Risk of electric shock! Do not open! [electric shock] ## qrop l15 r12 ## qropt! {{Photo.. Fotoeye75 $dreamstime 53458}}.jpg

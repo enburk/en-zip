@@ -54,6 +54,7 @@ sounds
 : recliner chair: raise leg rest # SOUND
 : seat belt put on with zuzz # SOUND
 : seatbelt: restraint clunks # SOUND
+: start up car with seat belt warning beep # SOUND
 
 : helicopter blade # SOUND
 : pilot harness unbuckle # SOUND

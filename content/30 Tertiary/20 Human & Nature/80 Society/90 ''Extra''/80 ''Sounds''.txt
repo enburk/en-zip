@@ -4,3 +4,6 @@ sounds
 : quiet hushed whispers # SOUND
 
 : fear reaction # SOUND
+: crowd reaction: feeling pity # SOUND
+: small crowd surprised reaction # SOUND
+: medium crowd talking exitedly # SOUND

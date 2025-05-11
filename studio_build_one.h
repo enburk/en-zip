@@ -168,6 +168,11 @@ namespace studio::one
 
         for (Ent& entry: course.entries)
         {
+            array<str> all_words;
+            for (str ss: entry.en*entry.uk*entry.us)
+            for (str s: ss.split_by("|"))
+                all_words += s;
+
             for (str& s: entry.matches)
             for (res& r: course_matches[s].resources)
             {
@@ -183,6 +188,9 @@ namespace studio::one
                 if (r->sound() and entry.audio_fits(r->abstract))  sounds[&entry] += r;
                 if (r->vocal() and entry.audio_fits(r->abstract))  vocals[&entry] += r;
                 if (r->video() and entry.video_fits(r->Entries())) videos[&entry] += r;
+
+                if (r->vocal() and all_words.contains(r->abstract))
+                    resources_used.emplace(r);
             }
 
             for (auto medio: {&vocals, &sounds, &videos})
@@ -265,15 +273,6 @@ namespace studio::one
             auto ens = entry.en;
             auto uks = entry.uk;
             auto uss = entry.us;
-
-            array<str> all_words;
-            for (str ss: ens*uks*uss)
-            for (str s: ss.split_by("|"))
-                all_words += s;
-
-            for (res r: rr)
-            if (all_words.contains(r->abstract))
-                resources_used.emplace(r);
 
             for (res r: rr)
             if  (not r->options.contains("xlam"))

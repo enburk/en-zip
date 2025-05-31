@@ -4,6 +4,7 @@ cleric         = клирик, духовное лицо
 hierarch       = иерарх                                          /// # DELAY
 patriarch      = патриарх, старейшина                            /// (также церк. и библ.)
 synod          = синод, собор
+
 ---
 Pope|pope      = папа римский
 pontiff        = понтифик %% титул папы римского                 # TERM-
@@ -23,7 +24,7 @@ prelate        = прелат                                          # TERM+
 deacon         = диакон/дьякон                                   # TERM+
 pastor         = пастор
 chaplain       = капеллан                                        # TERM-
-curé/curate    = кюре                                            # TERM+ /// # DELAY
+
 ---
 abbot          = аббат, ~ настоятель монастыря
 abbess         = аббатиса, ~ настоятельница монастыря
@@ -32,6 +33,7 @@ abbey          = аббатство
 ===
 monastic order = монашеский орден
 ===
+
 Augustinians   = августинцы                                      # HISTORY+ # TERM+
 Benedictines   = бенедиктинцы
 Dominicans     = доминиканцы                                     # HISTORY+ # TERM+

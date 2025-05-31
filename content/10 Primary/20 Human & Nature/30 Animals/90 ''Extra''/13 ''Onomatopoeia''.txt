@@ -1,28 +1,29 @@
-onomatopoeia               = ономатопея, ~ звукоподражание
+onomatopoeia             = ономатопея, ~ звукоподражание
 
-roar                       = рык, рычать
-growl                      = рычание, ворчание, ~ рычать
+roar                     = рык, рычать
+growl                    = рычание, ворчание, ~ рычать
 
-baa                        = бе-е, ~ блеять, блеяние
-bleat                      = блеять
+baa                      = бе-е, ~ блеять, блеяние
+bleat                    = блеять
 
-moo                        = му-у, ~ мычать, мычание
-hee-haw                    = и-а
+moo                      = му-у, ~ мычать, мычание
+hee-haw                  = и-а
 ---
-quack                      = кря, ~ крякать, крякание %% об утке; ''не'' ква, квакать -- о лягушке
-croak                      = ква, ~ квакать, кваканье
-croak/caw                  = кар, ~ каркать, карканье
+quack                    = кря, ~ крякать, крякание %% об утке; ''не'' ква, квакать -- о лягушке
+croak                    = ква, ~ квакать, кваканье
+croak/caw                = кар, ~ каркать, карканье
 : quack, quack, quack
 
-cock-a-doodle-doo          = кукареку
-cluck cluck, ~ bok bok bok = ко-ко-ко
+cock-a-doodle-doo        = кукареку
+cluck cluck//bok bok bok = ко-ко-ко
 
-chirp/chirrup, ~ tweet     = чирикать, щебетать
-tweet-tweet                = чик-чирик
-trill                      = трель, заливаться
+chirp/chirrup//tweet     = чирикать, щебетать
+tweet tweet              = чик-чирик
+trill                    = трель, заливаться
 
 ===
 
 : A duck’s quack doesn’t echo, and no one knows why.
+
 
 

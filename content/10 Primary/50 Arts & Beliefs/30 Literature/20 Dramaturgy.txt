@@ -1,13 +1,16 @@
 dramaturgy            = драматургия
+
 ===
 playwright//dramatist = драматург %% автор пьес
-play @ drama          = пьеса, играть  /// # polysemic # RANDOM-
-act @ drama           = акт ~ (часть пьесы) /// # polysemic # RANDOM-
-scene @ drama         = сцена ~ (часть акта) /// # polysemic # RANDOM-
+play @ drama          = пьеса, играть         
+act @ drama           = акт ~ (часть пьесы)   
+scene @ drama         = сцена ~ (часть акта)  
+
 ===
 William Shakespeare   = Уильям Шекспир
 Romeo and Juliet      = «Ромео и Джульетта» # ART+
 Othello               = «Отелло»       # ART+
+
 ===
 Anton Chekhov         = Антон Павлович Чехов
 = %% Чехову портрет не нравился: ~ «Говорят, что и я, и галстук очень похожи, ~ но выражение… такое, ~ точно я нанюхался хрену».

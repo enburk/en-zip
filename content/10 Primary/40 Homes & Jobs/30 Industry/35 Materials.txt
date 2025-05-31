@@ -10,7 +10,7 @@ asphalt jungle   = асфальтовые джунгли                        
 
 celluloid        = целлулоид                                     # 18+
 cement           = цемент
-faience||faïence = фаянс                                         # RARE- # 18+
+faience||faïence = фаянс                                         # RARE- # sic! # 18+
 
 laminate         = ламинат                                       # 10+
 plank @ tech     = планка, доска                                 /// убрать рейку (это lath, batten)
@@ -36,6 +36,7 @@ emulsion @ tech  = эмульсия                                      # TECH-
 
 aerosol          = аэрозоль                                      # 10+
 aerogel          = аэрогель                                      # TECH+ # 16+
+
 
 
 

@@ -1,48 +1,53 @@
-Zeus                  = Зевс %% Greek
-Jupiter @ myth        = Юпитер %% Roman
 ===
-Metis                 = Ме́тис/Метида %% ''др.-греч.'' «мысль, премудрость», ~ первая жена Зевса # 18+
+Zeus                   = Зевс %% Greek
+Jupiter @ myth         = Юпитер %% Roman
+===
+Metis                  = Ме́тис/Метида %% ''др.-греч.'' «мысль, премудрость», ~ первая жена Зевса # 18+
 = Зевсу было предсказано, ~ что Метис родит ему сына, ~ который превзойдет его. # 18+
 = Он знал: глотать детей -- ненадёжная тактика, ~ поэтому проглотил жену. # 18+
 = Их единственная дочь ~ родилась уже из его головы. # 18+
-Athena/Athene         = Афина
-Minerva               = Минерва %% Афина у римлян
+Athena/Athene          = Афина
+Minerva                = Минерва %% Афина у римлян
 
 ===
-Olympians             = олимпийцы
+Olympians              = олимпийцы
 ===
 
-Apollo @ myth         = Аполлон
-Artemis/Diana @ myth  = Артемида/Диана %% Greek/Roman
-Ares/Mars @ myth      = Арес/Марс %% Greek/Roman                                /// Аре́с|А́рес [арэс]
-Hephaestus/Vulcan     = Гефест/Вулкан %% Greek/Roman
-Hermes/Mercury @ myth = Гермес/Меркурий %% Greek/Roman
-Persephone/Proserpina = Персефона/Прозерпина %% Greek/Roman                     # 16+ /// |Proserpine
+Apollo @ myth          = Аполлон
+Artemis/Diana @ myth   = Артемида/Диана %% Greek/Roman
+Ares/Mars @ myth       = Арес/Марс %% Greek/Roman                               /// Аре́с|А́рес [арэс]
+Hephaestus//Vulcan     = Гефест/Вулкан %% Greek/Roman
+Hermes/Mercury @ myth  = Гермес/Меркурий %% Greek/Roman
+Persephone//Proserpina = Персефона/Прозерпина %% Greek/Roman                    # 16+ /// |Proserpine
+
+===
+
 ---
-Dionysus/Bacchus      = Дионис/Вакх/Бахус %% Greek/Roman                        # 16+
-Bacchanalia           = вакханалия                                              # 16+ /// |bacchanalia
-Bacchante             = вакханка                                                # 16+ /// |bacchante
+Dionysus/Bacchus       = Дионис/Вакх/Бахус %% Greek/Roman                       # 16+
+Bacchanalia            = вакханалия                                             # 16+ /// |bacchanalia
+Bacchante              = вакханка                                               # 16+ /// |bacchante
 
-Eos/Aurora            = Эос/Аврора %% Greek/Roman
-Helios/Sol            = Гелиос/Сол %% Greek/Roman                               # 16+
-Nike/Victoria         = Ника/Виктория %% Greek/Roman
-Pan/Faunus            = Пан/Фавн %% Greek/Roman                                 # 16+
+Eos/Aurora             = Эос/Аврора %% Greek/Roman
+Helios/Sol             = Гелиос/Сол %% Greek/Roman                              # 16+
+Nike/Victoria          = Ника/Виктория %% Greek/Roman
+Pan/Faunus             = Пан/Фавн %% Greek/Roman                                # 16+
 
-Asclepius/Aesculapius = Асклепий/Эскулап                                        # 16+ /// Aesculapius - его латинизированное имя, не другой бог
-Atlas                 = Атлас/Атлант
-Prometheus            = Прометей
-Psyche                = Психея %% впервые упоминается в романе Апулея «Метаморфозы» # 16+
-Styx                  = Стикс                                                   # 16+
-Lethe                 = Лета                                                    # 16+
-Charon                = Харон                                                   # 16+ /// /Kharon
-Triton                = Тритон %% сын Посейдона
+Asclepius/Aesculapius  = Асклепий/Эскулап                                       # 16+ /// Aesculapius - его латинизированное имя, не другой бог
+Atlas                  = Атлас/Атлант
+Prometheus             = Прометей
+Psyche                 = Психея %% впервые упоминается в романе Апулея «Метаморфозы» # 16+
+Styx                   = Стикс                                                  # 16+
+Lethe                  = Лета                                                   # 16+
+Charon                 = Харон                                                  # 16+ /// /Kharon
+Triton                 = Тритон %% сын Посейдона
 
 ===
 
-ambrosia              = амброзия %% пища богов
-nectar @ myth         = нектар %% напиток богов
+ambrosia               = амброзия %% пища богов
+nectar @ myth          = нектар %% напиток богов
 
-caduceus              = кадуце́й %% жезл Гермеса/Меркурия                        # RARE+ # 16+
+caduceus               = кадуце́й %% жезл Гермеса/Меркурия                       # RARE+ # 16+
+
 
 
 

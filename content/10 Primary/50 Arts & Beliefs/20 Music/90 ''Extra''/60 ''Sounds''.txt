@@ -3,6 +3,7 @@ sounds
 : flamenco guitar # SOUND
 : arpeggiated guitar chord # SOUND
 : guitar tuning # SOUND
+: triangle @ musical instrument # SOUND
 
 : accordion, arpeggio: tonic, dominant, subdominant # SOUND
 : accordion: staccato # SOUND

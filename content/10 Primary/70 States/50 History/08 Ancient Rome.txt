@@ -28,7 +28,7 @@ Punic Wars          = Пунические войны                           
 Hannibal            = Ганнибал                                              # HISTORY- # WAR-
 Scipio              = Сципион %% Publius Cornelius Scipio Africanus         # HISTORY- # WAR- # 16+
 ===
-Gaius Julius Caesar = Гай Юлий Цезарь %% 100-44 BC
+Gaius Julius Caesar = Гай Юлий Цезарь %% 100-44 BC       # sic!
 Gallic Wars         = Галльская война
 cross the Rubicon   = перейти Рубикон                                       # 16+
 Brutus              = Брут                                                  # 16+
@@ -41,6 +41,7 @@ hegemon             = гегемон                                            
 procurator          = поверенный, ~ доверенное лицо, ~ в Древнем Риме: прокуратор # 16+
 Praetorian Guard    = Преторианская гвардия                                 # HISTORY+ # 16+
 augur               = авгур, ~ предвещать, предзнаменовывать                # HISTORY+ # RARE+ # 16+
+
 ---
 calends||kalends    = календы %% ''в римском календаре:'' ~ первый день месяца # HISTORY+ # 16+
 ides                = иды %% ''в римском календаре:'' ~ день в середине месяца # HISTORY+ # 16+

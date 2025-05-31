@@ -18,17 +18,18 @@ monsieur             = месье
 madame               = мадам
 mademoiselle         = мадемуазель
 
-herr                 = герр
+herr                 = герр                                    # sic!
 frau                 = фрау
-fräulein             = фройляйн
+fräulein             = фройляйн                                # sic!
 
 signor               = синьор
 signora              = синьора
 signorina            = синьорина
 
 señor|senhor         = сеньор                                  # duple /// false friends
-señora|senhora       = сеньора
+señora|senhora       = сеньора                                 # sic!
 señorita|senhorita   = сеньорита
+
 
 
 

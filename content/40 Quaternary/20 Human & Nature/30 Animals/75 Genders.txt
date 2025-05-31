@@ -1,15 +1,16 @@
 genders
 
-stallion = an adult male horse /// stud?
-mare     = a female horse
+stallion     = an adult male horse /// stud?
+mare @ horse = a female horse
 
-peacock  = a male peafowl
-peahen   = a female peafowl
+peacock      = a male peafowl
+peahen       = a female peafowl
 
 bull elk\\bull moose
 cow elk\\cow moose
 
 a whale cow with a calf
+
 
 
 

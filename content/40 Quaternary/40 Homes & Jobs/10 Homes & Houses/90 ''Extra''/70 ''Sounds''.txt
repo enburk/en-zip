@@ -11,6 +11,8 @@ sounds
 : doorbell chimes # SOUND
 : garage door: slam close and lock # SOUND
 
+: coins dropped on wooden floor
+
 
 : Venetian blinds: pull down # SOUND
 : accordion door shut # SOUND

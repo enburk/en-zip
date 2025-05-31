@@ -7,7 +7,7 @@ trireme                  = трирема/триера # 16+
 ===
 legion @ roman           = легион
 cohort @ roman           = когорта
-centuria/century         = центурия
+centuria//century        = центурия   # sic!
 maniple                  = манипула   # 16+
 ballista                 = баллиста
 ===
@@ -52,6 +52,7 @@ freelancer @ history     = наемный солдат ~ (в средние ве
 ===
 
 : the Black Watch with their kilts in time at the march past the 10th hussars
+
 
 
 

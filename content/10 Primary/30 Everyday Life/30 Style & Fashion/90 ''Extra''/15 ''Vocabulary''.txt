@@ -24,7 +24,7 @@ shoes             = ботинки, туфли, обувь
 cotton            = хлопок, хлопковый
 leather           = кожа, кожаный
 
-hat               = шляпа
+hat @ headwear    = шляпа
 
 ---
 umbrella          = зонт, зонтик
@@ -36,6 +36,7 @@ earrings          = серьги
 
 lipstick          = помада
 facial mask       = маска для лица
+
 
 
 

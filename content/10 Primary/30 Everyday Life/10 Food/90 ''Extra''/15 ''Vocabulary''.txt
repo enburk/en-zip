@@ -7,7 +7,7 @@ tablecloth              = скатерть
 plate @ dish            = тарелка
 napkin                  = салфетка
 
-egg @ egg               = яйцо
+egg @@                  = яйцо
 pie @ food              = пирог, торт
 cake @ dessert          = торт
 cookie {Am.}            = домашнее печенье, ~ булочка
@@ -52,6 +52,7 @@ full @ food             = сытый
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
 
 
 

@@ -2,26 +2,35 @@ false ~ friends
 
 correspondence         = соответствие, соотношение, ~ не только корреспонденция # 12+
 paragraph              = абзац, ~ газетная заметка, ~ статья закона, ~ не только параграф # 10+
+
+===
+
 ***
 prosaic                = прозаический %% ''не'' прозаик                      # 10+
-prose-writer//prosaist = прозаик                                             # 10+
+prose writer//prosaist = прозаик                                             # 10+
+
 ***
 poem                   = стихотворение %% ''не'' поэма
 : Roses are red, ~ violets are blue, ~ most poems rhyme, ~ but this one doesn't.
+
 ***
 lyrics                 = текст песни %% ''не'' лирика                        # 10+
 lyric                  = лирический, лирика, ~ текст песни                   # 10+
+
 ***
 fable                  = басня, небылица, вранье %% ''не'' фабула            # ART+ # 16+
 Aesop's Fables         = басни Эзопа                                         # ART+ # 16+
+
 ***
 censure                = порицание, осуждение, ~ обвинительный приговор %% ''не'' цензура # 12+ /// ~~ порицать, осуждать
 censorship             = цензура                                             # 12+
+
 ***
 remark                 = замечание, наблюдение, ~ замечать, наблюдать
 remarkable             = замечательный
 : Will you please keep your impertinent remarks to yourself?
 : There are some remarkable documents that may be consulted.
+
 ***
 literacy               = грамотность, осведомленность %% ''не'' литературность
 computer literacy      = компьютерная грамотность

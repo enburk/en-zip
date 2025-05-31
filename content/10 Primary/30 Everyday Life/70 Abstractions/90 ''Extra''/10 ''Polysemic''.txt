@@ -32,7 +32,7 @@ barrel @ unit            = баррель                               # 18+
 barrel @ vessel          = бочка                                 # 18+
 barrel @ firearm         = ствол, дуло                           # 18+ /// тех. цилиндр, вал, барабан и др.
 barrel roll              = бочка ~ (фигура пилотажа)             # 18+
-barrel-organ             = шарманка
+barrel organ             = шарманка
 ***
 global @ total           = глобальный, мировой, всеобщий         # 12+
 global @ spherical       = иногда: сферический                   # 12+

@@ -4,11 +4,13 @@ emotions
 annoy//annoyance
 ===
 
+: What? @ annoyed
 : Got it. @ annoyed
 : I know. @ annoyed
 : I'm fine. @ annoyed
 : Excuse me. @ annoyed
 : Stop that! @ annoyed
+: Thank you. @ annoyed
 : Never mind! @ annoyed
 : Give it back! @ annoyed
 : I don't know. @ annoyed
@@ -17,6 +19,7 @@ annoy//annoyance
 : What's your problem? @ annoyed
 : What the hell do you want? @ annoyed
 : Stop! @ annoyed
+: Bye. @ annoyed
 
 ===
 

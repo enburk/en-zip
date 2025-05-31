@@ -5,7 +5,7 @@ cosmos             = Вселенная, мироздание, космос, ~ �
 planet             = планета
 orbit              = орбита
 
-asteroid           = астероид
+asteroid @ astro   = астероид
 meteor             = метеор
 meteorite          = метеорит
 bolide %% a very bright meteor = болид                          # TERM- # 10+
@@ -15,5 +15,6 @@ impact crater      = ударный кратер                 /// NEW
 galaxy             = галактика
 supernova          = сверхновая звезда %% вспышка сверхновой # 10+
 galactic collision = столкновение галактик          # 14+ /// Interacting galaxies (colliding galaxies)
+
 
 

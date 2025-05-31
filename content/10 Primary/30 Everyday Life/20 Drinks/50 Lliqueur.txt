@@ -1,9 +1,10 @@
 
 chartreuse  = шартрёз              # TERM+
-bénédictine = бенедиктин           # TERM+
+bénédictine = бенедиктин           # TERM+ # sic!
 amaretto    = амаретто             # TERM+
 advocaat    = Адвокат %% яичный ликёр # RARE+ # TERM+
 sambuca     = самбука              # RARE+ # TERM+
+
 
 
 

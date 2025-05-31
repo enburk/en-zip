@@ -1,7 +1,7 @@
 sounds
 
 : dog knoks over trash can and gets into the trash # SOUND
-
+: dog scratching: tinkle of collar tag # SOUND
 
 : chicken cackle # SOUND
 
@@ -26,4 +26,4 @@ pigs oinking # SOUND
 
 ===
 
-: So I yelped: ''Out out out out!'' like a doggie...
+: So I yelped: “Out out out out!” like a doggie...

@@ -16,13 +16,14 @@ military tribunal            = военный трибунал, ~ военный
 
 aggressor                    = агрессор, ~ нападающая сторона
 neutrality                   = нейтралитет, нейтральность
-parlimentaire||parlementaire = парламентёр          # 14+
+parlimentaire||parlementaire = парламентёр          # sic! # 14+
 
 ===
 capitulation                 = капитуляция
 reparations                  = репарации            # TERM+ # WAR+ # 16+
 requisition                  = реквизиция           # TERM+ # WAR+ # 16+
 restitution                  = реституция, возмещение # RARE+ # TERM+ # WAR+ # 16+
+
 
 
 

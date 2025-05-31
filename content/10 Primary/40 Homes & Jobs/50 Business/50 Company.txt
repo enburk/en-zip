@@ -22,7 +22,6 @@ budget             = бюджет, составлять бюджет            
 balance @ money    = бухгалтерский баланс                         # 18+
 debit @ balance    = де́бет                                        # POLIT+ # 18+
 credit @ balance   = кре́дит                                       # POLIT+ # 18+
-saldo              = сальдо %% разница между поступлениями ~ и расходами # POLIT+ # TERM+ # 18+
 
 audit              = аудит                                        # POLIT+ # TERM+ # 18+
 consulting         = консалтинг, консалтинговый, консультирующий  # POLIT+ # TERM+ # 18+

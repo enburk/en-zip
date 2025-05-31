@@ -6,7 +6,7 @@ receptor @ bio         = рецептор                           # TERM+
 neuron                 = нейрон
 synapse                = си́напс                             # TERM+
 
-sensomotor             = сенсомоторный                      # TERM+
+sensomotor             = сенсомоторный                      # TERM+ # sic!
 psychomotor            = психомоторный                      # TERM+
 
 ===

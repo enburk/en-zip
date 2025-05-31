@@ -1,4 +1,4 @@
-bon appétit!              = приятного аппетита! %% (фр.)
+bon appétit!              = приятного аппетита! %% (фр.) # sic!
 
 ===
 appetite                  = аппетит, охота ~ (до чего-либо)
@@ -41,13 +41,15 @@ dragée                    = драже
 cafe|café                 = кафе
 restaurant                = ресторан
 menu @ food               = меню
-maître d'hôtel\\maître d' = метрдотель            # 18+
+maître d'hôtel\\maître d' = метрдотель            # sic! # 18+
 chef                      = шеф-повар
 gourmand                  = гурман, ~ также: обжора # duple
 banquet                   = банкет                # 16+ /// , давать банкет
 picnic                    = пикник                /// , устраивать пикник
 champagne                 = шампанское            # 18+
 cognac                    = коньяк                # 18+
+
+
 
 
 

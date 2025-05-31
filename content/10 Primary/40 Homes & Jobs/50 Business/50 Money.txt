@@ -23,7 +23,7 @@ dime @ money                 = дайм %% 10-центовая монета     
 quarter @ money              = квотер %% 25-центовая монета              # 18+
 
 euro @ money                 = евро
-eurocent                     = евроцент                                  # 10+
+eurocent                     = евроцент                                  # sic! # 10+
 
 ===
 
@@ -54,6 +54,7 @@ Heads, or tails?             = Орел или решка?
 ===
 
 : In for a penny, in for a pound.
+
 
 
 

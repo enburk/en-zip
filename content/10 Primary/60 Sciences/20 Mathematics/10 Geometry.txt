@@ -27,7 +27,7 @@ secant [line]               = секущая (линия)               # MATH- 
 concentric circles          = концентрические окружности    # MATH+ # TERM+ # 16+
 quadrature of the circle    = квадратура круга              # HISTORY- # MATH+ # TERM+ # 18+ /// NEW
 
-number π                    = число π                       # 10+
+number π                    = число π                       # sic! # 10+
 radian                      = радиан                        # 16+
 
 parallelepiped              = параллелепипед                # 10+
@@ -42,6 +42,7 @@ icosahedron                 = икосаэдр                      # MATH+ # 14
 
 Euclidean geometry          = Евклидова геометрия           # MATH- # TERM- # 16+
 postulate                   = постулат, постулировать       # MATH- # TERM- # 16+
+
 
 
 

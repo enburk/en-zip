@@ -8,7 +8,7 @@ chic                    = шик, шикарный
 prêt-à-porter           = прет-а-порте %% дословно: готовое к носке # 18+
 blouse                  = блуза, блузка                         # 10+
 beret                   = берет                                 # 14+
-pom-pon//pom-pom        = помпон
+pom-pon//pom-pom        = помпон                                # sic!
 buttonhole\\boutonniere = бутоньерка                            # 12+
 
 ---
@@ -33,6 +33,7 @@ Eau de Cologne//cologne = одеколон                              # 10+
 flacon                  = флакон, пузырёк, бутыль
 pomade                  = помада ~ (для волос)                  # 10+ /// , помадить (волосы)
 lotion                  = лосьон                                # 10+
+
 
 
 

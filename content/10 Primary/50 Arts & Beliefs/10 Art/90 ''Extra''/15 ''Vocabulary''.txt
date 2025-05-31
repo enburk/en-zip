@@ -1,26 +1,27 @@
 basic ~ vocabulary
 
-fine art            = изобразительное искусство
-self-portrait @ art = автопортрет
-still life          = натюрморт
-frame @ art         = рама, рамка
-exhibition @ art    = выставка
-colour\\color       = цвет %% сравните: колорит, колер # 10+
+fine art         = изобразительное искусство
+self-portrait    = автопортрет
+still life       = натюрморт
+frame @ art      = рама, рамка
+exhibition @ art = выставка
+colour\\color    = цвет %% сравните: колорит, колер # 10+
 
 ---
-paint @ art         = краска
-oil [paint]         = масло, маслянная краска
-oil on canvas       = «холст, масло», ~ маслом на холсте
-paintbrush @ art    = кисть
+paint @ art      = краска
+oil [paint]      = масло, маслянная краска
+oil on canvas    = «холст, масло», ~ маслом на холсте
+paintbrush @ art = кисть
 
 ---
-picture @ art       = картина, картинка, ~ рисунок, изображение
+picture @ art    = картина, картинка, ~ рисунок, изображение
 = представление, образ
 = кинокадр
 = изображать, описывать
-motion picture      = кинофильм
+motion picture   = кинофильм
 
-curtain             = в театре: занавес
+curtain          = в театре: занавес
+
 
 
 

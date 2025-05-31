@@ -15,7 +15,7 @@ nymphs              = нимфы                    # 10+
 
 Daphne              = Дафна                    # 16+
 Calypso             = Калипсо                  # 16+
-Callisto|Kallisto   = Каллисто                 # 16+
+Callisto||Kallisto   = Каллисто                 # 16+  # sic!
 Echo                = Эхо                      # 16+
 Naiads              = Наяды                    # 16+
 Pleiades @ myth     = Плеяды                   # 16+

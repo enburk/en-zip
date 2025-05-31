@@ -63,23 +63,34 @@ namespace studio::one
                 continue;
 
             if  (not entry.opt.internal.contains("sic!"))
-            for (str ss: entry.en*entry.us*entry.uk)
-            for (str s: ss.split_by("|"))
+            for (str sssss: entry.en*entry.us*entry.uk)
+            for (str ssss: sssss.split_by("/"))
+            for (str sss: ssss.split_by("|"))
+            for (str ss: sss.split_by(" "))
+            for (str s: ss.split_by("\\"))
             {
                 s.erase_all('(');
                 s.erase_all(',');
-                s.erase_all(';');
                 s.erase_all('.');
+                s.erase_all(':');
+                s.erase_all(';');
                 s.erase_all('?');
                 s.erase_all('!');
+                s.erase_all('"');
                 s.erase_all(')');
-                s.replace_all("/", " ");
-                s.replace_all(u8"“", "");
-                s.replace_all(u8"”", "");
-                for (str w: s.split_by(" "))
-                if (w == eng::lowercased(w)
-                and not vocabulary.contains(w)
-                and not vocabulary.contains(s))
+                s.replace_all(u8"‘", "");
+                s.replace_all(u8"’", "");
+                if (s.ends_with("s'")) s.truncate();
+                if (s.ends_with("'s")) s.truncate(), s.truncate();
+                str w = eng::lowercased(s);
+                str ww = eng::lowercased(ss);
+                str www = eng::lowercased(sss);
+                if (not vocabulary.contains(w)
+                and not vocabulary.contains(s)
+                and not vocabulary.contains(ww)
+                and not vocabulary.contains(ss)
+                and not vocabulary.contains(www)
+                and not vocabulary.contains(sss))
                 report::errors += red(bold(w +" : ")) + link(entry);
             }
             
@@ -189,7 +200,9 @@ namespace studio::one
                 if (r->vocal() and entry.audio_fits(r->abstract))  vocals[&entry] += r;
                 if (r->video() and entry.video_fits(r->Entries())) videos[&entry] += r;
 
-                if (r->vocal() and all_words.contains(r->abstract))
+                if (r->vocal()
+                and all_words.size() > 1
+                and all_words.contains(str(r->abstract).extract_upto("@")))
                     resources_used.emplace(r);
             }
 
@@ -339,6 +352,7 @@ namespace studio::one
             or  r.options.contains("==")
             or  r.options.contains("sic!")
             or  r.options.contains("xlam")
+            or  r.options.contains("noqrop")
             or  r.options.contains("course-")
             or  course_vocabulary.
                 contains(r.abstract))

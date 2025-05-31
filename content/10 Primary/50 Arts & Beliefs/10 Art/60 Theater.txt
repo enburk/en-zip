@@ -33,6 +33,7 @@ cabaret                   = кабаре                                        
 burlesque                 = бурлеск                                         # ART+ # HISTORY+ # 18+
 farce                     = фарс                                            # ART+ # HISTORY+ # 18+
 
+---
 commedia dell'arte        = комедия дель арте                               # ART- # 18+
 Pierrot                   = Пьеро                                           # ART- # 18+
 Polichinelle              = Полишинель %% (фр.)                             # ART- # 18+

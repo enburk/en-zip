@@ -18,7 +18,7 @@ cardigan                 = кардиган # RARE+ # 16+
 
 bikini                   = бикини  # 16+
 sarong                   = саронг  # RARE- # 18+
-pāreu|pareo              = парео   # RARE- # 18+
+pāreu|pareo              = парео   # RARE- # sic! # 18+
 tunic                    = туника  # 18+
 
 top @ clothing           = топ/топик %% также любая другая одежда ~ для верхней части тела # 18+
@@ -29,6 +29,7 @@ uniform                  = униформа, форма
 school uniform           = школьная форма
 : Mama, that girl has a red cardigan! And that one, and that one...
 dress code               = дресс-код # 14+
+
 
 
 

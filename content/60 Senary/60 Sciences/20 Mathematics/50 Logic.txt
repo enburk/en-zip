@@ -2,7 +2,7 @@ logic
 
 ---
 principle of explosion
-ex falso [sequitur] quodlibet %% ''Latin'' = from falsehood, anything [follows]
+ex falso [sequitur] quodlibet %% ''Latin'' = from falsehood, anything [follows]      # sic!
 
 ---
 vacuous truth

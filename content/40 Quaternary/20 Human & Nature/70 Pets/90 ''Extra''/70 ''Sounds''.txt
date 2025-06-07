@@ -4,10 +4,11 @@ sounds
 : dog scratching: tinkle of collar tag # SOUND
 
 : chicken cackle # SOUND
-
+: pheasant cock # SOUND
 : hen startled, flapping wings # SOUND
+
 : sustained baa, quick vibrato, slightly irritated # SOUND
-: hoofbeats  # SOUND
+hoofbeats  # SOUND
 
 pig snort    # SOUND
 pigs oinking # SOUND

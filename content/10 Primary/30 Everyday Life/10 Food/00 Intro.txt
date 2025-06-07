@@ -1,4 +1,5 @@
 food           = еда
+
 ---
 lunch          = ланч                       # 10+
 business lunch = бизнес-ланч                # 10+
@@ -8,6 +9,7 @@ recipe         = рецепт
 ingredients    = ингредиенты
 portion        = порция, часть
 ration         = рацион, паёк               # 10+
+
 ---
 diet           = диета
 vegetarian     = вегетарианец, ~ вегетарианский # 10+

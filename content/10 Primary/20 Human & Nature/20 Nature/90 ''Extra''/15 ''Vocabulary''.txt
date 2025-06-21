@@ -17,17 +17,20 @@ ice                   = лед
 drop @ water          = капля, капать, ~ падать, уронить
 river                 = река
 lake                  = озеро
+
 ---
 stone @ rock          = камень
 rock @ moutain        = скала, утёс
 rock @ stone          = камень, булыжник
 mountains             = горы
 hill                  = холм
+
 ---
 sea                   = море
 surf @ waves          = прибой
 shell/seashell        = раковина
 sand                  = песок
+
 ---
 forest                = лес
 oak                   = дуб

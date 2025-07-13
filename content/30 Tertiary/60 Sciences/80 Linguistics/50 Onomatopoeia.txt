@@ -1,3 +1,8 @@
 onomatopoeia
 
 pop @ sound
+
+---
+bang @ sound
+: bang with fist # SOUND
+: bang one's fist on the table # SOUND

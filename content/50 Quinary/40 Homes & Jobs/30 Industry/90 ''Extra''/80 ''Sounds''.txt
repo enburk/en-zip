@@ -34,6 +34,7 @@ whump
 : electric arc sizzle # SOUND
 : hand crank generator # SOUND
 : recoil start # SOUND
+: sheet metal buckle # SOUND
 
 : electric hedge trimmer # SOUND
 : hedge clippers # SOUND

@@ -2,5 +2,6 @@ sounds
 
 : New York street vendor sells cheap jewelry # SOUND
 
-: cash register: ching # SOUND
-: cash register: print receipt # SOUND
+: cash register: ~ ching # SOUND
+: cash register: ~ print receipt # SOUND
+: cash register: ~ tapping & ding # SOUND

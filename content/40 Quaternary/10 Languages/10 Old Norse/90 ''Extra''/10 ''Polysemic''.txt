@@ -15,6 +15,7 @@ cast @ actors            = the collective group of actors
 cast @ throw             = to throw
 : Let he who is without sin cast the first stone.
 : A time to cast away stones, and a time to gather stones together.
+: fishing reel: cast # SOUND
 
 ---
 cast @ assign            = to consider, ~ to assign

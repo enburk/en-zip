@@ -1,7 +1,7 @@
 sounds
 
-baboon shrieks       # SOUND
 wolf howling         # SOUND
+baboon shrieks       # SOUND
 wing flaps           # SOUND
 ducklings chattering # SOUND
 geese honking        # SOUND
@@ -10,5 +10,8 @@ geese honking        # SOUND
 
 : adult lion: short purr # SOUND
 : fox: fearful distant scream # SOUND
+
+: How the wind howls! It is howling with wolf-voices.
+: One must howl with the wolves.
 
 

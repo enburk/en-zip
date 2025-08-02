@@ -28,7 +28,7 @@ Punic Wars          = Пунические войны                           
 Hannibal            = Ганнибал                                              # HISTORY- # WAR-
 Scipio              = Сципион %% Publius Cornelius Scipio Africanus         # HISTORY- # WAR- # 16+
 ===
-Gaius Julius Caesar = Гай Юлий Цезарь %% 100-44 BC       # sic!
+Gaius Julius Caesar = Гай Юлий Цезарь %% 100-44 BC                          # sic!
 Gallic Wars         = Галльская война
 cross the Rubicon   = перейти Рубикон                                       # 16+
 Brutus              = Брут                                                  # 16+
@@ -60,6 +60,7 @@ Vandals             = вандалы                                            
 
 Byzantine Empire    = Византийская империя, ~ Византия                      /// 395—1453
 Constantinople      = Константинополь
+
 
 
 

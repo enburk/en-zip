@@ -8,7 +8,7 @@ sounds
 : coffee grinder          # SOUND
 : cappuccino machine steam hiss # SOUND
 : ice clinks in glass     # SOUND
-: cracking peanuts # SOUND
+: cracking peanuts        # SOUND
 
 ===
 
@@ -22,6 +22,7 @@ glubs                     # SOUND
 gulping                   # SOUND
 pouring beer ~ with glugs # SOUND
 pouring wine ~ with glugs # SOUND
+
 
 
 

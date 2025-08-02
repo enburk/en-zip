@@ -2,7 +2,7 @@ false ~ friends
 
 ***
 lackey          = подхалим, не только лакей                                 # 14+ /// Medieval French laquais, "foot soldier, footman, servant" or German Lakai
-servant = слуга, прислуга %% ''не'' сервант
+servant         = слуга, прислуга %% ''не'' сервант
 : But on what terms? Is she a servant? If not, what is she?
 
 ***
@@ -28,6 +28,7 @@ reticule        = ридикюль                                              
 ***
 arbalest        = тяжёлый арбалет %% со стальными дугами
 crossbow        = арбалет %% более общий термин
+
 
 
 

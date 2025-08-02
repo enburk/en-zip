@@ -8,28 +8,29 @@ handball                   = гандбол %% также: гандбольны�
 ===
 
 alley-oop @baseball        = алле-о́п/алле-у́п %% баскетбольный трюк
-block//blocked shot @ shot = блок, блок-шот    # SPORT+ # 18+
+block//blocked shot @ shot = блок, блок-шот              # SPORT+ # 18+
 
-cricket @ sport            = крикет            # SPORT- # 14+
-croquet @ sport            = крокет            # SPORT- # 18+
+cricket @ sport            = крикет                      # SPORT- # 14+
+croquet @ sport            = крокет                      # SPORT- # 18+
 golf                       = гольф
 
 ---
 tennis                     = теннис %% большой теннис
-set @ tennis               = в теннисе: сет    # SPORT- # 16+
-game @ tennis              = в теннисе: гейм   # SPORT- # 16+
+set @ tennis               = в теннисе: сет              # SPORT- # 16+
+game @ tennis              = в теннисе: гейм             # SPORT- # 16+
 break point                = брейк-пойнт %% когда принимающий может ~ одним мячом выиграть гейм # SPORT+ # 18+
-server @ tennis            = подающий          # SPORT- /// # polysemic
-receiver @ tennis          = принимающий       # SPORT- /// # polysemic
+server @ tennis            = подающий                    # SPORT- /// # polysemic
+receiver @ tennis          = принимающий                 # SPORT- /// # polysemic
 
-ping pong//table tennis                  = пинг-понг, ~ настольный теннис # 10+
+ping pong//table tennis    = пинг-понг, ~ настольный теннис # 10+
 badminton                  = бадминтон
 
 ---
-polo @ sport               = поло              # 10+
-water polo                 = водное поло       # 10+
-water poloist//water polo player = ватерполист       # SPORT+ # 10+
-canoe polo                 = канополо/кануполо # SPORT+ # 18+
+polo @ sport               = поло                        # 10+
+water polo                 = водное поло                 # 10+
+water poloist//water polo player = ватерполист                 # SPORT+ # 10+
+canoe polo                 = канополо/кануполо           # SPORT+ # 18+
+
 
 
 

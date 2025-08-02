@@ -1,7 +1,8 @@
 scratch
 
-: wood panel: short scratches # SOUND
 : dog scratching # SOUND
+: wood panel: short scratches # SOUND
+: sound effects: needle scratch # SOUND
 
 scratch one's head
 

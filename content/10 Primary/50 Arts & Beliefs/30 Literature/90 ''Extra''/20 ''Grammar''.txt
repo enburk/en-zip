@@ -22,10 +22,14 @@ after @ space            = за, позади
 before one's eyes        = прямо на глазах ~ (у кого-либо)
 
 ===
-after @ target           = за %% указывает на цель, ~ объект внимания
-===
 
+---
+after @ target           = за %% указывает на цель, ~ объект внимания
 : Help, the paranoids are after me!
+
+---
+after @ likeness         = по, с, согласно %% указывает на сходство ~ с чем-либо
+: Let us make man in our image, ~ after our likeness.
 
 ===
 irregular verbs          # HEAD
@@ -35,6 +39,7 @@ write → wrote, written
 ===
 
 : It is written.
+
 
 
 

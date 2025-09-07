@@ -27,7 +27,7 @@ flight @ trip      = рейс ~ (самолета)
 flight attendant   = стюард/стюардесса
 
 ***
-take off @ plane   = взлетать
+take off @ airborn = взлетать
 land @ plane       = садиться
 runway @ airport   = взлетно-посадочная полоса
 : Flight 291 you are cleared for take of.

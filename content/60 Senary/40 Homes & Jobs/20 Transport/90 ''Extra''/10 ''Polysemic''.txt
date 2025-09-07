@@ -1,13 +1,20 @@
 polysemic
 
 ***
-fare @ money      = money paid for a transport ticket
+fare @ money       = money paid for a transport ticket
 : Pay as you enter. ~ Exact fare, please!
-fare @ food       = food and drink
+fare @ food        = food and drink
 : But the fare was of the most substantial kind
-fare with someone = to happen well, or ill
+fare with someone  = to happen well, or ill
 : Now, from this peculiar sideway position /// how it would fare with you, did you sideways survey objects through your ears
-fare @ move       = to move along, ~ proceed, progress, ~ advance
+fare @ move        = to move along, ~ proceed, progress, ~ advance
 
-
+***
+shed @ part        = to part, separate or divide
+shed @ flow        = to allow to flow or fall
+shed @ outbuilding = an outbuilding
+not the sharpest tool in the shed
+: He's not the sharpest tool in the shed.
+: Not the sharpest tool in the shed, if you know what I mean.
+: These six things doth the LORD hate
 

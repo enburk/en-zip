@@ -19,8 +19,6 @@ sounds
 : plunger mute, trombone # SOUND
 : synthesizer pad swell # SOUND
 
-: twangy sitar accent # SOUND
-: electric guitar: twangs # SOUND
 : funky bass lick # SOUND
 : pick slide # SOUND
 

@@ -441,10 +441,10 @@ namespace content::in
 
             html.rebracket("(",")",[](str s){ return gray("("+s+")"); });
             html.replace_all(u8"→",blue(u8"→"));
-            html.replace_all("\\",blue("/"));
-            html.replace_all("|" ,blue("/"));
-            html.replace_all("[" ,blue("["));
-            html.replace_all("]" ,blue("]"));
+            html.replace_all("\\" ,blue("/"));
+            html.replace_all("|"  ,blue("/"));
+            html.replace_all("["  ,blue("["));
+            html.replace_all("]"  ,blue("]"));
             html.replace_all("---", mdash);
             html.replace_all("--" , ndash);
             html.replace_all("'", u8"’");

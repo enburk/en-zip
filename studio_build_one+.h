@@ -405,6 +405,7 @@ namespace studio::one
     auto all_entries(res r, eng::vocabulary& vocabulary)
     {
         auto entries = r->entries;
+        auto title = doc::html::untagged(r->title);
 
         if ((r->kind == "audio"
         and entries.size() == 0
@@ -412,16 +413,40 @@ namespace studio::one
         and not r->options.contains("=="))
         or  entries.contains("+"))
             entries += eng::parser::entries(
-                vocabulary, r->title,
-                r->options.contains
-                ("Case"));
+            vocabulary, title,
+            r->options.contains
+            ("Case"));
         else
-        if (r->title.contains("/"))
-        for (str s: r->title.split_by("/"))
+        if (title.contains("/"))
+        for (str s: title.split_by("/"))
             entries += s;
 
         entries.try_erase("+");
         return entries;
+    }
+
+    str cliplink (res r, eng::vocabulary& vocabulary, hashset<str>& course_vocabulary)
+    {
+        array<str> missed;
+        for (str x: all_entries(r, vocabulary))
+        if  (x.size() >= 2 // skip "," "!" "?"
+        and not x.contains(" ") // "see you"
+        and not course_vocabulary.contains(
+            eng::lowercased(simple(x))))
+            missed += x;
+
+        str s = r->full();
+        if (r->options.contains("sound"))
+            s = "[" + s + "]";
+
+        str abstract = r->abstract;
+        if (r->options.contains("sound"))
+            abstract += " # SOUND";
+
+        return linked(
+        dark(html(s)) + red(" [" + str(missed, "] [") + "]"),
+        "clipboard://: " + abstract +
+        "file://" + str(r->path));
     }
 
     void suggestions

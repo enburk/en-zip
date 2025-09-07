@@ -56,7 +56,6 @@ sounds
 : manual seat adjust, ratchet movement # SOUND
 : parking brake engage # SOUND
 : radiator hiss with clunk # SOUND
-: recliner chair: raise leg rest # SOUND
 : seat belt put on with zuzz # SOUND
 : seatbelt: restraint clunks # SOUND
 : start up car with seat belt warning beep # SOUND

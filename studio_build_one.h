@@ -166,7 +166,8 @@ namespace studio::one
             matches.deduplicate();
 
             for (str s: matches)
-            course_matches[s].resources += &r;
+            if (course_matches.contains(s))
+                course_matches[s].resources += &r;
         }
 
         out << dark(bold("ONE: FULFILL..."));
@@ -358,6 +359,24 @@ namespace studio::one
                 contains(r.abstract))
                 continue;
 
+            int spaces = 0;
+            for (char c: r.abstract)
+            if  (c == ' ') spaces++;
+
+            if (spaces == 0 and r.vocal())
+                continue;
+
+            if (spaces == 1 and r.vocal())
+            if (r.abstract.starts_with("a "  )
+            or  r.abstract.starts_with("an " )
+            or  r.abstract.starts_with("the ")
+            or  r.abstract.starts_with("to " ))
+                continue;
+
+            if (spaces == 2 and r.vocal())
+            if (r.abstract.starts_with("to be "))
+                continue;
+
             unused_resources.emplace(&r);
         }
 
@@ -373,7 +392,7 @@ namespace studio::one
         array<str>  unused_sounds;
         for (res r: unused_resources) if (r->sound())
         {
-            str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
+            str s = "../datae/audiohero {{$audiohero.com}}/## sound";
             str dir = r->path.parent_path().string();
             if (not dir.starts_with(s)) continue;
             dir = dir.from(s.size());
@@ -409,7 +428,7 @@ namespace studio::one
 
             if (r->vocal())
                 report::audioq +=
-                cliplink(r);
+                cliplink(r, vocabulary, course_vocabulary);
 
             if (r->video())
                 report::videoq +=

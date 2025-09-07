@@ -32,3 +32,5 @@ operator precedence
 : The threat of automation, of course, is an ongoing concern
 
 : The oldest version of the Jargon File that's been recovered
+
+: The way to ask yes/no questions in LISP is to add -P to the end of a statement

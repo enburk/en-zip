@@ -270,7 +270,8 @@ namespace content::out
                 
                 phrases += x;
                 if (opt.internal.contains("+ru"))
-                x += " -- " + simple(rus);
+                x += " -- " + simple(rus),
+                x.replace_all(" ~ ", " ");
                 audio += x;
             }
         }

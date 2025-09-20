@@ -13,15 +13,15 @@ notice
 opinion
 : I have no opinion. How can I say?
 
-compare
-contrary
-
+---
 schedule
-relation
-response
+: I'll schedule you in.
+: I'll pencil you in.
 
-description
-inscription
+---
+respond
+response
+: Please, respond.
 
 ---
 affirm
@@ -30,3 +30,10 @@ confirm
 : Satellite feed confirmed.
 : uh huh @ affirmation
 : oh yeah @ affirmatively
+
+description
+inscription
+
+compare
+contrary
+relation

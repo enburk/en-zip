@@ -1,5 +1,7 @@
 sounds
 
+: hesitant keystrokes # SOUND
 : printer: form feed # SOUND
 : ink-jet printer warms up and cleans print head # SOUND
+
 

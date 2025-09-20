@@ -6,9 +6,7 @@ sounds
 
 : wind chimes: delicate, tinkly, crystalline # SOUND
 : wind up: crank turns with bell chimes # SOUND
-
-: alarm\clocks/chime mantel clocks # SOUND
-: alarm\clocks/wind-up clock spring # SOUND
+: chime mantel clocks # SOUND
 
 : dab shaving cream # SOUND
 : rubber plunger plunging # SOUND

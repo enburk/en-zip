@@ -392,7 +392,7 @@ namespace studio::one
         array<str>  unused_sounds;
         for (res r: unused_resources) if (r->sound())
         {
-            str s = "../datae/audiohero {{$audiohero.com}}/## sound";
+            str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
             str dir = r->path.parent_path().string();
             if (not dir.starts_with(s)) continue;
             dir = dir.from(s.size());

@@ -2,6 +2,7 @@ sounds
 
 : steam press # SOUND
 : air compressor: release air # SOUND
+: pressurized air released through hose # SOUND
 
 : shoveling coal # SOUND
 : axe: single chop, ~ splitting wood # SOUND

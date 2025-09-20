@@ -1,8 +1,8 @@
 onomatopoeia
 
 creak
-creaky
 screech
+squeal
 squeak
 
 ===
@@ -11,8 +11,10 @@ squeak
 : wood: heavy pressure creak # SOUND
 : rattan creak # SOUND
 
+: tire squeal # SOUND
 : tire screech # SOUND
 : subway brake screech # SOUND
+: baby happy squeal # SOUND
 
 : rubber duck squeak # SOUND
 : cupboard: squeak closed # SOUND

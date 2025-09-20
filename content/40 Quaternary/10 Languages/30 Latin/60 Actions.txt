@@ -23,8 +23,14 @@ verify
 convey
 
 ---
-ascend
-descend
+ascent %% {noun}
+ascend %% {verb}
+descent %% {noun}
+descend %% {verb}
+
+---
+append
+: append is a verb, meaning to attach or add as a supplement or extra item
 
 ---
 proceed

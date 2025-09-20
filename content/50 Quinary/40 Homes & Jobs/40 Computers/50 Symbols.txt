@@ -4,8 +4,11 @@ bang @ symbol             = !
 octothorpe//sharp//hash @ symbol = &sharp;
 at @ symbol               = @
 hat/caret @ symbol        = ^
-underscore                = _
 tick/backtick @ symbol    = `
+
+---
+underscore @ symbol       = _
+: underscore functions as two parts of speech. It can be used as a verb meaning to draw a line under
 
 ---
 slash @ symbol            = /
@@ -14,4 +17,5 @@ pipe @ symbol             = |
 
 asterisk//star//splat @ symbol = *
 bullet//splat @ symbol    = •
+
 

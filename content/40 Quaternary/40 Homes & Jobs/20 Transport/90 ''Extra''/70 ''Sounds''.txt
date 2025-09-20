@@ -2,6 +2,7 @@ sounds
 
 
 : tire spin # SOUND
+: wheelspin # SOUND
 
 : garbage truck # SOUND
 : hood slam shut # SOUND

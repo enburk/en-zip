@@ -95,9 +95,12 @@ contempo               = contemporary
 prelim                 = preliminary
 
 recirc                 = recirculation
-refurb                 = refurbish
 tarp                   = tarpaulin
 servo                  = a servomechanism ~ or servomotor
+
+---
+refurb                 = refurbish
+: refurbish is a verb meaning to brighten, freshen, or polish, or to restore
 
 nym                    = pseudonym
 creds                  = credentials

@@ -10,6 +10,7 @@ sounds
 : duck quacks # SOUND
 : seagull squawks # SOUND
 : mallard duck: single call # SOUND
+: hawk shrill # SOUND
 
 : leopard growl: hollow and low # SOUND
 : lynx: grooming licks and low purring # SOUND

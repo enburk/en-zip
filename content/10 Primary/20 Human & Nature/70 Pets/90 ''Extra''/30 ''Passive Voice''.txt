@@ -1,5 +1,6 @@
 grammar
 passive voice           = страдательный залог
+
 ===
 = образуется с помощью ~ глагола '''to be''' ~ в нужном времени
 = и '''past participle''' ~ (3-ей формы) ~ смыслового глагола
@@ -34,8 +35,10 @@ make → made, made
 = страдательный залог ~ с временами группы ~ '''Simple/Indefinite'''
 ===
 
+: Please '''be seated'''.
 : Sorry, the shop '''is closed'''.
-: So I '''was told'''.  = Так мне сказали.
+: I'''’m pleased'''.
+
 
 : '''Are''' we '''supposed''' to be here?
 : How could it best '''be done'''?

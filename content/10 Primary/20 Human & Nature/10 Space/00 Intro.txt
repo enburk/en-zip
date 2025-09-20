@@ -9,7 +9,6 @@ asteroid @ astro   = астероид
 meteor             = метеор
 meteorite          = метеорит
 bolide %% a very bright meteor = болид                          # TERM- # 10+
-impact crater      = ударный кратер                 /// NEW
 
 ---
 galaxy             = галактика

@@ -2,7 +2,7 @@ onomatopoeia
 
 swish
 swoosh
-whoosh
+whoosh||woosh
 whish
 
 ===
@@ -17,6 +17,7 @@ twirling whoosh # SOUND
 : hard leather twist whoosh # SOUND
 : golf club twirl whoosh # SOUND
 : rope: twirl around # SOUND
+: subwoofer single woosh # SOUND
 
 ===
 

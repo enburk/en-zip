@@ -6,6 +6,8 @@ participant /// Latin
 ancestor
 descendant  /// French
 inheritance /// French
+hereditary
+: Death is hereditary.
 
 ---
 adopt       /// Latin
@@ -18,6 +20,11 @@ charity     /// French
 ---
 sheepish
 : sheepish is an adjective meaning embarrassed or meek or timid
+
+---
+impertinent
+: Don't be impertinent.
+: Will you please keep your impertinent remarks to yourself?
 
 ===
 

@@ -21,7 +21,7 @@ mutiny
 apiece
 : Eliza, Elizabeth, Betsy and Bess /// They took one apiece, and left three in it.
 
-treasure trove = a hidden treasure, ~ subsequently discovered
+treasure trove     = a hidden treasure, ~ subsequently discovered
 
 ---
 haste
@@ -32,8 +32,7 @@ hasty
 bias
 
 ---
-comprise
-comprise -- verb, to consist of, be made up of
+comprise %% {verb} = to consist of, ~ be made up of # +ru
 : Comprised of has become an idiom. Who cares if it's technically incorrect
 
 en masse
@@ -46,7 +45,7 @@ adjoin
 : ''alliance'' is a noun meaning ~ ''adjoining'' together for some common purpose
 
 ---
-au contraire   = used for more humorous, ironic or dramatic effect than ''on the contrary''
+au contraire       = used for more humorous, ironic or dramatic effect than ''on the contrary''
 : As for Paul's hypothesis that the modern French meaning of entrée is the original one--au contraire...
 
 ---
@@ -68,7 +67,7 @@ détente
 entente
 : Triple Entente
 ---
-rapprochement  = the reestablishment of cordial relations, particularly between two countries, a reconciliation
+rapprochement      = the reestablishment of cordial relations, particularly between two countries, a reconciliation
 : political rapprochement
 
 liege
@@ -86,7 +85,6 @@ flattery
 gluttony
 forge
 vogue
-flair
 ---
 entice
 : It’s 8:30 a.m. but quiet in the restaurant /// Hmm… not such an enticing aroma.
@@ -101,8 +99,8 @@ lever @ tool
 : Archimedes said that with a long enough lever and a solid enough place to stand, he could move the world.
 
 ---
-plunge @ into  = to thrust into liquid
-plunge @ dive  = to dive
+plunge @ into      = to thrust into liquid
+plunge @ dive      = to dive
 
 jeopardy
 mansion
@@ -123,7 +121,7 @@ pursuit
 : What to do was the point, whether run or pursue?
 
 ---
-pursuant       = in conformance to, ~ or in agreement with, ~ accordingly, ~ consequently
+pursuant           = in conformance to, ~ or in agreement with, ~ accordingly, ~ consequently
 : Now, therefore, I, Gerald R. Ford /// pursuant to the pardon power conferred upon me
 
 ---
@@ -179,7 +177,7 @@ parfait
 parley
 parlour\\parlor
 parsnip
-platitude      = a cliché, ~ a claim that is trivially true, ~ flatness, unoriginality
+platitude          = a cliché, ~ a claim that is trivially true, ~ flatness, unoriginality
 poach
 pliable
 proliferation
@@ -357,7 +355,8 @@ gudgeon
 harbinger
 havoc
 hoe
-hors d'œuvre   # sic!
+hors d'œuvre       # sic!
+
 
 
 

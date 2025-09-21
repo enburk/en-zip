@@ -1,18 +1,18 @@
 sounds
 
----
 ploop
 sploosh
-kerplunks
 sloshes
-splat
-splatter
+squish
+kerplunks
+splat//splatter
 
 ===
 
 : sploosh and splat # SOUND
 : drinking fontain: water splatter # SOUND
 : kerplunk splash with ripples # SOUND
+: mud bubble squish # SOUND
 
 ===
 thaw

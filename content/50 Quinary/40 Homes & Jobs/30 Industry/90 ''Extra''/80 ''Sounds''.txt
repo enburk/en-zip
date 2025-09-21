@@ -1,10 +1,15 @@
 sounds
 
-whump
+whump||wumph
+whirr
+
+===
+
 : ventilation system: steady rhythmic whump # SOUND
-
-
 : servo motor: whines and whirls # SOUND
+: robot whirr # SOUND
+
+===
 
 : drive dragging muffler # SOUND
 : winch: hoist up # SOUND

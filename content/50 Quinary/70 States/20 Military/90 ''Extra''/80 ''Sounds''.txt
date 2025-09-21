@@ -4,11 +4,14 @@ sounds
 : _Colt .45 rack slide # SOUND
 : AK-47: double taps # SOUND
 : detonator plunger # SOUND
+
 : British Army ''Reveille'' call # SOUND
 : British Army ''The Rouse'' call # SOUND
 
-bullet ricochet whine
-bullet whiz
+: duffle bag (drop on hard surface) # SOUND
+
+: bullet ricochet whine # SOUND
+: bullet whiz # SOUND
 
 
 

@@ -22068,6 +22068,7 @@ What the hell is that word~!.wav
 Why doesn't he just say it straight~!.wav
 >>> ../datae\audiobooks--/Ross & Kathryn Petras - That Doesn't Mean What You Think It Means
 !credit.txt
+A facetious remark is jocular, more gentle. A sarcastic one is cutting, sneering..wav
 A quick linguistic note, in linguistics, amelioration is a technical word for a semantic change.txt
 A quick linguistic note, in linguistics, amelioration is a technical word for a semantic change.wav
 Adjur means to require, often under oath, to earnestly urge..wav
@@ -22077,11 +22078,12 @@ All together phrase in one place all at once. Altogether adverb completely total
 All together phrase in one place all at once. Altogether adverb completely totally..wav
 Amicable doesn't really work to describe a person. Amiable does.txt
 Amicable doesn't really work to describe a person. Amiable does.wav
+An eponym is something or someone that gives its name to something else.txt
+An eponym is something or someone that gives its name to something else.wav
 And now here's a rare word for the connoisseur, immanentize. It's usually used with eschaton.txt
 And now here's a rare word for the connoisseur, immanentize. It's usually used with eschaton.wav
 And while you can use discomfort as both a noun and a verb, it's best to use its near-twin, discomfit, as a verb only.txt
 And while you can use discomfort as both a noun and a verb, it's best to use its near-twin, discomfit, as a verb only.wav
-apocryphal (adjective).. something that is not true but often believed to be.wav
 appraise verb to establish a value, estimate an amount, apprise verb to give information..txt
 appraise verb to establish a value, estimate an amount, apprise verb to give information..wav
 As Steve Martin once said, some people have “a way with words”, and other people, “oh, uh, not have way.”.wav
@@ -22101,7 +22103,6 @@ Compel -- verb, to force or to oblige someone to do something. Impel -- verb, to
 Complacent -- adjective, self-satisfied, often overly so. Complaisant -- adjective, willing to please..wav
 Complementary with an E, adjective, of two or more things that combine to enhance each other.txt
 Complementary with an E, adjective, of two or more things that combine to enhance each other.wav
-comprise -- verb, to consist of, be made up of.wav
 Comprised of has become an idiom. Who cares if it's technically incorrect.txt
 Comprised of has become an idiom. Who cares if it's technically incorrect.wav
 Contiguous -- adjective, in actual contact. Conterminous -- adjective, enclosed together within a common boundary..wav
@@ -22118,6 +22119,12 @@ Eminent adjective distinguished. Immanent with an A, existing within or inherent
 enervated, enervating -- adjective, tired, tiring.wav
 Enormity often does mean large, but in a bad sense, as in the enormity of crimes committed by the evil dictator.txt
 Enormity often does mean large, but in a bad sense, as in the enormity of crimes committed by the evil dictator.wav
+Even the very descriptive Merriam-Webster's dictionary notes that, while they can be used interchangeably.txt
+Even the very descriptive Merriam-Webster's dictionary notes that, while they can be used interchangeably.wav
+Ferment -- verb, to undergo fermentation, to stir up; noun, something stirred up. Foment -- verb, to incite stir up..wav
+Firmament is not the ground, although a surprisingly large number of people think it is. Firmament is above the ground.txt
+Firmament is not the ground, although a surprisingly large number of people think it is. Firmament is above the ground.wav
+Flair -- noun, a special aptitude or ability. Flare -- noun, outburst to flame; verb, to burn with a flame or spread out..wav
 In the 1800s, biweekly usually meant twice a week, but today biweekly almost always means every two weeks.txt
 In the 1800s, biweekly usually meant twice a week, but today biweekly almost always means every two weeks.wav
 More to the point, languages change, and decimate is today frequently used to mean devastate.txt
@@ -22127,6 +22134,8 @@ Since alternate has become, sometimes grudgingly, an accepted alternative to alt
 That said, people have been confusing averse and adverse for years, and we can blame it all on the Romans..wav
 The phrase shows up in 1627 in Captain John Smith's A sea Grammar. What is the anchor away.txt
 The phrase shows up in 1627 in Captain John Smith's A sea Grammar. What is the anchor away.wav
+The suffix -oid means resembling but not the same. Think of planetoids or humanoids.txt
+The suffix -oid means resembling but not the same. Think of planetoids or humanoids.wav
 The word disinterested makes a lot of language nuts very interested indeed.txt
 The word disinterested makes a lot of language nuts very interested indeed.wav
 There is technically no such thing as a three-way dichotomy..wav
@@ -22159,10 +22168,18 @@ depreciate.wav
 disinterested, uninterested.wav
 drink, drank, drunk.wav
 enervated.wav
+eponymous.wav
+factoid.wav
+firmament.wav
+flair, flare.wav
+flammable, inflammable.wav
 Good heavens, now! How fussy can you get~!.wav
 immanentize.wav
 loosely speaking ## course-.wav
+more to the point.wav
 Nice and easy..wav
+Quote, Inflammable means flammable What a country! Dr. Nick Rivera, The Simpsons..txt
+Quote, Inflammable means flammable What a country! Dr. Nick Rivera, The Simpsons..wav
 shrink, shrank, shrunk.wav
 sing, sang, sung.wav
 So what the big diff between them~!.wav
@@ -22696,13 +22713,13 @@ Twinkle, Twinkle, Little Star ### [Adult-Fem-C_Twinkle-Twinkle-Little-Star_VKT_0
 >>> ../datae\audiohero {{$audiohero.com}}\## sound/!effects
 cymbal.. squib ### MusicCymbal SME02_62.3.wav
 filtered pink noise.. low frequency ## crop 0-10 ## fade out ### NoisePink BMT02_20.wav
-flange %% sound effect ### AcstcGuitarMinor SDT2057203.wav
-flange %% sound effect ### LaserPulseFlange SE036801.wav
-flange %% sound effect ### Sound-Design-Lightning-Thunder-Elec_B08-03148.wav
+flange @ sound %% sound effect ## course- ### AcstcGuitarMinor SDT2057203.wav
+flange @ sound %% sound effect ## course- ### LaserPulseFlange SE036801.wav
+flange @ sound %% sound effect ## course- ### Sound-Design-Lightning-Thunder-Elec_B08-03148.wav
 modulated pink noise wind ## crop 0-11 ## fade out ### Wind-Fantasy-Pink-Noise_FANT356.wav
 noise ### ToneSynthWhiteNoiseWhooshA.wav
-overdrive %% sound effect ### Fx MIX22_53_1.wav
-overdrive %% sound effect ### Licks MIX21_63_1.wav
+overdrive %% sound effect ## course- ### Fx MIX22_53_1.wav
+overdrive %% sound effect ## course- ### Licks MIX21_63_1.wav
 phaser ### Sci-Fi-Phaser-Blast_GEN-HD2-31609.wav
 pink noise ## crop 0-6 ## fade out ## course- ### PinkNoiseLoop PE1080803.wav
 pink noise sweep, reverb ### PinkNoiseSweepRev PE1080806.wav
@@ -22757,7 +22774,6 @@ clinking and rattling ### GlassClinksGlassBo FS028303.wav
 clunk ### MetalLatchClunkEx PE1027111.wav
 clunk ### MetalLatchLowClunkD.wav
 glass clink ### GlassClinkToastDbl PE582627.wav
-klang ### Telephones-PhoneFallsToFloo_B01-07967.wav
 sheet metal buckle ### MetalBuckle IE02_61_14.wav
 sheet metal buckle ### MetalBuckle IE02_61_15.wav
 clapperboard ### [FilmClapper 6063_52].wav
@@ -22996,7 +23012,7 @@ cheeping ## crop 0-8 ## fade out ### Backgrounds-Jungle-Saipan-Day_BON-00075.wav
 chirping ### KnockoutChirpBir CRT2030801.wav
 coo-coo @ bird ## crop 0-5 ## fade out ## course- ### BirdCuckoo_DIGIFX2-81.wav
 crow caws ### Crow-Caw-Tepid-x3_B07-00655.wav
-currawong ### KurrawongChirpingN PE913202.wav
+currawong ## course- ### KurrawongChirpingN PE913202.wav
 dove~pigeon coos ### DovePigeonCoo PE912203.wav
 duck quacks ## crop 0-8  ### DucksQuacksDuckQua AT085201.wav
 eastern screech owl ## crop 0-15 ## course- ### 18-32 ### BirdEasterScreechOwl_DIGIC03-22.wav
@@ -23008,7 +23024,7 @@ ducklings chattering ### Bird-Ducks_GEN-HD4-38990.wav
 geese honking ### BirdGoose L2A1_16.wav
 mallard duck.. single call ### BirdDuck JBA01_45_1.wav
 whistling ducks ## = ### BIRD-DUCK_GEN-HDF-03867.wav
-gooney bird [goony] ### BirdsAmbGoonyBirdC APS10324.wav
+gooney bird [goony] ## course- ### BirdsAmbGoonyBirdC APS10324.wav
 hummingbird wing flapping ### BirdHummingbird JBA03_35_1.wav
 hummingbird wing flutters ### HummingbirdWingFlu FS058801.wav
 hummingbird wing flutters ### HummingbirdWingFlu FS058805.wav
@@ -23795,11 +23811,11 @@ Velcro strap.. separating creak ### Creak-Velcro_Velcro-Strap-Separating_SQK01-0
 zipper ### BagZipperOpen HI030501.wav
 zipper ### ClothesBag 6046_35_3.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various/devices
-airplane model motor zoom ## crop 0-15 ## fade out ### AirplaneModelMotorZoom.wav
+airplane model motor zoom ## crop 0-10 ## fade out ### AirplaneModelMotorZoom.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\devices/camera
 camera shot, fast shutter speed ### Cameras-Nikon35MMAutomat-13_B03-00597.wav
+camera.. zoom lens ## crop 0-5 ### MachineMotorCameraZoomInOut.wav
 camera.. zoom lens ### Cameras-PoweredZoomLensS-15_B02-00414.wav
-camera.. zoom lens ### MachineMotorCameraZoomInOut.wav
 digital camera.. self winding ## crop 0-3 ### CameraDigital_DIGIG01-38.wav
 digital camera... rapid shots ### CAMERA-DIGITAL_GEN-HDF-05800.wav
 cash register.. tapping & ding ### CashRegisterTappin PE966601.wav
@@ -24470,6 +24486,7 @@ carriage jolt ### CarriageJoltsForCa HS037302.wav
 carriage up and past fast on hard gravely surface ### ByCarriageUpPastFa EE103001.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\transport/cars
 1979 Ferrari.. short rev, peal out with squeal ### Cars-1979Ferrari-CU-ShortRe_B01-02760.wav
+1988 Lotus accelerating by [+][overdrive] ## long ### 88LotusFastAccelBy PE715301.wav
 car hoist ### GARAGE-AUTO-REPAIR_GEN-HDF-12608.wav
 car tire puncture ### AutoBlowOutPunctre PE738501.wav
 Dodge Ram Charger, peel away on gravel [peel away] ### DodgeRamChargerPee AZ102501.wav
@@ -24507,7 +24524,6 @@ manhole ## crop 0-12 ## fade ### LightSteadyTraffic CT041801.wav
 manhole ## crop 12-21 ## fade ### LightSteadyTraffic CT041801.wav
 manual seat adjust, ratchet movement ### Auto-Seat-Compact-Interior_GEN-HD2-27446.wav
 manual seat adjust, ratchet movement ### Auto-Seat-Compact-Interior_GEN-HD2-27448.wav
-overdrive ## long ### 88LotusFastAccelBy PE715301.wav
 parking brake engage ### AutoDodgeNeon 5025_94_1.wav
 parking brake engage ### AutoParkingBrake 6102_27_2.wav
 pass by, 20 mph ## long ### Wagoneer20MphBy HT047501.wav
@@ -24607,7 +24623,7 @@ gambling.. chip is tossed into a pile of chips ### PokerChipsTossed WES103301.wa
 gambling.. chip is tossed into a pile of chips ### PokerChipsTossed WES103401.wav
 gift wrapping paper.. wrap small box ### Paper-Wrapping-Wrap-Small-Box_GEN-HD4-43015.wav
 girls screaming ## course- ### Children 2008_14.wav
-granola bar.. open ### Food-Wrap-Granola-Bar_GEN-HD4-40972.wav
+granola bar.. open ## course- ### Food-Wrap-Granola-Bar_GEN-HD4-40972.wav
 hammer and chisel.. breaking concrete ### ChiselConcrete 6012_07_1.wav
 hand cart by fast on cobblestone ### Cart-Hand-On-Cobblestone_CART041.wav
 helicopter idles on runway [+][chopper@copter] ## fade out ### mi_huey_idle_02_hpx.wav
@@ -27629,6 +27645,7 @@ sneakers ## qrop q ### Nike 1.jpg
 sneakers ## qrop r1 t15 b19 ### Nike 2.jpg
 sneakers [trainers] ### Nike 3.jpg
 tighten one's tie [tighten].jpg
+Velcro [Velcro][velcro].jpeg
 Floral Paintings..  Van Gogh Sunflower Remix [floral] ## qrop t9 b6 ## qropt! {{Fong Qi Wei}}.jpg
 folding screen ## qrop t17 b2 ## qropt! {{Photo.. ABM}}.jpg
 >>> ../datae\photo/food
@@ -27850,9 +27867,14 @@ cargo ship [cargo] ## qrop t11 r1 b8 {{Photo.. Oguz Turker Akpinar}}.jpg
 Aston Martin Vanquish [convertible@car] ## noqrop ### Zagato Volante.jpg
 Aston Martin Vanquish [convertible@car] ## noqrop ### Zagato.jpg
 Aston Martin Vanquish [coupé@car] ## noqrop ### Zagato.jpg
+BMW E30 M20 longtube exhaust manifold [manifold@mech].jpg
 chassis @ car ## qrop t6 b4.jpeg
+exhaust pipe [tailpipe].png
 McLaren MP4~8 model [chassis@car] ## noqrop {{Model Factory Hiro}}.jpg
+muffler @ car ### Jeep Wrangler.jpg
+muffler @ car.jpg
 Rolls Royce Phantom {drophead coupé}.jpg
+Toyota Toyota MR2 2GR-FE twin scroll kit [header@manifold].jpeg
 container ship ## qrop t11 r1 b8 {{Photo.. Oguz Turker Akpinar}}.jpg
 highway {{Photo.. Mariusz Wilkowski}}.jpg
 no entry ## qrop qb.jpg

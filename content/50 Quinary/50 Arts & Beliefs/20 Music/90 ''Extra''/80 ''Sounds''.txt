@@ -1,5 +1,9 @@
 sounds
 
+: glockenspiel: single note # SOUND
+: glockenspiel: tumble down # SOUND
+: orotund seventh chord # SOUND
+
 : strumming spanish guitar tag # SOUND
 : acoustic guitar: two chord strumming accent # SOUND
 : electric guitar: bass note and chord strum accent # SOUND

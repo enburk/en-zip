@@ -1,6 +1,7 @@
 sounds
 
 : building house, ~ construction site # SOUND
+: brass bell # SOUND
 
 ---
 : a hammer drives a nail # SOUND

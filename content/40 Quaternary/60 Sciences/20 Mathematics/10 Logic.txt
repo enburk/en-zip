@@ -1,6 +1,6 @@
 logic
 
-proposition /// Latin
+proposition  /// Latin
 contradictory
 
 ---
@@ -13,10 +13,11 @@ reflexive @ logic
 : ''a &eq; a''
 
 ---
-imply       /// French
+imply @ math /// French
 : A implies B %% A &eq;&gt; B
 
 ===
 
 : Contrariwise, -- continued _Tweedledee, -- if it was so, it might be; and if it were so, it would be;
+
 

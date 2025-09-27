@@ -28,6 +28,24 @@ player.round.prevv.png
 speaker.064x048.png
 speaker.128x096.png
 >>> ../datae/audio
+>>> ../datae\audio/!AI
+acclimatization, acclimation ## us.mp3
+Aztecan languages.mp3
+bandana.mp3
+Central Intelligence Agency.mp3
+drops of water on a flower.mp3
+fakir.wav
+forget.wav
+Future Continuous Tense.mp3
+Italian cuisine.mp3
+macramé.mp3
+Past Continuous Tense.mp3
+polysemantic.mp3
+polysemic.mp3
+Present Perfect Tense.mp3
+primary.mp3
+savanna.mp3
+You don't have to steal to feed yourself..mp3
 >>> ../datae\audio/!combined ## =
 Achilles heel, Achilles' heel ### 0.wav
 action film, action movie ### 0.wav
@@ -426,6 +444,7 @@ hahaha [+][laugh].ogg
 humuhumunukunukuapuaa.wav
 introduction.wav
 meh.mp3
+multisense.wav
 prescriptive.wav
 purpose.wav
 SOS [SOS][Morse code].ogg
@@ -902,6 +921,7 @@ conserve is a verb meaning to preserve, to keep from being damaged, lost or wast
 deter is a verb, meaning to discourage or to prevent through fear or doubt.wav
 disinterested is an adjective meaning fair-minded or indifferent [disinterested].wav
 fatality is a noun meaning an event resulting in death or an accidental death [fatality] ## course-.wav
+ingenious is an adjective, meaning showing remarkable originality or resourcefulness [ingenious] ## course-.wav
 {abase} is a verb meaning 'to lower, degrade or humble'.ogg
 {abashed} is an adjective and participle meaning 'embarrassed' or 'ashamed'.ogg
 {abate} is a verb that has several meanings.ogg
@@ -1106,7 +1126,6 @@ fatality is a noun meaning an event resulting in death or an accidental death [f
 {inept} is an adjective meaning totally without skill or appropriateness.wav
 {inevitable} is an adjective meaning sure to happen or unavoidable.wav
 {inflammatory} is an adjective meaning causing excitement or anger or leading to violence or disorder.wav
-{ingenious} is an adjective, meaning showing remarkable originality or resourcefulness.wav
 {ingrained} is an adjective meaning fixed deeply and firmly, worked into the grain or fiber, or forming a part of the inmost being.wav
 {ingratitude} is a noun meaning 'a lack of thankfulness'.ogg
 {inhabitant} is a noun meaning a person or animal living permanently in a given place.wav
@@ -15184,7 +15203,7 @@ poom ## sic!.wav
 prying eyes.wav
 Q Bomb [Q-bomb] ## sic!.wav
 Q-Day ## sic! ## course-.wav
-resentment seethed.wav
+resentment seethed ## course-.wav
 sarisa.wav
 spacers.wav
 surprised.wav
@@ -18116,7 +18135,7 @@ small futile things.wav
 smile.wav
 smiled.wav
 smooth.wav
-snuffed out.wav
+snuffed out ## course-.wav
 so it was ## course-.wav
 so that.wav
 so.wav
@@ -22069,11 +22088,15 @@ Why doesn't he just say it straight~!.wav
 >>> ../datae\audiobooks--/Ross & Kathryn Petras - That Doesn't Mean What You Think It Means
 !credit.txt
 A facetious remark is jocular, more gentle. A sarcastic one is cutting, sneering..wav
+A grizzly can cause horror or terror, but isn't grisly itself..wav
 A quick linguistic note, in linguistics, amelioration is a technical word for a semantic change.txt
 A quick linguistic note, in linguistics, amelioration is a technical word for a semantic change.wav
 Adjur means to require, often under oath, to earnestly urge..wav
 Adverse, adjective, not favorable, harmful, averse, adjective, opposed to, or strongly disliking..txt
 Adverse, adjective, not favorable, harmful, averse, adjective, opposed to, or strongly disliking..wav
+Agendum, agenda. People say agenda for the singular as well as the plural now..wav
+All of this reminds us of a truly dreadful joke. A Roman walks into a bar and asks for a martinis.txt
+All of this reminds us of a truly dreadful joke. A Roman walks into a bar and asks for a martinis.wav
 All together phrase in one place all at once. Altogether adverb completely totally..txt
 All together phrase in one place all at once. Altogether adverb completely totally..wav
 Amicable doesn't really work to describe a person. Amiable does.txt
@@ -22086,17 +22109,23 @@ And while you can use discomfort as both a noun and a verb, it's best to use its
 And while you can use discomfort as both a noun and a verb, it's best to use its near-twin, discomfit, as a verb only.wav
 appraise verb to establish a value, estimate an amount, apprise verb to give information..txt
 appraise verb to establish a value, estimate an amount, apprise verb to give information..wav
+As for the related word hurl, one hurls, throws with force, a ball. One hurdles, speeds down a street to catch a hurled ball.txt
+As for the related word hurl, one hurls, throws with force, a ball. One hurdles, speeds down a street to catch a hurled ball.wav
 As Steve Martin once said, some people have “a way with words”, and other people, “oh, uh, not have way.”.wav
+As with some other adverbs, including clearly, certainly, and thankfully, hopefully can function as a sentence adverb.txt
+As with some other adverbs, including clearly, certainly, and thankfully, hopefully can function as a sentence adverb.wav
 Assent with the S is a verb meaning to express approval. An ascent with a C is a noun meaning a climb.txt
 Assent with the S is a verb meaning to express approval. An ascent with a C is a noun meaning a climb.wav
 Assure verb to reassure give confidence to someone. Ensure verb to make certain. Insure verb.txt
 Assure verb to reassure give confidence to someone. Ensure verb to make certain. Insure verb.wav
+Axis, axes. Here the Latin is better than the English axises, which sounds weird..wav
 Begin, began, begun. Drink, drank, drunk. Shrink, shrank, shrunk. Sing, sang, sung. Stink, stank, stunk. Nice and neat, right.txt
 Begin, began, begun. Drink, drank, drunk. Shrink, shrank, shrunk. Sing, sang, sung. Stink, stank, stunk. Nice and neat, right.wav
 Begrudgingly -- adverb, in a dissatisfied, disapproving, or envious manner. Grudgingly -- adverb, reluctantly..wav
 Begs the question is a formal logic turn, a translation of the Latin patitio principii.txt
 Begs the question is a formal logic turn, a translation of the Latin patitio principii.wav
 Bemused -- adjective, lost in thought or confused. Amused -- adverb, entertained..wav
+Cactus, cacti. Cacti is more commonly used, but cactuses is fine too..wav
 Careless errors Maybe. But let's strive to keep things straight, and for paintings or houses.txt
 Careless errors Maybe. But let's strive to keep things straight, and for paintings or houses.wav
 Compel -- verb, to force or to oblige someone to do something. Impel -- verb, to use moral pressure to persuade someone to do something..wav
@@ -22106,6 +22135,8 @@ Complementary with an E, adjective, of two or more things that combine to enhanc
 Comprised of has become an idiom. Who cares if it's technically incorrect.txt
 Comprised of has become an idiom. Who cares if it's technically incorrect.wav
 Contiguous -- adjective, in actual contact. Conterminous -- adjective, enclosed together within a common boundary..wav
+Crisis, crises. The Latin plural is much better and clearer than the English plural crisises..wav
+Datum, data. Almost everyone says data for both singular and plural. Saying, “found that datum interesting” makes you sound like a snob..wav
 Deprecate is now rare in English except for two major uses. One, in self-deprecating.txt
 Deprecate is now rare in English except for two major uses. One, in self-deprecating.wav
 dichotomy -- noun, division into two mutually exclusive, different parts.wav
@@ -22121,63 +22152,134 @@ Enormity often does mean large, but in a bad sense, as in the enormity of crimes
 Enormity often does mean large, but in a bad sense, as in the enormity of crimes committed by the evil dictator.wav
 Even the very descriptive Merriam-Webster's dictionary notes that, while they can be used interchangeably.txt
 Even the very descriptive Merriam-Webster's dictionary notes that, while they can be used interchangeably.wav
+Every past day is an historical day, but only a few days are historic..wav
 Ferment -- verb, to undergo fermentation, to stir up; noun, something stirred up. Foment -- verb, to incite stir up..wav
 Firmament is not the ground, although a surprisingly large number of people think it is. Firmament is above the ground.txt
 Firmament is not the ground, although a surprisingly large number of people think it is. Firmament is above the ground.wav
 Flair -- noun, a special aptitude or ability. Flare -- noun, outburst to flame; verb, to burn with a flame or spread out..wav
+Foreword -- noun, a brief intro to a book. Forward -- adjective, adverb, to the front, moving ahead..wav
+fulsome -- insincerely flattering, also abundant, large (the latter not preferred).wav
+Fungus, fungi. As with cacti, cactuses, you can also say funguses, but fungi sounds fine too..wav
+Hippopotamus, hippopotami. The Latin is technically correct, but just say hippos..wav
+Honing in jumped into use in the mid-1960s. It was virtually unused before then.txt
+Honing in jumped into use in the mid-1960s. It was virtually unused before then.wav
+If a diabetic on his way to buy insulin is killed by a runaway truck, he is the victim of an accident.txt
+If a diabetic on his way to buy insulin is killed by a runaway truck, he is the victim of an accident.wav
+Impending -- adjective, of imminent danger. Pending -- adjective, imminent, not decided..wav
 In the 1800s, biweekly usually meant twice a week, but today biweekly almost always means every two weeks.txt
 In the 1800s, biweekly usually meant twice a week, but today biweekly almost always means every two weeks.wav
+Index, Indices. Both indices and indexes are commonly used..wav
+Inherent describes something that is a permanent or essential attribute or element..wav
+It's very common to use fortuitous to mean lucky or fortunate, which is quite unfortunate.txt
+It's very common to use fortuitous to mean lucky or fortunate, which is quite unfortunate.wav
+Limn usually means to portray or depict in words. It initially meant to illuminate, as in illuminating a manuscript..wav
+Memorandum, memoranda. The Latin plural is pretty widely used, but you can just say memorandums as well..wav
+Meteorites are post-impact objects from space, i.e. they're on the ground. Meteors are in the sky..wav
 More to the point, languages change, and decimate is today frequently used to mean devastate.txt
 More to the point, languages change, and decimate is today frequently used to mean devastate.wav
+Nucleus, nuclei. Use the Latin ending. Almost no one says nucleuses..wav
 Since alternate has become, sometimes grudgingly, an accepted alternative to alternative.txt
 Since alternate has become, sometimes grudgingly, an accepted alternative to alternative.wav
+Some say that a ship can easily flounder before it founders. But that's pushing things in our opinion..wav
+Technically, it should be fewer people, not less people. Why~! It all depends on if and what you're counting..wav
+That said, both words are really quite interchangeable, except if you speak with a psychiatrist.txt
+That said, both words are really quite interchangeable, except if you speak with a psychiatrist.wav
 That said, people have been confusing averse and adverse for years, and we can blame it all on the Romans..wav
+The desert part means neither tasty desserts nor those dry, sandy places. Instead, desert means deserved.txt
+The desert part means neither tasty desserts nor those dry, sandy places. Instead, desert means deserved.wav
 The phrase shows up in 1627 in Captain John Smith's A sea Grammar. What is the anchor away.txt
 The phrase shows up in 1627 in Captain John Smith's A sea Grammar. What is the anchor away.wav
 The suffix -oid means resembling but not the same. Think of planetoids or humanoids.txt
 The suffix -oid means resembling but not the same. Think of planetoids or humanoids.wav
 The word disinterested makes a lot of language nuts very interested indeed.txt
 The word disinterested makes a lot of language nuts very interested indeed.wav
+The word meretricius is linked to prostitution. It comes directly from the Latin feminine noun meretrix, a Roman lady of the night..wav
 There is technically no such thing as a three-way dichotomy..wav
+To inter, which means to bury, has no N at the end. To intern, which principally means to work as a trainee to gain experience.txt
+To inter, which means to bury, has no N at the end. To intern, which principally means to work as a trainee to gain experience.wav
+To make things a little more difficult, there's another meaning of meretricious that is derived from this sexual aspect.txt
+To make things a little more difficult, there's another meaning of meretricious that is derived from this sexual aspect.wav
 To put it as briefly and basically as possible, definite means precise, clearly defined. Definitive means authoritatively conclusive.txt
 To put it as briefly and basically as possible, definite means precise, clearly defined. Definitive means authoritatively conclusive.wav
 We would like to discreetly, EET, point out that there are discrete, ETE, meanings for both words..txt
 We would like to discreetly, EET, point out that there are discrete, ETE, meanings for both words..wav
 Well, although many purists don't like it, depreciate has gradually come to also mean deprecate.txt
 Well, although many purists don't like it, depreciate has gradually come to also mean deprecate.wav
+What are the implications of this~! We'll leave it up to you to infer..wav
 Words are peripatetic. They don't stay put. They boldly forge ahead, no matter how hard we try to hold them back..wav
 >>> ../datae\audiobooks--\Ross & Kathryn Petras - That Doesn't Mean What You Think It Means/{{}}
+all fine and dandy.wav
 all together -- altogether.wav
 all too often.wav
 alternative.wav
 ambivalent.wav
 anticlimactic.wav
+apocryphal -- something that is not true but often believed to be.wav
 apocryphal.wav
 bated breath -- noun, short breath due to extreme emotion.wav
 begin, began, begun.wav
 chronic tennis elbow.wav
 climactic.wav
+comets.wav
 complacent.wav
 complaisant.wav
 complementary.wav
 complimentary.wav
+comprise -- verb, to consist of, be made up of.wav
 comprise.wav
 conterminous.wav
 decimate.wav
 depreciate.wav
 disinterested, uninterested.wav
+ditto.wav
 drink, drank, drunk.wav
 enervated.wav
+envious -- wanting something someone else has.wav
 eponymous.wav
+facetious -- adjective, flippant, amusing in an inappropriate way.wav
+factoid -- originally something similar to a fact, now also a brief or trivial fact.wav
 factoid.wav
+fewer -- a smaller quantity of, usually things that can be counted.wav
 firmament.wav
 flair, flare.wav
 flammable, inflammable.wav
+flaunt -- to brazenly show off.wav
+flounder -- to move aimlessly, to struggle to maintain position.wav
+flout -- to openly disregard a rule or law.wav
+fortuitous.wav
+founder -- to sink after being filled with water, metaphorically.. to fail or collapse.wav
+fulsome.wav
 Good heavens, now! How fussy can you get~!.wav
+historic -- significant or famous in history.wav
+historical -- concerning or belonging in the past.wav
+home in -- to move toward a target.wav
+hone -- to sharpen.wav
+hurdle -- to jump over an obstacle.wav
+hurtle -- to go very fast.wav
+hurtle.wav
 immanentize.wav
+imply -- to insinuate.wav
+in effect.wav
+in regard to.wav
+infer -- to draw conclusions based on evidence.wav
+ingenious -- clever, skillful.wav
+ingenuous -- naive, innocent.wav
+inherent -- of an attribute that exists within.wav
+inherit -- to receive as an heir, to get from one's parents or ancestors.wav
+jealous -- usually romantic envy.wav
+just deserts -- what one deserves.wav
+less -- a smaller quantity of, usually things that can't be counted or a single unit.wav
+loath -- averse, disinclined.wav
+loathe -- to hate.wav
 loosely speaking ## course-.wav
+luxuriant -- having abundant or lush growth.wav
+luxurious -- of or pertaining to luxury.wav
+meretricious -- something that has no value in spite of its appealing appearance.wav
+meritorious -- deserving of reward or praise.wav
+meritorious.wav
 more to the point.wav
 Nice and easy..wav
+obstacles.wav
 Quote, Inflammable means flammable What a country! Dr. Nick Rivera, The Simpsons..txt
 Quote, Inflammable means flammable What a country! Dr. Nick Rivera, The Simpsons..wav
 shrink, shrank, shrunk.wav
@@ -22185,6 +22287,8 @@ sing, sang, sung.wav
 So what the big diff between them~!.wav
 stink, stank, stunk ### 1.wav
 stink, stank, stunk ### 2.wav
+This make sense..wav
+This sounds like the beginning of a Gothic novel..wav
 to consist of.wav
 uninterested.wav
 >>> ../datae\audiobooks--/Roy Blount Jr. Jr.  - Alphabet Juice ## us {{Roy Blount Jr. Jr.}}
@@ -22711,23 +22815,22 @@ Twinkle, Twinkle, Little Star ### [Adult-Fem-C_Twinkle-Twinkle-Little-Star_VKT_0
 Twinkle, Twinkle, Little Star ### [Adult-Fem-C_Twinkle-Twinkle-Little-Star_VKT_01231].txt
 >>> ../datae\audiohero {{$audiohero.com}}/## sound
 >>> ../datae\audiohero {{$audiohero.com}}\## sound/!effects
-cymbal.. squib ### MusicCymbal SME02_62.3.wav
 filtered pink noise.. low frequency ## crop 0-10 ## fade out ### NoisePink BMT02_20.wav
 flange @ sound %% sound effect ## course- ### AcstcGuitarMinor SDT2057203.wav
 flange @ sound %% sound effect ## course- ### LaserPulseFlange SE036801.wav
 flange @ sound %% sound effect ## course- ### Sound-Design-Lightning-Thunder-Elec_B08-03148.wav
-modulated pink noise wind ## crop 0-11 ## fade out ### Wind-Fantasy-Pink-Noise_FANT356.wav
+modulated pink noise wind ## crop 0-11 ## fade out ## course- ### Wind-Fantasy-Pink-Noise_FANT356.wav
 noise ### ToneSynthWhiteNoiseWhooshA.wav
 overdrive %% sound effect ## course- ### Fx MIX22_53_1.wav
 overdrive %% sound effect ## course- ### Licks MIX21_63_1.wav
 phaser ### Sci-Fi-Phaser-Blast_GEN-HD2-31609.wav
 pink noise ## crop 0-6 ## fade out ## course- ### PinkNoiseLoop PE1080803.wav
-pink noise sweep, reverb ### PinkNoiseSweepRev PE1080806.wav
+pink noise sweep, reverb ## course- ### PinkNoiseSweepRev PE1080806.wav
 short modulated pitch tweet beep ### ModTweetBeepShrtM HYP018702.wav
 slide whistle ## = ### RevSlideWhistle CRT058002.wav
 slide whistle ## = ### SlideWhistleInOut CRT057602.wav
+sound effects.. attention grabber ## course- ### WhooshMetallicTh SDT2014601.wav
 sound effects.. attention grabber ### WhooshMetallicRv SDT2014701.wav
-sound effects.. attention grabber ### WhooshMetallicTh SDT2014601.wav
 sound effects.. chattering rewind ### SyntheticDesign EC08_89_2.wav
 sound effects.. chipmunk scratch ### SyntheticDesign EC08_86_4.wav
 sound effects.. needle scratch ### Records-NeedleScratch-ECU-6_B05-06978.wav
@@ -22770,7 +22873,7 @@ clang ### fo_fryingpan_clang_01_hpx.wav
 clang ### SwordClashesRingOu FS035201.wav
 clank ### CellDoorCloseCellD BB043201.wav
 clank ### MetalClankPipeLowClankRing.wav
-clinking and rattling ### GlassClinksGlassBo FS028303.wav
+clinking and rattling ## course- ### GlassClinksGlassBo FS028303.wav
 clunk ### MetalLatchClunkEx PE1027111.wav
 clunk ### MetalLatchLowClunkD.wav
 glass clink ### GlassClinkToastDbl PE582627.wav
@@ -22785,7 +22888,7 @@ creaky ### Creak-Wood_Massive-1920s-Antique-Wood-Wardrobe-Door_SQK01-1059.wav
 creaky ### WardrobeOpenLngCre CS025205.wav
 glass.. grind with stress and squeak ### GlassGrindsCreaks FS028001.wav
 hawk shrill ### Bird-Hawk-Ext-Close-Up-Prol_B04-01330.wav
-piercing metallic shrill ### Ice-DryIce-Screech-Int-C-11_B06A-04147.wav
+piercing metallic shrill ## course- ### Ice-DryIce-Screech-Int-C-11_B06A-04147.wav
 rip canvas shrill ### RipCanvasSmoothShrill.wav
 rubber duck squeak ## crop 0-2 ### RubberDuckSqueak CRT2045701.wav
 screech ### Metal-Screech_Heavy-Metal-Screech-or-Floor-Drag_DST2-1074.wav
@@ -22861,8 +22964,8 @@ wood panel.. short scratches ### Wood-Scratch_GEN-HD4-45570.wav
 wooden kitchen chair.. sit in chair and slide in on tile ### CHAIR-WOOD_GEN-HDF-07281.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound/scuffle
 body grabs, struggling grunts and scuffle during fight ### Fight-Body-Grabs-Scuffles-Hits_FULCON233.wav
-hard body falls and scuffle in dirt ### HardBodyFallsScuff FS044901.wav
-hard body falls and scuffle in dirt ### HardBodyFallsScuff FS044904.wav
+hard body falls and scuffle in dirt ## course- ### HardBodyFallsScuff FS044901.wav
+hard body falls and scuffle in dirt ## course- ### HardBodyFallsScuff FS044904.wav
 leaves scuffle ### Leaves-Scuffle-Dry-Autumn-1.wav_B08-02615.wav
 leaves scuffle ### Leaves-Scuffle-Dry-Autumn-2.wav_B08-02616.wav
 scuffle thick canvas ### Bag-Canvas-Thick-Scuffle.wav_B08-00247.wav
@@ -23030,7 +23133,7 @@ hummingbird wing flutters ### HummingbirdWingFlu FS058801.wav
 hummingbird wing flutters ### HummingbirdWingFlu FS058805.wav
 jay.. piercing and nagging calls [jay@bird] ## crop 0-12 ### Birds-Jay-Ext-Close-Up-Pier_B04-01362.wav
 lilac-breasted roller (Coracias caudatus) [Coracias][Coraciidae] ## course- ### LilacBreastedRolle PE547901.wav
-lilac-breasted roller (Coracias caudatus) [Coracias][Coraciidae] ### LilacBreastedRolle PE547902.wav
+lilac-breasted roller (Coracias caudatus) [Coracias][Coraciidae] ## course- ### LilacBreastedRolle PE547902.wav
 Magellanic penguins braying ### Penguin JBA02_54.wav
 mynah ### BirdMynahBird IN01_56.wav
 nightingale ## crop 0-15 ## fade out ### [BirdNightingale 6003_20].wav
@@ -23193,7 +23296,7 @@ baby short fussy cry ### Baby-F_Short-Fussy-Cry_VKT_17369.wav
 baby short vocalization ## course- ### [Baby-A_Short-Vocalization_VKT_17297].wav
 baby short yell ## course- ### [Baby-B_Short-Yell_VKT_17324].wav
 baby spitting ### Baby-A_Spitting_VKT_17305.wav
-baby squawk ### Baby-B_Fussy-Squawk_VKT_17309.wav
+baby squawk ## course- ### Baby-B_Fussy-Squawk_VKT_17309.wav
 baby sucking pacifier ### BabySuckingPacifie PE145401.wav
 baby whining ## course- ### Baby-D_Fussy-Whining_VKT_17336.wav
 baby.. very upset crying, cantankerous ### Baby-1MonthOld-Int-Clos-140_B04-00581.wav
@@ -23206,7 +23309,6 @@ back pats and rub ### BackPatsRub HF038510.wav
 body frisk and pat down ### BodyFriskPatDown HF038701.wav
 body pat down ## course- ### BodyPatDown HF038702.wav
 clap @ hands ### Clap CTE01_44.1.wav
-combing ### RoughCombingBrushi PE397201.wav
 drumming fingers ## crop 0-3.5 ### HumanCrack_DIGIFX5-30.wav
 face pats ## crop 0-5 ## course- ### BodyHitsImpacts-FacePats-CU_B01-02405.wav
 gritting teeth ## crop 0-3 ### HumanEat_DIGIFX5-13.wav
@@ -23216,7 +23318,7 @@ rubbing lotion in with hands ### LotionRubInRubbing FS056201.wav
 slap ### HandGrabsSlapsPats FS042101.wav
 spanks ## crop 0-4 ### ButtSpankVari HF038711.wav
 stretching ### HumanSnap_DIGII02-61-2.wav
-suck up ### SuctionWetSuckUp CRT2018301.wav
+suck up ## course- ### SuctionWetSuckUp CRT2018301.wav
 sucking fingers ### LickFingersLicking FS053403.wav
 tap fingers ## crop 0-3 ## course- ### HumanTap_DIGII10-46.wav
 touch and rub hair on head around ### TouchRubHairOnHead PE397301.wav
@@ -23238,10 +23340,10 @@ group of teen girls.. talking, annoyed ## long ### Crowd-Group-Of-Teen-Girls_CRO
 hubbub mumble ### SmallMixedGroupWf CRT029001.wav
 jabber ### Communications L2SF2_62_3.wav
 jibber-jabber ### AUCTIONEER_GEN-HDF-01562.wav
-loud women talking & man trying to get a word in edgewise ## crop 0-11 ### Walla-Babble-Female-and-Male-In_B02-01905.wav
-loud women talking & man trying to get a word in edgewise ## crop 11-23 ### Walla-Babble-Female-and-Male-In_B02-01905.wav
-loud women talking & man trying to get a word in edgewise ## crop 23-34 ### Walla-Babble-Female-and-Male-In_B02-01905.wav
-loud women talking & man trying to get a word in edgewise ## crop 34- ### Walla-Babble-Female-and-Male-In_B02-01905.wav
+loud women talking, man trying to get a word in edgewise ## crop 0-11 ### Walla-Babble-Female-and-Male-In_B02-01905.wav
+loud women talking, man trying to get a word in edgewise ## crop 11-23 ### Walla-Babble-Female-and-Male-In_B02-01905.wav
+loud women talking, man trying to get a word in edgewise ## crop 23-34 ### Walla-Babble-Female-and-Male-In_B02-01905.wav
+loud women talking, man trying to get a word in edgewise ## crop 34- ### Walla-Babble-Female-and-Male-In_B02-01905.wav
 mealtime chatter ## long ## fade out ### MealtimeChatterFou PE603901.wav
 mumble ### HumanVocalMal CTE03_95.9.wav
 party chatter ### PartyChatter PE603601.wav
@@ -23261,7 +23363,7 @@ cry @ tears ### [CryFemale].wav
 emphatic throat clear ### HUMAN-THROAT-CLEAR_GEN-HDF-15423.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans/footsteps
 boy runs stutteringly [stutteringly] ### Feet-Carpet-Boy-Run-Stutter_B07-00916.wav
-dirt, grit, run ### Feet-Dirt-Grit-Run-Prance_B07-00954.wav
+dirt, grit, run ## course- ### Feet-Dirt-Grit-Run-Prance_B07-00954.wav
 female heels.. up stairs ### FootstepsConcrete 6016_12_2.wav
 foot stomping in unison ### Crowd-Teen-In-Gymnasium_CROWD492.wav
 footsteps ## crop 0-9 ## fade out ### FOOTSTEPS-OUTDOOR_GEN-HDF-12177.wav
@@ -23270,8 +23372,8 @@ footsteps with cleats in a corridor ## crop 10- ### Footsteps_DIGIFX4-66.wav
 footsteps, muttering ### FoleyFootsteps-Int-WalkPast_B01-05333.wav
 footsteps.. continuous, nervous, back and forth ## crop 0-15 ## fade out ### FootstepsGravel_DIGII03-19.wav
 footsteps.. male leather sole ### FootstepsConcrete 6016_03_1.wav
-grit, run, boots ### Feet-Grit-Walk-Boots_B07-00999.wav
-grit, run, slide ## crop 8- ### Feet-Sand-Grit-Run-Slide_B07-01052.wav
+grit, run, boots ## course- ### Feet-Grit-Walk-Boots_B07-00999.wav
+grit, run, slide ## crop 8- ## course- ### Feet-Sand-Grit-Run-Slide_B07-01052.wav
 man walks and staggers in snow ## crop 0-13 ## fade out ### FSManWalksStaggers HF036901.wav
 rhythmic stomp & clap ### Crowd50IntRhythmi LCA017501.wav
 running @ sport ### FootstepsRunning 1013_30.wav
@@ -23394,7 +23496,7 @@ swallow @ gulp ### HumanSwallow 6032_39_2.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans/reaction
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### humans\reaction/!applause
 appreciative applauding ### Applause 1003_15.wav
-before concert, enthusiastic applause ### Crowd-Applause-Concert_OBIN_360.wav
+before concert, enthusiastic applause ## course- ### Crowd-Applause-Concert_OBIN_360.wav
 small appreciative audience with whoops, clapping dies out slowly ### GameShowSmlAppreci PE606903.wav
 small pathetic applause ### Applause-Small-Pathetic_B07-00075.wav
 unenthusiastic applause ### Applause-Small-Studio-Group-Unenthusiastic_CROWD075.wav
@@ -23607,8 +23709,8 @@ funk segue ### FunkSeguesTags MIX60_42_5.wav
 gamelan ethnic drums [gamelan] ### MusicTransEthniDr SDT048901.wav
 hard rock, thrash ### HardRock CE02_63_3.wav
 stride piano the way it should be played [stride][piano@stride] ## crop 74-107 ## fade ## long ### 37-Mr-Stride_Full_FM2194.wav
-techno ### MusicAccents LE01_52_2.wav
-the Star Spangled Banner, a capella [Star Spangled Banner] ## crop 0-20 ## fade out ### MusicAnthem SME01_01.1.wav
+techno ## course- ### MusicAccents LE01_52_2.wav
+the Star Spangled Banner, a capella [Star Spangled Banner] ## crop 0-20 ## fade out ## course- ### MusicAnthem SME01_01.1.wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### music/instr
 harp glissando ### Harp 1019_66_1.wav
 harp.. A minor chord arpeggio ### Harp-A-Minor-Chord-Arpeggio_OBIN_525.wav
@@ -23616,7 +23718,7 @@ harp.. diminished gliss down ### Harp-Diminished-Gliss-Down_OBIN_530.wav
 hurdy-gurdy ### HurdyGurdyCom CTE06_96.2.wav
 Jew's harp ### BoingCartoon CTE01_39.4.wav
 Jew's harp ### Cartoons-MouthHarp-CU-Med-7_B05-01542.wav
-kazoo ### MusicFx IMA01_35_1.wav
+kazoo ## course- ### MusicFx IMA01_35_1.wav
 mouth harp ### BoingCartoon CTE01_39.5.wav
 mouth organ ### MouthOrganDescendi MA025603.wav
 mouth organ ### MouthOrganShrtFstG MA026602.wav
@@ -23780,7 +23882,7 @@ smoke grenade.. pop and ignate ### SmokeGrenadePopIgn AZ046101.wav
 _Colt .45 rack slide ## course- ### Gun-Handgun-Foley-Rack-Slide_MILIT365.wav
 _Colt .45 rack slide ### Gun-Hand-Gun-Foley-Rack-Slide_MILIT342.wav
 bonfire ## crop 0-15 ## fade out ### [Fire 6083_84].wav
-breakage ### JunkCrashFloor CRT033401.wav
+breakage ## course- ### JunkCrashFloor CRT033401.wav
 breaking laminated glass, slow deliberate ripping tear ### Break-Laminated-Glass_GLAS214.wav
 campfire ## crop 10-22 ## fade ### [CampfireNightAmbO PE1031505].wav
 chalkboard ### Chalkboard 6045_78_1.wav
@@ -23848,7 +23950,7 @@ typewriter.. carriage return ### TYPEWRITER-MANUAL_GEN-HDF-25130.wav
 typewriter.. key stroke ### TypewriterManualK PE1074205.wav
 victrola [phonograph] ## crop 0-20 ## fade out ## course- ### VictrolaClickOnRun BB045601.wav
 walky-talky, two-way communication ### WalkieTalkie 6060_26_1.wav
-walky-talky.. feedback and squelch niose ### WalkieTalkie 6060_35_1.wav
+walky-talky.. feedback and squelch noise ### WalkieTalkie 6060_35_1.wav
 walky-talky.. feedback squelch ### WalkieTalkie 6088_29_2.wav
 walky-talky.. interference squelch ### WalkieTalkie 6088_34_3.wav
 whoopee cushion ## = ### WhoopeeCushion 6110_54_1.wav
@@ -24148,7 +24250,7 @@ extension ladder.. climb up ### Ladder 6032_47_3.wav
 firestarter ## course- ### FireStarter6ch SEG017401.L.wav
 firestarter ## course- ### FireStarter6ch SEG018301.L.wav
 flare @ torch ## crop 0-7 ## fade out ### [BreakStreetFlareD AHS024801].wav
-grave digger ### GraveDigger TFH01_67.wav
+grave digger ## course- ### GraveDigger TFH01_67.wav
 grinder ### [GrinderPepper 6020_97_4].wav
 >>> ../datae\audiohero {{$audiohero.com}}\## sound ### various\industy-tools/hammer
 a hammer drives a nail ### in_hammer_hammering_01_hpx.wav
@@ -24227,7 +24329,7 @@ earthquake rumble ## crop 0-15 ## fade out ### EarthMovement-EarthquakeR-5_B06A-
 foliage brush movement ### FoliageBrushMovement PEHD109103.wav
 forest ## crop 0-15 ## fade out ### [ScotlandForest 7015_01].wav
 glubs ### WaterGlub UWT03_49.1.wav
-horseback riding, pebbly dirt ## crop 6- ## fade in ### Horses-Horse-PebblyDirt-Onb_B05-05050.wav
+horseback riding, pebbly dirt ## crop 6- ## fade in ## course- ### Horses-Horse-PebblyDirt-Onb_B05-05050.wav
 ice slide, glacier ### Water-Glaciers-Alaska-Childs-Glacier_BON-01016.wav
 inferno ## crop 0-20 ## fade out ### [Fire PS01_94 forest fire].wav
 kicking snow ## crop 0-16 ### FootstepsSnow_DIGII10-26.wav
@@ -24479,7 +24581,7 @@ pilot harness unbuckle ### AirplaneJet 6111_19_2.wav
 air pump ### AirPump CTE01_16.1.wav
 air pump ### AirPump CTE01_16.3.wav
 airbrake ### AirBrakeDieselTruc PE854604.wav
-backfire ## crop 0-10 ### AutoBackfire 5022_87.wav
+backfire @ car ## crop 0-10 ### AutoBackfire 5022_87.wav
 boat throttle movement [throttle@boat] ### BoatThrottleMoveme PE344402.wav
 boat.. old motor putting steady ## crop 0-12 ## fade out  ### BoatPuttPutt CTV03_50_02.wav
 carriage jolt ### CarriageJoltsForCa HS037302.wav
@@ -30740,6 +30842,7 @@ Ada @ language ## qropt!.jpg
 astronaut {{Photo.. Neil Armstrong, 1969 $$}}.jpg
 Australian 11th Battalion, Great Pyramid of Giza, 1915 [battalion] ## qropt! {{$$wiki}}.jpg
 Bee Jackson, 1920s [Charleston@dance] ## qrop t5 b4 ## qropt!.jpg
+bolide [fireball@bolide].jpg
 Books with a portrait of Émile Zola with his father [Zola][Zolian] ## noqrop {{Photo.. Émile Zola, 1901 $$}}.jpg
 Buster Brown suit.jpg
 >>> ../datae\photo {{$$}}/cc-by-wiki
@@ -31559,8 +31662,8 @@ flamenco ## qrop t8 r8 {{Photo.. Jackq $dreamstime 17313287}}.jpg
 tango ## qrop l23 r10 {{Photo.. Alexandre Fagundes De Fagundes $dreamstime 2160463}}.jpg
 >>> ../datae\photo_dreamstime\art/decor
 batik ## qrop qr {{Photo.. Mohamad Zaki Bin Mokhtar $dreamstime 30085997}}.jpg
-bright red textile texture [bright red][background] ## qrop q {{Photo.. Wrangel $dreamstime 77216838}}.jpg
-bright red textile texture [bright red][background] ## qrop q {{Photo.. Wrangel $dreamstime 77630460}}.jpg
+bright red textile texture [bright red][background@art] ## qrop q {{Photo.. Wrangel $dreamstime 77216838}}.jpg
+bright red textile texture [bright red][background@art] ## qrop q {{Photo.. Wrangel $dreamstime 77630460}}.jpg
 candy cane border [border@decor] ## qropt! {{Photo.. Brad Calkins $dreamstime 22252476}}.jpg
 crayons ## qrop l16 ## qropt! {{Photo.. Lukrecije $dreamstime 34635900}}.jpg
 crêpe paper streamers [crepe paper][streamers] {{Photo.. danazurki $dreamstime 90253670}}.jpg
@@ -33597,7 +33700,7 @@ caterpillar ## qropt! {{Photo.. Panuruangjan $dreamstime 32815181}}.jpg
 cricket @ insect ## qrop l1 r32 {{Photo.. Sarah2 $dreamstime 55676929}}.jpg
 fly @ insect ## qrop l18 r16 {{Photo.. Lu Yongli $dreamstime 5056675}}.jpg
 grasshopper ## qrop l22 t1 r12 {{Photo.. Dmitriy Chistoprudov $dreamstime 1145388}}.jpg
-honeycomb ## qrop ql {{Photo.. Šimun Aščić $dreamstime 99804806}}.jpg
+honeycomb [comb@honeycomb] ## qrop ql {{Photo.. Šimun Aščić $dreamstime 99804806}}.jpg
 hornet ## qrop l23 r4 ## qropt! {{Photo.. Nostone $dreamstime 34542919}}.jpg
 hornets' nest [hornet's nest] ## qrop l15 r18 {{Photo.. Bogdan Kruk $dreamstime 69306520}}.jpg
 hoverfly ## qrop ql {{Photo.. Liujunrong $dreamstime 28425759}} ### Syrphidae.jpg

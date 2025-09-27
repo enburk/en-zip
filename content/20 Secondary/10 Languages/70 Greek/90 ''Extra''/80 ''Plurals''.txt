@@ -19,12 +19,15 @@ schemata//schemas
 analyses            = ''plural of'' ~ analysis
 syntheses           = ''plural of'' ~ synthesis
 theses              = ''plural of'' ~ thesis
+
 ---
 axes @ axis         = ''plural of'' ~ axis
 axes @ axe          = ''plural of'' ~ axe/ax
+
 ---
 bases @ basis       = ''plural of'' ~ basis
 bases @ base        = ''plural of'' ~ base
+
 ---
 ellipses @ ellipsis = ''plural of'' ~ ellipsis
 ellipses @ ellipse  = ''plural of'' ~ ellipse

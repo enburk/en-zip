@@ -11,7 +11,8 @@ whirr
 
 ===
 
-: drive dragging muffler # SOUND
+: mechanism: fast rev burst with buzz and whine # SOUND
+
 : winch: hoist up # SOUND
 
 : hack saw: cutting copper pipe # SOUND
@@ -43,7 +44,12 @@ whirr
 : hedge clippers # SOUND
 : hedge shears # SOUND
 
+: walky-talky: feedback squelch # SOUND
+: walky-talky: interference squelch # SOUND
+: walky-talky: feedback and squelch noise # SOUND
+
 ===
 
 : hay making, by hands, ~ using pitch fork # SOUND
 : whoosh of whip being twirled, then sharp crack of whip snaps # SOUND
+

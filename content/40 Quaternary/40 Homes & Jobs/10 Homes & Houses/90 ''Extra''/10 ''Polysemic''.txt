@@ -16,6 +16,11 @@ decompression chamber
 : chambered nautilus shell
 : revolver: chamber spin # SOUND
 
-
+***
+tiles
+roof tile
+tile @ domino       = a playing piece in dominoes
+tile @ freemasonry  = to protect from the intrusion of the uninitiated
+tiler @ freemasonry
 
 

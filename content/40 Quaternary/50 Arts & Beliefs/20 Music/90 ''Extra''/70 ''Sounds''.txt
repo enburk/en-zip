@@ -3,10 +3,6 @@ sounds
 : buzz roll with cymbal crash # SOUND
 : guiro, single scrape # SOUND
 
-: glockenspiel: single note # SOUND
-: glockenspiel: tumble down # SOUND
-: orotund seventh chord # SOUND
-
 : melancholic arpeggio chord, long sustain # SOUND
 : strong vocal groove # SOUND
 : various horns used as talking instruments # SOUND
@@ -14,7 +10,6 @@ sounds
 : clavichord, descending, slow down # SOUND
 : xylophone, ascending # SOUND
 : electric guitar: fade in and sustain # SOUND
-: steel guitar: chordal wobble # SOUND
 : harp: diminished gliss down # SOUND
 
 : turntable: needle continuous at the end of record # SOUND

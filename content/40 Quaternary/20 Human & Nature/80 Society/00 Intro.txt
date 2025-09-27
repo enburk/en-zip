@@ -1,20 +1,23 @@
 society
 
-participant /// Latin
+participant             /// Latin
 
 ---
 ancestor
-descendant  /// French
-inheritance /// French
+descendant              /// French
+inheritance             /// French
 hereditary
 : Death is hereditary.
+inherit %% {verb}       = to receive as an heir, to get from one's parents or ancestors # +ru
+inherent %% {adjective} = of an attribute that exists within                      # +ru
+: Inherent describes something that is a permanent or essential attribute or element.
 
 ---
-adopt       /// Latin
-adoption    /// Latin
+adopt                   /// Latin
+adoption                /// Latin
 
 ---
-charity     /// French
+charity                 /// French
 : Charity begins at home.
 
 ---
@@ -31,6 +34,7 @@ impertinent
 : Society is now one polished horde /// Formed of two mighty tribes, the bores and bored.
 
 : My dear boy, said Lord Henry, smiling, anybody can be good in the country
+
 
 
 

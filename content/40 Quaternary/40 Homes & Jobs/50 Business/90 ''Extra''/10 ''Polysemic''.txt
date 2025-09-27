@@ -16,4 +16,21 @@ parcel @ shipment = a package ~ wrapped for shipment
 parcel @ food     = a small amount of food ~ that has been wrapped up
 parcel @ land     = a division of land ~ bought and sold as a unit
 
+***
+toll @ loss       = loss or damage incurred through a disaster
+toll @ fee        = a fee charged for the use of a road or waterway
+toll @ bell       = the ringing of a bell
+: distant tolling # SOUND
+death toll        = the number of dead as a result of a war, natural disaster or other incident
+toll road
 
+***
+tip @ money
+gratuity %% formal /// Latin
+: In English English, the word tip has several meanings
+tip @ point = the extreme end of something
+: marker pen, felt-tip # SOUND
+fingertip
+tip @ tilt = (to cause) to become knocked over, fall down or overturn
+tip @ hint = to give a piece of private information, to inform
+Here's a tip...

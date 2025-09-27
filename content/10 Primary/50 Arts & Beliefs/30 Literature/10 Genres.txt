@@ -14,10 +14,12 @@ dystopia       = антиутопия                                         # 
 
 Gothic novel   = готический роман                                   # ART+ # 16+
 doppelgänger   = доппельгангер %% нем. «двойник»                    # ART+ # RARE+ # 16+
+
 ---
 satire         = сатира                                             # 10+
 satiric        = сатирический %% ''не'' сатирик                     # 10+
 satirist       = сатирик                                            # 10+
+
 ---
 biography      = биография
 autobiography  = автобиография
@@ -36,5 +38,7 @@ epigram        = эпиграмма                                          # 1
 epos           = эпос, эпическая поэма
 epic           = эпический, ~ эпос, эпическая поэма, ~ эпопея
 
+===
 
+This sounds like the beginning of a Gothic novel.
 

@@ -9,8 +9,10 @@ pedi                 = pedicure
 bookie               = bookmaker
 goalie               = goalkeeper, ~ goaltender, netminder
 
+---
 prop @ aero          = propeller
 propwash//prop wash  = propeller wash
+decel                = deceleration
 
 condo {Am.}          = condominium
 fridge               = refrigerator
@@ -32,6 +34,7 @@ caps                 = capital letters, ~ capitals
 med                  = medical
 meds                 = medications
 vet                  = veterinarian
+
 
 
 

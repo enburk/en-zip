@@ -13,6 +13,7 @@ splat//splatter
 : drinking fontain: water splatter # SOUND
 : kerplunk splash with ripples # SOUND
 : mud bubble squish # SOUND
+: lake dock: heavy hollow splashing and sloshing # SOUND
 
 ===
 thaw

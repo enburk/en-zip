@@ -4,12 +4,16 @@ creak
 screech
 squeal
 squeak
+crackle
 
 ===
 
 : creaking wood # SOUND
 : wood: heavy pressure creak # SOUND
 : rattan creak # SOUND
+
+: tightening: stress creaks and crackling # SOUND
+: crackling fire # SOUND
 
 : tire squeal # SOUND
 : tire screech # SOUND

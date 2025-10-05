@@ -149,10 +149,15 @@ namespace app::video
                 start = gui::time::now;
             }
 
+            auto speedup = [&]()
+            {
+                auto speed = app::speed;
+                if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
+                return video.elapsed.ms > int(video.duration.ms/speed);
+            };
+
             if (what == &playing and start + stay < gui::time::now)
-            if (video.status == state::finished
-            or  video.duration - video.elapsed <
-                gui::time{int(100*app::speed*5)})
+            if (video.status == state::finished or speedup())
             {
                 medio.done();
                 stay.ms = int(std::round(

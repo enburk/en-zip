@@ -78,19 +78,19 @@ namespace app
         gui::time time;
         std::deque<str> queue;
 
-        void add (media::resource& r)
+        void add (str id)
         {
             time = gui::time::now;
-            queue.push_front(r.id);
+            queue.push_front(id);
             if (queue.size() > 10)
             queue.pop_back();
         }
 
-        int num (media::resource& r)
+        int num (str id)
         {
             int num = 0;
-            for (str& id: queue)
-            if (id == r.id)
+            for (str& i: queue)
+            if (id == i)
             return num;
             else ++num;
             return num;

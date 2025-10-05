@@ -93,13 +93,39 @@ namespace app::one
                 wide = true;
             }
 
-            audio_index = {}; int aa = audios.size();
-            sound_index = {}; int ss = sounds.size();
-            video_index = {}; int vv = videos.size();
+            auto id = [](media::index index) { return
+                std::to_string(index.location.source) + "," +
+                std::to_string(index.location.offset); };
 
-            if (aa>0) audio_index = audios[aux::random(0, aa-1)];
-            if (ss>0) sound_index = sounds[aux::random(0, ss-1)];
-            if (vv>0) video_index = videos[aux::random(0, vv-1)];
+            auto choose = [id](array<media::index> indexes, app::lasts& lasts)
+            {
+                if (not lasts.queue.empty())
+                {
+                    int oldest_num = 0;
+                    array<media::index> oldests;
+                    for (auto& index: indexes)
+                    {
+                        int num = lasts.num(id(index));
+                        if (num == 0) continue;
+                        if (oldest_num < num)
+                            oldest_num = num,
+                            oldests.clear();
+                        if (oldest_num == num)
+                            oldests += index;
+                    }
+                    indexes = oldests;
+                }
+
+                media::index index;
+                int nn = indexes.size();
+                if (nn > 0) index = indexes[aux::random(0, nn-1)];
+                if (nn > 0) lasts.add(id(index));
+                return index;
+            };
+
+            audio_index = choose(audios, app::last_vocals);
+            sound_index = choose(sounds, app::last_sounds);
+            video_index = choose(videos, app::last_videos);
 
             for (auto& audio: audios) logs::audio << log(audio);
             for (auto& sound: sounds) logs::audio << log(sound);
@@ -110,12 +136,11 @@ namespace app::one
             if (entry.opt.external.
                 contains("SOUND"))
                 audio_index =
-                media::index{},
-                aa = 0;
+                media::index{};
 
-            pixed = vv > 0;
-            vocal = aa > 0;
-            sound = ss > 0;
+            vocal = audio_index != media::index{};
+            sound = sound_index != media::index{};
+            pixed = video_index != media::index{};
 
             player.audio_index.clear();
             player.audio_index += audio_index;
@@ -133,7 +158,7 @@ namespace app::one
         void speedup ()
         {
             auto speed = app::speed;
-            if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 10;
+            if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
             player.stay = gui::time{int((1000.0 +
                 video_index.title.size() * 10.0 +
                 text.size() * 10.0) /

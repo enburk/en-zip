@@ -215,6 +215,15 @@ namespace app::one
 
             for (auto& s: slides)
             {
+                s.topic =
+                s.entries.empty() ? last_topic :
+                s.entries.front()->topic;
+
+                if (not s.topic)
+                    std::abort();
+
+                last_topic = s.topic;
+
                 s.mute = mute;
                 s.volume = volume;
 
@@ -230,15 +239,6 @@ namespace app::one
 
                 for (auto& e: s.entries)
                 e->shift(xy(0, H/2-hh/2));
-
-                s.topic =
-                s.entries.empty() ? last_topic :
-                s.entries.front()->topic;
-
-                if (not s.topic)
-                    std::abort();
-
-                last_topic = s.topic;
             }
         }
 

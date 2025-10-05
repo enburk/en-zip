@@ -1,7 +1,7 @@
 abstractions
 
 ---
-duration        /// Latin
+duration                 /// Latin
 : duration is a noun meaning the length of time something continues or lasts
 
 gold dust and nuggets
@@ -23,22 +23,28 @@ similarity
 
 invaluable
 
-random          /// French
+random                   /// French
 
 ---
-fortnight {Br.} = two weeks
+momentary %% {adjective} = lasting for only a moment, happening at every moment /// Latin
+momentarily %% {adverb}  = for a moment %% in a momentary manner                # +ru
+: And the venerable OED includes at any moment, in a moment, soon, as its fourth definition of momentarily
+
+---
+fortnight {Br.}          = two weeks
 : two weeks—one bloody fortnight
 
 
 ---
-include         /// Latin
-exclude         /// Latin
+include                  /// Latin
+exclude                  /// Latin
 : If you cannot bargain with the gods because they already have everything /// everything necessarily includes yourself
 : Newt had always suspected that people who regularly used the word community /// in a very specific sense that excluded him
 
 ===
 
 : Sometimes we talk about time as money
+
 
 
 

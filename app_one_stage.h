@@ -326,6 +326,12 @@ namespace app::one
             showslide();
         }
 
+        void speedup ()
+        {
+            for (auto& entry: entries)
+            entry.speedup();
+        }
+
         void on_change (void* what) override
         {
             if (what == &coord and

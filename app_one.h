@@ -137,6 +137,12 @@ namespace app::one
                 fetcher.setup(2s);
         }
 
+        void speedup ()
+        {
+            for (auto& stage: stages)
+            stage.speedup();
+        }
+
         void place (gui::time t={})
         {
             xywh r = stages.coord.now.local();

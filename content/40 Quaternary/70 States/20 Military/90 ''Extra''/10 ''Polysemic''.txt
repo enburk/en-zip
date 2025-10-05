@@ -1,11 +1,16 @@
 polysemic
 
 ***
-aim @ target = the point intended to be hit
-aim @ weapon = to point or direct a weapon
-aim @ goal   = intention or goal
+aim @ target    = the point intended to be hit
+aim @ weapon    = to point or direct a weapon
+aim @ goal      = intention or goal
 take aim
 
 ***
-foil @@      # pix-
+foil @@         # pix-
 : foil functions as two parts of speech. It can be used as a verb meaning to defeat or to keep from gaining some end
+
+***
+blister @ air
+blister pack
+blister @ words = to attack with sharp words # +ru

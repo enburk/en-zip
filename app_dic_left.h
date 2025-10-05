@@ -194,6 +194,8 @@ namespace app::dic::left
                 undoes.empty()) 
                 undoes.pop_back();
                 redoes = std::move(saving);
+                card.object.video.stop();
+                quot.object.audio.stop();
                 refresh();
             }
             if (what == &redo and not redoes.empty()) 
@@ -212,6 +214,8 @@ namespace app::dic::left
                 clicked = *index;
                 notify();
                 redoes = std::move(saving);
+                card.object.video.stop();
+                quot.object.audio.stop();
                 refresh();
             }
         }

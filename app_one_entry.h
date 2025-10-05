@@ -31,6 +31,7 @@ namespace app::one
         bool widen = false;
         bool wide  = false;
         int clicked = 0;
+        str text;
 
 #define using(x) decltype(player.x)& x = player.x;
         using(mute)
@@ -129,6 +130,16 @@ namespace app::one
             frame.hide();
         }
 
+        void speedup ()
+        {
+            auto speed = app::speed;
+            if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 10;
+            player.stay = gui::time{int((1000.0 +
+                video_index.title.size() * 10.0 +
+                text.size() * 10.0) /
+                speed)};
+        }
+
         void translate ()
         {
             if (number == -1)
@@ -149,12 +160,8 @@ namespace app::one
                 gray(small(media::canonical(audio_index.credit)));
             }
 
-            str text = doc::html::untagged(html);
-
-            player.stay = gui::time{int((1000.0 +
-                video_index.title.size() * 10.0 +
-                text.size() * 10.0) /
-                app::speed)};
+            text = doc::html::untagged(html);
+            speedup();
 
             script.html = html;
             credit.html = "";

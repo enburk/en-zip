@@ -72,4 +72,31 @@ namespace app
     };
     appdatatype
     appdata;
+
+    struct lasts
+    {
+        gui::time time;
+        std::deque<str> queue;
+
+        void add (media::resource& r)
+        {
+            time = gui::time::now;
+            queue.push_front(r.id);
+            if (queue.size() > 10)
+            queue.pop_back();
+        }
+
+        int num (media::resource& r)
+        {
+            int num = 0;
+            for (str& id: queue)
+            if (id == r.id)
+            return num;
+            else ++num;
+            return num;
+        }
+    };
+    lasts last_vocals;
+    lasts last_sounds;
+    lasts last_videos;
 }

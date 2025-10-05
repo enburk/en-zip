@@ -152,8 +152,9 @@ namespace app::video
             auto speedup = [&]()
             {
                 auto speed = app::speed;
-                if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
-                return video.elapsed.ms > int(video.duration.ms/speed);
+                if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 10;
+                return video.duration - video.elapsed <
+                gui::time{int(100*speed)};
             };
 
             if (what == &playing and start + stay < gui::time::now)

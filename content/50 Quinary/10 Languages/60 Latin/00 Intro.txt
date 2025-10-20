@@ -54,8 +54,8 @@ suggestion
 : just suggested
 
 ---
-pend       = to hang, to depend
-impend     = be about to happen
+pend          = to hang, to depend
+impend        = be about to happen
 : Impending -- adjective, of imminent danger. Pending -- adjective, imminent, not decided.
 : impending Law, which never let them sleep well, unless when drunk
 
@@ -139,7 +139,7 @@ infliction
 
 ---
 plenitude
-plentitude = erroneous form of plenitude, ~ probably by influence of plenty
+plentitude    = erroneous form of plenitude, ~ probably by influence of plenty
 
 instant
 instance
@@ -419,6 +419,7 @@ affluence
 
 ---
 comprehension
+to comprehend = to understand the meaning or significance of something # +ru
 : incomprehensible is an adjective meaning impossible to understand
 
 ---
@@ -469,7 +470,10 @@ abdication
 : Royalties may not abdicate.
 
 evanescence
-abundant
+
+---
+abundant      = existing or available in large quantities              # +ru
+
 redundant
 undulant
 
@@ -506,6 +510,8 @@ orifice
 rufous
 ruminant
 desiccant
+
+
 
 
 

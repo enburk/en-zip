@@ -29,103 +29,33 @@ speaker.064x048.png
 speaker.128x096.png
 >>> ../datae/audio
 >>> ../datae\audio/!AI ## =
-acclimatization, acclimation ## us.mp3
-air traffic control tower cab.mp3
-An Argument In The Corridors Of The Opera.mp3
-Aztecan languages.mp3
-baby boy.mp3
-ballistics expert.mp3
-bandana.mp3
-basic vocabulary.mp3
-Central Intelligence Agency.mp3
-central nervous system.mp3
-comparative and superlative adjectives.mp3
-comparative and superlative adverbs.mp3
-conditional sentences.mp3
-constitutional monarchy.mp3
-Death and Life.mp3
-diplomatic mission.mp3
-discourse markers.mp3
-drops of water on a flower.mp3
-English words from Indigenous languages of the Americas.mp3
-English words of Arabic origin.mp3
-English words of Celtic origin.mp3
-English words of Dutch origin.mp3
-English words of French origin.mp3
-English words of Germanic origin.mp3
-English words of Greek origin.mp3
-English words of Hawaiian origin.mp3
-English words of Indian origin.mp3
-English words of Latin origin.mp3
-English words of Old Norse origin.mp3
-English words of Persian origin.mp3
-English words of Spanish origin.mp3
-fakir.wav
-forget.wav
+>>> ../datae\audio\!AI ## =/notegpt
 Future Continuous Tense.mp3
 Future Perfect Continuous Tense.mp3
-galactic collision.mp3
-gave.mp3
-gentlemen's association.mp3
-get it.mp3
-get.mp3
-give.mp3
-got.mp3
-Gregorian calendar.mp3
-he was.mp3
-historical title, address, status.mp3
-I was.mp3
-inedible mushrooms.mp3
-informal contractions.mp3
-intensive pronouns.mp3
-interrogative pronouns.mp3
-irregular plurals of Greek origin.mp3
-irregular plurals of Latin origin.mp3
-Italian cuisine.mp3
-Latin.mp3
-macramé.mp3
-medical procedure.mp3
-medical treatment.mp3
-Mesolithic period.mp3
-modern philosophy.mp3
-multidigit.mp3
-Neolithic period.mp3
-obscene lexicon.mp3
-parliamentary republic.mp3
+Future Perfect Tense.mp3
 Past Continuous Tense.mp3
 Past Perfect Continuous Tense.mp3
-place names from Algonquian languages.mp3
-polysemantic.mp3
-polysemic.mp3
-possessive adjectives.mp3
-possessive case.mp3
-possessive pronouns.mp3
 Present Continuous Tense.mp3
-present participle.mp3
 Present Perfect Continuous Tense.mp3
 Present Perfect Tense.mp3
-primary.mp3
-public relations.mp3
-Put it off, let's go for a walk!.mp3
-reflexive pronouns.mp3
-savanna.mp3
-say something to somebody.mp3
 Simple Future Tense.mp3
-smart vs. stupid.mp3
-spectacled cobra.mp3
-tell somebody something.mp3
-the English Channel.mp3
-the Grand Canyon.mp3
-The meeting was postponed due to technical reasons..mp3
-the Tibetan Plateau.mp3
-Theatre of the Absurd.mp3
-traditional Tibetan medicine.mp3
-we were.mp3
-were not.mp3
-weren't.mp3
+where is.wav
+>>> ../datae\audio\!AI ## =/zvukogram Seraphina US, 727173
+an ancient copper coin coated with patina.mp3
+An Argument In The Corridors Of The Opera.mp3
+armies.mp3
+Aztecan languages.mp3
+babies.mp3
+bandana.mp3
+basic vocabulary.mp3
+he's.mp3
+macramé.mp3
+possessive adjectives.mp3
+savanna.mp3
+Scottish.mp3
+she's.mp3
+suffix -y.mp3
 You don't have to steal to feed yourself..mp3
-You mustn't steal!.mp3
-zero gravity.mp3
 >>> ../datae\audio/!AI combined ## =
 profanity, obscene lexicon ### 0.wav
 >>> ../datae\audio/!combined ## =
@@ -547,6 +477,15 @@ yeti, abominable snowman ### 0.wav
 yogurt, yoghurt ### 0.wav
 éclair, eclair ### 0.wav
 >>> ../datae\audio/!unknown
+>>> ../datae\audio\!unknown/## Case
+Dionysos.wav
+Heracles.wav
+Hestia.wav
+Hyperion -- god of light.wav
+Pallas.wav
+Pontus.wav
+the Graeae.wav
+Theia -- goddes of the ether.wav
 as in ## == ## course-.wav
 hahaha [+][laugh].ogg
 humuhumunukunukuapuaa.wav
@@ -556,6 +495,7 @@ multisense.wav
 prescriptive.wav
 purpose.wav
 SOS [SOS][Morse code].ogg
+the primordial gods.wav
 What do you keep saying you will for~! Why don’t you do it~!.wav
 >>> ../datae\audio/## number ## =
 1200.ogg
@@ -926,108 +866,230 @@ windy.ogg
 >>> ../datae\audio\courses/{{IELTS Vocabulary 3000}} ## us
 >>> ../datae\audio\courses\{{IELTS Vocabulary 3000}} ## us/{{}}
 a bathroom.wav
+a farm.wav
 a guest.wav
+a license.wav
 a likeness.wav
 a midwife.wav
+a Nobel Prize.wav
 a party.wav
+a pseudonym.wav
+a ransom.wav
+a rarity.wav
+a replica.wav
+a sidelong glance.wav
 a slave.wav
+a tragedy.wav
+a wound.wav
 abashment.wav
 ability.wav
 ablaze.wav
+able-bodied.wav
+abnormality.wav
 aboard.wav
 abode.wav
+abominable.wav
+absent-minded.wav
+abstain.wav
+abundance.wav
+abundant.wav
+abuse.wav
+abusiveness.wav
+abuzz.wav
 academic.wav
+accent.wav
+acceptable.wav
 acceptance.wav
+accepted.wav
+accepting.wav
+accessible.wav
 accomplice.wav
+accomplished ### 2.wav
 accomplished.wav
 accord.wav
+accuracy.wav
 accurate.wav
 acerbity.wav
 acid.wav
 acidity.wav
+acknowledge.wav
 acknowledgment.wav
+acoustic.wav
+acquire.wav
 acridness.wav
+acrobats.wav
+action figure.wav
+actions.wav
+activity.wav
 actuality.wav
+adept.wav
 administration.wav
+admire.wav
 admissible.wav
+admit.wav
+admonish.wav
+adore.wav
 adoring.wav
+advance.wav
+advancement.wav
 advantage.wav
 advantageous.wav
 adverse.wav
+affair.wav
+affectation.wav
 affectionate.wav
+afflict.wav
 affront.wav
+afraid.wav
+after all.wav
+again and again.wav
 ageable.wav
+aggregate @ noun.wav
 agitated.wav
+agitation.wav
 agreeable.wav
 agreement.wav
+aid.wav
+aim.wav
 aimless.wav
+alcove.wav
 alert.wav
+alien.wav
+align.wav
+alignment.wav
 all in one.wav
+alliance.wav
 allowable.wav
+ally.wav
 alphabetical.wav
+amateur.wav
 amazing.wav
+ambiguous.wav
+an assignment.wav
 an expansion.wav
+ancestry.wav
+anchor.wav
 ancient times.wav
+ancient.wav
 anesthetize.wav
+anew.wav
+angle.wav
+angry.wav
 angst.wav
+animal.wav
+animalistic.wav
+animals.wav
 animate.wav
 announcement.wav
+annoy.wav
+annoyance ### 2.wav
 annoyance.wav
+annoying.wav
+antidote.wav
+antique.wav
 antisocial.wav
+antlered.wav
 antsy.wav
+apiece.wav
 apolitical.wav
 apologetic.wav
 apothecary.wav
 apparent.wav
+appeal.wav
 appear.wav
 appease.wav
+applicable.wav
+appraisal.wav
+appreciation.wav
 apprehension.wav
 appropriate.wav
 approval.wav
 approve.wav
+archaic.wav
+archenemy.wav
 architect.wav
 arena.wav
 argument.wav
+arid.wav
 arrange.wav
+arrangement.wav
 arrival.wav
 art.wav
+artful.wav
 artifice.wav
 artistry.wav
+as much as possible.wav
 ascent.wav
+askance.wav
 assailant.wav
+assassin.wav
 assemble.wav
 assimilate.wav
 assorted.wav
 astonishing.wav
+astonishment.wav
 astounding.wav
+at the party.wav
+at the same time.wav
 at work.wav
 attentive.wav
+attest.wav
+attitude.wav
 attraction.wav
 attractive.wav
+atypical.wav
+audacious.wav
 august @ adjective.wav
 authentic.wav
 authority.wav
+authorization.wav
+authorize.wav
+autobiography.wav
+availability.wav
 avalanche.wav
 avoidable.wav
+avoidance.wav
 awakening.wav
+awareness.wav
 away.wav
+awkward.wav
+axis.wav
+babble.wav
 babyhood.wav
+bachelor.wav
+backtalk.wav
 baffling.wav
 baggage -- burden of believes, ideas or expirience.wav
 balanced.wav
+balm.wav
 bamboozle.wav
+ban.wav
+bandage ### 2.wav
+bandage.wav
+banditry.wav
 bangle.wav
+banish.wav
+banished.wav
+banking.wav
+banner.wav
 banquet.wav
 barb.wav
+barbed.wav
 barcode.wav
+bare.wav
 bargain.wav
 barrette.wav
+barrier.wav
 base.wav
+basin.wav
+basis.wav
+bearable.wav
 bearings.wav
 beatable.wav
 beauteous.wav
 becoming.wav
 befall.wav
+beforehand.wav
 begin.wav
 beginning.wav
 behaved.wav
@@ -1035,212 +1097,492 @@ behaviour.wav
 believable ### 2.wav
 believable.wav
 believe.wav
+bellow.wav
+belly.wav
+beloved.wav
 benefit.wav
 benevolence.wav
+bewilder.wav
+bewitch.wav
 beyond.wav
 big.wav
+bilingual.wav
+binding.wav
 binge.wav
+biography.wav
+biology.wav
 bitter.wav
+biweekly.wav
+blabbermouth.wav
+black spots.wav
 blackmail -- an attempt to get money from another person by threats.wav
+blackout.wav
+blade.wav
+blameless.wav
+blamelessness.wav
+bleary.wav
+blessed.wav
 blister -- to attack with sharp words.wav
+blockage.wav
+blockhead.wav
+blockish ### 2.wav
+blockish.wav
+bloodline.wav
+bloodshed.wav
+blooming.wav
 blubber.wav
+blueprint.wav
+blurred.wav
 bodily.wav
+body of water.wav
+body.wav
 bond.wav
 bondage.wav
+bone.wav
+bookshelf.wav
+boor.wav
 boorish.wav
 borderline.wav
+bored.wav
 boredom.wav
 boring.wav
+boss.wav
+bothersome.wav
 bottom.wav
+bottomless.wav
+boulevard.wav
+bounce.wav
 bound.wav
 boundary.wav
+boundless.wav
+bounteous.wav
+bowl.wav
+boxing.wav
+brain.wav
 bramble.wav
 breach.wav
+break.wav
 breakable.wav
+breakage.wav
+breakfast.wav
+breathtaking.wav
+breed.wav
 bridesmaids.wav
 bright.wav
 brightness.wav
 brilliance.wav
 brilliant.wav
+broach.wav
 broadside.wav
+bronze.wav
+brotherhood.wav
+brown.wav
+brownish yellow.wav
+brutality.wav
+buckle.wav
+bulge.wav
+bumpkin.wav
 bumpy.wav
 burdensome.wav
+burglarize.wav
+burglary.wav
+burgle.wav
+burning.wav
+by force.wav
+byline.wav
 caboose.wav
 cage.wav
+calculation.wav
+calibration.wav
 calm.wav
 calmness.wav
 camera.wav
 campaign.wav
+cancellation.wav
+canine.wav
 canonical.wav
+canvas.wav
 capability.wav
 capacity.wav
 capsize.wav
 captivation.wav
 captivity.wav
+capture.wav
+car.wav
+carcass.wav
+card game.wav
+career.wav
 careful.wav
+carelessly.wav
+carnage.wav
+carpet.wav
+cartable.wav
+cartridge.wav
 carve.wav
+cast.wav
+castaway.wav
+castigate.wav
 casualty.wav
 cataclysmic.wav
 catastrophic.wav
+cause.wav
+caution.wav
 cautious.wav
 cavity.wav
+cease.wav
 ceaseless.wav
+cede.wav
 celebratory.wav
+censure.wav
+centerpiece.wav
+century.wav
+cerebral.wav
+certifiable.wav
+certificate.wav
 cessation.wav
 chagrin.wav
+challenging.wav
+chamber.wav
+change.wav
 changing over time.wav
+channel.wav
 Chaos.wav
+char.wav
+characteristic.wav
 charge.wav
+chariot.wav
 charity.wav
 charm.wav
+charmed.wav
 cheap.wav
 cheapen.wav
+cheapskate.wav
 cheat.wav
+cheerful.wav
+cherish.wav
+cherished.wav
 chicanery.wav
+chide.wav
 chieftain.wav
 childbirth.wav
+childish.wav
+children.wav
+chip.wav
+chirruped.wav
 chisel.wav
+choice.wav
+chore.wav
+chute.wav
 cinematic.wav
+circle.wav
+circumstance.wav
 circumstances.wav
+civil.wav
+civilization.wav
+clammy.wav
+clamor.wav
+clangor.wav
+clarification.wav
 clarity.wav
 classify.wav
 classy.wav
+clatter.wav
 clean.wav
 cleanliness.wav
 clear.wav
+clearer.wav
+clearly.wav
+cleft.wav
 cliché.wav
+climate.wav
 climb.wav
+clinch.wav
+clod.wav
+cloddish.wav
 close friend.wav
+closure.wav
 clothes.wav
 clothing.wav
 cloudy.wav
 clump.wav
+clumpy.wav
 clumsy.wav
+clunk.wav
+clunker.wav
+clusters.wav
+clutch -- to grasp strongly.wav
 coalition.wav
 coarseness.wav
 cocky.wav
 cocoon.wav
+coding.wav
+coexist.wav
+coin -- to make up.wav
 coinage.wav
+coincide.wav
 cold medicine.wav
+collaborate.wav
+collage.wav
 collapse.wav
+colleague.wav
 collected.wav
 collectedness.wav
+collectively.wav
+colored.wav
+coloring.wav
 colossal.wav
 combative.wav
+combination.wav
 combine.wav
 combustible.wav
+come apart into pieces.wav
 comedian.wav
 comely.wav
+comfort.wav
 coming.wav
+command.wav
 commanding.wav
 commencement.wav
+commend.wav
 commonplace.wav
+commonsensical way.wav
+communal.wav
+commute.wav
 companion.wav
+companionable.wav
 company.wav
 compensate.wav
+compensation.wav
 competence.wav
 complement.wav
+complete.wav
+completely.wav
+complexion.wav
+complication.wav
+complications.wav
+compliment.wav
 comply.wav
 component.wav
 composed.wav
+comprehend.wav
+compress @ verb.wav
+compressed.wav
 compression.wav
 compromising.wav
+compulsory.wav
 computation.wav
+computing.wav
 conceivable.wav
+concert.wav
 conclusion.wav
 concussive.wav
+condemnation.wav
+condiment.wav
 condition.wav
+confine -- keep within limits.wav
+confirm.wav
+confirmed.wav
+confront.wav
 confuse.wav
+confusion.wav
 congratulatory.wav
 conjoining.wav
 consciousness.wav
+consequent.wav
+consider.wav
 considerable.wav
+considerate.wav
+consolidation.wav
 constable.wav
 constraint.wav
+constrict.wav
+consume.wav
+contaminant.wav
+contemplate.wav
+contempt.wav
+contest @ noun.wav
 continuation.wav
 continuity.wav
 contour.wav
+contradict.wav
+contribution.wav
 controlling.wav
 convenience.wav
+convenient.wav
 cooked.wav
 cooperative.wav
 copy.wav
+corporal.wav
 corporate.wav
 corporeal.wav
+corpse.wav
+correct.wav
 corrective.wav
+corrupt.wav
+corruption.wav
 corruptive.wav
+costly.wav
+council.wav
 counterbalance.wav
 counterfeit.wav
 country.wav
+countryside.wav
+courage.wav
+courageous.wav
+courteous.wav
+courtesy.wav
 covered in mud.wav
+cowardly.wav
+crabby.wav
+crack.wav
+crafty.wav
 crawly.wav
+create.wav
 creation.wav
 credible.wav
+crew.wav
+crime scene.wav
+crime.wav
 criminal.wav
+crony.wav
 crook.wav
 crops.wav
 crude.wav
 crudeness.wav
+cruelly.wav
+cruelty.wav
 cruiser.wav
 cruising.wav
+crying.wav
 cul de sac.wav
+culpable.wav
 cultured.wav
+cumbersome.wav
+cumulative.wav
+cunning.wav
+current.wav
+cursing.wav
+custody.wav
 custom.wav
+customer.wav
 dabble.wav
+dagger.wav
+daintiness.wav
 dainty -- small and pretty.wav
+damaged.wav
+dampen.wav
+danger.wav
+dangerous.wav
 dapper ### 2.wav
 dapper.wav
+daring.wav
+dashing.wav
+daughters.wav
+day.wav
+daydream.wav
+daydreaming.wav
 deal.wav
+dear.wav
+debilitated.wav
+debt.wav
 deceive.wav
 deception.wav
 decisions.wav
 deem.wav
+defeated.wav
+deficiency.wav
+deficient.wav
+defined.wav
+definite.wav
 definition.wav
+deflower.wav
 defuse.wav
+degree.wav
 dehydrate.wav
+delegate.wav
+deletion.wav
+deletions.wav
 deliberation.wav
 delight.wav
 demand.wav
 demean.wav
 demolish.wav
 demolition.wav
+demoralize.wav
+demotion.wav
+dent.wav
+departure.wav
+dependable.wav
 depiction.wav
+deportation.wav
+deprave.wav
 deprecate.wav
+depression.wav
+deprive.wav
 derail.wav
 descend.wav
+descriptive.wav
 design.wav
+desirous.wav
 desolation.wav
+despise.wav
+despot.wav
 destroy.wav
+destruction.wav
 detail.wav
+determined.wav
+detonation.wav
 detour.wav
+development.wav
+developmental.wav
 device.wav
+devour.wav
 die.wav
+digestive tract.wav
 dignified -- having proud and self-respecting manner.wav
 dilapidated.wav
 diminish.wav
 diminishment.wav
+diminution.wav
 dimness.wav
+dimple.wav
 dinghy.wav
+dinner table.wav
+dinner.wav
 directional.wav
 dirt.wav
+dirty.wav
 disadvantageous.wav
 disagreeable.wav
 disagreement.wav
+disappoint.wav
+disappointing.wav
+disapproval.wav
 disarray.wav
 disastrous.wav
+disavow.wav
 disband.wav
 disbanded.wav
+discharge.wav
 disclosure.wav
 disconnect.wav
+discontent.wav
 discount.wav
 discrepancy.wav
+discretional.wav
+discretionary.wav
 discriminate.wav
+disdainful.wav
 disembark.wav
 disentangle.wav
+disgruntled.wav
+dish.wav
+dishevel.wav
 disheveled.wav
 dishonesty.wav
 disincentive.wav
 disinterest.wav
+dismount.wav
 disorganize.wav
 dispairing.wav
 disparity.wav
@@ -1248,104 +1590,221 @@ dispatch.wav
 disperse.wav
 displeasure.wav
 disposable.wav
+disputed.wav
+disqualify.wav
 disquieting.wav
 disrespectful.wav
 disruptive.wav
+dissatisfactory.wav
 dissections.wav
 dissipate.wav
 dissolve.wav
+distinct.wav
+distinction.wav
+distinctive.wav
 distinguished.wav
+distinguishing from others.wav
 distortion.wav
+distraction.wav
 distraught ### 2.wav
 distraught.wav
+distress.wav
 divine.wav
+division.wav
 divorce.wav
+divot.wav
+dizzy.wav
+dodging.wav
 dollars.wav
+dolt.wav
+doltish.wav
+dominate.wav
+donation.wav
 done.wav
+dosage.wav
 doting -- foolishly fond.wav
 double-crosser.wav
 doubt.wav
+doubtful.wav
+downgrade.wav
 downtown.wav
 dozing.wav
+drain.wav
 dramatic.wav
+drawing back.wav
+dread.wav
+dreadful.wav
+dreary.wav
 dress.wav
+drone.wav
+droning.wav
 drowse.wav
 drugstore.wav
 dry.wav
+dull.wav
 dullness.wav
 dumbfound.wav
+dungeon.wav
 dupe.wav
+durable.wav
+duty.wav
+dwarfish.wav
 dwelling.wav
+earthquake.wav
 easier.wav
+eclipse.wav
+elapse.wav
+elective.wav
 elector.wav
+electrified.wav
+elegance ### 2.wav
 elegance.wav
 elegant.wav
+element.wav
 elevate.wav
+embellishments.wav
 emergency.wav
+emphasize.wav
+employment.wav
+empower.wav
+empowered.wav
 empty.wav
+encompass.wav
 encourage.wav
+encouragement.wav
 end.wav
 endangered.wav
 ending.wav
+endless.wav
 endorsement.wav
 endurance.wav
 enduring.wav
+enemy lines.wav
+enemy.wav
 enfold.wav
 enforcement of the rules.wav
+enjoyable.wav
+enlargement.wav
 enliven.wav
 enormous.wav
+enrage.wav
+enslave.wav
 entangle.wav
+entertain.wav
 entertaining.wav
+enthrone.wav
+enthusiastic.wav
 entirety.wav
+entrust.wav
 enunciate.wav
+envelop.wav
+environment.wav
+ephemeral.wav
 epithet.wav
+erect.wav
+erroneous.wav
 escapable.wav
 escape.wav
 essential.wav
 esteemed.wav
+estimation.wav
+estrange.wav
+evacuation.wav
+evaluations.wav
+evasion.wav
 even.wav
 event.wav
 everlasting.wav
+every two weeks.wav
+everyone.wav
+evidence.wav
 evolving.wav
+ex.wav
 exacerbate.wav
+exactly.wav
 exaggerate.wav
 exaggerated.wav
+exaggeration.wav
 exalt.wav
+examine.wav
 exasperation.wav
+exceptional.wav
+excessive.wav
+excitability.wav
+exciting.wav
+exclusive.wav
 excursion.wav
+exhaustion.wav
+exile.wav
+existence.wav
 exit.wav
+expand.wav
+expansion.wav
+expectancy ### 2.wav
 expectancy.wav
+expel.wav
+expense.wav
+expensive.wav
+experience.wav
 expert.wav
 expertise.wav
 expiration.wav
+explain.wav
+explanation.wav
+explosion.wav
+expressed.wav
 expressible.wav
+expunction.wav
+extermination.wav
+extinction.wav
+extinguish.wav
 extortion.wav
 extravagance.wav
+extravagant.wav
+extreme.wav
+extricate.wav
 exuberant.wav
 fable.wav
 fabulous.wav
+faceless.wav
+factor.wav
+factual.wav
 faddish.wav
 fade.wav
 fail.wav
 failed.wav
+failure.wav
 faithfulness.wav
 falseness.wav
 faltering.wav
+famed.wav
+family.wav
 famished ### 2.wav
 famished.wav
+famous.wav
+fancy.wav
 fans.wav
 fascination.wav
 fashionable.wav
 fasten.wav
+fastener.wav
+fasteners.wav
 fate.wav
+fatherhood.wav
 fatness.wav
 favorable.wav
 fearful.wav
 feast.wav
 feathery.wav
+feature.wav
 febrile.wav
+feelings.wav
 fetch.wav
+few.wav
+fey.wav
 fiancé.wav
+fictional.wav
+figuratively.wav
 figurine.wav
 filth.wav
 filthy.wav
@@ -1353,376 +1812,851 @@ finalize.wav
 fine.wav
 finesse.wav
 finish.wav
+finished.wav
+firmly.wav
+firmness.wav
+first rate.wav
 first.wav
+fixed.wav
 fixedly.wav
 fizzle.wav
 flashy.wav
+flavor.wav
+flavoring.wav
 fleshly.wav
 flighty.wav
 flora.wav
 flounder.wav
+fluttery.wav
 foamy.wav
+foe.wav
 folklore.wav
 food crops.wav
+fool.wav
+foolery.wav
 foolhardy.wav
 foolish.wav
 footing.wav
 footwork.wav
 forbidden.wav
+force.wav
 foreboding.wav
 forecast.wav
+foreigner.wav
+forerunner.wav
+forest.wav
+forfeit.wav
 form.wav
 formative.wav
 formed.wav
+formerly.wav
 formless.wav
 fortunate.wav
+forum.wav
+foster.wav
 foulness.wav
+found.wav
 foundation.wav
+foxy.wav
+fragile.wav
+fragmentary.wav
 fragrance.wav
 frailty.wav
 frantic.wav
 fraud.wav
+free.wav
 freed.wav
 freedom.wav
+freely.wav
 freeze.wav
 frenzied.wav
+frequency.wav
+freshen.wav
+friend.wav
+friends.wav
+frightful.wav
+frilly.wav
+fringe.wav
+from the distance.wav
 frothy.wav
+fuddle.wav
 full.wav
 functional.wav
 fundamental.wav
+funds.wav
+furry.wav
+furtive.wav
+fury.wav
 gadget.wav
+game.wav
+gap.wav
 garage.wav
+garbage.wav
 garble.wav
 gargle.wav
 garment.wav
 gasp.wav
+gather.wav
 gaudy.wav
+gauze.wav
+geezer.wav
+general.wav
 generosity.wav
+generous.wav
+genius.wav
 gentle.wav
+genuine.wav
 geometric.wav
+ghastly.wav
 gifted.wav
 gigantic.wav
+giggle.wav
+gilding.wav
+given out.wav
+giving.wav
+gladsome.wav
+glaring.wav
+glass.wav
 glimmer.wav
 glimpse.wav
 glint.wav
+gloomy.wav
+glorify.wav
 glorious.wav
 glow.wav
 goals.wav
+gobble -- eat fast and greedily.wav
 gobble.wav
+gobbled up.wav
+godless.wav
 good graces.wav
+good news.wav
 good.wav
+gorge.wav
+gossip.wav
 grab.wav
 grace.wav
+gracious.wav
 graduation.wav
+graffiti.wav
+grandiosity.wav
+grapple.wav
+gratefulness.wav
 gratification.wav
+grave ### 2.wav
 grave.wav
+greasy.wav
+great.wav
 greatness.wav
+greedily.wav
 greenery.wav
 grief.wav
 grievance.wav
 grimy -- covered with dirt.wav
+grip.wav
+grooming.wav
 grudge.wav
 gruff.wav
 grungy.wav
 guest.wav
+guideline.wav
+guileless.wav
+guiltlessness.wav
 guise.wav
+gulf.wav
 gull.wav
+gut.wav
 gutless.wav
+guts.wav
+gutter.wav
 gyp -- to cheat or swindle.wav
+hairy.wav
 handful.wav
 handicrafts.wav
+handout.wav
+handy.wav
 happiness.wav
 happy.wav
+harden.wav
+harm.wav
 harmful.wav
 harmless.wav
 harmony.wav
 harness ### 2.wav
 harness.wav
+harsh.wav
+harshness.wav
 hassle.wav
+hated.wav
+haul.wav
+haunted -- visited by ghosts.wav
+haunted.wav
+having to do.wav
+haze.wav
+headmaster.wav
+headstone.wav
+headstrong.wav
 health.wav
+heap.wav
 hear.wav
 heard.wav
+hearing.wav
+heartbroken.wav
+heartfelt.wav
 heartless.wav
+heavily.wav
+heaviness.wav
 heavy.wav
+heavyset.wav
 heighten.wav
 helpful.wav
+hemline.wav
+herald.wav
+herbal tea.wav
+herbs.wav
+heritage.wav
+heroics.wav
 hesitancy.wav
 hideous.wav
+highlight ### 2.wav
+highlight.wav
 hijack.wav
 hilarious.wav
+hinder.wav
 hinge.wav
+historical documents.wav
 histrionic.wav
+hit the jackpot.wav
+hive.wav
 hoarse.wav
+hodgepodge.wav
+hogwash.wav
+hold.wav
 hollow.wav
+homeward.wav
 homey.wav
 honest.wav
 honor.wav
+honorable.wav
+hopeless.wav
+horizontal.wav
 horoscope.wav
+horrendous.wav
+horrible.wav
+horrific.wav
+horror.wav
 host.wav
+hostage.wav
+hours.wav
 house.wav
+hue.wav
+huffy.wav
 huge.wav
+hum.wav
 humanism.wav
+humming.wav
+humorless.wav
 hump.wav
+humpy.wav
 hunchback.wav
 hungrily.wav
 hungry.wav
 hurried.wav
+hush.wav
+hypothesis.wav
 icebreaker.wav
+idealize.wav
+idiosyncrasy.wav
+idler.wav
+ignite.wav
 ignorance.wav
+ignorant.wav
+ignore.wav
 illegally.wav
+illuminative.wav
+imagery.wav
 immediately.wav
 immovable.wav
 impairment.wav
+impertinence.wav
+impish.wav
 implausible.wav
+implied.wav
 impolite.wav
+important.wav
 impotence.wav
+impracticable.wav
+impractical.wav
+imprint.wav
 improbable.wav
 improper.wav
+improperly.wav
 impropriety.wav
+improve.wav
 improvement.wav
+imprudent.wav
+impudence.wav
+impurities.wav
 in a hurry.wav
 in a manner of minutes.wav
+in advance.wav
 in circles.wav
+in liberal amounts.wav
+in numerical order.wav
+in the middle.wav
 inability.wav
+inaccurate.wav
+inaction.wav
+inadvisable.wav
 inaptitude.wav
 incense.wav
+incinerator.wav
+inclusion.wav
 incompetent.wav
+incomplete.wav
+inconsequent.wav
+inconsiderate.wav
 inconsistency.wav
+incorrect.wav
 incorrectly.wav
 increase.wav
 incubate.wav
 incurable.wav
+indecisive.wav
+indefinite.wav
+indentation.wav
 indestructible.wav
+indication.wav
+indirect.wav
+indirectly.wav
+indiscretion.wav
+individually.wav
 indomitable.wav
+indulge.wav
+ineffective.wav
+inefficient.wav
 ineptness.wav
 inescapable.wav
+inestimable.wav
 inevitable.wav
+inexpensive.wav
 inexperience.wav
+inexpressible.wav
 infancy.wav
+inferior.wav
+inflammation.wav
 inflict.wav
+influential.wav
+informative.wav
 infringed upon.wav
+infuriate.wav
+infuriated.wav
 infuse.wav
 ingest.wav
 ingratitude.wav
 inhabited.wav
+inheritance.wav
 inhumane.wav
+injection.wav
+injured.wav
 injurious.wav
 injury.wav
+innards.wav
 innermost.wav
+innocence.wav
+innocent.wav
 inoperable.wav
 inquiring.wav
+insecurity.wav
 insertion.wav
+insides.wav
+insignificance.wav
 insignificant.wav
+insincerity.wav
+insinuated.wav
 insomniac.wav
+instigating.wav
 instigation.wav
 insult @ verb.wav
+insulting.wav
 insure -- make certain.wav
+interchangeable.wav
 interim.wav
 interruption.wav
+interval.wav
+introduction.wav
 introverted.wav
 invader.wav
+invaluable.wav
+invent.wav
 inventions.wav
+investigate.wav
+investigation.wav
+investment.wav
 invincible.wav
 invitation.wav
+invite.wav
+irascibility.wav
 irresponsible.wav
 irritate.wav
+irritating.wav
+issue.wav
 jab.wav
 jabber.wav
 jagged.wav
+jargon.wav
+jealous.wav
+jittery.wav
+job.wav
+joblessness.wav
+jolt.wav
 joyful.wav
+judge.wav
+judgemental ### 2.wav
+judgemental.wav
+judgment.wav
+juggle.wav
+jumble.wav
 jumbo.wav
 juncture.wav
+junk.wav
 keep.wav
+keepsake.wav
 kind.wav
+kindergarten.wav
+kindle.wav
 kindliness.wav
+kindness.wav
+King Henry VIII.wav
 knapsack.wav
+knee.wav
+knees.wav
+knotted.wav
+knowing.wav
 knowledgeable.wav
+labor.wav
 lack.wav
+lacy.wav
+lagoon.wav
 landfall.wav
 landslide.wav
+lane.wav
+largess.wav
 lasting.wav
+latch.wav
 laughter.wav
 layover.wav
+leaflet.wav
 league.wav
 leaves.wav
 leftover.wav
+legacy.wav
+legitimate.wav
 lethal.wav
+lethargic.wav
+level.wav
+levelheaded.wav
+liberate.wav
+license.wav
+lifestyle.wav
 likelihood.wav
 likeness.wav
+limelight.wav
+limited.wav
 limitless.wav
+lineage.wav
 liquids.wav
 litter.wav
+little.wav
+lively.wav
+livestock.wav
+loafer.wav
+loath.wav
+logo.wav
 longevity.wav
+loose.wav
+loot.wav
+ludicrous.wav
+lumpish.wav
 lumpy.wav
 lurch.wav
 lush.wav
 luxury.wav
 maddening.wav
+magazine.wav
 magic show.wav
 magical.wav
 magnetic.wav
 magnify.wav
+majestic.wav
+major.wav
+majority.wav
 make up for.wav
 malevolent.wav
+malleability.wav
 management.wav
+maniac.wav
 mannerly.wav
+mar.wav
 marginal.wav
 marina.wav
 marinade.wav
+marker.wav
 marketable.wav
+marriage.wav
+massacre.wav
 materialize.wav
 maternity.wav
+maximize.wav
+maximum.wav
+medallion.wav
+meeting.wav
 melancholy.wav
 melodramatic.wav
 membership.wav
+memoir.wav
+merchandise.wav
+merciful.wav
 merciless.wav
+mercy.wav
+merger.wav
 merriment.wav
+middle.wav
+midterm.wav
+midway.wav
 mightily.wav
 milage.wav
+military unit.wav
 mindless.wav
+mingle.wav
 miniscule.wav
 mirth.wav
 misapplication.wav
 misbehaved.wav
 misbehavior.wav
+mischievous.wav
+misconception.wav
 misconduct.wav
+misemploy.wav
+miser.wav
 misfortune.wav
+misguidance.wav
+mishmash.wav
 misinform.wav
+misinterpret.wav
 mispronounced.wav
+mistaken.wav
+mistakes.wav
+mistreat.wav
+misunderstanding.wav
+misuse ### 2.wav
 misuse.wav
+mixture.wav
 mocking.wav
+moderate.wav
+modern.wav
 modernization.wav
 modest.wav
+modesty.wav
+moisturize.wav
 mollify.wav
 momentary.wav
+monitor.wav
+montage.wav
+months.wav
+monumental.wav
 moralistic.wav
+morals.wav
+morning.wav
+motherhood.wav
 motto.wav
 mount.wav
 mournful.wav
+movable.wav
 muddy.wav
+munch.wav
 musical.wav
+mutant.wav
+mutate.wav
 mysterious.wav
 mystical.wav
 mythical.wav
 narration.wav
+narrow.wav
+national.wav
 nationalistic.wav
+native.wav
+naughty.wav
+naysay.wav
+nearby.wav
 neat.wav
 nebulous.wav
+necessary.wav
+necessity.wav
 need.wav
 needless.wav
+neglect.wav
 negligent.wav
+negotiable.wav
+neigh.wav
 neighborhood.wav
+nestle.wav
 nettlesome.wav
 network.wav
+newborn child.wav
+nibble.wav
+nice.wav
+noise.wav
 noiseless.wav
+nomad.wav
+nominally.wav
 noncommercial.wav
 nonessential.wav
+nonexistent.wav
+noninflammatory.wav
 nontemporal.wav
+nook.wav
+normalize.wav
+nosh.wav
+note.wav
+noted.wav
+nothingness.wav
 notice.wav
 novelty.wav
+nowadays.wav
+numerable.wav
+nuptial.wav
+nurture.wav
 oath.wav
 obedient.wav
 obesity.wav
 objection.wav
+objectionable.wav
 observe.wav
-obvious.wav
+obsessive.wav
+obtain.wav
+occupation.wav
 occupations.wav
+occupied.wav
 occurence.wav
+oddity.wav
 offend.wav
 offense.wav
 offset.wav
 ointment.wav
 old age.wav
 old.wav
+omen.wav
+omission.wav
+once a year.wav
 only.wav
 onslaught.wav
+open-handedness.wav
 opening.wav
 openness.wav
 opinionated.wav
+oppose.wav
+oppressor.wav
 optional.wav
+oral.wav
+orbit.wav
 orchestra.wav
 order.wav
 orderly.wav
+ordinarily.wav
 organize.wav
+original.wav
 ornamental.wav
+ornate.wav
+others.wav
+otherworldliness.wav
 out of reach.wav
+outcast.wav
 outline.wav
+outmaneuver.wav
+outmost.wav
+outpouring.wav
+outside the window.wav
+over the weekend.wav
 over yonder.wav
 overcast.wav
 overcome.wav
 overhang.wav
+overkill -- an excess of what is actually necessary.wav
+overkill.wav
 overlap.wav
+overlook.wav
+override.wav
 oversee.wav
+overshadow ### 2.wav
 overshadow.wav
+overshadowed.wav
 overtime.wav
 overweight.wav
+overwhelming.wav
+ownership.wav
+packaged.wav
+paid off.wav
 painting.wav
 pallet.wav
+pamper.wav
+panicky.wav
+paralytic.wav
 paralyzed.wav
+parent.wav
+parenthesize.wav
 part.wav
+particle.wav
 partner.wav
 passing.wav
-passive.wav
+pathetic.wav
 patriotic.wav
+patrol.wav
+paunch ### 2.wav
+paunch.wav
+pay-off.wav
+payment.wav
+peace.wav
 peaceable.wav
+peacefully.wav
+peacefulness.wav
 pearly.wav
 peek.wav
+peep.wav
 penalize.wav
+perfect @ noun.wav
+perfect @ verb.wav
+perfectability.wav
+period.wav
+periodically.wav
 perishable.wav
+permanency.wav
 permanent.wav
+permission.wav
 perpetuation.wav
 persistence.wav
 personality.wav
+persuasive.wav
+petals.wav
 petition.wav
 petting zoo.wav
+pettish.wav
+petty.wav
+phony -- not genuine.wav
+picture.wav
 picturesque.wav
+pilfer.wav
+pillage.wav
 pin.wav
 pinnacle.wav
 pioneer.wav
+pitiable.wav
+pitiless.wav
+pitying.wav
+place.wav
 plane.wav
 plantation.wav
 plantlife.wav
 plasticity.wav
+platoon.wav
+plays.wav
+plea.wav
+pleasant.wav
+please.wav
+pleasing.wav
+pleasurable.wav
 pleasure.wav
+pledge.wav
+plenteous.wav
+plenty.wav
+plucking the strings.wav
+plucky.wav
+plunder.wav
+podgy -- short and fat.wav
 point.wav
+police officer.wav
+polish.wav
 polite.wav
+pollute.wav
+pommel.wav
+pond.wav
+ponder.wav
+pool.wav
 popularity.wav
 population.wav
+portent.wav
+portion.wav
 portraiture.wav
 portrayal.wav
 position.wav
 positioned.wav
+possessive.wav
+possibility.wav
+poverty.wav
 power.wav
+powerful.wav
+powerhouse.wav
+practicable.wav
+practicality.wav
+practice.wav
+practitioner.wav
+praise.wav
+prance.wav
+prankster.wav
 preachy.wav
 prearrange.wav
+precursor.wav
 predestined.wav
 predetermined.wav
 predictability.wav
+preferment.wav
+premature.wav
 premonition.wav
 preparedness.wav
 prerequisite.wav
 presentable.wav
 preservatives.wav
+preserve.wav
 preserver.wav
 president of the company.wav
+price.wav
+priceless.wav
 prickly.wav
+primarily.wav
+PRIMARY ## =.wav
+primary.wav
+primitiveness.wav
+principals.wav
 probing.wav
 problematic.wav
 proclamation.wav
+production.wav
 proficiency.wav
 proficient.wav
 profit.wav
+profitable.wav
+profits.wav
+program.wav
 prohibited.wav
+prohibition.wav
 proliferation.wav
+prominence.wav
 promoted.wav
+promotion.wav
 proper.wav
 proportion.wav
 prospect.wav
 prosperity.wav
+protection.wav
 protective.wav
+proved.wav
+proverb.wav
+provoking.wav
 prudence.wav
+puckish.wav
 punishable.wav
 punished.wav
+punishment.wav
 pupil.wav
 put.wav
 qualities.wav
@@ -1730,68 +2664,156 @@ quality.wav
 quarrel.wav
 quarrelsome.wav
 quash.wav
+quench -- to put an end to.wav
+quench.wav
+question.wav
+questionable.wav
+questions.wav
 quiet.wav
+quietude.wav
 quirk.wav
+quivering.wav
+racket.wav
+radiology.wav
 raffle.wav
+ragged.wav
 raggedy.wav
+ramble.wav
+ransack.wav
+ransom.wav
 rapid.wav
+raptor.wav
 rare.wav
+rarity.wav
 rascal.wav
 rasp.wav
 ratio.wav
 raunchy.wav
 ravel.wav
 ravenous.wav
+ravishing.wav
 re-evaluate.wav
+readiness.wav
+readjust.wav
+realization.wav
 realm.wav
+rearrange.wav
+reason.wav
 reasonable.wav
+reasoning.wav
 rebellion.wav
+rebirth.wav
 recapture.wav
+receipt.wav
 reckless.wav
+recklessly.wav
+reckoning.wav
+recognition.wav
+recognizable.wav
+recoiling.wav
+recollection.wav
+reconcile.wav
 reconstruct.wav
+reconvene.wav
 recounting.wav
 recover.wav
 recurrence.wav
 recurve.wav
 reduce.wav
+reduction.wav
+reduplicate.wav
 referable.wav
+referee.wav
+referral.wav
+refine.wav
 refined.wav
 refinement.wav
+reflective.wav
 refreshing.wav
+refuse @ noun.wav
+refute.wav
+refuted.wav
 rehash.wav
 rehearsal.wav
+reject.wav
+rejected.wav
+relaxing.wav
+release.wav
 relic.wav
 relinquish.wav
 reluctancy.wav
+remain.wav
 remainder.wav
+remains.wav
+remorseless.wav
 renew.wav
+renown.wav
+reorganize.wav
+repellent.wav
 replacement.wav
+reprise.wav
+reproduction.wav
 reptile.wav
 request.wav
 requirement.wav
+research.wav
+resentment.wav
 reservoir.wav
 resisting.wav
 respectable.wav
+respectful.wav
+responsible.wav
 restless.wav
 restore.wav
+restrict.wav
 restriction.wav
+resurrection.wav
+retort.wav
+retreat.wav
+retreated.wav
+return.wav
 reversal.wav
 reversible.wav
+revival.wav
+revulsion.wav
+reward.wav
+rifle -- to search and rob.wav
+right and wrong.wav
 right.wav
+rigor.wav
 rip-off.wav
 rivalry.wav
+rivals.wav
+road.wav
+rob.wav
+robbery.wav
 rocky.wav
+romanticize.wav
+rotation.wav
 roughen.wav
 rubbish.wav
+ruddy.wav
+rude.wav
+ruffle.wav
+ruffles.wav
 ruined.wav
+rumple.wav
 run down.wav
 rural.wav
 ruse.wav
 rush.wav
 rustle.wav
+ruthless.wav
+sabbatical.wav
 sacred.wav
+safekeeping.wav
+saga.wav
+salary.wav
+sale.wav
 sampler.wav
 sanction.wav
+sanitize.wav
+sass.wav
 sated.wav
 satellite.wav
 satiation.wav
@@ -1799,50 +2821,98 @@ satiny.wav
 satirist.wav
 satisfaction.wav
 satisfactory.wav
+saturate.wav
 saucy.wav
 savage.wav
 scaffold.wav
 scald -- burn with hot liquid or steam.wav
+scale.wav
 scalpel.wav
+scam.wav
+scamp.wav
 scant.wav
+scarce.wav
+scarcity.wav
+scathe.wav
 scavenge.wav
+scenery.wav
 scenic.wav
+schedule.wav
 schemed.wav
+scold.wav
 scoop.wav
+scorch.wav
+scornful look.wav
+scornful.wav
 scramble -- to make one's way by climbing, crawling, etc..wav
 scrambled.wav
 scrapbook.wav
+scrawl.wav
 screechy.wav
+screenplay.wav
+screwy.wav
+scribble.wav
 scribe.wav
+script.wav
+sculpt.wav
+seam.wav
+sear.wav
 searching.wav
 secret meaning.wav
+secrets.wav
+secure.wav
+security.wav
+seeming.wav
 seize.wav
 seldom.wav
+selfish.wav
 selfishness.wav
+semisweet.wav
 seniority.wav
 senseless.wav
 sensible.wav
+separate.wav
+separately.wav
 separation.wav
+serene.wav
 serial.wav
+series.wav
 serious.wav
 sermon.wav
 servitude.wav
 setback -- a check to progress.wav
+severally.wav
+shabby.wav
 shadowy.wav
 shady.wav
+shaggy.wav
+shaking.wav
+shaky ### 2.wav
+shaky.wav
+shameless.wav
 shapeless.wav
 shapely.wav
 shard.wav
 sharp.wav
+shaven.wav
 sheared.wav
 sheepish.wav
+shelter.wav
 shimmery.wav
 shimmy.wav
 shocker.wav
+shoplift.wav
 short-sighted.wav
+shortfall -- a shortage or deficit.wav
 showy.wav
+shredded.wav
+shrill.wav
+shrink.wav
+shrinkage.wav
 shrubbery.wav
+shtick.wav
 shuddery.wav
+shuffle.wav
 sickness.wav
 sidelong.wav
 sidle.wav
@@ -1850,191 +2920,414 @@ sightless.wav
 sightseeing.wav
 signed.wav
 significant.wav
+silence.wav
 silencer.wav
 silly.wav
+simple.wav
+simplification.wav
+simplify.wav
 sincerity.wav
+sing.wav
+sink.wav
+sinkage.wav
+sisters.wav
 sizeable.wav
 skewer.wav
 skill.wav
+skilled.wav
 skimpy.wav
 skinny.wav
+slacker.wav
+slang.wav
+slant.wav
+slaughter.wav
 sleepless.wav
+slick.wav
 slicker.wav
+sliding.wav
 slight.wav
+slightly.wav
 slimy -- covered with soft sticky mud or something like it.wav
+slinky ### 2.wav
+slinky.wav
 slippery.wav
+sliver.wav
 slovenly.wav
 slurred.wav
+sly.wav
+small.wav
 smart.wav
+smell.wav
 smooth.wav
+smother.wav
 smuggle.wav
+snarl.wav
 snatch ### 2.wav
 snatch.wav
 snazzy.wav
+sneaky.wav
+sneering.wav
 sniffle.wav
 sniffy.wav
 snitch.wav
+snivel.wav
+snoop.wav
+snooty.wav
 snooze.wav
 snowball.wav
+snub.wav
 snuffle.wav
+snuggle.wav
+so weathered.wav
 sociable.wav
 sold.wav
+soldier.wav
+sophisticate @ noun.wav
 sophisticated.wav
+sore throat.wav
 sorrowful.wav
 sound.wav
 source.wav
+span.wav
+species.wav
 spin.wav
 spindle.wav
 spirited.wav
 spiteful -- eager to annoy or irritate.wav
+spitfire.wav
 splatter.wav
+splendid.wav
+splinter.wav
 splurge -- to undulge in a costly luxury.wav
+spoil.wav
 spoiled.wav
+sprinkling.wav
+spritely.wav
+spunky.wav
+squad.wav
 squelch.wav
 squirt.wav
+stadium.wav
 staff members.wav
+staff.wav
 stage.wav
+stagnant.wav
 stand over.wav
 stand.wav
+standards.wav
+standing.wav
+stargaze.wav
+start.wav
+starvation.wav
 starving.wav
+stated.wav
+stationary.wav
+steadfastness.wav
+steal.wav
+step.wav
+sterile.wav
+stiff.wav
+stillness.wav
 stimulating.wav
+stimulation.wav
+stinginess.wav
+stingy.wav
 stopping.wav
 storage.wav
 store.wav
+stouthearted.wav
 straddle.wav
+straighten.wav
+strategic.wav
 stretcher.wav
+strings.wav
 struggle.wav
+strut.wav
 stubborn.wav
 stubby -- short and thick.wav
+stump.wav
+stumped.wav
 stunning.wav
+stupid.wav
+style.wav
 stylish.wav
 subdued.wav
+subjective.wav
+submissive.wav
+subordinate.wav
 successful.wav
 such an annoyance.wav
 suddenly.wav
+suggested.wav
 summons.wav
+superior.wav
 supernatural.wav
 supplied.wav
+supply.wav
 supportive.wav
 suppression.wav
+surpass.wav
+surprise party.wav
+suspected.wav
+suspicion.wav
+swagger.wav
 swanky.wav
+swearing.wav
+swell.wav
+swiftly.wav
+swimmingly.wav
+symbol.wav
+synchronize.wav
 tabloid.wav
+tailgate.wav
 tale.wav
 tambourine.wav
+tangle.wav
 tared.wav
 tarry.wav
+tassel.wav
 taste.wav
+tattered.wav
+tattle.wav
 tattletale.wav
 taunt.wav
 tawdry.wav
+tawny.wav
 taxation.wav
+technique.wav
+teeming.wav
 teeter.wav
+temper.wav
+template.wav
+tenacity.wav
 terminate.wav
 termination.wav
+terrific.wav
 territory.wav
 testimonial.wav
+tests.wav
+textual.wav
 the advertisement.wav
+the appearance.wav
+the attacker.wav
 the bacteria.wav
+The dragon unleashed his fury on the unsuspecting town..wav
 the drought.wav
 the enemy.wav
+the estate.wav
+the innards.wav
+the lottery.wav
+the math problem.wav
+the present day.wav
 The rudiments of math are addition and subtraction..wav
+the seamstress.wav
+the stairs.wav
+the woods.wav
 theatrical.wav
 thievery.wav
 think.wav
 thorns.wav
 thorny.wav
+thoroughfare.wav
+thoroughly.wav
 thoughtless.wav
 thousandfold.wav
 thrasher.wav
 threatened.wav
 throaty.wav
 throwing a fit.wav
+thrown away.wav
+thump.wav
 thwack -- to strike vigorously with a stick or something flat.wav
+tied.wav
+tilt.wav
+timber.wav
+time.wav
+timely.wav
 timid.wav
+tinge.wav
 tinker.wav
+tint.wav
 tiny.wav
 title.wav
+to and fro.wav
+to climb.wav
 to cut.wav
+to do something.wav
+to drive away.wav
 to fly about.wav
 to fray out.wav
 to get attention.wav
+to go back.wav
 to hatch.wav
+to meditate.wav
+to partake.wav
 to ruin.wav
+to shake up.wav
+to stay alive.wav
+to suffer.wav
+together.wav
+tombstone.wav
+tools.wav
 toothy.wav
 topple.wav
+totality.wav
 totalize.wav
 tournament.wav
 towering.wav
+town.wav
+toxins.wav
+toys.wav
+trademark.wav
+tragedy.wav
 trample.wav
+tranquil.wav
 transcription.wav
 trap.wav
+trash.wav
 traveled.wav
+treacherous.wav
+tread.wav
 treason.wav
+treasure.wav
 treasury.wav
+tree.wav
 trek.wav
+tremendous.wav
+tribulation.wav
+trick.wav
 trickery ### 2.wav
 trickery.wav
+tricks.wav
 trifle.wav
+trilogy.wav
 trim.wav
 triumphant.wav
+triumvirate.wav
+trivial.wav
 troublesome.wav
+trough.wav
+truant.wav
 truce.wav
+true.wav
+tube.wav
 turn.wav
+turnkey.wav
 turns.wav
 twiddle.wav
+twinge.wav
 twist.wav
+twitter.wav
+twittery.wav
 ugly.wav
 ultramodern.wav
+umpire.wav
+unadorned.wav
 unaffectionate.wav
+unanswerable.wav
+uncharacteristic.wav
 unclear.wav
+unconfirmed.wav
+unconscious.wav
 unconstraint.wav
+uncontested.wav
+undeniable.wav
+undergarment.wav
 underrate.wav
+understatement.wav
 undervalue.wav
+undesirable.wav
+undetermined.wav
 undignified.wav
+undisciplined.wav
 uneasiness.wav
+unemployment.wav
+uneventful.wav
 unexciting.wav
 unfamiliar.wav
+unfashionable.wav
 unfavorable.wav
 unfeeling.wav
 unfluttering.wav
+ungenerous.wav
+ungratefulness.wav
+unilateral.wav
 unimaginable.wav
+unimportance.wav
+unimportant.wav
 unintelligence.wav
 unite.wav
+unjustly.wav
+unkindly.wav
+unknown.wav
 unpatriotic.wav
 unpleasant.wav
+unpredictable.wav
 unreasonable.wav
+unruly.wav
+unsatisfactory.wav
 unsuitable.wav
 unsurpassable.wav
+unsuspected.wav
 untouchable.wav
+unusual.wav
 unwillingness.wav
 unwise.wav
+unworthy.wav
 unwritten.wav
 unyielding.wav
+upright.wav
+uproar.wav
 upset.wav
 upside down.wav
 upstage.wav
 upswing.wav
 usage.wav
+use.wav
+used.wav
+useful.wav
+useless.wav
+vacation.wav
 valid.wav
+valuable.wav
+value.wav
 vanish.wav
+vast.wav
+venom.wav
+verified.wav
+vernacular.wav
+vertical.wav
+very old.wav
 vessel.wav
+vibration.wav
 victim.wav
 victorious.wav
 video game.wav
 vigorous.wav
 violate.wav
+visibility.wav
+visitant.wav
 visitants.wav
 visitor.wav
+visualize.wav
 void.wav
+vouch.wav
 voyage.wav
+wage.wav
 wakeful.wav
 wakefulness.wav
+walk.wav
 wane.wav
+wariness.wav
 warm.wav
+warning.wav
 way.wav
+weakly.wav
 weakness.wav
+wealthy.wav
 wedding band.wav
 weighty.wav
+welcome.wav
 well founded.wav
 well informed.wav
 well-known.wav
@@ -2044,11 +3337,33 @@ whittle.wav
 whole.wav
 wicked.wav
 wind @ turn.wav
+window.wav
+winnings.wav
+winter.wav
+wise.wav
+witchery.wav
+withdraw.wav
+without permission.wav
+woozy.wav
+words.wav
+work.wav
 workmanship.wav
 worldly.wav
+worth.wav
+worthless.wav
+wound.wav
+wrapped together.wav
+wrist.wav
+writer.wav
+writing.wav
 wrong.wav
+wrongly.wav
+yearly.wav
 yielding.wav
 yonder -- beeing over there.wav
+zany.wav
+zesty.wav
+zippy.wav
 >>> ../datae\audio\courses/{{Master Spoken English}} ## us
 You are not a native speaker no matter how good your speech is..ogg
 >>> ../datae\audio\courses\{{Master Spoken English}} ## us/{{}} ## Case
@@ -2725,7 +4040,6 @@ dumbfounded.wav
 earmark.wav
 elusive.ogg
 empower.wav
-encompass.wav
 encounter.wav
 endlessly.ogg
 engulf.wav
@@ -4062,7 +5376,6 @@ dialogue.ogg
 farewell.ogg
 feed.ogg
 Godspeed [godspeed].ogg
-graffiti.ogg
 health.ogg
 himself.ogg
 humorous.ogg
@@ -4257,7 +5570,7 @@ sit down and make yourself at home.ogg
 sleep on it.ogg
 smell fishy.ogg
 snail mail.ogg
-someone’s bread and butter.ogg
+someone’s bread and butter ## course-.ogg
 space cadet.ogg
 sparkling or still water.ogg
 speak soon.ogg
@@ -6048,7 +7361,7 @@ passionate woman ## course-.ogg
 past.ogg
 peaceful.ogg
 penis.ogg
-perfect.ogg
+perfect @ adjective.ogg
 picnic.ogg
 picnickee~! ## sic!.ogg
 pleasure.ogg
@@ -6099,6 +7412,706 @@ What's wrong~! @@.ogg
 Yes, I do..ogg
 You are very welcome..ogg
 You're so clever..ogg
+>>> ../datae\audio/youtube
+>>> ../datae\audio\youtube/{{English with Lucy}} ## uk
+95. nine to five -- this is referring to regular office or business hours, a typical full-time job.wav
+a knee-jerk reaction -- an immediate automatic response to a situation often without careful consideration or thought.wav
+Another you might come across, not so common, helter-skelter. This is either a type of slide.txt
+Another you might come across, not so common, helter-skelter. This is either a type of slide.wav
+Appealing. Attractive or interesting. To me, it sounds slightly flirtier than just saying something or someone is beautiful..wav
+Bored, schmored. This is sort of confrontational. It's like saying, I don't believe you. You aren't bored. Well, you don't have to be bored..wav
+eager beaver -- a person who is enthusiastic, energetic, and eager to work or participate.wav
+egg on one's face -- to be embarrassed or humiliated by making a mistake or being proven wrong.wav
+fair weather friend -- a person who is only a friend when circumstances are pleasant or profitable.wav
+forty winks -- a short nap or brief period of sleep, usually during the day.wav
+I not sure about that or I'm not so sure about that. If you hear that phrase from a British person it nearly always means no..wav
+If something is on the back burner, it's low priority and it's not being dealt with at the present moment..wav
+Ineffable, something so wonderful that you can't express how wonderful it is. It's ineffable..wav
+loose cannon -- And my husband sometimes calls me Luce as in short for Lucy... Cannon.txt
+loose cannon -- And my husband sometimes calls me Luce as in short for Lucy... Cannon.wav
+Lovey-dovey. This is a romantic adjective for people who show PDAs. Ah, PDAs. These are public displays of affection.txt
+Lovey-dovey. This is a romantic adjective for people who show PDAs. Ah, PDAs. These are public displays of affection.wav
+Namby-pamby. This is an adjective meaning weak, feeble, maybe excessively emotional.txt
+Namby-pamby. This is an adjective meaning weak, feeble, maybe excessively emotional.wav
+Silly Billy, and this is what we say to children who aren't behaving in a sensible way.txt
+Silly Billy, and this is what we say to children who aren't behaving in a sensible way.wav
+surreptitiously -- in a quick or secret way, so that people don't notice.wav
+The bee's knees. The bee's knees is an idiom that means excellent..wav
+the cream of the crop -- the best or finest individuals or things in a particular group or category.wav
+the salt of the earth -- a person or people of great kindness, reliability, or honesty.wav
+the third degree -- intense or thorough questioning, often to extract information or elicit a confession.wav
+to be privy to -- to have access to or knowledge of secret or confidential information.wav
+to brush off -- to dismiss or ignore someone or something casually, often witout consideration.wav
+to call it a day, call it a night -- to stop what you're doing because you don't want to do anymore or you think you have done enough.wav
+to corroborate -- to confirm or support a statement, theory or finding with evidence or testimony.wav
+to eat humble pie -- to admit one's mistake or defeat and show humility or remorse.wav
+to facilitate -- to make something possible or easier or more convenient to do.wav
+to fill somebody in on something -- to provide someone with information or details about an event or situation.wav
+to have a field day -- to take advantage of a situation, typically for personal benefit and often at the expense of others.wav
+to pig out -- to eat excessively or indulge in large quantities of food, often in an uncontrolled manner.wav
+to spill the beans -- to reveal a secret or disclose information that was meant to be kept confidential.wav
+to stick one's neck out -- to take a risk or to expose yourself to possible criticism or danger by doing or saying something.wav
+to strike a balance -- to find a compromise or a middle ground between two competing factors.wav
+to take a rain check -- to decline an offer or invitation at the present time, but suggest doing it at a later date.wav
+to tell off -- to scold or reprimand someone for their behaviour or actions.wav
+to turn up -- to arrive on place or event, often unexpectedly or after being missing.wav
+to whip up -- to quickly and skillfully prepare something, usually food.wav
+We often grow on someone, meaning we become more likeable to them..wav
+We say to get off if you leave walking, and we say to get out if you have to climb out.txt
+We say to get off if you leave walking, and we say to get out if you have to climb out.wav
+Willy-nilly, adverb to describe doing something in an irregular way. The new agency just sends its proposals willy-nilly. Yeah..wav
+>>> ../datae\audio\youtube\{{English with Lucy}} ## uk/{{}}
+100.wav
+103.wav
+107.wav
+108.wav
+11's ## =.wav
+15.wav
+16.wav
+21.wav
+23.wav
+25.wav
+27.wav
+29.wav
+30.wav
+32.wav
+33.wav
+34.wav
+35.wav
+36.wav
+37.wav
+38.wav
+39.wav
+41.wav
+42.wav
+44.wav
+45.wav
+46.wav
+48.wav
+80.wav
+81.wav
+83.wav
+84.wav
+86.wav
+99.wav
+a @ article.wav
+a bad egg -- a person who is dishonest or untrustworthy.wav
+a bag of bones.wav
+a clean bill of health.wav
+a fingertip.wav
+a freckle.wav
+a grey area [+][gray area].wav
+a logophile.wav
+a match made in heaven.wav
+a mile a minute.wav
+a mole.wav
+a penis.wav
+a philtrum.wav
+about.wav
+abstinent.wav
+abstract.wav
+absurd.wav
+abundant -- existing or available in large quantities.wav
+abundant.wav
+accurate.wav
+Achilles tendon.wav
+Adam's apple.wav
+aggressive.wav
+agitated.wav
+Ah, you are in for a treat..wav
+all.wav
+also.wav
+an @ article.wav
+an armchair critic.wav
+an example.wav
+and.wav
+antonyms.wav
+anxious.wav
+any.wav
+apathetic.wav
+appealing.wav
+arrogant.wav
+as fit as a fiddle -- in excellent physical health and condition.wav
+as fresh as a daisy.wav
+as pale as death.wav
+as right as rain -- in perfect order or condition.wav
+at face value.wav
+at.wav
+backbone.wav
+basic.wav
+be.wav
+belly button.wav
+biceps.wav
+birthmarks.wav
+blasphemous.wav
+brave.wav
+buckle up.wav
+bursa.wav
+But in some accents it actually pronounced ˈfɒɹɪd [forehead].wav
+but.wav
+by.wav
+calcaneus.wav
+calf.wav
+calm.wav
+can.wav
+candid -- truthful and straightforward.wav
+carpals.wav
+cartilage.wav
+cautious.wav
+cervical.wav
+chatterbox -- person who talks a lot.wav
+cheerful.wav
+cherish.wav
+clavicle.wav
+clogged.wav
+coccyx.wav
+coherent.wav
+collarbone.wav
+confidence.wav
+confusing.wav
+consistent.wav
+consonant cluster.wav
+convey.wav
+cool off -- to terminate an event, plan or activity.wav
+cooperative.wav
+could.wav
+cowlick.wav
+credulous.wav
+crown.wav
+Cupid's bow.wav
+cushy.wav
+deceptive.wav
+deliberate -- done consciously and intentionally.wav
+deliberate.wav
+desperate.wav
+detail.wav
+different.wav
+dimples.wav
+dishonest.wav
+disingenuous.wav
+disjointed.wav
+do.wav
+docile.wav
+donkey's ears -- a very long time.wav
+dreadful.wav
+dulced.wav
+dull.wav
+eager.wav
+eight.wav
+eighty-four.wav
+eighty-one.wav
+eighty-six.wav
+eighty-three.wav
+eighty.wav
+elaborate @ adjective %% adjective.wav
+elaborate @ verb %% verb.wav
+elevens.wav
+enduring.wav
+erratic.wav
+erroneous.wav
+error.wav
+eternity.wav
+ethereal.wav
+euphoria.wav
+even.wav
+excellent.wav
+extensive.wav
+eyebrows.wav
+eyelashes.wav
+eyelid.wav
+faddy-daddy [faddy daddy].wav
+fascinating.wav
+feces.wav
+feeble.wav
+femur.wav
+fifteen.wav
+find out.wav
+fingertip.wav
+first.wav
+floating ribs.wav
+follicle.wav
+for.wav
+forearm.wav
+forehead.wav
+forty-eight.wav
+forty-five.wav
+forty-four.wav
+forty-one.wav
+forty-six.wav
+forty-two.wav
+free spirit.wav
+from.wav
+full of the joys of spring.wav
+galvanize.wav
+generous.wav
+get.wav
+give up.wav
+glabella.wav
+golden opportunity.wav
+grateful.wav
+grow on.wav
+grumpy.wav
+gum.wav
+hallux.wav
+hasty.wav
+have.wav
+here.wav
+Higgledy-piggledy means confused or jumbled..wav
+hips.wav
+hocus-pocus.wav
+hold one's horses.wav
+Holy moly is an interjection showing surprise..wav
+however.wav
+hustle and bustle.wav
+I needed a little lie down when I saw the bill..wav
+if.wav
+imperfect.wav
+in a nutshell -- in a concise or summarised form.wav
+in a pickle -- in a difficult, complicated or problematic situation.wav
+in raptures.wav
+in seventh heaven.wav
+in the nick of time.wav
+in two minds.wav
+in.wav
+incompetent.wav
+inconsistent.wav
+incorrect.wav
+ineffable.wav
+infallible -- incapable of making mistakes or being wrong.wav
+inoffensive.wav
+iris.wav
+It's becoming quite a nuisance..wav
+Itsy-bitsy means very very small..wav
+Jack-of-all-trades.wav
+jeepus creepus ## =.wav
+just.wav
+knuckles.wav
+last.wav
+let down -- to disappoint or fail to meet someone expectations.wav
+let's go.wav
+like clockwork.wav
+like death warmed up -- looking extremely ill or unhealthy.wav
+lobe.wav
+logical.wav
+loose.wav
+make.wav
+manageable.wav
+many.wav
+masterpieces.wav
+might.wav
+minimal.wav
+modest.wav
+money schmoney.wav
+more.wav
+mundane.wav
+must.wav
+namby-pamby.wav
+nefarious.wav
+negative.wav
+new.wav
+ninety-nine.wav
+nostrils.wav
+not one's cup of tea ## course-.wav
+obliques.wav
+obstinate.wav
+obstructive.wav
+obvious.wav
+occipital bone.wav
+off the beaten track.wav
+offensive.wav
+Okie-dokie... Okie-dokie means okay..wav
+on a silver platter.wav
+on the back burner.wav
+on top of the world.wav
+on.wav
+once in a blue moon.wav
+one hundred.wav
+one's bread and butter -- a person's primary source of income or livelihood.wav
+optimistic.wav
+our.wav
+out of the blue.wav
+outgoing.wav
+over the moon.wav
+overwhelming.wav
+palate.wav
+palm.wav
+pantomime.wav
+passive.wav
+patella.wav
+pecking order.wav
+perceive.wav
+permanent.wav
+persistent.wav
+pessimistic.wav
+philtrum.wav
+pinky toe.wav
+placid.wav
+pleasant.wav
+predictable.wav
+predicted.wav
+pretentious.wav
+private.wav
+privy.wav
+profound.wav
+public.wav
+pupil.wav
+quadriceps.wav
+qualified.wav
+quintessence.wav
+reality check.wav
+reconcile.wav
+relaxed.wav
+resilient.wav
+rhyming reduplication.wav
+rhyming schmyming.wav
+right up one's street [+][right up one's alley].wav
+robust.wav
+rose-coloured or rose-tinted spectacles.txt
+rose-coloured or rose-tinted spectacles.wav
+rough.wav
+round the clock.wav
+say.wav
+scalp.wav
+scapulae.wav
+sceptical.wav
+schwa.wav
+sclera.wav
+sebaceous glands.wav
+sebum.wav
+second to none -- unmatched or unrivaled, the best or highest quality.wav
+selfish.wav
+sensible.wav
+seven.wav
+shaky.wav
+shallow.wav
+should.wav
+shoulderblades.wav
+shrewd.wav
+shy.wav
+significant.wav
+Silly Billy.wav
+sincere.wav
+sixteen.wav
+snowed under.wav
+so appealing.wav
+so.wav
+some.wav
+sporadic.wav
+standard.wav
+steady.wav
+sternum.wav
+storm in a teacup.wav
+straightforward.wav
+superficial.wav
+supersensitive.wav
+tag along.wav
+tangible.wav
+tell.wav
+temples.wav
+temporal bones.wav
+temporary ### ˈtɛmpəɹi.wav
+testicles.wav
+the belly button.wav
+the calcaneus.wav
+the calm before the storm.wav
+the clavicle.wav
+the coccyx.wav
+the Cupid's bow.wav
+the earlobe.wav
+the eyebrows.wav
+the eyelid.wav
+the eyes.wav
+the forearm.wav
+the glabella.wav
+the gum.wav
+the hallux.wav
+the hips.wav
+the larynx.wav
+the moment of truth.wav
+the nape of the neck.wav
+the nape.wav
+the navel.wav
+The nitty-gritty is an important detail..wav
+the obliques.wav
+the palate.wav
+the quadriceps.wav
+the reproductive system.wav
+the shoulderblades.wav
+the smooth.wav
+the solar plexus ### 2.wav
+the solar plexus.wav
+the sole of your foot.wav
+the sole.wav
+the spine.wav
+the task.wav
+the temples.wav
+The trapezius, the trapezius muscle, but most people just call it the trap..wav
+the uvula.wav
+the vocal cords.wav
+the.wav
+thighbone.wav
+thirst for adventure.wav
+thirty-eight.wav
+thirty-five.wav
+thirty-four.wav
+thirty-nine.wav
+thirty-seven.wav
+thirty-six.wav
+thirty-three.wav
+thirty-two.wav
+tibia.wav
+tight.wav
+to advocate.wav
+to amplify.wav
+to articulate.wav
+to be stood up.wav
+to be tickled pink -- to be very pleased or amused.wav
+to bear in mind -- to remember or to consider a piece of information.wav
+to blow one's own trumpet.wav
+to break down -- to stop functioning or to fail suddenly.wav
+to bring home the bacon ## course--.wav
+to burn the midnight oil.wav
+to calm down -- come less anxious or agitated.wav
+to catch some rays.wav
+to catch up -- to get up to date or reach the same level as others.wav
+to cheer up.wav
+to come across.wav
+to come up with something.wav
+to comprehend -- to understand the meaning or significance of something.wav
+to convey.wav
+to cut back.wav
+to cut off -- to block or intercept someone's or something's pass.wav
+to decipher.wav
+to differentiate.wav
+to dissect.wav
+to dress to the nines.wav
+to drop like flies.wav
+to dust off -- to revive or reuse something neglected or forgotten.wav
+to efface.wav
+to exacerbate -- to make a sutiation or problem worse.wav
+to extrapolate.wav
+to fall apart.wav
+to figure out.wav
+to fill somebody in [+][fill in].wav
+to find out.wav
+to fuss about -- to waste time or engage in unproductive activities.wav
+to galvanize.wav
+to get off.wav
+to get on with something.wav
+to get something off the ground -- to make something start to happen or to succeed [+][get off the ground].wav
+to get the green light.wav
+to get up to.wav
+to get your foot in the door [+][get one's foot in the door].wav
+to give up.wav
+to go belly up.wav
+to go by -- to pass or elapse.wav
+to go under the knife.wav
+to have a crack at something.wav
+to have a whale of a time -- to have an extremely enjoyable and exciting time.wav
+to have ants in one's pants.wav
+to have bigger fish to fry -- to have more important or pressing matters to attend to [+][have other fish to fry].wav
+to have itchy feet.wav
+to have one foot in the grave.wav
+to have one's head in the clouds.wav
+to have the time of one's life.wav
+to insist on.wav
+to kick the bucket -- to die, or pass away.wav
+to knock over -- to accidentally cause something to fall or tip over.wav
+to let off steam.wav
+to let the cat out of the bag -- to reveal a secret or disclose confidential information unintentionally or carelessly.wav
+to look after -- to care of or to provide assistance to someone.wav
+to look up.wav
+to make one's day.wav
+to make up.wav
+to mitigate.wav
+to move on.wav
+to paint the town red.wav
+to pay off.wav
+to perceive.wav
+to play hard to get.wav
+to pop the question.wav
+to pull some strings.wav
+to put two and two together.wav
+to recharge one's batteries [+][recharge one's battery].wav
+to rub off.wav
+to run into -- to meet someone or something by chance.wav
+to scrutinize.wav
+to set out -- to begin a journey or start an activity.wav
+to shoot off -- to move quickly or suddenly.wav
+to smell a rat.wav
+to sort out.wav
+to steal one's heart.wav
+to steal someone's thunder.wav
+to tag along.wav
+to take back.wav
+to take on -- to accept responsibility or challenge.wav
+to take the bull by the horns.wav
+to throw caution to the wind.wav
+to turn down -- to reject an offer, request or opportunity.wav
+to turn into.wav
+to turn on.wav
+to turn out.wav
+to warm to.wav
+to work out -- to have a positive outcome.wav
+to.wav
+Toity-toity is behaving like you are better than everyone else..wav
+top of the pile.wav
+torso.wav
+tragus.wav
+trivial.wav
+truthful.wav
+twenty one.wav
+twenty-five.wav
+twenty-nine.wav
+twenty-seven.wav
+twenty-three.wav
+two left feet.wav
+two peas in a pod ## course-.wav
+two.wav
+umbilical cord.wav
+unappreciative.wav
+unclear.wav
+unconventional -- not based on what is generally done.wav
+understated.wav
+unfit.wav
+unimpressed.wav
+unreliable.wav
+until the cows come home.wav
+up and down.wav
+uvula.wav
+vertebrae.wav
+very.wav
+vigorous.wav
+voicebox.wav
+vulnerable.wav
+want.wav
+We often call it a Jack-of-all-trades, but a master of none..wav
+wet blanket.wav
+white.wav
+willy-nilly.wav
+work.wav
+world.wav
+wrinkle.wav
+>>> ../datae\audio\youtube/{{polýMATHY}}
+>>> ../datae\audio\youtube\{{polýMATHY}}/## Case {{}}
+Achilles.wav
+Aeneas.wav
+Ajax.wav
+Amphitryon.wav
+Andromache.wav
+Bellerophon.wav
+Ceres.wav
+Diana.wav
+Dionysus.wav
+Hecate.wav
+Helen, Helen of Troy, Helen of Sparta actually.wav
+Heracles.wav
+Menelaus.wav
+Mercury.wav
+Minerva.wav
+Odysseus.wav
+Orpheus.wav
+Paris.wav
+Pluto.wav
+Poseidon.wav
+>>> ../datae\audio\youtube/{{Shaw English Online}}
+>>> ../datae\audio\youtube\{{Shaw English Online}}/contactions {{}}
+a ghost.wav
+after dinner.wav
+alotta.wav
+are not, aren't.wav
+Betcha can guess the answer..wav
+betcha.wav
+c'mon.wav
+could have, could've.wav
+Didncha like it~!.wav
+didncha.wav
+do not, don't.wav
+does not, doesn't.wav
+Dontcha like it~!.wav
+dontcha.wav
+doya ## =.wav
+Doya wanna come with me~!.wav
+dunno.wav
+earlier.wav
+gimme.wav
+gonna.wav
+gotcha.wav
+gotta.wav
+harder.wav
+hasta.wav
+havta.wav
+he had, he'd.wav
+he is, he's.wav
+he will, he'll.wav
+he would, he'd.wav
+Here we go..wav
+home.wav
+how is, how's.wav
+I am, I'm.wav
+I had, I'd.wav
+I have, I've.wav
+I will, I'll.wav
+I would, I'd.wav
+I'm sorta tired..wav
+is not, isn't.wav
+it had, it'd.wav
+it is, it's.wav
+it will, it'll.wav
+it would, it'd.wav
+kinda.wav
+Lemme go!.wav
+lemme.wav
+Let's move on..wav
+lotsa.wav
+might have, might've.wav
+needa.wav
+oughta.wav
+outta.wav
+s'more.wav
+she had, she'd.wav
+she is, she's.wav
+she will, she'll.wav
+she would, she'd.wav
+should have, should've.wav
+soon.wav
+sorta.wav
+supposta.wav
+Tell em we're starting now..wav
+tell em.wav
+there have, there've.wav
+they are, they're.wav
+they had, they'd.wav
+they have, they've.wav
+they will, they'll.wav
+they would, they'd.wav
+tomorrow.wav
+tonight.wav
+wanna.wav
+we are, we're.wav
+we had, we'd.wav
+we have, we've.wav
+We will ned s'more time..wav
+we will, we'll.wav
+we would, we'd.wav
+what is, what's.wav
+Whatcha doin'~!.wav
+Whatcha got there~!.wav
+whatcha.wav
+when is, when's.wav
+where is, where's.wav
+who have, who've.wav
+who is, who's.wav
+why is, why's.wav
+will not, won't.wav
+wontcha.wav
+would have, would've.wav
+Would you like a cuppa coffee~!.wav
+you are, you're.wav
+you had, you'd.wav
+you have, you've.wav
+you will, you'll.wav
+you would, you'd.wav
 >>> ../datae\audio/zoo
 >>> ../datae\audio\zoo/{{Cornell Lab of Ornithology}} ## course-
 !credit.txt
@@ -7017,7 +9030,6 @@ Leda.mp3
 Lysithea.mp3
 Mars.mp3
 Megaclite.mp3
-Mercury.mp3
 Metis.mp3
 Mimas.mp3
 Miranda.mp3
@@ -7033,7 +9045,6 @@ Pasiphae.mp3
 Pasithee.mp3
 Phobos.mp3
 Phoebe.mp3
-Pluto.mp3
 Portia.mp3
 Praxidike.mp3
 Prometheus.mp3
@@ -15116,8 +17127,7 @@ hot-air balloon.wav
 hummus decorated with parsley.wav
 humpback whale.wav
 ice hockey net ## course-.wav
-incense chalice and frankincense [].wav
-incense chalice and frankincense.wav
+incense chalice and frankincense [frankincense][chalice].wav
 Independence Day.wav
 Indian Runner duck ### 2.wav
 Indian Runner duck [].wav
@@ -15616,7 +17626,6 @@ tanker truck.wav
 telephone booth.wav
 that's.wav
 that.wav
-the.wav
 they.wav
 third-person singular.wav
 this.wav
@@ -16216,8 +18225,11 @@ Ah, THAT'S the great puzzle!.ogg
 ALICE'S RIGHT FOOT, ESQ.ogg
 ALICE'S RIGHT FOOT, ESQ.txt
 And I wish you wouldn't keep appearing and vanishing so suddenly.. you make one quite giddy..ogg
+And I'm sure I can't be _Mabel..ogg
 And things are worse than ever -- for I never was so small as this before, never!.ogg
 But I THINK I can kick a little!.ogg
+but it makes rather a handsome pig.ogg
+but it makes rather a handsome pig.txt
 But it sounds uncommon nonsense..ogg
 But little girls eat eggs quite as much as serpents do, you know..ogg
 Call the next witness. [witness].ogg
@@ -16225,12 +18237,14 @@ Flamingoes and mustard both bite. And the moral of that is--“Birds of a feathe
 Good-bye, feet! ## course-.ogg
 Her chin was pressed so closely against her foot, that there was hardly room to open her mouth..ogg
 However, the Multiplication Table doesn't signify.. let's try Geography..ogg
+I call it purring, not growling..ogg
 I can't explain MYSELF, I'm afraid, sir.ogg
 I can't explain MYSELF, I'm afraid, sir.txt
 I don't believe there's an atom of meaning in it..ogg
 I gave her one, they gave him two, You gave us three or more;.ogg
 I gave her one, they gave him two, You gave us three or more;.txt
 I move that the meeting adjourn, for the immediate adoption of more energetic remedies..ogg
+important---unimportant---unimportant---important---.ogg
 It's a mineral, I THINK..ogg
 It's a vegetable. It doesn't look like one, but it is. ## course-.ogg
 It's always six o'clock now..ogg
@@ -16240,10 +18254,12 @@ London is the capital of Paris.ogg
 London is the capital of Paris.txt
 Never imagine yourself not to be otherwise.ogg
 Never imagine yourself not to be otherwise.txt
+Of course you know what ‘it’ means..ogg
 Oh, how I wish I could shut up like a telescope! ## course-.ogg
 Reeling and Writhing, of course, to begin with.ogg
 Reeling and Writhing, of course, to begin with.txt
 Rule Forty-two. ALL PERSONS MORE THAN A MILE HIGH HAVE TO LEAVE THE COURT..ogg
+Suppose it should be raving mad after all!.ogg
 That begins with an _M, such as mouse-traps, and the moon, and memory, and muchness..ogg
 There's a large mustard-mine near here. And the moral of that is.ogg
 There's a large mustard-mine near here. And the moral of that is.txt
@@ -16316,6 +18332,7 @@ Why your cat grins like that~!.ogg
 _Mary _Ann!  _Mary _Ann! [Mary Ann] ## course-.ogg
 “There's PLENTY of room!” said Alice indignantly. [indignantly].ogg
 “'Tis so,” said the Duchess.. “and the moral of that is -- Oh, 'tis love, 'tis love, that makes the world go round!”.ogg
+“Ahem!” said the Mouse with an important air.ogg
 “Begin at the beginning,” the King said gravely, “and go on till you come to the end.. then stop.”.ogg
 “Talking of axes,” said the Duchess, “chop off her head!”.ogg
 “That's the reason they're called lessons,” the Gryphon remarked.. “because they lessen from day to day.”.ogg
@@ -18183,7 +20200,6 @@ ah.ogg
 am.ogg
 charmingly.ogg
 come.ogg
-cruelty.ogg
 do.ogg
 extraordinary.ogg
 he.ogg
@@ -18531,7 +20547,6 @@ a skull.wav
 a spanking trot.wav
 a square.wav
 a stormy day ## course-.wav
-a subordinate.wav
 a thief.wav
 a whole year.wav
 a wilderness.wav
@@ -20818,7 +22833,7 @@ palm-twitchingly mad.wav
 parachute.wav
 short changed ## course-.wav
 shouty capitals ## course-.wav
-spill the beans.wav
+spill the beans ## course-.wav
 talkative.wav
 us.wav
 verbose.wav
@@ -22497,7 +24512,7 @@ ostentation.ogg
 pawed.ogg
 paying attention ## course-.ogg
 pelvis.ogg
-perfect.ogg
+perfect @ adjective.ogg
 personality.ogg
 piss off.ogg
 possessed.ogg
@@ -26130,9 +28145,9 @@ am not ## course- ### [Child-Fem-B_Am-Not_VKT_06710].wav
 Am not! ### [Child-Fem-B_Am-Not_VKT_06710].wav
 Amen! ### Mid-Aged-Fem-C_Amen_VKT_10713.wav
 And action! ## course- ### Mid-Aged-Male-A_And-Action_VKT_11116.wav
+And action! ## course- ### [Mid-Aged-Fem-B_And-Action_VKT_10390].wav
 And your point is~! ### [Adult-Fem-D_And-Your-Point-Is_VKT_01384].mp3
 And your point was~! ### [Adult-Fem-D_And-Your-Point-Was_VKT_01385].mp3
-And, action! ## course- ### [Mid-Aged-Fem-B_And-Action_VKT_10390].wav
 And, cut! ### [Mid-Aged-Male-B_And-Cut_VKT_11628].wav
 Ante up! ### [Mid-Aged-Fem-B_Ante-Up_VKT_10391].wav
 Any calls while I was out~! ### Mid-Aged-Male-C_Any-Calls-While-I-Was-Out_VKT_12046.wav
@@ -27197,7 +29212,6 @@ No way! @ disbelief ### Adult-Male-A_Disbelieving-No-Way_VKT_03181.mp3
 No way! @ disbelief ### Mid-Aged-Male-C_No-Way_VKT_12236.wav
 No way! @ disbelief ### [Teen-Male-C_No-Way_VKT_16204].wav
 No way. @ reject ### Adult-Male-A_Incredulous-No-Way_VKT_03297.mp3
-No! @ desperate ### Adult-Fem_Desperate-No_VKT_00017.mp3
 No! No! ### Adult-Male_Panic-No-No_VKT_03085.mp3
 No, I don't want to! @ indignant ### Child-Fem-A_Indignant-No-I-Dont-Want-To_VKT_06470.wav
 No, I swear. ### [Adult-Fem-E_No-I-Swear_VKT_02240].mp3
@@ -27360,7 +29374,7 @@ Password error. Access denied. ### [Adult-Fem-D_Password-Error-Access-Denied_VKT
 Password error. Access denied. ### [Computer-Fem_Password-Error-Access-Denied_VKT_16544].wav
 Password incorrect. ### [Voice-Computer-Female-Password-Incorrect_COMM-2134].wav
 pee-yew! ### ReactionChildren AR04_89_2.wav
-perfect ### [Mid-Aged-Male-A_Practice-Makes-Perfect_VKT_11408].wav
+perfect @ adjective ### [Mid-Aged-Male-A_Practice-Makes-Perfect_VKT_11408].wav
 pff ### Laughter-Male_GEN-HD4-42388.wav
 phew! @ relieved ### ReactionCrowd AR04_44_4.wav
 Pick up the phone! ### [Adult-Fem-D_Pick-Up-The-Phone_VKT_01763].mp3
@@ -28243,7 +30257,7 @@ lay the cloth [laying].jpg.uid-zps
 Dusthead [dusthead][phencyclidine][angel dust][Neo-Expressionism] ## date 1982 ## qropt! ## qrop l6 r2.jpg
 >>> ../datae\fineart abc {{$$}}/Batoni {{Pompeo Batoni}}
 Diana & Cupid [Diana@myth] ## date 1761.jpg.uid-zps
-Diana & Cupid [Diana@myth][Artemis~Diana][Cupid's bow] ## date 1761 ## qrop l13 r10 ## qropt!.jpg
+Diana and Cupid [Diana@myth][Artemis~Diana][Cupid's bow] ## date 1761 ## qrop l13 r10 ## qropt!.jpg
 >>> ../datae\fineart abc {{$$}}/Bazille {{Frédéric Bazille}}
 Monotonous Chant [+] ## date 1870 ## qrop t10 b10 ### Mélopée.jpg.uid-zps
 Monotonous Chant [monotonous] ## date 1870 ## crop r1 ## qrop t10 b10 r1 ## qropt! ### Mélopée.jpg
@@ -28271,7 +30285,6 @@ Nymphs and Satyr [nymphs][satyrs][satyr] ## qrop t4 ## qropt! {{William Bouguere
 Pietà [pieta] ## date 1876.jpg
 Reflexion [reflexion] ## date 1897.jpg
 Regina Angelorum [Regina] ## date 1900.jpg
-Springtime [excitable][excitability] ## date 1886.jpg
 The Birth of Venus [Venus@myth] ## qropt! {{William-Adolphe Bouguereau, 1879 $$}}.jpg
 The Little {Knitter} ## date 1884.jpg
 The Nut Gatherers [girl talk] ## date 1882.jpg
@@ -28491,7 +30504,7 @@ cowboy ## qrop t3 b23 ### Frank Ellis While visiting the SMS Ranch in Texas.jpg
 Variegation in the triangle [variegation] ## date 1927.jpg
 >>> ../datae\fineart ijkl {{$$}}/Klimt {{Gustav Klimt}}
 Death and Life [death] ## date 1911 ## qropt!.jpg
-Minerva ## date 1898 ## qropt!.jpg
+Pallas Athena [Athena][Pallas][Minerva] ## date 1898 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Knight {{Daniel Knight}}
 Hailing the Ferryman [hailing][hail@call] ## qrop l14 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Kramskoy {{Ivan Kramskoy}}
@@ -30732,9 +32745,9 @@ St. _Anthony's _Roman _Catholic Church, Long Beach, California [church][Long Bea
 >>> ../datae\photo gh/Hine {{Photo.. Lewis Hine}}
 mechanic ## date 1920 ## qrop qb.jpg
 >>> ../datae\photo gh/Hoffmann {{Photo.. Heinrich Hoffmann}}
-_Hitler rehearsing speech in front of a mirror, 1927 [Hitler][pathetic][rehearsing] ## crop r1 ## qrop r1 b17 ## qropt! ### 4.jpg
 _Hitler rehearsing speech in front of a mirror, 1927 [Hitler][pathos] ## crop l1 r2 t1 ## qrop l1 t2 r2 b12 ## qropt! ### 2.jpg
 _Hitler rehearsing speech in front of a mirror, 1927 [Hitler][pathos] ## qrop b19 ## qropt! ### 3.jpg
+_Hitler rehearsing speech in front of a mirror, 1927 [Hitler][rehearsing] ## crop r1 ## qrop r1 b17 ## qropt! ### 4.jpg
 >>> ../datae\photo gh/Hooker {{Photo.. Dwight Hooker}}
 Lenna %% Image of Lena Söderberg used in many image processing experiments [Lena].png
 >>> ../datae\photo gh/Hopkins {{Photo.. Ralph Lee Hopkins}}
@@ -32819,7 +34832,7 @@ intimidate ## qrop l14 r5 {{Photo.. Polina Ponomareva $dreamstime 95325592}}.jpg
 Is this money enough~! ## sic! ## qrop l9 r16 {{Photo.. Petar Zigich $dreamstime 3188731}}.jpg
 nibble (on~at) an apple [nibble] ## qrop l20 t1 r14 {{Photo.. Halina Valiushka $dreamstime 7057844}}.jpg
 peek ## qrop l29 t1 r5 {{Photo.. Stephen Mcsweeny $dreamstime 1805719}} ### Who's out there.jpg
-pluck (at) the strings [pluck][pluck at] ## qrop l4 r30 b1 {{Photo.. Anna Jurkovska $dreamstime 108050113}}.jpg
+pluck (at) the strings [pluck][pluck at][plucking the strings] ## qrop l4 r30 b1 {{Photo.. Anna Jurkovska $dreamstime 108050113}}.jpg
 show one's fangs @ literally [fangs] {{Photo.. Constantinoff Richard $dreamstime 68813075}}.jpg
 steal ## qrop ql {{Photo.. David Park $dreamstime 913632}}.jpg
 >>> ../datae\photo_dreamstime\!mix\words/think
@@ -34253,7 +36266,7 @@ Say Ahhh! [ahhh] ## qrop r9 ## qropt! {{Photo.. Everett Collection Inc. $dreamst
 scales @ weight ## qrop l16 r16 ## qropt! {{Photo.. Gvictoria $dreamstime 2526401}}.jpg
 scissors and tweezers [instruments][surgical] ## crop ql {{Photo.. Iofoto $dreamstime 2850820}}.jpg
 scissors, two scalpels and hemostat [scalpel][hemostat][surgical] ## crop qr {{Photo.. Iofoto $dreamstime 2850820}}.jpg
-sterile [sterilisation][sterilization][sterilisable][sterilizable] ## qrop l3 r20 ## qropt! {{Photo.. Adrea $dreamstime 30980322}}.jpg
+sterile @ clean [sterilisation][sterilization][sterilisable][sterilizable] ## qrop l3 r20 ## qropt! {{Photo.. Adrea $dreamstime 30980322}}.jpg
 surgery ## qrop l7 r19 {{Photo.. Cyberstock $dreamstime 4693849}}.jpg
 syringe ## qrop l19 r12 ## qropt! {{Photo.. Marietjie Opperman $dreamstime 82552142}}.jpg
 syringe ## qrop l20 r14 {{Photo.. Arnau2098 $dreamstime 31881205}}.jpg
@@ -34318,8 +36331,8 @@ nails @ human ## qrop l14 r19 {{Photo.. Konstantin Stepanenko $dreamstime 661349
 ringlet @ hair ## qrop qt {{Photo.. Gansovsky Vladislav $dreamstime}}.jpg
 shoulder @ human ## qrop l13 r19 {{Photo.. Oliver Sved $dreamstime 37469343}}.jpg
 >>> ../datae\photo_dreamstime\human/body language
-appealing ## qrop l20 r13 {{Photo.. Eldadcarin $dreamstime 29979474}}.jpg
 give someone attitude [give attitude][attitude@character] ## qrop l32 r2 {{Photo.. 9nongphoto $dreamstime 65334192}}.jpg
+ingratiating ## qrop l20 r13 {{Photo.. Eldadcarin $dreamstime 29979474}}.jpg
 >>> ../datae\photo_dreamstime\human\body language/quarrel
 accuse @ quarrel ## qrop qb {{Photo.. Volodymyr Melnyk $dreamstime 99053363}}.jpg
 enraging @ quarrel [enrage] ## qrop l12 r22 {{Photo.. Volodymyr Melnyk $dreamstime 99053603}}.jpg

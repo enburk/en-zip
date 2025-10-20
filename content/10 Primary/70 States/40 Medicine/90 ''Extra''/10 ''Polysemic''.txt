@@ -1,23 +1,35 @@
 polysemic
+
 ***
 brackets\\braces      = брекеты
 brackets @ fixture    = скобы
 brackets @ symbols    = скобки (круглые, квадратные, фигурные)
+
 ***
 cataract @ eyes       = катаракта                                    # 16+
 cataract @ falls      = большой водопад, ~ поток                     # 16+
+
 ***
 croup @ horse         = круп (лошади)                                # 16+ /// 1
 croup @ disease       = круп (болезнь)                               # 16+ /// 2
+
 ***
 spasm @ muscle        = спазм, судорога                              # 10+
 spasm @ burst         = подъем, приступ, взрыв ~ (активности, чувств и т.п.) # 10+
+
 ***
 compress @ verb       = сжимать, сдавливать, сокращать               # 10+ /// com`press
 compress @ medicine   = в медицине: компресс                         # 10+
+
 ***
 ambulatory @ medicine = амбулаторный, ходячий ~ (о больном)
 ambulatory @ walk     = передвижной, ~ предназначенный для ходьбы, ~ галерея для прогулок
+
+***
+sterile @ clean       = стерильный
+sterile @ birth       = стерилизованный, ~ бесплодный
+sterile @ result      = безрезультатный
+
 
 
 

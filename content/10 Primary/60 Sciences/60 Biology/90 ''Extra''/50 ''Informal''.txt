@@ -1,33 +1,40 @@
 informal ~ contractions
 
-===
-dunno %% don't know
-===
-
+---
+dunno         = don't know
 : I dunno.
 : Er... er... I dunno. ~ I think I just sort of... ~ do it really.
 
-===
-kinda %% kind of
-===
-
+---
+kinda         = kind of
 : He's kinda cute.
 : I'm kinda scared.
 
-===
-sorta %% sort of
-===
+---
+sorta         = sort of
+: I'm sorta tired.
 
-===
-lotsa %% lot of
-===
-
+---
+alotta        = a lot of
+lotta||lotsa  = lot of
 : Lotsa luck!
 
-===
-gimme %% give me
-===
-
+---
+gimme         = give me
 : Gimme a break.
 : Just gimme a break!
 
+---
+lemme         = let me
+: Lemme go!
+
+===
+
+---
+cuppa         = cup of
+: Would you like a cuppa coffee?
+
+---
+s'more        = some more # pix-
+: We will ned s'more time.
+s'more||smore = toasted marshmallow and chocolate sandwiched between two pieces of graham crackers

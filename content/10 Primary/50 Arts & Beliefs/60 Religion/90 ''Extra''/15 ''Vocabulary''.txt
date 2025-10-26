@@ -6,7 +6,7 @@ mosque            = мечеть
 ===
 faith             = вера            /// French
 belief            = вера
-believe           = верить, доверять, ~ думать, полагать, считать
+believe {v}       = верить, доверять, ~ думать, полагать, считать
 ===
 
 : believe me
@@ -39,6 +39,7 @@ bishop @ chess    = в шахматах: слон
 
 crucifixion       = распятие
 crown of thorns   = терновый венец
+
 
 
 

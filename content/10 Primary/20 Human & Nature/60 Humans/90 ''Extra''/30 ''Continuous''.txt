@@ -10,7 +10,7 @@ want        = хотеть, желать
 ===
 = умственные состояния
 understand  = понимать
-believe     = верить, доверять, ~ думать, полагать
+believe {v} = верить, доверять, ~ думать, полагать
 know        = знать
 
 ===
@@ -31,6 +31,7 @@ see         = видеть
 
 : I’m '''hating''' you ~ so much right now! = Я так тебя сейчас ненавижу!
 : Are you getting weary, ~ or '''feeling''' impatient, ~ hmm, eh?
+
 
 
 

@@ -1,6 +1,7 @@
 
-chinchilla = шиншилла
-ferret     = фретка/фурро # RARE-
-canary     = канарейка
+chinchilla    = шиншилла
+ferret        = фретка/фурро # RARE-
+canary @ bird = канарейка
+
 
 

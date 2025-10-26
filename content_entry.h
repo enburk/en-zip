@@ -53,6 +53,9 @@ namespace content::out
         array<str> vocabulary;
         array<str> phrases;
         array<str> errors;
+        bool noun = false;
+        bool verb = false;
+        bool adxx = false;
         str abstract;
         int line = 0;
         str link;
@@ -81,6 +84,18 @@ namespace content::out
             rus = s.extract_from("=");
             eng = s;
 
+            if (not eng.starts_with(":"))
+            {
+                noun |= eng.contains("{n}");
+                verb |= eng.contains("{v}");
+                adxx |= eng.contains("{a}");
+                eng.replace_all("{n}","");
+                eng.replace_all("{v}","");
+                eng.replace_all("{a}","");
+                eng.trimr();
+                s = eng;
+            }
+
             for (str o: opt.unknown)
             errors += "UNKNOWN OPTION: " + o;
 
@@ -91,6 +106,13 @@ namespace content::out
             if (sense.contains("{")
             or  sense.contains("}"))
             errors += "SENSE: " + sense;
+
+            if (sense == "noun"     
+            or  sense == "verb"     
+            or  sense == "adverb"   
+            or  sense == "adjective")
+            if (noun or verb or adxx)
+            errors += "PART OF SPEECH CONFLICT";
 
             s.replace_all("'''", "");
             s.replace_all("''" , "");
@@ -145,21 +167,42 @@ namespace content::out
                 sense;
         }
 
+        bool the_noun () { return sense == "noun" or noun and not verb and not adxx; }
+        bool the_verb () { return sense == "verb" or verb and not noun and not adxx; }
+
         bool audio_fits (str r_abstract)
         {
-            array<str> fits;
-            const str& s = r_abstract; fits += s;
-            if (s.starts_with("a "  )) fits += str(s.from(2)) + "@noun"; else
-            if (s.starts_with("an " )) fits += str(s.from(3)) + "@noun"; else
-            if (s.starts_with("the ")) fits += str(s.from(4)) + "@noun"; else
-            if (s.starts_with("to " )) fits += str(s.from(3)) + "@verb"; else
-            {}
-
             str a = abstract;
-            if (not s.contains("@"))
-            a = a.extract_upto("@");
+            str s = r_abstract;
+            if (s == a)
+                return true;
+            if (s == a + "@@")
+                return true;
+            if (s.contains("@"))
+                return false;
+            if (s == a.upto_first("@"))
+                return true;
 
-            return fits.contains(a);
+            if (s.starts_with("a "  )) s = str(s.from(2)) + "@noun"; else
+            if (s.starts_with("an " )) s = str(s.from(3)) + "@noun"; else
+            if (s.starts_with("the ")) s = str(s.from(4)) + "@noun"; else
+            if (s.starts_with("to " )) s = str(s.from(3)) + "@verb"; else
+                return false;
+
+            if (s == a)
+                return true;
+
+            a = a.upto_first("@");
+
+            if (the_noun()
+            and s == a + "@noun")
+                return true;
+            
+            if (the_verb()
+            and s == a + "@verb")
+                return true;
+
+            return false;
         }
 
         bool video_fits (array<str> video_entries)
@@ -291,6 +334,12 @@ namespace content::out
             str R = rus;
             str O = opt.formatted();
             str C = comment;
+
+            if (noun or verb or adxx) E += " ";
+            if (noun) E += "{n}";
+            if (verb) E += "{v}";
+            if (adxx) E += "{a}";
+
             // eng... = rus... # opt
             // eng... = rus
             // eng... # opt

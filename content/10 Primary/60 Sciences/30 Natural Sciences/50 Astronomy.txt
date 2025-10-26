@@ -33,7 +33,7 @@ retrograde                = в астрономии: ретроградный   
 ---
 perigee/apogee            = перигей/апогей                                # TERM+ # 16+
 perihelion/aphelion       = перигелий/афелий                              # TERM+ # 16+
-: Comet ISON pass the perihelion # 16+
+: Comet ISON pass the perihelion # audio- # 16+
 
 plane of the ecliptic     = плоскость эклиптики                           # TERM+
 geostationary orbit       = геостационарная орбита                        /// (GEO) (ГСО)
@@ -63,6 +63,7 @@ exoplanet ~ (extrasolar planet) = экзопланета ~ (внесолнечн
 
 Big Bang                  = Большой взрыв                                 # 10+
 singularity               = сингулярность                                 # MATH+ # 18+
+
 
 
 

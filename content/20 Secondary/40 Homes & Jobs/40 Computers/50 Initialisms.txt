@@ -10,13 +10,13 @@ b4           = before                # sic!
 2nite        = tonight               # sic!
 gr8          = great
 l8r          = later
+d8           = date                  # +ru
 
 U @ texting  = you
 Y @ texting  = why
 B @ texting  = be
 R @ texting  = are
 K @ texting  = okay
-
 
 ---
 LOL @@       = laugh out loud        # +ru
@@ -27,10 +27,14 @@ BTW          = by the way            # +ru
 OMG          = oh my god             # +ru
 WTF          = what the fuck?        # +ru
 
+ILY          = I love you            # +ru
+HBD          = happy birthday        # +ru
+
 ===
 
 LMAO         = laughing my ass off   # +ru
 ROFL         = rolling on the floor laughing # +ru
+tntl         = trying not to laugh   # +ru
 
 idc          = I don’t care          # +ru # sic!
 idk          = I don’t know          # +ru
@@ -39,8 +43,13 @@ ikr          = I know, right?        # +ru
 nbd          = no big deal           # +ru # sic!
 np           = no problem            # +ru
 nvm          = never mind            # +ru
+
 ofc          = of course             # +ru
-jk           = just kidding          # +ru
+jk           = just kidding          # +ru # sic!
+jff          = just for fun          # +ru
+ynk          = you never know        # +ru # sic!
+pls          = please                # +ru
+
 
 
 

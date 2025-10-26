@@ -5,9 +5,9 @@ beetle @ insect = жук
 
 ===
 
-brain @ anatomy = мозг
-heart @ anatomy = сердце
-blood @ anatomy = кровь # 8+
+brain @ anatomy {n} = мозг
+heart @ anatomy {n} = сердце
+blood @ anatomy {n} = кровь # 8+
 
 ---
 backbone        = спинной хребет, позвоночник, ~ основа, суть, твердость характера

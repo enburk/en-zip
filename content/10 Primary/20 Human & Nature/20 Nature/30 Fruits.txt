@@ -1,11 +1,11 @@
-fruits            = плоды, фрукты # pix-
+fruits            = плоды, фрукты      # pix-
 
 apricot           = абрикос
 coconut           = кокос
 cherry            = вишня, черешня
 cherry tomatoes   = помидоры черри
-feijoa            = фейхоа     # RARE+ # 16+
-barberry          = барбарис   # 10+
+feijoa            = фейхоа             # RARE+ # 16+
+barberry          = барбарис           # 10+
 
 lemon             = лимон
 lime              = лайм
@@ -14,11 +14,12 @@ mandarin [orange] = мандарин
 grapefruit        = грейпфрут
 
 mango             = манго
-olive             = олива, оливка, маслина /// греч. ἐλαία, лат. oliva
-nectarine         = нектарин   # RARE-
-physalis @ fruit  = физалис    # RARE+ # 18+
+olive @ fruit     = олива, оливка, маслина /// греч. ἐλαία, лат. oliva
+nectarine         = нектарин           # RARE-
+physalis @ fruit  = физалис            # RARE+ # 18+
 pistachios        = фисташки
 pomegranate       = гранат
+
 
 
 

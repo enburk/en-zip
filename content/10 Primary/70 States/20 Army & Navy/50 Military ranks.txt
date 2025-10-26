@@ -22,7 +22,7 @@ subordination @ army   = субординация, ~ также: подчине�
 ---
 recruit @ army         = вербовать, призывать, ~ новобранец, рекрут   # 14+
 reservist              = резервист                                    # 16+
-: recruitment poster, 1917 # HISTORY+ # 14+
+: recruitment poster, 1917 # HISTORY+ # audio- # 14+
 
 ranger {Am.} @ soldier = рейнджер
 scout                  = разведчик, разыскивать, ~ скаут
@@ -35,6 +35,7 @@ barrack                = казарма, барак                             
 ===
 
 : Your name, rank and serial number?
+
 
 
 

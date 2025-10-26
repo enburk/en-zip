@@ -10,7 +10,7 @@ section @ medicine       = в хирургии: ~ рассечение, разр
 congruent @ math         = в математике: конгруэнтный                         # MATH+ # 10+
 congruent @ congruous    = подходящий, соответствующий                        /// (формальная лексика)
 ---
-complex @ adjective %% {adjective} = сложный, ко́мплексный ~ (проблема и т.п.)           /// com`plex
+complex @ adjective %% {adjective} = сложный, ко́мплексный ~ (проблема и т.п.)           /// com`plex, `complex
 complex @ math           = ко́мплексный/компле́ксный ~ (число, функция)
 complex @ noun %% {noun} = комплекс ~ (зданий и т.п.)                         /// `complex
 complex @ psychology     = комплекс ~ (в психологии)                          /// `complex

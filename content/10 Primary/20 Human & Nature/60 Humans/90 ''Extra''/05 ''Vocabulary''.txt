@@ -9,9 +9,9 @@ die                       = умереть, умирать, ~ затухать
 : Death and Life
 ===
 
-body @ human              = тело
-head @ human              = голова
-face @ human              = лицо
+body @ human {n}          = тело
+head @ human {n}          = голова
+face @ human {n}          = лицо
 shoulder @ human          = плечо
 arm @ human               = рука
 hand @ human              = рука ~ (кисть)
@@ -63,6 +63,7 @@ crazy @ adjective         = сумашедший, безумный, ~ чокну
 beauty
 beautiful
 : You're so beautiful.
+
 
 
 

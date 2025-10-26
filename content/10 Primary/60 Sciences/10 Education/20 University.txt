@@ -25,9 +25,10 @@ thesis                    = дипломная работа                     
 dissertation/thesis       = диссертация                           # 18+
 [doctoral] ~ dissertation/thesis = докторская диссертация                # 18+
 
-grant @ gift              = грант, стипендия, субсидия            # 18+
+grant @ gift {n}          = грант, стипендия, субсидия            # 18+
 
 ===
 
 : Let us start this lecture.
+
 

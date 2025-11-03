@@ -107,7 +107,12 @@ widget<Studio>
 
         if (what == &build)
         {
-            if (build.data_updated)
+            if (build.dic_updated)
+            {
+                app::dicdata.reload();
+            }
+
+            if (build.app_updated)
             {
                 app::appdata.reload();
                 studias.reload();

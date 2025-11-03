@@ -16,7 +16,8 @@ namespace studio::build
 
         sys::thread compilation;
         gui::property<gui::time> timer;
-        std::atomic<bool> data_updated = false;
+        std::atomic<bool> dic_updated = false;
+        std::atomic<bool> app_updated = false;
 
         void on_change (void* what) override
         {
@@ -52,6 +53,9 @@ namespace studio::build
             out.limit = 1024*1024;
             err.limit = 1024*1024;
 
+            dic_updated = false;
+            app_updated = false;
+
             timer.go(
             gui::time::infinity,
             gui::time::infinity);
@@ -61,28 +65,20 @@ namespace studio::build
                 app::logs::report = out;
                 app::logs::errors = err;
 
-                data_updated = dic::update();
-
-                eng::
-                vocabulary
-                vocabulary("../data/vocabulary.dat");
-                if (not eng::unittest::smoke(vocabulary, out))
+                dic_updated = dic::update();
+                if (dic_updated)
                     return;
 
-                array<int> redirects;
-                redirects.resize(vocabulary.size());
-                sys::in::pool pool("../data/dictionary_indices.dat");
-                for (int i=0; i<vocabulary.size(); i++) {
-                    eng::dictionary::index index; index << pool;
-                    redirects[i] = index.redirect; }
+                if (not eng::unittest::smoke(app::vocabulary, out))
+                    return;
 
                 media::logs::out = out;
                 media::logs::err = err;
                 media::out::data mediadata;
 
-                dic::compile(vocabulary, redirects, mediadata);
-                one::compile(vocabulary, redirects, mediadata);
-            //  two::compile(vocabulary, redirects, mediadata);
+                dic::compile(mediadata);
+                one::compile(mediadata);
+            //  two::compile(mediadata);
 
                 for (auto r: mediadata.unsquared)
                     dic::report::errors +=
@@ -94,12 +90,7 @@ namespace studio::build
 
                 mediadata.save();
 
-                data_updated =
-                data_updated or
-                media::report::updated;
-                out << (data_updated?
-                bold(yellow("UPDATED")):
-                bold(green("UP TO DATE")));
+                app_updated = true;
             };
         }
     };

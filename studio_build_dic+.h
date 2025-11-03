@@ -32,16 +32,13 @@ namespace studio::dic
         }
     }
 
-    void compile
-    (
-        eng::vocabulary& vocabulary,
-        array<int>& redirects,
-        media::out::data& data
-    )
+    void compile (media::out::data& data)
     {
         report::clear();
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
+
+        auto& vocabulary = app::vocabulary;
 
         using res = media::resource*;
         std::unordered_map<int, array<res>> entries2resources;
@@ -118,8 +115,7 @@ namespace studio::dic
                 if (!index) continue;
                 int n = *index;
 
-                if (redirects[n] >= 0)
-                n = redirects[n];
+                n = app::dictionary.redirect(n);
 
                 entries2resources[n] += &r;
             }
@@ -207,8 +203,7 @@ namespace studio::dic
                         if (!index) continue;
                         int n = *index;
 
-                        if (redirects[n] >= 0) n =
-                            redirects[n];
+                        n = app::dictionary.redirect(n);
 
                         if (n == entry) { weight -= penalty; continue; }
 

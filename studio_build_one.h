@@ -2,12 +2,7 @@
 #include "studio_build_one++.h"
 namespace studio::one
 {
-    void compile
-    (
-        eng::vocabulary& vocabulary,
-        array<int>& redirects,
-        media::out::data& data
-    )
+    void compile (media::out::data& data)
     {
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
@@ -55,7 +50,7 @@ namespace studio::one
             for (str s: entry.matches)
             course_matches[s].entries += &entry;
 
-            entry.vocabulate(vocabulary);
+            entry.vocabulate(app::vocabulary);
             for (str v: entry.vocabulary)
             course_vocabulary.emplace(v);
 
@@ -85,12 +80,12 @@ namespace studio::one
                 str w = eng::lowercased(s);
                 str ww = eng::lowercased(ss);
                 str www = eng::lowercased(sss);
-                if (not vocabulary.contains(w)
-                and not vocabulary.contains(s)
-                and not vocabulary.contains(ww)
-                and not vocabulary.contains(ss)
-                and not vocabulary.contains(www)
-                and not vocabulary.contains(sss))
+                if (not app::vocabulary.contains(w)
+                and not app::vocabulary.contains(s)
+                and not app::vocabulary.contains(ww)
+                and not app::vocabulary.contains(ss)
+                and not app::vocabulary.contains(www)
+                and not app::vocabulary.contains(sss))
                 report::errors += red(bold(w +" : ")) + link(entry);
             }
             
@@ -105,7 +100,7 @@ namespace studio::one
 
         report_duples(course);
 
-        report_missing_words(course_vocabulary, data.resources, vocabulary);
+        report_missing_words(course_vocabulary, data.resources);
 
         report_shortenings(data.resources);
 
@@ -154,7 +149,7 @@ namespace studio::one
                 if (r.entries.contains("+"))
                 matches +=
                     eng::parser::entries(
-                    vocabulary, r.title,
+                    app::vocabulary, r.title,
                     r.options.contains
                     ("Case"));
 
@@ -379,8 +374,8 @@ namespace studio::one
         data.resources);
 
         sensecontrol.report_unused(unused_resources);
-        suggestions(course, unused_resources, vocabulary);
-        order_check(course, vocabulary);
+        suggestions(course, unused_resources);
+        order_check(course);
 
         array<str>  unused_sounds;
         for (res r: unused_resources) if (r->sound())
@@ -421,7 +416,7 @@ namespace studio::one
 
             if (r->vocal())
                 report::audioq +=
-                cliplink(r, vocabulary, course_vocabulary);
+                cliplink(r, course_vocabulary);
 
             if (r->video())
                 report::videoq +=
@@ -499,7 +494,7 @@ namespace studio::one
         {
             auto words =
             eng::parser::entries(
-            vocabulary, e.word, false);
+            app::vocabulary, e.word, false);
 
             words += e.word.split_by(" "); // ursa major
             words.erase_if([](str const& s){ return s.size() < 2; });

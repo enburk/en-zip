@@ -126,15 +126,14 @@ namespace studio::one
 
     void report_missing_words(
         hashset<str> const& course_vocabulary,
-        array<media::resource> const& resources,
-        eng::vocabulary& vocabulary)
+        array<media::resource> const& resources)
     {
         hashmap<str, int> resources_vocabulary;
 
         for (auto& r: resources)
         {
             if (r.kind == "audio")
-            for (str s: eng::parser::entries(vocabulary, simple(r.title), false))
+            for (str s: eng::parser::entries(app::vocabulary, simple(r.title), false))
             if (str(s.upto(1)) != str(s.upto(1)).capitalized()
             and not course_vocabulary.contains(s))
                 resources_vocabulary[s]++;
@@ -402,7 +401,7 @@ namespace studio::one
         }
     };
 
-    auto all_entries(res r, eng::vocabulary& vocabulary)
+    auto all_entries(res r)
     {
         auto entries = r->entries;
         auto title = doc::html::untagged(r->title);
@@ -413,7 +412,7 @@ namespace studio::one
         and not r->options.contains("=="))
         or  entries.contains("+"))
             entries += eng::parser::entries(
-            vocabulary, title,
+            app::vocabulary, title,
             r->options.contains
             ("Case"));
         else
@@ -425,10 +424,10 @@ namespace studio::one
         return entries;
     }
 
-    str cliplink (res r, eng::vocabulary& vocabulary, hashset<str>& course_vocabulary)
+    str cliplink (res r, hashset<str>& course_vocabulary)
     {
         array<str> missed;
-        for (str x: all_entries(r, vocabulary))
+        for (str x: all_entries(r))
         if  (x.size() >= 2 // skip "," "!" "?"
         and not x.contains(" ") // "see you"
         and not course_vocabulary.contains(
@@ -452,9 +451,7 @@ namespace studio::one
     void suggestions
     (
         content::out::course& course,
-        hashset<res>& unused_resources,
-        eng::vocabulary& vocabulary
-    )
+        hashset<res>& unused_resources)
     {
         hashmap<str,
         array<res>> unused_resources_vocabulary;
@@ -478,7 +475,7 @@ namespace studio::one
             if (r->abstract.starts_with("to be "))
                 continue;
 
-            auto entries = all_entries(r, vocabulary);
+            auto entries = all_entries(r);
 
             for (str& s: entries)
             s = eng::lowercased(simple(s));
@@ -524,7 +521,7 @@ namespace studio::one
 
                     // if all words are known
                     bool well_known = true;
-                    for (str x: all_entries(r, vocabulary))
+                    for (str x: all_entries(r))
                     if  (x.size() >= 2 // skip "," "!" "?"
                     and  not x.contains(" ") // "see you"
                     and  not current_vocabulary.contains(
@@ -558,11 +555,7 @@ namespace studio::one
         }
     }
 
-    void order_check
-    (
-        content::out::course& course,
-        eng::vocabulary& vocabulary
-    )
+    void order_check (content::out::course& course)
     {
         hashmap<str, array<ent>> phrase_vocabulary;
         hashmap<str, array<ent>> single_vocabulary;

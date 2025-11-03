@@ -12,8 +12,6 @@ namespace app::dic
 
         void reload () try
         {
-            left.current_entry = ::eng::dictionary::entry{};
-            left.current_index = ::eng::dictionary::index{};
             left.reload();
             list.reload();
         }

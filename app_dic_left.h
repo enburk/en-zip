@@ -18,7 +18,6 @@ namespace app::dic::left
         int clicked = 0;
 
         eng::dictionary::entry current_entry;
-        eng::dictionary::index current_index;
 
         area ()
         {
@@ -34,43 +33,22 @@ namespace app::dic::left
 
         void reload ()
         {
+            current_entry = {};
             card.object.reload();
             quot.object.reload();
         }
 
         void select (int n)
         {
-            if (n < 0) return;
-            if (n >= vocabulary.data.size()) return;
-
-            timing t0;
-            std::filesystem::path dir = "../data";
-            if (!std::filesystem::exists(dir/"dictionary_indices.dat")) return;
-            if (!std::filesystem::exists(dir/"dictionary_entries.dat")) return;
-            std::ifstream indices_stream(dir/"dictionary_indices.dat", std::ios::binary);
-            std::ifstream entries_stream(dir/"dictionary_entries.dat", std::ios::binary);
-            sys::in::pool indices_pool;
-            sys::in::pool entries_pool;
-
-            indices_stream.seekg(n*eng::dictionary::index::size, std::ios::beg);
-            indices_pool.bytes.resize(eng::dictionary::index::size);
-            indices_stream.read((char*)(indices_pool.bytes.data()),
-            eng::dictionary::index::size);
-            eng::dictionary::index index;
-            index << indices_pool;
-
-            if (index.redirect >= 0) n =
-                index.redirect;
-            if (index.length == 0) return;
-            if (index.length == current_index.length
-            and index.offset == current_index.offset)
+            if (n < 0
+            or  n >= vocabulary.size())
                 return;
 
-            entries_stream.seekg(index.offset, std::ios::beg);
-            entries_pool.bytes.resize(index.length);
-            entries_stream.read((char*)(entries_pool.bytes.data()), index.length);
-            eng::dictionary::entry entry;
-            entry << entries_pool;
+            timing t0;
+            n = dictionary.redirect(n);
+            auto entry = dictionary.load(n);
+            if (entry.title == current_entry.title)
+                return;
 
             if (undoes.size() > 1000)
                 undoes.erase(
@@ -83,7 +61,6 @@ namespace app::dic::left
             redoes.clear();
 
             current_entry = entry;
-            current_index = index;
 
             array<str> links;
             links += entry.title;

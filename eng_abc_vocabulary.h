@@ -96,14 +96,14 @@ namespace eng
 
         explicit vocabulary_hashed () = default;
         explicit vocabulary_hashed (dictionary& dic)
-            : vocabulary_basic(dic)
+        : vocabulary_basic(dic)
         {
             hashmap.reserve(data.size());
             for (int i=0; i<data.size(); i++)
                 hashmap[data[i].title] = i;
         }
-        explicit vocabulary_hashed (std::filesystem::path path)
-            : vocabulary_basic(path)
+        explicit vocabulary_hashed (std::filesystem::path dir)
+        : vocabulary_basic(dir/"vocabulary.dat")
         {
             hashmap.reserve(data.size());
             for (int i=0; i<data.size(); i++)
@@ -174,7 +174,7 @@ namespace eng
 
         explicit vocabulary_cached () = default;
         explicit vocabulary_cached (dictionary& dic)
-            : vocabulary_basic(dic)
+        : vocabulary_basic(dic)
         {
             cache.resize(27*27*27);
             auto t = cache.begin();
@@ -191,10 +191,9 @@ namespace eng
                 ++t;
             }
         }
-        explicit vocabulary_cached (std::filesystem::path path)
-            : vocabulary_basic(path)
+        explicit vocabulary_cached (std::filesystem::path dir)
         {
-            sys::in::pool pool(path);
+            sys::in::pool pool(dir/"vocabulary.dat");
             vocabulary_basic::load(pool);
             cache.resize(27*27*27);
             for (int i=0; i<cache.size(); i++)

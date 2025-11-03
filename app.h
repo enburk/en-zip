@@ -21,6 +21,7 @@ namespace app
     double speed = 1.0;
 
     eng::vocabulary vocabulary;
+    eng::dictionary dictionary;
     namespace one { content::in::course course; }
     namespace two { content::in::course course; }
     namespace logs
@@ -33,39 +34,69 @@ namespace app
         optional_log errors;
     }
 
-    struct appdatatype
+    struct dicdatatype
     {
-        int n = 0;
         str error;
         str report;
+        dicdatatype () { reload(); }
+        void reload () try
+        {
+            error = "";
+            static int n = 0;
+            report = gray(monospace(
+            "dic data loading " +
+            std::to_string(++n) +
+                "...<br>"));
+
+            timing t0;
+            vocabulary = eng::vocabulary("../data/");
+
+            timing t1;
+            dictionary = eng::dictionary("../data/",
+            vocabulary.size());
+
+            timing t2;
+            report += gray(monospace(
+            "dic vocabulary " + format(t1-t0) + " sec<br>" +
+            "dic dictionary " + format(t2-t1) + " sec<br>" +
+            "dic load total " + format(t2-t0) + " sec<br>"));
+        }
+        catch (std::exception const& e) {
+        error = bold(red(e.what())); }
+    };
+    dicdatatype
+    dicdata;
+
+    struct appdatatype
+    {
+        str error;
+        str report;
+        array<eng::dictionary::index> dictionary_index;
+
+
         appdatatype () { reload(); }
         void reload () try
         {
             error = "";
+            static int n = 0;
             report = gray(monospace(
             "app data loading " +
             std::to_string(++n) +
                 "...<br>"));
 
             timing t0;
-            vocabulary =
-            eng::vocabulary("../data/"
-                "vocabulary.dat");
-
-            timing t1;
             one::course.load("../data/course.dat", "../data/course_entries.dat");
             two::course.load("../data/catalog.dat", "../data/catalog_entries.dat");
             one::course.root.shuffle();
 
-            timing t2;
+            timing t1;
             mediadata.reload();
 
-            timing t3;
+            timing t2;
             report += gray(monospace(
-            "app vocabulary  " + format(t1-t0) + " sec<br>" +
-            "app load course " + format(t2-t1) + " sec<br>" +
-            "app load media  " + format(t3-t2) + " sec<br>" +
-            "app load total  " + format(t3-t0) + " sec<br>"));
+            "app load course " + format(t1-t0) + " sec<br>" +
+            "app load media  " + format(t2-t1) + " sec<br>" +
+            "app load total  " + format(t2-t0) + " sec<br>"));
         }
         catch (std::exception const& e) {
         error = bold(red(e.what())); }

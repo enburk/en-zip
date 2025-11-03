@@ -20,8 +20,12 @@ namespace studia::dic
             consobar ()
             {
                 app::logs::times = timing;
+                timing << app::dicdata.report;
+                timing << app::dicdata.error;
+                timing << "";
                 timing << app::appdata.report;
                 timing << app::appdata.error;
+                timing << "";
 
                 consoles += &errors;
                 consoles += &usages;

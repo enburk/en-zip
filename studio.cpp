@@ -110,11 +110,17 @@ widget<Studio>
             if (build.dic_updated)
             {
                 app::dicdata.reload();
+                app::logs::times << app::dicdata.report;
+                app::logs::times << app::dicdata.error;
+                app::logs::times << "";
             }
 
             if (build.app_updated)
             {
                 app::appdata.reload();
+                app::logs::times << app::appdata.report;
+                app::logs::times << app::appdata.error;
+                app::logs::times << "";
                 studias.reload();
                 app.reload();
             }

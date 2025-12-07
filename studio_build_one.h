@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "content_entry+.h"
 #include "studio_build_one++.h"
 namespace studio::one
 {
@@ -192,9 +193,13 @@ namespace studio::one
                 if (r->vocal() and noaudio) continue;
                 if (r->video() and nopixed) continue;
 
-                if (r->sound() and entry.audio_fits(r->abstract))  sounds[&entry] += r;
-                if (r->vocal() and entry.audio_fits(r->abstract))  vocals[&entry] += r;
-                if (r->video() and entry.video_fits(r->Entries())) videos[&entry] += r;
+                if (r->sound() and sound_fits(entry, *r)) sounds[&entry] += r;
+                if (r->vocal() and vocal_fits(entry, *r)) vocals[&entry] += r;
+                if (r->video() and video_fits(entry, *r)) videos[&entry] += r;
+
+                if (r->vocal()
+                    and vocal_will_not_fit(entry, *r))
+                    resources_used.emplace(r);
 
                 if (r->vocal()
                 and all_words.size() > 1
@@ -217,7 +222,7 @@ namespace studio::one
                 auto& mm = (*medio)[&entry];
 
                 auto xx = mm;
-                xx.erase_if([&resources_single](res r){
+                xx.erase_if([](res r){
                 return r->options.contains("xlam"); });
                 if (not xx.empty()) mm = xx;
 
@@ -523,6 +528,9 @@ namespace studio::one
         sys::write("../data/needed_en.txt", needed_en);
         sys::write("../data/needed_us.txt", needed_us);
         sys::write("../data/needed_uk.txt", needed_uk);
+
+        for (str& s: needed_en) s += "<br>";
+        sys::write("../data/needed_en.htm", needed_en);
 
         // combine samples
         array<path> src =

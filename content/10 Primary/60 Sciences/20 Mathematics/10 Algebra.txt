@@ -10,18 +10,22 @@ transcendental numbers = трансцендентные числа              
 arithmetic progression = арифметическая прогрессия            # MATH- # TERM- # 10+
 geometric progression  = геометрическая прогрессия            # MATH- # TERM- # 16+
 
+---
 quadratic equation     = квадратное уравнение                 # 10+
 discriminant           = дискриминант                         # 10+
+
 ---
 function @ math        = в математике: функция                # 10+
 argument @ math        = аргумент ~ (функции)                 # MATH- # 10+
 parameter @ math       = параметр                             # MATH- # 10+
 coefficient            = коэффициент                          # 10+
+
 ---
 graph of a function    = график функции                       # 10+
 parabola               = парабола                             # 10+
 hyperbola              = гипербола                            # MATH- # 10+
 asymptote              = асимптота                            # MATH+ # 16+ /// Greek
+
 ---
 logarithm              = логарифм                             # MATH- # 16+
 natural logarithm      = натуральный логарифм                 # MATH+ # TERM+ # DEL # 16+

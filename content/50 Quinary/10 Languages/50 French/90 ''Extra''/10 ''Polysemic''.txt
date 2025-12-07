@@ -36,7 +36,7 @@ usher @ court           = a doorkeeper in a courtroom
 ***
 sole @ only             = only, unique
 sole @ law              = unmarried, widowed
-sole @ foot             = the bottom or plantar surface of the foot
+sole @ foot {n}         = the bottom or plantar surface of the foot
 : You ought to be scared to the soles of your feet.
 sole @ fish             = a flatfish of the family Soleidae
 
@@ -47,6 +47,7 @@ tissue paper
 
 /// lease
 /// lodge
+
 
 
 

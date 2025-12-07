@@ -4,7 +4,7 @@ hatchback       = хетчбэк    # TECH-
 crossover       = кроссовер  # TECH-
 minivan {Am.}   = минивэн    # TECH+ /// Br – people carrier
 pickup [truck]  = пикап      # TECH-
-buggy           = багги      # TECH- # 10+
+buggy @ car     = багги      # TECH- # 10+
 
 ===
 
@@ -20,6 +20,7 @@ Mercedes[-Benz] = «мерседес» # TECH- # TERM-
 
 Alfa Romeo      = «альфа-ромео» # TECH- # TERM-
 Ferrari         = «феррари»  # TECH- # TERM-
+
 
 
 

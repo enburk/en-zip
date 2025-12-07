@@ -6,8 +6,11 @@ alloy wheel
 muffler @ car
 : drive dragging muffler # SOUND
 
+blinker @ car
 
 estate [car]\\[station] wagon
+
+back out of the driveway
 
 turnstiles
 
@@ -20,3 +23,6 @@ cattle grid\\cattle guard
 : car tires over cattle guard # SOUND
 
 ring road\\beltway = a freeway that encircles a city
+
+freight
+freighter

@@ -22,6 +22,15 @@ apiece
 
 treasure trove     = a hidden treasure, ~ subsequently discovered
 
+-esque
+statuesque
+arabesque
+animesque
+burlesque
+grotesque
+humoresque
+picturesque
+
 ---
 haste
 hasty
@@ -346,7 +355,9 @@ frail
 frankincense
 frou-frou
 funnel
-glean
+
+glean              = gather little by little        # +ru
+
 grapple
 griddle
 grizzle
@@ -355,6 +366,7 @@ harbinger
 havoc
 hoe
 hors d'œuvre       # sic!
+
 
 
 

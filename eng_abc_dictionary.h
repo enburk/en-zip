@@ -140,10 +140,5 @@ namespace eng
             entry << pool;
             return entry;
         }
-
-        void load ()
-        {
-            entry_stream.seekg(0, std::ios::beg);
-        }
     };
 }

@@ -33,6 +33,9 @@ namespace studia
             played.object.view.ellipsis = true;
             audios.object.view.ellipsis = true;
             videos.object.view.ellipsis = true;
+            played.object.limit = 64*1024;
+            audios.object.limit = 64*1024;
+            videos.object.limit = 64*1024;
         }
 
         void on_change (void* what) override

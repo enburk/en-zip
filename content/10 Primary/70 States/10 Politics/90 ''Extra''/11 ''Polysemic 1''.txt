@@ -31,7 +31,7 @@ lobby @ vestibule        = фойе, вестибюль                         
 ***
 party @ politics         = партия (политическая), ~ сторона (юридическая) # 14+
 party @ gathering        = вечеринка, приём                              # 14+ /// party (informal) веселиться/отрываться на вечеринке
-party @ group            = группа, отряд, ~ иногда: партия ~ (геологическая и т.п.) # 14+
+party @ group {n}        = группа, отряд, ~ иногда: партия ~ (геологическая и т.п.) # 14+
 ===
 part @ music             = партия ~ (в музыке)                           # 16+
 game @ chess             = партия в шахматы                              # 14+
@@ -41,6 +41,7 @@ consignment              = партия товара, груз                  
 : I like to be treated as an individual. You like to be treated as a party.
 
 : Good resolutions are useless attempts to interfere with scientific laws
+
 
 
 

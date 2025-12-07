@@ -11,7 +11,10 @@ chronicle          = летопись, хроника, ~ вести хроник
 chronology         = хронология
 anachronism        = анахронизм                           # 16+
 
+---
 epoch              = эпоха
+epochal            = эпохальный
+
 manuscript         = манускрипт, рукопись                 # 16+
 ruins              = руины
 
@@ -20,6 +23,7 @@ falsification      = фальсификация                        # 14+
 
 archaeology %% Am. usually: archeology = археология                           # 14+
 artefact\\artifact = артефакт                             # 14+ /// %% Br. mainly: artefact ~ Am. mainly: artifact
+
 
 
 

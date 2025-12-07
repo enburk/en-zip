@@ -9,14 +9,14 @@ die                       = умереть, умирать, ~ затухать
 : Death and Life
 ===
 
-body @ human {n}          = тело
-head @ human {n}          = голова
-face @ human {n}          = лицо
-shoulder @ human          = плечо
-arm @ human               = рука
-hand @ human              = рука ~ (кисть)
-leg @ human               = нога
-knee @ human              = колено
+body  @ human {n}         = тело
+head  @ human {n}         = голова
+face  @ human {n}         = лицо
+shoulder  @ human {n}     = плечо
+arm  @ human {n}          = рука
+hand  @ human {n}         = рука ~ (кисть)
+leg  @ human {n}          = нога
+knee  @ human {n}         = колено
 ---
 finger @ human            = палец (на руке)
 thumb @ human             = большой палец
@@ -63,6 +63,7 @@ crazy @ adjective         = сумашедший, безумный, ~ чокну
 beauty
 beautiful
 : You're so beautiful.
+
 
 
 

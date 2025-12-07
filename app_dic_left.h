@@ -101,7 +101,7 @@ namespace app::dic::left
             timing t5; quot.object.reset(selected.audio, links);
             timing t6;
 
-            logs::times << gray(monospace(
+            if (false) logs::times << gray(monospace(
             "time file  " + format(t1-t0) + " sec<br>" +
             "time wiki  " + format(t2-t1) + " sec<br>" +
             "time html  " + format(t3-t2) + " sec<br>" +

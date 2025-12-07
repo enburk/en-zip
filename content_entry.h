@@ -53,9 +53,9 @@ namespace content::out
         array<str> vocabulary;
         array<str> phrases;
         array<str> errors;
-        bool noun = false;
-        bool verb = false;
-        bool adxx = false;
+        bool noun = false, mark_noun = false;
+        bool verb = false, mark_verb = false;
+        bool adxx = false, mark_adxx = false;
         str abstract;
         int line = 0;
         str link;
@@ -86,9 +86,9 @@ namespace content::out
 
             if (not eng.starts_with(":"))
             {
-                noun |= eng.contains("{n}");
-                verb |= eng.contains("{v}");
-                adxx |= eng.contains("{a}");
+                mark_noun |= eng.contains("{n}"); noun = mark_noun;
+                mark_verb |= eng.contains("{v}"); verb = mark_verb;
+                mark_adxx |= eng.contains("{a}"); adxx = mark_adxx;
                 eng.replace_all("{n}","");
                 eng.replace_all("{v}","");
                 eng.replace_all("{a}","");
@@ -169,62 +169,6 @@ namespace content::out
 
         bool the_noun () { return sense == "noun" or noun and not verb and not adxx; }
         bool the_verb () { return sense == "verb" or verb and not noun and not adxx; }
-
-        bool audio_fits (str r_abstract)
-        {
-            str a = abstract;
-            str s = r_abstract;
-            if (s == a)
-                return true;
-            if (s == a + "@@")
-                return true;
-            if (s.contains("@"))
-                return false;
-            if (s == a.upto_first("@"))
-                return true;
-
-            if (s.starts_with("a "  )) s = str(s.from(2)) + "@noun"; else
-            if (s.starts_with("an " )) s = str(s.from(3)) + "@noun"; else
-            if (s.starts_with("the ")) s = str(s.from(4)) + "@noun"; else
-            if (s.starts_with("to " )) s = str(s.from(3)) + "@verb"; else
-                return false;
-
-            if (s == a)
-                return true;
-
-            a = a.upto_first("@");
-
-            if (the_noun()
-            and s == a + "@noun")
-                return true;
-            
-            if (the_verb()
-            and s == a + "@verb")
-                return true;
-
-            return false;
-        }
-
-        bool video_fits (array<str> video_entries)
-        {
-            auto fits = video_entries;
-            for (str s: video_entries)
-            if (s.starts_with("a "  )) fits += str(s.from(2)); else
-            if (s.starts_with("an " )) fits += str(s.from(3)); else
-            if (s.starts_with("the ")) fits += str(s.from(4)); else
-            if (s.starts_with("to " )) fits += str(s.from(3)); else
-            {}
-
-            if (sense == ""
-            or  sense == "@")
-            for (str& s: fits)
-            s = s.extract_upto("@");
-
-            for (str s: fits)
-            if (video_matches.contains(s))
-            return true;
-            return false;
-        }
 
         void parse (str s)
         {

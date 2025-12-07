@@ -17,7 +17,7 @@ cufflink||cuff link
 stains
 frayed cuffs
 
-tweezers %% plural
+tweezers %% {plural}
 foot file
 
 fake straw
@@ -25,6 +25,7 @@ ribbon roll
 
 knitting pattern
 lace pattern
+chevron @ pattern = pattern
 
 ===
 
@@ -36,7 +37,7 @@ unitard
 
 ---
 window dressing
-%% {idiomatic} = a means of creating ~ a deceptively favourable ~ impression
+%% {idiomatic}    = a means of creating ~ a deceptively favourable ~ impression
 
 ===
 
@@ -51,3 +52,4 @@ twine @ thread
 mitts
 mittens
 : We have hands. More formally we might call them manual extremities
+

@@ -105,5 +105,8 @@
     <ClInclude Include="studia_r_report_one+.h" />
     <ClInclude Include="studio_build_one++.h" />
     <ClInclude Include="studia_r_contents.h" />
+    <ClInclude Include="content_entry+.h">
+      <Filter>content</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

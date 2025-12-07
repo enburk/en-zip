@@ -1,7 +1,7 @@
 food           = еда
 
 ---
-lunch          = ланч                       # 10+
+lunch {n}      = ланч                       # 10+
 business lunch = бизнес-ланч                # 10+
 : Lunch break!
 
@@ -14,6 +14,7 @@ ration         = рацион, паёк               # 10+
 diet {n}       = диета
 vegetarian     = вегетарианец, ~ вегетарианский # 10+
 vegan          = веган                      # 16+
+
 
 
 

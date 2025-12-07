@@ -1,9 +1,9 @@
 basic ~ vocabulary
 
 rain                  = дождь, ~ идти (о дожде)
-wind @ air            = ветер
+wind  @ air {n}       = ветер
 sky                   = небо
-cloud                 = облако
+cloud {n}             = облако
 rainbow               = радуга
 ---
 sunrise               = восход
@@ -48,6 +48,7 @@ winter                = зима
 spring @ season       = весна
 summer                = лето
 autumn\\fall @ season = осень
+
 
 
 

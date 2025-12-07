@@ -162,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="content.h" />
     <ClInclude Include="content_course.h" />
+    <ClInclude Include="content_entry+.h" />
     <ClInclude Include="content_entry.h" />
     <ClInclude Include="content_options.h" />
     <ClInclude Include="content_topic.h" />

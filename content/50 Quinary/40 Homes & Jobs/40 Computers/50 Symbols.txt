@@ -5,6 +5,7 @@ octothorpe//sharp//hash @ symbol = &sharp;
 at @ symbol               = @
 hat/caret @ symbol        = ^
 tick/backtick @ symbol    = `
+dash/hyphen @ hyphen      = -
 
 ---
 underscore @ symbol       = _
@@ -17,5 +18,6 @@ pipe @ symbol             = |
 
 asterisk//star//splat @ symbol = *
 bullet//splat @ symbol    = •
+
 
 

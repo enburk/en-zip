@@ -1,8 +1,10 @@
-line            = линия
+line {n}          = линия
 
-horizontal line = горизонтальная линия
-vertical line   = вертикальная линия
-radial line     = радиальная линия # 14+
-zigzag          = зигзаг
-spiral          = спираль, спиральный
+horizontal line   = горизонтальная линия
+vertical line     = вертикальная линия
+radial line       = радиальная линия # 14+
+zigzag || zig-zag = зигзаг
+spiral            = спираль, спиральный
+
+
 

@@ -5,6 +5,7 @@ mole @ spot               = родинка
 mole @ unit               = моль %% единица измерения ~ количества вещества
 mole @ sauce              = моле %% мексиканский соус
 moth                      = моль %% насекомое
+
 ***
 conductor {Br.} @ tickets = кондуктор
 conductor @ music         = дирижёр
@@ -14,6 +15,7 @@ guard\\conductor @ train  = проводник ~ (в поезде)
 guide @ person            = экскурсовод, гид, ~ проводник
 guide @ book              = руководство, ~ путеводитель
 : “The Guide is definitive. ~ Reality is frequently ~ inaccurate.”
+
 ***
 course @ path             = курс, направление, ход                # 10+
 : Maintain 25,000 feet, course 0-4-0. # 10+
@@ -21,6 +23,7 @@ course @ programme        = курс обучения, ~ курс лекций, 
 exchange rate             = валютный '''курс'''                   # 14+
 golf course               = поле для гольфа                       # 10+
 main course               = главное блюдо                         # 10+
+
 ***
 express @ transport       = скорый, экспресс %% поезд, автобус
 express @ convey          = выражать
@@ -28,6 +31,11 @@ expression @ emotion      = экспрессия
 expression @ idiom        = выражение
 facial expression         = выражение лица
 : Nobody else ever called me a glorious young beast. I like that. Glorious young beast '''expresses''' exactly what I like to be.
+
+***
+charter @ doc             = хартия
+charter @ transport       = чартер, чартерный
+
 ***
 terminal @ airport        = терминал ~ (аэропорта)                # 10+
 terminal @ railroad       = конечная станция, ~ вокзал            # 10+
@@ -37,5 +45,6 @@ terminal @ electro        = клемма
 terminal @ end            = заключительный, конечный
 = умирающий (о больном), ~ смертельный (о болезни)
 terminator @ electro      = в электронике: ~ ограничитель, ~ терминатор
+
 
 

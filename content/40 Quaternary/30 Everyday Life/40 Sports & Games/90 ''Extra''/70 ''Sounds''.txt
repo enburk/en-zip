@@ -1,5 +1,7 @@
 sounds
 
+: card flip # SOUND
+
 : canoe: lauch from shore # SOUND
 : lift canoe, dump water out # SOUND
 
@@ -62,4 +64,5 @@ sounds
 : billiards: shot into pocket # SOUND
 : card flip over, grab and slide # SOUND
 : playing cards: shuffling # SOUND
+
 

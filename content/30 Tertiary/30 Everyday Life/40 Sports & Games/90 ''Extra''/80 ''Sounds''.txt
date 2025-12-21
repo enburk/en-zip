@@ -11,9 +11,6 @@ bouncing ball      # SOUND
 chalking cue       # SOUND
 dominoes clack     # SOUND
 
-card flip          # SOUND
-cards shuffle      # SOUND
-
 ===
 
 : basketball chants: ~ defense # SOUND

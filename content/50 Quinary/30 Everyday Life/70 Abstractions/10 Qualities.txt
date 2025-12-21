@@ -3,11 +3,11 @@ qualities
 crumpled
 
 ---
-concordant               /// French/Latin
-discordant               /// French/Latin
+concordant                  /// French/Latin
+discordant                  /// French/Latin
 
 ---
-definitive               /// French/Latin
+definitive                  /// French/Latin
 : To put it as briefly and basically as possible, definite means precise, clearly defined. Definitive means authoritatively conclusive
 : The Hitch Hiker's Guide to the Galaxy is an indispensable companion
 
@@ -29,14 +29,18 @@ shaky
 : whistle: short shaky blow # SOUND
 
 ---
-luxurious %% {adjective} = of or pertaining to luxury     # +ru /// Latin
-luxuriant %% {adjective} = having abundant or lush growth # +ru /// Latin
+luxurious %% {adjective}    = of or pertaining to luxury  # +ru /// Latin
+luxuriant %% {adjective}    = having abundant or lush growth # +ru /// Latin
 
 ---
-candid                   = truthful and straightforward   # +ru
-infallible               = incapable of making mistakes or being wrong # +ru
+presumptive %% {adjective}  = presumed                    # +ru
+presumptuous %% {adjective} = overly bold                 # +ru
 
-pedate                   = having a foot or feet          # +ru
+---
+candid                      = truthful and straightforward # +ru
+infallible                  = incapable of making mistakes or being wrong # +ru
+
+pedate                      = having a foot or feet       # +ru
 
 effervescent
 frothy
@@ -50,3 +54,4 @@ salty
 briny
 brackish
 saline
+

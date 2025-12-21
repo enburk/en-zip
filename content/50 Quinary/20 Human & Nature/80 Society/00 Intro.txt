@@ -4,6 +4,7 @@ society
 ---
 acquaint          /// French
 acquaintance      /// French
+: introduction -- a bringing into acquaintance with
 : “Picked up!” Oh no... too dégagé, Mr. Sartorius, too dégagé. I should say “had the priveledge of becoming acquainted with.”
 
 
@@ -19,6 +20,8 @@ kvetch
 clever clogs
 : Clever Clogs is a slightly pejorative name for a person of above-average intelligence and below-average modesty.
 : I’m a Clever Clogs!
+
+tattle            = tell tales or secrets                                                   # +ru
 
 ---
 beguile
@@ -87,6 +90,7 @@ clandestine       = done or kept in secret, ~ sometimes to conceal an illicit or
 : Londoners are just permanently petulant, irritated. I think we wake up taking offense
 
 : Society--civilized society, at least--is never very ready to believe anything to the detriment /// of those who are both rich and fascinating
+
 
 
 

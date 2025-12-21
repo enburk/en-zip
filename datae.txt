@@ -805,14 +805,17 @@ a barricade.wav
 a basketball team.wav
 a bathroom.wav
 a behemoth.wav
+a bird of prey.wav
 a bonanza.wav
 a bubbling noise.wav
+a carriage pulled by horses.wav
 a caucus.wav
 a cesspool.wav
 a cinematographer.wav
 a circle.wav
 a city.wav
 a clever trick.wav
+a community.wav
 a duplex.wav
 a fallacy.wav
 a farce.wav
@@ -826,6 +829,7 @@ a god.wav
 a great deal.wav
 a great many.wav
 a guest.wav
+a human.wav
 a hyperbole.wav
 a jinx.wav
 a license.wav
@@ -840,6 +844,8 @@ a national park.wav
 a natural tendency.wav
 a necklace.wav
 a Nobel Prize.wav
+a nomad.wav
+a parenthesis.wav
 a party.wav
 a pirate.wav
 a pleasance.wav
@@ -850,6 +856,7 @@ a ransom.wav
 a rarity.wav
 a removal.wav
 a replica.wav
+a result.wav
 a sabbatical.wav
 a scandalmonger.wav
 a short time.wav
@@ -865,6 +872,7 @@ a tumor.wav
 a vigorous attack.wav
 a visionary.wav
 a wart.wav
+a written statement.wav
 a yielding.wav
 a zero.wav
 abandon.wav
@@ -896,16 +904,19 @@ absurd.wav
 abundance.wav
 abundant.wav
 abuse.wav
+abusiveness ### 2.wav
 abusiveness.wav
 abuzz.wav
 academic.wav
 accelerate.wav
 accelerator.wav
+accent ### 2.wav
 accent.wav
 acceptable.wav
 acceptance.wav
 accepted.wav
 accepting.wav
+access.wav
 accessible.wav
 accident.wav
 accidental.wav
@@ -917,6 +928,7 @@ accomplishment.wav
 accord.wav
 according to a system.wav
 according to legend.wav
+accost.wav
 accountability.wav
 accountants.wav
 accredit.wav
@@ -942,14 +954,17 @@ acrophobia -- the fear of heights.wav
 acrophobia.wav
 across.wav
 action figure.wav
+action.wav
 actions.wav
 active.wav
 activity.wav
 actor.wav
 acts.wav
 actuality.wav
+acuminate.wav
 adamant.wav
 adapt.wav
+add.wav
 adept.wav
 adequately.wav
 adhesion.wav
@@ -973,6 +988,7 @@ advance.wav
 advancement.wav
 advantage.wav
 advantageous.wav
+adventuresome.wav
 adverse.wav
 advisable.wav
 advise.wav
@@ -1010,6 +1026,7 @@ agreeable.wav
 agreeing.wav
 agreement.wav
 agricultural.wav
+ahead of time.wav
 aid.wav
 aim.wav
 aimless.wav
@@ -1025,6 +1042,7 @@ alcove.wav
 aleatoric ### 2.wav
 aleatoric.wav
 alert.wav
+alertness.wav
 alien.wav
 alienable.wav
 align.wav
@@ -1038,12 +1056,15 @@ allegorical.wav
 allergen ### 2.wav
 allergen.wav
 alliance.wav
+allow.wav
 allowable.wav
+allowed.wav
 alluring.wav
 ally.wav
 aloofness.wav
 alphabetical.wav
 alteration.wav
+altercate.wav
 altering.wav
 although.wav
 alumnus.wav
@@ -1051,6 +1072,7 @@ always.wav
 amass.wav
 amateur.wav
 amaze.wav
+amazement.wav
 amazing.wav
 ambassador.wav
 ambiguous.wav
@@ -1061,6 +1083,8 @@ amenable.wav
 amendment.wav
 amicability.wav
 amnesty.wav
+amorphous.wav
+amount.wav
 amplification.wav
 amputation.wav
 amusement.wav
@@ -1080,16 +1104,20 @@ an equalizer.wav
 an exaggerated statement.wav
 an exorbitant amount of gifts.wav
 an expansion.wav
+an extinguishing.wav
 an extravaganza.wav
 an oasis.wav
 an oceanaut.wav
 an office.wav
 an olympic champion.wav
 ancestry.wav
+anchor ### 2.wav
 anchor.wav
 anchored.wav
+ancient ### 2.wav
 ancient times.wav
 ancient.wav
+androids.wav
 anesthetic.wav
 anesthetize.wav
 anew.wav
@@ -1098,10 +1126,12 @@ angle.wav
 angry.wav
 angst.wav
 animal.wav
+animalistic ### 2.wav
 animalistic.wav
 animals.wav
 animate.wav
 annalist.wav
+annihilation.wav
 annotation.wav
 announcement.wav
 annoy.wav
@@ -1111,6 +1141,7 @@ annoying.wav
 anomaly.wav
 anonymous.wav
 another.wav
+antagonist.wav
 antagonize.wav
 antechamber.wav
 anticlimactic.wav
@@ -1123,6 +1154,7 @@ antithesis ### 2.wav
 antithesis.wav
 antlered.wav
 antsy.wav
+anxious.wav
 apart.wav
 apartment.wav
 apartments.wav
@@ -1134,6 +1166,7 @@ apolitical.wav
 apologetic.wav
 apothecary.wav
 appalled.wav
+appalling.wav
 apparent.wav
 apparition.wav
 appeal.wav
@@ -1152,14 +1185,18 @@ appointee.wav
 appraisal.wav
 appreciation.wav
 apprehension.wav
+apprehensive.wav
 approaching.wav
 appropriate.wav
 approval.wav
 approve.wav
+approved.wav
 approximate.wav
+apropos.wav
 apt.wav
 apterous.wav
 archaic.wav
+archenemy ### 2.wav
 archenemy.wav
 architect.wav
 arduous.wav
@@ -1175,6 +1212,7 @@ armed forces.wav
 armorial.wav
 arms akimbo.wav
 around.wav
+arousal.wav
 arrange.wav
 arrangement.wav
 arresting -- catching and holding attention.wav
@@ -1204,11 +1242,13 @@ aspersed.wav
 asphyxiated.wav
 aspirant non-standard ## = ### ɐsˈpaɪɹɐnt.wav
 aspire.wav
+aspiring.wav
 assailant.wav
 assassin.wav
 assault.wav
 assemble.wav
 assembly.wav
+assert.wav
 assertion.wav
 assessment.wav
 assimilate.wav
@@ -1219,8 +1259,10 @@ assumed.wav
 assumption.wav
 assurance.wav
 astonishing.wav
+astonishment ### 2.wav
 astonishment.wav
 astounding.wav
+asymmetrical.wav
 asynchronous.wav
 at regular intervals.wav
 at sea.wav
@@ -1247,6 +1289,7 @@ atypical.wav
 audacious.wav
 audacity.wav
 audience.wav
+auditory.wav
 augur.wav
 augury.wav
 august @ adjective.wav
@@ -1266,6 +1309,7 @@ aviation.wav
 avoid.wav
 avoidable.wav
 avoidance.wav
+awaken.wav
 awakening.wav
 awareness.wav
 away.wav
@@ -1307,6 +1351,7 @@ bandage ### 2.wav
 bandage.wav
 bandit.wav
 banditry.wav
+bandwidth.wav
 baneful.wav
 bangle.wav
 banish ### 2.wav
@@ -1315,6 +1360,7 @@ banished.wav
 banishment.wav
 banking.wav
 bankrupt.wav
+banned.wav
 banner.wav
 banquet.wav
 banter.wav
@@ -1335,6 +1381,7 @@ basketball.wav
 bate.wav
 baton.wav
 battle.wav
+bay.wav
 bazaar.wav
 bearable.wav
 bearings.wav
@@ -1357,7 +1404,9 @@ behaved.wav
 behaviour.wav
 behind.wav
 beige.wav
+being.wav
 beleaguer.wav
+beliefs.wav
 believable ### 2.wav
 believable.wav
 believe.wav
@@ -1367,11 +1416,14 @@ bellicosity.wav
 belligerency.wav
 belligerent.wav
 bellow.wav
+bellowing.wav
 belly.wav
 bellyache.wav
 belongings.wav
 beloved.wav
 beltway.wav
+Benedict Arnold.wav
+benefactor.wav
 beneficence.wav
 beneficial.wav
 benefit.wav
@@ -1388,10 +1440,13 @@ bewilder.wav
 bewilderment.wav
 bewitch.wav
 bewitchment.wav
+bewray.wav
 beyond.wav
 bidden.wav
 big.wav
 bigot.wav
+bilateral.wav
+bilingual ### 2.wav
 bilingual.wav
 billet.wav
 binding.wav
@@ -1421,9 +1476,12 @@ blandishment.wav
 blaring.wav
 blarney ### 2.wav
 blarney.wav
+blatancy.wav
 blather.wav
 bleak.wav
 bleary.wav
+blend.wav
+blessed ### 2.wav
 blessed.wav
 blissful.wav
 blister -- to attack with sharp words.wav
@@ -1451,14 +1509,17 @@ bodily.wav
 body of troops.wav
 body of water.wav
 body.wav
+bogus.wav
 bond.wav
 bondage.wav
 bondman.wav
 bone.wav
 book.wav
+booklet.wav
 bookshelf.wav
 boor.wav
 boorish.wav
+booty.wav
 border of the country.wav
 bordering.wav
 borderline.wav
@@ -1519,6 +1580,7 @@ broadside.wav
 broken.wav
 brokenhearted.wav
 bronze.wav
+brooch.wav
 broody.wav
 brook.wav
 brotherhood.wav
@@ -1530,6 +1592,7 @@ brutality.wav
 buckle.wav
 budgetary.wav
 buffer.wav
+buggy.wav
 building.wav
 buildings.wav
 bulge.wav
@@ -1539,6 +1602,7 @@ bump.wav
 bumper.wav
 bumpkin.wav
 bumpy.wav
+bundled.wav
 bungalow.wav
 buoyancy.wav
 burden.wav
@@ -1548,6 +1612,7 @@ burglarize.wav
 burglary.wav
 burgle.wav
 burning.wav
+burrow.wav
 busy.wav
 busybody.wav
 buzzwords.wav
@@ -1563,6 +1628,7 @@ cacophonous.wav
 cacophony.wav
 cage.wav
 cagey.wav
+calcify.wav
 calculation.wav
 calender.wav
 calibration.wav
@@ -1593,6 +1659,7 @@ capacity.wav
 capital.wav
 capsize.wav
 capsized.wav
+capsule.wav
 captain.wav
 caption.wav
 captivate.wav
@@ -1601,6 +1668,8 @@ captivity.wav
 capture.wav
 car accident.wav
 car.wav
+carafe.wav
+carcass ### 2.wav
 carcass.wav
 carcinogens.wav
 card game.wav
@@ -1609,12 +1678,15 @@ career.wav
 careful.wav
 careless.wav
 carelessly.wav
+carelessness.wav
 caretaker.wav
 careworn.wav
 carmine.wav
 carnage.wav
+carnal.wav
 carpet.wav
 carping.wav
+carriage.wav
 carried out.wav
 carrion.wav
 cartable.wav
@@ -1622,6 +1694,7 @@ cartridge.wav
 carve.wav
 carving.wav
 cascade.wav
+case.wav
 cast forth.wav
 cast.wav
 castaway ### 2.wav
@@ -1633,6 +1706,7 @@ cataclysmic.wav
 catastrophic.wav
 catatonic state.wav
 catatonic.wav
+cathartic.wav
 catholic.wav
 caucus ### 2.wav
 caucus.wav
@@ -1647,6 +1721,7 @@ cease.wav
 ceaseless.wav
 cede.wav
 celebratory.wav
+cement.wav
 censure ### 2.wav
 censure.wav
 centennial.wav
@@ -1688,6 +1763,7 @@ characters.wav
 charade.wav
 charge.wav
 charily.wav
+chariot ### 2.wav
 chariot.wav
 charity.wav
 charm.wav
@@ -1695,6 +1771,7 @@ charmed.wav
 chatterbox.wav
 chatty.wav
 chauffeur.wav
+chauvinist.wav
 cheap.wav
 cheapen.wav
 cheapskate.wav
@@ -1707,6 +1784,7 @@ cherish.wav
 cherished.wav
 chevron.wav
 chicanery.wav
+chide ### 2.wav
 chide.wav
 chieftain.wav
 chiffon.wav
@@ -1729,6 +1807,7 @@ Christmas.wav
 chromatic.wav
 chronic case.wav
 chronicler.wav
+chubby.wav
 churlish.wav
 chute.wav
 cilia.wav
@@ -1747,6 +1826,7 @@ civil.wav
 civility.wav
 civilization.wav
 civilized.wav
+claimant.wav
 clammy.wav
 clamor.wav
 clangor.wav
@@ -1760,6 +1840,7 @@ classified.wav
 classify.wav
 classroom.wav
 classy.wav
+clatter ### 2.wav
 clatter.wav
 clause.wav
 claw.wav
@@ -1805,6 +1886,7 @@ clunker.wav
 clustered.wav
 clusters.wav
 clutch -- to grasp strongly.wav
+coagulable.wav
 coalition.wav
 coarse.wav
 coarseness.wav
@@ -1824,10 +1906,12 @@ cognition.wav
 coherent.wav
 cohesion.wav
 coin -- to make up.wav
+coin.wav
 coinage.wav
 coincide.wav
 coincidence.wav
 cold medicine.wav
+coldly.wav
 collaborate.wav
 collaboration.wav
 collage.wav
@@ -1856,6 +1940,7 @@ combine.wav
 combining.wav
 combustible.wav
 come apart into pieces.wav
+come home.wav
 come into fashion.wav
 comedian.wav
 comely.wav
@@ -1879,12 +1964,15 @@ commendation.wav
 commerce.wav
 commercialize.wav
 commercialized.wav
+commit.wav
 committed.wav
 committee.wav
 common boundary.wav
 common.wav
+commonly.wav
 commonplace.wav
 commonsensical way.wav
+commotion.wav
 communal.wav
 communication.wav
 communicative.wav
@@ -1892,6 +1980,7 @@ commute.wav
 companion.wav
 companionable.wav
 company.wav
+compared to the first.wav
 compartment.wav
 compartmentalize.wav
 compassionate.wav
@@ -1900,6 +1989,7 @@ compatible.wav
 compensate.wav
 compensation.wav
 competence.wav
+competition ### 2.wav
 competition.wav
 complacency.wav
 complaint.wav
@@ -1907,6 +1997,7 @@ complement.wav
 complete.wav
 completely by happenstance.wav
 completely.wav
+completeness.wav
 complex @ adjective ## {1} ### com'plex.wav
 complexion.wav
 complexity.wav
@@ -1933,6 +2024,7 @@ computing.wav
 con.wav
 conceal.wav
 concealed.wav
+concealment.wav
 conceited.wav
 conceivable.wav
 concentric layers.wav
@@ -1969,6 +2061,7 @@ confirmed.wav
 confirming.wav
 conflict.wav
 conflicting.wav
+confluence.wav
 conform.wav
 conformity ### 2.wav
 conformity.wav
@@ -1977,11 +2070,13 @@ confuse.wav
 confusion.wav
 confutation.wav
 congestion.wav
+conglomerate.wav
 congratulatory.wav
 congregation.wav
 congress.wav
 conjectural.wav
 conjoining.wav
+conjoint.wav
 conjuror [+][conjurer] ### 2.wav
 conjuror [+][conjurer].wav
 connected.wav
@@ -1990,6 +2085,7 @@ conquered.wav
 conscious.wav
 consciousness.wav
 consecrate.wav
+consecrated.wav
 consequences.wav
 consequent.wav
 consider.wav
@@ -2038,6 +2134,8 @@ conventional.wav
 convey.wav
 convincing.wav
 cooked.wav
+cooled.wav
+cooperate.wav
 cooperation.wav
 cooperative.wav
 coordination.wav
@@ -2051,17 +2149,20 @@ corrected.wav
 correcting.wav
 corrective.wav
 corrigible.wav
+corroborate.wav
 corrosive.wav
 corrupt.wav
 corruptible.wav
 corruption.wav
 corruptive.wav
 coruscate.wav
+cosily.wav
 cosmopolitan.wav
 cost.wav
 costly.wav
 cosy.wav
 council.wav
+counted.wav
 counteraction.wav
 counterbalance.wav
 counterclaim.wav
@@ -2091,6 +2192,7 @@ crannied.wav
 craving for alcohol.wav
 crawly.wav
 create.wav
+creating.wav
 creation.wav
 creativeness.wav
 creature.wav
@@ -2121,8 +2223,10 @@ cruelty.wav
 cruiser.wav
 cruising.wav
 crumb.wav
+crushed.wav
 crust.wav
 crying.wav
+cuddle.wav
 cul de sac.wav
 culpable.wav
 cultured.wav
@@ -2131,18 +2235,22 @@ cumbersome.wav
 cumulative.wav
 cunning.wav
 curative.wav
+cure.wav
 curing.wav
 current.wav
 curse.wav
+cursed.wav
 cursing.wav
 cushion.wav
 custody.wav
 custom.wav
+customarily.wav
 customary.wav
 customer.wav
 customs.wav
 cut off.wav
 cutback.wav
+cyborg.wav
 cyclone.wav
 cynicism.wav
 dabble.wav
@@ -2151,16 +2259,19 @@ daintiness.wav
 dainty -- small and pretty.wav
 damaged.wav
 damaging.wav
+damned.wav
 dampen.wav
 dancing.wav
 dandle.wav
 dandy.wav
 danger.wav
+dangerous weapon.wav
 dangerous.wav
 dapper ### 2.wav
 dapper.wav
 daring.wav
 darksome.wav
+dashiki.wav
 dashing.wav
 daughters.wav
 daunt.wav
@@ -2186,6 +2297,7 @@ debilitated.wav
 debilitating.wav
 debility.wav
 debt.wav
+debut.wav
 decadent.wav
 decay.wav
 decaying.wav
@@ -2204,6 +2316,8 @@ declamatory.wav
 declaration.wav
 decommission.wav
 decontaminated.wav
+decorated.wav
+decoration.wav
 decorations.wav
 decrease @ verb.wav
 decrepitude.wav
@@ -2229,8 +2343,10 @@ definition.wav
 definitive.wav
 deflated.wav
 deflective.wav
+deflower ### 2.wav
 deflower.wav
 deformity.wav
+defrayal.wav
 defunct.wav
 defuse.wav
 degree.wav
@@ -2263,6 +2379,7 @@ demons.wav
 demoralization.wav
 demoralize.wav
 demotion.wav
+demount.wav
 denial.wav
 denomination.wav
 denounce.wav
@@ -2298,11 +2415,14 @@ descendants.wav
 descent.wav
 description.wav
 descriptive.wav
+deserving.wav
+desideratum.wav
 design.wav
 designated.wav
 designation.wav
 desire.wav
 desired.wav
+desirous ### 2.wav
 desirous.wav
 desolate @ adjective.wav
 desolate @ verb.wav
@@ -2312,6 +2432,7 @@ desperate.wav
 despicable.wav
 despise.wav
 despot.wav
+despotism.wav
 destiny.wav
 destitute.wav
 destroy.wav
@@ -2323,6 +2444,7 @@ detailed.wav
 details.wav
 detectible.wav
 detention.wav
+determinant.wav
 determined.wav
 detestation.wav
 detonation.wav
@@ -2348,6 +2470,8 @@ diapason.wav
 diction.wav
 die.wav
 difference.wav
+different languages.wav
+different.wav
 differing.wav
 difficult.wav
 difficulty.wav
@@ -2390,6 +2514,7 @@ disable.wav
 disabler.wav
 disadvantage.wav
 disadvantageous.wav
+disagree.wav
 disagreeable.wav
 disagreeing.wav
 disagreement.wav
@@ -2426,6 +2551,7 @@ discordance.wav
 discordant.wav
 discount.wav
 discourage.wav
+discouragement.wav
 discourteous.wav
 discrepancy.wav
 discretional.wav
@@ -2448,6 +2574,7 @@ disguise.wav
 disguised.wav
 disgusted.wav
 dish.wav
+dishearten.wav
 disheartenment.wav
 dishevel.wav
 disheveled.wav
@@ -2504,10 +2631,12 @@ dissatisfactory.wav
 dissections.wav
 disseminate.wav
 dissenting.wav
+dissimilar.wav
 dissimilarity.wav
 dissipate.wav
 dissolve.wav
 dissuade.wav
+distance.wav
 distant.wav
 distasteful.wav
 distinct.wav
@@ -2527,6 +2656,7 @@ diverge.wav
 divergence ## {2} ### divergence.wav
 diversion.wav
 divert.wav
+divide.wav
 divided.wav
 divination.wav
 divine.wav
@@ -2541,6 +2671,7 @@ doctor.wav
 doctrine.wav
 dodder.wav
 dodging.wav
+doleful.wav
 dollars.wav
 dolt.wav
 doltish.wav
@@ -2576,11 +2707,13 @@ drawing back.wav
 drawl.wav
 dread.wav
 dreadful.wav
+dream.wav
 dreams.wav
 dreary.wav
 drench.wav
 dress.wav
 drifting.wav
+drive.wav
 drone.wav
 droning.wav
 drop.wav
@@ -2604,10 +2737,13 @@ dwarfish.wav
 dwelling.wav
 dynasty.wav
 dysfunctional.wav
+each way.wav
 each.wav
 eagerly.wav
+earlier.wav
 earnestness.wav
 earthquake.wav
+easement.wav
 easier.wav
 east.wav
 easterly.wav
@@ -2634,7 +2770,9 @@ effeminacy.wav
 effloresce.wav
 effluence.wav
 effort.wav
+egg-shaped.wav
 elaborate @ verb.wav
+elapse ### 2.wav
 elapse.wav
 elasticity.wav
 elated.wav
@@ -2652,23 +2790,30 @@ elegiac ## {2}.wav
 element.wav
 elementary.wav
 elements.wav
+elephantine ## {2} ### elefantain.wav
 elevate.wav
 elicit.wav
+elliptical.wav
 elongate.wav
 eloquent.wav
+elucidate.wav
 elude.wav
 emanation.wav
 emancipate.wav
 embassy.wav
 embellish.wav
 embellished.wav
+embellishment.wav
 embellishments.wav
 embezzled.wav
 embitter.wav
 embittered.wav
+emblem.wav
 emblematic.wav
 embolden.wav
+embosom.wav
 emboss.wav
+embrace.wav
 emergency.wav
 emission.wav
 emit.wav
@@ -2686,6 +2831,7 @@ emulsion.wav
 encampment.wav
 encase.wav
 enchant.wav
+enchanted.wav
 enchanter.wav
 enchantment.wav
 encircle.wav
@@ -2702,6 +2848,7 @@ endangered.wav
 ending.wav
 endless.wav
 endorsement.wav
+endowment.wav
 endurance.wav
 enduring.wav
 enemies.wav
@@ -2739,8 +2886,10 @@ enraged.wav
 enrich.wav
 enslave.wav
 ensnare.wav
+ensuing.wav
 entangle ### 2.wav
 entangle.wav
+enter.wav
 entertain.wav
 entertaining.wav
 entertainment.wav
@@ -2751,6 +2900,7 @@ entity.wav
 entrants.wav
 entreaty.wav
 entrust.wav
+entry.wav
 enunciate.wav
 enunciation.wav
 envelop.wav
@@ -2772,6 +2922,7 @@ equivocal.wav
 era.wav
 erasure.wav
 erect.wav
+errant.wav
 erroneous.wav
 error.wav
 erudition.wav
@@ -2779,6 +2930,7 @@ escalate.wav
 escalation.wav
 escapable.wav
 escape.wav
+escapism.wav
 essayist.wav
 essays.wav
 essential.wav
@@ -2800,8 +2952,10 @@ etiquette.wav
 euphoria.wav
 euphoric.wav
 evacuation.wav
+evade ### 2.wav
 evade.wav
 evaluate.wav
+evaluation.wav
 evaluations.wav
 evanescence ### 2.wav
 evanescence.wav
@@ -2823,6 +2977,7 @@ eviction.wav
 evidence.wav
 evil gossip.wav
 evil.wav
+eviscerate.wav
 evolving.wav
 ex.wav
 exacerbate.wav
@@ -2833,6 +2988,8 @@ exaggerate.wav
 exaggerated.wav
 exaggeration.wav
 exalt.wav
+exaltation.wav
+exalted.wav
 examination.wav
 examine.wav
 exasperation.wav
@@ -2842,8 +2999,10 @@ excess.wav
 excessive.wav
 excessiveness.wav
 excitability.wav
+excited.wav
 exciting.wav
 exclude.wav
+exclusion.wav
 exclusive.wav
 exclusivity ### 2.wav
 exclusivity.wav
@@ -2863,7 +3022,8 @@ exhilarate.wav
 exile.wav
 existence.wav
 exists.wav
-exit.wav
+exit ## {1} ### egzet.wav
+exit ## {2} ### ekset.wav
 expand.wav
 expandability.wav
 expansible.wav
@@ -2881,11 +3041,14 @@ experiential.wav
 expert.wav
 expertise.wav
 expiration.wav
+expire.wav
 explain.wav
 explanation.wav
 explosion.wav
 explosive.wav
+exponent.wav
 expose.wav
+expounder.wav
 expressed.wav
 expressible.wav
 expression.wav
@@ -2914,11 +3077,14 @@ eye.wav
 fable.wav
 fabrications.wav
 fabulous.wav
+face to face.wav
 face.wav
 faceless.wav
 facet.wav
 facile.wav
+facilitate.wav
 faction.wav
+factor ### 2.wav
 factor.wav
 facts.wav
 factual ### 2.wav
@@ -2955,6 +3121,7 @@ fashionable.wav
 fasten.wav
 fastener.wav
 fasteners.wav
+fat.wav
 fatalistic.wav
 fate.wav
 father.wav
@@ -3011,7 +3178,9 @@ filth ### 2.wav
 filth.wav
 filthy.wav
 finalize.wav
+finance.wav
 finances.wav
+financial security.wav
 find.wav
 fine.wav
 finesse.wav
@@ -3046,10 +3215,12 @@ flavoring.wav
 flavorless.wav
 flawed.wav
 flawless.wav
+fleeting.wav
 flesh.wav
 fleshly.wav
 flexible.wav
 flibbertigibbet.wav
+flier.wav
 flightiness.wav
 flighty.wav
 fling.wav
@@ -3060,6 +3231,7 @@ flop.wav
 flora.wav
 florescent.wav
 floriculture.wav
+floridity.wav
 florist.wav
 flounder.wav
 flourishing.wav
@@ -3075,6 +3247,8 @@ foamy.wav
 focalize.wav
 focus.wav
 foe.wav
+fog.wav
+folded together.wav
 folklore.wav
 follow.wav
 follower.wav
@@ -3143,6 +3317,7 @@ foster.wav
 foulness.wav
 found.wav
 foundation.wav
+fountainhead.wav
 foxed.wav
 foxy.wav
 foyer.wav
@@ -3166,6 +3341,7 @@ frequency.wav
 freshen.wav
 freshness.wav
 fret.wav
+friable.wav
 friend.wav
 friendly.wav
 friends.wav
@@ -3177,12 +3353,15 @@ fringe.wav
 frisky.wav
 frolic.wav
 frolicsome.wav
+from around the world.wav
+from place to place.wav
 from right to left.wav
 from start to finish.wav
 from the distance.wav
 front.wav
 frothy.wav
 froward.wav
+frugal.wav
 fruitfulness.wav
 fruition.wav
 fuddle.wav
@@ -3234,6 +3413,7 @@ gavel.wav
 gawk.wav
 geezer.wav
 general.wav
+generally.wav
 generate.wav
 generosity.wav
 generous.wav
@@ -3258,6 +3438,7 @@ gifted.wav
 gigantic.wav
 giggle.wav
 gilding.wav
+gingerly.wav
 give ### wtf.wav
 given out.wav
 giving.wav
@@ -3273,6 +3454,7 @@ glint.wav
 glitter.wav
 global.wav
 glomerate.wav
+gloom.wav
 gloomy.wav
 glorify.wav
 glorious.wav
@@ -3281,6 +3463,7 @@ glowing.wav
 glue.wav
 glutton.wav
 go for dinner.wav
+go-getter.wav
 goals.wav
 gobble -- eat fast and greedily.wav
 gobble.wav
@@ -3288,6 +3471,7 @@ gobbled up.wav
 goblet.wav
 godless.wav
 godlike.wav
+gondola.wav
 good graces.wav
 good news.wav
 good.wav
@@ -3338,6 +3522,7 @@ grope.wav
 group.wav
 groups.wav
 grow.wav
+grubby.wav
 grudge.wav
 gruff.wav
 grungy.wav
@@ -3355,6 +3540,7 @@ guise.wav
 gulf.wav
 gull.wav
 gummy.wav
+gumption.wav
 gunfire.wav
 gunnery.wav
 guns.wav
@@ -3380,6 +3566,7 @@ halitosis.wav
 hallway.wav
 halting.wav
 halved.wav
+hamlet.wav
 handcuff.wav
 handful.wav
 handicrafts.wav
@@ -3395,6 +3582,7 @@ happiness.wav
 happy.wav
 hard work.wav
 harden.wav
+hardened.wav
 hardship.wav
 hardy.wav
 harm.wav
@@ -3413,6 +3601,7 @@ harsh.wav
 harshness.wav
 has.wav
 hassle.wav
+hastily.wav
 hatchet.wav
 hated.wav
 hats.wav
@@ -3435,6 +3624,7 @@ heaps.wav
 hear.wav
 heard.wav
 hearing.wav
+heartbroken ### 2.wav
 heartbroken.wav
 heartfelt.wav
 hearth.wav
@@ -3454,10 +3644,12 @@ help.wav
 helpful.wav
 helpfulness.wav
 hemisphere.wav
+hemline ### 2.wav
 hemline.wav
 hemorrhage.wav
 hence.wav
 herald.wav
+heraldry.wav
 herbal tea.wav
 herbs.wav
 here and there.wav
@@ -3465,6 +3657,7 @@ hereditary.wav
 heretical.wav
 heritage.wav
 heroics.wav
+herself.wav
 hesitancy.wav
 heteronyms.wav
 heterosexual.wav
@@ -3485,9 +3678,11 @@ hindered.wav
 hindrance.wav
 hindsight.wav
 hinge.wav
+hint.wav
 hinting.wav
 hireling.wav
 historian.wav
+historic.wav
 historical documents.wav
 historical events.wav
 histrionic.wav
@@ -3515,6 +3710,7 @@ honest.wav
 honesty.wav
 honor.wav
 honorable.wav
+hootenanny.wav
 hopeless.wav
 hopelessness.wav
 horizon.wav
@@ -3537,11 +3733,13 @@ hours.wav
 house.wav
 hover.wav
 how to approach the problem.wav
+howl.wav
 huckster.wav
 hue.wav
 huffy.wav
 huge.wav
 hum.wav
+human nature.wav
 human.wav
 humanism.wav
 humanity.wav
@@ -3564,6 +3762,7 @@ hurt.wav
 husband.wav
 hush.wav
 hushed.wav
+hustler.wav
 hygiene.wav
 hyperbolic ### 2.wav
 hyperbolic.wav
@@ -3577,9 +3776,11 @@ icebreaker.wav
 icon.wav
 idealist.wav
 idealize.wav
+identical.wav
 identity.wav
 idiosyncrasy.wav
 idle.wav
+idleness.wav
 idler.wav
 idol.wav
 ignite.wav
@@ -3593,6 +3794,7 @@ illiberal.wav
 illimitable.wav
 illness.wav
 illogical.wav
+illumination.wav
 illuminative.wav
 illustration.wav
 illustrious.wav
@@ -3618,6 +3820,7 @@ immoderation.wav
 immortal.wav
 immovable.wav
 immunology.wav
+immure.wav
 impair.wav
 impairment.wav
 impart.wav
@@ -3654,6 +3857,7 @@ improbable.wav
 improper.wav
 improperly.wav
 impropriety.wav
+improvability.wav
 improve.wav
 improved.wav
 improvement.wav
@@ -3678,6 +3882,7 @@ in numerical order.wav
 in proportion.wav
 in reality.wav
 in secret.wav
+in spite of.wav
 in the air.wav
 in the earth.wav
 in the middle.wav
@@ -3686,6 +3891,7 @@ in the works.wav
 in.wav
 inability.wav
 inaccurate.wav
+inaction ### 2.wav
 inaction.wav
 inactive.wav
 inactivity.wav
@@ -3695,6 +3901,7 @@ inapposite.wav
 inappreciable.wav
 inaptitude.wav
 inarticulate.wav
+inattention.wav
 incandesce.wav
 incantation.wav
 incapable.wav
@@ -3719,6 +3926,7 @@ incompetence.wav
 incompetent.wav
 incomplete.wav
 incompletion.wav
+inconceivable.wav
 inconsequence.wav
 inconsequent.wav
 inconsiderate.wav
@@ -3747,6 +3955,7 @@ indecipherable.wav
 indecisive.wav
 indefensible.wav
 indefinite.wav
+indelibility.wav
 indemnity.wav
 indentation.wav
 independent.wav
@@ -3771,6 +3980,7 @@ inebriated.wav
 ineffective.wav
 ineffectually.wav
 inefficient.wav
+ineligible.wav
 ineptness.wav
 inert.wav
 inescapable.wav
@@ -3786,8 +3996,10 @@ infancy.wav
 infantry.wav
 infatuate.wav
 inferential.wav
+inferior quality.wav
 inferior.wav
 infertility.wav
+inflame.wav
 inflamed.wav
 inflammation.wav
 inflated.wav
@@ -3797,7 +4009,9 @@ influential.wav
 influx.wav
 informative.wav
 infrequent.wav
+infrequently.wav
 infringed upon.wav
+infuriate ### 2.wav
 infuriate.wav
 infuriated.wav
 infuse.wav
@@ -3821,6 +4035,7 @@ innards.wav
 innermost.wav
 innocence.wav
 innocent.wav
+innumerable.wav
 inoperable.wav
 inquest.wav
 inquietude.wav
@@ -3842,6 +4057,7 @@ insincerity.wav
 insinuated.wav
 insomniac.wav
 inspection.wav
+inspiration.wav
 inspissate.wav
 instability.wav
 instealing.wav
@@ -3875,6 +4091,9 @@ interfaith.wav
 interference.wav
 interim.wav
 interior.wav
+interject.wav
+interjection.wav
+interlocutor ### 'cutor.wav
 intermediate.wav
 intermingle -- to mix together.wav
 intermittent.wav
@@ -3891,15 +4110,18 @@ intimidate.wav
 into the room.wav
 intoxicate.wav
 intriguing.wav
+introduction -- a bringing into acquaintance with.wav
 introduction.wav
 introspection.wav
 introverted.wav
+intumescence.wav
 invader.wav
 invalidate ### 2.wav
 invalidate.wav
 invalidated.wav
 invaluable.wav
 invasion.wav
+inveigle.wav
 invent.wav
 inventions.wav
 inventiveness.wav
@@ -3924,6 +4146,7 @@ irascibility.wav
 irredeemable.wav
 irregular.wav
 irrelevance.wav
+irrelevant.wav
 irresolution.wav
 irresponsible.wav
 irritant.wav
@@ -3947,19 +4170,25 @@ jinx.wav
 jittery.wav
 job.wav
 joblessness.wav
+jocundity.wav
 jog.wav
 join.wav
+jolt ### 2.wav
 jolt.wav
 jostle.wav
+jot.wav
 jounce.wav
 journalism.wav
+journey.wav
 joviality.wav
 joyful.wav
 joyous.wav
+jubilation.wav
 judge.wav
 judgemental ### 2.wav
 judgemental.wav
 judgment.wav
+juggle ### 2.wav
 juggle.wav
 juiciness.wav
 jumble.wav
@@ -3972,6 +4201,8 @@ junketeers.wav
 keep.wav
 keepsake.wav
 kettle.wav
+keystone.wav
+kids.wav
 kilter.wav
 kind.wav
 kindergarten.wav
@@ -3981,6 +4212,7 @@ kindling.wav
 kindness.wav
 King Henry VIII.wav
 kismet.wav
+kiss.wav
 kitchen.wav
 knapsack.wav
 knave.wav
@@ -4006,16 +4238,20 @@ ladies.wav
 lagoon.wav
 lake.wav
 lamentable.wav
+lampoon.wav
 lancer.wav
 landfall.wav
 landslide.wav
 lane.wav
 language.wav
+languages.wav
 lapel.wav
 largess.wav
 lasting.wav
 latch.wav
+later.wav
 laughter.wav
+launch.wav
 laureate.wav
 lavage.wav
 lawful.wav
@@ -4025,8 +4261,10 @@ layover.wav
 lazy.wav
 leading.wav
 leaflet.wav
+leaflets.wav
 league.wav
 leaves.wav
+leaving out.wav
 lecture.wav
 leery.wav
 leftover.wav
@@ -4039,6 +4277,7 @@ legation.wav
 legionary.wav
 legitimacy.wav
 legitimate.wav
+leisurely.wav
 lepidopterist.wav
 less.wav
 lessen.wav
@@ -4050,8 +4289,10 @@ lethargic.wav
 letter.wav
 level.wav
 levelheaded.wav
+leviathan.wav
 levy.wav
 lewd.wav
+lexical.wav
 liability.wav
 libation.wav
 liberate.wav
@@ -4061,6 +4302,7 @@ lie detector test.wav
 lie.wav
 liege.wav
 lien.wav
+lies.wav
 life.wav
 lifeless.wav
 lifestyle.wav
@@ -4087,6 +4329,7 @@ little.wav
 liveliness.wav
 lively.wav
 livestock.wav
+lividity.wav
 living room.wav
 loads.wav
 loaf.wav
@@ -4094,12 +4337,16 @@ loafer.wav
 loath.wav
 lobby.wav
 local.wav
+locality.wav
 logo.wav
 loiter.wav
+long debates.wav
 longevity.wav
+longing.wav
 loom.wav
 loose.wav
 loot.wav
+looted.wav
 loquacious.wav
 loquacity ### 2.wav
 loquacity.wav
@@ -4109,6 +4356,7 @@ loudly.wav
 lounge.wav
 loutish.wav
 low self-esteem.wav
+low.wav
 lower in rank.wav
 loyalty.wav
 lubber.wav
@@ -4118,6 +4366,7 @@ lucubration.wav
 ludicrous.wav
 luminescence.wav
 luminescent.wav
+luminiferous.wav
 lump.wav
 lumpish.wav
 lumpy.wav
@@ -4141,6 +4390,7 @@ magician.wav
 magnetic.wav
 magnificence.wav
 magnify.wav
+mainly.wav
 majestic.wav
 major.wav
 majority.wav
@@ -4156,6 +4406,7 @@ malleability.wav
 mammals.wav
 management.wav
 managerial.wav
+manciple.wav
 mangle.wav
 maniac.wav
 manly.wav
@@ -4163,14 +4414,17 @@ manmade.wav
 manner.wav
 mannerisms.wav
 mannerly.wav
+manufacture.wav
 many times.wav
 many.wav
 mar.wav
 maraud.wav
 marginal.wav
+marginally.wav
 marina.wav
 marinade.wav
 marine.wav
+marital.wav
 marked with spots.wav
 marker.wav
 market.wav
@@ -4181,6 +4435,7 @@ marriageability.wav
 martyr.wav
 masculine.wav
 masculinity.wav
+masonry.wav
 masquerade.wav
 massacre.wav
 material.wav
@@ -4192,6 +4447,7 @@ matricide.wav
 matrimony.wav
 maturation.wav
 maturing.wav
+maxim.wav
 maximize.wav
 maximum.wav
 meander.wav
@@ -4201,11 +4457,13 @@ means.wav
 measly.wav
 measurable.wav
 mechanical.wav
+medal.wav
 medallion.wav
 meddlesome.wav
 medicament.wav
 medicinal.wav
 medicine.wav
+meditate.wav
 meditative.wav
 medley.wav
 meeting.wav
@@ -4216,12 +4474,14 @@ melodramatic.wav
 melody.wav
 melted chocolate.wav
 membership.wav
+membranous.wav
 memoir.wav
 memorabilia.wav
 memorable.wav
 memorandum.wav
 memory.wav
 menagerie.wav
+mend.wav
 mending.wav
 mention.wav
 mercantile.wav
@@ -4245,6 +4505,7 @@ midterm.wav
 midway.wav
 might happen.wav
 mightily.wav
+migrant.wav
 migrate.wav
 milage.wav
 military unit.wav
@@ -4275,6 +4536,7 @@ misdeed.wav
 misemploy.wav
 miser.wav
 miserable.wav
+miserly.wav
 misery.wav
 misfortune.wav
 misguidance.wav
@@ -4285,6 +4547,7 @@ misinterpretation.wav
 misogynous.wav
 mispronounced.wav
 misrepresent.wav
+missionary.wav
 mistake.wav
 mistaken.wav
 mistakes.wav
@@ -4304,16 +4567,20 @@ modest.wav
 modesty.wav
 modification.wav
 moist.wav
+moisturize ### 2.wav
 moisturize.wav
 mollify.wav
 momentary.wav
 monarchal.wav
 monetary.wav
+money.wav
 monitor.wav
 monochromatic.wav
+monotheism.wav
 monster.wav
 montage.wav
 months.wav
+monumental ### 2.wav
 monumental.wav
 moral talk.wav
 moral.wav
@@ -4353,12 +4620,15 @@ mutate.wav
 mutation.wav
 mutiny.wav
 mutt.wav
+mutual agreement.wav
 my own.wav
 mysterious.wav
+mystery.wav
 mystical.wav
 mythical.wav
 nameless.wav
 napery.wav
+narcissistic.wav
 narration.wav
 narrow.wav
 natality.wav
@@ -4371,6 +4641,7 @@ natter.wav
 natural.wav
 naughty.wav
 nautical.wav
+naysay ### 2.wav
 naysay.wav
 nearby.wav
 neat.wav
@@ -4389,6 +4660,8 @@ negligent.wav
 negotiable.wav
 neigh.wav
 neighborhood.wav
+nemesis ## =.wav
+Nemesis ## Case.wav
 neonatal.wav
 nepenthe.wav
 nervation.wav
@@ -4398,18 +4671,22 @@ nettlesome.wav
 network.wav
 neurology.wav
 neutrality.wav
+new.wav
 newborn child.wav
+nexus.wav
 nibble.wav
 nice.wav
 niche ## {2} ### nɪt͡ʃ.wav
 nicker.wav
 nifty.wav
 nightmarish.wav
+noble.wav
 nobleman.wav
 nodulose.wav
 noise.wav
 noiseless.wav
 noisy.wav
+nomad ### 2.wav
 nomad.wav
 nominally.wav
 non sequitur.wav
@@ -4429,6 +4706,7 @@ nook.wav
 normal.wav
 normalize.wav
 nosh.wav
+not allowed.wav
 notability.wav
 notable.wav
 notarize.wav
@@ -4448,6 +4726,8 @@ nuance.wav
 nullification.wav
 nullify.wav
 numerable.wav
+numerical.wav
+numerous.wav
 nuptial.wav
 nurse.wav
 nurture.wav
@@ -4456,12 +4736,14 @@ nutriment.wav
 nutrition.wav
 nutritional.wav
 oath.wav
+obduracy.wav
 obedience.wav
 obedient.wav
 obesity.wav
 obituaries.wav
 objection.wav
 objectionable.wav
+oblation.wav
 obligatory.wav
 oblige.wav
 obscure.wav
@@ -4469,6 +4751,7 @@ obscurity.wav
 observe.wav
 obsession.wav
 obsessive.wav
+obtain ### 2.wav
 obtain.wav
 obtainable.wav
 obvious.wav
@@ -4505,6 +4788,7 @@ on parole.wav
 on Saturday.wav
 on the weekends.wav
 once a year.wav
+once more.wav
 one after another.wav
 one hundred years.wav
 oneness.wav
@@ -4525,6 +4809,7 @@ opposable thumbs.wav
 oppose.wav
 opposite.wav
 opposition.wav
+oppress.wav
 oppressor.wav
 opprobrious.wav
 optic.wav
@@ -4543,12 +4828,16 @@ origin.wav
 original.wav
 originality.wav
 originate.wav
+orison.wav
+ornament.wav
 ornamental.wav
 ornate.wav
 ornery.wav
 orphan.wav
 orthodox.wav
+ostracize.wav
 others.wav
+otherworldliness ### 2.wav
 otherworldliness.wav
 otherworldly.wav
 out of control.wav
@@ -4588,6 +4877,7 @@ oversee.wav
 overshadow ### 2.wav
 overshadow.wav
 overshadowed.wav
+oversight.wav
 overtime.wav
 overturn.wav
 overused.wav
@@ -4595,6 +4885,7 @@ overvalue ### 2.wav
 overvalue.wav
 overweight.wav
 overwhelming.wav
+oviform.wav
 owner.wav
 ownership.wav
 oxygen.wav
@@ -4632,6 +4923,7 @@ part.wav
 partial.wav
 particle.wav
 partner.wav
+partnership.wav
 parts.wav
 party.wav
 parvenu.wav
@@ -4639,6 +4931,7 @@ passing.wav
 passion.wav
 passive.wav
 passivity.wav
+patency.wav
 path.wav
 pathetic.wav
 pathogen.wav
@@ -4659,6 +4952,7 @@ peaceful.wav
 peacefully.wav
 peacefulness.wav
 pearly.wav
+pedantry.wav
 pedate -- having a foot or feet.wav
 peddler.wav
 pedestal.wav
@@ -4668,11 +4962,14 @@ peep.wav
 pelagic.wav
 penalize.wav
 penalty.wav
+pendulous.wav
 penetrable.wav
 penology.wav
 penultimate.wav
+peppy.wav
 perambulate.wav
 perceived.wav
+perceptibility.wav
 perception.wav
 perchance.wav
 percolate.wav
@@ -4683,6 +4980,7 @@ perfection.wav
 perforate.wav
 performance.wav
 performer.wav
+peril.wav
 perilous.wav
 period of time.wav
 period.wav
@@ -4697,16 +4995,20 @@ permission.wav
 permissive.wav
 permit.wav
 perpetuation.wav
+perseverance.wav
 persevering.wav
+persiflage.wav
 persistence.wav
 person.wav
 persona.wav
 personal business.wav
 personal life.wav
+personal.wav
 personality.wav
 personification.wav
 personnel.wav
 persuasive.wav
+pertinent.wav
 pervasion.wav
 pessimism.wav
 pessimistic.wav
@@ -4731,11 +5033,13 @@ picnic.wav
 picture.wav
 picturesque.wav
 piece.wav
+piercing.wav
 pietism.wav
 piffle.wav
 pilfer.wav
 pilferage.wav
 pillage.wav
+pilosity.wav
 pin.wav
 pinnacle.wav
 pinnate.wav
@@ -4788,8 +5092,10 @@ pneumonia.wav
 pocketknife.wav
 podgy -- short and fat.wav
 podium.wav
+poignant.wav
 point.wav
 points.wav
+poison.wav
 poisonous.wav
 police officer.wav
 polish.wav
@@ -4817,11 +5123,14 @@ porch.wav
 portent.wav
 portion of food.wav
 portion.wav
+portly.wav
 portraiture.wav
 portrayal.wav
 position.wav
+positional.wav
 positioned.wav
 possessions.wav
+possessive.wav
 possibility.wav
 possible.wav
 posterity.wav
@@ -4834,9 +5143,11 @@ pour.wav
 poverty.wav
 power.wav
 powerful.wav
+powerhouse ### 2.wav
 powerhouse.wav
 practicability.wav
 practicable.wav
+practical use.wav
 practical.wav
 practicality.wav
 practice.wav
@@ -4863,6 +5174,7 @@ predictability.wav
 prediction.wav
 preferment.wav
 pregnable.wav
+prehension.wav
 premature.wav
 premeditation.wav
 premonition.wav
@@ -4874,6 +5186,7 @@ prerequisite.wav
 prescriptive.wav
 presence.wav
 presentable.wav
+presents @ noun.wav
 preservatives.wav
 preserve.wav
 preserver.wav
@@ -4882,6 +5195,7 @@ pretension.wav
 pretty nifty.wav
 preventable.wav
 preventive measures.wav
+prey.wav
 price.wav
 priceless.wav
 prickle.wav
@@ -4897,6 +5211,7 @@ primitiveness.wav
 prince.wav
 princess.wav
 principal.wav
+principally.wav
 principals.wav
 principles.wav
 printer.wav
@@ -4913,6 +5228,7 @@ processed.wav
 processes.wav
 proclamation.wav
 proconsulate.wav
+procumbent.wav
 prodigality.wav
 production.wav
 productiveness.wav
@@ -4936,6 +5252,7 @@ promenade.wav
 prominence.wav
 promoted.wav
 promotion.wav
+promotional.wav
 promptitude.wav
 promulgate.wav
 pronouncement.wav
@@ -4952,6 +5269,8 @@ prospective.wav
 prosperity.wav
 protection.wav
 protective.wav
+protocol.wav
+prototype.wav
 protraction.wav
 protégé.wav
 proved.wav
@@ -4959,11 +5278,13 @@ proven.wav
 proverb.wav
 provisionally.wav
 provocation.wav
+provoking ### 2.wav
 provoking.wav
 proximate.wav
 prudence ### 2.wav
 prudence.wav
 prudent.wav
+pry.wav
 pubescence.wav
 public health.wav
 public records.wav
@@ -4973,13 +5294,16 @@ publicly.wav
 puckish.wav
 pudding.wav
 pugnacious.wav
+pulsate.wav
 pulverize.wav
 punctilious.wav
 punishable.wav
 punished.wav
 punishment.wav
+punitive.wav
 pupil.wav
 puppet.wav
+purchase.wav
 pure.wav
 purging.wav
 purification.wav
@@ -4994,8 +5318,10 @@ pusillanimous.wav
 put into practice.wav
 put.wav
 putting in order again.wav
+puzzled.wav
 pyjamas.wav
 qualifications.wav
+qualified.wav
 qualities.wav
 quality.wav
 quantitative.wav
@@ -5019,7 +5345,9 @@ quietus.wav
 quirk.wav
 quitting.wav
 quivering.wav
+quivery.wav
 quizzical.wav
+quotidian.wav
 racist.wav
 racket.wav
 racketeer.wav
@@ -5035,12 +5363,14 @@ ramose.wav
 rampageous.wav
 ramped.wav
 ransack.wav
+ransom ### 2.wav
 ransom.wav
 rapid.wav
 rapscallion.wav
 raptor.wav
 rapture.wav
 rare.wav
+rarely.wav
 rarity.wav
 rascal.wav
 rash.wav
@@ -5061,6 +5391,7 @@ readjust.wav
 real.wav
 realist.wav
 reality.wav
+realization ### 2.wav
 realization.wav
 realized.wav
 realm.wav
@@ -5071,6 +5402,7 @@ rearrangement.wav
 reason.wav
 reasonable.wav
 reasoning.wav
+reassurance.wav
 rebellion.wav
 rebellious.wav
 rebirth.wav
@@ -5081,6 +5413,7 @@ recall.wav
 recantation.wav
 recapture.wav
 receipt.wav
+received.wav
 receptacle.wav
 receptionist.wav
 recess.wav
@@ -5113,6 +5446,7 @@ recurrence.wav
 recurve.wav
 reddish brown.wav
 redemption.wav
+redolence.wav
 reduce.wav
 reduction.wav
 redundancy.wav
@@ -5121,9 +5455,11 @@ reelection.wav
 referable.wav
 referee.wav
 referral.wav
+refine ### 2.wav
 refine.wav
 refined.wav
 refinement.wav
+reflective ### 2.wav
 reflective.wav
 reflux.wav
 refresh.wav
@@ -5137,17 +5473,20 @@ refute.wav
 refuted.wav
 regalia.wav
 regality.wav
+regard.wav
 regency.wav
 regime.wav
 regression.wav
 regrettable.wav
 regular method.wav
 regular.wav
+regularly.wav
 rehabilitation.wav
 rehash.wav
 rehearsal.wav
 rehearsed.wav
 reimbursement.wav
+reiterate ### 2.wav
 reiterate.wav
 reject.wav
 rejected.wav
@@ -5158,9 +5497,11 @@ relaxed.wav
 relaxing.wav
 release.wav
 relevancy.wav
+relevant.wav
 reliable.wav
 relic.wav
 religions.wav
+religious beliefs.wav
 religious worship.wav
 relinquish.wav
 relinquishment.wav
@@ -5170,15 +5511,19 @@ remain.wav
 remainder.wav
 remains.wav
 remarkable.wav
+remedy.wav
 remember.wav
 remembered.wav
 remembrance.wav
 reminisce.wav
+reminiscence.wav
 remnant.wav
 remorseful.wav
 remorseless.wav
 remount.wav
 removal.wav
+renaissance ## =.wav
+Renaissance ## Case.wav
 renew.wav
 renewal.wav
 renounce.wav
@@ -5191,6 +5536,7 @@ repeal.wav
 repeat.wav
 repeatedly.wav
 repellent.wav
+repetition.wav
 repetitive.wav
 repine.wav
 replacement.wav
@@ -5201,7 +5547,7 @@ repossess.wav
 repossession.wav
 representation.wav
 repress.wav
-reprise.wav
+reprise @ action ## {2} ### ripraiz.wav
 reproduction.wav
 reptile.wav
 republic.wav
@@ -5221,6 +5567,7 @@ resentful.wav
 resentment.wav
 reserved.wav
 reservoir.wav
+resign ## {2}.wav
 resignation.wav
 resistance to diseases.wav
 resistance.wav
@@ -5234,6 +5581,7 @@ responsible.wav
 restart.wav
 restauranteur.wav
 restless.wav
+restlessly.wav
 restoration.wav
 restorative.wav
 restore.wav
@@ -5258,8 +5606,10 @@ retrench.wav
 retrofit.wav
 retrogress.wav
 return.wav
+reunite.wav
 revealed.wav
 revelation.wav
+revelry.wav
 reversal.wav
 reversible.wav
 revival.wav
@@ -5268,6 +5618,7 @@ revolt.wav
 revulsion.wav
 reward.wav
 reworking.wav
+rhapsody.wav
 ribald.wav
 ricochet.wav
 riddled with holes.wav
@@ -5275,6 +5626,7 @@ ridiculous.wav
 rifle -- to search and rob.wav
 right and wrong.wav
 right.wav
+rigmarole.wav
 rigor.wav
 ring-shaped.wav
 ringing sound.wav
@@ -5300,6 +5652,7 @@ romance.wav
 romanticize.wav
 rotary.wav
 rotation.wav
+rotunda.wav
 rough.wav
 roughen.wav
 roughness.wav
@@ -5314,6 +5667,7 @@ ruddy.wav
 rude.wav
 rudeness.wav
 ruffian.wav
+ruffle ### 2.wav
 ruffle.wav
 ruffles.wav
 ruined.wav
@@ -5336,15 +5690,18 @@ sacred.wav
 safe.wav
 safeguard.wav
 safekeeping.wav
+safety.wav
 saga.wav
 sagacity.wav
 salary.wav
 sale.wav
 saloon.wav
+salutatory.wav
 salvation.wav
 sameness.wav
 sampler.wav
 sanatorium.wav
+sanctified.wav
 sanctify.wav
 sanctimony.wav
 sanction.wav
@@ -5374,12 +5731,14 @@ savage.wav
 saved.wav
 saving.wav
 savoury.wav
+saying.wav
 scabbard.wav
 scaffold.wav
 scald -- burn with hot liquid or steam.wav
 scale.wav
 scalpel.wav
 scaly.wav
+scam ### 2.wav
 scam.wav
 scamp.wav
 scandal.wav
@@ -5394,6 +5753,7 @@ scarcity.wav
 scathe.wav
 scatheless.wav
 scatter.wav
+scattering.wav
 scavenge.wav
 scenery.wav
 scenic.wav
@@ -5409,6 +5769,7 @@ schlemiel.wav
 scholarly.wav
 scholars.wav
 scintillate.wav
+scission.wav
 scold.wav
 scoop.wav
 scope.wav
@@ -5429,6 +5790,7 @@ scribble.wav
 scribe.wav
 scrimp.wav
 script.wav
+scroll.wav
 scrubby.wav
 scrumptious.wav
 scruple.wav
@@ -5445,6 +5807,8 @@ searing.wav
 season.wav
 secession.wav
 seclusive.wav
+SECONDARY ## =.wav
+secondary.wav
 secret meaning.wav
 secret meeting.wav
 secret.wav
@@ -5454,6 +5818,7 @@ sectile ### 2.wav
 sectile.wav
 secure.wav
 security.wav
+seeable.wav
 seeming.wav
 seize.wav
 seldom.wav
@@ -5461,6 +5826,7 @@ self-control.wav
 selfish.wav
 selfishness.wav
 sell.wav
+semantics.wav
 semblance.wav
 semiannual.wav
 semiaquatic.wav
@@ -5477,6 +5843,7 @@ senseless.wav
 sensible.wav
 sensitive.wav
 sensory.wav
+sensual.wav
 sentence.wav
 separable.wav
 separate @ noun.wav
@@ -5526,6 +5893,7 @@ shapeless.wav
 shapeliness.wav
 shapely.wav
 shard.wav
+shared.wav
 shark.wav
 sharp.wav
 shaven.wav
@@ -5544,11 +5912,13 @@ shivery.wav
 shock.wav
 shocker.wav
 shoddy.wav
+shoplift ### 2.wav
 shoplift.wav
 short-sighted.wav
 short.wav
 shorten.wav
 shortfall -- a shortage or deficit.wav
+shortfall.wav
 shoulders.wav
 showy.wav
 shrapnel.wav
@@ -5565,6 +5935,7 @@ shrub.wav
 shrubbery.wav
 shtick.wav
 shuddery.wav
+shuffle -- to walk without lifting the feet.wav
 shuffle.wav
 shunt.wav
 shunted aside.wav
@@ -5610,6 +5981,7 @@ skill.wav
 skilled.wav
 skimpy.wav
 skinny.wav
+skullduggery.wav
 slacken.wav
 slacker.wav
 slander.wav
@@ -5621,10 +5993,12 @@ slattern.wav
 slaughter.wav
 slave.wav
 sleep.wav
+sleeping.wav
 sleepless.wav
 sleepwalker.wav
 sleepwalkers.wav
 sleepy.wav
+slender.wav
 slenderize.wav
 slick.wav
 slicker.wav
@@ -5632,12 +6006,15 @@ sliding.wav
 slight ### 2.wav
 slight.wav
 slightly.wav
+slim.wav
 slimy -- covered with soft sticky mud or something like it.wav
 slinky ### 2.wav
 slinky.wav
+slip away.wav
 slippery.wav
 slipshod.wav
 sliver.wav
+slope.wav
 slovenly.wav
 slow.wav
 sluggish.wav
@@ -5663,6 +6040,7 @@ sniffy.wav
 snitch.wav
 snivel.wav
 snoop.wav
+snooped.wav
 snooty.wav
 snooze.wav
 snorkel.wav
@@ -5680,22 +6058,29 @@ social activity.wav
 social gathering.wav
 social security.wav
 sociality.wav
+socialize.wav
 society.wav
 sodality.wav
 soft.wav
+soften.wav
 soiled.wav
 soiling.wav
 sold.wav
 soldier.wav
 soldiers.wav
+sole.wav
 solemnity.wav
+solid.wav
 solidify.wav
 solo.wav
 someone else.wav
 somnambulist.wav
 somniferous.wav
 somnolent.wav
+son.wav
 sonant.wav
+sonorous.wav
+sooner.wav
 soothe.wav
 soothing.wav
 soothsayer.wav
@@ -5716,6 +6101,7 @@ Southern drawl.wav
 souvenir.wav
 sovereign.wav
 sovereignty.wav
+space.wav
 spaces.wav
 spacious.wav
 span ### 2.wav
@@ -5735,6 +6121,7 @@ speech.wav
 speed.wav
 spell.wav
 spherical.wav
+spicate.wav
 spin.wav
 spindle.wav
 spindly.wav
@@ -5766,12 +6153,14 @@ spread around.wav
 spread.wav
 sprightly.wav
 spring.wav
+sprinkling ### 2.wav
 sprinkling.wav
 spritely.wav
 spunky.wav
 sputter.wav
 squad.wav
 squadrons.wav
+squamous.wav
 squawk.wav
 squelch.wav
 squirt.wav
@@ -5801,6 +6190,7 @@ starving.wav
 state of things.wav
 state.wav
 stated.wav
+statement.wav
 statements.wav
 stationary.wav
 statuary.wav
@@ -5830,9 +6220,12 @@ stimulate.wav
 stimulating.wav
 stimulation.wav
 stinginess.wav
+stinging.wav
+stings.wav
 stingy.wav
 stipend.wav
 stock.wav
+stodgy.wav
 stone.wav
 stones.wav
 stopping.wav
@@ -5852,10 +6245,14 @@ strategic.wav
 stream of water.wav
 stream.wav
 streamline.wav
+street vendor.wav
+street.wav
 strength.wav
 strengthen.wav
+stress.wav
 stretcher.wav
 strict.wav
+strictly forbidden.wav
 strife.wav
 striking.wav
 strings.wav
@@ -5872,6 +6269,7 @@ stubby -- short and thick.wav
 studious.wav
 study.wav
 studying.wav
+stultify.wav
 stump.wav
 stumped.wav
 stunning.wav
@@ -5917,6 +6315,7 @@ superfluous.wav
 superimpose.wav
 superior.wav
 supernatural.wav
+supersede.wav
 supplementary.wav
 supplication.wav
 supplied.wav
@@ -5931,12 +6330,14 @@ surface.wav
 surfeit.wav
 surpass.wav
 surprise party.wav
+surprise.wav
 surrogate.wav
 surround.wav
 surroundings.wav
 surveillance.wav
 suspected.wav
 suspicion.wav
+suspicious.wav
 suspiration.wav
 sustenance.wav
 swagger.wav
@@ -5951,6 +6352,7 @@ swimmingly.wav
 swimsuit.wav
 sword.wav
 syllabic.wav
+syllable.wav
 symbol.wav
 symbolic.wav
 symmetrical.wav
@@ -5962,6 +6364,7 @@ syntax.wav
 synthesize.wav
 systematic.wav
 tabloid.wav
+taboo.wav
 tabular.wav
 tactful.wav
 tactless.wav
@@ -5980,7 +6383,9 @@ tassel.wav
 taste.wav
 tasteless.wav
 tasty.wav
+tattered -- torn or ragged.wav
 tattered.wav
+tattle -- tell tales or secrets.wav
 tattle.wav
 tattletale.wav
 taught.wav
@@ -6007,6 +6412,7 @@ teething.wav
 telepathy.wav
 temper.wav
 temperament.wav
+temperature.wav
 template.wav
 temporal.wav
 temporality.wav
@@ -6029,6 +6435,7 @@ terminate.wav
 termination.wav
 terrace ### 2.wav
 terrace.wav
+terrible news.wav
 Terrible things might happen..wav
 terrific.wav
 territory.wav
@@ -6049,6 +6456,7 @@ the birthday party.wav
 the body.wav
 the building.wav
 the church service.wav
+the CIA agent.wav
 the city of Venice.wav
 the coastline.wav
 the desired results.wav
@@ -6072,9 +6480,11 @@ the land.wav
 the legal system.wav
 the lottery.wav
 the math problem.wav
+the meaning of the word.wav
 the middle class.wav
 the multitude of people.wav
 the neighbour nation.wav
+the next.wav
 the night before.wav
 the office.wav
 the play.wav
@@ -6102,6 +6512,7 @@ theorize.wav
 thesis.wav
 thief.wav
 thievery.wav
+thin.wav
 think.wav
 thorns.wav
 thorny.wav
@@ -6111,18 +6522,21 @@ thoughtless.wav
 thoughts.wav
 thousandfold.wav
 thrasher.wav
+threadbare.wav
 threatened.wav
 threats.wav
 throaty.wav
 throughout the day.wav
 throwing a fit.wav
 thrown away.wav
+thrum.wav
 thumbs.wav
 thump.wav
 thwack -- to strike vigorously with a stick or something flat.wav
 tidy.wav
 tie up.wav
 tied.wav
+tighten.wav
 tilt.wav
 timber.wav
 time.wav
@@ -6139,6 +6553,7 @@ titian.wav
 title.wav
 to and fro.wav
 to avoid.wav
+to be true.wav
 to be wed.wav
 to beware.wav
 to break out into violence.wav
@@ -6203,6 +6618,8 @@ toothy.wav
 topple.wav
 torn apart.wav
 tornado.wav
+torrential.wav
+torridity.wav
 torturous.wav
 totality.wav
 totalize.wav
@@ -6230,14 +6647,19 @@ transcendent.wav
 transcription.wav
 transect.wav
 transfer.wav
+transferable ## {1} ### trans`ferable.wav
 transferable ## {2} ### 'transferable.wav
 transfigure.wav
 transparent.wav
+transpire.wav
+transposable.wav
 transpose.wav
 trap.wav
 trash.wav
 traumatic.wav
+travel.wav
 traveled.wav
+treacherous ### 2.wav
 treacherous.wav
 tread.wav
 treason.wav
@@ -6264,10 +6686,12 @@ trifle.wav
 trilogy.wav
 trim.wav
 trip.wav
+triumphant ### 2.wav
 triumphant.wav
 triumvirate.wav
 trivial.wav
 troops.wav
+tropical climate.wav
 troth.wav
 trouble.wav
 troubles.wav
@@ -6278,8 +6702,10 @@ truce.wav
 true.wav
 truncheon.wav
 trundle.wav
+trusted.wav
 truth.wav
 truthful.wav
+truthfulness.wav
 tryst.wav
 tube.wav
 tumor.wav
@@ -6307,6 +6733,7 @@ twittery.wav
 two.wav
 tympanic.wav
 tyrannical.wav
+tyrannicide.wav
 ugly.wav
 ultimatum.wav
 ultramodern.wav
@@ -6324,6 +6751,7 @@ unattainable.wav
 unbalanced.wav
 unbearable.wav
 unceremonious.wav
+uncertain.wav
 uncertainty.wav
 uncharacteristic.wav
 uncivilized.wav
@@ -6348,16 +6776,20 @@ undernourished ### 2.wav
 undernourished.wav
 underrate ### 2.wav
 underrate.wav
+understand.wav
 understatement.wav
 undertaker.wav
 undervalue.wav
 undervalued.wav
+underwear.wav
 underwhelm.wav
 underwhelming.wav
+undeserving.wav
 undesirable.wav
 undetermined.wav
 undeveloped.wav
 undignified.wav
+undisciplined ### 2.wav
 undisciplined.wav
 undiscovered.wav
 undone.wav
@@ -6380,6 +6812,7 @@ unforgivable.wav
 unfortunate ### 2.wav
 unfortunate.wav
 unfriendly.wav
+ungenerous ### 2.wav
 ungenerous.wav
 ungratefulness.wav
 unhealthy.wav
@@ -6407,6 +6840,7 @@ unmatched.wav
 unmitigated disaster.wav
 unmixed.wav
 unnatural.wav
+unobtrusive.wav
 unorganized.wav
 unoriginality.wav
 unorthodox.wav
@@ -6426,6 +6860,7 @@ unruly.wav
 unsanitary.wav
 unsatisfactory.wav
 unsavory.wav
+unspeakable.wav
 unstable.wav
 unsuccessful.wav
 unsuitable.wav
@@ -6470,11 +6905,13 @@ useful.wav
 usefulness.wav
 useless.wav
 usual.wav
+usually.wav
 usurer.wav
 utterance.wav
 vacation.wav
 vaccinate.wav
 vacuity.wav
+vagabond.wav
 vague.wav
 valet ## {3} ### væˈleɪ.wav
 valiancy.wav
@@ -6496,10 +6933,12 @@ vassal.wav
 vast.wav
 vegetation.wav
 vehemence.wav
+vendetta.wav
 venom.wav
 venomous.wav
 ventral.wav
 venture.wav
+veracity.wav
 verified.wav
 vermilion.wav
 vermin.wav
@@ -6512,6 +6951,7 @@ vessel.wav
 vestibule.wav
 vex.wav
 vexation.wav
+vibration ### 2.wav
 vibration.wav
 vice.wav
 victim.wav
@@ -6523,19 +6963,23 @@ villainous.wav
 vines.wav
 violate.wav
 violence.wav
+viscid.wav
 visibility.wav
 visionary.wav
 visitant.wav
 visitants.wav
 visitor.wav
+visualize ### 2.wav
 visualize.wav
 vital.wav
 vitality.wav
 vitrify.wav
+vixenish.wav
 voice.wav
 void.wav
 volatile.wav
 voluptuary.wav
+voracity.wav
 vortex.wav
 vouch.wav
 voyage.wav
@@ -6559,6 +7003,7 @@ warrant.wav
 wary.wav
 waste time.wav
 watch.wav
+watchful.wav
 water.wav
 way.wav
 weak.wav
@@ -6568,8 +7013,10 @@ weakly.wav
 weakness.wav
 wealth.wav
 wealthy.wav
+weapon.wav
 weapons.wav
 wearisome.wav
+weather.wav
 wed.wav
 wedding band.wav
 wedding bands.wav
@@ -6585,7 +7032,9 @@ wet.wav
 wheeze.wav
 wherewithal.wav
 whim.wav
+whimper.wav
 whirlwind.wav
+whisper.wav
 whispering.wav
 whitewash.wav
 whittle.wav
@@ -6606,6 +7055,7 @@ winnings.wav
 winter.wav
 wisdom.wav
 wise.wav
+wishful.wav
 witchery.wav
 withdraw.wav
 withdrawal.wav
@@ -6616,8 +7066,10 @@ without permission.wav
 without words.wav
 women's hats.wav
 women.wav
+wonder.wav
 wonderful.wav
 wood.wav
+woosy.wav
 woozy.wav
 words.wav
 work.wav
@@ -16401,7 +16853,7 @@ replica.wav
 reportage [=].wav
 repress [=].wav
 repression.wav
-reprise [=].wav
+reprise @ music ## {1} ### ripriz.wav
 reptiles [=].wav
 republic [=].wav
 reputation.wav
@@ -21512,7 +21964,7 @@ party horn.wav
 paw pads.wav
 pearl bracelet and earrings ## course-.wav
 pearl strands.wav
-peculiar device ## course-.wav
+peculiar device ## course- ## =.wav
 Picasso triggerfish.wav
 platform shoe.wav
 pleated purse.wav
@@ -21555,7 +22007,7 @@ side road at an acute angle.wav
 side-view mirror, side mirror ## ==.wav
 side-view mirror.wav
 SIM card.wav
-similar but different ## course-.wav
+similar but different ## =.wav
 skeins of yarn.wav
 slippery road surface.wav
 snow chains.wav
@@ -25680,7 +26132,7 @@ practically.wav
 precious.wav
 preface.wav
 preparing.wav
-presents.wav
+presents @ verb.wav
 principle.wav
 problem.wav
 problems.wav
@@ -27722,7 +28174,7 @@ etc..wav
 excel.wav
 exclusive.wav
 exclusivity.wav
-exit.wav
+exit ## {1} ### egzet.wav
 figure it out ## course-.wav
 for better or worse.wav
 fortnight.wav
@@ -29903,10 +30355,13 @@ To make things a little more difficult, there's another meaning of meretricious 
 To make things a little more difficult, there's another meaning of meretricious that is derived from this sexual aspect.wav
 To put it as briefly and basically as possible, definite means precise, clearly defined. Definitive means authoritatively conclusive.txt
 To put it as briefly and basically as possible, definite means precise, clearly defined. Definitive means authoritatively conclusive.wav
+To whom it may concern, or who's on first, the who-whom conundrum..wav
 We would like to discreetly, EET, point out that there are discrete, ETE, meanings for both words..txt
 We would like to discreetly, EET, point out that there are discrete, ETE, meanings for both words..wav
 Well, although many purists don't like it, depreciate has gradually come to also mean deprecate.txt
 Well, although many purists don't like it, depreciate has gradually come to also mean deprecate.wav
+Well, we're not real fans of words having two opposite meanings. It makes things difficult.txt
+Well, we're not real fans of words having two opposite meanings. It makes things difficult.wav
 What are the implications of this~! We'll leave it up to you to infer..wav
 Words are peripatetic. They don't stay put. They boldly forge ahead, no matter how hard we try to hold them back..wav
 Yes, notoriety can indeed also be used in a positive sense of being well-known, but importantly, it usually isn't.txt
@@ -29922,6 +30377,7 @@ anticlimactic.wav
 apocryphal -- something that is not true but often believed to be.wav
 apocryphal.wav
 bated breath -- short breath due to extreme emotion [+][bate].wav
+before.wav
 begin, began, begun.wav
 chronic tennis elbow.wav
 climactic.wav
@@ -29978,6 +30434,7 @@ inherent -- of an attribute that exists within.wav
 inherit -- to receive as an heir, to get from one's parents or ancestors.wav
 jealous -- usually romantic envy.wav
 just deserts -- what one deserves.wav
+lectern.wav
 less -- a smaller quantity of, usually things that can't be counted or a single unit.wav
 loath -- averse, disinclined.wav
 loathe -- to hate.wav
@@ -30004,9 +30461,18 @@ ordnance -- military supplies, usually explosive.wav
 pandemic -- worldwide epidemic.wav
 pejorative.wav
 penumbra.wav
+per.wav
 perpetrate -- to carry out a usually bad action, to commit a crime or deception.wav
 perpetuate -- to prolong something.wav
+perquisite -- something extra, usually non-cash, given in addition to the normal salary.wav
+peruse.wav
+pre.wav
 preantepenultimate.wav
+prerequisite -- something required as a prior condition.wav
+prescribe -- to recommend or order something, often medical treatments.wav
+presumptive -- presumed.wav
+presumptuous -- overly bold.wav
+proscribe -- to forbid or denounce.wav
 Quote, Inflammable means flammable What a country! Dr. Nick Rivera, The Simpsons..txt
 Quote, Inflammable means flammable What a country! Dr. Nick Rivera, The Simpsons..wav
 shrink, shrank, shrunk.wav
@@ -30016,6 +30482,7 @@ stink, stank, stunk ### 1.wav
 stink, stank, stunk ### 2.wav
 This make sense..wav
 This sounds like the beginning of a Gothic novel..wav
+To be fair....wav
 to consist of.wav
 uninterested.wav
 >>> ../datae\audiobooks--/Roy Blount Jr. Jr.  - Alphabet Juice ## us {{Roy Blount Jr. Jr.}}
@@ -40218,8 +40685,8 @@ lasagne~lasagna ## qrop qr {{Photo.. Zkruger $dreamstime 74782834}}.jpg
 mashed potatoes [mash][mashed potato][mash potato] ## qrop qr {{Photo.. Megalomaniac $dreamstime 24669999}}.jpg
 meat ## qrop qr {{Photo.. Olga Langerova $dreamstime 1576481}}.jpg
 meatballs ## qrop l20 r14 b1 {{Photo.. Ishtygashev $dreamstime 22105508}}.jpg
-medallion @ food ## qrop l22 r11 {{Photo.. Boaz Yunior Wibowo $dreamstime 21583264}}.jpg
-medallion @ food ## qrop l9 r13 ## qropt! {{Photo.. Stockcreations $dreamstime 30970928}}.jpg
+medallion @ food [medaillon] ## qrop l22 r11 {{Photo.. Boaz Yunior Wibowo $dreamstime 21583264}}.jpg
+medallion @ food [medaillon] ## qrop l9 r13 ## qropt! {{Photo.. Stockcreations $dreamstime 30970928}}.jpg
 omelette~omelet ## qrop l32 t9 {{Photo.. Loopphoto $dreamstime 54840649}}.jpg
 pelmeni ## qrop q {{Photo.. Alexander Mychko $dreamstime 53909359}}.jpg
 pierogi ## qrop qr {{Photo.. Andreii77 $dreamstime 40572916}}.jpg

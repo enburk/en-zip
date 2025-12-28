@@ -1,28 +1,29 @@
-history            = история
+history                 = история
 ---
 = Если из истории убрать всю ложь,
 = то это совсем не значит, ~ что останется одна только правда
 = -- ~ в результате может вообще ~ ничего не остаться. %% Станислав Ежи Лец
 
-annals             = анналы                               # 16+
-archive            = архив, архивировать ~ (электронные документы) /// , ~ помещать в архив
-chronicle          = летопись, хроника, ~ вести хронику, описывать /// , ~ заносить в летопись
+annals                  = анналы                          # 16+
+archive                 = архив, архивировать ~ (электронные документы) /// , ~ помещать в архив
+chronicle               = летопись, хроника, ~ вести хронику, описывать /// , ~ заносить в летопись
 
-chronology         = хронология
-anachronism        = анахронизм                           # 16+
+chronology              = хронология
+anachronism             = анахронизм                      # 16+
 
 ---
-epoch              = эпоха
-epochal            = эпохальный
+epoch                   = эпоха
+epochal                 = эпохальный
 
-manuscript         = манускрипт, рукопись                 # 16+
-ruins              = руины
+manuscript              = манускрипт, рукопись            # 16+
+ruins                   = руины
 
-romanticize %% Br. usually: romanticise = романтизировать                      # 14+
-falsification      = фальсификация                        # 14+
+romanticize %% Br. usually: romanticise = романтизировать                 # 14+
+falsification           = фальсификация                   # 14+
 
-archaeology %% Am. usually: archeology = археология                           # 14+
-artefact\\artifact = артефакт                             # 14+ /// %% Br. mainly: artefact ~ Am. mainly: artifact
+archaeology\\archeology = археология                      # 14+
+artefact\\artifact      = артефакт                        # 14+ /// %% Br. mainly: artefact ~ Am. mainly: artifact
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 discussion             = обсуждение, дискуссия            # 14+
-dispute @ noun %% noun = спор, разногласия, ~ диспут      # 16+ /// `dispute\\dis`pute
+dispute @ noun %% noun = спор, разногласия, ~ диспут      # uk+us # 16+ /// `dispute\\dis`pute
 dispute @ verb %% verb = спорить, оспаривать, ~ обсуждать # 16+ /// dis`pute
 
 polemic                = спор, полемика, ~ полемический   # 18+
@@ -16,6 +16,7 @@ seminar                = семинар                          # MATH+ # 18+
 demonstrate            = демонстрировать, ~ показывать    # 14+
 slide @ image          = слайд                            # 14+
 video projector        = проектор                         # 14+
+
 
 
 

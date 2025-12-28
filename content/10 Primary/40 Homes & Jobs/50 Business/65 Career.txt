@@ -22,7 +22,7 @@ florist                 = флорист                          # 10+
 dispatcher              = диспетчер                        # 10+
 pyrotechnician          = пиротехник                       # 10+
 stenographer            = стенографист/стенографистка      # 16+
-humorist                = юморист                          # 10+
+humourist\\humorist     = юморист                          # 10+
 taxidermist             = таксидермист %% набивщик чучел   # TERM+ # 16+
 nanny                   = няня                             /// nurse устар.
 
@@ -43,6 +43,7 @@ pensioner %% mostly Br. = пенсионер
 retiree {Am.}           = пенсионер
 pension fund            = пенсионный фонд                  # 10+
 ===
+
 
 
 

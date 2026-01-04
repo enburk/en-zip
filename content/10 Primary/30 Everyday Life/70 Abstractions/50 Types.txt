@@ -1,26 +1,30 @@
-type @ kind     = тип
+type @ kind                = тип
 
-sort            = сорт, сортировать                        # 10+
-category        = категория                                # 10+
+sort                       = сорт, сортировать             # 10+
+category                   = категория                     # 10+
 ---
-class @ sort    = класс                                    # 10+
-classification  = классификация                            # 10+
+class @ sort               = класс                         # 10+
+classification             = классификация                 # 10+
 
 ===
 
-identical       = идентичный                               # 14+
-analogous       = аналогичный                              # 14+ /// analogical ~= metaphorical
-equivalent      = равнозначный, эквивалентный, ~ эквивалент # 18+ /// Latin
-variant         = вариант
-copy            = копия, копировать
-replica         = реплика ~ (в знач. точная копия)         # 16+
-duplicate       = дубликат, удваивать                      # 10+
+identical                  = идентичный                    # 14+
+analogous                  = аналогичный                   # 14+ /// analogical ~= metaphorical
+equivalent                 = равнозначный, эквивалентный, ~ эквивалент # 18+ /// Latin
+variant                    = вариант
+
+---
+copy                       = копия, копировать
+replica                    = реплика ~ (в знач. точная копия) # 16+
+duplicate @ noun %% {noun} = дубликат, копия               # 10+
+duplicate @ verb %% {verb} = снимать копию, ~ удваивать    # 10+
 
 ===
 
-gradation       = градация                                 # TERM+ # 16+
-concretization %% Br. also: concretisation = конкретизация                            # TERM+ # 16+
-differentiation = дифференциация                           # TERM+ # 16+
+gradation                  = градация                      # TERM+ # 16+
+concretization %% Br. also: concretisation = конкретизация                 # TERM+ # 16+
+differentiation            = дифференциация                # TERM+ # 16+
+
 
 
 

@@ -17,6 +17,10 @@ guide @ book              = руководство, ~ путеводитель
 : “The Guide is definitive. ~ Reality is frequently ~ inaccurate.”
 
 ***
+nipple @ auto             = ниппель
+nipple @ body             = сосок
+
+***
 course @ path             = курс, направление, ход                # 10+
 : Maintain 25,000 feet, course 0-4-0. # 10+
 course @ programme        = курс обучения, ~ курс лекций, ~ курс лечения # 14+ /// много знач.
@@ -25,8 +29,8 @@ golf course               = поле для гольфа                       #
 main course               = главное блюдо                         # 10+
 
 ***
-express @ transport       = скорый, экспресс %% поезд, автобус
-express @ convey          = выражать
+express @ transport {n}   = скорый, экспресс %% поезд, автобус
+express @ convey {v}      = выражать
 expression @ emotion      = экспрессия
 expression @ idiom        = выражение
 facial expression         = выражение лица
@@ -45,6 +49,8 @@ terminal @ electro        = клемма
 terminal @ end            = заключительный, конечный
 = умирающий (о больном), ~ смертельный (о болезни)
 terminator @ electro      = в электронике: ~ ограничитель, ~ терминатор
+
+
 
 
 

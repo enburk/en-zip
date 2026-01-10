@@ -2,9 +2,16 @@ nouns        = существительные
 
 look @ noun  = взгляд, вид, облик
 drink @ noun = напиток
-fail {n}{v}  = ошибка, провал, ~ терпеть неудачу
 
+= =
 
+fail @ noun  = ошибка, провал
 
+===
+proper nouns = имена собственные # HEAD
+===
+
+London
+Amsterdam
 
 

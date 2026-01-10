@@ -1,10 +1,10 @@
-theatre\\theater @ modern = театр
+theatre\\theater @ modern {n} = театр
 
 mise-en-scène             = мизансцена %% размещение декораций ~ и актеров на сцене # 16+
 troupe                    = труппа                                          # 10+
 costumer/costumier        = костюмер
 ---
-scene @ theater           = место действия, ~ сцена (в знач. часть пьесы) %% редко: театральная сцена # 10+
+scene @ theater {n}       = место действия, ~ сцена (в знач. часть пьесы) %% редко: театральная сцена # 10+
 stage @ theater           = в театре: сцена, ~ театральные подмостки, ~ ставить пьесу # 10+
 scenography               = сценография                                     # ART- # 16+
 proscenium                = просцениум                                      # ART+ # 18+
@@ -31,12 +31,12 @@ music hall {Br.}          = мьюзик-холл %% тип представле
 vaudeville                = водевиль                                        # ART+ # HISTORY+ # 18+
 cabaret                   = кабаре                                          # ART+ # HISTORY+ # 18+
 burlesque                 = бурлеск                                         # ART+ # HISTORY+ # 18+
-farce                     = фарс                                            # ART+ # HISTORY+ # 18+
+farce {n}                 = фарс                                            # ART+ # HISTORY+ # 18+
 
 ---
 commedia dell'arte        = комедия дель арте                               # ART- # 18+
 Pierrot                   = Пьеро                                           # ART- # 18+
-Polichinelle              = Полишинель %% (фр.)                             # ART- # 18+
+Polichinelle              = Полишинель %% (фр.)                             # ART- # sic! # 18+
 secret of Polichinelle    = секрет Полишинеля                               # ART- # 18+
 Harlequin                 = Арлекин                                         # ART- # 18+
 Columbina                 = Коломбина                                       # ART- # 18+
@@ -49,6 +49,8 @@ performance @ theater     = представление, выступление  
 
 flash mob||flashmob       = флешмоб                                         # ART- # 16+
 happening                 = хэппенинг                                       # ART- # 18+
+
+
 
 
 

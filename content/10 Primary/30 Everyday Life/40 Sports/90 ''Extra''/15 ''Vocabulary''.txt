@@ -26,7 +26,8 @@ kettlebell                 = гиря
 barbell                    = штанга %% (вес)
 goal post                  = штанга %% (ворот)
 
-cup @ sport                = кубок
+cup @ sport {n}            = кубок
+
 
 
 

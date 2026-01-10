@@ -14,7 +14,7 @@ binoculars           # duple
 ===
 
 ---
-hair                 = волосы
+hair {n}             = волосы
 : Her hair '''is''' long.
 
 ---
@@ -50,4 +50,5 @@ fish → fish          = %% '''fishes''' если речь ~ о разных в�
 ===
 
 : Oh, men! men!! men!!!
+
 

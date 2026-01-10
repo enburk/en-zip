@@ -9,8 +9,9 @@ arithmetic operation    = арифметическая операция         
 plus @ sign             = плюс
 minus @ sign            = минус
 
-sum @ math              = сумма
+sum @ math {n}{v}       = сумма, суммировать
 summa                   = сумма %% средневековое сочинение               # 18+
+
 ---
 maximum                 = максимум, максимальный                         /// Latin
 minimum                 = минимум, минимальный                           # 10+ /// Latin
@@ -21,6 +22,7 @@ radical @ math          = радикал                                        
 
 lemma                   = лемма                                          # MATH- # 16+
 mathematical induction  = математическая индукция %% метод доказательства # MATH+ # TERM+
+
 
 
 

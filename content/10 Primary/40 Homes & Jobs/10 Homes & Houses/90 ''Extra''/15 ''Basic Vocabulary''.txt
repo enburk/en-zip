@@ -6,14 +6,14 @@ village        = деревня, поселок
 
 palace         = дворец, особняк, ~ официальная резиденция
 
-garden         = сад, огород /// French
+garden {n}     = сад, огород /// French
 bench @ park   = скамейка, скамья
 
-floor @ house  = пол
-roof @ house   = крыша
-window @ house = окно
+floor @ house {n} = пол
+roof @ house {n} = крыша
+window @ house {n} = окно
 ---
-bed @ home     = кровать, постель
+bed @ home {n} = кровать, постель
 bedroom        = спальня, ~ гостиничный номер
 
 wallpaper      = обои
@@ -30,4 +30,5 @@ place @ role   = должность, место
 : London's the place.
 : There's no place like home.
 : Wrong place? No. Wrong time, then. Yes.
+
 

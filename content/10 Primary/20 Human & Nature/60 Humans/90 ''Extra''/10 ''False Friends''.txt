@@ -46,7 +46,7 @@ exultation                  = ликование, торжество %% ''не''
 exaltation                  = экзальтация                                     # duple # 16+
 
 ***
-dream @ sleep               = сон, видеть сны
+dream @ sleep {n}{v}        = сон, видеть сны
 dream ~ (of, about) @ wish  = мечта, мечтать, ~ грезить, воображать
 doze/nap                    = дремать
 
@@ -63,6 +63,7 @@ intelligent @ AI            = обладающий искусственным и
 intelligence @ mind         = ум, сообразительность
 intelligence @ espionage    = разведывательная служба, ~ разведывательные данные /// сведения, информация
 : Central Intelligence Agency
+
 
 
 

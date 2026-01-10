@@ -1,24 +1,26 @@
-entertainment  = зрелище, представление, ~ развлечение, увеселение
+entertainment             = зрелище, представление, ~ развлечение, увеселение
 
-hit @ music    = хит                    # 10+
-hit parade     = хит-парад              # 10+
-chart @ music  = график, чарт, хит-парад # 10+
-single @ music = сингл                  # 10+
+hit @ music               = хит         # 10+
+hit parade                = хит-парад   # 10+
+chart @ music             = график, чарт, хит-парад # 10+
+single @ music            = сингл       # 10+
 
-prime-time     = прайм-тайм             # 18+ /// (вечерние часы, когда собирается наибольшая ТВ-аудитория)
-rating         = рейтинг                # 10+
+prime-time                = прайм-тайм  # 18+ /// (вечерние часы, когда собирается наибольшая ТВ-аудитория)
+rating                    = рейтинг     # 10+
 
-entrepreneur   = антрепренёр            # 18+
-impresario     = импресарио             # 18+
-producer       = продюсер, производитель # 14+
-sponsor        = спонсор                # 14+
+entrepreneur              = антрепренёр # 18+
+impresario                = импресарио  # 18+
+producer                  = продюсер, производитель # 14+
+sponsor                   = спонсор     # 14+
 
-nightclub      = ночной клуб            # 16+
-fan club       = фан-клуб               # 10+
-autograph      = автограф
-face control   = фейсконтроль           # 16+
+nightclub                 = ночной клуб # 16+
+fan club                  = фан-клуб    # 10+
+autograph                 = автограф
+face control              = фейсконтроль # 16+
 
-firework       = фейерверк
-confetti       = конфетти               # 10+
+firework                  = фейерверк
+confetti                  = конфетти    # 10+
+carousel @ merry-go-round = карусель
+
 
 

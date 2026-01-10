@@ -9,7 +9,7 @@ micron                   = микрон/микрометр            # MATH+ # 
 
 mile                     = миля                        # 14+
 foot @ unit              = фут                         # 14+ /// # polysemic
-yard                     = ярд                         # 14+
+yard {n}                 = ярд                         # 14+
 
 hectare                  = гектар
 acre                     = акр %% около 40 соток       # 14+
@@ -33,6 +33,7 @@ metric system            = метрическая система         # 12+
 ===
 
 : Measure twice, ~ cut once. = Два раза отмерь, ~ один раз отрежь.
+
 
 
 

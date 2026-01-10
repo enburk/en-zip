@@ -1,4 +1,4 @@
-cat            = кот, кошка
+cat {n}        = кот, кошка
 kitten         = котенок
 
 Abyssinian cat = абиссинская кошка               # TERM-
@@ -9,4 +9,5 @@ Siamese cat    = сиамская кошка
 Thai cat       = тайская кошка                   # TERM-
 Sphynx         = сфинкс
 Donskoy        = донской сфинкс                  # RARE+ # TERM+ # 18+
+
 

@@ -3,7 +3,7 @@ agriculture       = сельское хозяйство                # 10+
 agronomist        = агроном                           # 10+
 agrarian          = аграрный, аграрий, ~ крупный землевладелец # POLIT+ # 18+
 
-farm @ agro       = ферма
+farm @ agro {n}   = ферма
 farmer            = фермер
 ---
 cowboy            = ковбой
@@ -39,6 +39,7 @@ herbicides        = гербициды                         # TERM- # 18+
 aeration          = аэрация                           # TERM- # 18+
 
 extensive farming = экстенсивное земледелие           # POLIT- # TERM- # 18+
+
 
 
 

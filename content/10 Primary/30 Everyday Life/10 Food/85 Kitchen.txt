@@ -1,4 +1,4 @@
-kitchen                 = кухня ~ (помещение)
+kitchen {n}             = кухня ~ (помещение)
 
 blender                 = блендер
 mixer @ food            = миксер
@@ -24,6 +24,7 @@ conserve @ noun %% noun = консервированные фрукты         
 
 culinary                = кулинарный                          # TERM- # pix- # 14+
 culinarian              = кулинар                             # TERM- # pix- # 14+
+
 
 
 

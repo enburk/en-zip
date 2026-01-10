@@ -1,13 +1,13 @@
 basic ~ vocabulary
 
-fork @ utensil          = вилка
-spoon @ utensil         = ложка
-knife %% plural: knives = нож
-tablecloth              = скатерть
-plate @ dish            = тарелка
-napkin                  = салфетка
+fork @ utensil {n}      = вилка
+spoon @ utensil {n}     = ложка
+knife %% plural: knives {n} = нож
+tablecloth {n}          = скатерть
+plate @ dish {n}        = тарелка
+napkin {n}              = салфетка
 
-egg @@                  = яйцо
+egg @@ {n}              = яйцо
 pie @ food              = пирог, торт
 cake @ dessert          = торт
 cookie {Am.}            = домашнее печенье, ~ булочка
@@ -49,9 +49,11 @@ honey                   = мёд
 hungry                  = голодный
 starving                = голодающий, ~ изголодавшийся
 full @ food             = сытый
+: I’m hungry.
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
 
 
 

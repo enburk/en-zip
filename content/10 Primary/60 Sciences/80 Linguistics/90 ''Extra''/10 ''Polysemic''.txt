@@ -10,7 +10,7 @@ accent @ pronounce       = акцент ~ (произношение)            
 : British accent
 : ta-da accent           # SOUND
 ***
-sentence/maxim           = сентенция, максима
+sentence/maxim {n}       = сентенция, максима
 sentence @ grammar       = в грамматике: ~ предложение
 sentence @ law           = приговор
 : Marriage is not a word ~ but a sentence.
@@ -20,6 +20,7 @@ reduction @ speech       = в лингвистике: ~ редукция        
 ***
 transcription @ process  = запись, переписывание                       # TERM+ # 10+
 transcription @ phonetic = в фонетике: ~ транскрипция                  # TERM+ # 10+
+
 
 
 

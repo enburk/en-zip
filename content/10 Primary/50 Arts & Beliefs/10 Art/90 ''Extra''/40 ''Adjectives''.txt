@@ -19,7 +19,7 @@ warm'''er'''      = более тёплый
 warm'''est'''     = самый тёплый
 
 ---
-close @ near      = близкий
+close @ near {a}  = близкий
 closer            = ближе
 closest           = самый близкий, ~ ближайший
 
@@ -55,6 +55,7 @@ simpl'''est'''//'''most''' simple = самый простой
 ===
 
 : That's the stupidest idea ~ I've ever heard!
+
 
 
 

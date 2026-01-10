@@ -1,4 +1,4 @@
 basic ~ vocabulary
 
-king @ royal  = король
-queen @ royal = королева
+king @ royal  = король   {n}
+queen @ royal = королева {n}

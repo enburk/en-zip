@@ -25,10 +25,11 @@ Battle of Waterloo           = битва при Ватерлоо
 ===
 Paris Commune                = Парижская коммуна      # 16+ /// (18 March – 28 May 1871)
 Communards                   = коммунары              # HISTORY- # 16+
-barricade                    = баррикада, ~ баррикадировать # 14+
+barricade {n}{v}             = баррикада, ~ баррикадировать # 14+
 
 ===
 Victorian era                = Викторианская эпоха %% 1837—1901 # 16+
+
 
 
 

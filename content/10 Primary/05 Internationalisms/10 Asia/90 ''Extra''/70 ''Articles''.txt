@@ -1,8 +1,11 @@
-articles      = в грамматике: ~ артикли
+articles      = в грамматике: ~ артикли # HEAD
 
 ===
 a @ article   # HEAD
 an @ article  # HEAD
+the           # HEAD
+===
+
 ===
 = неопределенный артикль '''a, an''' ~ произошел от числительного:
 one @ numeric = один
@@ -13,23 +16,21 @@ one @ numeric = один
 : Problems?
 : A problem?
 
-: You have mail.
-: You have '''a''' message.
-
-===
-the           # HEAD
 ===
 = определенный артикль '''the''' ~ произошел от местоимения:
-that          = тот # duple
+that          = тот                # pix-
 ===
 = употребляется ~ с ''исчисляемыми'' ~ существительными ~ в ''единственном'' и ~ во ''множественном'' ~ числе
 ===
+
 ---
 '''the''' ball
 '''the''' balls
+
 ---
 '''the''' owl
 '''the''' owls
+
 
 
 

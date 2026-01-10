@@ -12,7 +12,7 @@ earphones                    = наушники
 drum @ music                 = барабан
 drumsticks                   = барабанные палочки
 ---
-keyboard @ music             = клавиатура
+keyboard @ music {n}         = клавиатура
 strings @ music              = струны, струнные инструменты оркестра
 : string quartet
 : string instruments
@@ -25,5 +25,6 @@ tuning @ music               = настройка  # TECH- /// строй – э
 ===
 
 : A bird sings because it has a song.
+
 
 

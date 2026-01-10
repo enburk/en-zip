@@ -30,12 +30,12 @@ diamonds @ cards
 spades @ cards
 clubs @ cards
 ---
-ace @ cards
-king @ cards
-king @ chess
-queen @ cards
-queen @ chess
-jack @ cards
+ace @ cards {n}
+king @ cards {n}
+king @ chess {n}
+queen @ cards {n}
+queen @ chess {n}
+jack @ cards {n}
 
 ===
 ---
@@ -48,6 +48,7 @@ bet @ stake                 = пари, ставка, ~ делать ставк�
 : Place your bets!
 ante                        = ставка, взнос, ~ делать первую ставку
 : Ante up!                  = Делайте ставки! ~ Деньги на стол!
+
 
 
 

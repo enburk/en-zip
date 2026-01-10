@@ -24,5 +24,7 @@ cattle grid\\cattle guard
 
 ring road\\beltway = a freeway that encircles a city
 
+---
 freight
-freighter
+freighter @ ship
+freighter @ plane

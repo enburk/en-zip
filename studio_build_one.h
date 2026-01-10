@@ -112,7 +112,8 @@ namespace studio::one
         for (auto& r: data.resources)
         {
             if (r.options.contains("asset")
-            or  r.options.contains("noqrop"))
+            or  r.options.contains("noqrop")
+            or  r.options.contains("course-"))
                 continue;
 
             if (r.vocal() and
@@ -247,6 +248,7 @@ namespace studio::one
 
             bool isahead = entry.opt.external.contains("HEAD");
             bool nopixed = entry.opt.internal.contains("pix-") or isahead;
+            bool nopixal = entry.opt.internal.contains("pix?");
             bool noaudio = entry.opt.internal.contains("audio-");
             bool nosound = entry.opt.internal.contains("sound-");
             bool soundio = entry.opt.external.contains("SOUND");
@@ -256,7 +258,7 @@ namespace studio::one
 
             bool vocal_ok = not vocals[&entry].empty() or noaudio or soundio;
             bool sound_ok = not sounds[&entry].empty() or nosound or not soundio;
-            bool video_ok = not videos[&entry].empty() or nopixed or
+            bool video_ok = not videos[&entry].empty() or nopixed or nopixal or
             entry.eng.contains(str(u8"→")) or
             entry.eng.starts_with(":") or
             entry.eng == "";

@@ -1,12 +1,15 @@
 verbs        = глаголы
 
-do           = делать
-go @ verb    = идти
 look @ verb  = смотреть, выглядеть
 drink @ verb = пить
-listen       = слушать
-sleep        = спать
-think        = думать
+listen {v}   = слушать
+
+===
+
+sleep {v}    = спать
+think {v}    = думать
+fail @ verb  = не удаваться, ~ терпеть неудачу
+
 
 
 

@@ -5,40 +5,40 @@ life                      = жизнь                 # 18+
 death                     = смерть                # 18+
 live @ adjective          = живой, ~ реальный, действующий /// laiv
 live @ verb               = жить                  /// liv
-die                       = умереть, умирать, ~ затухать
+die {v}                   = умереть, умирать, ~ затухать
 : Death and Life
 ===
 
 body  @ human {n}         = тело
 head  @ human {n}         = голова
 face  @ human {n}         = лицо
-shoulder  @ human {n}     = плечо
-arm  @ human {n}          = рука
+shoulder @ human {n}      = плечо
+arm   @ human {n}         = рука
 hand  @ human {n}         = рука ~ (кисть)
-leg  @ human {n}          = нога
+leg   @ human {n}         = нога
 knee  @ human {n}         = колено
 ---
-finger @ human            = палец (на руке)
-thumb @ human             = большой палец
-toe @ human               = палец (на ноге)
-nails @ human             = ногти
+finger @ human {n}        = палец (на руке)
+thumb @ human {n}         = большой палец
+toe @ human {n}           = палец (на ноге)
+nails @ human {n}         = ногти
 
-eye @ human               = глаз
-ear @ human               = ухо
-mouth @ human             = рот
-lips @ human              = губы
-cheek @ human             = щека
+eye @ human {n}           = глаз
+ear @ human {n}           = ухо
+mouth @ human {n}         = рот
+lips @ human {n}          = губы
+cheek @ human {n}         = щека
 
 ===
 
-man %% plural: men        = мужчина, муж
-woman %% plural: women    = женщина
+man   %% plural: men {n}  = мужчина, муж
+woman %% plural: women {n} = женщина
 
 husband                   = муж
 wife                      = жена
 
 adult                     = взрослый
-child %% plural: children = ребенок
+child %% plural: children {n} = ребенок
 
 baby boy
 baby girl
@@ -63,6 +63,7 @@ crazy @ adjective         = сумашедший, безумный, ~ чокну
 beauty
 beautiful
 : You're so beautiful.
+
 
 
 

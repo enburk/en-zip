@@ -7,7 +7,7 @@ kelvin                    = кельвин                           # MATH- # T
 ---
 pressure                  = давление
 atmosphere @ unit         = атмосфера %% единица измерения давления
-bar @ unit                = бар %% единица измерения давления # MATH+ # TERM+ # 18+
+bar @ unit {n}            = бар %% единица измерения давления # MATH+ # TERM+ # 18+
 pascal @ unit             = паскаль %% единица измерения давления # MATH+ # TERM+ # 18+
 
 thermal energy            = теплота                           # MATH- # 18+
@@ -35,6 +35,7 @@ fluctuation               = флуктуация, колебание            
 dissipation               = диссипация, рассеяние, ~ мотовство # MATH+ # 18+
 diffusion                 = диффузия ~ рассеивание, распространение # MATH+ # 18+
 convection                = конвекция                         # MATH+ # 18+
+
 
 
 

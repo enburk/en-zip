@@ -3,8 +3,10 @@ Italian          = итальянский                                 # pix-
 
 balcony @ house  = балкон
 loggia           = лоджия                                      # 14+
+
 regatta          = регата                                      # 14+
-stiletto         = стилет                                      # 18+
+
+stiletto @ knife = стилет                                      # 18+
 risk             = риск, рисковать, ~ рискнуть                 # 8+
 bandit           = бандит
 
@@ -22,13 +24,18 @@ risotto          = ризотто                                     # FOOD+ # 
 carpaccio        = карпаччо                                    # FOOD+ # MEAT # 16+
 ravioli          = равиоли                                     # FOOD+ # MEAT # 16+
 
+===
+
 concert          = концерт
-maestro          = маэстро                                     # 14+
 orchestra        = оркестр
 sonata           = соната                                      # 16+
-bravura          = в музыке: бравурный пассаж, ~ бравурность, ~ бравада # 18+
+maestro          = маэстро                                     # 14+
 prima donna      = примадонна                                  # ART- # 14+
+
+===
+bravura          = в музыке: бравурный пассаж, ~ бравурность, ~ бравада # 18+
 bravo!           = браво!
+
 
 
 

@@ -1,12 +1,13 @@
-ocean   = океан
+ocean       = океан
 
-wave    = волна                                               /// NEW
-archipelago %% plural: archipelagos/archipelagoes = архипелаг                                           # 10+
-atoll   = атолл                                               # 16+
-lagoon  = лагуна
-reef    = риф
-grotto  = грот, пещера                                        /// Italian
-iceberg = айсберг
+wave        = волна                                           /// NEW
+archipelago %% plural: archipelagos/archipelagoes = архипелаг                                       # 10+
+atoll       = атолл                                           # 16+
+lagoon      = лагуна
+reef @ bank {n} = риф
+grotto      = грот, пещера                                    /// Italian
+iceberg     = айсберг
+
 
 
 

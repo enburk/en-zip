@@ -4,7 +4,7 @@ Latin American ~ Spanish
 ranch           = ранчо           # 10+ /// American Spanish
 mustang @ horse = мустанг         # 10+ /// Mexican Spanish
 lasso           = лассо           # 10+ /// American Spanish
-machete         = мачете          # 10+ /// Spanish
+machete {n}     = мачете          # 10+ /// Spanish
 gringo          = гринго          # 16+ /// American Spanish
 tango           = танго           # 10+ /// Argentine Spanish (Argentine)
 tequila         = текила          # 18+ /// American Spanish (Mexico)
@@ -14,5 +14,6 @@ piña colada     = пина колада     # 16+ /// American Spanish (Puerto 
 alligator       = аллигатор
 barracuda       = барракуда       # 10+ /// American Spanish
 tuna            = тунец           /// American Spanish
+
 
 

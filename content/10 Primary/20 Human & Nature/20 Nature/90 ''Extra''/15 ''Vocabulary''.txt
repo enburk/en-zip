@@ -1,10 +1,10 @@
 basic ~ vocabulary
 
-rain                  = дождь, ~ идти (о дожде)
+rain {n}{v}           = дождь, ~ идти (о дожде)
 wind  @ air {n}       = ветер
-sky                   = небо
+sky {n}               = небо
 cloud {n}             = облако
-rainbow               = радуга
+rainbow {n}           = радуга
 ---
 sunrise               = восход
 sunset                = закат
@@ -13,10 +13,10 @@ day                   = день
 evening               = вечер
 night                 = вечер, ночь # duple
 
-ice                   = лед
+ice {n}               = лед
 drop @ water          = капля, капать, ~ падать, уронить
-river                 = река
-lake                  = озеро
+river {n}             = река
+lake {n}              = озеро
 
 ---
 stone @ rock          = камень
@@ -29,7 +29,7 @@ hill                  = холм
 sea                   = море
 surf @ waves          = прибой
 shell/seashell        = раковина
-sand                  = песок
+sand {n}              = песок
 
 ---
 forest                = лес
@@ -44,10 +44,11 @@ mushrooms             = грибы
 nuts @ fruits         = орехи
 
 ---
-winter                = зима
-spring @ season       = весна
-summer                = лето
-autumn\\fall @ season = осень
+winter {n}            = зима
+spring @ season {n}   = весна
+summer {n}            = лето
+autumn\\fall @ season {n} = осень
+
 
 
 

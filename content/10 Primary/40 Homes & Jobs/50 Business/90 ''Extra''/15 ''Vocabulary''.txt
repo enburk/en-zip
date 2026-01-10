@@ -14,12 +14,12 @@ job
 : Great job! @ sarcastic
 
 ---
-hire @ job        = нанимать
-fire @ job        = увольнять
+hire @ job {v}    = нанимать
+fire @ job {v}    = увольнять
 : You're fired!
 
 ===
-sell              = продавать
+sell {v}          = продавать
 buy               = покупать
 : Can I buy you a drink?
 : May I buy you a drink?
@@ -64,6 +64,7 @@ profit/profits    = прибыль, доход
 
 
 c
+
 
 
 

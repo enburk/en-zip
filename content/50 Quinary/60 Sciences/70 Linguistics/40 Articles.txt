@@ -2,9 +2,9 @@ articles
 countable//uncountable
 
 ***
-proof # duple
-%% {countable} = in mathematical context
-%% {uncountable} = otherwise
+proof                     # duple
+%% {countable}            = in mathematical context
+%% {uncountable}          = otherwise
 evidence %% {uncountable} # duple
 : Need proof?
 
@@ -15,4 +15,5 @@ evidence %% {uncountable} # duple
 /// "I had a new feeling. A feeling that made me want to gag."
 /// "I tasted a new water. A water that made me strong."
 /// "I had a new gold. A gold that shone black as tar."
+
 

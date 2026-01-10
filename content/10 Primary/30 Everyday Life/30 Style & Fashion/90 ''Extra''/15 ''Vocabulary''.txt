@@ -24,18 +24,19 @@ shoes             = ботинки, туфли, обувь
 cotton            = хлопок, хлопковый
 leather           = кожа, кожаный
 
-hat @ headwear    = шляпа
+hat @ headwear {n} = шляпа
 
 ---
 umbrella          = зонт, зонтик
 : open umbrella   # SOUND
 
-necklace          = ожерелье, колье
+necklace {n}      = ожерелье, колье
 pendant           = подвеска, кулон
 earrings          = серьги
 
 lipstick          = помада
 facial mask       = маска для лица
+
 
 
 

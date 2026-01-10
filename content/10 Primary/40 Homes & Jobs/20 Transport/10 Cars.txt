@@ -1,10 +1,12 @@
-car\\car/automobile          = автомобиль                         /// motor, motor car - British English, old-fashioned or humorous
+car                          = машина, автомобиль                 /// motor, motor car - British English, old-fashioned or humorous
+automobile ~ {Am.}           = автомобиль                         /// motor, motor car - British English, old-fashioned or humorous
 
 traffic                      = движение, транспортный поток       /// торговля, транспортирование
 smog                         = смог                               # 10+
 boom barrier                 = шлагбаум                           /// /boom gate
 siren @ car                  = сирена
 
+---
 parking @ lot                = парковка
 parallel parking             = параллельная парковка              # TERM- # 16+
 
@@ -12,9 +14,10 @@ auto show                    = автосалон  %% в знач. выстав�
 concept car                  = концепт-кар                        # TECH- # 10+
 test drive                   = тест-драйв                         # TERM- # 10+
 
-bumper @ car                 = бампер
+---
 pedal @ car                  = педаль
 throttle//accelerator//gas pedal {Am.} @ car = педаль газа %% разговорное: газ, акселератор # TECH-
+bumper @ car                 = бампер
 
 trailer @ car                = трейлер, прицеп, автоприцеп
 monocoque @ car              = монокок                            # TECH+ # TERM+ # 18+
@@ -28,6 +31,7 @@ climate control              = климат-контроль                    
 cruise control               = круиз-контроль                     # TECH+ # TERM+ # 10+
 immobiliser\\immobilizer     = иммобилайзер/иммобилизатор         # TECH+ # TERM+ # 18+
 
+---
 radiator @ car               = радиатор                           # 10+
 grill|grille @ car           = решетка радиатора                  # 10+
 
@@ -55,6 +59,7 @@ shock absorber               = амортизатор                        # T
 
 starter @ car                = стартёр                            # TECH+ # TERM+ # 14+
 differential @ car           = дифференциал                       # TECH+ # TERM+ # 14+
+
 
 
 

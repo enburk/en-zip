@@ -1,26 +1,33 @@
 polysemic
+
 ***
 test @ school           = контрольная работа, ~ тест, тестировать         /// , ~ проверочная работа
 test @ test             = проверка, испытание, ~ aнализ, обследование
 blood test              = анализ крови
 : Testing, testing, 1, 2, 3, 4, 1, 2, 3, 4.
+test @ shell            = в биологии: панцирь ~ морского ежа и т.п.
+
 ***
 discipline @ order      = дисциплина, дисцилинировать, ~ порядок
 discipline @ branch     = дисциплина ~ (научная или спортивная)           /// (предмет изучения) academic discipline
 interdisciplinary       = междисциплинарный                               # TERM+ # 18+
+
 ***
 school(1) @ institution = школа, ~ учебное заведение
 school(2) @ fish        = косяк, стая ~ (рыб и т.п.)
 school(3) @ way         = направление ~ (в искусстве, науке и т.п.)       # 16+
+
 ***
 correct @ adjective     = верный, правильный, ~ соответствующий, ~ корректный # 16+
 correct @ verb          = корректировать, ~ исправлять, ~ наказывать      # 16+
 correctional institution %% formal = исправительное учреждение, ~ тюрьма             # 16+
+
 ***
-table @ chart           = таблица                                         # 10+
-table @ furniture       = стол, столик ~ (в ресторане)                    # 10+ /// , ~ общество за столом
+table @ chart {n}       = таблица                                         # 10+
+table @ furniture {n}   = стол, столик ~ (в ресторане)                    # 10+ /// , ~ общество за столом
 table manners           = умение вести себя за столом                     # 10+
 : Don't sit ~ on my writing-table: ~ you'll break it.
+
 ***
 reason @ cause          = причина, повод, ~ основание
 reason @ thinking       = разум, рассудок, ~ благоразумие
@@ -28,6 +35,8 @@ reason @ deduce         = рассуждать, размышлять, ~ дела
 reason @ argue          = аргументировать, обосновывать
 : It is not unseasonable.
 : Listen to reason!
+
+
 
 
 

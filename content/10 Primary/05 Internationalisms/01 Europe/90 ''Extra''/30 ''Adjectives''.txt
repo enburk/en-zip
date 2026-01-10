@@ -1,22 +1,20 @@
 adjectives       = прилагательные
 
-good @ adjective = хороший # duple
-bad @ adjective  = плохой  # duple
+good @ adjective = хороший
+bad @ adjective  = плохой
 
-open             = открытый
-closed @@        = закрытый
+open @ door      = открытый
+closed @ door    = закрытый
 
 empty            = пустой
 full @ filled    = полный
 
-soft             = мягкий
-hard             = твердый, жёсткий # duple
+wet @ moist      = мокрый
+dry @ dehydrated = сухой
 
-wet              = мокрый
-dry              = сухой
+little           = маленький
+big              = большой
 
-little           = маленький # duple
-big              = большой # duple
 
 
 

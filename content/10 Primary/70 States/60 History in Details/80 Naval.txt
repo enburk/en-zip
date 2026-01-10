@@ -12,11 +12,12 @@ sloop          = шлюп
 
 gun port       = пушечный порт         # TECH+ # 16+
 quarterdeck    = квартердек, шканцы    # TECH+ # 16+
-reef @ navy    = брать рифы ~ (на парусе) # TECH+ # 16+
+reef @ sail {v} = брать рифы ~ (на парусе) # TECH+ # 16+
 boarding party = абордажная команда
 
 dreadnought    = дредноут              /// Dreadnought,~
 monitor @ navy = монитор ~ (корабль)   # HISTORY+ # WAR+ # 16+
+
 
 
 

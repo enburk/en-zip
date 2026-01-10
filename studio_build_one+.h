@@ -86,41 +86,27 @@ namespace studio::one
 
     void report_duples (content::out::course& course)
     {
-        hashmap<str, array<ent>> map;
+        hashmap<str, ent> entries;
 
         for (auto& e: course.entries)
-        map[e.abstract + "@" + e.sense] += &e;
-
-        for (auto& [s, entries]: map)
         {
-            if (entries.size() < 2)
-                continue;
-
-            int actual = 0;
-            for (ent entry: entries)
-            if  (not entry->opt.external.contains("HEAD")
-            and  not entry->opt.internal.contains("first")
-            and  not entry->opt.internal.contains("duple"))
-                actual++;
-
-            int duples = 0;
-            for (ent entry: entries)
-            if  (entry->opt.internal.contains("first")
-            or   entry->opt.internal.contains("duple"))
-                duples++;
-
-            if (actual == 0 and duples != 0) {
-            for (ent entry: entries)
-            report::anoma1 += link(entry);
-            report::anoma1 += ""; }
-
-            if (actual < 2)
-                continue;
-
-            for (ent entry: entries)
-            if  (not entry->opt.external.contains("HEAD"))
-            report::duples += link(entry);
-            report::duples += "";
+            str s = e.abstract + "@" + e.sense;
+            auto it = entries.find(s);
+            if (it == entries.end())
+            {
+                entries[s] = &e;
+                if (e.opt.internal.contains("duple"))
+                report::duples += red(bold("wrong duple:")),
+                report::duples += link(e),
+                report::duples += "";
+            }
+            else
+            {
+                if (not e.opt.internal.contains("duple"))
+                report::duples += link(it->second),
+                report::duples += link(e),
+                report::duples += "";
+            }
         }
     }
 
@@ -249,7 +235,12 @@ namespace studio::one
             }
             else duration = it->second;
 
-            if (duration > 20.0)
+            int spaces = 0;
+            for (char c: r.title)
+            if (c == ' ') spaces++;
+
+            if (duration > 20.0
+            or  duration > 4.0 and spaces <= 1)
             report::errors.log += link(&r) + " " +
             red(str(duration) + " sec");
         }

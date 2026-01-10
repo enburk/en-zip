@@ -5,7 +5,8 @@ cartridges
 
 rifled barrel
 
-fighter [plane]
+---
+fighter @ plane
 interception @ airforce
 
 aircraft carrier

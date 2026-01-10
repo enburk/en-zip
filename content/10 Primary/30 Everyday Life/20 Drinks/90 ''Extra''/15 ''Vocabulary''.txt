@@ -15,7 +15,7 @@ beer              = пиво # 18+
 keg               = бочонок # 18+
 
 ---
-cup @ vessel      = чашка, стаканчик
+cup @ vessel {n}  = чашка, стаканчик
 teacup            = чайная чашка
 mug @ cup         = кружка
 
@@ -36,6 +36,7 @@ thirsty           = испытывающий жажду
 ===
 
 : That's not my cup of tea.
+
 
 
 

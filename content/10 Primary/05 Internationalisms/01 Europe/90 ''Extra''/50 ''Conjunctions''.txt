@@ -1,15 +1,11 @@
-conjunctions = в грамматике: сюозы # 8+
-
+# pix-
 ===
+conjunctions = в грамматике: сюозы # 8+
 and          = и                   # 8+
 or           = или                 # 8+
-===
 but          = а, но               # 8+
-not          = не                  # duple # 8+
 ===
-: bread '''and''' butter = бутерброд
-: more '''or''' less = более или менее
-: last '''but not''' least = последнее по счёту, ~ но не по важности
+
 
 
 

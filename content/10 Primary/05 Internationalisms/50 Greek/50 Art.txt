@@ -11,8 +11,8 @@ lyre                       = лира                               # 10+
 kithara|cithara            = кифара                             # HISTORY+ # RARE+ # 18+
 cacophony                  = какофония                          # 16+
 
-theatre\\theater @ antique = театр
-amphitheatre\\amphitheater = амфитеатр                          # 10+
+theatre\\theater @ antique {n} = театр
+amphitheatre\\amphitheater {n} = амфитеатр                          # 10+
 
 drama @ art                = драма, драматургия                 # 10+
 comedy @ art               = комедия, комизм, комичность        # 10+

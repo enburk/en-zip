@@ -36,6 +36,7 @@ namespace media
                 {
                     if (prev1 == 0xE2 and prev2 == 0x80
                     or  prev1 == 0xE2 and prev2 == 0x86
+                    or  prev2 == 0xCE
                     or  prev2 == 0xCA
                     or  prev2 == 0xC9)
                         continue;

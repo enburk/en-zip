@@ -2,8 +2,12 @@ Eskimo-Aleut ~ languages = эскимосско-алеутские языки # 
 
 igloo                    = иглу                       # 10+
 kayak                    = каяк                       # 10+ /// Greenland Eskimo
+
 anorak                   = анорак                     # RARE- # 16+ /// Greenland Eskimo
+parka                    = парка
+
 malamute                 = маламут                    # RARE- # 16+ /// Alaska Eskimo
 husky                    = хаски
+
 
 

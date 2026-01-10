@@ -1,33 +1,43 @@
-yes and no
+***
+yes and no # HEAD
 
+---
 : Yes.
 : Yes?
 : Yes! @ whispering
 : Yes! @ enthusiastic
 : Yess! @ enthusiastic
+
+---
+: No?
+: No! @@
+: No! No!
+: No idea.
+: No problem!
+: No, thanks.
+
+===
+
 : Yes, Sir! @@
 : Yes, Sir! @ stern
 : Yes, ma'am!
 : Yes, ma'am.
 
-: No! @@
 : No, Sir.
 : No, Sir! @@
 : No, ma'am.
 : No, ma'am!
-: No problem!
-: No, thanks.
-
-: No?
-: No! No!
-: Ah, no!
-: No idea.
 
 : Not me!
 : Not now!
 : Not today.
 : Not tonight.
 : No, not now.
+
+: Ah, no!
+: Oh, no.
+: Oh no!
+: Oh no?
 
 ===
 
@@ -36,10 +46,6 @@ yes and no
 : Nay.
 : Nay!
 : Um, nope.
-
-: Oh, no.
-: Oh no!
-: Oh no?
 
 : Yeah! @@
 : Yeah?

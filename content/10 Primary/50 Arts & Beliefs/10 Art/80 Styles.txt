@@ -6,7 +6,7 @@ mannerism        = маньеризм                      # 18+
 baroque          = барокко, барочный              # 10+
 rococo           = рококо                         # 10+
 neoclassicism    = неоклассицизм                  # 16+
-Renaissance      = Ренессанс, ~ эпоха Возрождения # 10+ /// French
+Renaissance {n}  = Ренессанс, ~ эпоха Возрождения # 10+ /// French
 decadence        = декаданс, декадентство, ~ упадок, упадничество %% от фр. décadent — упадочный # 16+ /// French
 pastoral         = пастораль, пасторальный        # 18+
 
@@ -30,5 +30,6 @@ conceptual @ art = концептуальный                 # 16+
 ===
 
 stylization %% Br. also: stylisation = стилизация                     # 18+
+
 
 

@@ -1,8 +1,8 @@
 left, right and wrong
 
 ===
-left @ side     = левый, слева, налево
-left @ leaved   = оставил, покинул, ~ оставленный, покинутый %% ''simple'' past tense ~ ''and'' past participle ~ ''of'' '''leave'''
+left @ side {a} = левый, слева, налево
+left @ leaved {a} = оставил, покинул, ~ оставленный, покинутый %% ''simple'' past tense ~ ''and'' past participle ~ ''of'' '''leave'''
 ===
 
 : Take a left turn.
@@ -25,6 +25,7 @@ right @ exactly = точно, как раз
 : This can't be right
 : Yeah. Right. Thanks.
 : He he he, yeah, right.
+: Huh, ya, right. @ sarcastic
 
 ---
 all right
@@ -54,6 +55,7 @@ wrong @ bad     = вред, зло, обида
 ===
 
 : Everything will turn out '''right''' ~ in the end.
+
 
 
 

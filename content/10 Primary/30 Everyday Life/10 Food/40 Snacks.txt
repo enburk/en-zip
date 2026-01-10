@@ -1,10 +1,12 @@
 snack                  = перекус, ~ легкая закуска
 
-crisps\\chips @ crisps = чипсы
+crisps\\chips @ potato = чипсы
 popcorn                = попкорн
 
 sandwich               = сэндвич
 toast @ food           = тост, гренок, ~ подрумяниваться
+bread and butter       = бутерброд
+
 pâté                   = паштет        /// нем. Pastete
 hummus|houmous         = хумус         # 16+
 cracker                = крекер
@@ -20,6 +22,7 @@ sausage tree           = колбасное дерево
 ===
 
 betel leaves           = листья бетеля # RARE+ # 18+
+
 
 
 

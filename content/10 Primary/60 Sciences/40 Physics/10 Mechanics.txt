@@ -3,7 +3,7 @@ mechanics @ physics      = механика
 matter @ physics         = материя          # 10+
 mass @ physics           = масса
 ---
-action @ physics         = действие         # 10+ /// # polysemic
+action @ physics {n}     = действие         # 10+ /// # polysemic
 reaction @ physics       = противодействие  # 10+ /// # polysemic
 : For every action, ~ there is an equal and opposite ~ reaction. %% Newton's third law
 
@@ -19,6 +19,7 @@ potential energy         = потенциальная энергия # MATH- # T
 precession               = прецессия        # MATH- # TERM- # 18+
 nutation                 = нутация ~ также: кивок # MATH+ # TERM+ # 18+
 gyroscope                = гироскоп         # 10+
+
 
 
 

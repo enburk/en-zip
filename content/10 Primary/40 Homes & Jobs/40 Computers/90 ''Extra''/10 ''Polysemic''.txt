@@ -4,7 +4,7 @@ chip @ comp                = чип
 chip @ token               = фишка, марка ~ (для игры)
 chip @ piece               = стружка, щепка
 chip @ damage              = скол, щербинка /// ничего не стоящая вещь и др.
-chips {Am.} @ crisps       = чипсы
+chips {Am.} @ potato       = чипсы
 chips {Br.} @ french fries = картофель фри
 ***
 code @ crypto              = код, шифр, ~ система кодирования, ~ кодировать

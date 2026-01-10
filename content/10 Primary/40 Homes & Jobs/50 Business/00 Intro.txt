@@ -11,11 +11,12 @@ confidentiality     = конфиденциальность                      
 
 exploitation        = эксплуатация %% людей и природных ресурсов        # 14+
 interest @ business = интерес, выгода, ~ проценты (на капитал)          # 14+
-crash @ business    = крах, крушение, рушиться
+crash @ business {n}{v} = крах, крушение, рушиться
 pyramid scheme      = финансовая/инвестиционная ~ пирамида              # 18+
 
 millionaire         = миллионер
 billionaire         = миллиардер
+
 
 
 

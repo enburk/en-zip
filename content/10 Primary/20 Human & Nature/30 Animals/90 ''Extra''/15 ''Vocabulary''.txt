@@ -42,15 +42,16 @@ fly @ verb           = лететь
 
 ===
 
-feather @ bird       = перо
-wing @ bird          = крыло # duple
-tail @ animal        = хвост
-paw @ animal         = лапа
-fur @ amimal         = мех
+feather @ bird {n}   = перо
+wing @ bird {n}      = крыло # duple
+tail @ animal {n}    = хвост
+paw @ animal {n}     = лапа
+fur @ amimal {n}     = мех
 
 ---
 tooth @ animal       = зуб
 teeth @ animal       = зубы
+
 
 
 

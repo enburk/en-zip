@@ -1,17 +1,19 @@
-Norway           = Норвегия     # pix- # 12+
-Norwegian        = норвежский   # pix- # 12+
-Old Norse        = древнескандинавский # pix- # 12+
+Norway            = Норвегия    # pix- # 12+
+Norwegian         = норвежский  # pix- # 12+
+Old Norse         = древнескандинавский # pix- # 12+
 
-Viking           = викинг       # 12+ /// from Old Norse + /// 8+ really
-berserk          = берсерк      # 14+
+Viking            = викинг      # 12+ /// from Old Norse + /// 8+ really
+berserk           = берсерк     # 14+
 
-slalom           = слалом       # 12+
-fjord            = фьорд        # 18+ /// from Norwegian fiord, from Old Norse
-krill            = криль        # 14+ /// from Norwegian, from Old Norse
-lemming          = лемминг      # 12+ /// через норвежский /// 8+ really
+slalom            = слалом      # 12+
+fjord             = фьорд       # 18+ /// from Norwegian fiord, from Old Norse
+krill             = криль       # 14+ /// from Norwegian, from Old Norse
+lemming           = лемминг     # 12+ /// через норвежский /// 8+ really
 
-narwhal/narwhale = нарвал       # 18+ /// %% из датского и норвежского
-Kraken           = Кракен       # 12+ /// %% ''из норвежского диалекта''
+narwhal//narwhale = нарвал      # 18+ /// %% из датского и норвежского
+Kraken            = Кракен      # 12+ /// %% ''из норвежского диалекта''
+
+
 
 
 

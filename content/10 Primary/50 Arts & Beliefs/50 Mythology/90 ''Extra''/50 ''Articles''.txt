@@ -2,18 +2,18 @@ articles
 
 ===
 = '''the''' ~ употребляется ~ перед определениями
-same         = тот же
-very @ same  = тот самый
-only @ alone = единственный
+same {a}     = тот же
+very @ same {a} = тот самый
+only @ alone {a} = единственный
 ===
 
 : Mars and Venus ~ could not be served ~ at the same time.
 
 ===
 = '''the''' ~ употребляется ~ перед определениями
-next         = следующий
-following    = следующий
-last         = последний
+next {a}     = следующий
+following {a} = следующий
+last {a}     = последний
 ====
 
 : the next day

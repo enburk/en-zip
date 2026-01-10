@@ -1,7 +1,8 @@
 basic ~ vocabulary
 
-god     = бог
-goddess = богиня
+god {n} = бог
+goddess {n} = богиня
 
-deity   = божество
-divine  = божественный
+deity {n} = божество
+divine {n} = божественный
+

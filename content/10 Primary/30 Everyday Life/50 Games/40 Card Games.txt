@@ -17,13 +17,14 @@ gambling          = азартная игра, ~ игра на деньги # HE
 casino            = казино
 blackjack         = блэкджек|блек-джек
 
-zero @ roulette   = зеро %% нулевой сектор рулетки # TERM-
+zero @ roulette {n} = зеро %% нулевой сектор рулетки # TERM-
 Russian roulette  = русская рулетка
 
 ===
 
 lottery           = лотерея
 jackpot           = джекпот                      /// (куш, самый крупный выигрыш)
+
 
 
 

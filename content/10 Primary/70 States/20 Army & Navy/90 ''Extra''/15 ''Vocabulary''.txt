@@ -7,9 +7,9 @@ commander in chief||commander-in-chief = главнокомандующий
 
 ---
 cannon @ gun  = пушка, орудие
-gun @ cannon  = пушка, орудие
-gun @ rifle   = ружье, винтовка
-gun @ pistol  = пистолет, револьвер
+gun @ cannon {n} = пушка, орудие
+gun @ rifle {n} = ружье, винтовка
+gun @ pistol {n} = пистолет, револьвер
 [machine] gun = автомат, пулемет
 rifle         = винтовка
 
@@ -20,4 +20,5 @@ arms race     = гонка вооружений
 
 battle        = бой, битва, ~ бороться, сражаться, ~ батальный
 peace         = покой, тишина, мир, ~ мирный договор
+
 

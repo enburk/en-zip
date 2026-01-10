@@ -8,7 +8,7 @@ num lock
 
 enter @ key
 backspace @ key
-esc//escape @ key
+esc//escape @ key                                # sic!
 
 page up @ key
 page down @ key
@@ -24,4 +24,5 @@ function keys
 ---
 numeric keypad || number pad || numpad || tenkey # sic!
 tenkeyless [layout]
+
 

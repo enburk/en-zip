@@ -3,7 +3,7 @@ box(1) @ boxing              = боксировать %% бокс (вид спо
 box(2) @ cuboid              = коробка, ящик
 post box\\mailbox @ post box = почтовый ящик
 box(2) @ booth               = будка, ложа
-box\\cup @ protector         = в спорте: защита паха ~ (ракушка)           # SPORT+ # 14+
+box\\cup @ protector {n}     = в спорте: защита паха ~ (ракушка)           # SPORT+ # 14+
 box @ TV %% {mainly} {Br.}   = разговорное: телевизор ~ (телек, ящик)
 box(3) @ wood                = самшит %% ''в особенности'' самшит вечнозелёный ~ ''(Buxus sempervirens)''
 ***
@@ -57,6 +57,7 @@ favourite\\favorite @ favour = фаворит, ~ любимчик, любиме�
 favourite\\favorite @ adjective %% adjective = любимый, излюбленный
 : What’s your favourite sport?
 : We must never play favorites. ~ We must always treat every man alike.
+
 
 
 

@@ -87,6 +87,14 @@ bool video_fits (content::out::entry& ent, media::resource& res)
     if (s.starts_with("to " )) fits += str(s.from(3)); else
     {}
 
+    if (res.kind == "video")
+    if (res.entries.contains("+"))
+    fits +=
+        eng::parser::entries(
+        app::vocabulary, res.title,
+        res.options.contains
+        ("Case"));
+
     if (ent.sense == ""
     or  ent.sense == "@")
     for (str& s: fits)

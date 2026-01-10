@@ -5,15 +5,15 @@ hundred        = сто, сотня
 thousand       = тысяча
 one and a half = полтора
 
-weight         = вес, взвешивать
+weight {n}{v}  = вес, взвешивать
 light @ weight = лёгкий
 heavy @ weight = тяжёлый
 
 ---
-size           = размер
-length         = длина
-long           = длинный
-short          = короткий
+size {n}       = размер
+length {n}     = длина
+long {a}       = длинный
+short {a}      = короткий
 : short pasta
 : long pasta
 
@@ -54,6 +54,7 @@ year           = год
 volume @ space = объём
 volume @ sound = громкость
 volume @ book  = том
+
 
 
 

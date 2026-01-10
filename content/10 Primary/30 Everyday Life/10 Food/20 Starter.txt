@@ -1,16 +1,19 @@
-starter\\appetizer     = закуска
+===
+starter\\appetizer @ food = закуска
+===
 
-salad                  = салат
-lettuce                = латук %% салат латук # FOOD+ # 18+
-artichokes             = артишоки # FOOD+ # 16+
-spinach                = шпинат
+salad                     = салат
+lettuce                   = латук %% салат латук # FOOD+ # 18+
+artichokes                = артишоки # FOOD+ # 16+
+spinach                   = шпинат
 
-Caesar salad           = салат цезарь
-Greek salad            = греческий салат
-Russian salad//Olivier = оливье # sic!
+Caesar salad              = салат цезарь
+Greek salad               = греческий салат
+Russian salad//Olivier    = оливье # sic!
 
-anchovies              = анчоусы # 10+
-sardines               = сардины
+anchovies                 = анчоусы # 10+
+sardines                  = сардины
+
 
 
 

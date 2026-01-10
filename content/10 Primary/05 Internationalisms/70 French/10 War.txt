@@ -18,7 +18,7 @@ garrison              = гарнизон                                        
 cadet                 = кадет                                            # WAR-
 sergeant              = сержант                                          # WAR-
 officer @ rank        = офицер %% также: должностное лицо, ~ чиновник, служащий # 14+
-lieutenant            = лейтенант, ~ заместитель, помощник               # WAR-
+lieutenant {n}        = лейтенант, ~ заместитель, помощник               # WAR-
 captain @ rank        = капитан, командир экипажа, ~ лидер, вожак        # WAR-
 general @ rank        = генерал, командующий                             # WAR-
 marshal @ rank        = маршал                                           # WAR- # 10+
@@ -40,6 +40,7 @@ gallop                = галоп, нестись                              
 cuirass               = кираса, ~ в зоологии: панцирь                    # HISTORY- # WAR- # 12+
 
 revanchism            = реваншизм                                        # WAR- # 14+
+
 
 
 

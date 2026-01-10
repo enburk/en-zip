@@ -1,7 +1,7 @@
 profanity//obscene lexicon = обсценная лексика
 
 ===
-curse                      = проклятие, бранное слово, ~ ругаться
+curse {n}{v}               = проклятие, бранное слово, ~ ругаться
 ===
 
 : You moron!
@@ -43,5 +43,6 @@ curse                      = проклятие, бранное слово, ~ р
 ===
 
 : Frankly my dear, I don't give a damn.
+
 
 

@@ -242,6 +242,8 @@ namespace content::out
             s.replace_all("]", "");
             s.replace_all("~", "");
             s.replace_all("||","|");
+
+            if (s.contains("(")) phrases += s;
             s.debracket("(",")");
 
             if (s.contains(

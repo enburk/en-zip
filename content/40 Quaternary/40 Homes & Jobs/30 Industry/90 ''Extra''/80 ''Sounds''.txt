@@ -13,9 +13,6 @@ sounds
 : cut wire snip # SOUND
 : rapid scissor snips # SOUND
 
-: pole driven in with sledgehammer # SOUND
-: sledgehammer hits onto thick ice # SOUND
-: sledgehammer hitting safety glass: break, fall over # SOUND
 
 
 : blacksmith: filing and shaping horse shoes # SOUND

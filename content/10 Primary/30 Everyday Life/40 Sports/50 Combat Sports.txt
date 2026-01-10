@@ -1,9 +1,11 @@
+===
 wrestling                 = борьба                         # 14+
-
 [professional] wrestling  = реслинг/рестлинг               # 14+
-arm wrestling             = армрестлинг                    # 14+
+===
+
 Greco-Roman wrestling     = греко-римская борьба           # SPORT+ # 16+
 freestyle wrestling       = вольная борьба                 # SPORT+ # 16+
+arm wrestling             = армрестлинг                    # 14+
 
 ===
 boxing                    = бокс
@@ -17,7 +19,7 @@ knockdown                 = нокдаун                        # SPORT- # TER
 knockout                  = нокаут
 
 uppercut                  = апперкот %% тип удара          # SPORT- # TERM- # 14+
-hook @ boxing             = хук %% тип удара, дословно: крюк # SPORT+ # TERM- # 14+
+hook @ boxing {n}         = хук %% тип удара, дословно: крюк # SPORT+ # TERM- # 14+
 
 clinch @ boxing           = в спорте: захват, ~ клинч, войти в клинч # SPORT- # TERM- # 16+
 break @ boxing            = брейк                          # SPORT- # TERM- # 18+
@@ -42,4 +44,5 @@ tatami @ martial arts     = татами                         # 10+
 
 karateka                  = каратист/каратистка
 judoka/judoist            = дзюдоист/дзюдоистка
+
 

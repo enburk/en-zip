@@ -12,7 +12,7 @@ solar wind            = солнечный ветер
 volcanic eruption     = извержение вулкана
 
 ---
-weather               = погода
+weather {n}           = погода
 weather report        = метеосводка
 
 ===
@@ -30,5 +30,6 @@ north//northern @ geo = серерный
 south//southern @ geo = южный
 
 ===
+
 
 

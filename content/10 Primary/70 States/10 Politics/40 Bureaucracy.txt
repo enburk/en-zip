@@ -1,37 +1,38 @@
 bureaucracy            = бюрократия
 bureaucrat             = бюрократ
 ---
-committee @ state      = комитет, комиссия                                /// опекун
-commission @ group     = комиссия ~ (следственная и т.п.)                 # 12+
-commission @ mission   = доверенность, полномочия                         # 12+ /// заказ, поручение
-commission @ money     = комиссия ~ (денежная)                            # 12+
+committee @ state      = комитет, комиссия                                 /// опекун
+commission @ group     = комиссия ~ (следственная и т.п.)                  # 12+
+commission @ mission   = доверенность, полномочия                          # 12+ /// заказ, поручение
+commission @ money     = комиссия ~ (денежная)                             # 12+
 
-decree                 = постановление, ~ декрет, указ                    # POLIT- # 16+
-directive @ state      = директива, указание                              # 16+
+decree                 = постановление, ~ декрет, указ                     # POLIT- # 16+
+directive @ state      = директива, указание                               # 16+
 instruction @ state    = инструкция
 regulation @ state     = регулирование, правило
 recommendation @ state = рекомендация
-normative @ state      = нормативный                                      # 14+
+normative @ state      = нормативный                                       # 14+
 
-registry @ state       = регистратура, реестр, ~ регистрация              # 14+
-cadastre\\cadaster     = кадастр                                          # POLIT+ # 16+ /// \\cadaster
-notary [public]        = нотариус                                         # 14+
+registry @ state       = регистратура, реестр, ~ регистрация               # 14+
+cadastre\\cadaster     = кадастр                                           # POLIT+ # 16+ /// \\cadaster
+notary [public]        = нотариус                                          # 14+
 
 ---
-department @ state     = департамент, ведомство                           # 14+
+department @ state     = департамент, ведомство                            # 14+
 organization %% Br. also: organisation = организация %% процесс и структура
-reorganization         = реорганизация                                    # 16+
-accreditation          = аккредитация                                     # 16+
+reorganization         = реорганизация                                     # 16+
+accreditation          = аккредитация                                      # 16+
 
-blank @ paper          = бланк, ~ пустой, незаполненный                   /// холостой патрон
-form @ paper           = бланк, анкета, ~ форма                           # duple
+blank @ paper          = бланк, ~ пустой, незаполненный                    /// холостой патрон
+form @ paper           = бланк, анкета, ~ форма                            # duple
 
 ===
 
-prerogative            = прерогатива                                      # 16+
-sinecure               = синекура %% хорошо оплачиваемая должность, не требующая труда # RARE+ # 16+
+prerogative            = прерогатива                                       # 16+
+sinecure {n}           = синекура %% хорошо оплачиваемая должность, ~ не требующая труда # RARE+ # 16+
 nepotism               = непотизм %% кумовство; служебное покровительство «своим» людям # RARE+ # 16+
 formalities            = формальности
+
 
 
 

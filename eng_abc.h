@@ -71,6 +71,11 @@ namespace eng
         { (char*)u8"Û", "U" }, { (char*)u8"û", "u" },
         { (char*)u8"Ü", "U" }, { (char*)u8"ü", "u" },
         { (char*)u8"Ý", "Y" }, { (char*)u8"ý", "y" },
+
+        { (char*)u8"ἄ", (char*)u8"α" },
+        { (char*)u8"ὲ", (char*)u8"ε" },
+        { (char*)u8"ό", (char*)u8"ο" },
+        { (char*)u8"ῶ", (char*)u8"ω" },
     };
 
     auto ligature (str const& s) {

@@ -1,26 +1,28 @@
 grammar
 Simple Present Tense                         = простое настоящее %% Другие названия: ~ '''Present Simple, Present Indefinite''' ~ (настоящее неопределённое)
 
+---
+: I do.
 : I know. @@                                 = Я знаю.
+: You know.
 : You rock!                                  = Ты крут! ~ Ты жжешь!
 
 ===
-forms of the verb ''to be'' @ simple present /// pix
-am
-are
-is                                           # duple
+forms of the verb ''to be'' @ simple present
 ===
-I am
-you are
-we are
-they are
+am        # pix-
+are       # pix-
+is        # pix-                                     
 ===
-he is
-she is
-it is
+I am      # pix-
+you are   # pix-
+we are    # pix-
+they are  # pix-
 ===
-
-: '''I am''' hungry. What is the time?
+he is     # pix-
+she is    # pix-
+it is     # pix-
+===
 
 : '''You are''' blind!
 : '''You are''' correct.

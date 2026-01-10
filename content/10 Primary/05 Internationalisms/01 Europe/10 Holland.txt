@@ -9,11 +9,12 @@ waffles              = вафли
 rucksack {Br.}       = рюкзак
 mannequin            = манекен                  /// , манекенщица (устар.)
 Santa Claus          = Санта-Клаус
+Yankee               = янки                     # 16+ /// # DELAY
+
 cruise               = круиз                    # 10+
 dock {Br.} @ drydock = док                      # duple # 12+
 skipper              = шкипер                   # 14+ /// Dutch ???
 harpoon              = гарпун
-Yankee               = янки                     # 16+ /// # DELAY
 
 
 

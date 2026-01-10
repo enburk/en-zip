@@ -10,7 +10,7 @@ vehicle            /// Latin
 
 ===
 ship @ vessel      = корабль, судно, ~ перевозить груз
-boat               = лодка, шлюпка, ~ корабль, судно
+boat {n}           = лодка, шлюпка, ~ корабль, судно
 : You missed the boat.
 ===
 ---
@@ -28,7 +28,7 @@ flight attendant   = стюард/стюардесса
 
 ***
 take off @ airborn = взлетать
-land @ plane       = садиться
+land @ plane {v}   = садиться
 runway @ airport   = взлетно-посадочная полоса
 : Flight 291 you are cleared for take of.
 : You are cleared to land on runway 24.
@@ -40,6 +40,7 @@ wing @ building    = флигель, крыло дома
 wing @ party       = крыло (политической партии)
 wing @ front       = фланг
 wing @ air force   = авиакрыло (тактическая единица)
+
 
 
 

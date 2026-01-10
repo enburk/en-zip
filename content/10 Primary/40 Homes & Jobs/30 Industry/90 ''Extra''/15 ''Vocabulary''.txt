@@ -8,7 +8,7 @@ nail @ tech        = гвоздь
 
 brick              = кирпич
 
-paint @ tech       = краска
+paint @ tech {n}{v} = краска, красить
 
 ===
 ---
@@ -19,6 +19,7 @@ corn {Am.} @ maize = кукуруза
 ===
 
 : Give us the tools, and we will finish the job.
+
 
 
 

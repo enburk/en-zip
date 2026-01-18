@@ -1,19 +1,21 @@
 basic ~ vocabulary
 
-rectangle      = прямоугольник /// French
+rectangle       = прямоугольник /// French
 
-infinity       = бесконечность
+integers        = целые числа
+infinity @ math = бесконечность
 
-addition       = сложение /// Latin
-subtraction    = вычитание /// Latin
+addition        = сложение /// Latin
+subtraction     = вычитание /// Latin
 
 ---
 count @ math {n}{v} = счет, считать
 : There are three kinds of people, those who can count and those who can't.
 count @ matter {v} = считаться
 : Oh, but that doesn't count.
-count on       = расчитывать
+count on        = расчитывать
 : Churchill also said that one could “always count on Americans
+
 
 
 

@@ -7,7 +7,6 @@ tablecloth {n}          = скатерть
 plate @ dish {n}        = тарелка
 napkin {n}              = салфетка
 
-egg @@ {n}              = яйцо
 pie @ food              = пирог, торт
 cake @ dessert          = торт
 cookie {Am.}            = домашнее печенье, ~ булочка

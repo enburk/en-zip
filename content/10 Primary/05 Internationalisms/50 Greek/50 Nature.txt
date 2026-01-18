@@ -1,3 +1,6 @@
+===
+***
+===
 
 crocodile    = крокодил
 hippopotamus @@ %% plural: hippopotamuses/hippopotami = гиппопотам, бегемот
@@ -12,6 +15,7 @@ rhododendron = рододе́ндрон                                         
 agate        = агат                                                   # duple # 10+
 amethyst     = аметист                                                # 8+
 topaz @@     = топаз                                                  # 10+
+
 monolith     = монолит                                                # 10+
 phenomenon %% plural: phenomena = явление, событие, ~ фено́мен/феноме́н                    # 10+
 

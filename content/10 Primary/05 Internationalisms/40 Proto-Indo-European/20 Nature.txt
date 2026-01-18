@@ -1,12 +1,17 @@
+===
+***
+===
 
 water          = вода
 snow           = снег
+
 dale           = дол, долина
 night          = ночь # duple
 
 tree @ plant   = дерево
 birch          = береза
 nest @ bird    = гнездо
+
 wolf           = волк
 mouse @ animal = мышь
 

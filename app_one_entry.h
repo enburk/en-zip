@@ -30,6 +30,7 @@ namespace app::one
         bool sound = false;
         bool widen = false;
         bool wide  = false;
+        bool head  = false;
         int clicked = 0;
         str text;
 
@@ -172,6 +173,8 @@ namespace app::one
 
             auto const& entry =
             course.entries[number];
+
+            head = entry.opt.external.contains("HEAD");
 
             str html = entry.html(translated);
 

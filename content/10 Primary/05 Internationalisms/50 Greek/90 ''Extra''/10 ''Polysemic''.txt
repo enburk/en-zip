@@ -1,22 +1,27 @@
-polysemantic       # pix- # 8+
-polysemic          # pix- # 8+
-multisense         = многозначное ~ (о слове)                         # pix- # 8+
-multidigit         = многозначное ~ (о числе)                         # 8+
+polysemantic        # pix- # 8+
+polysemic           # pix- # 8+
+multisense          = многозначное ~ (о слове)                        # pix- # 8+
+multidigit          = многозначное ~ (о числе)                        # 8+
 
 ***
-phalanx @ war %% plural: phalanxes = фаланга, ~ книжное: группа людей                 # 10+
-phalanx @ bone %% plural: phalanges = фаланга ~ (кость)                                # 10+
+phalanx @ war %% plural: phalanxes = фаланга, ~ книжное: группа людей                # 10+
+phalanx @ bone %% plural: phalanges = фаланга ~ (кость)                               # 10+
 
 ***
-muse(1) @ myth     = муза                                             # 10+
-muse(2) @ think    = размышлять, задумываться                         # 10+
+atmosphere @ planet = атмосфера ~ (планеты)
+atmosphere @ mood   = атмосфера, обстановка, ~ создавать атмосферу
 
 ***
-gamma              = гамма ~ (буква)                                  # 12+
-scale(1) @ music   = гамма ~ (в музыке)                               # 12+
-scale(1) @ size    = шкала, масштаб                                   # 12+
-scales(1) @ weight = весы                                             # 12+
-scales(2) @ fish   = чешуя %% scale -- чешуйка                        # 12+
+muse(1) @ myth      = муза                                            # 10+
+muse(2) @ think     = размышлять, задумываться                        # 10+
+
+***
+gamma               = гамма ~ (буква)                                 # 12+
+scale(1) @ music    = гамма ~ (в музыке)                              # 12+
+scale(1) @ size     = шкала, масштаб                                  # 12+
+scales(1) @ weight  = весы                                            # 12+
+scales(2) @ fish    = чешуя %% scale -- чешуйка                       # 12+
+
 
 
 

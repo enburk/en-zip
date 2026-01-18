@@ -232,7 +232,8 @@ namespace app::one
 
                 for (auto& e: s.entries)
                 hh += e->coord.now.h,
-                pixed |= e->pixed;
+                pixed |= e->pixed,
+                s.head |= e->head;
 
                 if (pixed) continue;
                 if (hh>=H) continue;

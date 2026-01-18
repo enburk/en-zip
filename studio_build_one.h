@@ -26,6 +26,7 @@ namespace studio::one
         array<str> needed_en;
         array<str> needed_us;
         array<str> needed_uk;
+        array<str> needed_pix;
 
         struct nln
         {
@@ -113,7 +114,7 @@ namespace studio::one
         {
             if (r.options.contains("asset")
             or  r.options.contains("noqrop")
-            or  r.options.contains("course-"))
+            or  r.options.contains("course--"))
                 continue;
 
             if (r.vocal() and
@@ -266,7 +267,7 @@ namespace studio::one
             str s = html(entry.eng);
             if (not vocal_ok) report::audiom += linked(s, entry.link);
             if (not sound_ok) report::audiom += linked(s, entry.link) + red(bold(" sound"));
-            if (not video_ok) report::videom += linked(s, entry.link);
+            if (not video_ok) report::videom += linked(s, entry.link), needed_pix += entry.eng;
 
             if (vocal_ok)
                 continue;
@@ -533,6 +534,8 @@ namespace studio::one
 
         for (str& s: needed_en) s += "<br>";
         sys::write("../data/needed_en.htm", needed_en);
+
+        sys::write("../data/needed_pix.txt", needed_pix);
 
         // combine samples
         array<path> src =

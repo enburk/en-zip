@@ -25,7 +25,7 @@ lymphocytes          = лимфоциты %% разновидность лейк
 lymph                = лимфа                                    # TERM+ # DEL
 
 artery @ anatomy     = артерия                                  /// , ~ также: магистраль
-vein @ anatomy       = вена                                     # DEL /// Latin
+vein @ anatomy       = вена                                     /// Latin
 aorta                = аорта                                    # 16+
 capillary            = капилляр                                 # 16+
 

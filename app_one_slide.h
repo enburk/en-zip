@@ -11,7 +11,9 @@ namespace app::one
         gui::time instantly = 50ms;
         gui::time smoothly = 500ms;
         gui::time swiftly  = 100ms;
+        gui::time slowly   = 999ms;
         content::unit* topic = nullptr;
+        bool head = false;
         int current = 0;
 
         using state = sfx::media::state;
@@ -71,7 +73,7 @@ namespace app::one
                 switch(entries[current]->status) {
                 case state::ready:
                 case state::paused:
-                    entries[current]->show(smoothly);
+                    entries[current]->show(current == 0 and head ? slowly : smoothly);
                     entries[current]->play();
                     break;
                 case state::finished:

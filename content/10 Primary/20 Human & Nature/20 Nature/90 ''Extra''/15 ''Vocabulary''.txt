@@ -5,6 +5,7 @@ wind  @ air {n}       = ветер
 sky {n}               = небо
 cloud {n}             = облако
 rainbow {n}           = радуга
+
 ---
 sunrise               = восход
 sunset                = закат
@@ -35,7 +36,7 @@ sand {n}              = песок
 forest                = лес
 oak                   = дуб
 maple                 = клен
-pine                  = сосна
+pine @ tree           = сосна
 spruce                = хвойное дерево, ~ ель
 grass                 = трава
 
@@ -48,6 +49,7 @@ winter {n}            = зима
 spring @ season {n}   = весна
 summer {n}            = лето
 autumn\\fall @ season {n} = осень
+
 
 
 

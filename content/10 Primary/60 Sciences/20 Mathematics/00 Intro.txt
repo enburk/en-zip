@@ -1,27 +1,24 @@
-mathematics             = математика
+mathematics            = математика
+{informal:} ~ maths\\math
+
+Arabic numerals        = арабские цифры                                  # 10+
+arithmetic operation   = арифметическая операция                         # 10+
+
+plus @ sign            = плюс
+minus @ sign           = минус
+
 ===
-maths\\math %% informal = математика                                     # pix-
-mathematician           = математик
-===
-
-arithmetic operation    = арифметическая операция                        # 10+
-
-plus @ sign             = плюс
-minus @ sign            = минус
-
-sum @ math {n}{v}       = сумма, суммировать
-summa                   = сумма %% средневековое сочинение               # 18+
 
 ---
-maximum                 = максимум, максимальный                         /// Latin
-minimum                 = минимум, минимальный                           # 10+ /// Latin
-extremum                = экстремум                                      # MATH- # 18+
+maximum                = максимум, максимальный                          /// Latin
+minimum                = минимум, минимальный                            # 10+ /// Latin
+extremum               = экстремум                                       # MATH- # 18+
 
-modulus                 = модуль                                         # MATH- # TERM- # 10+
-radical @ math          = радикал                                        # MATH- # TERM- # 16+
+modulus                = модуль                                          # MATH- # TERM- # 10+
+radical @ math         = радикал                                         # MATH- # TERM- # 16+
 
-lemma                   = лемма                                          # MATH- # 16+
-mathematical induction  = математическая индукция %% метод доказательства # MATH+ # TERM+
+lemma                  = лемма                                           # MATH- # 16+
+mathematical induction = математическая индукция %% метод доказательства # MATH+ # TERM+
 
 
 

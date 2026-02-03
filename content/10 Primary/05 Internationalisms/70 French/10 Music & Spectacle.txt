@@ -1,26 +1,37 @@
+===
+***
+===
 
+---
 ballet          = балет
 ballad          = баллада            # 10+
 chanson         = шансон ~ (французский) # 10+
+
 cabaret         = кабаре             # 18+
 cancan          = канкан             # 18+ /// can-can|
 café-chantant   = кафешантан         # HISTORY+ # 18+
-tambourine      = бубен, тамбурин    # 10+
+
+premiere        = премьера
+spectacle       = спектакль, представление, зрелище
+repertoire      = репертуар          # 10+
 
 genre           = жанр               # 10+
 role            = роль %% Во французском слово rôle дословно означало «свиток с репликами актеров».
 début|debut     = дебют              # uk+us # 10+ /// UK: ˈdɛbjuː, ˈdeɪbjuː US: deɪˈbjuː
-marionette      = марионетка         # 10+
-harlequin       = арлекин            # 16+
+
+===
+
 nocturne        = ноктюрн            # 16+
 potpourri       = попурри            # RARE+ # 18+
-premiere        = премьера
-spectacle       = спектакль, представление, зрелище
-repertoire      = репертуар          # 10+
+
+marionette      = марионетка         # 10+
+harlequin       = арлекин            # 16+
+
+tambourine      = бубен, тамбурин    # 10+
+
 reprise @ music = реприза, повторять # ART+ # RARE+ # 18+ /// (повторение, особенно в музыке)
 improvisation   = импровизация
 conférencier    = конферансье        # sic! # 18+
-
 
 
 

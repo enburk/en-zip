@@ -1,13 +1,11 @@
 polysemic
 
 ***
-flesh
-= the soft tissue of the body
-= he skin of a human or animal
-= bare arms, bare legs, bare torso
-= the soft, often edible, parts of fruits or vegetables
+flesh @ skin  = he skin of a human or animal
+flesh @ body  = the soft tissue of the body
 : And Adam said, This is now bone of my bones, and flesh of my flesh
 : Well, suppose I did? What then? I've part changed my flesh since that time, why not my mind?
+flesh @ fruit = the soft, often edible, parts of fruits or vegetables
 
 ***
 flash
@@ -26,6 +24,7 @@ flush @@
 = a sudden flowing
 : toilet: flush # SOUND
 flush @ poker = a hand consisting of all cards with the same suit
+
 
 
 

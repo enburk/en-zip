@@ -1,7 +1,6 @@
 birds
 
 robin @ bird
-kingfisher # 10+
 nightingale
 pigeon
 peafowl %% plural peafowl
@@ -10,3 +9,8 @@ seagull
 raven @ bird
 parrot
 
+===
+
+kingfisher
+flycatcher
+honeyeater

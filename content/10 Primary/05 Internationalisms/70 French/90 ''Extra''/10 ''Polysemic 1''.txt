@@ -5,24 +5,29 @@ alley @ park                = аллея                                  # 10+
 alley @ street              = переулок, проулок                      # 10+
 avenue @ street             = авеню                                  # 10+
 avenue @ alley              = аллея, дорога ~ (ведущая к дому)       # 10+
+
 ***
 address @ noun %% {noun}    = адрес
 address @ verb %% {verb}    = адресовать, общаться ~ (к кому-либо)
 address @ attention         = обращать внимание, ~ сосредотачивать усилия
 address @ speech            = обращение ~ (официальная речь)
+
 ***
 terrace @ house             = терраса, веранда                       # 10+
 terrace @ geo               = терраса, насыпь                        # 10+
+
 ***
 bureau @ body %% {plural:} bureaus/bureaux = бюро, отдел, управление                # 10+
 bureau {Br.} @ furniture    = бюро, письменный стол                  # 10+
 bureau {Am.} @ furniture Am = комод                                  # 10+
 commode                     = комод                                  # 10+
+
 ***
 salon @ exhibition          = салон ~ (помещение для выставок)
 salon @ beauty              = салон красоты
 salon @ literature          = литературный салон
 salon @ shop                = дорогой магазин одежды
+
 ***
 corsage @ clothes           = корсаж                                 # 16+
 corsage @ flowers           = цветочное украшение %% для одежды или руки # 16+

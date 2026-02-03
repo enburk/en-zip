@@ -1,19 +1,23 @@
 polysemic
+
 ***
 pasta                   = паста %% в знач. макаронные изделия  # 10+
 paste                   = паста %% томатная и др.
+
 ***
 jam(1) @ food           = джем, повидло
 jam(2) @ situation      = сжимать, давить, ~ впихивать, набиваться битком, ~ блокировать, преграждать ~ (дорогу и т.п.)
 [traffic] jam           = пробка ~ (затор на дороге)
 : What did one strawberry ~ say to the other strawberry? ~ We’re in a real jam now.
 jam session             = джем-сешн %% совместная музыкальная импровизация # 16+
+
 ***
 taste @ food            = вкус (пищи)
 taste @ esthetic        = вкус, понимание
 tasty                   = вкусный
 : Tasty!
 bad taste               = дурной вкус
+
 ***
 bar(1) @ alco {n}       = бар, барная стойка
 bar(1) @ piece {n}      = брусок, рейка, ~ препятствие         /// , ~ в музыке: такт
@@ -24,11 +28,13 @@ parallel bars           = параллельные брусья
 bar code                = штрих-код
 bar(2) @ unit {n}       = бар ~ (единица измерения давления)
 barometer               = барометр
+
 ***
 buffet @ food           = шведский стол
 buffet @ furniture      = буфет, сервант                       /// [ʹbʌfɪt] ?
 buffet [car]            = вагон-ресторан                       /// [ʹbufeɪ] ?
 buffet @ blow           = удар, ударять, ~ бороться
+
 ***
 leek                    = зелёный лук
 onion @ fruit           = репчатый лук
@@ -37,12 +43,14 @@ bow @ fashion           = бант
 bow @ music             = смычок
 bow @ gesture           = кланятся, поклониться, ~ поклон
 bow @ ship              = нос корабля
+
 ***
 [olive] oil             = масло (оливковое)
 [motor] oil             = масло (моторное)
 oil @ petroleum         = нефть
 oil @ painting          = масло, маслянные краски
 butter                  = масло (сливочное)
+
 ***
 roll @ sushi            = ролл (суши)
 roll @ bread            = булочка, рулет

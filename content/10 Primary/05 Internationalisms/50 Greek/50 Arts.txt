@@ -27,9 +27,9 @@ drama @ art                = драма, драматургия                 
 comedy @ art               = комедия, комизм, комичность        # 10+
 tragedy @ art              = трагедия
 
+---
 dialogue\\{Am.} {also} ~ dialog = диалог                             # 10+
 monologue\\{Am.} {also} ~ monolog = монолог                            # 10+
-
 monotonous                 = однообразный, скучный, ~ монотонный # 10+
 
 ===

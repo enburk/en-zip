@@ -1,23 +1,33 @@
+===
+***
+===
 
 limousine %% informal: limo = лимузин
 cabriolet                   = кабриолет %% другое название: convertible # TECH-
 coupé\\coupe @ car          = купе ~ (тип кузова)      # TECH- # 10+ /// , автомобиль с таким кузовом, ~~двухместная карета
+
 garage @ building           = гараж, автосервис %% в брит. также: бензоколонка
 chauffeur                   = шофёр
 
-aviation                    = авиация                  /// , проектирование самолётов
-aviator %% old-fashioned    = авиатор, лётчик          # 10+
-aeroplane\\airplane %% also: plane = самолёт, аэроплан        /// aeroplane/plane\\airplane/plane
-dirigible                   = дирижабль                /// , также: управляемый
-parachute                   = парашют                  /// , спускать(ся) с парашютом
-fuselage                    = фюзеляж                  # TECH- # 10+
-aileron                     = элерон                   # TECH+ # 14+
-longeron                    = лонжерон                 # TECH+ # 14+
+===
 
 turbine                     = турбина
 locomotive                  = локомотив, паровоз       # 10+ /// двигатель поезда, движущая сила (в спорте и др.)
 pontoon                     = понтонный мост, понтон   # 10+
 maquette                    = макет                    # 10+
+
+===
+aviation                    = авиация                  /// , проектирование самолётов
+===
+
+aviator %% old-fashioned    = авиатор, лётчик          # 10+
+aeroplane\\airplane %% also: plane = самолёт, аэроплан        /// aeroplane/plane\\airplane/plane
+dirigible                   = дирижабль                /// , также: управляемый
+parachute                   = парашют                  /// , спускать(ся) с парашютом
+
+fuselage                    = фюзеляж                  # TECH- # 10+
+aileron                     = элерон                   # TECH+ # 14+
+longeron                    = лонжерон                 # TECH+ # 14+
 
 
 

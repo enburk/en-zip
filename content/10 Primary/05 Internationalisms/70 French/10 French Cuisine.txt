@@ -1,16 +1,37 @@
+===
+***
 bon appétit!              = приятного аппетита! %% (фр.) # sic!
+===
+---
+cafe|café                 = кафе
+restaurant                = ресторан
+menu @ food               = меню
+chef                      = шеф-повар
+maître d'hôtel\\maître d' = метрдотель            # sic! # 18+
+
+appetite                  = аппетит, охота ~ (до чего-либо)
+gourmand                  = гурман, ~ также: обжора # duple
+
+banquet                   = банкет                # 16+ /// , давать банкет
+picnic                    = пикник                /// , устраивать пикник
 
 ===
-appetite                  = аппетит, охота ~ (до чего-либо)
 apéritif|aperitif         = аперитив              # 18+
-
+===
+---
 soup                      = суп
 cream soup                = суп-пюре
 bouillon                  = бульон %% или суп на бульоне # duple
 consommé|consomme         = консоме %% осветлённый бульон # RARE+ # 18+
+
 escalope {Br.}            = эскалоп               # 10+
 fillet\\filet @ food      = филе                  # 10+
 fricassee                 = фрикасе               # RARE+ # 18+
+
+===
+
+omelette\\omelet          = омлет
+puree                     = пюре
 
 baguette                  = багет
 croissant                 = круассан
@@ -18,17 +39,17 @@ galette                   = галета                # 10+
 
 mayonnaise                = майонез
 margarine                 = маргарин              # 10+
+
 marinade                  = маринад               # 10+
-omelette\\omelet          = омлет
-sauce                     = соус, изюминка %% Предок французского sauce («соус») – ~ латинское слово sal («соль»). /// ; то, что придаёт пикантность
-lemonade                  = лимонад
+sauce                     = соус, изюминка        /// %% Предок французского sauce («соус») – ~ латинское слово sal («соль»).
 champignon                = шампиньон             # 10+
 flambé                    = фламбирование/фламбе  # RARE- # 18+
 fondue                    = фондю                 # MILK # RARE- # 16+
 
 =======
-
 dessert                   = десерт
+=======
+
 caramel                   = карамель
 crème brûlée              = крем-брюле            # 10+
 blancmange                = бланманже             # RARE- # 18+
@@ -38,28 +59,8 @@ profiteroles {Br.}        = профитроли            # RARE- # 16+
 souffle|soufflé           = суфле                 # 10+
 dragée                    = драже
 
-cafe|café                 = кафе
-restaurant                = ресторан
-menu @ food               = меню
-maître d'hôtel\\maître d' = метрдотель            # sic! # 18+
-chef                      = шеф-повар
-gourmand                  = гурман, ~ также: обжора # duple
-banquet                   = банкет                # 16+ /// , давать банкет
-picnic                    = пикник                /// , устраивать пикник
-champagne                 = шампанское            # 18+
+===
+lemonade                  = лимонад
 cognac                    = коньяк                # 18+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+champagne                 = шампанское            # 18+
 

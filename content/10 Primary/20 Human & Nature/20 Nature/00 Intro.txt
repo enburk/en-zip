@@ -1,26 +1,30 @@
-nature            = природа, ~ характер, ~ натура  # pix-
-natural           = природный, ~ естественный, ~ натуральный # pix-
+nature            = природа, ~ характер, ~ натура
+natural           = природный, ~ естественный, ~ натуральный
 
-natural gas       = природный газ                  # pix- # 14+
-natural selection = естественный отбор             # pix- # 14+
-natural number    = натуральное число              # pix- # 14+
+natural gas       = природный газ      # pix- # 14+
+natural selection = естественный отбор # pix- # 14+
+natural number    = натуральное число  # pix- # 14+
 
 ===
 
 horizon           = горизонт
-dune              = дюна                           # 10+
+dune              = дюна               # 10+
 oasis             = оазис
-peak              = пик                            # 10+
+peak              = пик                # 10+
 canyon            = каньон
 
 climate           = климат
-breeze            = бриз                           # 10+
+breeze            = бриз               # 10+
 echo              = эхо
 
+===
 crystal           = горный хрусталь, ~ хрусталь, кристалл
 mineral           = минерал, ~ минеральный
+===
+
 malachite         = малахит
-opal              = опал                           # 10+
+opal              = опал               # 10+
+
 
 
 

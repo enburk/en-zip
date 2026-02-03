@@ -36,8 +36,10 @@ oil burner
 hobo stove
 firewood
 
-matches      # 8+
+---
 lighter      # 8+
+matches      # 8+
+match heads
 
 torches
 blowtorch %% Br. also blowlamp

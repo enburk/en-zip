@@ -1,17 +1,14 @@
 basic ~ vocabulary
 
-chess                       = шахматы
-Heads or tails?             = Орёл или решка?
+chess           = шахматы
+Heads or tails? = Орёл или решка?
 noughts and crosses\\tic-tac-toe = крестики-нолики
----
-dice @ game %% plural: dice = игра в кости, ~ кости (игральные)
-: dice shake and roll onto table # SOUND
 
 ===
 
-luck                        = удача
-win                         = победа, выигрыш, ~ выиграть
-lose                        = проиграть, проигрывать, ~ терять, утрачивать
+luck            = удача
+win             = победа, выигрыш, ~ выиграть
+lose            = проиграть, проигрывать, ~ терять, утрачивать
 
 ===
 
@@ -22,7 +19,7 @@ lose                        = проиграть, проигрывать, ~ те
 : You cheated!
 
 ===
-deck of cards               = колода карт
+deck of cards   = колода карт
 ===
 
 harts @ cards
@@ -39,15 +36,16 @@ jack @ cards {n}
 
 ===
 ---
-suit @ clothes              = костюм, одеваться
-suit @ verb                 = подходить, устраивать
-suit @ cards                = масть
+suit @ clothes  = костюм, одеваться
+suit @ verb     = подходить, устраивать
+suit @ cards    = масть
 : How can you get four suits for a euro? ~ Buy a deck of cards.
 ---
-bet @ stake                 = пари, ставка, ~ делать ставку, ~ биться об заклад
+bet @ stake     = пари, ставка, ~ делать ставку, ~ биться об заклад
 : Place your bets!
-ante                        = ставка, взнос, ~ делать первую ставку
-: Ante up!                  = Делайте ставки! ~ Деньги на стол!
+ante            = ставка, взнос, ~ делать первую ставку
+: Ante up!      = Делайте ставки! ~ Деньги на стол!
+
 
 
 

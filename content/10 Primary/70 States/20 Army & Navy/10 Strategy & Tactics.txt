@@ -27,7 +27,7 @@ preventive attack          = превентивный удар %% упрежда
 
 front line                 = линия фронта
 blockade @ army            = блокада, блокировать
-storming @ army            = штурм
+storm @ army               = штурм, штурмовать
 raid @ army                = рейд, облава, ~ устраивать облаву, ~ налёт, набег # 10+
 
 echelon                    = эшелон                             # WAR- # 16+

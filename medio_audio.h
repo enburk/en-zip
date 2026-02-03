@@ -19,13 +19,15 @@ namespace media::audio
         opt.ascii = true,
         opt.out = log;
 
+        if (std::filesystem::exists(destination))
+            std::filesystem::remove(destination);
+
         sys::process p(exe, command, opt);          
         p.wait();
 
-        using namespace std::chrono_literals;
         for (int i=0; i<200; i++)
-            if (std::filesystem::exists(destination))
-                return; else std::this_thread::sleep_for(100ms);
+        if (std::filesystem::exists(destination)) return;
+        else std::this_thread::sleep_for(100ms);
 
         throw std::runtime_error("waited for "
             + command + " in vain");
@@ -104,7 +106,7 @@ namespace media::audio
         std::filesystem::rename(dst, dstogg);
     }
 
-    expected<array<byte>> readsample (path original, path cache, str crop, str fade) try
+    expected<array<byte>> readsample (path original, path cache, str crop, str fade, int db) try
     {
         using namespace std::literals::chrono_literals;
         if (std::filesystem::exists(cache) == false ||
@@ -118,7 +120,9 @@ namespace media::audio
             std::filesystem::copy_options::overwrite_existing); else
             combine(array<path>{original}, cache, 0.1, 0.0, 0.0, false);
 
-            path temp = cache; temp.replace_extension(".ogg.ogg");
+            path tmpdir = "../data/!cache/!temp";
+            path src = tmpdir / "src.ogg";
+            path dst = tmpdir / "dst.ogg";
 
             if (crop != "")
             {
@@ -126,18 +130,24 @@ namespace media::audio
                 if (crop.ends_with("="))
                     crop.truncate();
 
-                std::filesystem::rename(cache, temp);
-                sox(qq(temp), cache, " trim " + crop);
-                std::filesystem::remove(temp);
+                std::filesystem::rename(cache, src);
+                sox(qq(src), dst, " trim " + crop);
+                std::filesystem::rename(dst, cache);
             }
             if (fade != "")
             {
                 str in  = fade == "fade out" ? "0" : "1";
                 str out = fade == "fade in"  ? "0" : "1";
 
-                std::filesystem::rename(cache, temp);
-                sox(qq(temp), cache, " fade t " + in + " 0 " + out);
-                std::filesystem::remove(temp);
+                std::filesystem::rename(cache, src);
+                sox(qq(src), dst, " fade t " + in + " 0 " + out);
+                std::filesystem::rename(dst, cache);
+            }
+            if (db != 0)
+            {
+                std::filesystem::rename(cache, src);
+                sox(qq(src), dst, " gain " + str(db));
+                std::filesystem::rename(dst, cache);
             }
         }
 
@@ -152,6 +162,16 @@ namespace media::audio
 
     expected<array<byte>> data (const resource & r, str)
     {
+        int db = 0;
+        for (str option : r.options) db +=
+            option == "-3db" ? -3 :
+            option == "-2db" ? -2 :
+            option == "-1db" ? -1 :
+            option == "+1db" ?  1 :
+            option == "+2db" ?  2 :
+            option == "+3db" ?  3 :
+            0;
+
         str crop;
         for (str option : r.options)
             if (option.starts_with("crop "))
@@ -177,6 +197,6 @@ namespace media::audio
 
         return readsample(r.path,
             std::string(cache),
-            crop, fade);
+            crop, fade, db);
     }
 }

@@ -1,5 +1,7 @@
 ===
-doctor            = доктор, врач %% также: доктор наук
+***
+===
+doctor @ medical  = доктор, врач %% также: доктор наук
 patient @ medical = пациент            # 8+
 patient @ temper  = терпеливый         # 8+
 : Please, be patient!
@@ -9,6 +11,8 @@ patient @ temper  = терпеливый         # 8+
 temperature       = температура
 musculature       = мускулатура        # 10+
 pulse             = пульс, пульсировать, ~ ритм, вибрация
+
+===
 
 ---
 vein @ blood      = вена               # 10+

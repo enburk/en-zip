@@ -9,7 +9,7 @@ napkin {n}              = салфетка
 
 pie @ food              = пирог, торт
 cake @ dessert          = торт
-cookie {Am.}            = домашнее печенье, ~ булочка
+cookie                  = печенье
 bread                   = хлеб
 
 beef                    = говядина
@@ -34,7 +34,7 @@ sweets                  = сладости, конфеты
 ---
 sour                    = кислый
 bitter                  = горький
-spicy                   = пряный, пикантный, ~ острый
+spicy @ food            = пряный, пикантный, ~ острый
 tough @ food            = жёсткий
 : The beef was fine—tough, ~ but with body in it.
 ===

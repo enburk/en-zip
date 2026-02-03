@@ -29,6 +29,7 @@ namespace media::scan
                 continue;
 
             resource resource(path);
+            auto options = resource.options;
             resource.entries += common.entries;
             resource.options += common.options;
             if (resource.credit == "")
@@ -46,9 +47,16 @@ namespace media::scan
             if (is_directory(path))
             {
                 resource.id = common.id;
+
                 if (resource.meta != "")
                     resource.id += " {{" + to_msdos(
                     resource.meta) + "}}";
+
+                for (str option: options)
+                    if (option.ends_with("db"))
+                    if (option.starts_with("-")
+                    or  option.starts_with("+"))
+                    resource.id += " ## " + option;
 
                 auto credit = path / "!credit.txt";
                 if (std::filesystem::exists(credit))
@@ -157,6 +165,7 @@ namespace media::scan
                     static const array<str> exact = {"sic!","Case","wide","asset","course-","(o)",
                     "us","uk","ca","au","ru", "=", "==", "xlam",
                     "poem","song","sound","number","pixed","texted","long",
+                    "-3db","-2db","-1db","+1db","+2db","+3db",
                     "fade","fade in","fade out",
                     "{1}","{2}","{3}","{1,2}",
                     "reduced","unclear"};

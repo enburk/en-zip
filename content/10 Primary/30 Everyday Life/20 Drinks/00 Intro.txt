@@ -4,10 +4,11 @@ mineral water              = минеральная вода
 soda [water]               = газировка, содовая
 cola                       = кола
 
+===
+
 soda siphon||soda syphon   = сифон                        # 16+
 bottle                     = бутылка
 
-===
 ---
 milk                       = молоко                       /// из прагерманского
 condensed milk             = сгущенное молоко
@@ -29,8 +30,8 @@ chicory @ coffee           = цикорий                      # RARE+ # 14+
 hot chocolate//[hot] cocoa = горячий шоколад, какао
 cocoa powder               = какао-порошок
 
+---
 cocktail                   = коктейль
-milkshake                  = молочный коктейль
 smoothie                   = смузи
 
 

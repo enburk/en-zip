@@ -1,20 +1,26 @@
+===
+***
 à la guerre ~ comme à la guerre = на войне как на войне %% (фр.)                   # sic! # 14+
+===
 
 army @ military       = армия
 artillery             = артиллерия
+
 calibre\\caliber      = калибр                                           # WAR-
 camouflage            = камуфляж, маскировка, ~ камуфлировать, камуфляжный # 10+
+ricochet              = рикошет                                          # 10+
+
+revanchism            = реваншизм                                        # WAR- # 14+
 campaign @ war        = кампания                                         # 16+
+
 front @ military      = фронт                                            # 10+
 flank @ military      = фланг                                            # 10+
+
 patrol                = патруль, патрулировать                           # 10+
 picket @ war          = пикет, дозор                                     # 18+
-ricochet              = рикошет                                          # 10+
-palisade              = палисад, частокол                                # 18+
-embrasure             = амбразура, бойница                               # WAR- # 18+
-trench @ war          = окоп, траншея                                    # 10+
 garrison              = гарнизон                                         # WAR- # 16+
 
+---
 cadet                 = кадет                                            # WAR-
 sergeant              = сержант                                          # WAR-
 officer @ rank        = офицер %% также: должностное лицо, ~ чиновник, служащий # 14+
@@ -25,21 +31,27 @@ marshal @ rank        = маршал                                           #
 
 ===
 
+palisade              = палисад, частокол                                # 18+
+embrasure             = амбразура, бойница                               # WAR- # 18+
+trench @ war          = окоп, траншея                                    # 10+
+
 escort @ noun %% noun = эскорт, сопровождение                            # 14+ /// `escort
 escort @ verb %% verb = эскортировать, сопровождать                      # 14+ /// es`cort
 
 parade @ military     = парад
+
 chevron @ army        = шеврон                                           # WAR- # 18+
 epaulettes {esp.} {Br.}\\{Am.} {usually} epaulets = эполеты                                          # WAR- # 10+
 kepi                  = кепи                                             # WAR- # 18+
 
 musketeer             = мушкетёр                                         # HISTORY- # WAR- # 12+
+cuirass               = кираса, ~ в зоологии: панцирь                    # HISTORY- # WAR- # 12+
+
+---
 cavalry               = кавалерия, конница                               # HISTORY- # WAR- # 14+
 cavalcade             = кавалькада, процессия                            # HISTORY- # WAR- # 18+
 gallop                = галоп, нестись                                   # HISTORY- # WAR- # 10+
-cuirass               = кираса, ~ в зоологии: панцирь                    # HISTORY- # WAR- # 12+
 
-revanchism            = реваншизм                                        # WAR- # 14+
 
 
 

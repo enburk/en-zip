@@ -1,19 +1,21 @@
-[outer] space      = космос
 cosmos             = Вселенная, мироздание, космос, ~ упорядоченная система, ~ порядок, гармония
+===
+[outer] space      = космос
+===
 
 ---
 planet             = планета
 orbit              = орбита
 
-asteroid @ astro   = астероид
+galaxy             = галактика
+
+===
+---
 meteor             = метеор
 meteorite          = метеорит
 bolide %% a very bright meteor = болид                          # TERM- # 10+
+asteroid @ astro   = астероид
 
----
-galaxy             = галактика
-supernova          = сверхновая звезда %% вспышка сверхновой # 10+
 galactic collision = столкновение галактик          # 14+ /// Interacting galaxies (colliding galaxies)
-
-
+supernova          = сверхновая звезда %% вспышка сверхновой # 10+
 

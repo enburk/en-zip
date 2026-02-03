@@ -1,40 +1,41 @@
-Japan         = Япония                               # pix- # 8+
-Japanese {a}  = японский                             # pix- # 8+
+Japan               = Япония                         # pix- # 8+
+Japanese {a}        = японский                       # pix- # 8+
 
-sakura        = сакура                               # 10+
-origami       = оригами                              # 10+
-bonsai        = бонсай                               # 12+
-ikebana       = икебана                              # 12+
+sakura              = сакура                         # 10+
+origami             = оригами                        # 10+
+bonsai              = бонсай                         # 12+
+ikebana             = икебана                        # 12+
 
-sushi         = суши/суси                            # MEAT
-sashimi       = сашими                               # MEAT # 12+
-sake          = саке                                 # 18+
+sushi               = суши/суси                      # MEAT
+sashimi             = сашими                         # MEAT # 12+
+sake                = саке                           # 18+
 
-kimono        = кимоно                               # 10+
-karaoke       = караоке                              # 10+
-tatami @ home = татами                               # 12+
-rickshaw      = рикша                                # 12+
-geisha        = гейша                                # 16+
-yakuza        = якудза                               # 16+
-tsunami       = цунами
+kimono              = кимоно                         # 10+
+karaoke             = караоке                        # 10+
+tatami @ home       = татами                         # 12+
+rickshaw            = рикша                          # 12+
+geisha              = гейша                          # 16+
+yakuza              = якудза                         # 16+
+tsunami             = цунами
 
-judo          = дзюдо
-karate        = карате|каратэ
-sumo          = сумо                                 # 12+
-sensei        = сэнсэй                               # 10+
+judo                = дзюдо
+karate              = карате|каратэ
+sumo                = сумо                           # 12+
+sensei              = сэнсэй                         # 10+
 
-samurai {n}   = самурай                              # 10+
-bushido {n}   = бусидо %% кодекс самураев            # 18+
-harakiri {n}  = харакири                             # 14+
-seppuku {n}   = сеппуку|сэппуку %% ''то же, что'' харакири # 18+
-ninja {n}     = ниндзя
-katana {n}    = катана                               # 14+
-shuriken {n}  = сюрикэн                              # 14+
+samurai {n}         = самурай                        # 10+
+bushido {n}         = бусидо %% кодекс самураев      # 18+
+harakiri {n}        = харакири                       # 14+
+seppuku {n}         = сеппуку|сэппуку %% ''то же, что'' харакири # 18+
+ninja {n}           = ниндзя
+katana {n}          = катана                         # 14+
+shuriken {n}        = сюрикэн                        # 14+
 
 ===
-kamikaze      = камикадзе                            # 14+
-bazooka       = базука %% шутка, слово не японское   # Ru # 14+
-banzai!       = банзай!                              # 12+
+kamikaze @ aircraft = камикадзе                      # 14+
+bazooka             = базука %% шутка, слово не японское # Ru # 14+
+banzai!             = банзай!                        # 12+
+
 
 
 

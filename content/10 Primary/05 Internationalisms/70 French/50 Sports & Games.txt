@@ -1,16 +1,22 @@
-Grand Prix %% plural: Grand Prix = Гран-при               # 14+ /// (буквально: большой приз) /// международные соревнования (скачки, гонки); Гран-при (высшая награда на фестивале и т.п.)
+===
+***
+Grand Prix %% plural: Grand Prix = Гран-при               # 14+ /// (буквально: большой приз)
+===
 
 parkour                  = паркур                 # 10+
 peloton                  = пелотон                # SPORT- # 18+ /// http://new.gramota.ru/spravka/buro/search-answer?s=пелетон
 pétanque                 = петанк                 # 18+
 racket|racquet @ racquet = ракетка
+
 vis-à-vis %% literary    = визави, ~ лицом к лицу %% # 18+ /// ~~в сравнении, в отношении
 chance                   = случай, случайность, ~ шанс, возможность
 
 ===
+
 ---
 billiards                = бильярд                # duple # 10+ /// irregular plurals
 cue @ billiards          = кий                    # 12+ /// знак, намёк, реплика
+
 ---
 roulette @ game          = рулетка                # 16+
 croupier                 = крупье                 # 16+

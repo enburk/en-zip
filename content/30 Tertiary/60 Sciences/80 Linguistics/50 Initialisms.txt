@@ -1,8 +1,8 @@
 ===
-initialisms # HEAD
+initialisms     # HEAD
 ===
 
-F2F         = face to face                                # +ru
+F2F             = face to face                            # +ru
 
 ===
 acronym
@@ -18,6 +18,16 @@ acronym
 
 ===
 
-EIAFUP      = Elaborate Invented Acronyms for Uncommon Phrases # +ru # sic!
+EIAFUP          = Elaborate Invented Acronyms for Uncommon Phrases # +ru # sic!
+
+===
+pseudo-acronyms # HEAD
+===
+
+BBQ             = barbecue
+
+===
+
+
 
 

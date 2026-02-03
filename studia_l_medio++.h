@@ -59,7 +59,7 @@ namespace studia
             array<byte> audio_bytes;
             if (media::videoexts.contains(ext))
             video_bytes = media::video::readsample(source, cache, crop).value(); else
-            audio_bytes = media::audio::readsample(source, cache, crop, fade).value();
+            audio_bytes = media::audio::readsample(source, cache, crop, fade, 0).value();
 
             xy size;
             if (media::videoexts.contains(ext))

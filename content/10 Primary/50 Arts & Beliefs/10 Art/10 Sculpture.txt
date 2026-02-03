@@ -11,7 +11,7 @@ bust @ art         = бюст           # 10+
 
 pedestal           = пьедестал      # 10+
 wax sculpture      = восковая скульптура # 10+
-terracotta         = терракота      # RARE+ # 18+
+terracotta @ art   = терракота      # RARE+ # 18+
 mask @ art         = маска          # 14+ /// африканская
 
 granite @ art      = гранит         # 10+
@@ -19,6 +19,7 @@ marble @ art       = мрамор
 ---
 bronze @ art       = бронза
 patina             = па́тина/пати́на  # 16+
+
 
 
 

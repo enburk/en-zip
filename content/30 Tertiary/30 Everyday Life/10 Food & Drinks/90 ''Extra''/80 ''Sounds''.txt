@@ -8,7 +8,7 @@ sounds
 : coffee grinder          # SOUND
 : cappuccino machine steam hiss # SOUND
 : ice clinks in glass     # SOUND
-: glass clink             # SOUND
+: glasses clinking        # SOUND
 : cracking peanuts        # SOUND
 
 ===

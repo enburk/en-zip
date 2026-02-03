@@ -6,7 +6,7 @@ toaster                 = тостер
 microwave               = микроволновка
 refrigerator %% informal: fridge = холодильник
 
-ceramic                 = керамика, керамический              # 10+
+ceramics @ food         = керамика                            # 10+
 faience|faïence         = фаянс                               # RARE+ # sic! # 18+
 china                   = фарфор                              # 14+
 maiolica                = майолика %% разновидность керамики  # RARE+ # 18+
@@ -24,6 +24,7 @@ conserve @ noun %% noun = консервированные фрукты         
 
 culinary                = кулинарный                          # TERM- # pix- # 14+
 culinarian              = кулинар                             # TERM- # pix- # 14+
+
 
 
 

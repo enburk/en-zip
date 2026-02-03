@@ -366,6 +366,9 @@ namespace app::one
             and not entries.empty())
                 fill();
 
+            if (what == &playmode)
+                current = 0;
+
             if (what == &volume)
                 for (slide& s: slides)
                     s.volume = volume;

@@ -17,8 +17,14 @@ shuffle @ walk   = to walk without lifting the feet # +ru
 ***
 smash @ hit      = the sound of a violent impact, ~ to break something violently
 : glass smash    # SOUND
-smash @ tennis   = a very hard overhead shot hit sharply downward
+smash @ tennis   = a very hard overhead shot
 smash @ cocktail = a kind of julep cocktail containing chunks of fresh fruit
+
+***
+dice @ game %% {plural:} dice
+: dice shake and roll onto table # SOUND
+dice @ cut       = to cut into small cubes
+diced onions
 
 
 

@@ -3,9 +3,11 @@ journalism          = журналистика
 correspondent       = корреспондент                 /// соответствующий - corresponding
 columnist           = колумнист                     /// %% ведет колонку в периодическом издании # TERM+ # 18+
 publicist           = публицист                     # TERM+
+
 ---
 reporter            = репортёр
 reportage %% formal = репортаж
+
 ---
 news                = новости
 news agency         = агентство новостей            # TERM- # 16+

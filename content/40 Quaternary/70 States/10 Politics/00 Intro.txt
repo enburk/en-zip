@@ -1,12 +1,12 @@
 politics
 
-reign     /// French
+reign            /// French
 
-amendment /// French
+amendment        /// French
 
 ---
-resign    /// Latin
-resignation
+resign %% {verb} /// Latin
+resignation %% {noun}
 : Therefore, I shall resign the Presidency effective at noon tomorrow.
 
 ---
@@ -21,6 +21,8 @@ abroad
 overseas
 
 social security
+
+tear gas
 
 ===
 
@@ -43,4 +45,5 @@ census
 : In Chicago, for instance, a friend once took me on a drive down a beautiful old street
 
 : Politics, after all, is the art of persuasion
+
 

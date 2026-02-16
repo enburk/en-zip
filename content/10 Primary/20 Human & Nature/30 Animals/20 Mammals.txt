@@ -1,3 +1,6 @@
+===
+***
+===
 
 panda               = панда
 grizzly [bear]      = гризли
@@ -16,7 +19,6 @@ yak                 = як
 lemur               = лемур                # RARE+
 capuchin @ monkey   = капуцин              # RARE+ # 16+
 gibbon              = гиббон               # RARE+ # 16+ /// French
-gorilla             = горилла
 
 
 

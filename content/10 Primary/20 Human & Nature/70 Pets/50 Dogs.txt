@@ -3,7 +3,7 @@ dog                        = собака
 Great Dane                 = дог
 ===
 bulldog                    = бульдог
-boxer                      = боксёр
+boxer @ dog                     = боксёр
 Dalmatian                  = далматинец
 Doberman [pinscher]        = доберман, доберман пинчер # TERM- # 10+ /// |Dobermann
 Newfoundland               = ньюфаундленд       # 10+

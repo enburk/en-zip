@@ -1,15 +1,15 @@
 grammar
+small words
+# pix?
 
-===
-small words  # HEAD
-===
-
-all %% determiner, pronoun, noun = все, всё
+all %% {determiner}, ~ {pronoun}, ~ {noun} = все, всё
 
 ===
 
 all of it    = всё это
 all of them  = все они
+
+===
 
 ---
 all the same = все так же, ~ все равно, безралично, ~ тем не менее

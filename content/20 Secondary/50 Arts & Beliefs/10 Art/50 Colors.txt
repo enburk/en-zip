@@ -5,12 +5,13 @@ yellow
 saffron yellow
 orangeish
 
-deep red
-bright red
-carmine
-crimson
-burgundy @ color
-ruby [red]
+onyx @ color {a}
+sapphire @ color {a}
+emerald @ color {a}
+
+cream @ color {a}
+pearl @ color {a}
+olive @ color {a}
 
 purple @ color
 fuchsia @ color
@@ -18,5 +19,6 @@ pink passion
 peach @ color
 
 baby blue
+dark green
 
 terracotta @ color

@@ -1,17 +1,18 @@
 polysemic
 
 ***
-pride @ lions                  = прайд %% стая львов # 12+
-pride @ proud                  = гордость, гордыня # 12+
+pride @ lions   = прайд %% стая львов # 12+
+pride @ proud   = гордость, гордыня # 12+
 
 ===
-buffalo @ bovid %% plural: buffaloes/buffalo = буйвол
+buffalo @ bovid = буйвол
 buffalo ~ {esp.} {Am.} @ bison = бизон
-buffalo @ verb                 = запугивать ~~ приводить в замешательство, ~ озадачивать
-Buffalo                        = Буффало %% город в США
+buffalo @ verb  = запугивать ~~ приводить в замешательство, ~ озадачивать
+Buffalo         = Буффало %% город в США
 ===
-Buffalo buffalo ~ Buffalo buffalo buffalo ~ buffalo Buffalo buffalo.
+: Buffalo buffalo ~ Buffalo buffalo buffalo ~ buffalo Buffalo buffalo.
 = Буффальские бизоны, ~ которых пугают (другие) ~ буффальские бизоны, ~ пугают буффальских бизонов.
+
 
 
 

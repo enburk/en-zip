@@ -30,7 +30,7 @@ eurocent                     = евроцент                                 
 franc                        = франк %% Швейцария, до евро: Франция и Бельгия # 18+
 centime                      = сантим %% Швейцария и др.                 # 18+
 
-lira @ money                 = лира %% Турция, до евро: Италия           # HISTORY+ # POLIT- # 18+
+lira @ money                 = лира %% Турция, до евро: Италия, Мальта   # HISTORY+ # POLIT- # 18+
 peseta                       = песета %% до евро: Испания                # HISTORY+ # POLIT+ # 18+
 ---
 mark @ money                 = марка %% до евро: Германия                # HISTORY+ # POLIT- # 18+
@@ -54,6 +54,7 @@ Heads, or tails?             = Орел или решка?
 ===
 
 : In for a penny, in for a pound.
+
 
 
 

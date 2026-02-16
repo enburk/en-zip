@@ -1,7 +1,6 @@
-grammar
-
 ===
-small words # HEAD
+grammar      # HEAD
+prepositions # HEAD
 at
 ===
 
@@ -10,25 +9,26 @@ at
 
 ---
 = в, по %% о времени
-at night    = ночью
-at nights   = по ночам
+at night     = ночью
+at nights    = по ночам
 : They walked softly, as men do instinctively at night.
 
 ---
 = в, на %% о месте, ~ где совершается ~ какой-либо процесс
-be at home  = быть дома
+be at home   = быть дома
 
 ===
 = at с глаголами:
 ===
 
-look at     = смотреть на
-laugh at    = смеяться над
-knock at    = стучать в
+look at      = смотреть на
+laugh at     = смеяться над
+knock at     = стучать в
 
 ===
 
 : He laughed at me, for my words were empty, and he knew it.
+
 
 
 

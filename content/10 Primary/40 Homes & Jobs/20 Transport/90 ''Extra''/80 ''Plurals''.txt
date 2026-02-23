@@ -29,6 +29,7 @@ money                = деньги # duple
 
 billiards            # duple # 10+
 mathematics          # duple
+
 ---
 news                 = новости
 : The news '''is''' at 6.30 p.m.
@@ -44,6 +45,8 @@ wom'''a'''n → wom'''e'''n
 
 m'''ous'''e → m'''ic'''e
 g'''oo'''se → g'''ee'''se
+
+f'''oo'''t → f'''ee'''t
 
 fish → fish          = %% '''fishes''' если речь ~ о разных видах рыб
 

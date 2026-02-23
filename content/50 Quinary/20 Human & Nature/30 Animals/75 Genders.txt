@@ -26,7 +26,7 @@ buck @ deer           = a male deer
 stag/hart @ deer      = an adult male deer
 doe @ deer %% {Br.} {also} hind
 
-vixen                 = a female fox
+vixen @ fox                 = a female fox
 
 brock {Br.}           = a male badger
 

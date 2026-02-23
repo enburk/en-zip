@@ -8,7 +8,6 @@ micrometre\\micrometer   = микрометр/микрон            # MATH+ # 
 micron                   = микрон/микрометр            # MATH+ # TERM- # 14+
 
 mile                     = миля                        # 14+
-foot @ unit              = фут                         # 14+ /// # polysemic
 yard {n}                 = ярд                         # 14+
 
 hectare                  = гектар

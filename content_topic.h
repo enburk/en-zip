@@ -85,6 +85,8 @@ namespace content::out
                 if (entry.eng.starts_with("***"))
                 {
                     ordered = true;
+                    if (leading)
+                    chain.order++;
                     entry.opt.external
                     += "HEAD";
                 }

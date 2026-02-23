@@ -3,7 +3,7 @@ dog                        = собака
 Great Dane                 = дог
 ===
 bulldog                    = бульдог
-boxer @ dog                     = боксёр
+boxer @ dog                = боксёр
 Dalmatian                  = далматинец
 Doberman [pinscher]        = доберман, доберман пинчер # TERM- # 10+ /// |Dobermann
 Newfoundland               = ньюфаундленд       # 10+
@@ -16,6 +16,7 @@ St. Bernard//Saint Bernard = сенбернар          # 10+
 fox terrier                = фокстерьер         # TERM- # 10+
 bull terrier               = бультерьер         # TERM- # 10+
 : What has four legs and an arm? ~ A very happy pitbull terrier.
+
 
 
 

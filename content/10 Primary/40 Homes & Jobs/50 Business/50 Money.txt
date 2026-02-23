@@ -14,6 +14,7 @@ bucks @ money                = баксы                                     # 
 Canadian dollar              = канадский доллар                          # POLIT+ # TERM+ # 16+
 Australian dollar            = австралийский доллар                      # POLIT+ # TERM+ # 16+
 New Zealand dollar           = новозеландский доллар                     # POLIT+ # TERM+ # 16+
+
 ---
 cent @ money                 = цент %% 1/100 базовой валюты страны
 = одноцентовые монеты ~ также часто называют ''penny''

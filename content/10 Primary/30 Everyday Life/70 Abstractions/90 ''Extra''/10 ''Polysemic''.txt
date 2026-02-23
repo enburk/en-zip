@@ -1,42 +1,51 @@
 polysemic
+
 ***
 cone @ shape             = конус
 [ice cream] cone         = вафельный рожок
 cone @ plant             = шишка
+
 ***
 cylinder                 = цилиндр
 [gas] cylinder           = газовый баллон
 cylinder @ firearm       = барабан ~ (в револьвере)              /// , цилиндр (в насосе) /// валик, валок и т.п.
 top hat//silk hat//cylinder hat = цилиндр ~ (шляпа)
 = %% также: beaver hat, high hat, ~ chimney pot hat, stove pipe hat, ~ informal: topper
+
 ***
 foot @ unit              = фут %% единица измерения
 foot @ leg               = нога, стопа, ступня
 foot @ base              = подножие, ~ нижняя часть ~ (чего-либо)
 foot of the hill         = подножье холма
 foot the bill            = оплачивать счет
+
 ***
 minute(1) @ noun %% noun = минута, мгновение
 minute(2) @ adjective %% adjective = мелкий, мельчайший, детальный, ~ несущественный, пустяковый /// maɪˈnjuːt
+
 ***
 second(1) @ time         = секунда, мгновение, ~ секундный
 second(2) @ times        = второй, ~ дополнительный, добавочный
 second(2) @ fight        = секундант
 second-hand//secondhand @ clothes = подержанный, ~ из вторых рук          /// %% shop/store
 second hand @ clock      = секундная стрелка
+
 ***
 mass(1) @ quantity       = масса, массовый, ~ множество, большинство # 18+ /// собираться в кучу и др.
 mass|Mass(2) @ church    = литургия, месса, обедня               # 18+
+
 ***
 barrel @ unit            = баррель                               # 18+
 barrel @ vessel          = бочка                                 # 18+
 barrel @ firearm         = ствол, дуло                           # 18+ /// тех. цилиндр, вал, барабан и др.
 barrel roll              = бочка ~ (фигура пилотажа)             # 18+
 barrel organ             = шарманка
+
 ***
 global @ total           = глобальный, мировой, всеобщий         # 12+
 global @ spherical       = иногда: сферический                   # 12+
 globe                    = глобус, земной шар, ~ шар             # 12+
+
 ***
 process @ noun           = процесс, ~ течение ~ (времени)
 process @ verb           = обрабатывать

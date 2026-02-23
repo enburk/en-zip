@@ -1,35 +1,43 @@
 polysemic
+
 ***
 trolleybus||trolley [bus] = тролейбус
 trolley [car]//streetcar {Am.} @ tram = трамвай %% в брит. англ. tram
 trolley ~ {Br.} @ cart    = тележка для покупок
 [shopping] cart ~ {Am.}   = тележка для покупок
+
 ***
 chopper @ bike            = чоппер %% тип мотоцикла                  # TECH- # 14+
 chopper @ copter          = разговорное: вертолёт                    # TECH- # 14+
 chopper @ knife           = секач, нож (мясника)                     # TECH- # 14+
+
 ***
 track @ caterpillar       = трак ~ (звено гусеничной ленты)
 track @ racing            = трек, ~ велотрек, мототрек, ~ гоночная трасса
 track @ sound             = трек, ~ звуковая дорожка
 track @ mark              = тропинка, дорожка, ~ след, колея         /// , рельсы, ~ выслеживать, ~ прокладывать путь
+
 ***
 dock {Br.} @ drydock      = док                                      # duple # 12+
 dock {Am.} @ pier         = пирс, причал                             # duple # 12+
 dock/sorrel @ herb        = щавель                                   /// #homonyms 1 – щавель, 2 – обрубок (хвоста)
+
 ***
 rails @ railroad          = рельсы, железная дорога                  # duple
 rails @ support           = поручни, перила
 rails @ fence             = ограда
+
 ***
 gas @ natural             = газ                                      # duple /// Holland /// бахвалиться и др.
 gas ~ {Am.} @ gasoline    = бензин
 gauze @ fabric            = марля, газ (материя), ~ дымка
 gauze [bandage]           = марлевый бинт
+
 ***
 biker @ biker             = байкер
 biker @ motorcyclist      = мотоциклист
 biker @ cyclist           = велосипедист
+
 ***
 saloon [car]\\sedan       = седан                                    # TECH-
 saloon {Br.} @ ship       = салон %% помещение для пассажиров ~ на пароходе

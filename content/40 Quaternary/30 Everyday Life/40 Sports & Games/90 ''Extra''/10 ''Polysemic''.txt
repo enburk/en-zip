@@ -1,8 +1,8 @@
 polysemic
 
 ***
-sore @ body      = causing pain or discomfort, ~ painfully sensitive
-sore @ emo       = grief, affliction, trouble, difficulty
+sore @ body            = causing pain or discomfort, ~ painfully sensitive
+sore @ emo             = grief, affliction, trouble, difficulty
 sore/sorely %% {adverb}
 
 ***
@@ -11,20 +11,27 @@ streak
 
 ***
 shuffle @ cards
-: cards shuffle  # SOUND
-shuffle @ walk   = to walk without lifting the feet # +ru
+: cards shuffle        # SOUND
+shuffle @ walk         = to walk without lifting the feet # +ru
 
 ***
-smash @ hit      = the sound of a violent impact, ~ to break something violently
-: glass smash    # SOUND
-smash @ tennis   = a very hard overhead shot
-smash @ cocktail = a kind of julep cocktail containing chunks of fresh fruit
+smash @ hit            = the sound of a violent impact, ~ to break something violently
+: glass smash          # SOUND
+smash @ tennis         = a very hard overhead shot
+smash @ cocktail       = a kind of julep cocktail containing chunks of fresh fruit
 
 ***
 dice @ game %% {plural:} dice
 : dice shake and roll onto table # SOUND
-dice @ cut       = to cut into small cubes
+dice @ cut             = to cut into small cubes
 diced onions
+
+***
+lead @ metal           # duple
+pencil lead            = contain no actual lead, but rather a non-toxic mixture of graphite and clay
+lead @ guide %% {verb} = to guide or conduct
+lead @ ahead %% {verb} = to begin, to be ahead
+
 
 
 

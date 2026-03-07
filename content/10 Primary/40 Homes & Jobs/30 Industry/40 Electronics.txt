@@ -28,7 +28,6 @@ relay @ electro              = реле             # TECH- # 16+
 microcontroller              = микроконтроллер  # IT+ # TERM+ # 16+
 microprocessor               = микропроцессор   # IT+ # TERM+ # 16+
 
-calculator                   = калькулятор, ~ вычислитель
 
 
 

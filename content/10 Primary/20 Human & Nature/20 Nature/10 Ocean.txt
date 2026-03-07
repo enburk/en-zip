@@ -1,9 +1,7 @@
-===
 ***
 ocean       = океан
-===
 
-wave        = волна                                           /// NEW
+wave @ sea  = волна                                           /// NEW
 archipelago %% plural: archipelagos/archipelagoes = архипелаг                                       # 10+
 atoll       = атолл                                           # 16+
 lagoon      = лагуна

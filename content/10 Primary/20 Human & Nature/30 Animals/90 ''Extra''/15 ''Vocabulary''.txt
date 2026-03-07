@@ -25,12 +25,12 @@ elephant             = слон
 horse                = лошадь
 bull @ ox            = бык
 
-fish                 = рыба
+fish @ animal        = рыба
 whale                = кит
 
 snake                = змея
 frog                 = лягушка
-caterpillar          = гусеница
+caterpillar @ animal = гусеница
 
 ant                  = муравей
 bee                  = пчела
@@ -53,6 +53,7 @@ fur @ amimal {n}     = мех, шерсть
 ---
 tooth @ animal       = зуб
 teeth @ animal       = зубы
+
 
 
 

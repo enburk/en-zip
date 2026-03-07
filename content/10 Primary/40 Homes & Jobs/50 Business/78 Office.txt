@@ -3,7 +3,7 @@ office {n}                 = офис, кабинет ~ должность, по
 badge                      = значок, бейдж/бейджик
 laminated                  = ламинированный                         # 10+
 
-marker                     = маркер                                 # 10+ /// marker  указатель, знак
+marker @ pen               = маркер                                 # 10+ /// marker  указатель, знак
 shredder                   = шредер                                 # RARE- # 10+
 stapler                    = степлер                                # 10+
 staple remover             = антистеплер                            # 10+

@@ -29,7 +29,7 @@ tip @ money
 gratuity %% formal /// Latin
 : In English English, the word tip has several meanings
 tip @ point        = the extreme end of something
-: marker pen, felt-tip # SOUND
+felt-tip
 fingertip
 tip @ tilt         = (to cause) to become knocked over, fall down or overturn
 tip @ hint         = to give a piece of private information, to inform

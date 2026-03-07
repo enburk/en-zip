@@ -25,7 +25,8 @@ tiler @ freemasonry
 
 ***
 char @ burn %% {verb} = to burn
-charcoal
+charcoal @ coal
+charcoal @ art
 char @ fish
 char/charlady @ charlady
 char @ comp           = a character

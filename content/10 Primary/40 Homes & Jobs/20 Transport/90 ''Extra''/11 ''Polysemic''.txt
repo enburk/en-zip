@@ -28,6 +28,12 @@ rails @ support           = поручни, перила
 rails @ fence             = ограда
 
 ***
+platform @ railway        = платформа, перрон
+platform @ tribune        = помост, трубуна
+platform [shoes]          = туфли на платформе
+platform @ comp           = операционная система, ~ платформа
+
+***
 gas @ natural             = газ                                      # duple /// Holland /// бахвалиться и др.
 gas ~ {Am.} @ gasoline    = бензин
 gauze @ fabric            = марля, газ (материя), ~ дымка

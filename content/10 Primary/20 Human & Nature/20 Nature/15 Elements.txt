@@ -1,6 +1,8 @@
 elements                = стихии
 
-storm  @ nature {n}     = буря, ураган, шторм
+storm  @ sea {n}        = шторм
+storm  @ nature {n}     = буря, ураган
+
 squall {n}              = шквал                                  # 10+ /// омоним (второе значение - вопль, вопить)
 typhoon {n}             = тайфун                                 # 10+
 hurricane {n}           = ураган                                 /// это скорее деформация испанского
@@ -28,6 +30,7 @@ disintegration          = дезинтеграция, разрушение, ~ р
 
 radiation               = излучение, радиация
 electricity @ lightning = электричество
+
 
 
 

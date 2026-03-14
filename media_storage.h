@@ -149,24 +149,7 @@ namespace media::out
 
         Location add (const resource & r, int app)
         {
-            auto size = std::filesystem::file_size(r.path);
-            if (size > (std::uintmax_t)(max<int32_t>()))
-                throw std::out_of_range(
-                "media: file too big: "
-                + str(r.path));
-
-            auto ftime = std::filesystem::last_write_time(r.path);
-            auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
-            std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
-
-            std::stringstream stringstream;
-            stringstream << std::put_time(
-            std::gmtime(&ctime), "%Y/%m/%d %T");
-
-            str stime = stringstream.str();
-            str ssize = std::to_string(size);
-            str record = ssize + " # " + stime + " # " + r.id;
-
+            str record = r.file_size() + " # " + r.file_time() + " # " + r.id;
             str cropkind = app == 0 ? "crop" : "qrop";
             if (cropkind == "qrop" and r.opt("qrop") != "")
                 record += " (qrop)";

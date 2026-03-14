@@ -186,14 +186,19 @@ namespace media::audio
             str(aux::unicode::array(r.id).front())).
             ascii_lowercased();
 
-        std::filesystem::path fn = std::string(r.id);
+        path fn = std::string(r.id);
         str stem = str(fn.stem());
-        str id = stem + ".ogg";
+        str ext = ".ogg";
+
+        str time_size = r.file_time() + " " + r.file_size();
+        time_size.replace_all("/", "-");
+        time_size.replace_all(":", "-");
+        stem += " # " + time_size;
 
         str cache = "../data/!cache/"
             + r.kind + "/"
             + letter + "/"
-            + id;
+            + stem + ext;
 
         return readsample(r.path,
             std::string(cache),

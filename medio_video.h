@@ -130,20 +130,23 @@ namespace media::video
             str(aux::unicode::array(r.id).front())).
             ascii_lowercased();
 
-        str id = r.id; if (crop != "")
-        {
-            std::filesystem::path fn = std::string(r.id);
-            str stem = str(fn.stem());
-            str ext = fn.extension().string();
-            str cc = " ## crop " + crop;
-            if (not stem.ends_with(cc))
-                id = stem + cc + ext;
-        }
+        path fn = std::string(r.id);
+        str stem = str(fn.stem());
+        str ext = fn.extension().string();
+
+        str time_size = r.file_time() + " " + r.file_size();
+        time_size.replace_all("/", "-");
+        time_size.replace_all(":", "-");
+        stem += " # " + time_size;
+
+        if (cropkind == "qrop"
+            and r.opt("qrop") != "")
+            stem += " (qrop)";
 
         str cache = "../data/!cache/"
             + r.kind + "/"
             + letter + "/"
-            + id;
+            + stem + ext;
 
         return readsample(r.path, std::string(cache), crop);
     }

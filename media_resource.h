@@ -154,6 +154,31 @@ namespace media
             return to_msdos(s);
         }
 
+        str file_size() const
+        {
+            auto size = std::filesystem::file_size(path);
+            if (size > (std::uintmax_t)(max<int32_t>()))
+                throw std::out_of_range(
+                "media: file too big: "
+                + str(path));
+
+            str ssize = std::to_string(size);
+            return ssize;
+        }
+
+        str file_time() const
+        {
+            auto ftime = std::filesystem::last_write_time(path);
+            auto xtime = std::chrono::clock_cast<std::chrono::system_clock>(ftime);
+            std::time_t ctime = std::chrono::system_clock::to_time_t(xtime);
+
+            std::stringstream stringstream;
+            stringstream << std::put_time(
+            std::gmtime(&ctime), "%Y/%m/%d %T");
+            str stime = stringstream.str();
+            return stime;
+        }
+
         friend void operator >> (sys::in::pool& pool, resource& x) {
             str fn;
             pool >> fn;

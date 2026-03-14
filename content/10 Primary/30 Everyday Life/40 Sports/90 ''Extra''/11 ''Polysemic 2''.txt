@@ -1,3 +1,4 @@
+---
 ***
 box(1) @ boxing              = боксировать %% бокс (вид спорта) -- boxing
 box(2) @ cuboid              = коробка, ящик
@@ -32,7 +33,6 @@ club @ weapon                = дубина, дубинка, ~ бить дуби
 [golf] club                  = клюшка для гольфа                           # 10+
 clubs @ gymnastics           = була́вы %% гимнастический снаряд             # 10+
 clubs @ cards                = трефы                                       # 10+
-club [sandwich]
 ***
 court @ tennis               = корт
 court/courtyard @ courtyard  = (внутренний) двор

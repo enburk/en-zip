@@ -102,14 +102,19 @@ namespace app::dic::video
             script.alignment = xy{pix::left, pix::top};
             credit.alignment = xy{pix::left, pix::top};
 
-            int maxwidth = index.location.size_x;
-            if (maxwidth < W*80/100)
-                maxwidth = W;
-
-            w = min(w, maxwidth);
+            int maxwidth = w;
             video.fit(xy{w,h});
             w = video.coord.now.w;
             h = video.coord.now.h;
+
+            int maxsquare = maxwidth*maxwidth;
+            if (maxsquare < w*h)
+            {
+                h = int(h*sqrt(maxsquare)/sqrt(w*h));
+                video.fit(xy{w,h});
+                w = video.coord.now.w;
+                h = video.coord.now.h;
+            }
 
             credit.resize(xy{w,h});
 
@@ -134,7 +139,7 @@ namespace app::dic::video
             canvas.coord = r; r.deflate(frame2.thickness.now);
 
             video .move_to(r.lt);
-            credit.move_to(r.rb - xy{d*10/2, d} - xy{w2,0});
+            credit.move_to(r.rb - xy{d*10/2, d} - xy{w2,4*l});
             Play  .move_to(r.rb - xy{d* 9/2, d} + xy{0, d/7});
             Stop  .move_to(r.rb - xy{d* 9/2, d} + xy{0, d/7});
             prev  .move_to(r.rb - xy{d* 6/2, d} + xy{0, d/7});

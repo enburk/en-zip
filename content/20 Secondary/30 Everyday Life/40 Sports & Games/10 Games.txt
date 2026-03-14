@@ -2,8 +2,9 @@ games
 
 ---
 chess game
+chess pieces
 pawn @ chess
-knights @ chess
+knight @ chess
 Grandmaster
 
 
@@ -12,10 +13,12 @@ queen of spades
 jack of clubs
 ten of hearts
 
+Bingo!
+
 8 ball @ ball
-billiard balls, ~ a cue and a chalk
+billiard chalk
 frame\\rack @ billiard
-pocket @ billiard %% noun, verb
+pocket @ billiard %% {noun}, {verb}
 
 bowling alley
 

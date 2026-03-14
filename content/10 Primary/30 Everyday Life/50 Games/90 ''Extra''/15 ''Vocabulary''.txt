@@ -40,6 +40,7 @@ suit @ clothes  = костюм, одеваться
 suit @ verb     = подходить, устраивать
 suit @ cards    = масть
 : How can you get four suits for a euro? ~ Buy a deck of cards.
+
 ---
 bet @ stake     = пари, ставка, ~ делать ставку, ~ биться об заклад
 : Place your bets!

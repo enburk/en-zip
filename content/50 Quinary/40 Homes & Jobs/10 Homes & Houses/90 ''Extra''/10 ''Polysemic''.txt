@@ -1,11 +1,19 @@
 polysemic
 
 ***
-impale @ pierce  = to pierce (something) with any long, pointed object
-impale @ enclose = to enclose or fence with stakes
+impale @ pierce       = to pierce (something) with any long, pointed object
+impale @ enclose      = to enclose or fence with stakes
 
 ***
 litter @ transport
-litter @ garbage = collectively, items discarded on the ground
+litter @ garbage      = collectively, items discarded on the ground
 : No littering!
+
+***
+hatch/trapdoor @ trapdoor
+hatch @ gate
+hatch @ ship
+hatch @ car
+hatch @ spacecraft
+hatch @ egg %% {verb} = to emerge from an egg
 

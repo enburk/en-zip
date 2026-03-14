@@ -17,6 +17,13 @@ decompression chamber
 : revolver: chamber spin # SOUND
 
 ***
+canopy @ bed
+canopy @ roof
+canopy @ foliage
+canopy @ cockpit
+canopy @ parachute
+
+***
 tiles
 roof tile
 tile @ domino         = a playing piece in dominoes

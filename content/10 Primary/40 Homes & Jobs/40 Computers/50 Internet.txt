@@ -8,6 +8,8 @@ portal @ comp      = портал                                               
 server @ comp      = сервер                                                     # IT-
 provider @ comp    = провайдер                                                  # IT- # 10+
 
+===
+
 ---
 blog               = блог %% сокращение от web log — интернет-дневник           # IT- # 14+
 blogger            = блогер|блоггер
@@ -21,6 +23,8 @@ spam               = спам, спамить                                   
 moderator          = модератор                                                  # 10+
 ban @ comp         = бан, банить                                                # 10+ /// 8??
 banner @ comp      = баннер                                                     # 10+
+
+===
 
 smiley             = смайлик
 emoticon           = эмотикон                                                   # RARE+ # 10+

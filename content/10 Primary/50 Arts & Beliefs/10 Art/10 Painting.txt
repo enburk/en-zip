@@ -1,7 +1,7 @@
 
 portraitist             = портретист
 
-model @ fineart         = модель
+model @ painting        = модель
 pose                    = поза, позировать
 
 ochre\\ocher            = охра                                                  # 16+

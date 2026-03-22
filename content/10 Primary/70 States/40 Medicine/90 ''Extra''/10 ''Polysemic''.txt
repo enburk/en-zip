@@ -35,6 +35,12 @@ sterile @ clean          = стерильный
 sterile @ birth          = стерилизованный, ~ бесплодный
 sterile @ result         = безрезультатный
 
+***
+donor @ medicine         = донор
+donor @ donate           = финансирующая организация, ~ даритель
+recipient @ medicine     = в медицине: ~ реципиент
+recipient @ receiver     = адресат, получатель
+
 
 
 

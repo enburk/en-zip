@@ -1,15 +1,22 @@
+***
 
 rover
 roadster @ car
 convertible @ car
 monster truck
 SUV %% sport utility-vehicle
+fastback
 
 ===
+***
+===
 
-headlamp
+---
+headlights
 tail lights||taillights
 tailfin
+
+registration plate
 
 ---
 seat @ car

@@ -30,7 +30,7 @@ nonmetals             = неметаллы              # 14+
 ===
 
 phosphorus            = фосфор                 # 10+
-
+---
 halogens              = галогены               # TERM- # 16+
 halogen lamp          = галогенная лампа       # TERM- # 16+
 
@@ -47,9 +47,7 @@ neon @ gas            = неон                   # 10+
 argon                 = аргон                  # TERM+ # 16+
 krypton               = криптон                # TERM+ # 16+
 radon                 = радон                  # TERM+ # 16+
-
 xenon                 = ксенон                 # 16+
-xenon headlights      = ксеноновые фары
 
 ===
 

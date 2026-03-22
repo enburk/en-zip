@@ -8,11 +8,33 @@ wing mirror\\side-view mirror # sic! /// , ~ side mirror
 car door handle
 suicide door
 
+---
 hood ornament
+badge @ car
+mascot @ car
+logo @ car
+emblem @ car
+
+low beams
+high beams
+
+spotlights @ car
+
+parking light || park light {Am.}
+sidelight @ car
+
+bodystyle
+bodywork @ car
+paintwork @ car
+
+---
+windscreen\\windshield
+windscreen wiper\\windshield wiper
 
 gas cap//fuel cap
 fuel door//gas lid
 fuel filler flap
+fuel filler cap
 
 dashboard @ car
 
@@ -25,5 +47,5 @@ oversize load
 
 troubleshooting @ car
 
-
+chrome-plated || chromium-plated %% {adjective}
 

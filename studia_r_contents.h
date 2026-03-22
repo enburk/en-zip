@@ -21,7 +21,7 @@ namespace studia
             select.buttons(i++).text.html = extracolor("Extra");
             select.buttons(i++).text.text = "Tertiary";
             select.buttons(i++).text.html = extracolor("Extra");
-            select.buttons(i++).text.text = "Quaternaty";
+            select.buttons(i++).text.text = "Quaternary";
             select.buttons(i++).text.html = extracolor("Extra");
             select.buttons(i++).text.text = "Quinary";
             select.buttons(i++).text.html = extracolor("Extra");

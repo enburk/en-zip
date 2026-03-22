@@ -7,7 +7,7 @@ lobster @ food       = омар/лобстер, ~ иногда: лангуст #
 langouste @ food     = лангуст                         # 14+ /// ˈlɒnɡuːst/// ///lɒn`ɡuːst///
 crab @ food          = краб                            # 10+ /// 8 really
 
-sterlet              = стерлядь                        # 18+
+sterlet @ food       = стерлядь                        # 18+
 sevruga @ caviar     = севрюга, ~ чёрная икра ~ (севрюжья) # 16+
 ---
 truffles             = трюфели                         # 10+
@@ -17,6 +17,7 @@ truffles             = трюфели                         # 10+
 gourmand             = обжора, ~ не только гурман      # duple # 10+
 gastronome           = гастроном, гурман               # 14+
 gastronomy           = гастроно́мия, ~ кулинари́я/кулина́рия # 14+
+
 
 
 

@@ -8,9 +8,12 @@ singer                       = певец/певица
 
 headphones                   = наушники
 earphones                    = наушники
+earbuds                      = наушники
+
 ---
 drum @ music                 = барабан
 drumsticks @ drum            = барабанные палочки
+
 ---
 keyboard @ music {n}         = клавиатура
 strings @ music              = струны, струнные инструменты оркестра

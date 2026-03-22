@@ -1,24 +1,25 @@
 ===
-bike//motorbike//motorcycle = мотоцикл, байк
-bicycle//bike               = велосипед
+bike//motorcycle @ motorcycle = мотоцикл, байк
+bicycle//bike @ bicycle       = велосипед
 ===
 
-[motor] scooter             = скутер, мотороллер
-[kick] scooter              = самокат
+[motor] scooter               = скутер, мотороллер
+[kick] scooter                = самокат
 
-moped                       = мопед
+moped                         = мопед
 
-tandem @ bike               = тандем
-saddle @ bike               = седло
+tandem @ bike                 = тандем
+saddle @ bike                 = седло
 
 ===
 
-cycle rickshaw              = велорикша # TECH+
-auto rickshaw//tuk-tuk      = моторикша # TECH+
+cycle rickshaw                = велорикша # TECH+
+auto rickshaw//tuk-tuk        = моторикша # TECH+
 
-snowmobile                  = снегоход
+snowmobile                    = снегоход
 
-chrome @ bike               = хромированный, хром # 10+
+chrome @ bike                 = хромированный, хром # 10+
+
 
 
 

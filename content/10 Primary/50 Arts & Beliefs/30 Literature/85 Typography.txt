@@ -8,5 +8,4 @@ almanac         = альманах, сборник                             #
 offset printing = офсетная печать                               # TERM+ # 16+
 cursive/italic  = курсив                                        # TERM+ # 16+
 ligature        = лигатура                                      # RARE+ # TERM+ # 18+
-kerning         = кернинг %% коррекция интервала между буквами  # IT+ # RARE+ # TERM+ # 18+ /// https:///xkcd.com/1015/
 

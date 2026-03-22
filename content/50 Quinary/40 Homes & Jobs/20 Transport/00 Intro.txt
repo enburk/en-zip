@@ -6,7 +6,7 @@ alloy wheel
 muffler @ car
 : drive dragging muffler # SOUND
 
-blinker @ car
+turn signal // blinker @ car
 
 estate [car]\\[station] wagon
 
@@ -35,7 +35,11 @@ freight
 freighter @ ship
 freighter @ plane
 
+semi-submersible
+
 rigging
 
 dirtbike
 expansion chamber
+
+D-ring shackle

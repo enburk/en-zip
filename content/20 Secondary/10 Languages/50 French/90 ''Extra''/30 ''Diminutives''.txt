@@ -1,7 +1,3 @@
-diminutive ~ suffixes
--let
-
-
 ===
 diminutive ~ suffixes # HEAD
 -ette                 # HEAD
@@ -10,27 +6,19 @@ diminutive ~ suffixes # HEAD
 ariette
 chansonnette          = a little song
 
-bachelorette
 brunette
-majorette
-suffragette
 
 baguette
-brochette
-courgette
-croquette
 galette
 omelette
 
 cassette
 diskette
 
-barrette
 cigarette
-flannelette
 maquette
 pipette
-roulette
+roulette @ game
 
 marionette
 pirouette
@@ -46,3 +34,4 @@ tankette
 Annette
 Juliette
 Yvette
+

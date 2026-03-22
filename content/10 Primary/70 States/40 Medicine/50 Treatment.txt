@@ -38,10 +38,6 @@ palpation                 = пальпация                                  
 
 therapy @ medicine        = терапия, психотерапия                        # 10+
 medical procedure         = медицинская процедура
----
-donor @ medicine          = донор ~ также: финансирующая организация, ~ даритель # 12+
-recipient @ medicine      = в медицине: реципиент                        # 14+
-recipient @ receiver      = адресат, получатель                          # 14+
 
 ===
 operation @ medicine      = в медицине: операция

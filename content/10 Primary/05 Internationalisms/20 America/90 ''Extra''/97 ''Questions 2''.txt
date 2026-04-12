@@ -1,11 +1,11 @@
-wh-questions # HEAD
+wh-questions
 
 ===
-what         = что # pix-
-where        = где # pix-
-when         = когда # pix-
-who          = кто # pix-
-why          = почему # pix-
+what  = что  # pix-
+where = где  # pix-
+when  = когда # pix-
+who   = кто  # pix-
+why   = почему # pix-
 ===
 
 : What? @@
@@ -45,3 +45,4 @@ why          = почему # pix-
 
 ===
 : To be or not to be. ~ That is the question. # 14+
+

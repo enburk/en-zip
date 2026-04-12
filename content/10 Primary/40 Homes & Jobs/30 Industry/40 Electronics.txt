@@ -23,7 +23,6 @@ antistatic agent             = антистатик       # 16+
 
 diode                        = диод             # TECH- # 18+
 transistor                   = транзистор       # TECH- # 16+
-relay @ electro              = реле             # TECH- # 16+
 
 microcontroller              = микроконтроллер  # IT+ # TERM+ # 16+
 microprocessor               = микропроцессор   # IT+ # TERM+ # 16+

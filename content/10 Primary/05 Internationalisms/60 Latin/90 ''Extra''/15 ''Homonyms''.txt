@@ -4,15 +4,18 @@ homonyms                  = омонимы
 date(1) @ day             = дата, число, день, ~ срок, период, время  # duple /// , ~ датировать, ~ определять возраст
 date(1) {Am.} @ romance   = встречаться ~ (быть в романтических отношениях) %% ''также'' тот, с кем назначено свидание
 date(2) @ fruit           = финик
+
 ---
 object(1) @ noun          = объект, предмет, цель                     # 10+ /// `object
 object(1) @ grammar       = в грамматике: дополнение                  # 12+ /// `object
 object(2) @ verb          = возражать, протестовать                   # 10+ /// ob`ject
 : an object is a noun, ~ to object is a verb
+
 ---
 objective @ adjective     = объективный
-objective @ photo %% also: object lens/glass = объектив
+objective @ photo         = объектив
 objective @ target        = цель, задача
+
 ===
 present(1) @ gift %% noun = подарок, презент                          # 10+ /// `present
 present(1) @ give %% verb = дарить, преподносить                      # 10+ /// pre`sent

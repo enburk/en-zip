@@ -12,10 +12,6 @@ vermouth       = вермут
 port [wine]    = портвейн
 sangria        = сангрия
 
-Cabernet       = каберне                         # TERM+
-Merlot         = мерло                           # TERM+
-Chardonnay     = шардоне                         # TERM+
-
 sommelier      = сомелье                         # TERM+ /// Во фр. слово означало «дворецкий»
 decanter       = декантер                        # TERM+
 bouquet @ wine = букет, аромат

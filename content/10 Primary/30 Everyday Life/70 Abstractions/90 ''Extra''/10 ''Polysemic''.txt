@@ -10,7 +10,7 @@ cylinder                 = цилиндр
 [gas] cylinder           = газовый баллон
 cylinder @ firearm       = барабан ~ (в револьвере)              /// , цилиндр (в насосе) /// валик, валок и т.п.
 top hat//silk hat//cylinder hat = цилиндр ~ (шляпа)
-= %% также: beaver hat, high hat, ~ chimney pot hat, stove pipe hat, ~ informal: topper
+= также: beaver hat, high hat, ~ chimney pot hat, ~ stove pipe hat, ~ informal: topper
 
 ***
 foot @ unit              = фут %% единица измерения
@@ -56,6 +56,7 @@ form @ shape             = форма, формировать, ~ форма дл
 form @ paper             = форма, бланк                          # duple
 form @ kind              = вид, тип
 ===
+
 shape @ sport            = состояние, ~ физическая форма
 sportswear               = спортивная форма (одежда) %% в амер. такжe: повседневный стиль в одежде
 military uniform         = военная форма

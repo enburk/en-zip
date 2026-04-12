@@ -15,7 +15,7 @@ gambling          = азартная игра, ~ игра на деньги # HE
 ===
 
 casino            = казино
-blackjack         = блэкджек|блек-джек
+blackjack @ cards = блэкджек|блек-джек
 
 zero @ roulette {n} = зеро %% нулевой сектор рулетки # TERM-
 Russian roulette  = русская рулетка
@@ -24,6 +24,7 @@ Russian roulette  = русская рулетка
 
 lottery           = лотерея
 jackpot           = джекпот                      /// (куш, самый крупный выигрыш)
+
 
 
 

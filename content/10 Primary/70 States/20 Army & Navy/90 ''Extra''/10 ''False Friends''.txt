@@ -11,6 +11,10 @@ polygon               = многоугольник %% ''не'' военный/и
 ===
 
 ***
+forage cap            = пилотка %% ''не'' фуражка
+service cap//peaked cap @ army = фуражка
+
+***
 mayor                 = мэр %% ''не'' майор
 major @ rank          = майор
 
@@ -39,6 +43,9 @@ sabre\\saber @ weapon = сабля, шашка                                  
 parole                = условно-досрочное освобождение %% ''не'' пароль
 watchword//password @ watchword = пароль
 
+***
+gallant @ brave       = храбрый, доблестный %% не только галантный             # pix-
+: The Gallant Defense of Cutter Surveyor
 
 
 

@@ -11,10 +11,11 @@ upside down             = вверх тормашками
 : Down, down, down.
 
 ===
-mainly                  = главным образом, ~ в основном        # duple
-usually                 = обычно, обыкновенно                  # duple
-especially %% ''abbreviation:'' esp. = особенно, в особенности              # duple
-also @@                 = также, тоже                          # duple
+mainly                  = главным образом, ~ в основном      # duple
+usually                 = обычно, обыкновенно                # duple
+especially %% {abbreviation:} esp. = особенно, в особенности            # duple
+also @@                 = также, тоже                        # duple
+
 
 
 

@@ -18,7 +18,7 @@ opponent @ sport        = соперник
 leader @ sport          = лидер
 outsider @ sport        = аутсайдер                          # 14+
 
-arbiter                 = арбитр                             # 14+
+arbiter @ sport         = арбитр                             # 14+
 referee                 = ре́фери/рефери́                      # 14+
 
 penalty @ sport         = штраф, наказание %% ''не только'' пенальти /// # polysemic

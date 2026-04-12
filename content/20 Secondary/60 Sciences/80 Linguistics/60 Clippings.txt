@@ -40,7 +40,9 @@ lab @ laboratory = laboratory
 
 bio @ biography  = biography
 bio @ biology    = biology
-
+---
+sub @ submarine  = submarine
+sub @ sandwich   = submarine sandwich
 
 
 

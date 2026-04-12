@@ -53,8 +53,8 @@ namespace content::out
                     chain.units.empty()) co_yield chain;
                     chain.units.clear();
                     opt |= entry.opt;
-                    if (leading)
-                    chain.order++;
+                    if (leading) chain.order++;
+                    if (not entry.eng.starts_with("***"))
                     leading = false;
                     order = 0;
                 }
@@ -85,8 +85,6 @@ namespace content::out
                 if (entry.eng.starts_with("***"))
                 {
                     ordered = true;
-                    if (leading)
-                    chain.order++;
                     entry.opt.external
                     += "HEAD";
                 }

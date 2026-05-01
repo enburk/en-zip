@@ -1,7 +1,5 @@
-===
 ***
-plants            = растения                                             # HEAD
-===
+plants            = растения
 
 baobab            = баобаб                                               # 10+ /// Medieval Latin bahobab (1590s), apparently from a central African language
 cypress           = кипарис                                              # 10+
@@ -31,6 +29,7 @@ pampa             = пампа/пампасы                                   
 ===
 copra             = копра %% сушёное ядро ~ кокосового ореха
 = древнейший источник этого слова -- ~ санскритское kharpara (череп)
+
 
 
 

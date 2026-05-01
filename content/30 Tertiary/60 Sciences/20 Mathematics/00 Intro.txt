@@ -1,11 +1,8 @@
 maths\\math
 
-add      @ math %% {verb}
-subtract @ math %% {verb}
-multiply @ math %% {verb}
-divide   @ math %% {verb}
-
-difficult math problem
+---
+factor, dividend and divisor
+: Mathematically, a factor is a number that divides another number perfectly, with no remainder. 2 is a factor of 10, 3 is not.
 
 ---
 exponent @ power    = the number by which a value is said to be raised to a power: for example, the 2 in x²

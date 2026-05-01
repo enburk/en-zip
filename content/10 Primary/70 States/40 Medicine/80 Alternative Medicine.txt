@@ -1,6 +1,6 @@
 alternative medicine         = нетрадиционная медицина
 
-acupuncture                  = акупунктура %% иглоукалывание
+acupuncture                  = акупунктура
 aromatherapy                 = ароматерапия
 balneotherapy                = бальнеотерапия %% лечение минеральными водами # TERM+
 homeopathy                   = гомеопатия
@@ -9,5 +9,5 @@ urine therapy                = уринотерапия                    # TER
 
 traditional Tibetan medicine = традиционная тибетская медицина # TERM+
 
-reiki                        = рейки                           # TERM+ /// («исцеление путём прикасания ладонями») /// Japanese, literally ‘universal life energy’
+reiki                        = рейки                           # TERM+ /// Japanese, literally ‘universal life energy’
 

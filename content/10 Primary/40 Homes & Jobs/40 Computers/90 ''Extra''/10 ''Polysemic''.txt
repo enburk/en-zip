@@ -1,4 +1,5 @@
 polysemic
+
 ***
 chip @ comp                = чип
 chip @ token               = фишка, марка ~ (для игры)
@@ -6,6 +7,7 @@ chip @ piece               = стружка, щепка
 chip @ damage              = скол, щербинка /// ничего не стоящая вещь и др.
 chips {Am.} @ potato       = чипсы
 chips {Br.} @ french fries = картофель фри
+
 ***
 code @ crypto              = код, шифр, ~ система кодирования, ~ кодировать
 code @ program             = текст программы, ~ программировать
@@ -15,6 +17,7 @@ Morse code                 = азбука Морзе
 binary code                = двоичный код
 criminal code              = уголовный кодекс
 code duello                = дуэльный кодекс # HISTORY+ # RARE+ # WAR+ # 14+
+
 ***
 bit @ comp                 = бит
 bit @ bite                 = simple past tense ~ of '''bite'''

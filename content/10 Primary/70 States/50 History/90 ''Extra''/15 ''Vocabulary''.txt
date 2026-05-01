@@ -1,4 +1,10 @@
 basic ~ vocabulary
 
-king @ royal  = король   {n}
-queen @ royal = королева {n}
+king  @ royal {n} = король
+queen @ royal {n} = королева
+
+---
+duke          = герцог
+duchess       = герцогиня
+
+

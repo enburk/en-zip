@@ -10,8 +10,9 @@ underwater swimmer
 jet ski//personal water craft
 
 ---
-archery       # 8+
-bow and arrow # 8+
+archery
+arrow @ weapon
+bow and arrow
 
 ===
 fishing @ angling
@@ -21,7 +22,8 @@ fishing rod
 fishing line
 fishing reel
 fishhook||fish hook
-float/bobber @ fishing
+float @ fishing
+
 
 
 

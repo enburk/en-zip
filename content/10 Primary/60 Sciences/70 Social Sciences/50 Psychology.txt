@@ -1,4 +1,5 @@
 psychology                   = психология                            # pix-
+
 ---
 psychoanalysis               = психоанализ
 psychoanalyst                = психоаналитик
@@ -14,13 +15,14 @@ paranoia                     = паранойя
 phobia                       = фобия
 mania                        = мания                                 # duple
 
+===
+
 latent                       = латентный, скрытый
 fetish                       = фети́ш                                 /// фе́тиш
+
 ---
 sadism                       = садизм
 masochism                    = мазохизм
-
-===
 
 claustrophobia               = клаустрофобия
 kleptomania                  = клептомания

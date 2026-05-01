@@ -1,19 +1,22 @@
-organic chemistry             = органическая химия
+organic ~ chemistry           = органическая ~ химия
 
 methane                       = метан
 propane                       = пропан                                   # TECH- # TERM-
+
 ---
 benzene                       = бензол %% ''не'' бензин
 petrol {Br.}                  = бензин                                   /// petroleum нефть, бензин - устар.
 gasoline {Am.} %% informal: gas = бензин
 octane number//octane rating  = октановое число                          # TECH- # TERM-
+
 ---
 kerosene {Am.}                = керосин
-paraffin {Am.} @ waxy         = парафин
 paraffin {Br.} @ fuel         = керосин, ~ реже: парафин
+paraffin {Am.} @ waxy         = парафин
 paraffin wax {Br.}            = парафин
 wax                           = воск
 stearin                       = стеарин
+
 ---
 ethanol                       = этанол %% этиловый спирт                 # 18+
 methanol                      = метанол %% метиловый спирт               # 18+
@@ -25,6 +28,7 @@ polymer                       = полимер
 isomers                       = изомеры %% молекулы, одинаковые ~ по атомному составу # TERM+
 
 antioxidant                   = антиоксидант %% противоокислитель        # TERM+
+
 
 
 

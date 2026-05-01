@@ -1,7 +1,8 @@
-jewellery\\jewelry = ювелирные украшения                                     # 10+
+***
 
-platinum           = платина, платиновый
-platinum blond\\platinum blonde = платиновая блондинка, ~ платиновый блондин              # 14+
+===
+jewellery\\jewelry = ювелирные украшения                                     # 10+
+===
 
 sapphire @ gem     = сапфир
 ruby @ gem         = рубин
@@ -11,6 +12,12 @@ incrustation/inlay = инкрустация                                     
 filigree           = филигранный, ~ филигранная работа                       # 14+ /// NEW
 carat              = карат %% 0,2 грамма                                     # TERM- # 14+
 jeweller\\jeweler  = ювелир                                                  # 10+
+
+===
+
+---
+platinum           = платина, платиновый
+platinum blond\\platinum blonde = платиновая блондинка, ~ платиновый блондин              # 14+
 
 ---
 pearl @ jewel      = жемчужина %% ''устаревшее:'' перл                       # 14+

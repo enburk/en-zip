@@ -1,12 +1,12 @@
-grammar
-
 ===
 small words        # HEAD
-===
 of
+===
+
 ===
 = передает родительный падеж ~ без предлога
 ===
+
 : drops '''of''' water on a flower
 : Piece '''of''' cake! = Проще пареной репы! %% idiomatic
 
@@ -40,10 +40,12 @@ typical '''of'''   = характерно для ~ (кого-либо, чего-
 
 
 ===
-with               = с, со # duple
+small words        # HEAD
+with               = с, со
 ===
 
 : You got a problem with that?
+
 
 
 

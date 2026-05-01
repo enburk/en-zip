@@ -1,24 +1,24 @@
 polysemic
 
 ===
-popular                    = популярный, известный
-popular @ pop              = массовый, народный
-popular culture            = поп-культура, ~ массовая культура          # 14+
-popular @ sex              = пользующийся успехом
+popular                     = популярный, известный
+popular @ pop               = массовый, народный
+popular culture             = поп-культура, ~ массовая культура # 14+
+popular @ sex               = пользующийся успехом
 ===
 
 : Are clever women popular?
 
 ===
-coordination @ cooperation = координация ~ [усилий]                     # 10+
-coordination @ ability     = координация ~ [движений]                   # 10+
+coordination @ cooperation  = координация ~ (усилий)            # 10+
+coordination @ ability      = координация ~ (движений)          # 10+
 ===
 
 ===
-miss @ Miss                = мисс
-miss @ target              = промах, осечка, ~ промахнуться, промазать
-miss @ late                = пропустить, опоздать, ~ не попасть
-miss @ feel                = скучать, ~ ощущать отсутствие
+miss @ Miss                 = мисс
+miss @ target               = промах, осечка, ~ промахнуться, промазать
+miss @ late                 = пропустить, опоздать, ~ не попасть
+miss @ feel                 = скучать, ~ ощущать отсутствие
 ===
 
 : I miss you.
@@ -27,15 +27,16 @@ miss @ feel                = скучать, ~ ощущать отсутстви
 : You missed work yesterday, ~ didn't you? ~ Not very much!
 
 ===
-pomp                       = помпа, ~ великолепие, пышность             # 10+
-pompous                    = напыщенный, высокопарный, надутый, ~ редко: помпезный # 16+ /// NEW
+pomp                        = помпа, ~ великолепие, пышность    # 10+
+pompous                     = напыщенный, высокопарный, надутый, ~ редко: помпезный # 16+ /// NEW
 ===
-pump(1) @ device           = помпа, насос, ~ выкачивать, накачивать     # 10+ /// , ~ накачивание
-pump(1) @ gain info %% informal = выведывать                                 # 10+
+pump(1) @ device            = помпа, насос, ~ выкачивать, накачивать # 10+ /// , ~ накачивание
+pump(1) @ gain info %% informal = выведывать                        # 10+
 ===
-pumps(2) {Br.} @ dancing shoes %% Br. & Am. also: flats = балетки                                    # 10+
-pumps(2) {Am.} @ high heels %% Br. usually: court shoes = туфли-лодочки                              # 10+
+pumps(2) {Br.} @ dancing shoes = балетки                           # 10+ /// %% Br. & Am. also: flats
+pumps(2) {Am.} @ high heels = туфли-лодочки                     # 10+ /// %% Br. usually: court shoes
 ===
+
 
 
 

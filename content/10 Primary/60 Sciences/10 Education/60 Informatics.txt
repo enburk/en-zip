@@ -1,5 +1,6 @@
 informatics              = информатика
 cybernetics              = кибернетика                                # 10+
+
 ---
 algorithm                = алгоритм                                   # 10+
 heuristic algorithm      = эвристический алгоритм                     # IT+ # MATH+ # TERM+ # 18+
@@ -7,6 +8,7 @@ heuristic algorithm      = эвристический алгоритм          
 correctness              = корректность, правильность
 optimization %% Br. also: optimisation = оптимизация
 recursion                = рекурсия                                   # IT+ # MATH+ # TERM+ # 18+
+
 ---
 cryptography//cryptology = криптография                               # 18+
 encoding                 = кодирование                                # 10+

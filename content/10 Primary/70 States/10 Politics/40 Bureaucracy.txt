@@ -1,5 +1,6 @@
 bureaucracy            = бюрократия
 bureaucrat             = бюрократ
+
 ---
 committee @ state      = комитет, комиссия                                 /// опекун
 commission @ group     = комиссия ~ (следственная и т.п.)                  # 12+

@@ -1,9 +1,11 @@
 state @ gov                = государство, страна, штат, ~ государственный # duple
+
 ---
 flag @ state               = флаг, флажок                        /// поникнуть, упасть духом
 tricolour\\tricolor        = триколор
 
 social contract            = общественный договор                # 16+
+
 ---
 ministry                   = министерство
 minister                   = министр
@@ -16,14 +18,17 @@ enclave @ state            = анклав                              # RARE- #
 
 centralization %% Br. also: centralisation = централизация                       # POLIT- # 16+
 decentralization %% Br. also: decentralisation = децентрализация                     # POLIT- # 16+
+
 ---
 region                     = регион, область                     /// ~~ область (тела) ???
 regional                   = региональный, областной
 municipal                  = муниципальный, городской            # 16+
+
 ---
 periphery @ state          = периферия, окраина                  # 14+ /// Am. /pəˈrɪfəri/
 province                   = провинция, область
 provincial                 = областной, местный, ~ провинциальный, провинциал
+
 ---
 federation                 = федерация, объединение              # 14+
 confederation//confederacy = конфедерация, союз                  # 16+
@@ -43,11 +48,12 @@ hegemony                   = гегемония                           # 16+ 
 
 colonization %% Br. also: colonisation = колонизация
 separatism                 = сепаратизм                          # 16+
+
 ---
 sovereign state            = суверенное государство              # 16+
 satellite state            = государство-сателлит                # POLIT+ # 16+
 protectorate               = протекторат                         # POLIT+ # 16+ /// Am. /prəˈtektərət/
-Dominion|dominion          = доминион %% самоуправляющееся государство ~ в составе Британской Империи # HISTORY+ # POLIT+ # RARE+ # 16+
+Dominion||dominion         = доминион %% самоуправляющееся государство ~ в составе Британской Империи # HISTORY+ # POLIT+ # RARE+ # 16+
 dominion                   = власть, господство, владение        # HISTORY+ # POLIT+ # RARE+ # 16+
 
 

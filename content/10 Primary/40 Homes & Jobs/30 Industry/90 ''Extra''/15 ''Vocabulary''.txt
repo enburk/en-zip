@@ -16,9 +16,13 @@ seed @ grain       = семя, зерно
 corn @ grain       = зерно, зерновые
 corn {Am.} @ maize = кукуруза
 
+cow @ domestic     = корова /// запугивать
+spur               = шпора, пришпоривать # 10+
+
 ===
 
 : Give us the tools, and we will finish the job.
+
 
 
 

@@ -14,6 +14,7 @@ subwoofer          = сабвуфер                 # 10+
 
 ===
 
+---
 player @ device    = плеер, проигрыватель     /// # polysemic
 player @ musician  = игрок, исполнитель
 playlist           = плейлист                 # 10+

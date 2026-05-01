@@ -30,12 +30,13 @@ boil              = кипеть
 : tea kettle off  # SOUND
 
 ---
-thirsty           = испытывающий жажду
+thirst            = жажда, жаждать, ~ хотеть пить
 : I'm thirsty.    = Я хочу пить.
 
 ===
 
 : That's not my cup of tea.
+
 
 
 

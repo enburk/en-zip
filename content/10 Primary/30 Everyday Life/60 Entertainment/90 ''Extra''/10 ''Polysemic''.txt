@@ -35,6 +35,10 @@ serial number        = серийный номер
 garland @ decor      = гирлянда
 garland @ wreath     = венок
 
+***
+stamp @ mark         = штамп                                                # 10+
+stamp @ post         = почтовая марка                                       # 10+
+
 
 
 

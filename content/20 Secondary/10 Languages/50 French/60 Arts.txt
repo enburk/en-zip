@@ -1,18 +1,14 @@
-
-brush @ art
-render
+***
 
 painter @ art
 painter @ job
 
 pattern
 crayon
+brush @ art
 
-maroon
-vermilion
-turquoise
-scarlet
-
+===
+***
 ===
 
 tutu

@@ -5,10 +5,12 @@ consortium         = консорциум                                   # 18
 cartel             = картель                                      # 18+
 startup [company]  = стартап                                      # POLIT- # 10+
 holding company    = холдинговая компания                         # POLIT+ # TERM+ # 18+
+
 ---
 management         = управление, руководство, ~ правление         # 10+
 risk management    = управление рисками                           # POLIT+ # 18+
 manager            = управляющий, менеджер, ~ руководитель
+
 ---
 plan @ business    = план, планировать
 plan @ schema      = план, карта, ~ чертеж, схема
@@ -17,6 +19,7 @@ deadline           = дедлайн                                      # 10+ /
 
 effective          = эффективный, действенный, действующий
 logistics          = логистика                                    # POLIT+ # 18+
+
 ---
 budget             = бюджет, составлять бюджет                    # 16+
 balance @ money    = бухгалтерский баланс                         # 18+

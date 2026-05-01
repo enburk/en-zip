@@ -8,6 +8,7 @@ polyurethane     = полиуретан
 
 absorption       = абсорбция                           # TERM- # 16+
 absorbent        = абсорбент                           # TERM- # 16+
+
 ---
 distillation     = дистилляция, перегонка              # TERM+ # 16+
 distilled water  = дистиллированная вода               # TERM-

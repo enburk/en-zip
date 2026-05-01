@@ -4,9 +4,11 @@ contraband      = контрабанда, ~ контрабандный
 kidnapping      = похищение людей, ~ киднеппинг # 16+
 marauder        = грабитель, мародёр            # 16+
 recidivist      = рецидивист                    # 16+
+
 ---
 killer @ crime  = убийца                        # 16+
 contract killer = наёмный убийца                # 16+
+
 ---
 cybercrime      = киберпреступность
 phishing        = фишинг                        # IT+ # 14+

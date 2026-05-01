@@ -1,17 +1,19 @@
-time @@                  = время, ~ в спорте: тайм
+***
+time @ sport      = время, ~ в спорте: тайм
+# pix?
 
-timer                    = таймер
-time bomb                = бомба замедленного действия %% также в переносном смысле
-time machine             = машина времени
+timer             = таймер
+time bomb         = бомба замедленного действия %% также в переносном смысле
+time machine      = машина времени
 
 ===
-time @ instance          = раз
+time @ instance   = раз
 ===
-much time                = много времени
-many times               = много раз
-three times a day        = три раза в день
-ten times a day          = по десять раз на дню
-one more time            = ещё раз
+much time         = много времени
+many times        = много раз
+three times a day = три раза в день
+ten times a day   = по десять раз на дню
+one more time     = ещё раз
 ===
 
 : What time is it?
@@ -34,23 +36,28 @@ one more time            = ещё раз
 ===
 
 ---
-in time                  = вовремя
-It's about time.         = Самое время. Пора.
+in time           = вовремя
+It's about time.  = Самое время. Пора.
+
 ---
-about this time          = в это время
-at the same time         = в это же время
-at such times            = в такие времена
+about this time   = в это время
+at the same time  = в это же время
+at such times     = в такие времена
+
 ---
-There is time.           = Времени достаточно.
-There is plenty of time. = Времени полно.
+: There is time.  = Времени достаточно.
+: There is plenty of time. = Времени полно.
+
 ---
-in a short time          = через короткий промежуток времени
-for a long time          = долгое время
+in a short time   = через короткий промежуток времени
+for a long time   = долгое время
 : for a loooong time
 : for a long, long time
+
 ---
-all the time             = постоянно, всё время
+all the time      = постоянно, всё время
 : Look up, speak nicely, ~ and don't twiddle your fingers ~ all the time.
+
 
 
 

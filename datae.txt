@@ -36529,7 +36529,7 @@ Monochromatic still life collection.. dark green tangerine [monochromatic][dark 
 Monochromatic still life collection.. purple cherries [purple].jpg
 Monochromatic still life collection.. scarlet pomegranate [monochromatic].jpg
 >>> ../datae\fineart abc {{$$}}/Balding {{Aldo Balding}}
-Kitchen at Domaine d'Audabiac [kitchen].jpg
+Kitchen at Domaine d'Audabiac [kitchen] ## crop l1 ## qrop l1 t19 b6.jpg
 lay the cloth [laying] ## qrop l27 r10.jpg
 lay the cloth [laying].jpg.uid-zps
 >>> ../datae\fineart abc {{$$}}/Basquiat {{Jean-Michel Basquiat}}
@@ -37154,6 +37154,7 @@ God and Country [USA] {{Laneea Tolley}}.jpg
 golden spiral ## qrop qr {{Sarah Grubb}}.jpg
 hand-carved wooden king cobra [hand-carved][carved][carving][king cobra][spread hood] ## qrop t6 b16.jpg
 Helios as the Personification of Midday [Helios] ## date 1765 ## qrop q {{Anton Raphael Mengs}}.jpg
+Hidden Treasure [dilapidated] ## qrop l3 r23 {{Joe Mancuso}}.jpg
 >>> ../datae\fineart {{$$}}/history
 Ariel & Taeping, China Tea Clippers Race [clipper@ship] ## qrop l19 r4 ## qropt! {{Jack Spurling, 1926 $$}}.jpg
 Battle of Waterloo [Waterloo] ## crop l1 ## qrop l1 r28 {{William Holmes Sullivan, 1898 $$}} ### (colour litho).jpg
@@ -37171,9 +37172,10 @@ The Gallant Defense of Cutter Surveyor [gallant@brave] ## qrop l15 r18.jpg
 The Storming of the Bastille [the storming of the Bastille][Bastille] ## qrop ql {{Jean-Pierre Houël, 1789 $$}}.jpg
 Vercingetorix Throws Down His Arms at the Feet of Julius Caesar [Vercingetorix][Gallic Wars] ## qrop l11 r16 ## qropt! {{Lionel Royer, 1899 $$}}.jpg
 Vikings ## qrop ql {{Edward Moran, 1800s $$}}.jpg
+Winnowing Grain [winnowing grain][winnow][winnowing][winnower] ## qrop t4 b2 ## qropt! {{Thea Recuerdo}}.jpg
 inside mouth [inside][mouth@human] ## qrop l9 r13 {{fritzcaterwall}}.jpg
 Keep Out! Or enter, I'm a sign not a cop. [sign@message] ## texted ## qrop l16 r9.jpg
-Lamentation on the Dead Christ [Lamentation] ## date 1566 ## qropt! {{Maerten van Heemskerck}}.jpg
+Lamentation on the Dead Christ [Lamentation][lamentation] ## date 1566 ## qropt! {{Maerten van Heemskerck}}.jpg
 My Blue-spotted Pig Took Me Home [abstract figurative][spotted] ## date 2003 ## qrop qr {{Gigi Sudbury}}.jpg
 Nemesis [Nemesis] ## date 1837 {{Alfred Rethel}}.jpg
 Nicaea icon [Nicaea][Orthodox] ## qropt! {{$$}}.jpg
@@ -37226,8 +37228,10 @@ The Smothering Mother [smother mother][smothering mother][smothering][smother] #
 Under Scrutiny from Auntie May [scrutiny][under scrutiny] ## qrop ql {{Lyn Darton}}.jpg
 Winter time [muff@fur] ## crop t1 ## qrop t8 b1 ## qropt! {{Francesc Masriera, 1882 $$}}.jpg
 Pleiades @ myth ## qrop l9 r8 ## qropt! {{Elihu Vedder, 1885 $$}}.jpg
+Red Shed in the Woods [shed] {{Kyle Buckland}}.jpg
 reincarnation ## qropt! {{Himalayan Academy Publications, Kapaa, Kauai, Hawaii $cc-by-sa}}.jpg
 rogue wave ## crop r7 ## qrop l22 r11 {{Katsushika Hokusai, ca. 1829–1833 $$}}.jpg
+Sailboats in a calm sunset [sailboat] ## qrop t6 b21 ## qropt! {{Mark Ashkenazi}}.jpg
 Sheikh Jamel [camel] ## qrop l9 r17 {{Ben Hubbard}}.png
 sphinx @ myth.jpg
 spotted salamander [salamander] ## qrop l18 r7 ## qropt! {{Sandra Estes}}.jpg
@@ -37241,7 +37245,7 @@ raspberries [superrealism] ## qrop qt {{Catherine Braiko}}.jpg
 Red Barn Door [red][photorealism][barn door] ## date 2008 ## qropt! {{Gary Hume}}.jpg
 Rings of Salvatierra [earthenware] ## qrop t7 b14 {{Jeremy Goodding}}.jpg
 Then I got Mary Pregnant [surreal][surrealism] ## date 2008 ## crop t2 r3 ## qrop t15 r3 {{Maryrose Crook}}.jpg
-The Baptism of Christ [baptism] ## date 1535-1540 {{Paris Bordone}}.jpg
+The Baptism of Christ [baptism] ## date 1535-1540 ## crop l1 t1 r2 ## qrop l1 t1 r3 {{Paris Bordone}}.jpg
 The Dead Travel Fast.. The Gothic Ballad of Lenore [Gothic@literature][Gothic novel][Lenore] ## qropt! ## qrop l3.jpeg
 The Swan (No. 17) [antipode] ## date 1914-1915 ## qropt! {{Hilma af Klint}}.jpg
 Thor's battle with the Ettins [Thor][Woden][Wotan][Ettins] ## qrop b15 ## qropt! {{Mårten Eskil Winge, 1872 $$}}.jpg
@@ -37263,7 +37267,7 @@ continent {{Nexttaria $dreamstime 316679849}}.jpg
 Cutaway illustration of a hobo stove including air convection [hobo stove] ## qrop t9 b4 ## qropt! {{Image.. Dontpanic}}.jpg
 >>> ../datae\imagery/Danti {{Egnazio Danti}}
 Anatolian peninsula [Anatolia][Anatolian].jpg.uid-zps
-Anatolian peninsula [Anatolia][Anatolian][Asia Minor] ## qrop ## qrop t1 b1 ## qropt!.jpg
+Anatolian peninsula [Anatolia][Anatolian][Asia Minor] ## qrop t1 b1 ## qropt!.jpg
 Egnazio Danti - Anatolian peninsula with ancient toponyms and Middle East - (MeisterDrucke-8109).jpg.uid-zps
 Egnazio Danti - Great Britain and Ireland - (MeisterDrucke-7775).jpg.uid-zps
 Egnazio Danti - South Africa Mozambique and part of Madagascar - (MeisterDrucke-8104).jpg.uid-zps
@@ -37308,12 +37312,41 @@ sketch artist [sketcher] ## qrop l8 r17.jpg
 sonar ## qropt! {{Image.. Tuukritööde OÜ $cc-by-sa wiki}}.jpg
 Swiss flag [Swiss@flag].png
 water parting [watershed@divide][drainage divide] ## qrop l7 r2.jpg
+>>> ../datae\imagery/~elements
+Ag ### istockphoto-466937323-170667a.jpg
+americium [Am@chemistry] ### istockphoto-466114225-612x612.jpg
+antimony [Sb] ### istockphoto-466923575-612x612.jpg
+barium [Ba] ### istockphoto-470258747-612x612.jpg
+bismuth [Bi] ## qrop l8 t1 r26 ### istockphoto-470251015-612x612.jpg
+boron [B@boron] ### istockphoto-470802483-612x612.jpg
+carbon @ chemistry [C@carbon] ## qrop l10 r23 ### istockphoto-474298677-170667a.jpg
+cesium [Cs] ### istockphoto-474154611-612x612.jpg
+cobalt {Co} ### istockphoto-466195477-170667a.jpg
+curium [Cm] ### istockphoto-470257805-612x612.jpg
+gold [Au] ### istockphoto-463803453-170667a.jpg
+hafnium [Hf] ### istockphoto-470258745-170667a.jpg
+indium [In] ### istockphoto-466937241-612x612.jpg
+iodine [I@iodine] ## qrop l21 t1 r13 ### istockphoto-466923169-170667a.jpg
+lanthanum [La] ### istockphoto-474201141-170667a.jpg
+lithium [Li] ### istockphoto-470802481-612x612.jpg
+mercury @ chemistry [Hg] ## qrop l9 r24 ### istockphoto-465545745-612x612.jpg
+neodymium, promethium [+][Nd][Pm@promethium].jpg
+plutonium [Pu] ## qrop l11 r23 ### istockphoto-467293071-612x612.jpg
+protactinium [Pa] ### istockphoto-465856767-612x612.jpg
+rhodium [Rh] ### istockphoto-466937411-612x612.jpg
+sulfur [S@sulfur] ### istockphoto-466592677-170667a.jpg
+thorium [Th] ### istockphoto-466937217-612x612.jpg
+uranium [U@uranium] ## qrop l24 t1 r10 ### istockphoto-470301229-170667a.jpg
+zinc [Zn] ### istockphoto-466280591-170667a.jpg
+zirconium [Zr] ### istockphoto-468160067-170667a.jpg
 >>> ../datae\imagery/~math
 algebra symbols [algebraic] ## noqrop.jpg
+arithmetic operation ## qrop l12 r28.jpg
 E8 {Petrie projection} [Lie algebra][Lie group].png
 equilateral triangle [+] ## noqrop ## crop l8 r1.jpg
 graph of a function [graph@function].jpg
 minus @ sign {{$$}}.png
+multiplication table.jpg
 plus @ sign {{$$}}.png
 scalene triangle [+] ## crop l3 ## noqrop.jpg
 sinusoid {{$$}}.png
@@ -37328,8 +37361,8 @@ An artist’s impression of {exoplanets} around the nearby {red dwarf} star GJ 8
 Betelgeuse @ star [red supergiant] {{Credit.. Adam Block~Steward Observatory}}.jpg
 Betelgeuse and the Solar System, size comparison [Betelgeuse@scale][supergiant] ## crop l12 t12 r12 b12.png
 exoplanet.png
-orbital debris [orbital] {Credit.. ESA artist's concept}] ## qrop ql.jpg
-Orion @ stars ## qropt!.jpg
+orbital debris [orbital] ## qrop ql {{Credit.. ESA artist's concept}}.jpg
+Orion @ constellation ## qropt! ## qrop t7 b6.jpg
 quasar {{ESO~M. Kornmesser}}.jpg
 stars @ astronomy [star@astronomy] ## qrop l25 r13 ## qropt!.jpg
 startrails and dots of geostationary satellites [geostationary orbit][geostationary satellites][geostationary] ## qrop qr {{Photo.. Trevor Paglen}}.jpg
@@ -37387,6 +37420,7 @@ clash cymbals [cymbalist][clash@sound] ## qrop qt.jpg
 conductorial.jpg
 fiddler ## qrop qt.jpg
 floral arrangement [arrangement] ## qrop t13 b7 {{Photo.. Frances Palmer}}.jpg
+Follow the Fish [outsider art] ## qrop l5 r8 ## qropt! {{Matt Sesow}}.jpg
 Hammond organ.jpeg
 headshell with cartridge [headshell] ## crop l15 r17 ## qrop l23 r21.jpg
 Joan of Arc Statue, French Quarter, New Orleans [equestrian statue][equestrian] ## qrop t6 b16 ## qropt!.jpg
@@ -37402,6 +37436,7 @@ restoration ## qrop l1 t11 b17.jpg
 scarab @ Egypt ## qrop l35 b2.jpg
 sculpture [sketching][sketch@art] ## qrop l7 r30 ## qropt! {{Photo.. Martina Cattaneo}}.jpg
 Sotheby’s [auction] ## qrop qr.jpg
+spaghetti western ## crop q.jpg
 The Meidias hydria [hydria].jpg
 The Temple of Poseidon, Attica [Doric order] {{Photo.. Robert McCabe}}.jpg
 tonearm [tone arm] ## qrop qr ## crop l14.jpg
@@ -37411,6 +37446,7 @@ vinyl disc [vinyl].jpg
 vinyl disc [vinyl][vinyl record] ## qrop ql.jpg
 >>> ../datae\photo/artifacts
 3,800-Year-Old Statue Resembling ‘The Thinker’ Found in Israel [thinker].jpg
+A letter written in 1922 by Albert Einstein [handwritten][handwriting] ## qrop l23 r21 {{Photo.. Ronen Zvulun}}.jpg
 Acámbaro figures.. Dinosaur fighting with man [oopart] ## qrop qt.jpg
 Acámbaro figures.. Man riding on a Dinosaur [out-of-place artifact][oopart][anachronism] ## crop b2 ## qrop l3 r1 b2 ## qropt!.jpg
 Acámbaro figures.. Prehistoric operation [out-of-place artifact][oopart][anachronistic] ## crop b3 ## qropt! ## qrop l3 r6 b3.jpg
@@ -37429,10 +37465,13 @@ Epichysis, Gnathia style [Gnathia][epichysis][Apulian] ## date c. 4th century BC
 Greek askos [askos][vessel@container][miniature] ## date 4th century BC {{Joseph Gordon Antiques}}.jpg
 Greek Blackware Guttos [blackware][guttos] ## date 5th-3rd century BC {{Joseph Gordon Antiques}}.jpg
 kiva ladder [+][Puebloan] ## qrop l20 t2 r14.jpg
+ledger @ book ## qrop q ### gettyimages-141891027-1526884534.jpg
+letters @ papers ## qropt!.jpg
 megaphone ## qrop l41 r3 ### 1.png
 megaphone ## qrop t14 b30 ### 3.jpg
 megaphone ### 2.jpg
 >>> ../datae\photo\artifacts/money
+commemorative coin [commemorative] ## crop q.jpg
 dirham.jpg
 piece of eight ### 1.jpg
 piece of eight ### 2.jpg
@@ -37465,8 +37504,10 @@ Heavy Cavalry Officer's Sword Knot [sword knot] ## qrop qr.jpg
 rawhide bosal [+].jpg
 soft shackle [shackle].jpg
 whoopie sling [sling].jpg
+stamps [stamp@post] ## qrop ql.jpg
 Tea and coffee service, ca. 1800 [service@kitchen] ## qrop l22 t2 r5 {{Photo.. Christian Wiltberger}}.jpg
 Tea tray and urn, 1799 [tea tray][tea urn] {{Photo.. John McMullin}}.jpg
+tiles.jpg
 twopence [tuppence].jpg
 Venetian trade beads [trade beads][beads] ## qrop q.jpg
 blackjack @ baton [cosh@baton][sap@baton][baton@police] ## qrop ql.jpg
@@ -37478,6 +37519,7 @@ air vent ## qrop t6 b28.png
 chair @ furniture ## qrop l1 t16 b10.jpeg
 chair @ furniture %% Ursici, West Romania ## date 2013 ## qrop l9 r11 {{Photo.. Tamas Dezsö}}.jpg
 Clark County Fair [funfair][fair@funfair][carnival@funfair] ## qrop l30 r3 {{Photo.. Kobby Dagan $dreamstime}}.jpg
+Entrance of an upscale Italian restaurant [upscale@wealth].jpg
 funfair [fair@funfair][carnival@funfair] ## qrop q.jpg
 >>> ../datae\photo\city/garbage
 garbage bin ## qrop ql.jpg
@@ -37487,6 +37529,7 @@ recycle bins [recycle bin][recycling bin][recycle] ## qrop l15 r29.jpg
 recycling bin [recycling][bin@recycle] ## qrop q.jpg
 rubbish bin ## qrop l25 r15.jpg
 wheelie bin ## qrop l21 r23.jpg
+Hostel Art Factory [hostel] ## qrop l13 r18 ## qropt!.jpg
 >>> ../datae\photo\city/houses
 abandoned house [abandoned] ## qrop qb.jpg
 archway ## qrop t4 b6.jpg
@@ -37516,6 +37559,7 @@ stairwell ## qrop q {{Photo.. Wahahaz $dreamstime 59275583}}.jpg
 steps [stair] ## qrop q.jpeg
 U-shaped staircase [staircase][half-turn] ## qrop qb.jpg
 toilet door latch [latch@door] ## qrop qb.jpg
+Tower Bridge.jpg
 Viking village replica, Iceland [Iceland] ## qrop qb.jpg
 clamshells @ packaging.jpg
 crate opener [opener] ## qrop l3 r6 ## qropt!.jpg
@@ -37530,33 +37574,60 @@ satchel ## qrop q.jpg
 schoolbag ## qrop qr.jpg
 blazer.jpg
 chignon ## qrop qt.jpg
+>>> ../datae\photo\fashion/cosmetics
 cosmetics ## qrop t27 r1 b7 {{Photo.. Linnea Apelqvist}} ### ÅhlensValentines2.jpg
+Eau de Cologne [cologne].jpg
+loading the brush [load the brush@cosmetics][loading] ## qrop qt.png
+nail varnish ### 1.jpg
+nail varnish ### 2.jpg
+perfume ## qrop t16 r1 b18 {{Photo.. Linnea Apelqvist}} ### ÅhlensValentines3.jpg
+perfume [perfumery] ## qrop t21 r1 b13 {{Photo.. Linnea Apelqvist}} ### ÅhlensValentines1.jpg
+pomade ### 1.jpg
+pomade ### 2.jpg
+Red aesthetic [nail polish] ## qrop t15 b11 {{Photo.. Kenji Toma}}.jpg
+vial.jpg
+>>> ../datae\photo\fashion/costume
+mantilla ## crop t18 ## qrop t18 b4 ## qropt!.png
+Medieval gaiters [LARP].jpg
 crocs @ shoes ###.jpeg
 crushed velvet ## qrop qt.jpeg
 Cufflink Group [cufflinks] {{Photo.. David Arky}}.jpg
 dressed up ## qrop ql.jpg
-Eau de Cologne [cologne].jpg
 fanny pack.jpg
-Georgian Gold Opal Jasper Locket [locket].jpg
-Hang'er [hanger] ## date 1996 ## qropt! ## course- {{Photo.. Dominic Rouse}}.jpg
-loosen up ## qrop qt.jpg
-low rolled updo [updo] ## qrop qt.jpg
-perfume ## qrop t16 r1 b18 {{Photo.. Linnea Apelqvist}} ### ÅhlensValentines3.jpg
-perfume [perfumery] ## qrop t21 r1 b13 {{Photo.. Linnea Apelqvist}} ### ÅhlensValentines1.jpg
-pinning clothespins [pinning] ## qrop l5 r21 {{Photo.. Walter Whitman}}.jpg
-pochette.jpg
-pomade ### 1.jpg
-pomade ### 2.jpg
-Red aesthetic [nail polish] ## qrop t15 b11 {{Photo.. Kenji Toma}}.jpg
-ruffles @ fabric ## qrop q.jpg
+flannel shirt [flannel].jpg
+>>> ../datae\photo\fashion/footwear
 sneakers ## qrop q ### Nike 1.jpg
 sneakers ## qrop r1 t15 b19 ### Nike 2.jpg
 sneakers [trainers] ### Nike 3.jpg
+goth ## qrop qt.jpg
+Hang'er [hanger] ## date 1996 ## qropt! ## course- {{Photo.. Dominic Rouse}}.jpg
+>>> ../datae\photo\fashion/headwear
+baseball cap ## qrop q.jpg
+baseball caps [baseball cap] ## qrop q.jpg
+>>> ../datae\photo\fashion/jewelry
+alexandrite ## qrop q.jpg
+earrings.jpg
+Georgian Gold Opal Jasper Locket [locket].jpg
+mother-of-pearl ## qrop l3 t4 r3 b37 {{Sabantha}} ### 1.jpg
+mother-of-pearl ## qrop t25 b12 {{Sabantha}} ### 3.jpg
+Omani gunpowder flask [gunpowder flask][gunpowdery][talahiq].jpg
+Omani khanjar [khanjar][dagger][Omani].jpg
+Omani silver bangle with dangling bells [bangle][dangling bells].jpg
+Omani silver ear ornaments [ighlamyyat][ghalamiya][intricate][filigree].jpg
+Omani sterling silver filigree [sterling silver].jpg
+pendant.jpg
+leggings.jpg
+loosen up ## qrop qt.jpg
+low rolled updo [updo] ## qrop qt.jpg
+pinning clothespins [pinning] ## qrop l5 r21 {{Photo.. Walter Whitman}}.jpg
+pochette.jpg
+pocket @ clothing ## qropt!.jpg
+ruffles @ fabric ## qrop q.jpg
+shorts ## qrop q.jpg
 terracotta-colored linen [terracotta@color] ## qrop l14 t43.jpg
 The Talisman of Charlemagne [talisman].jpg
 tighten one's tie [tighten].jpg
 Velcro [Velcro][velcro] ## qrop l1 r2 ## qropt!.jpeg
-vial.jpg
 >>> ../datae\photo\fashion/{{Designed by SonBySoniaAguilar}}
 bandana slides [bandana slide][bandana@slide][slide@bandana] ## qrop q.jpg
 Blue Fish Bandana [bandana@kerchief][neckerchief] ## qrop q.jpg
@@ -37590,27 +37661,38 @@ M&M's [M&M][dragée] ## qrop qr.jpg
 praline ## qrop t8 r1 b12.jpg
 >>> ../datae\photo\food/drinks
 1930's Crystal Cocktail Shaker [cocktail shaker][shaker@cocktail].jpg
+Aged Armagnac [ageing@alco][aging@alco] ## qrop l10 r23.jpg
+Armagnac ## qrop l27 b2.jpg
+bouquet @ wine ## qrop ql {{Photo.. Don Ryan}}.jpg
 chicory @ coffee ## qrop l13 r12 ## qropt!.jpg
+cocktail shaker [shaker@cocktail] ## qrop t15 b5 ### 2.jpg
 cocktail shaker [shaker@cocktail] ### 1.jpg
-cocktail shaker [shaker@cocktail] ### 2.jpg
-decanter ### 1.jpg
+decanter ## qrop l10 r24 ### 1.jpg
 decanter ### 2.jpg
-liquor @ alco.jpg
-Madeira wine [Madeira@wine].jpg
-Manhattan @ cocktail.jpg
+gin ## qrop l17 r5.jpg
+liquor @ alco ## qrop ql.jpg
+Madeira wine [Madeira@wine] ## qrop l29 r5.jpg
+Manhattan @ cocktail ## qrop ql.jpg
 Porto and Stilton [digestif] ## qrop qr {{Photo... A. Harris}}.jpg
-Portuguese fortified wines [fortified wine].jpg
+Portuguese fortified wines [fortified wine] ## qrop qr.jpg
 Red Teapot With Textures [teapot] ## qrop t8 b25 {{Photo.. Jeff Stanford}}.jpg
 Scotch whisky [Scotch@whisky][scotch@whisky].jpg
-spirits {{Photo.. Ashton Worthington}} ### Prop_Styling_Brian_Byrne.jpg
+spirits ## qrop l19 r14 {{Photo.. Ashton Worthington}} ### Prop_Styling_Brian_Byrne.jpg
 Teapot, Probably Based on an Early 18th Century Dutch Example [teapot] ## noqrop.jpg
+vermouth ## qrop l5 t10 r12.jpg
 vodka martini [James Bond][Bondesque] ### james_bond_roger_moore_getty.jpg
 wassail ## qrop qb.png
 Dutch oven [Dutch pot][casserole dish].jpg
 fettuccini on a fork [fettuccini] ## qrop ql {{Photo.. JC. Valette}}.jpg
 garnish ## qrop l2 r1 ## qropt! {{Photo.. Venetia Featherstone-Witty}} ### cucumber-and-tomato-salad.jpg
+grain @ seeds ## qrop ql.jpg
 home-preserved food [preserved food][preserved].png
 hot cross buns.jpg
+>>> ../datae\photo\food/kitchen
+Damascus Chef's Knife [chef's knife][cook's knife][Damascus steel@war][Damascus].jpg
+Damascus Cleaver Knife [cleaver@knife][Damascus steel@knife][chopper@knife].jpg
+Damascus Steel Chopping Cleaver [cleaver@knife].jpg
+kofta ## qrop l28 r20 b1.jpg
 laurel ## qrop ql.jpeg
 mayonnaise ## qrop t16 b9 {{Photo.. FotografiaBasica}}.jpg
 melon soup [+] ## noqrop {{Photo.. Pawel Strykowski}}.jpg
@@ -37631,6 +37713,9 @@ Wagyu New York Strip with loaded baked potato and cream spinach [New York strip]
 Gettin’ It at the Gallop [gallop] ## qrop l13 r31.jpg
 ghost.jpg
 >>> ../datae\photo/health
+heartbeat [pulsation] ## qrop l40 r3 {{Vecteezy}}.jpg
+mole @ spot [nevus] ### 1.jpg
+mole @ spot [nevus] ### 2.jpg
 prescription @ medicine [Rx] ## qrop l10 r15.jpg
 wheelchair {{Photo.. Sonja Hoeykens}}.jpg
 >>> ../datae\photo/industry
@@ -37643,7 +37728,12 @@ handsaw ## noqrop.jpg
 plane @ tool ## qrop l5 r6 ## qropt!.jpg
 Red painted old diesel engine [engine][painted] {{Photo.. sandroraffini}}.jpg
 shaving @ plane.jpg
+>>> ../datae\photo\industry/tools
+ball peen hammer ## qrop qt.jpg
+Berber sugar hammer [sugar hammer][implements][utensils] ## qrop t13 b11 ## qropt!.jpg
+hammerhead @ tool ## qrop l11 r14.jpg
 Vintage Harley Davidson Chain Breaker [chain breaker] ### 1.jpg
+workshop @ industry %% Machinists in training, 1918 ## qrop qr {{Mike Savad}}.jpg
 knife ## qrop l6 r25 ### Emerson-Sheepdog-660x455.jpg
 matador [torero] ## crop r20 ## qrop l5 r28.jpg
 match heads [head@match][heads@match] ## qropt!.jpg
@@ -37667,6 +37757,8 @@ oceanarium ## noqrop ### Viewing tunnel at Bristol Aquarium.jpg
 oceanarium ## qrop ql ### 1.jpg
 sawfish ## qrop l8 r25.jpg
 Scuba Diver and {Goliath Grouper} %% Epinephelus itajara [Epinephelus] ## noqrop {{Photo.. Michael Patrick O'Neill}}.jpg
+sea otter ## qrop l6 r23 b1.jpg
+seastar on sponge [seastar][sea star][sponge@animal][asteroid@zoo] ## qrop l18 r15 {{Photo.. Cristine McConnell}}.jpg
 shark.jpg
 short-finned pilot whales %% Globicephala macrorhynchus [pilot whale][Globicephala] {{Photo.. Michael Nolan}}.jpg
 sterlet @ fish.jpg
@@ -37674,62 +37766,17 @@ swordfish ## qrop l13 r1 ## qropt!.jpg
 swordfish ## qrop l2 r1 ## qropt!.jpeg
 Arizona bark scorpion %% Centruroides sculpturatus [Centruroides sculpturatus][Centruroides][bark scorpion][scorpion] ## qrop ql.jpg
 >>> ../datae\photo\nature\animals/birds
-Andean condor %% Vultur gryphus [+][vulture][Vultur gryphus][Vultur][New World vulture] ## qrop l1 t12 b22.jpg
-emu @ bird ## qrop l18 r4 ## qropt! {{Photo.. Ken Griffiths}}.jpg
-brown bear [ferocious] ## qrop qt.jpg
-buffalo @ bison ## noqrop.jpg
-cicada.jpg
-cobra [forked tongue@reptile].jpg
-Divine Snake [green vine snake][snake] ## qrop l30 r7 {{Photo.. Raviprakash S S}}.jpg
-Elephant's Foot Hovering over a Chick ## qropt!.jpg
-Elephant's Foot Hovering over a Chick ## qropt!.txt
-fire salamander %% Salamandra salamandra [salamander][Salamandra salamandra][Salamandra] ## noqrop.jpg
-fire salamander [salamander] ## qrop l5 r29 b1.jpeg
-Glowing eyes of an alligator at dusk [red eyes][eyeshine][tapetum lucidum] ## qrop l20 r12 {{Photo.. Larry Lynch}}.jpg
-grainy planthopper %% Kallitaxila granulata [planthopper][Kallitaxila granulata][Kallitaxila].jpg
-green tree python %% Morelia viridis [python][Morelia viridis][Morelia] ## qrop l8 r13 ## qropt! {{Photo.. Jenny Rollo}}.jpg
-Kaiser's spotted newt [newt] ## qrop l15 r24 ## qropt!.jpg
-killer whale [grampus][Orcinus orca][orca][killer@whale] ## qrop l30 r8 b1 {{Photo.. Olivier Morin}}.jpg
->>> ../datae\photo\nature\animals/mammals
-binturong [bearcat][Arctictis binturong][Arctictis] {{Photo.. ensell}}.jpg
-buffalo in snow [buffalo@bison] ## noqrop {{Photo.. Tom Murphy}}.jpg
-deer fur [fur@animal].jpg
-dromedary camels %% Camelus dromedarius [dromedary][one-humped][Camelus dromedarius][Camelus] ## crop l5 r11 ## noqrop.jpg
-European badger [Eurasian badger][badger@animal] ## qrop l5 r24 ### 3.jpg
-European badger [Eurasian badger][badger@animal] ## qrop l8 r21 ### 2.jpg
-European badger [Eurasian badger][badger@animal] ## qrop qr ### 1.jpg
-Monarch Butterfly cluster at the Pismo Beach butterfly grove [monarch butterflies] {{Photo.. Sylvia Latham}}.jpg
-Mother, calf, and escort sleeping peacefully [humpback@whale][humpback whale] ## qrop t11 b9 {{Photo.. acid-hologram}}.jpg
-oryx escape [oryx][gemsbok][gemsbuck] ## qrop ql {{Photo.. Pere Soler Isern}}.jpg
-parrot snake [Leptophis ahaetulla] {{Photo.. Theo Allofs}}.jpg
->>> ../datae\photo\nature\animals/pets
-Great Dane ## qrop l12 r10.jpg
-Maine Coon ## qrop l6 t1 r28 ### 1.png
-Maine Coon ## qrop t13 b20 {{Photo.. Nikki IJsendoorn}}.jpg
-Maine Coon {{Photo.. Sonyah Kross}}.jpg
-plesiosaur gastroliths [gastrolith][gizzard stone].jpeg
-red-eyed tree frog egg clutch %% about 5 days old [a clutch of eggs@frog][clutch@frog eggs][eggs@frog] ## qrop qb {{Photo.. Christian Ziegler}}.jpg
-repellent ## qrop t6 r22.jpg
-robber fly.jpg
-sea otter ## qrop l6 r23 b1.jpg
-seastar on sponge [seastar][sea star][sponge@animal][asteroid@zoo] ## qrop l18 r15 {{Photo.. Cristine McConnell}}.jpg
-snail ## qrop qr {{Photo.. E Zhang}}.jpg
-spectacled cobra [spectacled].jpg
-teeth @ animal.jpg
-tooth @ animal ## qrop l20 r13.jpg
-unhatched tadpoles [unhatched] ## qrop qt {{Photo.. Christian Ziegler}}.jpg
-winged scarab [scarab@Egypt] ## qrop l12 r11 ### 1.jpg
-Aspen Grove, Oregon [aspen grove][aspen][grove] ## qrop l11 r14 {{Photo.. Paul Nielsen}}.jpg
->>> ../datae\photo\nature/birds
 a clash of eagles [clash@fight] ## qrop q {{Photo.. Antoni Kasprzak}}.jpg
 Adoptive Child [brood parasitism][cuckoo] ## qrop l21 r14 {{Photo.. Chung-Cheng Kuo}}.jpg
 Allen's hummingbird [hummingbird].jpg
+Andean condor %% Vultur gryphus [+][vulture][Vultur gryphus][Vultur][New World vulture] ## qrop l1 t12 b22.jpg
 black-and-red broadbill [broadbill].jpg
 boreal owl ## qrop t9 b11.jpg
 burrowing owl.jpg
 chaffinch in the snow [chaffinch] {{Photo.. Edite Artmann}} ### crestock.jpg
 chestnut-sided warbler [warbler] ## qrop l27 r17.jpg
 emperor penguins %% Dawson-Lambton Glacier, Antarctica ## qrop l15 t1 r21 {{Photo.. Fritz Polking}}.jpg
+emu @ bird ## qrop l18 r4 ## qropt! {{Photo.. Ken Griffiths}}.jpg
 Eurasian bullfinch [bullfinch] {{Photo.. Thomas Hinsche}}.jpg
 European bee-eater [bee-eater] ## qrop t7 ## qropt!.jpg
 European starling [starling@bird] ## qrop q.jpg
@@ -37759,6 +37806,51 @@ varied thrush {{Photo.. Gregg Thompson}}.jpg
 willow ptarmigan %% Lagopus lagopus [willow grouse][ptarmigan] ## qrop l27 t1 r7 {{Photo.. Steven Kazlowski}}.jpg
 wood thrush [thrush] ## qrop l12 r13.jpg
 yellow warbler [warbler] ## qrop l14 r20 b1 {{Photo.. Doug Lloyd}}.jpg
+brown bear [ferocious] ## qrop qt.jpg
+buffalo @ bison ## noqrop.jpg
+cicada.jpg
+cobra [forked tongue@reptile].jpg
+Divine Snake [green vine snake][snake] ## qrop l30 r7 {{Photo.. Raviprakash S S}}.jpg
+Elephant's Foot Hovering over a Chick ## qropt!.jpg
+Elephant's Foot Hovering over a Chick ## qropt!.txt
+fire salamander %% Salamandra salamandra [salamander][Salamandra salamandra][Salamandra] ## noqrop.jpg
+fire salamander [salamander] ## qrop l5 r29 b1.jpeg
+Glowing eyes of an alligator at dusk [red eyes][eyeshine][tapetum lucidum] ## qrop l20 r12 {{Photo.. Larry Lynch}}.jpg
+grainy planthopper %% Kallitaxila granulata [planthopper][Kallitaxila granulata][Kallitaxila].jpg
+green tree python %% Morelia viridis [python][Morelia viridis][Morelia] ## qrop l8 r13 ## qropt! {{Photo.. Jenny Rollo}}.jpg
+>>> ../datae\photo\nature\animals/insects
+moth.jpg
+moths [moth].jpg
+winged scarab [scarab@Egypt] ## qrop l12 r11 ### 1.jpg
+Kaiser's spotted newt [newt] ## qrop l15 r24 ## qropt!.jpg
+killer whale [grampus][Orcinus orca][orca][killer@whale] ## qrop l30 r8 b1 {{Photo.. Olivier Morin}}.jpg
+>>> ../datae\photo\nature\animals/mammals
+binturong [bearcat][Arctictis binturong][Arctictis] {{Photo.. ensell}}.jpg
+buffalo in snow [buffalo@bison] ## noqrop {{Photo.. Tom Murphy}}.jpg
+deer fur [fur@animal].jpg
+dromedary camels %% Camelus dromedarius [dromedary][one-humped][Camelus dromedarius][Camelus] ## crop l5 r11 ## noqrop.jpg
+European badger [Eurasian badger][badger@animal] ## qrop l5 r24 ### 3.jpg
+European badger [Eurasian badger][badger@animal] ## qrop l8 r21 ### 2.jpg
+European badger [Eurasian badger][badger@animal] ## qrop qr ### 1.jpg
+Monarch Butterfly cluster at the Pismo Beach butterfly grove [monarch butterflies] {{Photo.. Sylvia Latham}}.jpg
+Mother, calf, and escort sleeping peacefully [humpback@whale][humpback whale] ## qrop t11 b9 {{Photo.. acid-hologram}}.jpg
+oryx escape [oryx][gemsbok][gemsbuck] ## qrop ql {{Photo.. Pere Soler Isern}}.jpg
+parrot snake [Leptophis ahaetulla] {{Photo.. Theo Allofs}}.jpg
+>>> ../datae\photo\nature\animals/pets
+Great Dane ## qrop l12 r10.jpg
+Maine Coon ## qrop l6 t1 r28 ### 1.png
+Maine Coon ## qrop t13 b20 {{Photo.. Nikki IJsendoorn}}.jpg
+Maine Coon {{Photo.. Sonyah Kross}}.jpg
+plesiosaur gastroliths [gastrolith][gizzard stone].jpeg
+red-eyed tree frog egg clutch %% about 5 days old [a clutch of eggs@frog][clutch@frog eggs][eggs@frog] ## qrop qb {{Photo.. Christian Ziegler}}.jpg
+repellent ## qrop t6 r22.jpg
+robber fly.jpg
+snail ## qrop qr {{Photo.. E Zhang}}.jpg
+spectacled cobra [spectacled].jpg
+teeth @ animal.jpg
+tooth @ animal ## qrop l20 r13.jpg
+unhatched tadpoles [unhatched] ## qrop qt {{Photo.. Christian Ziegler}}.jpg
+Aspen Grove, Oregon [aspen grove][aspen][grove] ## qrop l11 r14 {{Photo.. Paul Nielsen}}.jpg
 Bora Bora from space [lagoon][Bora Bora][Leeward Islands] ## noqrop {{Photo.. Pleiades-HR Satellite}}.jpg
 Bora Bora [lagoon] ## qrop l2 r31.jpg
 chambered nautilus shell [spiral].jpg
@@ -37955,15 +38047,21 @@ red pills [pills].jpg
 Shirts in Guimaraes, Portugal [street art] ## qrop q.jpg
 sledge @ sled ## qrop q {{Photo.. Alessandra Meniconzi}} Frozen Land.jpg
 >>> ../datae\photo/sport
+alpenstock ## noqrop ### 1.jpg
+alpenstock ## qrop l9 r9 ## qropt! ### 2.jpg
 artificial turf [fake grass][fake lawn].jpg
-baseliner [baseline@tennis] ## qrop qb ### 2.png
-baseliner [baseline@tennis] ## qrop ql ### 1.jpg
 canoe polo [kayak polo] ## qrop q.jpeg
-claycourt [clay court] ## qrop ql.jpg
 diving tower [diving platform] ## qrop l9 r13 {{Photo.. Joel Meyerowitz}}.jpg
 Eskimo roll [kayak roll] ## crop r15 ## qrop r28 ## qropt!.jpg
-football @ soccer [soccer ball][soccer].jpg
+fencing ## qrop l6 r6 ## qropt!.jpeg
+>>> ../datae\photo\sport/football
+dribbling @ soccer ## qrop l22 r12 ## qropt!.jpg
+football @ soccer [soccer ball][soccer] ## qrop q.jpg
 football fans [hooligan] ## qrop qr.jpg
+offside @ soccer ## qrop l8 r3 ## qropt!.jpg
+penalty @ soccer ## qrop l5 r3 ## qropt!.jpg
+touchdown [TD@touchdown] ## qrop l24 r20 ### 1.jpeg
+touchdown [TD@touchdown] ## qrop l3 t1 r31 ### 2.jpg
 >>> ../datae\photo\sport/games
 blackjack @ cards [black jack][21] ## qrop l26 r7.jpg
 four aces [four of a kind][aces] ## crop l6 r25 ## qrop l10 r37.jpeg
@@ -37974,35 +38072,58 @@ royal flush ## qrop l39 t8 ### 1.jpg
 three-card monte [find the lady] ## qrop l18 r7 {{Photo.. ZioDave $cc-by-sa}}.jpg
 high jumper clears the bar [high jump][high jumper] ## crop l1 t1 r1 b1 ## qrop l11 t1 r1 b1 ## qropt!.png
 hurdling [hurdler] ## crop l1 r1 t1 b1 ## qropt! {{Photo.. Michael Steele}}.jpg
+monobob [bobsleigh][bobsled] ## qrop q.jpg
 net @ sport.jpg
 New York Yankees Manager Billy Martin argues with umpire Durwood Merrill [Yankees][umpire][New York Yankees] ## qrop l18 r13 ## qropt!.jpg
+occlusion band [tourniquet][occlusion].jpg
 parkour [freerunning][free running][free runner] ## qrop l15 r9 {{Photo.. Tomasz Gudzowaty}}.jpg
-racecourse %% Caulfield Racecourse, Melbourne ## qrop l44 t5 r3.jpg
+quadriceps [quads] ## crop l12 t17 r17 b36.jpg
 >>> ../datae\photo\sport/racing
+drift @ racing ## qrop l18 r11 ## qropt!.png
 Ferrari F1 [monocoque@car] ## qrop l38 r6.jpg
 Ferrari SF71H [motorsport].jpeg
 Ferrari [autosport] ## noqrop.jpg
 Formula 1 car [racing car][race car] ## noqrop.jpeg
 Formula One [Formula 1][F1] ## crop l22 ## noqrop.jpg
+jetski [jet ski] ## qrop l11 ## qropt!.jpg
+racecourse %% Caulfield Racecourse, Melbourne ## qrop l44 t5 r3.jpg
 racing driver [pilot@racing] ## qrop ql.jpg
 racing helmets [autosport][helmet@sport].jpg
+street racing ## qrop l10 r26.jpg
+velodrome ## qrop l9 r16.jpg
 relay baton [relay@sport][baton@sport] ## qrop l19 r14 ### 2.jpg
 relay baton [relay@sport][baton@sport] ## qrop l9 r24 ### 1.jpg
+skateboard ## crop l4 r7 ## qrop l7 r9 ## qropt!.jpg
+>>> ../datae\photo\sport/tennis
+baseliner [baseline@tennis] ## qrop qb ### 2.png
+baseliner [baseline@tennis] ## qrop ql ### 1.jpg
+claycourt [clay court] ## qrop ql.jpg
 smash @ tennis ## qrop qt.jpg
 tennis court ## noqrop.jpg
 tramlines and alley [tramline@tennis][alley@tennis].jpg
 underwater lap counter [lap@pool] ## qrop l18 r7.jpeg
 University of _Nebraska stadium [tilt-shift][stadium] ## qrop l3 r5 ## qropt!.jpg
 Windsurfer _Robby _Naish [windsurfer][windsurfing] ## qrop l3 r31 {{Photo.. Hoch Zwei}}.jpg
+>>> ../datae\photo\sport/wrestling
+aikido ## crop t5 b11 ## qrop t8 b18 ## qropt!.jpg
+Alexander Karelin [wrestler][Greco-Roman wrestler][Greco-Roman wrestling][Greco-Roman@wrestling] ## qropt!.jpg
+jiujitsu ## qrop t1 b4.jpg
+professional wrestling ## qrop l22 r12 b1.jpeg
+taekwondo ## qrop qt.jpg
 >>> ../datae\photo/transport
 A new breed of chauffeur takes the wheel [chauffeur] ## qrop l15 r13 {{Photo.. Fox Photos~Getty Images}}.jpg
 beacon.jpg
 beating against the wind [sailing] ## qrop ql.jpeg
 Bentley Advertisement [middle-finger][middle finger] ## qropt!.jpg
+>>> ../datae\photo\transport/bike
+chopper @ bike ## noqrop ### 2.jpg
+chopper @ bike ### 1.jpg
+Shovelhead Rigid Frame Bobber [bobber@bike][bob-job].jpg
 Capsized cruise ship Costa Concordia [capsized] {{Photo.. DigitalGlobe}}.jpg
 cargo ship [cargo] ## qrop t11 r1 b8 {{Photo.. Oguz Turker Akpinar}}.jpg
 >>> ../datae\photo\transport/cars
 1938 Alfa Romeo Le Mans Speciale [Alfa Romeo][Le Mans] ## noqrop.jpg
+1956 Chevrolet Corvette Convertible [air scoop][air intake][bonnet scoop][hood scoop] ## qrop l27 r17.jpg
 1962 _Jaguar E-Type Low-Drag Coupe [coupe@car][coupé@car][coupé~coupe] ## crop t1 ## qrop l3 t1 r3 ## qropt!.jpg
 911 GT3-34 Brake Caliper [brake caliper][caliper@brakes] ## qrop l13 t1 r21.jpg
 Aston Martin Vanquish [convertible@car] ## noqrop ### Zagato Volante.jpg
@@ -38011,6 +38132,7 @@ Aston Martin Vanquish [coupé@car] ## noqrop ### Zagato.jpg
 BMW E30 M20 longtube exhaust manifold [manifold@mech] ## qropt!.jpg
 chassis @ car ## qrop t6 b4.jpeg
 exhaust pipe [tailpipe] ## qrop l19 r14.png
+identification plate [serial number] ## qrop l10 r10 ## qropt!.jpg
 McLaren MP4~8 model [chassis@car] ## noqrop {{Model Factory Hiro}}.jpg
 muffler @ car ## qrop t4 r36.jpg
 muffler @ car ### Jeep Wrangler.jpg
@@ -38022,8 +38144,12 @@ garage @ petrol ## qrop ql {{Photo.. whitestar1955}}.jpg
 gas station [ESSO] ## qrop l6 t14 r36 {{Photo.. Daniel Sands}}.jpg
 highway %% Slovenia ## qrop l20 t1 r13.jpg
 highway {{Photo.. Mariusz Wilkowski}}.jpg
+nipple @ auto.jpg
+nipple fitting [fitting@pipe].jpg
 no entry ## qrop qb.jpg
+Old Wagon [wagon@cart].jpg
 Prow of the Titanic [prow][Titanic] ## qrop l18 ## qropt! {{Photo.. Emory Kristof}}.jpg
+Saltburn Cliff Lift [funicular] ## qrop t24 b1.jpg
 Schiphol Airport [landing gear] ## date 1967 ## qrop l13 r22 {{Photo.. Frits J. Rotgans}}.jpg
 The busy train station [economy class][third class] ## qrop l11 r11 ## qropt! {{Photo.. Veselin Atanasov}}.jpg
 Tutankhamun's tomb [Tutankhamun][Tut] ## qrop l15 r29.jpg
@@ -38038,12 +38164,14 @@ English steel helmet, c1650 [helmet@armor] ## qrop t3 b6 ## qropt!.jpg
 Japanese {arrowhead} ### 2.jpg
 Japanese {arrowhead} ### 3.jpg
 Japanese {arrowhead} ### 6.jpg
+Native American wooden arrows [arrow@weapon][arrows].jpg
 Polish gorget, 1768 [gorget@armour] ## qrop l7 r15 ## qropt! ### Ryngraf Konfederatów Barskich.jpg
 Polish hussar breastplate [breastplate] ## noqrop ### 2.jpg
 Polish hussar breastplate [breastplate] ## noqrop ### 3.jpg
 Polish hussar breastplate [breastplate] ## qrop ql ### 1.jpg
 Polish hussar breastplate [breastplate][armour@body][armor@body][plate armour] ## qrop l10 r8 ### 2.jpg
 Polish hussar breastplate [breastplate][armour@body][armor@body][plate armour] ## qrop l11 r14 ### 1.jpg
+Polish war hammer Nadziak [war hammer] ## qrop qt ### Nadziak.jpg
 shuriken ## qrop l14 r19 {{Photo.. Moussa81 $istockphoto-1322942924}}.jpg
 shuriken ## qrop l9 r16.jpg
 spearhead [spearpoint][spear point] ## noqrop ### 2.jpg
@@ -38059,6 +38187,8 @@ sheath @ sword ## crop l10 r14 ## qrop l14 r18 ## qropt! ### 2.jpg
 tsuka [hilt].jpg
 US Navy cutlass %% 1861 [cutlass][short sword] ## qrop l2 r2 ## qropt!.jpeg
 US Navy cutlass with scabbard %% 1861 [scabbard] ## qrop r1 ## qropt!.jpg
+war hammer ## qrop qr.jpg
+WWI German trench axe [trench axe][entrenching tools] ### Beilpicke.jpg
 >>> ../datae\photo\war/airforce
 Boeing B-17 Flying Fortress is falling down [shot down] ## date 1944.jpeg
 Boeing B-52 Stratofortress {nacelles}.jpg
@@ -38557,7 +38687,7 @@ Union Prayer Book [siddur].jpg
 Cubistic Purple Nude [cubistic][feminine] ## date 1949.jpg
 The Minotaur or the Dictator [Minotaur] ## date 1937 ## qrop l2 t7 r2 b10 ## qropt!.jpg
 >>> ../datae\photo b/Bono photocuisine {{Photo.. Jean Bono}}
-aperitif spoons and glasses of cider with lime [aperitif].jpg
+aperitif spoons and glasses of cider with lime [aperitif][aperitifs][apéritifs].jpg
 button mushroom carpaccio with red pepper [button mushroom].jpg
 canned pineapple [canned].jpg
 celery mousse with avocado and crab [appetizer@food].jpg
@@ -39043,7 +39173,7 @@ vol-au-vent ## qrop qb.jpg
 whole crawfish [crawfish][crayfish][crawdad] ## qrop qr.jpg
 сutting raw ham [ham@food].jpg
 >>> ../datae\photo de/Dieterlen photocuisine {{Photo.. J. Dieterlen}}
-Chateau Latour [Bordeaux].jpg
+Chateau Latour [Bordeaux@wine] ## qrop t8 b5 ## qropt!.jpg
 citrons [citron] ## qrop t2 b22 ## qropt!.jpg
 citrus fruit sorbet dish [citrus fruit].jpg
 hazelnut leaf knife rest [knife rest] ## qrop qb.jpg
@@ -39640,8 +39770,8 @@ pencil lead [lead@pencil] ## qrop t20 b13.jpg
 quinacridone violet [quinacridone] ## qrop q.jpg
 reddish brown gold [reddish brown][reddish].jpg
 scarlet lake [scarlet] ## qrop t19 b6.jpg
-spray paint ## qrop t3 b31 ### Montana.jpg
-vinyl emulsion @ art ## qrop l12 r15.jpg
+spray paint ## qrop l1 t3 b31 ### Montana.jpg
+vinyl emulsion @ art [emulsion@art] ## qrop l12 r15.jpg
 viridian ## qrop q.jpg
 watercolours [watercolor][watercolour] ## qrop l22 t14 r22 b10.jpg
 >>> ../datae\photo gh/Heyman {{Photo.. Ken Heyman}}
@@ -39662,7 +39792,7 @@ St. _Anthony's _Roman _Catholic Church, Long Beach, California [church][Long Bea
 mechanic ## date 1920 ## qrop qb.jpg
 >>> ../datae\photo gh/Hofer {{Photo.. Evelyn Hofer}}
 Bowery, New York, 1965 [Bowery].jpg
-Fishmonger's Prime Warden %% London, 1962 [warden@official] ## qrop t2 b17.jpg
+Fishmonger's Prime Warden %% London, 1962 [warden@official] ## qrop t4 r3 b19.jpg
 Girl with Bicycle, Dublin, 1966 [straddling a bicycle][straddle] ## qrop t10 b11.jpg
 Gravediggers, Dublin, 1966 [gravedigger] ## qrop l13 t13 r18.jpeg
 Phoenix Park on a Sunday, Dublin, 1966 [footballers].jpg
@@ -39987,7 +40117,7 @@ New Orleans, Palm Court Cafe [jazz dance].jpg
 >>> ../datae\photo ijkl/Leroy {{Photo.. Dominique Leroy}}
 backfire @ car %% F1, Argentine, 1997 ## qrop ql.jpg
 chicane @ racing %% Formula 1, 2008 ## qrop l32 ## qropt!.jpg
-Crash Trulli and Alesi, Canada, 1998 [crash@car][incident] ## qrop r28.jpg
+Crash Trulli and Alesi, Canada, 1998 [crash@car][incident] ## qrop r28 ## qropt!.jpg
 straight @ racing %% Silverstone, F1, 2004 ## qrop ql ### Michael Schumacher.jpg
 >>> ../datae\photo ijkl/Leser {{Photo.. Nicolas Leser}}
 bitter cucumber [bitter melon][bitter gourd][bitter squash][Momordica].jpg
@@ -40857,7 +40987,7 @@ Hannah Colorized [colorized][colourised][colourized][pillbox hat].jpg
 High Gloss Mouth [gloss@shine][glossy][glossiness][sheen].jpg
 Maison Du Partee [fairytalelike].jpg
 Pan Am Flight 62 Moon Landing [stylized][stylization][stylisation] ## crop l2 t2 r2 b2 ## qrop l2 t36 r49 b3.jpg
-Red Carpet Legs [tights] ## crop l3 t3 r3 b3.jpg
+Red Carpet Legs [tights] ## crop l3 t3 r3 b3 ## qrop l3 t4 r3 b3.jpg
 Semi Gloss Mouth [gloss@shine][glossy][glossiness][sheen].jpg
 Zipper Mouth [provocative].jpg
 >>> ../datae\photo s/Siskind {{Photo.. Aaron Siskind}}
@@ -41170,7 +41300,7 @@ The Tuileries, Paris, 1871 [1870s][Franco-Prussian War] ## qrop l20 ## qropt!.jp
 >>> ../datae\photo t-z/Vishniac {{Photo.. Roman Vishniac}}
 cheder %% Brod, Czechoslovakia, 1930s ### David Eckstein.jpg
 Grandfather and Granddaughter %% Warsaw, 1935-1938 [Jewish][poignant].jpg
-Polar bear, ca. 1921 [sepia] ## crop r2 b1 ## qrop l5 r17 b1.jpg
+Polar bear, ca. 1921 [sepia] ## crop r2 b1 ## qrop l5 r17 b2.jpg
 >>> ../datae\photo t-z/Waldman {{Photo.. Max Waldman}}
 Chaconne %% Peter Martins and Suzanne Farrell [Chaconne][chaconne] ## date 1976 ## qropt! ### 2.jpg
 Chaconne %% Peter Martins and Suzanne Farrell [Chaconne][chaconne] ## date 1976 ## qropt! ### 3.jpg
@@ -41195,7 +41325,7 @@ crosswalk %% _Beijing, 1979 [zebra crossing].jpg
 Dicksonia [Cyatheales][dicksoniaceous].jpg
 Fanny Fournier in Mirrors [mirrors][fragmented].jpg
 Fanny with Tree Calipers [tree calipers][calipers] ## qrop t11 b5 ## qropt!.jpg
-inspection hatch %% Still House No 1, The Macallan Estate [hatch@gate] ## qrop t9 b12.jpg
+inspection hatch %% Still House No 1, The Macallan Estate [hatch@gate] ## qrop t9 r1 b12.jpg
 Keith Richards [Keith][Rolling Stone][extravagant@extra] ## date 1988 ## qrop t3 b22.jpeg
 time clock %% The Macallan Estate ## qrop t5 b15.jpg
 >>> ../datae\photo t-z/Wayman {{Photo.. Stan Wayman}}
@@ -41402,6 +41532,7 @@ chromatic aberration {{$$}}.jpg
 Ernst Haeckel [Haeckel][zoologist][naturalist][eugenicist].jpg
 Eye Wall of Hurricane Katrina [eyewall] ## qrop l15 r10.jpg
 GloFish fluorescent fish [genetically modified organism] ## qrop qb {{www.glofish.com $$wiki}}.jpg
+kilogram %% National Prototype Kilogram standard K20 [K20].jpg
 lymphocyte [lymphocytes] ## qropt!.jpg
 neuron ## qrop t17 ## qropt! {{NIH $$}}.jpg
 Perseids [meteor shower] ## qrop ql.jpg
@@ -41979,7 +42110,7 @@ Frog parking only. All others will be toad. [towed] {{$Bunny F3 #7S2A5PG}} ### .
 Frog parking only. All others will be toad. [towed] {{$Bunny F3 #7S2A5PG}}.wav
 Intense sound signal operates without warning! [intense] ## qrop l13 r8 ## qropt! {{Photo.. Marc Rauw $dreamstime 68060614}}.jpg
 Intense sound signal operates without warning! [intense] {{$Bunny F3 #7S2A5PG}}.wav
-Keep out of bus lanes! ## qrop l14 r14 ## qropt! {{Photo.. Winai Tepsuttinun $dreamstime 23576595}}.jpg
+Keep out of bus lanes! [keep out] ## qrop l14 r14 ## qropt! {{Photo.. Winai Tepsuttinun $dreamstime 23576595}}.jpg
 Look out for the locomotive! [look out@idiomatic][locomotive] ## qrop l8 r7 ## qropt! {{Photo.. Michael Klenetsky $dreamstime 15965515}}.jpg
 Look out for the locomotive! [look out][locomotive] {{$Bunny F3 #7S2A5PG}}.wav
 No parking anytime! Tow away zone. [tow-away zone] ## qrop t2 b23 {{Photo.. Clicspics $dreamstime 75161642}}.jpg
@@ -42274,7 +42405,7 @@ synthesizer ## qrop r25 ## qropt! {{Photo.. Alain Juteau $dreamstime 651985}}.jp
 toy xylophone [xylophone] ## qrop ql {{Photo.. Sparkia $dreamstime 5727267}}.jpg
 trombone [trombonist] ## qrop ql {{Photo.. Furtseff $dreamstime 64653089}}.jpg
 violin and bow [bow@music] ## qrop l5 r25 ## qropt! {{Photo.. Peter Zijlstra $dreamstime 22278438}}.jpg
-violin and saxophone [saxophone][musical instruments] ## qrop q {{Photo.. Lunamarina $dreamstime 28945672}}.jpg
+violin and saxophone [saxophone][musical instruments][instruments] ## qrop q {{Photo.. Lunamarina $dreamstime 28945672}}.jpg
 violin [fiddle] ## qrop ql {{Photo.. Tadija Savic $dreamstime 3352523}}.jpg
 xylophone ## qrop t13 b21 {{Photo.. Junpinzon $dreamstime 34386700}}.jpg
 >>> ../datae\photo_dreamstime\art\music/instruments - string
@@ -42438,8 +42569,8 @@ Coins of Israel [agorot] {{Photo.. Wrangel $dreamstime 71899901}}.jpg
 Coins of Israel [agorot] {{Photo.. Wrangel $dreamstime 78057490}}.jpg
 Coins of Israel [menorah] ## qrop l7 t1 r27 {{Photo.. Wrangel $dreamstime 71281247}}.jpg
 Coins of Israel [shekel] ## qrop l13 r21 {{Photo.. Wrangel $dreamstime 69714876}}.jpg
+Coins of Israel [shekel] ## qrop l22 r12 b1 {{Photo.. Wrangel $dreamstime 77856042}}.jpg
 Coins of Israel [shekel] ## qrop q {{Photo.. Wrangel $dreamstime 69657546}}.jpg
-Coins of Israel [shekel] {{Photo.. Wrangel $dreamstime 77856042}}.jpg
 Coins of Japan %% Chrysanthemum flowers [Japanese] {{Photo.. Wrangel $dreamstime 69772831}}.jpg
 Coins of Japan %% Ear of rice [yen] {{Photo.. Wrangel $dreamstime 67604263}}.jpg
 Coins of Japan [yen] {{Photo.. Wrangel $dreamstime 67707987}} ###  Phoenix Hall of the Byodo-in Temple in Uji.jpg
@@ -42456,7 +42587,7 @@ Coins of Nazi Germany [Nazi Germany] {{Photo.. Wrangel $dreamstime 72185883}}.jp
 Coins of Nazi Germany [Reich] {{Photo.. Wrangel $dreamstime 76401492}}.jpg
 Coins of Nepal %% Himalayan monal [monal@coin] {{Photo.. Wrangel $dreamstime 75820644}}.jpg
 Coins of Nepal %% Hindu trishul [trishul][trishula] {{Photo.. Wrangel $dreamstime 71548659}}.jpg
-Coins of Nepal %% Janaki Mandir Temple in Janakpur [Janakpur] {{Photo.. Wrangel $dreamstime 71899912}}.jpg
+Coins of Nepal %% Janaki Mandir Temple in Janakpur [Janakpur][Nepalese] {{Photo.. Wrangel $dreamstime 71899912}}.jpg
 Coins of Nepal %% Map of Nepal and the Himalayas [Nepal] {{Photo.. Wrangel $dreamstime 88591964}}.jpg
 Coins of Nepal %% Mount Everest (Sagarmatha) [Sagarmatha] {{Photo.. Wrangel $dreamstime 77216808}}.jpg
 Coins of Nepal %% Nepalese 10 paisa coin [paisa] {{Photo.. Wrangel $dreamstime 72092364}}.jpg
@@ -42619,7 +42750,7 @@ wall @ house ## qrop qr {{Photo.. Bumidin Iberhim $dreamstime 2575613}} Granite 
 window @ house ## qrop qr {{Photo.. Anna Oleksenko $dreamstime 26734737}}.jpg
 window @ house ## qrop qr {{Photo.. Heinz Teh Chee Siong $dreamstime 19135515}}.jpg
 >>> ../datae\photo_dreamstime\city-home/city
-Downtown Dubai [Dubai][Dubai City][downtown] ## qrop l17 r18 {{Photo.. Daniel Allison $dreamstime 62510225}}.jpg
+Downtown Dubai [Dubai][Dubai City][downtown] ## qrop l17 r18 b2 {{Photo.. Daniel Allison $dreamstime 62510225}}.jpg
 Hong Kong City [Hong Kong] {{Photo.. Nohead Lam $dreamstime 92676784}}.jpg
 Hong Kong container terminal [Hong Kong] {{Photo.. Nohead Lam $dreamstime 20382903}}.jpg
 Hong Kong {{Photo.. Shao-chun Wang $dreamstime 34203466}} ### 1.jpg
@@ -42918,51 +43049,73 @@ sombreros [sombrero] ## qrop qr {{Photo.. Patryk Kosmider $dreamstime 31978281}}
 ironing [iron@clothes] ## qrop l21 r12 {{Photo.. Ilya Tarasov $dreamstime 101666144}}.jpg
 ironing [iron@clothes] ## qrop q {{Photo.. Hayati  Kayhan $dreamstime 62660198}}.jpg
 >>> ../datae\photo_dreamstime\fashion/jewelry
-bangle ## qrop qr {{Photo.. Miv123 $dreamstime 32550639}}.jpg
-bangles [bangle] ## qrop l5 r29 {{Photo.. V.s.anandha Krishna $dreamstime}}.jpg
-beaded necklace [beaded] {{Photo.. Mykola Komarovskyy $dreamstime 90807334}}.jpg
 black pearl [black] ## qrop l21 t1 r13 {{Photo.. Amineimo $dreamstime 6006427 $l19 r11}}.jpg
+>>> ../datae\photo_dreamstime\fashion\jewelry/bracelet
+bangle ## qrop qr {{Photo.. Miv123 $dreamstime 32550639}}.jpg
+bangle {{Photo.. Waihs $dreamstime 50512854}}.jpg
+bangles [bangle] ## qrop l5 r29 {{Photo.. V.s.anandha Krishna $dreamstime}}.jpg
 bracelet ## crop r11 ## qrop l7 r14 ## qropt! {{Photo.. Mosessin $dreamstime 36311782}}.jpg
 bracelet ## qrop q {{Photo.. Cherdchai Chaivimol $dreamstime 89691476}}.jpg
+>>> ../datae\photo_dreamstime\fashion\jewelry/brooch
 broach [pin@broach] ## qrop l15 r19 {{Photo.. Georgeogrey $dreamstime 31245903}}.jpg
 broach [pin@broach] ## qrop q {{Photo.. Tajcibj $dreamstime 57397524}}.jpg
 brooch ## qrop t24 b9 {{Photo.. Azahan Rosedy $dreamstime 7521124}}.jpg
-butterfly stud earrings [stud earrings][costume jewelry] ## qrop l14 r20 {{Photo.. Kornelija Cakarun $dreamstime 101650457}}.jpg
-cocktail ring [costume jewelry] ## qrop l25 r8 {{Photo.. Rongyang Chen $dreamstime 68843717}}.jpg
+brooch {{Photo.. Amineimo $dreamstime 7507790}}.jpg
+pearl grape cluster brooch [trinket@jewel][grapelike] ## qrop qr {{Photo.. Kuleczka $dreamstime 988292}}.jpg
+cuff bangle and drop earrings [cuffs] {{Photo.. Shutterman99 $dreamstime 66358820}}.jpg
 diamond @ jewelry [diam@diamond][precious stone][solitaire@gem] ## qrop l13 r21 {{Photo.. Amineimo $dreamstime 4858704}}.jpg
 diamond grading tools [grading][carat] ## qrop l18 r2 ## qropt! {{Photo.. Jan Lievens $dreamstime 92563196}}.jpg
+>>> ../datae\photo_dreamstime\fashion\jewelry/earrings
+butterfly stud earrings [stud earrings][costume jewelry] ## qrop l14 r20 {{Photo.. Kornelija Cakarun $dreamstime 101650457}}.jpg
+jade earring [jade@jewel] ## qrop l20 r13 {{Photo.. Rongyang Chen $dreamstime 68845793}}.jpg
+studs @ earrings [earrings] ## qrop l19 r15 {{Photo.. Cherdchai Chaivimol $dreamstime 89753128}}.jpg
+studs @ earrings [earrings] ## qrop l35 r5 {{Photo.. Cherdchai Chaivimol $dreamstime 95437096}}.jpg
+gem @ jewel {{Photo.. Matthew Benoit $dreamstime 18142744}}.jpg
+gold chain [+] ## qrop l25 r9 {{Photo.. Furtseff $dreamstime 39915266}}.jpg
+jewelry [jewellery][bijous][bijoux] ## qrop l11 r22 {{Photo.. Dr911 $dreamstime 13796922}}.jpg
+lobster clasp [clasp] ## qrop l9 r16 {{Photo.. Narender Kumar $dreamstime 92933890}}.jpg
+mesh chain [snakelike][bendy] {{Photo.. Amineimo $dreamstime 7254311}}.jpg
+>>> ../datae\photo_dreamstime\fashion\jewelry/necklace
+beaded necklace [beaded] {{Photo.. Mykola Komarovskyy $dreamstime 90807334}}.jpg
+beads @ jewelry {{Photo.. Rongyang Chen $dreamstime 68795332}}.jpg
+beads @ jewelry {{Photo.. Rongyang Chen $dreamstime 68795771}} agate or carnelian.jpg
+diamond solitaire pendant [solitaire@gem] ## qrop l22 r11 {{Photo.. Amineimo $dreamstime 4963807}}.jpg
+jade pendant [jade@jewel] ## qrop l28 r6 b2 {{Photo.. Rongyang Chen $dreamstime 68845281}}.jpg
+multistrand necklace [multistrand][multi-strand][stranded] {{Photo.. Amineimo $dreamstime 6421844}}.jpg
+necklace ## qrop l16 r18 {{Photo.. Igor Stramyk $dreamstime 9927649}} ### Pearl necklace.jpg
+necklet ## qrop q {{Photo.. Gokhan Okur $dreamstime 198748}}.jpg
+pendant {{Photo.. Amineimo $dreamstime 7031197}} 18K gold jewellery.jpg
+pendants [pendant] ## qrop l13 r13 ## qropt! {{Photo.. Zheng Dong $dreamstime 10034687}}.jpg
+pearl @ color ## qrop qr {{Photo.. Chih-chang Chou $dreamstime 16600979}}.jpg
+pearl @ jewel ## qrop q {{Photo.. Chih-chang Chou $dreamstime 20096156}}.jpg
+pearl @ jewel ## qrop qr {{Photo.. Mytime $dreamstime 10899569}}.jpg
+pendant and earrings [demiparure][matching set@jewelry][matching] {{Photo.. Amineimo $dreamstime 6006394}}.jpg
+pentagram {{Photo.. Lubastock $dreamstime 82678310}}.jpg
+platinum [precious metal] ## qrop l29 r5 {{Photo.. Stefan Redel $dreamstime 10439063}}.jpg
+pyrite [fool's gold][brassy] {{Photo.. Jiri Vaclavek $dreamstime 1658598}}.jpg
+>>> ../datae\photo_dreamstime\fashion\jewelry/ring
+6-prong solitaire engagement ring paired with multiple pavé-set diamond bands {{Photo.. Picstudio $dreamstime 52680091}}.jpg
+6-prong solitaire engagement ring paired with multiple pavé-set diamond bands {{Photo.. Picstudio $dreamstime 52680091}}.txt
+bypass setting ring [bypass setting][bypass@setting] {{Photo.. Amineimo $dreamstime 7031070}}.jpg
+cocktail ring [costume jewelry] ## qrop l25 r8 {{Photo.. Rongyang Chen $dreamstime 68843717}}.jpg
 diamond ring @ jewelry ## qrop l11 r23 {{Photo.. Amineimo $dreamstime 7030913}}.jpg
 diamond ring @ jewelry ## qrop l29 ## qropt! {{Photo.. Amineimo $dreamstime 5038221}} ### not $qr! platinum Diamond ring.jpg
 diamond ring @ jewelry ## qrop l7 r27 {{Photo.. Amineimo $dreamstime 7254031}}.jpg
 diamond ring [ring@jewelry] ## qrop l4 r24 {{Photo.. Frederick Ferrer $dreamstime 1419067}}.jpg
-diamond solitaire pendant [solitaire@gem] ## qrop l22 r11 {{Photo.. Amineimo $dreamstime 4963807}}.jpg
-earrings ## qrop l35 r5 {{Photo.. Cherdchai Chaivimol $dreamstime 95437096}}.jpg
-gold chain [+] ## qrop l25 r9 {{Photo.. Furtseff $dreamstime 39915266}}.jpg
 gold ring [gold][ring@jewelry][precious metal] ## qrop l19 r14 {{Photo.. Cherdchai Chaivimol $dreamstime 89753212}}.jpg
-jade earring [jade@jewel] ## qrop l20 r13 {{Photo.. Rongyang Chen $dreamstime 68845793}}.jpg
-jade pendant [jade@jewel] ## qrop l28 r6 b2 {{Photo.. Rongyang Chen $dreamstime 68845281}}.jpg
-jewelry [jewellery][bijous][bijoux] ## qrop l11 r22 {{Photo.. Dr911 $dreamstime 13796922}}.jpg
-lobster clasp [clasp] ## qrop l9 r16 {{Photo.. Narender Kumar $dreamstime 92933890}}.jpg
 men's ring [ring@jewelry] ## qrop l26 r8 {{Photo.. Amineimo $dreamstime 5038289}}.jpg
-necklace ## qrop l16 r18 {{Photo.. Igor Stramyk $dreamstime 9927649}} ### Pearl necklace.jpg
-necklet ## qrop q {{Photo.. Gokhan Okur $dreamstime 198748}}.jpg
+multi-row pavé diamond ring [pavé@gems][pavé-set] {{Photo.. Amineimo $dreamstime 7254143}}.jpg
 opal ring [opal] ## qrop l15 r19 {{Photo.. Cherdchai Chaivimol $dreamstime 91664341}}.jpg
-pearl @ color ## qrop qr {{Photo.. Chih-chang Chou $dreamstime 16600979}}.jpg
-pearl @ jewel ## qrop q {{Photo.. Chih-chang Chou $dreamstime 20096156}}.jpg
-pearl @ jewel ## qrop qr {{Photo.. Mytime $dreamstime 10899569}}.jpg
-pearl grape cluster brooch [trinket@jewel][grapelike] ## qrop qr {{Photo.. Kuleczka $dreamstime 988292}}.jpg
-pendants [pendant] ## qrop l13 r13 ## qropt! {{Photo.. Zheng Dong $dreamstime 10034687}}.jpg
-platinum [precious metal] ## qrop l29 r5 {{Photo.. Stefan Redel $dreamstime 10439063}}.jpg
 rings ## qrop q {{Photo.. Steve Allen $dreamstime 17042642}}.jpg
+semi-mount ring with empty central prongs [semi-mount][prongs@gem] {{Photo.. Amineimo $dreamstime 7254132}}.jpg
+wedding rings ## noqrop {{Photo.. Amineimo $dreamstime 7505485}}.jpg
 ruby @ gem ## qrop l6 r19 {{Photo.. Nastya22 $dreamstime 10983346}}.jpg
 sapphire @ gem [precious stone] ## qrop l12 r22 {{Photo.. Elen $dreamstime 17883700}}.jpg
-stud earrings [earrings] ## qrop l19 r15 {{Photo.. Cherdchai Chaivimol $dreamstime 89753128}}.jpg
 topaz @ @ [gemstone] ## qrop l13 r21 b1 {{Photo.. Elen $dreamstime 17883958}}.jpg
 topaz @@ [gemstone] ## qrop l14 r19 {{Photo.. Elen $dreamstime 17883711}}.jpg
 treasure chests [treasure chest][treasure@chest][chest@treasure] ## qrop ql {{Photo.. Iakov Filimonov $dreamstime 9239486}}.jpg
 treasure chests [treasure chest][treasure@chest][chest@treasure] ## qrop qr {{Photo.. Iakov Filimonov $dreamstime 8571351}}.jpg
 wedding band [band@ring] ## qrop qr {{Photo.. Stefan Redel $dreamstime 10439050}}.jpg
-wedding rings ## noqrop {{Photo.. Amineimo $dreamstime 7505485}}.jpg
 >>> ../datae\photo_dreamstime\fashion/makeup
 A microbead imaged using scanning electron microscopy [microbead] {{Photo.. Andrew Watts $cc-by-sa wiki}}.jpg
 a pair of tweezers [tweezers] ## qrop l16 r18 b1 {{Photo.. Kishore Dharuman $dreamstime 110119784}}.jpg
@@ -43539,7 +43692,7 @@ a cocktail and a shaker [shaker] ## qrop qt {{Photo.. Braniffman $dreamstime 634
 a keg of beer [keg] ## qrop l21 r9 ## qropt! {{Photo.. Grafvision $dreamstime 43111794}} ### pilsner.jpg
 advocaat ## qrop ql {{Photo.. Joanna Zopoth-lipiejko $dreamstime 4756249}} Egg liqueur.jpg
 alcohol ## qrop l10 r15 {{Photo.. Romans Klevcovs $dreamstime 75547820}}.jpg
-alcoholic ## qrop l10 r10 ## qropt! {{Photo.. Aleksandr Geleznov $dreamstime 1824424}} ### Vine-glases with devil.jpg
+alcohol [alcoholic@adjective] ## qrop l10 t10 r30 ## qropt! {{Photo.. Aleksandr Geleznov $dreamstime 1824424}}.jpg
 bar @ alco ## qrop l15 r19 {{Photo.. Catalina Zaharescu Tiensuu $dreamstime 20572265}} ### Olut Huone, traditional English bar in Tampere, Finland.jpg
 bar stool ## qrop l24 r11 {{Photo.. Kolotype $dreamstime 46438987}}.jpg
 beer ## qrop l4 r30 {{Photo.. Nik0s79 $dreamstime 10620054}} ### lager.jpg
@@ -44113,7 +44266,7 @@ e-book reader [e-book] {{Photo.. Andreykr $dreamstime 23199414}}.jpg
 error @ comp ## qrop l22 r11 {{Photo.. Aleksandr Atkishkin $dreamstime 53789133}}.jpg
 external hard drive [hard drive] ## qrop l30 t1 r4 {{Photo.. Smackeres $dreamstime 110818019}}.jpg
 flowchart [flow chart][flow-chart] ## qrop ql {{Photo.. Kesaree Prakumthong $dreamstime 57187222}}.jpg
-hard disk drives [hard disk][hard disk drive][HDD] {Photo.. Smackeres $dreamstime 110817957 $q}] ## qrop q.jpg
+hard disk drives [hard disk][hard disk drive][HDD] ## qrop q {{Photo.. Smackeres $dreamstime 110817957 $q}}.jpg
 HTTP [http][Hypertext Transfer Protocol] ## qrop qr {{Photo.. Welcomia $dreamstime 29229421}}.jpg
 icons [icon@comp] ## qrop t5 r37 {{Photo.. Antares614 $dreamstime 27302624}} ### facebook.jpg
 inbox @ comp [tab@widget] {{Photo.. Cornelius20 $dreamstime 35423399}}.jpg
@@ -44151,8 +44304,8 @@ bulb @ lamp {{Photo.. Alberto Pérez veiga $dreamstime 326271}}.jpg
 bulb @ lamp {{Photo.. Aleksandar Radovanovic $dreamstime 2902786}}.jpg
 calculator ## noqrop {{Photo.. Haveseen $dreamstime 1469306}}.jpg
 contacts [contact@electro] ## qrop q {{Photo.. Fatbob $dreamstime 5244225}}.jpg
-copper wire [+] ## qrop q {{Photo.. Jitka Laníková $dreamstime 44876065}}.jpg
-copper wire [+] ## qrop ql {{Photo.. Tõnis Valing $dreamstime 246563}}.jpg
+copper wire [copper@metal][wire] ## qrop q {{Photo.. Jitka Laníková $dreamstime 44876065}}.jpg
+copper wire [copper@metal][wire] ## qrop ql {{Photo.. Tõnis Valing $dreamstime 246563}}.jpg
 electric power lines [electric][power line] ## qrop ql {{Photo.. Radub85 $dreamstime 26200306}}.jpg
 electronic circuit [circuit@electronic][electronics] ## qrop l12 r14 b1 ## qropt! {{Photo.. Madartists $dreamstime 20788}}.jpg
 friendly robotic handyman toy with red pliers [robotic][handyman] {{Photo.. Gorodok495 $dreamstime 86407834}}.jpg
@@ -44207,7 +44360,7 @@ bubble wrap [+] ## qrop ql {{Photo.. Les Cunliffe $dreamstime 3227627}}.jpg
 carbon nanotubes [nanotube][nanotechnology] {{Photo.. Ekaterina Shilova $dreamstime 21187941}}.jpg
 cement ## qrop qr {{Photo.. rittaewa $dreamstime 59334767}}.jpg
 chain links [chain@tech][steel] ## qrop ql {{Photo.. Sinisa Botas $dreamstime 15016679}}.jpg
-copper scrap [+] ## qrop q {{Photo.. Minaret2010 $dreamstime 30048776}}.jpg
+copper scrap [scrap] ## qrop q {{Photo.. Minaret2010 $dreamstime 30048776}}.jpg
 corroded jet engine [corroded][corrosion] ## qrop t5 r37 {{Photo.. Whitcomberd $dreamstime 42297687}}.jpg
 deformation ## qrop qb {{Photo.. Mikhail Olykainen $dreamstime 8451533}} ### Copper scin plate.jpg
 emulsion @ tech ## qrop t21 b13 {{Photo.. Parinya Niranatlumpong $dreamstime 26608356}} ### Pour of Red Color Printing Ink.jpg
@@ -45043,8 +45196,8 @@ snowscape [winter] ## qrop ql {{Photo.. Zuboff $dreamstime 12013550}} winter.jpg
 surf @ waves ## qrop ql {{Photo.. Joseph Cortes $dreamstime 55098}}.jpg
 water ## qrop ql {{Photo.. Volokhatiuk $dreamstime 4070106}}.jpg
 waterfall [falls] ## qrop l31 r10 {{Photo.. Jruffa $dreamstime 39571755}}.jpg
+wave @ sea ## qrop ql {{Photo.. Irabel8 $dreamstime 19984134}}.jpg
 wave @ sea {{Credit.. Boyan Dimitrov $dreamstime 70774881}}.jpg
-wave @ sea {{Photo.. Irabel8 $dreamstime 19984134}}.jpg
 >>> ../datae\photo_dreamstime\nature/weather
 aerial view of stratocumulus clouds [stratocumulus clouds][stratocumulus] ## qrop qr {{Photo.. Thanakrit Sathavornmanee $dreamstime 67735330}}.jpg
 altocumulus clouds [altocumulus] ## qrop ql {{Photo.. Baoshengrulai $dreamstime 45478244}}.jpg
@@ -45093,8 +45246,8 @@ Colombian flag [Colombian][tricolor] ## qrop ql {{Photo.. Andres Rodriguez $drea
 corruption {{Credit.. Nuvolanevicata $dreamstime 58066651}}.jpg
 >>> ../datae\photo_dreamstime\politics/crime
 Alcatraz Prison Cell [cell@prison] ## qrop r27 ## qropt! {{Photo.. Matt Stevens $dreamstime 34295113}}.jpg
-butterfly knife [balisong][Batangas knife] {{Photo.. Marietjie Opperman $dreamstime 76677158}}.jpg
-butterfly knife [balisong][Batangas knife] {{Photo.. Marietjie Opperman $dreamstime 76677183}}.jpg
+butterfly knife [balisong][Batangas knife] ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 76677183}}.jpg
+butterfly knife [balisong][Batangas knife] ## qrop qr {{Photo.. Marietjie Opperman $dreamstime 76677158}}.jpg
 courtroom [trial@law] ## qrop ql {{Photo.. Everett Collection Inc. $dreamstime 52028556}}.jpg
 gavel ## qrop l12 r11 ## qropt! {{Photo.. Kaspars Grinvalds $dreamstime 66715247}}.jpg
 handcuffs ## crop q {{Photo.. Mariec $dreamstime 248636}}.jpg
@@ -45102,8 +45255,8 @@ handcuffs ## noqrop {{Photo.. Olena  Sokalska $dreamstime 26575042}} Handcuffs.j
 justice ## qrop l10 r11 ## qropt! {{Photo.. Davinci $dreamstime 2419187}}.jpg
 Lawyer showing evidence to the jury [evidence][jury] ## qrop r10 ## qropt! {{Everett Collection Inc. $dreamstime 52017215}}.jpg
 mobster ## qrop t3 b16 ## qropt! {{Photo.. Val_th $dreamstime 5900967}}.jpg
-taser {{Photo.. Marietjie Opperman $dreamstime 106674375}}.jpg
-taser {{Photo.. Marietjie Opperman $dreamstime 106674537}}.jpg
+taser ## qrop l27 t1 r7 {{Photo.. Marietjie Opperman $dreamstime 106674537}}.jpg
+taser ## qrop qr {{Photo.. Marietjie Opperman $dreamstime 106674375}}.jpg
 crown @ royal ## qrop l3 r8 ## qropt! {{Photo.. Condortre $dreamstime 8512336}}.jpg
 flag @ state ## qrop ql {{Photo.. 350jb $dreamstime}} ### red and white stipes of the American flag.jpg
 throne ## qropt! ## qrop qb {{Photo.. German Sivov $dreamstime 83479964}}.jpg
@@ -45133,7 +45286,7 @@ Rostov-on-Don Cathedral [cathedral] ## qrop ql {{Photo.. Andrew Arestov $dreamst
 St Peter Basilica, Vatican [basilica] ## qrop qr {{Photo.. Valeria Cantone $dreamstime 16196405}}.jpg
 Statue of Saint Helena by Andrea Bolgi, St. Peter Basilica [Saint Helena][Christianity] ## qrop l6 r4 ## qropt! {{Photo.. Nejron $dreamstime 8977021}}.jpg
 Tower of London Chapel [chapel] ## qrop l10 r15 ## qropt! {{Photo.. Paul Moore $dreamstime 2381333}}.jpg
-coffin {{Photo.. Colicaranica $dreamstime 26973669}}.jpg
+coffin ## qrop l27 t1 r7 {{Photo.. Colicaranica $dreamstime 26973669}}.jpg
 >>> ../datae\photo_dreamstime\religion/Hinduism
 Ganesha ## qrop t5 b4 ## qropt! {{Photo.. Prashant Vaidya $dreamstime 20927357}}.jpg
 lotus position ## qrop l14 r20 {{Photo.. Catwoman10 $dreamstime 59525330}}.jpg
@@ -45271,7 +45424,7 @@ lionfish [Pterois] ## qrop l6 r27 {{Photo.. Olesia Sarycheva $dreamstime 7377665
 lynx spider [spider][Oxyopidae] ## qrop l19 r6 {{Photo.. Mohd Fuad Salleh $dreamstime 34878445}}.jpg
 mandarin duck [Aix galericulata][Aix] ## qrop l19 r8 ## qropt! {{Photo.. Chatumpon $dreamstime 19688256}}.jpg
 mudskipper [Periophthalmus barbarus][Periophthalmus] ## qrop l14 t1 r20 {{Photo.. Ondřej Prosický $dreamstime 119984286}}.jpg
-naked sea butterfly [sea angel] {{Photo.. Tuthelens $dreamstime 40545971}}.jpg
+naked sea butterfly [sea angel] ## qrop l23 t36 r24 b29 {{Photo.. Tuthelens $dreamstime 40545971}}.jpg
 naked sea butterfly [sea angel][Clione limacina][Clione] ## qrop t7 b26 {{Photo.. Tuthelens $dreamstime 40438893}}.jpg
 needlefish [needlelike][Belonidae] ## qrop qr {{Photo.. Pniesen $dreamstime 11622131}}.jpg
 open brain coral [brainlike][Trachyphyllia geoffroyi][Trachyphyllia][coral] ## qropt! {{Photo.. Michael Rice $dreamstime 97551028}}.jpg
@@ -45344,7 +45497,7 @@ Aztec obsidian knife [obsidian] ## qrop l11 r6 ## qropt! {{Photo.. Speshilov Ser
 cavern ## qropt! {{Photo.. Heirbornstud $dreamstime 705479}} ### the cavern at Vortex Spring.jpg
 Crater Lake, Oregon [Crater Lake][crater lake][caldera][caldera lake] ## qrop l4 ## qropt! {{Photo.. William Michael Norton $dreamstime 830379}}.jpg
 crevasse ## noqrop {{Photo.. Aquanaut4 $dreamstime 67895656}}.jpg
-crevasse {{Photo.. Aquanaut4 $dreamstime 67895958}}.jpg
+crevasse ## qrop l16 t52 r11 {{Photo.. Aquanaut4 $dreamstime 67895958}}.jpg
 crevice ## qrop t6 b14 {{Photo.. Kathleen Struckle $dreamstime 4107238}}.jpg
 Earth's inner core [inner core][core@geology] ## crop l68 t15 r5 b24 ## qrop l69 t16 r5 b24 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
 lithosphere ## crop l37 t17 r36 b20 ## qropt! {{Photo.. Solcansergiu $dreamstime 63684712}}.jpg
@@ -45357,8 +45510,8 @@ herbarium ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 76676675}} Purple 
 a definite integral [integral@math] ## qropt! {{Photo.. Inga Ivanova $dreamstime 10426145}}.jpg
 a pair of compasses [pair of compasses @ draw][compass@draw] ## qrop l3 r7 ## qropt! {{Photo.. Selestron76 $dreamstime 14438760}}.jpg
 algebra ## qrop l12 r20 {{Photo.. Jevtic $dreamstime 44727240}}.jpg
-Arabic numerals [natural number] ## qrop l43 r2 {{Photo.. Brighton $dreamstime 61316463}}.jpg
-Arabic numerals [natural number] {{Photo.. Brighton $dreamstime 61315253}}.jpg
+Arabic numerals [natural number] ## qrop l43 t2 r2 {{Photo.. Brighton $dreamstime 61316463}}.jpg
+Arabic numerals [natural number] ## qrop qr {{Photo.. Brighton $dreamstime 61315253}}.jpg
 China National Grand Theater [ellipsoid] ## qrop l5 r5 ## qropt! {{Photo.. Yi Li $dreamstime 3403989}}.jpg
 circles ## qrop qr {{Photo.. Brighton $dreamstime 43089892}} ### Circle tool.jpg
 cones [cone@shape] ## qrop l5 r24 ## qropt! ## crop r20 {{Photo.. Phanuwatn $dreamstime 47500404}}.jpg
@@ -45488,7 +45641,7 @@ boxing gloves [everlast] {{Photo.. Jerry Coli $dreamstime 31734022}}.jpg
 boxing gloves {{Photo.. Robin Behal $dreamstime 9851298}}.jpg
 gong @ boxing ## qrop l27 r7 {{Photo.. Zemler $dreamstime 27412818}}.jpg
 hook @ boxing ## qrop l24 r10 {{Photo.. Pniesen $dreamstime 6247700}}.jpg
-jab @ box {{Photo.. Pniesen $dreamstime 6247685}}.jpg
+jab @ box ## qrop l14 t8 r24 b1 {{Photo.. Pniesen $dreamstime 6247685}}.jpg
 judo [throw@martial arts] {{Photo.. Anna Jurkovska $dreamstime 5430238}}.jpg
 judo [throw@martial arts][sacrifice throw] {{Photo.. Anna Jurkovska $dreamstime 5430242}}.jpg
 karate ## qrop t28 b5 {{Photo.. Dragonimages $dreamstime 40218572}}.jpg
@@ -45497,7 +45650,7 @@ kendoka [kendo] ## qrop t3 b25 ## qropt! {{Photo.. Roman Makhmutov $dreamstime 3
 kickboxing ## qrop l10 r23 {{Photo.. Muro123 $dreamstime 49070238}}.jpg
 knockdown ## qrop r28 ## qropt! {{Photo.. Daniel Raustadt $dreamstime 42959938}} ### Pro Boxing in Phoenix, Arizona.jpg
 martial arts ## qrop l16 r19 {{Photo.. Jovani Carlo Gorospe $dreamstime 13240924}} ### Martial Arts Competition Trophy.jpg
-martial arts {{Photo.. Jovani Carlo Gorospe $dreamstime 13240906}}.jpg
+martial arts ## qrop l17 r16 {{Photo.. Jovani Carlo Gorospe $dreamstime 13240906}}.jpg
 MMA fighter [+] ## qrop l28 t1 r6 {{Photo.. Chelsdo $dreamstime 69407392}}.jpg
 Muay Thai boxer [Muay Thai][Thai boxing] ## qrop l19 r14 {{Photo.. Chalermphon Kumchai $dreamstime 43986945}}.jpg
 nunchaku ## qrop t9 b15 ## qropt! {{Photo.. Wavebreakmedia Ltd $dreamstime 81432562}}.jpg
@@ -45526,7 +45679,7 @@ mountain climbing [climbing] {{Photo.. Jakub Cejpek $dreamstime 1064227q}} Climb
 parachuting ## qrop q {{Photo.. Photographerlondon $dreamstime 33916344}}.jpg
 paragliding [paraglider] ## qrop l14 r20 {{Photo.. Pairut Mongkolkijpiroon $dreamstime 33807410}}.jpg
 paragliding [paraglider] ## qrop ql {{Photo.. Pairut Mongkolkijpiroon $dreamstime 33807421}}.jpg
-playboating [playboater] {{Photo.. Robert Fullerton $dreamstime 9931376}}.jpg
+playboating [playboater] ## qrop l8 r26 b1 {{Photo.. Robert Fullerton $dreamstime 9931376}}.jpg
 rafting ## qrop l8 r17 {{Photo.. Jelica Videnovic $dreamstime 1127641}}.jpg
 skydiving ## qrop l11 r23 {{Photo.. Germanskydiver $dreamstime 59454426}}.jpg
 surfing ## qrop ql {{Photo.. Paul Topp $dreamstime 1070688}}.jpg
@@ -45541,7 +45694,7 @@ dumbbells ## crop qr {{Photo.. Elena Yakimova $dreamstime 65950758}}.jpg
 dumbbells ## qrop qr {{Photo.. Elena Yakimova $dreamstime 65950750}}.jpg
 jogging ## qrop l6 r28 {{Photo.. Stefanschurr226 $dreamstime 21399482}}.jpg
 kettlebell ## qrop ql {{Photo.. Kim Nelson $dreamstime 66748317}}.jpg
-kettlebell {{Photo.. Chard525 $dreamstime 31175228}}.jpg
+kettlebell ## qrop qr {{Photo.. Chard525 $dreamstime 31175228}}.jpg
 muscleman [muscles][muscular][muscled][brawny] ## qrop l14 r17 ## qropt! {{Photo.. Andrei Vishnyakov $dreamstime 29638921}}.jpg
 plank @ fitness ## qrop l23 r2 ## qropt! {{Photo.. Denys Kornylov $dreamstime 77432011}}.jpg
 protein @ sport ## qrop l26 r7 {{Photo.. Gvictoria $dreamstime 13150927}}.jpg
@@ -45556,41 +45709,41 @@ triceps ## qrop qr {{Photo.. Maxfx $dreamstime 1253375}} ### Muscular male body 
 a cue and a ball [cue@billiards] ## qrop ql {{Photo.. April Turner $dreamstime 1291180}}.jpg
 arcade game [arcade@game] ## qrop qr {{Photo.. Atmosphere1 $dreamstime 98314926}}.jpg
 arcade machine [arcade cabinet] ## sic! ## qrop ql {{Photo.. Atmosphere1 $dreamstime 98314926}}.jpg
-bet @ stake {{Photo.. Belish $dreamstime 81408665}}.jpg
+bet @ stake ## qrop l11 r22 {{Photo.. Belish $dreamstime 81408665}}.jpg
 billiard balls, a cue and a chalk [billiard@game][billiards@game] ## qrop ql {{Photo.. Dani Garcia $dreamstime 62809445}}.jpg
 bowling ## qrop l26 r8 {{Photo.. Val_th $dreamstime 22028512}}.jpg
 break shot [+] ## qrop l31 r3 {{Photo.. Danielgregoric $dreamstime 22035800}}.jpg
 cards ## qrop ql {{Photo.. Yukchong Kwan $dreamstime 15596596}}.jpg
 croupier ## qrop q {{Everett Collection Inc. $dreamstime 52004274}}.jpg
 darts @ game ## qrop l13 r7 ## qropt! {{Photo.. Studio Dream $dreamstime 1445642}}.jpg
-four of a kind {{Photo.. Sergey Nazarov $dreamstime 104855755}}.jpg
+four of a kind ## qrop ql {{Photo.. Sergey Nazarov $dreamstime 104855755}}.jpg
 frame~rack [billiards][rack@billiards] ## qrop l23 r11 ## qropt! {{Photo.. Maria Dryfhout $dreamstime 15894377}}.jpg
 frame~rack [frame@billiard][rack@billiard] ## qrop l19 r14 {{Photo.. Richard Seeney $dreamstime 1713461}}.jpg
 gambling {{Photo.. Sergey Nazarov $dreamstime 104855347}}.jpg
 gambling {{Photo.. Sergey Nazarov $dreamstime 104856348}}.jpg
 game of jacks [jacks][jackstones][knucklebones] {{Photo.. Aurora Esperanza Ángeles Flores $dreamstime 56963327}}.jpg
 lotto machine [lottery machine][lotto][lottery] ## qrop q {{Photo.. Belish $dreamstime 81404081}}.jpg
-one pair {{Photo.. Marietjie Opperman $dreamstime 82999902}} ### 2.jpg
-one pair {{Photo.. Marietjie Opperman $dreamstime 83000013}} ### 1.jpg
-one pair {{Photo.. Marietjie Opperman $dreamstime 83004647}} ### 3.jpg
-one pair {{Photo.. Sergey Nazarov $dreamstime 104490977}}.jpg
+one pair ## qrop l11 r23 b1 {{Photo.. Sergey Nazarov $dreamstime 104490977}}.jpg
+one pair ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 82999902}} ### 2.jpg
+one pair ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 83000013}} ### 1.jpg
+one pair ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 83004647}} ### 3.jpg
 pinball [pinball machine] ## qrop l10 ## qropt! {{Everett Collection Inc. $dreamstime 52003263}}.jpg
 pocket @ billiard ## qrop l31 r3 {{Photo.. Igor Terekhov $dreamstime 10752210}} ### Billiards pocket.jpg
 pool @ billiards ## qrop l12 r6 ## qropt! {{Photo.. Erickn $dreamstime 2307934}}.jpg
-pool @ billiards {{Photo.. Lorraine Swanson $dreamstime 1669798}}.jpg
+pool @ billiards ## qrop l16 r17 {{Photo.. Lorraine Swanson $dreamstime 1669798}}.jpg
 pool balls [balls] ## qrop l14 r5 ## crop l5 ## qropt! {{Photo.. Igor Kaliuzhny $dreamstime 6028832}}.jpg
-pool cue and balls [cue@billiards] {{Photo.. April Turner $dreamstime 1291182}}.jpg
+pool cue and balls [cue@billiards] ## qrop l11 t1 r23 {{Photo.. April Turner $dreamstime 1291182}}.jpg
 pétanque ## qrop q {{Photo.. Picsxl $dreamstime 22510521}}.jpg
 roulette @ game ## qrop ql {{Photo.. Lepas $dreamstime 338157}}.jpg
-royal flush {{Photo.. Lyn Baxter $dreamstime 2741405}}.jpg
-royal flush {{Photo.. Sergey Nazarov $dreamstime 104490473}}.jpg
+royal flush ## qrop l13 r12 {{Photo.. Lyn Baxter $dreamstime 2741405}}.jpg
+royal flush ## qrop qr {{Photo.. Sergey Nazarov $dreamstime 104490473}}.jpg
 Russian roulette ## qrop l10 r23 {{Photo.. Banjong Khanyai $dreamstime 34525783}}.jpg
 set of poker hands [poker hands][pokers] {{Photo.. Libux77 $dreamstime 28850274}}.jpg
-slot machines [fruit machine][slot machine] {{Photo.. Belish $dreamstime 83833188}}.jpg
+slot machines [fruit machine][slot machine] ## qrop l15 r11 ## qropt! {{Photo.. Belish $dreamstime 83833188}}.jpg
 snooker {{Photo.. Corepics Vof $dreamstime 17434356}}.jpg
-straight @ poker {{Photo.. Pavalache Stelian $dreamstime 69748765}}.jpg
-three of a kind {{Photo.. Sergey Nazarov $dreamstime 104490303}}.jpg
-two pair {{Photo.. Sergey Nazarov $dreamstime 104855688}}.jpg
+straight @ poker ## qrop ql {{Photo.. Pavalache Stelian $dreamstime 69748765}}.jpg
+three of a kind ## qrop l23 r10 {{Photo.. Sergey Nazarov $dreamstime 104490303}}.jpg
+two pair ## qrop l10 r23 {{Photo.. Sergey Nazarov $dreamstime 104855688}}.jpg
 >>> ../datae\photo_dreamstime\sports & games/games - ball
 American football [football@American] ## qropt! {{Photo.. Laurin Rinder $dreamstime 234027}}.jpg
 Atlanta Falcons helmet [helmet@sport] ## qrop ql {{Photo.. Dean Bertoncelj $dreamstime 63577132}}.jpg
@@ -45614,14 +45767,14 @@ golf club ## qrop l27 r7 {{Photo.. Alexeysmirnov $dreamstime 22277700}}.jpg
 handball ## qrop ql {{Photo.. Simonwedege $dreamstime 22676659}}.jpg
 linesman @ soccer ## qrop ql {{Photo.. Zoltan Moos $dreamstime 20834147}}.jpg
 overtime @ soccer ## qrop l10 r5 ## qropt! {{Photo.. Splosh $dreamstime 20013643}}.jpg
-paddle tennis {{Photo.. Maxriesgo $dreamstime 36960158}}.jpg
+paddle tennis ## qrop qr {{Photo.. Maxriesgo $dreamstime 36960158}}.jpg
 ping pong ## qrop l25 r9 {{Photo.. Mystock88photo $dreamstime 32589473}}.jpg
 racket @ racquet [racquet][tennis racket][tennis racquet][tennis-racket] ## qropt! {{Photo.. Vvlukas $dreamstime 49869762}}.jpg
 receiver @ tennis ## qrop qr {{Photo.. Maxisports $dreamstime 24299699}}.jpg
 rugby ## qrop l6 r19 {{Photo.. Richard Thomas $dreamstime 1779181}} ### Aim for the post.jpg
 scoreboard ## qrop l2 r23 {{Photo.. Lane Erickson $dreamstime 92245382}}.jpg
 server @ tennis ## qrop t16 b2 ## qropt! {{Photo.. Nicolas Bernier $dreamstime 12727266}} ### [Roger Federer at the Australian Open 2010].jpg
-shuttlecock {{Photo.. Shahrinmdayob $dreamstime 64247969}}.jpg
+shuttlecock ## qrop l25 r9 {{Photo.. Shahrinmdayob $dreamstime 64247969}}.jpg
 streetball ## qrop t9 b12 ## qropt! {{Photo.. Rambolin $dreamstime 338606}}.jpg
 tennis ball {{Photo.. Rob Bouwman $dreamstime 6414817}}.jpg
 tennis [forehand@tennis] ## qrop l15 r11 {{Photo.. Vasile87 $dreamstime 53317155}} ### Gael Monfils.jpg
@@ -45630,19 +45783,19 @@ water polo ## qrop qt {{Photo.. Dbajurin $dreamstime 25969582}}.jpg
 >>> ../datae\photo_dreamstime\sports & games/games - board
 ace of hearts [ace@cards][hearts@cards] ## qrop l17 r12 ## qropt! {{Photo.. Pavel Vlasov $dreamstime 9907503}}.jpg
 ace up one's sleeve ## qrop q {{Photo.. Kgelati1 $dreamstime 1911560}}.jpg
-Bingo! [bingo] {{Photo.. Enzodebe $dreamstime 28234242}}.jpg
+Bingo! [bingo] ## qrop qr {{Photo.. Enzodebe $dreamstime 28234242}}.jpg
 board games ## qrop l40 r3 {{Photo.. nesterov91 $dreamstime 86836572}}.jpg
 chess ## qrop ql {{Photo.. Lipovanka $dreamstime 64327318}}.jpg
 chess ## qropt! ## qrop l18 r8 {{Photo.. Aleksandar Radovanovic $dreamstime 21889269}}.jpg
-chess pieces {{Photo.. Hans Magelssen $dreamstime 1896987}}.jpg
-chess pieces {{Photo.. Marietjie Opperman $dreamstime 70048597}}.jpg
+chess pieces ## qrop l3 r31 {{Photo.. Marietjie Opperman $dreamstime 70048597}}.jpg
+chess pieces ## qrop l30 r3 {{Photo.. Hans Magelssen $dreamstime 1896987}}.jpg
 chessboard, chess pieces [chessboard][chess pieces] ## qrop ql {{Photo.. Lipovanka $dreamstime 64327318}}.jpg
 deck of cards [+] ## qrop l14 r18 ## qropt! {{Photo.. Alan Lucas $dreamstime 96570241}}.jpg
 dice @ game ## qrop l5 r29 {{Photo.. Guy Shapira $dreamstime 8941492}}.jpg
-dice @ game {{Photo.. Marietjie Opperman $dreamstime 72124432}}.jpg
+dice @ game ## qrop ql {{Photo.. Marietjie Opperman $dreamstime 72124432}}.jpg
 domino effect ## qrop l3 r12 ## qropt! {{Photo.. Tijanap $dreamstime 34471627}}.jpg
 dominoes [domino@piece] ## qrop qr {{Photo.. Dejan Krsmanovic $dreamstime 55685244}}.jpg
-folded chessboard [folded] {{Photo.. nesterov91 $dreamstime 86036328}}.jpg
+folded chessboard [folded] ## qrop l26 r6 ## qropt! {{Photo.. nesterov91 $dreamstime 86036328}}.jpg
 folding chessboard [folding] ## noqrop {{Photo.. nesterov91 $dreamstime 86036282}}.jpg
 go @ game ## qrop l30 r4 {{Photo.. Inyosibee $dreamstime 40535744}}.jpg
 go @ game ## qrop ql {{Photo.. Feng Hui $dreamstime 2074308}}.jpg
@@ -45657,7 +45810,7 @@ poker @ cards ## qrop l3 r31 {{Photo.. Cafebeanz Company $dreamstime 13310798}}.
 queen @ chess ## crop l45 t6 r7 b23 ## qropt! {{Photo.. Vasyl Hedzun $dreamstime 86300020}}.jpg
 queen of spades [queen@cards][spades@cards] ## qrop l19 r15 {{Photo.. Oleksandr Fagaulin $dreamstime 86446315}}.jpg
 riffle shuffle [shuffle@cards][dovetail shuffle] ## qrop l8 r10 ## qropt! {{Photo.. Johnny Habell $dreamstime 10074694}}.jpg
-Rubik's Cube {{Photo.. Viktoriia Degtiarova $dreamstime 100327720}}.jpg
+Rubik's Cube ## qrop qr {{Photo.. Viktoriia Degtiarova $dreamstime 100327720}}.jpg
 Rubik's Cube {{Photo.. Viktoriia Degtiarova $dreamstime 98620148}}.jpg
 Scrabble ## qrop qr {{Photo.. Empire331 $dreamstime 10503597}}.jpg
 sudoku ## qrop t8 r20 b11 {{Photo.. Brainsil $dreamstime 66748869}}.jpg
@@ -45813,7 +45966,7 @@ a car tire on a ship [tyre@car][tire@car] ## qrop l15 r18 {{Photo.. Chinahbzyx $
 1951 Mercury custom [candy apple red][Mercury@car] {{Photo.. Jacqueline Perez $dreamstime 3152381}}.jpg
 1956 Lincoln Premiere [hood ornament] {{Photo.. Kevin M. Mccarthy $dreamstime 39930826}}.jpg
 1967 Chevrolet Camaro fender emblems [emblem@car] {{Photo.. Wangkun Jia $dreamstime 20292427}}.jpg
-1970 Chevrolet Chevelle SS 454 {{Photo.. Redwood8 $dreamstime 39259598}}.jpg
+1970 Chevrolet Chevelle SS 454 [badge@car] ## qrop l11 r25 {{Photo.. Redwood8 $dreamstime 39259598}}.jpg
 Alfa Romeo ## sic! ## qrop l4 r1 b29 {{Photo.. Luis2007 $dreamstime 32089666}}.jpg
 Bentley Motors [emblem@car] {{Photo.. Steve Meddle $dreamstime 71188258}}.jpg
 Cadillac tailfin [+][tail fin] ## qrop l22 r11 {{Photo.. Len Green $dreamstime 6172915}}.jpg

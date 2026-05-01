@@ -2,6 +2,7 @@ mechanics @ physics      = механика
 
 matter @ physics         = материя          # 10+
 mass @ physics           = масса
+
 ---
 action @ physics {n}     = действие         # 10+ /// # polysemic
 reaction @ physics       = противодействие  # 10+ /// # polysemic
@@ -17,8 +18,9 @@ kinetic energy           = кинетическая энергия # MATH- # TER
 potential energy         = потенциальная энергия # MATH- # TERM- # 16+
 
 precession               = прецессия        # MATH- # TERM- # 18+
-nutation                 = нутация ~ также: кивок # MATH+ # TERM+ # 18+
+nutation @ physics       = нутация ~ также: кивок # MATH+ # TERM+ # 18+
 gyroscope                = гироскоп         # 10+
+
 
 
 

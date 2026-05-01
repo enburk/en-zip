@@ -21,6 +21,7 @@ herpes                       = герпес                         # 10+
 
 cholera                      = холера                         # 10+
 malaria                      = малярия                        # 10+
+
 ---
 tuberculosis                 = туберкулёз                     # 10+
 tuberculosis bacillus        = палочка Коха                   # TERM+ # 14+

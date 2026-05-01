@@ -1,5 +1,5 @@
 photography       = фотография ~ (искусство)
-photograph/photo  = фотография/фото
+photograph//photo = фотография/фото
 
 photo album       = фотоальбом                                       /// NEW
 portfolio @ photo = портфолио                                        # 14+
@@ -33,6 +33,7 @@ selfie            = селфи
 ===
 
 : Say cheese!
+
 
 
 

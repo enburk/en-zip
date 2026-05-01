@@ -1,10 +1,11 @@
-chemistry                   = химия       # pix- /// (также в перенос. смысле)
+chemistry                   = химия
 
 chemical reaction           = химическая реакция # 10+
 chemical formula            = химическая формула # 16+
 
 laboratory %% informal: lab = лаборатория /// NEW
 retort                      = реторта     # 16+
+
 
 
 

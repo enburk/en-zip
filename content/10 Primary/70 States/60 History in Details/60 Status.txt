@@ -1,4 +1,5 @@
-historical ~ title, address, status
+***
+title, address, status
 
 squire              = сквайр, оруженосец, ~ кавалер (сопровождающий даму) # 16+
 Esquire (Esq.)      = эсквайр %% письменная форма вежливого обращения # 16+
@@ -28,6 +29,7 @@ debutante           = дебютантка                                 # 14+
 grisette            = гризетка                                   # RARE+ # 16+ /// (фр.)
 soubrette           = субретка                                   # RARE+ # 16+ /// (фр.)
 ingénue             = инженю                                     # RARE+ # 16+ /// (фр.)
+
 ---
 cocotte @ woman     = кокотка                                    # RARE+ # 18+ /// 2
 cocotte @ casserole = кокотница %% порционная кастрюлька         # RARE+ # 18+ /// 1

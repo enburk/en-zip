@@ -1,3 +1,5 @@
+music theory        = теория музыки
+
 ---
 solfège//solfeggio  = сольфеджио
 chromatic scale     = хроматическая гамма                                  # ART+ # IT+ # MATH+
@@ -31,6 +33,7 @@ vibrato             = вибрато                                            
 
 dissonance          = диссонанс                                            # 18+
 syncopation         = синкопа %% несовпадение ритмического и метрического акцентов # ART+ # TERM+ # 18+
+
 
 
 

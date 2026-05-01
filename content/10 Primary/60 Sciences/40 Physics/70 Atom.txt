@@ -3,6 +3,7 @@ atomic physics        = атомная физика
 proton                = протон
 neutron               = нейтрон
 electron              = электрон
+
 ---
 deuterium             = дейтерий %% тяжёлый водород    # MATH- # 18+
 tritium               = тритий %% сверхтяжёлый водород # MATH- # 18+

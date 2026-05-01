@@ -1,7 +1,9 @@
+***
 type @ kind                = тип
 
 sort                       = сорт, сортировать             # 10+
 category                   = категория                     # 10+
+
 ---
 class @ sort               = класс                         # 10+
 classification             = классификация                 # 10+

@@ -1,14 +1,13 @@
+***
 agriculture       = сельское хозяйство                # 10+
 
 agronomist        = агроном                           # 10+
 agrarian          = аграрный, аграрий, ~ крупный землевладелец # POLIT+ # 18+
 
+---
 farm @ agro {n}   = ферма
 farmer            = фермер
----
 cowboy            = ковбой
-cow @ domestic    = корова                            /// запугивать
-spur              = шпора, пришпоривать               # 10+
 
 plantation        = плантация                         # 10+
 
@@ -17,6 +16,8 @@ cultivator        = культиватор                       # TERM- # 10+ /
 tractor @ agro    = трактор
 plough\\plow      = плуг                              # 10+
 secateurs         = секатор                           # TERM- # 10+
+
+===
 
 broiler           = бройлер                           # TERM- # 14+ /// (скороспелый гибрид домашних животных)
 incubator         = инкубатор                         # 14+

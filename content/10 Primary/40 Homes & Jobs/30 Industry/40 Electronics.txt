@@ -9,6 +9,7 @@ electrician                  = электрик
 adapter @ device             = адаптер          # 10+
 contact @ electro            = контакт, контактный /// соприкосаться, связываться, знакомый (деловой)
 [electrical] ~ cable         = кабель ~ (электрический) # 10+
+
 ---
 accumulator @ electro        = аккумулятор
 generator @ electro          = генератор
@@ -17,6 +18,7 @@ magneto                      = магнето %% вид генератора # T
 
 rotor @ electro              = ротор            # TECH+ # TERM+ # 18+
 stator                       = статор           # TECH+ # TERM+ # 18+
+
 ---
 static electricity           = статическое электричество # 10+
 antistatic agent             = антистатик       # 16+

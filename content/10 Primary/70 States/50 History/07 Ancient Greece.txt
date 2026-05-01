@@ -5,12 +5,14 @@ oecumene\\ecumene      = ойкумена                                       
 
 Peloponnese            = Пелопоннес                                      # HISTORY+ # 16+
 Laconia                = Лакония, Лаконика                               # 16+ /// (историческое название области)
+
 ---
 Sparta                 = Спарта
 Spartan                = спартанец
 spartan                = спартанский
 
 Corinth                = Коринф                                          # HISTORY+ # 16+
+
 ---
 Athens                 = Афины
 acropolis              = акрополь

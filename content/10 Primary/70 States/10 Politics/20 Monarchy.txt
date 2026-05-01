@@ -1,4 +1,5 @@
 monarchy                = монархия
+
 ---
 monarch                 = монарх
 monarchist              = монархист                                          # 14+
@@ -24,6 +25,7 @@ title @ monarchy        = титул, звание
 Caesar                  = цезарь                                             # 16+
 Kaiser                  = кайзер %% император Германской империи             # 16+
 tsar|tzar|czar          = царь
+
 ---
 prince                  = принц
 princess                = принцесса
@@ -37,14 +39,12 @@ infante/infanta         = инфант/инфанта %% принц/принце
 emir                    = эмир                                               # 14+ /// Arabic
 emirate                 = эмират                                             # 14+ /// Arabic
 
-sultan                  = султан                                             # 14+
-sultanate               = султанат                                           # 14+
-
 shah                    = шах                                                # TERM- # 14+
+sultan                  = султан                                             # 14+
 padishah                = падишах                                            # TERM- # 14+ /// Persian
+
 ---
 rajah|raja              = раджа                                              # TERM- # 16+
 maharajah||maharaja     = махараджа                                          # TERM- # 16+
-: Indian raja
 
 

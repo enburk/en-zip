@@ -1,4 +1,4 @@
-musical instruments           = музыкальные инструменты
+musical ~ instruments         = музыкальные ~ инструменты
 
 electric guitar               = электрогитара
 acoustic guitar               = акустическая гитара # 10+
@@ -27,6 +27,7 @@ tuba                          = туба              # ART+ # TERM+ # 10+
 
 xylophone                     = ксилофон
 castanets                     = кастаньеты        # 18+
+
 
 
 

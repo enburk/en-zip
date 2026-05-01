@@ -1,3 +1,5 @@
+***
+
 ===
 fitness @ physique       = фитнесс
 ===
@@ -6,7 +8,6 @@ aerobics                 = аэробика              # 14+
 step aerobics            = степ-аэробика         # 16+
 aerobic exercise//cardio = аэробное упражнение
 
-pilates                  = пилатес               # 16+
 hyperextensions          = гиперэкстензии        # SPORT+ # TERM+ # 16+
 plank @ fitness          = планка ~ (упражнение) # SPORT+ # TERM+ # 16+
 expander                 = эспандер              # SPORT- # TERM- # 14+

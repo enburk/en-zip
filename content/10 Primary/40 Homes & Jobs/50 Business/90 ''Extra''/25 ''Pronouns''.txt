@@ -1,8 +1,8 @@
-possessive pronouns = притяжательные местоимения      # 10+
+possessive ~ pronouns = притяжательные ~ местоимения  # 10+
 
 ===
-mine @ pronoun      = мой
-yours               = твой
+mine @ pronoun        = мой
+yours                 = твой
 ===
 
 : It's mine. ~ Give it back!
@@ -10,16 +10,16 @@ yours               = твой
 : We have each of us a secret. ~ Let me know yours, ~ and I shall tell you mine.
 
 ===
-his                 = его                             # duple
-hers                = её
-its                 = его/её %% о неодушевлённых предметах и животных # duple
+his                   = его                           # duple
+hers                  = её
+its                   = его/её %% о неодушевлённых предметах и животных # duple
 ===
 
 : It is his.
 
 ===
-ours                = наш
-theirs              = их
+ours                  = наш
+theirs                = их
 ===
 
 : Cards on the table time. ~ I'll tell you ours ~ if you tell me yours.
@@ -30,6 +30,7 @@ one's @ contraction %% contraction of '''one is'''
 ===
 
 : This one's yours. ~ The other one's... er... ~ someone else's.
+
 
 
 

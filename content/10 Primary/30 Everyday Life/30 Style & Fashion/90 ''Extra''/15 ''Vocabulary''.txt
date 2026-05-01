@@ -31,7 +31,6 @@ umbrella          = зонт, зонтик
 : open umbrella   # SOUND
 
 necklace {n}      = ожерелье, колье
-pendant           = подвеска, кулон
 earrings          = серьги
 
 lipstick          = помада

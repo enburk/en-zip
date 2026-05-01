@@ -1,6 +1,6 @@
 school @ institution          = школа, ~ учебное заведение
 
-class @ school                = класс, группа %% Но: ~ the first grade -- первый класс ~ the second grade -- второй класс ~ и т.п. /// # polysemic /// Томпсон
+class @ school                = класс, группа
 student @ school              = учащийся, студент               # 10+ /// Latin /// ученик - pupil
 
 ---

@@ -2,6 +2,7 @@ naval history  = история флота
 
 barque|bark    = барк                  # 16+ /// барка устар.
 brig           = бриг
+
 brigantine     = бригантина
 barquentine    = баркентина            # RARE+ # 16+ /// (с косыми парусами на всех мачтах, кроме носовой)
 
@@ -14,6 +15,8 @@ gun port       = пушечный порт         # TECH+ # 16+
 quarterdeck    = квартердек, шканцы    # TECH+ # 16+
 reef @ sail {v} = брать рифы ~ (на парусе) # TECH+ # 16+
 boarding party = абордажная команда
+
+===
 
 dreadnought    = дредноут              /// Dreadnought,~
 monitor @ navy = монитор ~ (корабль)   # HISTORY+ # WAR+ # 16+

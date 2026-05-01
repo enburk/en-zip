@@ -1,6 +1,6 @@
+***
 true
 false # duple
-===
 
 : True.
 : Is that true?
@@ -14,8 +14,9 @@ false # duple
 ===
 truth {n}
 falsehood
-the moment of truth
 ===
+
+the moment of truth
 
 : By G— it is naked Truth.
 : the truth and nothing but the truth

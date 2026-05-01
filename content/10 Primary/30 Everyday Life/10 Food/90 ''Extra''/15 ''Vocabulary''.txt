@@ -4,7 +4,6 @@ fork @ utensil {n}      = вилка
 spoon @ utensil {n}     = ложка
 knife %% plural: knives {n} = нож
 tablecloth {n}          = скатерть
-plate @ dish {n}        = тарелка
 napkin {n}              = салфетка
 
 pie @ food              = пирог, торт

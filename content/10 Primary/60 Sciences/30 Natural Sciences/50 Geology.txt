@@ -1,3 +1,4 @@
+***
 geology            = геология                                   # pix- # 10+
 
 lithosphere        = литосфера                                  # MATH+ # TERM+ # 14+
@@ -26,6 +27,9 @@ tuff %% also: tufa = вулканический туф                          
 tufa               = туф                                        # 18+
 
 ===
+***
+===
+
 ---
 speleology         = спелеология                                # 10+
 stalagmite         = сталагмит                                  # 10+

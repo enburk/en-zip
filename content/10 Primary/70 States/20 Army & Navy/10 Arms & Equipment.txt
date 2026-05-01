@@ -18,8 +18,6 @@ nitroglycerin           = нитроглицерин
 trinitrotoluene ~ (TNT) = тринитротолуол %% тротил, тол
 TNT equivalent          = тротиловый эквивалент
 megaton                 = мегатонна                                         /// /megatonne нет в словарях
-atomic bomb             = атомная бомба
-neutron bomb            = нейтронная бомба                                  # 16+
 ===
 
 ballistics              = баллистика                                        # WAR-

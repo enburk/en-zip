@@ -5,6 +5,7 @@ protein @ bio       = протеин %% белок            # 16+
 glucose             = глюкоза
 fructose            = фруктоза
 cellulose           = целлюлоза %% полисахарид    # TERM+ # 16+
+
 ---
 lactose             = лактоза %% молочный сахар   # 18+
 lactose intolerance = непереносимость лактозы     # 18+

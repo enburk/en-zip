@@ -1,13 +1,10 @@
-grammar
-
-===
 small words               # HEAD
+
 ===
 in                        = в # duple
 ===
 
 : Get your ducks '''in''' a row! = Приведи свои дела в порядок! %% idiomatic
-: castles '''in''' the air = воздушные замки
 
 ===
 = в, через, в течение %% о времени

@@ -5,6 +5,7 @@ medicine man      = знахарь, шаман %% ''особенно'' у инд
 
 prophylaxis       = профилактика                                  # 10+
 sanitary          = санитарный, ~ гигиенический                   # 10+
+
 ---
 clinic            = клиника, поликлиника, медпункт                /// ~консультация
 polyclinic {Br.}  = поликлиника
@@ -13,7 +14,7 @@ hospital          = больница, ~ ветеринарная клиника,
 hospitalisation\\hospitalization = госпитализация                                # TERM+ # 10+
 
 veterinary clinic = ветеринарная клиника
-vet\\veterinarian = ветеринар
+veterinarian      = ветеринар
 
 hospice           = хоспис, ~ монастырская гостиница              # 16+
 sanatorium %% Am. also: sanitarium = санаторий                                     # 10+
@@ -25,5 +26,6 @@ hypochondriac     = ипохондрик %% мнимый больной         
 : Say Ahhh!
 : Oh, take medicine, take medicine!
 : But that's unsanitary.
+
 
 

@@ -9,9 +9,11 @@ kiosk {n}                    = киоск                # 10+
 street {n}                   = улица
 
 ===
+
 ---
 lamp @ home                  = лампа
 lamp @ street                = фонарь ~ светить, освещать
+
 ---
 square @ city {n}            = площадь %% редко: сквер # pix-
 square @ city block {n}      = квартал              # pix-
@@ -20,6 +22,7 @@ square @ math {n}            = квадрат, ~ вторая степень
 : Red Square @ Moscow        = Красная площадь
 : red square                 = красный квадрат
 public garden//garden square = парк, сквер
+
 ---
 park @ city                  = парк
 national park                = национальный парк, ~ заповедник

@@ -16,12 +16,16 @@ dissident              = диссидент, диссидентский         
 obstruction            = обструкция                                     # POLIT+ # 16+
 solidarity             = солидарность
 
+===
+
 secret police          = тайная полиция                                 # 16+
 draconian measures     = драконовские меры                              # 14+
 loyalty                = верность, преданность, ~ лояльность            # 14+
+
 ---
 revolutionary          = революционер, ~ революционный
 counter-revolutionary  = контрреволюционер, ~ контрреволюционный
+
 ---
 terror @ politics      = в политике: террор                             # 16+
 terror @ fear          = страх, ужас                                    # 16+

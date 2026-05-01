@@ -1,0 +1,51 @@
+
+***
+club @ join                  = клуб, ~~ собираться вместе, ~~ скидываться (в «общий котёл») # 10+
+club @ weapon                = дубина, дубинка, ~ бить дубинкой            # 10+ /// %% или прикладом ружья
+[golf] club                  = клюшка для гольфа                           # 10+
+clubs @ gymnastics           = була́вы %% гимнастический снаряд             # 10+
+clubs @ cards                = трефы                                       # 10+
+
+***
+court @ tennis               = корт
+court/courtyard @ courtyard  = (внутренний) двор
+court @ royal                = двор ~ (королевский)
+court @ legal                = суд, судебное заседание
+court @ love                 = добиваться расположения, ~ ухаживать (за женщиной) /// тупик, рисковать
+
+***
+barrier                      = барьер, ~ преграда, препятствие
+hurdle                       = препятствие, барьер ~ (в легкой атлетике)   /// NEW
+hurdling                     = бег с барьерами                             /// NEW
+fence @ show jumping         = барьер ~ (в конкуре)                        /// NEW
+fence @ barrier              = забор, изгородь                             /// NEW
+fence @ fencing %% verb      = фехтовать                                   /// NEW
+fencing                      = фехтование                                  /// NEW
+
+***
+fan(1) @ person              = фанат, болельщик, любитель
+fan(2) @ device              = вентилятор
+fan(2) @ hand-held           = веер,  ~ обмахивать, раздувать %% ''также в переносном значении'' /// лопасть винта, веять зерно, обыскивать, бить
+
+***
+favourite\\favorite @ sport  = в спорте: фаворит %% ожидаемый победитель
+favourite\\favorite @ favour = фаворит, ~ любимчик, любимец
+favourite\\favorite @ adjective %% adjective = любимый, излюбленный
+: What’s your favourite sport?
+: We must never play favorites. ~ We must always treat every man alike.
+
+***
+matte|matt\\matte|mat(1) @ dull = матовый, ~ неполированный, тусклый
+mat(2) @ floor               = мат, ~ циновка, половик, ~ коврик, подстилка /// , ~~колтун (волос и т.п) /// очень много знач.
+mate(1) @ chess              = в шахматах: мат, ~ поставить мат
+mate(2) {Br.} @ friend       = друг, приятель
+: What you want me to do about it, mate?
+mate(2) @ partner            = напарник, сослуживец, ~ сосед (по дому, комнате)
+roommate||room-mate          = сосед по комнате                            # sic!
+classmate                    = однокласник
+mate(2) @ sexual             = самец, самка, ~ спариваться                 # 18+
+mate(2) {Am.} @ spouse       = муж, жена                                   # 18+
+mate(2) @ naval              = помощник капитана
+first mate                   = старпом
+mate(3) @ ma`te              = мате                                        # 16+ /// maté гиперкоррекция
+

@@ -1,45 +1,48 @@
 basic ~ vocabulary
 
-wheel              = колесо
-lorry\\truck @ car = грузовик
+wheel                  = колесо
+lorry\\truck @ car     = грузовик
+
 ---
-ticket @ transport = билет
+ticket @ transport     = билет
 : Tickets, please!
 
-vehicle            /// Latin
+vehicle                = транспортное средство /// Latin
 
 ===
-ship @ vessel      = корабль, судно, ~ перевозить груз
-boat {n}           = лодка, шлюпка, ~ корабль, судно
+ship @ vessel          = корабль, судно, ~ перевозить груз
+boat {n}               = лодка, шлюпка, ~ корабль, судно
 : You missed the boat.
 ===
 ---
-sail @ nautical    = парус, ~ идти под парусом
-topsail            = марсель, топсель
-sailor             = моряк, матрос
+sail @ nautical        = парус, ~ идти под парусом
+topsail                = марсель, топсель
+sailor                 = моряк, матрос
 
 ===
 
 ***
-flight @ act       = полет
-flight @ stair     = пролет
-flight @ trip      = рейс ~ (самолета)
-flight attendant   = стюард/стюардесса
+flight @ act           = полет
+flight @ stair         = пролет
+flight @ trip          = рейс ~ (самолета)
+flight attendant       = стюард/стюардесса
 
 ***
-take off @ airborn = взлетать
-land @ plane {v}   = садиться
-runway @ airport   = взлетно-посадочная полоса
+take off @ airborn     = взлетать
+land @ plane {v}       = садиться
+runway @ airport       = взлетно-посадочная полоса
 : Flight 291 you are cleared for take of.
 : You are cleared to land on runway 24.
 
 ***
-wing @ plane       = крыло (самолета)
-wing\\fender @ car = крыло (автомобиля)
-wing @ building    = флигель, крыло дома
-wing @ party       = крыло (политической партии)
-wing @ front       = фланг
-wing @ air force   = авиакрыло (тактическая единица)
+wing @ plane           = крыло (самолета)
+wing\\fender @ car     = крыло (автомобиля)
+wing @ building        = флигель, крыло дома
+wing @ party           = крыло (политической партии)
+wing @ front           = фланг
+wing @ air force       = авиакрыло (тактическая единица)
+
+air traffic controller = авиадиспетчер
 
 
 

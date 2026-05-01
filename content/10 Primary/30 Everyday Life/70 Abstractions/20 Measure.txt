@@ -1,3 +1,4 @@
+***
 measure                  = мерить, мера                /// измерение (процесс измерения, не ''измерение'' пространства)
 
 ---
@@ -7,6 +8,8 @@ decimetre\\decimeter     = дециметр                    # MATH- # TERM-
 millimetre\\millimeter   = миллиметр                   # MATH- # TERM-
 micrometre\\micrometer   = микрометр/микрон            # MATH+ # TERM- # 14+
 micron                   = микрон/микрометр            # MATH+ # TERM- # 14+
+
+===
 
 mile                     = миля                        # 14+
 yard {n}                 = ярд                         # 14+

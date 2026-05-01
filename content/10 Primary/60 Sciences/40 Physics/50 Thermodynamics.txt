@@ -4,6 +4,7 @@ ideal gas                 = идеальный газ                     # 18+
 thermodynamic equilibrium = термодинамическое равновесие      # MATH- # TERM- # 18+
 isolated system           = изолированная система             # MATH- # TERM- # 18+
 kelvin                    = кельвин                           # MATH- # TERM- # 14+
+
 ---
 pressure                  = давление
 atmosphere @ unit         = атмосфера %% единица измерения давления

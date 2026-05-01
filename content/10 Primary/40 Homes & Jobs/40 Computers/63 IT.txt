@@ -1,4 +1,4 @@
-information ~ technology ~ (IT) = информационные технологии                      # 10+ /// 8??
+information ~ technology ~ (IT) = информационные технологии                      # 10+
 
 program @ comp      = программа ~ (компьютерная)
 operating system    = операционная система                           # 10+
@@ -24,5 +24,6 @@ virtual machine     = виртуальная машина                       
 interface           = интерфейс, ~ взаимодействие                    # IT+ # 10+
 teraflop            = терафлопс %% триллион операций в секунду       # IT+ # RARE+ # TERM+ # 18+
 format @ comp       = формат, форматировать
+
 
 

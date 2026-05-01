@@ -1,4 +1,5 @@
 anatomy            = анатомия                                   # 10+
+
 ---
 skeleton {n}       = скелет
 rib @ anatomy      = ребро

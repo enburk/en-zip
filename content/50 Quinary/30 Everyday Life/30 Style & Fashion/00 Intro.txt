@@ -15,7 +15,13 @@ Ascot cap
 deerstalker [hat]
 an Alice band
 
-pochette
+pochette//pleather       = faux leather
+
+leatherette
+patent leather
+
+jacquard fabric
+paisley pattern
 
 ---
 hairdo
@@ -29,8 +35,6 @@ applying mascara
 tennis bracelet          = a diamond line bracelet
 tennis necklace
 
-catwalkers
-
 fascinator
 
 dishevelled {Br.} || disheveled {Am.}
@@ -43,6 +47,9 @@ sterling silver
 dangling bells
 
 bypass setting
+
+eyelet @ fabric
+eyelet//grommet @ grommet
 
 cubic zirconia
 moissanite
@@ -71,4 +78,6 @@ tattered                 = torn or ragged                        # +ru
 : English men, in particular, can be peacocks, fond of hats
 
 : Some English women, perhaps in reaction to being made to wear pinafores
+
+
 

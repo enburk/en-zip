@@ -46,10 +46,6 @@ whirr
 : recoil start # SOUND
 : sheet metal buckle # SOUND
 
-: electric hedge trimmer # SOUND
-: hedge clippers # SOUND
-: hedge shears # SOUND
-
 : walky-talky: feedback squelch # SOUND
 : walky-talky: interference squelch # SOUND
 : walky-talky: feedback and squelch noise # SOUND

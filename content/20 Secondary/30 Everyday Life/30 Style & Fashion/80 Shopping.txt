@@ -10,9 +10,10 @@ gift bag
 gift box
 gift set
 
-label @ clothes  # 8+
-petite @ clothes = of a small size # 10+
-tag @ clothes    # 10+
+label @ clothes     # 8+
+petite @ clothes    = of a small size # 10+
+price tag @ clothes # 10+
+
 
 
 

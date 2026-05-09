@@ -13,6 +13,7 @@ bread                   = хлеб
 
 beef                    = говядина
 pork                    = свинина
+
 ---
 seafood                 = морепродукты
 salmon @ food           = лосось
@@ -43,6 +44,8 @@ lollipop                = леденец на палочке
 ice cream               = мороженое
 honey                   = мёд
 
+pine nuts               = кедровые орехи
+
 ---
 hungry                  = голодный
 starving                = голодающий, ~ изголодавшийся
@@ -51,6 +54,7 @@ full @ food             = сытый
 : Ah, I’m hungry.
 : I'm starving.
 : I'm full.
+
 
 
 

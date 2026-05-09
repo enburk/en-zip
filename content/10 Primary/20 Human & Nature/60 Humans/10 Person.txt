@@ -15,7 +15,7 @@ monogram           = монограмма, ~ вензель # 16+
 
 credo              = кредо             # 16+
 mission            = миссия            # 14+
-fiasco             = фиаско            # 14+
+fiasco @ failure   = фиаско            # 14+
 
 gesticulation      = жестикуляция      # 10+
 manners            = манеры            # 14+
@@ -28,6 +28,7 @@ neophyte %% formal = неофит, новичок   # 16+ /// в русском 
 proselyte          = прозелит %% новообращенный # RARE+ # 18+
 
 teenager           = подросток ~ (тинейджер)
+
 
 
 

@@ -1,41 +1,42 @@
 basic ~ vocabulary
 
-sip               = маленький глоток, ~ пригубить, отпивать
+sip                           = маленький глоток, ~ пригубить, отпивать
 
 ---
-juice             = сок
-tea               = чай
+juice                         = сок
+tea                           = чай
 : Tea, please.
 
 ---
-can @ vessel      = банка
-: can opening     # SOUND
+can @ vessel                  = банка
+: can opening                 # SOUND
 
-beer              = пиво # 18+
-keg               = бочонок # 18+
-
----
-cup @ vessel {n}  = чашка, стаканчик
-teacup            = чайная чашка
-mug @ cup         = кружка
-
-teaspoon          = чайная ложка
-saucer            = блюдце
+beer                          = пиво # 18+
+keg                           = бочонок # 18+
 
 ---
-teapot            = чайник
-kettle//teakettle = электрический чайник
-boil              = кипеть
+cup @ vessel {n}              = чашка, стаканчик
+teacup                        = чайная чашка
+mug @ cup                     = кружка
+
+teaspoon                      = чайная ложка
+saucer                        = блюдце
+
+---
+teapot                        = заварочный чайник
+kettle//teakettle @ teakettle = чайник
+boil                          = кипеть
 : The kettle is boiling.
-: tea kettle off  # SOUND
+: tea kettle off              # SOUND
 
 ---
-thirst            = жажда, жаждать, ~ хотеть пить
-: I'm thirsty.    = Я хочу пить.
+thirst                        = жажда, жаждать, ~ хотеть пить
+: I'm thirsty.                = Я хочу пить.
 
 ===
 
 : That's not my cup of tea.
+
 
 
 

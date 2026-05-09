@@ -27,7 +27,10 @@ shampoo                     = шампунь                    /// Hindi - cham
 jungle                      = джунгли                    /// Hindi – jangal - лес, пустыня; Санскр. – jangala-s - безводный
 mongoose                    = мангуст                    /// Indic
 catamaran                   = катамаран                  # 10+ /// Tamil
-curry                       = карри                      # MEAT # 12+ /// Tamil
+
+curry @ spice               = карри ~ (приправа)         /// Tamil
+curry @ dish                = карри ~ (блюдо)            /// Tamil
+
 
 
 

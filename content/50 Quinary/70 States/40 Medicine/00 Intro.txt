@@ -1,7 +1,7 @@
 medicine
 
 ---
-congenital = present since birth
+congenital          = present since birth
 : I’m sorry. Genital?
 
 A&E (accident and emergency)\\ER (emergency room)
@@ -9,6 +9,8 @@ A&E (accident and emergency)\\ER (emergency room)
 trolley\\gurney @ gurney
 
 effervescent tablet
+
+ointment @ medicine /// French
 
 ---
 nausea

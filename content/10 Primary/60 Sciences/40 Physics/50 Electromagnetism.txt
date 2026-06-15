@@ -16,6 +16,7 @@ electrolyte                 = электролит                     # MATH- #
 
 resistor                    = резистор                       # MATH- # TECH- # TERM- # 18+
 potentiometer               = потенциометр                   # MATH- # TECH- # TERM- # 18+
+
 ---
 cathode                     = катод                          # MATH+ # 16+
 anode                       = анод                           # MATH+ # 16+

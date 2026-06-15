@@ -1,21 +1,20 @@
 grammar
-Simple Past Tense = простое прошедшее время
-
-===
-= ''вопросительная'' и ''отрицательная'' формы ~ образуются по модели '''Simple Present''',
-= только вспомогательный глагол ~ '''to do''' принимает форму
-did
-= одинаковую для всех лиц
-===
+Simple Past Tense                             = простое прошедшее время
+= ''вопросительная'' ~ и ''отрицательная'' ~ формы
 
 : '''Did''' you miss me? @@
 : '''Did''' anyone call?
-: '''Did''' you get my message? @ emphatic # duple
+: '''Did''' you get my message? @ emphatic    # duple
 : What '''did''' she say?
 : What '''did''' you say?
 : What '''did''' I miss?
 
 ===
+
+: Where did I put it?                         /// pixed
+
+===
+contraction                                   # HEAD
 did not → didn't
 ===
 
@@ -24,25 +23,23 @@ did not → didn't
 
 ===
 = предлог обычно ~ ставится в конце:
-: What did you do that '''for'''? = Зачем ты это сделал?
+: What did you do that '''for'''?             = Зачем ты это сделал?
 
 ===
-forms of the verb '''to be''' @ simple past
+forms of the verb ~ '''to be''' @ simple past # HEAD # pix-
 ===
-was
 I was
 he was
 she was
 it was
 ===
-were
 we were
 you were
 they were
 ===
 
-: You '''were''' wrong! = Ты был неправ!
-: And so it '''was'''. = И так оно и было.
+: You '''were''' wrong!                       = Ты был неправ!
+: And so it '''was'''.                        = И так оно и было.
 : Who '''was''' I? What '''was''' I?
 : '''Was''' that a paradox?
 
@@ -50,16 +47,4 @@ they were
 : That '''was''' smart!
 : What '''was''' that?
 
-===
-was not → wasn't
-were not → weren't
-===
----
-: It '''wasn't''' me! @@
-: I swear it '''wasn't''' me!
-: you weren’t
-
-===
-had not → hadn't
-===
 

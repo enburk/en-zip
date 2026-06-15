@@ -11,7 +11,7 @@ goalie               = goalkeeper, ~ goaltender, netminder
 
 ---
 prop @ aero          = propeller
-propwash//prop wash  = propeller wash
+propwash||prop wash  = propeller wash
 decel                = deceleration
 
 condo {Am.}          = condominium

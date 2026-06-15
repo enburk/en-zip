@@ -172,7 +172,7 @@ namespace app::one
                     notify();
                     break;
                 case state::finished:
-                    nexter.setup(2s);
+                    nexter.setup(3s);
                     medio.done();
                     notify();
                     break;

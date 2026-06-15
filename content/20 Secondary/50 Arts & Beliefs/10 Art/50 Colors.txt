@@ -6,13 +6,13 @@ yellow
 saffron yellow
 orangeish
 
-onyx @ color {a}
-sapphire @ color {a}
-emerald @ color {a}
+onyx @ color
+sapphire @ color
+emerald @ color
 
-cream @ color {a}
-pearl @ color {a}
-olive @ color {a}
+cream @ color
+pearl @ color
+olive @ color
 
 purple @ color
 fuchsia @ color
@@ -23,3 +23,4 @@ baby blue
 dark green
 
 terracotta @ color
+

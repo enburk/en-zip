@@ -15,7 +15,7 @@ realist                    = реалист                           # 10+
 altruist                   = альтруист                         # 16+
 formalist                  = формалист                         # 16+
 pedant                     = педант                            # 16+
-eccentric                  = эксцентричный, чудак              # 16+
+eccentric @ odd            = эксцентричный, чудак              # 16+
 sceptic\\skeptic           = скептик                           # 10+
 cynic                      = циник
 fanatic                    = фанатик, фанатичный               # 10+
@@ -44,6 +44,7 @@ individualist              = индивидуалист                     # 10
 ===
 
 : Ah! what a cynic you are!
+
 
 
 

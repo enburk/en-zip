@@ -3,6 +3,9 @@ literature
 caption   = the descriptive heading or title
 preface
 
+hardcover // hardback
+paperback // softcover // softback
+
 narrative /// Latin
 narration
 

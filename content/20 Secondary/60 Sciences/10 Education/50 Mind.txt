@@ -1,29 +1,29 @@
 ***
 mind
 
-wonder                    = try to guess if something is true, ~ ask yourself questions
-ponder %% formal          = think seriously ~ about some difficult problem
-muse on\about something   = think about something ~ for a long time
-contemplate               = think about something ~ in a concentrated manner
-reflect on\upon something = think deeply ~ about something
+wonder           = try to guess if something is true, ~ ask yourself questions
+ponder %% formal = think seriously ~ about some difficult problem
+muse on something//muse about something = think about something ~ for a long time
+reflect on something//reflect upon something = think deeply ~ about something
+contemplate      = think about something ~ in a concentrated manner
 
 ===
 
 be lost in thought
 
 ---
-figure out                # 10+
+figure out       # 10+
 : Just tell me how to switch it on and off - I'll figure out the rest.
 
 ---
-consider                  # 10+
+consider         # 10+
 : But consider...
 : Let's consider a spherical cow.
 : Philologically considered, it is absurd.
 : Consider yourself told!
 
 investigate
-examine                   = study something ~ in detail
+examine          = study something ~ in detail
 weigh @ mind
 
 ===
@@ -32,5 +32,6 @@ weigh @ mind
 : I gazed with a kind of wonder.
 : I must think about this. I must ponder. I must reflect.
 : What would happen, wondered one person, if you put a helium balloon in an elevator and cut the cable?
+
 
 

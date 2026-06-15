@@ -450,26 +450,6 @@ namespace studio::one
         report::videom.log += bold(blue(
         "+" + str(n-nn) + " more"));
 
-
-        report::audiop += 
-        blue(bold("=== prepositional ==="));
-        hashmap<str, array<str>> prepositional;
-        for (res r: unused_resources) if (r->vocal())
-        {
-            str s;
-            str a = r->abstract;
-            if (a.starts_with("a "  )) s = a.from(2);
-            if (a.starts_with("an " )) s = a.from(3);
-            if (a.starts_with("the ")) s = a.from(4);
-            if (a.starts_with("to " )) s = a.from(3);
-            if (s != "" and course_matches.contains(s))
-            prepositional[s] += a;
-        }
-        for (auto [s, ss]: prepositional)
-        for (ent e: course_matches[s].entries)
-        report::audiop += link(e) + ": " + str(ss, ", ");
-
-
         hashmap<res, array<ent>> multientry;
         array<std::pair<ent, array<res>>> multivideo;
         for (auto [i, entry]: enumerate(course.entries))

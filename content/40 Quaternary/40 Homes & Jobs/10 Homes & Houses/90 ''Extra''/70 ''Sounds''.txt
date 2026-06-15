@@ -11,7 +11,7 @@ sounds
 : doorbell chimes # SOUND
 : garage door: slam close and lock # SOUND
 
-: coins dropped on wooden floor
+: coins dropped on wooden floor # SOUND
 : wooden kitchen chair: sit in chair and slide in on tile # SOUND
 
 

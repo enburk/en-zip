@@ -1,30 +1,31 @@
 ***
 
 ===
-board games     = настольные игры
+board games       = настольные игры
 ===
 
-Scrabble        = скрабл                        # 10+
-sudoku          = судоку                        # 10+
-go @ game       = го                            # 16+
+Scrabble          = скрабл                      # 10+
+sudoku            = судоку                      # 10+
+go @ game         = го                          # 16+
 
 ---
-puzzle          = загадка, головоломка, ~ затруднение, озадачивать
+puzzle @ quest    = загадка, головоломка, ~ затруднение, озадачивать
 : And this was a real puzzle.
 : Ah, THAT'S the great puzzle!
-puzzle {esp.} {Am.} // jigsaw [puzzle] = пазлы
-Rubik's Cube    = кубик Рубика
+[jigsaw] [puzzle] = пазлы                       /// puzzle {esp.} {Am.}
+Rubik's Cube      = кубик Рубика
 
 ---
-dominoes @ game = домино ~ (игра)               # 14+ /// |dominos
-domino @ piece  = костяшка домино               # 14+
-domino effect   = эффект домино, ~ принцип домино # 14+
+dominoes @ game   = домино ~ (игра)             # 14+ /// |dominos
+domino @ piece    = костяшка домино             # 14+
+domino effect     = эффект домино, ~ принцип домино # 14+
 
 ===
 
-crossword       = кроссворд
-charade         = шарада                        # 10+
-rebus           = ребус                         # 10+
+crossword         = кроссворд
+charade           = шарада                      # 10+
+rebus             = ребус                       # 10+
+
 
 
 

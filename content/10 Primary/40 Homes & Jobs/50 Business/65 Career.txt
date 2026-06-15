@@ -39,7 +39,7 @@ prize                      = приз, премия
 routine                    = рутина, рутинный              # 10+
 
 ===
-pensioner ~ {mostly} {Br.} = пенсионер
+pensioner ~ {mainly} {Br.} = пенсионер
 retiree ~ {Am.}            = пенсионер
 pension fund               = пенсионный фонд               # 10+
 ===

@@ -6,7 +6,7 @@ cone @ shape             = конус
 cone @ plant             = шишка
 
 ***
-cylinder                 = цилиндр
+cylinder @ form          = цилиндр
 [gas] cylinder           = газовый баллон
 cylinder @ firearm       = барабан ~ (в револьвере)              /// , цилиндр (в насосе) /// валик, валок и т.п.
 top hat//silk hat//cylinder hat = цилиндр ~ (шляпа)

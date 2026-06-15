@@ -5,6 +5,7 @@ sum @ math {n}{v}        = сумма, суммировать
 summa                    = сумма %% средневековое сочинение                   # 18+
 
 ***
+eccentric//off-center @ off-center = нецентральный
 eccentricity @ math      = в геометрии: эксцентриситет                        # MATH+ # TERM+ # 18+
 eccentricity @ odd       = эксцентричность, ~ чудаковатость                   # MATH+ # TERM+ # 18+
 

@@ -1,7 +1,7 @@
 military history         = военная история
 
 hoplite                  = гоплит      # 16+
-sarissa                  = сариса      # RARE+ # 16+
+sarissa || sarisa        = сариса      # RARE+ # 16+
 trireme                  = трирема/триера # 16+
 
 ===
@@ -51,6 +51,7 @@ freelancer @ history     = наемный солдат ~ (в средние ве
 ===
 
 : the Black Watch with their kilts in time at the march past the 10th hussars
+
 
 
 

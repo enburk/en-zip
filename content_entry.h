@@ -165,6 +165,10 @@ namespace content::out
             if (sense != "")
             abstract  += "@" +
                 sense;
+
+            if (opt.internal.contains("uk+us")
+                and uk.empty() and us.empty())
+                uk = en, us = en, en.clear();
         }
 
         bool the_noun () { return sense == "noun" or noun and not verb and not adxx; }
@@ -250,17 +254,23 @@ namespace content::out
             one_of   ("{_}")))
             errors += "{_}";
 
+            if (eng.starts_with(":")
+            and opt.internal.contains("+ru"))
+            errors += ": # +ru";
+
             for (str x: s.split_by("/"))
             {
-                x.strip();
+                x.canonicalize();
                 x.replace_all("\\","/");
                 x.replace_all("| ","|");
                 x.replace_all(" |","|");
                 
                 phrases += x;
                 if (opt.internal.contains("+ru"))
-                x += " -- " + simple(rus),
-                x.replace_all(" ~ ", " ");
+                x += " -- " + simple(rus).extract_upto("%%"),
+                x.replace_all(" ~ ", " "),
+                x.replace_all("\\" , "/"),
+                x.canonicalize();
                 audio += x;
             }
         }
@@ -384,8 +394,8 @@ namespace content::in
 
                 if (comnt != "")
                 {
-                    for (str marker: eng_markers)
-                    comnt.replace_all(marker, italic(marker));
+                //  for (str marker: eng_markers)
+                //  comnt.replace_all(marker, italic(marker));
                     comnt.rebracket("{","}", [](str s){ return green(s); });
                     if (s != "") s += "<br>";
                     s += small(dark(comnt));

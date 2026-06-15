@@ -19,6 +19,6 @@ diamond @ jewelry   = бриллиант, алмаз
 
 ***
 bijou               = маленькое изящное украшение, ''не'' бижутерия
-costume jewellery\\costume jewelry = бижутерия
+costume jewellery {Br.} || costume jewelry {Am.} = бижутерия
 
 

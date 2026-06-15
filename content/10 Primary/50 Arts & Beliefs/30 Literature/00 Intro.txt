@@ -1,8 +1,10 @@
 literature     = литература
+
 ---
 litterateur    = литератор                                              # ART+ # RARE+ # 16+
 author @ book  = автор
 co-author      = соавтор
+
 ---
 tome           = том ~ (увесистая книга)                                # 10+
 volume @ book  = том ~ (часть большого произведения)                    # 10+

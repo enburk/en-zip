@@ -44,7 +44,7 @@ capital @ good           = замечательный, отличный
 : Capital performance, capital.
 : Glorious night! Exquisite scenery! Capital dinner!
 capital @ city           = столица
-: London is the capital of Paris, ~ and Paris is the capital of Rome, ~ and Rome -- no, THAT'S all wrong, ~ I'm certain!
+: London is the capital of Paris
 capital @ letter         = заглавный ~ (о букве)
 : What is the capital of Nebraska? -- That's easy. It’s ‘N’.
 capital @ column         = капитель %% венчающая часть колонны или пилястры # 16+

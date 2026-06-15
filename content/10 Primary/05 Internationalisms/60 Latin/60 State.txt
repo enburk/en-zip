@@ -41,7 +41,6 @@ export @ verb %% {verb}   = экспортировать                 # 10+ /
 ===
 import @ noun %% {noun}   = импорт                         # 10+ /// `import
 import @ verb %% {verb}   = ввозить, импортировать         # 10+ /// im`port
-import @ mean             = смысл, суть, сущность, ~ значение # 10+ /// `import
 ===
 
 consultant                = консультант                    # 10+

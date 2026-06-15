@@ -1,11 +1,13 @@
 grammar
-Simple Past Tense = простое прошедшее время %% Другие названия: ~ '''Past Simple, Past Indefinite''' ~ (прошедшее неопределённое)
+Simple Past Tense = простое прошедшее время /// Другие названия: ~ '''Past Simple, Past Indefinite''' ~ (прошедшее неопределённое)
 
 ===
 regular verbs     = ''правильные'' глаголы
 = в простом прошедшем времени ~ к ''правильным'' глаголам ~ прибавляется окончание '''–ed'''
 ===
 
+---
+listen → listened
 : He listen'''ed'''.
 
 ===
@@ -16,26 +18,7 @@ irregular verbs   = ''неправильные'' глаголы
 ---
 break → broke
 : You '''broke''' it!
----
-bite → bit
----
-forget → forgot
-: I '''forgot'''. @ sad
-: I '''forgot''' it.
----
-give → gave
-: I '''gave''' my word.
-: You '''gave''' me your word!
----
-say → said
-: Because I '''said''' so.
-: Because I '''said''' so, that's why!
-: And they '''said''' “really?”
-: Who '''said''' so?
----
-know → knew
-: Who '''knew'''?
-: I '''knew''' it!
+
 ---
 do → did
 : I '''did''' it!
@@ -43,14 +26,38 @@ do → did
 : She '''did''' it!
 : We '''did''' it!
 : And so I '''did'''.
+
 ---
-see → saw
-: I saw.
-: I saw it.
+forget → forgot
+: I '''forgot'''. @ sad
+: I '''forgot''' it.
+
+---
+give → gave
+: I '''gave''' my word.
+: You '''gave''' me your word!
+
 ---
 hear → heard
 : You heard me.
 : I heard of this.
+
+---
+know → knew
+: Who '''knew'''?
+: I '''knew''' it!
+
+---
+say → said
+: Because I '''said''' so.
+: Because I '''said''' so, that's why!
+: And they '''said''' “really?”
+: Who '''said''' so?
+
+---
+see → saw
+: I saw.
+: I saw it.
 
 
 

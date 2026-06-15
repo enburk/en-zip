@@ -40,6 +40,12 @@ namespace content::out
             bool ordered = true;
             int  order = 0;
 
+            if (str name = str(path.filename());
+                name.contains("False Friends") or
+                name.contains("Polysemic") or
+                name.contains("Homonyms"))
+                opt.external += "+1sec";
+
             for (auto entry: entries)
             {
                 if (entry.eng == ""

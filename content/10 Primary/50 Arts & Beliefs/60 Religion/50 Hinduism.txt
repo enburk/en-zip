@@ -13,7 +13,7 @@ incarnation    = воплощение, инкарнация
 reincarnation  = реинкарнация                                         /// %% перевоплощение
 
 brahmin        = брахма́н/брами́н                                       # TERM+ /// (представитель высшей варны)
-chakra/cakra   = чакра
+chakra||cakra  = чакра
 mantra         = мантра
 lotus position = поза лотоса
 

@@ -1,13 +1,13 @@
 organic ~ chemistry           = органическая ~ химия
 
 methane                       = метан
-propane                       = пропан                                   # TECH- # TERM-
+propane                       = пропан
 
 ---
 benzene                       = бензол %% ''не'' бензин
 petrol {Br.}                  = бензин                                   /// petroleum нефть, бензин - устар.
 gasoline {Am.} %% informal: gas = бензин
-octane number//octane rating  = октановое число                          # TECH- # TERM-
+octane number//octane rating  = октановое число
 
 ---
 kerosene {Am.}                = керосин
@@ -18,9 +18,9 @@ wax                           = воск
 stearin                       = стеарин
 
 ---
-ethanol                       = этанол %% этиловый спирт                 # 18+
-methanol                      = метанол %% метиловый спирт               # 18+
-denatured alcohol             = технический спирт, ~ денатурат           # 18+
+ethanol                       = этанол %% этиловый спирт
+methanol                      = метанол %% метиловый спирт
+denatured alcohol             = технический спирт, ~ денатурат
 
 glycerol//glycerine||glycerin = глицерин %% простейший трёхатомный спирт # 18+
 
@@ -28,6 +28,7 @@ polymer                       = полимер
 isomers                       = изомеры %% молекулы, одинаковые ~ по атомному составу # TERM+
 
 antioxidant                   = антиоксидант %% противоокислитель        # TERM+
+
 
 
 

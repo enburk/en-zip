@@ -2,8 +2,10 @@
 
 anaconda          = анаконда
 cobra             = кобра                                                    # DEL /// spectacled cobra - Languages 2 Polysemantic
+
 salamander        = саламандра
 basilisk @ animal = василиск/басилиск %% назван в честь мифического чудовища # RARE- # 10+
-gavial/gharial    = гавиал                                                   # RARE- # 16+
+gavial//gharial   = гавиал                                                   # RARE- # 16+
+
 
 

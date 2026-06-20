@@ -8,11 +8,13 @@ marlin          = марлин                                             # RAR
 mackerel @ fish = макрель                                            # 10+
 sardine @ fish  = сардина                                            # 10+
 
+***
 crab @ animal   = краб
 coral           = коралл
 coral reef      = коралловый риф                                     # TERM-
 
-guppy           = гуппи                                              # RARE- # 10+
+***
 neon tetra      = неон %% голубой неон, ~ обыкновенный неон, ~ неон-тетра # RARE- # 10+
+guppy           = гуппи                                              # RARE- # 10+
 
 

@@ -1,33 +1,31 @@
-===
-grammar      # HEAD
-prepositions # HEAD
+***
+grammar
+prepositions
 at
-===
 
 ---
-= у, возле %% о месте
+at         = у, возле %% о месте                              # pix-
 
 ---
-= в, по %% о времени
-at night     = ночью
-at nights    = по ночам
-: They walked softly, as men do instinctively at night.
+at         = в, по %% о времени                               # pix-
+at night   = ночью
+at nights  = по ночам
+: They walked softly, ~ as men do instinctively ~ at night.
 
 ---
-= в, на %% о месте, ~ где совершается ~ какой-либо процесс
-be at home   = быть дома
-
-===
-= at с глаголами:
-===
-
-look at      = смотреть на
-laugh at     = смеяться над
-knock at     = стучать в
+at         = в, на %% о месте, ~ где совершается ~ какой-либо процесс # pix-
+be at home = быть дома
 
 ===
 
-: He laughed at me, for my words were empty, and he knew it.
+look at    = смотреть на
+laugh at   = смеяться над
+knock at   = стучать в
+
+===
+
+: He laughed at me, ~ for my words were empty, ~ and he knew it.
+
 
 
 

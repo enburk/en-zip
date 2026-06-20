@@ -1,8 +1,9 @@
+***
 grammar
 small words
 # pix?
 
-all %% {determiner}, ~ {pronoun}, ~ {noun} = все, всё
+all %% {determiner} ~ {pronoun} ~ {noun} = все, всё
 
 ===
 

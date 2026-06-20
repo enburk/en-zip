@@ -83,16 +83,7 @@ namespace content
                     j->order)
                     j++;
 
-                int n = (int)(j - i);
-                for (int nn=n; --nn;)
-                {
-                    int m;
-                    m = aux::random(0, n-1);
-                    std::rotate(i, i+m, j);
-                    m = aux::random(0, n-1);
-                    std::rotate(i, i+m, j);
-                }
-
+                aux::shuffle(i, j);
                 i = j;
             }
 

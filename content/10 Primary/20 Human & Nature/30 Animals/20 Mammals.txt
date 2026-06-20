@@ -10,6 +10,7 @@ mule                = мул                  # RARE+ /// (mule II шлепан�
 dromedary           = дромадер %% одногорбый верблюд # RARE+ # 16+
 antelope            = антилопа
 
+---
 [American] bison    = бизон %% (Bison bison)
 [European] bison    = зубр %% (Bison bonasus)
 yak                 = як

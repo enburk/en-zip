@@ -1,8 +1,9 @@
+***
 grammar
 prepositions
+for     = для
 
 ===
-for     = для                                      # pix-
 for me  = для меня, мне, ~ по мне (по моему мнению) # pix-
 for you = для тебя, тебе                           # pix-
 for us  = для нас, нам                             # pix-
@@ -10,6 +11,7 @@ for us  = для нас, нам                             # pix-
 
 : For me, this is smart.
 : It's for you. -- What's it for?
+
 
 
 

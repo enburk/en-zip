@@ -142,6 +142,19 @@ namespace app::one
 
             entries.truncate(i);
 
+            if (i > 0)
+            {
+                auto& e = entries[i++];
+                e.number = -1;
+                e.new_topic = false;
+                e.new_chain = true;
+                e.topic = &(theme->units.back());
+                e.script.html = extracolor(big(big("...")));
+                e.seconds = 3;
+                e.hide();
+                e.load();
+            }
+
             current = 0;
             resize();
             load();

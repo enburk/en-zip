@@ -1,8 +1,19 @@
 basic ~ vocabulary
 
-star cluster = звёздное скопление
-nebula       = туманность /// %% plural: nebulae
-black hole   = чёрная дыра
+universe          = вселенная, ~ мир, космос
+stars @ astronomy = звезды
+
+===
+
+constellation     = созвездие
+star cluster      = звёздное скопление
+
+nebula            = туманность /// %% plural: nebulae
+black hole        = чёрная дыра
+
+***
+Moon              = Луна /// the moon//the Moon
+moon              = луна, спутник
 
 
 

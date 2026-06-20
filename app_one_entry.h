@@ -31,6 +31,7 @@ namespace app::one
         bool widen = false;
         bool wide  = false;
         bool head  = false;
+        int seconds = 0;
         int clicked = 0;
         str text;
 
@@ -54,6 +55,9 @@ namespace app::one
         void init ()
         {
             reset();
+
+            if (number == -1)
+                return;
 
             array<media::index> audios;
             array<media::index> sounds;
@@ -148,6 +152,13 @@ namespace app::one
             player.audio_index += sound_index;
             player.video_index  = video_index;
 
+            for (auto& opt: entry.opt.external)
+            if (opt.size() == 5 and opt.ends_with("sec"))
+            {
+                if (opt[0] == '+') seconds += std::stoi(str(opt[1])); else
+                if (opt[0] == '-') seconds -= std::stoi(str(opt[1]));
+            }
+
             credia.hide();
             credib.hide();
             credic.hide();
@@ -160,7 +171,7 @@ namespace app::one
         {
             auto speed = app::speed;
             if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
-            player.stay = gui::time{int((1000.0 +
+            player.stay = gui::time{int((1000.0 + 1000*seconds +
                 video_index.title.size() * 10.0 +
                 text.size() * 10.0) /
                 speed)};

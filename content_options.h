@@ -58,7 +58,7 @@ namespace content
                 static array<str> internals = str("DEL, pix-, pix?, audio-, sound-, uk-, us-, +ru, uk+us, duple, sic!").split_by(", ");
                 static array<str> externals = str("1, 2, 3, 4, Ru, HEAD, POEM, SOUND, uk+us"
                 "rare, formal, informal, literary, old-fashioned, "
-                "-1sec, +1sec, +2sec, +3sec, +4sec, +5sec"
+                "-1sec, +1sec, -2sec, +2sec, +3sec, +4sec, +5sec"
                 ).split_by(", ");
 
                 s.strip(" \t");

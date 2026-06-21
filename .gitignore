@@ -21,6 +21,8 @@ test.quot.html.txt
 
 content/.src/
 
+vcpkg_installed/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

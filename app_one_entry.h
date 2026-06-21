@@ -56,7 +56,7 @@ namespace app::one
         {
             reset();
 
-            if (number == -1)
+            if (number < 0)
                 return;
 
             array<media::index> audios;
@@ -179,7 +179,7 @@ namespace app::one
 
         void translate ()
         {
-            if (number == -1)
+            if (number < 0)
                 return;
 
             auto const& entry =
@@ -194,7 +194,11 @@ namespace app::one
             and entry.eng.size() < audio_index.title.size())
             {
                 html = media::canonical(audio_index.title);
-                if (audio_index.credit != "") html += "<br>"
+            }
+
+            if (vocal and audio_index.credit != "")
+            { 
+                html += "<br>"
                 "<div style=\"line-height: 20%\"><br></div>" +
                 gray(small(media::canonical(audio_index.credit)));
             }

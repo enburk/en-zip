@@ -85,11 +85,13 @@ namespace app::one
 
             entries.clear();
 
+            unit* last_topic = nullptr;
+
             for (unit& topic: theme->units)
             {
                 if (topic.kind != unit::topic) continue;
 
-                bool new_topic = true;
+                bool new_topic = true; last_topic = &topic;
 
                 for (unit& chain: topic.units)
                 {
@@ -142,15 +144,16 @@ namespace app::one
 
             entries.truncate(i);
 
-            if (i > 0)
+            if (last_topic) for (int j=0; j<2; j++)
             {
                 auto& e = entries[i++];
-                e.number = -1;
+                e.number = -2;
                 e.new_topic = false;
-                e.new_chain = true;
-                e.topic = &(theme->units.back());
+                e.new_chain = j == 0;
+                e.topic = last_topic;
                 e.script.html = extracolor(big(big("...")));
-                e.seconds = 3;
+                e.seconds = 1;
+                e.speedup();
                 e.hide();
                 e.load();
             }

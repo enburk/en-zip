@@ -21,6 +21,7 @@ namespace app::video
 
 #define using(x) decltype(medio.x)& x = medio.x;
         using(mute)
+        using(speed)
         using(volume)
         using(loading)
         using(playing)
@@ -181,6 +182,10 @@ namespace app::video
             if (what == &mute)
                 video.mute =
                 mute;
+
+            if (what == &speed)
+                video.speed =
+                speed;
         }
     };
 }

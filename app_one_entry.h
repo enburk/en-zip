@@ -37,6 +37,7 @@ namespace app::one
 
 #define using(x) decltype(player.x)& x = player.x;
         using(mute)
+        using(speed)
         using(volume)
         using(loading)
         using(playing)
@@ -170,6 +171,7 @@ namespace app::one
         void speedup ()
         {
             auto speed = app::speed;
+            if (speed > 1.1) player.speed = speed;
             if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
             player.stay = gui::time{int((1000.0 + 1000*seconds +
                 video_index.title.size() * 10.0 +
@@ -192,16 +194,12 @@ namespace app::one
             if (vocal
             and entry.rus == ""
             and entry.eng.size() < audio_index.title.size())
-            {
+                // aidio has corresponding .txt file
                 html = media::canonical(audio_index.title);
-            }
 
-            if (vocal and audio_index.credit != "")
-            { 
-                html += "<br>"
+            if (vocal and audio_index.credit != "") html += "<br>"
                 "<div style=\"line-height: 20%\"><br></div>" +
                 gray(small(media::canonical(audio_index.credit)));
-            }
 
             text = doc::html::untagged(html);
             speedup();

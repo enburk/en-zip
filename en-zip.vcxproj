@@ -89,6 +89,9 @@
     <IntDir>.vstudio\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)\.vstudio\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

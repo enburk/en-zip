@@ -1,5 +1,6 @@
 ﻿#pragma once
 #define AUXS_USE_OGG
+#define AUXS_USE_SOUNDTOUCH
 #include <unordered_map>
 #include <unordered_set>
 #include "../auxs/sys_io_in.h"

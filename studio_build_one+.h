@@ -225,7 +225,7 @@ namespace studio::one
                 audio.load(
                 decoder.output,
                 decoder.channels,
-                decoder.samples,
+                decoder.samplerate,
                 decoder.bps);
 
                 duration = int(audio.duration());

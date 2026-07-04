@@ -115,7 +115,8 @@ namespace media::audio
         {
             std::filesystem::create_directories(cache.parent_path());
 
-            if (original.extension() == ".ogg")
+            if (original.extension() == ".ogg"
+            or  original.extension() == ".mp3")
             std::filesystem::copy(original, cache,
             std::filesystem::copy_options::overwrite_existing); else
             combine(array<path>{original}, cache, 0.1, 0.0, 0.0, false);
@@ -188,7 +189,9 @@ namespace media::audio
 
         path fn = std::string(r.id);
         str stem = str(fn.stem());
-        str ext = ".ogg";
+        str ext = r.path.extension().string();
+        if (ext != ".mp3")
+            ext  = ".ogg";
 
         str time_size = r.file_time() + " " + r.file_size();
         time_size.replace_all("/", "-");

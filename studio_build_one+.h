@@ -228,7 +228,7 @@ namespace studio::one
                 decoder.samples,
                 decoder.bps);
 
-                duration = int(audio.duration);
+                duration = int(audio.duration());
 
                 sounds_lengths += str(duration) + " " + path2str(r.path);
                 sounds_lengths_update = true;

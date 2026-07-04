@@ -243,7 +243,7 @@ widget<App>
         {
             str s = speed.text.text;
             double k = std::stof(s) - 0.1;
-            if (k < 0.1) k = 0.1;
+            if (k < 0.5) k = 0.5;
             speed.text.text =
             std::format("{:1.1f}", k);
         }
@@ -296,7 +296,7 @@ widget<App>
             str s = speed.text.text;
             double k = std::stof(s);
             k += 0.1 * delta/120;
-            if (k < 0.1) k = 0.1;
+            if (k < 0.5) k = 0.5;
             if (k > 2.0) k = 2.0;
             speed.text.text =
             std::format("{:1.1f}", k);

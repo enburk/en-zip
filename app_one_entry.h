@@ -171,7 +171,7 @@ namespace app::one
         void speedup ()
         {
             auto speed = app::speed;
-            if (speed > 1.1) player.speed = speed;
+            player.speed = app::speed;
             if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
             player.stay = gui::time{int((1000.0 + 1000*seconds +
                 video_index.title.size() * 10.0 +

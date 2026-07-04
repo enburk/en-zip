@@ -148,6 +148,9 @@ namespace app::video
             {
                 if (title.link != "")
                 start = gui::time::now;
+
+                duration = video.duration;
+                elapsed = video.elapsed;
             }
 
             auto speedup = [&]()

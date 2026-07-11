@@ -29,6 +29,7 @@ str white     (str s) { return "<font color=#FFFFFF>" + s + "</font>"; }
 str black     (str s) { return "<font color=#000000>" + s + "</font>"; }
 str blue      (str s) { return "<font color=#000080>" + s + "</font>"; }
 str lightblue (str s) { return "<font color=#0000FF>" + s + "</font>"; }
+str topiccolor(str s) { return "<font color=#000080>" + s + "</font>"; }
 str extracolor(str s) { return "<font color=#FF8F00>" + s + "</font>"; }
 str dark      (str s) { return "<font color=#505050>" + s + "</font>"; }
 str gray      (str s) { return "<font color=#808080>" + s + "</font>"; }

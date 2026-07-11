@@ -79,6 +79,14 @@ namespace app::one
             or  not theme->kind == unit::theme)
                 return;
 
+            bool extra = theme->name == "''Extra''";
+
+            auto themecolor = [extra](str html) {
+                return extra ?
+                extracolor(html):
+                topiccolor(html);
+            };
+
             Stop();
 
             int i = 0;
@@ -87,11 +95,15 @@ namespace app::one
 
             unit* last_topic = nullptr;
 
+            bool start_of_theme = true;
+
             for (unit& topic: theme->units)
             {
                 if (topic.kind != unit::topic) continue;
 
                 bool new_topic = true; last_topic = &topic;
+
+                bool start_of_topic = true;
 
                 for (unit& chain: topic.units)
                 {
@@ -128,11 +140,27 @@ namespace app::one
                             arrange(j, i);
                             j = i; }
 
+                        if (start_of_topic and not start_of_theme
+                        and course.entries[leaf.entry].opt.external.contains("HEAD")
+                        and course.entries[leaf.entry].eng != "***")
+                        {
+                            auto& e = entries[i++];
+                            e.number = -2;
+                            e.topic = last_topic;
+                            e.script.html = themecolor(big(big("***")));
+                            e.seconds = 1;
+                            e.speedup();
+                            e.hide();
+                            e.load();
+                        }
+
+                        start_of_topic = false;
+                        start_of_theme = false;
+
                         auto& e = entries[i++];
+                        e.extra = extra;
                         e.translated = translated;
                         e.number = leaf.entry;
-                        e.new_topic = false;
-                        e.new_chain = false;
                         e.topic = &topic;
                         e.hide();
                         e.load();
@@ -144,14 +172,14 @@ namespace app::one
 
             entries.truncate(i);
 
-            if (last_topic) for (int j=0; j<2; j++)
+            if (last_topic) for (int j=0; j<3; j++)
             {
                 auto& e = entries[i++];
                 e.number = -2;
                 e.new_topic = false;
                 e.new_chain = j == 0;
                 e.topic = last_topic;
-                e.script.html = extracolor(big(big("...")));
+                e.script.html = themecolor(big(big("...")));
                 e.seconds = 1;
                 e.speedup();
                 e.hide();

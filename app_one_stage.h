@@ -161,6 +161,8 @@ namespace app::one
             current = 0;
             resize();
             load();
+
+            entries.show();
         }
 
         void resize ()

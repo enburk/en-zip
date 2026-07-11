@@ -133,8 +133,8 @@ namespace app::one
             stage().topic->parent) sys::settings::save("app::one::path",
             stage().topic->parent->path);
 
-            if (not playmode.now)
-                fetcher.setup(2s);
+            //if (not playmode.now)
+            //    fetcher.setup(2s);
         }
 
         void speedup ()

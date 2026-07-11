@@ -88,7 +88,7 @@ namespace app::video
                 pixsize.x;
 
             title.resize(txtsize);
-            txtsize = title.textsize();
+            txtsize = title.text_size();
 
             if (pixsize.y + txtsize.y > maxsize.y)
             {

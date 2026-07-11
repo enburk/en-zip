@@ -118,8 +118,8 @@ namespace app::dic::video
 
             credit.resize(xy{w,h});
 
-            int w1 = script.textsize().x;
-            int w2 = credit.textsize().x;
+            int w1 = script.text_size().x;
+            int w2 = credit.text_size().x;
 
             w += 6*l;
             h += 6*l;

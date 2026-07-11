@@ -9,12 +9,12 @@ namespace app::one
     {
         gui::frame frame;
         video::player player;
-        text::view script;
-        text::view credia;
-        text::view credib;
-        text::view credic;
-        text::view credid;
-        text::view credit;
+        text::cell script;
+        gui::text::cell credia;
+        gui::text::cell credib;
+        gui::text::cell credic;
+        gui::text::cell credid;
+        text::cell credit;
 
         property<int>  number = -1;
         property<bool> translated = false;
@@ -243,6 +243,8 @@ namespace app::one
 
         xy resize (int w, int h)
         {
+            timing t0;
+
             int l = gui::metrics::line::width;
             int d = gui::metrics::text::height;
             int W = w;
@@ -256,8 +258,8 @@ namespace app::one
             script.coord = xywh(l, l, w, h);
             credit.coord = xywh(l, l, w, h);
 
-            script.resize(script.textsize());
-            credit.resize(credit.textsize() + xy(10,0));
+            script.resize(script.text_size());
+            credit.resize(credit.text_size() + xy(10,0));
 
             player.fit(xy{w, h - script.coord.now.h});
 

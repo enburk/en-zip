@@ -95,7 +95,7 @@ namespace eng::parser
         }
     }
 
-    void proceed (vocabulary& voc, array<token>& tokens, array<str>& excludes)
+    void proceed (vocabulary& voc, array<token>& tokens, array<str> const& excludes)
     {
         match best {-1, 0};
 

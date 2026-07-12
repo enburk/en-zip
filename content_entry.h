@@ -169,6 +169,15 @@ namespace content::out
             if (opt.internal.contains("uk+us")
                 and uk.empty() and us.empty())
                 uk = en, us = en, en.clear();
+
+            if (opt.internal.contains("uk|us")
+                and uk.size() == 1
+                and us.size() == 1)
+            {
+                en.clear(); en += uk.front() + "|" + us.front();
+                uk.clear();
+                us.clear();
+            }
         }
 
         bool the_noun () { return sense == "noun" or noun and not verb and not adxx; }
@@ -217,8 +226,7 @@ namespace content::out
 
             if (s.contains("\\\\"))
             {
-                str k =
-                s.extract_upto("\\\\");
+                str k = s.extract_upto("\\\\");
                 if (not k.contains("{Br.}")) k += " {Br.}";
                 if (not s.contains("{Am.}")) s += " {Am.}";
                 parse(k);
@@ -238,7 +246,7 @@ namespace content::out
                 not us.empty())
                 errors += "en after uk or us";
 
-            array<str> & audio =  br ? uk : am ? us : en;
+            array<str> & audio = br ? uk : am ? us : en;
 
             for (str marker: Eng_markers)
             s.replace_all(marker, "");

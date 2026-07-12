@@ -26,8 +26,8 @@ healthy complexion          = здоровый цвет лица
 
 ***
 humour\\humor               = настроение, нрав, ~ не только юмор              # 10+ /// потакать
-good-humoured\\good-humored = добродушный, ~ благодушный                      # 10+ # uk|us
-ill-humoured\\ill-humored   = в дурном настроении                             # 10+ # uk|us
+good-humoured\\good-humored = добродушный, ~ благодушный                      # uk|us # 10+
+ill-humoured\\ill-humored   = в дурном настроении                             # uk|us # 10+
 
 ***
 courage                     = мужество, отвага %% ''не'' кураж                # 10+
@@ -59,6 +59,7 @@ intelligent @ AI            = обладающий искусственным и
 intelligence @ mind         = ум, сообразительность
 intelligence @ espionage    = разведывательная служба, ~ разведывательные данные /// сведения, информация
 : Central Intelligence Agency
+
 
 
 

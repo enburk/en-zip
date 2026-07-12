@@ -12,7 +12,7 @@ natural number    = натуральное число  # 14+
 horizon           = горизонт
 dune              = дюна               # 10+
 oasis             = оазис
-peak @ mountain             = пик                # 10+
+peak @ mountain   = пик                # 10+
 canyon            = каньон
 
 climate           = климат
@@ -27,6 +27,7 @@ mineral           = минерал, ~ минеральный
 
 malachite         = малахит
 opal              = опал               # 10+
+
 
 
 

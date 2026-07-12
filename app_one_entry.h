@@ -72,8 +72,8 @@ namespace app::one
 
             int xlam = 0;
             for (auto& audio: audios)
-                if (audio.options.contains("xlam"))
-                    xlam++;
+            if (audio.options.contains("xlam"))
+                xlam++;
 
             if (xlam < audios.size())
                 audios.erase_if([](auto& audio){

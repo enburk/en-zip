@@ -1,35 +1,36 @@
 basic ~ vocabulary
 
 ===
-life                      = жизнь                 # pix-
-death                     = смерть                # pix-
+life                  = жизнь                                    # pix-
+death                 = смерть                                   # pix-
 : Death and Life
 ===
-live @ adjective %% {adjective}          = живой, реальный, ~ действующий # pix- /// laiv
-live @ verb %% {verb}              = жить                           # pix- /// liv
-die {v}                   = умереть, умирать, ~ затухать   # pix-
+live @ adjective %% {adjective} = живой, реальный, ~ действующий           # pix- /// laiv
+live @ verb %% {verb} = жить                                     # pix- /// liv
+die {v}               = умереть, умирать, ~ затухать             # pix-
 ===
 ***
 ===
 
-body  @ human {n}         = тело
-head  @ human {n}         = голова
-face  @ human {n}         = лицо
-shoulder @ human {n}      = плечо
-arm   @ human {n}         = рука
-hand  @ human {n}         = рука ~ (кисть)
-leg   @ human {n}         = нога
-knee  @ human {n}         = колено
+body  @ human {n}     = тело
+head  @ human {n}     = голова
+face  @ human {n}     = лицо
+shoulder @ human {n}  = плечо
+arm   @ human {n}     = рука
+hand  @ human {n}     = рука ~ (кисть)
+leg   @ human {n}     = нога
+knee  @ human {n}     = колено
 
 ---
-finger @ human {n}        = палец (на руке)
-thumb @ human {n}         = большой палец
-toe @ human {n}           = палец (на ноге)
-nails @ human {n}         = ногти
+finger @ human {n}    = палец (на руке)
+thumb @ human {n}     = большой палец
+toe @ human {n}       = палец (на ноге)
+nails @ human {n}     = ногти
 
-eye @ human {n}           = глаз
-ear @ human {n}           = ухо
-mouth @ human {n}         = рот
-lips @ human {n}          = губы
-cheek @ human {n}         = щека
+eye @ human {n}       = глаз
+ear @ human {n}       = ухо
+mouth @ human {n}     = рот
+lips @ human {n}      = губы
+cheek @ human {n}     = щека
+
 

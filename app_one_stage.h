@@ -29,7 +29,7 @@ namespace app::one
         using(error)
         #undef using
 
-        ~stage () { Stop(); }
+        ~stage () { stop_all(); }
 
         using unit = content::unit;
 
@@ -87,7 +87,7 @@ namespace app::one
                 topiccolor(html);
             };
 
-            Stop();
+            stop_all();
 
             int i = 0;
 
@@ -316,7 +316,7 @@ namespace app::one
             }
         }
 
-        void Stop ()
+        void stop_all ()
         {
             for (auto& slide: slides)
             slide.stop();

@@ -1,8 +1,6 @@
-= немного грамматики
-
 ===
-grammar         = грамматика # 8+
-parts of speech = части речи # 8+
+grammar         = грамматика /// pix
+parts of speech = части речи # HEAD
 ===
 
 

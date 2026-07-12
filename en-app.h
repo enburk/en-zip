@@ -25,7 +25,7 @@ widget<App>
     gui::button Conon;
     gui::button trans;
 
-    sfx::media::playback play;
+    sfx::media::Playback play;
     gui::button mode;
     gui::button slow;
     gui::button fast;
@@ -127,7 +127,7 @@ widget<App>
         sort  .coord = xywh(l+0*w+10*v, H-h+d, 2*v, h-d-d);
         shuff .coord = xywh(l+0*w+12*v, H-h+d, 2*v, h-d-d);
 
-        play  .coord = xywh(r-5*w-4*v, H-h+d, 2*w, h-d-d);
+        play  .coord = xywh(r-5*w- 4*v, H-h+d, 6*v, h-d-d);
         play.enabled = onetwo.selected.now == 0
         and not Conon.on.now;
 
@@ -220,17 +220,6 @@ widget<App>
         if (what == &Ones) Conon.on = false;
         if (what == &Twos) Conon.on = false;
 
-        if (what == &one)
-        {
-            play.play.show(one.status != sfx::media::state::playing);
-            play.stop.show(one.status == sfx::media::state::playing);
-        }
-        if (what == &two)
-        {
-            play.play.show(two.status != sfx::media::state::playing);
-            play.stop.show(two.status == sfx::media::state::playing);
-        }
-
         if (what == &trans)
         {
             sys::settings::save(
@@ -284,6 +273,10 @@ widget<App>
         if (what == &shuff) app::one::course.root.shuffle();
         if (what == &sort ) one_reload();
         if (what == &shuff) one_reload();
+
+        auto status = o ? one.status : two.status;
+        play.play.show(status != sfx::media::state::playing);
+        play.stop.show(status == sfx::media::state::playing);
     }
 
     bool mouse_sensible (xy) override { return true; }

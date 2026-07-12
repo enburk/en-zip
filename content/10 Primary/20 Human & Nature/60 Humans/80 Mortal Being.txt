@@ -1,5 +1,7 @@
-***
-
+===
+*** # HEAD
+*** # HEAD
+*** # HEAD
 ===
 jubilee        = юбилей /// # DELAY
 degradation    = деградация, ~ упадок, вырождение
@@ -16,6 +18,8 @@ catacombs      = катакомбы
 crypt          = крипта
 mausoleum      = мавзолей
 memorial       = мемориал, памятник
+
+===
 
 mummification  = мумификация
 sarcophagus    = саркофаг

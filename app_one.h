@@ -51,26 +51,22 @@ namespace app::one
             medio.stay();
             medio.play();
             stage().play();
-            notify();
         }
         void stop ()
         {
             medio.stop();
             stage().stop();
-            notify();
         }
 
         void next ()
         {
             stage().next();
-            notify();
         }
         void prev ()
         {
             medio.stop();
             stage().stop();
             stage().prev();
-            notify();
         }
 
         void Next ()
@@ -79,7 +75,7 @@ namespace app::one
             auto topic = stage().topic->next();
             if (not topic) return;
 
-            stop(); stage().Stop();
+            stop(); stage().stop_all();
 
             xywh
             r = stages.coord.now.local();
@@ -100,7 +96,7 @@ namespace app::one
             auto topic = stage().topic->prev();
             if (not topic) return;
 
-            stop(); stage().Stop();
+            stop(); stage().stop_all();
 
             xywh
             r = stages.coord.now.local();
@@ -116,7 +112,7 @@ namespace app::one
             play();
         }
 
-        void go (str path, bool app_shown = true)
+        void go (str path)
         {
             stage().go(course.find(path), shown());
 

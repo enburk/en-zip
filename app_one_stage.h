@@ -240,9 +240,9 @@ namespace app::one
 
                 if (not entry.pixed) y += d;
 
-                entry.coord = xywh(
+                entry.coord.go(xywh(
                 slides[i-1].coord.now.x,
-                slides[i-1].coord.now.y + y, ww, hh);
+                slides[i-1].coord.now.y + y, ww, hh));//, 500ms);
                 slides[i-1].entries += &entry;
 
                 if (entry.widen)
@@ -286,7 +286,7 @@ namespace app::one
                 if (hh>=H) continue;
 
                 for (auto& e: s.entries)
-                e->shift(xy(0, H/2-hh/2));
+                e->shift(xy(0, H/2-hh/2));//, 500ms);
             }
         }
 
@@ -410,18 +410,23 @@ namespace app::one
 
             if (what == &entries)
             {
-                //xy p =
-                //sys::mouse::position() -
-                //video.players[video.current].
-                //next_origin();
+                auto entry = entries.notifier;
+                xy origin0 = entry->coord.to.origin;
+                xy shift = sys::mouse::position() - origin0;
 
-                clicked = entries.
-                notifier->clicked;
+                clicked = entry->clicked;
                 notify();
 
-                //sys::mouse::position(p +
-                //video.players[video.current].
-                //next_origin());
+                xy origin1 = entry->coord.to.origin;
+                if (origin1.y < 0 or origin1.y >= coord.now.h/height*height)
+                scroll((origin0.y - origin1.y)/height*height, 0ms);
+
+                xy origin2 = entry->coord.to.origin;
+                if (origin2.y >= coord.now.h/height*height)
+                scroll(-height, 0ms);
+
+                xy origin3 = entry->coord.to.origin;
+                sys::mouse::position(shift + origin3);
             }
 
             if (what == &translated
@@ -441,7 +446,7 @@ namespace app::one
                     s.mute = mute;
         }
 
-        void scroll (int delta)
+        void scroll (int delta, gui::time time = 500ms)
         {
             int top =
             slides.empty() ? 0 :
@@ -461,8 +466,8 @@ namespace app::one
 
             delta = newtop - top;
 
-            for (auto& e: entries) e.shift(xy{0,delta}, 500ms);
-            for (auto& s: slides ) s.shift(xy{0,delta}, 500ms);
+            for (auto& e: entries) e.shift(xy{0,delta}, time);
+            for (auto& s: slides ) s.shift(xy{0,delta}, time);
         }
 
         bool on_mouse_wheel (xy, int delta) override

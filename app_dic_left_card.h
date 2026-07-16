@@ -58,6 +58,7 @@ namespace app::dic::left
                 player.hide();
                 player.prev.enabled = n > 1;
                 player.next.enabled = n > 1;
+                player.video.slowdown = 1.5;
                 player.volume = volume;
             }
 

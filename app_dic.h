@@ -13,6 +13,9 @@ namespace app::dic
 
         void go (int n)
         {
+            clicked = n;
+            left.clicked = n;
+            list.clicked = n;
             list.select(n);
             left.select(n);
             focus = &list;

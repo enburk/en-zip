@@ -276,12 +276,13 @@ widget<App>
 
         int clicked = -1;
         if (what == &one) clicked = one.clicked;
+        if (what == &two) clicked = two.clicked;
         if (clicked >= 0)
         {
             if (dicon.on and dic.clicked == clicked)
                 dicon.on = false; else
-                dic.go(clicked),
-                dicon.on = true;
+                dicon.on = true, // order...:
+                dic.go(clicked); // important
         }
 
         play.play.show(one.status != sfx::media::state::playing);

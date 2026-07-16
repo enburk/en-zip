@@ -8,6 +8,8 @@ namespace app::two
         property<bool> playmode = false;
         property<bool> translated = false;
 
+        int clicked = 0;
+
         sfx::media::medio medio;
 
         using state = sfx::media::state;

@@ -171,24 +171,15 @@ namespace app::dic::video
                 next.text.html = monospace(bold(u8"→"));
             }
 
-            if (what == &credit) { clicked = credit.clicked; notify(); }
-            if (what == &script) { clicked = script.clicked; notify(); }
+            if (what == &credit) clicked = credit.clicked, notify();
+            if (what == &script) clicked = script.clicked, notify();
+            if (what == &video ) clicked = video .clicked, notify();
 
             if (what == &next) { clicked = -1; notify(); }
             if (what == &prev) { clicked = -2; notify(); }
  
             if (what == &Play) { mute = false; play(); mute = true; }
             if (what == &Stop) { mute = true;  stop(); }
-
-            if (what == &video)
-            {
-                using sfx::media::state;
-                if (video.duration.ms > 0)
-                Stop.show(video.status == state::playing),
-                Play.show(video.status == state::finished
-                       or video.status == state::paused
-                       or video.status == state::ready);
-            }
  
             if (what == &volume)
                 video.volume =
@@ -197,6 +188,13 @@ namespace app::dic::video
             if (what == &mute)
                 video.mute =
                 mute;
+
+            using sfx::media::state;
+            if (video.duration.ms > 0)
+            Stop.show(video.status == state::playing),
+            Play.show(video.status == state::finished
+                    or video.status == state::paused
+                    or video.status == state::ready);
         }
     };
 }

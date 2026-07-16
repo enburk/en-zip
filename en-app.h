@@ -274,9 +274,18 @@ widget<App>
         if (what == &sort ) one_reload();
         if (what == &shuff) one_reload();
 
-        auto status = o ? one.status : two.status;
-        play.play.show(status != sfx::media::state::playing);
-        play.stop.show(status == sfx::media::state::playing);
+        int clicked = -1;
+        if (what == &one) clicked = one.clicked;
+        if (clicked >= 0)
+        {
+            if (dicon.on and dic.clicked == clicked)
+                dicon.on = false; else
+                dic.go(clicked),
+                dicon.on = true;
+        }
+
+        play.play.show(one.status != sfx::media::state::playing);
+        play.stop.show(one.status == sfx::media::state::playing);
     }
 
     bool mouse_sensible (xy) override { return true; }

@@ -1,15 +1,10 @@
 #pragma once
 #include "app.h"
-#include "app_two_stage.h"
 namespace app::two
 {
     struct view:
     widget<view>
     {
-        stage  stages[3];
-        stage& stage = stages[1];
-        str where;
-
         property<bool> playmode = false;
         property<bool> translated = false;
 
@@ -42,29 +37,17 @@ namespace app::two
 
         void play ()
         {
-            medio.stay();
-            medio.play();
-            stage.play();
-            notify();
+            medio.done();
         }
         void stop ()
         {
-            medio.stop();
-            stage.stop();
-            notify();
         }
 
         void next ()
         {
-            stage.next();
-            notify();
         }
         void prev ()
         {
-            medio.stop();
-            stage.stop();
-            stage.prev();
-            notify();
         }
 
         void Next ()
@@ -74,75 +57,8 @@ namespace app::two
         {
         }
 
-        void go (str path, bool app_shown = true)
+        void go (str)
         {
-            stage.where = course.find(path);
-            if (app_shown)
-            stage.fill();
-
-            where =
-            stage.theme ?
-            stage.theme->path:red(bold(path));
-            where.replace_all("/", blue("/"));
-            where.replace_all("''Extra''",
-                extracolor("Extra"));
-
-            sys::settings::save(
-            "app::two::path",
-            stage.theme ?
-            stage.theme->path:
-                "");
-        }
-
-        void on_change (void* what) override
-        {
-            if (what == &coord and
-                coord.was.size !=
-                coord.now.size)
-            {
-                stage.coord = coord.now.local();
-            }
-
-            if (what == &playing)
-            {
-                switch(stage.status) {
-                case state::ready:
-                case state::paused:
-                    stage.show();
-                    stage.play();
-                    notify();
-                    break;
-                case state::finished:
-                    //stage.next();
-                    //stage.show();
-                    //stage.play();
-                    medio.done();
-                    notify();
-                    break;
-                default:
-                    break;
-                }
-            }
-
-            if (what == &playmode)
-                for (auto& s: stages)
-                    s.playmode =
-                      playmode;
-
-            if (what == &translated)
-                for (auto& s: stages)
-                    s.translated =
-                      translated;
-
-            if (what == &volume)
-                for (auto& s: stages)
-                    s.volume =
-                      volume;
-
-            if (what == &mute)
-                for (auto& s: stages)
-                    s.mute =
-                      mute;
         }
     };
 }

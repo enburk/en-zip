@@ -310,9 +310,6 @@ namespace app::one
                 coord.was.size !=
                 coord.now.size)
             {
-                // resize(
-                // coord.now.w,
-                // coord.now.h);
                 // frame.coord =
                 // coord.now.local();
             }
@@ -332,9 +329,9 @@ namespace app::one
                 translate();
             }
 
-            if (what == &credit) { clicked = credit.clicked; notify(); }
-            if (what == &script) { clicked = script.clicked; notify(); }
-            if (what == &player) { clicked = player.clicked; notify(); }
+            if (what == &credit) clicked = credit.clicked, notify();
+            if (what == &script) clicked = script.clicked, notify();
+            if (what == &player) clicked = player.clicked, notify();
         }
 
         bool mouse_sensible (xy) override { return true; }
@@ -361,9 +358,7 @@ namespace app::one
         {
             if (button == "left" and down)
             player.stop(),
-            player.play(),
-            clicked = -1,
-            notify();
+            player.play();
         }
     };
 }

@@ -9,6 +9,14 @@ namespace app::dic
         left::area left;
         list::area list;
         gui::splitter splitter;
+        int clicked = 0;
+
+        void go (int n)
+        {
+            list.select(n);
+            left.select(n);
+            focus = &list;
+        }
 
         void reload () try
         {
@@ -39,6 +47,8 @@ namespace app::dic
             if (what == &left) focus = &list;
             if (what == &left) list.select(left.clicked);
             if (what == &list) left.select(list.clicked);
+            if (what == &left) clicked = left.clicked, notify();
+            if (what == &list) clicked = list.clicked, notify();
         }
 
         void on_key(str key, bool down, bool input) override

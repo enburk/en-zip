@@ -20,6 +20,7 @@ namespace app::one
         sfx::media::medio medio;
         gui::timer fetcher;
         gui::timer nexter;
+        int clicked = 0;
 
         using state = sfx::media::state;
 
@@ -165,12 +166,10 @@ namespace app::one
                 case state::paused:
                     stage().show();
                     stage().play();
-                    notify();
                     break;
                 case state::finished:
                     nexter.setup(1ms);
                     medio.done();
-                    notify();
                     break;
                 default:
                     break;
@@ -188,6 +187,12 @@ namespace app::one
             {
                 nexter.stop();
                 Next();
+            }
+
+            if (what == &stages)
+            {
+                clicked = stages.
+                notifier->clicked;
                 notify();
             }
 

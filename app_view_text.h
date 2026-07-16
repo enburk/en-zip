@@ -4,7 +4,6 @@ namespace app::text
 {
     void prelink (gui::text::view& view, xy p, array<str> const& forbidden_links)
     {
-        p -= view.coord.now.origin;
         auto token = view.hovered_token(p);
 
         if (not token
@@ -112,7 +111,6 @@ namespace app::text
         {
             prelink(*this, p, forbidden_links);
 
-            p -= coord.now.origin;
             auto token = hovered_token(p);
             link = token ? token->link : "";
             mouse_image = link == "" ? "arrow" : "hand";
@@ -138,11 +136,11 @@ namespace app::text
 
         void on_mouse_click (xy p, str button, bool down) override
         {
-            p -= coord.now.origin;
             auto token = hovered_token(p);
 
             if (down
             and token
+            and button == "left"
             and not sys::keyboard::ctrl
             and token->link != "")
             {

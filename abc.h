@@ -88,6 +88,7 @@ str bold_italic (str s)
             html += c;
         }
     }
+    html.truncate(); // ' '
     if (ital) html += "</i>";
     if (bold) html += "</b>";
     return html;

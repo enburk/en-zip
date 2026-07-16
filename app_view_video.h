@@ -65,14 +65,12 @@ namespace app::video
                 logs::media << media::log(video_index);
                 logs::media << media::log(audio_index);
                 start = gui::time::now;
-                notify();
             }
         }
         void stop ()
         {
             if (medio.stop())
-                video.stop(),
-                notify();
+                video.stop();
         }
 
         void fit (xy maxsize, gui::time time={}) override
@@ -108,10 +106,6 @@ namespace app::video
 
         void on_change (void* what) override
         {
-            if (what == & title)
-                clicked = title.clicked,
-                notify (& title);
-
             using sfx::media::state;
 
             if (what == &loading
@@ -129,7 +123,6 @@ namespace app::video
                 }
                 catch (std::exception const& e) {
                 medio.fail(e.what()); }
-                notify();
             }
 
             if (what == &loading
@@ -141,7 +134,6 @@ namespace app::video
                 duration = video.
                 duration;
                 medio.stay();
-                notify();
             }
 
             if (what == &playing)
@@ -167,16 +159,18 @@ namespace app::video
                 medio.done();
                 stay.ms = int(std::round(
                 stay.ms * slowdown));
-                notify();
             }
 
             if (what == &playing
             or  what == &loading)
             {
                 if (video.status == state::failed)
-                medio.fail(video.error),
-                notify();
+                medio.fail(video.error);
             }
+
+            if (what == &title)
+                clicked = title.clicked,
+                notify();
  
             if (what == &volume)
                 video.volume =

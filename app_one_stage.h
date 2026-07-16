@@ -11,6 +11,7 @@ namespace app::one
         widgetarium<entry> entries;
         property<bool> playmode = false;
         property<bool> translated = false;
+        int clicked = 0;
         int current = 0;
         int Height = 0;
         int height = 0;
@@ -405,6 +406,13 @@ namespace app::one
                 default:
                     break;
                 }
+            }
+
+            if (what == &entries)
+            {
+                clicked = entries.
+                notifier->clicked;
+                notify();
             }
 
             if (what == &translated

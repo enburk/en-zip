@@ -14,8 +14,6 @@ namespace app::dic::video
         app::video::player video;
         text::view& script = video.title;
         text::view  credit;
-        gui::button Play;
-        gui::button Stop;
         gui::button prev;
         gui::button next;
 
@@ -85,9 +83,6 @@ namespace app::dic::video
             video.audio_index = audio_index;
             video.video_index = video_index;
             video.load();
-
-            Play.hide();
-            Stop.hide();
         }
 
         void fit (xy size, gui::time t={}) override
@@ -126,8 +121,6 @@ namespace app::dic::video
             if (w1 + 7*d + w2 > w)
             h += d;
 
-            Play.resize(xy{d*3/2, d-d/7});
-            Stop.resize(xy{d*3/2, d-d/7});
             prev.resize(xy{d*3/2, d-d/7});
             next.resize(xy{d*3/2, d-d/7});
             prev.text.shift = xy{0, -d/3};
@@ -139,11 +132,9 @@ namespace app::dic::video
             canvas.coord = r; r.deflate(frame2.thickness.now);
 
             video .move_to(r.lt);
-            credit.move_to(r.rb - xy{d*10/2, d} - xy{w2,4*l});
-            Play  .move_to(r.rb - xy{d* 9/2, d} + xy{0, d/7});
-            Stop  .move_to(r.rb - xy{d* 9/2, d} + xy{0, d/7});
-            prev  .move_to(r.rb - xy{d* 6/2, d} + xy{0, d/7});
-            next  .move_to(r.rb - xy{d* 3/2, d} + xy{0, d/7});
+            credit.move_to(r.rb - xy{d*7/2, d} - xy{w2,4*l});
+            prev  .move_to(r.rb - xy{d*6/2, d} + xy{0, d/7});
+            next  .move_to(r.rb - xy{d*3/2, d} + xy{0, d/7});
 
             resize(xy{w,h});
         }
@@ -153,14 +144,6 @@ namespace app::dic::video
 
         void on_change (void* what) override
         {
-            if (what == &coord)
-            {
-                rgba c = rgba::white;
-                int r = gui::metrics::text::height/16;//8;
-                Play.icon.load(pix::util::icon("play.play",  Play.coord.now.size, c, r));
-                Stop.icon.load(pix::util::icon("play.pause", Stop.coord.now.size, c, r));
-            }
-
             if (what == &skin)
             {
                 frame1.color = gui::skins[skin].ultralight.first;
@@ -178,9 +161,6 @@ namespace app::dic::video
             if (what == &next) { clicked = -1; notify(); }
             if (what == &prev) { clicked = -2; notify(); }
  
-            if (what == &Play) { mute = false; play(); mute = true; }
-            if (what == &Stop) { mute = true;  stop(); }
- 
             if (what == &volume)
                 video.volume =
                 volume;
@@ -188,13 +168,6 @@ namespace app::dic::video
             if (what == &mute)
                 video.mute =
                 mute;
-
-            using sfx::media::state;
-            if (video.duration.ms > 0)
-            Stop.show(video.status == state::playing),
-            Play.show(video.status == state::finished
-                    or video.status == state::paused
-                    or video.status == state::ready);
         }
     };
 }

@@ -410,9 +410,18 @@ namespace app::one
 
             if (what == &entries)
             {
+                //xy p =
+                //sys::mouse::position() -
+                //video.players[video.current].
+                //next_origin();
+
                 clicked = entries.
                 notifier->clicked;
                 notify();
+
+                //sys::mouse::position(p +
+                //video.players[video.current].
+                //next_origin());
             }
 
             if (what == &translated

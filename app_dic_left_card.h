@@ -112,6 +112,7 @@ namespace app::dic::left
                 coord.now.size)
             {
                 text.coord = coord.now.local();
+                video.repeat = true;
                 video_size();
             }
             if (what == &text.scroll.y

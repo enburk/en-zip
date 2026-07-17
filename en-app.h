@@ -128,8 +128,6 @@ widget<App>
         shuff .coord = xywh(l+0*w+12*v, H-h+d, 2*v, h-d-d);
 
         play  .coord = xywh(r-5*w- 4*v, H-h+d, 6*v, h-d-d);
-        play.enabled = onetwo.selected.now == 0
-        and not Conon.on.now;
 
         conon .coord = xywh(r-3*w- 3*v, H-h+d, 1*v, h-d-d);
         Conon .coord = xywh(r-3*w- 2*v, H-h+d, 1*v, h-d-d);
@@ -285,6 +283,7 @@ widget<App>
                 dic.go(clicked); // important
         }
 
+        play.enabled = onetwo.selected.now == 0 and not Conon.on.now;
         play.play.show(one.status != sfx::media::state::playing);
         play.stop.show(one.status == sfx::media::state::playing);
     }

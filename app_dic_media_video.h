@@ -36,6 +36,8 @@ namespace app::dic::video
         void stop () { video.stop (); }
         void reset() { video.reset(); }
 
+        bool playable () { return video.medio.playable(); }
+
         void load (
             media::index video_index,
             media::index audio_index,

@@ -65,9 +65,7 @@ namespace app::dic::left
             using state = sfx::media::state;
 
             if (players.size() > 0)
-            if (players[0].status == state::ready   or
-                players[0].status == state::playing or
-                players[0].status == state::finished)
+            if (players[0].playable())
                 players[0].show();
 
             video_size();

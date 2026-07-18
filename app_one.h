@@ -59,6 +59,12 @@ namespace app::one
             stage().stop();
         }
 
+        void Stop ()
+        {
+            medio.stop();
+            stage().Stop();
+        }
+
         void next ()
         {
             stage().next();
@@ -76,7 +82,7 @@ namespace app::one
             auto topic = stage().topic->next();
             if (not topic) return;
 
-            stop(); stage().stop_all();
+            stop();
 
             xywh
             r = stages.coord.now.local();
@@ -97,7 +103,7 @@ namespace app::one
             auto topic = stage().topic->prev();
             if (not topic) return;
 
-            stop(); stage().stop_all();
+            stop();
 
             xywh
             r = stages.coord.now.local();
@@ -215,6 +221,8 @@ namespace app::one
                 for (auto& s: stages)
                     s.mute =
                       mute;
+
+            notify(&status);
         }
     };
 }

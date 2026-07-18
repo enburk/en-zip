@@ -19,7 +19,7 @@ widget<App>
     app::Contents Twos;
     gui::splitter splitter1;
     gui::splitter splitter2;
-    gui::selector onetwo;
+    gui::selector apps;
     gui::button dicon;
     gui::button conon;
     gui::button Conon;
@@ -76,9 +76,9 @@ widget<App>
         slow.repeat_lapse = 16ms;
         fast.repeat_lapse = 16ms;
         speed.enabled = false;
-        onetwo.buttons(0).text.text = "course";
-        onetwo.buttons(1).text.text = "catalog";
-        onetwo.selected = 0;
+        apps.buttons(0).text.text = "course";
+        apps.buttons(1).text.text = "catalog";
+        apps.selected = 0;
         ones.reload("app::ones", app::one::course.root);
         twos.reload("app::twos", app::two::course.root);
         Ones.reload("app::Ones", app::one::course.root);
@@ -132,20 +132,24 @@ widget<App>
         conon .coord = xywh(r-3*w- 3*v, H-h+d, 1*v, h-d-d);
         Conon .coord = xywh(r-3*w- 2*v, H-h+d, 1*v, h-d-d);
         trans .coord = xywh(r-3*w- 1*v, H-h+d, 1*v, h-d-d);
-        onetwo.coord = xywh(r-3*w- 0*v, H-h+d, 2*w, h-d-d);
+        apps  .coord = xywh(r-3*w- 0*v, H-h+d, 2*w, h-d-d);
         dicon .coord = xywh(r-1*w- 0*v, H-h+d, 1*w, h-d-d);
         where .coord = xywh(r+0*w+ 1*v, H-h+d, 9*w, h-d-d);
 
         if (not conon.on.now) l = 0;
         if (not dicon.on.now) r = W;
 
-        one .show(onetwo.selected.now == 0);
-        two .show(onetwo.selected.now == 1);
-        ones.show(onetwo.selected.now == 0 and conon.on.now);
-        twos.show(onetwo.selected.now == 1 and conon.on.now);
-        Ones.show(onetwo.selected.now == 0 and Conon.on.now);
-        Twos.show(onetwo.selected.now == 1 and Conon.on.now);
+        one .show(apps.selected.now == 0);
+        two .show(apps.selected.now == 1);
+        ones.show(apps.selected.now == 0 and conon.on.now);
+        twos.show(apps.selected.now == 1 and conon.on.now);
+        Ones.show(apps.selected.now == 0 and Conon.on.now);
+        Twos.show(apps.selected.now == 1 and Conon.on.now);
         dic .show(dicon.on.now);
+
+        play.enabled =
+            apps.selected.now == 0
+            and not Conon.on.now;
 
         splitter1.show(conon.on.now);
         splitter2.show(dicon.on.now);
@@ -173,27 +177,23 @@ widget<App>
         if (what == &dicon 
         or  what == &conon
         or  what == &Conon
-        or  what == &onetwo)
+        or  what == &apps)
             refresh();
-
-        bool o = one.shown();
 
         if (what == &alpha
         and alpha.to == 255
         and first_time) {
             first_time = false;
-            o ? one.reload():
-                two.reload();
-            o ? one.play():
-                two.play();
+            one.reload();
+            one.play();
         }
 
-        if (what == &play.play) o? one.play() : two.play();
-        if (what == &play.stop) o? one.stop() : two.stop();
-        if (what == &play.next) o? one.next() : two.next();
-        if (what == &play.prev) o? one.prev() : two.prev();
-        if (what == &play.Next) o? one.Next() : two.Next();
-        if (what == &play.Prev) o? one.Prev() : two.Prev();
+        if (what == &play.play) one.play();
+        if (what == &play.stop) one.stop();
+        if (what == &play.next) one.next();
+        if (what == &play.prev) one.prev();
+        if (what == &play.Next) one.Next();
+        if (what == &play.Prev) one.Prev();
 
         if (what == &ones) one.go(ones.selected);
         if (what == &Ones) one.go(Ones.selected);
@@ -204,10 +204,6 @@ widget<App>
 
         if (what == &twos) two.go(twos.selected);
         if (what == &Twos) two.go(Twos.selected);
-        if (what == &twos
-        or  what == &Twos)
-        if (shown())
-            two.play();
 
         if (what == &ones
         or  what == &Ones
@@ -253,7 +249,6 @@ widget<App>
         if (what == &mode)
         {
             one.playmode = mode.on;
-            two.playmode = mode.on;
             sys::settings::save("app::mode",
             mode.on? 1:0);
         }
@@ -261,7 +256,6 @@ widget<App>
         if (what == &mute)
         {
             one.mute = mute.on;
-            two.mute = mute.on;
             dic.left.quot.object.mute.on = mute.on;
             sys::settings::save("app::mute",
             mute.on? 1:0);
@@ -271,6 +265,10 @@ widget<App>
         if (what == &shuff) app::one::course.root.shuffle();
         if (what == &sort ) one_reload();
         if (what == &shuff) one_reload();
+
+        if (what == &one.status)
+            play.status =
+            one.status;
 
         int clicked = -1;
         if (what == &one) clicked = one.clicked;
@@ -282,10 +280,6 @@ widget<App>
                 dicon.on = true, // order...:
                 dic.go(clicked); // important
         }
-
-        play.enabled = onetwo.selected.now == 0 and not Conon.on.now;
-        play.play.show(one.status != sfx::media::state::playing);
-        play.stop.show(one.status == sfx::media::state::playing);
     }
 
     bool mouse_sensible (xy) override { return true; }

@@ -30,8 +30,6 @@ namespace app::one
         using(error)
         #undef using
 
-        ~slide() { reset(); }
-
         void reset ()
         {
             medio.done();
@@ -73,7 +71,7 @@ namespace app::one
                 switch(entries[current]->status) {
                 case state::ready:
                 case state::paused:
-                    entries[current]->show(current == 0 and head ? slowly : smoothly);
+                    entries[current]->show(head ? slowly : smoothly);
                     entries[current]->play();
                     break;
                 case state::finished:

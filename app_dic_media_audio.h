@@ -139,6 +139,8 @@ namespace app::dic::audio
                 audio.stop();
         }
 
+        bool playable () { return medio.playable(); }
+
         void on_change (void* what) override
         {
             if (what == &coord)

@@ -30,8 +30,6 @@ namespace app::one
         using(error)
         #undef using
 
-        ~stage () { stop_all(); }
-
         using unit = content::unit;
 
         unit* topic = nullptr;
@@ -87,8 +85,6 @@ namespace app::one
                 extracolor(html):
                 topiccolor(html);
             };
-
-            stop_all();
 
             int i = 0;
 
@@ -317,18 +313,15 @@ namespace app::one
             }
         }
 
-        void stop_all ()
-        {
-            for (auto& slide: slides)
-            slide.stop();
-            medio.stop();
-        }
-
         void stop ()
         {
             if (medio.stop()
             and not slides.empty())
             slides[current].stop();
+        }
+
+        void Stop ()
+        {
         }
 
         void playslide ()
@@ -433,9 +426,6 @@ namespace app::one
             // prevent fill on start
             and not entries.empty())
                 fill();
-
-            if (what == &playmode)
-                current = 0;
 
             if (what == &volume)
                 for (slide& s: slides)

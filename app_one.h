@@ -20,6 +20,7 @@ namespace app::one
         sfx::media::medio medio;
         gui::timer fetcher;
         gui::timer nexter;
+        bool played = true;
         int clicked = 0;
 
         using state = sfx::media::state;
@@ -47,22 +48,35 @@ namespace app::one
             logs::errors << bold(red(
                 e.what())); }
 
+        void start ()
+        {
+            if (playmode.now)
+            {
+                if (played)
+                    play();
+            }
+            else
+            stage().show_all();
+            stage().show();
+        }
+        void halt ()
+        {
+            played = status == state::playing;
+            stop();
+        }
+
         void play ()
         {
             medio.stay();
             medio.play();
             stage().play();
+            notify(&status);
         }
         void stop ()
         {
             medio.stop();
             stage().stop();
-        }
-
-        void Stop ()
-        {
-            medio.stop();
-            stage().Stop();
+            notify(&status);
         }
 
         void next ()
@@ -74,6 +88,7 @@ namespace app::one
             medio.stop();
             stage().stop();
             stage().prev();
+            notify(&status);
         }
 
         void Next ()
@@ -82,7 +97,7 @@ namespace app::one
             auto topic = stage().topic->next();
             if (not topic) return;
 
-            stop();
+            halt();
 
             xywh
             r = stages.coord.now.local();
@@ -93,9 +108,11 @@ namespace app::one
             stages.rotate(0,1,N);
             place(1s);
 
+            if (stage().topic
+            and stage().topic->parent == topic->parent)
+            topic = stage().topic; else
             go(topic->path);
-            stage().show();
-            play();
+            start();
         }
         void Prev ()
         {
@@ -103,7 +120,7 @@ namespace app::one
             auto topic = stage().topic->prev();
             if (not topic) return;
 
-            stop();
+            halt();
 
             xywh
             r = stages.coord.now.local();
@@ -114,9 +131,11 @@ namespace app::one
             stages.rotate(0, N-1, N);
             place(1s);
 
+            if (stage().topic
+            and stage().topic->parent == topic->parent)
+            topic = stage().topic; else
             go(topic->path);
-            stage().show();
-            play();
+            start();
         }
 
         void go (str path)
@@ -136,8 +155,8 @@ namespace app::one
             stage().topic->parent) sys::settings::save("app::one::path",
             stage().topic->parent->path);
 
-            //if (not playmode.now)
-            //    fetcher.setup(2s);
+            if (not playmode.now)
+                fetcher.setup(2s);
         }
 
         void speedup ()
@@ -164,6 +183,14 @@ namespace app::one
                 stages.coord = coord.now.local();
                 place();
             }
+
+            if (what == &alpha
+            and alpha.now == 255)
+                start();
+
+            if (what == &alpha
+            and alpha.now == 0)
+                halt();
 
             if (what == &playing)
             {

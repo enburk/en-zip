@@ -291,26 +291,40 @@ namespace app::one
             medio.stay();
         }
 
+        void show_all ()
+        {
+            medio.stay();
+
+            if (entries.empty())
+                fill();
+
+            if (slides.empty())
+                return;
+
+            topic = slides.front().topic;
+            current = slides.size()-1;
+            for (slide& s: slides)
+                s.show();
+        }
+
         void play ()
         {
             if (entries.empty())
                 fill();
 
-            if (playmode.now)
-            {
-                medio.play();
-                playslide();
-            }
-            else
-            {
-                medio.stay();
-                current = slides.size()-1;
-                for (slide& s: slides)
-                s.show();
+            if (slides.empty())
+                return;
 
-                if (not slides.empty())
-                topic = slides.front().topic;
+            if (current == slides.size()-1)
+            {
+                current = 0;
+                for (slide& s: slides) s.hide();
+                scroll(0);
             }
+
+            medio.stay();
+            medio.play();
+            playslide();
         }
 
         void stop ()
@@ -320,10 +334,6 @@ namespace app::one
             slides[current].stop();
         }
 
-        void Stop ()
-        {
-        }
-
         void playslide ()
         {
             if (
@@ -331,7 +341,8 @@ namespace app::one
             slides[current].play();
             scroll(-height);
 
-            topic = slides[current].topic;
+            topic = slides[current].
+            topic;
         }
 
         void showslide ()
@@ -340,6 +351,9 @@ namespace app::one
             slides.empty()) return;
             slides[current].show();
             scroll(-height);
+
+            topic = slides[current].
+            topic;
         }
 
         void hideslide ()
@@ -352,6 +366,7 @@ namespace app::one
 
         void prev ()
         {
+            stop();
             hideslide();
             if (current == 0) return;
             current--;
@@ -360,10 +375,16 @@ namespace app::one
 
         void next ()
         {
+            bool playing = status ==
+            state::playing;
+            
+            stop();
             showslide();
             if (current+1 >= slides.size()) return;
             current++;
-            if (status != state::playing)
+
+            if (playing)
+            play(); else
             showslide();
         }
 

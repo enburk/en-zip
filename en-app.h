@@ -119,7 +119,7 @@ widget<App>
         int l = splitter1.set("app::splitter1",  7,  9, 11);
         int r = splitter2.set("app::splitter2", 50, 60, 70);
 
-        mode  .coord = xywh(l+0*w+ 0*v, H-h+d, 2*v, h-d-d);
+     // mode  .coord = xywh(l+0*w+ 0*v, H-h+d, 2*v, h-d-d);
         slow  .coord = xywh(l+0*w+ 2*v, H-h+d, 2*v, h-d-d);
         speed .coord = xywh(l+0*w+ 4*v, H-h+d, 1*v, h-d-d);
         fast  .coord = xywh(l+0*w+ 5*v, H-h+d, 2*v, h-d-d);
@@ -139,17 +139,15 @@ widget<App>
         if (not conon.on.now) l = 0;
         if (not dicon.on.now) r = W;
 
-        one .show(apps.selected.now == 0);
-        two .show(apps.selected.now == 1);
+        one .hide(apps.selected.now != 0 or  Conon.on.now);
+        two .hide(apps.selected.now != 1 or  Conon.on.now);
         ones.show(apps.selected.now == 0 and conon.on.now);
         twos.show(apps.selected.now == 1 and conon.on.now);
         Ones.show(apps.selected.now == 0 and Conon.on.now);
         Twos.show(apps.selected.now == 1 and Conon.on.now);
         dic .show(dicon.on.now);
 
-        play.enabled =
-            apps.selected.now == 0
-            and not Conon.on.now;
+        play.enabled = one.shown();
 
         splitter1.show(conon.on.now);
         splitter2.show(dicon.on.now);
@@ -182,14 +180,26 @@ widget<App>
 
         if (what == &alpha
         and alpha.to == 255
-        and first_time) {
-            first_time = false;
+        and first_time)
+            first_time = false,
             one.reload();
-            one.play();
-        }
+
+        if (what == &alpha
+        and alpha.now == 255
+        and one.shown())
+            one.start();
+
+        if (what == &alpha
+        and alpha.now == 0
+        and one.shown())
+            one.halt();
+
+        if (what == &play.play) mode.on = true;
+        if (what == &play.Stop) mode.on = false;
 
         if (what == &play.play) one.play();
         if (what == &play.stop) one.stop();
+        if (what == &play.Stop) one.stop();
         if (what == &play.next) one.next();
         if (what == &play.prev) one.prev();
         if (what == &play.Next) one.Next();
@@ -197,19 +207,19 @@ widget<App>
 
         if (what == &ones) one.go(ones.selected);
         if (what == &Ones) one.go(Ones.selected);
-        if (what == &ones
-        or  what == &Ones)
-        if (shown())
-            one.play();
-
-        if (what == &twos) two.go(twos.selected);
-        if (what == &Twos) two.go(Twos.selected);
 
         if (what == &ones
         or  what == &Ones
-        or  what == &one)
+        or  what == &one.status)
             where.html =
             one.where;
+
+        if (what == &one.status)
+            play.status =
+            one.status;
+
+        if (what == &twos) two.go(twos.selected);
+        if (what == &Twos) two.go(Twos.selected);
 
         if (what == &Ones) Conon.on = false;
         if (what == &Twos) Conon.on = false;
@@ -265,10 +275,6 @@ widget<App>
         if (what == &shuff) app::one::course.root.shuffle();
         if (what == &sort ) one_reload();
         if (what == &shuff) one_reload();
-
-        if (what == &one.status)
-            play.status =
-            one.status;
 
         int clicked = -1;
         if (what == &one) clicked = one.clicked;

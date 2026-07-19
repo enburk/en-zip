@@ -186,6 +186,7 @@
     <ClInclude Include="medio_audio.h" />
     <ClInclude Include="medio_video.h" />
     <ClInclude Include="studia.h" />
+    <ClInclude Include="studia_aux.h" />
     <ClInclude Include="studia_l.h" />
     <ClInclude Include="studia_l_content.h" />
     <ClInclude Include="studia_l_editor.h" />
@@ -210,6 +211,7 @@
     <ClInclude Include="studio_build_one++.h" />
     <ClInclude Include="studio_build_one+.h" />
     <ClInclude Include="studio_build_one.h" />
+    <ClInclude Include="studio_build_two.h" />
     <ClInclude Include="studio_dic.h" />
     <ClInclude Include="studio_pix.h" />
   </ItemGroup>

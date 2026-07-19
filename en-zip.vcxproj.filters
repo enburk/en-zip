@@ -108,5 +108,7 @@
     <ClInclude Include="content_entry+.h">
       <Filter>content</Filter>
     </ClInclude>
+    <ClInclude Include="studio_build_two.h" />
+    <ClInclude Include="studia_aux.h" />
   </ItemGroup>
 </Project>

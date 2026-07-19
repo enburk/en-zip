@@ -1,8 +1,10 @@
 #pragma once
-#include "studio_build_one+.h"
+//#include "studio_build_one+.h"
+#include "studia_aux.h"
 namespace studia::one
 {
-namespace report = studio::one::report;
+//    namespace report = studio::one::report;
+    namespace report = studia::aux::report::one;
 
     struct reports:
     widget<reports>
@@ -18,7 +20,7 @@ namespace report = studio::one::report;
             gui::console anoma2;
             gui::console anomal;
             array<gui::console*> consoles;
-            array<report::report*> reports;
+            array<studia::aux::report::report*> reports;
             array<int> readiness;
             consobar ()
             {

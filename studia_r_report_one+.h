@@ -14,7 +14,7 @@ namespace report = studio::one::report;
             gui::console audiom, audiop, audioq;
             gui::console videom, videop, videoq, wordsm;
             array<gui::console*> consoles;
-            array<report::report*> reports;
+            array<studia::aux::report::report*> reports;
             array<int> readiness;
             consobar ()
             {

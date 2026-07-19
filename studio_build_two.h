@@ -13,7 +13,7 @@ namespace studio::one
         content::logs::err = err;
         content::out::course course("content");
 
-        studia::aux::report::clear("one");
+        report::clear();
         report::errors += course.errors;
         report::anomal += course.anomal;
 
@@ -524,6 +524,6 @@ namespace studio::one
         if (not src.empty()) media::audio::combine(src, dst, 0.1, 0.0, 0.0, true);
 
         ///////////////
-        studia::aux::report::save("one");
+        report::save();
     }
 }

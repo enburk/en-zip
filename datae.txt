@@ -25369,6 +25369,8 @@ Your father must have been an older man than you..wav
 >>> ../datae/audiobooks--
 >>> ../datae\audiobooks--/Amanda Montell - Wordslut ## us {{Amanda Montell}}
 !credit.txt
+A woman named Barbara Keesling authored a 1996 book titled Talk Sexy to the One You Love.txt
+A woman named Barbara Keesling authored a 1996 book titled Talk Sexy to the One You Love.wav
 Admittedly, I have one of the foulest mouths of anyone I know.txt
 Admittedly, I have one of the foulest mouths of anyone I know.wav
 As a kid, I remember eavesdropping on my parents’ rated R movies.txt
@@ -25380,10 +25382,16 @@ Bigger men don’t always have lower-pitched voices, though.wav
 I have heard of a gender identity called a genderfuck.txt
 I have heard of a gender identity called a genderfuck.wav
 If you want to insult a woman, call her a prostitute. If you want to insult a man, call him a woman..wav
+In the beginning Gloria created the heaven and the earth.txt
+In the beginning Gloria created the heaven and the earth.wav
+In the spirit of vindicating my middle school friend, I want to clear the air about the “gay lisp”.txt
+In the spirit of vindicating my middle school friend, I want to clear the air about the “gay lisp”.wav
 Indeed, across the pond, what America would consider a squeaky-clean word for your backside.txt
 Indeed, across the pond, what America would consider a squeaky-clean word for your backside.wav
 It’s vocal fry, also known by linguists as creaky voice.txt
 It’s vocal fry, also known by linguists as creaky voice.wav
+Jonathon Green has led a team of researchers on what is surely one of the most NSFW.txt
+Jonathon Green has led a team of researchers on what is surely one of the most NSFW.wav
 Not long ago, I posted on social media that the Italian language distinguishes between male and female elephants.txt
 Not long ago, I posted on social media that the Italian language distinguishes between male and female elephants.wav
 Sure, when I was in preschool I was irrevocably labeled “bossy”.txt
@@ -25399,8 +25407,10 @@ Years later, in college, I learned about the concept of phonosymbolism.wav
 Yoruba, a language spoken in Nigeria, has neither gendered pronouns.txt
 Yoruba, a language spoken in Nigeria, has neither gendered pronouns.wav
 >>> ../datae\audiobooks--\Amanda Montell - Wordslut ## us {{Amanda Montell}}/{{}}
+a sexicon ## =.wav
 A whistling sailor, a crowing hen, and a swearing woman.txt
 A whistling sailor, a crowing hen, and a swearing woman.wav
+bald-headed bastard ## =.wav
 heaux.wav
 I know that sounds kind of dramatic. But, like, it’s important~!.wav
 Mm-hmm, girl, you’re right..wav
@@ -34398,7 +34408,7 @@ hypnotist @ circus {{Juliano Kaglis}}.jpg
 inside mouth [inside][mouth@human] ## qrop l9 r13 {{fritzcaterwall}}.jpg
 John and Ian [face value][at face value] ## qropt! {{Caitlin Southwick}}.png
 Keeping Track [keep track][tracker] ## qrop l8 r13 ## qropt! {{Diana Allison}}.jpg
-Loyalty and Honor [loyalty and honor][loyalty][honor] ## qrop l15 r4 ## qropt! {{Hsky Chou}}.jpg
+Loyalty and Honor [gravitas][vigilance][gritty@man][solemnity][rappers] ## qrop l15 r4 ## qropt! {{Hsky Chou}}.jpg
 millstone collar %% Portrait of a Woman, c.1630 [ruff@millstone] ## crop t1 ## qrop l19 t1 r13 {{Nicolaes Eliasz. Pickenoy}}.jpg
 Othello and Desdemona [Othello] ## qrop l7 r8 {{Alexandre-Marie Colin, 1829 $$}}.jpg
 Picnic in Perigord [picnic] ## qrop l5 r28 {{Shigeru Wakayama}}.jpg
@@ -35090,6 +35100,8 @@ Nixie tube ## qrop qb ### 1.jpg
 Steampunk-style necklace [vacuum tube].jpg
 transistors [transistor] ## qrop q ### 1.jpg
 transistors [transistor] ## qrop qb ### 2.jpg
+vacuum tube ### 1.jpg
+vacuum tube ### 2.jpg
 vacuum tubes [vacuum tube].jpg
 handsaw ## noqrop.jpg
 industrial printing [printing].jpg
@@ -35342,7 +35354,7 @@ Nervous Nellie ## qrop l3 r1 ## qropt!.png
 49ers.jpg
 Archie Shepp [Archie][Shepp][saxophonists][jazzy].jpg
 Author _Ian _Fleming [Ian][Fleming][Bondian][gamblerlike] {{Photo.. Howell Conant}}.jpg
-John McCarthy playing chess at Stanford's IBM 7090 [computer scientist][McCarthy][intelligence@mind] ## date 1967 ## qrop qr.png
+John McCarthy at Stanford's IBM 7090 [computer scientist][McCarthy][intelligent] ## date 1967 ## qrop l24 r12.png
 Lev Landau [Landau] {{Photo.. M.S. Nappelbaum}}.jpg
 Norval Morrisseau [artist][Ojibwe][Anishinaabe] ## qrop q.jpeg
 Paul Joseph Geobbels, _Nazi propaganda minister [Geobbels][geobbels][propaganda] ## qrop t7 b8 ## qropt!.jpg
@@ -38953,8 +38965,8 @@ King _George _V accosted by beggar, Derby Day, 1920 [accost][accosted] ## qrop l
 Ku Klux Klan parade, _DC [Ku Klux Klan][KKK][white supremacy][supremacy] ## date 1926 ## qropt! {{Photo.. Buyenlarge~Getty Images}}.jpg
 Leni Riefenstahl and her crew shooting Olympia [Riefenstahlian][shoot@photo][shooting] ## date 1936 ## qrop ql.jpg
 Mug shot of De Gracy (sic) and Edward Dalton, Central Police Station, Sydney, c.1920 [mug shot][magsmen] ## qrop l9 r10.jpg
-mummification ## qropt! {{The New York Times photo archive $$}}.JPG
-mummification ## qropt! {{The New York Times photo archive $$}}.txt
+mummification ## qropt! ## qrop l9 r6 {{The New York Times photo archive $$}}.JPG
+mummification ## qropt! ## qrop l9 r6 {{The New York Times photo archive $$}}.txt
 Opening of the German Folk Singing Festival in Breslau, 1937 [Nazism] ## qrop l8 r14 ## qropt! {{Photo.. Haynes Archive}}.jpg
 Paris Commune, April 1871 [barricade] ## qropt! {{Photo.. Pierre-Ambroise Richebourg}}.jpg
 Queen Victoria [Victorian era][Victorian] ## qrop t12 ## qropt! {{Photo.. John Mayall, 1860 $$}}.png
@@ -41757,7 +41769,6 @@ worried [worry] ## qrop l30 r3 {{Photo.. Mykola Kravchenko $dreamstime 89573131}
 >>> ../datae\photo_dreamstime\human/expressions
 Are you kidding me~! [kidding] ## qrop ql {{Photo.. Sanne Berg $dreamstime 58739877}}.jpg
 Be quiet! [quiet] ## qrop l22 r12 {{Photo.. Frantab01 $dreamstime 11012485}}.jpg
-Do you want one~! [want] ## qrop l9 r24 {{Photo.. Iurii Gud $dreamstime 49030802}}.jpg
 Greetings, my dears! [greetings][my dears] ## qrop l7 r7 ## qropt! {{Photo.. Todor Ostojic $dreamstime 28107271}}.jpg
 Hey, what’s going on~! [what's going on] ## qrop l4 r24 {{Photo.. Ruslan Kokarev $dreamstime 15656779}}.jpg
 It's him! [him] ## qrop l15 r19 {{Photo.. Khosrork $dreamstime 102989729}}.jpg

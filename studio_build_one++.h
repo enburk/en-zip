@@ -1,4 +1,5 @@
 #pragma once
+#include "studia_aux.h"
 #include "studio_build_one+.h"
 namespace studio::one
 {

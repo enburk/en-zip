@@ -3,21 +3,21 @@ Continuous
 
 ===
 = глаголы, ~ выражающие чувства ~ и желания
-love @ verb = любить                      # pix-
-like @ verb = любить, нравиться # duple   # pix-
-want        = хотеть, желать              # pix-
+love @ verb = любить                           # pix-
+like @ verb = любить, нравиться                # duple # pix-
+want        = хотеть, желать                   # pix-
 
 ===
 = умственные состояния
-understand  = понимать                              # pix-
-believe {v} = верить, доверять, ~ думать, полагать  # pix-
-know        = знать                                 # pix-
+understand  = понимать                         # pix-
+believe {v} = верить, доверять, ~ думать, полагать # pix-
+know        = знать                            # pix-
 
 ===
 = восприятие
-feel        = чувствовать    # pix-
-hear        = слышать        # pix-
-see         = видеть         # pix-
+feel        = чувствовать                      # pix-
+hear        = слышать                          # pix-
+see         = видеть                           # pix-
 
 ===
 = и т.п.
@@ -31,6 +31,7 @@ see         = видеть         # pix-
 
 : I’m '''hating''' you ~ so much right now! = Я так тебя сейчас ~ ненавижу!
 : Are you getting weary, ~ or '''feeling''' impatient, ~ hmm, eh?
+
 
 
 

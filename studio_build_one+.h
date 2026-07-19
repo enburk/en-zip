@@ -1,7 +1,11 @@
 ﻿#pragma once
-#include "app.h"
+//#include "app.h"
+#include "studia_aux.h"
 namespace studio::one
 {
+    namespace report = studia::aux::report::one;
+
+    /*
     namespace report
     {
         struct report;
@@ -35,6 +39,7 @@ namespace studio::one
         void save () { for (auto& [name, report]: map) report->save(); }
         void clear() { for (auto& [name, report]: map) report->log.clear(); }
     }
+    */
 
     using Res = media::resource;
     using res = media::resource*;

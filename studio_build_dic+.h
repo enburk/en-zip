@@ -2,39 +2,13 @@
 #include "eng_parser.h"
 #include "eng_unittest.h"
 #include "media_data.h"
+#include "studia_aux.h"
 namespace studio::dic
 {
-    namespace report
-    {
-        array<str> errors;
-        array<str> usages;
-        array<str> statts;
-        void load ()
-        {
-            std::filesystem::path dir = "../data/report";
-            errors = sys::optional_text_lines(dir/"dic_errors.txt");
-            usages = sys::optional_text_lines(dir/"dic_usages.txt");
-            statts = sys::optional_text_lines(dir/"dic_statts.txt");
-            usages.resize(1000);
-        }
-        void save ()
-        {
-            std::filesystem::path dir = "../data/report";
-            sys::write(dir/"dic_errors.txt", errors);
-            sys::write(dir/"dic_usages.txt", usages);
-            sys::write(dir/"dic_statts.txt", statts);
-        }
-        void clear()
-        {
-            errors.clear();
-            usages.clear();
-            statts.clear();
-        }
-    }
+    namespace report = studia::aux::report::dic;
 
     void compile (media::out::data& data)
     {
-        report::clear();
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
 
@@ -179,7 +153,7 @@ namespace studio::dic
             purple(bold(std::to_string(n))) + ": " +
             blue(list);
         }
-        out << report::statts;
+        out << report::statts.log;
 
         out << dark(bold("DIC: LINK RESOURCES..."));
 
@@ -331,9 +305,7 @@ namespace studio::dic
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
 
-        out << report::usages;
-        err << report::errors;
-
-        report::save();
+        out << report::usages.log;
+        err << report::errors.log;
     }
 }

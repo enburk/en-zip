@@ -34,7 +34,7 @@ namespace app::one
 
         unit* topic = nullptr;
 
-        void go (unit* t, bool app_shown = true)
+        void go (unit* t)
         {
             if (not t or t == topic) return;
             topic = t;
@@ -43,27 +43,24 @@ namespace app::one
             if (auto theme = topic->first_theme())
                 topic = theme->first_topic();
 
-            if (app_shown)
+            fill();
+
+            bool found = false;
+            for (int i=0; i<slides.size(); i++)
             {
-                fill();
-
-                bool found = false;
-                for (int i=0; i<slides.size(); i++)
-                {
-                    if (not found) current = i;
-                    if (playmode.now and found)
-                        slides[i].hide(); else
-                        slides[i].show();
-                    if (slides[i].topic == topic)
-                        found = true;
-                }
-
-                int y =
-                slides.empty() ? 0 :
-                slides[current].coord.to.y;
-                for (auto& e: entries) e.shift(xy{0,-y}, 500ms);
-                for (auto& s: slides ) s.shift(xy{0,-y}, 500ms);
+                if (not found) current = i;
+                if (playmode.now and found)
+                    slides[i].hide(); else
+                    slides[i].show();
+                if (slides[i].topic == topic)
+                    found = true;
             }
+
+            int y =
+            slides.empty() ? 0 :
+            slides[current].coord.to.y;
+            for (auto& e: entries) e.shift(xy{0,-y}, 500ms);
+            for (auto& s: slides ) s.shift(xy{0,-y}, 500ms);
         }
 
         void fill ()

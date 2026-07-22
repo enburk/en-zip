@@ -65,6 +65,9 @@ namespace studio::build
                 app::logs::report = out;
                 app::logs::errors = err;
 
+                content::logs::out = out;
+                content::logs::err = err;
+
                 dic_updated = dic::update();
                 if (dic_updated)
                     return;
@@ -76,9 +79,11 @@ namespace studio::build
                 media::logs::err = err;
                 media::out::data mediadata;
 
+                studia::aux::report::clear();
                 dic::compile(mediadata);
                 one::compile(mediadata);
             //  two::compile(mediadata);
+                studia::aux::report::save();
 
                 for (auto r: mediadata.unsquared)
                     dic::report::errors +=

@@ -1,8 +1,6 @@
 #pragma once
+#include "studia_aux.h"
 #include "studia_r_contents.h"
-#include "studia_r_report_dic.h"
-#include "studia_r_report_one.h"
-#include "studia_r_report_one+.h"
 #include "studia_r_search.h"
 
 struct studia_r:
@@ -10,9 +8,10 @@ widget<studia_r>
 {
     app::dic::view dic;
     studia::contents contents;
-    studia::dic::reports dics;
-    studia::one::reports ones;
-    studia::one::resorts oness;
+    studia::aux::reports dics{"dic"};
+    studia::aux::reports ones{"one"};
+    studia::aux::reports ress{"res"};
+    studia::aux::reports twos{"two"};
     studia::one::search search;
     array<gui::base::widget*> planes;
     gui::area<gui::selector> selector;
@@ -24,7 +23,8 @@ widget<studia_r>
         planes += &contents;
         planes += &dics;
         planes += &ones;
-        planes += &oness;
+        planes += &twos;
+        planes += &ress;
         planes += &search;
 
         for (auto p:
@@ -37,6 +37,7 @@ widget<studia_r>
         select.buttons(i++).text.text = "contents";
         select.buttons(i++).text.text = "reports: dic";
         select.buttons(i++).text.text = "reports: one";
+        select.buttons(i++).text.text = "reports: two";
         select.buttons(i++).text.text = "resources";
         select.buttons(i++).text.text = "search: one";
         select.selected = 0;
@@ -47,7 +48,8 @@ widget<studia_r>
         dic   .reload();
         dics  .reload();
         ones  .reload();
-        oness .reload();
+        twos  .reload();
+        ress  .reload();
         search.reload();
     }
 
@@ -121,13 +123,12 @@ widget<studia_r>
 
         bool l = false;
 
-        if (what == &dics)  l = true, link = dics.link;
+        if (what == &dics) l = true, link = dics.link;
+        if (what == &ones) l = true, link = ones.link;
+        if (what == &twos) l = true, link = twos.link;
+        if (what == &ress) l = true, link = ress.link;
 
         if (what == &contents) l = true, link = contents.link;
-
-        if (what == &ones) l = true, link = ones.link;
-        
-        if (what == &oness) l = true, link = oness.link;
 
         if (what == &search.link) l = true, link = search.link;
 

@@ -140,7 +140,7 @@ namespace app::one
 
         void go (str path)
         {
-            stage().go(course.find(path), shown());
+            stage().go(course.find(path));
 
             where =
             stage().topic and
@@ -185,10 +185,12 @@ namespace app::one
             }
 
             if (what == &alpha
+            and alpha.to  == 255
             and alpha.now == 255)
                 start();
 
             if (what == &alpha
+            and alpha.to  == 0
             and alpha.now == 0)
                 halt();
 

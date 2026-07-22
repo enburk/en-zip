@@ -70,6 +70,10 @@ namespace media::out
         array<entry_index> entries_two;
         array<media_index> media_index;
         array<str>         media_paths;
+        array<str> needed_en;
+        array<str> needed_us;
+        array<str> needed_uk;
+        array<str> needed_pix;
 
         data () : storage("../data/media")
         {
@@ -176,6 +180,15 @@ namespace media::out
             if (up3) logs::out << yellow(bold("entries_two updated"));
             if (up4) logs::out << yellow(bold("media_index updated"));
             if (up5) logs::out << yellow(bold("media_paths updated"));
+
+            needed_en.stable_deduplicate();
+            needed_us.stable_deduplicate();
+            needed_uk.stable_deduplicate();
+
+            sys::write("../data/needed_en.txt", needed_en);
+            sys::write("../data/needed_us.txt", needed_us);
+            sys::write("../data/needed_uk.txt", needed_uk);
+            sys::write("../data/needed_pix.txt", needed_pix);
 
             logs::out << dark(bold("SAVE OK"));
 

@@ -42,7 +42,7 @@ widget<App>
     App ()
     {
         #ifndef STANDALONE_APP
-        hide();
+        hide(); one.played = true;
         #endif
 
         skin = "gray+";
@@ -185,11 +185,13 @@ widget<App>
             one.reload();
 
         if (what == &alpha
+        and alpha.to  == 255
         and alpha.now == 255
         and one.shown())
             one.start();
 
         if (what == &alpha
+        and alpha.to  == 0
         and alpha.now == 0
         and one.shown())
             one.halt();

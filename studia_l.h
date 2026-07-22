@@ -10,8 +10,9 @@ widget<studia_l>
     studia::Content two;
     studia::Media media;
     studia::dic::search search;
-    array<gui::base::widget*> planes;
+    gui::area<gui::console> timing;
     gui::area<gui::selector> selector;
+    array<gui::base::widget*> planes;
     unary_property<str> link;
 
     studia_l ()
@@ -25,6 +26,7 @@ widget<studia_l>
         planes += &one;
         planes += &two;
         planes += &media;
+        planes += &timing;
         planes += &search;
 
         for (auto p:
@@ -36,12 +38,20 @@ widget<studia_l>
         select.buttons(i++).text.text = "course";
         select.buttons(i++).text.text = "catalog";
         select.buttons(i++).text.text = "media";
+        select.buttons(i++).text.text = "timing";
         select.buttons(i++).text.text = "search: dic";
         select.selected = 0;
     }
 
     void reload ()
     {
+        app::logs::times = timing.object;
+        timing.object << app::dicdata.report;
+        timing.object << app::dicdata.error;
+        timing.object << "";
+        timing.object << app::appdata.report;
+        timing.object << app::appdata.error;
+        timing.object << "";
     }
 
     void click (str link)

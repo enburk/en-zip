@@ -384,6 +384,10 @@ namespace content::in
                 str comnt = s.extract_from("%%");
                 str sense = s.extract_from("@");
 
+                if (opt.external.contains("T")) s = green(s);
+                if (opt.external.contains("Q")) s = yellow(s);
+                if (opt.external.contains("F")) s = red(s);
+
                 s.replace_all("(1)", small(small(blue("<sub>1</sub> "))));
                 s.replace_all("(2)", small(small(blue("<sub>2</sub> "))));
                 s.replace_all("(3)", small(small(blue("<sub>3</sub> "))));

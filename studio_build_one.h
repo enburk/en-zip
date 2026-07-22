@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include "content_entry+.h"
 #include "studio_build_one++.h"
 namespace studio::one
 {
@@ -7,26 +6,16 @@ namespace studio::one
     {
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
+
         out << dark(bold("ONE: SCAN COURSE..."));
-
-        content::logs::out = out;
-        content::logs::err = err;
         content::out::course course("content");
-
-        studia::aux::report::clear("one");
         report::errors += course.errors;
         report::anomal += course.anomal;
-
-        if (not report::errors.log.empty()) {
-        err << red(bold("ONE ERRORS:"));
-        err << report::errors.log; }
+        if (not course.errors.empty())
+        err << red(bold("ONE ERRORS:")),
+        err << course.errors;
 
         out << dark(bold("ONE: SCAN ENTRIES..."));
-
-        array<str> needed_en;
-        array<str> needed_us;
-        array<str> needed_uk;
-        array<str> needed_pix;
 
         struct nln
         {
@@ -59,38 +48,9 @@ namespace studio::one
             if (entry.eng.starts_with(": "))
                 continue;
 
-            if  (not entry.opt.internal.contains("sic!"))
-            for (str sssss: entry.en*entry.us*entry.uk)
-            for (str ssss: sssss.split_by("/"))
-            for (str sss: ssss.split_by("|"))
-            for (str ss: sss.split_by(" "))
-            for (str s: ss.split_by("\\"))
-            {
-                s.erase_all('(');
-                s.erase_all(',');
-                s.erase_all('.');
-                s.erase_all(':');
-                s.erase_all(';');
-                s.erase_all('?');
-                s.erase_all('!');
-                s.erase_all('"');
-                s.erase_all(')');
-                s.replace_all(u8"‘", "");
-                s.replace_all(u8"’", "");
-                if (s.ends_with("s'")) s.truncate();
-                if (s.ends_with("'s")) s.truncate(), s.truncate();
-                str w = eng::lowercased(s);
-                str ww = eng::lowercased(ss);
-                str www = eng::lowercased(sss);
-                if (not app::vocabulary.contains(w)
-                and not app::vocabulary.contains(s)
-                and not app::vocabulary.contains(ww)
-                and not app::vocabulary.contains(ss)
-                and not app::vocabulary.contains(www)
-                and not app::vocabulary.contains(sss))
-                report::errors += red(bold(w +" : ")) + link(entry);
-            }
-            
+            for (str w: wrong_words(entry))
+            report::errors += red(bold(w +" : ")) + link(entry);
+
             for (str ss: entry.en) for (str s: ss.split_by("|")) course_ens[s].add(i);
             for (str ss: entry.us) for (str s: ss.split_by("|")) course_uss[s].add(i);
             for (str ss: entry.uk) for (str s: ss.split_by("|")) course_uks[s].add(i);
@@ -267,7 +227,7 @@ namespace studio::one
             str s = html(entry.eng);
             if (not vocal_ok) report::audiom += linked(s, entry.link);
             if (not sound_ok) report::audiom += linked(s, entry.link) + red(bold(" sound"));
-            if (not video_ok) report::videom += linked(s, entry.link), needed_pix += entry.eng;
+            if (not video_ok) report::videom += linked(s, entry.link), data.needed_pix += entry.eng;
 
             if (vocal_ok)
                 continue;
@@ -303,9 +263,9 @@ namespace studio::one
                 if (en) fullfill(ens, r->abstract);
             }
 
-            needed_en += ens;
-            needed_us += uss;
-            needed_uk += uks;
+            data.needed_en += ens;
+            data.needed_us += uss;
+            data.needed_uk += uks;
 
             array<array<res>> list;
 
@@ -438,18 +398,6 @@ namespace studio::one
         report::audioq.log += bold(blue(
         "total: " + str(report::audioq.log.size())));
 
-        if (int nn = 500, n = 
-        report::audiom.log.size(); n > 2*nn)
-        report::audiom.log.resize(nn),
-        report::audiom.log += bold(blue(
-        "+" + str(n-nn) + " more"));
-
-        if (int nn = 2000, n = 
-        report::videom.log.size(); n > 2*nn)
-        report::videom.log.resize(nn),
-        report::videom.log += bold(blue(
-        "+" + str(n-nn) + " more"));
-
         hashmap<res, array<ent>> multientry;
         array<std::pair<ent, array<res>>> multivideo;
         for (auto [i, entry]: enumerate(course.entries))
@@ -500,30 +448,17 @@ namespace studio::one
 
         if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
 
-        needed_en.stable_deduplicate(); needed_en += "";
-        needed_us.stable_deduplicate(); needed_us += "";
-        needed_uk.stable_deduplicate(); needed_uk += "";
-
-        for (auto [s,x]: course_ens) if (x.n > 0) needed_en.try_emplace(s);
-        for (auto [s,x]: course_uss) if (x.n > 0) needed_us.try_emplace(s);
-        for (auto [s,x]: course_uks) if (x.n > 0) needed_uk.try_emplace(s);
-
-        sys::write("../data/needed_en.txt", needed_en);
-        sys::write("../data/needed_us.txt", needed_us);
-        sys::write("../data/needed_uk.txt", needed_uk);
-
-        for (str& s: needed_en) s += "<br>";
-        sys::write("../data/needed_en.htm", needed_en);
-
-        sys::write("../data/needed_pix.txt", needed_pix);
+        data.needed_en += "";
+        data.needed_us += "";
+        data.needed_uk += "";
+        for (auto [s,x]: course_ens) if (x.n > 0) data.needed_en.try_emplace(s);
+        for (auto [s,x]: course_uss) if (x.n > 0) data.needed_us.try_emplace(s);
+        for (auto [s,x]: course_uks) if (x.n > 0) data.needed_uk.try_emplace(s);
 
         // combine samples
         array<path> src =
         sys::files("../datae_sample/combine");
         path dst = "../datae_sample/combined.wav";
         if (not src.empty()) media::audio::combine(src, dst, 0.1, 0.0, 0.0, true);
-
-        ///////////////
-        studia::aux::report::save("one");
     }
 }

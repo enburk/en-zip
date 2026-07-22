@@ -1,24 +1,25 @@
 false ~ friends
 
 ***
-kofta               = кюфта %% ''не'' кофта  # 16+
+kofta               = кюфта %% ''не'' кофта                 # F # 16+
 
 ***
-satin               = атла́с %% ''не'' сатин  # 14+
-sateen              = сатин                  # 14+
+satin               = атла́с %% ''не'' сатин                 # F # 14+
+sateen              = сатин                                 # T # 14+
 
 ***
-velvet              = бархатный, бархат %% ''не'' вельвет # 12+
-velveteen//corduroy = вельвет                # 12+
+velvet              = бархатный, бархат %% ''не'' вельвет   # F # 12+
+velveteen//corduroy = вельвет                               # T # 12+
 
 ===
 
 ***
-brilliant           = яркий, блестящий, выдающийся ~ редко: бриллиант
-diamond @ jewelry   = бриллиант, алмаз
+brilliant           = яркий, блестящий, выдающийся ~ редко: бриллиант # Q
+diamond @ jewelry   = бриллиант, алмаз                      # T
 
 ***
-bijou               = маленькое изящное украшение, ''не'' бижутерия
-costume jewellery {Br.} || costume jewelry {Am.} = бижутерия
+bijou               = маленькое изящное украшение, ''не'' бижутерия # F
+costume jewellery\\costume jewelry = бижутерия                             # T # uk|us
+
 
 

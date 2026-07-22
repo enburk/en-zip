@@ -98,11 +98,8 @@
     <ClInclude Include="studio_build_dic.h" />
     <ClInclude Include="studio_build_one.h" />
     <ClInclude Include="studio_build_one+.h" />
-    <ClInclude Include="studia_r_report_dic.h" />
-    <ClInclude Include="studia_r_report_one.h" />
     <ClInclude Include="studia_r_request.h" />
     <ClInclude Include="studia_r_search.h" />
-    <ClInclude Include="studia_r_report_one+.h" />
     <ClInclude Include="studio_build_one++.h" />
     <ClInclude Include="studia_r_contents.h" />
     <ClInclude Include="content_entry+.h">
@@ -110,5 +107,6 @@
     </ClInclude>
     <ClInclude Include="studio_build_two.h" />
     <ClInclude Include="studia_aux.h" />
+    <ClInclude Include="studio_build_aux.h" />
   </ItemGroup>
 </Project>

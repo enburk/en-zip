@@ -1,49 +1,25 @@
 ﻿#pragma once
-#include "content_entry+.h"
-#include "studio_build_one++.h"
-namespace studio::one
+#include "studia_aux.h"
+#include "studio_build_aux.h"
+namespace studio::two
 {
     void compile (media::out::data& data)
     {
         auto& out = app::logs::report;
         auto& err = app::logs::errors;
-        out << dark(bold("ONE: SCAN COURSE..."));
+        namespace report = studia::aux::report::two;
 
-        content::logs::out = out;
-        content::logs::err = err;
-        content::out::course course("content");
-
-        report::clear();
+        out << dark(bold("TWO: SCAN COURSE..."));
+        content::out::course course("catalog");
         report::errors += course.errors;
         report::anomal += course.anomal;
+        if (not course.errors.empty())
+        err << red(bold("TWO ERRORS:")),
+        err << course.errors;
 
-        if (not report::errors.log.empty()) {
-        err << red(bold("ONE ERRORS:"));
-        err << report::errors.log; }
-
-        out << dark(bold("ONE: SCAN ENTRIES..."));
-
-        array<str> needed_en;
-        array<str> needed_us;
-        array<str> needed_uk;
-        array<str> needed_pix;
-
-        struct nln
-        {
-            int n = 0;
-            int last = 0;
-            void add (int l)
-            {
-                if (last = 0 or last+10 > l)
-                if (n < 6) n++;
-                last = l;
-            }
-        };
+        out << dark(bold("TWO: SCAN ENTRIES..."));
 
         hashset<str> course_vocabulary;
-        hashmap<str, nln> course_ens;
-        hashmap<str, nln> course_uss;
-        hashmap<str, nln> course_uks;
         hashmap<str, voc> course_matches;
         for (int i=0; i < course.entries.size(); i++)
         {
@@ -59,56 +35,11 @@ namespace studio::one
             if (entry.eng.starts_with(": "))
                 continue;
 
-            if  (not entry.opt.internal.contains("sic!"))
-            for (str sssss: entry.en*entry.us*entry.uk)
-            for (str ssss: sssss.split_by("/"))
-            for (str sss: ssss.split_by("|"))
-            for (str ss: sss.split_by(" "))
-            for (str s: ss.split_by("\\"))
-            {
-                s.erase_all('(');
-                s.erase_all(',');
-                s.erase_all('.');
-                s.erase_all(':');
-                s.erase_all(';');
-                s.erase_all('?');
-                s.erase_all('!');
-                s.erase_all('"');
-                s.erase_all(')');
-                s.replace_all(u8"‘", "");
-                s.replace_all(u8"’", "");
-                if (s.ends_with("s'")) s.truncate();
-                if (s.ends_with("'s")) s.truncate(), s.truncate();
-                str w = eng::lowercased(s);
-                str ww = eng::lowercased(ss);
-                str www = eng::lowercased(sss);
-                if (not app::vocabulary.contains(w)
-                and not app::vocabulary.contains(s)
-                and not app::vocabulary.contains(ww)
-                and not app::vocabulary.contains(ss)
-                and not app::vocabulary.contains(www)
-                and not app::vocabulary.contains(sss))
-                report::errors += red(bold(w +" : ")) + link(entry);
-            }
-            
-            for (str ss: entry.en) for (str s: ss.split_by("|")) course_ens[s].add(i);
-            for (str ss: entry.us) for (str s: ss.split_by("|")) course_uss[s].add(i);
-            for (str ss: entry.uk) for (str s: ss.split_by("|")) course_uks[s].add(i);
+            for (str w: wrong_words(entry))
+            report::errors += red(bold(w +" : ")) + link(entry);
         }
 
-        std::erase_if(course_ens, [](auto pair){ return pair.second.n < 2; });
-        std::erase_if(course_uss, [](auto pair){ return pair.second.n < 2; });
-        std::erase_if(course_uks, [](auto pair){ return pair.second.n < 2; });
-
-        report_duples(course);
-
-        report_missing_words(course_vocabulary, data.resources);
-
-        report_shortenings(data.resources);
-
-        report_long_sounds(data);
-
-        out << dark(bold("ONE: SCAN RESOURCES..."));
+        out << dark(bold("TWO: SCAN RESOURCES..."));
 
         for (auto& r: data.resources)
         {
@@ -121,21 +52,6 @@ namespace studio::one
             not r.options.contains("(o)")
             and r.abstract.contains(one_of("()")))
             report::errors += red(bold("(): ")) + link(&r);
-
-            if (r.options.contains("="))
-            report::anoma2 += cliplink(&r) + red(bold(" ## ="));
-
-            if (r.vocal())
-            {
-                str& a  = r.abstract;
-                bool uk = r.options.contains("uk");
-                bool us = r.options.contains("us");
-                bool en = true;
-
-                if (uk and course_uks.contains(a)) course_uks[a].n--;
-                if (us and course_uss.contains(a)) course_uss[a].n--;
-                if (en and course_ens.contains(a)) course_ens[a].n--;
-            }
 
             array<str> matches;
             {
@@ -254,9 +170,6 @@ namespace studio::one
             bool nosound = entry.opt.internal.contains("sound-");
             bool soundio = entry.opt.external.contains("SOUND");
 
-            if (noaudio) report::anoma2 += link(entry) + red(bold(" audio-"));
-            if (nosound) report::anoma2 += link(entry) + red(bold(" sound-"));
-
             bool vocal_ok = not vocals[&entry].empty() or noaudio or soundio;
             bool sound_ok = not sounds[&entry].empty() or nosound or not soundio;
             bool video_ok = not videos[&entry].empty() or nopixed or nopixal or
@@ -267,7 +180,6 @@ namespace studio::one
             str s = html(entry.eng);
             if (not vocal_ok) report::audiom += linked(s, entry.link);
             if (not sound_ok) report::audiom += linked(s, entry.link) + red(bold(" sound"));
-            if (not video_ok) report::videom += linked(s, entry.link), needed_pix += entry.eng;
 
             if (vocal_ok)
                 continue;
@@ -303,9 +215,9 @@ namespace studio::one
                 if (en) fullfill(ens, r->abstract);
             }
 
-            needed_en += ens;
-            needed_us += uss;
-            needed_uk += uks;
+            data.needed_en += ens;
+            data.needed_us += uss;
+            data.needed_uk += uks;
 
             array<array<res>> list;
 
@@ -382,22 +294,6 @@ namespace studio::one
         data.resources);
 
         sensecontrol.report_unused(unused_resources);
-        suggestions(course, unused_resources);
-        order_check(course);
-
-        array<str>  unused_sounds;
-        for (res r: unused_resources) if (r->sound())
-        {
-            str s = "../datae\\audiohero {{$audiohero.com}}\\## sound";
-            str dir = r->path.parent_path().string();
-            if (not dir.starts_with(s)) continue;
-            dir = dir.from(s.size());
-            unused_sounds += dir + "/" + r->abstract;
-            report::audioq += cliplink(r);
-        }
-        unused_sounds.deduplicate();
-        sys::write("../data/sounds.txt",
-        unused_sounds);
 
         std::map<str, array<res>> words;
         std::map<int, array<res>> Words;
@@ -500,30 +396,10 @@ namespace studio::one
 
         if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
 
-        needed_en.stable_deduplicate(); needed_en += "";
-        needed_us.stable_deduplicate(); needed_us += "";
-        needed_uk.stable_deduplicate(); needed_uk += "";
-
-        for (auto [s,x]: course_ens) if (x.n > 0) needed_en.try_emplace(s);
-        for (auto [s,x]: course_uss) if (x.n > 0) needed_us.try_emplace(s);
-        for (auto [s,x]: course_uks) if (x.n > 0) needed_uk.try_emplace(s);
-
-        sys::write("../data/needed_en.txt", needed_en);
-        sys::write("../data/needed_us.txt", needed_us);
-        sys::write("../data/needed_uk.txt", needed_uk);
-
-        for (str& s: needed_en) s += "<br>";
-        sys::write("../data/needed_en.htm", needed_en);
-
-        sys::write("../data/needed_pix.txt", needed_pix);
-
         // combine samples
         array<path> src =
         sys::files("../datae_sample/combine");
         path dst = "../datae_sample/combined.wav";
         if (not src.empty()) media::audio::combine(src, dst, 0.1, 0.0, 0.0, true);
-
-        ///////////////
-        report::save();
     }
 }

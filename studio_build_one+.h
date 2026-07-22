@@ -1,93 +1,9 @@
 ﻿#pragma once
-//#include "app.h"
 #include "studia_aux.h"
+#include "studio_build_aux.h"
 namespace studio::one
 {
     namespace report = studia::aux::report::one;
-
-    /*
-    namespace report
-    {
-        struct report;
-        std::map<str, report*> map;
-        struct report
-        {
-            str name;
-            array<str> log;
-            report (str name) : name(name) { map[name] = this; }
-            void operator += (auto&& s) { log += std::forward<decltype(s)>(s); }
-            path file () { return "../data/report/one_"+name+".txt"; }
-            void load () { log = sys::optional_text_lines(file()); }
-            void save () { sys::write(file(), log); }
-        };
-
-        report errors("errors");
-        report anoma1("anoma1");
-        report anoma2("anoma2");
-        report anomal("anomal");
-        report duples("duples");
-        report orders("orders");
-        report audiom("audiom");
-        report audiop("audiop");
-        report audioq("audioq");
-        report videom("videom");
-        report videop("videop");
-        report videoq("videoq");
-        report wordsm("wordsm");
-
-        void load () { for (auto& [name, report]: map) report->load(); }
-        void save () { for (auto& [name, report]: map) report->save(); }
-        void clear() { for (auto& [name, report]: map) report->log.clear(); }
-    }
-    */
-
-    using Res = media::resource;
-    using res = media::resource*;
-    using Ent = content::out::entry;
-    using ent = content::out::entry*;
-
-    struct voc
-    {
-        array<ent> entries;
-        array<res> resources;
-    };
-
-    str cliplink (res const& r)
-    {
-        str s = r->full();
-        if (r->options.contains("sound"))
-            s = "[" + s + "]";
-
-        str abstract = r->abstract;
-        if (r->options.contains("sound"))
-            abstract += " # SOUND";
-
-        return linked(
-        dark(html(s)),
-        "clipboard://: " + abstract +
-        "file://" + str(r->path));
-    }
-    str link (media::resource const* r)
-    {
-        str s = r->full();
-        if (r->options.contains("sound"))
-            s = "[" + s + "]";
-
-        return linked(
-        dark(html(s)),
-        "file://" + str(r->path));
-    }
-    str link (content::out::entry const* entry)
-    {
-        return linked(
-        html(entry->eng) + "  " +
-        dark(entry->pretty_link()),
-        "one://" + entry->link);
-    }
-    str link (content::out::entry const& e)
-    {
-        return link(&e);
-    }
 
     void report_duples (content::out::course& course)
     {
@@ -396,53 +312,6 @@ namespace studio::one
             }
         }
     };
-
-    auto all_entries(res r)
-    {
-        auto entries = r->entries;
-        auto title = doc::html::untagged(r->title);
-
-        if ((r->kind == "audio"
-        and entries.size() == 0
-        and not r->options.contains("=")
-        and not r->options.contains("=="))
-        or  entries.contains("+"))
-            entries += eng::parser::entries(
-            app::vocabulary, title,
-            r->options.contains
-            ("Case"));
-        else
-        if (title.contains("/"))
-        for (str s: title.split_by("/"))
-            entries += s;
-
-        entries.try_erase("+");
-        return entries;
-    }
-
-    str cliplink (res r, hashset<str>& course_vocabulary)
-    {
-        array<str> missed;
-        for (str x: all_entries(r))
-        if  (x.size() >= 2 // skip "," "!" "?"
-        and not x.contains(" ") // "see you"
-        and not course_vocabulary.contains(
-            eng::lowercased(simple(x))))
-            missed += x;
-
-        str s = r->full();
-        if (r->options.contains("sound"))
-            s = "[" + s + "]";
-
-        str abstract = r->abstract;
-        if (r->options.contains("sound"))
-            abstract += " # SOUND";
-
-        return linked(
-        dark(html(s)) + red(" [" + str(missed, "] [") + "]"),
-        "clipboard://: " + abstract +
-        "file://" + str(r->path));
-    }
 
     void suggestions
     (

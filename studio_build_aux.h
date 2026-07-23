@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "app.h"
 #include "content_entry+.h"
 namespace studio
@@ -97,6 +97,151 @@ namespace studio
         return link(&e);
     }
 
+    struct sensecontrol
+    {
+        // sensless vocalization fits for any sense,
+        // if there is another one with provided sense
+        // then it will be reported
+
+        hashmap<str, array<ent>> course;
+        hashmap<str, array<res>> audios;
+        hashmap<str, array<res>> videos;
+
+        auto& map (Res& r) { return r.vocal() ? audios : videos; }
+
+        array<str>& errors;
+
+        sensecontrol
+        (
+            array<Ent>& entries,
+            array<Res>& resources,
+            array<str>& errors
+        )
+        : errors(errors)
+        {
+            for (auto& entry: entries) if (entry.sense != "")
+            for (str s: entry.matches) if (entry.sense != s)
+                course[s] += &entry;
+
+            for (auto& r: resources)
+            for (auto& e: r.Entries())
+            {
+                str title = e;
+                str sense = title.extract_from("@");
+                if (sense != "") map(r)[title] += &r;
+            }
+
+            // add sensless also
+            // for listing of occurrences
+
+            for (auto& entry: entries) if (entry.sense == "" or entry.sense == "@")
+            for (str s: entry.matches)
+                if (course.contains(s)
+                or  audios.contains(s)
+                or  videos.contains(s))
+                    course[s] += &entry;
+
+            for (auto& r: resources)
+            for (auto& e: r.Entries())
+            {
+                str title = e;
+                str sense = title.extract_from("@");
+                if (sense == "" and not r.vocal())
+                if (course.contains(title)
+                or  map(r).contains(title))
+                    map(r)[title] += &r;
+            }
+
+            for (auto& entry: entries)
+            {
+                if (entry.sense == "" and
+                not entry.eng.contains(str(u8" → ")))
+                for (str s: entry.matches)
+                if (audios.contains(s)
+                or  videos.contains(s) and
+                not entry.opt.external.contains("HEAD"))
+                {
+                    errors += bold(
+                    red("sensless: ")) +
+                    link(entry);
+
+                    if (course.contains(s))
+                    for (ent e: course[s]) if (e != &entry)
+                    errors += link(e);
+
+                    if (audios.contains(s))
+                    for (res r: audios[s])
+                    errors += link(r);
+
+                    if (videos.contains(s))
+                    for (res r: videos[s])
+                    errors += link(r);
+                }
+            }
+
+            hashset<str> reported;
+
+            for (auto& r: resources)
+            for (auto& e: r.Entries())
+            {
+                str title = e;
+                str sense = title.extract_from("@");
+                if (sense != "") continue;
+
+                if (map(r).contains(title)
+                or  course.contains(title) and not r.vocal())
+                {
+                    if ( // prevent multiple reports
+                    reported.contains(title)) continue;
+                    reported.emplace(title);
+
+                    errors += bold(
+                    red("sensless: ")) +
+                    link(&r);
+
+                    if (course.contains(title))
+                    for (ent e: course[title])
+                    errors += link(e);
+
+                    if (map(r).contains(title))
+                    for (res x: map(r)[title]) if (x != &r)
+                    errors += link(x);
+                }
+            }
+        }
+
+        // do not report immediately
+        // all unused senses of resources,
+        // allow some senses for dictionary,
+        // report only if resource wasn't used at all
+
+        void report_unused (hashset<res>& unused_resources)
+        {
+            for (auto medio: {&audios, &videos})
+            for (auto& [s, rr]: *medio) for (res r: rr)
+            if  (unused_resources.contains(r))
+            {
+                unused_resources.erase(r);
+
+                errors += bold(
+                red("unused sense: ")) +
+                link(r);
+
+                if (course.contains(s))
+                for (ent e: course[s])
+                errors += link(e);
+
+                if (audios.contains(s))
+                for (res x: audios[s]) if (x != r)
+                errors += link(x);
+
+                if (videos.contains(s))
+                for (res x: videos[s]) if (x != r)
+                errors += link(x);
+            }
+        }
+    };
+
     generator<str> wrong_words(content::out::entry const& entry)
     {
         if  (not entry.opt.internal.contains("sic!"))
@@ -115,8 +260,8 @@ namespace studio
             s.erase_all('!');
             s.erase_all('"');
             s.erase_all(')');
-            s.replace_all(u8"�", "");
-            s.replace_all(u8"�", "");
+            s.replace_all(u8"‘", "");
+            s.replace_all(u8"’", "");
             if (s.ends_with("s'")) s.truncate();
             if (s.ends_with("'s")) s.truncate(), s.truncate();
             str w = eng::lowercased(s);

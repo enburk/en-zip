@@ -48,11 +48,6 @@ namespace studio::two
             or  r.options.contains("course--"))
                 continue;
 
-            if (r.vocal() and
-            not r.options.contains("(o)")
-            and r.abstract.contains(one_of("()")))
-            report::errors += red(bold("(): ")) + link(&r);
-
             array<str> matches;
             {
                 const str& a = r.abstract; matches += a;
@@ -84,21 +79,15 @@ namespace studio::two
                 course_matches[s].resources += &r;
         }
 
-        out << dark(bold("ONE: FULFILL..."));
+        out << dark(bold("TWO: FULFILL..."));
 
         hashmap<ent, array<res>> vocals;
         hashmap<ent, array<res>> sounds;
         hashmap<ent, array<res>> videos;
-        hashset<res> resources_used;
         hashset<res> resources_single;
 
         for (Ent& entry: course.entries)
         {
-            array<str> all_words;
-            for (str ss: entry.en*entry.uk*entry.us)
-            for (str s: ss.split_by("|"))
-                all_words += s;
-
             for (str& s: entry.matches)
             for (res& r: course_matches[s].resources)
             {
@@ -114,15 +103,6 @@ namespace studio::two
                 if (r->sound() and sound_fits(entry, *r)) sounds[&entry] += r;
                 if (r->vocal() and vocal_fits(entry, *r)) vocals[&entry] += r;
                 if (r->video() and video_fits(entry, *r)) videos[&entry] += r;
-
-                if (r->vocal()
-                    and vocal_will_not_fit(entry, *r))
-                    resources_used.emplace(r);
-
-                if (r->vocal()
-                and all_words.size() > 1
-                and all_words.contains(str(r->abstract).extract_upto("@")))
-                    resources_used.emplace(r);
             }
 
             for (auto medio: {&vocals, &sounds, &videos})
@@ -131,8 +111,7 @@ namespace studio::two
                 (*medio)[&entry].front());
         }
 
-        int entry_number = 0;
-        for (Ent& entry: course.entries)
+        for (auto [i, entry]: enumerate(course.entries))
         {
             for (auto medio: {&vocals, &sounds, &videos})
             {
@@ -150,11 +129,8 @@ namespace studio::two
                 if (not yy.empty()) mm = yy;
 
                 for (res r: mm)
-                data.one_add(entry_number, r),
-                resources_used.emplace(r);
+                data.two_add(i, r);
             }
-
-            entry_number++;
         }
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));
@@ -257,149 +233,37 @@ namespace studio::two
             combine({}, 0);
         }
 
-        out << dark(bold("ONE: MAKE REPORTS..."));
-
-        hashset<res> unused_resources;
-        for (auto& r: data.resources)
-        {
-            if (resources_used.contains(&r)
-            or  r.abstract.size() < 2
-            or  r.options.contains("=")
-            or  r.options.contains("==")
-            or  r.options.contains("sic!")
-            or  r.options.contains("xlam")
-            or  r.options.contains("noqrop")
-            or  r.options.contains("course-")
-            or  course_vocabulary.
-                contains(r.abstract))
-                continue;
-
-            int spaces = 0;
-            for (char c: r.abstract)
-            if  (c == ' ') spaces++;
-
-            if (spaces == 0 and r.vocal())
-                continue;
-
-            if (spaces == 2 and r.vocal())
-            if (r.abstract.starts_with("to be "))
-                continue;
-
-            unused_resources.emplace(&r);
-        }
+        out << dark(bold("TWO: MAKE REPORTS..."));
 
         sensecontrol
         sensecontrol(
         course.entries,
-        data.resources);
+        data.resources,
+        report::errors.log);
 
-        sensecontrol.report_unused(unused_resources);
+        // hashmap<res, array<ent>> multientry;
+        // array<std::pair<ent, array<res>>> multivideo;
+        // for (auto [i, entry]: enumerate(course.entries))
+        // {
+        //     for (res r: videos[&entry])
+        //         multientry[r] +=
+        //         &course.entries[i];
+        // 
+        //     if (videos[&entry].size() >= 2)
+        //     multivideo += std::make_pair(
+        //         &course.entries[i],
+        //         videos[&entry]);
+        // }
+        // 
+        // if (true)
+        // generate_debug_theme(
+        //     course,
+        //     multivideo,
+        //     multientry,
+        //     data);
 
-        std::map<str, array<res>> words;
-        std::map<int, array<res>> Words;
-
-        std::multimap<int, res>
-            weighted_unused_resources;
-        for (res r:  unused_resources)
-            weighted_unused_resources.
-            emplace(r->weight, r);
-
-        for (auto[weight, r]: weighted_unused_resources)
-        {
-            str s = r->abstract;
-
-            // 's 't 're 'll
-            if (eng::list::contractionparts.
-                contains(s))
-                continue;
-
-            if (r->kind == "audio" and
-            not s.contains(" ")) {
-                words[s] += r;
-                continue; }
-
-            if (r->vocal())
-                report::audioq +=
-                cliplink(r, course_vocabulary);
-
-            if (r->video())
-                report::videoq +=
-                cliplink(r);
-        }
-
-        for (auto& [s, rr] : words) if (rr.size() > 1) Words[rr.size()] += rr;
-        for (auto& [n, rr] : Words) for (auto r: rr)
-        report::audioq += cliplink(r);
-
-        report::audioq.log += bold(blue(
-        "total: " + str(report::audioq.log.size())));
-
-        if (int nn = 500, n = 
-        report::audiom.log.size(); n > 2*nn)
-        report::audiom.log.resize(nn),
-        report::audiom.log += bold(blue(
-        "+" + str(n-nn) + " more"));
-
-        if (int nn = 2000, n = 
-        report::videom.log.size(); n > 2*nn)
-        report::videom.log.resize(nn),
-        report::videom.log += bold(blue(
-        "+" + str(n-nn) + " more"));
-
-        hashmap<res, array<ent>> multientry;
-        array<std::pair<ent, array<res>>> multivideo;
-        for (auto [i, entry]: enumerate(course.entries))
-        {
-            for (res r: videos[&entry])
-                multientry[r] +=
-                &course.entries[i];
-
-            if (videos[&entry].size() >= 2)
-            multivideo += std::make_pair(
-                &course.entries[i],
-                videos[&entry]);
-        }
-
-        if (true)
-        generate_debug_theme(
-            course,
-            multivideo,
-            multientry,
-            data);
-
-        if (true) sys::out::file("../data/course.dat") << course.root;
-        if (true) sys::out::file("../data/course_entries.dat") << course.entries;
-        if (true) sys::out::file("../data/course_searchmap_title.dat") << course.searchmap;
-
-        using search_entry =
-        content::out::course::search_entry;
-        array<search_entry> searchmap;
-        for (auto& e: course.searchmap)
-        {
-            auto words =
-            eng::parser::entries(
-            app::vocabulary, e.word, false);
-
-            words += e.word.split_by(" "); // ursa major
-            words.erase_if([](str const& s){ return s.size() < 2; });
-            words.deduplicate();
-
-            for (str w: words)
-            searchmap +=
-            search_entry(
-            w, e.entry, e.link);
-        }
-
-        std::ranges::stable_sort(searchmap);
-        auto r = std::ranges::unique(searchmap);
-        searchmap.erase(r.begin(), r.end());
-
-        if (true) sys::out::file("../data/course_searchmap_words.dat") << searchmap;
-
-        // combine samples
-        array<path> src =
-        sys::files("../datae_sample/combine");
-        path dst = "../datae_sample/combined.wav";
-        if (not src.empty()) media::audio::combine(src, dst, 0.1, 0.0, 0.0, true);
+        if (true) sys::out::file("../data/catalog.dat") << course.root;
+        if (true) sys::out::file("../data/catalog_entries.dat") << course.entries;
+        if (true) sys::out::file("../data/catalog_searchmap.dat") << course.searchmap;
     }
 }

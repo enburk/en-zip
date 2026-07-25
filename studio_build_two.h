@@ -111,7 +111,8 @@ namespace studio::two
                 (*medio)[&entry].front());
         }
 
-        for (auto [i, entry]: enumerate(course.entries))
+        int entry_number = 0;
+        for (Ent& entry: course.entries) // enumerate fails here
         {
             for (auto medio: {&vocals, &sounds, &videos})
             {
@@ -129,11 +130,12 @@ namespace studio::two
                 if (not yy.empty()) mm = yy;
 
                 for (res r: mm)
-                data.two_add(i, r);
+                data.two_add(entry_number, r);
             }
+            entry_number++;
         }
 
-        out << dark(bold("ONE: CHECK FULFILMENT..."));
+        out << dark(bold("TWO: CHECK FULFILMENT..."));
 
         for (Ent& entry: course.entries)
         {

@@ -4,6 +4,7 @@
 #include "studio_build_dic.h"
 #include "studio_build_dic+.h"
 #include "studio_build_one.h"
+#include "studio_build_two.h"
 namespace studio::build
 {
     struct studio:
@@ -80,10 +81,10 @@ namespace studio::build
                 media::out::data mediadata;
 
                 studia::aux::report::clear();
+
                 dic::compile(mediadata);
                 one::compile(mediadata);
-            //  two::compile(mediadata);
-                studia::aux::report::save();
+                two::compile(mediadata);
 
                 for (auto r: mediadata.unsquared)
                     dic::report::errors +=
@@ -91,7 +92,10 @@ namespace studio::build
                     str(r->path), "file://" +
                     str(r->path));
 
-                dic::reportage();
+                out << dic::report::usages.log;
+                err << dic::report::errors.log;
+
+                studia::aux::report::save();
 
                 mediadata.save();
 

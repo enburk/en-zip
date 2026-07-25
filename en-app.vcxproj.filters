@@ -56,6 +56,15 @@
     <ClInclude Include="app_dic_wiki.h">
       <Filter>app-dic</Filter>
     </ClInclude>
+    <ClInclude Include="app_two_entry.h">
+      <Filter>app-two</Filter>
+    </ClInclude>
+    <ClInclude Include="app_two_slide.h">
+      <Filter>app-two</Filter>
+    </ClInclude>
+    <ClInclude Include="app_two_stage.h">
+      <Filter>app-two</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

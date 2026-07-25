@@ -175,7 +175,8 @@ namespace studio::one
                 (*medio)[&entry].front());
         }
 
-        for (auto [i, entry]: enumerate(course.entries))
+        int entry_number = 0;
+        for (Ent& entry: course.entries) // enumerate fails here
         {
             for (auto medio: {&vocals, &sounds, &videos})
             {
@@ -193,9 +194,10 @@ namespace studio::one
                 if (not yy.empty()) mm = yy;
 
                 for (res r: mm)
-                data.one_add(i, r), // resource add here
+                data.one_add(entry_number, r), // resource add here
                 resources_used.emplace(r);
             }
+            entry_number++;
         }
 
         out << dark(bold("ONE: CHECK FULFILMENT..."));

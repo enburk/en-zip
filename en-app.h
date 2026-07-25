@@ -221,7 +221,9 @@ widget<App>
             one.status;
 
         if (what == &twos) two.go(twos.selected);
-        if (what == &Twos) two.go(Twos.selected);
+        if (what == &Twos) two.go(Twos.selected),
+            where.html =
+            two.where;
 
         if (what == &Ones) Conon.on = false;
         if (what == &Twos) Conon.on = false;

@@ -169,6 +169,24 @@ widget<App>
             coord.now.size)
             refresh();
 
+        if (what == &skin)
+        {
+            speed.on_change_state = [this]()
+            {
+                auto style = gui::skins[speed.skin.now];
+                speed.canvas.color = style.dark.second;
+                speed.text.color = style.dark.first;
+                auto r =
+                speed.coord.now.local();
+                speed.frame.thickness = 0;
+                speed.frame.coord = xywh{};
+                speed.image.coord = xywh{};
+                speed.text.coord = r; r.deflate(1);
+                speed.canvas.coord = r;
+            };
+            speed.on_change_state();
+        }
+
         if (what == &splitter1) refresh();
         if (what == &splitter2) refresh();
 

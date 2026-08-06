@@ -26,6 +26,7 @@ widget<App>
     gui::button trans;
 
     sfx::media::Playback play;
+    widgetarium<gui::button> levels;
     gui::button mode;
     gui::button slow;
     gui::button fast;
@@ -78,11 +79,17 @@ widget<App>
         speed.enabled = false;
         apps.buttons(0).text.text = "course";
         apps.buttons(1).text.text = "catalog";
-        apps.selected = 0;
+        apps.selected = sys::settings::load("app::app", "course") == "course" ? 0 : 1;
         ones.reload("app::ones", app::one::course.root);
         twos.reload("app::twos", app::two::course.root);
         Ones.reload("app::Ones", app::one::course.root);
         Twos.reload("app::Twos", app::two::course.root);
+
+        for (int i=0; i<6; i++)
+        levels(i).kind = gui::button::toggle,
+        levels(i).text.text = std::to_string(i+1),
+        levels(i).on = sys::settings::load("app::level " +
+            std::to_string(i+1), "on") == "on";
     }
 
     void one_reload () 
@@ -128,6 +135,7 @@ widget<App>
         shuff .coord = xywh(l+0*w+12*v, H-h+d, 2*v, h-d-d);
 
         play  .coord = xywh(r-5*w- 4*v, H-h+d, 6*v, h-d-d);
+        levels.coord = xywh(r-5*w- 4*v, H-h+d, 5*v, h-d-d);
 
         conon .coord = xywh(r-3*w- 3*v, H-h+d, 1*v, h-d-d);
         Conon .coord = xywh(r-3*w- 2*v, H-h+d, 1*v, h-d-d);
@@ -147,7 +155,21 @@ widget<App>
         Twos.show(apps.selected.now == 1 and Conon.on.now);
         dic .show(dicon.on.now);
 
+        play  .show(apps.selected.now == 0);
+        levels.show(apps.selected.now == 1);
+
         play.enabled = one.shown();
+
+        for (int i=0; i<levels.size(); i++)
+        levels(i).enabled = two.shown(),
+        levels(i).coord = xywh(
+        levels.coord.now.w/levels.size()*i, 0,
+        levels.coord.now.w/levels.size(),
+        levels.coord.now.h);
+
+        where.html = apps.selected.now == 0 ?
+            one.where :
+            two.where;
 
         splitter1.show(conon.on.now);
         splitter2.show(dicon.on.now);
@@ -164,11 +186,6 @@ widget<App>
 
     void on_change (void* what) override
     {
-        if (what == &coord and
-            coord.was.size !=
-            coord.now.size)
-            refresh();
-
         if (what == &skin)
         {
             speed.on_change_state = [this]()
@@ -187,20 +204,17 @@ widget<App>
             speed.on_change_state();
         }
 
-        if (what == &splitter1) refresh();
-        if (what == &splitter2) refresh();
-
-        if (what == &dicon 
-        or  what == &conon
-        or  what == &Conon
-        or  what == &apps)
-            refresh();
+        if (what == &apps)
+            sys::settings::save(
+            "app::app", apps.selected.now == 0 ?
+            "course" : "catalog");
 
         if (what == &alpha
         and alpha.to == 255
         and first_time)
             first_time = false,
-            one.reload();
+            one.reload(),
+            two.reload();
 
         if (what == &alpha
         and alpha.to  == 255
@@ -225,23 +239,24 @@ widget<App>
         if (what == &play.Next) one.Next();
         if (what == &play.Prev) one.Prev();
 
+        if (what == &levels)
+        {
+            int idx = levels.notifier_index;
+            bool on = levels.notifier->on.now;
+            sys::settings::save("app::level " +
+            std::to_string(idx+1), on ? "on" : "off");
+            two.on(idx, on);
+        }
+
         if (what == &ones) one.go(ones.selected);
         if (what == &Ones) one.go(Ones.selected);
-
-        if (what == &ones
-        or  what == &Ones
-        or  what == &one.status)
-            where.html =
-            one.where;
 
         if (what == &one.status)
             play.status =
             one.status;
 
         if (what == &twos) two.go(twos.selected);
-        if (what == &Twos) two.go(Twos.selected),
-            where.html =
-            two.where;
+        if (what == &Twos) two.go(Twos.selected);
 
         if (what == &Ones) Conon.on = false;
         if (what == &Twos) Conon.on = false;
@@ -308,6 +323,8 @@ widget<App>
                 dicon.on = true, // order...:
                 dic.go(clicked); // important
         }
+
+        refresh();
     }
 
     bool mouse_sensible (xy) override { return true; }

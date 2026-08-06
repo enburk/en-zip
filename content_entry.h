@@ -7,6 +7,7 @@ namespace content
     array<str> Eng_markers = str(
     "{Am.}, {Br.}, {also}, {esp.}, {mainly}, {usually}, {informal}, {informal:}, "
     "{plural:}, {comparative:}, {superlative:}, {derived term:}, "
+    "{n.}, {v.}, {a.}, "
     ).split_by(", ");
 
     array<str> eng_markers = str("Am., Br., "

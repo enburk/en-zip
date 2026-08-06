@@ -12,6 +12,7 @@ namespace app::two
         property<bool> mute = false;
         property<byte> volume = 255;
 
+        std::map<int, bool> levels;
         int clicked = 0;
         str where;
 
@@ -25,6 +26,13 @@ namespace app::two
         catch (std::exception const& e) {
             logs::errors << bold(red(
                 e.what())); }
+
+        void on (int level, bool on)
+        {
+            levels[level] = on;
+            stage.fill();
+            stage.show_all();
+        }
 
         void go (str path)
         {

@@ -23,8 +23,6 @@ namespace app::two
         media::index audio_index;
         media::index sound_index;
         media::index video_index;
-        bool new_topic = false;
-        bool new_chain = false;
         bool extra = false;
         bool pixed = false;
         bool vocal = false;

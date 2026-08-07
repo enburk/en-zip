@@ -147,9 +147,8 @@ namespace app::two
 
                 auto [ww, hh] = entry.resize_to_fit(w, h);
                 if (hh + y > h - d or i == 0
-                or  entry.pixed != was_pixed
-                or  entry.number == -1
-                or  entry.new_chain)
+                or  slides[i-1].entries.size() >= 2
+                or  entry.pixed != was_pixed)
                     nextslide();
 
                 if (entry.widen
@@ -229,87 +228,6 @@ namespace app::two
                 s.show();
         }
 
-        void play ()
-        {
-            if (entries.empty())
-                fill();
-
-            if (slides.empty())
-                return;
-
-            if (current == slides.size()-1)
-            {
-                current = 0;
-                for (slide& s: slides) s.hide();
-                scroll(0);
-            }
-
-            medio.stay();
-            medio.play();
-            playslide();
-        }
-
-        void stop ()
-        {
-            if (medio.stop()
-            and not slides.empty())
-            slides[current].stop();
-        }
-
-        void playslide ()
-        {
-            if (
-            slides.empty()) return;
-            slides[current].play();
-            scroll(-height);
-
-            topic = slides[current].
-            topic;
-        }
-
-        void showslide ()
-        {
-            if (
-            slides.empty()) return;
-            slides[current].show();
-            scroll(-height);
-
-            topic = slides[current].
-            topic;
-        }
-
-        void hideslide ()
-        {
-            if (
-            slides.empty()) return;
-            slides[current].hide();
-            scroll(0);
-        }
-
-        void prev ()
-        {
-            stop();
-            hideslide();
-            if (current == 0) return;
-            current--;
-            scroll(0);
-        }
-
-        void next ()
-        {
-            bool playing = status ==
-            state::playing;
-            
-            stop();
-            showslide();
-            if (current+1 >= slides.size()) return;
-            current++;
-
-            if (playing)
-            play(); else
-            showslide();
-        }
-
         void speedup ()
         {
             for (auto& entry: entries)
@@ -322,27 +240,6 @@ namespace app::two
                 coord.was.size !=
                 coord.now.size)
                 resize();
-
-            if (what == &playing)
-            {
-                if (not slides.empty())
-                switch(slides[current].status) {
-                case state::ready:
-                case state::paused:
-                    playslide();
-                    break;
-                case state::finished:
-                    if (current+1 >= slides.size()) {
-                        medio.done();
-                        break;
-                    }
-                    current++;
-                    playslide();
-                    break;
-                default:
-                    break;
-                }
-            }
 
             if (what == &entries)
             {

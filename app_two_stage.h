@@ -75,50 +75,16 @@ namespace app::two
             or  not theme->kind == unit::theme)
                 return;
 
-            bool extra = theme->name == "''Extra''";
-
-            auto themecolor = [extra](str html) {
-                return extra ?
-                extracolor(html):
-                topiccolor(html);
-            };
-
-            int i = 0;
-
             entries.clear();
-
-            unit* last_topic = nullptr;
-
-            bool start_of_theme = true;
 
             for (unit& topic: theme->units)
             {
                 if (topic.kind != unit::topic) continue;
 
-                bool new_topic = true; last_topic = &topic;
-
-                bool start_of_topic = true;
-
                 for (unit& chain: topic.units)
                 {
                     if (chain.kind != unit::chain) continue;
 
-                    bool new_chain = true;
-
-                    int j = i; int order = 0;
-
-                    auto arrange = [&](int from, int upto)
-                    {
-                        if (from == upto) return;
-                        entries.stable_partition(from, upto,
-                        [](auto& e){ return e->pixed; });
-                        auto& e = entries[from];
-                        e.new_topic = new_topic;
-                        e.new_chain = new_chain;
-                        new_topic = false;
-                        new_chain = false;
-                    };
-                    
                     for (unit& leaf: chain.units)
                     {
                         if (leaf.kind != unit::leaf) continue;
@@ -129,28 +95,15 @@ namespace app::two
                             external.contains("Ru"))
                             continue;
 
-                        if (order < leaf.order) {
-                            order = leaf.order;
-                            arrange(j, i);
-                            j = i; }
-
-                        start_of_topic = false;
-                        start_of_theme = false;
-
-                        auto& e = entries[i++];
-                        e.extra = extra;
+                        auto& e = entries.emplace_back();
                         e.translated = translated;
                         e.number = leaf.entry;
                         e.topic = &topic;
                         e.hide();
                         e.load();
                     }
-
-                    arrange(j, i);
                 }
             }
-
-            entries.truncate(i);
 
             current = 0;
             resize();

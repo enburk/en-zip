@@ -218,15 +218,19 @@ widget<App>
 
         if (what == &alpha
         and alpha.to  == 255
-        and alpha.now == 255
-        and one.shown())
-            one.start();
+        and alpha.now == 255)
+        {
+            if (one.shown()) one.start();
+            if (two.shown()) two.start();
+        }
 
         if (what == &alpha
         and alpha.to  == 0
-        and alpha.now == 0
-        and one.shown())
-            one.halt();
+        and alpha.now == 0)
+        {
+            if (one.shown()) one.halt();
+            if (two.shown()) two.halt();
+        }
 
         if (what == &play.play) mode.on = true;
         if (what == &play.Stop) mode.on = false;

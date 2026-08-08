@@ -73,10 +73,17 @@ namespace app::two
             }
 
             for (int i=0; i<videos.size(); i++)
-                player.players[i].video.slowdown = 1.1,
                 player.players[i].load(videos[i],
                     audios.empty() ? media::index{} :
                     audios[i % audios.size()]);
+
+            for (auto& p: player.players)
+                p.video.slowdown = 1.1,
+                p.hide();
+
+            if (player.players.size() > 0)
+            if (player.players[0].playable())
+                player.players[0].show();
 
             player.repeat = true;
             player.Play();

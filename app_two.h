@@ -53,6 +53,20 @@ namespace app::two
             stage.show_all();
         }
 
+        void start ()
+        {
+            for (auto& entry:
+                stage.entries)
+                entry.player.Play();
+        }
+
+        void halt ()
+        {
+            for (auto& entry:
+                stage.entries)
+                entry.player.Stop();
+        }
+
         void on_change (void* what) override
         {
             if (what == &coord and
@@ -61,6 +75,17 @@ namespace app::two
             {
                 stage.coord = coord.now.local();
             }
+
+            if (what == &alpha
+            and alpha.to  == 255
+            and alpha.now == 255)
+                start();
+
+            if (what == &alpha
+            and alpha.to  == 0
+            and alpha.now == 0)
+            for (auto& entry: stage.entries)
+                halt();
 
             if (what == &stage)
             {

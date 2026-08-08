@@ -4,7 +4,7 @@ calculus              = математический анализ %% класс�
 limit @ math          = в математике: предел
 differential @ math   = дифференциал, дифференциальный, ~ дифференцированный, разница
 
-integral @ math {n}{a} = интеграл, интегральный
+integral @ math       = интеграл, интегральный
 
 approximation         = аппроксимация # TERM+
 interpolation         = интерполяция # TERM+

@@ -65,6 +65,9 @@
     <ClInclude Include="app_two_stage.h">
       <Filter>app-two</Filter>
     </ClInclude>
+    <ClInclude Include="app_two_video.h">
+      <Filter>app-two</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="en-app.cpp" />

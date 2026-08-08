@@ -62,8 +62,6 @@ namespace app::dic::left
                 player.volume = volume;
             }
 
-            using state = sfx::media::state;
-
             if (players.size() > 0)
             if (players[0].playable())
                 players[0].show();

@@ -7,32 +7,15 @@ namespace app::two
     widget<slide>
     {
         array<entry*> entries;
-        sfx::media::medio medio;
-        gui::time instantly = 50ms;
-        gui::time smoothly = 500ms;
-        gui::time swiftly  = 100ms;
-        gui::time slowly   = 999ms;
+        property<byte> volume = 255;
+        property<bool> mute = false;
+  //      sfx::media::medio medio;
         content::unit* topic = nullptr;
-        bool head = false;
         int current = 0;
-
-        using state = sfx::media::state;
-
-#define using(x) decltype(medio.x)& x = medio.x;
-        using(mute)
-        using(volume)
-        using(loading)
-        using(playing)
-        using(resolution)
-        using(duration)
-        using(elapsed)
-        using(status)
-        using(error)
-        #undef using
 
         void reset ()
         {
-            medio.done();
+//            medio.done();
             entries.clear();
             current = 0;
         }
@@ -43,51 +26,28 @@ namespace app::two
             e->show();
         }
 
-        void hide ()
-        {
-            for (auto& e: entries)
-            e->stop(),
-            e->hide();
-        }
+        //void hide ()
+        //{
+        //    for (auto& e: entries)
+        //    e->stop(),
+        //    e->hide();
+        //}
 
-        void play ()
-        {
-            medio.stay();
-            medio.play();
-        }
+        //void play ()
+        //{
+        //    medio.stay();
+        //    medio.play();
+        //}
 
-        void stop ()
-        {
-            if (medio.stop()
-            and not entries.empty())
-            entries[current]->stop();
-        }
+        //void stop ()
+        //{
+        //    if (medio.stop()
+        //    and not entries.empty())
+        //    entries[current]->stop();
+        //}
 
         void on_change (void* what) override
         {
-            if (what == &playing)
-            {
-                if (entries.empty()) medio.done(); else
-                switch(entries[current]->status) {
-                case state::ready:
-                case state::paused:
-                    entries[current]->show(head ? slowly : smoothly);
-                    entries[current]->play();
-                    break;
-                case state::finished:
-                    if (current >= entries.size()-1) {
-                        medio.done();
-                        break;
-                    }
-                    current++;
-                    entries[current]->show(smoothly);
-                    entries[current]->play();
-                    break;
-                default:
-                    break;
-                }
-            }
-
             if (what == &volume)
                 for (auto e: entries)
                     e->volume = volume;

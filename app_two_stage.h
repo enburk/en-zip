@@ -100,7 +100,6 @@ namespace app::two
                         e.number = leaf.entry;
                         e.topic = &topic;
                         e.hide();
-                        e.load();
                     }
                 }
             }
@@ -151,10 +150,6 @@ namespace app::two
                 or  entry.pixed != was_pixed)
                     nextslide();
 
-                if (entry.widen
-                and p.x == 0) // next slide - next line 
-                    nextslide();
-
                 if (not entry.pixed) y += d;
 
                 entry.coord.go(xywh(
@@ -162,11 +157,7 @@ namespace app::two
                 slides[i-1].coord.now.y + y, ww, hh));//, 500ms);
                 slides[i-1].entries += &entry;
 
-                if (entry.widen)
-                    nextslide(),
-                    y = h;
-
-                else y += hh;
+                y += hh;
             }
 
             slides.truncate(i);
@@ -196,8 +187,7 @@ namespace app::two
 
                 for (auto& e: s.entries)
                 hh += e->coord.now.h,
-                pixed |= e->pixed,
-                s.head |= e->head;
+                pixed |= e->pixed;
 
                 if (pixed) continue;
                 if (hh>=H) continue;
@@ -226,12 +216,6 @@ namespace app::two
             current = slides.size()-1;
             for (slide& s: slides)
                 s.show();
-        }
-
-        void speedup ()
-        {
-            for (auto& entry: entries)
-            entry.speedup();
         }
 
         void on_change (void* what) override

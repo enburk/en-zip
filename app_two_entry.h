@@ -1,66 +1,34 @@
 ﻿#pragma once
 #include "app.h"
-#include "app_view_text.h"
-#include "app_view_video.h"
+#include "app_two_video.h"
 namespace app::two
 {
     struct entry:
     widget<entry>
     {
-        gui::frame frame;
-        video::player player;
+        sfx::media::
+        sequencer<video::player> player;
         text::cell script;
-        gui::text::cell credia;
-        gui::text::cell credib;
-        gui::text::cell credic;
-        gui::text::cell credid;
-        text::cell credit;
 
         property<int>  number = -1;
         property<bool> translated = false;
+        property<byte> volume = 255;
+        property<bool> mute = false;
 
         content::unit* topic = nullptr;
-        media::index audio_index;
-        media::index sound_index;
-        media::index video_index;
-        bool extra = false;
         bool pixed = false;
-        bool vocal = false;
-        bool sound = false;
-        bool widen = false;
-        bool wide  = false;
-        bool head  = false;
         int seconds = 0;
         int clicked = 0;
         str text;
 
-#define using(x) decltype(player.x)& x = player.x;
-        using(mute)
-        using(speed)
-        using(volume)
-        using(loading)
-        using(playing)
-        using(resolution)
-        using(duration)
-        using(elapsed)
-        using(status)
-        using(error)
-        #undef using
-
-        void load () { player.load (); }
-        void play () { player.play (); }
-        void stop () { player.stop (); }
-        void reset() { player.reset(); }
-
         void init ()
         {
-            reset();
+            player.players.clear();
 
             if (number < 0)
                 return;
 
             array<media::index> audios;
-            array<media::index> sounds;
             array<media::index> videos;
 
             auto range = mediadata.entries_two.
@@ -68,114 +36,48 @@ namespace app::two
                 [](auto a, auto b){ return
                 a.entry < b.entry; });
 
-            int xlam = 0;
-            for (auto& audio: audios)
-            if (audio.options.contains("xlam"))
-                xlam++;
-
-            if (xlam < audios.size())
-                audios.erase_if([](auto& audio){
-                return audio.options.contains("xlam"); });
-
-            widen = false;
-
             for (auto [entry, media]: range)
             {
-                auto& i =
-                mediadata.
-                media_index[media];
+                auto& i = mediadata.media_index[media];
                 if (i.kind == "video") videos += i;
-                if (i.kind == "audio")
-                {
-                    if (i.options.
-                    contains("sound"))
-                    sounds += i; else
-                    audios += i;
-                }
-
-                if (i.options.
-                contains("wide"))
-                wide = true;
+                if (i.kind == "audio") audios += i;
             }
 
-            auto id = [](media::index index) { return
-                std::to_string(index.location.source) + "," +
-                std::to_string(index.location.offset); };
+            pixed = not videos.empty();
 
-            auto choose = [id](array<media::index> indexes, app::lasts& lasts)
-            {
-                if (not lasts.queue.empty())
-                {
-                    int oldest_num = 0;
-                    array<media::index> oldests;
-                    for (auto& index: indexes)
-                    {
-                        int num = lasts.num(id(index));
-                        if (num == 0) continue;
-                        if (oldest_num < num)
-                            oldest_num = num,
-                            oldests.clear();
-                        if (oldest_num == num)
-                            oldests += index;
-                    }
-                    indexes = oldests;
-                }
+            audios.erase_if([](auto& audio){
+            return audio.options.contains("xlam"); });
 
-                media::index index;
-                int nn = indexes.size();
-                if (nn > 0) index = indexes[aux::random(0, nn-1)];
-                if (nn > 0) lasts.add(id(index));
-                return index;
-            };
-
-            audio_index = choose(audios, app::last_vocals);
-            sound_index = choose(sounds, app::last_sounds);
-            video_index = choose(videos, app::last_videos);
-
-            for (auto& audio: audios) logs::audio << log(audio);
-            for (auto& sound: sounds) logs::audio << log(sound);
-            for (auto& video: videos) logs::video << log(video);
+            aux::shuffle(videos.begin(), videos.end());
+            aux::shuffle(audios.begin(), audios.end());
 
             auto const& entry =
             course.entries[number];
-            if (entry.opt.external.
-                contains("SOUND"))
-                audio_index =
-                media::index{};
 
-            vocal = audio_index != media::index{};
-            sound = sound_index != media::index{};
-            pixed = video_index != media::index{};
-
-            player.audio_index.clear();
-            player.audio_index += audio_index;
-            player.audio_index += sound_index;
-            player.video_index  = video_index;
-
-            for (auto& opt: entry.opt.external)
-            if (opt.size() == 5 and opt.ends_with("sec"))
+            for (auto& video: videos)
+            if (not video.options.contains("texted"))
             {
-                if (opt[0] == '+') seconds += std::stoi(str(opt[1])); else
-                if (opt[0] == '-') seconds -= std::stoi(str(opt[1]));
+                str t = video.title;
+                str s = eng::lowercased(media::canonical(t));
+                str E = eng::lowercased(entry.eng);
+                E.replace_all("\\\\", "/");
+                E.replace_all("'''", "");
+                E.replace_all("''", "");
+                E.replace_all("~", "");
+                E.replace_all("[", "");
+                E.replace_all("]", "");
+                E.canonicalize();
+                if (E.contains(s))
+                video.options +=
+                "texted";
             }
 
-            credia.hide();
-            credib.hide();
-            credic.hide();
-            credid.hide();
-            credit.hide();
-            frame.hide();
-        }
+            for (int i=0; i<videos.size(); i++)
+                player.players[i].load(videos[i],
+                    audios.empty() ? media::index{} :
+                    audios[i % audios.size()]);
 
-        void speedup ()
-        {
-            auto speed = app::speed;
-            player.speed = app::speed;
-            if (speed > 1.0) speed = 1.0 + (speed - 1.0) * 5;
-            player.stay = gui::time{int((1000.0 + 1000*seconds +
-                video_index.title.size() * 10.0 +
-                text.size() * 10.0) /
-                speed)};
+            player.Play();
         }
 
         void translate ()
@@ -186,62 +88,7 @@ namespace app::two
             auto const& entry =
             course.entries[number];
 
-            head = entry.opt.external.contains("HEAD");
-
-            str html = entry.html(translated);
-
-            if (vocal
-            and entry.rus == ""
-            and entry.eng.size() < audio_index.title.size())
-                // aidio has corresponding .txt file
-                html = media::canonical(audio_index.title);
-
-            if (vocal and audio_index.credit != "") html += "<br>"
-                "<div style=\"line-height: 20%\"><br></div>" +
-                gray(small(media::canonical(audio_index.credit)));
-
-            text = doc::html::untagged(html);
-            speedup();
-
-            if (head) html = extra ?
-                extracolor(html):
-                topiccolor(html);
-
-            script.html = html;
-            credit.html = "";
-
-            if (pixed and
-            not video_index.options.contains("texted"))
-            {
-                str t = video_index.title;
-                str c = media::canonical(t);
-                str s = eng::lowercased(c);
-                str S = eng::lowercased(text);
-                str E = eng::lowercased(entry.eng);
-                E.replace_all("\\\\", "/");
-                E.replace_all("'''", "");
-                E.replace_all("''", "");
-                E.replace_all("~", "");
-                E.replace_all("[", "");
-                E.replace_all("]", "");
-                E.canonicalize();
-                if (not S.contains(s)
-                and not E.contains(s))
-                player.title.html =
-                    small(c);
-            }
-            if (pixed)
-            {
-                str
-                c = video_index.credit;
-                c = media::canonical(c);
-                c = small(small(c));
-                credia.html = white(c);
-                credib.html = white(c);
-                credic.html = white(c);
-                credid.html = white(c);
-                credit.html = black(c);
-            }
+            script.html = entry.html(translated);
         }
 
         xy resize (int w, int h)
@@ -256,67 +103,29 @@ namespace app::two
             if (h < l+l) return xy{}; h -= l+l; 
 
             script.alignment = xy{pix::center, pix::top};
-            credit.alignment = xy{pix::left,   pix::top};
-
             script.coord = xywh(l, l, w, h);
-            credit.coord = xywh(l, l, w, h);
-
             script.resize(script.text_size());
-            credit.resize(credit.text_size() + xy(10,0));
 
             player.fit(xy{w, h - script.coord.now.h});
 
             xy psize = player.coord.now.size;
             xy ssize = script.coord.now.size;
-            xy csize = credit.coord.now.size;
 
             player.move_to(xy(l + w/2 - psize.x/2, l));
             script.move_to(xy(l + w/2 - ssize.x/2, l + psize.y));
-            credit.move_to(xy(l + w   - csize.x  , l + 
-            player.title.coord.now.y  - csize.y));
-
-            credia.coord = credit.coord.now + xy(-l,-l);
-            credib.coord = credit.coord.now + xy(-l,+l);
-            credic.coord = credit.coord.now + xy(+l,-l);
-            credid.coord = credit.coord.now + xy(+l,+l);
 
             return xy{W, l + psize.y + ssize.y + l};
         }
 
         xy resize_to_fit (int w, int h)
         {
-            widen = wide;
-            script.columns = 1;
-            if (wide) w *= 2;
-
             xy size = resize(w, h);
-
-            if (size.y > h and not wide)
-            {
-                w *= 2;
-                script.columns = 2;
-                size = resize(w, h);
-                widen = true;
-            }
 
             return size;
         }
 
         void on_change (void* what) override
         {
-            if (what == &coord and
-                coord.was.size !=
-                coord.now.size)
-            {
-                // frame.coord =
-                // coord.now.local();
-            }
-
-            if (what == &skin)
-                frame.color = 
-                gui::skins[skin].
-                focused.first;
-
             if (what == &number)
             {
                 init();
@@ -327,36 +136,8 @@ namespace app::two
                 translate();
             }
 
-            if (what == &credit) clicked = credit.clicked, notify();
             if (what == &script) clicked = script.clicked, notify();
             if (what == &player) clicked = player.clicked, notify();
-        }
-
-        bool mouse_sensible (xy) override { return true; }
-        void on_mouse_hover_child (xy p) override { on_mouse_hover(p); }
-        void on_mouse_hover (xy) override
-        {
-            frame .show();
-            credia.show();
-            credib.show();
-            credic.show();
-            credid.show();
-            credit.show();
-        }
-        void on_mouse_leave () override
-        {
-            frame .hide();
-            credia.hide();
-            credib.hide();
-            credic.hide();
-            credid.hide();
-            credit.hide();
-        }
-        void on_mouse_click (xy, str button, bool down) override
-        {
-            if (button == "left" and down)
-            player.stop(),
-            player.play();
         }
     };
 }

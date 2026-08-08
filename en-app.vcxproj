@@ -179,6 +179,7 @@
     <ClInclude Include="app_two_entry.h" />
     <ClInclude Include="app_two_slide.h" />
     <ClInclude Include="app_two_stage.h" />
+    <ClInclude Include="app_two_video.h" />
     <ClInclude Include="app_view_text.h" />
     <ClInclude Include="app_view_video.h" />
     <ClInclude Include="en-app.h" />

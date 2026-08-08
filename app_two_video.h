@@ -38,7 +38,7 @@ namespace app::two::video
             media::index audio_index)
         {
             //video.mute = true;
-            video.stay = gui::time{3000};
+            video.stay = gui::time{3000 + aux::random(0, 1000)};
             video.audio_index = audio_index;
             video.video_index = video_index;
             video.load();

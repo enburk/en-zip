@@ -73,10 +73,12 @@ namespace app::two
             }
 
             for (int i=0; i<videos.size(); i++)
+                player.players[i].video.slowdown = 1.1,
                 player.players[i].load(videos[i],
                     audios.empty() ? media::index{} :
                     audios[i % audios.size()]);
 
+            player.repeat = true;
             player.Play();
         }
 

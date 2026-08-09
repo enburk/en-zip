@@ -293,6 +293,14 @@ namespace content::out
             vocabulary.deduplicate();
         }
 
+        void vocabulate_without_forms (eng::vocabulary const& voc)
+        {
+            for (str p: phrases)
+            for (str e: eng::parser::entries(voc, p, true))
+            vocabulary += e;
+            vocabulary.deduplicate();
+        }
+
         str formatted (int tab1, int tab2) const
         {
             str E = eng;

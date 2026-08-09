@@ -19,6 +19,7 @@ namespace app::two
         bool pixed = false;
         int seconds = 0;
         int clicked = 0;
+        int level = 9;
         str text;
 
         void init ()

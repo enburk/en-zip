@@ -264,6 +264,39 @@ namespace studio::two
         //     multientry,
         //     data);
 
+        hashmap<str, int> levels;
+        content::out::course Course("content");
+        int ll = Course.root.units.size();
+        for (int level = 0; level < ll; level++)
+        Course.root.units[level].apply([&](content::unit& unit)
+        {
+            if (unit.entry < 0) return;
+            auto& entry = Course.entries[unit.entry];
+            entry.vocabulate_without_forms(app::vocabulary);
+            for (str word: entry.vocabulary)
+            levels.try_emplace(word, level);
+        });
+
+        for (auto& entry: course.entries)
+        {
+            bool leveled = false;
+            for (str opt: entry.opt.external)
+                if (opt.starts_with("level "))
+                    leveled = true;
+
+            if (leveled) continue;
+
+            int level = 9;
+            for (str word: entry.phrases)
+            {
+                auto it = levels.find(word);
+                if (it != levels.end())
+                level = min(level, it->second);
+            }
+            entry.opt.external += "level " +
+            std::to_string(level);
+        }
+
         if (true) sys::out::file("../data/catalog.dat") << course.root;
         if (true) sys::out::file("../data/catalog_entries.dat") << course.entries;
         if (true) sys::out::file("../data/catalog_searchmap.dat") << course.searchmap;

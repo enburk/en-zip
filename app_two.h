@@ -12,7 +12,6 @@ namespace app::two
         property<bool> mute = false;
         property<byte> volume = 255;
 
-        std::map<int, bool> levels;
         int clicked = 0;
         str where;
 
@@ -29,9 +28,8 @@ namespace app::two
 
         void on (int level, bool on)
         {
-            levels[level] = on;
-            stage.fill();
-            stage.show_all();
+            stage.levels[level] = on;
+            stage.resize();
         }
 
         void go (str path)
@@ -50,7 +48,6 @@ namespace app::two
             stage.topic->parent->path);
 
             stage.fill();
-            stage.show_all();
         }
 
         void start ()

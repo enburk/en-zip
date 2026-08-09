@@ -52,6 +52,11 @@ namespace content
             theme;
         }
 
+        void apply (auto f)
+        {
+            f(*this); for (unit& u: units) u.apply(f);
+        }
+
         void sort ()
         {
             std::ranges::sort(units, [](auto& a, auto& b)

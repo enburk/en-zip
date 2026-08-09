@@ -6,29 +6,17 @@ namespace app::two
     struct stage:
     widget<stage>
     {
-        sfx::media::medio medio;
         widgetarium<slide> slides;
         widgetarium<entry> entries;
         property<bool> playmode = false;
         property<bool> translated = false;
+        property<byte> volume = 255;
+        property<bool> mute = false;
+        std::map<int, bool> levels;
         int clicked = 0;
         int current = 0;
         int Height = 0;
         int height = 0;
-
-        using state = sfx::media::state;
-
-#define using(x) decltype(medio.x)& x = medio.x;
-        using(mute)
-        using(volume)
-        using(loading)
-        using(playing)
-        using(resolution)
-        using(duration)
-        using(elapsed)
-        using(status)
-        using(error)
-        #undef using
 
         using unit = content::unit;
 
@@ -89,10 +77,11 @@ namespace app::two
                     {
                         if (leaf.kind != unit::leaf) continue;
 
+                        auto& entry = course.entries[leaf.entry];
+
                         if (not translated)
-                        if (course.entries[leaf.entry].eng == ""
-                        or  course.entries[leaf.entry].opt.
-                            external.contains("Ru"))
+                        if (entry.eng == ""
+                        or  entry.opt.external.contains("Ru"))
                             continue;
 
                         auto& e = entries.emplace_back();
@@ -100,15 +89,17 @@ namespace app::two
                         e.number = leaf.entry;
                         e.topic = &topic;
                         e.hide();
+
+                        for (str opt: entry.opt.external)
+                        if (opt.starts_with("level "))
+                        e.level = std::stoi(str(opt.from(6)));
+                        e.level = min(5, e.level);
                     }
                 }
             }
 
             current = 0;
             resize();
-            load();
-
-            entries.show();
         }
 
         void resize ()
@@ -140,6 +131,11 @@ namespace app::two
 
             for (auto& entry: entries)
             {
+                auto it = levels.find(entry.level);
+                if (it == levels.end() or
+                not it->second)
+                    continue;
+
                 bool was_pixed = i == 0 or not
                 slides[i-1].entries.empty() and
                 slides[i-1].entries.back()->pixed;
@@ -195,27 +191,22 @@ namespace app::two
                 for (auto& e: s.entries)
                 e->shift(xy(0, H/2-hh/2));//, 500ms);
             }
-        }
 
-        void load ()
-        {
-            medio.stay();
+            show_all();
         }
 
         void show_all ()
         {
-            medio.stay();
-
-            if (entries.empty())
-                fill();
-
             if (slides.empty())
                 return;
 
             topic = slides.front().topic;
             current = slides.size()-1;
+            for (entry& e: entries) e.hide();
+            for (slide& s: slides) s.show();
             for (slide& s: slides)
-                s.show();
+            for (entry* e: s.entries)
+                e->show();
         }
 
         void on_change (void* what) override

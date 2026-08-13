@@ -5,7 +5,7 @@ interjections    = междометия, ~ восклицания # 10+
 ha! @@           = ха!
 ha-ha!|haha!     = ха-ха
 hee-hee|hehe     = хи-хи
-hey!             = эй!                    # duple
+hey!             = эй!
 
 hm...|hmm...     = хм... гм...
 er... {Br.}      = э...
@@ -25,7 +25,7 @@ ow!              = ой! ай!                /// боль, досада
 uh-oh!//oh-oh!   = ой-ой! о-оу!
 
 uh-huh!          = угу!
-mmm hmm @ filler = ага, угу               # duple
+mmm hmm @ filler = ага, угу
 uh-uh            = не-а
 
 wow!             = ух ты! вау!
@@ -34,6 +34,7 @@ ooh la la!       = о-ля-ля!               # 14+
 
 ===
 shh! @@          = тс-с, ш-ш
+
 
 
 

@@ -31,7 +31,7 @@ polyglot                    = многоязычный, ~ полиглот      
 
 encyclopedia %% Br. also: encyclopaedia = энциклопедия
 
-acoustics                   = акустика                         # duple # 10+
+acoustics                   = акустика                         # 10+
 atom                        = атом                             # 10+
 energy                      = энергия                          /// , энергичность, мощность /// - в физике power
 method                      = метод                            # 10+ /// , способ, приём, книжное: система, порядок

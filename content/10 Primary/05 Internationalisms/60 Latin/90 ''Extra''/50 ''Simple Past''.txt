@@ -2,12 +2,10 @@ grammar
 Simple Past Tense                             = простое прошедшее время
 = ''вопросительная'' ~ и ''отрицательная'' ~ формы
 
-: '''Did''' you miss me? @@
 : '''Did''' anyone call?
-: '''Did''' you get my message? @ emphatic    # duple
+: '''Did''' you get my message? @ emphatic
 : What '''did''' she say?
 : What '''did''' you say?
-: What '''did''' I miss?
 
 ===
 
@@ -46,5 +44,6 @@ they were
 : That '''was''' tasty.
 : That '''was''' smart!
 : What '''was''' that?
+
 
 

@@ -11,6 +11,10 @@ namespace studio::one
 
         for (auto& e: course.entries)
         {
+            if (e.eng == ""
+            or  e.opt.external.contains("HEAD"))
+                continue;
+
             str s = e.abstract + "@" + e.sense;
             auto it = entries.find(s);
             if (it == entries.end())
@@ -23,6 +27,10 @@ namespace studio::one
             }
             else
             {
+                str link1 = it->second->link.upto_first("|");
+                str link2 = e.link.upto_first("|");
+                if (link1 == link2) continue;
+
                 if (not e.opt.internal.contains("duple"))
                 report::duples += link(it->second),
                 report::duples += link(e),
@@ -109,8 +117,14 @@ namespace studio::one
         sys::write("../data/shortenings.txt", shortenings);
     }
 
-    void report_long_sounds(media::out::data& data)
+    void report_long_sounds(content::out::course& course, media::out::data& data)
     {
+        hashmap<str, array<ent>> matches;
+
+        for (auto& e: course.entries)
+        for (auto& s: e.matches)
+            matches[s] += &e;
+
         bool sounds_lengths_update = false;
         array<str> sounds_lengths = sys::optional_text_lines(
           "../data/sounds_lengths.txt");
@@ -121,13 +135,11 @@ namespace studio::one
             sounds_lengths_map[s] = std::stoi(sec); }
 
         for (auto& r: data.resources)
-        if (r.kind == "audio"
-        and r.options.contains("sound") and
-        not r.options.contains("long"))
+        if (r.kind == "audio" and r.options.contains("sound"))
         {
             int duration = 0;
             auto it = sounds_lengths_map.find(path2str(r.path));
-            if (it == sounds_lengths_map.end())
+            if (it != sounds_lengths_map.end()) duration = it->second; else
             {
                 auto Location = data.storage.add(r,1);
 
@@ -154,16 +166,19 @@ namespace studio::one
                 sounds_lengths += str(duration) + " " + path2str(r.path);
                 sounds_lengths_update = true;
             }
-            else duration = it->second;
 
-            int spaces = 0;
-            for (char c: r.title)
-            if (c == ' ') spaces++;
+            ent term = nullptr;
+            if (matches.contains(r.abstract))
+            for (ent e: matches[r.abstract])
+            if (not e->opt.external.contains("SOUND"))
+                term = e;
+
+            if (not term and r.options.contains("long")) continue;
 
             if (duration > 20.0
-            or  duration > 4.0 and spaces <= 1)
+            or  duration > 4.0 and term)
             report::errors.log += link(&r) + " " +
-            red(str(duration) + " sec");
+            red(str(duration) + " sec" + (term ? " term: " + link(term) : ""));
         }
 
         if (sounds_lengths_update)

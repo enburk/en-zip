@@ -80,10 +80,6 @@ widget<App>
         apps.buttons(0).text.text = "course";
         apps.buttons(1).text.text = "catalog";
         apps.selected = sys::settings::load("app::app", "course") == "course" ? 0 : 1;
-        ones.reload("app::ones", app::one::course.root);
-        twos.reload("app::twos", app::two::course.root);
-        Ones.reload("app::Ones", app::one::course.root);
-        Twos.reload("app::Twos", app::two::course.root);
 
         for (int i=0; i<6; i++)
         levels(i).kind = gui::button::toggle,
@@ -96,17 +92,22 @@ widget<App>
     {
         ones.reload("app::ones", app::one::course.root);
         Ones.reload("app::Ones", app::one::course.root);
-        one.reload();
+        one .reload();
+    }
+    void two_reload () 
+    {
+        twos.reload("app::twos", app::two::course.root);
+        Twos.reload("app::Twos", app::two::course.root);
+        two .reload();
     }
     void reload () try
     {
-        ones.reload("app::ones", app::one::course.root);
-        twos.reload("app::twos", app::two::course.root);
-        Ones.reload("app::Ones", app::one::course.root);
-        Twos.reload("app::Twos", app::two::course.root);
+        if (not shown())
+            return;
+
         dic.reload();
-        one.reload();
-        two.reload();
+        one_reload();
+        two_reload();
     }
     catch (std::exception const& e)
     {
@@ -213,8 +214,7 @@ widget<App>
         and alpha.to == 255
         and first_time)
             first_time = false,
-            one.reload(),
-            two.reload();
+            reload();
 
         if (what == &alpha
         and alpha.to  == 255
@@ -312,10 +312,18 @@ widget<App>
             mute.on? 1:0);
         }
 
-        if (what == &sort ) app::one::course.root.sort();
-        if (what == &shuff) app::one::course.root.shuffle();
-        if (what == &sort ) one_reload();
-        if (what == &shuff) one_reload();
+        if (what == &sort)
+        {
+            if (apps.selected.now == 0)
+            app::one::course.root.sort(), one_reload(); else
+            app::two::course.root.sort(), two_reload();
+        }
+        if (what == &shuff)
+        {
+            if (apps.selected.now == 0)
+            app::one::course.root.shuffle(), one_reload(); else
+            app::two::course.root.shuffle(), two_reload();
+        }
 
         int clicked = -1;
         if (what == &one) clicked = one.clicked;

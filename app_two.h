@@ -50,19 +50,8 @@ namespace app::two
             stage.fill();
         }
 
-        void start ()
-        {
-            for (auto& entry:
-                stage.entries)
-                entry.player.Play();
-        }
-
-        void halt ()
-        {
-            for (auto& entry:
-                stage.entries)
-                entry.player.Stop();
-        }
+        void start () { stage.start(); }
+        void halt  () { stage.halt (); }
 
         void on_change (void* what) override
         {
@@ -76,13 +65,12 @@ namespace app::two
             if (what == &alpha
             and alpha.to  == 255
             and alpha.now == 255)
-                start();
+                stage.start();
 
             if (what == &alpha
             and alpha.to  == 0
             and alpha.now == 0)
-            for (auto& entry: stage.entries)
-                halt();
+                stage.halt();
 
             if (what == &stage)
             {

@@ -209,6 +209,20 @@ namespace app::two
                 e->show();
         }
 
+        void start ()
+        {
+            for (slide& s: slides)
+            for (entry* e: s.entries)
+                e->player.Play();
+        }
+
+        void halt ()
+        {
+            for (slide& s: slides)
+            for (entry* e: s.entries)
+                e->player.Stop();
+        }
+
         void on_change (void* what) override
         {
             if (what == &coord and

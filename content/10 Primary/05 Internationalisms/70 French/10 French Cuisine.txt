@@ -21,7 +21,7 @@ apéritif|aperitif         = аперитив              # 18+
 ---
 soup                      = суп
 cream soup                = суп-пюре
-bouillon                  = бульон %% или суп на бульоне # duple
+bouillon                  = бульон %% или суп на бульоне
 consommé|consomme         = консоме %% осветлённый бульон # RARE+ # 18+
 
 escalope {Br.}            = эскалоп               # 10+
@@ -63,5 +63,6 @@ dragée                    = драже
 lemonade                  = лимонад
 cognac                    = коньяк                # 18+
 champagne                 = шампанское            # 18+
+
 
 

@@ -49,12 +49,13 @@ fly @ insect         = муха
 fly @ verb           = лететь
 
 feather @ bird {n}   = перо
-wing @ bird {n}      = крыло # duple
+wing @ bird {n}      = крыло
 
 tail @ animal {n}    = хвост
 paw @ animal {n}     = лапа
 fur @ amimal {n}     = мех, шерсть
 tooth @ animal       = зуб
+
 
 
 

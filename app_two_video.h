@@ -117,6 +117,7 @@ namespace app::two::video
             credic.show();
             credid.show();
             credit.show();
+            mute = false;
         }
         void on_mouse_leave () override
         {
@@ -125,6 +126,7 @@ namespace app::two::video
             credic.hide();
             credid.hide();
             credit.hide();
+            mute = true;
         }
     };
 }

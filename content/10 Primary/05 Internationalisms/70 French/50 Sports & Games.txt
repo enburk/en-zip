@@ -14,7 +14,7 @@ chance                   = случай, случайность, ~ шанс, в�
 ===
 
 ---
-billiards                = бильярд                # duple # 10+ /// irregular plurals
+billiards                = бильярд                # 10+ /// irregular plurals
 cue @ billiards          = кий                    # 12+ /// знак, намёк, реплика
 
 ---

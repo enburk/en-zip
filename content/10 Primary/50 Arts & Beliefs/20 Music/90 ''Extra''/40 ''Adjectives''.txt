@@ -4,7 +4,7 @@ comparative ~ and superlative ~ adjectives
 ===
 = прилагательные '''good''' и '''bad''', ~ так же как и наречия '''good''' и '''bad''', ~ непохожи на другие
 ===
-good @ adjective   = хороший
+good @ adjective   = хороший # duple
 better @ adjective = лучше
 best @ adjective   = лучший
 ===
@@ -13,7 +13,7 @@ best @ adjective   = лучший
 : The best things in life are free.
 
 ===
-bad @ adjective    = плохой
+bad @ adjective    = плохой # duple
 worse @ adjective  = хуже
 worst @ adjective  = худший
 ===

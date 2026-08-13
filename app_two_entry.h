@@ -79,7 +79,7 @@ namespace app::two
                     audios[i % audios.size()]);
 
             for (auto& p: player.players)
-                p.video.slowdown = 1.1,
+                p.video.slowdown = 1.2,
                 p.hide();
 
             if (player.players.size() > 0)
@@ -87,6 +87,7 @@ namespace app::two
                 player.players[0].show();
 
             player.repeat = true;
+            player.mute = true;
             player.Play();
         }
 
@@ -136,6 +137,16 @@ namespace app::two
 
         void on_change (void* what) override
         {
+            if (what == &alpha
+            and alpha.to  == 255
+            and alpha.now == 255)
+                player.Play();
+
+            if (what == &alpha
+            and alpha.to  == 0
+            and alpha.now == 0)
+                player.Stop();
+
             if (what == &number)
             {
                 init();

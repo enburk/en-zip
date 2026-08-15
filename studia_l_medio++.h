@@ -22,7 +22,7 @@ namespace studia
         xyxy newcrop;
         xy zoomsize;
 
-        mediadetail () { load({},{},{}); }
+        mediadetail () { load({},{},{}); player.click_playable = false; }
        ~mediadetail () { load({},{},{}); }
 
         xy load (path source, str crop, str fade) try

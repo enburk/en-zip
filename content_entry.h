@@ -345,7 +345,7 @@ namespace content::out
             array<str> ss = link.split_by("/");
             ss.upto(1).erase(); // content/
             for (str& s: ss) {
-            s = s.from(3);
+            s = s.from(3); // 00 Intro
             if (s.starts_with("''")
             and s.  ends_with("''")) {
                 s.truncate(); s.erase(0);

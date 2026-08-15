@@ -117,20 +117,14 @@ namespace studio::one
         sys::write("../data/shortenings.txt", shortenings);
     }
 
-    void report_long_sounds(content::out::course& course, media::out::data& data)
+    void report_long_sounds(hashmap<str, voc>& matches, media::out::data& data)
     {
-        hashmap<str, array<ent>> matches;
-
-        for (auto& e: course.entries)
-        for (auto& s: e.matches)
-            matches[s] += &e;
-
         bool sounds_lengths_update = false;
         array<str> sounds_lengths = sys::optional_text_lines(
           "../data/sounds_lengths.txt");
 
         hashmap<str, int> sounds_lengths_map;
-        for (str s: sounds_lengths) {
+        for (str s: sounds_lengths) { s.triml();
             str sec = s.extract_upto(" "); if(sec != "")
             sounds_lengths_map[s] = std::stoi(sec); }
 
@@ -163,14 +157,17 @@ namespace studio::one
 
                 duration = int(audio.duration());
 
-                sounds_lengths += str(duration) + " " + path2str(r.path);
+                sounds_lengths += str(duration).right_aligned(3) + " " + path2str(r.path);
                 sounds_lengths_update = true;
             }
 
             ent term = nullptr;
-            if (matches.contains(r.abstract))
-            for (ent e: matches[r.abstract])
-            if (not e->opt.external.contains("SOUND"))
+            str word = r.abstract.upto_first("@");
+            if (matches.contains(word))
+            for (ent e: matches[word].entries)
+            if (not e->opt.external.contains("SOUND")
+            and not e->link.upto_first(".txt|").ends_with("''Sounds''")
+            and sound_fits(*e, r))
                 term = e;
 
             if (not term and r.options.contains("long")) continue;
@@ -178,7 +175,7 @@ namespace studio::one
             if (duration > 20.0
             or  duration > 4.0 and term)
             report::errors.log += link(&r) + " " +
-            red(str(duration) + " sec" + (term ? " term: " + link(term) : ""));
+            red(str(duration) + " sec" + (term ? " " + link(term) : ""));
         }
 
         if (sounds_lengths_update)

@@ -19,7 +19,7 @@ namespace studio
         auto entries = r->entries;
         auto title = doc::html::untagged(r->title);
 
-        if ((r->kind == "audio"
+        if ((r->vocal()
         and entries.size() == 0
         and not r->options.contains("=")
         and not r->options.contains("=="))

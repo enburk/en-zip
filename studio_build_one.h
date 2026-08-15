@@ -66,7 +66,7 @@ namespace studio::one
 
         report_shortenings(data.resources);
 
-        report_long_sounds(course, data);
+        report_long_sounds(course_matches, data);
 
         out << dark(bold("ONE: SCAN RESOURCES..."));
 

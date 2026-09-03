@@ -1,39 +1,42 @@
 
-defiant
-dejection
-delight // delighted
-delirious
-deplore
-depressed // depression
-desire
-despair // desperate // desperation
-despondent // despondency
-detestation
-devoted
-dewy-eyed
-disappointment // disappointed
-disbelief // disbelieving
-discontent
-disgruntled
-disgust
-disinterested
-dismay // dismayed
-displeasure
-distraught
-diggety
-discomfiture
-discompassionate
-discontent // discontentment
-discourage
-disgruntlement
-dismay
-dispassionate
-disquiet
-dissatisfaction
-distress // distressed
-disturb // disturbed
-dithyrambic
-doleful
+defiance {n.} // defiant {a.}
+deflated hubris
+dejection {n.} // dejected {a.}
+delight {n.} // delighted {a.} @ emo
+delirium {n.} // delirious {a.} @ emo
+deploration {n.} // deplored {a.}
+depression {n.} // depressed {a.} @ emo
+desire {n.} // desirous {a.}
+despair {n.} // despairing {a.}
+despondency {n.} // despondent {a.}
+detestation {n.}
+devastation {n.} // devastated {a.} @ emo {n}
+devotion {n.} // devoted {a.} @ emo
+dewy-eyed {a.}
+diffidence {n.} // diffident {a.}
+disappointment {n.} // disappointed {a.}
+disapproval {n.} @ emo
+disbelief {n.} // disbelieving {a.}
+discomfiture {n.} // discomfited {a.}
+discompassionate {a.}
+discomposure {n.} // discomposed {a.}
+discontent {n.} {a.} // discontented {a.}
+disconsolation {n.} // disconsolate {a.}
+discouraged {a.} @ emo
+disgruntlement {n.} // disgruntled {a.}
+disgust {n.} // disgusted {a.}
+disinterest {n.} // disinterested {a.}
+dismay {n.} // dismayed {a.}
+dispassionate {a.}
+displeasure {n.}
+disquietude {n.} // disquieted {a.}
+dissatisfaction {n.}
+distraught {a.}
+distressed {a.}
+distrust {n.}
+disturbance {n.} // disturbed {a.} @ emo
+dithyrambic {a.}
+dolefulness {n.} // doleful {a.}
 dolor
 dour
 downcast
@@ -42,4 +45,6 @@ draw together
 dread // dreadly
 drear // dreary
 dry-eyed
+dumpish {a.}
 dysphoria
+

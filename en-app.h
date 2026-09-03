@@ -102,9 +102,6 @@ widget<App>
     }
     void reload () try
     {
-        if (not shown())
-            return;
-
         dic.reload();
         one_reload();
         two_reload();

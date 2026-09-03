@@ -14,7 +14,6 @@ namespace app::two
         property<bool> mute = false;
         std::map<int, bool> levels;
         int clicked = 0;
-        int current = 0;
         int Height = 0;
         int height = 0;
 
@@ -33,20 +32,17 @@ namespace app::two
 
             fill();
 
-            bool found = false;
+            int slide = -1;
             for (int i=0; i<slides.size(); i++)
-            {
-                if (not found) current = i;
-                if (playmode.now and found)
-                    slides[i].hide(); else
-                    slides[i].show();
-                if (slides[i].topic == topic)
-                    found = true;
-            }
+                if (slides[i].topic == topic) {
+                    slide = i; break; }
+
+            if (slide == -1)
+                slide = 0;
 
             int y =
             slides.empty() ? 0 :
-            slides[current].coord.to.y;
+            slides[slide].coord.to.y;
             for (auto& e: entries) e.shift(xy{0,-y}, 500ms);
             for (auto& s: slides ) s.shift(xy{0,-y}, 500ms);
         }
@@ -98,7 +94,6 @@ namespace app::two
                 }
             }
 
-            current = 0;
             resize();
         }
 
@@ -200,8 +195,6 @@ namespace app::two
             if (slides.empty())
                 return;
 
-            topic = slides.front().topic;
-            current = slides.size()-1;
             for (entry& e: entries) e.hide();
             for (slide& s: slides) s.show();
             for (slide& s: slides)
@@ -273,8 +266,8 @@ namespace app::two
 
             int bottom =
             slides.empty() ? 0 :
-            slides[current].coord.to.y +
-            slides[current].coord.to.h;
+            slides.back().coord.to.y +
+            slides.back().coord.to.h;
 
             int h = bottom - top;
 

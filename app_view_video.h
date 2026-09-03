@@ -157,8 +157,8 @@ namespace app::video
             if (video.status == state::finished or speedup())
             {
                 medio.done();
-                stay.ms = int(std::round(
-                stay.ms * slowdown));
+                stay.ms = min(30*1000, int(std::round(
+                stay.ms * slowdown)));
             }
 
             if (what == &playing

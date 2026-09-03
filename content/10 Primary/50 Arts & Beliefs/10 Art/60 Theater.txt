@@ -24,7 +24,7 @@ protagonist               = протагонист                              
 antagonist                = антагонист                                      # ART+ # 14+ /// (персонаж, противодействующий главному герою)
 
 tragic hero               = трагический герой                               # ART+ # 14+
-catharsis                 = катарсис                                        # ART+ # 18+
+catharsis @ theater       = катарсис                                        # ART+ # 18+
 
 ===
 ---

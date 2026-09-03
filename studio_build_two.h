@@ -105,6 +105,10 @@ namespace studio::two
                 if (r->video() and video_fits(entry, *r)) videos[&entry] += r;
             }
 
+            sounds[&entry].deduplicate();
+            vocals[&entry].deduplicate();
+            videos[&entry].deduplicate();
+
             for (auto medio: {&vocals, &sounds, &videos})
             if ((*medio).contains(&entry)
             and (*medio)[&entry].size() == 1) resources_single.emplace(

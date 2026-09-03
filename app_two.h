@@ -19,6 +19,7 @@ namespace app::two
 
         void reload () try
         {
+            stage.topic = nullptr;
             go(sys::settings::load(
               "app::two::path", ""));
         }
@@ -46,8 +47,6 @@ namespace app::two
             stage.topic and
             stage.topic->parent) sys::settings::save("app::two::path",
             stage.topic->parent->path);
-
-            stage.fill();
         }
 
         void start () { stage.start(); }

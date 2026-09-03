@@ -79,7 +79,7 @@ namespace app::two
                     audios[i % audios.size()]);
 
             for (auto& p: player.players)
-                p.video.slowdown = 1.2,
+                p.video.slowdown = 1.1,
                 p.hide();
 
             if (player.players.size() > 0)

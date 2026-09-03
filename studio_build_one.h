@@ -163,6 +163,10 @@ namespace studio::one
                     and vocal_will_not_fit(entry, *r))
                     resources_used.emplace(r);
 
+                sounds[&entry].deduplicate();
+                vocals[&entry].deduplicate();
+                videos[&entry].deduplicate();
+
                 if (r->vocal()
                 and all_words.size() > 1
                 and all_words.contains(str(r->abstract).extract_upto("@")))

@@ -19,8 +19,8 @@ trespass                 /// French
 ---
 suspect @ noun %% {noun} /// Latin
 suspect @ verb %% {verb} /// Latin
-suspicion                /// Latin
-suspicious               /// Latin
+suspicion @ crime        /// Latin
+suspicious @ crime       /// Latin
 : It has been confirmed suspects are armed and are firing at police.
 : Considering my suspicions I thought a little more caution might be advisable.
 : Suspect is a busy word like many others. It can be a noun (“the suspect was arrested) a verb (“I Suspected him”)
@@ -44,5 +44,6 @@ offense                  /// Latin
 : It is triangular: me (the victim), you (the traitor) and the other (the thief).
 
 : Set a thief to catch a thief.
+
 
 

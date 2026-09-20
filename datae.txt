@@ -1,3 +1,9 @@
+1 {{Graciela Iturbide}}.jpg
+2 {{Graciela Iturbide}}.jpg
+3 {{Graciela Iturbide}}.jpg
+4 {{Graciela Iturbide}}.jpg
+5 {{Graciela Iturbide}}.jpg
+6 {{Graciela Iturbide}}.jpg
 >>> ../datae/assets ## asset ## course-
 flag.ru.png
 flag.uk.png
@@ -33731,7 +33737,8 @@ lay the cloth [laying].jpg.uid-zps
 Dusthead [dusthead][phencyclidine][angel dust][Neo-Expressionism] ## date 1982 ## qropt! ## qrop l6 r2.jpg
 >>> ../datae\fineart abc {{$$}}/Batoni {{Pompeo Batoni}}
 Diana & Cupid [Diana@myth] ## date 1761.jpg.uid-zps
-Diana and Cupid [Diana@myth][Artemis~Diana][Cupid's bow] ## date 1761 ## qrop l13 r10 ## qropt!.jpg
+Diana and Cupid [Diana@myth][Artemis~Diana][Cupid's bow] ## date 1761 ## qropt! ## qrop l16 r11.jpg
+Diana and Cupid [placid mastery][taunt][taunter][badinage][amused forbearance] ## date 1761 ## qropt! ## qrop l27 r22 b28.jpg
 >>> ../datae\fineart abc {{$$}}/Bazille {{Frédéric Bazille}}
 Monotonous Chant [+] ## date 1870 ## qrop t10 b10 ### Mélopée.jpg.uid-zps
 Monotonous Chant [monotonous] ## date 1870 ## crop r1 ## qrop t10 b10 r1 ## qropt! ### Mélopée.jpg
@@ -33740,7 +33747,7 @@ Self Portrait with Palette [artist] ## date 1865 ## qrop t7 b19 ## qropt!.jpg
 A Wistful Look [wistful][wistfulness] ## crop l4 r3 t3 b1 ## qrop l4 t7 r3 b23.jpg
 The Authoress [inner amusement][authoress] ## qrop l1 t3 r1 b18.jpg
 >>> ../datae\fineart abc {{$$}}/Bellows {{George Wesley Bellows}}
-exaltation ## date 1915 ## qrop b12 ## qropt! ### Lucie.jpg
+Lucie [inward exaltation][absorption@emo][absorbed@emo][trance@emo] ## date 1915 ## qrop b12 ## qropt! ### Lucie.jpg
 >>> ../datae\fineart abc {{$$}}/Bettannier {{Albert Bettannier}}
 The Black Stain ({Alsace-Lorraine}) [revanchism] ## qrop l5 r22 ## date 1887.jpg
 >>> ../datae\fineart abc {{$$}}/Blake {{William Blake}}
@@ -33752,7 +33759,7 @@ The Conjurer [conjurer@tricks][conjuror@tricks][trick@fool][shell game][thimbler
 >>> ../datae\fineart abc {{$$}}/Bouguereau {{William Bouguereau}}
 Admiration ## qropt! ## qrop l15 r10 b1.jpg
 Admiration ## qropt! ## qrop l15 r10 b1.txt
-Bacchante [bacchante] ## qrop l1 t3 b41 {{William Bouguereau, 1894 $$}}.jpg
+Bacchante [bacchante][quiet exultation] ## qrop qt {{William Bouguereau, 1894 $$}}.jpg
 Bohemian @ Gypsy [Gypsy] ## qropt! {{William Adolphe Bouguereau, 1890 $$}}.jpg
 Dante and _Virgil in Hell [Dante][Dantean][Dantesque] ## date 1850.jpg
 diadem ## qrop r2 t5 b15 ## date Irene, 1897.jpg
@@ -33760,14 +33767,16 @@ Innocence [innocence][innocent][Lamb of God] ## date 1893 ## noqrop ## qropt! ##
 Little {Shepherdess} ## date 1891 ## noqrop.jpg
 Nymphs and Satyr [nymphs][satyrs][satyr] ## qrop t4 ## qropt! {{William Bouguereau, c. 1873 $$}}.jpg
 Pietà [pietà][pieta] ## date 1876 ## noqrop.jpg
-Reflexion [reflexion][reflect on~upon something] ## date 1897 ## qropt! ## qrop t5 b26.jpg
+Reflexion [reflexion][enamoredness][enamored][incalescence@emo][incalescent@emo] ## date 1897 ## qropt! ## qrop t5 b26.jpg
 Regina Angelorum [Regina] ## date 1900.jpg
 The Birth of Venus [Venus@myth] ## qropt! {{William-Adolphe Bouguereau, 1879 $$}}.jpg
 The Little {Knitter} ## date 1884.jpg
-The Nut Gatherers [girl talk] ## date 1882 ## noqrop.jpg
+The Nut Gatherers [girl talk] ## date 1882 ## noqrop.jpg.uid-zps
+The Nut Gatherers [guileless][confide@emo][confiding@emo] ## date 1882 ## qrop l10 r22.jpg
+The Nut Gatherers_(1882).jpg.uid-zps
 The Nymphaeum [Nymphaeum][nymphaeum] ## date 1878 ## course-.jpg
-The Rapture of _Psyche [Psyche][rapture] ## date 1895 ## qropt! ## qrop t6 b38.jpg
-The Secret [love child][love-child] ## date 1876.jpg
+The Rapture of _Psyche [Psyche][rapture@emo][rapturous@emo] ## date 1895 ## qropt! ## qrop t6 b38.jpg
+The Secret [love child][love-child][nosy][pry] ## date 1876 ## qrop t10 b12 ## qropt!.jpg
 The _Madonna of the Roses [Madonna] ## date 1903 ## qrop t4 b22 ## qropt!.jpg
 The _Virgin of the Lilies [Virgin] ## date 1899.jpg
 The _Virgin Of {Consolation} ## date 1875.jpeg
@@ -33866,7 +33875,10 @@ Satan ## qropt! {{Gustave Doré, c. 1866}} ### Depiction of Satan, a central fig
 >>> ../datae\fineart def {{$$}}/Draper {{Herbert James Draper}}
 The Golden Fleece ## qrop l18 ## qropt!.jpg
 The Golden Fleece ## qrop l18 ## qropt!.txt
-Ulysses and the Sirens [Odyssey].jpg
+Ulysses and the Sirens [Odyssey][Odysseus][Ulysses] ## qrop r23 b7.jpg
+Ulysses and the Sirens [tantalize][tantalized][tantalizing][frustrated agony] ## qrop l12 t6 r31 b25.jpg
+Wrath of the Sea God [monoreme][unireme].jpg
+Wrath of the Sea God [monoreme][unireme].jpg.uid-zps
 >>> ../datae\fineart def {{$$}}/Duchamp {{Marcel Duchamp}}
 Chess [Duchampian][conceptual art][conceptual@art] ## date 1918.jpg
 Fountain [Duchampian][Dada][dadaism][conceptual art][conceptual@art] ## date 1917 ## qrop t14 b8.jpg
@@ -33940,13 +33952,16 @@ caballero ## date circa 1580 ## crop t2 ## qrop t6 ## qropt!.jpg
 >>> ../datae\fineart gh {{$$}}/Grigoriev {{Boris Grigoriev}}
 An Old Man from Olonets [old man] ## qrop qb ## date 1900s.jpg
 Cabaret Girl [cabaret] ## date 1919 ## qropt!.jpg
-concierge ## 16+ ## date 1918 ## qropt!.jpg
+Cabaret Girl [cabaret] ## date 1919 ## qropt!.jpg.uid-zps
+concierge ## 16+ ## date 1918 ## qropt!.jpg.uid-zps
+Concierge in Paris [concierge] ## 16+ ## date 1918 ## qropt!.jpg
+Concierge in Paris [lugubrious@emo] ## date 1918 ## qrop qt.jpg
 Vsevolod Meyerhold [Meyerhold][symbolism][symbolist] ## date 1916 ## qropt!.jpg
 >>> ../datae\fineart gh {{$$}}/Grützner {{Eduard von Grützner}}
 Benedictine Monk with Wine at Breakfast [Benedictine].jpg
 Falstaff ## date 1906.jpg
 Falstaff ## date 1906.jpg.uid-zps
-Mephisto [cunning] ## date 1895 ## qrop t3 b15.jpg
+Mephisto [cunning][schadenfreude] ## date 1895 ## qrop t3 b16.jpg
 >>> ../datae\fineart gh {{$$}}/Gudiol {{Montserrat Gudiol}}
 Lovers [lovers].jpg
 Saint Georgina Slays the Dragon [Georgina] ## date 1974.jpg
@@ -33966,6 +33981,7 @@ The Frog Prince [fairy tale] ## qrop t10 b7.jpeg
 Historia [history] ## qrop l5 r5 t4 b5 ## date 1892 ## qropt!.jpeg
 >>> ../datae\fineart gh {{$$}}/Hacker {{Arthur Hacker}}
 And There Was a Cry in _Egypt [Exodus] ## noqrop ## date 1897.jpg
+Fire Fancies [fancy][fancies][firelit][woolgathering][mesmerized][mesmerised] ## 1890 ## crop t1 l1 r1 ## qrop l1 t12 r1 b20.jpg
 In Jeopardy [jeopardy] ## date 1902 ## qrop l17 r12 ## qropt!.jpeg
 The Drone [drone@idle] ## date 1899 ## course-.jpg
 The Temptation of Sir Percival [temptation][Percival][Perceval] ## crop t1 ## qrop l1 r6 t1 ## qropt! {{Arthur Hacker, 1894 $$}}.jpg
@@ -33973,7 +33989,7 @@ The Temptation of Sir Percival [temptation][Percival][Perceval] ## crop t1 ## qr
 The Convalescent [convalescent] ## date 1906.png ## qrop qt ### Zeffy in Bed.png
 >>> ../datae\fineart gh {{$$}}/Hals {{Frans Hals}}
 René Descartes [Descartes] ## date 1648 ## qropt!.jpg
-The Laughing Cavalier [cavalier] ## qrop t4 b15 ## date 1624.jpg
+The Laughing Cavalier [cavalier][supercilious][cocky] ## qrop l2 t7 r2 b15 ## date 1624.jpg
 >>> ../datae\fineart gh {{$$}}/Hau {{Eduard Hau}}
 The Boudoir of Empress Maria Alexandrovna [boudoir] ## date 1861 ## qrop ql.jpg
 _Hermitage Museum [Hermitage][museum][gallery@art][art gallery] ## date 1857 ## qrop l1 t1 r23.jpg
@@ -34021,7 +34037,7 @@ Portrait of Empress Maria Feodorovna [empress] ## date 1882 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Kuindzhi {{Arkhip Kuindzhi}}
 Moonlit Night on the Dnieper [moonlit][moonlight] ## date 1880 ## qrop l9 r18.jpg
 >>> ../datae\fineart ijkl {{$$}}/Kupka {{Frantisek Kupka}}
-The Yellow Scale [aplomb][yellow][color scale] ## qrop b5 ## date 1907 ## qropt!.jpg
+The Yellow Scale [aplomb][yellow][color scale][self-assured][nonchalant] ## qrop b5 ## date 1907 ## qropt!.jpg
 >>> ../datae\fineart ijkl {{$$}}/Lebedev {{Klavdy Lebedev}}
 Assembly of Peter I [assembly@gathering] ## qrop qb.jpg
 >>> ../datae\fineart ijkl {{$$}}/Leighton {{Edmund Blair Leighton}}
@@ -34033,11 +34049,14 @@ In Time of Peril [peril][perils][perilous] ## date 1897 ## qrop r15 ## qropt!.jp
 Secret ## qrop l12 r10 t1.jpg
 Secret ## qrop l12 r10 t1.txt
 Signing the Register [register@doc][registry@doc] ## date 1853 ## qrop l1 r21.jpeg
+Signing the Register [register@doc][registry@doc] ## date 1853 ## qrop l1 r21.jpeg.uid-zps
 Stitching the Standard [standard@flag][stitching] ## date 1911 ## qrop t13 b33 ## qropt!.jpeg
 The Charity of St. Elizabeth of Hungary [charity] ## date 1895 ## qrop t23 ## qropt!.jpg
-The Hostage [hostage@history] ## date 1912 ## qrop l8 r7 ## qropt!.jpg
+The Hostage [hostage@history] ## date 1912 ## qrop l8 r7 ## qropt!.jpg.uid-zps
+The Hostage [hostage@history][Sehnsucht][homesickness][homesick][hiraeth] ## date 1912 ## qrop l8 r7 ## qropt!.jpg
 Tristan and Isolde [Tristan][Isolde][Iseult] ## qrop l3 r7 ## qropt! {{Edmund Blair Leighton, 1902 $$}}.jpg
 Vox Populi.jpg
+Vox Populi.jpg.uid-zps
 Vox Populi.txt
 >>> ../datae\fineart ijkl {{$$}}/Leighton {{Frederick Leighton}}
 Daedalus and Icarus [Daedalus][Icarus] ## qropt! ## date 1869.jpg
@@ -34061,6 +34080,9 @@ A Goblet of Mead [mead] ## date 1910 ## qrop t8 b9 ## qropt!.jpg
 Black Square [square@geom][Suprematism][suprematism] ## date 1913 ## qropt!.jpg
 Red Square @ art [asymmetric][asymmetrical][red square] ## date 1915.jpg
 >>> ../datae\fineart mn {{$$}}/Manet {{Édouard Manet}}
+A Bar at the Folies-Bergère [barmaid] # 1882.jpg.uid-zps
+A Bar at the Folies-Bergère [barmaid][somatic exhaustion] # 1882.jpg
+A Bar at the _Folies-_Bergere [barmaid] # 1882.jpg.uid-zps
 A Good Glass of Beer (Le Bon Bock) [bock beer][bock] ## date 1873.jpg
 Polichinelle ## sic! ## qrop t2 b1 ## qropt! {{Édouard Manet, 1873 $$}}.jpg
 The Explosion [explosion] ## date 1871.jpg
@@ -34085,8 +34107,8 @@ Helen of Troy [Helen] ## qropt! {{Gustave Moreau, 1896 $$}}.jpg
 Jupiter and Semele [Jupiter@myth][Semele] ## qropt! {{Gustave Moreau $$}}.jpg
 Saint George and the dragon [Saint George] {{Gustave Moreau, 1890 $$}}.jpg
 >>> ../datae\fineart mn {{$$}}/Morgan {{Alfred Morgan}}
-An Omnibus Ride to Piccadilly Circus ## qrop l16 r10.jpg
-An Omnibus Ride to Piccadilly Circus ## qrop l16 r10.txt
+An Omnibus Ride to Piccadilly Circus ## qrop ql.jpg
+An Omnibus Ride to Piccadilly Circus ## qrop ql.txt
 An {Omnibus} Ride to _Piccadilly _Circus.jpg.uid-zps
 >>> ../datae\fineart mn {{$$}}/Moroni {{Giovanni Battista Moroni}}
 Portrait of a Man (The Tailor).bmp.uid-zps
@@ -34095,11 +34117,11 @@ Portrait of a Man [tailor] ## date 1565-68 ## crop l1 t1 b1 ## qrop l1 t4 b5 ## 
 Friedrich Nietzsche [Nietzsche] ## date 1906 ## crop l1 ## qrop l1 t10 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b17 ## qropt!.jpg
 The night wanderer (self-portrait) ## crop l1 r1 t2 b3 ## qrop l1 t10 r1 b17 ## qropt!.txt
-The Scream [scream][panic][horror] ## qrop t18 b2 ## date 1895 ## qropt!.jpg
+The Scream [scream][horror][horrified] ## qrop t18 b2 ## date 1895 ## qropt!.jpg
 >>> ../datae\fineart mn {{$$}}/Murillo {{Bartolome Murillo}}
 The Assumption of the Virgin [Assumption] ## date 1670 ## qrop b20 ## qropt!.jpg
 >>> ../datae\fineart mn {{$$}}/Neel {{Alice Neel}}
-Randall in Extremis [in extremis] ## date 1960 ## qrop b16 ## qropt!.jpg
+Randall in Extremis [in extremis][deranged@emo][angst][angstful] ## date 1960 ## qrop qt ## qropt!.jpg
 >>> ../datae\fineart mn {{$$}}/Nizovtsev {{Victor Nizovtsev}}
 mermaid ## crop l1 b1 ## qrop l1 t2 b3 ## qropt!.jpg
 Red Don Quixote [Don Quixote] ## noqrop.jpg
@@ -34110,7 +34132,8 @@ Wildly Dancing Children [wildly] ## date 1909 ## qrop ql.jpg
 >>> ../datae\fineart opqr {{$$}}/Orpen {{William Orpen}}
 Le Chef de l'Hôtel Chatham, Paris [chef] ## qrop t7 ## qropt! ## date c. 1921.jpg
 Sir Hugh Reid, in the Uniform of the Scottish Archers [Reid][Scottish][beret] ## qrop qt.jpg
-Sir William Meff, Lord Provost of Aberdeen [Lord Provost][provost][posture][authority][dignity] ## crop l1 t1 b1 ## qrop l1 t5 b19.jpg
+Sir William Meff, Lord Provost of Aberdeen ## crop l1 t1 b1 ## qrop l1 t5 b19.jpg
+Sir William Meff, Lord Provost of Aberdeen ## crop l1 t1 b1 ## qrop l1 t5 b19.txt
 >>> ../datae\fineart opqr {{$$}}/Pajot {{Marcel Nino Pajot}}
 caprice ## qrop l37 r2 ## qropt!.jpg
 Don Quixote ## qrop qt.jpg
@@ -34122,6 +34145,7 @@ take a chord [chord@music] ## qrop l21 r6.jpg
 cancan.jpg
 chronicler.jpg
 encore ## qrop ql.jpg
+flamenco.jpg
 Sub specie aeternitatis [sub specie aeternitatis][sub specie aeterni] ## qrop qt.jpg
 >>> ../datae\fineart opqr {{$$}}/Part {{Hans Part and others}}
 Agnes of Babenberg [Babenberg].jpg
@@ -34143,7 +34167,7 @@ _George _Washington [Washington] ## date 1795 ## crop b1.jpeg
 1919. Alarm [alarm@emo][anxiousness] ## date 1934 ## crop b1 ## qrop t14 b6 ## qropt!.jpeg
 At the Samovar [samovar] ## 12+ ## qrop qt ## date 1926.jpg
 Earthquake in Crimea [earthquake][panic] ## date 1927-1928 ## qropt!.jpg
-Laborers [laborers][blue-collar][working class] ## date 1926 ## qropt!.jpg
+Laborers [laborers][blue-collar][working class][[tension@psycho][tense@emo] ## date 1926 ## qropt!.jpg
 Mother of God with Child [Mother of God] ## date 1922.jpg
 Our Lady of Mollifying of Cruel Hearts [Our Lady][mollify][mollifying] ## date 1915 ## qrop l3 ## qropt!.jpg
 Our Lady of {Petrograd} ## date 1920.jpg
@@ -34152,13 +34176,13 @@ Reductio ad absurdum [reductio ad absurdum][proof by contradiction][apagoge][con
 >>> ../datae\fineart opqr {{$$}}/Phillips {{Bert Greer Phillips}}
 Warbonnet Shadows [warbonnet][war bonnet].jpg
 >>> ../datae\fineart opqr {{$$}}/Picasso {{Pablo Picasso}}
-Ascete [ascete][ascetic] ## date 1903 ## qrop t7 b7 ## qropt!.jpeg
+Ascete [ascete][ascetic][desolate@emo] ## date 1903 ## qrop t8 b7 ## qropt!.jpeg
 Celestina or Woman with a Cast [cast@squint] ## date 1904 ## qrop t5 b15.jpg
 Dance of the Banderillas [banderillas] ## date 1954 ## course-.jpg
 Don Quixote [hidalgo] ## date 1955 ## qrop t9 b16.png
 Life [relationships] ## date 1903 ## noqrop.jpg
 Monster [monster] ## date 1935 ## crop t25 ## qropt!.png
-Old _Jew and a Boy (Blind Beggar with a Boy) [beggar][miserable] ## date 1903 ## qrop b6 ## qropt!.jpeg
+Old _Jew and a Boy (Blind Beggar with a Boy) [beggar][miserable@poor][misery@poverty] ## date 1903 ## qrop b6 ## qropt!.jpeg
 Paloma _Picasso [Paloma] ## date 1956.jpeg
 Paul as Harlequin [harlequin] ## date 1924 ## qrop t3 b5 ## qropt!.jpg
 Portrait of _Ambroise _Vollard [Cubism][cubism][cubistic][Ambroise] ## date 1910.jpg
@@ -34167,7 +34191,7 @@ Portrait of {Igor Stravinsky} [Igor][Stravinsky] ## date 1920.png
 Study for Man with Goat [petrifying] ## date 1943.jpg
 The Absinthe Drinker [drinker][absinth][absinthe][absinthism][absinthismic] ## date 1901 ## qrop t5 b4 ## noqrop.jpg
 The Blind Man's Meal [blind] ## date 1903.jpg
-The Tragedy [tragedy@event][miserable] ## date 1903 ## qrop t4 b8 ## qropt! ## noqrop.jpg
+The Tragedy [tragedy@event][grief@emo][grieve@emo] ## date 1903 ## qrop t5 b8 ## qropt! ## noqrop.jpg
 Tumblers (Mother and Son) [tumblers] ## date 1905.jpg
 Untitled [minimalism][minimalistic] ## date 1960 ## qropt!.png
 >>> ../datae\fineart opqr {{$$}}/Pooley {{Thomas Pooley}}
@@ -34208,7 +34232,8 @@ Nude Seated on a Sofa ## date 1876 ## qropt!.jpg
 Paul Cézanne [postimpressionist][Cézannian][Cézanne] ## date 1880 ### father of Post-impressionism.jpg
 Portrait of Lucie Berard (Little Girl in a White Apron) [Berard][red hair] ## date 1884 ## qrop b18 ## qropt!.jpg
 >>> ../datae\fineart opqr {{$$}}/Repin {{Ilya Repin}}
-deserter ## qrop t5 b2 ## date 1917 ## qropt!.jpg
+Deserter ## date 1917 ## qropt!.jpg
+Deserter ## date 1917 ## qropt!.txt
 Dmitri Mendeleev [Mendeleev][chemist@chemistry] ## date 1885 ## qrop t11 b9.jpg
 Portrait of members of State Council [inform] ## qrop l1 r1 t5 b20 ## date 1903 ## qropt! ### Goremykin and Gerard.jpg
 Portrait of the Composer Alexander Glazunov [phlegmatic] ## qrop t7 b24 ## qropt!.jpg
@@ -34217,7 +34242,8 @@ Virgin and Child [Virgin][Child] ## date c. 1646.jpeg
 >>> ../datae\fineart opqr {{$$}}/Roerich {{Nicholas Roerich}}
 Guests from Overseas [Vikings][Varangians] ## qrop ql ## date 1901.jpg
 >>> ../datae\fineart opqr {{$$}}/Rossetti {{Dante Gabriel Rossetti}}
-Ecce Ancilla Domini! [Annunciation][annunciation] ## qrop t3 b20 ## qropt!.jpg
+Ecce Ancilla Domini! ## qrop t4 b31 ## qropt!.jpg
+Ecce Ancilla Domini! ## qrop t4 b31 ## qropt!.txt
 Holy Grail ## qropt! ## qrop b20 {{Dante Gabriel Rossetti, 1874 $$}}.jpg
 >>> ../datae\fineart opqr {{$$}}/Rubens {{Peter Paul Rubens}}
 Louis XIII [Louis].jpg
@@ -34244,8 +34270,8 @@ Belgium, _France, and _England before the _German invasion, 1914 [allegorical].j
 Diana, The Huntress [Diana@myth][Artemis~Diana][Huntress][huntress] ## date 1899 ## qrop t6 b13.jpg
 Pierrot's Embrace [necking] ## date 1900 ## crop t9 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Serebriakova {{Zinaida Serebriakova}}
-House of Cards [house of cards] ## date 1919 ## qropt!.jpg
 House of Cards [house of cards] ## date 1919.jpg.uid-zps
+House of Cards [house of cards][hold one's breath] ## date 1919 ## qropt! ## qrop l2 r7.jpg
 >>> ../datae\fineart s-z {{$$}}/Serov {{Valentin Serov}}
 Portrait of A. Kasyanov [sceptic][sceptical][skeptic][skeptical] ## qrop t6 b17 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Sheludyakov {{Oleg Sheludyakov $$$}}
@@ -34255,11 +34281,11 @@ German lesson %% Der Vogel [German] ## date 2004 ## qrop t3 b4 ## qropt!.jpg
 The wrestling of the wrestlers [wrestling][wrestlers] ## date 2003 ## qropt!.jpg
 The {fight} of the {fighters} ## date 2003.jpg
 >>> ../datae\fineart s-z {{$$}}/Shishkin {{Andrey Shishkin}}
-History of Diseases [doctor@medical][medical history] ## qrop l5 r13 ## qropt!.jpg
+History of Diseases [doctor@medical][medical history][resigned helplessness][cognitive overload] ## qrop l10 r13 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Siemiradzki {{Henryk Siemiradzki}}
 Prince Alexander Nevsky Receiving Papal Legates [legate][papal legate][papal legates] ## date c.1870 ## crop l1 b1 ## qrop l1 t1 b6 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Soltau {{Otto Soltau}}
-Philosopher [philosopher] ## qrop l20 r4 ## date 1911 ## qropt!.jpg
+Philosopher [philosopher][detachment@emo][detached@emo] ## qrop l20 r4 ## date 1911 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Stresor {{Henri Stresor}}
 The Oyster Eater [eater][gastronome] ## date 17th century ## crop r1 ## qrop r1 t7 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/Stuck {{Franz von Stuck}}
@@ -34306,7 +34332,7 @@ _Mars {terraformed}, Valles Marineris ## date 2004.jpg
 _Mars, Noachian period [Noachian epoch][Noachian] ## date 2005.jpg
 _Mars, {Olympus Mons} [Mons][mons] ## date 2003.jpg
 >>> ../datae\fineart s-z {{$$}}/Velazquez {{Diego Velázquez}}
-Pope Innocent X [Pope][pope][Innocent] ## crop t1 ## qropt! {{Diego Velázquez, 1656 $$}}.jpg
+Pope Innocent X [Pope][pope][Innocent] ## crop t1 ## qropt! ## qrop t1 b16 {{Diego Velázquez, 1656 $$}}.jpg
 >>> ../datae\fineart s-z {{$$}}/Vernet {{Horace Vernet}}
 Angel of Death [angel of death] ## date 1851.jpg
 Battle of the Bridge of Arcole (detail) [Napoleon] ## date 1826.jpg
@@ -34328,7 +34354,7 @@ Vitruvian Man [anthropology] ## date 1492 ## qropt! ### photo.. Lucian  Milasan 
 >>> ../datae\fineart s-z {{$$}}/Waterhouse {{John William Waterhouse}}
 Cleopatra ## date c. 1887 ## crop r1 ## qropt!.jpg
 >>> ../datae\fineart s-z {{$$}}/White {{Todd White}}
-Her Satisfied Place [defensive].jpg
+Her Satisfied Place [defensive@emo] ## qrop l13 r3 ## qropt!.jpg
 The Devil's In The Details [vixens].jpg
 Ticks and Leeches [treacherous][leeches@men].jpg
 >>> ../datae\fineart s-z {{$$}}/Williams {{Margaret Lindsay Williams}}
@@ -34399,16 +34425,17 @@ spotted salamander [salamander] ## qrop l18 r7 ## qropt! {{Sandra Estes}}.jpg
 The Swan (No. 17) [antipode] ## date 1914-1915 ## qropt! {{Hilma af Klint}}.jpg
 willow {{Nicholas Blowers}} ### Collapsing Winter Willow, 2011.jpg
 >>> ../datae\fineart {{$$}}/people
-4th [drinking] ## crop l1 t1 r1 b1 ## qrop l4 t1 r15 b1 ## qropt! {{Dana Ellyn}}.jpg
+4th [drinking][drunken melancholy] ## crop l1 t1 r1 b1 ## qrop l4 t1 r15 b1 ## qropt! {{Dana Ellyn}}.jpg
 A Sad Brahmin [brahmin] ## crop l1 t1 r1 b1 ## qrop l1 t18 r1 b5 {{Harpreet Singh}}.jpg
 A Shift in Perception [a shift in perception][perception] ## qrop t6 b14 {{Candice Hayden}}.jpg
 artist ## qrop qt.jpg
-Auld Lads drinking pints of stout in Baily's Corner [auld lads][auld][lads] {{PixieARTist}}.jpg
+Auld Lads drinking pints of stout in Baily's Corner [auld lads][auld][lads][camaraderie@emo][affinity@emo] {{PixieARTist}}.jpg
 babysitter {{Clinton Odhiambo}}.jpg
 bishop @ religion.jpg
 carve the slopes [alpine skiing][carve@skiing] {{Irene Gendelman}}.jpg
 courage ## qrop l8 r6 ## qropt! {{Marcin Mikołajczak}}.jpg
-Crybaby Drinking [crybaby].png
+Crybaby Drinking [crybaby@emo].png
+Crybaby Drinking [crybaby@emo].png.uid-zps
 Cup tossing [tasseography][tasseomancy][cup-tosser] ## crop l1 r1 ## qrop l11 r11 ## qropt! {{1842 engraving by Nicholas Joseph Crowley}}.jpg
 deshabille [dishabille] ## qropt! {{Pol Ledent $$$}}.jpg
 Dictation [dictation] ## qrop l10 r8 ## qropt! {{Louis Valtat}}.jpg
@@ -34416,13 +34443,13 @@ drowning {{José Luis Ceña Ruiz}}.jpg
 Emotions Imprisoned [emotions][emotional suppression][suppression] ## qrop l1 t3 b24 {{Sonja Van Rensburg}}.jpg
 evolution ## noqrop {{1871 $$}}.jpg
 fado singers [fado].jpg
-Hip hip hurrah! [hip hip hurrah][hip hip hooray] ## qrop l17 r4 b1 {{P.S. Krøyer, 1888 $$}}.jpg
+Hip hip hurrah! [hip hip hurrah][hip hip hooray][conviviality][convivial] ## qrop l16 t2 r7 b2 {{P.S. Krøyer, 1888 $$}}.jpg
 Hot Cuban Jazz [jazz][impasto] ## qrop ql {{Debra Hurd}}.jpg
 hypnotist @ circus {{Juliano Kaglis}}.jpg
 inside mouth [inside][mouth@human] ## qrop l9 r13 {{fritzcaterwall}}.jpg
-John and Ian [face value][at face value] ## qropt! {{Caitlin Southwick}}.png
+John and Ian [face value][at face value][hold on] ## qropt! {{Caitlin Southwick}}.png
 Keeping Track [keep track][tracker] ## qrop l8 r13 ## qropt! {{Diana Allison}}.jpg
-Loyalty and Honor [gravitas][vigilance][gritty@man][solemnity][rappers] ## qrop l15 r4 ## qropt! {{Hsky Chou}}.jpg
+Loyalty and Honor [gravitas][gritty@man][solemnity][rappers] ## qrop l15 r4 ## qropt! {{Hsky Chou}}.jpg
 millstone collar %% Portrait of a Woman, c.1630 [ruff@millstone] ## crop t1 ## qrop l19 t1 r13 {{Nicolaes Eliasz. Pickenoy}}.jpg
 Othello and Desdemona [Othello] ## qrop l7 r8 {{Alexandre-Marie Colin, 1829 $$}}.jpg
 Picnic in Perigord [picnic] ## qrop l5 r28 {{Shigeru Wakayama}}.jpg
@@ -34446,7 +34473,7 @@ Portrait of Pierre-Louis Stillemans [cleric] ## qropt! {{Jozef Janssens de Vareb
 Self-Portrait with Self-Portrait with Jewish Identity Card by Felix Nussbaum {{Gerard Boersma}}.jpg
 Sir William Thomson, Baron Kelvin [Thomson][Kelvin] {{Hubert von Herkomer, 1900s $$}}.jpg
 The Gallery of Eccentricity [Burtonesque] {{Lienzos.art}}.jpg
-The Scholar [focus@mind][focused][tension@psycho][critical@critique][meticulous] ## qrop t12 b8 {{Jennifer Gennari}}.jpg
+The Scholar [focus@mind][focused][critical@critique][meticulous] ## qrop t12 b8 {{Jennifer Gennari}}.jpg
 Álvaro de Bazán, 1st Marquis of Santa Cruz de Mudela [grandee] ## crop l2 t1 b1 ## qrop l2 t5 b1 ## qropt! {{Rafael Tegeo $$}}.jpg
 quartet ## qrop l9 r13 ## qropt! {{Luc Vernimmen}}.jpg
 Rough Riding Rancheros [rancheros][ranchero][Western] ## qrop l30 r2 ## qropt! {{Frank Tenney Johnson $$}}.jpg
@@ -34455,13 +34482,14 @@ Sehnsucht ## date 1895 {{Oskar Zwintscher}}.jpg
 Serpentine Soiree [soiree] ## qropt! {{Aaron Jasinski}}.jpg
 soldiers [soldier] ## qrop qb {{Colin Moss}}.jpg
 Specialite du Chef [chef][cook] ## crop b6 ## qrop t12 b14 ## qropt! {{Andre Kohn}}.jpg
-The Admiring Glance [self-admiration][narcissistic] ## crop t1 r1 ## qrop t13 r1 ## qropt! {{Auguste Toulmouche, 1868 $$}}.jpg
+The Admiring Glance [self-admiration][narcissistic] ## crop t1 r1 ## qropt! ## qrop t21 r1 {{Auguste Toulmouche, 1868 $$}}.jpg
 The Circumcision [circumcision] ## date ca.1500 ## crop l3 t1 r2 ## qrop l22 t1 r5 {{Workshop of Giovanni Bellini}}.jpg
 The Governess [governess] ## crop t2 b2 ## qrop t12 b2 ## qropt! {{Jean-Baptiste-Simeon Chardin, 1739 $$}}.jpg
 The Man with the golden Helmet [helmet@armor][veteran] ## qrop t4 b21 {{Circle of Rembrandt, c. 1650 $$}}.jpg
-The Smothering Mother [smother mother][smothering mother][smothering][smother] ## date 1971 ## qrop b19 ## qropt! {{Ann Tanksley}}.jpg
+The Smothering Mother ## date 1971 ## qrop b19 ## qropt! {{Ann Tanksley}}.jpg
+The Smothering Mother ## date 1971 ## qrop b19 ## qropt! {{Ann Tanksley}}.txt
 The Way It Is [correctional institution][correctional facility] ## qrop l12 r8 {{Rafael DeJesus}}.jpg
-Under Scrutiny from Auntie May [scrutiny][under scrutiny] ## qrop ql {{Lyn Darton}}.jpg
+Under Scrutiny from Auntie May [scrutiny][under scrutiny][disapproving appraisal] ## qrop ql {{Lyn Darton}}.jpg
 Winter time [muff@fur] ## crop t1 ## qrop t8 b1 ## qropt! {{Francesc Masriera, 1882 $$}}.jpg
 Planet Krypton [Krypton].jpg
 Red Shed in the Woods [shed] {{Kyle Buckland}}.jpg
@@ -34707,7 +34735,7 @@ clash cymbals [cymbalist][clash@sound] ## qrop qt.jpg
 conductorial.jpg
 fiddler ## qrop qt.jpg
 Hammond organ.jpeg
-John Coltrane [Coltrain][saxophonist][jazzman].jpg
+John Coltrane [Coltrain][saxophonist][jazzman][brooding@emo] ## crop t7 b7 ## qrop t22 b7.jpg
 oboe ## qrop qr.jpg
 ukulele [ukelele].jpg
 vinyl disc [vinyl].jpg
@@ -36534,7 +36562,7 @@ Frances Dee, actress [Dee] ## date 1932.jpg
 Hand of _Gerald _Warburg [cellist] ## date 1929.jpg
 Hands of Henry Cowell [pianistic] ## date 1926.jpg
 Hands of Leo Keoshian [hand@human] ## date 1973 ## qrop t7 r1 b14.jpg
-insouciant ## date 1932 ## qrop l4 ## qropt!.jpg
+Insouciant [insouciant] ## date 1932 ## qrop l4 ## qropt!.jpg
 Lovers, _Trinity Churchyard, New York City [lovers] ## date 1956.jpg
 Lyle Tuttle, {tattoo artist} ## date 1976.jpg
 Nun at Sacred Heart, Oakwood [nun] ## date 1976 ## qrop t12 b8.jpg
@@ -37598,7 +37626,7 @@ Stickball, _New _York, 1950 [stickball].jpg
 Subway Sleepers, 1950 [sleepers] ## crop l1 r1.jpg
 Tammany Hall, 1947 [Tammany Hall][Tammany].jpg
 Tug of War, 1949 [tug of war] ## qrop l6 r6 ## qropt!.jpg
-Watching Santa, 1944 [watching][mesmerized] ## qropt!.jpg
+Watching Santa, 1944 [watching][enthrallment][enthralled] ## qropt!.jpg
 >>> ../datae\photo ijkl/Leiter {{Photo.. Saul Leiter}}
 Accident [accident] ## date ca. 1955 ## qrop l20 t1 r12 ## qropt!.jpg
 Deborah, c. 1960 [fever@temperature] ## qrop l12 r20.jpg
@@ -38551,7 +38579,7 @@ Bordello &sharp;97 [bordello] ## date 2004.jpg
 Children of Londonderry, 1970s [Londonderry].jpg
 Phnom Penh, April 1975 [Khmer Rouge].jpg
 >>> ../datae\photo s/Steel {{Photo.. Arthur Steel}}
-a royal letdown [letdown][flat tyre] ## qrop l10 r23.jpg
+a royal letdown [letdown@emo][let-down@emo][flat tyre] ## qrop l11 t2 r24 b2.jpg
 applying lipstick [applying] ## qrop q.jpg
 Baby Bugatti Tourer %% Vintage car auction, Alexandra Palace, 1975 [Bugatti][vintage car] ## qrop ql.jpg
 Baby Love Bug %% Volkswagen Owner’s Meet, Great Britain 1980 [Volkswagen][Beetle][Bug][Love Bug] ## crop l3 t3 r3 b3 ## qrop l10 t3 r27 b3.jpg
@@ -39385,7 +39413,7 @@ lighter {{Photo.. Mikhail Dudarev $dreamstime 11635808}}.jpg
 oil burner [burner] ## qrop q {{Photo.. Ioannis Syrigos $dreamstime 12673072}}.jpg
 smoke @ fire ## qrop q {{Photo.. Uldis Bindris $dreamstime 13422430}}.jpg
 smoke bomb ## qrop r53 b29 {{Photo.. Kertu Saarits $dreamstime 107135166}}.jpg
-smoulder [smolder] ## qrop qr {{Photo.. Moonraiter $dreamstime 29166880}}.jpg
+smoulder @ fire [smolder@fire][smoldering@fire][smouldering@fire] ## qrop qr {{Photo.. Moonraiter $dreamstime 29166880}}.jpg
 spare sprinkler heads [spare] ## qrop ql {{Photo.. Dtfoxfoto $dreamstime 26311842}} ### in the cabinet at the fire riser.jpg
 sparkler [sparkle] ## qrop l12 r21 {{Photo.. Saeid  Shahin Kiya $dreamstime 3784283}}.jpg
 sparks ## qrop l14 r20 b1 {{Photo.. Chaoss $dreamstime 4496196}}.jpg
@@ -39697,7 +39725,7 @@ lost in thought [be lost in thought][thought][ponder] ## qrop l25 r9 b1 {{Photo.
 make choice [choice] ## qrop l11 r14 {{Photo.. Oksana Chernenko $dreamstime 97177242}}.jpg
 muse on~about something [muse@think][muse on][muse about] ## qrop qr {{Photo.. Maciej Plewicki $dreamstime 10110511}}.jpg
 ponder ## qrop l5 r28 {{Photo.. Volodymyr Melnyk $dreamstime 92960150}}.jpg
-reflect on~upon something [reflect on][reflect upon] ## qrop l23 r10 {{Photo.. Khosrork $dreamstime 105420385}}.jpg
+reflect on~upon something [reflect on][reflect upon][reflect on something][reflect upon something] ## qrop l23 r10 {{Photo.. Khosrork $dreamstime 105420385}}.jpg
 scratch one's head [scratch] ## qrop l9 r19 ## qropt! {{Photo.. Fantasyfactory13 $dreamstime 31455806}}.jpg
 shrug one's shoulders [shrug] ## qrop l15 r8 ## qropt! {{Photo.. Khosrork $dreamstime 105420423}} ### Who knows~!.jpg
 try to remember [remember] ## qrop l9 r24 {{Photo.. Nicoleta Ionescu $dreamstime 109167766}}.jpg
@@ -41733,7 +41761,7 @@ dialogue [dialog] ## crop l24 r10 ## qrop l24 t1 r10 {{Photo.. Mengtianhan $drea
 A Step into the Darkness, 1938 ## qrop l19 r2 {{Photo.. Everett Collection Inc. $dreamstime 52017283}}.jpg
 A Step into the Darkness, 1938 ## qrop l19 r2 {{Photo.. Everett Collection Inc. $dreamstime 52017283}}.txt
 about to cry [be about to cry][about to][dejection][dejected] ## qrop l28 r5 {{Photo.. Koldunova Anna $dreamstime 108371230}}.jpg
-affable mockery [tease][schadenfreude][glee] ## qrop l19 r15 {{Photo.. Khosrork $dreamstime 105420672}}.jpg
+affable mockery [tease][glee] ## qrop l19 r15 {{Photo.. Khosrork $dreamstime 105420672}}.jpg
 alarm @ emo [alarmed][hypervigilance][hypervigilant][trepidation][trepidatious] ## qrop q {{Photo.. Razzdazzstock $dreamstime 76059354}}.jpg
 anger [angry][apoplexy@emo][apoplectic@emo] ## qrop l20 r13 {{Photo.. Fcscafeine $dreamstime 63598258}}.jpg
 annoyed [annoy][annoyance][vexation][vexed] ## qrop q {{Photo.. Pressmaster $dreamstime 8341556}}.jpg
@@ -41771,9 +41799,10 @@ girl with attitude ## qrop l5 r29 {{Photo.. Frantab01 $dreamstime 10437413}}.txt
 inconsolability [discouraged@emo][inconsolable] ## qrop l10 r15 {{Photo.. Viachaslau Rutkouski $dreamstime 65405004}}.jpg
 injured innocence ## qrop l7 r27 {{Photo.. Koldunova Anna $dreamstime 108371013}}.jpg
 injured innocence ## qrop l7 r27 {{Photo.. Koldunova Anna $dreamstime 108371013}}.txt
+irritation [irritated] ## qrop l22 t1 r12 {{Photo.. Sanne Berg $dreamstime 58740060}}.jpg
 It seems unlikely to me. [unlikely][questioning][untrustworthiness][untrustworthy] ## qrop l14 r11 {{Photo.. Nastia1983 $dreamstime 106349401}}.jpg
-jumping on the bed {{Photo.. Melanie  Defazio $dreamstime 4064763}}.jpg
-jumping on the bed {{Photo.. Melanie  Defazio $dreamstime 4064763}}.txt
+jumping on the bed ## qrop t10 b19 ## qropt! {{Photo.. Melanie  Defazio $dreamstime 4064763}}.jpg
+jumping on the bed ## qrop t10 b19 ## qropt! {{Photo.. Melanie  Defazio $dreamstime 4064763}}.txt
 lighthearted skepticism [amuse][amused][amusement] ## qrop l5 r28 {{Photo.. Bronwyn8 $dreamstime 1577113}}.jpg
 listening [listen][agog] ## qrop qr {{Photo.. Waroot Tangtumsatid $dreamstime 113214068}}.jpg
 low spirits [low-spirited][infelicity][infelicitous][dumpish] ## qrop l4 t1 r30 {{Photo.. Koldunova Anna $dreamstime 107931924}}.jpg
@@ -41783,11 +41812,11 @@ mix of giddy amusement, mild embarrassment, and playful shyness ## qrop l3 r28 b
 mix of giddy amusement, mild embarrassment, and playful shyness ## qrop l3 r28 b1 {{Photo.. Rebecca Abell $dreamstime 1176739}}.txt
 mock perplexity [perplexity][perplexed][stupor][ham it up][sardonic bemusement][zany] ## qrop q {{Photo.. Koldunova Anna $dreamstime 107906439}}.jpg
 mock shock, comical disbelief, and playful apprehension [mock][disbelief][no way] ## qrop l28 r5 {{Photo.. Koldunova Anna $dreamstime 107930389}}.jpg
-perplexity [perplexed] {{Photo.. Koldunova Anna $dreamstime 107929916}}.jpg
+perplexity [perplexed] ## qrop qr {{Photo.. Koldunova Anna $dreamstime 107929916}}.jpg
 playful doubt and comical bewilderment [sceptical][skeptical][bewilderment][humorous] ## qrop q {{Photo.. Eldadcarin $dreamstime 29915282}}.jpg
 Please stop lying. [eye blocking][moral disgust][distrust] ## qrop l9 r21 ## qropt! {{Photo.. Alexandru Beatrice Mihaela $dreamstime 79365810}}.jpg
 pray @ wish [hopeful anticipation] ## qrop l14 r16 {{Photo.. Oksana Chernenko $dreamstime 99664348}}.jpg
-pretentious innocence [facetious] {{Photo.. Koldunova Anna $dreamstime 107889146}}.jpg
+pretentious innocence [facetious] ## qrop q {{Photo.. Koldunova Anna $dreamstime 107889146}}.jpg
 profound desire [imploring][implore] ## qrop q {{Photo.. Oksana Chernenko $dreamstime 99825490}}.jpg
 qualm [qualmish][prurience][pruriency][prurient][ambivalence][ambivalent] ## qrop l9 r25 {{Photo.. Fantasyfactory13 $dreamstime 31455813}}.jpg
 rage [rageful][enragement][enraged] ## qrop ql {{Photo.. Jan Sommer $dreamstime 25037112}}.jpg
@@ -41811,7 +41840,6 @@ tough-guy grimace [tough-guy][I did it!][scoff][pull off@achieve][achieve][self-
 triumphant {{Photo.. Maxim Lupascu $dreamstime 108961620}}.jpg
 uncertainty [uncertain][dubiousness][dubious] ## qrop qr {{Photo.. Koldunova Anna $dreamstime 107929916}}.jpg
 vicarious sadness [vicarious] ## qropt! ## qrop l29 t1 r5 {{Photo.. Elliot Burlingham $dreamstime 30432328}}.jpg
-vigilance [irritation][irritated] ## qrop l22 t1 r12 {{Photo.. Sanne Berg $dreamstime 58740060}}.jpg
 wide-eyed, shocked expression [agape@emo] ## qrop l14 r19 {{Photo.. Bonita Cheshier $dreamstime 16692077}}.jpg
 worry [worried][hypervigilance][hypervigilant][uneasiness][uneased][unease] ## qrop l30 r3 {{Photo.. Mykola Kravchenko $dreamstime 89573131}}.jpg
 >>> ../datae\photo_dreamstime\human/expressions

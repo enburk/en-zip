@@ -23,7 +23,7 @@ teleportation//teletransportation = телепортация                    
 levitation                 = левитация                          # 10+
 extrasensory               = экстрасенсорный                    # 10+
 
-trance                     = транс                              # 10+
+trance @ mystic            = транс                              # 10+
 phantom                    = фантом                             # 10+
 vision @ mystic            = виде́ние, ви́дение, ~ зрение         # 10+
 materialise\\materialize   = материализовать, ~ материализоваться # 10+
@@ -35,5 +35,6 @@ chiromancy                 = хиромантия                         # 14+
 
 mystification              = мистификация                       # 10+
 charlatan                  = шарлатан                           # 10+
+
 
 

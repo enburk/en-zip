@@ -1,26 +1,31 @@
 polysemic
 
 ***
-facet @ gem    = any one of the flat surfaces cut into a gem
-facet @ math   = a face of a polytope
-facet @ eye    = one member of a compound eye
+facet @ gem       = any one of the flat surfaces cut into a gem
+facet @ math      = a face of a polytope
+facet @ eye       = one member of a compound eye
 
 ***
-dart @ weapon  = a short lance or javelin
+dart @ weapon     = a short lance or javelin
 dart @ darts
-dart @ fold    = a fold that is stitched on a garment
-dart @ move    = a sudden or fast movement
+dart @ fold       = a fold that is stitched on a garment
+dart @ move       = a sudden or fast movement
 
 ***
-fade @ out     = a gradual decrease of brightness or volume
+fade @ out        = a gradual decrease of brightness or volume
 fade @ haircut
 
 ***
-custom @ habit = habitual practice
-custom @ made  = specialized, unique, ~ custom-made
-customs        = the government department or agency ~ that is authorised to collect the taxes ~ imposed on imported goods
+crouch @ position
+crouch @ bow      = to bow servilely
+crouch @ humility = to bow in humility or fear
+
+***
+custom @ habit    = habitual practice
+custom @ made     = specialized, unique, ~ custom-made
+customs           = the government department or agency ~ that is authorised to collect the taxes ~ imposed on imported goods
 : On 11 July at dawn entered Bosphorus /// Boarded by _Turkish Customs officers. Backsheesh. All correct. Under way at 4 p.m.
-customer       = a client
+customer          = a client
 : customer who knows what he wants
 
 ***
@@ -37,3 +42,4 @@ spoil
 ***
 review
 : So, to review...
+

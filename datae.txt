@@ -1,9 +1,3 @@
-1 {{Graciela Iturbide}}.jpg
-2 {{Graciela Iturbide}}.jpg
-3 {{Graciela Iturbide}}.jpg
-4 {{Graciela Iturbide}}.jpg
-5 {{Graciela Iturbide}}.jpg
-6 {{Graciela Iturbide}}.jpg
 >>> ../datae/assets ## asset ## course-
 flag.ru.png
 flag.uk.png
@@ -33981,7 +33975,7 @@ The Frog Prince [fairy tale] ## qrop t10 b7.jpeg
 Historia [history] ## qrop l5 r5 t4 b5 ## date 1892 ## qropt!.jpeg
 >>> ../datae\fineart gh {{$$}}/Hacker {{Arthur Hacker}}
 And There Was a Cry in _Egypt [Exodus] ## noqrop ## date 1897.jpg
-Fire Fancies [fancy][fancies][firelit][woolgathering][mesmerized][mesmerised] ## 1890 ## crop t1 l1 r1 ## qrop l1 t12 r1 b20.jpg
+Fire Fancies [fancy][fancies][firelit][woolgathering][mesmerized][mesmerised] ## date 1890 ## crop t1 l1 r1 ## qrop l1 t12 r1 b20.jpg
 In Jeopardy [jeopardy] ## date 1902 ## qrop l17 r12 ## qropt!.jpeg
 The Drone [drone@idle] ## date 1899 ## course-.jpg
 The Temptation of Sir Percival [temptation][Percival][Perceval] ## crop t1 ## qrop l1 r6 t1 ## qropt! {{Arthur Hacker, 1894 $$}}.jpg
@@ -34094,7 +34088,7 @@ Sprat in tomato sauce [Sovietesque] ### 2.jpg
 >>> ../datae\fineart mn {{$$}}/Mendham {{Robert Mendham}}
 The Town Crier [town crier].jpg
 >>> ../datae\fineart mn {{$$}}/Michelangelo {{Michelangelo}}
-The Prophet Jeremiah [Jeremiah][rumination@emo][ruminative@emo][cogitation].jpg
+The Prophet Jeremiah [Jeremiah][rumination@emo][ruminant@emo][cogitation].jpg
 >>> ../datae\fineart mn {{$$}}/Millais {{John Everett Millais}}
 >>> ../datae\fineart mn {{$$}}/Miola {{Camillo Miola}}
 The Oracle at Delphi [Oracle of Delphi][Delphic oracle][Delphic][oracle] ## date 1880 ## crop l2 ## qrop l5 r12.jpg
@@ -34226,7 +34220,7 @@ The Prophetess Anna [prophetess].jpg
 The Syndics of the Drapers' Guild [syndic][syndics] ## date 1662.jpg
 >>> ../datae\fineart opqr {{$$}}/Renoir [Renoir] {{Auguste Renoir}}
 Claude Monet reading [Claude Monet][Monet][impressionist] ## date 1872.jpg
-Jeanne Samary (Reverie) [reverie] ## date 1877 ## qropt!.jpg
+Jeanne Samary (Reverie) [reverie] ## date 1877 ## qropt! ## qrop l1 t9 b8.jpg
 Luncheon of the Boating Party [luncheon][boating][party@group] ## date 1881 ## qropt!.jpg
 Nude Seated on a Sofa ## date 1876 ## qropt!.jpg
 Paul Cézanne [postimpressionist][Cézannian][Cézanne] ## date 1880 ### father of Post-impressionism.jpg
@@ -34242,8 +34236,8 @@ Virgin and Child [Virgin][Child] ## date c. 1646.jpeg
 >>> ../datae\fineart opqr {{$$}}/Roerich {{Nicholas Roerich}}
 Guests from Overseas [Vikings][Varangians] ## qrop ql ## date 1901.jpg
 >>> ../datae\fineart opqr {{$$}}/Rossetti {{Dante Gabriel Rossetti}}
-Ecce Ancilla Domini! ## qrop t4 b31 ## qropt!.jpg
-Ecce Ancilla Domini! ## qrop t4 b31 ## qropt!.txt
+Ecce Ancilla Domini! ## qrop t4 b39 ## qropt!.jpg
+Ecce Ancilla Domini! ## qrop t4 b39 ## qropt!.txt
 Holy Grail ## qropt! ## qrop b20 {{Dante Gabriel Rossetti, 1874 $$}}.jpg
 >>> ../datae\fineart opqr {{$$}}/Rubens {{Peter Paul Rubens}}
 Louis XIII [Louis].jpg
@@ -34473,7 +34467,8 @@ Portrait of Pierre-Louis Stillemans [cleric] ## qropt! {{Jozef Janssens de Vareb
 Self-Portrait with Self-Portrait with Jewish Identity Card by Felix Nussbaum {{Gerard Boersma}}.jpg
 Sir William Thomson, Baron Kelvin [Thomson][Kelvin] {{Hubert von Herkomer, 1900s $$}}.jpg
 The Gallery of Eccentricity [Burtonesque] {{Lienzos.art}}.jpg
-The Scholar [focus@mind][focused][critical@critique][meticulous] ## qrop t12 b8 {{Jennifer Gennari}}.jpg
+The Scholar ## qrop t12 b8 {{Jennifer Gennari}}.jpg
+The Scholar ## qrop t12 b8 {{Jennifer Gennari}}.txt
 Álvaro de Bazán, 1st Marquis of Santa Cruz de Mudela [grandee] ## crop l2 t1 b1 ## qrop l2 t5 b1 ## qropt! {{Rafael Tegeo $$}}.jpg
 quartet ## qrop l9 r13 ## qropt! {{Luc Vernimmen}}.jpg
 Rough Riding Rancheros [rancheros][ranchero][Western] ## qrop l30 r2 ## qropt! {{Frank Tenney Johnson $$}}.jpg
@@ -34489,7 +34484,7 @@ The Man with the golden Helmet [helmet@armor][veteran] ## qrop t4 b21 {{Circle o
 The Smothering Mother ## date 1971 ## qrop b19 ## qropt! {{Ann Tanksley}}.jpg
 The Smothering Mother ## date 1971 ## qrop b19 ## qropt! {{Ann Tanksley}}.txt
 The Way It Is [correctional institution][correctional facility] ## qrop l12 r8 {{Rafael DeJesus}}.jpg
-Under Scrutiny from Auntie May [scrutiny][under scrutiny][disapproving appraisal] ## qrop ql {{Lyn Darton}}.jpg
+Under Scrutiny from Auntie May [scrutiny][under scrutiny][scrutinous][disapproving appraisal] ## qrop ql {{Lyn Darton}}.jpg
 Winter time [muff@fur] ## crop t1 ## qrop t8 b1 ## qropt! {{Francesc Masriera, 1882 $$}}.jpg
 Planet Krypton [Krypton].jpg
 Red Shed in the Woods [shed] {{Kyle Buckland}}.jpg
@@ -34869,7 +34864,7 @@ tetradrachm [drachm].jpg
 stapler ## crop l20 r13.jpg
 >>> ../datae\photo\business/trademarks
 cellophane ## qrop ql.jpg
-Frisbee [frisbee] ## qrop l3 r13 ## qropt!.jpg
+Frisbee [frisbee][frantic exertion][exertion] ## qrop l15 r18 ## qropt!.jpg
 Ping-Pong [ping-pong] {{freepik}}.jpg
 Vaseline [vaseline].jpg
 Christmas lights.jpg
@@ -35050,7 +35045,7 @@ Scotch whisky [Scotch@whisky][scotch@whisky].jpg
 spirits ## qrop l19 r14 {{Photo.. Ashton Worthington}} ### Prop_Styling_Brian_Byrne.jpg
 Teapot, Probably Based on an Early 18th Century Dutch Example [teapot] ## noqrop.jpg
 vermouth ## qrop l5 t10 r12.jpg
-vodka martini [James Bond][Bondesque] ### james_bond_roger_moore_getty.jpg
+vodka martini [James Bond][Bondesque][suave][flippant][irony][ironical] ### james_bond_roger_moore_getty.jpg
 wassail ## qrop qb.png
 Dutch oven [Dutch pot][casserole dish].jpg
 fettuccini on a fork [fettuccini] ## qrop ql {{Photo.. JC. Valette}}.jpg
@@ -35397,18 +35392,19 @@ Nervous Nellie ## qrop l3 r1 ## qropt!.png
 >>> ../datae\photo\people/portraits
 49ers.jpg
 Archie Shepp [Archie][Shepp][saxophonists][jazzy].jpg
-Author _Ian _Fleming [Ian][Fleming][Bondian][gamblerlike] {{Photo.. Howell Conant}}.jpg
+Author _Ian _Fleming [Ian][Fleming][Bondian][gamblerlike][theatricality] ## qrop l8 r13 {{Photo.. Howell Conant}}.jpg
 John McCarthy at Stanford's IBM 7090 [computer scientist][McCarthy][intelligent] ## date 1967 ## qrop l24 r12.png
 Lev Landau [Landau] {{Photo.. M.S. Nappelbaum}}.jpg
 Norval Morrisseau [artist][Ojibwe][Anishinaabe] ## qrop q.jpeg
 Paul Joseph Geobbels, _Nazi propaganda minister [Geobbels][geobbels][propaganda] ## qrop t7 b8 ## qropt!.jpg
 Salvador {Dalí} ## date 1929 {{Photo.. Luis Buñuel}} ## noqrop ### 1.jpg
-Talk about smug! Franklin Roosevelt, in the bowler ## qrop t6 ## qropt!.jpg
-Talk about smug! Franklin Roosevelt, in the bowler ## qrop t6 ## qropt!.txt
-U.S. oil magnate and philantropist _John D. Rockefeller gives a dime to a child [philantropist][Rockefeller][rockefeller] ## qrop t1 b13 ## qropt!.jpg
+Talk about smug! %% Look at the aristocratic pose by _Franklin _Roosevelt ## qrop t7 r21 b37.jpg
+Talk about smug! %% Look at the aristocratic pose by _Franklin _Roosevelt ## qrop t7 r21 b37.txt
 Yuri Gagarin [Gagarin][cosmonaut].jpg
 _Einstein sticking his tongue out ## date 1951 ## qrop t3 b9 ## qropt! {{Photo.. Arthur Sasse}}.jpg
 _Einstein sticking his tongue out ## date 1951 ## qrop t3 b9 ## qropt! {{Photo.. Arthur Sasse}}.txt
+_Franklin _Delano _Roosevelt [Franklin][Delano][Roosevelt][FDR][smugness][smug] ## qrop t7 r21 b37.jpg
+_John D. Rockefeller gives a dime to a child [philanthropist][Rockefeller][rockefeller][handout] ## qrop l1 t2 r4 b25 ## qropt!.jpg
 _Joseph _Stalin [Joseph Stalin][Stalin][thumb one's nose][cock a snook] ## qrop t11 b12 ## qropt! {{Photo.. Nikolai Vlasik}}.jpg
 prostration @ lying %% candidates for the priesthood lying prostrate on the floor [prostrate][prone@lying] ## qrop l38 t5 b2.jpg
 punks [punk][subculture] ## crop l7 r8 ## qrop l15 r20 ## qropt!.jpg
@@ -35599,7 +35595,8 @@ University of _Nebraska stadium [tilt-shift][stadium] ## qrop l3 r5 ## qropt!.jp
 Windsurfer _Robby _Naish [windsurfer][windsurfing] ## qrop l3 r31 {{Photo.. Hoch Zwei}}.jpg
 >>> ../datae\photo\sport/wrestling
 aikido ## crop t5 b11 ## qrop t8 b18 ## qropt!.jpg
-Alexander Karelin [wrestler][Greco-Roman wrestler][Greco-Roman wrestling][Greco-Roman@wrestling] ## qropt!.jpg
+Alexander Karelin ## qropt! ## qrop qt.jpg
+Alexander Karelin ## qropt! ## qrop qt.txt
 jiujitsu ## qrop t1 b4.jpg
 professional wrestling ## qrop l22 r12 b1.jpeg
 taekwondo ## qrop qt.jpg
@@ -35607,7 +35604,8 @@ taekwondo ## qrop qt.jpg
 A new breed of chauffeur takes the wheel [chauffeur] ## qrop l15 r13 {{Photo.. Fox Photos~Getty Images}}.jpg
 beacon.jpg
 beating against the wind [sailing] ## qrop ql.jpeg
-Bentley Advertisement [middle-finger][middle finger][fuck-you finger] ## qropt!.jpg
+Bentley Advertisement ## qropt! ## qrop t12 b10.jpg
+Bentley Advertisement ## qropt! ## qrop t12 b10.txt
 >>> ../datae\photo\transport/bike
 chopper @ bike ## noqrop ### 2.jpg
 chopper @ bike ## qrop l9 r4 ## qropt! ### 1.jpg
@@ -35848,7 +35846,7 @@ Window, _Stevenson House, _Monterey, _California [window@house] ## date 1953 ## 
 Andy Warhol in Gristedes Supermarket Near 47th Street Factory, 1964 [pop art] ## qrop ql.jpg
 Water hosing demonstrators.jpeg
 Water hosing demonstrators.txt
-wrath ## qrop l8 r13.jpg
+wrath [wrathful][righteous outrage] ## qrop l8 r13.jpg
 wrath.jpg.uid-zps
 >>> ../datae\photo a/Albrecht {{Photo.. Kristoffer Albrecht}}
 a mug, a spoon and eggs [mug@cup] ## date 1983 ## crop b1 ## qrop l12 r13 b1.jpg
@@ -35876,7 +35874,7 @@ Bundi, India [illumination@light] ## qrop l15 r10 ### 1.jpg
 67 Shooting Back (No. 159) [kinbaku] ## date 2007.jpg
 >>> ../datae\photo a/Arbus {{Photo.. Diane Arbus}}
 42nd Street movie theater audience, N.Y.C. [movie theater] ## date 1958 ## qrop l25 r4 ## qropt!.jpg
-Child with Toy Hand Grenade in Central Park [hand grenade] ## date 1962.jpg
+Child with Toy Hand Grenade in Central Park [hand grenade] ## date 1962 ## qrop qb.jpg
 Diane Arbus (allegedly). Child with toy chainsaw in Griffith Park, Los Angeles, 2008 [allegedly] {{Photo.. Hugh Brown}}.jpg
 Young Couple in Washington Square Park, NYC [couple@people] ## qropt!.jpg
 >>> ../datae\photo a/Arnold {{Photo.. Corey Arnold}}
@@ -35890,10 +35888,11 @@ the beam trawl [trawl@verb][trawling] ## date 2010 ## qrop l17 r14.jpg
 trawl @ noun [trawling][dragnet] ## qrop l19 r7 ### Pollockscape.jpg
 >>> ../datae\photo a/Arnold {{Photo.. Eve Arnold}}
 Anthony Quinn and Anna Karina on the set of The Magus in Spain, 1976 [banter] ## qrop l11 r19 ## qropt!.jpg
-Civil strike, Core group. Training activist not to react to provocation. Virginia, USA. 1960 [provocation] ## qrop t24 b3 ## qropt!.png
 George Lincoln Rockwell, flanked by members of the American Nazi Party.jpg
 George Lincoln Rockwell, flanked by members of the American Nazi Party.txt
 Paul Newman at The Actors Studio. New York City, USA. 1955 [vigorous] ## qrop l11 r20.jpg
+Training activist not to react to provocation %% Civil strike, Core group. Virginia, USA. 1960 ## qrop t30 r1 b5.png
+Training activist not to react to provocation %% Civil strike, Core group. Virginia, USA. 1960 ## qrop t30 r1 b5.txt
 >>> ../datae\photo a/Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}
 >>> ../datae\photo a\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/aerial
 A whale swims off the _Valdes peninsula, _Argentina [whale tail][whale's tail].jpg
@@ -35929,8 +35928,10 @@ _Phi _Phi _Le island near _Phuket, {_Thailand}.jpg
 Bagpipers with the _Indian Army [bagpipers] ## qrop t4 b32.jpg
 >>> ../datae\photo a\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/cats
 A boy holds his blue tabby and white {Norwegian Forest cat}.jpg
-American Shorthair Brown Patched Tabby Cat [brindled][tabby cat][shorthair][American Shorthair][american shorthair][Tabby][tabby@cat] ## crop l5 r5 ## qrop l9 r24.jpg
-Seal Pointed _Persian Longhair Cat [Persian longhair][Persian cat][seal point][seal-pointed][Persian Longhair Cat][Persian longhair cat] ## qrop t9 b2 ## qropt!.jpg
+American Shorthair Brown Patched Tabby Cat ## crop l5 r5 ## qrop l9 r24.jpg
+American Shorthair Brown Patched Tabby Cat ## crop l5 r5 ## qrop l9 r24.txt
+Seal Pointed _Persian Longhair Cat ## qropt! ## qrop t3 b12.jpg
+Seal Pointed _Persian Longhair Cat ## qropt! ## qrop t3 b12.txt
 Snow Chocolate Spotted Tabby {_Bengal Cat} [Bengal] ## qrop qt.jpg
 _European Shorthair Kittens [European Shorthair][European shorthair] ## qrop l12 r20.jpg
 >>> ../datae\photo a\Arthus-Bertrand {{Photo.. Yann Arthus-Bertrand}}/cows
@@ -36019,15 +36020,16 @@ yohimbe cocktail [yohimbe][yohimbine].jpg
 _Italian-style strawberry pudding [pudding] ## crop t10 ## qrop t15 ## qropt!.jpg
 сhayotes [chayote@fruit][christophene][christophine][cho-cho][merleton][choko][pipinola].jpg
 >>> ../datae\photo a/Attar {{Photo.. Abbas Attar}}
-Ali vs Foreman. A journalist follows the fight through binoculars [fascinated][fascinating][fascination] ## date 1974 ## qrop l12 t1 r22 ## qropt!.jpg
+Ali vs Foreman %% A journalist follows the fight through binoculars ## date 1974 ## qrop l12 t1 r22 ## qropt!.jpg
+Ali vs Foreman %% A journalist follows the fight through binoculars ## date 1974 ## qrop l12 t1 r22 ## qropt!.txt
 Celebrating Purim with a tish, Jerusalem, 2016 [Purim][tish].jpg
 Cooking hand made noodles, China [noodles] ## date 1982 ## qrop l18 r14.jpg
 Mexico City, November 1, 1984.jpg
 Mexico City, November 1, 1984.txt
 Muhammad Ali avoids a punch from George Foreman [avoid] ## date 1974 ## qrop l29 r4.jpg
+Muhammad Ali fooling around [fool around][fooling around][mock trepidation][faux-terror][faux terror] ## date 1974 ## qrop l27 r7.jpg
 Tehran. Feburary 11, 1980 ## qrop l19 r14.jpg
 Tehran. Feburary 11, 1980 ## qrop l19 r14.txt
-World Heavyweight Boxing Championship. Muhammad Ali fooling around [fool around][fooling around] ## date 1974 ## qrop l27 r7.jpg
 >>> ../datae\photo a/Attie {{Photo.. David Attie}}
 Bobby Fisher [long face@literally] ## date 1971.jpeg
 Bobby Fisher [overweening] ## date 1971.jpg
@@ -36130,7 +36132,7 @@ soba with artichokes and horseradish [soba].jpg
 cavalcade %% Paris, 1961 ## qrop ql.jpg
 Newspaper, The Godfather, NYC [newspaper][props] ## qrop l27 t3 r6 b2.jpg
 Nixon at the Knesset, 1974 [Knesset].jpg
-Nixon Resigns, 1974 [resign][resignation@act] ## qrop l2 r5 ## qropt!.jpg
+Nixon Resigns, 1974 [resign][resignation@act] ## qropt! ## qrop l16 r6.jpg
 President _Gerald _Ford [Gerald Ford][Gerald][Ford].jpg
 Senator Robert F. Kennedy, June 5, 1968 [assassination].jpg
 Teargassing, Canton, Mississippi, 1966 [teargassing][teargas][tear gas] ## qrop r27 ## qropt!.jpg
@@ -36388,7 +36390,7 @@ Winter Sun Dogs and Prairie %% Nobles County, Minnesota [sun dog] ## date 1976 #
 Early morning on the river, 1930s [gull].jpeg
 East End girl dancing the {Lambeth Walk} [Lambeth][East End] ## date 1936.jpg
 Housewife, Bethnal Green, 1937 [housewife].jpeg
-In a Mayfair drawing room, 1939 [backgammon] ## qrop qb.jpeg
+In a Mayfair drawing room, 1939 [backgammon] ## qrop t48 r35.jpeg
 Lamplighter, Kensington, c. 1930 [lamplighter].jpeg
 >>> ../datae\photo b/Brandt {{Photo.. Nick Brandt}}
 Abandoned Ostrich Egg [ostrich egg][ostrich@egg] ## qrop qb.jpg
@@ -36401,7 +36403,7 @@ Giraffe Skull [skull] ## qrop l16 r4.jpg
 Giraffes with Dust Devil [dust devil] ## qrop qb.jpg
 Ranger with Tusks of Killed Elephant [tusks].jpg
 >>> ../datae\photo b/Brassai {{Photo.. Brassaï}}
-Dans une Boite de Nuit Russe, c. 1935 [night house].jpg
+Dans une Boite de Nuit Russe, c. 1935 [night house] ## qrop t11 b14.jpg
 Femme-Fruit (Transmutation) [transmutation] ## date 1935 {{Brassaï}}.jpg
 >>> ../datae\photo b/Bravo {{Photo.. Manuel Alvarez Bravo}}
 Portrait of the Eternal [eternal] ## qrop t6 b12 ## qropt!.jpg
@@ -36419,7 +36421,7 @@ Alberto Giacometti [sculptor][Giacomettian] ## date 1960 ## noqrop.jpg
 Blackout, New York City, Nov. 9. 1965 [blackout@power] ## qrop l12 r23.jpg
 Che Guevara, Cuba 1963 [contact print][contact sheet][proof sheet] ## qrop ql.jpeg
 Ernesto Guevara [+][Che][Che Guevara][Guevarism][iconic] ## date 1963.jpg
-Ernesto Guevara [a little bit] ## date 1963.jpg ## qrop l22 r11.jpg
+Ernesto Guevara [a little bit][dismissive minimization][negligible at best][diminution] ## date 1963.jpg ## qrop l20 t1 r14.jpg
 Ernesto Guevara [contact print][contact sheet][Guevarism] ## date 1963 ## qrop qb.jpg
 Le Corbusier mimicking the signature facial expression of the Swiss clown Grock ## date 1955 ## qrop t30 b3.jpg
 Le Corbusier mimicking the signature facial expression of the Swiss clown Grock ## date 1955 ## qrop t30 b3.txt
@@ -36476,7 +36478,7 @@ Nearness [zebra][zabras] ## qrop t2 b10.jpg
 running before the wind [sailing] ## qrop t23 b7 ## qropt!.jpg
 spinnaker.jpeg
 >>> ../datae\photo c/Carjat {{Photo.. Étienne Carjat}}
-Gioachino Rossini [Rossini][Rossinian] {{Photo.. Étienne Carjat, 1862 $$}}.jpg
+Gioachino Rossini [Rossini][Rossinian] ## qrop t10 b9 {{Photo.. Étienne Carjat, 1862 $$}}.jpg
 Hector Berlioz [Berlioz][composer@music] ## noqrop {{Caricature by Étienne Carjat, 1858}}.jpg
 _Victor _Hugo [Victor][Hugo] ## qrop t9 ## date 1876.jpg
 >>> ../datae\photo c/Carter {{Photo.. Gary W. Carter}}
@@ -36489,7 +36491,8 @@ Orb Weaver Spider on Web [orb-weaver spider][orb][weaver].jpg
 altar boy ## qrop t26 b5.jpg
 Egypt, Cairo, 1950. In a shop selling Sudanese ivory, American looking at the show window. [show window] ## qrop qb.jpeg
 Fountain Kiss [kiss] ## qrop ql.jpg
-Paris. Saint Germain des Prés. Brasserie Lipp. 1969 [miniskirts][miniskirt] ## qrop t15 b12 ## qropt!.jpg
+Paris. Saint Germain des Prés. Brasserie Lipp. 1969 ## qrop t17 b16 ## qropt!.jpg
+Paris. Saint Germain des Prés. Brasserie Lipp. 1969 ## qrop t17 b16 ## qropt!.txt
 Queen _Charlotte's Ball, _London, 1959 [waltz] ## qrop qb.jpg
 >>> ../datae\photo c/Chabaneix {{Photo.. De Chabaneix}}
 crushing herbs in mortar [mortar@vessel] ## qrop t6 b15 ## qropt!.jpg
@@ -36509,14 +36512,16 @@ barred window [barred].jpg
 wall @ house ## qrop ql.jpg
 >>> ../datae\photo c/Clarke {{Robert Carlos Clarke}}
 Dress to Kill [dress to kill][dressed to kill] ## date 1997 ## qrop l11 r12 ## qropt!.jpg
-Faithful unto Death [faithful] ## date early 1980s ## qrop t13 b4 ## qropt!.jpg
+Faithful unto Death ## date early 1980s ## qrop t15 b5 ## qropt!.jpg
+Faithful unto Death ## date early 1980s ## qrop t15 b5 ## qropt!.txt
 >>> ../datae\photo c/Clergue {{Photo.. Lucien Clergue}}
-Bullfights, Arles, France, 1970s [matador] ## crop r1 b1 ## qrop t5 b31 r1.jpg
+Bullfights, Arles, France, 1970s ## crop r1 b1 ## qrop t5 b31 r1.jpg
+Bullfights, Arles, France, 1970s ## crop r1 b1 ## qrop t5 b31 r1.txt
 Cocteau exhale la fumée [surreal] ## date 1959.jpg
 dead egret [mort@game] ## date Camargue, 1956.jpg
 Gypsies [Gypsy][gypsies][gypsy][Romani] ## date 1950s.jpg
 Harlequin, Arles, 1955 [harlequin][saltimbanque][itinerant] ## qrop qb.jpg
-Violinist, Arles, 1954 [violinist] ## qrop t9 r1 b10.jpg
+Violinist, Arles, 1954 [violinist][sombre@emo][somber@emo] ## qrop t9 r1 b10.jpg
 >>> ../datae\photo c/Clevenger {{Photo.. Ralph Clevenger}}
 aboriginal spear {thrower} and throwing sticks.jpg
 drumsticks ## qrop l16 r12 ## qropt!.jpg
@@ -36552,12 +36557,12 @@ A Boy's Escape, 1947 ## qrop t8 b10 ## qropt!.txt
 Natalie _Wood, for Life Magazine, 1956 [aiming][aim@weapon] ## qrop l5 r9 ## qropt!.jpg
 >>> ../datae\photo c/Cunningham {{Photo.. Bill Cunningham}}
 Chelsea, New York City, c. 1980s [Chelsea@NY] ## course-.jpg
-high kick @ dance [escapade] ## qrop t15 b3 ## qropt!.jpeg
+high kick @ dance [escapade] ## qrop t20 b4 ## qropt!.jpeg
 >>> ../datae\photo c/Cunningham {{Photo.. Imogen Cunningham}}
 another arm [arm@human] ## date 1973 ## qropt!.jpg
 Blind Sculptor [blind] ## date 1952 ## qrop qb.jpg
 Braille [braille][tactile] ## date 1933 ## qrop l17 r7.jpg
-Edward Weston and Margrethe Mather [Mather] ## date 1922 ### , Platinum Rolls.jpg
+Edward Weston and Margrethe Mather [Mather][intimacy][brooding intimacy] ## date 1922 ## qrop t8 r1 b11 ### , Platinum Rolls.jpg
 Frances Dee, actress [Dee] ## date 1932.jpg
 Hand of _Gerald _Warburg [cellist] ## date 1929.jpg
 Hands of Henry Cowell [pianistic] ## date 1926.jpg
@@ -36620,8 +36625,11 @@ turtle swimming [turtle][sea turtle] ## qrop l17 r16.jpg
 wipe out @ sport [bodyboarder] ## qrop l11 r20.jpg
 wipe out.jpg.uid-zps
 >>> ../datae\photo de/Davidson {{Photo.. Bruce Davidson}}
+boiling anger [boiling][pique@emo][piqued@emo] %% Brooklyn Gang, 1959 [boiling] ## crop l2 r2 t2 b2 ## qrop l2 t2 r34 b2.jpg
 Boys jiving on broadwalk, 1959 [jiving] ## crop l27 ## qrop l28 r6.jpg
 Boys jiving on broadwalk, 1959 [jiving].jpg.uid-zps
+Brooklyn Gang, 1959 [abandon@emo].jpg
+Brooklyn Gang, _Coney Island, _NY, 1959 [irritation].jpg
 clench one's fists %% Brooklyn Gang, 1959 [clench] ## crop l2 r2 t2 b2 ## qrop l2 t2 r34 b2.jpg
 Couple necking on pole at basement party while girl looks on ## qrop l24 t1 r11 b1.jpg
 Couple necking on pole at basement party while girl looks on ## qrop l24 t1 r11 b1.txt
@@ -36629,7 +36637,7 @@ Damn the Defiant! %% Birmingham, Alabama, 1963 [defiant][defiance] ## qrop l28 r
 Dancing by the Jukebox, Chicago, 1962 [jukebox] ## qrop l26 r7.jpg
 Girl with kitten, London, 1960 [bedroll].jpg
 Group of teens on London streets on their way to a concert, 1960 [1960s].jpg
-tattoos %% Brooklyn Gang, 1959.jpg
+tattoos [bravado] %% Brooklyn Gang, 1959 ## qrop l10 r23.jpg
 The Dwarf [dwarf@man] ## date 1958.jpg
 Widow of Montmartre, Paris, 1956 [Montmartre].jpg
 >>> ../datae\photo de/Davidson {{Photo.. Cameron Davidson}}
@@ -36707,7 +36715,7 @@ hazelnut leaf knife rest [knife rest] ## qrop qb.jpg
 Map of Italy made with fruit and vegetables [Italy][Italian cuisine] ## qrop t8 b6 ## qropt!.jpg
 summer fruit [fruits] ## qrop l26 r4 ## qropt!.jpg
 >>> ../datae\photo de/Doisneau {{Photo.. Robert Doisneau}}
-_Picasso and the {loaves} [Pablo Picasso][Picasso][fingerlike] ## date 1952.jpg
+_Picasso and the loaves [Pablo Picasso][Picasso][fingerlike][deadpan][loaves] ## date 1952 ## qrop t10 r1 b5.jpg
 >>> ../datae\photo de/Dongen {{Photo.. Ron van Dongen}}
 Alocasia amazonica [Alocasia].jpg
 Arisaema sikokianum [Arisaema].jpg
@@ -36747,6 +36755,7 @@ stuffed {red peppers}.jpg
 ttoro (Basque fish soup with seafood) [ttoro][Basque Country].jpg
 >>> ../datae\photo de/Dukoff {{Photo.. Lauren Dukoff}}
 Scott Weiland [banjoing].jpg
+_Untitled [zany].jpg
 >>> ../datae\photo de/Eastman {{Photo.. Michael Eastman}}
 57th Street Reflections, _NY [reflections][chromogenic].jpg
 Blue Moorish Arch, _Havana [hallway] ## qrop t6 b14.jpeg
@@ -36774,29 +36783,34 @@ The Red Ceiling [ceiling@house] ## date 1973 ## qrop l12 r21.jpg
 commuter ## qrop ql.jpg
 handrail [rail@support][rails@support].jpg
 >>> ../datae\photo de/Eisenstaedt {{Photo.. Alfred Eisenstaedt}}
+91 year-old painter visiting the _Louvre [discontent][discontented] ## date 1963.jpg
+Drum Major and children [effervescent@emo][effervescence@emo] ## date 1951.jpg
 Dying monk in a monastery in Thessaly contemplates his death [contemplate][contemplation][contemplative] ## date 1955 ## qrop t24 r15 b11.jpg
 Intermission, The American Ballet [intermission] ## date 1937.jpg
 Lesson at La Scala's Ballet School [lesson] ## date 1934 ## qrop l10 r13 ## qropt!.jpg
 Lumberyard of Seattle Cedar Lumber Manufacturing [lumberman][lumber yard][lumberyard] ## date 1939.jpg
 S.S. Queen _Elizabeth starboard [starboard] ## date 1948 ## qrop t12 r1 b21.jpg
 Swan Lake rehearsal, Grand Opera de _Paris [rehearsal] ## date 1930 ## qrop r22 ## qropt!.jpg
-The eyes of hatred ## qrop t37 r5.jpg
-The eyes of hatred ## qrop t37 r5.txt
+The eyes of hatred ## qrop t37 r6.jpg
+The eyes of hatred ## qrop t37 r6.txt
 Walt Disney [Disney] ## date 1938.png
+What a Big Fish %% Sarasota, _Florida [awe] ## date 1956 ## qrop t11 b18.jpg
 >>> ../datae\photo de/Elgort {{Photo.. Arthur Elgort}}
-Baryshnikov plays Belmondo [play@someone] ## date 1986.jpg
+Baryshnikov plays Belmondo [play@someone] ## date 1986 ## qrop l10 t22 r10 b21.jpg
 Jazz bassist _Ron _Carter [double bassist][string bassist][contrabassist][bassist] ## qrop t8 ## qropt!.jpg
 >>> ../datae\photo de/Ellis {{Photo.  Rennie Ellis}}
 Drop Outs, Cairns 1973 [drop out].jpg
 Flaked out, Rolling Stones Concert, Kooyong 1973 [flake out@asleep] ## qrop l20 r14.jpg
 Go-go dancer dancing with customer [go-go dancer] ## date 1965.jpg
-My Son Josh Learns to Swim [overconfidence] ## date 1972 ## qrop l2 r35.jpg
+My Son Josh Learns to Swim [overconfidence][stupefaction] ## date 1972 ## qrop l2 r35.jpg
+_Extrovert %% Fitzroy, 1974 [raffish].jpg
 >>> ../datae\photo de/Engel {{Photo.. Morris Engel}}
 Comic Book Reader, 1947 [comic book][comics] ## qrop qb.jpg
 >>> ../datae\photo de/Eppridge {{Photo.. Bill Eppridge}}
 140204-mia-farrow-15.jpg.uid-zps
-director %% Mia Farrow and director Anthony Mann on the set of A Dandy in Aspic ## date 1968 ## qrop l16 r7 ## qropt!.jpg
-Mia Farrow on the set of A Dandy in Aspic [bemused] ## date 1968 ## qrop l8 r16 ## qropt!.jpg
+director %% Mia Farrow and director Anthony Mann [fervent][fervid][exacting][incisive] ## date 1968 ## qrop l16 r8.jpg
+Mia Farrow on the set of A Dandy in Aspic ## date 1968 ## qrop l10 r19 ## qropt!.jpg
+Mia Farrow on the set of A Dandy in Aspic ## date 1968 ## qrop l10 r19 ## qropt!.txt
 >>> ../datae\photo de/Eros Rocco {{Photo.. Alexander Eros Rocco}}
 catwalker @ fashion [runway model].jpg
 catwalkers ## noqrop.jpg
@@ -36810,16 +36824,21 @@ Palazzo Gangi, Palermo [splendour][splendor] ## noqrop.jpg
 Teatro Massimo Bellini, Palermo [opera house] ## qrop ql.jpg
 The Titian Room, Hermitage Museum [Titian].jpg
 >>> ../datae\photo de/Erwitt {{Photo.. Elliott Erwitt}}
-East Hampton, New York, 1981 [wail][wailing] ## qrop l18 r9 ## qropt!.jpg
+East Hampton, New York, 1981 ## qrop l18 r16 ## qropt!.jpg
+East Hampton, New York, 1981 ## qrop l18 r16 ## qropt!.txt
 France, Honfleur, 1968 [misbehave][misbehavior][mischevious] ## qrop qr.jpg
+Guanajuato, _Mexico [macabre fascination][macabre][desensitization] ## date 1957.jpg
 Las Vegas, Nevada, 1954 [Las Vegas][one-armed bandit][gambling][casino] ## qrop l21 r13.jpg
 Metropolitan Museum of Art, New York [aim@weapon][aiming][take aim] ## date 1949 ## qrop t16 b18.jpg
+New York City, 1950 [street fight][impotent rage][maladroit].jpg
+New York City, 1953 [tenderness@emo][devotion@emo][devoted@emo].jpg
 Prado Museum, Madrid [maja][Goya] ## qrop l3 r7 ## qropt!.jpg
 press secretary ## qrop l11 r12 ## qropt!.jpg
 press secretary ## qrop l11 r12 ## qropt!.txt
 Russia, Siberia, Bratsk, 1967 [candid@photo][candid photo] ## noqrop.jpg
 Truth or Consequences [consequences] ## date 1998.jpg
-USSR. Moscow. 1959. Nikita Khrushchev and Richard Nixon [Cold War][Nixon] ## qrop l24 r9.jpg
+USSR. Moscow. 1959. Nikita Khrushchev and Richard Nixon ## qrop l24 r9.jpg
+USSR. Moscow. 1959. Nikita Khrushchev and Richard Nixon ## qrop l24 r9.txt
 Wilmington, North Carolina, 1950 [eye contact] ## qrop l26 ## qropt!.jpg
 >>> ../datae\photo de/Essaydi {{Photo.. Lalla Essaydi}}
 Converging Territories &sharp;02 [niqab] ## date 2004.jpg
@@ -36829,7 +36848,7 @@ Women of _Morocco.. Outdoor Gossip [gossip] ## date 2008 ## qrop b15 ## qropt!.j
 Women of _Morocco.. The Smoke of Ambergris [ambergris] ## date 2008 ## qrop t7 b1 ## qropt!.jpg
 Women of _Morocco.. _Moorish Girl [Moorish] ## date 2008.jpg
 >>> ../datae\photo de/Ethridge {{Photo.. Douglas Ethridge}}
-A Difference of Opinion %% Rome [difference of opinion].jpg
+A Difference of Opinion %% Rome [difference of opinion][aesthetic arrest][awestriking] ## qrop l8 r24 ## qropt!.jpg
 A Difference of Opinion, Rome.jpg.uid-zps
 And Another Thing %% Rome [memeable].jpg
 And Another Thing, Rome.jpg.uid-zps
@@ -36842,13 +36861,14 @@ Follow the Mummy %% Paris [mummy@@][follow] ## qrop l23 r11.jpg
 Follow-The-Mummy.jpg.uid-zps
 French Traffic Humor %% Paris [contradictory] ## qrop l20 r14.jpg
 French Traffic Humor, Paris.jpg.uid-zps
-Shopping Fatigue [fatigue] ## qrop l14 r20.jpg
+Shopping Fatigue [fatigue@shopping][shopping fatigue] ## qrop l14 t1 r21.jpg
 Shopping Fatigue.jpg.uid-zps
 standing wave ## qrop l5 r28 ### Grace 12.jpg
 stream @ water ## qrop q ### Grace 26.jpg
-The Expert %% Rome [expert][expertize] ## qrop t15 b21.jpg
+The Expert %% Rome [expert][expertize][aesthetic disdain] ## qrop t15 b21.jpg
 The Expert, Rome.jpg.uid-zps
-Walk Like An Assyrian %% Paris [walk like an Egyptian][walk] ## qrop l8 r26.jpg
+Walk Like An Assyrian %% Paris ## qrop l10 t4 r26.jpg
+Walk Like An Assyrian %% Paris ## qrop l10 t4 r26.txt
 Walk Like An Assyrian, Paris.jpg.uid-zps
 >>> ../datae\photo de/Eugene {{Photo.. Frank Eugene $$}}
 display window [shop window][shopwindow][store window] ## date 1921 ## qrop qt.jpg
@@ -36868,7 +36888,7 @@ chambered nautilus shell [chambered nautilus][chambered] ## date 1948 ## qrop t4
 Front View of 1958 _Buick [Buick] ## qrop l6 r6 ## qropt!.jpg
 gorilla rib cage [rib cage] ## date 1951 ## qrop l4 t5 r27.jpg
 Hamburg, 1930 [Hamburg] ## noqrop.jpg
-Self-portrait, 1946 [naturalist].jpg
+Self-portrait, 1946 [examine][scrutiny] ## qrop r6 b25.jpg
 Skeletal structure of young monkey’s thin skull [skeletal] ## date 1951.jpg
 Slinky like light pattern in the blackness of moonlight sky ## qrop l4 r8 ## qropt!.jpg
 Slinky like light pattern in the blackness of moonlight sky ## qrop l4 r8 ## qropt!.txt
@@ -36888,6 +36908,9 @@ skin @ body.jpg
 veins [vein@blood] ### 1.jpg
 veins [vein@blood] ### 2.jpg
 >>> ../datae\photo f/Fink {{Photo.. Larry Fink}}
+A Sabatine Christmas 1983.jpg
+A Sabatine Christmas 1983.txt
+arrested attention %% Vanity Fair Oscar after-party [arrested][attention].jpg
 boxer @ fighter.jpg
 flower girls ## qrop qb.jpg
 Joseph Baptism [surplice][cotta] ## crop l4 t5 r4 b3 ## qrop l4 t5 r6 b3 ### Gasparetti, --Martin's Creek, Pa.jpg
@@ -37003,10 +37026,11 @@ refrigerant gas [refrigerant].jpg
 vases.jpg
 >>> ../datae\photo f/Freed {{Photo.. Leonard Freed}}
 A man taken into custody in a police car %% New York City, 1978 [take into custody][handcuffed][arrest@crime] ## qropt! ## qrop t27 b7.jpg
-An _IBM programmer, 1965 [reset button][programmer] ## qrop l25 r8.jpg
+An _IBM programmer, 1965 ## qrop l25 r8.jpg
+An _IBM programmer, 1965 ## qrop l25 r8.txt
 An _IBM {programmer}, 1965 [reset button].jpg.uid-zps
 casino {gambling} %% _New _Jersey, 1981.jpg
-Fire hydrant, _Harlem, 1963 [fire hydrant] ## crop r1 ## qrop r1 t19 b5 ## qropt!.jpg
+Fire hydrant, _Harlem, 1963 [fire hydrant][pure joy] ## crop r1 ## qropt! ## qrop t25 r1 b10.jpg
 Fish Monger levitates %% Trapani, Sicily, 1975 [fishmonger][fish monger][monger] ## crop l2 r2 t2 b2 ## qrop l14 t2 r10 b2 ## qropt!.jpg
 Hassidic _Jews celebrating %% _Jerusalem, 1972 [Hasidic][Hassidic].jpg
 Man on stoop with cane %% NYC, 1972 [stoop].jpg
@@ -37021,6 +37045,7 @@ cocktail dress %% 1963.jpg
 evening gown %% 1960s ## qrop qb.jpg
 Jean Shrimpton in a {frilly} shirt, 1960s [frill][frilled].jpg
 Model in a _Nina _Ricci dress, 1963 [model@fashion][fashion model].jpg
+Model in beachwear [coyness][coy@shyness][mock shyness][beachwear] ## date 1964.jpg
 Models in leotards, 1960s [leotard][leotards] ## qropt!.jpg
 Outfit of printed satin by _Ungaro, 1960s [outfit@fashion] ## qropt!.jpg
 Pattie Boyd in a {nightdress}, 1960s.jpg
@@ -37099,6 +37124,8 @@ slicing a button mushroom [slicing].jpg
 Kentucky, 1972 [troubleshooting@car][troubleshoot@car] ## qrop t22 b11.jpeg
 model @ art [sitter] ## date 1972 ## crop l2 t2 r2 b2 ## qrop l2 t22 r46 b2.jpg
 O'Rourke's, Brooklyn, c.1960 [bar@alco] ## qrop ql ### 3.jpeg
+O'Rourke's, Brooklyn, c.1960 [belly laugh][guffaw] ### 1.jpeg
+O'Rourke's, Brooklyn, c.1960 [mirth][mirthful] ### 2.jpeg
 >>> ../datae\photo gh/Gelberger {{Photo.. Alain Gelberger}}
 crème caramel flambé [crème caramel][flambé] ## qrop l1 r14 ## qropt!.jpg
 orange rinds [rinds] ## qrop t2 b23.jpg
@@ -37107,7 +37134,7 @@ tagliatelles with gambas and aniseed [tagliatelles][tagliatelle] ## qrop q.jpg
 ugli fruit [ugli].jpg
 whisk ## qrop t4 b13 ## qropt!.jpg
 >>> ../datae\photo gh/Genthe {{Photo.. Arnold Genthe $$}}
-Greta _Garbo [+][actress@cinema] ## date 1925 ## qrop l3 r14 ## qropt!.jpg
+Greta _Garbo [+][actress@cinema][fervour][fervor] ## date 1925 ## qrop l10 r14.jpg
 >>> ../datae\photo gh/Gescheidt {{Photo.. Alfred Gescheidt}}
 Self-portrait [self-portrait][photographer] ## date 1953 ## crop l2 r2 t2 b1 ## qrop l2 t2 r2 b27.jpg
 >>> ../datae\photo gh/Giovan {{Photo.. Tria Giovan}}
@@ -37124,12 +37151,14 @@ Rare _Confederate Artifacts from the Civil War ## qrop l15 r4.txt
 Shimmer [shimmer] ## date 2008 ## qrop ql.jpg
 >>> ../datae\photo gh/Glinn {{Photo.. Burt Glinn}}
 David Amram entertains at the Five Spot Cafe [French hornist] ## date 1957.jpg
-Duke of Rutland Drinks Champaign [eccentric@odd][revelry] ## date 1959 ## crop l1 t1 r1 b1 ## qrop l2 t2 r33 b1.jpg
+Duke of Rutland Drinks Champaign ## date 1959 ## crop l1 t1 r1 b1 ## qrop l4 t3 r33 b2.jpg
+Duke of Rutland Drinks Champaign ## date 1959 ## crop l1 t1 r1 b1 ## qrop l4 t3 r33 b2.txt
 Full moonrise over Mount Fuji [Mount Fuji][Fuji][Fujiyama][mount@geo][moonrise] ## date 1961 ## qropt! ## qrop l11 r14.jpg
 Garrick Club, A Gentleman’s London [gentlemen's club] ## date 1957 ## qrop qb.jpg
 Little Rock, Arkansas. 1957 [harassment].jpg
 National Guardsmen escort African-American students into Little Rock Central High School, 1957 [desegregate][desegregation] ## qrop l15 r7 ## qropt!.jpg
-Talmud Torah school %% Jerusalem, 1957 [religious education].jpg
+Talmud Torah school %% Jerusalem, 1957 [kvell] ## qrop l29 t1 r21 b25.jpg
+Talmud Torah school %% Jerusalem, 1957 [religious education] ## qrop l14 r18.jpg
 Talmud Torah school %% Jerusalem, 1957 [Talmudic][teacher] ## qrop t20 b12.jpg
 >>> ../datae\photo gh/Goldberger {{Photo.. Sacha Goldberger}}
 Catwoman [catwoman].jpg
@@ -37163,7 +37192,7 @@ Pee-Wee Herman, Los Angeles, 1988 [grimace] ## qrop t12 b13.jpeg
 Tom Waits, Hollywood, 1979 [tattoo booth][booth] ## qrop qt ### 2.jpg
 Tom Waits, Hollywood, 1979 [tattoo booth][booth] ### 1.jpeg
 >>> ../datae\photo gh/Gottlieb {{Photo.. William P. Gottlieb}}
-clarinettist~clarinetist ## qrop qr {{Photo.. William P. Gottlieb, 1948 $$LOC}} ### Portrait of Fess Williams and Freddie Moore.jpg
+clarinetist [clarinettist][furor poeticus] ## qrop qr {{Photo.. William P. Gottlieb, 1948 $$LOC}} ### Portrait of Fess Williams and Freddie Moore.jpg
 Louis Armstrong [trumpeter@music] ## crop l7 t4 r4 b3 ## qrop l8 t4 r4 b29 {{Photo.. William P. Gottlieb, 1946 $$LOC}}.jpg
 >>> ../datae\photo gh/Greene {{Photo.. Milton Greene}}
 Audrey Hepburn [+].jpg
@@ -37176,6 +37205,8 @@ Marlene Dietrich [+] ## date 1952.jpg.uid-zps
 Suzy Parker in Norell's red sequin sheath ## date 1952 ## qrop t18 b7 ## qropt!.jpg
 Suzy Parker in Norell's red sequin sheath ## date 1952 ## qrop t18 b7 ## qropt!.txt
 Suzy Parker [fashion model][model@fashion][coat@clothing] ## date 1952 ## qrop qt.jpg
+_Ivy _Nicholson Tub [bath tub][bathtub][tub@bath].jpg
+_Marilyn _Monroe posing with statue of the Discobolus [swoon@emo] ## date 1956.jpg
 >>> ../datae\photo gh/Greines {{Photo.. Irving Greines}}
 116 [number].jpg
 brick wall [wall @ house].jpg
@@ -37194,7 +37225,7 @@ stage door [stagedoor][stage-door].jpg
 Zombies inside! [warning] ## qrop r21 ## qropt!.jpg
 >>> ../datae\photo gh/Grob {{Photo.. Marco Grob}}
 Apollo-era A7-L lunar spacesuit [space suit][spacesuit] ## qrop t4 b17.jpg
-Bill Murray [magnifying glass] ## qrop t12 b15.jpg
+Bill Murray [magnifying glass][scrutinous] ## qrop t12 b15.jpg
 spacesuits.jpg
 >>> ../datae\photo gh/Groebli {{Photo.. René Groebli}}
 From the ''Rail Magic'' series, 1949 [steam locomotive].jpg
@@ -37215,7 +37246,7 @@ Le Four lighthouse, Brittany [lighthouse] ## qrop l19 r14.jpeg
 lighthouse lamp [Fresnel lens].jpg
 >>> ../datae\photo gh/Haas [Haas] {{Photo.. Ernst Haas}}
 A cloudy sky over the _Nevada desert [cloudy] ## date 1960.jpg
-audience aghast [aghast] ## qrop qr.jpg
+audience aghast [aghast][aghastness] ## qrop qr.jpg
 Bird in Flight [flight@act][fly@verb] ## date 1959 ## qrop l24 r8.jpg
 Blue Light, _Amazon [blue@color] ## date 1965 ## qrop q.jpg
 diving in ## date 1984.jpg
@@ -37231,12 +37262,12 @@ regatta ## crop l5 ## date 1957 ## qrop l13 r22 ### Regatta, _California.jpg
 Regatta, _California, [regatta] ## crop l10 ## qrop qr ## date 1957.jpg.uid-zps
 Snow Lovers [snowy][snow] ## 14+ ## date 1964 ## qrop q.jpg
 The Cross, _NY [cross] ## noqrop ## date 1966.jpg
-Where did I put it~! [where] ## date 1951 ## qrop l2 t14 r13.jpg
+Where did I put it~! [where][absentminded][absent-minded][perplexed] ## date 1951 ## qrop l2 t14 r13.jpg
 Wild Horses, Nevada [wild horse][wild horses] ## date 1957.jpg
 _Egyptian boys [napping] ## date 1954.jpg
 _George _Balanchine, New York City Ballet ## qrop l4 t1 r30.jpg
 _George _Balanchine, New York City Ballet ## qrop l4 t1 r30.txt
-_Igor _Stravinsky [Stravinsky][Stravinskyan][Stravinskian][bespectacled] ## date New York, 1962.jpg
+_Igor _Stravinsky [Stravinsky][Stravinskyan][Stravinskian][bespectacled][contemplative] ## date New York, 1962 ## qrop l13 r20.jpg
 _Indian Summer in Stubaital, _Austria [Indian summer] ## qrop q.jpg
 _Tobago Wave, _Caribbean [Caribbean] ## date 1968.jpg
 >>> ../datae\photo gh/Hall phocuisine {{Photo.. J-B. Hall}}
@@ -37248,7 +37279,7 @@ purple {watercress} sprouts.jpg
 Bobby Fischer [Bobby][Fischer][Grandmaster][grandmaster] ## date 1967 ## qropt!.jpg
 Brigitte Bardot ## date 1951.jpg
 Jack-of-all-trades (Jean Cocteau) [Jack-of-all-trades] ## date 1948.jpg ## qrop t5 b7.jpeg
-Jean Cocteau [fascinated] ## qrop t17 b13.jpg
+Jean Cocteau [awe][awed][consternation][consternated][tremulous@emo] ## qrop t17 b13.jpg
 Martha Graham & Merce Cunningham [leap@jump] ## date 1948 ## qrop l7 r4 ## crop l1 ## qropt!.jpg
 Professor Oppenheimer [Oppenheimer][physicist] ## date 1958 ## noqrop.jpg
 Salvador Dalí [+][surrealist] ## date 1943.jpg
@@ -37256,7 +37287,7 @@ Salvador Dalí [bug-eyed][bug eyes] ## qrop t3 b19.jpg
 Salvador Dalí [loupe][magnifying glass][magnify] ## date 1946 ## qropt!.jpg
 Superimposed Face of A Woman [superimposed][superimpose] ## date 1967 ## qrop q.jpg
 Tippi Hedren [light up@cigarette] ## date 1962 ## qrop t17 b6.jpg
-Vladimir Nabokov, Montreux, Switzerland [butterfly hunting][lepidopterist] ## date 1966 ## qropt!.jpg
+Vladimir Nabokov %% Montreux, Switzerland [butterfly hunting][lepidopterist][hunting fever] ## date 1966 ## qropt! ## qrop l1 t18 b4.jpg
 >>> ../datae\photo gh/Hammond photocuisine {{Photo.. F. Hammond}}
 blackberry kir [kir] ## qrop t3 b15.jpg
 copper cookware set [copper@metal][cookware] ## qrop l12 r15 ## qropt!.jpg
@@ -37306,10 +37337,10 @@ watercolours [watercolor][watercolour] ## qrop l22 t14 r22 b10.jpg
 A scholar in Israel is teaching the Talmud [Talmudism][Talmudist] ## qrop l11 r4.jpg
 Andy {Warhol} sitting on his throne [Warholesque] ## date 1964.jpg
 Conductor Leonard Bernstein [conductor@music][Bernstein][bernstein] ## noqrop ## qrop qr.jpg
-Madison Avenue, Secret Wishes [Madison Avenue] ## date 1962.jpg
-Pittsburg, {Stealing} His Nuts ## date 1958.jpg
+Madison Avenue, Secret Wishes [Madison Avenue][mischievous amusement] ## date 1962 ## qrop ql.jpg
+Pittsburg, Stealing His Nuts [Stealing][stealing] ## date 1958.jpg
 Seville, Spain, in Holy week, men are resting after carrying an enormous religious float, 1972 [Sevillian].jpg
-Sicily, Precocious Kiss [precocious] ## date 1968 ## qrop l13 r12.jpg
+Sicily, Precocious Kiss [precocious][benign] ## date 1968 ## qrop l14 r17 ## qropt!.jpg
 >>> ../datae\photo gh/Higgins {{Photo.. Chester Higgins}}
 A serving dish, Ghana [serving dish] ## date 1973 ## qrop ql.jpg
 procession ## qrop l15 r18.jpg
@@ -37322,7 +37353,7 @@ mechanic ## date 1920 ## qrop qb.jpg
 Bowery, New York, 1965 [Bowery].jpg
 Fishmonger's Prime Warden %% London, 1962 [warden@official] ## qrop t4 r3 b19.jpg
 Girl with Bicycle, Dublin, 1966 [straddling a bicycle][straddle] ## qrop t10 b11.jpg
-Gravediggers, Dublin, 1966 [gravedigger] ## qrop l13 t13 r18.jpeg
+Gravediggers, Dublin, 1966 [gravedigger][professional pride] ## qrop l13 t13 r18.jpeg
 Phoenix Park on a Sunday, Dublin, 1966 [footballers].jpg
 Warehousemen and Foreman %% London, 1962 [foreman@work] ## qrop l13 t23 r3 b11.jpg
 >>> ../datae\photo gh/Hoffmann {{Photo.. Heinrich Hoffmann}}
@@ -37345,12 +37376,9 @@ Mrs. G. Miller [feet][foot, feet][bare feet] ## qrop t6 b8 ## qropt!.jpg
 >>> ../datae\photo gh/Horvat {{Photo.. Frank Horvat}}
 1955, London, UK, Lambeth, boxing boys [punch@hit] ## qrop l17 t1 r18.jpg
 1956, Paris, spectator at the Lido [lorgnette] ## qrop l8 r23.jpg
-1958, Paris, Bruno Cocatrix, impresario and Edith Piaf, singer, at her last performance at the Olympia [overwhelmed] ## qrop l10 t1 r23.jpg
 1958, Paris, for Jardin des Modes, Givenchy hat [staged scene][staged@photo][binoculars] ## qrop l10 r19 ## qropt!.jpg
-1958, Paris, Françoise Sagan, writer, hiding in her loge [Françoise][Sagan][celebrity][spectator] ## qrop l18 r15.jpg
+1958, Paris, Françoise Sagan, writer, hiding in her loge [Françoise][Sagan][celebrity][spectator] ## qrop l8 r25.jpg
 1959, London, for Vogue UK, with horses [staged scene][staged@photo] ## noqrop.jpg
-1961, NY, USA, little girl and doll in Central Park [test run].jpg
-1963, Dakar, Senegal, audience at a street show [unimpressed] ## qrop l15 r17 ## qropt!.jpg
 1963, Rio de Janeiro, Brazil, at a {macumba} session.jpg
 1963, Rio de Janeiro, Brazil, dancing couple [dancing][dancing couple] ## qrop l10 r19 ## qropt!.jpg
 1963, Rio de Janeiro, Brazil, {macumba} session.jpg
@@ -37361,9 +37389,15 @@ Mrs. G. Miller [feet][foot, feet][bare feet] ## qrop t6 b8 ## qropt!.jpg
 1976, Paris, for Vogue France, ready-to-wear [ready-to-wear] ## qrop b19 ## qropt!.jpg
 1978, California, USA, {ilex}.jpg
 1982, Normandy, France, willow tree [willow][willow tree] ## qrop l18 t2 r15.jpg
+Anna Karina at Les Halles %% 1959, Paris, for Jours de France [poise].jpg
+audience at a street show %% 1963, Dakar, Senegal [apathy][apathetic] ## qropt! ## qrop l15 r17.jpg
+Edith Piaf at her last performance at the Olympia ## qrop l10 t1 r23.jpg
+Edith Piaf at her last performance at the Olympia ## qrop l10 t1 r23.txt
+Little girl with her doll on a slide %% Central Park, NY, 1961 [test run][anticipation] ## qrop r18 b45.jpg
 Paris, Flic, 1956 [flic][flagger].jpg
 >>> ../datae\photo gh/Hoyningen-Huene {{Photo.. George Hoyningen-Huene}}
 Agneta Fischer modeling evening gloves [opera glasses][opera gloves] ## date 1931 ## qrop t6 b9 ## qropt!.jpeg
+Horst P. Horst and George Hoyningen-Huene %% Paris, 1937 [badinage][shared amusement] {{Photo.. Roger Schall}}.jpeg
 Nathalie Paley [+] ## date 1933.jpeg
 >>> ../datae\photo gh/Hussenot {{Photo.. Pierre Hussenot}}
 apple crumble [crumble@food] ## qrop qb.jpg
@@ -37441,7 +37475,7 @@ Greek amphora [amphora] ## qrop qt.jpg
 Hebe by Antonio Canova [Hebe].png
 Jewelry and Glassware from _Pompeii [Pompeiian].jpg
 Kitchen in _Padula {charterhouse}, _Italy.jpg
-Orpheus by _Antonio _Canova [Orpheus] ## qrop qb.png
+Orpheus by _Antonio _Canova [Orpheus][agony@emo][anguish@emo] ## qrop l6 t7.png
 Penitent Magdalene by _Antonio _Canova [Magdalene][Mary Magdalene].png
 Plaster Cast of _Paris by Antonio Canova [plaster cast@art][plaster of Paris] ## qrop l11 r6 b18.jpg
 Silver _Neopolitan Statue of {Saint Vincent} de _Fora.jpg
@@ -37522,7 +37556,7 @@ Suburbia &sharp;23 [suburbia][artificiality] ### New York, 22 May 2012.jpg
 Bottoms Up, New York, 1955 [pin-up] ## qrop l9 t32 r4.jpg
 Elsa Maxwell's Toy Ball %% Waldorf Astoria, 1955 [society][high society][gathering@social] ## qrop l24 ## qropt!.jpg
 Gun I, New York [act out] ## qrop t3 b26.jpg
-Horsing around with Pepsi %% Harlem, 1955 [horse around] ## qrop l1 r18 ## qropt!.jpg
+Horsing around with Pepsi %% Harlem, 1955 [horse around][vivacious][vivacity] ## qrop l13 r18 ## qropt!.jpg
 Mary McLaughlin [McLaughlin][fashion model] ## date 1957.jpg
 supermarket ## date 1955 ## noqrop.jpg
 >>> ../datae\photo ijkl/Koentjoro {{Photo.. Hengki Koentjoro}}
@@ -38472,7 +38506,7 @@ turban %% Model dressed in a white turban, gloves, and brocade coat by Yves St L
 tweed %% Model dressed in a matching tweed hat, jacket, and skirt by Yves St Laurent ## date 1962.jpg
 Two young _Italian men dancing to music from a jukebox in a bar [temperament][expressive][expression@emotion] ## date 1963 ## qrop b3 ## qropt!.jpg
 Yemenite Israelis in Home For Aged Dancing to Celebrate Lag B'Omer Day [Lag B'Omer].jpg
-Young women swoon at a campaign appearance of presidential candidate John F. Kennedy %% late 1960 [swoon] ## qrop l9 r12 ## qropt!.jpg
+Young women swoon at a campaign appearance of presidential candidate John F. Kennedy %% late 1960 [swoon@emo] ## qropt! ## qrop l10 r23.jpg
 >>> ../datae\photo s/Seliger {{Photo.. Mark Seliger}}
 Bob, London, 2010 [piercing@body] ## qrop l2 t6 r2 b18.jpg
 Dennis, New York, 2009 [piercing@body] ## qrop l2 t3 r2 b20.jpeg
@@ -38913,7 +38947,8 @@ _Mochica Vessel with Human Effigy [pre-Columbian][Mochica] ## qrop t3 b5 ## noqr
 _Oaxacan Urn in the Form of a Seated Deity [pre-Columbian][Oaxacan] ## qrop t7 b6 ## qropt!.jpg
 >>> ../datae\photo t-z/Willoughby {{Photo.. Bob Willoughby}}
 Bass player dreaming amidst the frenzy of the Big Jay McNeely concert [double bassist] ## date 1951.jpg
-Big Jay McNeely driving the crowd into a frenzy [frenzy][driving the crowd into a frenzy] ## date 1951 ## qrop l14 r15.jpg
+Big Jay McNeely driving the crowd into a frenzy ## date 1951 ## qrop l13 r17.jpg
+Big Jay McNeely driving the crowd into a frenzy ## date 1951 ## qrop l13 r17.txt
 Cole Porter [songwriter] ## date 1954 ## qrop qt.jpg
 director %% Director Otto Preminger showing Kim Novak how to play the scene with ## date 1955 ## qrop qb.jpg
 Divorce your loved one with dignity ## qrop qt.jpg
@@ -39011,7 +39046,8 @@ Hiroshima @ bomb ## qrop r19 ## qropt! {{Photo.. U.S. Navy $$}} ### photo with P
 King _George _V accosted by beggar, Derby Day, 1920 [accost][accosted] ## qrop l2 r7 ## qropt!.jpg
 Ku Klux Klan parade, _DC [Ku Klux Klan][KKK][white supremacy][supremacy] ## date 1926 ## qropt! {{Photo.. Buyenlarge~Getty Images}}.jpg
 Leni Riefenstahl and her crew shooting Olympia [Riefenstahlian][shoot@photo][shooting] ## date 1936 ## qrop ql.jpg
-Mug shot of De Gracy (sic) and Edward Dalton, Central Police Station, Sydney, c.1920 [mug shot][magsmen] ## qrop l9 r10.jpg
+mug shot %% De Gracy (sic) and Edward Dalton, Central Police Station, Sydney, c.1920 ## qrop l11 t3 r10.jpg
+mug shot %% De Gracy (sic) and Edward Dalton, Central Police Station, Sydney, c.1920 ## qrop l11 t3 r10.txt
 mummification ## qropt! ## qrop l9 r6 {{The New York Times photo archive $$}}.JPG
 mummification ## qropt! ## qrop l9 r6 {{The New York Times photo archive $$}}.txt
 Opening of the German Folk Singing Festival in Breslau, 1937 [Nazism] ## qrop l8 r14 ## qropt! {{Photo.. Haynes Archive}}.jpg
@@ -39047,8 +39083,8 @@ Nikola Tesla holding one of his wireless powered lamps [inventor][wireless][Niko
 Othello %% К.С. Станиславский в роли Отелло, 1896 год ## qrop t14 b8 ## qropt! {{Музей МХАТ $$}}.jpg
 Samuel Morse [Samuel][Morse] {{Photo.. Mathew Brady, 1866 $$}}.jpg
 Sarah Bernhardt as Hamlet [monologue][monolog] ## qrop t7 b24 {{Photo.. Lafayette, 1899 $$}}.jpg
-Sigmund Freud [Sigmund][Freud] {{Photo.. Ferdinand Schmutzer, 1926 $$}}.jpg
-Sigmund Freud [Sigmund][Freud] {{Photo.. Max Halberstadt, 1922 $$}}.jpg
+Sigmund Freud [Sigmund][Freud] ## qrop qt {{Photo.. Max Halberstadt, 1922 $$}}.jpg
+Sigmund Freud [Sigmund][Freud]morosity][morose][saturnine] ## qrop l1 t8 b26 {{Photo.. Ferdinand Schmutzer, 1926 $$}}.jpg
 Vladimir Nabokov [Nabokovian] {{Photo.. Karl Bulla, 1907 $$}}.jpg
 Yanina Zhejmo on the set of Cinderella, 1947 [Cinderella] ## qrop l7 r23.jpg
 _Alice _Pleasance _Liddell [+] {{Photo.. Lewis Carroll, 1858 $$}}.jpg
@@ -41790,7 +41826,7 @@ exultation [exultance][exultant][jubilation][jubilance][jubilant] ## qrop l19 r1
 facepalm [face-palm][chagrined amusement] ## qrop l23 r11 b1 {{Photo.. Maksim Kamyshanskii $dreamstime 104161761}}.jpg
 fastidious rejection ## qrop l27 r6 {{Photo.. Igor Golubov $dreamstime 99350643}}.jpg
 fastidious rejection ## qrop l27 r6 {{Photo.. Igor Golubov $dreamstime 99350643}}.txt
-fatigue [dismay][dismayed][stuck] ## qrop l35 r3 {{Photo.. Iurii Kuzo $dreamstime 72274259}}.jpg
+fatigue @ emo [stuck] ## qrop l35 r3 {{Photo.. Iurii Kuzo $dreamstime 72274259}}.jpg
 flabbergasted @ emo [flabbergast@emo] ## qrop q {{Photo.. Vadymvdrobot $dreamstime 52836610}}.jpg
 forlornness @ emo [forlorn@emo][pensive][pensiveness] ## qrop l24 r9 {{Photo.. James Healley $dreamstime 59539636}}.jpg
 frustration [frustrated] ## qrop l7 t1 r27 {{Photo.. Marcio Eugenio $dreamstime 4556753}}.jpg
@@ -41820,13 +41856,13 @@ pretentious innocence [facetious] ## qrop q {{Photo.. Koldunova Anna $dreamstime
 profound desire [imploring][implore] ## qrop q {{Photo.. Oksana Chernenko $dreamstime 99825490}}.jpg
 qualm [qualmish][prurience][pruriency][prurient][ambivalence][ambivalent] ## qrop l9 r25 {{Photo.. Fantasyfactory13 $dreamstime 31455813}}.jpg
 rage [rageful][enragement][enraged] ## qrop ql {{Photo.. Jan Sommer $dreamstime 25037112}}.jpg
-scream [pain][anguish][anguished] ## qrop ql {{Photo.. Kaplan69 $dreamstime 82367839}} ### Ramblas, Barcelona.jpg
+scream [pain][anguish@pain][anguished@pain] ## qrop ql {{Photo.. Kaplan69 $dreamstime 82367839}} ### Ramblas, Barcelona.jpg
 self-derisive mirth [self-derisive][derisive] ## qrop l23 r11 b1 {{Photo.. Maksim Kamyshanskii $dreamstime 104161761}}.jpg
 skepticism, mild amusement, and resignation ## qrop l26 r7 {{Photo.. Eldadcarin $dreamstime 29915402}}.jpg
 skepticism, mild amusement, and resignation ## qrop l26 r7 {{Photo.. Eldadcarin $dreamstime 29915402}}.txt
-smirk [rueful@emo][rue@emo][sardonic resignation][chagrin@emo][chagrined@emo] ## qrop ql {{Photo.. arthurzeps $dreamstime 67324709}}.jpg
+smirk [rueful@emo][sardonic resignation][chagrin@emo][chagrined@emo] ## qrop ql {{Photo.. arthurzeps $dreamstime 67324709}}.jpg
 smoldering resentment [sad][aggrieved] ## qrop l22 r3 ## qropt! {{Photo.. Svetlana Kramynina $dreamstime 95610854}}.jpg
-smouldering @ emo [smoldering@emo][guarded vulnerability][upset@distressed][implosive anger] ## qrop l22 r12 ## qropt! {{Photo.. Anton Petukhov $dreamstime 23766200}}.jpg
+smouldering @ emo [smoldering@emo][guarded vulnerability][upset@distressed] ## qropt! ## qrop l18 t1 r21 {{Photo.. Anton Petukhov $dreamstime 23766200}}.jpg
 stomachache [stomach ache][dysphoria][dysphoric] ## qrop l21 r13 {{Photo.. Waroot Tangtumsatid $dreamstime 113216005}}.jpg
 sullen defiance ## qrop l14 r19 {{Photo.. Joseph Cortes $dreamstime 517544}}.jpg
 sullen defiance ## qrop l14 r19 {{Photo.. Joseph Cortes $dreamstime 517544}}.txt

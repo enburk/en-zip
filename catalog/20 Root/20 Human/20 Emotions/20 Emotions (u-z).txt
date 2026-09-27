@@ -13,6 +13,7 @@ unwhelmed
 unyielding
 upset {a.} @ angry             = angry
 upset {a.} @ distressed        = distressed
+uptight {a.} @ emo
 
 vehemence {n.} // vehement {a.} @ emo
 velleity {n.}
@@ -21,13 +22,9 @@ vent
 verklempt
 vertigo {n.} @ emo
 vexation {n.} // vexed {a.}
+verve {n.}
 vibrant
-vicarious distress
-vicarious embarrassment
-vicarious pride
-vicarious sadness
 vigilance {n.} // vigilant {a.}
-visceral antipathy
 vivacity {n.} // vivacious {a.}
 vulnerability {n.} // vulnerable {a.} @ emo
 
@@ -37,7 +34,6 @@ warmth {n.} @ emo
 wash over
 watchfulness {n.} // watchful {a.}
 weltschmerz
-whimsical irony
 wibble
 wide-eyed
 wild {a.} @ emo
@@ -45,12 +41,13 @@ the willies                    = a feeling of nervousness or fear
 wistfulness {n.} // wistful {a.} = full of longing or yearning
 wither
 woeful
-wonder // wonderment
+wonder {n.} {v.} // wonderment {n.}
+wonder-wounded {a.}
 worked up
 worry {n.} // worried {a.}
-wrath // wrathful
+wrath {n.} // wrathful {a.}
+wroth {a.} %% old-fashioned
 wryness {n.} // wry {a.} @ emo = dryly humorous, sardonic or bitterly ironic
-wry disdain
 
 zeal // zealous
 

@@ -14,6 +14,10 @@ discipline @ branch      = дисциплина ~ (научная или спо�
 interdisciplinary        = междисциплинарный                              # TERM+ # 18+
 
 ***
+examination @ exam       = экзамен
+examination @ view       = осмотр, исследование, ~ экспертиза
+
+***
 school(1) @ institution  = школа, ~ учебное заведение
 school(2) @ fish         = косяк, стая ~ (рыб и т.п.)
 school(3) @ way          = направление ~ (в искусстве, науке и т.п.)      # 16+
@@ -36,6 +40,7 @@ reason @ deduce          = рассуждать, размышлять, ~ дел�
 reason @ argue           = аргументировать, обосновывать
 : It is not unseasonable.
 : Listen to reason!
+
 
 
 

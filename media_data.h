@@ -125,9 +125,7 @@ namespace media::out
                 int w = location.size_x;
                 int h = location.size_y;
                 int a = min(w,h);
-                if (a > 0)
-                if (w - a > w/100
-                or  h - a > h/100)
+                if (a > 0 and 100*abs(w-h)/a > 0)
                 unsquared.emplace(r);
             }
 

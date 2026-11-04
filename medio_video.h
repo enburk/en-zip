@@ -6,6 +6,9 @@ namespace media::video
     void resize (image<rgba> & img, int maxsizex, int maxsizey, bool sharp = true)
     {
         xy size = img.size;
+        if (size.x == 0
+        or  size.y == 0)
+            return;
 
         double k = sqrt ((double)(maxsizex*maxsizey) / (size.x*size.y));
 

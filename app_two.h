@@ -22,6 +22,9 @@ namespace app::two
             stage.topic = nullptr;
             go(sys::settings::load(
               "app::two::path", ""));
+
+            if (not shown())
+                halt();
         }
         catch (std::exception const& e) {
             logs::errors << bold(red(

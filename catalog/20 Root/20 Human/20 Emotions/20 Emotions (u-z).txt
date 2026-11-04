@@ -1,29 +1,23 @@
 
 umbrage {n.} // umbrageous {a.} // take umbrage @ emo
-umpty
-uncomfortable
-understanding
+uncomfortable {a.} @ emo
 unease {n.} {v.} // uneasiness {n.} // uneased {a.}
-unenthusiastic
-unhappy
-unimpressed
-unpassionate
-unsettled
-unwhelmed
-unyielding
-upset {a.} @ angry             = angry
-upset {a.} @ distressed        = distressed
+unenthusiastic {a.}
+unhappiness {n.} // unhappy {a.}
+unimpressed {a.}
+unruffled {a.} @ emo
+unsettled {a.} @ emo
+upset {a.} @ angry        = angry
+upset {a.} @ distressed   = distressed
 uptight {a.} @ emo
 
 vehemence {n.} // vehement {a.} @ emo
 velleity {n.}
-vengefulness
-vent
-verklempt
+vengefulness {n.} // vengeful {a.}
+verklempt {a.} %% Yiddish = overcome with emotion, choked up
 vertigo {n.} @ emo
 vexation {n.} // vexed {a.}
 verve {n.}
-vibrant
 vigilance {n.} // vigilant {a.}
 vivacity {n.} // vivacious {a.}
 vulnerability {n.} // vulnerable {a.} @ emo
@@ -31,24 +25,25 @@ vulnerability {n.} // vulnerable {a.} @ emo
 yearning {n.} // yearnful {a.}
 
 warmth {n.} @ emo
-wash over
 watchfulness {n.} // watchful {a.}
-weltschmerz
-wibble
-wide-eyed
+weltschmerz {n.} %% German
+wibble {v.} {Am.} @ emo   = to be so overwhelmed by emotion that your bottom lip and chin quiver
+wide-eyed {a.}
 wild {a.} @ emo
-the willies                    = a feeling of nervousness or fear
+the willies               = a feeling of nervousness or fear
 wistfulness {n.} // wistful {a.} = full of longing or yearning
-wither
-woeful
+woebegone {a.} %% literary
+woe {n.} // woeful {a.} @ emo
 wonder {n.} {v.} // wonderment {n.}
-wonder-wounded {a.}
+wonder-wounded {a.}                       # sic!
 worked up
 worry {n.} // worried {a.}
 wrath {n.} // wrathful {a.}
 wroth {a.} %% old-fashioned
 wryness {n.} // wry {a.} @ emo = dryly humorous, sardonic or bitterly ironic
 
-zeal // zealous
+zeal {n.} // zealous {a.}
+zest {n.} @ emo
+
 
 

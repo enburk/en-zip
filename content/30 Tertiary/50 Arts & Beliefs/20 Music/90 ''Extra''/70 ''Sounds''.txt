@@ -1,6 +1,7 @@
 sounds
 
 : drum roll # SOUND
+: shaker @ music # SOUND
 : jazz drum beat with brushes # SOUND
 : mouth organ: subdominant to tonic finale # SOUND
 : violin: tapping body with fingers # SOUND

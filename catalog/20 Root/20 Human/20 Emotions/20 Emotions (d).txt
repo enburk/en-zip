@@ -3,7 +3,6 @@ deadpan {n.} {a.}
 defenselessness {n.} // defenseless {a.} @ emo
 defensiveness {n.} // defensive {a.} @ emo
 defiance {n.} // defiant {a.}
-deflated hubris
 dejection {n.} // dejected {a.}
 delight {n.} // delighted {a.} @ emo
 delirium {n.} // delirious {a.} @ emo
@@ -31,10 +30,12 @@ disconsolation {n.} // disconsolate {a.}
 discouraged {a.} @ emo
 disdain {n.} // disdainful {a.}
 disenchantment {n.} // disenchanted {a.}
+disfavour {n.} {v.} \\ disfavor {n.} {v.} @ emo
 disgruntlement {n.} // disgruntled {a.}
 disgust {n.} // disgusted {a.}
-desiderium {n.} // desiderate {v.} = to miss, to feel the absence of, to long for
+desiderium {n.} // desiderate {v.} = to miss, to feel the absence of, to long for   # sic!
 disinterest {n.} // disinterested {a.}
+dislike {n.} {v.}
 dismay {n.} // dismayed {a.}
 dispassionate {a.}
 displeasure {n.}
@@ -43,9 +44,10 @@ disrelish {n.} {v.} @ emo
 dissatisfaction {n.}
 distaste {n.}
 distraught {a.}
-distressed {a.}
+distressed {a.} @ emo
 distrust {n.}
 disturbance {n.} // disturbed {a.} @ emo
+dither {v.} {n.} @ emo
 dithyrambic {a.}
 dolefulness {n.} // doleful {a.}
 dolor {n.} @ emo %% literary       = sorrow, grief, misery or anguish
@@ -54,6 +56,7 @@ downcast {a.} @ emo
 downhearted {a.}
 dread {n.} @ emo
 dry-eyed {a.}
+dubiety {n.}
 dubiousness {n.} // dubious {a.} @ emo
 dumbfounded {a.}
 dumpish {a.}

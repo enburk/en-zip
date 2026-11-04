@@ -65,6 +65,16 @@ namespace studia
             fullsize = full.load(dat, "",   ""  );
             cropsize = crop.load(dat, Crop, Fade);
             qropsize = qrop.load(dat, Qrop, Fade);
+
+            int w = qropsize.x;
+            int h = qropsize.y;
+            int a = min(w,h);
+
+            button_Qrop.text.color = 
+                a == 0 ? rgba::silver :
+                100*abs(w-h)/a == 0 ?
+                rgba::lime :
+                rgba::white;
         }
 
         void on_change (void* what) override
@@ -259,6 +269,9 @@ namespace studia
 
                 crop.strip();
             }
+
+            if (kind == "qrop " and q)
+            resource.options.try_erase("qropt!");
 
             for (str& o: resource.options)
                 if (o.starts_with(kind)) {

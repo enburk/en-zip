@@ -23,6 +23,9 @@ namespace app::two
             go(sys::settings::load(
               "app::two::path", ""));
 
+            if (parent and not parent->shown())
+                halt();
+
             if (not shown())
                 halt();
         }
@@ -33,6 +36,10 @@ namespace app::two
         void on (int level, bool on)
         {
             stage.levels[level] = on;
+        }
+
+        void on ()
+        {
             stage.resize();
         }
 

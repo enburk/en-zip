@@ -230,7 +230,7 @@ namespace app::one
                 if (not S.contains(s)
                 and not E.contains(s))
                 player.title.html =
-                    small(c);
+                    small(dark(c));
             }
             if (pixed)
             {

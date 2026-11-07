@@ -51,7 +51,7 @@ namespace app::two::video
             c = media::canonical(c);
             c = small(small(c));
 
-            script.html = s;
+            script.html = dark(s);
             credia.html = white(c);
             credib.html = white(c);
             credic.html = white(c);

@@ -75,6 +75,8 @@ namespace studia
                 100*abs(w-h)/a == 0 ?
                 rgba::lime :
                 rgba::white;
+
+            button_qrop.on = true;
         }
 
         void on_change (void* what) override

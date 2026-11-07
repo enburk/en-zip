@@ -84,7 +84,6 @@ namespace studio::two
         hashmap<ent, array<res>> vocals;
         hashmap<ent, array<res>> sounds;
         hashmap<ent, array<res>> videos;
-        hashset<res> resources_single;
 
         for (Ent& entry: course.entries)
         {
@@ -108,11 +107,6 @@ namespace studio::two
             sounds[&entry].deduplicate();
             vocals[&entry].deduplicate();
             videos[&entry].deduplicate();
-
-            for (auto medio: {&vocals, &sounds, &videos})
-            if ((*medio).contains(&entry)
-            and (*medio)[&entry].size() == 1) resources_single.emplace(
-                (*medio)[&entry].front());
         }
 
         int entry_number = 0;
@@ -127,11 +121,6 @@ namespace studio::two
                 xx.erase_if([](res r){
                 return r->options.contains("xlam"); });
                 if (not xx.empty()) mm = xx;
-
-                auto yy = mm;
-                yy.erase_if([&resources_single](res r){
-                return resources_single.contains(r); });
-                if (not yy.empty()) mm = yy;
 
                 for (res r: mm)
                 data.two_add(entry_number, r);

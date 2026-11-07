@@ -26,7 +26,7 @@ widget<App>
     gui::button trans;
 
     sfx::media::Playback play;
-    widgetarium<gui::button> levels;
+    gui::multiselector levels;
     gui::button mode;
     gui::button slow;
     gui::button fast;
@@ -82,10 +82,10 @@ widget<App>
         apps.selected = sys::settings::load("app::app", "course") == "course" ? 0 : 1;
 
         for (int i=0; i<6; i++)
-        levels(i).kind = gui::button::toggle,
-        levels(i).text.text = std::to_string(i+1),
-        levels(i).on = sys::settings::load("app::level " +
-            std::to_string(i+1), "on") == "on";
+        levels.buttons(i).text.text = std::to_string(i+1),
+        levels.buttons(i).on = sys::settings::load("app::level " +
+        std::to_string(i+1), "on") == "on";
+        on_change(&levels);
     }
 
     void one_reload () 
@@ -157,13 +157,8 @@ widget<App>
         levels.show(apps.selected.now == 1);
 
         play.enabled = one.shown();
-
-        for (int i=0; i<levels.size(); i++)
-        levels(i).enabled = two.shown(),
-        levels(i).coord = xywh(
-        levels.coord.now.w/levels.size()*i, 0,
-        levels.coord.now.w/levels.size(),
-        levels.coord.now.h);
+        for (auto& butt: levels.buttons)
+        butt.enabled = two.shown();
 
         where.html = apps.selected.now == 0 ?
             one.where :
@@ -242,11 +237,12 @@ widget<App>
 
         if (what == &levels)
         {
-            int idx = levels.notifier_index;
-            bool on = levels.notifier->on.now;
+            for (int i=0; i<levels.buttons.size(); i++) {
+            bool on = levels.buttons(i).on.now;
             sys::settings::save("app::level " +
-            std::to_string(idx+1), on ? "on" : "off");
-            two.on(idx, on);
+            std::to_string(i+1), on ? "on" : "off");
+            two.on(i, on); }
+            two.on();
         }
 
         if (what == &ones) one.go(ones.selected);

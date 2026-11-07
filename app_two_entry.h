@@ -99,7 +99,12 @@ namespace app::two
             auto const& entry =
             course.entries[number];
 
-            script.html = entry.html(translated);
+            str html = entry.html(translated);
+
+            if (entry.opt.external.contains("HEAD"))
+                html = extracolor(big(html));
+
+            script.html = html;
         }
 
         xy resize (int w, int h)

@@ -1,15 +1,16 @@
 polysemic
 
 ***
-towny @ color = brownish-yellow                                             # +ru # sic! /// French
-tawny @ wine  = a sweet, fortified wine which is blended and matured in wood /// French
+towny @ color              = brownish-yellow                                # +ru # sic! /// French
+tawny @ wine               = a sweet, fortified wine which is blended and matured in wood /// French
 
 ***
-gloss @ shine = a surface shine or luster
+gloss @ shine              = a surface shine or luster
 gloss @ text
 
 ***
-vibrant @ lively                     = lively and vigorous        /// Latin
-vibrant @ sound = vibrating, resonant ~ or resounding
+vibrant @ lively           = lively and vigorous                            /// Latin
+vibrant @ sound            = vibrating, resonant ~ or resounding
 vibrant spanish guitar tag # SOUND
 vibrant colours||vibrant colors
+

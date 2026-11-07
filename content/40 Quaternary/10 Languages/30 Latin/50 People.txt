@@ -31,7 +31,9 @@ procrastination
 predestination
 honorable
 postmortem
-fatigue
+
+fatigue @ physical = physical
+fatigue @ emo      = mental
 
 obedient
 obey
@@ -63,4 +65,5 @@ adversary
 ---
 controversy
 : This is not a matter of sentiment or of controversial personal opinion
+
 

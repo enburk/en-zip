@@ -1,42 +1,47 @@
 basic ~ vocabulary
 
+***
 fork @ utensil {n}      = вилка
 spoon @ utensil {n}     = ложка
 knife %% plural: knives {n} = нож
 tablecloth {n}          = скатерть
 napkin {n}              = салфетка
 
+***
 pie @ food              = пирог, торт
 cake @ dessert          = торт
 cookie                  = печенье
 bread                   = хлеб
 
+***
 beef                    = говядина
 pork                    = свинина
 
----
+***
 seafood                 = морепродукты
 salmon @ food           = лосось
 shrimp @ food           = креветка, креветки
 : I’m on a seafood diet. -- What's a seafood diet? -- When I “see food”, I eat it!
 
 ===
----
+
+***
 fat @ food              = жир, жирный, ~ сало, растительное масло
 fat @ rich              = обильный, богатый, ~ выгодный, доходный
 : When times are good and fortune smiles
 
-===
----
+***
 sweet                   = сладкий, милый, ~ нежный, приятный
 sweets                  = сладости, конфеты
 : Is that sweet or what?
----
+
+***
 sour                    = кислый
 bitter                  = горький
 spicy @ food            = пряный, пикантный, ~ острый
 tough @ food            = жёсткий
 : The beef was fine—tough, ~ but with body in it.
+
 ===
 
 candy                   = леденцы, конфеты
@@ -46,7 +51,9 @@ honey                   = мёд
 
 pine nuts               = кедровые орехи
 
----
+===
+
+***
 hungry                  = голодный
 starving                = голодающий, ~ изголодавшийся
 full @ food             = сытый

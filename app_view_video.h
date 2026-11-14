@@ -72,6 +72,11 @@ namespace app::video
             if (medio.stop())
                 video.stop();
         }
+        void rewind ()
+        {
+            if (medio.rewind())
+                video.rewind();
+        }
 
         void fit (xy maxsize, gui::time time={}) override
         {

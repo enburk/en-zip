@@ -37,17 +37,24 @@ namespace app::one
             current = 0;
         }
 
-        void show ()
+        void show (bool x = true)
         {
             for (auto& e: entries)
-            e->show();
+            e->show(x);
         }
 
-        void hide ()
+        void hide (bool x = true)
         {
             for (auto& e: entries)
+            e->hide(x);
+        }
+
+        void rewind ()
+        {
+            current = 0;
+            for (auto& e: entries)
             e->stop(),
-            e->hide();
+            e->rewind();
         }
 
         void play ()
@@ -58,9 +65,9 @@ namespace app::one
 
         void stop ()
         {
-            if (medio.stop()
-            and not entries.empty())
-            entries[current]->stop();
+            if (medio.stop())
+            for (auto& e: entries)
+            e->stop();
         }
 
         void on_change (void* what) override

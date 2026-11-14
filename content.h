@@ -133,96 +133,115 @@ namespace content
         unit& add_chain (int Order) { return add(chain, Order, ""); }
         unit& add_leaf  (int Order) { return add(leaf , Order, ""); }
 
-        unit* first_topic ()
+        unit* forward (auto function)
         {
-            for (unit& u: units)
-            if (u.kind == topic)
-            return &u;
+            unit* current = this;
+            while (current->parent)
+            {
+                unit* u = current->parent;
+                auto i = u->units.find_if([current](unit& x){ return &x == current; });
+                if (i < u->units.end())
+                    for (i++; i < u->units.end(); i++)
+                        if (unit* x = function(*i))
+                            return x;
+
+                current = u;
+            }
             return nullptr;
         }
 
-        unit* first_theme ()
+        unit* backward (auto function)
         {
-            for (unit& u: units)
-            if (u.kind == theme)
-            return u.first_theme(); else
-            return this;
-            return this;
-        }
+            unit* current = this;
+            while (current->parent)
+            {
+                unit* u = current->parent;
+                auto i = u->units.find_if([current](unit& x){ return &x == current; });
+                if (i > u->units.begin())
+                    for (i--; i >= u->units.begin(); i--)
+                        if (unit* x = function(*i))
+                            return x;
 
-        unit* next_theme (int current)
-        {
-            for (unit& u: units.from(current))
-            if (u.kind == theme)
-            return u.first_theme();
-
-            if (not parent) return nullptr;
-
-            for (int n=0; n < parent->units.size(); n++)
-            if (&(parent->units[n]) == this)
-            return parent->next_theme(n+1);
+                current = u;
+            }
             return nullptr;
         }
 
-        unit* next ()
+        unit* first_subtopic ()
         {
-            if (not kind == topic)
-                return nullptr;
-
-            if (not parent
-            or  not parent->kind == theme)
-                return nullptr;
-
-            auto Theme = parent->next_theme(0);
-            return Theme? Theme->first_topic():
-                nullptr;
+            if (kind == topic) return this;
+            if (kind != theme) return nullptr;
+            for (unit& u: units)
+                if (unit* x = u.first_subtopic())
+                    return x;
+            return nullptr;
         }
 
-        unit* last_theme ()
+        unit* last_subtopic ()
         {
+            if (kind == topic) return this;
+            if (kind != theme) return nullptr;
             for (unit& u: reverse(units))
-            if (u.kind == theme)
-            return u.last_theme(); else
-            return this;
-            return this;
-        }
-
-        unit* prev_theme (int current)
-        {
-            for (int i=current; i >= 0 and i<units.size(); i--)
-            if (units[i].kind == theme)
-            return units[i].last_theme(); else
-            return this;
-            return prev_theme();
-        }
-
-        unit* prev_theme ()
-        {
-            if (not kind == theme)
-                return nullptr;
-
-            if (not parent
-            or  not parent->kind == theme)
-                return nullptr;
-
-            for (int n=0; n < parent->units.size(); n++)
-            if (&(parent->units[n]) == this)
-            return parent->prev_theme(n-1);
+                if (unit* x = u.last_subtopic())
+                    return x;
             return nullptr;
         }
 
-        unit* prev ()
+        unit* prev_topic ()
         {
-            if (not kind == topic)
-                return nullptr;
+            if (not kind == topic) return nullptr;
+            return backward([](unit& u){ return
+                u.last_subtopic(); });
+        }
 
-            if (not parent
-            or  not parent->kind == theme)
-                return nullptr;
+        unit* next_topic ()
+        {
+            if (not kind == topic) return nullptr;
+            return forward([](unit& u){ return
+                u.first_subtopic(); });
+        }
 
-            auto Theme = parent->prev_theme();
-            return Theme? Theme->first_topic():
-                nullptr;
+        unit* prev_theme_last_topic ()
+        {
+            if (kind == topic and parent) return parent->prev_theme_last_topic();
+            if (kind != theme) return nullptr;
+            return backward([](unit& u){ return
+                u.last_subtopic(); });
+        }
+
+        unit* prev_theme_first_topic ()
+        {
+            unit* x = prev_theme_last_topic();
+            if (x and x->parent)
+                for (unit& u: x->parent->units)
+                    if (u.kind == topic)
+                        return &u;
+            return nullptr;
+        }
+
+        unit* first_subtheme_with_topic ()
+        {
+            for (unit& u: units)
+            {
+                if (u.kind == topic)
+                    return this;
+                if (u.kind == theme)
+                    if (unit* x = u.first_subtheme_with_topic())
+                        return x;
+            }
+            return nullptr;
+        }
+
+        unit* next_theme_first_topic ()
+        {
+            if (kind == topic and parent) return parent->next_theme_first_topic();
+            if (kind != theme) return nullptr;
+            for (unit& u: units)
+                if (u.kind == theme)
+                    if (unit* x = u.first_subtheme_with_topic())
+                        return x->first_subtopic();
+            return forward([](unit& u){ return
+                u.first_subtopic(); });
         }
     };
 }

@@ -21,14 +21,22 @@ namespace app::two
 
         unit* topic = nullptr;
 
-        void go (unit* t)
+        void go (unit* x)
         {
-            if (not t or t == topic) return;
-            topic = t;
-
-            if (topic->kind == unit::theme)
-            if (auto theme = topic->first_theme())
-                topic = theme->first_topic();
+            if (x->kind == unit::topic)
+            {
+                topic = x;
+            }
+            else
+            if (x->kind == unit::theme)
+            {
+                topic = x->first_subtopic(); if (not topic)
+                topic = x->next_theme_first_topic();
+            }
+            else
+            {
+                topic = nullptr;
+            }
 
             fill();
 

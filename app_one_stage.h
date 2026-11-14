@@ -9,7 +9,6 @@ namespace app::one
         sfx::media::medio medio;
         widgetarium<slide> slides;
         widgetarium<entry> entries;
-        property<bool> playmode = false;
         property<bool> translated = false;
         int clicked = 0;
         int current = 0;
@@ -34,37 +33,14 @@ namespace app::one
 
         unit* topic = nullptr;
 
-        void go (unit* t)
-        {
-            if (not t or t == topic) return;
-            topic = t;
-
-            if (topic->kind == unit::theme)
-            if (auto theme = topic->first_theme())
-                topic = theme->first_topic();
-
-            fill();
-
-            bool found = false;
-            for (int i=0; i<slides.size(); i++)
-            {
-                if (not found) current = i;
-                if (playmode.now and found)
-                    slides[i].hide(); else
-                    slides[i].show();
-                if (slides[i].topic == topic)
-                    found = true;
-            }
-
-            int y =
-            slides.empty() ? 0 :
-            slides[current].coord.to.y;
-            for (auto& e: entries) e.shift(xy{0,-y}, 500ms);
-            for (auto& s: slides ) s.shift(xy{0,-y}, 500ms);
-        }
-
         void fill ()
         {
+            slides.clear();
+            entries.clear();
+            current = 0;
+            height = 0;
+            Height = 0;
+
             if (not topic
             or  not topic->kind == unit::topic)
                 return;
@@ -84,8 +60,6 @@ namespace app::one
             };
 
             int i = 0;
-
-            entries.clear();
 
             unit* last_topic = nullptr;
 
@@ -283,6 +257,42 @@ namespace app::one
             }
         }
 
+        void go (unit* x)
+        {
+            if (not x or x == topic) return;
+            
+            if (x->kind == unit::topic)
+            {
+                topic = x;
+            }
+            else
+            if (x->kind == unit::theme)
+            {
+                topic = x->first_subtopic(); if (not topic)
+                topic = x->next_theme_first_topic();
+            }
+            else
+            {
+                topic = nullptr;
+            }
+
+            fill();
+
+            bool found = false;
+            for (int i=0; i<slides.size(); i++)
+            {
+                if (not found) current = i;
+                if (slides[i].topic == topic) found = true;
+                slides[i].hide(found);
+            }
+
+            int y =
+            slides.empty() ? 0 :
+            slides[current].coord.to.y;
+            for (auto& e: entries) e.shift(xy{0,-y}, 500ms);
+            for (auto& s: slides ) s.shift(xy{0,-y}, 500ms);
+        }
+
         void load ()
         {
             medio.stay();
@@ -304,6 +314,15 @@ namespace app::one
                 s.show();
         }
 
+        void replay ()
+        {
+            current = 0;
+            for (slide& s: slides)
+            s.hide(),
+            s.rewind();
+            scroll(0);
+        }
+
         void play ()
         {
             if (entries.empty())
@@ -311,13 +330,6 @@ namespace app::one
 
             if (slides.empty())
                 return;
-
-            if (current == slides.size()-1)
-            {
-                current = 0;
-                for (slide& s: slides) s.hide();
-                scroll(0);
-            }
 
             medio.stay();
             medio.play();
@@ -358,6 +370,7 @@ namespace app::one
             if (
             slides.empty()) return;
             slides[current].hide();
+            slides[current].rewind();
             scroll(0);
         }
 
@@ -365,7 +378,7 @@ namespace app::one
         {
             stop();
             hideslide();
-            if (current == 0) return;
+            if (current <= 0) return;
             current--;
             scroll(0);
         }
@@ -375,13 +388,14 @@ namespace app::one
             bool playing = status ==
             state::playing;
             
-            stop();
+            slides[current].stop();
             showslide();
+
             if (current+1 >= slides.size()) return;
             current++;
 
             if (playing)
-            play(); else
+            playslide(); else
             showslide();
         }
 
@@ -400,7 +414,7 @@ namespace app::one
 
             if (what == &playing)
             {
-                if (not slides.empty())
+                if (slides.empty()) medio.done(); else
                 switch(slides[current].status) {
                 case state::ready:
                 case state::paused:

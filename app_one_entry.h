@@ -49,10 +49,11 @@ namespace app::one
         using(error)
         #undef using
 
-        void load () { player.load (); }
-        void play () { player.play (); }
-        void stop () { player.stop (); }
-        void reset() { player.reset(); }
+        void load  () { player.load  (); }
+        void play  () { player.play  (); }
+        void stop  () { player.stop  (); }
+        void reset () { player.reset (); }
+        void rewind() { player.rewind(); }
 
         void init ()
         {

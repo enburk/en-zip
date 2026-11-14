@@ -11,7 +11,6 @@ namespace app::one
         widgetarium<stage> stages;
         stage& fetch() { return stages[L+1]; }
         stage& stage() { return stages[L+0]; }
-        view () { for (int i=0; i<N; i++) stages[i].stop(); }
 
         property<bool> playmode = false;
         property<bool> translated = false;
@@ -19,7 +18,6 @@ namespace app::one
         str where;
         sfx::media::medio medio;
         gui::timer fetcher;
-        gui::timer nexter;
         bool played = true;
         int clicked = 0;
 
@@ -38,6 +36,15 @@ namespace app::one
         #undef using
 
         using unit = content::unit;
+
+        view ()
+        {
+            // just create N of them
+            for (int i=0; i<N; i++)
+                stages[i].stop();
+
+            playmode = sys::settings::load("app::one::mode", 1);
+        }
 
         void reload () try
         {
@@ -67,16 +74,28 @@ namespace app::one
 
         void play ()
         {
+            playmode = true;
             medio.stay();
             medio.play();
             stage().play();
             notify(&status);
+        }
+        void Play ()
+        {
+            if (not playmode)
+            stage().replay();
+            play();
         }
         void stop ()
         {
             medio.stop();
             stage().stop();
             notify(&status);
+        }
+        void Stop ()
+        {
+            playmode = false;
+            stop();
         }
 
         void next ()
@@ -85,16 +104,14 @@ namespace app::one
         }
         void prev ()
         {
-            medio.stop();
-            stage().stop();
+            stop();
             stage().prev();
-            notify(&status);
         }
 
         void Next ()
         {
             if (not stage().topic) return;
-            auto topic = stage().topic->next();
+            auto topic = stage().topic->next_theme_first_topic();
             if (not topic) return;
 
             halt();
@@ -110,14 +127,13 @@ namespace app::one
 
             if (stage().topic
             and stage().topic->parent == topic->parent)
-            topic = stage().topic; else
-            go(topic->path);
-            start();
+            go (stage().topic); else
+            go (topic);
         }
         void Prev ()
         {
             if (not stage().topic) return;
-            auto topic = stage().topic->prev();
+            auto topic = stage().topic->prev_theme_first_topic();
             if (not topic) return;
 
             halt();
@@ -131,21 +147,24 @@ namespace app::one
             stages.rotate(0, N-1, N);
             place(1s);
 
+            if (stage().status == state::finished)
+                stage().replay();
+
             if (stage().topic
             and stage().topic->parent == topic->parent)
-            topic = stage().topic; else
-            go(topic->path);
-            start();
+            go (stage().topic); else
+            go (topic);
         }
 
-        void go (str path)
+        void go (unit* x)
         {
-            stage().go(course.find(path));
+            stage().go(x);
+            start();
 
             where =
             stage().topic and
             stage().topic->parent?
-            stage().topic->parent->path : red(bold(path));
+            stage().topic->parent->path : red(bold(x ? x->path : "null"));
             where.replace_all("/", blue("/"));
             where.replace_all("''Extra''",
                 extracolor("Extra"));
@@ -158,6 +177,7 @@ namespace app::one
             if (not playmode.now)
                 fetcher.setup(2s);
         }
+        void go (str path) { go(course.find(path)); }
 
         void speedup ()
         {
@@ -203,8 +223,8 @@ namespace app::one
                     stage().play();
                     break;
                 case state::finished:
-                    nexter.setup(1ms);
-                    medio.done();
+                    Next();
+                    play();
                     break;
                 default:
                     break;
@@ -214,14 +234,14 @@ namespace app::one
             if (what == &fetcher)
             {
                 fetcher.stop();
-                if (stage().topic) fetch().go(
-                    stage().topic->next());
-            }
 
-            if (what == &nexter)
-            {
-                nexter.stop();
-                Next();
+                if (not stage().topic) return;
+                auto topic = stage().topic->next_theme_first_topic();
+                if (not topic) return;
+
+                if (fetch().topic == nullptr
+                or  fetch().topic->parent != topic->parent)
+                    fetch().go(topic);
             }
 
             if (what == &stages)
@@ -232,9 +252,8 @@ namespace app::one
             }
 
             if (what == &playmode)
-                for (auto& s: stages)
-                    s.playmode =
-                      playmode;
+                sys::settings::save("app::mode",
+                    playmode.now ? 1 : 0);
 
             if (what == &translated)
                 for (auto& s: stages)

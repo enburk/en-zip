@@ -27,7 +27,6 @@ widget<App>
 
     sfx::media::Playback play;
     gui::multiselector levels;
-    gui::button mode;
     gui::button slow;
     gui::button fast;
     gui::button speed;
@@ -54,12 +53,10 @@ widget<App>
         conon.kind = gui::button::toggle;
         Conon.kind = gui::button::toggle;
         trans.kind = gui::button::toggle;
-        mode .kind = gui::button::toggle;
         mute .kind = gui::button::toggle;
 
         trans.on = sys::settings::load("app::rus",  0);
         mute .on = sys::settings::load("app::mute", 0);
-        mode .on = sys::settings::load("app::mode", 1);
         speed.text.text = sys::settings::load("app::speed", "1.0");
 
         conon.text.text = "\xE2""\x98""\xB0"; // Trigram For Heaven
@@ -68,7 +65,6 @@ widget<App>
         trans.text.text = "rus";
         slow .text.text = "slower";
         fast .text.text = "faster";
-        mode .text.text = "playing";
         mute .text.text = "mute";
         sort .text.text = "sort";
         shuff.text.text = "shuffle";
@@ -224,12 +220,9 @@ widget<App>
             if (two.shown()) two.halt();
         }
 
-        if (what == &play.play) mode.on = true;
-        if (what == &play.Stop) mode.on = false;
-
-        if (what == &play.play) one.play();
+        if (what == &play.play) one.Play();
         if (what == &play.stop) one.stop();
-        if (what == &play.Stop) one.stop();
+        if (what == &play.Stop) one.Stop();
         if (what == &play.next) one.next();
         if (what == &play.prev) one.prev();
         if (what == &play.Next) one.Next();
@@ -250,7 +243,7 @@ widget<App>
 
         if (what == &one.status)
             play.status =
-            one.status;
+             one.status;
 
         if (what == &twos) two.go(twos.selected);
         if (what == &Twos) two.go(Twos.selected);
@@ -288,13 +281,6 @@ widget<App>
             sys::settings::save("app::speed",
             speed.text.text);
             one.speedup();
-        }
-
-        if (what == &mode)
-        {
-            one.playmode = mode.on;
-            sys::settings::save("app::mode",
-            mode.on? 1:0);
         }
 
         if (what == &mute)

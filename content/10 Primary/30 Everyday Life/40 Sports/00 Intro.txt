@@ -8,6 +8,7 @@ finalist @ sport        = финалист
 medal @ sport           = медаль
 trophy @ sport          = трофей, приз
 
+---
 attack @ sport          = атака, атаковать, ~ нападение      /// , припадок
 counterattack @ sport   = контратака                         # 10+
 combination @ sport     = комбинация

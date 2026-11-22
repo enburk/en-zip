@@ -7,15 +7,17 @@ unbridled exhilaration
 ---
 aggravated
 : I'll get it! @ aggravated
-: aggravated grunt # SOUND
+: aggravated grunt    # SOUND
 
 ---
 jovial
 : jovial is an adjective meaning good-humored or merry
 
 ---
-startled    = %% surprised and slightly frightened
+startled              = %% surprised and slightly frightened
 Oh! @ startled
+startled gasp         # SOUND
+short startled scream # SOUND
 
 ---
 aghast
@@ -39,7 +41,7 @@ contemptuous
 reluctant
 
 ---
-remorse
+remorse @ emo
 : remorse is a noun, meaning deep and painful regret for past misdeeds
 
 composed @ emo
@@ -54,7 +56,7 @@ anesthetized @ emo
 emotionless
 
 ---
-sulky
+sulky @ emo
 : sulky is an adjective meaning in a bad or nasty mood, resentful or gloomy
 
 ---
@@ -79,15 +81,12 @@ irksome
 misgiving
 : misgiving is a noun that means a feeling of fear or doubt
 
-insouciant  = casually unconcerned, carefree, indifferent, nonchalant
----
-swoon
-: crowd swoons at sight of rock diva # SOUND
+insouciant            = casually unconcerned, carefree, indifferent, nonchalant
 
 in extremis
-in a huff   = in an angry or annoyed state, ~ feeling angry or upset
+in a huff             = in an angry or annoyed state, ~ feeling angry or upset
 
-browned off = annoyed, upset, angry, bored, fed up, disgusted
+browned off           = annoyed, upset, angry, bored, fed up, disgusted
 
 ---
 dejected
@@ -97,33 +96,30 @@ dejected
 : Hi, honey, I'm home. @ dejected
 
 ---
-rile        = to make angry, ~ to stir or move from a state of calm or order
+rile                  = to make angry, ~ to stir or move from a state of calm or order
 : Jeez, he’s easy to rile.
 
 ---
-glee
+glee @ emo
 : rubbing their hands with glee
 : I almost hug myself with mischievous glee.
 
 ---
-woe
-woeful
+woe @ emo
 : Who has left your worship in such a woeful condition?
 
 ---
-vengeful
 vengefulness
 : The revenge ultimately might be bloody and messy /// but the vengefulness is not
 
 ===
-
-: BROODINESS (dictionary) /// Of a woman: feeling a maternal desire to have a(nother) baby.
 
 : Bugger off means go away. I’ll be buggered is a general expression of surprise
 
 : Core disgust is repulsion felt when something poisonous
 
 : Some emotions can fade into a smile when you know what to call them
+
 
 
 

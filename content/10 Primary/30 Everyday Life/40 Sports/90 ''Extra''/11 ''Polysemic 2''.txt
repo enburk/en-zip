@@ -1,6 +1,6 @@
 
 ***
-box(1) @ boxing              = боксировать %% бокс (вид спорта) -- boxing
+box(1) @ boxing %% {verb}    = боксировать %% бокс (вид спорта) -- boxing
 box(2) @ cuboid              = коробка, ящик
 post box\\mailbox @ post box = почтовый ящик
 box(2) @ booth               = будка, ложа
@@ -29,6 +29,7 @@ round {esp.} {Br.}\\{Am.} {usually} around @ around = вокруг, кругом
 all the year round           = круглый год
 round @ arm                  = заряд, патрон             # WAR-
 round number                 = круглое число
+
 
 
 

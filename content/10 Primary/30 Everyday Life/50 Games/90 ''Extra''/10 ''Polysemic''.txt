@@ -1,5 +1,12 @@
 polysemic
 
+---
+game(1) @ sport         = игра, ~ в спорте: партия, матч, гейм      # 14+
+game(2) @ hunt          = дичь %% животное, добытое на охоте, ~ мясо дичи # 14+
+game(3) @ injured       = искалеченный, хромой ~ (о конечности)     # 14+
+
+===
+
 ***
 pool @ billiards        = пул %% разновидность бильярда             # TERM+ # 18+ /// (1)
 pool @ water            = бассейн, пруд, лужа                       /// (2)
@@ -20,12 +27,13 @@ boards                  = подмостки, сцена
 ===
 aboard                  = на борту, на борт ~ (корябля, самолета), ~ в вагоне
 All aboard!             = посадка зако́нчена! ~ (сигнал к отправлению)
-: Do you know who you have got aboard here?
+: Do you know ~ who you have got aboard ~ here?
 ===
 
 chessboard              = шахматная доска
 skateboard              = скейтборд
 bulletin board {Am.}    = доска объявлений
+
 
 
 

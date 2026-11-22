@@ -1,9 +1,9 @@
 ***
-modal verbs = модальные глаголы
+modal verbs        = модальные глаголы
 
 ===
-can @ verb  = мочь, уметь
-may @ verb  = мочь ~ (иметь разрешение)
+can @ verb         = мочь, уметь
+may @ verb         = мочь ~ (иметь разрешение)
 ===
 
 : I '''can''' do this!
@@ -11,10 +11,10 @@ may @ verb  = мочь ~ (иметь разрешение)
 : I think we '''can''' answer that objectively.
 
 ===
-contractions:
-cannot      = can not
-can’t       = can not
-mayn’t      = may not = %% практически не используется
+contractions       # HEAD
+cannot             = can not
+can’t              = can not
+mayn’t             = may not = %% практически не используется
 ===
 
 : I '''cannot''' say.
@@ -27,7 +27,7 @@ mayn’t      = may not = %% практически не используетс�
 : You can lead a horse to water, ~ but you '''can’t''' make him drink.
 
 ===
-questions
+questions          # HEAD
 ===
 
 : '''Can''' we talk?
@@ -43,12 +43,13 @@ questions
 : '''May''' I get you a drink?
 
 ===
-negative questions
+negative questions # HEAD
 ===
 
 : '''Can''' we '''not''' talk about this?
 : '''Can’t''' we talk about this?
 : '''Can’t''' this wait?
+
 
 
 

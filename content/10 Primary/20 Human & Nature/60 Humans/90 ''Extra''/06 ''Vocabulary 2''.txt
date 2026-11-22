@@ -25,6 +25,8 @@ happy                     = счастливый, довольный
 sad                       = грустный
 : You look sad.
 : uh huh @ sad
+: You're bad. @ sad
+
 
 ---
 shy                       = застенчивый, стеснительный, ~ робкий

@@ -1,3 +1,5 @@
+***
+
 ===
 alcoholic @ adjective = алкогольный
 alcoholic @ noun      = алкоголик
@@ -13,6 +15,7 @@ liqueur               = ликёр
 pub                   = паб
 bar stool             = барный табурет/стул
 [cocktail] shaker     = шейкер
+
 ---
 toast @ drink         = тост, ~ провозглашать тост
 : Cheers!
@@ -21,6 +24,8 @@ cider                 = сидр
 punch @ drink         = пунш
 grog                  = грог
 ale                   = эль
+
+===
 
 abstinence            = воздержание, ~ абстиненция            # TERM-
 idiosyncrasy          = в медицине: ~ идиосинкразия %% непереносимость # TERM-

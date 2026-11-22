@@ -9,6 +9,13 @@ chips {Am.} @ potato       = чипсы
 chips {Br.} @ french fries = картофель фри
 
 ***
+display @ comp     = дисплей
+display @ view     = показ, показывать
+monitor @ comp     = монитор    /// наставник, следить, наблюдать, варан
+monitor @ watcher  = наблюдатель, контролёр
+monitor [lizard]   = варан
+
+***
 code @ crypto              = код, шифр, ~ система кодирования, ~ кодировать
 code @ program             = текст программы, ~ программировать
 code @ law                 = кодекс, ~ свод законов

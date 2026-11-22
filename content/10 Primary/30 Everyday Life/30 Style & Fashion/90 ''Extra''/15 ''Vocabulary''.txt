@@ -28,13 +28,14 @@ hat @ headwear {n} = шляпа
 
 ---
 umbrella          = зонт, зонтик
-: open umbrella   # SOUND
+open umbrella     # SOUND
 
 necklace {n}      = ожерелье, колье
 earrings          = серьги
 
 lipstick          = помада
 facial mask       = маска для лица
+
 
 
 

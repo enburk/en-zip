@@ -6,34 +6,21 @@ cola                       = кола
 
 ===
 
-soda siphon||soda syphon   = сифон                        # 16+
+soda siphon||soda syphon   = сифон # 16+
 bottle                     = бутылка
 
 ---
-milk                       = молоко                       /// из прагерманского
+milk                       = молоко /// из прагерманского
 condensed milk             = сгущенное молоко
 kefir                      = кефир
-pasteurized %% Br. also: pasteurised = пастеризованный              # TERM+ # 14+
+pasteurized                = пастеризованный # TERM+ # 14+ /// %% Br. also: pasteurised
 
-coffee machine             = кофемашина, кофеварка
-espresso                   = эспрессо
-cappuccino                 = капучино
-latte                      = латте                        # TERM- # 14+
-café au lait               = кофе с молоком               # TERM+ # 16+
-Americano                  = американо                    # TERM- # 14+
-Vienna coffee              = венский кофе %% кофе со взбитыми сливками # TERM- # 16+
-Irish coffee               = кофе по-ирландски            # TERM- # 18+ /// ,~ирландский кофе
-Turkish coffee             = кофе по-турецки
-Arabica                    = арабика                      # 10+
-chicory @ coffee           = цикорий                      # RARE+ # 14+
-
+---
 hot chocolate//[hot] cocoa = горячий шоколад, какао
 cocoa powder               = какао-порошок
 
 ---
 cocktail                   = коктейль
 smoothie                   = смузи
-
-
 
 

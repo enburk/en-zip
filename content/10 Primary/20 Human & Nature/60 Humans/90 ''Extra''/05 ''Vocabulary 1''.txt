@@ -7,30 +7,31 @@ death                 = смерть                                   # pix-
 ===
 live @ adjective %% {adjective} = живой, реальный, ~ действующий           # pix- /// laiv
 live @ verb %% {verb} = жить                                     # pix- /// liv
-die {v}               = умереть, умирать, ~ затухать             # pix-
+die                   = умереть, умирать, ~ затухать             # pix-
 ===
 ***
 ===
 
-body  @ human {n}     = тело
-head  @ human {n}     = голова
-face  @ human {n}     = лицо
-shoulder @ human {n}  = плечо
-arm   @ human {n}     = рука
-hand  @ human {n}     = рука ~ (кисть)
-leg   @ human {n}     = нога
-knee  @ human {n}     = колено
+leg @ human           = нога
+arm @ human           = рука
+body @ human          = тело
+head @ human          = голова
+face @ human          = лицо
+hand @ human          = рука ~ (кисть)
+knee @ human          = колено
+shoulder @ human      = плечо
+
+eye @ human           = глаз
+ear @ human           = ухо
+lips @ human          = губы
+mouth @ human         = рот
+cheek @ human         = щека
 
 ---
-finger @ human {n}    = палец (на руке)
-thumb @ human {n}     = большой палец
-toe @ human {n}       = палец (на ноге)
-nails @ human {n}     = ногти
+finger @ human        = палец (на руке)
+thumb @ human         = большой палец
+nails @ human         = ногти
+toe @ human           = палец (на ноге)
 
-eye @ human {n}       = глаз
-ear @ human {n}       = ухо
-mouth @ human {n}     = рот
-lips @ human {n}      = губы
-cheek @ human {n}     = щека
 
 

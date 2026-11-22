@@ -1,11 +1,6 @@
 polysemic
 
 ***
-game(1) @ sport               = игра, ~ в спорте: партия, матч, гейм # 14+
-game(2) @ hunt                = дичь %% животное, добытое на охоте, ~ мясо дичи # 14+
-game(3) @ injured             = искалеченный, хромой ~ (о конечности) # 14+
-
-***
 match(1) @ sport              = матч
 match(1) @ harmony            = сочетание, сочетаться, ~ гармонировать, ~ соответствовать
 match(1) @ pair               = достойный соперник, ровня, ~ партия (для брака), ~ пара (о людях или вещах)
@@ -16,7 +11,7 @@ period @ time                 = период, ~ промежуток време�
 period @ school               = урок ~ (в школе и т.п.)
 period {Am.} @ mark           = точка ~ (знак препинания)
 period! {esp.} {Am.}          = и точка! %% восклицание
-period/periods @ menstruation = месячные                         # 14+
+period/periods @ menstruation = месячные              # 14+
 
 ***
 pass @ sport                  = передавать, ~ в спорте: пас, передача, пасовать
@@ -48,9 +43,10 @@ train @ tail                  = шлейф (платья), ~ хвост (пав�
 train @ retinue               = свита
 
 ***
-record @ sport                = рекорд                           /// `record
+record @ sport                = рекорд                /// `record
 record @ noun                 = запись %% в т.ч. аудио- или видео- /// `record
-record @ verb                 = записывать                       /// re`cord
+record @ verb                 = записывать            /// re`cord
+
 
 
 

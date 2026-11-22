@@ -11,8 +11,5 @@ shooter [game]             = шутер %% «стрелялка»               
 simulation game//simulator = симулятор                                 # 10+
 strategy [game]            = стратегия                                 # 10+
 
-===
-
-Game over.
 
 

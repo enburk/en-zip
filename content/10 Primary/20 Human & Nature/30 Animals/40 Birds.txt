@@ -3,13 +3,14 @@
 albatross       = альбатрос # 10+
 pelican         = пеликан
 penguin         = пингвин
-pheasant        = фазан
+pheasant @ bird = фазан
 ara             = ара    # 10+
 emu @ bird      = эму    # RARE+ # 10+
 ibis            = ибис   # RARE+ # 16+
 condor          = кондор # RARE+ # 10+ /// ко́ндор
 marabou [stork] = марабу # RARE+ # 18+
 cuckoo          = кукушка, ~ ку-ку
+
 
 
 

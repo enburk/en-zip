@@ -9,7 +9,7 @@ tea                           = чай
 
 ---
 can @ vessel                  = банка
-: can opening                 # SOUND
+can opening                   # SOUND
 
 beer                          = пиво # 18+
 keg                           = бочонок # 18+
@@ -36,6 +36,7 @@ thirst                        = жажда, жаждать, ~ хотеть пи�
 ===
 
 : That's not my cup of tea.
+
 
 
 

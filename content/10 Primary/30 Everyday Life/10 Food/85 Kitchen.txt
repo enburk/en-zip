@@ -1,33 +1,34 @@
 ***
 
 ===
-kitchen {n}             = кухня ~ (помещение)
+kitchen {n}               = кухня ~ (помещение)
 ===
 
-blender                 = блендер
-mixer @ food            = миксер
-toaster                 = тостер
-microwave               = микроволновка
+blender                   = блендер
+mixer @ food              = миксер
+toaster                   = тостер
+microwave                 = микроволновка
 refrigerator %% informal: fridge = холодильник
 
-ceramics @ food         = керамика                            # 10+
-faience|faïence         = фаянс                               # RARE+ # sic! # 18+
-china                   = фарфор                              # 14+
-maiolica                = майолика %% разновидность керамики  # RARE+ # 18+
+ceramics @ food           = керамика                            # 10+
+faience|faïence           = фаянс                               # RARE+ # sic! # 18+
+china                     = фарфор                              # 14+
+maiolica                  = майолика %% разновидность керамики  # RARE+ # 18+
 
-grill @ food            = гриль ~ (решётка)                   # 10+
-bouillon cube {Am.}     = бульонный кубик                     # 14+
-gelatin|gelatine        = желатин, ~ иногда: желе             # 14+
-
-===
-
-conserve @ verb %% verb = консервировать, ~ сохранять, беречь /// con`serve
-conserve @ noun %% noun = консервированные фрукты             /// `conserve
+grill @ food              = гриль ~ (решётка)                   # 10+
+bouillon cube {Am.}       = бульонный кубик                     # 14+
+gelatin|gelatine          = желатин, ~ иногда: желе             # 14+
 
 ===
 
-culinary                = кулинарный                          # TERM- # pix- # 14+
-culinarian              = кулинар                             # TERM- # pix- # 14+
+conserve @ verb %% {verb} = консервировать, ~ сохранять, беречь /// con`serve
+conserve @ noun %% {noun} = консервированные фрукты             /// `conserve
+
+===
+
+culinary                  = кулинарный                          # TERM- # pix- # 14+
+culinarian                = кулинар                             # TERM- # pix- # 14+
+
 
 
 

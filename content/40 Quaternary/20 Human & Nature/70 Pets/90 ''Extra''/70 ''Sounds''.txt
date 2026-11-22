@@ -7,8 +7,8 @@ sounds
 : pheasant cock # SOUND
 : hen startled, flapping wings # SOUND
 
-: sustained baa, quick vibrato, slightly irritated # SOUND
 hoofbeats    # SOUND
+: sustained baa, quick vibrato, slightly irritated # SOUND
 
 pig snort    # SOUND
 pigs oinking # SOUND

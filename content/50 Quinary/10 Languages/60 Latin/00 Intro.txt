@@ -50,12 +50,6 @@ presume
 : Don't come in for anything unless you're sure I'm not here /// If you’re not sure, just assume that I am here
 
 ---
-averse
-: Adverse, adjective, not favorable, harmful, averse, adjective, opposed to, or strongly disliking.
-: That said, people have been confusing averse and adverse for years, and we can blame it all on the Romans.
-: Editor: you use the word adverse here, but I think you mean averse. Me: I reject your authority
-
----
 suggest
 suggestion
 : I suggest this...
@@ -160,7 +154,6 @@ condiment
 tempest
 : terrific tempest
 
-recoil
 acclamation
 accost
 propriety
@@ -409,9 +402,13 @@ acrimonious
 : acrimonious is an adjective meaning stinging or bitter in temper or tone
 ---
 adhere
-: adhere is a verb meaning to stick to or remain attach, or to be devoted as a follower or supporter
+: adhere is a verb meaning to stick to or remain attached, or to be devoted as a follower or supporter
 
-annex
+---
+annex @ verb %% {verb}
+annex @ noun %% {noun}
+: Being used as a verb, meaning to attach or incorporate, it is pronounced annex.
+
 assess
 admission
 ---
@@ -496,7 +493,7 @@ vagabond
 tenuous
 
 ---
-exuberant
+exuberance @ emo
 : Thank you! @ exuberant
 : Yes, please. @ exuberant
 
@@ -520,7 +517,6 @@ mundane
 mutilate
 orifice
 rufous
-ruminant
 desiccant
 
 

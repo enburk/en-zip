@@ -19,6 +19,7 @@ conflict @ verb %% {verb}   = противоречить                        
 
 alter ego                   = альтер эго                               # 16+
 discomfort                  = дискомфорт, неудобство                   # 10+
-depression                  = депрессия, уныние                        # 10+
+depression @ emo            = депрессия, уныние                        # 10+
 deviation                   = отклонение, девиация                     # TERM+ # 16+
+
 

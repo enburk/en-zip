@@ -314,7 +314,7 @@ namespace app::one
                 s.show();
         }
 
-        void replay ()
+        void rewind ()
         {
             current = 0;
             for (slide& s: slides)

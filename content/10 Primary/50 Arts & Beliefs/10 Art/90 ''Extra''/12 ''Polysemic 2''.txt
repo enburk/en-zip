@@ -8,7 +8,6 @@ canvas @ art              = канва
 collector @ art           = коллекционер
 collector @ car           = коллектор %% деталь двигателя ~ внутреннего сгорания
 collector sewer           = коллектор %% участок канализационной сети
-[current] collector       = токоприемник
 tax collector             = сборщик налогов
 collection agency         = коллекторское агенство
 
@@ -22,7 +21,7 @@ study @ room              = рабочий кабинет
 
 ***
 installation [art]        = инсталляция
-installation              = сооружение, установка ~ (оборудования, программы)
+installation @ setup      = сооружение, установка ~ (оборудования, программы)
 
 ***
 scenario @ art            = план, сценарий %% не детальный

@@ -50,6 +50,12 @@ namespace app::one
         {
             go(sys::settings::load(
               "app::one::path", ""));
+
+            if (parent and not parent->shown())
+                halt();
+
+            if (not shown())
+                halt();
         }
         catch (std::exception const& e) {
             logs::errors << bold(red(
@@ -83,7 +89,7 @@ namespace app::one
         void Play ()
         {
             if (not playmode)
-            stage().replay();
+            stage().rewind();
             play();
         }
         void stop ()
@@ -125,6 +131,9 @@ namespace app::one
             stages.rotate(0,1,N);
             place(1s);
 
+            if (not played)
+            playmode = false;
+
             if (stage().topic
             and stage().topic->parent == topic->parent)
             go (stage().topic); else
@@ -147,8 +156,12 @@ namespace app::one
             stages.rotate(0, N-1, N);
             place(1s);
 
+            if (not played)
+            playmode = false;
+
+            if (played)
             if (stage().status == state::finished)
-                stage().replay();
+                stage().rewind(); // start will call play
 
             if (stage().topic
             and stage().topic->parent == topic->parent)
@@ -177,7 +190,15 @@ namespace app::one
             if (not playmode.now)
                 fetcher.setup(2s);
         }
-        void go (str path) { go(course.find(path)); }
+        void go (str path)
+        {
+            halt();
+
+            if (not played)
+            playmode = false;
+
+            go(course.find(path));
+        }
 
         void speedup ()
         {

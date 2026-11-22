@@ -22,10 +22,11 @@ lose            = проиграть, проигрывать, ~ терять, у
 deck of cards   = колода карт
 ===
 
-harts @ cards
+hearts @ cards
 diamonds @ cards
 spades @ cards
 clubs @ cards
+
 ---
 ace @ cards {n}
 king @ cards {n}
@@ -35,6 +36,7 @@ queen @ chess {n}
 jack @ cards {n}
 
 ===
+
 ---
 suit @ clothes  = костюм, одеваться
 suit @ verb     = подходить, устраивать

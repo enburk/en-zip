@@ -1,3 +1,4 @@
+***
 
 Bordeaux @ wine = бордо                          # pix-
 Burgundy @ wine = бургундское                    # pix-
@@ -11,6 +12,8 @@ sherry          = херес ~ (шерри)
 vermouth        = вермут
 port [wine]     = портвейн
 sangria         = сангрия
+
+===
 
 sommelier       = сомелье                        # TERM+ /// Во фр. слово означало «дворецкий»
 decanter        = декантер                       # TERM+

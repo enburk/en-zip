@@ -3,37 +3,35 @@ sounds
 gasp
 sigh
 
+===
+
+big sigh                # SOUND
+heavy sigh              # SOUND
+quick sigh              # SOUND
+sigh of relief          # SOUND
+agonizing sigh          # SOUND
+exasperated sigh        # SOUND
+relief whistle and sigh # SOUND
+short sigh of disgust   # SOUND
+
+short gasp              # SOUND
+surprised gasp          # SOUND
+frightened gasping      # SOUND
+gasping crowd           # SOUND
+short gasping scream    # SOUND
+gasp of wonderment      # SOUND
+
+===
+
+baby babble             # SOUND
+baby spitting           # SOUND
+baby vocalization       # SOUND
+
+terror scream           # SOUND
+terrified yell          # SOUND
+
 hic
 fart
-
-===
-
-baby babble                # SOUND
-baby spitting              # SOUND
-baby vocalization          # SOUND
-
-big sigh                   # SOUND
-heavy sigh                 # SOUND
-quick sigh                 # SOUND
-sigh of relief             # SOUND
-agonizing sigh             # SOUND
-exasperated sigh           # SOUND
-relief whistle and sigh    # SOUND
-
-short gasp                 # SOUND
-surprised gasp             # SOUND
-frightened gasping         # SOUND
-gasping crowd              # SOUND
-short gasping scream       # SOUND
-
-startled gasp              # SOUND
-short startled scream      # SOUND
-gasp of wonderment         # SOUND
-
-===
-
-terror scream              # SOUND
-terrified yell             # SOUND
 
 ===
 
@@ -45,42 +43,15 @@ gargling
 
 ===
 
-short grunt                # SOUND
-painful grunt              # SOUND
-frustrated grunt           # SOUND
-breathing grunt            # SOUND
-distressed grunt           # SOUND
-struggling grunt           # SOUND
+short grunt             # SOUND
+painful grunt           # SOUND
+frustrated grunt        # SOUND
+breathing grunt         # SOUND
+distressed grunt        # SOUND
+struggling grunt        # SOUND
 
-baby gurgle, na na na      # SOUND
-baby gurgles               # SOUND
-
-short sigh of disgust      # SOUND
-
-===
-laugh                      # HEAD
-===
-
-short giggle               # SOUND
-baby quick laugh           # SOUND
-delighted laugh            # SOUND
-
-
-snigger\\snicker
-
-===
-
-shrieking laughter
-wheezing laughter
-guttural laugh
-sinister laugh
-hilarious laughter
-
-quick snicker              # SOUND
-drunken delirious giggling # SOUND
-
-
-
+baby gurgle, na na na   # SOUND
+baby gurgles            # SOUND
 
 
 
